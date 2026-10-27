@@ -1,6 +1,6 @@
 # ENAC GSEA English Semester 3 — AI Agent Guidelines & Architecture Rules
 
-This repository houses the official **Semester 3 English Learning Portal and SCORM 1.2 Package** for ENAC (École Nationale de l'Aviation Civile). It serves as both the live learning interface for students and a reusable template platform for future cohorts and semesters.
+This repository houses the official **Semester 1 English Learning Portal and SCORM 1.2 Package** for ENAC (École Nationale de l'Aviation Civile). It serves as both the live learning interface for students and a reusable template platform for future cohorts and semesters.
 
 ---
 
@@ -55,13 +55,14 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 - **Proceed / Ignore Prompt**: Every proposal or review must conclude with an explicit prompt asking the user whether to **proceed or ignore/adjust** (e.g. *"Please let me know if you would like me to proceed with these changes, or ignore/adjust."*).
 - **Explicit Confirmation Required**: The assistant must wait for explicit approval (such as *"Proceed"*, *"Approved"*, or further instructions) before modifying any codebase files.
 
-### E. Automated Project Backups (`backup1` & `backup2`)
+### E. Automated Project Backups (`backup1`, `backup2` & `backup3`)
 - **`backup1` Trigger**: Whenever the user sends `backup1`, the assistant immediately runs `npm run backup1` (or `node scripts/backup.js semester1`) to bundle a full dated archive into `/Users/philparris/Documents/moodle_backups/GSEA_semester_1/` and confirms the file path and archive size.
 - **`backup2` Trigger**: Whenever the user sends `backup2`, the assistant immediately runs `npm run backup2` (or `node scripts/backup.js semester2`) to bundle a full dated archive into `/Users/philparris/Documents/moodle_backups/GSEA_semester_2/` and confirms the file path and archive size.
+- **`backup3` Trigger**: Whenever the user sends `backup3`, the assistant immediately runs `npm run backup3` (or `node scripts/backup.js semester3`) to bundle a full dated archive into `/Users/philparris/Documents/moodle_backups/GSEA_semester_3/` and confirms the file path and archive size.
 - **Archive Convention**: Archives are named `GSEA_Semester_X_backup_YYYY-MM-DD_HHmm.zip`, containing the full project source and compiled assets while omitting `node_modules` and `.git`.
 
 ### F. Cross-Project Rule & Tooling Synchronization
-- **Mandatory Dual-Project Propagation**: Any time an architectural rule, governance guideline, operational command (e.g. `backup1`/`backup2`), or utility script is created or modified in `GSEA_semester_1`, the assistant MUST immediately mirror and synchronize that change into `GSEA_semester_2` (and vice-versa) within the same session.
+- **Mandatory Tri-Project Propagation**: Any time an architectural rule, governance guideline, operational command (e.g. `backup1`/`backup2`/`backup3`), or utility script is created or modified in `GSEA_semester_1`, the assistant MUST immediately mirror and synchronize that change across `GSEA_semester_2` and `GSEA_semester_3` (and vice-versa) within the same session.
 
 ### G. Automatic Atomic Commit & Push Protocol
 - **Single-Step Remote Synchronization**: Whenever the user instructs the assistant to `"Commit"` or `"Commit changes"`, the assistant MUST automatically execute **both** `git commit` AND `git push origin main` together in one seamless step, ensuring GitHub and GitHub Pages stay continuously synchronized with local progress.
@@ -93,7 +94,7 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 *This section defines the active variables for the current cohort. Update this section when rotating students or semesters.*
 
 ### Courses & Timetable
-- **Technical English (AT • LV123E)**
+- **Technical English (AT • LV121E)**
   - **Schedule**: Wednesdays 13h15 – 15h15 (2 Hours)
   - **Group A Teacher**: Tracy NEILL
   - **Group B Teacher**: Ally HEWETT
@@ -101,7 +102,7 @@ Course administration (student lists, teacher assignments, weekly schedules, and
     - FE1: Wednesday 25 November 2026 (Week 48)
     - FE2: Wednesday 20 January 2027 (Week 03)
     - FE3: Wednesday 24 February 2027 (Week 08)
-- **General English (AG • LV103E)**
+- **General English (AG • LV101E)**
   - **Schedule**: Fridays 08h00 – 10h00 (2 Hours)
   - **Group A Teacher**: Geri MIDDLETON
   - **Group B Teacher**: Penny WRIGHT
