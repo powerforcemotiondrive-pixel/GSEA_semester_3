@@ -7,7 +7,7 @@
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide text-white" style="background-color: ${theme.primary};">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                Promotion: GSEA 25A • 19 Students
+                Promotion: GSEA 25A • 30 Students
               </span>
               <span class="text-xs font-bold px-2.5 py-0.5 rounded-md border" style="color: ${theme.accent}; background-color: ${theme.highlight || '#fff7ed'}; border-color: ${theme.accent}30;">
                 Official Rosters &amp; Faculty Assignments
@@ -17,7 +17,7 @@
               Class Groups, Assigned Teachers &amp; Course Timetables
             </h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-              Official promotion structure for the academic semester. The GSEA 25A promotion is divided into <strong>Group A (10 students)</strong> and <strong>Group B (9 students)</strong> for all Aeronautical English (LV125E) classroom sessions. For oral Formative Evaluations (FE1, FE2, FE3), students follow dynamic rotating pairings and trios across exactly 4 slots of 30 minutes (2 hours total).
+              Official promotion structure for the academic semester. The GSEA 25A promotion is divided into <strong>Group A (10 students)</strong>, <strong>Group B (10 students)</strong>, and <strong>Group C (10 students)</strong> for all Technical English (AT • LV125E) classroom sessions. For oral Formative Evaluations (FE1, FE2, FE3), students follow dynamic rotating pairings and trios across exactly 4 slots of 30 minutes (2 hours total).
             </p>
           </div>
 
@@ -30,46 +30,27 @@
               </h4>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <!-- General English LV101E -->
-              <div class="border border-slate-200 rounded-xl p-4 bg-white shadow-2xs">
-                <div class="flex items-center justify-between pb-2 mb-3 border-b border-slate-100">
-                  <div class="flex items-center gap-2">
-                    <span class="px-2 py-0.5 rounded text-white font-mono text-[11px] font-black" style="background-color: ${theme.primary};">LV101E</span>
-                    <span class="text-xs font-bold text-slate-800">General English (AG)</span>
-                  </div>
-                  <span class="text-[11px] font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded">Fridays 08h00 – 10h00</span>
+            <!-- Technical English LV125E -->
+            <div class="border border-slate-200 rounded-xl p-4 bg-white shadow-2xs">
+              <div class="flex flex-wrap items-center justify-between gap-2 pb-2.5 mb-3 border-b border-slate-100">
+                <div class="flex items-center gap-2">
+                  <span class="px-2 py-0.5 rounded text-white font-mono text-[11px] font-black" style="background-color: ${theme.accent};">LV125E</span>
+                  <span class="text-xs font-bold text-slate-800">Technical English (AT)</span>
                 </div>
-                <div class="space-y-2.5 text-xs">
-                  <div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-50 border border-slate-100">
-                    <span class="font-bold text-slate-700">Group A Teacher</span>
-                    <span class="font-bold text-slate-900 bg-white px-2.5 py-1 rounded shadow-2xs border border-slate-200">Geri MIDDLETON</span>
-                  </div>
-                  <div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-50 border border-slate-100">
-                    <span class="font-bold text-slate-700">Group B Teacher</span>
-                    <span class="font-bold text-slate-900 bg-white px-2.5 py-1 rounded shadow-2xs border border-slate-200">Penny WRIGHT</span>
-                  </div>
-                </div>
+                <span class="text-[11px] font-bold text-slate-500 bg-slate-100 px-2.5 py-0.5 rounded">3 Groups • 10 Students per Group</span>
               </div>
-
-              <!-- Aeronautical English LV121E -->
-              <div class="border border-slate-200 rounded-xl p-4 bg-white shadow-2xs">
-                <div class="flex items-center justify-between pb-2 mb-3 border-b border-slate-100">
-                  <div class="flex items-center gap-2">
-                    <span class="px-2 py-0.5 rounded text-white font-mono text-[11px] font-black" style="background-color: ${theme.accent};">LV121E</span>
-                    <span class="text-xs font-bold text-slate-800">Technical English (AT)</span>
-                  </div>
-                  <span class="text-[11px] font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded">Wednesdays 13h15 – 15h15</span>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
+                <div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+                  <span class="font-bold text-slate-700">Group A Teacher</span>
+                  <span class="font-bold text-slate-900 bg-white px-2.5 py-1 rounded shadow-2xs border border-slate-200">Teacher A (TBC)</span>
                 </div>
-                <div class="space-y-2.5 text-xs">
-                  <div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-50 border border-slate-100">
-                    <span class="font-bold text-slate-700">Group A Teacher</span>
-                    <span class="font-bold text-slate-900 bg-white px-2.5 py-1 rounded shadow-2xs border border-slate-200">Tracy NEILL</span>
-                  </div>
-                  <div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-50 border border-slate-100">
-                    <span class="font-bold text-slate-700">Group B Teacher</span>
-                    <span class="font-bold text-slate-900 bg-white px-2.5 py-1 rounded shadow-2xs border border-slate-200">Ally HEWETT</span>
-                  </div>
+                <div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+                  <span class="font-bold text-slate-700">Group B Teacher</span>
+                  <span class="font-bold text-slate-900 bg-white px-2.5 py-1 rounded shadow-2xs border border-slate-200">Teacher B (TBC)</span>
+                </div>
+                <div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+                  <span class="font-bold text-slate-700">Group C Teacher</span>
+                  <span class="font-bold text-slate-900 bg-white px-2.5 py-1 rounded shadow-2xs border border-slate-200">Teacher C (TBC)</span>
                 </div>
               </div>
             </div>
@@ -101,12 +82,12 @@
             <div class="space-y-1">
               <span class="font-bold block">Dynamic Formative Evaluation (FE) Rotations:</span>
               <p class="text-[11px] text-amber-900 leading-relaxed">
-                To ensure variety in group work and timeslot fairness, groups do <strong>not</strong> have fixed pairs or trios. Group A rotates across 2 pairs + 2 trios (4 slots = 2h), and Group B rotates across 3 pairs + 1 trio (4 slots = 2h). Every student experiences different peers and rotates between early and late slots across FE1 (W48), FE2 (W03), and FE3 (W08). Switch to the <strong>FE Tutorial Rotas</strong> tab to view your complete evaluation schedule.
+                To ensure variety in group work and timeslot fairness, groups do <strong>not</strong> have fixed pairs or trios. Each group of 10 students (Group A, Group B, and Group C) rotates across 2 pairs + 2 trios (4 slots = 2h). Every student experiences different peers and rotates between early and late slots across each Formative Evaluation. Switch to the <strong>FE Tutorial Rotas</strong> tab to view your complete evaluation schedule.
               </p>
             </div>
           </div>
 
-          <!-- Student Rosters (Side-by-Side Tables) -->
+          <!-- Student Rosters (3-Column Tables) -->
           <div class="space-y-3">
             <div class="flex items-center justify-between">
               <div class="flex items-center gap-2">
@@ -115,10 +96,10 @@
                   Official Student Group Lists
                 </h4>
               </div>
-              <span class="text-[11px] text-slate-400">19 Total Students</span>
+              <span class="text-[11px] text-slate-400">30 Total Students</span>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
               <!-- Group A Table -->
               <div class="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-2xs">
                 <div class="p-3 text-white flex items-center justify-between" style="background-color: ${theme.primary};">
@@ -126,7 +107,7 @@
                     <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
                     <h5 class="text-xs font-bold uppercase tracking-wider">Group A (10 Students)</h5>
                   </div>
-                  <span class="text-[10px] bg-white/20 px-2 py-0.5 rounded font-mono font-bold">2 Pairs + 2 Trios • 4 Slots</span>
+                  <span class="text-[10px] bg-white/20 px-2 py-0.5 rounded font-mono font-bold">2 Pairs + 2 Trios</span>
                 </div>
                 <div class="overflow-x-auto">
                   <table class="w-full text-left text-xs border-collapse">
@@ -158,9 +139,9 @@
                 <div class="p-3 text-white flex items-center justify-between" style="background-color: ${theme.accentDark || theme.accent};">
                   <div class="flex items-center gap-2">
                     <span class="w-2 h-2 rounded-full bg-amber-400"></span>
-                    <h5 class="text-xs font-bold uppercase tracking-wider">Group B (9 Students)</h5>
+                    <h5 class="text-xs font-bold uppercase tracking-wider">Group B (10 Students)</h5>
                   </div>
-                  <span class="text-[10px] bg-white/20 px-2 py-0.5 rounded font-mono font-bold">3 Pairs + 1 Trio • 4 Slots</span>
+                  <span class="text-[10px] bg-white/20 px-2 py-0.5 rounded font-mono font-bold">2 Pairs + 2 Trios</span>
                 </div>
                 <div class="overflow-x-auto">
                   <table class="w-full text-left text-xs border-collapse">
@@ -181,6 +162,41 @@
                       <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">07</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPB007</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
                       <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">08</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPB008</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
                       <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">09</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPB009</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
+                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">10</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPB010</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!-- Group C Table -->
+              <div class="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-2xs">
+                <div class="p-3 text-white flex items-center justify-between bg-slate-700">
+                  <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-sky-400"></span>
+                    <h5 class="text-xs font-bold uppercase tracking-wider">Group C (10 Students)</h5>
+                  </div>
+                  <span class="text-[10px] bg-white/20 px-2 py-0.5 rounded font-mono font-bold">2 Pairs + 2 Trios</span>
+                </div>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-left text-xs border-collapse">
+                    <thead>
+                      <tr class="bg-slate-50 text-slate-500 border-b border-slate-200 text-[11px]">
+                        <th class="py-2 px-3 w-10 font-bold">#</th>
+                        <th class="py-2 px-3 font-bold">Student Identifier</th>
+                        <th class="py-2 px-3 font-bold text-right">FE Rota</th>
+                      </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 text-slate-700">
+                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">01</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPC001</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
+                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">02</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPC002</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
+                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">03</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPC003</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
+                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">04</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPC004</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
+                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">05</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPC005</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
+                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">06</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPC006</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
+                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">07</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPC007</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
+                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">08</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPC008</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
+                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">09</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPC009</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
+                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">10</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPC010</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
                     </tbody>
                   </table>
                 </div>
@@ -195,7 +211,7 @@
               Student Attendance &amp; Classroom Expectations
             </h5>
             <ul class="text-xs text-slate-600 space-y-1.5 list-disc pl-5">
-              <li><strong>Punctuality:</strong> Arrive at least 5 minutes before scheduled class start times (13h15 Wed / 08h00 Fri).</li>
+              <li><strong>Punctuality:</strong> Arrive at least 5 minutes before scheduled class start times.</li>
               <li><strong>Equipment:</strong> Bring your charged laptop or tablet to all sessions for interactive exercises and portfolio logging.</li>
               <li><strong>Absences:</strong> Any justified absence must be reported ahead of time to your assigned group teacher and to the course coordinator.</li>
             </ul>

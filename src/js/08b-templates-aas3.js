@@ -1343,7 +1343,7 @@
 
             <div class="p-4 bg-gradient-to-r from-amber-50 via-white to-amber-50 border border-amber-200 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
               <div class="space-y-1">
-                <span class="text-[10px] font-black uppercase tracking-wider text-amber-800">Semester 1 Aeronautical English Milestones</span>
+                <span class="text-[10px] font-black uppercase tracking-wider text-amber-800">Semester 3 Technical English (AT) Milestones</span>
                 <ul class="space-y-1 text-slate-800">
                   ${checkpoints.map(cp => `<li class="flex items-center gap-1.5"><span class="text-emerald-600 font-bold">&check;</span> ${cp}</li>`).join('')}
                 </ul>

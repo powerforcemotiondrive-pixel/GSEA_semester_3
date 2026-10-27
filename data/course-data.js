@@ -6250,7 +6250,7 @@
             {
               "num": 1,
               "title": "Identify & Classify In-Flight Medical Conditions (Clinical & Operational Vocabulary)",
-              "description": "Distinguish between urgent conditions (cardiac arrest, stroke, anaphylaxis) and common inflight distress (panic attacks, hyperventilation, claustrophobia, airsickness) using professional aeronautical English."
+              "description": "Distinguish between urgent conditions (cardiac arrest, stroke, anaphylaxis) and common inflight distress (panic attacks, hyperventilation, claustrophobia, airsickness) using professional Technical English."
             },
             {
               "num": 2,
@@ -8482,7 +8482,7 @@
               "url": "https://www.icao.int",
               "tag": "02 • Global Standards",
               "name": "ICAO Language Proficiency Requirements (Doc 9835)",
-              "desc": "Official international operational level descriptors for aeronautical English (Pronunciation, Structure, Vocabulary, Fluency, Comprehension, Interaction)."
+              "desc": "Official international operational level descriptors for Technical English (Pronunciation, Structure, Vocabulary, Fluency, Comprehension, Interaction)."
             },
             {
               "url": "https://www.aviation-safety.net",

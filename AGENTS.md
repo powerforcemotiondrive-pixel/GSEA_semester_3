@@ -87,29 +87,40 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 - **100% Invisible On Screen**: No visible copyright notices or disclaimers clutter student or faculty UI. All protections reside under the hood via `<meta>` tags, HTML comment blocks, frozen JavaScript tokens (`window.__GSEA_PROGRAMME_AUTH`), root `COPYRIGHT.md`, and cryptographic `CHECKSUMS.sha256`.
 - **INPI e-Soleau Archival Tool**: Run `npm run package:esoleau` to bundle the complete human-editable source tree into `dist/GSEA_Semester_X_INPI_eSoleau_YYYY-MM-DD.zip` for instant certified timestamping (*date certaine*) on [inpi.fr](https://www.inpi.fr).
 
+### K. `Promo Admin` Rapid Cohort & Faculty Configuration Protocol
+- **Trigger Shorthand**: Whenever the user sends a `Promo Admin` instruction (e.g., `Promo Admin: Promotion GSEA25A, Semester 3, Groups 3, A - 10 B - 10 C - 10, Teachers AG 0 AT 3 [optional teacher names]`), the assistant automatically updates all cohort, group, student roster, and faculty structures across the entire project.
+- **Permanent Semester Track Invariants (Never Changes)**:
+  - **Semester 1**: Always **AG** + **AT** (`LV101E` & `LV121E`)
+  - **Semester 2**: Always **AG** + **AAS** (`LV102E` & `LV122E`)
+  - **Semester 3**: Always **AT** only (`LV125E`, `AG` disabled) — **CRITICAL TERMINOLOGY RULE**: Never use `"Aeronautical English"` in Semester 3; always use **`Technical English`** or **`AT`**.
+  - **Semester 4**: Always **AP** only (`AG` disabled)
+- **Group Scaling (1 to 4 Groups Max: `A`, `B`, `C`, `D`)**:
+  - Supports up to 4 groups (`Group A`, `Group B`, `Group C`, `Group D`).
+  - Automatically generates anonymous student IDs (`GRPA001`–`GRPA0XX`, `GRPB001`–`GRPB0XX`, `GRPC001`–`GRPC0XX`, `GRPD001`–`GRPD0XX`), calculates total promotion headcount, and computes the FE pair/trio slot mix per group.
+- **Teacher Assignments (`Teachers`)**:
+  - Parses teacher counts per track (e.g., `Teachers AG 0 AT 3` or `Teachers AG 2 AT 2`) and optional teacher names per group (`A`, `B`, `C`, `D`).
+  - If teacher names are omitted, defaults to clean placeholders (`Teacher A (TBC)`, `Teacher B (TBC)`, `Teacher C (TBC)`, `Teacher D (TBC)`).
+  - If a track has `0` teachers (e.g., `AG 0` in Semester 3 or 4), its faculty card is omitted from the Class Groups & Teachers page.
+- **Files Synchronized Automatically**:
+  1. `src/template.html` (Flight Deck HUD callsign badge)
+  2. `src/js/02-config.js` & `src/js/03-core-deck.js` (Admin card tag, description, and dock title)
+  3. `src/js/11-admin-hub.js` (In-Deck Admin Hub: overview, faculty cards, and student group tables)
+  4. `admin.html` (Standalone Admin Portal: overview, faculty cards, and student group tables)
+  5. `portfolio.html` & `students.private.example.json` (Student `<optgroup>` selectors and private mapping template)
+  6. Runs `npm run package` to rebuild `index.html`, `output.css`, the SCORM `.zip`, `.iso`, and `.dmg`.
+
 ---
 
-## 2. Active Cohort Configuration (GSEA 25A • 2026–2027)
+## 2. Active Cohort Configuration (GSEA 25A • Semester 3 • 2026–2027)
 
 *This section defines the active variables for the current cohort. Update this section when rotating students or semesters.*
 
 ### Courses & Timetable
-- **Technical English (AT • LV121E)**
-  - **Schedule**: Wednesdays 13h15 – 15h15 (2 Hours)
-  - **Group A Teacher**: Tracy NEILL
-  - **Group B Teacher**: Ally HEWETT
-  - **Evaluation Dates**:
-    - FE1: Wednesday 25 November 2026 (Week 48)
-    - FE2: Wednesday 20 January 2027 (Week 03)
-    - FE3: Wednesday 24 February 2027 (Week 08)
-- **General English (AG • LV101E)**
-  - **Schedule**: Fridays 08h00 – 10h00 (2 Hours)
-  - **Group A Teacher**: Geri MIDDLETON
-  - **Group B Teacher**: Penny WRIGHT
-  - **Evaluation Dates**:
-    - FE1: Friday 27 November 2026 (Week 48)
-    - FE2: Friday 22 January 2027 (Week 03)
-    - FE3: Friday 26 February 2027 (Week 08)
+- **Promotion**: `GSEA 25A` • **30 Students** across **3 Groups** (`Group A: 10`, `Group B: 10`, `Group C: 10`)
+- **Technical English (AT • LV125E)** *(AG disabled in Semester 3)*
+  - **Group A Teacher**: `Teacher A (TBC)`
+  - **Group B Teacher**: `Teacher B (TBC)`
+  - **Group C Teacher**: `Teacher C (TBC)`
 
 ### Evaluation Structure
 - **Slot Length**: 30 minutes per evaluation slot.
