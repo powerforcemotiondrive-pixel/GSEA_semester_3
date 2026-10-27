@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="com.enac.gsea.course" version="1.0" 
+          xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" 
+          xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+  </metadata>
+  <organizations default="GSEA_ORG">
+    <organization identifier="GSEA_ORG">
+      <title>GSEA Semester 3 - Course Modules</title>
+      <item identifier="ITEM_MOD1">
+        <title>Module 1: Travel &amp; Transport</title>
+        <item identifier="ITEM_M1_S1" identifierref="RESOURCE_1" parameters="#module1-card1">
+          <title>Session 1 - Introduction &amp; Travel Anecdotes</title>
+        </item>
+        <item identifier="ITEM_M1_S2" identifierref="RESOURCE_1" parameters="#module1-card2">
+          <title>Session 2 - Evolution of Transport</title>
+        </item>
+        <item identifier="ITEM_M1_S3" identifierref="RESOURCE_1" parameters="#module1-card3">
+          <title>Session 3 - Overtourism</title>
+        </item>
+        <item identifier="ITEM_M1_S4" identifierref="RESOURCE_1" parameters="#module1-card4">
+          <title>Session 4 - Sustainable and Eco-tourism</title>
+        </item>
+        <item identifier="ITEM_M1_S5" identifierref="RESOURCE_1" parameters="#module1-card5">
+          <title>Session 5 - Formative Evaluation</title>
+        </item>
+        <item identifier="ITEM_M1_S6" identifierref="RESOURCE_1" parameters="#module1-card6">
+          <title>Focus: DDRS Framework</title>
+        </item>
+        <item identifier="ITEM_M1_S7" identifierref="RESOURCE_1" parameters="#module1-card7">
+          <title>Course Admin</title>
+        </item>
+      </item>
+      <item identifier="ITEM_MOD2">
+        <title>Module 2: Weather &amp; the Environment</title>
+        <item identifier="ITEM_M2_S1" identifierref="RESOURCE_1" parameters="#module2-card1">
+          <title>Session 1: Extreme Weather</title>
+        </item>
+        <item identifier="ITEM_M2_S2" identifierref="RESOURCE_1" parameters="#module2-card2">
+          <title>Session 2: Sustainable Cities</title>
+        </item>
+        <item identifier="ITEM_M2_S3" identifierref="RESOURCE_1" parameters="#module2-card3">
+          <title>Session 3: Building and Supporting Arguments</title>
+        </item>
+        <item identifier="ITEM_M2_S4" identifierref="RESOURCE_1" parameters="#module2-card4">
+          <title>Session 4: Biodiversity in Urban Areas and Airports</title>
+        </item>
+        <item identifier="ITEM_M2_S5" identifierref="RESOURCE_1" parameters="#module2-card5">
+          <title>Session 5 - Formative Evaluation</title>
+        </item>
+        <item identifier="ITEM_M2_S6" identifierref="RESOURCE_1" parameters="#module2-card6">
+          <title>Focus: DDRS Framework</title>
+        </item>
+        <item identifier="ITEM_M2_S7" identifierref="RESOURCE_1" parameters="#module2-card7">
+          <title>Course Admin</title>
+        </item>
+      </item>
+      <item identifier="ITEM_MOD3">
+        <title>Module 3: New Technology</title>
+        <item identifier="ITEM_M3_S1" identifierref="RESOURCE_1" parameters="#module3-card1">
+          <title>Session 1: Artificial Intelligence</title>
+        </item>
+        <item identifier="ITEM_M3_S2" identifierref="RESOURCE_1" parameters="#module3-card2">
+          <title>Session 2: Future of travel</title>
+        </item>
+        <item identifier="ITEM_M3_S3" identifierref="RESOURCE_1" parameters="#module3-card3">
+          <title>Session 3: Debate and Critical Thinking</title>
+        </item>
+        <item identifier="ITEM_M3_S4" identifierref="RESOURCE_1" parameters="#module3-card4">
+          <title>Session 4: Biometrics and digital identity</title>
+        </item>
+        <item identifier="ITEM_M3_S5" identifierref="RESOURCE_1" parameters="#module3-card5">
+          <title>Session 5 - Formative Evaluation</title>
+        </item>
+        <item identifier="ITEM_M3_S6" identifierref="RESOURCE_1" parameters="#module3-card6">
+          <title>Focus: DDRS Framework</title>
+        </item>
+        <item identifier="ITEM_M3_S7" identifierref="RESOURCE_1" parameters="#module3-card7">
+          <title>Course Admin</title>
+        </item>
+        <item identifier="ITEM_M3_S8" identifierref="RESOURCE_1" parameters="#ag-module3-card8">
+          <title>English Immersion (End of S2)</title>
+        </item>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="RESOURCE_1" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <!-- Main course entry file -->
+      <file href="index.html"/>
+      <file href="portfolio.html"/>
+      <file href="admin.html"/>
+      <file href="immersion.html"/>
+      <file href="presentation.html"/>
+      <!-- Compiled Tailwind CSS stylesheet -->
+      <file href="output.css"/>
+      
+      <!-- Structured Course Data Architecture -->
+      <file href="data/course-data.js"/>
+      
+      <!-- AG General English Track Card Images -->
+      <file href="images/ag_m1card1.jpg"/>
+      <file href="images/ag_m1card2.jpg"/>
+      <file href="images/ag_m1card3.jpg"/>
+      <file href="images/ag_m1card4.jpg"/>
+      <file href="images/ddrs_ag_mod1.jpg"/>
+      <file href="images/fe_progress_check.jpg"/>
+      <file href="images/course_admin.jpg"/>
+      <file href="images/semester_objectives.jpg"/>
+      <file href="images/ag_m2card1.jpg"/>
+      <file href="images/ag_m2card2.jpg"/>
+      <file href="images/ag_m2card3.jpg"/>
+      <file href="images/ag_m2card4.jpg"/>
+      <file href="images/ddrs_ag_mod2.jpg"/>
+      <file href="images/ag_m3card1.jpg"/>
+      <file href="images/ag_m3card2.jpg"/>
+      <file href="images/ag_m3card3.jpg"/>
+      <file href="images/ag_m3card4.jpg"/>
+      <file href="images/ddrs_ag_mod3.jpg"/>
+      <file href="images/immersion_card.jpg"/>
+      
+      <!-- AT Technical English Track Card Images -->
+      <file href="images/aas_m1card1.jpg"/>
+      <file href="images/aas_m1card2.jpg"/>
+      <file href="images/aas_m1card3.jpg"/>
+      <file href="images/aas_m1card4.jpg"/>
+      <file href="images/fe_aas_mod1.jpg"/>
+      <file href="images/ddrs_aas_mod1.jpg"/>
+      <file href="images/aas_m2card1.jpg"/>
+      <file href="images/aas_m2card2.jpg"/>
+      <file href="images/aas_m2card3.jpg"/>
+      <file href="images/aas_m2card4.jpg"/>
+      <file href="images/fe_aas_mod2.jpg"/>
+      <file href="images/ddrs_aas_mod2.jpg"/>
+      <file href="images/aas_m3card1.jpg"/>
+      <file href="images/aas_m3card2.jpg"/>
+      <file href="images/aas_m3card3.jpg"/>
+      <file href="images/aas_m3card4.jpg"/>
+      <file href="images/ddrs_aas_mod3.jpg"/>
+      <file href="images/turnaround_apron.jpg"/>
+      <file href="images/enac_logo_white.png"/>
+      
+      <!-- Student Worksheets & PDF Documents -->
+    </resource>
+  </resources>
+</manifest>

@@ -1,0 +1,38 @@
+{
+  "name": "gsea-semester3-scorm",
+  "version": "1.0.0",
+  "description": "ENAC GSEA Semester 3 English Learning Portal and SCORM 1.2 Package",
+  "main": "index.html",
+  "scripts": {
+    "build:html": "node scripts/build-html.js",
+    "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./output.css --minify",
+    "build": "node scripts/build-html.js && npx @tailwindcss/cli -i ./src/input.css -o ./output.css --minify",
+    "package": "node scripts/package-scorm.js",
+    "package:moodle": "node scripts/package-moodle.js",
+    "package:iso": "node scripts/package-iso.js",
+    "package:esoleau": "node scripts/package-esoleau.js",
+    "dev:css": "npx @tailwindcss/cli -i ./src/input.css -o ./output.css --watch",
+    "serve": "python3 -m http.server 8000",
+    "backup1": "node scripts/backup.js semester1",
+    "backup2": "node scripts/backup.js semester2",
+    "backup3": "node scripts/backup.js semester3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/powerforcemotiondrive-pixel/GSEA_semester_3.git"
+  },
+  "keywords": [
+    "enac",
+    "gsea",
+    "english",
+    "scorm",
+    "moodle"
+  ],
+  "author": "Phil Parris",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

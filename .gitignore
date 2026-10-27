@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# OS generated files
+.DS_Store
+._*
+**/.DS_Store
+**/._*
+
+# Build outputs and packaged archives
+dist/
+*.zip
+*.tar.gz
+*.iso
+*.dmg
+
+# IDE and editor settings
+.vscode/
+.idea/
+
+# Environment files
+.env
+.env.local
+
+# Confidential student PII mapping (Never commit to Git)
+students.private.json
+
