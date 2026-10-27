@@ -319,24 +319,24 @@
         <div>
           <div class="flex items-center gap-2 flex-wrap">
             <h1 id="header-title" class="text-sm sm:text-base font-extrabold text-white tracking-wide uppercase">
-              GSEA SEMESTER 1 AG
+              GSEA SEMESTER 3 AT
             </h1>
           </div>
           <p id="header-subtitle" class="text-xs text-slate-300 font-medium mt-0.5">
-            General English (LV101E) • Formative Learning Portfolio &amp; Self-Evaluation Log
+            Technical English (LV125E) • Formative Learning Portfolio &amp; Technical Operations Log
           </p>
         </div>
       </div>
 
       <!-- Right Header Actions (Track Switcher & Return Link) -->
       <div class="flex items-center gap-2.5 self-start md:self-auto shrink-0">
-        <!-- Dual-Track Switcher -->
+        <!-- Dual-Track Switcher (AG Disabled, AT Active) -->
         <div class="inline-flex items-center bg-black/40 p-1 rounded-lg border border-white/15 shadow-inner" role="tablist">
-          <button id="tab-btn-ag" type="button" onclick="switchTrack('ag')" class="px-2.5 py-1 rounded-md text-xs font-black transition-all cursor-pointer flex items-center gap-1.5 text-white bg-emerald-600 shadow-xs">
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+          <button id="tab-btn-ag" type="button" disabled aria-disabled="true" title="Not applicable in Semester 3 — AT (LV125E) only" class="px-2.5 py-1 rounded-md text-xs font-semibold transition-all cursor-not-allowed flex items-center gap-1.5 text-white/30 opacity-40 select-none">
+            <svg class="w-3.5 h-3.5 opacity-60" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
             <span>AG</span>
           </button>
-          <button id="tab-btn-aas" type="button" onclick="switchTrack('aas')" class="px-2.5 py-1 rounded-md text-xs font-semibold transition-all cursor-pointer flex items-center gap-1.5 text-white/70 hover:text-white hover:bg-white/10">
+          <button id="tab-btn-aas" type="button" onclick="switchTrack('aas')" class="px-2.5 py-1 rounded-md text-xs font-black transition-all cursor-pointer flex items-center gap-1.5 text-white bg-blue-600 shadow-xs">
             <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
             <span>AT</span>
           </button>
@@ -372,7 +372,7 @@
           <label for="studentSelect" class="field-label">Student Name</label>
           <select id="studentSelect" onchange="handleStudentSelectChange()" class="form-input">
             <option value="">-- Choose Name --</option>
-            <optgroup label="Official GSEA 26A Promotion — Group A">
+            <optgroup label="Official GSEA 25A Promotion — Group A">
               <option value="GRPA001">GRPA001</option>
               <option value="GRPA002">GRPA002</option>
               <option value="GRPA003">GRPA003</option>
@@ -384,7 +384,7 @@
               <option value="GRPA009">GRPA009</option>
               <option value="GRPA010">GRPA010</option>
             </optgroup>
-            <optgroup label="Official GSEA 26A Promotion — Group B">
+            <optgroup label="Official GSEA 25A Promotion — Group B">
               <option value="GRPB001">GRPB001</option>
               <option value="GRPB002">GRPB002</option>
               <option value="GRPB003">GRPB003</option>
@@ -709,43 +709,14 @@
     // ============================================================================
 
     const TRACK_CONFIGS = {
-      ag: {
-        code: "AG",
-        title: "GSEA SEMESTER 1 AG",
-        subtitle: "General English (LV101E) • Formative Learning Portfolio & Self-Evaluation Log",
-        themeClass: "theme-ag",
-        modules: [
-          { key: "Module 1", title: "Module 1 (Sessions 1 - 5): Travel, Transport & Leisure", formValue: "Travel, Transport and Leisure" },
-          { key: "Module 2", title: "Module 2 (Sessions 6 - 10): Weather & the Environment", formValue: "Weather and the Environment" },
-          { key: "Module 3", title: "Module 3 (Sessions 11 - 15): New Technology", formValue: "New Technology" }
-        ],
-        questions: {
-          vocabLabel: "1. Key General English Vocabulary & Idiomatic Expressions Learnt",
-          vocabInstruction: "List the essential words, collocations, and idiomatic phrases covered in this session. <strong>Please give a detailed explanation of their meaning and usage in communicative context.</strong>",
-          vocabPlaceholder: "",
-          contentLabel: "2. Lesson Content Review (What I Learnt in This Session)",
-          contentInstruction: "Summarize the speaking tasks, listening/reading texts, and debates completed today. <strong>Please give a detailed explanation of the core concepts, communication strategies, and arguments you explored.</strong>",
-          contentPlaceholder: "",
-          workOnLabel: "3. Target Improvement Areas Following This Session",
-          workOnInstruction: "Identify your language challenges and self-assessment points. <strong>Please give a detailed explanation of what specific grammar, pronunciation, vocabulary, or fluency areas you need to work on and how you plan to improve.</strong>",
-          workOnPlaceholder: "",
-          evalHelpLabel: "4. Formative Evaluation Relevance & Strategy",
-          evalHelpInstruction: "Connect today's learning to your upcoming 30-minute oral evaluation tutorial. <strong>Please give a detailed explanation of how these communicative skills, arguments, and vocabulary will help you succeed in your AG formative evaluation.</strong>",
-          evalHelpPlaceholder: "",
-          evalRatingLabel: "5. General English Formative Evaluation Preparedness",
-          evalRatingInstruction: "Rate your current confidence and readiness for the upcoming 30-minute General English Formative Evaluation tutorial on a scale of 1 to 10."
-        },
-        hasToeic: true
-      },
       aas: {
         code: "AT",
-        title: "GSEA SEMESTER 1 AT",
-        subtitle: "Technical English (LV121E) • Formative Learning Portfolio & Technical Operations Log",
+        title: "GSEA SEMESTER 3 AT",
+        subtitle: "Technical English (LV125E) • Formative Learning Portfolio & Technical Operations Log",
         themeClass: "theme-aas",
         modules: [
-          { key: "Module 1", title: "Module 1 (Sessions 1 - 5): Aerodrome", formValue: "Aerodrome" },
-          { key: "Module 2", title: "Module 2 (Sessions 6 - 10): Aircraft and Aerodynamics", formValue: "Aircraft and Aerodynamics" },
-          { key: "Module 3", title: "Module 3 (Sessions 11 - 15): Safety and Security", formValue: "Safety and Security" }
+          { key: "Module 1", title: "Module 1: Documents & Maps", formValue: "Documents & Maps" },
+          { key: "Module 2", title: "Module 2: MTF", formValue: "MTF" }
         ],
         questions: {
           vocabLabel: "1. Key Technical Vocabulary Learnt",
@@ -758,7 +729,7 @@
           workOnInstruction: "Identify your technical communication challenges (pronunciation, grammar, fluency) and operational language gaps. <strong>Please give a detailed explanation of what specific aeronautical terms, technical vocabulary, grammar or pronunciation issues you need to consolidate.</strong>",
           workOnPlaceholder: "",
           evalHelpLabel: "4. Technical English Formative Evaluation Relevance & Strategy",
-          evalHelpInstruction: "Connect today's learning to your upcoming 30-minute aeronautical oral evaluation tutorial. <strong>Please give a detailed explanation of how this operational knowledge, technical precision, and communication clarity will help you succeed in your AAS formative evaluation.</strong>",
+          evalHelpInstruction: "Connect today's learning to your upcoming 30-minute aeronautical oral evaluation tutorial. <strong>Please give a detailed explanation of how this operational knowledge, technical precision, and communication clarity will help you succeed in your AT formative evaluation.</strong>",
           evalHelpPlaceholder: "",
           evalRatingLabel: "5. Technical English Formative Evaluation Preparedness",
           evalRatingInstruction: "Rate your current confidence and readiness for the upcoming 30-minute Aeronautical English Formative Evaluation tutorial on a scale of 1 to 10."
@@ -771,21 +742,17 @@
     // APPLICATION STATE
     // ============================================================================
 
-    let currentTrack = "ag";
+    let currentTrack = "aas";
     let currentLoadedLogs = [];
     let currentFilteredLogs = [];
     let currentFilterModule = "all";
     let editingEntry = null;
 
-    // Detect track from URL query parameter (e.g. ?track=aas)
+    // Detect track from URL query parameter (Semester 3 is strictly AT / aas)
     document.addEventListener("DOMContentLoaded", () => {
-      const urlParams = new URLSearchParams(window.location.search);
-      const trackParam = (urlParams.get("track") || "").toLowerCase();
-      if (trackParam === "aas" || trackParam === "ag") {
-        currentTrack = trackParam;
-      }
+      currentTrack = "aas";
 
-      switchTrack(currentTrack, false);
+      switchTrack("aas", false);
       restoreSavedCredentials();
       setupAutoSaveListeners();
       checkBackendPing();
@@ -799,10 +766,11 @@
     });
 
     // ============================================================================
-    // DYNAMIC TRACK SWITCHING (AG vs AAS)
+    // DYNAMIC TRACK SWITCHING (Locked to AT / AAS in Semester 3)
     // ============================================================================
 
     function switchTrack(trackKey, userInitiated = true) {
+      trackKey = "aas";
       if (!TRACK_CONFIGS[trackKey]) return;
       currentTrack = trackKey;
       const config = TRACK_CONFIGS[trackKey];
@@ -817,17 +785,15 @@
 
       const agIcon = document.getElementById("header-icon-ag");
       const aasIcon = document.getElementById("header-icon-aas");
-      if (trackKey === "ag") {
-        agIcon.classList.remove("hidden");
-        aasIcon.classList.add("hidden");
-        document.getElementById("tab-btn-ag").className = "px-2.5 py-1 rounded-md text-xs font-black transition-all cursor-pointer flex items-center gap-1.5 text-white bg-emerald-600 shadow-xs";
-        document.getElementById("tab-btn-aas").className = "px-2.5 py-1 rounded-md text-xs font-semibold transition-all cursor-pointer flex items-center gap-1.5 text-white/70 hover:text-white hover:bg-white/10";
-      } else {
-        agIcon.classList.add("hidden");
-        aasIcon.classList.remove("hidden");
-        document.getElementById("tab-btn-ag").className = "px-2.5 py-1 rounded-md text-xs font-semibold transition-all cursor-pointer flex items-center gap-1.5 text-white/70 hover:text-white hover:bg-white/10";
-        document.getElementById("tab-btn-aas").className = "px-2.5 py-1 rounded-md text-xs font-black transition-all cursor-pointer flex items-center gap-1.5 text-white bg-blue-600 shadow-xs";
+      agIcon.classList.add("hidden");
+      aasIcon.classList.remove("hidden");
+      const tabBtnAg = document.getElementById("tab-btn-ag");
+      if (tabBtnAg) {
+        tabBtnAg.disabled = true;
+        tabBtnAg.setAttribute("aria-disabled", "true");
+        tabBtnAg.className = "px-2.5 py-1 rounded-md text-xs font-semibold transition-all cursor-not-allowed flex items-center gap-1.5 text-white/30 opacity-40 select-none";
       }
+      document.getElementById("tab-btn-aas").className = "px-2.5 py-1 rounded-md text-xs font-black transition-all cursor-pointer flex items-center gap-1.5 text-white bg-blue-600 shadow-xs";
 
       // 3. Update Module Dropdown
       const modSelect = document.getElementById("moduleSelect");

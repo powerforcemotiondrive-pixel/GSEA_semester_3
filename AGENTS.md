@@ -28,21 +28,21 @@ Course administration (student lists, teacher assignments, weekly schedules, and
     - `src/js/02-config.js`: Course & program configuration
     - `src/js/03-core-deck.js`: Navigation, deck state, themes, and audio controllers
     - `src/js/04-templates-dispatcher.js`: Lesson content & activity instruction dispatcher
-    - `src/js/05-templates-mod1.js`: Module 1 lesson content (AAS & AG)
-    - `src/js/06-templates-ag2.js`: Module 2 General English lesson content
-    - `src/js/07-templates-ag3.js`: Module 3 General English lesson content
-    - `src/js/08-templates-aas2.js`: Module 2 Aeronautical English lesson content
+    - `src/js/05-templates-mod1.js`: Module 1 lesson content (Documents & Maps)
+    - `src/js/08-templates-aas2.js`: Module 2 lesson content (MTF)
     - `src/js/09-templates-materials-ddrs.js`: Vocabulary revision, study materials, TOEIC, and DDRS tabs
     - `src/js/10-fe-guidelines.js`: Formative evaluation guidelines, rubrics, and criteria
-    - `src/js/11-admin-hub.js`: Promotion rosters, timetables, rota schedules, and immersion hub
+    - `src/js/11-admin-hub.js`: Promotion rosters, timetables, and rota schedules
     - `src/js/12-footer-init.js`: Interactive quiz handlers and DOMContentLoaded initialization
-- **Build & Package**:
+- **Build & Package (Mandatory SCORM + `.iso` + `.dmg` Rebuild)**:
+  - **CRITICAL RULE**: Every time code, content, or assets are updated, the `.iso` (`GSEA_Semester_X_Offline.iso`) and `.dmg` (`GSEA_Semester_X_Mac.dmg`) offline disk images **must** be rebuilt alongside the SCORM `.zip` package.
   - `npm run build`: Compiles `src/` modules into `index.html` and builds minified CSS.
   - `npm run package`:
   ```bash
   npm run package
   ```
-  *(Compiles `src/` into `index.html`, compiles Tailwind CSS v4 minified, validates manifest integrity, and outputs the SCORM zip).*
+  *(Automatically runs `package-scorm.js` AND `package-iso.js`: compiles `src/` into `index.html`, compiles Tailwind CSS v4 minified, validates manifest integrity, outputs the SCORM `.zip`, and rebuilds both the `.iso` and `.dmg` offline installers).*
+  - `npm run package:iso`: Rebuilds the `.iso` and `.dmg` offline installers standalone.
 - **Release Versioning**:
   - Main production code lives on branch `main`.
   - Production releases are tagged with `v1.2.0-live` (or semantic version increments) and pushed with:
@@ -89,7 +89,7 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 
 ---
 
-## 2. Active Cohort Configuration (GSEA26A • 2026–2027)
+## 2. Active Cohort Configuration (GSEA 25A • 2026–2027)
 
 *This section defines the active variables for the current cohort. Update this section when rotating students or semesters.*
 

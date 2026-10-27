@@ -501,25 +501,25 @@
       <!-- Header bar -->
       <header id="deck-header" class="textured-surface bg-[#374151] text-white px-4 py-4 sm:px-6 sm:py-5 flex flex-wrap items-center justify-between gap-3 border-b border-[#1f2937] shrink-0 relative overflow-hidden">
         <div id="deck-header-info" class="flex items-center space-x-3 sm:space-x-4">
-          <div id="deck-icon-box" class="bg-[#ea580c] p-2.5 rounded-lg text-white shadow-md flex items-center justify-center">
+          <div id="deck-icon-box" class="bg-[#d97706] p-2.5 rounded-lg text-white shadow-md flex items-center justify-center">
             <!-- Theme Icon -->
-            <svg width="20" height="20" style="width: 20px; height: 20px;" class="w-5 h-5 text-white shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+            <svg width="20" height="20" style="width: 20px; height: 20px;" class="w-5 h-5 text-white shrink-0" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
             </svg>
           </div>
           <div class="flex flex-col justify-center min-h-[40px] max-h-[40px] overflow-hidden">
-            <h1 id="deck-main-title" class="text-[13.5px] sm:text-[15px] font-semibold text-white tracking-wide uppercase leading-[19px] truncate">GSEA SEMESTER 3 AG (LV103E)</h1>
-            <p id="deck-subtitle" class="text-[11.5px] sm:text-[12px] font-medium leading-[16px] truncate text-slate-300 mt-0.5">Module 1 - Travel, Transport &amp; Leisure</p>
+            <h1 id="deck-main-title" class="text-[13.5px] sm:text-[15px] font-semibold text-white tracking-wide uppercase leading-[19px] truncate">GSEA SEMESTER 3 AT (LV125E)</h1>
+            <p id="deck-subtitle" class="text-[11.5px] sm:text-[12px] font-medium leading-[16px] truncate text-slate-300 mt-0.5">Module 1 - Documents &amp; Maps</p>
           </div>
         </div>
 
         <!-- Navigation Controls -->
         <div class="flex items-center space-x-2">
-          <button id="deck-portfolio-btn" type="button" onclick="openPortfolioDrawer()" class="flex items-center space-x-1.5 bg-[#1f2937] hover:bg-[#111827] active:bg-[#0f172a] text-slate-100 px-2.5 sm:px-3 py-1.5 rounded-lg font-semibold text-xs transition-all border border-[#111827] shadow-xs hover:shadow-sm hover:-translate-y-[1px] active:translate-y-0 cursor-pointer mr-1" title="Open Formative Learning Portfolio Drawer">
-            <span id="deck-port-dot" class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span id="deck-port-label">AG Portfolio</span>
+          <button id="deck-portfolio-btn" type="button" onclick="openPortfolioDrawer('aas')" class="flex items-center space-x-1.5 bg-[#1f2937] hover:bg-[#111827] active:bg-[#0f172a] text-slate-100 px-2.5 sm:px-3 py-1.5 rounded-lg font-semibold text-xs transition-all border border-[#111827] shadow-xs hover:shadow-sm hover:-translate-y-[1px] active:translate-y-0 cursor-pointer mr-1" title="Open Formative Learning Portfolio Drawer">
+            <span id="deck-port-dot" class="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse"></span>
+            <span id="deck-port-label">AT Portfolio</span>
           </button>
-          <span id="counter-badge" class="text-xs font-medium text-white bg-[#1f2937] px-2.5 py-1 rounded-md border border-[#111827] mr-1 shadow-md">1 of 6</span>
+          <span id="counter-badge" class="text-xs font-medium text-white bg-[#1f2937] px-2.5 py-1 rounded-md border border-[#111827] mr-1 shadow-md">1 of 8</span>
           <button id="prev-btn" class="flex items-center space-x-1 bg-[#1f2937] hover:bg-[#111827] active:bg-[#0f172a] text-slate-100 px-3 py-1.5 rounded-lg font-semibold text-xs transition-all border border-[#111827] disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer shadow-xs hover:shadow-sm hover:-translate-y-[1px] active:translate-y-0" type="button">
             <span class="pointer-events-none">Previous</span>
           </button>
@@ -531,25 +531,27 @@
 
       <!-- Flight Deck Navigation Ribbon -->
       <nav id="flight-deck-ribbon" class="bg-[#1f2937] text-white px-2 sm:px-5 py-1.5 sm:py-2 border-b border-[#111827] flex items-center justify-between gap-1 sm:gap-3 shrink-0 z-10 transition-colors duration-200 overflow-x-auto no-scrollbar">
-        <!-- Left: Curriculum Track Switcher (AG / AT) (Balanced Flex-1 Anchor) -->
+        <!-- Left: Curriculum Track Switcher (AG disabled / AT active) (Balanced Flex-1 Anchor) -->
         <div class="flex-1 flex items-center justify-start gap-1.5 sm:gap-2 shrink-0 min-w-fit">
           <span class="text-[10px] font-black uppercase tracking-wider text-slate-300 mobile-hide">Track:</span>
           <div id="program-switcher" class="inline-flex items-center bg-black/40 p-0.5 rounded-lg border border-white/15 shadow-inner" role="tablist" aria-label="Curriculum Track">
             <button id="prog-btn-ag"
                     type="button"
                     role="tab"
-                    aria-selected="true"
-                    title="General English (AG)"
-                    class="px-1.5 sm:px-2.5 py-0.5 sm:py-1 rounded-md text-[11px] sm:text-xs font-black transition-all cursor-pointer flex items-center gap-1 sm:gap-1.5 text-white shadow-xs">
-              <svg width="13" height="13" class="w-3.5 h-3.5 shrink-0 opacity-90" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    disabled
+                    aria-disabled="true"
+                    aria-selected="false"
+                    title="Not applicable in Semester 3 — AT (LV125E) only"
+                    class="px-1.5 sm:px-2.5 py-0.5 sm:py-1 rounded-md text-[11px] sm:text-xs font-semibold transition-all cursor-not-allowed flex items-center gap-1 sm:gap-1.5 text-white/30 opacity-40 select-none">
+              <svg width="13" height="13" class="w-3.5 h-3.5 shrink-0 opacity-60" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
               <span>AG</span>
             </button>
             <button id="prog-btn-aas"
                     type="button"
                     role="tab"
-                    aria-selected="false"
-                    title="Technical English (AT)"
-                    class="px-1.5 sm:px-2.5 py-0.5 sm:py-1 rounded-md text-[11px] sm:text-xs font-semibold transition-all cursor-pointer flex items-center gap-1 sm:gap-1.5 text-white/70 hover:text-white hover:bg-white/10">
+                    aria-selected="true"
+                    title="Technical English (AT • LV125E)"
+                    class="px-1.5 sm:px-2.5 py-0.5 sm:py-1 rounded-md text-[11px] sm:text-xs font-black transition-all cursor-pointer flex items-center gap-1 sm:gap-1.5 text-white shadow-xs">
               <svg width="13" height="13" class="w-3.5 h-3.5 shrink-0 opacity-90" viewBox="0 0 24 24" fill="currentColor"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
               <span>AT</span>
             </button>
@@ -565,7 +567,7 @@
              class="inline-flex items-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full bg-black/45 backdrop-blur-xs border border-white/15 shadow-inner transition-all duration-300 select-none group cursor-pointer hover:border-white/40 hover:bg-black/60 hover:-translate-y-[1px] active:translate-y-0 no-underline"
              title="Return to ENAC e-Campus (https://e-campus.enac.fr) ↗">
             <span id="promo-badge-dot" class="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse transition-all duration-300"></span>
-            <span id="promo-badge-text" class="text-[10px] sm:text-[11px] font-mono font-black tracking-wider text-slate-100 uppercase transition-colors duration-300 group-hover:text-white">GSEA 26A</span>
+            <span id="promo-badge-text" class="text-[10px] sm:text-[11px] font-mono font-black tracking-wider text-slate-100 uppercase transition-colors duration-300 group-hover:text-white">GSEA 25A</span>
             <svg class="w-2.5 h-2.5 text-slate-400 group-hover:text-white opacity-0 group-hover:opacity-100 -ml-0.5 transition-all duration-200 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
           </a>
         </div>
@@ -677,7 +679,7 @@
         <!-- Right: Curriculum label & ENAC Logo (Full width on mobile, balanced anchor on desktop) -->
         <div class="flex-1 flex items-center justify-end gap-2 sm:gap-3 min-w-0">
           <span id="footer-curriculum-label" class="font-medium text-slate-300 sm:truncate">
-            <span id="footer-curriculum-track" class="mobile-hide">GSEA Semester 3 General English (AG) • </span>
+            <span id="footer-curriculum-track" class="mobile-hide">GSEA Semester 3 Technical English (AT) • </span>
             <span>Phil PARRIS <span class="text-slate-400 font-mono text-[10px]">(LH/LAN)</span></span>
             <span class="text-slate-500">•</span>
             <span class="font-mono text-emerald-400 font-bold bg-black/40 px-1.5 py-0.5 rounded border border-white/10 text-[10px]">v1.2.0</span>
@@ -734,9 +736,6 @@
             <button data-tab="admin_calendar" id="modal-tab-admin-calendar" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">Weekly Calendar</button>
             <button data-tab="admin_rota" id="modal-tab-admin-rota" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">FE Tutorial Rotas</button>
             <button data-tab="admin_presentation" id="modal-tab-admin-presentation" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">Project Presentation</button>
-            <!-- English Immersion Tabs -->
-            <button data-tab="immersion_overview" id="modal-tab-immersion-overview" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">Immersion Overview</button>
-            <button data-tab="immersion_cities" id="modal-tab-immersion-cities" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">6 Destination Guides</button>
             <!-- Semester Objectives Tabs -->
             <button data-tab="sem_obj_en" id="modal-tab-sem-obj-en" class="modal-tab-btn flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">🇬🇧 English (EN)</button>
             <button data-tab="sem_obj_fr" id="modal-tab-sem-obj-fr" class="modal-tab-btn flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">🇫🇷 Français (FR)</button>
@@ -829,33 +828,33 @@
         <!-- Drawer Header -->
         <header id="portfolio-drawer-header" class="textured-surface bg-[#1f2937] text-white px-3.5 py-3 sm:px-6 sm:py-3.5 flex items-center justify-between border-b border-[#111827] shrink-0 gap-3">
           <div class="flex items-center space-x-2.5 sm:space-x-3 min-w-0">
-            <div id="portfolio-drawer-icon" class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 text-white bg-emerald-600 shadow-xs">
-              <svg id="portfolio-drawer-icon-ag" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <div id="portfolio-drawer-icon" class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 text-white bg-blue-600 shadow-xs">
+              <svg id="portfolio-drawer-icon-ag" class="w-4 h-4 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
               </svg>
-              <svg id="portfolio-drawer-icon-aas" class="w-4 h-4 hidden" viewBox="0 0 24 24" fill="currentColor">
+              <svg id="portfolio-drawer-icon-aas" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
               </svg>
             </div>
             <div class="min-w-0">
               <h2 id="portfolio-drawer-title" class="text-xs sm:text-sm font-bold text-white uppercase tracking-wide truncate">
-                GSEA SEMESTER 3 AG
+                GSEA SEMESTER 3 AT
               </h2>
               <p id="portfolio-drawer-subtitle" class="text-[11px] text-slate-300 truncate mt-0.5">
-                General English (LV103E) • Formative Learning Portfolio &amp; Self-Evaluation Log
+                Technical English (LV125E) • Formative Learning Portfolio &amp; Technical Operations Log
               </p>
             </div>
           </div>
 
           <!-- Drawer Action Controls (Track switcher, Live Status, Close) -->
           <div class="flex items-center space-x-1.5 sm:space-x-2 shrink-0">
-            <!-- In-Drawer Track Switcher -->
+            <!-- In-Drawer Track Switcher (AG Disabled, AT Active) -->
             <div class="inline-flex items-center bg-black/40 p-0.5 rounded-lg border border-white/15 shadow-inner">
-              <button id="drawer-tab-btn-ag" type="button" onclick="setDrawerTrack('ag')" class="px-2 py-1 rounded text-[11px] font-black transition-all cursor-pointer text-white bg-emerald-600 shadow-xs">
+              <button id="drawer-tab-btn-ag" type="button" disabled aria-disabled="true" title="Not applicable in Semester 3 — AT (LV125E) only" class="px-2 py-1 rounded text-[11px] font-semibold transition-all cursor-not-allowed text-white/30 opacity-40 select-none">
                 AG
               </button>
-              <button id="drawer-tab-btn-aas" type="button" onclick="setDrawerTrack('aas')" class="px-2 py-1 rounded text-[11px] font-semibold transition-all cursor-pointer text-white/70 hover:text-white hover:bg-white/10">
-                AAS
+              <button id="drawer-tab-btn-aas" type="button" onclick="setDrawerTrack('aas')" class="px-2 py-1 rounded text-[11px] font-black transition-all cursor-pointer text-white bg-blue-600 shadow-xs">
+                AT
               </button>
             </div>
 
@@ -882,8 +881,8 @@
         <!-- Drawer Flight-Deck Footer -->
         <footer id="portfolio-drawer-footer" class="textured-surface bg-[#1f2937] text-white px-3.5 py-2.5 sm:px-6 sm:py-2.5 flex items-center justify-between border-t border-[#111827] shrink-0 text-xs text-slate-300">
           <div class="flex items-center gap-2 min-w-0">
-            <span id="drawer-footer-track-badge" class="px-2 py-0.5 rounded text-[10px] font-mono font-bold text-white bg-emerald-600 shadow-xs shrink-0">AG • LV103E</span>
-            <span id="drawer-footer-course-title" class="font-bold text-white tracking-wide truncate text-[11px] sm:text-xs">GSEA Semester 3 General English (AG)</span>
+            <span id="drawer-footer-track-badge" class="px-2 py-0.5 rounded text-[10px] font-mono font-bold text-white bg-blue-600 shadow-xs shrink-0">AT • LV125E</span>
+            <span id="drawer-footer-course-title" class="font-bold text-white tracking-wide truncate text-[11px] sm:text-xs">GSEA Semester 3 Technical English (AT)</span>
           </div>
           <div class="flex items-center gap-2.5 shrink-0">
             <span class="text-slate-300 hidden sm:inline text-[11px] sm:text-xs">Phil PARRIS <span class="text-slate-400 font-mono text-[10px] sm:text-[11px]">(LH/LAN)</span></span>

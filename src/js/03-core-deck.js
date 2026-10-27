@@ -87,7 +87,7 @@
       document.addEventListener('fullscreenchange', updateDeckFsIcons);
       document.addEventListener('webkitfullscreenchange', updateDeckFsIcons);
 
-      // Mouse wheel / trackpad scroll listener on the ribbon to cycle through modules
+      // Mouse wheel / trackpad scroll listener on the ribbon to cycle through active modules (MOD 1 & MOD 2)
       const navContainer = document.getElementById('flight-deck-ribbon');
       if (navContainer) {
         let isWheelThrottled = false;
@@ -97,11 +97,12 @@
           const delta = Math.abs(e.deltaY) > Math.abs(e.deltaX) ? e.deltaY : e.deltaX;
           if (Math.abs(delta) > 10) {
             isWheelThrottled = true;
+            const activeCount = 2; // Semester 3 has 2 active modules (MOD 1 & MOD 2)
             if (delta > 0) {
-              const nextMod = (currentModuleIndex + 1) % modulesData.length;
+              const nextMod = (currentModuleIndex + 1) % activeCount;
               switchModule(nextMod, 0);
             } else {
-              const prevMod = (currentModuleIndex - 1 + modulesData.length) % modulesData.length;
+              const prevMod = (currentModuleIndex - 1 + activeCount) % activeCount;
               switchModule(prevMod, 0);
             }
             setTimeout(() => { isWheelThrottled = false; }, 320);
@@ -109,11 +110,7 @@
         }, { passive: false });
       }
 
-      // Program Switcher Click listeners
-      const progBtnAg = document.getElementById('prog-btn-ag');
-      if (progBtnAg) {
-        progBtnAg.addEventListener('click', () => switchProgram('ag'));
-      }
+      // Program Switcher Click listeners (AG disabled in Semester 3; AT locked)
       const progBtnAas = document.getElementById('prog-btn-aas');
       if (progBtnAas) {
         progBtnAas.addEventListener('click', () => switchProgram('aas'));
@@ -121,25 +118,19 @@
 
       // Read initial program, module and active card from URL hash or sessionStorage
       function getInitialSelection() {
-        let prog = 'ag';
+        const prog = 'aas'; // Semester 3 is strictly AT (LV125E)
         let mod = 0;
         let card = 0;
         try {
           const hash = (window.location.hash + ' ' + window.location.search).toLowerCase();
-          if (hash.includes('at') || hash.includes('aas') || hash.includes('aero')) {
-            prog = 'aas';
-          } else {
-            const savedProg = sessionStorage.getItem('gsea_active_prog');
-            if (savedProg === 'aas') prog = 'aas';
-          }
 
           if (hash.includes('mod2') || hash.includes('module2') || hash.includes('module-2')) {
             mod = 1;
-          } else if (hash.includes('mod3') || hash.includes('module3') || hash.includes('module-3')) {
-            mod = 2;
+          } else {
+            mod = 0;
           }
 
-          // Check if card index is directly in hash (e.g. #ag-module1-card3 or #card-3)
+          // Check if card index is directly in hash (e.g. #aas-module1-card3 or #card-3)
           const cardMatch = hash.match(/card-?(\d+)/);
           if (cardMatch) {
             card = Math.max(0, parseInt(cardMatch[1], 10) - 1);
@@ -147,8 +138,16 @@
             // Restore card memory from sessionStorage
             const savedMod = sessionStorage.getItem(`gsea_${prog}_last_mod`) || sessionStorage.getItem('gsea_last_mod');
             const savedCard = sessionStorage.getItem(`gsea_${prog}_last_card`) || sessionStorage.getItem('gsea_last_card');
-            if (savedMod !== null && parseInt(savedMod, 10) === mod && savedCard !== null) {
-              card = parseInt(savedCard, 10);
+            if (savedMod !== null) {
+              const parsedMod = parseInt(savedMod, 10);
+              if (parsedMod === 0 || parsedMod === 1) {
+                if (!hash.includes('mod1') && !hash.includes('module1') && !hash.includes('module-1') && !hash.includes('mod2') && !hash.includes('module2') && !hash.includes('module-2')) {
+                  mod = parsedMod;
+                }
+                if (parsedMod === mod && savedCard !== null) {
+                  card = parseInt(savedCard, 10);
+                }
+              }
             }
           }
         } catch (e) {}
@@ -156,7 +155,7 @@
       }
 
       const initialSelection = getInitialSelection();
-      currentProgram = initialSelection.prog;
+      currentProgram = 'aas';
       modulesData = PROGRAMS_CONFIG[currentProgram].modules;
       updateHeaderIconAndFooter();
       switchModule(initialSelection.mod, initialSelection.card);
@@ -165,9 +164,7 @@
       window.addEventListener('hashchange', () => {
         try {
           const target = getInitialSelection();
-          if (target.prog !== currentProgram) {
-            switchProgram(target.prog, target.mod, target.card);
-          } else if (target.mod !== currentModuleIndex || target.card !== currentIndex) {
+          if (target.mod !== currentModuleIndex || target.card !== currentIndex) {
             switchModule(target.mod, target.card);
           }
         } catch (e) {}
@@ -177,21 +174,15 @@
     function updateHeaderIconAndFooter() {
       const iconBox = document.getElementById('deck-icon-box');
       if (iconBox) {
-        if (currentProgram === 'aas') {
-          iconBox.innerHTML = `<svg width="20" height="20" style="width: 20px; height: 20px;" class="w-5 h-5 text-white shrink-0" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>`;
-        } else {
-          iconBox.innerHTML = `<svg width="20" height="20" style="width: 20px; height: 20px;" class="w-5 h-5 text-white shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>`;
-        }
+        iconBox.innerHTML = `<svg width="20" height="20" style="width: 20px; height: 20px;" class="w-5 h-5 text-white shrink-0" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>`;
       }
       const mainTitle = document.getElementById('deck-main-title');
       if (mainTitle) {
-        mainTitle.textContent = currentProgram === 'aas' ? 'GSEA SEMESTER 1 AT (LV121E)' : 'GSEA SEMESTER 1 AG (LV101E)';
+        mainTitle.textContent = 'GSEA SEMESTER 3 AT (LV125E)';
       }
       const footerTrack = document.getElementById('footer-curriculum-track');
       if (footerTrack) {
-        footerTrack.textContent = currentProgram === 'aas' 
-          ? 'GSEA Semester 1 Technical English (AT) • ' 
-          : 'GSEA Semester 1 General English (AG) • ';
+        footerTrack.textContent = 'GSEA Semester 3 Technical English (AT) • ';
       } else {
         const footerCurriculum = document.getElementById('footer-curriculum-label');
         if (footerCurriculum && PROGRAMS_CONFIG[currentProgram]) {
@@ -206,60 +197,45 @@
       if (!agBtn || !aasBtn) return;
 
       const currentTheme = modulesData[currentModuleIndex];
-      const isAg = (currentProgram === 'ag');
 
-      agBtn.setAttribute('aria-selected', isAg ? 'true' : 'false');
-      aasBtn.setAttribute('aria-selected', !isAg ? 'true' : 'false');
+      // AG is permanently disabled in Semester 3
+      agBtn.disabled = true;
+      agBtn.setAttribute('aria-disabled', 'true');
+      agBtn.setAttribute('aria-selected', 'false');
+      agBtn.style.backgroundColor = 'transparent';
+      agBtn.style.borderColor = 'transparent';
+      agBtn.style.color = 'rgba(255, 255, 255, 0.3)';
+      agBtn.style.boxShadow = 'none';
+      agBtn.className = "px-1.5 sm:px-2.5 py-0.5 sm:py-1 rounded-md text-[11px] sm:text-xs font-semibold transition-all cursor-not-allowed flex items-center gap-1 opacity-40 border border-transparent select-none";
+      agBtn.onmouseenter = null;
+      agBtn.onmouseleave = null;
 
-      if (isAg) {
-        agBtn.style.backgroundColor = currentTheme.accent;
-        agBtn.style.borderColor = currentTheme.accentDark;
-        agBtn.style.color = '#ffffff';
-        agBtn.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.2)';
-        agBtn.className = "px-1.5 sm:px-2.5 py-0.5 sm:py-1 rounded-md text-[11px] sm:text-xs font-bold transition-all cursor-pointer flex items-center gap-1 border shadow-xs hover:-translate-y-[1px] active:translate-y-0";
-        agBtn.onmouseenter = () => { agBtn.style.backgroundColor = currentTheme.accentDark; };
-        agBtn.onmouseleave = () => { agBtn.style.backgroundColor = currentTheme.accent; };
+      // AT is active in Semester 3
+      aasBtn.setAttribute('aria-selected', 'true');
+      aasBtn.style.backgroundColor = currentTheme.accent;
+      aasBtn.style.borderColor = currentTheme.accentDark;
+      aasBtn.style.color = '#ffffff';
+      aasBtn.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.2)';
+      aasBtn.className = "px-1.5 sm:px-2.5 py-0.5 sm:py-1 rounded-md text-[11px] sm:text-xs font-bold transition-all cursor-pointer flex items-center gap-1 border shadow-xs hover:-translate-y-[1px] active:translate-y-0";
+      aasBtn.onmouseenter = () => { aasBtn.style.backgroundColor = currentTheme.accentDark; };
+      aasBtn.onmouseleave = () => { aasBtn.style.backgroundColor = currentTheme.accent; };
 
-        aasBtn.style.backgroundColor = 'transparent';
-        aasBtn.style.borderColor = 'transparent';
-        aasBtn.style.color = 'rgba(255, 255, 255, 0.75)';
-        aasBtn.style.boxShadow = 'none';
-        aasBtn.className = "px-1.5 sm:px-2.5 py-0.5 sm:py-1 rounded-md text-[11px] sm:text-xs font-semibold transition-all cursor-pointer flex items-center gap-1 opacity-75 hover:opacity-100 hover:text-white border hover:-translate-y-[1px] active:translate-y-0";
-        aasBtn.onmouseenter = () => { aasBtn.style.backgroundColor = 'rgba(255, 255, 255, 0.15)'; aasBtn.style.color = '#ffffff'; };
-        aasBtn.onmouseleave = () => { aasBtn.style.backgroundColor = 'transparent'; aasBtn.style.color = 'rgba(255, 255, 255, 0.75)'; };
-      } else {
-        aasBtn.style.backgroundColor = currentTheme.accent;
-        aasBtn.style.borderColor = currentTheme.accentDark;
-        aasBtn.style.color = '#ffffff';
-        aasBtn.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.2)';
-        aasBtn.className = "px-1.5 sm:px-2.5 py-0.5 sm:py-1 rounded-md text-[11px] sm:text-xs font-bold transition-all cursor-pointer flex items-center gap-1 border shadow-xs hover:-translate-y-[1px] active:translate-y-0";
-        aasBtn.onmouseenter = () => { aasBtn.style.backgroundColor = currentTheme.accentDark; };
-        aasBtn.onmouseleave = () => { aasBtn.style.backgroundColor = currentTheme.accent; };
-
-        agBtn.style.backgroundColor = 'transparent';
-        agBtn.style.borderColor = 'transparent';
-        agBtn.style.color = 'rgba(255, 255, 255, 0.75)';
-        agBtn.style.boxShadow = 'none';
-        agBtn.className = "px-1.5 sm:px-2.5 py-0.5 sm:py-1 rounded-md text-[11px] sm:text-xs font-semibold transition-all cursor-pointer flex items-center gap-1 opacity-75 hover:opacity-100 hover:text-white border hover:-translate-y-[1px] active:translate-y-0";
-        agBtn.onmouseenter = () => { agBtn.style.backgroundColor = 'rgba(255, 255, 255, 0.15)'; agBtn.style.color = '#ffffff'; };
-        agBtn.onmouseleave = () => { agBtn.style.backgroundColor = 'transparent'; agBtn.style.color = 'rgba(255, 255, 255, 0.75)'; };
-      }
-
-      // Synchronize Course Deck Portfolio launch button with active track
+      // Synchronize Course Deck Portfolio launch button with active track (AT)
       const deckPortBtn = document.getElementById('deck-portfolio-btn');
       if (deckPortBtn) {
-        deckPortBtn.setAttribute('data-track', currentProgram);
+        deckPortBtn.setAttribute('data-track', 'aas');
         const dot = document.getElementById('deck-port-dot');
         const label = document.getElementById('deck-port-label');
-        if (dot) dot.className = isAg ? "w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" : "w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse";
-        if (label) label.innerText = isAg ? "AG Portfolio" : "AT Portfolio";
+        if (dot) dot.className = "w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse";
+        if (label) label.innerText = "AT Portfolio";
       }
       if (typeof syncPortfolioDrawerTrack === 'function') {
-        syncPortfolioDrawerTrack(currentProgram);
+        syncPortfolioDrawerTrack('aas');
       }
     }
 
     function switchProgram(progKey, targetMod = null, targetCard = null) {
+      if (progKey !== 'aas') return; // Semester 3 is strictly AT (LV125E)
       if (!PROGRAMS_CONFIG[progKey]) return;
       if (progKey === currentProgram && targetMod === null && targetCard === null) return;
 
@@ -341,15 +317,27 @@
       const currentTheme = modulesData[currentModuleIndex];
 
       modulesData.forEach((mod, idx) => {
-        const isSelected = idx === currentModuleIndex;
+        const isDisabled = !!(mod.disabled || idx >= 2);
+        const isSelected = !isDisabled && idx === currentModuleIndex;
         const btn = document.createElement('button');
         btn.type = 'button';
-        btn.setAttribute('aria-pressed', isSelected ? 'true' : 'false');
-        btn.setAttribute('aria-label', `Module 0${idx + 1}: ${mod.subtitle || mod.name}`);
-        btn.setAttribute('title', `Module 0${idx + 1}: ${mod.subtitle || mod.name}`);
 
-        if (isSelected) {
-          // Sharp elevated active module tab (MOD 1 / MOD 2 / MOD 3)
+        if (isDisabled) {
+          btn.disabled = true;
+          btn.setAttribute('aria-disabled', 'true');
+          btn.setAttribute('aria-pressed', 'false');
+          btn.setAttribute('aria-label', `Module 0${idx + 1} (Not scheduled in Semester 3)`);
+          btn.setAttribute('title', `Semester 3 comprises 2 Modules (MOD 1 & MOD 2)`);
+          btn.style.backgroundColor = 'transparent';
+          btn.style.borderColor = 'transparent';
+          btn.style.color = 'rgba(255, 255, 255, 0.3)';
+          btn.style.boxShadow = 'none';
+          btn.className = "flex items-center justify-center px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md text-[11px] sm:text-xs font-semibold tracking-wide transition-all border border-transparent cursor-not-allowed select-none opacity-40";
+        } else if (isSelected) {
+          btn.setAttribute('aria-pressed', 'true');
+          btn.setAttribute('aria-label', `Module 0${idx + 1}: ${mod.subtitle || mod.name}`);
+          btn.setAttribute('title', `Module 0${idx + 1}: ${mod.subtitle || mod.name}`);
+          // Sharp elevated active module tab (MOD 1 / MOD 2)
           btn.style.backgroundColor = currentTheme.accent;
           btn.style.borderColor = currentTheme.accentDark;
           btn.style.color = '#ffffff';
@@ -362,7 +350,10 @@
             btn.style.backgroundColor = currentTheme.accent;
           };
         } else {
-          // Sleek dark cockpit segmented tab (MOD 1 / MOD 2 / MOD 3)
+          btn.setAttribute('aria-pressed', 'false');
+          btn.setAttribute('aria-label', `Module 0${idx + 1}: ${mod.subtitle || mod.name}`);
+          btn.setAttribute('title', `Module 0${idx + 1}: ${mod.subtitle || mod.name}`);
+          // Sleek dark cockpit segmented tab (MOD 1 / MOD 2)
           btn.style.backgroundColor = 'transparent';
           btn.style.borderColor = 'transparent';
           btn.style.color = 'rgba(255, 255, 255, 0.72)';
@@ -380,16 +371,18 @@
 
         btn.innerHTML = `<span class="font-mono font-bold text-[10.5px] sm:text-xs tracking-tight">MOD ${idx + 1}</span>`;
 
-        btn.addEventListener('click', () => {
-          switchModule(idx, 0);
-        });
+        if (!isDisabled) {
+          btn.addEventListener('click', () => {
+            switchModule(idx, 0);
+          });
+        }
 
         container.appendChild(btn);
       });
     }
 
     function switchModule(modIdx, cardIdx = 0) {
-      if (modIdx < 0 || modIdx >= modulesData.length) return;
+      if (modIdx < 0 || modIdx >= 2 || (modulesData[modIdx] && modulesData[modIdx].disabled)) return;
       currentModuleIndex = modIdx;
       currentIndex = cardIdx;
 
@@ -431,7 +424,7 @@
       // Header Main Title & Subheader
       const mainTitle = document.getElementById('deck-main-title');
       if (mainTitle) {
-        mainTitle.textContent = currentProgram === 'aas' ? 'GSEA SEMESTER 1 AT (LV121E)' : 'GSEA SEMESTER 1 AG (LV101E)';
+        mainTitle.textContent = 'GSEA SEMESTER 3 AT (LV125E)';
       }
 
       const subtitle = document.getElementById('deck-subtitle');
@@ -870,9 +863,9 @@
         if (page.isImmersion || (page.tag && page.tag.includes("Immersion"))) {
           dockTitle.textContent = "English Immersion & Destinations";
         } else if (page.isObjectives || page.title === "Semester Objectives") {
-          dockTitle.textContent = "Semester 1 Learning Objectives";
+          dockTitle.textContent = "Semester 3 Learning Objectives";
         } else if (page.isAdmin || currentIndex === 6) {
-          dockTitle.textContent = "GSEA26A Administration Hub";
+          dockTitle.textContent = "GSEA 25A Administration Hub";
         } else if (page.detailsUrl || currentIndex === 5) {
           dockTitle.textContent = "DDRS Sustainability Guide";
         } else if (currentIndex === 4) {
@@ -1376,7 +1369,7 @@
         if (adminRotaTab) adminRotaTab.classList.remove('hidden');
         if (adminPresentationTab) adminPresentationTab.classList.remove('hidden');
 
-        tagEl.textContent = "GSEA26A • Course Admin";
+        tagEl.textContent = "GSEA 25A • Course Admin";
         titleEl.textContent = "Course Admin — Class Groups, Teachers, Weekly Calendar & FE Rotas";
       } else if (isFeSession) {
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
@@ -1508,9 +1501,7 @@
     }
     window.toggleDeckFullScreen = toggleDeckFullScreen;
 
-    window.syncPortfolioDrawerHeader = function(trackKey) {
-      const activeTrack = trackKey || 'ag';
-      const isAg = (activeTrack === 'ag');
+    window.syncPortfolioDrawerHeader = function() {
       const iconBox = document.getElementById('portfolio-drawer-icon');
       const iconAg = document.getElementById('portfolio-drawer-icon-ag');
       const iconAas = document.getElementById('portfolio-drawer-icon-aas');
@@ -1523,39 +1514,27 @@
       const drawerFooterTitle = document.getElementById('drawer-footer-course-title');
       const drawerFooterVersion = document.getElementById('drawer-footer-version-badge');
 
-      if (isAg) {
-        if (iconBox) iconBox.className = "w-8 h-8 rounded-lg flex items-center justify-center shrink-0 text-white bg-emerald-600 shadow-xs";
-        if (iconAg) iconAg.classList.remove("hidden");
-        if (iconAas) iconAas.classList.add("hidden");
-        if (titleEl) titleEl.innerText = "GSEA SEMESTER 1 AG";
-        if (subtitleEl) subtitleEl.innerText = "General English (LV101E) • Formative Learning Portfolio & Self-Evaluation Log";
-        if (drawerBtnAg) drawerBtnAg.className = "px-2 py-1 rounded text-[11px] font-black transition-all cursor-pointer text-white bg-emerald-600 shadow-xs";
-        if (drawerBtnAas) drawerBtnAas.className = "px-2 py-1 rounded text-[11px] font-semibold transition-all cursor-pointer text-white/70 hover:text-white hover:bg-white/10";
-        if (drawerFooterBadge) {
-          drawerFooterBadge.innerText = "AG • LV101E";
-          drawerFooterBadge.className = "px-2 py-0.5 rounded text-[10px] font-mono font-bold text-white bg-emerald-600 shadow-xs shrink-0";
-        }
-        if (drawerFooterTitle) drawerFooterTitle.innerText = "GSEA Semester 1 General English (AG)";
-        if (drawerFooterVersion) drawerFooterVersion.className = "font-mono text-emerald-400 font-bold bg-black/40 px-2 py-0.5 rounded border border-white/10 text-[10px] sm:text-xs";
-      } else {
-        if (iconBox) iconBox.className = "w-8 h-8 rounded-lg flex items-center justify-center shrink-0 text-white bg-blue-600 shadow-xs";
-        if (iconAg) iconAg.classList.add("hidden");
-        if (iconAas) iconAas.classList.remove("hidden");
-        if (titleEl) titleEl.innerText = "GSEA SEMESTER 1 AT";
-        if (subtitleEl) subtitleEl.innerText = "Technical English (LV121E) • Formative Learning Portfolio & Technical Operations Log";
-        if (drawerBtnAg) drawerBtnAg.className = "px-2 py-1 rounded text-[11px] font-semibold transition-all cursor-pointer text-white/70 hover:text-white hover:bg-white/10";
-        if (drawerBtnAas) drawerBtnAas.className = "px-2 py-1 rounded text-[11px] font-black transition-all cursor-pointer text-white bg-blue-600 shadow-xs";
-        if (drawerFooterBadge) {
-          drawerFooterBadge.innerText = "AT • LV121E";
-          drawerFooterBadge.className = "px-2 py-0.5 rounded text-[10px] font-mono font-bold text-white bg-blue-600 shadow-xs shrink-0";
-        }
-        if (drawerFooterTitle) drawerFooterTitle.innerText = "GSEA Semester 1 Technical English (AT)";
-        if (drawerFooterVersion) drawerFooterVersion.className = "font-mono text-blue-400 font-bold bg-black/40 px-2 py-0.5 rounded border border-white/10 text-[10px] sm:text-xs";
+      if (iconBox) iconBox.className = "w-8 h-8 rounded-lg flex items-center justify-center shrink-0 text-white bg-blue-600 shadow-xs";
+      if (iconAg) iconAg.classList.add("hidden");
+      if (iconAas) iconAas.classList.remove("hidden");
+      if (titleEl) titleEl.innerText = "GSEA SEMESTER 3 AT";
+      if (subtitleEl) subtitleEl.innerText = "Technical English (LV125E) • Formative Learning Portfolio & Technical Operations Log";
+      if (drawerBtnAg) {
+        drawerBtnAg.disabled = true;
+        drawerBtnAg.setAttribute('aria-disabled', 'true');
+        drawerBtnAg.className = "px-2 py-1 rounded text-[11px] font-semibold transition-all cursor-not-allowed text-white/30 opacity-40 select-none";
       }
+      if (drawerBtnAas) drawerBtnAas.className = "px-2 py-1 rounded text-[11px] font-black transition-all cursor-pointer text-white bg-blue-600 shadow-xs";
+      if (drawerFooterBadge) {
+        drawerFooterBadge.innerText = "AT • LV125E";
+        drawerFooterBadge.className = "px-2 py-0.5 rounded text-[10px] font-mono font-bold text-white bg-blue-600 shadow-xs shrink-0";
+      }
+      if (drawerFooterTitle) drawerFooterTitle.innerText = "GSEA Semester 3 Technical English (AT)";
+      if (drawerFooterVersion) drawerFooterVersion.className = "font-mono text-blue-400 font-bold bg-black/40 px-2 py-0.5 rounded border border-white/10 text-[10px] sm:text-xs";
     };
 
-    window.openPortfolioDrawer = function(trackKey) {
-      const activeTrack = trackKey || currentProgram || 'ag';
+    window.openPortfolioDrawer = function() {
+      const activeTrack = 'aas';
       const targetUrl = `portfolio.html?track=${activeTrack}&_v=1.2.0`;
 
       const modalEl = document.getElementById('deck-portfolio-modal');
@@ -1615,24 +1594,21 @@
     };
 
     window.setDrawerTrack = function(trackKey) {
-      if (trackKey !== 'ag' && trackKey !== 'aas') return;
-      window.syncPortfolioDrawerHeader(trackKey);
+      if (trackKey !== 'aas') return; // Semester 3 is strictly AT (LV125E)
+      window.syncPortfolioDrawerHeader('aas');
       const iframeEl = document.getElementById('portfolio-drawer-iframe');
       if (iframeEl && iframeEl.contentWindow && typeof iframeEl.contentWindow.switchTrack === 'function') {
         try {
-          iframeEl.contentWindow.switchTrack(trackKey, true);
+          iframeEl.contentWindow.switchTrack('aas', true);
         } catch (e) {}
-      }
-      if (typeof switchProgram === 'function' && trackKey !== currentProgram) {
-        switchProgram(trackKey);
       }
     };
 
-    window.syncPortfolioDrawerTrack = function(trackKey) {
+    window.syncPortfolioDrawerTrack = function() {
       const modalEl = document.getElementById('deck-portfolio-modal');
       const isOpen = modalEl && !modalEl.classList.contains('hidden');
       if (isOpen) {
-        window.setDrawerTrack(trackKey);
+        window.setDrawerTrack('aas');
       }
     };
 
@@ -1654,9 +1630,9 @@
     }
 
     function getActiveModalCourseData() {
-      const progKey = modalState.program || currentProgram || 'ag';
+      const progKey = modalState.program || currentProgram || 'aas';
       const rootData = window.COURSE_DATA || {};
-      const progData = rootData[progKey] || rootData.ag || rootData;
+      const progData = rootData[progKey] || rootData.aas || rootData;
       return progData[modalState.modNum] || rootData[modalState.modNum] || {};
     }
 
@@ -1671,10 +1647,6 @@
         renderSemesterObjectivesTab('en', theme);
       } else if (modalState.tab === 'sem_obj_fr') {
         renderSemesterObjectivesTab('fr', theme);
-      } else if (modalState.tab === 'immersion_overview' || modalState.tab === 'immersion') {
-        renderImmersionOverviewTab(theme);
-      } else if (modalState.tab === 'immersion_cities') {
-        renderImmersionCitiesTab(theme);
       } else if (modalState.tab === 'admin_groups') {
         renderAdminGroupsTab(theme);
       } else if (modalState.tab === 'admin_calendar') {
