@@ -10013,8 +10013,667 @@
         return;
       }
     }
+    /* === PROMO_DATA_START === */
+    const ADMIN_PROMO_CONFIG = {
+  "promotion": "GSEA 25A",
+  "semester": 3,
+  "academicYear": "2026-2027",
+  "totalStudents": 30,
+  "numGroups": 3,
+  "trackCode": "LV125E",
+  "trackName": "Technical English (AT)",
+  "totalWeeks": 15,
+  "scheduleSummary": "Wednesdays 13h15 – 15h15",
+  "groups": [
+    {
+      "key": "groupA",
+      "letter": "A",
+      "name": "Group A",
+      "count": 10,
+      "pairTrioBadge": "2 Pairs + 2 Trios",
+      "teacherPlaceholder": "Teacher A (TBC)",
+      "slot": "Wednesday 13h15 - 15h15",
+      "headerBg": "#1e293b",
+      "dotClass": "bg-emerald-400",
+      "students": [
+        "GRPA001",
+        "GRPA002",
+        "GRPA003",
+        "GRPA004",
+        "GRPA005",
+        "GRPA006",
+        "GRPA007",
+        "GRPA008",
+        "GRPA009",
+        "GRPA010"
+      ]
+    },
+    {
+      "key": "groupB",
+      "letter": "B",
+      "name": "Group B",
+      "count": 10,
+      "pairTrioBadge": "2 Pairs + 2 Trios",
+      "teacherPlaceholder": "Teacher B (TBC)",
+      "slot": "Wednesday 13h15 - 15h15",
+      "headerBg": "#c2410c",
+      "dotClass": "bg-amber-400",
+      "students": [
+        "GRPB001",
+        "GRPB002",
+        "GRPB003",
+        "GRPB004",
+        "GRPB005",
+        "GRPB006",
+        "GRPB007",
+        "GRPB008",
+        "GRPB009",
+        "GRPB010"
+      ]
+    },
+    {
+      "key": "groupC",
+      "letter": "C",
+      "name": "Group C",
+      "count": 10,
+      "pairTrioBadge": "2 Pairs + 2 Trios",
+      "teacherPlaceholder": "Teacher C (TBC)",
+      "slot": "Wednesday 13h15 - 15h15",
+      "headerBg": "#334155",
+      "dotClass": "bg-sky-400",
+      "students": [
+        "GRPC001",
+        "GRPC002",
+        "GRPC003",
+        "GRPC004",
+        "GRPC005",
+        "GRPC006",
+        "GRPC007",
+        "GRPC008",
+        "GRPC009",
+        "GRPC010"
+      ]
+    }
+  ]
+};
+    const ADMIN_CALENDAR_SCHEDULES = {
+  "aas": {
+    "code": "LV125E",
+    "name": "Technical English (AT)",
+    "totalWeeks": 15,
+    "dayTime": "Wednesdays 13h15 – 15h15",
+    "faculty": "Teacher A (TBC) (Group A) • Teacher B (TBC) (Group B) • Teacher C (TBC) (Group C)",
+    "modules": [
+      {
+        "num": 1,
+        "title": "Module 1: Documents & Maps (7 Sessions)",
+        "weeks": "W37 – W43",
+        "headerBg": "#1e293b",
+        "sessions": [
+          {
+            "courseWeek": "W01",
+            "week": "W37",
+            "date": "Wed 09 Sep",
+            "title": "Session 1 — Introduction & Aviation Survey",
+            "subtitle": "",
+            "tag": "Teaching Session",
+            "isFe": false,
+            "rooms": {
+              "A": "",
+              "B": "",
+              "C": "",
+              "D": ""
+            }
+          },
+          {
+            "courseWeek": "W02",
+            "week": "W38",
+            "date": "Wed 16 Sep",
+            "title": "Session 2 — Passenger Journey & Airfield Movement",
+            "subtitle": "",
+            "tag": "Teaching Session",
+            "isFe": false,
+            "rooms": {
+              "A": "",
+              "B": "",
+              "C": "",
+              "D": ""
+            }
+          },
+          {
+            "courseWeek": "W03",
+            "week": "W39",
+            "date": "Wed 23 Sep",
+            "title": "Session 3 — Ground Operations & Turnaround",
+            "subtitle": "",
+            "tag": "Teaching Session",
+            "isFe": false,
+            "rooms": {
+              "A": "",
+              "B": "",
+              "C": "",
+              "D": ""
+            }
+          },
+          {
+            "courseWeek": "W04",
+            "week": "W40",
+            "date": "Wed 30 Sep",
+            "title": "Session 4 — Jobs in Aviation",
+            "subtitle": "",
+            "tag": "Teaching Session",
+            "isFe": false,
+            "rooms": {
+              "A": "",
+              "B": "",
+              "C": "",
+              "D": ""
+            }
+          },
+          {
+            "courseWeek": "W05",
+            "week": "W41",
+            "date": "Wed 07 Oct",
+            "title": "Session 5 — Jobs in Aviation",
+            "subtitle": "",
+            "tag": "Teaching Session",
+            "isFe": false,
+            "rooms": {
+              "A": "",
+              "B": "",
+              "C": "",
+              "D": ""
+            }
+          },
+          {
+            "courseWeek": "W06",
+            "week": "W42",
+            "date": "Wed 14 Oct",
+            "title": "Session 6 — Jobs in Aviation",
+            "subtitle": "",
+            "tag": "Teaching Session • Prep FE1",
+            "isFe": false,
+            "rooms": {
+              "A": "",
+              "B": "",
+              "C": "",
+              "D": ""
+            }
+          },
+          {
+            "courseWeek": "W07",
+            "week": "W43",
+            "date": "Wed 21 Oct",
+            "title": "FORMATIVE EVALUATION 1 (FE1) — Oral Tutorials",
+            "subtitle": "Wed 21 Oct • 30-min evaluation slots (Teacher A (TBC) / Teacher B (TBC) / Teacher C (TBC))",
+            "tag": "Grade /20",
+            "isFe": true,
+            "rooms": {
+              "A": "",
+              "B": "",
+              "C": "",
+              "D": ""
+            }
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Module 2: MTF (8 Sessions)",
+        "weeks": "W45 – W02",
+        "headerBg": "#1b382b",
+        "sessions": [
+          {
+            "isHoliday": true,
+            "text": "🍂 Week 44 — Autumn Academic Break (No Classes)"
+          },
+          {
+            "courseWeek": "W08",
+            "week": "W45",
+            "date": "Wed 04 Nov",
+            "title": "Session 1 — Aerodynamics & Flight Principles",
+            "subtitle": "",
+            "tag": "Teaching Session",
+            "isFe": false,
+            "rooms": {
+              "A": "",
+              "B": "",
+              "C": "",
+              "D": ""
+            }
+          },
+          {
+            "courseWeek": "W09",
+            "week": "W46",
+            "date": "Wed 11 Nov",
+            "title": "Session 2 — Aircraft Anatomy: Structure & Systems",
+            "subtitle": "",
+            "tag": "Teaching Session",
+            "isFe": false,
+            "rooms": {
+              "A": "",
+              "B": "",
+              "C": "",
+              "D": ""
+            }
+          },
+          {
+            "courseWeek": "W10",
+            "week": "W47",
+            "date": "Wed 18 Nov",
+            "title": "Session 3 — Commercial Aircraft & Airlines",
+            "subtitle": "",
+            "tag": "Teaching Session",
+            "isFe": false,
+            "rooms": {
+              "A": "",
+              "B": "",
+              "C": "",
+              "D": ""
+            }
+          },
+          {
+            "courseWeek": "W11",
+            "week": "W48",
+            "date": "Wed 25 Nov",
+            "title": "Session 4 — Significant Aviation Accidents & Aircraft Types",
+            "subtitle": "",
+            "tag": "Teaching Session",
+            "isFe": false,
+            "rooms": {
+              "A": "",
+              "B": "",
+              "C": "",
+              "D": ""
+            }
+          },
+          {
+            "courseWeek": "W12",
+            "week": "W49",
+            "date": "Wed 02 Dec",
+            "title": "Session 5 — Significant Aviation Accidents & Aircraft Types",
+            "subtitle": "",
+            "tag": "Teaching Session",
+            "isFe": false,
+            "rooms": {
+              "A": "",
+              "B": "",
+              "C": "",
+              "D": ""
+            }
+          },
+          {
+            "courseWeek": "W13",
+            "week": "W50",
+            "date": "Wed 09 Dec",
+            "title": "Session 6 — Significant Aviation Accidents & Aircraft Types",
+            "subtitle": "",
+            "tag": "Teaching Session",
+            "isFe": false,
+            "rooms": {
+              "A": "",
+              "B": "",
+              "C": "",
+              "D": ""
+            }
+          },
+          {
+            "isHoliday": true,
+            "text": "🎄 Weeks 51 & 52 — Christmas & Winter Vacation (No Classes)"
+          },
+          {
+            "courseWeek": "W14",
+            "week": "W01",
+            "date": "Wed 06 Jan",
+            "title": "Session 7 — Significant Aviation Accidents & Aircraft Types",
+            "subtitle": "",
+            "tag": "Teaching Session • Prep FE2",
+            "isFe": false,
+            "rooms": {
+              "A": "",
+              "B": "",
+              "C": "",
+              "D": ""
+            }
+          },
+          {
+            "courseWeek": "W15",
+            "week": "W02",
+            "date": "Wed 13 Jan",
+            "title": "FORMATIVE EVALUATION 2 (FE2) — Oral Tutorials",
+            "subtitle": "Wed 13 Jan • 30-min evaluation slots (Teacher A (TBC) / Teacher B (TBC) / Teacher C (TBC))",
+            "tag": "Grade /20",
+            "isFe": true,
+            "rooms": {
+              "A": "",
+              "B": "",
+              "C": "",
+              "D": ""
+            }
+          }
+        ]
+      }
+    ]
+  }
+};
+    const ADMIN_ROTA_SCHEDULES = {
+  "aas": {
+    "code": "LV125E",
+    "name": "Technical English (AT)",
+    "dayTime": "Wednesdays 13h15 – 15h15",
+    "feKeys": [
+      1,
+      2
+    ],
+    "fes": {
+      "1": {
+        "num": 1,
+        "title": "FE1 — Module 1 Oral Evaluation",
+        "week": "W43",
+        "dateStr": "Wed 21 Oct",
+        "groups": {
+          "A": {
+            "teacher": "Teacher A (TBC)",
+            "slotSummary": "Wednesday 13h15 - 15h15",
+            "room": "",
+            "slots": [
+              {
+                "num": 1,
+                "time": "13h15 – 13h45",
+                "type": "trio",
+                "students": [
+                  "GRPA009",
+                  "GRPA002",
+                  "GRPA006"
+                ]
+              },
+              {
+                "num": 2,
+                "time": "13h45 – 14h15",
+                "type": "pair",
+                "students": [
+                  "GRPA010",
+                  "GRPA004"
+                ]
+              },
+              {
+                "num": 3,
+                "time": "14h15 – 14h45",
+                "type": "trio",
+                "students": [
+                  "GRPA007",
+                  "GRPA003",
+                  "GRPA005"
+                ]
+              },
+              {
+                "num": 4,
+                "time": "14h45 – 15h15",
+                "type": "pair",
+                "students": [
+                  "GRPA001",
+                  "GRPA008"
+                ]
+              }
+            ]
+          },
+          "B": {
+            "teacher": "Teacher B (TBC)",
+            "slotSummary": "Wednesday 13h15 - 15h15",
+            "room": "",
+            "slots": [
+              {
+                "num": 1,
+                "time": "13h15 – 13h45",
+                "type": "pair",
+                "students": [
+                  "GRPB008",
+                  "GRPB006"
+                ]
+              },
+              {
+                "num": 2,
+                "time": "13h45 – 14h15",
+                "type": "trio",
+                "students": [
+                  "GRPB001",
+                  "GRPB010",
+                  "GRPB007"
+                ]
+              },
+              {
+                "num": 3,
+                "time": "14h15 – 14h45",
+                "type": "pair",
+                "students": [
+                  "GRPB002",
+                  "GRPB009"
+                ]
+              },
+              {
+                "num": 4,
+                "time": "14h45 – 15h15",
+                "type": "trio",
+                "students": [
+                  "GRPB003",
+                  "GRPB004",
+                  "GRPB005"
+                ]
+              }
+            ]
+          },
+          "C": {
+            "teacher": "Teacher C (TBC)",
+            "slotSummary": "Wednesday 13h15 - 15h15",
+            "room": "",
+            "slots": [
+              {
+                "num": 1,
+                "time": "13h15 – 13h45",
+                "type": "pair",
+                "students": [
+                  "GRPC001",
+                  "GRPC003"
+                ]
+              },
+              {
+                "num": 2,
+                "time": "13h45 – 14h15",
+                "type": "trio",
+                "students": [
+                  "GRPC002",
+                  "GRPC005",
+                  "GRPC008"
+                ]
+              },
+              {
+                "num": 3,
+                "time": "14h15 – 14h45",
+                "type": "pair",
+                "students": [
+                  "GRPC004",
+                  "GRPC006"
+                ]
+              },
+              {
+                "num": 4,
+                "time": "14h45 – 15h15",
+                "type": "trio",
+                "students": [
+                  "GRPC007",
+                  "GRPC009",
+                  "GRPC010"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "2": {
+        "num": 2,
+        "title": "FE2 — Module 2 Oral Evaluation",
+        "week": "W02",
+        "dateStr": "Wed 13 Jan",
+        "groups": {
+          "A": {
+            "teacher": "Teacher A (TBC)",
+            "slotSummary": "Wednesday 13h15 - 15h15",
+            "room": "",
+            "slots": [
+              {
+                "num": 1,
+                "time": "13h15 – 13h45",
+                "type": "pair",
+                "students": [
+                  "GRPA008",
+                  "GRPA006"
+                ]
+              },
+              {
+                "num": 2,
+                "time": "13h45 – 14h15",
+                "type": "trio",
+                "students": [
+                  "GRPA001",
+                  "GRPA010",
+                  "GRPA007"
+                ]
+              },
+              {
+                "num": 3,
+                "time": "14h15 – 14h45",
+                "type": "pair",
+                "students": [
+                  "GRPA002",
+                  "GRPA009"
+                ]
+              },
+              {
+                "num": 4,
+                "time": "14h45 – 15h15",
+                "type": "trio",
+                "students": [
+                  "GRPA003",
+                  "GRPA004",
+                  "GRPA005"
+                ]
+              }
+            ]
+          },
+          "B": {
+            "teacher": "Teacher B (TBC)",
+            "slotSummary": "Wednesday 13h15 - 15h15",
+            "room": "",
+            "slots": [
+              {
+                "num": 1,
+                "time": "13h15 – 13h45",
+                "type": "pair",
+                "students": [
+                  "GRPB001",
+                  "GRPB003"
+                ]
+              },
+              {
+                "num": 2,
+                "time": "13h45 – 14h15",
+                "type": "trio",
+                "students": [
+                  "GRPB002",
+                  "GRPB005",
+                  "GRPB008"
+                ]
+              },
+              {
+                "num": 3,
+                "time": "14h15 – 14h45",
+                "type": "pair",
+                "students": [
+                  "GRPB004",
+                  "GRPB006"
+                ]
+              },
+              {
+                "num": 4,
+                "time": "14h45 – 15h15",
+                "type": "trio",
+                "students": [
+                  "GRPB007",
+                  "GRPB009",
+                  "GRPB010"
+                ]
+              }
+            ]
+          },
+          "C": {
+            "teacher": "Teacher C (TBC)",
+            "slotSummary": "Wednesday 13h15 - 15h15",
+            "room": "",
+            "slots": [
+              {
+                "num": 1,
+                "time": "13h15 – 13h45",
+                "type": "trio",
+                "students": [
+                  "GRPC009",
+                  "GRPC002",
+                  "GRPC006"
+                ]
+              },
+              {
+                "num": 2,
+                "time": "13h45 – 14h15",
+                "type": "pair",
+                "students": [
+                  "GRPC010",
+                  "GRPC004"
+                ]
+              },
+              {
+                "num": 3,
+                "time": "14h15 – 14h45",
+                "type": "trio",
+                "students": [
+                  "GRPC007",
+                  "GRPC003",
+                  "GRPC005"
+                ]
+              },
+              {
+                "num": 4,
+                "time": "14h45 – 15h15",
+                "type": "pair",
+                "students": [
+                  "GRPC001",
+                  "GRPC008"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+};
+    /* === PROMO_DATA_END === */
+
+    function renderWeekRoomBadges(rooms, groups) {
+      if (!rooms) return "";
+      const activeBadges = (groups || []).filter(g => rooms[g.letter] && rooms[g.letter].trim() !== "").map(g =>
+        `<span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-mono font-bold bg-slate-100 text-slate-700 border border-slate-200">Grp ${g.letter}: ${rooms[g.letter]}</span>`
+      );
+      if (activeBadges.length === 0) return "";
+      return `<span class="inline-flex flex-wrap items-center gap-1 ml-1.5">${activeBadges.join("")}</span>`;
+    }
+
     function renderAdminGroupsTab(theme) {
-      const bodyEl = document.getElementById('modal-body');
+      const bodyEl = document.getElementById("modal-body");
+      const promo = ADMIN_PROMO_CONFIG;
+      const groups = promo.groups || [];
+      const groupSentence = groups.map(g => `<strong>Group ${g.letter} (${g.count} students)</strong>`).join(", ").replace(/, ([^,]*)$/, ", and $1");
+      const gridColsClass = promo.numGroups === 4 ? "lg:grid-cols-4" : (promo.numGroups === 3 ? "lg:grid-cols-3" : "lg:grid-cols-2");
+      const teacherGridCols = promo.numGroups === 4 ? "md:grid-cols-4" : (promo.numGroups === 3 ? "md:grid-cols-3" : "md:grid-cols-2");
+
       bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Overview Card -->
@@ -10022,9 +10681,9 @@
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide text-white" style="background-color: ${theme.primary};">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                Promotion: GSEA 25A • 30 Students
+                Promotion: ${promo.promotion} • ${promo.totalStudents} Students
               </span>
-              <span class="text-xs font-bold px-2.5 py-0.5 rounded-md border" style="color: ${theme.accent}; background-color: ${theme.highlight || '#fff7ed'}; border-color: ${theme.accent}30;">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded-md border" style="color: ${theme.accent}; background-color: ${theme.highlight || "#fff7ed"}; border-color: ${theme.accent}30;">
                 Official Rosters &amp; Faculty Assignments
               </span>
             </div>
@@ -10032,7 +10691,7 @@
               Class Groups, Assigned Teachers &amp; Course Timetables
             </h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-              Official promotion structure for the academic semester. The GSEA 25A promotion is divided into <strong>Group A (10 students)</strong>, <strong>Group B (10 students)</strong>, and <strong>Group C (10 students)</strong> for all Technical English (AT • LV125E) classroom sessions. For oral Formative Evaluations (FE1, FE2, FE3), students follow dynamic rotating pairings and trios across exactly 4 slots of 30 minutes (2 hours total).
+              Official promotion structure for the academic semester. The ${promo.promotion} promotion is divided into ${groupSentence} for all ${promo.trackName} (${promo.trackCode}) classroom sessions (${promo.totalWeeks} weeks). For oral Formative Evaluations, students follow dynamic rotating pairings and trios across 4 slots of 30 minutes (2 hours total).
             </p>
           </div>
 
@@ -10049,24 +10708,23 @@
             <div class="border border-slate-200 rounded-xl p-4 bg-white shadow-2xs">
               <div class="flex flex-wrap items-center justify-between gap-2 pb-2.5 mb-3 border-b border-slate-100">
                 <div class="flex items-center gap-2">
-                  <span class="px-2 py-0.5 rounded text-white font-mono text-[11px] font-black" style="background-color: ${theme.accent};">LV125E</span>
-                  <span class="text-xs font-bold text-slate-800">Technical English (AT)</span>
+                  <span class="px-2 py-0.5 rounded text-white font-mono text-[11px] font-black" style="background-color: ${theme.accent};">${promo.trackCode}</span>
+                  <span class="text-xs font-bold text-slate-800">${promo.trackName}</span>
                 </div>
-                <span class="text-[11px] font-bold text-slate-500 bg-slate-100 px-2.5 py-0.5 rounded">3 Groups • 10 Students per Group</span>
+                <span class="text-[11px] font-bold text-slate-500 bg-slate-100 px-2.5 py-0.5 rounded">${promo.numGroups} Groups • ${promo.totalWeeks} Weeks</span>
               </div>
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
-                <div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-50 border border-slate-100">
-                  <span class="font-bold text-slate-700">Group A Teacher</span>
-                  <span class="font-bold text-slate-900 bg-white px-2.5 py-1 rounded shadow-2xs border border-slate-200">Teacher A (TBC)</span>
-                </div>
-                <div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-50 border border-slate-100">
-                  <span class="font-bold text-slate-700">Group B Teacher</span>
-                  <span class="font-bold text-slate-900 bg-white px-2.5 py-1 rounded shadow-2xs border border-slate-200">Teacher B (TBC)</span>
-                </div>
-                <div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-50 border border-slate-100">
-                  <span class="font-bold text-slate-700">Group C Teacher</span>
-                  <span class="font-bold text-slate-900 bg-white px-2.5 py-1 rounded shadow-2xs border border-slate-200">Teacher C (TBC)</span>
-                </div>
+              <div class="grid grid-cols-1 ${teacherGridCols} gap-3 text-xs">
+                ${groups.map(g => `
+                <div class="flex flex-col justify-between p-2.5 rounded-lg bg-slate-50 border border-slate-100 gap-1">
+                  <div class="flex items-center justify-between">
+                    <span class="font-bold text-slate-700">Group ${g.letter} Teacher</span>
+                    <span class="font-bold text-slate-900 bg-white px-2.5 py-1 rounded shadow-2xs border border-slate-200">${g.teacherPlaceholder}</span>
+                  </div>
+                  <div class="text-[11px] text-slate-500 font-medium flex items-center justify-between pt-1 border-t border-slate-200/60">
+                    <span>Weekly Slot:</span>
+                    <span class="font-mono font-bold text-slate-700">${g.slot}</span>
+                  </div>
+                </div>`).join("")}
               </div>
             </div>
 
@@ -10076,7 +10734,7 @@
                 <svg class="w-4 h-4 text-slate-500 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 Course Coordination &amp; Administration: <strong>Phil PARRIS (LH/LAN)</strong> • <span class="font-mono text-slate-500 font-bold">v1.0.0</span>
               </span>
-              <span class="text-slate-400 text-[11px]">Academic Year 2026–2027</span>
+              <span class="text-slate-400 text-[11px]">Academic Year ${promo.academicYear}</span>
             </div>
 
             <!-- Pedagogical Transparency & AI Disclosure Notice -->
@@ -10097,12 +10755,12 @@
             <div class="space-y-1">
               <span class="font-bold block">Dynamic Formative Evaluation (FE) Rotations:</span>
               <p class="text-[11px] text-amber-900 leading-relaxed">
-                To ensure variety in group work and timeslot fairness, groups do <strong>not</strong> have fixed pairs or trios. Each group of 10 students (Group A, Group B, and Group C) rotates across 2 pairs + 2 trios (4 slots = 2h). Every student experiences different peers and rotates between early and late slots across each Formative Evaluation. Switch to the <strong>FE Tutorial Rotas</strong> tab to view your complete evaluation schedule.
+                To ensure variety in group work and timeslot fairness, groups do <strong>not</strong> have fixed pairs or trios. Each group rotates across 4 slots of 30 minutes (2 hours total). Every student experiences different peers and rotates between early and late slots across each Formative Evaluation. Switch to the <strong>FE Tutorial Rotas</strong> tab to view your complete evaluation schedule.
               </p>
             </div>
           </div>
 
-          <!-- Student Rosters (3-Column Tables) -->
+          <!-- Student Rosters -->
           <div class="space-y-3">
             <div class="flex items-center justify-between">
               <div class="flex items-center gap-2">
@@ -10111,18 +10769,18 @@
                   Official Student Group Lists
                 </h4>
               </div>
-              <span class="text-[11px] text-slate-400">30 Total Students</span>
+              <span class="text-[11px] text-slate-400">${promo.totalStudents} Total Students</span>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-              <!-- Group A Table -->
+            <div class="grid grid-cols-1 ${gridColsClass} gap-4">
+              ${groups.map(g => `
               <div class="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-2xs">
-                <div class="p-3 text-white flex items-center justify-between" style="background-color: ${theme.primary};">
+                <div class="p-3 text-white flex items-center justify-between" style="background-color: ${g.headerBg};">
                   <div class="flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                    <h5 class="text-xs font-bold uppercase tracking-wider">Group A (10 Students)</h5>
+                    <span class="w-2 h-2 rounded-full ${g.dotClass}"></span>
+                    <h5 class="text-xs font-bold uppercase tracking-wider">Group ${g.letter} (${g.count} Students)</h5>
                   </div>
-                  <span class="text-[10px] bg-white/20 px-2 py-0.5 rounded font-mono font-bold">2 Pairs + 2 Trios</span>
+                  <span class="text-[10px] bg-white/20 px-2 py-0.5 rounded font-mono font-bold">${g.pairTrioBadge}</span>
                 </div>
                 <div class="overflow-x-auto">
                   <table class="w-full text-left text-xs border-collapse">
@@ -10134,88 +10792,15 @@
                       </tr>
                     </thead>
                     <tbody class="divide-y divide-slate-100 text-slate-700">
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">01</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPA001</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">02</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPA002</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">03</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPA003</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">04</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPA004</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">05</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPA005</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">06</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPA006</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">07</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPA007</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">08</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPA008</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">09</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPA009</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">10</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPA010</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
+                      ${g.students.map((sId, idx) => {
+                        const anonId = `GRP${g.letter}${String(idx + 1).padStart(3, "0")}`;
+                        const displayLabel = (sId !== anonId) ? `${sId} (${anonId})` : sId;
+                        return `<tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">${String(idx + 1).padStart(2, "0")}</td><td class="py-2 px-3 font-mono font-bold text-slate-800">${displayLabel}</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>`;
+                      }).join("")}
                     </tbody>
                   </table>
                 </div>
-              </div>
-
-              <!-- Group B Table -->
-              <div class="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-2xs">
-                <div class="p-3 text-white flex items-center justify-between" style="background-color: ${theme.accentDark || theme.accent};">
-                  <div class="flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-amber-400"></span>
-                    <h5 class="text-xs font-bold uppercase tracking-wider">Group B (10 Students)</h5>
-                  </div>
-                  <span class="text-[10px] bg-white/20 px-2 py-0.5 rounded font-mono font-bold">2 Pairs + 2 Trios</span>
-                </div>
-                <div class="overflow-x-auto">
-                  <table class="w-full text-left text-xs border-collapse">
-                    <thead>
-                      <tr class="bg-slate-50 text-slate-500 border-b border-slate-200 text-[11px]">
-                        <th class="py-2 px-3 w-10 font-bold">#</th>
-                        <th class="py-2 px-3 font-bold">Student Identifier</th>
-                        <th class="py-2 px-3 font-bold text-right">FE Rota</th>
-                      </tr>
-                    </thead>
-                    <tbody class="divide-y divide-slate-100 text-slate-700">
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">01</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPB001</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">02</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPB002</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">03</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPB003</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">04</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPB004</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">05</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPB005</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">06</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPB006</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">07</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPB007</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">08</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPB008</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">09</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPB009</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">10</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPB010</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-
-              <!-- Group C Table -->
-              <div class="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-2xs">
-                <div class="p-3 text-white flex items-center justify-between bg-slate-700">
-                  <div class="flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-sky-400"></span>
-                    <h5 class="text-xs font-bold uppercase tracking-wider">Group C (10 Students)</h5>
-                  </div>
-                  <span class="text-[10px] bg-white/20 px-2 py-0.5 rounded font-mono font-bold">2 Pairs + 2 Trios</span>
-                </div>
-                <div class="overflow-x-auto">
-                  <table class="w-full text-left text-xs border-collapse">
-                    <thead>
-                      <tr class="bg-slate-50 text-slate-500 border-b border-slate-200 text-[11px]">
-                        <th class="py-2 px-3 w-10 font-bold">#</th>
-                        <th class="py-2 px-3 font-bold">Student Identifier</th>
-                        <th class="py-2 px-3 font-bold text-right">FE Rota</th>
-                      </tr>
-                    </thead>
-                    <tbody class="divide-y divide-slate-100 text-slate-700">
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">01</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPC001</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">02</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPC002</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">03</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPC003</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">04</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPC004</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">05</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPC005</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">06</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPC006</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">07</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPC007</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">08</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPC008</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">09</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPC009</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                      <tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">10</td><td class="py-2 px-3 font-mono font-bold text-slate-800">GRPC010</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
+              </div>`).join("")}
             </div>
           </div>
 
@@ -10235,138 +10820,40 @@
       `;
     }
 
-    const ADMIN_CALENDAR_SCHEDULES = {
-      ag: {
-        code: "LV101E",
-        name: "General English (AG)",
-        dayTime: "Fridays 08h00 – 10h00",
-        faculty: "Geri MIDDLETON (Group A) & Penny WRIGHT (Group B)",
-        modules: [
-          {
-            num: 1,
-            title: "Module 1: Travel, Transport & Society",
-            weeks: "Weeks 44 – 48",
-            headerBg: "#1e293b",
-            sessions: [
-              { week: "W44", date: "Fri 30 Oct", title: "Session 1 — Introduction & Travel Anecdotes", tag: "Teaching Session", isFe: false },
-              { week: "W45", date: "Fri 06 Nov", title: "Session 2 — Evolution of Transport", tag: "Teaching Session", isFe: false },
-              { week: "W46", date: "Fri 13 Nov", title: "Session 3 — Overtourism", tag: "Teaching Session", isFe: false },
-              { week: "W47", date: "Fri 20 Nov", title: "Session 4 — Sustainable and Eco-tourism", tag: "Teaching Session • Prep FE1", isFe: false },
-              { week: "W48", date: "Fri 27 Nov", title: "FORMATIVE EVALUATION 1 (FE1) — Oral Tutorials", subtitle: "Fri 27 Nov • 30-min evaluation slots (Geri MIDDLETON / Penny WRIGHT)", tag: "Grade /20", isFe: true }
-            ]
-          },
-          {
-            num: 2,
-            title: "Module 2: Weather, Environment & Ecological Transition",
-            weeks: "Weeks 49 – Week 3",
-            headerBg: "#1b382b",
-            sessions: [
-              { week: "W49", date: "Fri 04 Dec", title: "Session 1 — Extreme Weather", tag: "Teaching Session", isFe: false },
-              { week: "W50", date: "Fri 11 Dec", title: "Session 2 — Sustainable Cities", tag: "Teaching Session", isFe: false },
-              { isHoliday: true, text: "🎄 Weeks 51 & 52 — Christmas & Winter Vacation (No Classes)" },
-              { week: "W01", date: "Fri 08 Jan", title: "Session 3 — Building and Supporting Arguments", tag: "Teaching Session", isFe: false },
-              { week: "W02", date: "Fri 15 Jan", title: "Session 4 — Biodiversity in Urban Areas and Airports", tag: "Teaching Session • Prep FE2", isFe: false },
-              { week: "W03", date: "Fri 22 Jan", title: "FORMATIVE EVALUATION 2 (FE2) — Climate Resilience Redesign (Airport / City)", subtitle: "Fri 22 Jan • 30-min evaluation slots (Geri MIDDLETON / Penny WRIGHT)", tag: "Grade /20", isFe: true }
-            ]
-          },
-          {
-            num: 3,
-            title: "Module 3: Innovation, Society & Emerging Technologies",
-            weeks: "Weeks 4 – 8",
-            headerBg: "#1a2238",
-            sessions: [
-              { week: "W04", date: "Fri 29 Jan", title: "Session 1 — Everyday AI & Workplace Automation", tag: "Teaching Session", isFe: false },
-              { week: "W05", date: "Fri 05 Feb", title: "Session 2 — Future Mobility & Clean Energy Transport", tag: "Teaching Session", isFe: false },
-              { week: "W06", date: "Fri 12 Feb", title: "Session 3 — Technology Ethics & Automated Decisions in AI", tag: "Teaching Session", isFe: false },
-              { week: "W07", date: "Fri 19 Feb", title: "Session 4 — Biometrics, Digital IDs & Passenger Journey", tag: "Teaching Session • Prep FE3", isFe: false },
-              { week: "W08", date: "Fri 26 Feb", title: "FORMATIVE EVALUATION 3 (FE3) — Emerging Technology Presentation (Aviation / Non-Aviation)", subtitle: "Fri 26 Feb • 30-min evaluation slots (Geri MIDDLETON / Penny WRIGHT)", tag: "Grade /20", isFe: true },
-            ]
-          }
-        ]
-      },
-      aas: {
-        code: "LV121E",
-        name: "Technical English (AT)",
-        dayTime: "Wednesdays 13h15 – 15h15",
-        faculty: "Tracy NEILL (Group A) & Ally HEWETT (Group B)",
-        modules: [
-          {
-            num: 1,
-            title: "Module 1: Aerodromes, Air Traffic & Surface Operations",
-            weeks: "Weeks 44 – 48",
-            headerBg: "#1e293b",
-            sessions: [
-              { week: "W44", date: "Wed 28 Oct", title: "Session 1 — Introduction & Aviation Survey", tag: "Teaching Session", isFe: false },
-              { week: "W45", date: "Wed 04 Nov", title: "Session 2 — Passenger Journey & Airfield Movement", tag: "Teaching Session", isFe: false },
-              { week: "W46", date: "Wed 11 Nov", title: "Session 3 — Ground Operations & Turnaround", tag: "Teaching Session", isFe: false },
-              { week: "W47", date: "Wed 18 Nov", title: "Session 4 — Air Traffic Control & Surface Movement", tag: "Teaching Session • Prep FE1", isFe: false },
-              { week: "W48", date: "Wed 25 Nov", title: "FORMATIVE EVALUATION 1 (FE1) — Oral Tutorials", subtitle: "Wed 25 Nov • 30-min evaluation slots (Tracy NEILL / Ally HEWETT)", tag: "Grade /20", isFe: true }
-            ]
-          },
-          {
-            num: 2,
-            title: "Module 2: Aircraft & Aerodynamics",
-            weeks: "Weeks 49 – Week 3",
-            headerBg: "#1b382b",
-            sessions: [
-              { week: "W49", date: "Wed 02 Dec", title: "Session 1 — Aerodynamics & Flight Principles", tag: "Teaching Session", isFe: false },
-              { week: "W50", date: "Wed 09 Dec", title: "Session 2 — Aircraft Anatomy: Structure & Systems", tag: "Teaching Session", isFe: false },
-              { isHoliday: true, text: "🎄 Weeks 51 & 52 — Christmas & Winter Vacation (No Classes)" },
-              { week: "W01", date: "Wed 06 Jan", title: "Session 3 — Commercial Aircraft & Airlines", tag: "Teaching Session", isFe: false },
-              { week: "W02", date: "Wed 13 Jan", title: "Session 4 — Significant Aviation Accidents & Aircraft Types", tag: "Teaching Session • Prep FE2", isFe: false },
-              { week: "W03", date: "Wed 20 Jan", title: "FORMATIVE EVALUATION 2 (FE2) — Aircraft & Airlines Profile", subtitle: "Wed 20 Jan • 30-min evaluation slots (Tracy NEILL / Ally HEWETT)", tag: "Grade /20", isFe: true }
-            ]
-          },
-          {
-            num: 3,
-            title: "Module 3: Health, Meteorology, Safety & Security",
-            weeks: "Weeks 4 – 8",
-            headerBg: "#1a2238",
-            sessions: [
-              { week: "W04", date: "Wed 27 Jan", title: "Session 1 — Health & Human Factors in Aviation", tag: "Teaching Session", isFe: false },
-              { week: "W05", date: "Wed 03 Feb", title: "Session 2 — Meteorology & Severe Weather in Aviation", tag: "Teaching Session", isFe: false },
-              { week: "W06", date: "Wed 10 Feb", title: "Session 3 — Aviation Safety vs. Security: Airport & Aircraft Checks", tag: "Teaching Session", isFe: false },
-              { week: "W07", date: "Wed 17 Feb", title: "Session 4 — Global Semester Review & 3-Team Quiz", tag: "Teaching Session • Prep FE3", isFe: false },
-              { week: "W08", date: "Wed 24 Feb", title: "FORMATIVE EVALUATION 3 (FE3) — Aviation Current Events & Press Briefing", subtitle: "Wed 24 Feb • 30-min evaluation slots (Tracy NEILL / Ally HEWETT)", tag: "Grade /20", isFe: true }
-            ]
-          }
-        ]
-      }
-    };
-
     window.adminCalendarState = window.adminCalendarState || {
-      course: 'ag'
+      course: "aas"
     };
 
     window.setAdminCalendarCourse = function(courseKey) {
-      window.adminCalendarState.course = courseKey;
+      if (courseKey === "ag") return; // AG disabled in Semester 3
+      window.adminCalendarState.course = "aas";
       const theme = modulesData[modalState.modNum - 1] || MODULE_THEMES[1];
       renderAdminCalendarTab(theme);
     };
 
     function renderAdminCalendarTab(theme) {
-      const bodyEl = document.getElementById('modal-body');
-      const activeCalKey = window.adminCalendarState.course || 'ag';
-      const calSched = ADMIN_CALENDAR_SCHEDULES[activeCalKey] || ADMIN_CALENDAR_SCHEDULES.ag;
+      const bodyEl = document.getElementById("modal-body");
+      const promo = ADMIN_PROMO_CONFIG;
+      const calSched = ADMIN_CALENDAR_SCHEDULES.aas;
 
       bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Overview Card -->
           <div class="bg-gradient-to-r from-slate-50 to-orange-50/40 border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide text-white" style="background-color: ${activeCalKey === 'ag' ? theme.primary : '#ea580c'};">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide text-white" style="background-color: #ea580c;">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                Semester 1 Schedule • Start Week 44
+                Semester ${promo.semester} Schedule • ${calSched.totalWeeks} Weeks (${promo.promotion})
               </span>
-              <span class="text-xs font-bold px-2.5 py-0.5 rounded-md border" style="color: ${theme.accent}; background-color: ${theme.highlight || '#fff7ed'}; border-color: ${theme.accent}30;">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded-md border" style="color: ${theme.accent}; background-color: ${theme.highlight || "#fff7ed"}; border-color: ${theme.accent}30;">
                 ${calSched.code} (${calSched.dayTime})
               </span>
             </div>
             <h3 class="text-base sm:text-lg font-bold text-slate-800">
-              Weekly Course Calendar &amp; Evaluation Milestones
+              Weekly Course Calendar, Room Allocations &amp; Evaluation Milestones
             </h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-              Teaching sessions begin officially in <strong>Week 44</strong>. Each module runs for 4 consecutive teaching weeks followed by a dedicated Formative Evaluation (FE) tutorial week in 30-minute pair/trio slots.
+              Complete ${calSched.totalWeeks}-week progression across <strong>Module 1 (Documents &amp; Maps — 7 Sessions)</strong> and <strong>Module 2 (MTF — 8 Sessions)</strong>. Each module concludes with a Formative Evaluation (FE) tutorial week in 30-minute rotating pair/trio slots.
             </p>
           </div>
 
@@ -10374,13 +10861,13 @@
           <div class="bg-white border border-slate-200 rounded-xl p-3 sm:p-4 shadow-2xs">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
               <div>
-                <span class="block text-[10px] font-black uppercase tracking-wider text-slate-400 mb-1.5">Select Course Track Calendar:</span>
+                <span class="block text-[10px] font-black uppercase tracking-wider text-slate-400 mb-1.5">Course Track Calendar:</span>
                 <div class="inline-flex rounded-lg border border-slate-200 p-0.5 bg-slate-50">
-                  <button type="button" onclick="setAdminCalendarCourse('ag')" class="px-3.5 py-1.5 rounded-md text-xs font-bold transition-all cursor-pointer ${activeCalKey === 'ag' ? 'bg-slate-800 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'}">
-                    General English (AG • LV101E)
+                  <button type="button" disabled aria-disabled="true" title="General English (AG) disabled in Semester 3" class="px-3.5 py-1.5 rounded-md text-xs font-bold text-slate-400 opacity-45 cursor-not-allowed select-none">
+                    General English (AG)
                   </button>
-                  <button type="button" onclick="setAdminCalendarCourse('aas')" class="px-3.5 py-1.5 rounded-md text-xs font-bold transition-all cursor-pointer ${activeCalKey === 'aas' ? 'bg-orange-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'}">
-                    Technical English (AT • LV121E)
+                  <button type="button" class="px-3.5 py-1.5 rounded-md text-xs font-bold transition-all cursor-pointer bg-orange-600 text-white shadow-xs">
+                    ${calSched.name} (${calSched.code})
                   </button>
                 </div>
               </div>
@@ -10392,7 +10879,7 @@
             <!-- Active Track Schedule & Faculty Banner -->
             <div class="bg-slate-800 text-white p-3.5 sm:p-4 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-xs border border-slate-700/60">
               <div class="flex items-center gap-3">
-                <span class="px-2.5 py-1 rounded font-mono font-black text-xs ${activeCalKey === 'ag' ? 'bg-slate-700 text-amber-300 border border-amber-300/30' : 'bg-orange-700 text-amber-200 border border-amber-300/30'}">
+                <span class="px-2.5 py-1 rounded font-mono font-black text-xs bg-orange-700 text-amber-200 border border-amber-300/30">
                   ${calSched.code}
                 </span>
                 <div>
@@ -10405,7 +10892,7 @@
                 </div>
               </div>
               <span class="self-start sm:self-auto px-2.5 py-1 rounded text-[11px] font-mono font-bold bg-white/10 text-slate-200 border border-white/15">
-                Weeks 44 – 08 • 3 Modules + 3 FEs
+                ${calSched.totalWeeks} Weeks • 2 Modules + 2 FEs
               </span>
             </div>
 
@@ -10426,14 +10913,15 @@
                         </div>
                       `;
                     }
+                    const roomBadgesHtml = renderWeekRoomBadges(s.rooms, promo.groups);
                     if (s.isFe) {
                       return `
-                        <div class="p-3.5 flex items-center justify-between bg-amber-50/70 border-l-4 border-amber-500">
+                        <div class="p-3.5 flex flex-wrap items-center justify-between gap-2 bg-amber-50/70 border-l-4 border-amber-500">
                           <div class="flex items-center gap-3">
                             <span class="px-2 py-1 rounded font-mono text-[10px] font-black text-white bg-amber-600">${s.week}</span>
                             <div>
                               <span class="font-bold text-amber-950 block">${s.title}</span>
-                              <span class="text-amber-800 text-[11px]">${s.subtitle}</span>
+                              <span class="text-amber-800 text-[11px] flex flex-wrap items-center gap-1">${s.subtitle}${roomBadgesHtml}</span>
                             </div>
                           </div>
                           <span class="px-2.5 py-1 rounded text-[10px] font-bold bg-amber-200 text-amber-900 border border-amber-300">${s.tag}</span>
@@ -10441,121 +10929,34 @@
                       `;
                     }
                     return `
-                      <div class="p-3 flex items-center justify-between hover:bg-slate-50/70">
+                      <div class="p-3 flex flex-wrap items-center justify-between gap-2 hover:bg-slate-50/70">
                         <div class="flex items-center gap-3">
                           <span class="px-2 py-1 rounded font-mono text-[10px] font-bold bg-slate-100 text-slate-700">${s.week}</span>
                           <div>
                             <span class="font-bold text-slate-800 block">${s.title}</span>
-                            <span class="text-slate-500 text-[11px]">${s.date} • ${calSched.dayTime}</span>
+                            <span class="text-slate-500 text-[11px] flex flex-wrap items-center gap-1">${s.date} • ${calSched.dayTime}${roomBadgesHtml}</span>
                           </div>
                         </div>
                         <span class="text-slate-500 font-medium">${s.tag}</span>
                       </div>
                     `;
-                  }).join('')}
+                  }).join("")}
                 </div>
               </div>
-            `).join('')}
-
-            <!-- Weeks 9–12 Wrap up -->
-            <div class="p-3.5 rounded-xl border border-slate-200 bg-slate-50 flex items-center justify-between text-xs text-slate-600">
-              <span class="font-medium">
-                <strong>Weeks 9–12:</strong> Independent Portfolio Completion, TOEIC Verification &amp; Summative Examination Period.
-              </span>
-              <span class="px-2.5 py-0.5 rounded text-[10px] font-bold bg-slate-200 text-slate-700 font-mono">End of S1</span>
-            </div>
+            `).join("")}
           </div>
         </div>
       `;
     }
 
-    const ADMIN_ROTA_SCHEDULES = {
-      aas: {
-        code: "LV125E",
-        name: "Technical English (AT)",
-        dayTime: "Wednesdays 13h15 – 15h15",
-        roomNote: "Wednesday Session • 2 Hours (4 Slots of 30 min)",
-        fes: {
-          1: {
-            title: "FE1 — Module 1 Oral Evaluation",
-            week: "Week 48",
-            dateStr: "Wednesday 25 November 2026",
-            groupA: {
-              teacher: "Tracy NEILL",
-              slots: [
-                { num: 1, time: "13h15 – 13h45", type: "pair", students: ["GRPA001", "GRPA003"] },
-                { num: 2, time: "13h45 – 14h15", type: "trio", students: ["GRPA002", "GRPA005", "GRPA008"] },
-                { num: 3, time: "14h15 – 14h45", type: "pair", students: ["GRPA004", "GRPA006"] },
-                { num: 4, time: "14h45 – 15h15", type: "trio", students: ["GRPA007", "GRPA009", "GRPA010"] }
-              ]
-            },
-            groupB: {
-              teacher: "Ally HEWETT",
-              slots: [
-                { num: 1, time: "13h15 – 13h45", type: "pair", students: ["GRPB001", "GRPB004"] },
-                { num: 2, time: "13h45 – 14h15", type: "pair", students: ["GRPB002", "GRPB006"] },
-                { num: 3, time: "14h15 – 14h45", type: "pair", students: ["GRPB003", "GRPB007"] },
-                { num: 4, time: "14h45 – 15h15", type: "trio", students: ["GRPB005", "GRPB008", "GRPB009"] }
-              ]
-            }
-          },
-          2: {
-            title: "FE2 — Module 2 Oral Evaluation",
-            week: "Week 03",
-            dateStr: "Wednesday 20 January 2027",
-            groupA: {
-              teacher: "Tracy NEILL",
-              slots: [
-                { num: 1, time: "13h15 – 13h45", type: "trio", students: ["GRPA009", "GRPA002", "GRPA006"] },
-                { num: 2, time: "13h45 – 14h15", type: "pair", students: ["GRPA010", "GRPA004"] },
-                { num: 3, time: "14h15 – 14h45", type: "trio", students: ["GRPA007", "GRPA003", "GRPA005"] },
-                { num: 4, time: "14h45 – 15h15", type: "pair", students: ["GRPA001", "GRPA008"] }
-              ]
-            },
-            groupB: {
-              teacher: "Ally HEWETT",
-              slots: [
-                { num: 1, time: "13h15 – 13h45", type: "pair", students: ["GRPB008", "GRPB002"] },
-                { num: 2, time: "13h45 – 14h15", type: "trio", students: ["GRPB009", "GRPB003", "GRPB001"] },
-                { num: 3, time: "14h15 – 14h45", type: "pair", students: ["GRPB005", "GRPB007"] },
-                { num: 4, time: "14h45 – 15h15", type: "pair", students: ["GRPB004", "GRPB006"] }
-              ]
-            }
-          },
-          3: {
-            title: "FE3 — Module 3 Oral Evaluation",
-            week: "Week 08",
-            dateStr: "Wednesday 24 February 2027",
-            groupA: {
-              teacher: "Tracy NEILL",
-              slots: [
-                { num: 1, time: "13h15 – 13h45", type: "pair", students: ["GRPA008", "GRPA006"] },
-                { num: 2, time: "13h45 – 14h15", type: "trio", students: ["GRPA001", "GRPA010", "GRPA007"] },
-                { num: 3, time: "14h15 – 14h45", type: "pair", students: ["GRPA002", "GRPA009"] },
-                { num: 4, time: "14h45 – 15h15", type: "trio", students: ["GRPA003", "GRPA004", "GRPA005"] }
-              ]
-            },
-            groupB: {
-              teacher: "Ally HEWETT",
-              slots: [
-                { num: 1, time: "13h15 – 13h45", type: "pair", students: ["GRPB007", "GRPB009"] },
-                { num: 2, time: "13h45 – 14h15", type: "pair", students: ["GRPB005", "GRPB001"] },
-                { num: 3, time: "14h15 – 14h45", type: "trio", students: ["GRPB006", "GRPB008", "GRPB004"] },
-                { num: 4, time: "14h45 – 15h15", type: "pair", students: ["GRPB002", "GRPB003"] }
-              ]
-            }
-          }
-        }
-      }
-    };
-
     window.adminRotaState = window.adminRotaState || {
-      course: 'aas',
+      course: "aas",
       fe: 1
     };
 
     window.setAdminRotaCourse = function(courseKey) {
-      window.adminRotaState.course = courseKey;
+      if (courseKey === "ag") return;
+      window.adminRotaState.course = "aas";
       const theme = modulesData[modalState.modNum - 1] || MODULE_THEMES[1];
       renderAdminRotaTab(theme);
     };
@@ -10567,18 +10968,19 @@
     };
 
     function renderAdminRotaTab(theme) {
-      const bodyEl = document.getElementById('modal-body');
-      const activeCourseKey = 'aas';
-      const activeFeNum = window.adminRotaState.fe || 1;
+      const bodyEl = document.getElementById("modal-body");
+      const promo = ADMIN_PROMO_CONFIG;
       const courseSched = ADMIN_ROTA_SCHEDULES.aas;
-      const feData = courseSched.fes[activeFeNum] || courseSched.fes[1];
+      const feKeys = courseSched.feKeys || [1, 2];
 
       const renderSlotStudents = (students) => {
-        if (students.length === 2) {
-          return `${students[0]} &amp; ${students[1]}`;
-        }
-        return `${students[0]}, ${students[1]} &amp; ${students[2]}`;
+        if (!students || students.length === 0) return "-";
+        if (students.length === 1) return students[0];
+        if (students.length === 2) return `${students[0]} &amp; ${students[1]}`;
+        return `${students.slice(0, -1).join(", ")} &amp; ${students[students.length - 1]}`;
       };
+
+      const feHeaderPills = feKeys.map(k => `FE${k} (${courseSched.fes[k].week})`).join(" • ");
 
       bodyEl.innerHTML = `
         <div class="space-y-6">
@@ -10587,9 +10989,9 @@
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide text-white" style="background-color: ${theme.primary};">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                Official Formative Evaluation Rota • GSEA 25A
+                Official Formative Evaluation Rota • ${promo.promotion}
               </span>
-              <span class="text-xs font-bold px-2.5 py-0.5 rounded-md border" style="color: ${theme.accent}; background-color: ${theme.highlight || '#fff7ed'}; border-color: ${theme.accent}30;">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded-md border" style="color: ${theme.accent}; background-color: ${theme.highlight || "#fff7ed"}; border-color: ${theme.accent}30;">
                 Dynamic Rotations • 4 Slots of 30 min (2 Hours)
               </span>
             </div>
@@ -10597,33 +10999,15 @@
               30-Minute Oral Tutorial Timetables
             </h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-              Every student group has an exact <strong>30-minute appointment slot</strong> with their assigned teacher. To guarantee fairness, pairings and trios rotate across FE1, FE2, and FE3, alternating early and late slots. Group A consists of <strong>2 pairs + 2 trios (10 students)</strong> and Group B consists of <strong>3 pairs + 1 trio (9 students)</strong>, precisely fitting 4 slots of 30 minutes (2 hours total).
+              Every student group has an exact <strong>30-minute appointment slot</strong> with their assigned teacher. To guarantee fairness, pairings and trios rotate across each Formative Evaluation, alternating early and late slots across all ${promo.numGroups} groups (${promo.totalStudents} students total).
             </p>
           </div>
 
-          <!-- Interactive Filters Strip (Course Track Switcher) -->
-          <div class="bg-white border border-slate-200 rounded-xl p-3 sm:p-4 shadow-2xs">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-              <!-- Course Selector -->
-              <div>
-                <span class="block text-[10px] font-black uppercase tracking-wider text-slate-400 mb-1.5">Select Course Track:</span>
-                <div class="inline-flex rounded-lg border border-slate-200 p-0.5 bg-slate-50">
-                  <button type="button" onclick="setAdminRotaCourse('ag')" class="px-3.5 py-1.5 rounded-md text-xs font-bold transition-all cursor-pointer ${activeCourseKey === 'ag' ? 'bg-slate-800 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'}">
-                    General English (AG • LV101E)
-                  </button>
-                  <button type="button" onclick="setAdminRotaCourse('aas')" class="px-3.5 py-1.5 rounded-md text-xs font-bold transition-all cursor-pointer ${activeCourseKey === 'aas' ? 'bg-orange-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'}">
-                    Technical English (AT • LV121E)
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Complete Semester 1 Rotation Matrix Table (All 3 FEs At a Glance) -->
+          <!-- Complete Semester Rotation Matrix Table -->
           <div class="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-2xs">
             <div class="p-3.5 bg-slate-800 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
               <div class="flex items-center gap-2.5">
-                <span class="px-2.5 py-1 rounded font-mono font-black text-white text-[11px] shadow-2xs" style="background-color: ${activeCourseKey === 'ag' ? theme.primary : theme.accent};">
+                <span class="px-2.5 py-1 rounded font-mono font-black text-white text-[11px] shadow-2xs" style="background-color: ${theme.accent};">
                   ${courseSched.code}
                 </span>
                 <div>
@@ -10637,7 +11021,7 @@
               </div>
               <div class="flex items-center gap-2">
                 <span class="text-[10px] sm:text-[11px] font-mono text-slate-300 font-bold bg-slate-700/80 px-2.5 py-1 rounded border border-slate-600/50">
-                  FE1 (W48) • FE2 (W03) • FE3 (W08)
+                  ${feHeaderPills}
                 </span>
               </div>
             </div>
@@ -10645,76 +11029,44 @@
               <table class="w-full text-left text-xs border-collapse">
                 <thead>
                   <tr class="bg-slate-50 text-slate-600 border-b border-slate-200 text-[11px]">
-                    <th class="py-2.5 px-3 font-bold w-24">Group &amp; Slot</th>
-                    <th class="py-2.5 px-3 font-bold">FE1 (Week 48)</th>
-                    <th class="py-2.5 px-3 font-bold">FE2 (Week 03)</th>
-                    <th class="py-2.5 px-3 font-bold">FE3 (Week 08)</th>
+                    <th class="py-2.5 px-3 font-bold w-28">Group &amp; Slot</th>
+                    ${feKeys.map(k => `<th class="py-2.5 px-3 font-bold">FE${k} (${courseSched.fes[k].week} • ${courseSched.fes[k].dateStr})</th>`).join("")}
                   </tr>
                 </thead>
                 <tbody class="divide-y divide-slate-100 text-slate-700">
-                  <!-- Group A Rows -->
-                  <tr class="bg-slate-50/80 font-bold text-slate-800 text-[11px]">
-                    <td colspan="4" class="py-2 px-3 tracking-wide uppercase bg-slate-100">
-                      Group A (${activeCourseKey === 'ag' ? 'Fridays • Geri MIDDLETON' : 'Wednesdays • Tracy NEILL'})
-                    </td>
-                  </tr>
-                  ${[0, 1, 2, 3].map(idx => `
-                    <tr class="hover:bg-slate-50/70">
-                      <td class="py-2.5 px-3 font-bold font-mono text-slate-800 whitespace-nowrap">
-                        Slot ${idx + 1} (${courseSched.fes[1].groupA.slots[idx].time.split(' – ')[0]})
-                      </td>
-                      <td class="py-2.5 px-3">
-                        <span class="font-semibold block ${courseSched.fes[1].groupA.slots[idx].type === 'trio' ? 'text-amber-900 font-bold' : 'text-slate-800'}">
-                          ${renderSlotStudents(courseSched.fes[1].groupA.slots[idx].students)}
-                        </span>
-                        <span class="text-[10px] text-slate-400 font-mono">${courseSched.fes[1].groupA.slots[idx].type.toUpperCase()}</span>
-                      </td>
-                      <td class="py-2.5 px-3">
-                        <span class="font-semibold block ${courseSched.fes[2].groupA.slots[idx].type === 'trio' ? 'text-amber-900 font-bold' : 'text-slate-800'}">
-                          ${renderSlotStudents(courseSched.fes[2].groupA.slots[idx].students)}
-                        </span>
-                        <span class="text-[10px] text-slate-400 font-mono">${courseSched.fes[2].groupA.slots[idx].type.toUpperCase()}</span>
-                      </td>
-                      <td class="py-2.5 px-3">
-                        <span class="font-semibold block ${courseSched.fes[3].groupA.slots[idx].type === 'trio' ? 'text-amber-900 font-bold' : 'text-slate-800'}">
-                          ${renderSlotStudents(courseSched.fes[3].groupA.slots[idx].students)}
-                        </span>
-                        <span class="text-[10px] text-slate-400 font-mono">${courseSched.fes[3].groupA.slots[idx].type.toUpperCase()}</span>
-                      </td>
-                    </tr>
-                  `).join('')}
-
-                  <!-- Group B Rows -->
-                  <tr class="bg-slate-50/80 font-bold text-slate-800 text-[11px]">
-                    <td colspan="4" class="py-2 px-3 tracking-wide uppercase bg-slate-100">
-                      Group B (${activeCourseKey === 'ag' ? 'Fridays • Penny WRIGHT' : 'Wednesdays • Ally HEWETT'})
-                    </td>
-                  </tr>
-                  ${[0, 1, 2, 3].map(idx => `
-                    <tr class="hover:bg-slate-50/70">
-                      <td class="py-2.5 px-3 font-bold font-mono text-slate-800 whitespace-nowrap">
-                        Slot ${idx + 1} (${courseSched.fes[1].groupB.slots[idx].time.split(' – ')[0]})
-                      </td>
-                      <td class="py-2.5 px-3">
-                        <span class="font-semibold block ${courseSched.fes[1].groupB.slots[idx].type === 'trio' ? 'text-amber-900 font-bold' : 'text-slate-800'}">
-                          ${renderSlotStudents(courseSched.fes[1].groupB.slots[idx].students)}
-                        </span>
-                        <span class="text-[10px] text-slate-400 font-mono">${courseSched.fes[1].groupB.slots[idx].type.toUpperCase()}</span>
-                      </td>
-                      <td class="py-2.5 px-3">
-                        <span class="font-semibold block ${courseSched.fes[2].groupB.slots[idx].type === 'trio' ? 'text-amber-900 font-bold' : 'text-slate-800'}">
-                          ${renderSlotStudents(courseSched.fes[2].groupB.slots[idx].students)}
-                        </span>
-                        <span class="text-[10px] text-slate-400 font-mono">${courseSched.fes[2].groupB.slots[idx].type.toUpperCase()}</span>
-                      </td>
-                      <td class="py-2.5 px-3">
-                        <span class="font-semibold block ${courseSched.fes[3].groupB.slots[idx].type === 'trio' ? 'text-amber-900 font-bold' : 'text-slate-800'}">
-                          ${renderSlotStudents(courseSched.fes[3].groupB.slots[idx].students)}
-                        </span>
-                        <span class="text-[10px] text-slate-400 font-mono">${courseSched.fes[3].groupB.slots[idx].type.toUpperCase()}</span>
-                      </td>
-                    </tr>
-                  `).join('')}
+                  ${promo.groups.map(g => {
+                    const firstFeGrp = courseSched.fes[feKeys[0]].groups[g.letter];
+                    const roomInfoParts = feKeys.map(k => {
+                      const r = courseSched.fes[k].groups[g.letter].room;
+                      return r ? `FE${k} Room: ${r}` : "";
+                    }).filter(Boolean);
+                    const roomSuffix = roomInfoParts.length > 0 ? ` • ${roomInfoParts.join(" / ")}` : "";
+                    return `
+                      <tr class="bg-slate-50/80 font-bold text-slate-800 text-[11px]">
+                        <td colspan="${feKeys.length + 1}" class="py-2 px-3 tracking-wide uppercase bg-slate-100">
+                          Group ${g.letter} (${firstFeGrp.slotSummary} • ${firstFeGrp.teacher}${roomSuffix})
+                        </td>
+                      </tr>
+                      ${[0, 1, 2, 3].map(idx => `
+                        <tr class="hover:bg-slate-50/70">
+                          <td class="py-2.5 px-3 font-bold font-mono text-slate-800 whitespace-nowrap">
+                            Slot ${idx + 1} (${firstFeGrp.slots[idx].time.split(" – ")[0]})
+                          </td>
+                          ${feKeys.map(k => {
+                            const slotObj = courseSched.fes[k].groups[g.letter].slots[idx];
+                            return `
+                              <td class="py-2.5 px-3">
+                                <span class="font-semibold block ${slotObj.type === "trio" ? "text-amber-900 font-bold" : "text-slate-800"}">
+                                  ${renderSlotStudents(slotObj.students)}
+                                </span>
+                                <span class="text-[10px] text-slate-400 font-mono">${slotObj.type.toUpperCase()} (${slotObj.time})</span>
+                              </td>
+                            `;
+                          }).join("")}
+                        </tr>
+                      `).join("")}
+                    `;
+                  }).join("")}
                 </tbody>
               </table>
             </div>
@@ -10848,8 +11200,8 @@
       const objectives = isFr ? aasObjectivesFr : aasObjectivesEn;
 
       const leadSentence = isFr 
-        ? "À la fin du semestre 1, les étudiants seront capables de :"
-        : "By the end of Semester 1, students will be able to:";
+        ? "À la fin du semestre 3, les étudiants seront capables de :"
+        : "By the end of Semester 3, students will be able to:";
 
       const courseCode = "LV125E • Technical English (AT)";
       const targetBenchmark = isAas 

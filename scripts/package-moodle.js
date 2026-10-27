@@ -115,6 +115,13 @@ if (keys.length > 0) {
 
         replacedCount++;
       }
+      if (studentMap._teachers && typeof studentMap._teachers === 'object') {
+        for (const [tPlaceholder, tRealName] of Object.entries(studentMap._teachers)) {
+          if (tRealName && tRealName !== tPlaceholder) {
+            content = content.split(tPlaceholder).join(tRealName);
+          }
+        }
+      }
       fs.writeFileSync(stagedFile, content, 'utf8');
       console.log(`  ✓ ${file}: Injected names with IDs for ${replacedCount} identifiers.`);
     }

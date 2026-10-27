@@ -87,8 +87,9 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 - **100% Invisible On Screen**: No visible copyright notices or disclaimers clutter student or faculty UI. All protections reside under the hood via `<meta>` tags, HTML comment blocks, frozen JavaScript tokens (`window.__GSEA_PROGRAMME_AUTH`), root `COPYRIGHT.md`, and cryptographic `CHECKSUMS.sha256`.
 - **INPI e-Soleau Archival Tool**: Run `npm run package:esoleau` to bundle the complete human-editable source tree into `dist/GSEA_Semester_X_INPI_eSoleau_YYYY-MM-DD.zip` for instant certified timestamping (*date certaine*) on [inpi.fr](https://www.inpi.fr).
 
-### K. `Promo Admin` Rapid Cohort & Faculty Configuration Protocol
-- **Trigger Shorthand**: Whenever the user sends a `Promo Admin` instruction (e.g., `Promo Admin: Promotion GSEA25A, Semester 3, Groups 3, A - 10 B - 10 C - 10, Teachers AG 0 AT 3 [optional teacher names]`), the assistant automatically updates all cohort, group, student roster, and faculty structures across the entire project.
+### K. `Promo Admin` & `Semester X Update` Rapid Cohort & Faculty Configuration Protocol
+- **`Semester 3 Update` Trigger (`PROMO_SETUP.private.md`)**: Whenever the user edits `PROMO_SETUP.private.md` and sends `Semester 3 Update`, the assistant immediately runs `npm run promo:update` (`node scripts/update-promo.js && npm run package && npm run package:moodle`), which reads `PROMO_SETUP.private.md`, pulls live session titles from `src/js/02-config.js`, updates `students.private.json`, updates the bounded `ADMIN_PROMO_CONFIG` blocks in `src/js/11-admin-hub.js` and `admin.html`, updates `portfolio.html`, and rebuilds all 4 packages (`SCORM.zip`, `SCORM_MOODLE.zip`, `.iso`, `.dmg`).
+- **Inline Trigger Shorthand (`Promo Admin`)**: Whenever the user sends a `Promo Admin` instruction (e.g., `Promo Admin: Promotion GSEA25A, Semester 3, Groups 3, A - 10 B - 10 C - 10, Teachers AG 0 AT 3 [optional teacher names]`), the assistant automatically updates all cohort, group, student roster, and faculty structures across the entire project.
 - **Permanent Semester Track Invariants (Never Changes)**:
   - **Semester 1**: Always **AG** + **AT** (`LV101E` & `LV121E`)
   - **Semester 2**: Always **AG** + **AAS** (`LV102E` & `LV122E`)
