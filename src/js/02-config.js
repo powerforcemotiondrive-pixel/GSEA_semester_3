@@ -193,7 +193,7 @@
         id: "aas",
         code: "AT",
         name: "Technical English",
-        footerDesc: "GSEA Semester 3 Technical English (AT) • Phil PARRIS (LH/LAN) • v1.2.0",
+        footerDesc: "GSEA Semester 3 Technical English (AT) • Phil PARRIS (LH/LAN) • v1.0.0",
         modules: [
           {
             id: 1,

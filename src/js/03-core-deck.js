@@ -1613,9 +1613,11 @@
     };
 
     function switchModalTab(tabKey) {
+      if (tabKey === 'admin_presentation') return;
       modalState.tab = tabKey;
       const tabBtns = document.querySelectorAll('.modal-tab-btn');
       tabBtns.forEach(btn => {
+        if (btn.disabled) return;
         const isSelected = btn.getAttribute('data-tab') === tabKey;
         if (isSelected) {
           btn.classList.add('text-white', 'bg-white/25', 'shadow-xs');
