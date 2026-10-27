@@ -115,13 +115,6 @@
           imageUrl: images.fe
         },
         {
-          tag: `Module ${modNumber} • Focus`,
-          title: modNumber === 1 ? "DDRS - Aerodrome Environmental & Social Framework" : modNumber === 2 ? "DDRS - Aircraft Decarbonization & Eco-Design" : "DDRS - Safety Culture & Ethical Operations",
-          description: "<strong>Definition:</strong> DDRS (Sustainable Development & Social Responsibility) in aviation represents sustainable aerodrome operations, emissions reduction, noise mitigation, and ethical workforce standards.<br><br><strong>Key areas covered:</strong> Airport decarbonization, green taxiing, SAF distribution infrastructure, and community acoustic protection.<br><br><strong>Why we discuss DDRS in English:</strong> Communicating airport sustainability initiatives in international English prepares aerospace professionals for global regulatory compliance and industry leadership.",
-          imageUrl: images.ddrs,
-          isMuted: true
-        },
-        {
           tag: "GSEA 25A • Course Admin",
           title: "Course Admin",
           description: "Welcome to the GSEA 25A Course Administration Hub. Access your official class groups (Group A & Group B), teacher assignments, weekly schedules, and dynamic 30-minute Formative Evaluation tutorial rotas.<br><br><em>Subject overview:</em> Weekly classes for Aeronautical English (LV125E).<br><br>Consult your designated FE timeslots and arrive 5 minutes before your slot with your presentation supports and updated learning portfolio ready.",

@@ -682,8 +682,8 @@
     function formatCardDescription(rawDesc, page, cardIdx) {
       if (!rawDesc) return { leadHtml: '', calloutsHtml: '' };
 
-      // Check if Session 6 (DDRS card)
-      if (page.detailsUrl || cardIdx === 5) {
+      // Check if DDRS card
+      if (page && page.detailsUrl) {
         const parts = rawDesc.split(/<br\s*\/?>\s*<br\s*\/?>/i);
         if (parts.length >= 3) {
           const defText = parts[0].replace(/<strong>Definition:<\/strong>\s*/i, '').trim();
@@ -756,7 +756,7 @@
         }
 
         if (milestoneText) {
-          const badgeText = cardIdx === 4 ? 'FE Target' : (cardIdx === 6 || (page && page.isAdmin) ? 'Admin Action' : (page && page.isImmersion ? 'Homestay' : (page && page.isObjectives ? 'Syllabus' : 'FE Tip')));
+          const badgeText = cardIdx === 4 ? 'FE Target' : ((page && page.isAdmin) ? 'Admin Action' : (page && page.isImmersion ? 'Homestay' : (page && page.isObjectives ? 'Syllabus' : 'FE Tip')));
           calloutsHtml += `
             <div class="p-3.5 bg-amber-50/60 border border-amber-200/80 rounded-xl flex items-start gap-2.5 shadow-2xs h-full">
               <span class="inline-flex items-center text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-200/80 text-amber-900 shrink-0 mt-0.5">${badgeText}</span>
@@ -809,7 +809,7 @@
       // Update card tag pill (Option A Balanced Horizontal Grid)
       const tagPill = document.getElementById('card-tag-pill');
       if (tagPill) {
-        let tagText = page.tag || (page.isAdmin ? "Administration" : (currentIndex === 4 ? "Formative Evaluation" : (currentIndex === 5 ? "DDRS Sustainability" : (page.isObjectives ? "Curriculum" : (page.isImmersion ? "Immersion" : `Session 0${currentIndex + 1}`)))));
+        let tagText = page.tag || (page.isAdmin ? "Administration" : (currentIndex === 4 ? "Formative Evaluation" : (page.isObjectives ? "Curriculum" : (page.isImmersion ? "Immersion" : `Session 0${currentIndex + 1}`))));
         tagPill.textContent = tagText;
         const pillAccent = mod.accent || mod.primary;
         const pillText = mod.accentDark || mod.primary;
@@ -864,9 +864,9 @@
           dockTitle.textContent = "English Immersion & Destinations";
         } else if (page.isObjectives || page.title === "Semester Objectives") {
           dockTitle.textContent = "Semester 3 Learning Objectives";
-        } else if (page.isAdmin || currentIndex === 6) {
+        } else if (page.isAdmin) {
           dockTitle.textContent = "GSEA 25A Administration Hub";
-        } else if (page.detailsUrl || currentIndex === 5) {
+        } else if (page.detailsUrl) {
           dockTitle.textContent = "DDRS Sustainability Guide";
         } else if (currentIndex === 4) {
           dockTitle.textContent = `Session 0${currentIndex + 1} Evaluation Center`;
@@ -893,9 +893,9 @@
         actionContainer.appendChild(createThemedCTA("Open Immersion Guide", "immersion_overview", "immersion.html"));
       } else if (page.isObjectives || page.title === "Semester Objectives") {
         actionContainer.appendChild(createThemedCTA("Open Objectives", "sem_obj_en", ""));
-      } else if (page.isAdmin || currentIndex === 6) {
+      } else if (page.isAdmin) {
         actionContainer.appendChild(createThemedCTA("Open Resources", "admin_groups", "admin.html"));
-      } else if (currentIndex === 5) {
+      } else if (page.detailsUrl) {
         actionContainer.appendChild(createThemedCTA("Open Resources", "ddrs", ""));
       } else if (currentIndex === 4) {
         actionContainer.appendChild(createThemedCTA("Open Resources", "fe_guidelines", ""));
@@ -1292,9 +1292,9 @@
       const progConfig = PROGRAMS_CONFIG[modalState.program] || PROGRAMS_CONFIG.ag;
       const isObjectivesSession = tabKey.startsWith('sem_obj_') || modalState.tab.startsWith('sem_obj_');
       const isImmersionSession = !isObjectivesSession && (tabKey === 'immersion' || tabKey.startsWith('immersion_'));
-      const isAdminSession = !isObjectivesSession && !isImmersionSession && (modalState.sessionNum === 7 || tabKey.startsWith('admin_'));
+      const isAdminSession = !isObjectivesSession && !isImmersionSession && tabKey.startsWith('admin_');
       const isFeSession = !isObjectivesSession && !isImmersionSession && !isAdminSession && (modalState.sessionNum === 5 || tabKey.startsWith('fe_'));
-      const isDdrsSession = !isObjectivesSession && !isImmersionSession && !isAdminSession && (tabKey === 'ddrs' || modalState.sessionNum === 6);
+      const isDdrsSession = !isObjectivesSession && !isImmersionSession && !isAdminSession && tabKey === 'ddrs';
 
       const semObjEnTab = document.getElementById('modal-tab-sem-obj-en');
       const semObjFrTab = document.getElementById('modal-tab-sem-obj-fr');
