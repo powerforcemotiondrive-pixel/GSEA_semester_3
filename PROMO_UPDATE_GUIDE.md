@@ -14,7 +14,7 @@ This guide explains how to set up a new promotion at the start of the semesterâ€
 1. **Open** `PROMO_SETUP.private.md` in your editor.
 2. **Edit** the details you want to change (Promotion name, Teachers, Class times, Weekly Dates/Rooms, or Student names) and **Save** (`Cmd + S`).
 3. **Run the Update**:
-   - **With the AI Assistant**: Type **`Semester 3 Update`** in the chat.
+   - **With the AI Assistant**: Type **`Semester 3 Update`** in the chat (this automatically updates the Admin pages, rebuilds the SCORM `.zip`, Moodle `.zip`, `.iso`, and `.dmg` packages, and commits & pushes the anonymized changes to GitHub).
    - **Or Manually in Terminal**: Run `npm run promo:update`.
 
 ---

@@ -8,7 +8,7 @@
   "trackCode": "LV125E",
   "trackName": "Technical English (AT)",
   "totalWeeks": 15,
-  "scheduleSummary": "Wednesdays 13h15 – 15h15",
+  "scheduleSummary": "Friday 13h15 – 15h15",
   "groups": [
     {
       "key": "groupA",
@@ -17,7 +17,7 @@
       "count": 10,
       "pairTrioBadge": "2 Pairs + 2 Trios",
       "teacherPlaceholder": "Teacher A (TBC)",
-      "slot": "Wednesday 13h15 - 15h15",
+      "slot": "Friday 13h15 - 15h15",
       "headerBg": "#1e293b",
       "dotClass": "bg-emerald-400",
       "students": [
@@ -40,7 +40,7 @@
       "count": 10,
       "pairTrioBadge": "2 Pairs + 2 Trios",
       "teacherPlaceholder": "Teacher B (TBC)",
-      "slot": "Wednesday 13h15 - 15h15",
+      "slot": "Friday 13h15 - 15h15",
       "headerBg": "#c2410c",
       "dotClass": "bg-amber-400",
       "students": [
@@ -63,7 +63,7 @@
       "count": 10,
       "pairTrioBadge": "2 Pairs + 2 Trios",
       "teacherPlaceholder": "Teacher C (TBC)",
-      "slot": "Wednesday 13h15 - 15h15",
+      "slot": "Friday 13h15 - 15h15",
       "headerBg": "#334155",
       "dotClass": "bg-sky-400",
       "students": [
@@ -86,7 +86,7 @@
     "code": "LV125E",
     "name": "Technical English (AT)",
     "totalWeeks": 15,
-    "dayTime": "Wednesdays 13h15 – 15h15",
+    "dayTime": "Friday 13h15 – 15h15",
     "faculty": "Teacher A (TBC) (Group A) • Teacher B (TBC) (Group B) • Teacher C (TBC) (Group C)",
     "modules": [
       {
@@ -345,7 +345,7 @@
   "aas": {
     "code": "LV125E",
     "name": "Technical English (AT)",
-    "dayTime": "Wednesdays 13h15 – 15h15",
+    "dayTime": "Friday 13h15 – 15h15",
     "feKeys": [
       1,
       2
@@ -359,7 +359,7 @@
         "groups": {
           "A": {
             "teacher": "Teacher A (TBC)",
-            "slotSummary": "Wednesday 13h15 - 15h15",
+            "slotSummary": "Friday 13h15 - 15h15",
             "room": "",
             "slots": [
               {
@@ -404,7 +404,7 @@
           },
           "B": {
             "teacher": "Teacher B (TBC)",
-            "slotSummary": "Wednesday 13h15 - 15h15",
+            "slotSummary": "Friday 13h15 - 15h15",
             "room": "",
             "slots": [
               {
@@ -449,7 +449,7 @@
           },
           "C": {
             "teacher": "Teacher C (TBC)",
-            "slotSummary": "Wednesday 13h15 - 15h15",
+            "slotSummary": "Friday 13h15 - 15h15",
             "room": "",
             "slots": [
               {
@@ -502,7 +502,7 @@
         "groups": {
           "A": {
             "teacher": "Teacher A (TBC)",
-            "slotSummary": "Wednesday 13h15 - 15h15",
+            "slotSummary": "Friday 13h15 - 15h15",
             "room": "",
             "slots": [
               {
@@ -547,7 +547,7 @@
           },
           "B": {
             "teacher": "Teacher B (TBC)",
-            "slotSummary": "Wednesday 13h15 - 15h15",
+            "slotSummary": "Friday 13h15 - 15h15",
             "room": "",
             "slots": [
               {
@@ -592,7 +592,7 @@
           },
           "C": {
             "teacher": "Teacher C (TBC)",
-            "slotSummary": "Wednesday 13h15 - 15h15",
+            "slotSummary": "Friday 13h15 - 15h15",
             "room": "",
             "slots": [
               {
