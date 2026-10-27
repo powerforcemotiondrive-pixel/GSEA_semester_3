@@ -546,9 +546,9 @@
       const mod = modulesData[currentModuleIndex];
 
       mod.pages.forEach((page, idx) => {
-        if (idx === 5) {
+        if (page.isAdmin) {
           const divider = document.createElement('div');
-          divider.className = "pt-2.5 pb-1 px-1 flex items-center gap-1.5 text-[9px] font-mono font-bold uppercase tracking-widest text-slate-400 select-none";
+          divider.className = "pt-2 pb-0.5 px-1 flex items-center gap-1.5 text-[9px] font-mono font-bold uppercase tracking-widest text-slate-400 select-none";
           divider.innerHTML = `
             <span class="h-px bg-slate-200/90 flex-1"></span>
             <span>Admin &amp; Frameworks</span>
@@ -560,14 +560,15 @@
         const item = document.createElement('button');
         item.type = 'button';
         item.setAttribute('data-card-idx', idx);
+        const badgeNum = String(idx + 1).padStart(2, '0');
 
         if (page.isMuted) {
           item.setAttribute('aria-label', `${page.title} (Muted)`);
           item.setAttribute('disabled', 'true');
-          item.className = "flight-strip-card w-full text-left px-2.5 py-2 rounded-lg text-xs font-medium flex items-center justify-between border border-slate-200/60 bg-slate-100/60 text-slate-400 cursor-not-allowed opacity-60 select-none";
+          item.className = "flight-strip-card w-full text-left px-2.5 py-1.5 rounded-lg text-xs font-medium flex items-center justify-between border border-slate-200/60 bg-slate-100/60 text-slate-400 cursor-not-allowed opacity-60 select-none";
           item.innerHTML = `
             <div class="flex items-center gap-2 min-w-0 pr-1 pointer-events-none">
-              <span class="flight-strip-badge font-mono text-[10px] font-bold px-1.5 py-0.5 rounded bg-slate-200 text-slate-400 border border-slate-300/50">0${idx + 1}</span>
+              <span class="flight-strip-badge font-mono text-[10px] font-bold px-1.5 py-0.5 rounded bg-slate-200 text-slate-400 border border-slate-300/50">${badgeNum}</span>
               <span class="flight-strip-title truncate text-xs text-slate-400 font-medium pointer-events-none">${page.title}</span>
             </div>
             <span class="text-[9px] font-mono uppercase tracking-wider font-semibold px-1.5 py-0.5 rounded bg-slate-200 text-slate-500 border border-slate-300/60 shrink-0">Muted</span>
@@ -578,7 +579,7 @@
 
           item.innerHTML = `
             <div class="flex items-center gap-2 min-w-0 pr-1 pointer-events-none">
-              <span class="flight-strip-badge font-mono text-[10px] font-bold px-1.5 py-0.5 rounded transition-all">0${idx + 1}</span>
+              <span class="flight-strip-badge font-mono text-[10px] font-bold px-1.5 py-0.5 rounded transition-all">${badgeNum}</span>
               <span class="flight-strip-title truncate text-xs transition-all pointer-events-none">${page.title}</span>
             </div>
             ${rightHtml}
@@ -601,13 +602,14 @@
         if (page && page.isMuted) return;
 
         const isActive = idx === activeIdx;
+        const isCoreUnit = page && !page.isAdmin && !page.isObjectives && !page.isImmersion;
         const badge = item.querySelector('.flight-strip-badge');
         const title = item.querySelector('.flight-strip-title');
         const chevron = item.querySelector('.flight-strip-chevron');
 
         if (isActive) {
-          item.className = "flight-strip-card group w-full text-left px-2.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border cursor-pointer shadow-2xs";
-          if (idx <= 4) {
+          item.className = "flight-strip-card group w-full text-left px-2.5 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border cursor-pointer shadow-2xs";
+          if (isCoreUnit) {
             item.style.backgroundColor = '#ffffff';
             item.style.borderColor = '#cbd5e1';
           } else {
@@ -622,7 +624,7 @@
           if (badge) {
             badge.style.backgroundColor = '#ffffff';
             badge.style.color = mod.accent;
-            badge.style.border = idx <= 4 ? '1px solid #cbd5e1' : '1px solid #94a3b8';
+            badge.style.border = isCoreUnit ? '1px solid #cbd5e1' : '1px solid #94a3b8';
             badge.style.fontWeight = '800';
           }
           if (chevron) {
@@ -632,9 +634,9 @@
           }
         } else {
           item.style.borderLeft = '';
-          if (idx <= 4) {
-            // Sessions 01 to 05: Core Teaching & FE Units (Clean White / Slate Border)
-            item.className = "flight-strip-card group w-full text-left px-2.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border border-slate-200/90 bg-white hover:bg-slate-50 hover:border-slate-300 text-slate-800 hover:text-slate-900 hover:shadow-2xs hover:translate-x-[3px] cursor-pointer";
+          if (isCoreUnit) {
+            // Core Teaching & FE Units (Clean White / Slate Border)
+            item.className = "flight-strip-card group w-full text-left px-2.5 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border border-slate-200/90 bg-white hover:bg-slate-50 hover:border-slate-300 text-slate-800 hover:text-slate-900 hover:shadow-2xs hover:translate-x-[3px] cursor-pointer";
             item.style.backgroundColor = '#ffffff';
             item.style.borderColor = '#e2e8f0';
             if (title) {
@@ -653,8 +655,8 @@
               chevron.style.transform = 'none';
             }
           } else {
-            // Cards 06 to 08/09: Administrative & Reference Frameworks (Grounded Slate-200 / Touch Darker)
-            item.className = "flight-strip-card group w-full text-left px-2.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border border-slate-300/80 bg-slate-200/70 hover:bg-slate-200 hover:border-slate-400/80 text-slate-700 hover:text-slate-900 hover:shadow-2xs hover:translate-x-[3px] cursor-pointer";
+            // Administrative & Reference Frameworks (Grounded Slate-200 / Touch Darker)
+            item.className = "flight-strip-card group w-full text-left px-2.5 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border border-slate-300/80 bg-slate-200/70 hover:bg-slate-200 hover:border-slate-400/80 text-slate-700 hover:text-slate-900 hover:shadow-2xs hover:translate-x-[3px] cursor-pointer";
             item.style.backgroundColor = '#e2e8f0';
             item.style.borderColor = '#cbd5e1';
             if (title) {
@@ -756,7 +758,7 @@
         }
 
         if (milestoneText) {
-          const badgeText = cardIdx === 4 ? 'FE Target' : ((page && page.isAdmin) ? 'Admin Action' : (page && page.isImmersion ? 'Homestay' : (page && page.isObjectives ? 'Syllabus' : 'FE Tip')));
+          const badgeText = (page && page.isFe) ? 'FE Target' : ((page && page.isAdmin) ? 'Admin Action' : (page && page.isImmersion ? 'Homestay' : (page && page.isObjectives ? 'Syllabus' : 'FE Tip')));
           calloutsHtml += `
             <div class="p-3.5 bg-amber-50/60 border border-amber-200/80 rounded-xl flex items-start gap-2.5 shadow-2xs h-full">
               <span class="inline-flex items-center text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-200/80 text-amber-900 shrink-0 mt-0.5">${badgeText}</span>
@@ -809,7 +811,7 @@
       // Update card tag pill (Option A Balanced Horizontal Grid)
       const tagPill = document.getElementById('card-tag-pill');
       if (tagPill) {
-        let tagText = page.tag || (page.isAdmin ? "Administration" : (currentIndex === 4 ? "Formative Evaluation" : (page.isObjectives ? "Curriculum" : (page.isImmersion ? "Immersion" : `Session 0${currentIndex + 1}`))));
+        let tagText = page.tag || (page.isAdmin ? "Administration" : (page.isFe ? "Formative Evaluation" : (page.isObjectives ? "Curriculum" : (page.isImmersion ? "Immersion" : `Session ${String(currentIndex + 1).padStart(2, '0')}`))));
         tagPill.textContent = tagText;
         const pillAccent = mod.accent || mod.primary;
         const pillText = mod.accentDark || mod.primary;
@@ -868,10 +870,10 @@
           dockTitle.textContent = "GSEA 25A Administration Hub";
         } else if (page.detailsUrl) {
           dockTitle.textContent = "DDRS Sustainability Guide";
-        } else if (currentIndex === 4) {
-          dockTitle.textContent = `Session 0${currentIndex + 1} Evaluation Center`;
+        } else if (page.isFe) {
+          dockTitle.textContent = `Session ${String(currentIndex + 1).padStart(2, '0')} Evaluation Center`;
         } else {
-          dockTitle.textContent = `Session 0${currentIndex + 1} Study Resources`;
+          dockTitle.textContent = `Session ${String(currentIndex + 1).padStart(2, '0')} Study Resources`;
         }
       }
 
@@ -897,7 +899,7 @@
         actionContainer.appendChild(createThemedCTA("Open Resources", "admin_groups", "admin.html"));
       } else if (page.detailsUrl) {
         actionContainer.appendChild(createThemedCTA("Open Resources", "ddrs", ""));
-      } else if (currentIndex === 4) {
+      } else if (page.isFe) {
         actionContainer.appendChild(createThemedCTA("Open Resources", "fe_guidelines", ""));
       } else {
         // Sessions 1 to 4: In-deck modal workspace hub (single themed CTA to open resources drawer)
@@ -1290,10 +1292,12 @@
       headerEl.style.borderColor = theme.primaryDark;
 
       const progConfig = PROGRAMS_CONFIG[modalState.program] || PROGRAMS_CONFIG.ag;
+      const activeModForModal = modulesData[modalState.modNum - 1];
+      const activePageForModal = activeModForModal && activeModForModal.pages && activeModForModal.pages[modalState.sessionNum - 1];
       const isObjectivesSession = tabKey.startsWith('sem_obj_') || modalState.tab.startsWith('sem_obj_');
       const isImmersionSession = !isObjectivesSession && (tabKey === 'immersion' || tabKey.startsWith('immersion_'));
       const isAdminSession = !isObjectivesSession && !isImmersionSession && tabKey.startsWith('admin_');
-      const isFeSession = !isObjectivesSession && !isImmersionSession && !isAdminSession && (modalState.sessionNum === 5 || tabKey.startsWith('fe_'));
+      const isFeSession = !isObjectivesSession && !isImmersionSession && !isAdminSession && (Boolean(activePageForModal && activePageForModal.isFe) || tabKey.startsWith('fe_'));
       const isDdrsSession = !isObjectivesSession && !isImmersionSession && !isAdminSession && tabKey === 'ddrs';
 
       const semObjEnTab = document.getElementById('modal-tab-sem-obj-en');
@@ -1386,8 +1390,8 @@
         if (feObjectivesTab) feObjectivesTab.classList.remove('hidden');
         if (feCriteriaTab) feCriteriaTab.classList.remove('hidden');
 
-        tagEl.textContent = `${progConfig.code} Module ${modalState.modNum} • Session 5`;
-        titleEl.textContent = "Session 5 - Formative Evaluation";
+        tagEl.textContent = `${progConfig.code} Module ${modalState.modNum} • Session ${modalState.sessionNum}`;
+        titleEl.textContent = `Session ${modalState.sessionNum} - Formative Evaluation`;
       } else if (isDdrsSession) {
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
         if (semObjFrTab) semObjFrTab.classList.add('hidden');
@@ -1793,7 +1797,7 @@
           <div class="p-4 bg-slate-100 rounded-xl border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
             <div>
               <p class="text-xs font-bold text-slate-700">Ready to proceed to classroom activities?</p>
-              <p class="text-[11px] text-slate-500">${modalState.sessionNum === 1 ? 'Access the aviation news warm-up, speed-dating survey, modals practice, and EU261 role-play.' : (modalState.sessionNum === 2 ? 'Access the terminal flow map, spatial prepositions practice, apron access role-play, and guidance workshop.' : (modalState.sessionNum === 4 ? 'Access the aviation roles overview, roles & responsibilities practice, day-in-the-life simulations, and career dilemma debate.' : 'Access the interactive vehicle cards, turnaround clock, and role-play simulations.'))}</p>
+              <p class="text-[11px] text-slate-500">${modalState.sessionNum === 1 ? 'Access the aviation news warm-up, speed-dating survey, modals practice, and EU261 role-play.' : (modalState.sessionNum === 2 ? 'Access the terminal flow map, spatial prepositions practice, apron access role-play, and guidance workshop.' : (modalState.sessionNum >= 4 ? 'Access the aviation roles overview, roles & responsibilities practice, day-in-the-life simulations, and career dilemma debate.' : 'Access the interactive vehicle cards, turnaround clock, and role-play simulations.'))}</p>
             </div>
             <button onclick="switchModalTab('content')" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg text-xs font-bold text-white shadow-xs hover:shadow-md transition-all cursor-pointer" style="background-color: ${theme.primary};">
               <span>Open Lesson Content</span>

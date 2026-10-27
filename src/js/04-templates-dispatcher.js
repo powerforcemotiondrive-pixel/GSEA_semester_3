@@ -78,7 +78,7 @@
           renderAas2LessonContentTabSession2(sessionData, theme);
         } else if (modalState.sessionNum === 3) {
           renderAas2LessonContentTabSession3(sessionData, theme);
-        } else if (modalState.sessionNum === 4) {
+        } else {
           renderAas2LessonContentTabSession4(sessionData, theme);
         }
         return;
@@ -101,10 +101,10 @@
         renderLessonContentTabSession1(sessionData, theme);
       } else if (modalState.sessionNum === 2) {
         renderLessonContentTabSession2(sessionData, theme);
-      } else if (modalState.sessionNum === 4) {
-        renderLessonContentTabSession4(sessionData, theme);
-      } else {
+      } else if (modalState.sessionNum === 3) {
         renderLessonContentTabSession3(sessionData, theme);
+      } else {
+        renderLessonContentTabSession4(sessionData, theme);
       }
     }
 

@@ -1,16 +1,22 @@
     const createModulePages = (modNumber) => {
+      const feSessionNum = modNumber === 1 ? 7 : (modNumber === 2 ? 8 : 5);
       const aasSessionTitles = {
         1: {
           s1: "Session 1 - Introduction & Aviation Survey",
           s2: "Session 2 - Passenger Journey & Airfield Movement",
           s3: "Session 3 - Ground Operations & Turnaround",
-          s4: "Session 4 - Jobs in Aviation"
+          s4: "Session 4 - Jobs in Aviation",
+          s5: "Session 5 - Jobs in Aviation",
+          s6: "Session 6 - Jobs in Aviation"
         },
         2: {
           s1: "Session 1 - Aerodynamics & Flight Principles",
           s2: "Session 2 - Aircraft Anatomy: Structure & Systems",
           s3: "Session 3 - Commercial Aircraft & Airlines",
-          s4: "Session 4 - Significant Aviation Accidents & Aircraft Types"
+          s4: "Session 4 - Significant Aviation Accidents & Aircraft Types",
+          s5: "Session 5 - Significant Aviation Accidents & Aircraft Types",
+          s6: "Session 6 - Significant Aviation Accidents & Aircraft Types",
+          s7: "Session 7 - Significant Aviation Accidents & Aircraft Types"
         },
         3: {
           s1: "Session 1 - Health & Human Factors in Aviation",
@@ -54,20 +60,25 @@
 
       const images = moduleImages[modNumber] || moduleImages[1];
 
-      const formativeEvaluationNotice = "All our work this module builds progressively toward your Formative Evaluation in Session 5. Review the vocabulary from the vocabulary section on this page before your evaluation, along with the TOEIC exercises and your personal portfolio.";
+      const formativeEvaluationNotice = `All our work this module builds progressively toward your Formative Evaluation in Session ${feSessionNum}. Review the vocabulary from the vocabulary section on this page before your evaluation, along with the TOEIC exercises and your personal portfolio.`;
 
       const aasDescriptions = {
         1: {
           s1: `Welcome to Technical English Module 1 on Documents & Maps! In this opening session, we explore airport operations, aviation security, commercial airline models, and environmental challenges while practicing discussion fluency and technical vocabulary.<br><br><em>Subject overview:</em> In-class survey interviews discussing key aviation themes: alcohol on board, armed pilots and air marshals, low-cost carrier economics, noise abatement, future propulsion, space tourism, airport security, and flight delay passenger rights.<br><br>${formativeEvaluationNotice}`,
           s2: `Welcome to Session 2! We explore the passenger's journey through the airport—from landside check-in, security screening, and duty-free retail to the departure gate—as well as airside movement areas including aprons, taxiways, ground markings, and runway numbering.<br><br><em>Subject overview:</em> Passenger terminal flow, security checkpoints, airside apron operations, pushback tugs, taxiway guidance markings, and runway magnetic designators.<br><br>${formativeEvaluationNotice}`,
           s3: `Welcome to Session 3! In this class, we analyze ground handling workflows, baggage logistics, refueling protocols, and gate turnaround optimization.<br><br><em>Subject overview:</em> Ramp safety, ground support equipment (GSE), slot allocation, and minimizing turnaround time.<br><br>${formativeEvaluationNotice}`,
-          s4: `Welcome to Session 4! We examine aviation operational careers across landside, airside, flight operations, air traffic services, and civil aviation administration.<br><br><em>Subject overview:</em> Professional roles and jurisdictions: Passenger Service Agents, Ramp Coordinators, Flight Crew, ATCOs (Tower, Approach, En-Route), and TSEEAC functions (AFISO, aerodrome operations coordination, DGAC safety oversight). Expressing duties, authority, and handoff procedures.<br><br>${formativeEvaluationNotice}`
+          s4: `Welcome to Session 4! We examine aviation operational careers across landside, airside, flight operations, air traffic services, and civil aviation administration.<br><br><em>Subject overview:</em> Professional roles and jurisdictions: Passenger Service Agents, Ramp Coordinators, Flight Crew, ATCOs (Tower, Approach, En-Route), and TSEEAC functions (AFISO, aerodrome operations coordination, DGAC safety oversight). Expressing duties, authority, and handoff procedures.<br><br>${formativeEvaluationNotice}`,
+          s5: `Welcome to Session 5! We examine aviation operational careers across landside, airside, flight operations, air traffic services, and civil aviation administration.<br><br><em>Subject overview:</em> Professional roles and jurisdictions: Passenger Service Agents, Ramp Coordinators, Flight Crew, ATCOs (Tower, Approach, En-Route), and TSEEAC functions (AFISO, aerodrome operations coordination, DGAC safety oversight). Expressing duties, authority, and handoff procedures.<br><br>${formativeEvaluationNotice}`,
+          s6: `Welcome to Session 6! We examine aviation operational careers across landside, airside, flight operations, air traffic services, and civil aviation administration.<br><br><em>Subject overview:</em> Professional roles and jurisdictions: Passenger Service Agents, Ramp Coordinators, Flight Crew, ATCOs (Tower, Approach, En-Route), and TSEEAC functions (AFISO, aerodrome operations coordination, DGAC safety oversight). Expressing duties, authority, and handoff procedures.<br><br>${formativeEvaluationNotice}`
         },
         2: {
           s1: `Welcome to Module 2 on MTF! In this opening session, we explore the four fundamental forces of flight, aircraft control axes, and wing airflow dynamics while developing spoken fluency and cause-and-effect structures.<br><br><em>Subject overview:</em> Lift, weight, thrust, and drag in equilibrium; pitch, roll, and yaw control surfaces; angle of attack, boundary layer separation, and stall recovery procedures.<br><br>${formativeEvaluationNotice}`,
           s2: `Welcome to Session 2! We examine the external airframe and internal layout of modern commercial aircraft, practicing accurate spatial descriptions, functional explanations, and exterior pre-flight walkaround defect reporting.<br><br><em>Subject overview:</em> Fuselage, empennage, leading-edge slats, trailing-edge flaps, spoilers, landing gear, radome, pitot-static probes, flight deck controls, cabin amenities, and walkaround inspection dialogues.<br><br>${formativeEvaluationNotice}`,
           s3: `Welcome to Session 3! In this class, we analyze commercial aircraft classifications, fleet economics, global aerospace manufacturers, and airline business models.<br><br><em>Subject overview:</em> Regional turboprops, single-aisle narrowbodies, twin-aisle widebodies, freighters, Airbus vs. Boeing duopoly competition, airline fleet planning, and operational route cost comparisons.<br><br>${formativeEvaluationNotice}`,
-          s4: `Welcome to Session 4! We investigate landmark aviation accidents throughout history, analyzing the aircraft types involved, mechanical versus human contributing factors, and permanent safety evolutions.<br><br><em>Subject overview:</em> Accident investigation methodology (CVR/FDR, BEA, NTSB), past narrative tenses, and an in-class 15-minute quick-fire group research sprint analyzing landmark case studies followed by spoken safety presentations.<br><br>${formativeEvaluationNotice}`
+          s4: `Welcome to Session 4! We investigate landmark aviation accidents throughout history, analyzing the aircraft types involved, mechanical versus human contributing factors, and permanent safety evolutions.<br><br><em>Subject overview:</em> Accident investigation methodology (CVR/FDR, BEA, NTSB), past narrative tenses, and an in-class 15-minute quick-fire group research sprint analyzing landmark case studies followed by spoken safety presentations.<br><br>${formativeEvaluationNotice}`,
+          s5: `Welcome to Session 5! We investigate landmark aviation accidents throughout history, analyzing the aircraft types involved, mechanical versus human contributing factors, and permanent safety evolutions.<br><br><em>Subject overview:</em> Accident investigation methodology (CVR/FDR, BEA, NTSB), past narrative tenses, and an in-class 15-minute quick-fire group research sprint analyzing landmark case studies followed by spoken safety presentations.<br><br>${formativeEvaluationNotice}`,
+          s6: `Welcome to Session 6! We investigate landmark aviation accidents throughout history, analyzing the aircraft types involved, mechanical versus human contributing factors, and permanent safety evolutions.<br><br><em>Subject overview:</em> Accident investigation methodology (CVR/FDR, BEA, NTSB), past narrative tenses, and an in-class 15-minute quick-fire group research sprint analyzing landmark case studies followed by spoken safety presentations.<br><br>${formativeEvaluationNotice}`,
+          s7: `Welcome to Session 7! We investigate landmark aviation accidents throughout history, analyzing the aircraft types involved, mechanical versus human contributing factors, and permanent safety evolutions.<br><br><em>Subject overview:</em> Accident investigation methodology (CVR/FDR, BEA, NTSB), past narrative tenses, and an in-class 15-minute quick-fire group research sprint analyzing landmark case studies followed by spoken safety presentations.<br><br>${formativeEvaluationNotice}`
         },
         3: {
           s1: `Welcome to Module 3!`,
@@ -79,39 +90,28 @@
 
       const desc = aasDescriptions[modNumber] || aasDescriptions[1];
 
+      const teachingSessionsCount = feSessionNum - 1;
+      const teachingPages = [];
+      for (let s = 1; s <= teachingSessionsCount; s++) {
+        teachingPages.push({
+          tag: `Module ${modNumber} • Session ${s}`,
+          title: titles[`s${s}`] || titles.s4,
+          description: desc[`s${s}`] || desc.s4,
+          imageUrl: s <= 4 ? images[`card${s}`] : images.card4
+        });
+      }
+
       const pages = [
+        ...teachingPages,
         {
-          tag: `Module ${modNumber} • Session 1`,
-          title: titles.s1,
-          description: desc.s1,
-          imageUrl: images.card1
-        },
-        {
-          tag: `Module ${modNumber} • Session 2`,
-          title: titles.s2,
-          description: desc.s2,
-          imageUrl: images.card2
-        },
-        {
-          tag: `Module ${modNumber} • Session 3`,
-          title: titles.s3,
-          description: desc.s3,
-          imageUrl: images.card3
-        },
-        {
-          tag: `Module ${modNumber} • Session 4`,
-          title: titles.s4,
-          description: desc.s4,
-          imageUrl: images.card4
-        },
-        {
-          tag: `Module ${modNumber} • Session 5`,
-          title: "Session 5 - Formative Evaluation",
+          tag: `Module ${modNumber} • Session ${feSessionNum}`,
+          title: `Session ${feSessionNum} - Formative Evaluation`,
           description: modNumber === 1
-            ? `Welcome to Session 5! In this Formative Evaluation, you and your partner will present a detailed technical airport profile.<br><br><em>Subject overview:</em> Formative Evaluation 1 — Airports: Technical infrastructure, operational constraints, aerodrome hot spots, and incident/accident analysis.<br><br>All work in this session contributes directly toward your Formative Evaluation.`
+            ? `Welcome to Session ${feSessionNum}! In this Formative Evaluation, you and your partner will present a detailed technical airport profile.<br><br><em>Subject overview:</em> Formative Evaluation 1 — Airports: Technical infrastructure, operational constraints, aerodrome hot spots, and incident/accident analysis.<br><br>All work in this session contributes directly toward your Formative Evaluation.`
             : (modNumber === 2
-                ? `Welcome to Session 5! In this Formative Evaluation, you and your partner will present a comprehensive technical profile of an aircraft or an airline of your choice.<br><br><em>Subject overview:</em> Formative Evaluation 2 — Aircraft / Airlines: Technical specifications, operational metrics, historical milestones, and safety analysis.<br><br>All work in this session contributes directly toward your Formative Evaluation.`
-                : `Welcome to Session 5!`),
+                ? `Welcome to Session ${feSessionNum}! In this Formative Evaluation, you and your partner will present a comprehensive technical profile of an aircraft or an airline of your choice.<br><br><em>Subject overview:</em> Formative Evaluation 2 — Aircraft / Airlines: Technical specifications, operational metrics, historical milestones, and safety analysis.<br><br>All work in this session contributes directly toward your Formative Evaluation.`
+                : `Welcome to Session ${feSessionNum}!`),
+          isFe: true,
           imageUrl: images.fe
         },
         {

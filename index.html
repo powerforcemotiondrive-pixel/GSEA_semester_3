@@ -519,7 +519,7 @@
             <span id="deck-port-dot" class="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse"></span>
             <span id="deck-port-label">AT Portfolio</span>
           </button>
-          <span id="counter-badge" class="text-xs font-medium text-white bg-[#1f2937] px-2.5 py-1 rounded-md border border-[#111827] mr-1 shadow-md">1 of 7</span>
+          <span id="counter-badge" class="text-xs font-medium text-white bg-[#1f2937] px-2.5 py-1 rounded-md border border-[#111827] mr-1 shadow-md">1 of 9</span>
           <button id="prev-btn" class="flex items-center space-x-1 bg-[#1f2937] hover:bg-[#111827] active:bg-[#0f172a] text-slate-100 px-3 py-1.5 rounded-lg font-semibold text-xs transition-all border border-[#111827] disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer shadow-xs hover:shadow-sm hover:-translate-y-[1px] active:translate-y-0" type="button">
             <span class="pointer-events-none">Previous</span>
           </button>
@@ -1044,18 +1044,24 @@
     })();
 
     const createModulePages = (modNumber) => {
+      const feSessionNum = modNumber === 1 ? 7 : (modNumber === 2 ? 8 : 5);
       const aasSessionTitles = {
         1: {
           s1: "Session 1 - Introduction & Aviation Survey",
           s2: "Session 2 - Passenger Journey & Airfield Movement",
           s3: "Session 3 - Ground Operations & Turnaround",
-          s4: "Session 4 - Jobs in Aviation"
+          s4: "Session 4 - Jobs in Aviation",
+          s5: "Session 5 - Jobs in Aviation",
+          s6: "Session 6 - Jobs in Aviation"
         },
         2: {
           s1: "Session 1 - Aerodynamics & Flight Principles",
           s2: "Session 2 - Aircraft Anatomy: Structure & Systems",
           s3: "Session 3 - Commercial Aircraft & Airlines",
-          s4: "Session 4 - Significant Aviation Accidents & Aircraft Types"
+          s4: "Session 4 - Significant Aviation Accidents & Aircraft Types",
+          s5: "Session 5 - Significant Aviation Accidents & Aircraft Types",
+          s6: "Session 6 - Significant Aviation Accidents & Aircraft Types",
+          s7: "Session 7 - Significant Aviation Accidents & Aircraft Types"
         },
         3: {
           s1: "Session 1 - Health & Human Factors in Aviation",
@@ -1099,20 +1105,25 @@
 
       const images = moduleImages[modNumber] || moduleImages[1];
 
-      const formativeEvaluationNotice = "All our work this module builds progressively toward your Formative Evaluation in Session 5. Review the vocabulary from the vocabulary section on this page before your evaluation, along with the TOEIC exercises and your personal portfolio.";
+      const formativeEvaluationNotice = `All our work this module builds progressively toward your Formative Evaluation in Session ${feSessionNum}. Review the vocabulary from the vocabulary section on this page before your evaluation, along with the TOEIC exercises and your personal portfolio.`;
 
       const aasDescriptions = {
         1: {
           s1: `Welcome to Technical English Module 1 on Documents & Maps! In this opening session, we explore airport operations, aviation security, commercial airline models, and environmental challenges while practicing discussion fluency and technical vocabulary.<br><br><em>Subject overview:</em> In-class survey interviews discussing key aviation themes: alcohol on board, armed pilots and air marshals, low-cost carrier economics, noise abatement, future propulsion, space tourism, airport security, and flight delay passenger rights.<br><br>${formativeEvaluationNotice}`,
           s2: `Welcome to Session 2! We explore the passenger's journey through the airport—from landside check-in, security screening, and duty-free retail to the departure gate—as well as airside movement areas including aprons, taxiways, ground markings, and runway numbering.<br><br><em>Subject overview:</em> Passenger terminal flow, security checkpoints, airside apron operations, pushback tugs, taxiway guidance markings, and runway magnetic designators.<br><br>${formativeEvaluationNotice}`,
           s3: `Welcome to Session 3! In this class, we analyze ground handling workflows, baggage logistics, refueling protocols, and gate turnaround optimization.<br><br><em>Subject overview:</em> Ramp safety, ground support equipment (GSE), slot allocation, and minimizing turnaround time.<br><br>${formativeEvaluationNotice}`,
-          s4: `Welcome to Session 4! We examine aviation operational careers across landside, airside, flight operations, air traffic services, and civil aviation administration.<br><br><em>Subject overview:</em> Professional roles and jurisdictions: Passenger Service Agents, Ramp Coordinators, Flight Crew, ATCOs (Tower, Approach, En-Route), and TSEEAC functions (AFISO, aerodrome operations coordination, DGAC safety oversight). Expressing duties, authority, and handoff procedures.<br><br>${formativeEvaluationNotice}`
+          s4: `Welcome to Session 4! We examine aviation operational careers across landside, airside, flight operations, air traffic services, and civil aviation administration.<br><br><em>Subject overview:</em> Professional roles and jurisdictions: Passenger Service Agents, Ramp Coordinators, Flight Crew, ATCOs (Tower, Approach, En-Route), and TSEEAC functions (AFISO, aerodrome operations coordination, DGAC safety oversight). Expressing duties, authority, and handoff procedures.<br><br>${formativeEvaluationNotice}`,
+          s5: `Welcome to Session 5! We examine aviation operational careers across landside, airside, flight operations, air traffic services, and civil aviation administration.<br><br><em>Subject overview:</em> Professional roles and jurisdictions: Passenger Service Agents, Ramp Coordinators, Flight Crew, ATCOs (Tower, Approach, En-Route), and TSEEAC functions (AFISO, aerodrome operations coordination, DGAC safety oversight). Expressing duties, authority, and handoff procedures.<br><br>${formativeEvaluationNotice}`,
+          s6: `Welcome to Session 6! We examine aviation operational careers across landside, airside, flight operations, air traffic services, and civil aviation administration.<br><br><em>Subject overview:</em> Professional roles and jurisdictions: Passenger Service Agents, Ramp Coordinators, Flight Crew, ATCOs (Tower, Approach, En-Route), and TSEEAC functions (AFISO, aerodrome operations coordination, DGAC safety oversight). Expressing duties, authority, and handoff procedures.<br><br>${formativeEvaluationNotice}`
         },
         2: {
           s1: `Welcome to Module 2 on MTF! In this opening session, we explore the four fundamental forces of flight, aircraft control axes, and wing airflow dynamics while developing spoken fluency and cause-and-effect structures.<br><br><em>Subject overview:</em> Lift, weight, thrust, and drag in equilibrium; pitch, roll, and yaw control surfaces; angle of attack, boundary layer separation, and stall recovery procedures.<br><br>${formativeEvaluationNotice}`,
           s2: `Welcome to Session 2! We examine the external airframe and internal layout of modern commercial aircraft, practicing accurate spatial descriptions, functional explanations, and exterior pre-flight walkaround defect reporting.<br><br><em>Subject overview:</em> Fuselage, empennage, leading-edge slats, trailing-edge flaps, spoilers, landing gear, radome, pitot-static probes, flight deck controls, cabin amenities, and walkaround inspection dialogues.<br><br>${formativeEvaluationNotice}`,
           s3: `Welcome to Session 3! In this class, we analyze commercial aircraft classifications, fleet economics, global aerospace manufacturers, and airline business models.<br><br><em>Subject overview:</em> Regional turboprops, single-aisle narrowbodies, twin-aisle widebodies, freighters, Airbus vs. Boeing duopoly competition, airline fleet planning, and operational route cost comparisons.<br><br>${formativeEvaluationNotice}`,
-          s4: `Welcome to Session 4! We investigate landmark aviation accidents throughout history, analyzing the aircraft types involved, mechanical versus human contributing factors, and permanent safety evolutions.<br><br><em>Subject overview:</em> Accident investigation methodology (CVR/FDR, BEA, NTSB), past narrative tenses, and an in-class 15-minute quick-fire group research sprint analyzing landmark case studies followed by spoken safety presentations.<br><br>${formativeEvaluationNotice}`
+          s4: `Welcome to Session 4! We investigate landmark aviation accidents throughout history, analyzing the aircraft types involved, mechanical versus human contributing factors, and permanent safety evolutions.<br><br><em>Subject overview:</em> Accident investigation methodology (CVR/FDR, BEA, NTSB), past narrative tenses, and an in-class 15-minute quick-fire group research sprint analyzing landmark case studies followed by spoken safety presentations.<br><br>${formativeEvaluationNotice}`,
+          s5: `Welcome to Session 5! We investigate landmark aviation accidents throughout history, analyzing the aircraft types involved, mechanical versus human contributing factors, and permanent safety evolutions.<br><br><em>Subject overview:</em> Accident investigation methodology (CVR/FDR, BEA, NTSB), past narrative tenses, and an in-class 15-minute quick-fire group research sprint analyzing landmark case studies followed by spoken safety presentations.<br><br>${formativeEvaluationNotice}`,
+          s6: `Welcome to Session 6! We investigate landmark aviation accidents throughout history, analyzing the aircraft types involved, mechanical versus human contributing factors, and permanent safety evolutions.<br><br><em>Subject overview:</em> Accident investigation methodology (CVR/FDR, BEA, NTSB), past narrative tenses, and an in-class 15-minute quick-fire group research sprint analyzing landmark case studies followed by spoken safety presentations.<br><br>${formativeEvaluationNotice}`,
+          s7: `Welcome to Session 7! We investigate landmark aviation accidents throughout history, analyzing the aircraft types involved, mechanical versus human contributing factors, and permanent safety evolutions.<br><br><em>Subject overview:</em> Accident investigation methodology (CVR/FDR, BEA, NTSB), past narrative tenses, and an in-class 15-minute quick-fire group research sprint analyzing landmark case studies followed by spoken safety presentations.<br><br>${formativeEvaluationNotice}`
         },
         3: {
           s1: `Welcome to Module 3!`,
@@ -1124,39 +1135,28 @@
 
       const desc = aasDescriptions[modNumber] || aasDescriptions[1];
 
+      const teachingSessionsCount = feSessionNum - 1;
+      const teachingPages = [];
+      for (let s = 1; s <= teachingSessionsCount; s++) {
+        teachingPages.push({
+          tag: `Module ${modNumber} • Session ${s}`,
+          title: titles[`s${s}`] || titles.s4,
+          description: desc[`s${s}`] || desc.s4,
+          imageUrl: s <= 4 ? images[`card${s}`] : images.card4
+        });
+      }
+
       const pages = [
+        ...teachingPages,
         {
-          tag: `Module ${modNumber} • Session 1`,
-          title: titles.s1,
-          description: desc.s1,
-          imageUrl: images.card1
-        },
-        {
-          tag: `Module ${modNumber} • Session 2`,
-          title: titles.s2,
-          description: desc.s2,
-          imageUrl: images.card2
-        },
-        {
-          tag: `Module ${modNumber} • Session 3`,
-          title: titles.s3,
-          description: desc.s3,
-          imageUrl: images.card3
-        },
-        {
-          tag: `Module ${modNumber} • Session 4`,
-          title: titles.s4,
-          description: desc.s4,
-          imageUrl: images.card4
-        },
-        {
-          tag: `Module ${modNumber} • Session 5`,
-          title: "Session 5 - Formative Evaluation",
+          tag: `Module ${modNumber} • Session ${feSessionNum}`,
+          title: `Session ${feSessionNum} - Formative Evaluation`,
           description: modNumber === 1
-            ? `Welcome to Session 5! In this Formative Evaluation, you and your partner will present a detailed technical airport profile.<br><br><em>Subject overview:</em> Formative Evaluation 1 — Airports: Technical infrastructure, operational constraints, aerodrome hot spots, and incident/accident analysis.<br><br>All work in this session contributes directly toward your Formative Evaluation.`
+            ? `Welcome to Session ${feSessionNum}! In this Formative Evaluation, you and your partner will present a detailed technical airport profile.<br><br><em>Subject overview:</em> Formative Evaluation 1 — Airports: Technical infrastructure, operational constraints, aerodrome hot spots, and incident/accident analysis.<br><br>All work in this session contributes directly toward your Formative Evaluation.`
             : (modNumber === 2
-                ? `Welcome to Session 5! In this Formative Evaluation, you and your partner will present a comprehensive technical profile of an aircraft or an airline of your choice.<br><br><em>Subject overview:</em> Formative Evaluation 2 — Aircraft / Airlines: Technical specifications, operational metrics, historical milestones, and safety analysis.<br><br>All work in this session contributes directly toward your Formative Evaluation.`
-                : `Welcome to Session 5!`),
+                ? `Welcome to Session ${feSessionNum}! In this Formative Evaluation, you and your partner will present a comprehensive technical profile of an aircraft or an airline of your choice.<br><br><em>Subject overview:</em> Formative Evaluation 2 — Aircraft / Airlines: Technical specifications, operational metrics, historical milestones, and safety analysis.<br><br>All work in this session contributes directly toward your Formative Evaluation.`
+                : `Welcome to Session ${feSessionNum}!`),
+          isFe: true,
           imageUrl: images.fe
         },
         {
@@ -1814,9 +1814,9 @@
       const mod = modulesData[currentModuleIndex];
 
       mod.pages.forEach((page, idx) => {
-        if (idx === 5) {
+        if (page.isAdmin) {
           const divider = document.createElement('div');
-          divider.className = "pt-2.5 pb-1 px-1 flex items-center gap-1.5 text-[9px] font-mono font-bold uppercase tracking-widest text-slate-400 select-none";
+          divider.className = "pt-2 pb-0.5 px-1 flex items-center gap-1.5 text-[9px] font-mono font-bold uppercase tracking-widest text-slate-400 select-none";
           divider.innerHTML = `
             <span class="h-px bg-slate-200/90 flex-1"></span>
             <span>Admin &amp; Frameworks</span>
@@ -1828,14 +1828,15 @@
         const item = document.createElement('button');
         item.type = 'button';
         item.setAttribute('data-card-idx', idx);
+        const badgeNum = String(idx + 1).padStart(2, '0');
 
         if (page.isMuted) {
           item.setAttribute('aria-label', `${page.title} (Muted)`);
           item.setAttribute('disabled', 'true');
-          item.className = "flight-strip-card w-full text-left px-2.5 py-2 rounded-lg text-xs font-medium flex items-center justify-between border border-slate-200/60 bg-slate-100/60 text-slate-400 cursor-not-allowed opacity-60 select-none";
+          item.className = "flight-strip-card w-full text-left px-2.5 py-1.5 rounded-lg text-xs font-medium flex items-center justify-between border border-slate-200/60 bg-slate-100/60 text-slate-400 cursor-not-allowed opacity-60 select-none";
           item.innerHTML = `
             <div class="flex items-center gap-2 min-w-0 pr-1 pointer-events-none">
-              <span class="flight-strip-badge font-mono text-[10px] font-bold px-1.5 py-0.5 rounded bg-slate-200 text-slate-400 border border-slate-300/50">0${idx + 1}</span>
+              <span class="flight-strip-badge font-mono text-[10px] font-bold px-1.5 py-0.5 rounded bg-slate-200 text-slate-400 border border-slate-300/50">${badgeNum}</span>
               <span class="flight-strip-title truncate text-xs text-slate-400 font-medium pointer-events-none">${page.title}</span>
             </div>
             <span class="text-[9px] font-mono uppercase tracking-wider font-semibold px-1.5 py-0.5 rounded bg-slate-200 text-slate-500 border border-slate-300/60 shrink-0">Muted</span>
@@ -1846,7 +1847,7 @@
 
           item.innerHTML = `
             <div class="flex items-center gap-2 min-w-0 pr-1 pointer-events-none">
-              <span class="flight-strip-badge font-mono text-[10px] font-bold px-1.5 py-0.5 rounded transition-all">0${idx + 1}</span>
+              <span class="flight-strip-badge font-mono text-[10px] font-bold px-1.5 py-0.5 rounded transition-all">${badgeNum}</span>
               <span class="flight-strip-title truncate text-xs transition-all pointer-events-none">${page.title}</span>
             </div>
             ${rightHtml}
@@ -1869,13 +1870,14 @@
         if (page && page.isMuted) return;
 
         const isActive = idx === activeIdx;
+        const isCoreUnit = page && !page.isAdmin && !page.isObjectives && !page.isImmersion;
         const badge = item.querySelector('.flight-strip-badge');
         const title = item.querySelector('.flight-strip-title');
         const chevron = item.querySelector('.flight-strip-chevron');
 
         if (isActive) {
-          item.className = "flight-strip-card group w-full text-left px-2.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border cursor-pointer shadow-2xs";
-          if (idx <= 4) {
+          item.className = "flight-strip-card group w-full text-left px-2.5 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border cursor-pointer shadow-2xs";
+          if (isCoreUnit) {
             item.style.backgroundColor = '#ffffff';
             item.style.borderColor = '#cbd5e1';
           } else {
@@ -1890,7 +1892,7 @@
           if (badge) {
             badge.style.backgroundColor = '#ffffff';
             badge.style.color = mod.accent;
-            badge.style.border = idx <= 4 ? '1px solid #cbd5e1' : '1px solid #94a3b8';
+            badge.style.border = isCoreUnit ? '1px solid #cbd5e1' : '1px solid #94a3b8';
             badge.style.fontWeight = '800';
           }
           if (chevron) {
@@ -1900,9 +1902,9 @@
           }
         } else {
           item.style.borderLeft = '';
-          if (idx <= 4) {
-            // Sessions 01 to 05: Core Teaching & FE Units (Clean White / Slate Border)
-            item.className = "flight-strip-card group w-full text-left px-2.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border border-slate-200/90 bg-white hover:bg-slate-50 hover:border-slate-300 text-slate-800 hover:text-slate-900 hover:shadow-2xs hover:translate-x-[3px] cursor-pointer";
+          if (isCoreUnit) {
+            // Core Teaching & FE Units (Clean White / Slate Border)
+            item.className = "flight-strip-card group w-full text-left px-2.5 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border border-slate-200/90 bg-white hover:bg-slate-50 hover:border-slate-300 text-slate-800 hover:text-slate-900 hover:shadow-2xs hover:translate-x-[3px] cursor-pointer";
             item.style.backgroundColor = '#ffffff';
             item.style.borderColor = '#e2e8f0';
             if (title) {
@@ -1921,8 +1923,8 @@
               chevron.style.transform = 'none';
             }
           } else {
-            // Cards 06 to 08/09: Administrative & Reference Frameworks (Grounded Slate-200 / Touch Darker)
-            item.className = "flight-strip-card group w-full text-left px-2.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border border-slate-300/80 bg-slate-200/70 hover:bg-slate-200 hover:border-slate-400/80 text-slate-700 hover:text-slate-900 hover:shadow-2xs hover:translate-x-[3px] cursor-pointer";
+            // Administrative & Reference Frameworks (Grounded Slate-200 / Touch Darker)
+            item.className = "flight-strip-card group w-full text-left px-2.5 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border border-slate-300/80 bg-slate-200/70 hover:bg-slate-200 hover:border-slate-400/80 text-slate-700 hover:text-slate-900 hover:shadow-2xs hover:translate-x-[3px] cursor-pointer";
             item.style.backgroundColor = '#e2e8f0';
             item.style.borderColor = '#cbd5e1';
             if (title) {
@@ -2024,7 +2026,7 @@
         }
 
         if (milestoneText) {
-          const badgeText = cardIdx === 4 ? 'FE Target' : ((page && page.isAdmin) ? 'Admin Action' : (page && page.isImmersion ? 'Homestay' : (page && page.isObjectives ? 'Syllabus' : 'FE Tip')));
+          const badgeText = (page && page.isFe) ? 'FE Target' : ((page && page.isAdmin) ? 'Admin Action' : (page && page.isImmersion ? 'Homestay' : (page && page.isObjectives ? 'Syllabus' : 'FE Tip')));
           calloutsHtml += `
             <div class="p-3.5 bg-amber-50/60 border border-amber-200/80 rounded-xl flex items-start gap-2.5 shadow-2xs h-full">
               <span class="inline-flex items-center text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-200/80 text-amber-900 shrink-0 mt-0.5">${badgeText}</span>
@@ -2077,7 +2079,7 @@
       // Update card tag pill (Option A Balanced Horizontal Grid)
       const tagPill = document.getElementById('card-tag-pill');
       if (tagPill) {
-        let tagText = page.tag || (page.isAdmin ? "Administration" : (currentIndex === 4 ? "Formative Evaluation" : (page.isObjectives ? "Curriculum" : (page.isImmersion ? "Immersion" : `Session 0${currentIndex + 1}`))));
+        let tagText = page.tag || (page.isAdmin ? "Administration" : (page.isFe ? "Formative Evaluation" : (page.isObjectives ? "Curriculum" : (page.isImmersion ? "Immersion" : `Session ${String(currentIndex + 1).padStart(2, '0')}`))));
         tagPill.textContent = tagText;
         const pillAccent = mod.accent || mod.primary;
         const pillText = mod.accentDark || mod.primary;
@@ -2136,10 +2138,10 @@
           dockTitle.textContent = "GSEA 25A Administration Hub";
         } else if (page.detailsUrl) {
           dockTitle.textContent = "DDRS Sustainability Guide";
-        } else if (currentIndex === 4) {
-          dockTitle.textContent = `Session 0${currentIndex + 1} Evaluation Center`;
+        } else if (page.isFe) {
+          dockTitle.textContent = `Session ${String(currentIndex + 1).padStart(2, '0')} Evaluation Center`;
         } else {
-          dockTitle.textContent = `Session 0${currentIndex + 1} Study Resources`;
+          dockTitle.textContent = `Session ${String(currentIndex + 1).padStart(2, '0')} Study Resources`;
         }
       }
 
@@ -2165,7 +2167,7 @@
         actionContainer.appendChild(createThemedCTA("Open Resources", "admin_groups", "admin.html"));
       } else if (page.detailsUrl) {
         actionContainer.appendChild(createThemedCTA("Open Resources", "ddrs", ""));
-      } else if (currentIndex === 4) {
+      } else if (page.isFe) {
         actionContainer.appendChild(createThemedCTA("Open Resources", "fe_guidelines", ""));
       } else {
         // Sessions 1 to 4: In-deck modal workspace hub (single themed CTA to open resources drawer)
@@ -2558,10 +2560,12 @@
       headerEl.style.borderColor = theme.primaryDark;
 
       const progConfig = PROGRAMS_CONFIG[modalState.program] || PROGRAMS_CONFIG.ag;
+      const activeModForModal = modulesData[modalState.modNum - 1];
+      const activePageForModal = activeModForModal && activeModForModal.pages && activeModForModal.pages[modalState.sessionNum - 1];
       const isObjectivesSession = tabKey.startsWith('sem_obj_') || modalState.tab.startsWith('sem_obj_');
       const isImmersionSession = !isObjectivesSession && (tabKey === 'immersion' || tabKey.startsWith('immersion_'));
       const isAdminSession = !isObjectivesSession && !isImmersionSession && tabKey.startsWith('admin_');
-      const isFeSession = !isObjectivesSession && !isImmersionSession && !isAdminSession && (modalState.sessionNum === 5 || tabKey.startsWith('fe_'));
+      const isFeSession = !isObjectivesSession && !isImmersionSession && !isAdminSession && (Boolean(activePageForModal && activePageForModal.isFe) || tabKey.startsWith('fe_'));
       const isDdrsSession = !isObjectivesSession && !isImmersionSession && !isAdminSession && tabKey === 'ddrs';
 
       const semObjEnTab = document.getElementById('modal-tab-sem-obj-en');
@@ -2654,8 +2658,8 @@
         if (feObjectivesTab) feObjectivesTab.classList.remove('hidden');
         if (feCriteriaTab) feCriteriaTab.classList.remove('hidden');
 
-        tagEl.textContent = `${progConfig.code} Module ${modalState.modNum} • Session 5`;
-        titleEl.textContent = "Session 5 - Formative Evaluation";
+        tagEl.textContent = `${progConfig.code} Module ${modalState.modNum} • Session ${modalState.sessionNum}`;
+        titleEl.textContent = `Session ${modalState.sessionNum} - Formative Evaluation`;
       } else if (isDdrsSession) {
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
         if (semObjFrTab) semObjFrTab.classList.add('hidden');
@@ -3061,7 +3065,7 @@
           <div class="p-4 bg-slate-100 rounded-xl border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
             <div>
               <p class="text-xs font-bold text-slate-700">Ready to proceed to classroom activities?</p>
-              <p class="text-[11px] text-slate-500">${modalState.sessionNum === 1 ? 'Access the aviation news warm-up, speed-dating survey, modals practice, and EU261 role-play.' : (modalState.sessionNum === 2 ? 'Access the terminal flow map, spatial prepositions practice, apron access role-play, and guidance workshop.' : (modalState.sessionNum === 4 ? 'Access the aviation roles overview, roles & responsibilities practice, day-in-the-life simulations, and career dilemma debate.' : 'Access the interactive vehicle cards, turnaround clock, and role-play simulations.'))}</p>
+              <p class="text-[11px] text-slate-500">${modalState.sessionNum === 1 ? 'Access the aviation news warm-up, speed-dating survey, modals practice, and EU261 role-play.' : (modalState.sessionNum === 2 ? 'Access the terminal flow map, spatial prepositions practice, apron access role-play, and guidance workshop.' : (modalState.sessionNum >= 4 ? 'Access the aviation roles overview, roles & responsibilities practice, day-in-the-life simulations, and career dilemma debate.' : 'Access the interactive vehicle cards, turnaround clock, and role-play simulations.'))}</p>
             </div>
             <button onclick="switchModalTab('content')" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg text-xs font-bold text-white shadow-xs hover:shadow-md transition-all cursor-pointer" style="background-color: ${theme.primary};">
               <span>Open Lesson Content</span>
@@ -3152,7 +3156,7 @@
           renderAas2LessonContentTabSession2(sessionData, theme);
         } else if (modalState.sessionNum === 3) {
           renderAas2LessonContentTabSession3(sessionData, theme);
-        } else if (modalState.sessionNum === 4) {
+        } else {
           renderAas2LessonContentTabSession4(sessionData, theme);
         }
         return;
@@ -3175,10 +3179,10 @@
         renderLessonContentTabSession1(sessionData, theme);
       } else if (modalState.sessionNum === 2) {
         renderLessonContentTabSession2(sessionData, theme);
-      } else if (modalState.sessionNum === 4) {
-        renderLessonContentTabSession4(sessionData, theme);
-      } else {
+      } else if (modalState.sessionNum === 3) {
         renderLessonContentTabSession3(sessionData, theme);
+      } else {
+        renderLessonContentTabSession4(sessionData, theme);
       }
     }
 

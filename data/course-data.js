@@ -441,11 +441,26 @@
               "passengers": "142 passengers holding at the gate (including 28 with tight international long-haul connections)",
               "context": "The inbound aircraft arrived at Toulouse with an intermittent amber hydraulic warning light on the Green circuit. Line maintenance was dispatched to replace a hydraulic pressure relief valve. Technical sign-off (AOG release) was completed at 21h30. However, Paris-CDG air traffic flow management calculated that the flight would arrive after 23h30, risking a violation of the strict CDG night noise curfew penalties. A revised departure slot was assigned for 22h50, creating a total delay of 4 hours and 5 minutes. Gate 14 is overcrowded, tension is escalating, and several passengers are demanding cash and alternate routing.",
               "timeline": [
-                { "time": "18h15", "event": "Inbound aircraft touches down at TLS; crew logs intermittent Green hydraulic system pressure drop during taxi-in." },
-                { "time": "18h45", "event": "Scheduled departure time. Gate agent announces a provisional 45-minute delay for technical investigation." },
-                { "time": "19h30", "event": "Maintenance engineers request a replacement pressure relief valve from station hangar inventory." },
-                { "time": "21h30", "event": "Maintenance repairs signed off and certified airworthy. ATC warns that arrival at CDG risks violating the strict 23h30 night noise curfew." },
-                { "time": "21h45", "event": "ATC confirms revised departure slot for 22h50. 142 passengers assemble at Gate 14; business travelers demand immediate cash and hotel vouchers." }
+                {
+                  "time": "18h15",
+                  "event": "Inbound aircraft touches down at TLS; crew logs intermittent Green hydraulic system pressure drop during taxi-in."
+                },
+                {
+                  "time": "18h45",
+                  "event": "Scheduled departure time. Gate agent announces a provisional 45-minute delay for technical investigation."
+                },
+                {
+                  "time": "19h30",
+                  "event": "Maintenance engineers request a replacement pressure relief valve from station hangar inventory."
+                },
+                {
+                  "time": "21h30",
+                  "event": "Maintenance repairs signed off and certified airworthy. ATC warns that arrival at CDG risks violating the strict 23h30 night noise curfew."
+                },
+                {
+                  "time": "21h45",
+                  "event": "ATC confirms revised departure slot for 22h50. 142 passengers assemble at Gate 14; business travelers demand immediate cash and hotel vouchers."
+                }
               ],
               "regulations": {
                 "dutyOfCare": "Under EU261, delays exceeding 2 hours on flights under 1,500 km trigger an immediate statutory Duty of Care: complimentary meal and refreshment vouchers (€15), two free telephone calls or emails, and overnight hotel accommodation plus ground transfers if departure is rescheduled for the following day.",
@@ -3455,6 +3470,1594 @@
             }
           ]
         }
+      },
+      "5": {
+        "session": 5,
+        "objectives": {
+          "title": "Session 5 - Jobs in Aviation Objectives",
+          "summary": "By the end of this session, you will be able to distinguish and categorize aviation operational professions across landside, airside, flight operations, air traffic services, and civil aviation administration (TSEEAC), accurately articulate professional duties and jurisdictions using formal B2 structures, and collaborate effectively during operational handoffs.",
+          "items": [
+            {
+              "num": 1,
+              "title": "Categorize Aviation Operational Roles (Vocabulary & Classification)",
+              "description": "Distinguish between Landside (passenger handling, security screening, border control), Airside (turnaround coordination, ramp dispatch, marshalling, pushback), Flight Crew (captain, first officer, purser), Air Traffic Control (tower, approach, en-route), and Civil Aviation Administration (TSEEAC)."
+            },
+            {
+              "num": 2,
+              "title": "Clarify TSEEAC Operational Functions (Institutional Precision)",
+              "description": "Accurately explain that TSEEAC personnel are NOT air traffic controllers (no tactical separation authority), but perform critical functions including AFISO (flight information and alerting services), aerodrome operations coordination, and DGAC safety oversight."
+            },
+            {
+              "num": 3,
+              "title": "Express Professional Duties & Authority (Grammar in Context)",
+              "description": "Master and apply functional formulas: 'be responsible for + -ing', 'be tasked with + -ing', 'be in charge of + noun', 'have authority over / to', and 'ensure that + clause'."
+            },
+            {
+              "num": 4,
+              "title": "Simulate Professional Shift & Turnaround Handoffs (Speaking Fluency)",
+              "description": "Conduct structured peer briefings between adjacent roles (Turnaround Coordinator <-> First Officer, AFISO <-> VFR Pilot, Terminal Duty Manager <-> Ramp Supervisor) to resolve operational bottlenecks."
+            },
+            {
+              "num": 5,
+              "title": "Debate Airport Operational Dilemmas (Interaction & Negotiation)",
+              "description": "Analyze complex airport operational dilemmas (e.g. winter weather diversions and ramp congestion) from specific professional viewpoints and negotiate a consensus action plan."
+            },
+            {
+              "num": 6,
+              "title": "Refine Professional Aviation Vocabulary Pronunciation (Phonology)",
+              "description": "Place accurate primary and secondary word stress on complex professional terms (au-THOR-i-ty, re-SPON-si-ble, co-OR-di-na-tor, tech-NI-cian, o-ver-SIGHT, sur-VEIL-lance)."
+            },
+            {
+              "num": 7,
+              "title": "Master Prepositions of Responsibility & Passive Voice (TOEIC Practice)",
+              "description": "Identify common test traps in TOEIC Parts 5 & 6, particularly verbs of obligation, prepositions of responsibility ('responsible for', 'in charge of'), and passive verb structures in airport notices."
+            }
+          ]
+        },
+        "lessonPlan": {
+          "title": "Session 4 Lesson Plan (2 Hours)",
+          "summary": "A 2-hour communicative session featuring an aviation news opening, Session 3 turnaround spot-checking, the aviation roles overview, functional responsibility and authority grammar drills, 'Day in the Life' role handoffs, a winter weather operational dilemma debate, and a 10-minute vocabulary consolidation review.",
+          "items": [
+            {
+              "time": "00-10",
+              "title": "Part 1: Aviation News, Current Events & Session 3 Spot-Check (10 mins)",
+              "description": "Opening 10-minute warm-up: discuss recent international aviation headlines followed by rapid spot-checking of Session 3 turnaround and GSE vocabulary (GPU, ASU, Pushback Tug, Chocks, FOD, Belt Loader)."
+            },
+            {
+              "time": "10-30",
+              "title": "Part 2: Aviation Roles Across the Industry (20 mins)",
+              "description": "Explore the five operational domains (Landside, Airside/Ramp, Flight Crew, ATCOs, and TSEEAC). Clarify the core distinction between ATCO tactical separation authority and TSEEAC AFISO/auditing responsibilities."
+            },
+            {
+              "time": "30-50",
+              "title": "Part 3: Functional Grammar Focus: Responsibilities, Duties & Jurisdiction (20 mins)",
+              "description": "Examine high-yield B2 structures: 'responsible for + -ing', 'tasked with + -ing', 'in charge of', 'have authority over / to', 'ensure that', and 'report to vs. liaise with'. Practice with interactive scenario prompts."
+            },
+            {
+              "time": "50-75",
+              "title": "Part 4: Role-Play Simulation: 'A Day in the Life' Operational Handoffs (25 mins)",
+              "description": "Collaborative paired and triad role-play: simulate professional handoffs and resolve bottlenecks between Turnaround Coordinator <-> First Officer, AFISO <-> Inbound Pilot, and Terminal Duty Manager <-> Ramp Supervisor."
+            },
+            {
+              "time": "75-110",
+              "title": "Part 5: Aviation Career Forum & Operational Dilemma Debate (35 mins)",
+              "description": "Interactive multi-stakeholder debate: resolve an emergency aerodrome diversion scenario during freezing fog and ramp congestion. Argue priorities, negotiate trade-offs, and establish a consensus sequence."
+            },
+            {
+              "time": "110-120",
+              "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
+              "description": "Final 10-minute consolidation: rapid recall of the 18 aviation profession terms, word stress and phonological drills, personal reflection, and continuous learning log update."
+            }
+          ]
+        },
+        "lessonContent": {
+          "hero": {
+            "image": "images/aas_m1card4.jpg",
+            "title": "Jobs in Aviation: Roles, Responsibilities & Operational Interfaces",
+            "subtitle": "Landside, Airside, Flight Crew, Air Traffic Services & Civil Aviation Corps (TSEEAC)"
+          },
+          "openingSession": {
+            "title": "Activity 1: Aviation News & Session 3 Spot-Check (10 mins)",
+            "summary": "Every session begins with a 10-minute professional opening: analyzing current aviation headlines followed by rapid spot-checking of Session 3 ground operations and GSE vocabulary.",
+            "modeBadges": [
+              "👥 Pairs / Plenary",
+              "⏱️ 10 mins",
+              "🗣️ Operational Recall Drill",
+              "🎯 Technical Vocabulary & Fluency"
+            ],
+            "instructions": [
+              "Step 1 (Aviation News Exchange - 4 mins): In pairs, discuss the current aviation headlines prompt. Share one news item regarding airport staffing, ATM capacity, or airline operations.",
+              "Step 2 (Session 3 GSE Spot-Check - 4 mins): Quiz your partner on Questions 1 to 4 (GPU function, Marshaller guidance, turnaround time critical path, FOD prevention) before revealing answers.",
+              "Step 3 (Class Operational Recap - 2 mins): Plenary review of one GSE definition. Highlight why GPU usage reduces ramp emissions and APU wear."
+            ],
+            "deliverable": "Spoken explanation of 1 aviation operational news item and an accurate technical explanation of GPU or turnaround time.",
+            "teacherNotes": "Cold-call pairs. Probe beyond superficial definitions: ask what happens to an aircraft's departure slot if the GPU fails during pushback disconnect.",
+            "newsPrompts": [
+              "What aviation, airline, or ATM news stories caught your attention in the headlines this week?",
+              "How are airports and air navigation service providers managing staffing, recruitment, or new operational procedures this season?"
+            ],
+            "spotCheck": {
+              "title": "Session 3 Vocabulary Spot-Check (Ground Operations & GSE)",
+              "questions": [
+                {
+                  "id": 1,
+                  "q": "What is the primary function of a Ground Power Unit (GPU) during an aircraft turnaround?",
+                  "answer": "A GPU supplies 400Hz AC electrical power to the aircraft while parked at the gate stand, allowing the flight crew to shut down the main engines and auxiliary power unit (APU) to save fuel and reduce ramp emissions."
+                },
+                {
+                  "id": 2,
+                  "q": "How does a Marshaller guide an arriving aircraft to its parking stand when automated docking is unavailable?",
+                  "answer": "A marshaller uses illuminated wands or visual hand signals to direct the flight deck along the painted yellow lead-in line to the precise nosewheel stop mark."
+                },
+                {
+                  "id": 3,
+                  "q": "What is turnaround time (TAT) and why is minimizing it critical for airlines?",
+                  "answer": "Turnaround time is the elapsed period from chocks-on at arrival to chocks-off at departure. Minimizing TAT maximizes aircraft daily utilization and prevents knock-on departure slot delays."
+                },
+                {
+                  "id": 4,
+                  "q": "What is Foreign Object Debris (FOD) and how do ramp teams prevent it?",
+                  "answer": "FOD is any loose item, tool, fragment, or trash on the apron or taxiway that could be ingested by a jet engine or damage tires; ground crews conduct continuous visual scans and regular FOD sweeps."
+                }
+              ]
+            }
+          },
+          "jobTaxonomy": {
+            "title": "Activity 2: Aviation Roles Across the Industry (20 mins)",
+            "summary": "Aviation is an intricate ecosystem where specialized professions collaborate seamlessly. Explore the five primary operational domains, their key responsibilities, and the essential distinction between ATCO separation authority and TSEEAC functions.",
+            "modeBadges": [
+              "👥 Small Groups (3-4)",
+              "⏱️ 20 mins",
+              "🧭 Roles & Jurisdiction Analysis",
+              "🎯 Operational Domain Mastery"
+            ],
+            "instructions": [
+              "Step 1 (Domain Exploration - 8 mins): Study the 5 operational domains: Landside, Airside, Flight Crew, ATCOs, and TSEEAC. Identify the primary physical jurisdiction and core duty for each.",
+              "Step 2 (Crucial Distinction Audit - 6 mins): Analyze the structural legal difference between ATCOs (tactical separation authority) and TSEEAC / AFISOs (flight information and advisory services without separation authority).",
+              "Step 3 (Role Matching Drill - 6 mins): In pairs, randomly name a professional role (e.g. TRC, AFISO, Marshaller, Tower ATCO). Your partner must state the domain, primary duty, and whom they report to."
+            ],
+            "deliverable": "Accurate categorization of all 5 domains and a clear spoken explanation distinguishing ATCO separation authority from TSEEAC AFISO flight information.",
+            "teacherNotes": "Emphasize the ENAC/DGAC institutional distinction: TSEEAC is a civil aviation body, AFISOs provide information/alerting, whereas ATCOs hold licensing to issue binding separation clearances.",
+            "domains": [
+              {
+                "id": "landside",
+                "name": "1. Landside Operations",
+                "color": "sky",
+                "roles": [
+                  "Passenger Service Agent (PSA)",
+                  "Security Screening Officer",
+                  "Terminal Duty Manager",
+                  "Border Control Officer"
+                ],
+                "description": "Manages passenger processing, documentation verification, terminal safety, and accessibility before the airside security boundary.",
+                "keyJurisdiction": "Public terminal zones, check-in concourses, baggage drop systems, and departure lounge coordination.",
+                "sampleDuty": "Passenger Service Agents verify travel documents, handle gate boarding announcements, and manage baggage reconciliation."
+              },
+              {
+                "id": "airside",
+                "name": "2. Airside & Ramp Operations",
+                "color": "amber",
+                "roles": [
+                  "Turnaround Coordinator (TRC)",
+                  "Ramp Agent / Baggage Handler",
+                  "Marshaller",
+                  "Pushback Tug Driver",
+                  "De-icing Rig Operator",
+                  "Refueller / Hydrant Dispenser"
+                ],
+                "description": "Coordinates all parallel ground servicing operations around the aircraft within the designated safety servicing envelope.",
+                "keyJurisdiction": "Apron stands, equipment staging lanes, airside service roads, and aircraft servicing envelopes.",
+                "sampleDuty": "The Turnaround Coordinator oversees parallel servicing tasks, monitors fuel and baggage loading, and enforces on-time departure."
+              },
+              {
+                "id": "flightcrew",
+                "name": "3. Aircraft Flight Crew",
+                "color": "indigo",
+                "roles": [
+                  "Captain (Pilot-in-Command)",
+                  "First Officer (Co-Pilot)",
+                  "Purser / Senior Cabin Manager",
+                  "Cabin Crew / Flight Attendant"
+                ],
+                "description": "Responsible for the safe navigation, operation, passenger welfare, and emergency readiness of the aircraft from off-blocks to on-blocks.",
+                "keyJurisdiction": "Cockpit flight deck, passenger cabin, aircraft technical logbook, and emergency systems.",
+                "sampleDuty": "The First Officer performs external walkaround inspections, cross-checks FMC route programming, and monitors radio communications."
+              },
+              {
+                "id": "atco",
+                "name": "4. Air Traffic Control Officers (ATCOs)",
+                "color": "rose",
+                "roles": [
+                  "Aerodrome / Tower ATCO",
+                  "Approach Radar Controller (APP)",
+                  "Area / En-Route Controller (ACC)"
+                ],
+                "description": "Licensed air traffic controllers possessing executive legal authority to issue binding clearances and ensure safe tactical separation between aircraft in flight and on active movement areas.",
+                "keyJurisdiction": "Active runways, taxiways, controlled airspace sectors, and terminal maneuvering areas (TMA).",
+                "sampleDuty": "Tower ATCOs issue mandatory takeoff and landing clearances, manage runway sequencing, and maintain aircraft separation."
+              },
+              {
+                "id": "tseeac",
+                "name": "5. Civil Aviation Operations Corps (TSEEAC)",
+                "color": "emerald",
+                "roles": [
+                  "Aerodrome Flight Information Service Officer (AFISO)",
+                  "Aerodrome Operations Coordinator",
+                  "DGAC Aviation Safety Inspector",
+                  "Air Navigation Technical Support Officer"
+                ],
+                "description": "Civil aviation civil servants who perform critical operations, flight information, safety oversight, and aerodrome management. IMPORTANT: TSEEAC personnel are NOT air traffic controllers and do NOT have separation authority; AFISOs provide advisory flight information and alerting service at non-controlled aerodromes.",
+                "keyJurisdiction": "AFIS aerodromes, civil aviation regional directorates (DSAC), airport safety coordination, and technical surveillance.",
+                "sampleDuty": "An AFISO provides weather reports, runway conditions, and traffic advisories to pilots, while DGAC safety inspectors conduct regulatory compliance audits."
+              }
+            ]
+          },
+          "grammarClinic": {
+            "title": "Activity 3: Language Focus: Roles, Responsibilities & Authority (20 mins)",
+            "summary": "Professional aviation communication demands absolute precision when describing who does what, who reports to whom, and who holds regulatory authority.",
+            "modeBadges": [
+              "👤 Individual -> 👥 Pairs",
+              "⏱️ 20 mins",
+              "✍️ Operational Syntax Drill",
+              "🎯 Collocation & Precision"
+            ],
+            "instructions": [
+              "Step 1 (Formula Mastery - 5 mins): Review the 6 authority and responsibility structures above. Note preposition rules: 'responsible FOR + -ing', 'tasked WITH + -ing', 'authority OVER / TO + verb'.",
+              "Step 2 (Role Duty Construction - 10 mins): With a partner, write 3 operational sentences describing different aviation roles using: (1) 'be tasked with', (2) 'have authority to', and (3) 'liaise with vs. report to'.",
+              "Step 3 (Roles & Responsibilities Challenge - 5 mins): Complete the 4 interactive grammar challenge questions individually, check your answers, and discuss the preposition rules."
+            ],
+            "deliverable": "4 verified practice question answers + 3 original spoken or written role-duty descriptions demonstrating correct prepositional collocations.",
+            "teacherNotes": "Stamp out 'responsible OF' immediately (French interference). Highlight the difference between hierarchical reporting ('reports to the TRC') and lateral coordination ('liaises with fueling').",
+            "formulas": [
+              {
+                "structure": "be responsible for + -ing / noun",
+                "usage": "Core ongoing duty or accountability",
+                "example": "The Turnaround Coordinator is responsible for ensuring all servicing vehicles clear the stand before pushback."
+              },
+              {
+                "structure": "be tasked with + -ing / noun",
+                "usage": "Official assignment, directive, or designated role",
+                "example": "The AFIS officer is tasked with providing traffic information and weather advisories to inbound aircraft."
+              },
+              {
+                "structure": "be in charge of + noun / -ing",
+                "usage": "Supervisory oversight of a team, facility, or zone",
+                "example": "The Terminal Duty Manager is in charge of passenger concourse flow and emergency crowd management."
+              },
+              {
+                "structure": "have authority over / to + verb",
+                "usage": "Legal jurisdiction or executive command power",
+                "example": "Tower ATCOs have authority over active runways and issue binding takeoff and landing clearances."
+              },
+              {
+                "structure": "ensure that + clause",
+                "usage": "Verification, quality control, and safety compliance",
+                "example": "Safety inspectors ensure that airline maintenance procedures comply with DGAC regulations."
+              },
+              {
+                "structure": "report to vs. liaise with",
+                "usage": "Hierarchy vs. horizontal peer collaboration",
+                "example": "The Ramp Agent reports to the Turnaround Coordinator and liaises with fueling technicians."
+              }
+            ],
+            "roleClinic": [
+              {
+                "id": 1,
+                "prompt": "The First Officer is tasked with (conducting / to conduct / conduct) the pre-flight external walkaround inspection.",
+                "answer": "conducting",
+                "explanation": "'Be tasked with' is followed by the preposition 'with', which requires a gerund (-ing)."
+              },
+              {
+                "id": 2,
+                "prompt": "Unlike ATCOs, AFISOs do not have authority (to separate / separating / for separate) aircraft tactically.",
+                "answer": "to separate",
+                "explanation": "'Have authority to' is followed by the base infinitive ('to separate')."
+              },
+              {
+                "id": 3,
+                "prompt": "The Ramp Agent is responsible (for / of / to) securing the wheel chocks once the aircraft comes to a stop.",
+                "answer": "for",
+                "explanation": "'Responsible for' is the correct prepositional collocation (avoid the French false friend 'responsible of')."
+              },
+              {
+                "id": 4,
+                "prompt": "The Turnaround Coordinator must ensure (that / what / which) the cargo hold doors are locked before pushback.",
+                "answer": "that",
+                "explanation": "'Ensure' takes a content clause starting with 'that' ('ensure that + subject + verb')."
+              }
+            ]
+          },
+          "handoffSimulation": {
+            "title": "Activity 4: Pairwork & Triad Simulation — 'A Day in the Life' Role Handoff (25 mins)",
+            "summary": "Effective inter-departmental handoffs prevent bottlenecks and eliminate miscommunication. Work in pairs or triads to conduct professional operational handovers.",
+            "modeBadges": [
+              "👥 Pairs / Triads",
+              "⏱️ 25 mins",
+              "🎭 Operational Interface Simulation",
+              "🎯 Radio & Handoff Fluency"
+            ],
+            "instructions": [
+              "Step 1 (Scenario Assignment - 5 mins): Choose Pair 1 (TRC <-> Flight Deck), Pair 2 (AFISO <-> Inbound VFR), or Pair 3 (Terminal Manager <-> Ramp Supervisor). Read your specific role context.",
+              "Step 2 (Simulation Rehearsal - 12 mins): Conduct the operational handoff in character. You must incorporate at least two of the mandatory target phrases (e.g., 'tasked with', 'liaised with', 'ensure that').",
+              "Step 3 (Role Reversal & Feedback - 8 mins): Swap roles and repeat the dialogue under modified conditions (e.g. 5 minutes until slot loss or sudden weather degradation)."
+            ],
+            "deliverable": "A 2-minute fluent operational handoff dialogue successfully resolving an operational conflict using mandatory responsibility formulas.",
+            "teacherNotes": "Listen for realistic aviation tone: professional, concise, assertive, but collaborative. Ensure students actually use the target phrases rather than informal conversational English.",
+            "scenarios": [
+              {
+                "id": "pair1",
+                "title": "Pair 1: Turnaround Coordinator (TRC) <-> First Officer (Flight Deck)",
+                "context": "Flight AF418 is scheduled off-blocks in 8 minutes. Cargo loading is complete, but the refueller was held up by a minor hose leak. The First Officer needs the final fuel uplift and signed load sheet.",
+                "roleA": "Turnaround Coordinator: Confirm fuel uplift of 5,800 kg, present the final trim sheet for Captain's signature, and report stand clearance status.",
+                "roleB": "First Officer: Cross-check the fuel quantity against FMC calculations, verify the center of gravity (CG) limits on the trim sheet, and request pushback readiness.",
+                "targetPhrases": [
+                  "\"I am responsible for confirming that all ground equipment has detached...\"",
+                  "\"Could you ensure that the load sheet reflects the actual fuel on board?\"",
+                  "\"We liaised with the fueling technician, and all safety valves are verified.\""
+                ]
+              },
+              {
+                "id": "pair2",
+                "title": "Pair 2: AFISO (TSEEAC) <-> Inbound VFR Aircraft",
+                "context": "A Cessna 172 is inbound to a non-controlled regional airfield. The AFISO is on duty in the aerodrome flight information station. Low winter sun and flocking birds have been observed near Runway 26 threshold.",
+                "roleA": "AFISO (TSEEAC): Provide aerodrome flight information: runway in use 26, surface wind 240/12kt, QNH 1018, cautionary bird advisory, and report on opposing glider traffic.",
+                "roleB": "VFR Pilot: Acknowledge information, report position over visual reporting point (Sierra), and state intentions for standard overhead join.",
+                "targetPhrases": [
+                  "\"Information only: Runway 26 in use, wind 240 degrees at 12 knots...\"",
+                  "\"Be advised, a flock of lapwings has been reported near the threshold...\"",
+                  "\"As an AFISO, I am tasked with providing traffic and safety advisories.\""
+                ]
+              },
+              {
+                "id": "pair3",
+                "title": "Pair 3: Terminal Duty Manager <-> Ramp Operations Supervisor",
+                "context": "A group of 14 delayed transit passengers from a connecting transatlantic flight has just cleared security. The departure flight has a strict 10-minute CTOT slot.",
+                "roleA": "Terminal Duty Manager: Request a 5-minute gate hold to allow the transit passengers to board, arguing customer service and connection costs.",
+                "roleB": "Ramp Operations Supervisor: Defend the slot departure, explaining the financial and network penalties of missing the Eurocontrol CTOT slot.",
+                "targetPhrases": [
+                  "\"We are in charge of passenger processing and must avoid misconnecting passengers...\"",
+                  "\"If we miss this slot, ATC will hold the flight for at least 45 minutes...\"",
+                  "\"Can we ensure that baggage is prioritized while passengers board through the gate?\""
+                ]
+              }
+            ]
+          },
+          "careerForumDebate": {
+            "title": "Activity 5: Aviation Career Forum & Operational Dilemma Debate (35 mins)",
+            "summary": "A fast-moving winter weather front brings freezing fog, reducing Runway Visual Range (RVR) to 350m at a regional aerodrome. Stand capacity is at 95%, de-icing rigs are working at maximum throughput, and two inbound diversions are requesting priority due to fuel minimums. Each team represents an aviation profession, defends operational priorities, and negotiates a consensus action plan.",
+            "modeBadges": [
+              "👥 4-Way Multi-Stakeholder Forum",
+              "⏱️ 35 mins",
+              "⚡ Crisis Management Negotiation",
+              "🎯 Consensus Building"
+            ],
+            "instructions": [
+              "Step 1 (Crisis Briefing & Stance - 8 mins): Read the Winter Storm & Diversion Gridlock scenario. Assign one stakeholder role per team member (ATCO, AFISO/Ops, TRC/Ground, Captain). Review your non-negotiable priority.",
+              "Step 2 (Stakeholder Round-Robin - 12 mins): Each stakeholder presents their operational dilemma and proposed sequence of events. State what your role can and cannot concede.",
+              "Step 3 (Consensus Negotiation & Rating - 15 mins): Negotiate a sequential 3-step action plan using conditional language ('Provided that...', 'On condition that...'). Vote on the 3 consensus challenges in the agreement tracker."
+            ],
+            "deliverable": "A negotiated 3-step crisis operational resolution signed off by all 4 stakeholders, balancing fuel safety, stand capacity, de-icing holdover times, and slot preservation.",
+            "teacherNotes": "Maintain high tension! Remind them that if no decision is made within 20 minutes, the Captain's crew times out, the diversion exhausts fuel reserves, and runway friction degrades further. Demand conditional structures.",
+            "scenario": "Regional Aerodrome 'Echo-Delta' is experiencing severe winter weather with RVR 350m and freezing drizzle. Only 2 parking stands remain open. Two diverted commercial jets are in the holding pattern, one declaring 'Minimum Fuel'. On the ground, an outbound flight on Stand 2 has passengers boarded, but its holdover time has expired, requiring a second de-icing cycle.",
+            "stakeholders": [
+              {
+                "name": "Tower & Approach ATCOs",
+                "priority": "Runway safety, separation in holding stacks, and emergency prioritization for the minimum-fuel diversion.",
+                "stance": "Has sole authority over runway access; demands clear runway sequencing and will not clear departures until emergency fuel traffic lands."
+              },
+              {
+                "name": "AFISO / Aerodrome Operations Coordinator (TSEEAC)",
+                "priority": "Airfield friction coefficient measurement, snow and de-icing coordinator, apron safety compliance, and stand allocation.",
+                "stance": "Liaises between airport authority and services; ensures de-icing pad does not gridlock and coordinates snow clearing plows on taxiways."
+              },
+              {
+                "name": "Turnaround Coordinator & Ground Handling Lead",
+                "priority": "Ramp safety, ground equipment availability, de-icing fluid inventory, and baggage handling for diverted passengers.",
+                "stance": "Warns that ramp handlers are nearing maximum duty limits and de-icing fluid is at critical reserves; insists on clearing Stand 2 first."
+              },
+              {
+                "name": "Airline Captain (Outbound Flight on Stand 2)",
+                "priority": "Passenger welfare, flight duty period (FDP) limits, and slot adherence.",
+                "stance": "Argues that if the aircraft is not de-iced and dispatched within 20 minutes, the crew will exceed legal duty hours and the flight must be cancelled."
+              }
+            ],
+            "consensusChallenge": "In mixed teams of 4, negotiate a step-by-step priority sequence using conditional structures ('Provided that...', 'As long as...', 'On condition that...') to resolve the standoff safely and efficiently."
+          },
+          "closingReview": {
+            "title": "Activity 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
+            "summary": "The final 10 minutes consolidate today's high-yield vocabulary, reinforce syllable stress on professional job titles, and update your personal continuous assessment log.",
+            "modeBadges": [
+              "👤 Individual & 👥 Pairs",
+              "⏱️ 10 mins",
+              "⚡ Syllable Stress & Self-Audit",
+              "🎯 Formative Synthesis"
+            ],
+            "instructions": [
+              "Step 1 (Pronunciation Practice - 4 mins): Practice pronouncing the 6 multisyllabic professional titles aloud with correct syllable stress: au-THOR-i-ty (2nd), re-SPON-si-ble (2nd), co-OR-di-na-tor (2nd), o-ver-SIGHT (1st).",
+              "Step 2 (Rapid-Fire Partner Quiz - 4 mins): Test your partner on 3 random terms from today's session (e.g. PSA vs. TRC, AFISO jurisdiction, Foreign Object Debris prevention).",
+              "Step 3 (Self-Assessment & Portfolio - 2 mins): Rate your confidence (1 to 5) in explaining your future aviation profession. Record target terms in your semester study log."
+            ],
+            "deliverable": "Accurate pronunciation of 4 key multisyllabic aviation terms + complete self-assessment entry in study portfolio.",
+            "teacherNotes": "Focus on primary stress in technical nouns vs. verbs. Remind students that Session 5 is Formative Evaluation 1: ensure portfolios, vocabulary logs, and presentations are fully prepped.",
+            "reviewPrompts": [
+              {
+                "title": "1. Syllable Stress & Pronunciation Practice",
+                "desc": "Drill accurate syllable stress: au-THOR-i-ty (2nd), re-SPON-si-ble (2nd), tech-NI-cian (2nd), co-OR-di-na-tor (2nd), o-ver-SIGHT (1st), sur-VEIL-lance (2nd)."
+              },
+              {
+                "title": "2. Rapid-Fire Retrieval Quiz",
+                "desc": "In pairs, quiz each other on 3 random terms from today's 18 vocabulary bank without checking notes (e.g. AFISO vs. ATCO, Turnaround Coordinator, Flight Dispatcher)."
+              },
+              {
+                "title": "3. Self-Assessment & Continuous Learning",
+                "desc": "Rate your ability (1 to 5) to explain the responsibilities of your future aviation profession. Update your study portfolio with target expressions."
+              }
+            ]
+          }
+        },
+        "revision": {
+          "title": "Session 4: Jobs in Aviation",
+          "summary": "Review the 18 key technical and professional terms covering landside, airside, flight crew, air traffic control (ATCO), and civil aviation administration (TSEEAC / AFISO) to enhance your speaking fluency and TOEIC accuracy.",
+          "terms": [
+            {
+              "num": "01",
+              "term": "Aerodrome Flight Information Service Officer (AFISO)",
+              "definition": "A certified aeronautical station officer (often TSEEAC) providing traffic advisories, aerodrome conditions, and alerting services to aircraft at non-controlled aerodromes without separation authority."
+            },
+            {
+              "num": "02",
+              "term": "Air Traffic Control Officer (ATCO)",
+              "definition": "A licensed professional legally authorized to issue mandatory control clearances and maintain safe tactical separation between aircraft in flight and maneuvering on active airport surfaces."
+            },
+            {
+              "num": "03",
+              "term": "Turnaround Coordinator (TRC)",
+              "definition": "The ground handling operations lead on the apron responsible for orchestrating servicing teams, monitoring critical-path milestones, and ensuring punctual departure."
+            },
+            {
+              "num": "04",
+              "term": "Ramp Agent",
+              "definition": "An airside ground handler responsible for loading and unloading baggage and cargo, positioning ground support equipment, and securing the aircraft servicing envelope."
+            },
+            {
+              "num": "05",
+              "term": "Marshaller",
+              "definition": "A trained apron ground handler who uses illuminated wands or visual hand signals to guide an incoming aircraft along the taxi line to its exact parking mark."
+            },
+            {
+              "num": "06",
+              "term": "Flight Operations Officer / Dispatcher",
+              "definition": "A licensed flight planning specialist who calculates fuel requirements, monitors en-route NOTAMs and weather, prepares flight plans, and co-signs the dispatch release with the captain."
+            },
+            {
+              "num": "07",
+              "term": "Passenger Service Agent (PSA)",
+              "definition": "A landside airline or ground handling employee who assists travelers at check-in desks, checks travel documentation, reconciles hold luggage, and conducts gate boarding."
+            },
+            {
+              "num": "08",
+              "term": "Aviation Safety Inspector",
+              "definition": "A civil aviation authority official (e.g. DGAC/DSAC, often TSEEAC) tasked with auditing airlines, maintenance repair organizations, and aerodromes for strict regulatory compliance."
+            },
+            {
+              "num": "09",
+              "term": "Aerodrome Operations Coordinator",
+              "definition": "An airport duty specialist (often TSEEAC) responsible for inspecting runway pavement friction, monitoring obstacle limitation surfaces, managing wildlife hazards, and coordinating apron works."
+            },
+            {
+              "num": "10",
+              "term": "Avionics Technician",
+              "definition": "A certified aircraft maintenance engineer specialized in troubleshooting, repairing, calibrating, and certifying cockpit flight management computers, radar, and navigation systems."
+            },
+            {
+              "num": "11",
+              "term": "First Officer",
+              "definition": "The second-in-command pilot on the flight deck who shares flight navigation, radio communications, and system monitoring duties with the Captain."
+            },
+            {
+              "num": "12",
+              "term": "Purser / Cabin Manager",
+              "definition": "The senior cabin crew member responsible for supervising cabin attendants, directing in-flight passenger safety procedures, and coordinating with the flight deck."
+            },
+            {
+              "num": "13",
+              "term": "Security Screening Officer",
+              "definition": "A certified landside security officer who operates X-ray scanners, millimeter-wave body scanners, and explosive trace detectors to screen passengers and carry-on luggage."
+            },
+            {
+              "num": "14",
+              "term": "De-icing Rig Operator",
+              "definition": "A specialized ramp technician who operates aerial boom trucks to spray heated glycol mixtures onto aircraft surfaces to eradicate snow, frost, and ice contamination."
+            },
+            {
+              "num": "15",
+              "term": "Pushback Tug Driver",
+              "definition": "A heavy-equipment ramp driver specialized in connecting towbars or towbarless cradles to safely push aircraft backward out of gate stands into the taxi lane."
+            },
+            {
+              "num": "16",
+              "term": "Airfield Maintenance Technician",
+              "definition": "A technical specialist who inspects and maintains aeronautical ground lighting (AGL), taxiway guidance signage, runway markings, and perimeter security fences."
+            },
+            {
+              "num": "17",
+              "term": "Refueller / Fuel Hydrant Operator",
+              "definition": "A ramp fueling technician who connects mobile fuel bowsers or underground hydrant dispensers to aircraft fuel valves to deliver precise, contamination-tested Jet-A1."
+            },
+            {
+              "num": "18",
+              "term": "Load Controller / Weight & Balance Specialist",
+              "definition": "An operations professional who calculates aircraft center-of-gravity (CG), models payload distribution, and generates the official load and trim sheet required for safe takeoff."
+            }
+          ]
+        },
+        "materials": {
+          "videos": [
+            {
+              "title": "Video 1: Boeing 777 Airport Ground Handling: Start to Finish",
+              "watchUrl": "https://www.youtube.com/watch?v=KSfgLX5j-lQ",
+              "tag": "Ground Operations",
+              "videoId": "KSfgLX5j-lQ",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/KSfgLX5j-lQ",
+              "caption": "Focus: Authentic real-world turnaround coordination: marshaling, chock placement, GPU connection, belt loaders, baggage logistics, and pushback operations."
+            },
+            {
+              "title": "Video 2: Inside Air Traffic Control",
+              "watchUrl": "https://www.youtube.com/watch?v=R90mroZyAL4",
+              "tag": "Air Traffic Services",
+              "videoId": "R90mroZyAL4",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/R90mroZyAL4",
+              "caption": "Focus: Tower, approach, and en-route controllers managing active runways, sector handoffs, tactical separation authority, and standard phraseology."
+            },
+            {
+              "title": "Video 3: AFIS & Regional Aerodrome Operations",
+              "watchUrl": "https://www.youtube.com/watch?v=2BZbHAJQ70s",
+              "tag": "TSEEAC / AFISO Focus",
+              "videoId": "2BZbHAJQ70s",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/2BZbHAJQ70s",
+              "caption": "Focus: Aerodrome Flight Information Service (AFIS) officers providing flight information, weather reports, and alerting service without air traffic control separation."
+            }
+          ],
+          "grammar": {
+            "title": "Expressing Professional Responsibilities, Duties & Authority",
+            "badge": "B2 Functional Grammar Focus",
+            "patternTitle": "Responsibility & Authority Formulas",
+            "formula": "BE RESPONSIBLE FOR + -ING • BE TASKED WITH + -ING • HAVE AUTHORITY OVER / TO • ENSURE THAT + CLAUSE",
+            "rulesTitle": "Core Formulas & Jurisdictional Prepositions",
+            "rules": [
+              "<strong style=\"color: #1e293b;\">1. BE RESPONSIBLE FOR + Gerund / Noun:</strong> Core ongoing duty or accountability (<span style=\"font-weight: 700; color: #c0684f;\">responsible for coordinating</span>, <span style=\"font-weight: 700; color: #c0684f;\">responsible for flight safety</span>).",
+              "<strong style=\"color: #1e293b;\">2. BE TASKED WITH + Gerund / Noun:</strong> Designated operational mission or assigned mandate (<span style=\"font-weight: 700; color: #c0684f;\">tasked with conducting</span>, <span style=\"font-weight: 700; color: #c0684f;\">tasked with safety audits</span>).",
+              "<strong style=\"color: #1e293b;\">3. HAVE AUTHORITY OVER / TO:</strong> Legal command power (<span style=\"font-weight: 600; color: #334155;\">have authority over active runways</span> [ATCO], <span style=\"font-weight: 600; color: #334155;\">authority to issue clearances</span>).",
+              "<strong style=\"color: #1e293b;\">4. ENSURE THAT + Clause:</strong> Verification and quality assurance (<span style=\"font-weight: 600; color: #334155;\">ensure that cargo doors are latched</span>, <span style=\"font-weight: 600; color: #334155;\">ensure that weight limits are respected</span>).",
+              "<strong style=\"color: #1e293b;\">5. REPORT TO vs. LIAISE WITH:</strong> Upward hierarchy (<span style=\"font-weight: 600; color: #334155;\">reports to the chief pilot</span>) vs. lateral coordination (<span style=\"font-weight: 600; color: #334155;\">liaises with apron controllers</span>)."
+            ],
+            "trap": "<strong>⚠️ Common Preposition & False Friend Trap:</strong> Never say <em>responsible of</em>—always use <strong>responsible for + -ing</strong>. Also, strictly distinguish <em>control</em> (ATCO issuing binding separation orders) from <em>provide information</em> (AFISO advising pilots without executive control clearances).",
+            "examplesTitle": "Operational Responsibility Examples",
+            "examples": [
+              "<em>\"The Turnaround Coordinator is <strong>responsible for ensuring</strong> that all ground support equipment is detached before pushback.\"</em>",
+              "<em>\"Unlike aerodrome controllers, AFISOs are <strong>tasked with providing</strong> traffic information rather than tactical separation clearances.\"</em>"
+            ]
+          },
+          "toeic": {
+            "stem": "The Turnaround Coordinator is directly responsible ________ supervising the loading of cargo and ensuring compliance with the weight schedule.",
+            "options": [
+              {
+                "letter": "A",
+                "text": "with"
+              },
+              {
+                "letter": "B",
+                "text": "for"
+              },
+              {
+                "letter": "C",
+                "text": "of"
+              },
+              {
+                "letter": "D",
+                "text": "to"
+              }
+            ],
+            "correctLetter": "B",
+            "correctText": "for",
+            "analysis": "\"Responsible for\" is the fixed prepositional collocation followed by a gerund (\"supervising\").",
+            "strategy": "Spot \"responsible\" -> immediately look for \"for + -ing/noun\". Avoid the common French false friend \"responsible of\"."
+          },
+          "resources": [
+            {
+              "url": "https://www.ecologie.gouv.fr/concours-dgac",
+              "tag": "01 • Civil Aviation Authority",
+              "name": "DGAC Careers & TSEEAC Competitions",
+              "desc": "Official French civil aviation authority portal detailing TSEEAC, IEEAC, and ATCO recruitment competitions and corps duties."
+            },
+            {
+              "url": "https://www.eurocontrol.int/careers",
+              "tag": "02 • European ATM Network",
+              "name": "Eurocontrol Air Traffic Management",
+              "desc": "Pan-European air navigation services, controller profiles, and ATM network operations."
+            },
+            {
+              "url": "https://www.iata.org/en/programs/ops-infra/ground-operations/",
+              "tag": "03 • Ramp & Apron Standards",
+              "name": "IATA Ground Operations Hub (IGOM)",
+              "desc": "Global airline industry standards for apron safety, aircraft turnaround, and ground support equipment handling."
+            },
+            {
+              "url": "https://www.ifatca.org",
+              "tag": "04 • Professional Association",
+              "name": "IFATCA Air Traffic Controllers",
+              "desc": "Worldwide federation representing over 50,000 air traffic controllers across 130 countries."
+            },
+            {
+              "url": "https://www.icao.int",
+              "tag": "05 • Global Standards",
+              "name": "ICAO Personnel Licensing (Annex 1)",
+              "desc": "International civil aviation benchmarks for pilots, flight dispatchers, ATCOs, and aeronautical station operators."
+            },
+            {
+              "url": "https://www.etsglobal.org/fr/fr",
+              "tag": "06 • Evaluation Rubrics",
+              "name": "ETS Global TOEIC Practice",
+              "desc": "Official TOEIC Speaking & Writing evaluation benchmarks and sample workplace responses for aviation professionals."
+            }
+          ],
+          "pageUrl": "session4/admat_aas1.html",
+          "articles": [
+            {
+              "topic": "FlightGlobal / Aviation Careers",
+              "sourceTag": "Career Insight",
+              "heading": "Beyond the Flight Deck: The Essential Network of Airport Operations",
+              "snippet": "An in-depth look at the landside, airside, and regulatory roles that keep international aviation flowing seamlessly 24/7.",
+              "readTime": "Estimated read: 5-6 mins",
+              "url": "https://www.flightglobal.com"
+            },
+            {
+              "topic": "DGAC France / ENAC Portal",
+              "sourceTag": "Civil Aviation Careers",
+              "heading": "The Modern Role of TSEEAC: From AFIS to Safety Oversight",
+              "snippet": "How France's Civil Aviation Operations Corps supports regional aerodrome operations, civil aviation safety inspections, and air navigation technical support.",
+              "readTime": "Estimated read: 5-7 mins",
+              "url": "https://www.ecologie.gouv.fr/direction-generale-laviation-civile-dgac"
+            },
+            {
+              "topic": "Eurocontrol ATM Careers",
+              "sourceTag": "Operational Profile",
+              "heading": "ATCO vs AFISO: Understanding the Scope of Air Traffic Services",
+              "snippet": "Comparing tactical separation authority in controlled airspace with flight information and advisory services at regional fields.",
+              "readTime": "Estimated read: 6-8 mins",
+              "url": "https://www.eurocontrol.int"
+            },
+            {
+              "topic": "IATA Ground Operations Bulletin",
+              "sourceTag": "Safety & Turnaround",
+              "heading": "The Turnaround Coordinator: Heartbeat of On-Time Performance",
+              "snippet": "Why ramp coordinators, loadmasters, and flight dispatchers form the vital link between airline schedules and safety compliance.",
+              "readTime": "Estimated read: 5-6 mins",
+              "url": "https://www.iata.org"
+            }
+          ],
+          "toeicQuestions": [
+            {
+              "stem": "The Turnaround Coordinator is directly responsible ________ supervising the loading of cargo and ensuring compliance with the weight schedule.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "with"
+                },
+                {
+                  "letter": "B",
+                  "text": "for"
+                },
+                {
+                  "letter": "C",
+                  "text": "of"
+                },
+                {
+                  "letter": "D",
+                  "text": "to"
+                }
+              ],
+              "correctLetter": "B",
+              "correctText": "for",
+              "analysis": "\"Responsible for\" is the fixed prepositional collocation followed by a gerund (\"supervising\").",
+              "strategy": "Spot \"responsible\" -> immediately look for \"for + -ing/noun\". Avoid the common French false friend \"responsible of\"."
+            },
+            {
+              "stem": "Unlike aerodrome controllers who issue clearances, AFIS officers are tasked with ________ flight information and meteorological updates to inbound pilots.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "provide"
+                },
+                {
+                  "letter": "B",
+                  "text": "provides"
+                },
+                {
+                  "letter": "C",
+                  "text": "providing"
+                },
+                {
+                  "letter": "D",
+                  "text": "provided"
+                }
+              ],
+              "correctLetter": "C",
+              "correctText": "providing",
+              "analysis": "\"Be tasked with\" is followed by a preposition (\"with\"), which requires a gerund (\"providing\") or a noun phrase.",
+              "strategy": "Identify \"tasked with\" -> verb must be in the gerund form (-ing)."
+            },
+            {
+              "stem": "Before releasing the aircraft for departure, the flight dispatcher must verify that all load sheets ________ by the captain.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "have signed"
+                },
+                {
+                  "letter": "B",
+                  "text": "have been signed"
+                },
+                {
+                  "letter": "C",
+                  "text": "will sign"
+                },
+                {
+                  "letter": "D",
+                  "text": "signing"
+                }
+              ],
+              "correctLetter": "B",
+              "correctText": "have been signed",
+              "analysis": "Passive voice is required because load sheets cannot sign themselves; they must be signed by the captain.",
+              "strategy": "Check if the subject (\"all load sheets\") is the actor or the receiver of the verb. Since it is the receiver, choose passive voice \"have been signed\"."
+            },
+            {
+              "stem": "The civil aviation safety inspector conducted an unannounced audit in order to ensure ________ ground handling personnel were strictly following apron safety protocols.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "that"
+                },
+                {
+                  "letter": "B",
+                  "text": "what"
+                },
+                {
+                  "letter": "C",
+                  "text": "which"
+                },
+                {
+                  "letter": "D",
+                  "text": "where"
+                }
+              ],
+              "correctLetter": "A",
+              "correctText": "that",
+              "analysis": "\"Ensure that\" introduces a content clause detailing what is being verified or secured.",
+              "strategy": "\"Ensure\" takes a \"that\" clause (\"ensure that + subject + verb\")."
+            },
+            {
+              "stem": "The airport duty manager was commended for handling the ramp emergency calmly, ________ severe winter weather conditions.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "despite"
+                },
+                {
+                  "letter": "B",
+                  "text": "although"
+                },
+                {
+                  "letter": "C",
+                  "text": "unless"
+                },
+                {
+                  "letter": "D",
+                  "text": "whereas"
+                }
+              ],
+              "correctLetter": "A",
+              "correctText": "despite",
+              "analysis": "\"Despite\" is a preposition expressing concession followed by a noun phrase (\"severe winter weather conditions\").",
+              "strategy": "Check what follows the blank. \"Severe winter weather conditions\" is a noun phrase, so a preposition (\"despite\") is required rather than a subordinating conjunction like \"although\"."
+            }
+          ]
+        }
+      },
+      "6": {
+        "session": 6,
+        "objectives": {
+          "title": "Session 6 - Jobs in Aviation Objectives",
+          "summary": "By the end of this session, you will be able to distinguish and categorize aviation operational professions across landside, airside, flight operations, air traffic services, and civil aviation administration (TSEEAC), accurately articulate professional duties and jurisdictions using formal B2 structures, and collaborate effectively during operational handoffs.",
+          "items": [
+            {
+              "num": 1,
+              "title": "Categorize Aviation Operational Roles (Vocabulary & Classification)",
+              "description": "Distinguish between Landside (passenger handling, security screening, border control), Airside (turnaround coordination, ramp dispatch, marshalling, pushback), Flight Crew (captain, first officer, purser), Air Traffic Control (tower, approach, en-route), and Civil Aviation Administration (TSEEAC)."
+            },
+            {
+              "num": 2,
+              "title": "Clarify TSEEAC Operational Functions (Institutional Precision)",
+              "description": "Accurately explain that TSEEAC personnel are NOT air traffic controllers (no tactical separation authority), but perform critical functions including AFISO (flight information and alerting services), aerodrome operations coordination, and DGAC safety oversight."
+            },
+            {
+              "num": 3,
+              "title": "Express Professional Duties & Authority (Grammar in Context)",
+              "description": "Master and apply functional formulas: 'be responsible for + -ing', 'be tasked with + -ing', 'be in charge of + noun', 'have authority over / to', and 'ensure that + clause'."
+            },
+            {
+              "num": 4,
+              "title": "Simulate Professional Shift & Turnaround Handoffs (Speaking Fluency)",
+              "description": "Conduct structured peer briefings between adjacent roles (Turnaround Coordinator <-> First Officer, AFISO <-> VFR Pilot, Terminal Duty Manager <-> Ramp Supervisor) to resolve operational bottlenecks."
+            },
+            {
+              "num": 5,
+              "title": "Debate Airport Operational Dilemmas (Interaction & Negotiation)",
+              "description": "Analyze complex airport operational dilemmas (e.g. winter weather diversions and ramp congestion) from specific professional viewpoints and negotiate a consensus action plan."
+            },
+            {
+              "num": 6,
+              "title": "Refine Professional Aviation Vocabulary Pronunciation (Phonology)",
+              "description": "Place accurate primary and secondary word stress on complex professional terms (au-THOR-i-ty, re-SPON-si-ble, co-OR-di-na-tor, tech-NI-cian, o-ver-SIGHT, sur-VEIL-lance)."
+            },
+            {
+              "num": 7,
+              "title": "Master Prepositions of Responsibility & Passive Voice (TOEIC Practice)",
+              "description": "Identify common test traps in TOEIC Parts 5 & 6, particularly verbs of obligation, prepositions of responsibility ('responsible for', 'in charge of'), and passive verb structures in airport notices."
+            }
+          ]
+        },
+        "lessonPlan": {
+          "title": "Session 4 Lesson Plan (2 Hours)",
+          "summary": "A 2-hour communicative session featuring an aviation news opening, Session 3 turnaround spot-checking, the aviation roles overview, functional responsibility and authority grammar drills, 'Day in the Life' role handoffs, a winter weather operational dilemma debate, and a 10-minute vocabulary consolidation review.",
+          "items": [
+            {
+              "time": "00-10",
+              "title": "Part 1: Aviation News, Current Events & Session 3 Spot-Check (10 mins)",
+              "description": "Opening 10-minute warm-up: discuss recent international aviation headlines followed by rapid spot-checking of Session 3 turnaround and GSE vocabulary (GPU, ASU, Pushback Tug, Chocks, FOD, Belt Loader)."
+            },
+            {
+              "time": "10-30",
+              "title": "Part 2: Aviation Roles Across the Industry (20 mins)",
+              "description": "Explore the five operational domains (Landside, Airside/Ramp, Flight Crew, ATCOs, and TSEEAC). Clarify the core distinction between ATCO tactical separation authority and TSEEAC AFISO/auditing responsibilities."
+            },
+            {
+              "time": "30-50",
+              "title": "Part 3: Functional Grammar Focus: Responsibilities, Duties & Jurisdiction (20 mins)",
+              "description": "Examine high-yield B2 structures: 'responsible for + -ing', 'tasked with + -ing', 'in charge of', 'have authority over / to', 'ensure that', and 'report to vs. liaise with'. Practice with interactive scenario prompts."
+            },
+            {
+              "time": "50-75",
+              "title": "Part 4: Role-Play Simulation: 'A Day in the Life' Operational Handoffs (25 mins)",
+              "description": "Collaborative paired and triad role-play: simulate professional handoffs and resolve bottlenecks between Turnaround Coordinator <-> First Officer, AFISO <-> Inbound Pilot, and Terminal Duty Manager <-> Ramp Supervisor."
+            },
+            {
+              "time": "75-110",
+              "title": "Part 5: Aviation Career Forum & Operational Dilemma Debate (35 mins)",
+              "description": "Interactive multi-stakeholder debate: resolve an emergency aerodrome diversion scenario during freezing fog and ramp congestion. Argue priorities, negotiate trade-offs, and establish a consensus sequence."
+            },
+            {
+              "time": "110-120",
+              "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
+              "description": "Final 10-minute consolidation: rapid recall of the 18 aviation profession terms, word stress and phonological drills, personal reflection, and continuous learning log update."
+            }
+          ]
+        },
+        "lessonContent": {
+          "hero": {
+            "image": "images/aas_m1card4.jpg",
+            "title": "Jobs in Aviation: Roles, Responsibilities & Operational Interfaces",
+            "subtitle": "Landside, Airside, Flight Crew, Air Traffic Services & Civil Aviation Corps (TSEEAC)"
+          },
+          "openingSession": {
+            "title": "Activity 1: Aviation News & Session 3 Spot-Check (10 mins)",
+            "summary": "Every session begins with a 10-minute professional opening: analyzing current aviation headlines followed by rapid spot-checking of Session 3 ground operations and GSE vocabulary.",
+            "modeBadges": [
+              "👥 Pairs / Plenary",
+              "⏱️ 10 mins",
+              "🗣️ Operational Recall Drill",
+              "🎯 Technical Vocabulary & Fluency"
+            ],
+            "instructions": [
+              "Step 1 (Aviation News Exchange - 4 mins): In pairs, discuss the current aviation headlines prompt. Share one news item regarding airport staffing, ATM capacity, or airline operations.",
+              "Step 2 (Session 3 GSE Spot-Check - 4 mins): Quiz your partner on Questions 1 to 4 (GPU function, Marshaller guidance, turnaround time critical path, FOD prevention) before revealing answers.",
+              "Step 3 (Class Operational Recap - 2 mins): Plenary review of one GSE definition. Highlight why GPU usage reduces ramp emissions and APU wear."
+            ],
+            "deliverable": "Spoken explanation of 1 aviation operational news item and an accurate technical explanation of GPU or turnaround time.",
+            "teacherNotes": "Cold-call pairs. Probe beyond superficial definitions: ask what happens to an aircraft's departure slot if the GPU fails during pushback disconnect.",
+            "newsPrompts": [
+              "What aviation, airline, or ATM news stories caught your attention in the headlines this week?",
+              "How are airports and air navigation service providers managing staffing, recruitment, or new operational procedures this season?"
+            ],
+            "spotCheck": {
+              "title": "Session 3 Vocabulary Spot-Check (Ground Operations & GSE)",
+              "questions": [
+                {
+                  "id": 1,
+                  "q": "What is the primary function of a Ground Power Unit (GPU) during an aircraft turnaround?",
+                  "answer": "A GPU supplies 400Hz AC electrical power to the aircraft while parked at the gate stand, allowing the flight crew to shut down the main engines and auxiliary power unit (APU) to save fuel and reduce ramp emissions."
+                },
+                {
+                  "id": 2,
+                  "q": "How does a Marshaller guide an arriving aircraft to its parking stand when automated docking is unavailable?",
+                  "answer": "A marshaller uses illuminated wands or visual hand signals to direct the flight deck along the painted yellow lead-in line to the precise nosewheel stop mark."
+                },
+                {
+                  "id": 3,
+                  "q": "What is turnaround time (TAT) and why is minimizing it critical for airlines?",
+                  "answer": "Turnaround time is the elapsed period from chocks-on at arrival to chocks-off at departure. Minimizing TAT maximizes aircraft daily utilization and prevents knock-on departure slot delays."
+                },
+                {
+                  "id": 4,
+                  "q": "What is Foreign Object Debris (FOD) and how do ramp teams prevent it?",
+                  "answer": "FOD is any loose item, tool, fragment, or trash on the apron or taxiway that could be ingested by a jet engine or damage tires; ground crews conduct continuous visual scans and regular FOD sweeps."
+                }
+              ]
+            }
+          },
+          "jobTaxonomy": {
+            "title": "Activity 2: Aviation Roles Across the Industry (20 mins)",
+            "summary": "Aviation is an intricate ecosystem where specialized professions collaborate seamlessly. Explore the five primary operational domains, their key responsibilities, and the essential distinction between ATCO separation authority and TSEEAC functions.",
+            "modeBadges": [
+              "👥 Small Groups (3-4)",
+              "⏱️ 20 mins",
+              "🧭 Roles & Jurisdiction Analysis",
+              "🎯 Operational Domain Mastery"
+            ],
+            "instructions": [
+              "Step 1 (Domain Exploration - 8 mins): Study the 5 operational domains: Landside, Airside, Flight Crew, ATCOs, and TSEEAC. Identify the primary physical jurisdiction and core duty for each.",
+              "Step 2 (Crucial Distinction Audit - 6 mins): Analyze the structural legal difference between ATCOs (tactical separation authority) and TSEEAC / AFISOs (flight information and advisory services without separation authority).",
+              "Step 3 (Role Matching Drill - 6 mins): In pairs, randomly name a professional role (e.g. TRC, AFISO, Marshaller, Tower ATCO). Your partner must state the domain, primary duty, and whom they report to."
+            ],
+            "deliverable": "Accurate categorization of all 5 domains and a clear spoken explanation distinguishing ATCO separation authority from TSEEAC AFISO flight information.",
+            "teacherNotes": "Emphasize the ENAC/DGAC institutional distinction: TSEEAC is a civil aviation body, AFISOs provide information/alerting, whereas ATCOs hold licensing to issue binding separation clearances.",
+            "domains": [
+              {
+                "id": "landside",
+                "name": "1. Landside Operations",
+                "color": "sky",
+                "roles": [
+                  "Passenger Service Agent (PSA)",
+                  "Security Screening Officer",
+                  "Terminal Duty Manager",
+                  "Border Control Officer"
+                ],
+                "description": "Manages passenger processing, documentation verification, terminal safety, and accessibility before the airside security boundary.",
+                "keyJurisdiction": "Public terminal zones, check-in concourses, baggage drop systems, and departure lounge coordination.",
+                "sampleDuty": "Passenger Service Agents verify travel documents, handle gate boarding announcements, and manage baggage reconciliation."
+              },
+              {
+                "id": "airside",
+                "name": "2. Airside & Ramp Operations",
+                "color": "amber",
+                "roles": [
+                  "Turnaround Coordinator (TRC)",
+                  "Ramp Agent / Baggage Handler",
+                  "Marshaller",
+                  "Pushback Tug Driver",
+                  "De-icing Rig Operator",
+                  "Refueller / Hydrant Dispenser"
+                ],
+                "description": "Coordinates all parallel ground servicing operations around the aircraft within the designated safety servicing envelope.",
+                "keyJurisdiction": "Apron stands, equipment staging lanes, airside service roads, and aircraft servicing envelopes.",
+                "sampleDuty": "The Turnaround Coordinator oversees parallel servicing tasks, monitors fuel and baggage loading, and enforces on-time departure."
+              },
+              {
+                "id": "flightcrew",
+                "name": "3. Aircraft Flight Crew",
+                "color": "indigo",
+                "roles": [
+                  "Captain (Pilot-in-Command)",
+                  "First Officer (Co-Pilot)",
+                  "Purser / Senior Cabin Manager",
+                  "Cabin Crew / Flight Attendant"
+                ],
+                "description": "Responsible for the safe navigation, operation, passenger welfare, and emergency readiness of the aircraft from off-blocks to on-blocks.",
+                "keyJurisdiction": "Cockpit flight deck, passenger cabin, aircraft technical logbook, and emergency systems.",
+                "sampleDuty": "The First Officer performs external walkaround inspections, cross-checks FMC route programming, and monitors radio communications."
+              },
+              {
+                "id": "atco",
+                "name": "4. Air Traffic Control Officers (ATCOs)",
+                "color": "rose",
+                "roles": [
+                  "Aerodrome / Tower ATCO",
+                  "Approach Radar Controller (APP)",
+                  "Area / En-Route Controller (ACC)"
+                ],
+                "description": "Licensed air traffic controllers possessing executive legal authority to issue binding clearances and ensure safe tactical separation between aircraft in flight and on active movement areas.",
+                "keyJurisdiction": "Active runways, taxiways, controlled airspace sectors, and terminal maneuvering areas (TMA).",
+                "sampleDuty": "Tower ATCOs issue mandatory takeoff and landing clearances, manage runway sequencing, and maintain aircraft separation."
+              },
+              {
+                "id": "tseeac",
+                "name": "5. Civil Aviation Operations Corps (TSEEAC)",
+                "color": "emerald",
+                "roles": [
+                  "Aerodrome Flight Information Service Officer (AFISO)",
+                  "Aerodrome Operations Coordinator",
+                  "DGAC Aviation Safety Inspector",
+                  "Air Navigation Technical Support Officer"
+                ],
+                "description": "Civil aviation civil servants who perform critical operations, flight information, safety oversight, and aerodrome management. IMPORTANT: TSEEAC personnel are NOT air traffic controllers and do NOT have separation authority; AFISOs provide advisory flight information and alerting service at non-controlled aerodromes.",
+                "keyJurisdiction": "AFIS aerodromes, civil aviation regional directorates (DSAC), airport safety coordination, and technical surveillance.",
+                "sampleDuty": "An AFISO provides weather reports, runway conditions, and traffic advisories to pilots, while DGAC safety inspectors conduct regulatory compliance audits."
+              }
+            ]
+          },
+          "grammarClinic": {
+            "title": "Activity 3: Language Focus: Roles, Responsibilities & Authority (20 mins)",
+            "summary": "Professional aviation communication demands absolute precision when describing who does what, who reports to whom, and who holds regulatory authority.",
+            "modeBadges": [
+              "👤 Individual -> 👥 Pairs",
+              "⏱️ 20 mins",
+              "✍️ Operational Syntax Drill",
+              "🎯 Collocation & Precision"
+            ],
+            "instructions": [
+              "Step 1 (Formula Mastery - 5 mins): Review the 6 authority and responsibility structures above. Note preposition rules: 'responsible FOR + -ing', 'tasked WITH + -ing', 'authority OVER / TO + verb'.",
+              "Step 2 (Role Duty Construction - 10 mins): With a partner, write 3 operational sentences describing different aviation roles using: (1) 'be tasked with', (2) 'have authority to', and (3) 'liaise with vs. report to'.",
+              "Step 3 (Roles & Responsibilities Challenge - 5 mins): Complete the 4 interactive grammar challenge questions individually, check your answers, and discuss the preposition rules."
+            ],
+            "deliverable": "4 verified practice question answers + 3 original spoken or written role-duty descriptions demonstrating correct prepositional collocations.",
+            "teacherNotes": "Stamp out 'responsible OF' immediately (French interference). Highlight the difference between hierarchical reporting ('reports to the TRC') and lateral coordination ('liaises with fueling').",
+            "formulas": [
+              {
+                "structure": "be responsible for + -ing / noun",
+                "usage": "Core ongoing duty or accountability",
+                "example": "The Turnaround Coordinator is responsible for ensuring all servicing vehicles clear the stand before pushback."
+              },
+              {
+                "structure": "be tasked with + -ing / noun",
+                "usage": "Official assignment, directive, or designated role",
+                "example": "The AFIS officer is tasked with providing traffic information and weather advisories to inbound aircraft."
+              },
+              {
+                "structure": "be in charge of + noun / -ing",
+                "usage": "Supervisory oversight of a team, facility, or zone",
+                "example": "The Terminal Duty Manager is in charge of passenger concourse flow and emergency crowd management."
+              },
+              {
+                "structure": "have authority over / to + verb",
+                "usage": "Legal jurisdiction or executive command power",
+                "example": "Tower ATCOs have authority over active runways and issue binding takeoff and landing clearances."
+              },
+              {
+                "structure": "ensure that + clause",
+                "usage": "Verification, quality control, and safety compliance",
+                "example": "Safety inspectors ensure that airline maintenance procedures comply with DGAC regulations."
+              },
+              {
+                "structure": "report to vs. liaise with",
+                "usage": "Hierarchy vs. horizontal peer collaboration",
+                "example": "The Ramp Agent reports to the Turnaround Coordinator and liaises with fueling technicians."
+              }
+            ],
+            "roleClinic": [
+              {
+                "id": 1,
+                "prompt": "The First Officer is tasked with (conducting / to conduct / conduct) the pre-flight external walkaround inspection.",
+                "answer": "conducting",
+                "explanation": "'Be tasked with' is followed by the preposition 'with', which requires a gerund (-ing)."
+              },
+              {
+                "id": 2,
+                "prompt": "Unlike ATCOs, AFISOs do not have authority (to separate / separating / for separate) aircraft tactically.",
+                "answer": "to separate",
+                "explanation": "'Have authority to' is followed by the base infinitive ('to separate')."
+              },
+              {
+                "id": 3,
+                "prompt": "The Ramp Agent is responsible (for / of / to) securing the wheel chocks once the aircraft comes to a stop.",
+                "answer": "for",
+                "explanation": "'Responsible for' is the correct prepositional collocation (avoid the French false friend 'responsible of')."
+              },
+              {
+                "id": 4,
+                "prompt": "The Turnaround Coordinator must ensure (that / what / which) the cargo hold doors are locked before pushback.",
+                "answer": "that",
+                "explanation": "'Ensure' takes a content clause starting with 'that' ('ensure that + subject + verb')."
+              }
+            ]
+          },
+          "handoffSimulation": {
+            "title": "Activity 4: Pairwork & Triad Simulation — 'A Day in the Life' Role Handoff (25 mins)",
+            "summary": "Effective inter-departmental handoffs prevent bottlenecks and eliminate miscommunication. Work in pairs or triads to conduct professional operational handovers.",
+            "modeBadges": [
+              "👥 Pairs / Triads",
+              "⏱️ 25 mins",
+              "🎭 Operational Interface Simulation",
+              "🎯 Radio & Handoff Fluency"
+            ],
+            "instructions": [
+              "Step 1 (Scenario Assignment - 5 mins): Choose Pair 1 (TRC <-> Flight Deck), Pair 2 (AFISO <-> Inbound VFR), or Pair 3 (Terminal Manager <-> Ramp Supervisor). Read your specific role context.",
+              "Step 2 (Simulation Rehearsal - 12 mins): Conduct the operational handoff in character. You must incorporate at least two of the mandatory target phrases (e.g., 'tasked with', 'liaised with', 'ensure that').",
+              "Step 3 (Role Reversal & Feedback - 8 mins): Swap roles and repeat the dialogue under modified conditions (e.g. 5 minutes until slot loss or sudden weather degradation)."
+            ],
+            "deliverable": "A 2-minute fluent operational handoff dialogue successfully resolving an operational conflict using mandatory responsibility formulas.",
+            "teacherNotes": "Listen for realistic aviation tone: professional, concise, assertive, but collaborative. Ensure students actually use the target phrases rather than informal conversational English.",
+            "scenarios": [
+              {
+                "id": "pair1",
+                "title": "Pair 1: Turnaround Coordinator (TRC) <-> First Officer (Flight Deck)",
+                "context": "Flight AF418 is scheduled off-blocks in 8 minutes. Cargo loading is complete, but the refueller was held up by a minor hose leak. The First Officer needs the final fuel uplift and signed load sheet.",
+                "roleA": "Turnaround Coordinator: Confirm fuel uplift of 5,800 kg, present the final trim sheet for Captain's signature, and report stand clearance status.",
+                "roleB": "First Officer: Cross-check the fuel quantity against FMC calculations, verify the center of gravity (CG) limits on the trim sheet, and request pushback readiness.",
+                "targetPhrases": [
+                  "\"I am responsible for confirming that all ground equipment has detached...\"",
+                  "\"Could you ensure that the load sheet reflects the actual fuel on board?\"",
+                  "\"We liaised with the fueling technician, and all safety valves are verified.\""
+                ]
+              },
+              {
+                "id": "pair2",
+                "title": "Pair 2: AFISO (TSEEAC) <-> Inbound VFR Aircraft",
+                "context": "A Cessna 172 is inbound to a non-controlled regional airfield. The AFISO is on duty in the aerodrome flight information station. Low winter sun and flocking birds have been observed near Runway 26 threshold.",
+                "roleA": "AFISO (TSEEAC): Provide aerodrome flight information: runway in use 26, surface wind 240/12kt, QNH 1018, cautionary bird advisory, and report on opposing glider traffic.",
+                "roleB": "VFR Pilot: Acknowledge information, report position over visual reporting point (Sierra), and state intentions for standard overhead join.",
+                "targetPhrases": [
+                  "\"Information only: Runway 26 in use, wind 240 degrees at 12 knots...\"",
+                  "\"Be advised, a flock of lapwings has been reported near the threshold...\"",
+                  "\"As an AFISO, I am tasked with providing traffic and safety advisories.\""
+                ]
+              },
+              {
+                "id": "pair3",
+                "title": "Pair 3: Terminal Duty Manager <-> Ramp Operations Supervisor",
+                "context": "A group of 14 delayed transit passengers from a connecting transatlantic flight has just cleared security. The departure flight has a strict 10-minute CTOT slot.",
+                "roleA": "Terminal Duty Manager: Request a 5-minute gate hold to allow the transit passengers to board, arguing customer service and connection costs.",
+                "roleB": "Ramp Operations Supervisor: Defend the slot departure, explaining the financial and network penalties of missing the Eurocontrol CTOT slot.",
+                "targetPhrases": [
+                  "\"We are in charge of passenger processing and must avoid misconnecting passengers...\"",
+                  "\"If we miss this slot, ATC will hold the flight for at least 45 minutes...\"",
+                  "\"Can we ensure that baggage is prioritized while passengers board through the gate?\""
+                ]
+              }
+            ]
+          },
+          "careerForumDebate": {
+            "title": "Activity 5: Aviation Career Forum & Operational Dilemma Debate (35 mins)",
+            "summary": "A fast-moving winter weather front brings freezing fog, reducing Runway Visual Range (RVR) to 350m at a regional aerodrome. Stand capacity is at 95%, de-icing rigs are working at maximum throughput, and two inbound diversions are requesting priority due to fuel minimums. Each team represents an aviation profession, defends operational priorities, and negotiates a consensus action plan.",
+            "modeBadges": [
+              "👥 4-Way Multi-Stakeholder Forum",
+              "⏱️ 35 mins",
+              "⚡ Crisis Management Negotiation",
+              "🎯 Consensus Building"
+            ],
+            "instructions": [
+              "Step 1 (Crisis Briefing & Stance - 8 mins): Read the Winter Storm & Diversion Gridlock scenario. Assign one stakeholder role per team member (ATCO, AFISO/Ops, TRC/Ground, Captain). Review your non-negotiable priority.",
+              "Step 2 (Stakeholder Round-Robin - 12 mins): Each stakeholder presents their operational dilemma and proposed sequence of events. State what your role can and cannot concede.",
+              "Step 3 (Consensus Negotiation & Rating - 15 mins): Negotiate a sequential 3-step action plan using conditional language ('Provided that...', 'On condition that...'). Vote on the 3 consensus challenges in the agreement tracker."
+            ],
+            "deliverable": "A negotiated 3-step crisis operational resolution signed off by all 4 stakeholders, balancing fuel safety, stand capacity, de-icing holdover times, and slot preservation.",
+            "teacherNotes": "Maintain high tension! Remind them that if no decision is made within 20 minutes, the Captain's crew times out, the diversion exhausts fuel reserves, and runway friction degrades further. Demand conditional structures.",
+            "scenario": "Regional Aerodrome 'Echo-Delta' is experiencing severe winter weather with RVR 350m and freezing drizzle. Only 2 parking stands remain open. Two diverted commercial jets are in the holding pattern, one declaring 'Minimum Fuel'. On the ground, an outbound flight on Stand 2 has passengers boarded, but its holdover time has expired, requiring a second de-icing cycle.",
+            "stakeholders": [
+              {
+                "name": "Tower & Approach ATCOs",
+                "priority": "Runway safety, separation in holding stacks, and emergency prioritization for the minimum-fuel diversion.",
+                "stance": "Has sole authority over runway access; demands clear runway sequencing and will not clear departures until emergency fuel traffic lands."
+              },
+              {
+                "name": "AFISO / Aerodrome Operations Coordinator (TSEEAC)",
+                "priority": "Airfield friction coefficient measurement, snow and de-icing coordinator, apron safety compliance, and stand allocation.",
+                "stance": "Liaises between airport authority and services; ensures de-icing pad does not gridlock and coordinates snow clearing plows on taxiways."
+              },
+              {
+                "name": "Turnaround Coordinator & Ground Handling Lead",
+                "priority": "Ramp safety, ground equipment availability, de-icing fluid inventory, and baggage handling for diverted passengers.",
+                "stance": "Warns that ramp handlers are nearing maximum duty limits and de-icing fluid is at critical reserves; insists on clearing Stand 2 first."
+              },
+              {
+                "name": "Airline Captain (Outbound Flight on Stand 2)",
+                "priority": "Passenger welfare, flight duty period (FDP) limits, and slot adherence.",
+                "stance": "Argues that if the aircraft is not de-iced and dispatched within 20 minutes, the crew will exceed legal duty hours and the flight must be cancelled."
+              }
+            ],
+            "consensusChallenge": "In mixed teams of 4, negotiate a step-by-step priority sequence using conditional structures ('Provided that...', 'As long as...', 'On condition that...') to resolve the standoff safely and efficiently."
+          },
+          "closingReview": {
+            "title": "Activity 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
+            "summary": "The final 10 minutes consolidate today's high-yield vocabulary, reinforce syllable stress on professional job titles, and update your personal continuous assessment log.",
+            "modeBadges": [
+              "👤 Individual & 👥 Pairs",
+              "⏱️ 10 mins",
+              "⚡ Syllable Stress & Self-Audit",
+              "🎯 Formative Synthesis"
+            ],
+            "instructions": [
+              "Step 1 (Pronunciation Practice - 4 mins): Practice pronouncing the 6 multisyllabic professional titles aloud with correct syllable stress: au-THOR-i-ty (2nd), re-SPON-si-ble (2nd), co-OR-di-na-tor (2nd), o-ver-SIGHT (1st).",
+              "Step 2 (Rapid-Fire Partner Quiz - 4 mins): Test your partner on 3 random terms from today's session (e.g. PSA vs. TRC, AFISO jurisdiction, Foreign Object Debris prevention).",
+              "Step 3 (Self-Assessment & Portfolio - 2 mins): Rate your confidence (1 to 5) in explaining your future aviation profession. Record target terms in your semester study log."
+            ],
+            "deliverable": "Accurate pronunciation of 4 key multisyllabic aviation terms + complete self-assessment entry in study portfolio.",
+            "teacherNotes": "Focus on primary stress in technical nouns vs. verbs. Remind students that Session 5 is Formative Evaluation 1: ensure portfolios, vocabulary logs, and presentations are fully prepped.",
+            "reviewPrompts": [
+              {
+                "title": "1. Syllable Stress & Pronunciation Practice",
+                "desc": "Drill accurate syllable stress: au-THOR-i-ty (2nd), re-SPON-si-ble (2nd), tech-NI-cian (2nd), co-OR-di-na-tor (2nd), o-ver-SIGHT (1st), sur-VEIL-lance (2nd)."
+              },
+              {
+                "title": "2. Rapid-Fire Retrieval Quiz",
+                "desc": "In pairs, quiz each other on 3 random terms from today's 18 vocabulary bank without checking notes (e.g. AFISO vs. ATCO, Turnaround Coordinator, Flight Dispatcher)."
+              },
+              {
+                "title": "3. Self-Assessment & Continuous Learning",
+                "desc": "Rate your ability (1 to 5) to explain the responsibilities of your future aviation profession. Update your study portfolio with target expressions."
+              }
+            ]
+          }
+        },
+        "revision": {
+          "title": "Session 4: Jobs in Aviation",
+          "summary": "Review the 18 key technical and professional terms covering landside, airside, flight crew, air traffic control (ATCO), and civil aviation administration (TSEEAC / AFISO) to enhance your speaking fluency and TOEIC accuracy.",
+          "terms": [
+            {
+              "num": "01",
+              "term": "Aerodrome Flight Information Service Officer (AFISO)",
+              "definition": "A certified aeronautical station officer (often TSEEAC) providing traffic advisories, aerodrome conditions, and alerting services to aircraft at non-controlled aerodromes without separation authority."
+            },
+            {
+              "num": "02",
+              "term": "Air Traffic Control Officer (ATCO)",
+              "definition": "A licensed professional legally authorized to issue mandatory control clearances and maintain safe tactical separation between aircraft in flight and maneuvering on active airport surfaces."
+            },
+            {
+              "num": "03",
+              "term": "Turnaround Coordinator (TRC)",
+              "definition": "The ground handling operations lead on the apron responsible for orchestrating servicing teams, monitoring critical-path milestones, and ensuring punctual departure."
+            },
+            {
+              "num": "04",
+              "term": "Ramp Agent",
+              "definition": "An airside ground handler responsible for loading and unloading baggage and cargo, positioning ground support equipment, and securing the aircraft servicing envelope."
+            },
+            {
+              "num": "05",
+              "term": "Marshaller",
+              "definition": "A trained apron ground handler who uses illuminated wands or visual hand signals to guide an incoming aircraft along the taxi line to its exact parking mark."
+            },
+            {
+              "num": "06",
+              "term": "Flight Operations Officer / Dispatcher",
+              "definition": "A licensed flight planning specialist who calculates fuel requirements, monitors en-route NOTAMs and weather, prepares flight plans, and co-signs the dispatch release with the captain."
+            },
+            {
+              "num": "07",
+              "term": "Passenger Service Agent (PSA)",
+              "definition": "A landside airline or ground handling employee who assists travelers at check-in desks, checks travel documentation, reconciles hold luggage, and conducts gate boarding."
+            },
+            {
+              "num": "08",
+              "term": "Aviation Safety Inspector",
+              "definition": "A civil aviation authority official (e.g. DGAC/DSAC, often TSEEAC) tasked with auditing airlines, maintenance repair organizations, and aerodromes for strict regulatory compliance."
+            },
+            {
+              "num": "09",
+              "term": "Aerodrome Operations Coordinator",
+              "definition": "An airport duty specialist (often TSEEAC) responsible for inspecting runway pavement friction, monitoring obstacle limitation surfaces, managing wildlife hazards, and coordinating apron works."
+            },
+            {
+              "num": "10",
+              "term": "Avionics Technician",
+              "definition": "A certified aircraft maintenance engineer specialized in troubleshooting, repairing, calibrating, and certifying cockpit flight management computers, radar, and navigation systems."
+            },
+            {
+              "num": "11",
+              "term": "First Officer",
+              "definition": "The second-in-command pilot on the flight deck who shares flight navigation, radio communications, and system monitoring duties with the Captain."
+            },
+            {
+              "num": "12",
+              "term": "Purser / Cabin Manager",
+              "definition": "The senior cabin crew member responsible for supervising cabin attendants, directing in-flight passenger safety procedures, and coordinating with the flight deck."
+            },
+            {
+              "num": "13",
+              "term": "Security Screening Officer",
+              "definition": "A certified landside security officer who operates X-ray scanners, millimeter-wave body scanners, and explosive trace detectors to screen passengers and carry-on luggage."
+            },
+            {
+              "num": "14",
+              "term": "De-icing Rig Operator",
+              "definition": "A specialized ramp technician who operates aerial boom trucks to spray heated glycol mixtures onto aircraft surfaces to eradicate snow, frost, and ice contamination."
+            },
+            {
+              "num": "15",
+              "term": "Pushback Tug Driver",
+              "definition": "A heavy-equipment ramp driver specialized in connecting towbars or towbarless cradles to safely push aircraft backward out of gate stands into the taxi lane."
+            },
+            {
+              "num": "16",
+              "term": "Airfield Maintenance Technician",
+              "definition": "A technical specialist who inspects and maintains aeronautical ground lighting (AGL), taxiway guidance signage, runway markings, and perimeter security fences."
+            },
+            {
+              "num": "17",
+              "term": "Refueller / Fuel Hydrant Operator",
+              "definition": "A ramp fueling technician who connects mobile fuel bowsers or underground hydrant dispensers to aircraft fuel valves to deliver precise, contamination-tested Jet-A1."
+            },
+            {
+              "num": "18",
+              "term": "Load Controller / Weight & Balance Specialist",
+              "definition": "An operations professional who calculates aircraft center-of-gravity (CG), models payload distribution, and generates the official load and trim sheet required for safe takeoff."
+            }
+          ]
+        },
+        "materials": {
+          "videos": [
+            {
+              "title": "Video 1: Boeing 777 Airport Ground Handling: Start to Finish",
+              "watchUrl": "https://www.youtube.com/watch?v=KSfgLX5j-lQ",
+              "tag": "Ground Operations",
+              "videoId": "KSfgLX5j-lQ",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/KSfgLX5j-lQ",
+              "caption": "Focus: Authentic real-world turnaround coordination: marshaling, chock placement, GPU connection, belt loaders, baggage logistics, and pushback operations."
+            },
+            {
+              "title": "Video 2: Inside Air Traffic Control",
+              "watchUrl": "https://www.youtube.com/watch?v=R90mroZyAL4",
+              "tag": "Air Traffic Services",
+              "videoId": "R90mroZyAL4",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/R90mroZyAL4",
+              "caption": "Focus: Tower, approach, and en-route controllers managing active runways, sector handoffs, tactical separation authority, and standard phraseology."
+            },
+            {
+              "title": "Video 3: AFIS & Regional Aerodrome Operations",
+              "watchUrl": "https://www.youtube.com/watch?v=2BZbHAJQ70s",
+              "tag": "TSEEAC / AFISO Focus",
+              "videoId": "2BZbHAJQ70s",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/2BZbHAJQ70s",
+              "caption": "Focus: Aerodrome Flight Information Service (AFIS) officers providing flight information, weather reports, and alerting service without air traffic control separation."
+            }
+          ],
+          "grammar": {
+            "title": "Expressing Professional Responsibilities, Duties & Authority",
+            "badge": "B2 Functional Grammar Focus",
+            "patternTitle": "Responsibility & Authority Formulas",
+            "formula": "BE RESPONSIBLE FOR + -ING • BE TASKED WITH + -ING • HAVE AUTHORITY OVER / TO • ENSURE THAT + CLAUSE",
+            "rulesTitle": "Core Formulas & Jurisdictional Prepositions",
+            "rules": [
+              "<strong style=\"color: #1e293b;\">1. BE RESPONSIBLE FOR + Gerund / Noun:</strong> Core ongoing duty or accountability (<span style=\"font-weight: 700; color: #c0684f;\">responsible for coordinating</span>, <span style=\"font-weight: 700; color: #c0684f;\">responsible for flight safety</span>).",
+              "<strong style=\"color: #1e293b;\">2. BE TASKED WITH + Gerund / Noun:</strong> Designated operational mission or assigned mandate (<span style=\"font-weight: 700; color: #c0684f;\">tasked with conducting</span>, <span style=\"font-weight: 700; color: #c0684f;\">tasked with safety audits</span>).",
+              "<strong style=\"color: #1e293b;\">3. HAVE AUTHORITY OVER / TO:</strong> Legal command power (<span style=\"font-weight: 600; color: #334155;\">have authority over active runways</span> [ATCO], <span style=\"font-weight: 600; color: #334155;\">authority to issue clearances</span>).",
+              "<strong style=\"color: #1e293b;\">4. ENSURE THAT + Clause:</strong> Verification and quality assurance (<span style=\"font-weight: 600; color: #334155;\">ensure that cargo doors are latched</span>, <span style=\"font-weight: 600; color: #334155;\">ensure that weight limits are respected</span>).",
+              "<strong style=\"color: #1e293b;\">5. REPORT TO vs. LIAISE WITH:</strong> Upward hierarchy (<span style=\"font-weight: 600; color: #334155;\">reports to the chief pilot</span>) vs. lateral coordination (<span style=\"font-weight: 600; color: #334155;\">liaises with apron controllers</span>)."
+            ],
+            "trap": "<strong>⚠️ Common Preposition & False Friend Trap:</strong> Never say <em>responsible of</em>—always use <strong>responsible for + -ing</strong>. Also, strictly distinguish <em>control</em> (ATCO issuing binding separation orders) from <em>provide information</em> (AFISO advising pilots without executive control clearances).",
+            "examplesTitle": "Operational Responsibility Examples",
+            "examples": [
+              "<em>\"The Turnaround Coordinator is <strong>responsible for ensuring</strong> that all ground support equipment is detached before pushback.\"</em>",
+              "<em>\"Unlike aerodrome controllers, AFISOs are <strong>tasked with providing</strong> traffic information rather than tactical separation clearances.\"</em>"
+            ]
+          },
+          "toeic": {
+            "stem": "The Turnaround Coordinator is directly responsible ________ supervising the loading of cargo and ensuring compliance with the weight schedule.",
+            "options": [
+              {
+                "letter": "A",
+                "text": "with"
+              },
+              {
+                "letter": "B",
+                "text": "for"
+              },
+              {
+                "letter": "C",
+                "text": "of"
+              },
+              {
+                "letter": "D",
+                "text": "to"
+              }
+            ],
+            "correctLetter": "B",
+            "correctText": "for",
+            "analysis": "\"Responsible for\" is the fixed prepositional collocation followed by a gerund (\"supervising\").",
+            "strategy": "Spot \"responsible\" -> immediately look for \"for + -ing/noun\". Avoid the common French false friend \"responsible of\"."
+          },
+          "resources": [
+            {
+              "url": "https://www.ecologie.gouv.fr/concours-dgac",
+              "tag": "01 • Civil Aviation Authority",
+              "name": "DGAC Careers & TSEEAC Competitions",
+              "desc": "Official French civil aviation authority portal detailing TSEEAC, IEEAC, and ATCO recruitment competitions and corps duties."
+            },
+            {
+              "url": "https://www.eurocontrol.int/careers",
+              "tag": "02 • European ATM Network",
+              "name": "Eurocontrol Air Traffic Management",
+              "desc": "Pan-European air navigation services, controller profiles, and ATM network operations."
+            },
+            {
+              "url": "https://www.iata.org/en/programs/ops-infra/ground-operations/",
+              "tag": "03 • Ramp & Apron Standards",
+              "name": "IATA Ground Operations Hub (IGOM)",
+              "desc": "Global airline industry standards for apron safety, aircraft turnaround, and ground support equipment handling."
+            },
+            {
+              "url": "https://www.ifatca.org",
+              "tag": "04 • Professional Association",
+              "name": "IFATCA Air Traffic Controllers",
+              "desc": "Worldwide federation representing over 50,000 air traffic controllers across 130 countries."
+            },
+            {
+              "url": "https://www.icao.int",
+              "tag": "05 • Global Standards",
+              "name": "ICAO Personnel Licensing (Annex 1)",
+              "desc": "International civil aviation benchmarks for pilots, flight dispatchers, ATCOs, and aeronautical station operators."
+            },
+            {
+              "url": "https://www.etsglobal.org/fr/fr",
+              "tag": "06 • Evaluation Rubrics",
+              "name": "ETS Global TOEIC Practice",
+              "desc": "Official TOEIC Speaking & Writing evaluation benchmarks and sample workplace responses for aviation professionals."
+            }
+          ],
+          "pageUrl": "session4/admat_aas1.html",
+          "articles": [
+            {
+              "topic": "FlightGlobal / Aviation Careers",
+              "sourceTag": "Career Insight",
+              "heading": "Beyond the Flight Deck: The Essential Network of Airport Operations",
+              "snippet": "An in-depth look at the landside, airside, and regulatory roles that keep international aviation flowing seamlessly 24/7.",
+              "readTime": "Estimated read: 5-6 mins",
+              "url": "https://www.flightglobal.com"
+            },
+            {
+              "topic": "DGAC France / ENAC Portal",
+              "sourceTag": "Civil Aviation Careers",
+              "heading": "The Modern Role of TSEEAC: From AFIS to Safety Oversight",
+              "snippet": "How France's Civil Aviation Operations Corps supports regional aerodrome operations, civil aviation safety inspections, and air navigation technical support.",
+              "readTime": "Estimated read: 5-7 mins",
+              "url": "https://www.ecologie.gouv.fr/direction-generale-laviation-civile-dgac"
+            },
+            {
+              "topic": "Eurocontrol ATM Careers",
+              "sourceTag": "Operational Profile",
+              "heading": "ATCO vs AFISO: Understanding the Scope of Air Traffic Services",
+              "snippet": "Comparing tactical separation authority in controlled airspace with flight information and advisory services at regional fields.",
+              "readTime": "Estimated read: 6-8 mins",
+              "url": "https://www.eurocontrol.int"
+            },
+            {
+              "topic": "IATA Ground Operations Bulletin",
+              "sourceTag": "Safety & Turnaround",
+              "heading": "The Turnaround Coordinator: Heartbeat of On-Time Performance",
+              "snippet": "Why ramp coordinators, loadmasters, and flight dispatchers form the vital link between airline schedules and safety compliance.",
+              "readTime": "Estimated read: 5-6 mins",
+              "url": "https://www.iata.org"
+            }
+          ],
+          "toeicQuestions": [
+            {
+              "stem": "The Turnaround Coordinator is directly responsible ________ supervising the loading of cargo and ensuring compliance with the weight schedule.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "with"
+                },
+                {
+                  "letter": "B",
+                  "text": "for"
+                },
+                {
+                  "letter": "C",
+                  "text": "of"
+                },
+                {
+                  "letter": "D",
+                  "text": "to"
+                }
+              ],
+              "correctLetter": "B",
+              "correctText": "for",
+              "analysis": "\"Responsible for\" is the fixed prepositional collocation followed by a gerund (\"supervising\").",
+              "strategy": "Spot \"responsible\" -> immediately look for \"for + -ing/noun\". Avoid the common French false friend \"responsible of\"."
+            },
+            {
+              "stem": "Unlike aerodrome controllers who issue clearances, AFIS officers are tasked with ________ flight information and meteorological updates to inbound pilots.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "provide"
+                },
+                {
+                  "letter": "B",
+                  "text": "provides"
+                },
+                {
+                  "letter": "C",
+                  "text": "providing"
+                },
+                {
+                  "letter": "D",
+                  "text": "provided"
+                }
+              ],
+              "correctLetter": "C",
+              "correctText": "providing",
+              "analysis": "\"Be tasked with\" is followed by a preposition (\"with\"), which requires a gerund (\"providing\") or a noun phrase.",
+              "strategy": "Identify \"tasked with\" -> verb must be in the gerund form (-ing)."
+            },
+            {
+              "stem": "Before releasing the aircraft for departure, the flight dispatcher must verify that all load sheets ________ by the captain.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "have signed"
+                },
+                {
+                  "letter": "B",
+                  "text": "have been signed"
+                },
+                {
+                  "letter": "C",
+                  "text": "will sign"
+                },
+                {
+                  "letter": "D",
+                  "text": "signing"
+                }
+              ],
+              "correctLetter": "B",
+              "correctText": "have been signed",
+              "analysis": "Passive voice is required because load sheets cannot sign themselves; they must be signed by the captain.",
+              "strategy": "Check if the subject (\"all load sheets\") is the actor or the receiver of the verb. Since it is the receiver, choose passive voice \"have been signed\"."
+            },
+            {
+              "stem": "The civil aviation safety inspector conducted an unannounced audit in order to ensure ________ ground handling personnel were strictly following apron safety protocols.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "that"
+                },
+                {
+                  "letter": "B",
+                  "text": "what"
+                },
+                {
+                  "letter": "C",
+                  "text": "which"
+                },
+                {
+                  "letter": "D",
+                  "text": "where"
+                }
+              ],
+              "correctLetter": "A",
+              "correctText": "that",
+              "analysis": "\"Ensure that\" introduces a content clause detailing what is being verified or secured.",
+              "strategy": "\"Ensure\" takes a \"that\" clause (\"ensure that + subject + verb\")."
+            },
+            {
+              "stem": "The airport duty manager was commended for handling the ramp emergency calmly, ________ severe winter weather conditions.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "despite"
+                },
+                {
+                  "letter": "B",
+                  "text": "although"
+                },
+                {
+                  "letter": "C",
+                  "text": "unless"
+                },
+                {
+                  "letter": "D",
+                  "text": "whereas"
+                }
+              ],
+              "correctLetter": "A",
+              "correctText": "despite",
+              "analysis": "\"Despite\" is a preposition expressing concession followed by a noun phrase (\"severe winter weather conditions\").",
+              "strategy": "Check what follows the blank. \"Severe winter weather conditions\" is a noun phrase, so a preposition (\"despite\") is required rather than a subordinating conjunction like \"although\"."
+            }
+          ]
+        }
       }
     }
   },
@@ -5530,6 +7133,1908 @@
         "session": 4,
         "objectives": {
           "title": "Session 4 - Significant Aviation Accidents & Aircraft Types Objectives",
+          "summary": "By the end of this session, you will be able to analyze landmark aviation accidents and the aircraft types involved, use past narrative tenses and sequencing linkers, conduct a 15-minute quick-fire group research sprint, and deliver a collaborative 5-minute accident briefing to classmates.",
+          "items": [
+            {
+              "num": 1,
+              "title": "Examine Landmark Historical Aviation Accidents",
+              "description": "Analyze major historical accidents (e.g., Tenerife 1977, BA 38, US Airways 1549, AF 447, Aloha 243, 737 MAX) and identify the specific aircraft types involved."
+            },
+            {
+              "num": 2,
+              "title": "Master Accident Investigation Vocabulary & Causal Analysis",
+              "description": "Deploy technical terms including Flight Data Recorder (FDR), Cockpit Voice Recorder (CVR), root causes, human factors, and Swiss Cheese model."
+            },
+            {
+              "num": 3,
+              "title": "Deploy Past Narrative Tenses & Chronological Sequencers",
+              "description": "Accurately combine past simple, past continuous, and past perfect tenses to describe flight incident sequences and timelines."
+            },
+            {
+              "num": 4,
+              "title": "Execute a 15-Minute Group Research & Preparation Sprint",
+              "description": "Collaborate in small groups (3-4 students) within a strict 15-minute timeframe to extract technical causes, timelines, and safety outcomes."
+            },
+            {
+              "num": 5,
+              "title": "Deliver a 5-Minute Spoken Safety Briefing & Peer Q&A",
+              "description": "Present the accident analysis collaboratively to classmates without reading word-for-word from notes, answering spontaneous questions."
+            }
+          ]
+        },
+        "lessonPlan": {
+          "title": "Session 4 Lesson Plan (2 Hours)",
+          "summary": "A 2-hour interactive workshop covering aviation safety news, crash investigation vocabulary, past tenses clinic, the 15-minute group research sprint, 5-minute class accident presentations, and FE2 briefing.",
+          "items": [
+            {
+              "time": "00-10",
+              "title": "Part 1: Aviation News & Session 3 Fleet Spot-Check (10 mins)",
+              "description": "Weekly aviation news review and rapid spot-check on commercial aircraft categories and airline operating models."
+            },
+            {
+              "time": "10-30",
+              "title": "Part 2: Accident Investigation Terminology (20 mins)",
+              "description": "Key vocabulary of air crash investigation: CVR/FDR black boxes, BEA/NTSB roles, CFIT, mechanical failure vs. human factors."
+            },
+            {
+              "time": "30-50",
+              "title": "Part 3: Language Focus: Narrative Past Tenses & Sequencers (20 mins)",
+              "description": "Grammar focus: past simple, past continuous, and past perfect for accident chronology (had leveled off when, was descending because)."
+            },
+            {
+              "time": "50-65",
+              "title": "Part 4: 15-Minute Group Research & Preparation Sprint (15 mins)",
+              "description": "Small teams (3-4 students) select an accident case study, extract the timeline, aircraft specifications, root causes, and safety fixes."
+            },
+            {
+              "time": "65-110",
+              "title": "Part 5: Spoken Group Presentations & Safety Debrief (45 mins)",
+              "description": "Each team delivers a 5-minute presentation to the class using whiteboard / screen bullet supports, followed by peer Q&A."
+            },
+            {
+              "time": "110-120",
+              "title": "Part 6: Vocabulary Review, Pronunciation & FE2 Prep (10 mins)",
+              "description": "Pronunciation drill (in-ves-ti-GA-tion, mal-func-tion, pre-ci-pi-ta-tion, fa-tigue) and guidelines for the Session 5 Formative Evaluation."
+            }
+          ]
+        },
+        "lessonContent": {
+          "hero": {
+            "title": "Significant Aviation Accidents & Aircraft Types",
+            "subtitle": "Landmark Air Accidents, Technical Causal Analysis & The Evolution of Flight Safety",
+            "image": "images/aas_m2card4.jpg",
+            "level": "CEFR B2",
+            "role": "Safety Investigator / Flight Safety Officer",
+            "duration": "120 Minutes"
+          },
+          "openingSession": {
+            "title": "Activity 1: Aviation News & Session 3 Spot-Check (10 mins)",
+            "summary": "News review followed by quick vocabulary check on commercial fleets.",
+            "modeBadges": [
+              "Pairs",
+              "News & Warm-Up",
+              "10 Mins"
+            ],
+            "instructions": [
+              "Read the 3 aviation safety news items (BEA annual report, NTSB automation symposium, ICAO 25-hour CVR mandate).",
+              "Test your partner on the 4 core accident investigation questions: Accident vs. Incident (ICAO Annex 13), FDR vs. CVR capabilities, CFIT definition, and the Swiss Cheese safety model.",
+              "Toggle each answer to verify definitions against official ICAO investigation terminology."
+            ],
+            "deliverable": "Concise verbal explanations of core safety concepts and accident classification criteria.",
+            "teacherNotes": "Stress that aviation safety investigations exist solely to determine causes and prevent recurrence, NOT to apportion blame or legal liability (ICAO Annex 13 principle).",
+            "newsPrompts": [
+              "French accident bureau BEA issues annual safety synthesis highlighting stable commercial airline safety records in Europe.",
+              "NTSB safety symposium examines pilot-machine interface and automated flight envelope protections.",
+              "ICAO mandates enhanced 25-hour Cockpit Voice Recorder (CVR) duration on newly manufactured commercial jet transports."
+            ],
+            "diagnostic": {
+              "title": "Session 3 Knowledge Check",
+              "instructions": "Answer these 4 rapid spot-check questions:",
+              "questions": [
+                {
+                  "id": 1,
+                  "q": "What is the difference between an 'accident' and an 'incident' according to ICAO Annex 13?",
+                  "answer": "An accident involves serious injury, loss of life, or substantial structural damage affecting airworthiness. An incident affects or could affect flight safety, but without catastrophic damage or serious injury."
+                },
+                {
+                  "id": 2,
+                  "q": "What are the two components of the aircraft 'black box', and what does each record?",
+                  "answer": "The Cockpit Voice Recorder (CVR) records cockpit sounds, pilot communications, and warnings. The Flight Data Recorder (FDR) records flight parameters like altitude, airspeed, heading, control positions, and engine settings."
+                },
+                {
+                  "id": 3,
+                  "q": "What is Controlled Flight Into Terrain (CFIT)?",
+                  "answer": "CFIT occurs when an airworthy aircraft under the control of the flight crew is unintentionally flown into terrain, obstacles, or water without the crew realizing the impending impact."
+                },
+                {
+                  "id": 4,
+                  "q": "Explain the 'Swiss Cheese' safety model in accident investigation.",
+                  "answer": "Aviation accidents rarely result from a single failure; they occur when latent organizational weaknesses and active errors line up through holes in multiple protective defensive layers."
+                }
+              ]
+            }
+          },
+          "investigationLexis": {
+            "title": "Activity 2: Accident Investigation Terminology & Causal Chains (20 mins)",
+            "summary": "Learn and deploy specialized safety vocabulary used by investigation authorities (BEA, NTSB, AAIB).",
+            "modeBadges": [
+              "Pairs",
+              "Vocabulary Acquisition",
+              "20 Mins"
+            ],
+            "instructions": [
+              "Review the 5 core investigation concepts: Flight Data Recorder (FDR), Cockpit Voice Recorder (CVR), Root Cause vs. Contributing Factor, Human Factors & CRM, and Airworthiness Directives (AD).",
+              "Pair up to explain how a minor technical glitch can cascade into a catastrophic event when multiple contributing factors align.",
+              "Match each term to its real-world investigation document (preliminary report, FDR readout, final safety recommendation)."
+            ],
+            "deliverable": "Precise deployment of causal terminology in simulated incident descriptions.",
+            "teacherNotes": "Check understanding of the distinction between 'root cause' (the underlying trigger without which the accident would not occur) and 'contributing factors' (environmental, fatigue, organizational conditions that aggravated the event).",
+            "terms": [
+              {
+                "term": "Flight Data Recorder (FDR)",
+                "role": "Records hundreds of digital flight parameters (airspeed, control deflections, engine parameters) for crash investigation."
+              },
+              {
+                "term": "Cockpit Voice Recorder (CVR)",
+                "role": "Captures cockpit audio, pilot communications, and acoustic warnings on an endless recording loop."
+              },
+              {
+                "term": "Root Cause vs. Contributing Factor",
+                "role": "Root cause is the core failure without which the event would not have occurred; contributing factors heighten risk or accelerate the chain."
+              },
+              {
+                "term": "Human Factors & Crew Resource Management (CRM)",
+                "role": "Addressing human error, stress, cognitive overload, communication breakdown, and hierarchical authority gradient in the cockpit."
+              },
+              {
+                "term": "Airworthiness Directive (AD)",
+                "role": "A legally binding safety regulation issued by aviation authorities (FAA, EASA) mandating structural or systems modifications."
+              }
+            ]
+          },
+          "pastNarrativesClinic": {
+            "title": "Activity 3: Language Focus: Narrative Past Tenses & Sequencers (20 mins)",
+            "summary": "Combining Past Simple, Past Continuous, and Past Perfect to build clear chronological incident reports.",
+            "modeBadges": [
+              "Pairs / Individual",
+              "Narrative Grammar",
+              "20 Mins"
+            ],
+            "instructions": [
+              "Examine the narrative timeline formula combining Past Continuous (background condition: 'was cruising at FL350'), Past Perfect (prior action: 'ice crystals had blocked the probes'), and Past Simple (consecutive events: 'the autopilot disconnected, the alarm sounded, and the crew pitched up').",
+              "Identify the time sequencers used in professional accident reports: 'subsequently', 'concurrently', 'prior to impact', 'thereafter'.",
+              "Reconstruct a 3-sentence chronological sequence of an in-flight engine failure using all three past tenses accurately."
+            ],
+            "deliverable": "Written and spoken chronological narrative accurately coordinating Past Simple, Past Continuous, and Past Perfect.",
+            "teacherNotes": "Non-native speakers often overuse the past simple. Insist on the past perfect for actions completed before another past event: 'The aircraft crashed because the maintenance crew had forgotten to lock the cowl latch.'",
+            "rules": [
+              {
+                "tense": "Past Continuous (Background Action in Progress)",
+                "formula": "was/were + [verb-ing]",
+                "example": "The aircraft was cruising at FL350 in calm air when the airspeed indicators suddenly disagreed."
+              },
+              {
+                "tense": "Past Perfect (Prior Action Completed Earlier)",
+                "formula": "had + [past participle]",
+                "example": "The crew had disconnected the autopilot because ice crystals had accumulated inside the pitot probes."
+              },
+              {
+                "tense": "Past Simple (Sequential Events)",
+                "formula": "[past verb] + then / subsequently",
+                "example": "The captain reduced pitch, applied rudder, and subsequently regained visual contact with the runway."
+              }
+            ]
+          },
+          "groupResearchSprint": {
+            "title": "Activity 4: 15-Minute Group Research & Preparation Sprint (15 mins)",
+            "summary": "Small groups (3-4 students) select one landmark accident case study. Within 15 minutes, prepare a 5-minute spoken briefing for classmates.",
+            "modeBadges": [
+              "Small Groups (3-4)",
+              "Research Sprint",
+              "15 Mins"
+            ],
+            "instructions": [
+              "Form groups of 3-4 and select one of the 6 landmark accident case studies: Tenerife (1977), AF447 (2009), US Airways 1549 (2009), BA038 (2008), Aloha 243 (1988), or Boeing 737 MAX (2018-2019).",
+              "In a 15-minute timed sprint, extract the 4 mandatory briefing pillars: (1) Aircraft type & context, (2) Chronology of events, (3) Technical & human root causes, (4) Permanent safety upgrades.",
+              "Assign speaking roles so that each group member presents one specific pillar without reading directly from notes."
+            ],
+            "deliverable": "Structured 4-part presentation outline ready for spoken delivery within the 15-minute timebox.",
+            "teacherNotes": "Act as a timekeeper. Do not allow groups to spend 10 minutes choosing a topic; assign immediately if needed. Check that notes contain only bullet prompts, key acronyms, and flight numbers.",
+            "caseStudies": [
+              {
+                "id": 1,
+                "title": "Tenerife Airport Disaster (1977)",
+                "aircraft": "Two Boeing 747s (KLM Flight 4805 & Pan Am Flight 1736)",
+                "context": "Dense fog on the runway at Los Rodeos Airport. Non-standard radio phraseology ('at takeoff') and authority gradient led KLM to begin takeoff while Pan Am was still back-taxiing on the runway.",
+                "safetyOutcome": "Complete overhaul of international ATC phraseology; birth of Crew Resource Management (CRM); mandatory readbacks of all runway clearances."
+              },
+              {
+                "id": 2,
+                "title": "Air France Flight 447 (2009)",
+                "aircraft": "Airbus A330-200",
+                "context": "En route from Rio to Paris across the ITCZ. Supercooled water ice crystals blocked all three pitot tubes, causing autopilot disconnect and unreliable airspeed. Crew pitched up, entering an unrecognized aerodynamic stall.",
+                "safetyOutcome": "Redesigned Thales pitot probes; mandatory high-altitude stall recovery training; enhanced angle of attack awareness protocols."
+              },
+              {
+                "id": 3,
+                "title": "US Airways Flight 1549 'Miracle on the Hudson' (2009)",
+                "aircraft": "Airbus A320-200",
+                "context": "Shortly after departure from LaGuardia at 2,800 ft, aircraft strikes a flock of Canada geese, causing complete dual engine failure. Pilots assess landing options and execute successful ditching in Hudson River.",
+                "safetyOutcome": "Wildlife management programs at airports; revised dual engine failure checklists; improved pilot water survival training."
+              },
+              {
+                "id": 4,
+                "title": "British Airways Flight 38 (2008)",
+                "aircraft": "Boeing 777-200ER",
+                "context": "On short final into London Heathrow after transpolar flight from Beijing. Uncommanded dual engine thrust rollback at 700 ft due to ice crystals clogging fuel-oil heat exchangers (FOHE).",
+                "safetyOutcome": "Redesigned Rolls-Royce Trent 800 fuel-oil heat exchangers preventing internal ice accretion; updated cold weather fuel management procedures."
+              },
+              {
+                "id": 5,
+                "title": "Aloha Airlines Flight 243 (1988)",
+                "aircraft": "Boeing 737-200",
+                "context": "High-cycle inter-island flight in Hawaii at FL240. Severe multi-site fatigue cracking and corrosion caused an explosive decompression, tearing off 5.5 meters of upper cabin fuselage.",
+                "safetyOutcome": "Mandatory aging aircraft inspection programs; strict lap-joint fatigue crack testing; revised cyclic pressurization inspection intervals."
+              },
+              {
+                "id": 6,
+                "title": "Boeing 737 MAX Accidents (Lion Air 610 / Ethiopian 302, 2018-2019)",
+                "aircraft": "Boeing 737 MAX 8",
+                "context": "Single angle-of-attack (AoA) sensor failure triggered repeated, uncommanded MCAS nose-down trim activation that overwhelmed flight crews unfamiliar with the system.",
+                "safetyOutcome": "Complete MCAS redesign requiring dual AoA sensor agreement; uncommanded trim override limits; mandatory simulator training for all MAX pilots."
+              }
+            ]
+          },
+          "presentationsDebrief": {
+            "title": "Activity 5: Spoken Group Presentations & Class Debrief (45 mins)",
+            "summary": "Each group presents their 5-minute accident analysis using whiteboard or slide bullet points, followed by class Q&A.",
+            "modeBadges": [
+              "Small Groups",
+              "Spoken Presentation",
+              "45 Mins"
+            ],
+            "instructions": [
+              "Deliver your 5-minute accident briefing to the class, using the whiteboard or bullet slides to support your narrative.",
+              "Ensure talking time is distributed equally among all team members. Strictly no reading from pre-written essays!",
+              "After each presentation, the audience formulates at least two technical questions regarding the investigation findings or regulatory follow-up.",
+              "Summarize how the accident contributed to the modern aviation safety ecosystem."
+            ],
+            "deliverable": "5-minute spoken briefing delivered without word-for-word notes and active engagement in technical peer Q&A.",
+            "teacherNotes": "Enforce equal speaking time strictly. If one student dominates, prompt the other team members: 'Could the second speaker explain the human factors component?' Assess pronunciation of past tense -ed endings (e.g., disconnected, pitched, descended).",
+            "presentationGuidelines": [
+              "Structure: (1) Aircraft type & context, (2) Chronology of events, (3) Root causes, (4) Permanent safety fixes.",
+              "Speaking rules: Share talking time equally among all group members. Strictly no reading word-for-word from notes!",
+              "Audience task: Classmates formulate one technical follow-up question regarding the investigation findings."
+            ]
+          },
+          "closingReview": {
+            "title": "Activity 6: Vocabulary Review & Formative Evaluation 2 Prep (10 mins)",
+            "summary": "Review the 18 accident investigation terms and review expectations for Session 5 Formative Evaluation 2.",
+            "modeBadges": [
+              "Plenary",
+              "FE2 Preparation",
+              "10 Mins"
+            ],
+            "instructions": [
+              "Review the 18 accident and safety terms in the Revision tab flashcards.",
+              "Note the expectations for Session 5 Formative Evaluation 2: 10-12 minute paired presentation of an Aircraft or Airline Profile, followed by teacher Q&A.",
+              "Verify your presentation partner, topic selection, and slide preparation plan."
+            ],
+            "deliverable": "Confirmed FE2 preparation roadmap and mastery of the 18 accident investigation vocabulary items.",
+            "teacherNotes": "Remind students that FE2 in Session 5 is formative, providing detailed formative feedback on pronunciation, technical vocabulary, and spontaneous Q&A defense.",
+            "checkpoints": [
+              "Mastered 18 accident investigation & safety terms",
+              "Coordinated past simple, continuous, and perfect in chronology",
+              "Confirmed FE2 partner, topic, and presentation structure"
+            ],
+            "fe2Preview": "In Session 5, you and your partner will present an Aircraft or Airline Profile for 10-12 minutes, followed by teacher Q&A, covering technical specs, operational metrics, historical milestones, and safety records."
+          }
+        },
+        "revision": {
+          "title": "Session 4 Revision - Significant Aviation Accidents & Aircraft Types",
+          "summary": "Master the 18 key vocabulary terms for Aviation Accidents & Safety to analyze investigation methodologies, causal factors, and safety upgrades.",
+          "terms": [
+            {
+              "num": "01",
+              "term": "Accident",
+              "definition": "An occurrence associated with the operation of an aircraft causing serious injury, death, or major structural failure."
+            },
+            {
+              "num": "02",
+              "term": "Incident",
+              "definition": "An occurrence, other than an accident, associated with aircraft operation that affects or could affect the safety of operation."
+            },
+            {
+              "num": "03",
+              "term": "Flight Data Recorder (FDR)",
+              "definition": "A flight recorder device that records operating parameters (altitude, airspeed, heading, control positions) to reconstruct accidents."
+            },
+            {
+              "num": "04",
+              "term": "Cockpit Voice Recorder (CVR)",
+              "definition": "A flight recorder device that records audio inside the cockpit, including pilot voices, radio communications, and alarms."
+            },
+            {
+              "num": "05",
+              "term": "Investigation Bureau",
+              "definition": "An independent national safety authority (e.g. BEA in France, NTSB in the US) tasked with determining accident causes."
+            },
+            {
+              "num": "06",
+              "term": "Root Cause",
+              "definition": "The fundamental underlying failure or condition that directly initiated the sequence resulting in the accident."
+            },
+            {
+              "num": "07",
+              "term": "Contributing Factor",
+              "definition": "An environmental, mechanical, or human factor that increased the likelihood or severity of an accident."
+            },
+            {
+              "num": "08",
+              "term": "Metal Fatigue",
+              "definition": "Progressive structural damage and cracking that occurs when metal airframe components are subjected to repeated cyclic stress."
+            },
+            {
+              "num": "09",
+              "term": "Decompression",
+              "definition": "The loss of internal cabin pressure in an aircraft due to structural failure, door seal rupture, or system malfunction."
+            },
+            {
+              "num": "10",
+              "term": "Engine Failure",
+              "definition": "The unexpected shutdown, flameout, or mechanical destruction of an aircraft engine during operation."
+            },
+            {
+              "num": "11",
+              "term": "Bird Strike",
+              "definition": "A collision between an airborne animal (bird or bat) and an aircraft in flight or during takeoff/landing."
+            },
+            {
+              "num": "12",
+              "term": "Icing",
+              "definition": "The accumulation of atmospheric ice on wings, control surfaces, or pitot probes, severely degrading aerodynamic performance."
+            },
+            {
+              "num": "13",
+              "term": "Controlled Flight Into Terrain (CFIT)",
+              "definition": "An accident in which an airworthy aircraft under crew control is inadvertently flown into ground, water, or obstacles."
+            },
+            {
+              "num": "14",
+              "term": "Loss of Control In-Flight (LOC-I)",
+              "definition": "A severe deviation from the intended flight path caused by aerodynamic stall, spatial disorientation, or systems failure."
+            },
+            {
+              "num": "15",
+              "term": "Human Factors",
+              "definition": "The study of human capabilities, cognitive limitations, communication, and ergonomics in aviation operations."
+            },
+            {
+              "num": "16",
+              "term": "Situational Awareness",
+              "definition": "An accurate mental perception of the aircraft position, flight condition, environmental threats, and systems status."
+            },
+            {
+              "num": "17",
+              "term": "Safety Recommendation",
+              "definition": "A formal proposal by an accident investigation board recommending mandatory regulatory, operational, or design changes."
+            },
+            {
+              "num": "18",
+              "term": "Airworthiness Directive (AD)",
+              "definition": "A legally enforceable regulation issued by a civil aviation authority mandating inspections or modifications to resolve an unsafe condition."
+            }
+          ]
+        },
+        "materials": {
+          "videos": [
+            {
+              "title": "Video 1: Black Box, FDR & CVR Explained by Captain Joe",
+              "watchUrl": "https://www.youtube.com/watch?v=lPiWlBG16Wo",
+              "tag": "Flight Recorders",
+              "videoId": "lPiWlBG16Wo",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/lPiWlBG16Wo",
+              "caption": "Focus: Understand how underwater locator beacons, Flight Data Recorders, and Cockpit Voice Recorders withstand impacts to preserve telemetry."
+            },
+            {
+              "title": "Video 2: NTSB Animation Flight 1549 Hudson River Landing US Airways",
+              "watchUrl": "https://www.youtube.com/watch?v=pWpSAfF6elI",
+              "tag": "Accident Reconstruction",
+              "videoId": "pWpSAfF6elI",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/pWpSAfF6elI",
+              "caption": "Focus: Analyze the official NTSB synchronized FDR data, ATC radar track, and radio transcripts during the dual-engine goose ingestion ditching."
+            },
+            {
+              "title": "Video 3: Boeing 737 MAX and Swiss Cheese: Systemic Accident Causation",
+              "watchUrl": "https://www.youtube.com/watch?v=ol0L9quUq_Y",
+              "tag": "Human Factors",
+              "videoId": "ol0L9quUq_Y",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/ol0L9quUq_Y",
+              "caption": "Focus: Explore how latent engineering vulnerabilities, regulatory delegation, and flight crew alerting lined up in the Swiss Cheese model."
+            }
+          ],
+          "articles": [
+            {
+              "topic": "Aviation Safety Evolution",
+              "sourceTag": "Flight Safety Foundation",
+              "heading": "From Tragedy to Technology: How Historical Accidents Made Modern Flying the Safest Transit Mode",
+              "snippet": "An examination of how Crew Resource Management (CRM), TCAS collision avoidance, and GPWS terrain warnings originated from accident investigations.",
+              "url": "https://flightsafety.org",
+              "readTime": "Estimated read: 4-5 mins"
+            },
+            {
+              "topic": "Accident Investigation",
+              "sourceTag": "BEA France",
+              "heading": "The Role of Independent Technical Investigation in Preventing Future Accidents",
+              "snippet": "How aviation accident investigators determine facts without seeking blame or liability, focusing strictly on permanent safety recommendations.",
+              "url": "https://www.bea.aero",
+              "readTime": "Estimated read: 5-6 mins"
+            }
+          ],
+          "resources": [
+            {
+              "url": "https://bea.aero/en",
+              "tag": "01 • Official Reports",
+              "name": "BEA (Bureau d'Enquêtes et d'Analyses)",
+              "desc": "French civil aviation safety authority publishing authoritative final accident investigation reports."
+            },
+            {
+              "url": "https://www.ntsb.gov/investigations/accidentreports/pages/aviation.aspx",
+              "tag": "02 • Investigation Database",
+              "name": "NTSB Aviation Accident Investigation Database",
+              "desc": "US National Transportation Safety Board database with factual dockets and probable cause findings."
+            },
+            {
+              "url": "https://www.icao.int/safety/air-navigation/Pages/aig.aspx",
+              "tag": "03 • International Standards",
+              "name": "ICAO Annex 13: Aircraft Accident Investigation",
+              "desc": "Standardized international treaty protocols governing investigator rights and report transparency."
+            },
+            {
+              "url": "https://aviation-safety.net",
+              "tag": "04 • Safety Knowledgebase",
+              "name": "Aviation Safety Network (ASN) Database",
+              "desc": "Global historical flight occurrence archive tracking hull losses, airframe types, and fatalities."
+            },
+            {
+              "url": "https://www.skybrary.aero/articles/accident-and-incident-investigation",
+              "tag": "05 • Safety Research",
+              "name": "Skybrary: Aviation Accident Investigation Toolkit",
+              "desc": "In-depth tutorials on black box data extraction, metallurgical analysis, and human factors."
+            },
+            {
+              "url": "https://www.eurocontrol.int/safety",
+              "tag": "06 • European Safety",
+              "name": "EUROCONTROL Safety Improvement Initiatives",
+              "desc": "European air navigation safety briefings on runway incursions, level busts, and wake turbulence."
+            }
+          ],
+          "grammar": {
+            "title": "Past Narrative Tenses & Time Linkers in Accident Chronologies",
+            "badge": "Flight Recorders",
+            "patternTitle": "Accident Investigation Formula",
+            "formula": "While + Past Continuous, Past Simple || Subject + had + Past Participle (Past Perfect)",
+            "rulesTitle": "Core Communicative Guidelines",
+            "rules": [
+              "<strong style=\"color: #1e293b;\">1. Past Continuous for Background Conditions:</strong> Sets the atmospheric and operational scene (<em>'While the flight was cruising in severe icing conditions at FL350, the pitot probes iced over'</em>).",
+              "<strong style=\"color: #1e293b;\">2. Past Simple for Sequential Chain of Events:</strong> Recounts the chronological trigger events (<em>'The autopilot disconnected, the master warning sounded, and the captain initiated recovery'</em>).",
+              "<strong style=\"color: #1e293b;\">3. Past Perfect for Pre-Existing Latent Conditions:</strong> Identifies maintenance or regulatory oversights prior to departure (<em>'Investigators revealed that technicians had installed an incorrect adhesive during an overhaul six months earlier'</em>).",
+              "<strong style=\"color: #1e293b;\">4. Cause-and-Effect Narrative Subordinators:</strong> Connects human factors to systemic outcomes (<em>'Because the flight crew had received insufficient simulator training on the new trim system, they failed to recognize the runaway trim'</em>)."
+            ],
+            "trap": "⚠️ TOEIC Part 5 Narrative Tense Alert: When two actions happened in the past, the earlier event MUST use the Past Perfect ('had + verb3'), not the Past Simple (<em>'The crew realized that the controller had assigned them the wrong heading'</em>).",
+            "examplesTitle": "Authentic Operational Examples",
+            "examples": [
+              "While the aircraft was descending on approach, the ground proximity warning system alerted the crew to rising terrain.",
+              "The BEA safety board determined that sensor discrepancy had triggered inappropriate flight control law degradation."
+            ]
+          },
+          "toeicQuestions": [
+            {
+              "stem": "The accident investigation bureau concluded that the aircraft ________ at cruise altitude for three hours before the electrical failure occurred.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "is flying"
+                },
+                {
+                  "letter": "B",
+                  "text": "was flown"
+                },
+                {
+                  "letter": "C",
+                  "text": "had been flying"
+                },
+                {
+                  "letter": "D",
+                  "text": "has flown"
+                }
+              ],
+              "correctLetter": "C",
+              "correctText": "had been flying",
+              "analysis": "The past perfect continuous ('had been flying') indicates an ongoing action that was in progress for a specified duration ('for three hours') before another definitive past event ('the failure occurred').",
+              "strategy": "Duration markers ('for X hours') preceding a past event ('before + past simple') signal the Past Perfect Continuous (had been + -ing).",
+              "id": 1
+            },
+            {
+              "stem": "Civil aviation authorities issued an emergency Airworthiness Directive requiring mandatory ________ of all engine fuel-oil heat exchangers.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "inspections"
+                },
+                {
+                  "letter": "B",
+                  "text": "inspects"
+                },
+                {
+                  "letter": "C",
+                  "text": "inspected"
+                },
+                {
+                  "letter": "D",
+                  "text": "inspect"
+                }
+              ],
+              "correctLetter": "A",
+              "correctText": "inspections",
+              "analysis": "The transitive participle 'requiring' followed by the adjective 'mandatory' requires a direct object noun. The plural noun 'inspections' completes the meaning.",
+              "strategy": "After an adjective (mandatory, regulatory, annual, periodic), select the noun form (ending in -tion, -ment, -ance).",
+              "id": 2
+            },
+            {
+              "stem": "Investigators determined that the flight crew had lost situational awareness ________ extreme fatigue and high cognitive workload in severe weather.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "because of"
+                },
+                {
+                  "letter": "B",
+                  "text": "although"
+                },
+                {
+                  "letter": "C",
+                  "text": "whereas"
+                },
+                {
+                  "letter": "D",
+                  "text": "in spite"
+                }
+              ],
+              "correctLetter": "A",
+              "correctText": "because of",
+              "analysis": "'Because of' correctly introduces the noun phrase cause ('extreme fatigue and high cognitive workload'). 'In spite' lacks 'of', and 'although' / 'whereas' introduce full clauses.",
+              "strategy": "Identify cause vs. contrast: fatigue caused the loss of awareness (direct cause = because of).",
+              "id": 3
+            },
+            {
+              "stem": "The Flight Data Recorder provided accurate telemetry data that enabled engineers ________ the exact sequence of events leading to the incident.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "reconstruct"
+                },
+                {
+                  "letter": "B",
+                  "text": "to reconstruct"
+                },
+                {
+                  "letter": "C",
+                  "text": "reconstructing"
+                },
+                {
+                  "letter": "D",
+                  "text": "reconstructed"
+                }
+              ],
+              "correctLetter": "B",
+              "correctText": "to reconstruct",
+              "analysis": "The causative verb 'enable' follows the structural pattern 'enable + someone / something + to-infinitive' ('enabled engineers to reconstruct').",
+              "strategy": "Causative & permissive verbs taking object + to-infinitive: enable, allow, require, permit, instruct, authorize.",
+              "id": 4
+            },
+            {
+              "stem": "Following the publication of the final report, airlines implemented enhanced crew training programs in order to ________ future communication errors.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "preventing"
+                },
+                {
+                  "letter": "B",
+                  "text": "prevention"
+                },
+                {
+                  "letter": "C",
+                  "text": "prevent"
+                },
+                {
+                  "letter": "D",
+                  "text": "preventable"
+                }
+              ],
+              "correctLetter": "C",
+              "correctText": "prevent",
+              "analysis": "The purpose clause connector 'in order to' is strictly followed by the base bare form of the verb ('in order to prevent').",
+              "strategy": "In order to / so as to are purpose markers that must be followed by a bare infinitive (base verb form V1).",
+              "id": 5
+            }
+          ],
+          "pageUrl": "session4/admat_aas2.html"
+        }
+      },
+      "5": {
+        "session": 5,
+        "objectives": {
+          "title": "Session 5 - Significant Aviation Accidents & Aircraft Types Objectives",
+          "summary": "By the end of this session, you will be able to analyze landmark aviation accidents and the aircraft types involved, use past narrative tenses and sequencing linkers, conduct a 15-minute quick-fire group research sprint, and deliver a collaborative 5-minute accident briefing to classmates.",
+          "items": [
+            {
+              "num": 1,
+              "title": "Examine Landmark Historical Aviation Accidents",
+              "description": "Analyze major historical accidents (e.g., Tenerife 1977, BA 38, US Airways 1549, AF 447, Aloha 243, 737 MAX) and identify the specific aircraft types involved."
+            },
+            {
+              "num": 2,
+              "title": "Master Accident Investigation Vocabulary & Causal Analysis",
+              "description": "Deploy technical terms including Flight Data Recorder (FDR), Cockpit Voice Recorder (CVR), root causes, human factors, and Swiss Cheese model."
+            },
+            {
+              "num": 3,
+              "title": "Deploy Past Narrative Tenses & Chronological Sequencers",
+              "description": "Accurately combine past simple, past continuous, and past perfect tenses to describe flight incident sequences and timelines."
+            },
+            {
+              "num": 4,
+              "title": "Execute a 15-Minute Group Research & Preparation Sprint",
+              "description": "Collaborate in small groups (3-4 students) within a strict 15-minute timeframe to extract technical causes, timelines, and safety outcomes."
+            },
+            {
+              "num": 5,
+              "title": "Deliver a 5-Minute Spoken Safety Briefing & Peer Q&A",
+              "description": "Present the accident analysis collaboratively to classmates without reading word-for-word from notes, answering spontaneous questions."
+            }
+          ]
+        },
+        "lessonPlan": {
+          "title": "Session 4 Lesson Plan (2 Hours)",
+          "summary": "A 2-hour interactive workshop covering aviation safety news, crash investigation vocabulary, past tenses clinic, the 15-minute group research sprint, 5-minute class accident presentations, and FE2 briefing.",
+          "items": [
+            {
+              "time": "00-10",
+              "title": "Part 1: Aviation News & Session 3 Fleet Spot-Check (10 mins)",
+              "description": "Weekly aviation news review and rapid spot-check on commercial aircraft categories and airline operating models."
+            },
+            {
+              "time": "10-30",
+              "title": "Part 2: Accident Investigation Terminology (20 mins)",
+              "description": "Key vocabulary of air crash investigation: CVR/FDR black boxes, BEA/NTSB roles, CFIT, mechanical failure vs. human factors."
+            },
+            {
+              "time": "30-50",
+              "title": "Part 3: Language Focus: Narrative Past Tenses & Sequencers (20 mins)",
+              "description": "Grammar focus: past simple, past continuous, and past perfect for accident chronology (had leveled off when, was descending because)."
+            },
+            {
+              "time": "50-65",
+              "title": "Part 4: 15-Minute Group Research & Preparation Sprint (15 mins)",
+              "description": "Small teams (3-4 students) select an accident case study, extract the timeline, aircraft specifications, root causes, and safety fixes."
+            },
+            {
+              "time": "65-110",
+              "title": "Part 5: Spoken Group Presentations & Safety Debrief (45 mins)",
+              "description": "Each team delivers a 5-minute presentation to the class using whiteboard / screen bullet supports, followed by peer Q&A."
+            },
+            {
+              "time": "110-120",
+              "title": "Part 6: Vocabulary Review, Pronunciation & FE2 Prep (10 mins)",
+              "description": "Pronunciation drill (in-ves-ti-GA-tion, mal-func-tion, pre-ci-pi-ta-tion, fa-tigue) and guidelines for the Session 5 Formative Evaluation."
+            }
+          ]
+        },
+        "lessonContent": {
+          "hero": {
+            "title": "Significant Aviation Accidents & Aircraft Types",
+            "subtitle": "Landmark Air Accidents, Technical Causal Analysis & The Evolution of Flight Safety",
+            "image": "images/aas_m2card4.jpg",
+            "level": "CEFR B2",
+            "role": "Safety Investigator / Flight Safety Officer",
+            "duration": "120 Minutes"
+          },
+          "openingSession": {
+            "title": "Activity 1: Aviation News & Session 3 Spot-Check (10 mins)",
+            "summary": "News review followed by quick vocabulary check on commercial fleets.",
+            "modeBadges": [
+              "Pairs",
+              "News & Warm-Up",
+              "10 Mins"
+            ],
+            "instructions": [
+              "Read the 3 aviation safety news items (BEA annual report, NTSB automation symposium, ICAO 25-hour CVR mandate).",
+              "Test your partner on the 4 core accident investigation questions: Accident vs. Incident (ICAO Annex 13), FDR vs. CVR capabilities, CFIT definition, and the Swiss Cheese safety model.",
+              "Toggle each answer to verify definitions against official ICAO investigation terminology."
+            ],
+            "deliverable": "Concise verbal explanations of core safety concepts and accident classification criteria.",
+            "teacherNotes": "Stress that aviation safety investigations exist solely to determine causes and prevent recurrence, NOT to apportion blame or legal liability (ICAO Annex 13 principle).",
+            "newsPrompts": [
+              "French accident bureau BEA issues annual safety synthesis highlighting stable commercial airline safety records in Europe.",
+              "NTSB safety symposium examines pilot-machine interface and automated flight envelope protections.",
+              "ICAO mandates enhanced 25-hour Cockpit Voice Recorder (CVR) duration on newly manufactured commercial jet transports."
+            ],
+            "diagnostic": {
+              "title": "Session 3 Knowledge Check",
+              "instructions": "Answer these 4 rapid spot-check questions:",
+              "questions": [
+                {
+                  "id": 1,
+                  "q": "What is the difference between an 'accident' and an 'incident' according to ICAO Annex 13?",
+                  "answer": "An accident involves serious injury, loss of life, or substantial structural damage affecting airworthiness. An incident affects or could affect flight safety, but without catastrophic damage or serious injury."
+                },
+                {
+                  "id": 2,
+                  "q": "What are the two components of the aircraft 'black box', and what does each record?",
+                  "answer": "The Cockpit Voice Recorder (CVR) records cockpit sounds, pilot communications, and warnings. The Flight Data Recorder (FDR) records flight parameters like altitude, airspeed, heading, control positions, and engine settings."
+                },
+                {
+                  "id": 3,
+                  "q": "What is Controlled Flight Into Terrain (CFIT)?",
+                  "answer": "CFIT occurs when an airworthy aircraft under the control of the flight crew is unintentionally flown into terrain, obstacles, or water without the crew realizing the impending impact."
+                },
+                {
+                  "id": 4,
+                  "q": "Explain the 'Swiss Cheese' safety model in accident investigation.",
+                  "answer": "Aviation accidents rarely result from a single failure; they occur when latent organizational weaknesses and active errors line up through holes in multiple protective defensive layers."
+                }
+              ]
+            }
+          },
+          "investigationLexis": {
+            "title": "Activity 2: Accident Investigation Terminology & Causal Chains (20 mins)",
+            "summary": "Learn and deploy specialized safety vocabulary used by investigation authorities (BEA, NTSB, AAIB).",
+            "modeBadges": [
+              "Pairs",
+              "Vocabulary Acquisition",
+              "20 Mins"
+            ],
+            "instructions": [
+              "Review the 5 core investigation concepts: Flight Data Recorder (FDR), Cockpit Voice Recorder (CVR), Root Cause vs. Contributing Factor, Human Factors & CRM, and Airworthiness Directives (AD).",
+              "Pair up to explain how a minor technical glitch can cascade into a catastrophic event when multiple contributing factors align.",
+              "Match each term to its real-world investigation document (preliminary report, FDR readout, final safety recommendation)."
+            ],
+            "deliverable": "Precise deployment of causal terminology in simulated incident descriptions.",
+            "teacherNotes": "Check understanding of the distinction between 'root cause' (the underlying trigger without which the accident would not occur) and 'contributing factors' (environmental, fatigue, organizational conditions that aggravated the event).",
+            "terms": [
+              {
+                "term": "Flight Data Recorder (FDR)",
+                "role": "Records hundreds of digital flight parameters (airspeed, control deflections, engine parameters) for crash investigation."
+              },
+              {
+                "term": "Cockpit Voice Recorder (CVR)",
+                "role": "Captures cockpit audio, pilot communications, and acoustic warnings on an endless recording loop."
+              },
+              {
+                "term": "Root Cause vs. Contributing Factor",
+                "role": "Root cause is the core failure without which the event would not have occurred; contributing factors heighten risk or accelerate the chain."
+              },
+              {
+                "term": "Human Factors & Crew Resource Management (CRM)",
+                "role": "Addressing human error, stress, cognitive overload, communication breakdown, and hierarchical authority gradient in the cockpit."
+              },
+              {
+                "term": "Airworthiness Directive (AD)",
+                "role": "A legally binding safety regulation issued by aviation authorities (FAA, EASA) mandating structural or systems modifications."
+              }
+            ]
+          },
+          "pastNarrativesClinic": {
+            "title": "Activity 3: Language Focus: Narrative Past Tenses & Sequencers (20 mins)",
+            "summary": "Combining Past Simple, Past Continuous, and Past Perfect to build clear chronological incident reports.",
+            "modeBadges": [
+              "Pairs / Individual",
+              "Narrative Grammar",
+              "20 Mins"
+            ],
+            "instructions": [
+              "Examine the narrative timeline formula combining Past Continuous (background condition: 'was cruising at FL350'), Past Perfect (prior action: 'ice crystals had blocked the probes'), and Past Simple (consecutive events: 'the autopilot disconnected, the alarm sounded, and the crew pitched up').",
+              "Identify the time sequencers used in professional accident reports: 'subsequently', 'concurrently', 'prior to impact', 'thereafter'.",
+              "Reconstruct a 3-sentence chronological sequence of an in-flight engine failure using all three past tenses accurately."
+            ],
+            "deliverable": "Written and spoken chronological narrative accurately coordinating Past Simple, Past Continuous, and Past Perfect.",
+            "teacherNotes": "Non-native speakers often overuse the past simple. Insist on the past perfect for actions completed before another past event: 'The aircraft crashed because the maintenance crew had forgotten to lock the cowl latch.'",
+            "rules": [
+              {
+                "tense": "Past Continuous (Background Action in Progress)",
+                "formula": "was/were + [verb-ing]",
+                "example": "The aircraft was cruising at FL350 in calm air when the airspeed indicators suddenly disagreed."
+              },
+              {
+                "tense": "Past Perfect (Prior Action Completed Earlier)",
+                "formula": "had + [past participle]",
+                "example": "The crew had disconnected the autopilot because ice crystals had accumulated inside the pitot probes."
+              },
+              {
+                "tense": "Past Simple (Sequential Events)",
+                "formula": "[past verb] + then / subsequently",
+                "example": "The captain reduced pitch, applied rudder, and subsequently regained visual contact with the runway."
+              }
+            ]
+          },
+          "groupResearchSprint": {
+            "title": "Activity 4: 15-Minute Group Research & Preparation Sprint (15 mins)",
+            "summary": "Small groups (3-4 students) select one landmark accident case study. Within 15 minutes, prepare a 5-minute spoken briefing for classmates.",
+            "modeBadges": [
+              "Small Groups (3-4)",
+              "Research Sprint",
+              "15 Mins"
+            ],
+            "instructions": [
+              "Form groups of 3-4 and select one of the 6 landmark accident case studies: Tenerife (1977), AF447 (2009), US Airways 1549 (2009), BA038 (2008), Aloha 243 (1988), or Boeing 737 MAX (2018-2019).",
+              "In a 15-minute timed sprint, extract the 4 mandatory briefing pillars: (1) Aircraft type & context, (2) Chronology of events, (3) Technical & human root causes, (4) Permanent safety upgrades.",
+              "Assign speaking roles so that each group member presents one specific pillar without reading directly from notes."
+            ],
+            "deliverable": "Structured 4-part presentation outline ready for spoken delivery within the 15-minute timebox.",
+            "teacherNotes": "Act as a timekeeper. Do not allow groups to spend 10 minutes choosing a topic; assign immediately if needed. Check that notes contain only bullet prompts, key acronyms, and flight numbers.",
+            "caseStudies": [
+              {
+                "id": 1,
+                "title": "Tenerife Airport Disaster (1977)",
+                "aircraft": "Two Boeing 747s (KLM Flight 4805 & Pan Am Flight 1736)",
+                "context": "Dense fog on the runway at Los Rodeos Airport. Non-standard radio phraseology ('at takeoff') and authority gradient led KLM to begin takeoff while Pan Am was still back-taxiing on the runway.",
+                "safetyOutcome": "Complete overhaul of international ATC phraseology; birth of Crew Resource Management (CRM); mandatory readbacks of all runway clearances."
+              },
+              {
+                "id": 2,
+                "title": "Air France Flight 447 (2009)",
+                "aircraft": "Airbus A330-200",
+                "context": "En route from Rio to Paris across the ITCZ. Supercooled water ice crystals blocked all three pitot tubes, causing autopilot disconnect and unreliable airspeed. Crew pitched up, entering an unrecognized aerodynamic stall.",
+                "safetyOutcome": "Redesigned Thales pitot probes; mandatory high-altitude stall recovery training; enhanced angle of attack awareness protocols."
+              },
+              {
+                "id": 3,
+                "title": "US Airways Flight 1549 'Miracle on the Hudson' (2009)",
+                "aircraft": "Airbus A320-200",
+                "context": "Shortly after departure from LaGuardia at 2,800 ft, aircraft strikes a flock of Canada geese, causing complete dual engine failure. Pilots assess landing options and execute successful ditching in Hudson River.",
+                "safetyOutcome": "Wildlife management programs at airports; revised dual engine failure checklists; improved pilot water survival training."
+              },
+              {
+                "id": 4,
+                "title": "British Airways Flight 38 (2008)",
+                "aircraft": "Boeing 777-200ER",
+                "context": "On short final into London Heathrow after transpolar flight from Beijing. Uncommanded dual engine thrust rollback at 700 ft due to ice crystals clogging fuel-oil heat exchangers (FOHE).",
+                "safetyOutcome": "Redesigned Rolls-Royce Trent 800 fuel-oil heat exchangers preventing internal ice accretion; updated cold weather fuel management procedures."
+              },
+              {
+                "id": 5,
+                "title": "Aloha Airlines Flight 243 (1988)",
+                "aircraft": "Boeing 737-200",
+                "context": "High-cycle inter-island flight in Hawaii at FL240. Severe multi-site fatigue cracking and corrosion caused an explosive decompression, tearing off 5.5 meters of upper cabin fuselage.",
+                "safetyOutcome": "Mandatory aging aircraft inspection programs; strict lap-joint fatigue crack testing; revised cyclic pressurization inspection intervals."
+              },
+              {
+                "id": 6,
+                "title": "Boeing 737 MAX Accidents (Lion Air 610 / Ethiopian 302, 2018-2019)",
+                "aircraft": "Boeing 737 MAX 8",
+                "context": "Single angle-of-attack (AoA) sensor failure triggered repeated, uncommanded MCAS nose-down trim activation that overwhelmed flight crews unfamiliar with the system.",
+                "safetyOutcome": "Complete MCAS redesign requiring dual AoA sensor agreement; uncommanded trim override limits; mandatory simulator training for all MAX pilots."
+              }
+            ]
+          },
+          "presentationsDebrief": {
+            "title": "Activity 5: Spoken Group Presentations & Class Debrief (45 mins)",
+            "summary": "Each group presents their 5-minute accident analysis using whiteboard or slide bullet points, followed by class Q&A.",
+            "modeBadges": [
+              "Small Groups",
+              "Spoken Presentation",
+              "45 Mins"
+            ],
+            "instructions": [
+              "Deliver your 5-minute accident briefing to the class, using the whiteboard or bullet slides to support your narrative.",
+              "Ensure talking time is distributed equally among all team members. Strictly no reading from pre-written essays!",
+              "After each presentation, the audience formulates at least two technical questions regarding the investigation findings or regulatory follow-up.",
+              "Summarize how the accident contributed to the modern aviation safety ecosystem."
+            ],
+            "deliverable": "5-minute spoken briefing delivered without word-for-word notes and active engagement in technical peer Q&A.",
+            "teacherNotes": "Enforce equal speaking time strictly. If one student dominates, prompt the other team members: 'Could the second speaker explain the human factors component?' Assess pronunciation of past tense -ed endings (e.g., disconnected, pitched, descended).",
+            "presentationGuidelines": [
+              "Structure: (1) Aircraft type & context, (2) Chronology of events, (3) Root causes, (4) Permanent safety fixes.",
+              "Speaking rules: Share talking time equally among all group members. Strictly no reading word-for-word from notes!",
+              "Audience task: Classmates formulate one technical follow-up question regarding the investigation findings."
+            ]
+          },
+          "closingReview": {
+            "title": "Activity 6: Vocabulary Review & Formative Evaluation 2 Prep (10 mins)",
+            "summary": "Review the 18 accident investigation terms and review expectations for Session 5 Formative Evaluation 2.",
+            "modeBadges": [
+              "Plenary",
+              "FE2 Preparation",
+              "10 Mins"
+            ],
+            "instructions": [
+              "Review the 18 accident and safety terms in the Revision tab flashcards.",
+              "Note the expectations for Session 5 Formative Evaluation 2: 10-12 minute paired presentation of an Aircraft or Airline Profile, followed by teacher Q&A.",
+              "Verify your presentation partner, topic selection, and slide preparation plan."
+            ],
+            "deliverable": "Confirmed FE2 preparation roadmap and mastery of the 18 accident investigation vocabulary items.",
+            "teacherNotes": "Remind students that FE2 in Session 5 is formative, providing detailed formative feedback on pronunciation, technical vocabulary, and spontaneous Q&A defense.",
+            "checkpoints": [
+              "Mastered 18 accident investigation & safety terms",
+              "Coordinated past simple, continuous, and perfect in chronology",
+              "Confirmed FE2 partner, topic, and presentation structure"
+            ],
+            "fe2Preview": "In Session 5, you and your partner will present an Aircraft or Airline Profile for 10-12 minutes, followed by teacher Q&A, covering technical specs, operational metrics, historical milestones, and safety records."
+          }
+        },
+        "revision": {
+          "title": "Session 4 Revision - Significant Aviation Accidents & Aircraft Types",
+          "summary": "Master the 18 key vocabulary terms for Aviation Accidents & Safety to analyze investigation methodologies, causal factors, and safety upgrades.",
+          "terms": [
+            {
+              "num": "01",
+              "term": "Accident",
+              "definition": "An occurrence associated with the operation of an aircraft causing serious injury, death, or major structural failure."
+            },
+            {
+              "num": "02",
+              "term": "Incident",
+              "definition": "An occurrence, other than an accident, associated with aircraft operation that affects or could affect the safety of operation."
+            },
+            {
+              "num": "03",
+              "term": "Flight Data Recorder (FDR)",
+              "definition": "A flight recorder device that records operating parameters (altitude, airspeed, heading, control positions) to reconstruct accidents."
+            },
+            {
+              "num": "04",
+              "term": "Cockpit Voice Recorder (CVR)",
+              "definition": "A flight recorder device that records audio inside the cockpit, including pilot voices, radio communications, and alarms."
+            },
+            {
+              "num": "05",
+              "term": "Investigation Bureau",
+              "definition": "An independent national safety authority (e.g. BEA in France, NTSB in the US) tasked with determining accident causes."
+            },
+            {
+              "num": "06",
+              "term": "Root Cause",
+              "definition": "The fundamental underlying failure or condition that directly initiated the sequence resulting in the accident."
+            },
+            {
+              "num": "07",
+              "term": "Contributing Factor",
+              "definition": "An environmental, mechanical, or human factor that increased the likelihood or severity of an accident."
+            },
+            {
+              "num": "08",
+              "term": "Metal Fatigue",
+              "definition": "Progressive structural damage and cracking that occurs when metal airframe components are subjected to repeated cyclic stress."
+            },
+            {
+              "num": "09",
+              "term": "Decompression",
+              "definition": "The loss of internal cabin pressure in an aircraft due to structural failure, door seal rupture, or system malfunction."
+            },
+            {
+              "num": "10",
+              "term": "Engine Failure",
+              "definition": "The unexpected shutdown, flameout, or mechanical destruction of an aircraft engine during operation."
+            },
+            {
+              "num": "11",
+              "term": "Bird Strike",
+              "definition": "A collision between an airborne animal (bird or bat) and an aircraft in flight or during takeoff/landing."
+            },
+            {
+              "num": "12",
+              "term": "Icing",
+              "definition": "The accumulation of atmospheric ice on wings, control surfaces, or pitot probes, severely degrading aerodynamic performance."
+            },
+            {
+              "num": "13",
+              "term": "Controlled Flight Into Terrain (CFIT)",
+              "definition": "An accident in which an airworthy aircraft under crew control is inadvertently flown into ground, water, or obstacles."
+            },
+            {
+              "num": "14",
+              "term": "Loss of Control In-Flight (LOC-I)",
+              "definition": "A severe deviation from the intended flight path caused by aerodynamic stall, spatial disorientation, or systems failure."
+            },
+            {
+              "num": "15",
+              "term": "Human Factors",
+              "definition": "The study of human capabilities, cognitive limitations, communication, and ergonomics in aviation operations."
+            },
+            {
+              "num": "16",
+              "term": "Situational Awareness",
+              "definition": "An accurate mental perception of the aircraft position, flight condition, environmental threats, and systems status."
+            },
+            {
+              "num": "17",
+              "term": "Safety Recommendation",
+              "definition": "A formal proposal by an accident investigation board recommending mandatory regulatory, operational, or design changes."
+            },
+            {
+              "num": "18",
+              "term": "Airworthiness Directive (AD)",
+              "definition": "A legally enforceable regulation issued by a civil aviation authority mandating inspections or modifications to resolve an unsafe condition."
+            }
+          ]
+        },
+        "materials": {
+          "videos": [
+            {
+              "title": "Video 1: Black Box, FDR & CVR Explained by Captain Joe",
+              "watchUrl": "https://www.youtube.com/watch?v=lPiWlBG16Wo",
+              "tag": "Flight Recorders",
+              "videoId": "lPiWlBG16Wo",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/lPiWlBG16Wo",
+              "caption": "Focus: Understand how underwater locator beacons, Flight Data Recorders, and Cockpit Voice Recorders withstand impacts to preserve telemetry."
+            },
+            {
+              "title": "Video 2: NTSB Animation Flight 1549 Hudson River Landing US Airways",
+              "watchUrl": "https://www.youtube.com/watch?v=pWpSAfF6elI",
+              "tag": "Accident Reconstruction",
+              "videoId": "pWpSAfF6elI",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/pWpSAfF6elI",
+              "caption": "Focus: Analyze the official NTSB synchronized FDR data, ATC radar track, and radio transcripts during the dual-engine goose ingestion ditching."
+            },
+            {
+              "title": "Video 3: Boeing 737 MAX and Swiss Cheese: Systemic Accident Causation",
+              "watchUrl": "https://www.youtube.com/watch?v=ol0L9quUq_Y",
+              "tag": "Human Factors",
+              "videoId": "ol0L9quUq_Y",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/ol0L9quUq_Y",
+              "caption": "Focus: Explore how latent engineering vulnerabilities, regulatory delegation, and flight crew alerting lined up in the Swiss Cheese model."
+            }
+          ],
+          "articles": [
+            {
+              "topic": "Aviation Safety Evolution",
+              "sourceTag": "Flight Safety Foundation",
+              "heading": "From Tragedy to Technology: How Historical Accidents Made Modern Flying the Safest Transit Mode",
+              "snippet": "An examination of how Crew Resource Management (CRM), TCAS collision avoidance, and GPWS terrain warnings originated from accident investigations.",
+              "url": "https://flightsafety.org",
+              "readTime": "Estimated read: 4-5 mins"
+            },
+            {
+              "topic": "Accident Investigation",
+              "sourceTag": "BEA France",
+              "heading": "The Role of Independent Technical Investigation in Preventing Future Accidents",
+              "snippet": "How aviation accident investigators determine facts without seeking blame or liability, focusing strictly on permanent safety recommendations.",
+              "url": "https://www.bea.aero",
+              "readTime": "Estimated read: 5-6 mins"
+            }
+          ],
+          "resources": [
+            {
+              "url": "https://bea.aero/en",
+              "tag": "01 • Official Reports",
+              "name": "BEA (Bureau d'Enquêtes et d'Analyses)",
+              "desc": "French civil aviation safety authority publishing authoritative final accident investigation reports."
+            },
+            {
+              "url": "https://www.ntsb.gov/investigations/accidentreports/pages/aviation.aspx",
+              "tag": "02 • Investigation Database",
+              "name": "NTSB Aviation Accident Investigation Database",
+              "desc": "US National Transportation Safety Board database with factual dockets and probable cause findings."
+            },
+            {
+              "url": "https://www.icao.int/safety/air-navigation/Pages/aig.aspx",
+              "tag": "03 • International Standards",
+              "name": "ICAO Annex 13: Aircraft Accident Investigation",
+              "desc": "Standardized international treaty protocols governing investigator rights and report transparency."
+            },
+            {
+              "url": "https://aviation-safety.net",
+              "tag": "04 • Safety Knowledgebase",
+              "name": "Aviation Safety Network (ASN) Database",
+              "desc": "Global historical flight occurrence archive tracking hull losses, airframe types, and fatalities."
+            },
+            {
+              "url": "https://www.skybrary.aero/articles/accident-and-incident-investigation",
+              "tag": "05 • Safety Research",
+              "name": "Skybrary: Aviation Accident Investigation Toolkit",
+              "desc": "In-depth tutorials on black box data extraction, metallurgical analysis, and human factors."
+            },
+            {
+              "url": "https://www.eurocontrol.int/safety",
+              "tag": "06 • European Safety",
+              "name": "EUROCONTROL Safety Improvement Initiatives",
+              "desc": "European air navigation safety briefings on runway incursions, level busts, and wake turbulence."
+            }
+          ],
+          "grammar": {
+            "title": "Past Narrative Tenses & Time Linkers in Accident Chronologies",
+            "badge": "Flight Recorders",
+            "patternTitle": "Accident Investigation Formula",
+            "formula": "While + Past Continuous, Past Simple || Subject + had + Past Participle (Past Perfect)",
+            "rulesTitle": "Core Communicative Guidelines",
+            "rules": [
+              "<strong style=\"color: #1e293b;\">1. Past Continuous for Background Conditions:</strong> Sets the atmospheric and operational scene (<em>'While the flight was cruising in severe icing conditions at FL350, the pitot probes iced over'</em>).",
+              "<strong style=\"color: #1e293b;\">2. Past Simple for Sequential Chain of Events:</strong> Recounts the chronological trigger events (<em>'The autopilot disconnected, the master warning sounded, and the captain initiated recovery'</em>).",
+              "<strong style=\"color: #1e293b;\">3. Past Perfect for Pre-Existing Latent Conditions:</strong> Identifies maintenance or regulatory oversights prior to departure (<em>'Investigators revealed that technicians had installed an incorrect adhesive during an overhaul six months earlier'</em>).",
+              "<strong style=\"color: #1e293b;\">4. Cause-and-Effect Narrative Subordinators:</strong> Connects human factors to systemic outcomes (<em>'Because the flight crew had received insufficient simulator training on the new trim system, they failed to recognize the runaway trim'</em>)."
+            ],
+            "trap": "⚠️ TOEIC Part 5 Narrative Tense Alert: When two actions happened in the past, the earlier event MUST use the Past Perfect ('had + verb3'), not the Past Simple (<em>'The crew realized that the controller had assigned them the wrong heading'</em>).",
+            "examplesTitle": "Authentic Operational Examples",
+            "examples": [
+              "While the aircraft was descending on approach, the ground proximity warning system alerted the crew to rising terrain.",
+              "The BEA safety board determined that sensor discrepancy had triggered inappropriate flight control law degradation."
+            ]
+          },
+          "toeicQuestions": [
+            {
+              "stem": "The accident investigation bureau concluded that the aircraft ________ at cruise altitude for three hours before the electrical failure occurred.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "is flying"
+                },
+                {
+                  "letter": "B",
+                  "text": "was flown"
+                },
+                {
+                  "letter": "C",
+                  "text": "had been flying"
+                },
+                {
+                  "letter": "D",
+                  "text": "has flown"
+                }
+              ],
+              "correctLetter": "C",
+              "correctText": "had been flying",
+              "analysis": "The past perfect continuous ('had been flying') indicates an ongoing action that was in progress for a specified duration ('for three hours') before another definitive past event ('the failure occurred').",
+              "strategy": "Duration markers ('for X hours') preceding a past event ('before + past simple') signal the Past Perfect Continuous (had been + -ing).",
+              "id": 1
+            },
+            {
+              "stem": "Civil aviation authorities issued an emergency Airworthiness Directive requiring mandatory ________ of all engine fuel-oil heat exchangers.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "inspections"
+                },
+                {
+                  "letter": "B",
+                  "text": "inspects"
+                },
+                {
+                  "letter": "C",
+                  "text": "inspected"
+                },
+                {
+                  "letter": "D",
+                  "text": "inspect"
+                }
+              ],
+              "correctLetter": "A",
+              "correctText": "inspections",
+              "analysis": "The transitive participle 'requiring' followed by the adjective 'mandatory' requires a direct object noun. The plural noun 'inspections' completes the meaning.",
+              "strategy": "After an adjective (mandatory, regulatory, annual, periodic), select the noun form (ending in -tion, -ment, -ance).",
+              "id": 2
+            },
+            {
+              "stem": "Investigators determined that the flight crew had lost situational awareness ________ extreme fatigue and high cognitive workload in severe weather.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "because of"
+                },
+                {
+                  "letter": "B",
+                  "text": "although"
+                },
+                {
+                  "letter": "C",
+                  "text": "whereas"
+                },
+                {
+                  "letter": "D",
+                  "text": "in spite"
+                }
+              ],
+              "correctLetter": "A",
+              "correctText": "because of",
+              "analysis": "'Because of' correctly introduces the noun phrase cause ('extreme fatigue and high cognitive workload'). 'In spite' lacks 'of', and 'although' / 'whereas' introduce full clauses.",
+              "strategy": "Identify cause vs. contrast: fatigue caused the loss of awareness (direct cause = because of).",
+              "id": 3
+            },
+            {
+              "stem": "The Flight Data Recorder provided accurate telemetry data that enabled engineers ________ the exact sequence of events leading to the incident.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "reconstruct"
+                },
+                {
+                  "letter": "B",
+                  "text": "to reconstruct"
+                },
+                {
+                  "letter": "C",
+                  "text": "reconstructing"
+                },
+                {
+                  "letter": "D",
+                  "text": "reconstructed"
+                }
+              ],
+              "correctLetter": "B",
+              "correctText": "to reconstruct",
+              "analysis": "The causative verb 'enable' follows the structural pattern 'enable + someone / something + to-infinitive' ('enabled engineers to reconstruct').",
+              "strategy": "Causative & permissive verbs taking object + to-infinitive: enable, allow, require, permit, instruct, authorize.",
+              "id": 4
+            },
+            {
+              "stem": "Following the publication of the final report, airlines implemented enhanced crew training programs in order to ________ future communication errors.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "preventing"
+                },
+                {
+                  "letter": "B",
+                  "text": "prevention"
+                },
+                {
+                  "letter": "C",
+                  "text": "prevent"
+                },
+                {
+                  "letter": "D",
+                  "text": "preventable"
+                }
+              ],
+              "correctLetter": "C",
+              "correctText": "prevent",
+              "analysis": "The purpose clause connector 'in order to' is strictly followed by the base bare form of the verb ('in order to prevent').",
+              "strategy": "In order to / so as to are purpose markers that must be followed by a bare infinitive (base verb form V1).",
+              "id": 5
+            }
+          ],
+          "pageUrl": "session4/admat_aas2.html"
+        }
+      },
+      "6": {
+        "session": 6,
+        "objectives": {
+          "title": "Session 6 - Significant Aviation Accidents & Aircraft Types Objectives",
+          "summary": "By the end of this session, you will be able to analyze landmark aviation accidents and the aircraft types involved, use past narrative tenses and sequencing linkers, conduct a 15-minute quick-fire group research sprint, and deliver a collaborative 5-minute accident briefing to classmates.",
+          "items": [
+            {
+              "num": 1,
+              "title": "Examine Landmark Historical Aviation Accidents",
+              "description": "Analyze major historical accidents (e.g., Tenerife 1977, BA 38, US Airways 1549, AF 447, Aloha 243, 737 MAX) and identify the specific aircraft types involved."
+            },
+            {
+              "num": 2,
+              "title": "Master Accident Investigation Vocabulary & Causal Analysis",
+              "description": "Deploy technical terms including Flight Data Recorder (FDR), Cockpit Voice Recorder (CVR), root causes, human factors, and Swiss Cheese model."
+            },
+            {
+              "num": 3,
+              "title": "Deploy Past Narrative Tenses & Chronological Sequencers",
+              "description": "Accurately combine past simple, past continuous, and past perfect tenses to describe flight incident sequences and timelines."
+            },
+            {
+              "num": 4,
+              "title": "Execute a 15-Minute Group Research & Preparation Sprint",
+              "description": "Collaborate in small groups (3-4 students) within a strict 15-minute timeframe to extract technical causes, timelines, and safety outcomes."
+            },
+            {
+              "num": 5,
+              "title": "Deliver a 5-Minute Spoken Safety Briefing & Peer Q&A",
+              "description": "Present the accident analysis collaboratively to classmates without reading word-for-word from notes, answering spontaneous questions."
+            }
+          ]
+        },
+        "lessonPlan": {
+          "title": "Session 4 Lesson Plan (2 Hours)",
+          "summary": "A 2-hour interactive workshop covering aviation safety news, crash investigation vocabulary, past tenses clinic, the 15-minute group research sprint, 5-minute class accident presentations, and FE2 briefing.",
+          "items": [
+            {
+              "time": "00-10",
+              "title": "Part 1: Aviation News & Session 3 Fleet Spot-Check (10 mins)",
+              "description": "Weekly aviation news review and rapid spot-check on commercial aircraft categories and airline operating models."
+            },
+            {
+              "time": "10-30",
+              "title": "Part 2: Accident Investigation Terminology (20 mins)",
+              "description": "Key vocabulary of air crash investigation: CVR/FDR black boxes, BEA/NTSB roles, CFIT, mechanical failure vs. human factors."
+            },
+            {
+              "time": "30-50",
+              "title": "Part 3: Language Focus: Narrative Past Tenses & Sequencers (20 mins)",
+              "description": "Grammar focus: past simple, past continuous, and past perfect for accident chronology (had leveled off when, was descending because)."
+            },
+            {
+              "time": "50-65",
+              "title": "Part 4: 15-Minute Group Research & Preparation Sprint (15 mins)",
+              "description": "Small teams (3-4 students) select an accident case study, extract the timeline, aircraft specifications, root causes, and safety fixes."
+            },
+            {
+              "time": "65-110",
+              "title": "Part 5: Spoken Group Presentations & Safety Debrief (45 mins)",
+              "description": "Each team delivers a 5-minute presentation to the class using whiteboard / screen bullet supports, followed by peer Q&A."
+            },
+            {
+              "time": "110-120",
+              "title": "Part 6: Vocabulary Review, Pronunciation & FE2 Prep (10 mins)",
+              "description": "Pronunciation drill (in-ves-ti-GA-tion, mal-func-tion, pre-ci-pi-ta-tion, fa-tigue) and guidelines for the Session 5 Formative Evaluation."
+            }
+          ]
+        },
+        "lessonContent": {
+          "hero": {
+            "title": "Significant Aviation Accidents & Aircraft Types",
+            "subtitle": "Landmark Air Accidents, Technical Causal Analysis & The Evolution of Flight Safety",
+            "image": "images/aas_m2card4.jpg",
+            "level": "CEFR B2",
+            "role": "Safety Investigator / Flight Safety Officer",
+            "duration": "120 Minutes"
+          },
+          "openingSession": {
+            "title": "Activity 1: Aviation News & Session 3 Spot-Check (10 mins)",
+            "summary": "News review followed by quick vocabulary check on commercial fleets.",
+            "modeBadges": [
+              "Pairs",
+              "News & Warm-Up",
+              "10 Mins"
+            ],
+            "instructions": [
+              "Read the 3 aviation safety news items (BEA annual report, NTSB automation symposium, ICAO 25-hour CVR mandate).",
+              "Test your partner on the 4 core accident investigation questions: Accident vs. Incident (ICAO Annex 13), FDR vs. CVR capabilities, CFIT definition, and the Swiss Cheese safety model.",
+              "Toggle each answer to verify definitions against official ICAO investigation terminology."
+            ],
+            "deliverable": "Concise verbal explanations of core safety concepts and accident classification criteria.",
+            "teacherNotes": "Stress that aviation safety investigations exist solely to determine causes and prevent recurrence, NOT to apportion blame or legal liability (ICAO Annex 13 principle).",
+            "newsPrompts": [
+              "French accident bureau BEA issues annual safety synthesis highlighting stable commercial airline safety records in Europe.",
+              "NTSB safety symposium examines pilot-machine interface and automated flight envelope protections.",
+              "ICAO mandates enhanced 25-hour Cockpit Voice Recorder (CVR) duration on newly manufactured commercial jet transports."
+            ],
+            "diagnostic": {
+              "title": "Session 3 Knowledge Check",
+              "instructions": "Answer these 4 rapid spot-check questions:",
+              "questions": [
+                {
+                  "id": 1,
+                  "q": "What is the difference between an 'accident' and an 'incident' according to ICAO Annex 13?",
+                  "answer": "An accident involves serious injury, loss of life, or substantial structural damage affecting airworthiness. An incident affects or could affect flight safety, but without catastrophic damage or serious injury."
+                },
+                {
+                  "id": 2,
+                  "q": "What are the two components of the aircraft 'black box', and what does each record?",
+                  "answer": "The Cockpit Voice Recorder (CVR) records cockpit sounds, pilot communications, and warnings. The Flight Data Recorder (FDR) records flight parameters like altitude, airspeed, heading, control positions, and engine settings."
+                },
+                {
+                  "id": 3,
+                  "q": "What is Controlled Flight Into Terrain (CFIT)?",
+                  "answer": "CFIT occurs when an airworthy aircraft under the control of the flight crew is unintentionally flown into terrain, obstacles, or water without the crew realizing the impending impact."
+                },
+                {
+                  "id": 4,
+                  "q": "Explain the 'Swiss Cheese' safety model in accident investigation.",
+                  "answer": "Aviation accidents rarely result from a single failure; they occur when latent organizational weaknesses and active errors line up through holes in multiple protective defensive layers."
+                }
+              ]
+            }
+          },
+          "investigationLexis": {
+            "title": "Activity 2: Accident Investigation Terminology & Causal Chains (20 mins)",
+            "summary": "Learn and deploy specialized safety vocabulary used by investigation authorities (BEA, NTSB, AAIB).",
+            "modeBadges": [
+              "Pairs",
+              "Vocabulary Acquisition",
+              "20 Mins"
+            ],
+            "instructions": [
+              "Review the 5 core investigation concepts: Flight Data Recorder (FDR), Cockpit Voice Recorder (CVR), Root Cause vs. Contributing Factor, Human Factors & CRM, and Airworthiness Directives (AD).",
+              "Pair up to explain how a minor technical glitch can cascade into a catastrophic event when multiple contributing factors align.",
+              "Match each term to its real-world investigation document (preliminary report, FDR readout, final safety recommendation)."
+            ],
+            "deliverable": "Precise deployment of causal terminology in simulated incident descriptions.",
+            "teacherNotes": "Check understanding of the distinction between 'root cause' (the underlying trigger without which the accident would not occur) and 'contributing factors' (environmental, fatigue, organizational conditions that aggravated the event).",
+            "terms": [
+              {
+                "term": "Flight Data Recorder (FDR)",
+                "role": "Records hundreds of digital flight parameters (airspeed, control deflections, engine parameters) for crash investigation."
+              },
+              {
+                "term": "Cockpit Voice Recorder (CVR)",
+                "role": "Captures cockpit audio, pilot communications, and acoustic warnings on an endless recording loop."
+              },
+              {
+                "term": "Root Cause vs. Contributing Factor",
+                "role": "Root cause is the core failure without which the event would not have occurred; contributing factors heighten risk or accelerate the chain."
+              },
+              {
+                "term": "Human Factors & Crew Resource Management (CRM)",
+                "role": "Addressing human error, stress, cognitive overload, communication breakdown, and hierarchical authority gradient in the cockpit."
+              },
+              {
+                "term": "Airworthiness Directive (AD)",
+                "role": "A legally binding safety regulation issued by aviation authorities (FAA, EASA) mandating structural or systems modifications."
+              }
+            ]
+          },
+          "pastNarrativesClinic": {
+            "title": "Activity 3: Language Focus: Narrative Past Tenses & Sequencers (20 mins)",
+            "summary": "Combining Past Simple, Past Continuous, and Past Perfect to build clear chronological incident reports.",
+            "modeBadges": [
+              "Pairs / Individual",
+              "Narrative Grammar",
+              "20 Mins"
+            ],
+            "instructions": [
+              "Examine the narrative timeline formula combining Past Continuous (background condition: 'was cruising at FL350'), Past Perfect (prior action: 'ice crystals had blocked the probes'), and Past Simple (consecutive events: 'the autopilot disconnected, the alarm sounded, and the crew pitched up').",
+              "Identify the time sequencers used in professional accident reports: 'subsequently', 'concurrently', 'prior to impact', 'thereafter'.",
+              "Reconstruct a 3-sentence chronological sequence of an in-flight engine failure using all three past tenses accurately."
+            ],
+            "deliverable": "Written and spoken chronological narrative accurately coordinating Past Simple, Past Continuous, and Past Perfect.",
+            "teacherNotes": "Non-native speakers often overuse the past simple. Insist on the past perfect for actions completed before another past event: 'The aircraft crashed because the maintenance crew had forgotten to lock the cowl latch.'",
+            "rules": [
+              {
+                "tense": "Past Continuous (Background Action in Progress)",
+                "formula": "was/were + [verb-ing]",
+                "example": "The aircraft was cruising at FL350 in calm air when the airspeed indicators suddenly disagreed."
+              },
+              {
+                "tense": "Past Perfect (Prior Action Completed Earlier)",
+                "formula": "had + [past participle]",
+                "example": "The crew had disconnected the autopilot because ice crystals had accumulated inside the pitot probes."
+              },
+              {
+                "tense": "Past Simple (Sequential Events)",
+                "formula": "[past verb] + then / subsequently",
+                "example": "The captain reduced pitch, applied rudder, and subsequently regained visual contact with the runway."
+              }
+            ]
+          },
+          "groupResearchSprint": {
+            "title": "Activity 4: 15-Minute Group Research & Preparation Sprint (15 mins)",
+            "summary": "Small groups (3-4 students) select one landmark accident case study. Within 15 minutes, prepare a 5-minute spoken briefing for classmates.",
+            "modeBadges": [
+              "Small Groups (3-4)",
+              "Research Sprint",
+              "15 Mins"
+            ],
+            "instructions": [
+              "Form groups of 3-4 and select one of the 6 landmark accident case studies: Tenerife (1977), AF447 (2009), US Airways 1549 (2009), BA038 (2008), Aloha 243 (1988), or Boeing 737 MAX (2018-2019).",
+              "In a 15-minute timed sprint, extract the 4 mandatory briefing pillars: (1) Aircraft type & context, (2) Chronology of events, (3) Technical & human root causes, (4) Permanent safety upgrades.",
+              "Assign speaking roles so that each group member presents one specific pillar without reading directly from notes."
+            ],
+            "deliverable": "Structured 4-part presentation outline ready for spoken delivery within the 15-minute timebox.",
+            "teacherNotes": "Act as a timekeeper. Do not allow groups to spend 10 minutes choosing a topic; assign immediately if needed. Check that notes contain only bullet prompts, key acronyms, and flight numbers.",
+            "caseStudies": [
+              {
+                "id": 1,
+                "title": "Tenerife Airport Disaster (1977)",
+                "aircraft": "Two Boeing 747s (KLM Flight 4805 & Pan Am Flight 1736)",
+                "context": "Dense fog on the runway at Los Rodeos Airport. Non-standard radio phraseology ('at takeoff') and authority gradient led KLM to begin takeoff while Pan Am was still back-taxiing on the runway.",
+                "safetyOutcome": "Complete overhaul of international ATC phraseology; birth of Crew Resource Management (CRM); mandatory readbacks of all runway clearances."
+              },
+              {
+                "id": 2,
+                "title": "Air France Flight 447 (2009)",
+                "aircraft": "Airbus A330-200",
+                "context": "En route from Rio to Paris across the ITCZ. Supercooled water ice crystals blocked all three pitot tubes, causing autopilot disconnect and unreliable airspeed. Crew pitched up, entering an unrecognized aerodynamic stall.",
+                "safetyOutcome": "Redesigned Thales pitot probes; mandatory high-altitude stall recovery training; enhanced angle of attack awareness protocols."
+              },
+              {
+                "id": 3,
+                "title": "US Airways Flight 1549 'Miracle on the Hudson' (2009)",
+                "aircraft": "Airbus A320-200",
+                "context": "Shortly after departure from LaGuardia at 2,800 ft, aircraft strikes a flock of Canada geese, causing complete dual engine failure. Pilots assess landing options and execute successful ditching in Hudson River.",
+                "safetyOutcome": "Wildlife management programs at airports; revised dual engine failure checklists; improved pilot water survival training."
+              },
+              {
+                "id": 4,
+                "title": "British Airways Flight 38 (2008)",
+                "aircraft": "Boeing 777-200ER",
+                "context": "On short final into London Heathrow after transpolar flight from Beijing. Uncommanded dual engine thrust rollback at 700 ft due to ice crystals clogging fuel-oil heat exchangers (FOHE).",
+                "safetyOutcome": "Redesigned Rolls-Royce Trent 800 fuel-oil heat exchangers preventing internal ice accretion; updated cold weather fuel management procedures."
+              },
+              {
+                "id": 5,
+                "title": "Aloha Airlines Flight 243 (1988)",
+                "aircraft": "Boeing 737-200",
+                "context": "High-cycle inter-island flight in Hawaii at FL240. Severe multi-site fatigue cracking and corrosion caused an explosive decompression, tearing off 5.5 meters of upper cabin fuselage.",
+                "safetyOutcome": "Mandatory aging aircraft inspection programs; strict lap-joint fatigue crack testing; revised cyclic pressurization inspection intervals."
+              },
+              {
+                "id": 6,
+                "title": "Boeing 737 MAX Accidents (Lion Air 610 / Ethiopian 302, 2018-2019)",
+                "aircraft": "Boeing 737 MAX 8",
+                "context": "Single angle-of-attack (AoA) sensor failure triggered repeated, uncommanded MCAS nose-down trim activation that overwhelmed flight crews unfamiliar with the system.",
+                "safetyOutcome": "Complete MCAS redesign requiring dual AoA sensor agreement; uncommanded trim override limits; mandatory simulator training for all MAX pilots."
+              }
+            ]
+          },
+          "presentationsDebrief": {
+            "title": "Activity 5: Spoken Group Presentations & Class Debrief (45 mins)",
+            "summary": "Each group presents their 5-minute accident analysis using whiteboard or slide bullet points, followed by class Q&A.",
+            "modeBadges": [
+              "Small Groups",
+              "Spoken Presentation",
+              "45 Mins"
+            ],
+            "instructions": [
+              "Deliver your 5-minute accident briefing to the class, using the whiteboard or bullet slides to support your narrative.",
+              "Ensure talking time is distributed equally among all team members. Strictly no reading from pre-written essays!",
+              "After each presentation, the audience formulates at least two technical questions regarding the investigation findings or regulatory follow-up.",
+              "Summarize how the accident contributed to the modern aviation safety ecosystem."
+            ],
+            "deliverable": "5-minute spoken briefing delivered without word-for-word notes and active engagement in technical peer Q&A.",
+            "teacherNotes": "Enforce equal speaking time strictly. If one student dominates, prompt the other team members: 'Could the second speaker explain the human factors component?' Assess pronunciation of past tense -ed endings (e.g., disconnected, pitched, descended).",
+            "presentationGuidelines": [
+              "Structure: (1) Aircraft type & context, (2) Chronology of events, (3) Root causes, (4) Permanent safety fixes.",
+              "Speaking rules: Share talking time equally among all group members. Strictly no reading word-for-word from notes!",
+              "Audience task: Classmates formulate one technical follow-up question regarding the investigation findings."
+            ]
+          },
+          "closingReview": {
+            "title": "Activity 6: Vocabulary Review & Formative Evaluation 2 Prep (10 mins)",
+            "summary": "Review the 18 accident investigation terms and review expectations for Session 5 Formative Evaluation 2.",
+            "modeBadges": [
+              "Plenary",
+              "FE2 Preparation",
+              "10 Mins"
+            ],
+            "instructions": [
+              "Review the 18 accident and safety terms in the Revision tab flashcards.",
+              "Note the expectations for Session 5 Formative Evaluation 2: 10-12 minute paired presentation of an Aircraft or Airline Profile, followed by teacher Q&A.",
+              "Verify your presentation partner, topic selection, and slide preparation plan."
+            ],
+            "deliverable": "Confirmed FE2 preparation roadmap and mastery of the 18 accident investigation vocabulary items.",
+            "teacherNotes": "Remind students that FE2 in Session 5 is formative, providing detailed formative feedback on pronunciation, technical vocabulary, and spontaneous Q&A defense.",
+            "checkpoints": [
+              "Mastered 18 accident investigation & safety terms",
+              "Coordinated past simple, continuous, and perfect in chronology",
+              "Confirmed FE2 partner, topic, and presentation structure"
+            ],
+            "fe2Preview": "In Session 5, you and your partner will present an Aircraft or Airline Profile for 10-12 minutes, followed by teacher Q&A, covering technical specs, operational metrics, historical milestones, and safety records."
+          }
+        },
+        "revision": {
+          "title": "Session 4 Revision - Significant Aviation Accidents & Aircraft Types",
+          "summary": "Master the 18 key vocabulary terms for Aviation Accidents & Safety to analyze investigation methodologies, causal factors, and safety upgrades.",
+          "terms": [
+            {
+              "num": "01",
+              "term": "Accident",
+              "definition": "An occurrence associated with the operation of an aircraft causing serious injury, death, or major structural failure."
+            },
+            {
+              "num": "02",
+              "term": "Incident",
+              "definition": "An occurrence, other than an accident, associated with aircraft operation that affects or could affect the safety of operation."
+            },
+            {
+              "num": "03",
+              "term": "Flight Data Recorder (FDR)",
+              "definition": "A flight recorder device that records operating parameters (altitude, airspeed, heading, control positions) to reconstruct accidents."
+            },
+            {
+              "num": "04",
+              "term": "Cockpit Voice Recorder (CVR)",
+              "definition": "A flight recorder device that records audio inside the cockpit, including pilot voices, radio communications, and alarms."
+            },
+            {
+              "num": "05",
+              "term": "Investigation Bureau",
+              "definition": "An independent national safety authority (e.g. BEA in France, NTSB in the US) tasked with determining accident causes."
+            },
+            {
+              "num": "06",
+              "term": "Root Cause",
+              "definition": "The fundamental underlying failure or condition that directly initiated the sequence resulting in the accident."
+            },
+            {
+              "num": "07",
+              "term": "Contributing Factor",
+              "definition": "An environmental, mechanical, or human factor that increased the likelihood or severity of an accident."
+            },
+            {
+              "num": "08",
+              "term": "Metal Fatigue",
+              "definition": "Progressive structural damage and cracking that occurs when metal airframe components are subjected to repeated cyclic stress."
+            },
+            {
+              "num": "09",
+              "term": "Decompression",
+              "definition": "The loss of internal cabin pressure in an aircraft due to structural failure, door seal rupture, or system malfunction."
+            },
+            {
+              "num": "10",
+              "term": "Engine Failure",
+              "definition": "The unexpected shutdown, flameout, or mechanical destruction of an aircraft engine during operation."
+            },
+            {
+              "num": "11",
+              "term": "Bird Strike",
+              "definition": "A collision between an airborne animal (bird or bat) and an aircraft in flight or during takeoff/landing."
+            },
+            {
+              "num": "12",
+              "term": "Icing",
+              "definition": "The accumulation of atmospheric ice on wings, control surfaces, or pitot probes, severely degrading aerodynamic performance."
+            },
+            {
+              "num": "13",
+              "term": "Controlled Flight Into Terrain (CFIT)",
+              "definition": "An accident in which an airworthy aircraft under crew control is inadvertently flown into ground, water, or obstacles."
+            },
+            {
+              "num": "14",
+              "term": "Loss of Control In-Flight (LOC-I)",
+              "definition": "A severe deviation from the intended flight path caused by aerodynamic stall, spatial disorientation, or systems failure."
+            },
+            {
+              "num": "15",
+              "term": "Human Factors",
+              "definition": "The study of human capabilities, cognitive limitations, communication, and ergonomics in aviation operations."
+            },
+            {
+              "num": "16",
+              "term": "Situational Awareness",
+              "definition": "An accurate mental perception of the aircraft position, flight condition, environmental threats, and systems status."
+            },
+            {
+              "num": "17",
+              "term": "Safety Recommendation",
+              "definition": "A formal proposal by an accident investigation board recommending mandatory regulatory, operational, or design changes."
+            },
+            {
+              "num": "18",
+              "term": "Airworthiness Directive (AD)",
+              "definition": "A legally enforceable regulation issued by a civil aviation authority mandating inspections or modifications to resolve an unsafe condition."
+            }
+          ]
+        },
+        "materials": {
+          "videos": [
+            {
+              "title": "Video 1: Black Box, FDR & CVR Explained by Captain Joe",
+              "watchUrl": "https://www.youtube.com/watch?v=lPiWlBG16Wo",
+              "tag": "Flight Recorders",
+              "videoId": "lPiWlBG16Wo",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/lPiWlBG16Wo",
+              "caption": "Focus: Understand how underwater locator beacons, Flight Data Recorders, and Cockpit Voice Recorders withstand impacts to preserve telemetry."
+            },
+            {
+              "title": "Video 2: NTSB Animation Flight 1549 Hudson River Landing US Airways",
+              "watchUrl": "https://www.youtube.com/watch?v=pWpSAfF6elI",
+              "tag": "Accident Reconstruction",
+              "videoId": "pWpSAfF6elI",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/pWpSAfF6elI",
+              "caption": "Focus: Analyze the official NTSB synchronized FDR data, ATC radar track, and radio transcripts during the dual-engine goose ingestion ditching."
+            },
+            {
+              "title": "Video 3: Boeing 737 MAX and Swiss Cheese: Systemic Accident Causation",
+              "watchUrl": "https://www.youtube.com/watch?v=ol0L9quUq_Y",
+              "tag": "Human Factors",
+              "videoId": "ol0L9quUq_Y",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/ol0L9quUq_Y",
+              "caption": "Focus: Explore how latent engineering vulnerabilities, regulatory delegation, and flight crew alerting lined up in the Swiss Cheese model."
+            }
+          ],
+          "articles": [
+            {
+              "topic": "Aviation Safety Evolution",
+              "sourceTag": "Flight Safety Foundation",
+              "heading": "From Tragedy to Technology: How Historical Accidents Made Modern Flying the Safest Transit Mode",
+              "snippet": "An examination of how Crew Resource Management (CRM), TCAS collision avoidance, and GPWS terrain warnings originated from accident investigations.",
+              "url": "https://flightsafety.org",
+              "readTime": "Estimated read: 4-5 mins"
+            },
+            {
+              "topic": "Accident Investigation",
+              "sourceTag": "BEA France",
+              "heading": "The Role of Independent Technical Investigation in Preventing Future Accidents",
+              "snippet": "How aviation accident investigators determine facts without seeking blame or liability, focusing strictly on permanent safety recommendations.",
+              "url": "https://www.bea.aero",
+              "readTime": "Estimated read: 5-6 mins"
+            }
+          ],
+          "resources": [
+            {
+              "url": "https://bea.aero/en",
+              "tag": "01 • Official Reports",
+              "name": "BEA (Bureau d'Enquêtes et d'Analyses)",
+              "desc": "French civil aviation safety authority publishing authoritative final accident investigation reports."
+            },
+            {
+              "url": "https://www.ntsb.gov/investigations/accidentreports/pages/aviation.aspx",
+              "tag": "02 • Investigation Database",
+              "name": "NTSB Aviation Accident Investigation Database",
+              "desc": "US National Transportation Safety Board database with factual dockets and probable cause findings."
+            },
+            {
+              "url": "https://www.icao.int/safety/air-navigation/Pages/aig.aspx",
+              "tag": "03 • International Standards",
+              "name": "ICAO Annex 13: Aircraft Accident Investigation",
+              "desc": "Standardized international treaty protocols governing investigator rights and report transparency."
+            },
+            {
+              "url": "https://aviation-safety.net",
+              "tag": "04 • Safety Knowledgebase",
+              "name": "Aviation Safety Network (ASN) Database",
+              "desc": "Global historical flight occurrence archive tracking hull losses, airframe types, and fatalities."
+            },
+            {
+              "url": "https://www.skybrary.aero/articles/accident-and-incident-investigation",
+              "tag": "05 • Safety Research",
+              "name": "Skybrary: Aviation Accident Investigation Toolkit",
+              "desc": "In-depth tutorials on black box data extraction, metallurgical analysis, and human factors."
+            },
+            {
+              "url": "https://www.eurocontrol.int/safety",
+              "tag": "06 • European Safety",
+              "name": "EUROCONTROL Safety Improvement Initiatives",
+              "desc": "European air navigation safety briefings on runway incursions, level busts, and wake turbulence."
+            }
+          ],
+          "grammar": {
+            "title": "Past Narrative Tenses & Time Linkers in Accident Chronologies",
+            "badge": "Flight Recorders",
+            "patternTitle": "Accident Investigation Formula",
+            "formula": "While + Past Continuous, Past Simple || Subject + had + Past Participle (Past Perfect)",
+            "rulesTitle": "Core Communicative Guidelines",
+            "rules": [
+              "<strong style=\"color: #1e293b;\">1. Past Continuous for Background Conditions:</strong> Sets the atmospheric and operational scene (<em>'While the flight was cruising in severe icing conditions at FL350, the pitot probes iced over'</em>).",
+              "<strong style=\"color: #1e293b;\">2. Past Simple for Sequential Chain of Events:</strong> Recounts the chronological trigger events (<em>'The autopilot disconnected, the master warning sounded, and the captain initiated recovery'</em>).",
+              "<strong style=\"color: #1e293b;\">3. Past Perfect for Pre-Existing Latent Conditions:</strong> Identifies maintenance or regulatory oversights prior to departure (<em>'Investigators revealed that technicians had installed an incorrect adhesive during an overhaul six months earlier'</em>).",
+              "<strong style=\"color: #1e293b;\">4. Cause-and-Effect Narrative Subordinators:</strong> Connects human factors to systemic outcomes (<em>'Because the flight crew had received insufficient simulator training on the new trim system, they failed to recognize the runaway trim'</em>)."
+            ],
+            "trap": "⚠️ TOEIC Part 5 Narrative Tense Alert: When two actions happened in the past, the earlier event MUST use the Past Perfect ('had + verb3'), not the Past Simple (<em>'The crew realized that the controller had assigned them the wrong heading'</em>).",
+            "examplesTitle": "Authentic Operational Examples",
+            "examples": [
+              "While the aircraft was descending on approach, the ground proximity warning system alerted the crew to rising terrain.",
+              "The BEA safety board determined that sensor discrepancy had triggered inappropriate flight control law degradation."
+            ]
+          },
+          "toeicQuestions": [
+            {
+              "stem": "The accident investigation bureau concluded that the aircraft ________ at cruise altitude for three hours before the electrical failure occurred.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "is flying"
+                },
+                {
+                  "letter": "B",
+                  "text": "was flown"
+                },
+                {
+                  "letter": "C",
+                  "text": "had been flying"
+                },
+                {
+                  "letter": "D",
+                  "text": "has flown"
+                }
+              ],
+              "correctLetter": "C",
+              "correctText": "had been flying",
+              "analysis": "The past perfect continuous ('had been flying') indicates an ongoing action that was in progress for a specified duration ('for three hours') before another definitive past event ('the failure occurred').",
+              "strategy": "Duration markers ('for X hours') preceding a past event ('before + past simple') signal the Past Perfect Continuous (had been + -ing).",
+              "id": 1
+            },
+            {
+              "stem": "Civil aviation authorities issued an emergency Airworthiness Directive requiring mandatory ________ of all engine fuel-oil heat exchangers.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "inspections"
+                },
+                {
+                  "letter": "B",
+                  "text": "inspects"
+                },
+                {
+                  "letter": "C",
+                  "text": "inspected"
+                },
+                {
+                  "letter": "D",
+                  "text": "inspect"
+                }
+              ],
+              "correctLetter": "A",
+              "correctText": "inspections",
+              "analysis": "The transitive participle 'requiring' followed by the adjective 'mandatory' requires a direct object noun. The plural noun 'inspections' completes the meaning.",
+              "strategy": "After an adjective (mandatory, regulatory, annual, periodic), select the noun form (ending in -tion, -ment, -ance).",
+              "id": 2
+            },
+            {
+              "stem": "Investigators determined that the flight crew had lost situational awareness ________ extreme fatigue and high cognitive workload in severe weather.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "because of"
+                },
+                {
+                  "letter": "B",
+                  "text": "although"
+                },
+                {
+                  "letter": "C",
+                  "text": "whereas"
+                },
+                {
+                  "letter": "D",
+                  "text": "in spite"
+                }
+              ],
+              "correctLetter": "A",
+              "correctText": "because of",
+              "analysis": "'Because of' correctly introduces the noun phrase cause ('extreme fatigue and high cognitive workload'). 'In spite' lacks 'of', and 'although' / 'whereas' introduce full clauses.",
+              "strategy": "Identify cause vs. contrast: fatigue caused the loss of awareness (direct cause = because of).",
+              "id": 3
+            },
+            {
+              "stem": "The Flight Data Recorder provided accurate telemetry data that enabled engineers ________ the exact sequence of events leading to the incident.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "reconstruct"
+                },
+                {
+                  "letter": "B",
+                  "text": "to reconstruct"
+                },
+                {
+                  "letter": "C",
+                  "text": "reconstructing"
+                },
+                {
+                  "letter": "D",
+                  "text": "reconstructed"
+                }
+              ],
+              "correctLetter": "B",
+              "correctText": "to reconstruct",
+              "analysis": "The causative verb 'enable' follows the structural pattern 'enable + someone / something + to-infinitive' ('enabled engineers to reconstruct').",
+              "strategy": "Causative & permissive verbs taking object + to-infinitive: enable, allow, require, permit, instruct, authorize.",
+              "id": 4
+            },
+            {
+              "stem": "Following the publication of the final report, airlines implemented enhanced crew training programs in order to ________ future communication errors.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "preventing"
+                },
+                {
+                  "letter": "B",
+                  "text": "prevention"
+                },
+                {
+                  "letter": "C",
+                  "text": "prevent"
+                },
+                {
+                  "letter": "D",
+                  "text": "preventable"
+                }
+              ],
+              "correctLetter": "C",
+              "correctText": "prevent",
+              "analysis": "The purpose clause connector 'in order to' is strictly followed by the base bare form of the verb ('in order to prevent').",
+              "strategy": "In order to / so as to are purpose markers that must be followed by a bare infinitive (base verb form V1).",
+              "id": 5
+            }
+          ],
+          "pageUrl": "session4/admat_aas2.html"
+        }
+      },
+      "7": {
+        "session": 7,
+        "objectives": {
+          "title": "Session 7 - Significant Aviation Accidents & Aircraft Types Objectives",
           "summary": "By the end of this session, you will be able to analyze landmark aviation accidents and the aircraft types involved, use past narrative tenses and sequencing linkers, conduct a 15-minute quick-fire group research sprint, and deliver a collaborative 5-minute accident briefing to classmates.",
           "items": [
             {
