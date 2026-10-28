@@ -81,6 +81,9 @@
       <file href="data/course-data.js"/>
       
       <!-- Shared & AT Technical English Track Card Images -->
+      <file href="images/s3_m1_session1_easa.jpg"/>
+      <file href="images/s3_m1_session2_audit.jpg"/>
+      <file href="images/s3_m1_session3_derogation.jpg"/>
       <file href="images/fe_progress_check.jpg"/>
       <file href="images/course_admin.jpg"/>
       <file href="images/semester_objectives.jpg"/>

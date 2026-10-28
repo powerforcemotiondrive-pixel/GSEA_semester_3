@@ -142,82 +142,72 @@
       "1": {
         "session": 1,
         "objectives": {
-          "title": "Session 1 - Introduction & Aviation Survey Objectives",
-          "summary": "By the end of this session, you will be able to discuss international aviation current events, express and defend professional opinions on commercial airline and aerodrome dilemmas, master regulatory modal verbs of obligation and permission, manage passenger service de-escalation under EU261 flight disruption rules, deliver a concise 60-second spoken consensus briefing, and consolidate key aviation vocabulary.",
+          "title": "Session 1 - EASA Regulatory Structure & Navigation Objectives",
+          "summary": "By the end of this session, you will be able to demystify EASA document architecture (Regulations, Acceptable Means of Compliance - AMC, and Guidance Material - GM), build baseline navigational vocabulary for aerodrome compliance and safety oversight, accurately identify mandatory requirements versus recommendations, scan authentic EASA extracts, and deliver plain-English explanations during an aerodrome clarification role-play.",
           "items": [
             {
               "num": 1,
-              "title": "Discuss Aviation News & Current Events (Fluency & Spontaneous Speech)",
-              "description": "Engage in an opening discussion on current commercial aviation headlines, airport innovations, and diagnostic aerodrome terminology."
+              "title": "Discuss Document Navigation & Reading Challenges (Fluency & Spontaneous Speech)",
+              "description": "Engage in an opening discussion on personal experiences with dense official manuals, identifying common reading obstacles and search strategies in 300-page regulatory PDFs."
             },
             {
               "num": 2,
-              "title": "Evaluate Commercial Aviation Dilemmas (Survey & Opinion Signposting)",
-              "description": "Interview peers using structured question prompts on unruly passenger policies, low-cost carrier fees, armed flight crew protocols, and space tourism ethics."
+              "title": "Understand EASA Regulatory Architecture (Document Hierarchy & Structure)",
+              "description": "Map the formal hierarchy of civil aviation regulations: Basic Regulation, Implementing Rules (IR), Acceptable Means of Compliance (AMC), and Guidance Material (GM)."
             },
             {
               "num": 3,
-              "title": "Master Regulatory Modals of Authority (Grammar: Obligation & Permission)",
-              "description": "Accurately apply modal structures (must, must not, be required to, be authorized to, be prohibited from, should) in civil aviation safety contexts."
+              "title": "Master Regulatory Vocabulary (Key Technical & Legal Terms)",
+              "description": "Acquire and use core regulatory terms in professional context: binding vs. non-binding, compliance, oversight, provision, applicability, derogation, safeguard, stipulate, and enforce."
             },
             {
               "num": 4,
-              "title": "Navigate Passenger Rights & Delay Disruption (Interactive Role-Play)",
-              "description": "Collaborate in a paired simulation between an aerodrome passenger liaison / AFISO trainee and a stranded traveler, applying de-escalation strategies and EU261 care rules."
+              "title": "Differentiate Obligation from Recommendation (Shall vs. Should Grammar Focus)",
+              "description": "Master the critical linguistic and legal distinction between mandatory requirements (shall / must) and recommended best practice (should / may) in aviation safety specifications."
             },
             {
               "num": 5,
-              "title": "Deliver a Structured Spoken Consensus Briefing (Summary & Presentation)",
-              "description": "Summarize a group policy debate regarding aerodrome alcohol sales into a fluent, cohesive 60-second verbal briefing with balanced arguments."
+              "title": "Scan Authentic Regulatory Extracts (Practical Document Scavenger Hunt)",
+              "description": "Navigate authentic extracts from EASA CS-ADR-DSN (Aerodrome Design) and Regulation (EU) No 139/2014 in pairs to locate operational definitions and structural signposts."
             },
             {
               "num": 6,
-              "title": "Consolidate Core Vocabulary & Syllable Stress (Phonology & Review)",
-              "description": "Consolidate the 18 essential introductory vocabulary terms, identify primary word stress patterns, and update personal portfolio learning logs."
+              "title": "Handle Spoken Clarification Role-Plays (Interaction & Diplomatic Pushback)",
+              "description": "Role-play a TSEEAC administrative officer clarifying obstacle limitation surface rules for an aerodrome operator, using diplomatic language, polite pushback, and precise referencing."
             }
           ]
         },
         "lessonPlan": {
           "title": "Session 1 Lesson Plan (2 Hours)",
-          "summary": "A 2-hour interactive communicative session featuring an aviation news opening, foundational vocabulary diagnostic, the Global Aviation Survey, a regulatory modals clinic, an EU261 disruption role-play, a policy mini-debate, and a 10-minute closing vocabulary consolidation.",
+          "summary": "A 2-hour interactive communicative session introducing EASA regulatory architecture, legal vocabulary, the shall vs. should safety distinction, a document scavenger hunt with CS-ADR-DSN extracts, and the Clarification Desk role-play simulation.",
           "items": [
             {
-              "time": "00-10",
-              "title": "Part 1: Aviation News & Course Entry Warm-Up Check (10 mins)",
-              "description": "Opening 10-minute warm-up: discuss recent global aviation headlines followed by rapid spot-checking of essential everyday aviation concepts (landside vs airside, airline vs aerodrome operator, scheduled vs charter, delay vs cancellation)."
+              "time": "00-20",
+              "title": "Part 1: Warm-up & Diagnostic Discussion (20 mins)",
+              "description": "\"Document Horror Stories\": open discussion sharing experiences encountering dense official documents and manuals in English and French, identifying what makes regulatory text intimidating and strategies for navigating 300-page PDFs."
             },
             {
-              "time": "10-35",
-              "title": "Part 2: The Global Aviation Survey (25 mins)",
-              "description": "Speed-dating interviews: paired discussions on 4 prominent commercial dilemmas (in-flight alcohol caps, low-cost carrier fees, cockpit defense, and space tourism ethics) using formal phrases to express viewpoints and justify opinions."
+              "time": "20-50",
+              "title": "Part 2: Vocabulary & Structural Mapping (30 mins)",
+              "description": "Dissecting regulatory terminology (binding vs. non-binding, compliance, oversight, derogation, stipulate) and document anatomy (Basic Regulation -> IR -> AMC -> GM). Analysis of the critical shall vs. should safety distinction."
             },
             {
-              "time": "35-60",
-              "title": "Part 3: Language Focus: Modals of Obligation, Permission & Prohibition (25 mins)",
-              "description": "Contrast must, have to, be required to, be prohibited from, and be authorized to. Practice with an interactive 'Spot the Regulatory Flaw' challenge analyzing aerodrome safety rules."
+              "time": "50-85",
+              "title": "Part 3: Practical Document Exploration Scavenger Hunt (35 mins)",
+              "description": "Paired investigation using authentic extracts from EASA CS-ADR-DSN and Regulation (EU) No 139/2014. Pairs locate operational definitions, identify obligations vs. recommendations, and spot structural signposts (without prejudice to, notwithstanding, pursuant to)."
             },
             {
-              "time": "60-85",
-              "title": "Part 4: Operational Dilemma: EU261 & Delay Disruption Case Study (25 mins)",
-              "description": "Concourse role-play: Ground Liaison / AFISO Trainee and Frustrated Passenger resolve a 4-hour delay crisis at a regional aerodrome, practicing de-escalation and statutory passenger entitlements."
-            },
-            {
-              "time": "85-110",
-              "title": "Part 5: Station Mini-Debate & Spoken Consensus Briefing (25 mins)",
-              "description": "Small-group debate: 'Should all commercial aerodromes ban alcohol sales before boarding?' Teams deliver a structured 60-second verbal spokesperson briefing summarizing their consensus."
-            },
-            {
-              "time": "110-120",
-              "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-              "description": "Final 10-minute consolidation: rapid recall of the 30 introductory terms, word stress and syllable drill, personal learning reflection, and portfolio logging."
+              "time": "85-120",
+              "title": "Part 4: Role-Play: The Clarification Desk & Debrief (35 mins)",
+              "description": "Interactive paired role-play: TSEEAC Administrative Officer clarifies an obstacle limitation surface rule for an Aerodrome Operator seeking a less restrictive interpretation. Debrief focuses on diplomatic language, polite pushback, and precise referencing."
             }
           ]
         },
         "lessonContent": {
           "hero": {
-            "image": "images/aas_m1card1.jpg",
-            "title": "Introduction & Aviation Survey",
-            "subtitle": "Commercial Aviation Dilemmas, Passenger Disruption & Regulatory Modals"
+            "image": "images/s3_m1_session1_easa.jpg",
+            "title": "EASA Regulatory Structure & Navigation",
+            "subtitle": "Introduction to EASA Document Architecture & Navigating Official Manuals"
           },
           "openingSession": {
             "modeBadges": [
@@ -982,82 +972,72 @@
       "2": {
         "session": 2,
         "objectives": {
-          "title": "Session 2 - Passenger Journey & Airfield Movement Objectives",
-          "summary": "By the end of this session, you will be able to discuss aviation news and review core vocabulary, map terminal facilitation from landside to airside, master prepositions of place and movement, coordinate airside intercept and de-escalation role-play, decode airfield ground markings, deliver a concise 60-second spoken briefing, and consolidate key aeronautical vocabulary.",
+          "title": "Session 2 - Safety Notices & Compliance Monitoring Objectives",
+          "summary": "By the end of this session, you will be able to master the language of safety notices, occurrence reporting, and compliance monitoring within aerodrome administration, differentiate Safety Information Bulletins (SIBs) from Safety Directives (SDs), analyze passive constructions and obligation modals, participate in a 3-role mock compliance audit meeting, and negotiate agreed corrective action wording.",
           "items": [
             {
               "num": 1,
-              "title": "Discuss Aviation Headlines & Catch-Up Review (Fluency & Spontaneous Speech)",
-              "description": "Engage in an opening discussion on current airport passenger technology headlines, followed by rapid spot-checking of Session 1 foundational terms."
+              "title": "Analyze Aerodrome Safety Issue Lifecycles (Fluency & Spontaneous Discussion)",
+              "description": "Engage in an opening discussion on how aerodrome ground hazards or occurrence reports evolve from initial detection to formal safety directives."
             },
             {
               "num": 2,
-              "title": "Map Passenger Terminal Flow & Wayfinding (Facilitation & Dilemmas)",
-              "description": "Trace travelers through 5 concourse touchpoints and evaluate dilemmas regarding biometric e-gates, automated bag drops, and passenger accessibility."
+              "title": "Distinguish Safety Directives from Information Bulletins (Regulatory Authority)",
+              "description": "Differentiate the legal standing and operational impact of mandatory Safety Directives (SDs) versus advisory Safety Information Bulletins (SIBs)."
             },
             {
               "num": 3,
-              "title": "Master Spatial Prepositions of Place & Movement (Grammar & Operational Clarity)",
-              "description": "Accurately deploy prepositions of point (at), volume (in), surface (on), and directional transit (along, across, through, onto) in aerodrome contexts."
+              "title": "Acquire Safety Audit & Compliance Lexicon (Key Operational Vocabulary)",
+              "description": "Master and apply core audit terminology: Safety Directive (SD), Safety Information Bulletin (SIB), Non-Compliance (NC), Root Cause Analysis, Mitigation Measure, Corrective Action Plan (CAP), and Audit finding."
             },
             {
               "num": 4,
-              "title": "Manage Unauthorized Airside Access & De-escalation (Interactive Role-Play)",
-              "description": "Collaborate in a paired simulation between an Aerodrome Ground Liaison / AFISO Trainee and a Ramp Service Lead resolving an apron access breach."
+              "title": "Decode Passive Voice & Obligation Modals (Grammar in Safety Mandates)",
+              "description": "Analyze formal passive constructions (\"It is recommended that...\", \"Action must be taken to ensure...\") and modal verbs (shall, must, should, may) in official EASA texts."
             },
             {
               "num": 5,
-              "title": "Decode Airfield Markings & Deliver a 60-Second Briefing (Summary & Presentation)",
-              "description": "Analyze runway magnetic designators, yellow taxiway centerlines, and holding positions, delivering a structured verbal briefing model."
+              "title": "Role-Play a Compliance Audit Review Meeting (3-Way Collaborative Interaction)",
+              "description": "Participate in small groups (TSEEAC Lead Inspector, Airport Safety Manager, Mediator/Facilitator) reviewing an aerodrome audit finding following an oversight inspection."
             },
             {
               "num": 6,
-              "title": "Consolidate Core Vocabulary & Syllable Stress (Phonology & Review)",
-              "description": "Consolidate the 18 essential technical terms, practice primary word stress patterns, and update personal portfolio learning logs."
+              "title": "Negotiate Agreed Corrective Actions (Diplomatic Disagreement & Consensus)",
+              "description": "Deploy professional disagreement, polite hedging (\"It would appear that...\", \"From our perspective...\"), and negotiate the final wording and timeline of a Corrective Action Plan."
             }
           ]
         },
         "lessonPlan": {
           "title": "Session 2 Lesson Plan (2 Hours)",
-          "summary": "A 2-hour communicative session exploring passenger terminal architecture, airside movement areas, directional prepositions, apron safety role-play, airfield markings, and a 10-minute vocabulary consolidation.",
+          "summary": "A 2-hour communicative session exploring safety notices, occurrence reporting, authentic EASA SIB and SD analysis with passive voice focus, and a 3-role mock compliance audit meeting between TSEEAC inspectors and airport safety managers.",
           "items": [
             {
-              "time": "00-10",
-              "title": "Part 1: Aviation News & Session 1 Catch-Up Spot-Check (10 mins)",
-              "description": "Opening 10-minute warm-up: discuss recent international airport technology headlines, followed by rapid paired recall of Session 1 key vocabulary (unruly passenger, ancillary revenue, EU261, TAT)."
+              "time": "00-20",
+              "title": "Part 1: Warm-up & Vocabulary Activation (20 mins)",
+              "description": "Brainstorming the lifecycle of an aerodrome safety issue and activating core audit vocabulary (Safety Directive, SIB, Non-Compliance, Root Cause Analysis, Mitigation Measure, CAP, Audit finding)."
             },
             {
-              "time": "10-35",
-              "title": "Part 2: Passenger Terminal Flow & Facilitation Dilemmas (25 mins)",
-              "description": "Trace the 5-stage passenger journey from curb to gate, followed by paired discussion and agreement scoring on biometric screening ethics and baggage automation."
+              "time": "20-60",
+              "title": "Part 2: Authentic Document Analysis: SIBs and SDs (40 mins)",
+              "description": "Text breakdown of authentic EASA Safety Information Bulletins (SIBs) and Safety Directives (runway safety / apron operations). Detailed focus on Applicability, Description, Recommended Action, passive voice structures, and modal verbs of obligation."
             },
             {
-              "time": "35-60",
-              "title": "Part 3: Language Focus: Prepositions of Place, Direction & Movement (25 mins)",
-              "description": "Contrast static positions (at, in, on) with traversal motion (across, along, through, onto). Practice with an interactive 'Spot the Preposition Flaw' challenge."
-            },
-            {
-              "time": "60-85",
-              "title": "Part 4: Operational Case Study: Unauthorized Apron Access (25 mins)",
-              "description": "Airside radio role-play: Aerodrome Ground Liaison / AFISO Trainee and Ramp Service Lead coordinate to intercept and de-escalate a disoriented passenger on the active apron."
-            },
-            {
-              "time": "85-110",
-              "title": "Part 5: Airfield Guidance Markings & Spoken Briefing (25 mins)",
-              "description": "Workshop on runway magnetic headings (09/27), taxiway centerlines, and holding points. Small groups deliver a structured 60-second verbal safety briefing."
+              "time": "60-110",
+              "title": "Part 3: Collaborative Role-Play: The Compliance Audit Meeting (50 mins)",
+              "description": "3-way mock review meeting following an audit finding. Role 1 (TSEEAC Lead Inspector) cites EASA references; Role 2 (Airport Safety Manager) presents operational constraints; Role 3 (Facilitator/Mediator) guides consensus on the Corrective Action Plan."
             },
             {
               "time": "110-120",
-              "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-              "description": "Final 10-minute consolidation: rapid recall of the 18 terms, word stress and syllable drill, personal learning reflection, and portfolio logging."
+              "title": "Part 4: Debriefing, Consensus Review & Class Wrap-Up (10 mins)",
+              "description": "Final 10-minute debrief: sharing agreed CAP solutions across teams, reviewing diplomatic hedging phrases, and personal portfolio learning logs."
             }
           ]
         },
         "lessonContent": {
           "hero": {
-            "image": "images/aas_m1card2.jpg",
-            "title": "Passenger Journey & Airfield Movement",
-            "subtitle": "Terminal Facilitation, Spatial Prepositions & Airside Guidance Systems"
+            "image": "images/s3_m1_session2_audit.jpg",
+            "title": "Safety Notices & Compliance Monitoring",
+            "subtitle": "Deciphering Safety Directives, SIBs & Airport Compliance Audits"
           },
           "openingSession": {
             "title": "Activity 1: Aviation News & Session 1 Catch-Up Spot-Check (10 mins)",
@@ -1774,82 +1754,72 @@
       "3": {
         "session": 3,
         "objectives": {
-          "title": "Session 3 - Ground Operations & Turnaround Objectives",
-          "summary": "By the end of this session, you will be able to discuss aviation current events, clearly describe airside vehicles and their functions, sequence turnaround operations using precise time linkers, explain ramp delays using formal cause-and-effect structures, collaborate in operational problem-solving as an aerodrome operations officer or AFISO, deliver a concise 60-second shift handover briefing, and consolidate key vocabulary.",
+          "title": "Session 3 - Exemptions, Derogations & Consultations Objectives",
+          "summary": "By the end of this session, you will be able to handle complex administrative workflows involving exemptions, Alternative Means of Compliance (AltMoC), and inter-agency correspondence, apply formal connecting words of justification, critically appraise a derogation request file, and deliver a structured 3-minute inter-service briefing with confident Q&A handling.",
           "items": [
             {
               "num": 1,
-              "title": "Discuss Aviation News & Current Events (Fluency & Spontaneous Speech)",
-              "description": "Engage in an opening discussion on current commercial aviation headlines, airline developments, or airport infrastructure news, and spot-check previous vocabulary."
+              "title": "Understand Regulatory Flexibility (Exemptions & AltMoC Framework)",
+              "description": "Explain how regional aerodromes manage situations where strict compliance is impossible, introducing Alternative Means of Compliance (AltMoC) and Article 71 exemption files."
             },
             {
               "num": 2,
-              "title": "Identify & Describe Airside Vehicles (Fluency & Defining Language)",
-              "description": "Accurately explain the purpose of Ground Support Equipment (GSE) using relative clauses (which / that) and purpose structures (used for + -ing, designed to + base verb) without relying on technical jargon."
+              "title": "Master Formal Justification & Exception Lexicon (Advanced Technical Vocabulary)",
+              "description": "Acquire and use specialized administrative terms: exemption, derogation, Alternative Means of Compliance (AltMoC), safety case, hazard identification, equivalent level of safety (ELOS), substantiate, and invoke."
             },
             {
               "num": 3,
-              "title": "Sequence Turnaround Milestones (Sequencing & Time Linkers)",
-              "description": "Chronologically order simultaneous apron tasks (deboarding, fueling, catering, baggage handling, boarding) using time connectors such as meanwhile, simultaneously, as soon as, and prior to pushback."
+              "title": "Deploy Formal Connecting Words (Grammar & Professional Register)",
+              "description": "Accurately apply formal connecting phrases of condition, exception, and justification: in lieu of, subject to approval, on a case-by-case basis, failing which, and provided that."
             },
             {
               "num": 4,
-              "title": "Express Cause & Consequence in Ramp Delays (Grammar: Cause & Effect)",
-              "description": "Construct clear spoken sentences explaining turnaround delays and knock-on effects using formal linkers including due to, owing to, as a result of, consequently, and led to."
+              "title": "Critically Appraise a Derogation Request File (Document Deep-Dive)",
+              "description": "Review an excerpt from an EASA Guidance Material file under Article 71 of Regulation (EU) 2018/1139, evaluating safety cases against the Equivalent Level of Safety test."
             },
             {
               "num": 5,
-              "title": "Navigate Spoken Ramp Coordination Scenarios (Interaction & Operational Roles)",
-              "description": "Participate in collaborative peer discussions between ramp coordinators and TSEEAC aerodrome operations / AFISO officers to resolve unexpected apron events (GPU failure, catering road blockage, fueling safety holds)."
+              "title": "Deliver a 3-Minute Inter-Service Spoken Briefing (Oral Presentation Skills)",
+              "description": "Deliver a concise spoken briefing to stakeholders and airport directors on an upcoming regulatory update or pending exemption request, using clear visual cues and structural signposts."
             },
             {
               "num": 6,
-              "title": "Deliver a Concise Operational Shift Handover (Structured Spoken Briefing)",
-              "description": "Structure and deliver a fluent 60-second verbal briefing summarizing aircraft status, root cause of delays, and pending ramp actions for an incoming colleague or AFISO officer."
+              "title": "Handle Spontaneous Stakeholder Q&A (Interaction & Active Listening)",
+              "description": "Respond effectively and diplomatically to challenging questions from airport management regarding ground handling turnaround impacts and compliance deadlines."
             }
           ]
         },
         "lessonPlan": {
           "title": "Session 3 Lesson Plan (2 Hours)",
-          "summary": "A 2-hour communicative session featuring an aviation news opening, previous session vocabulary spot-checking, the turnaround timeline, airside vehicle defining games, ramp safety cause-effect language, collaborative AFISO/operations simulations, shift handover briefings, and a 10-minute vocabulary consolidation review.",
+          "summary": "A 2-hour interactive session exploring regulatory flexibility clauses, formal connecting words of justification, critical analysis of an EASA Article 71 derogation file, and a 3-minute inter-service briefing simulation with stakeholder Q&A.",
           "items": [
             {
-              "time": "00-10",
-              "title": "Part 1: Aviation News, Current Events & Session 2 Vocabulary Spot-Check (10 mins)",
-              "description": "Opening 10-minute warm-up: discuss recent international aviation headlines followed by rapid spot-checking of Session 2 vocabulary (passenger terminal flow, security checkpoints, runway designators, taxiway markings)."
+              "time": "00-15",
+              "title": "Part 1: Warm-up: Regulatory Flexibility & Operational Exceptions (15 mins)",
+              "description": "Discussion on why strict compliance is sometimes physically or operationally impossible at regional aerodromes, introducing the concepts of AltMoC and Article 71 exemptions under Regulation (EU) 2018/1139."
             },
             {
-              "time": "10-25",
-              "title": "Part 2: The Turnaround Clock & Apron Narrative (15 mins)",
-              "description": "Explore the critical 35-to-45-minute turnaround window. Contrast Past Simple and Present Perfect to describe completed vs. pending ramp milestones (e.g. \"Flight BA342 landed at 14:15, but handlers have not closed the cargo doors yet\")."
+              "time": "15-40",
+              "title": "Part 2: Formal Connecting Words & Exception Vocabulary (25 mins)",
+              "description": "Language focus on formal connecting words (in lieu of, subject to approval, on a case-by-case basis, failing which, provided that) and key terms (safety case, hazard identification, equivalent level of safety, substantiate, invoke)."
             },
             {
-              "time": "25-55",
-              "title": "Part 3: Airside Vehicles (GSE) Master Index & Defining Game (30 mins)",
-              "description": "Examine the 10 core ground support vehicles. Students practice communicative defining language using relative clauses and purpose frames (designed to, fitted with, used for) in an interactive paired mystery vehicle challenge."
+              "time": "40-75",
+              "title": "Part 3: Document Deep-Dive: The Derogation Request File (35 mins)",
+              "description": "Critical appraisal of an authentic EASA Guidance Material excerpt and aerodrome safety case summary. Students evaluate whether the proposal meets the Equivalent Level of Safety test and identify missing administrative data."
             },
             {
-              "time": "55-80",
-              "title": "Part 4: Apron Safety, Turnaround Bottlenecks & Cause-Effect Linkers (25 mins)",
-              "description": "Analyze common ramp delays (fuel spills, FOD, belt loader breakdowns). Build high-yield B2 cause and effect statements using due to, owing to, as a result, consequently, and led to."
-            },
-            {
-              "time": "80-110",
-              "title": "Part 5: Operations Simulation & Shift Handover Briefing (30 mins)",
-              "description": "Paired role-play simulation: Ground Coordinator and TSEEAC Aerodrome Operations Officer (AFISO) resolve three simultaneous bottlenecks at Stand Charlie-4. Students deliver a structured 60-second verbal shift handover."
-            },
-            {
-              "time": "110-120",
-              "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-              "description": "Final 10-minute consolidation: rapid recall of the 18 turnaround terms, word stress and pronunciation spot-checking, personal portfolio reflection, and study log update."
+              "time": "75-120",
+              "title": "Part 4: Interactive Simulation: The Inter-Service Briefing & Q&A (45 mins)",
+              "description": "Operational committee role-play: TSEEAC officers deliver a 3-minute spoken briefing on a regulatory change or pending exemption, followed by challenging questions from stakeholder peers (airport directors and technical specialists)."
             }
           ]
         },
         "lessonContent": {
           "hero": {
-            "image": "images/turnaround_apron.jpg",
-            "title": "Ground Operations & Turnaround Management",
-            "subtitle": "Apron Servicing Envelope & Communicative Ramp Coordination"
+            "image": "images/s3_m1_session3_derogation.jpg",
+            "title": "Exemptions, Derogations & Consultations",
+            "subtitle": "Navigating AltMoC, Article 71 Exemption Files & Inter-Service Briefings"
           },
           "openingSession": {
             "title": "Activity 1: Aviation News & Previous Session Vocabulary Spot-Check (10 mins)",

@@ -2,9 +2,9 @@
       const feSessionNum = modNumber === 1 ? 7 : (modNumber === 2 ? 8 : 5);
       const aasSessionTitles = {
         1: {
-          s1: "Session 1 - Introduction & Aviation Survey",
-          s2: "Session 2 - Passenger Journey & Airfield Movement",
-          s3: "Session 3 - Ground Operations & Turnaround",
+          s1: "Session 1 - EASA Regulatory Structure & Navigation",
+          s2: "Session 2 - Safety Notices & Compliance Monitoring",
+          s3: "Session 3 - Exemptions, Derogations & Consultations",
           s4: "Session 4 - Jobs in Aviation",
           s5: "Session 5 - Jobs in Aviation",
           s6: "Session 6 - Jobs in Aviation"
@@ -30,9 +30,9 @@
 
       const moduleImages = {
         1: {
-          card1: "images/aas_m1card1.jpg",
-          card2: "images/aas_m1card2.jpg",
-          card3: "images/aas_m1card3.jpg",
+          card1: "images/s3_m1_session1_easa.jpg",
+          card2: "images/s3_m1_session2_audit.jpg",
+          card3: "images/s3_m1_session3_derogation.jpg",
           card4: "images/aas_m1card4.jpg",
           fe: "images/fe_progress_check.jpg",
           ddrs: "images/ddrs_aas_mod1.jpg",
@@ -64,9 +64,9 @@
 
       const aasDescriptions = {
         1: {
-          s1: `Welcome to Technical English Module 1 on Documents & Maps! In this opening session, we explore airport operations, aviation security, commercial airline models, and environmental challenges while practicing discussion fluency and technical vocabulary.<br><br><em>Subject overview:</em> In-class survey interviews discussing key aviation themes: alcohol on board, armed pilots and air marshals, low-cost carrier economics, noise abatement, future propulsion, space tourism, airport security, and flight delay passenger rights.<br><br>${formativeEvaluationNotice}`,
-          s2: `Welcome to Session 2! We explore the passenger's journey through the airport—from landside check-in, security screening, and duty-free retail to the departure gate—as well as airside movement areas including aprons, taxiways, ground markings, and runway numbering.<br><br><em>Subject overview:</em> Passenger terminal flow, security checkpoints, airside apron operations, pushback tugs, taxiway guidance markings, and runway magnetic designators.<br><br>${formativeEvaluationNotice}`,
-          s3: `Welcome to Session 3! In this class, we analyze ground handling workflows, baggage logistics, refueling protocols, and gate turnaround optimization.<br><br><em>Subject overview:</em> Ramp safety, ground support equipment (GSE), slot allocation, and minimizing turnaround time.<br><br>${formativeEvaluationNotice}`,
+          s1: `Welcome to Technical English Module 1 on Documents & Maps! In this opening session, we demystify EASA document architecture (Regulations, Acceptable Means of Compliance - AMC, and Guidance Material - GM) and build baseline navigational strategies for dense regulatory texts.<br><br><em>Subject overview:</em> Document hierarchy, binding vs non-binding requirements, the critical <em>shall</em> (obligation) vs <em>should</em> (recommendation) distinction, and the Clarification Desk role-play on obstacle limitation surfaces.<br><br>${formativeEvaluationNotice}`,
+          s2: `Welcome to Session 2! We master the language of EASA Safety Information Bulletins (SIBs), Safety Directives (SDs), occurrence reporting, and compliance monitoring within aerodrome administration.<br><br><em>Subject overview:</em> Deciphering official safety notices, passive voice and obligation modals in safety mandates, and a 3-role mock compliance audit meeting between TSEEAC inspectors and airport safety managers.<br><br>${formativeEvaluationNotice}`,
+          s3: `Welcome to Session 3! We navigate complex administrative workflows involving exemptions, Alternative Means of Compliance (AltMoC), and inter-agency consultations.<br><br><em>Subject overview:</em> Regulatory flexibility, Article 71 exemption files, safety cases, connecting words for formal justification, and a 3-minute inter-service spoken briefing simulation.<br><br>${formativeEvaluationNotice}`,
           s4: `Welcome to Session 4! We examine aviation operational careers across landside, airside, flight operations, air traffic services, and civil aviation administration.<br><br><em>Subject overview:</em> Professional roles and jurisdictions: Passenger Service Agents, Ramp Coordinators, Flight Crew, ATCOs (Tower, Approach, En-Route), and TSEEAC functions (AFISO, aerodrome operations coordination, DGAC safety oversight). Expressing duties, authority, and handoff procedures.<br><br>${formativeEvaluationNotice}`,
           s5: `Welcome to Session 5! We examine aviation operational careers across landside, airside, flight operations, air traffic services, and civil aviation administration.<br><br><em>Subject overview:</em> Professional roles and jurisdictions: Passenger Service Agents, Ramp Coordinators, Flight Crew, ATCOs (Tower, Approach, En-Route), and TSEEAC functions (AFISO, aerodrome operations coordination, DGAC safety oversight). Expressing duties, authority, and handoff procedures.<br><br>${formativeEvaluationNotice}`,
           s6: `Welcome to Session 6! We examine aviation operational careers across landside, airside, flight operations, air traffic services, and civil aviation administration.<br><br><em>Subject overview:</em> Professional roles and jurisdictions: Passenger Service Agents, Ramp Coordinators, Flight Crew, ATCOs (Tower, Approach, En-Route), and TSEEAC functions (AFISO, aerodrome operations coordination, DGAC safety oversight). Expressing duties, authority, and handoff procedures.<br><br>${formativeEvaluationNotice}`
@@ -93,8 +93,12 @@
       const teachingSessionsCount = feSessionNum - 1;
       const teachingPages = [];
       for (let s = 1; s <= teachingSessionsCount; s++) {
+        let tagLabel = `Module ${modNumber} • Session ${s}`;
+        if (modNumber === 1) {
+          tagLabel = s <= 3 ? `Module 1 • Documents • Session ${s}` : `Module 1 • Maps & Charts • Session ${s}`;
+        }
         teachingPages.push({
-          tag: `Module ${modNumber} • Session ${s}`,
+          tag: tagLabel,
           title: titles[`s${s}`] || titles.s4,
           description: desc[`s${s}`] || desc.s4,
           imageUrl: s <= 4 ? images[`card${s}`] : images.card4
@@ -104,7 +108,7 @@
       const pages = [
         ...teachingPages,
         {
-          tag: `Module ${modNumber} • Session ${feSessionNum}`,
+          tag: modNumber === 1 ? `Module 1 • FE • Session ${feSessionNum}` : `Module ${modNumber} • Session ${feSessionNum}`,
           title: `Session ${feSessionNum} - Formative Evaluation`,
           description: modNumber === 1
             ? `Welcome to Session ${feSessionNum}! In this Formative Evaluation, you and your partner will present a detailed technical airport profile.<br><br><em>Subject overview:</em> Formative Evaluation 1 — Airports: Technical infrastructure, operational constraints, aerodrome hot spots, and incident/accident analysis.<br><br>All work in this session contributes directly toward your Formative Evaluation.`

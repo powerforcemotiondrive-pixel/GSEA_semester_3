@@ -2,17 +2,17 @@
 # ENAC GSEA English Learning Platform — Cryptographic SHA-256 Manifest
 # Author & Pedagogical Architect: Phil PARRIS (Département LH / LAN)
 # © 2026 Phil PARRIS. All Rights Reserved.
-# Generated: 2026-10-28T10:13:38.632Z
+# Generated: 2026-10-28T10:59:24.406Z
 # ============================================================================
 
-2df195989fbb73a0d8534085fa1c39c401510b82d198dca7af3915d43ff768f6  imsmanifest.xml
+566bfda2372c2074afd0570a5dbb1b09287d2c8919433731a6423324952abb27  imsmanifest.xml
 f082869ed2b914ec5b3044ba485b53e0c66b635dfcaa2a4c9068828165ad0e95  COPYRIGHT.md
-873dcb0f04011e361d74cbd48e34645de5def9d4582e17bde91b4454d9317dc9  index.html
+1415f165c493a40d56145ae4028130f3e7bba3134fb20f9a24dd462d1452d75e  index.html
 d152759b0f777d292062a9b25288823fe7de06a0bab2d1378b2c6fc3573b79d7  admin.html
 f27913a6aa60f22a70c7d504ae3b55625b2a481a52f2d998e86c7be437a32715  presentation.html
 910535a743b2a98daca73d22e09e761ad177623760603b03f2922505449674e2  portfolio.html
 17d46dfde481076df31a7ce375b81d95b648df7919781a5261fade9ec0bc67f7  output.css
-716afa38e2c5dd049d94f8c669ee81f098afa7d133ade71fb9c1f4bf44e8d4d2  data/course-data.js
+5aad7bd8c5639d1c096ae4a261946b43edd1bf3f32f9596940081084d103007e  data/course-data.js
 bfac1fbaa7fb337e34eed50c87e7a9a449c5be80112aeed6c2ae0254e0724881  images/aas_m1card1.jpg
 f52e89458efa94b0699a10d97147f8a9b99d46395b563ef0f9210a5f2de99fd3  images/aas_m1card2.jpg
 e0334c57519ecb7b3677770af7648e2b89d60539902763194f701ce3b0de0f1c  images/aas_m1card3.jpg
@@ -34,6 +34,9 @@ fe31053248645ccbe92d35a3385b096a6aa8a106b4e3f5efa6467a04a60d9c59  images/aas_m3c
 5fd3f0c9363dbad60d3b3ca10e01e29022c2c9b76d0764ecea7846199dabcc48  images/fe_aas_mod2.jpg
 397b1b7733621795c3d8b6a347021495fa9dffa965c8fd21d00326a44ea86ab8  images/fe_progress_check.jpg
 9b1ed6df72778eda19c37516596223a6371a7fb1883ab788d2f987c61b1dc490  images/fe_progress_check.png
+24622e60e6cdac9f76ca364d26d443ae71e6e0e8c5fb2f238f21ab2814675e2f  images/s3_m1_session1_easa.jpg
+9ecedb2308c2a37d1429bb6f781d01ec37ccdeba309019c5123e92b77f17232b  images/s3_m1_session2_audit.jpg
+131553e90488749b01e4bc57e38377981aada2298e5ae8d26ce77b6fc6bb2fd6  images/s3_m1_session3_derogation.jpg
 0a09399212bd7a24235638e477ea5e8c1441854c268c3edcd1bc45ab194e95d2  images/semester_objectives.jpg
 3b460ca46e8f5632034ada2f5419f493ce815042e96d9e7700aad4cab0dc9134  images/semester_objectives.png
 6970e2b956c8d6557969a7b3484ffc7590642b8b8e4450ef3ea1a35599700568  images/turnaround_apron.jpg
