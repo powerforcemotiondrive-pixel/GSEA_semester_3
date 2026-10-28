@@ -16,7 +16,7 @@
   <meta name="author" content="Phil PARRIS">
   <meta name="creator" content="Phil PARRIS (ENAC LH/LAN)">
   <meta name="copyright" content="© 2026 Phil PARRIS. All Rights Reserved.">
-  <title>GSEA Semester 1 — English Learning Portfolio</title>
+  <title>GSEA Semester 3 — Technical English Learning Portfolio (LV125E)</title>
   
   <link rel="stylesheet" href="output.css">
 
@@ -460,18 +460,14 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <label for="moduleSelect" class="field-label">Curriculum Module</label>
-          <select id="moduleSelect" onchange="updateSessionAvailability()" required class="form-input">
+          <select id="moduleSelect" onchange="handleModuleSelectChange()" required class="form-input">
             <!-- Populated dynamically via switchTrack() -->
           </select>
         </div>
         <div>
           <label for="sessionSelect" class="field-label">Session Number</label>
           <select id="sessionSelect" onchange="updateSessionAvailability()" required class="form-input">
-            <option value="Session 1">Session 1</option>
-            <option value="Session 2">Session 2</option>
-            <option value="Session 3">Session 3</option>
-            <option value="Session 4">Session 4</option>
-            <option value="FORMATIVE EVALUATION">FORMATIVE EVALUATION</option>
+            <!-- Populated dynamically per module (Module 1: 6 sessions + FE, Module 2: 7 sessions + FE) -->
           </select>
         </div>
       </div>
@@ -480,109 +476,112 @@
       <div id="moduleCompletedBanner" class="hidden text-xs p-3.5 rounded-xl border border-blue-500/30 bg-blue-50/80 text-blue-900 flex items-center gap-2.5">
       </div>
 
-      <!-- Question 1: Key Vocabulary -->
-      <div>
-        <label id="lbl-vocab" for="vocab" class="field-label">
-          1. Key Vocabulary &amp; Lexical Structures Learnt
-        </label>
-        <p id="instr-vocab" class="field-instruction">
-          List the essential words, collocations, and idiomatic phrases covered today. <strong>Please give a detailed explanation of their meaning and usage in communicative context.</strong>
-        </p>
-        <textarea id="vocab" rows="2" required class="form-input"></textarea>
-      </div>
-
-      <!-- Question 2: Lesson Content Review -->
-      <div>
-        <label id="lbl-content" for="contentReview" class="field-label">
-          2. Lesson Content Review (What I Learnt in This Session)
-        </label>
-        <p id="instr-content" class="field-instruction">
-          Summarize the communication activities, debates, or procedures explored today. <strong>Please give a detailed explanation of the core concepts, skills, and communication strategies you developed.</strong>
-        </p>
-        <textarea id="contentReview" rows="3" required class="form-input"></textarea>
-      </div>
-
-      <!-- Question 3: Target Improvement Areas -->
-      <div>
-        <label id="lbl-workon" for="workOn" class="field-label">
-          3. Target Improvement Areas Following This Session
-        </label>
-        <p id="instr-workon" class="field-instruction">
-          Identify your language challenges and self-assessment points. <strong>Please give a detailed explanation of what specific grammar, pronunciation, vocabulary, or fluency areas you need to work on and how you plan to improve.</strong>
-        </p>
-        <textarea id="workOn" rows="2" required class="form-input"></textarea>
-      </div>
-
-      <!-- Question 4: Formative Evaluation Relevance -->
-      <div>
-        <label id="lbl-evalhelp" for="evalHelp" class="field-label">
-          4. Formative Evaluation Relevance &amp; Strategy
-        </label>
-        <p id="instr-evalhelp" class="field-instruction">
-          Connect today's learning to your upcoming 30-minute oral evaluation tutorial. <strong>Please give a detailed explanation of how these communicative skills, arguments, and vocabulary will help you succeed in your formative evaluation.</strong>
-        </p>
-        <textarea id="evalHelp" rows="2" required class="form-input"></textarea>
-      </div>
-
-      <!-- Question 5: Formative Evaluation Preparedness (Scale 1-10) -->
-      <div class="p-4 rounded-xl bg-slate-50/80 border border-slate-200 space-y-3">
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5">
-          <div>
-            <label id="lbl-evalrating" for="evalRating" class="field-label mb-0 text-slate-800">
-              5. Formative Evaluation Preparedness Rating
-            </label>
-            <p id="instr-evalrating" class="field-instruction mb-0">
-              Rate your current confidence and readiness for the upcoming 30-minute oral Formative Evaluation tutorial on a scale of 1 to 10.
-            </p>
-          </div>
-          <span id="evalRatingBadge" class="theme-badge font-bold font-mono text-xs px-2.5 py-0.5 rounded-full shrink-0 self-start sm:self-auto">
-            7 / 10
-          </span>
-        </div>
-        
-        <input type="range" id="evalRating" min="1" max="10" value="7" step="1" 
-               oninput="syncRating('evalRating', this.value)" 
-               class="w-full h-2 rounded-lg appearance-none cursor-pointer bg-slate-200" style="accent-color: var(--theme-accent);">
-        
-        <div class="grid grid-cols-10 gap-1 sm:gap-1.5" id="evalRatingPills">
-          <button type="button" onclick="setRating('evalRating', 1)" class="rating-btn" data-val="1">1</button>
-          <button type="button" onclick="setRating('evalRating', 2)" class="rating-btn" data-val="2">2</button>
-          <button type="button" onclick="setRating('evalRating', 3)" class="rating-btn" data-val="3">3</button>
-          <button type="button" onclick="setRating('evalRating', 4)" class="rating-btn" data-val="4">4</button>
-          <button type="button" onclick="setRating('evalRating', 5)" class="rating-btn" data-val="5">5</button>
-          <button type="button" onclick="setRating('evalRating', 6)" class="rating-btn" data-val="6">6</button>
-          <button type="button" onclick="setRating('evalRating', 7)" class="rating-btn active" data-val="7">7</button>
-          <button type="button" onclick="setRating('evalRating', 8)" class="rating-btn" data-val="8">8</button>
-          <button type="button" onclick="setRating('evalRating', 9)" class="rating-btn" data-val="9">9</button>
-          <button type="button" onclick="setRating('evalRating', 10)" class="rating-btn" data-val="10">10</button>
-        </div>
-        <div class="flex justify-between text-[11px] text-slate-500 px-0.5">
-          <span>1 = Not prepared at all</span>
-          <span>5 = Moderate progress</span>
-          <span>10 = Fully prepared &amp; confident</span>
-        </div>
-      </div>
-
-      <!-- Questions 6 & 7: TOEIC Preparation & Preparedness (ACTIVE for AG, MUTED for AAS) -->
-      <div id="toeicSection" class="space-y-4 pt-2 border-t border-slate-200">
+      <!-- Questions 1-5: Active for Module 1 (Documents & Maps), Muted for Module 2 (MTF) -->
+      <div id="mod1QuestionsSection" class="space-y-5">
+        <!-- Question 1: Key Vocabulary -->
         <div>
-          <label for="toeicPrep" class="field-label">
-            6. Weekly TOEIC Preparation (Global Exam / Practice)
+          <label id="lbl-vocab" for="vocab" class="field-label">
+            1. Key Technical Vocabulary Learnt
           </label>
-          <p class="field-instruction">
-            Detail your independent preparation for the TOEIC listening and reading test this week. <strong>Please give a detailed explanation with concrete examples of tests, exercises, and scores completed on Global Exam or other resources.</strong>
+          <p id="instr-vocab" class="field-instruction">
+            List the terms and technical vocabulary covered in this session. <strong>Please give a detailed explanation of their meaning and standard usage in aviation context.</strong>
           </p>
-          <textarea id="toeicPrep" rows="2" class="form-input"></textarea>
+          <textarea id="vocab" rows="2" required class="form-input"></textarea>
+        </div>
+
+        <!-- Question 2: Lesson Content Review -->
+        <div>
+          <label id="lbl-content" for="contentReview" class="field-label">
+            2. Technical Content Review (What I Learnt in This Session)
+          </label>
+          <p id="instr-content" class="field-instruction">
+            Summarize the topics, scenarios, and aviation procedures studied today. <strong>Please give a detailed explanation of the subjects covered.</strong>
+          </p>
+          <textarea id="contentReview" rows="3" required class="form-input"></textarea>
+        </div>
+
+        <!-- Question 3: Target Improvement Areas -->
+        <div>
+          <label id="lbl-workon" for="workOn" class="field-label">
+            3. Areas to Work On Following This Session
+          </label>
+          <p id="instr-workon" class="field-instruction">
+            Identify your communication challenges (pronunciation, grammar, fluency) and language gaps. <strong>Please give a detailed explanation of what specific technical terms, vocabulary, grammar, or pronunciation issues you need to consolidate.</strong>
+          </p>
+          <textarea id="workOn" rows="2" required class="form-input"></textarea>
+        </div>
+
+        <!-- Question 4: Formative Evaluation Relevance -->
+        <div>
+          <label id="lbl-evalhelp" for="evalHelp" class="field-label">
+            4. Technical English Formative Evaluation Relevance &amp; Strategy
+          </label>
+          <p id="instr-evalhelp" class="field-instruction">
+            Connect today's learning to your upcoming 30-minute Technical English oral evaluation tutorial. <strong>Please give a detailed explanation of how this operational knowledge, technical precision, and communication clarity will help you succeed in your AT formative evaluation.</strong>
+          </p>
+          <textarea id="evalHelp" rows="2" required class="form-input"></textarea>
+        </div>
+
+        <!-- Question 5: Formative Evaluation Preparedness (Scale 1-10) -->
+        <div class="p-4 rounded-xl bg-slate-50/80 border border-slate-200 space-y-3">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5">
+            <div>
+              <label id="lbl-evalrating" for="evalRating" class="field-label mb-0 text-slate-800">
+                5. Technical English Formative Evaluation Preparedness
+              </label>
+              <p id="instr-evalrating" class="field-instruction mb-0">
+                Rate your current confidence and readiness for the upcoming 30-minute Technical English (AT) Formative Evaluation tutorial on a scale of 1 to 10.
+              </p>
+            </div>
+            <span id="evalRatingBadge" class="theme-badge font-bold font-mono text-xs px-2.5 py-0.5 rounded-full shrink-0 self-start sm:self-auto">
+              7 / 10
+            </span>
+          </div>
+          
+          <input type="range" id="evalRating" min="1" max="10" value="7" step="1" 
+                 oninput="syncRating('evalRating', this.value)" 
+                 class="w-full h-2 rounded-lg appearance-none cursor-pointer bg-slate-200" style="accent-color: var(--theme-accent);">
+          
+          <div class="grid grid-cols-10 gap-1 sm:gap-1.5" id="evalRatingPills">
+            <button type="button" onclick="setRating('evalRating', 1)" class="rating-btn" data-val="1">1</button>
+            <button type="button" onclick="setRating('evalRating', 2)" class="rating-btn" data-val="2">2</button>
+            <button type="button" onclick="setRating('evalRating', 3)" class="rating-btn" data-val="3">3</button>
+            <button type="button" onclick="setRating('evalRating', 4)" class="rating-btn" data-val="4">4</button>
+            <button type="button" onclick="setRating('evalRating', 5)" class="rating-btn" data-val="5">5</button>
+            <button type="button" onclick="setRating('evalRating', 6)" class="rating-btn" data-val="6">6</button>
+            <button type="button" onclick="setRating('evalRating', 7)" class="rating-btn active" data-val="7">7</button>
+            <button type="button" onclick="setRating('evalRating', 8)" class="rating-btn" data-val="8">8</button>
+            <button type="button" onclick="setRating('evalRating', 9)" class="rating-btn" data-val="9">9</button>
+            <button type="button" onclick="setRating('evalRating', 10)" class="rating-btn" data-val="10">10</button>
+          </div>
+          <div class="flex justify-between text-[11px] text-slate-500 px-0.5">
+            <span>1 = Not prepared at all</span>
+            <span>5 = Moderate progress</span>
+            <span>10 = Fully prepared &amp; confident</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Questions 6 & 7: MTF Preparation & Preparedness (Muted for Module 1, ACTIVE for Module 2) -->
+      <div id="toeicSection" class="space-y-4">
+        <div>
+          <label id="lbl-toeicprep" for="toeicPrep" class="field-label">
+            6. Weekly MTF Preparation
+          </label>
+          <p id="instr-toeicprep" class="field-instruction">
+            Detail your independent preparation for the MTF test this week. <strong>Please give a detailed explanation with concrete examples of the work that you have carried out to help you with the 6 MTF skills: Vocabulary, fluency, interaction, PSI, grammar and listening comprehension.</strong>
+          </p>
+          <textarea id="toeicPrep" rows="3" class="form-input"></textarea>
         </div>
 
         <div class="p-4 rounded-xl bg-slate-50/80 border border-slate-200 space-y-3">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5">
             <div>
-              <label for="toeicRating" class="field-label mb-0 text-slate-800">
-                7. TOEIC Test Preparedness Rating
+              <label id="lbl-toeicrating" for="toeicRating" class="field-label mb-0 text-slate-800">
+                7. MTF Test Preparedness Rating
               </label>
-              <p class="field-instruction mb-0">
-                Rate your current confidence and readiness for your upcoming official TOEIC test on a scale of 1 to 10.
+              <p id="instr-toeicrating" class="field-instruction mb-0">
+                Rate your current confidence and readiness for your upcoming MTF test on a scale of 1 to 10.
               </p>
             </div>
             <span id="toeicRatingBadge" class="theme-badge font-bold font-mono text-xs px-2.5 py-0.5 rounded-full shrink-0 self-start sm:self-auto">
@@ -630,7 +629,7 @@
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[var(--box-border)] pb-3">
         <div>
           <h2 class="section-title">3. Portfolio Completion Checklist</h2>
-          <p id="checklistSubtitle" class="text-xs text-slate-500 mt-0.5">Track your 15 required session logs across all three modules.</p>
+          <p id="checklistSubtitle" class="text-xs text-slate-500 mt-0.5">Track your 15 required session logs across Module 1 (7 sessions) and Module 2 (8 sessions).</p>
         </div>
         <span id="checklistStatusPill" class="text-xs font-mono font-bold px-3 py-1 rounded-full theme-badge">
           0 / 15 completed
@@ -638,7 +637,7 @@
       </div>
 
       <!-- Dynamic Checklist Grid -->
-      <div id="checklistGrid" class="grid grid-cols-1 md:grid-cols-3 gap-3">
+      <div id="checklistGrid" class="grid grid-cols-1 md:grid-cols-2 gap-3">
         <!-- Rendered dynamically by renderChecklist() -->
       </div>
     </div>
@@ -657,7 +656,6 @@
             <button type="button" onclick="setModuleFilter('all')" id="filter-btn-all" class="px-2.5 py-1 rounded-md transition text-slate-700 bg-white shadow-2xs font-bold">All</button>
             <button type="button" onclick="setModuleFilter('Module 1')" id="filter-btn-m1" class="px-2.5 py-1 rounded-md transition text-slate-600 hover:text-slate-900">M1</button>
             <button type="button" onclick="setModuleFilter('Module 2')" id="filter-btn-m2" class="px-2.5 py-1 rounded-md transition text-slate-600 hover:text-slate-900">M2</button>
-            <button type="button" onclick="setModuleFilter('Module 3')" id="filter-btn-m3" class="px-2.5 py-1 rounded-md transition text-slate-600 hover:text-slate-900">M3</button>
           </div>
 
           <!-- Print / PDF Export Button -->
@@ -682,13 +680,13 @@
   <footer id="portfolio-fixed-footer" class="portfolio-fixed-footer no-print">
     <div class="max-w-4xl mx-auto px-3 sm:px-6 py-2.5 flex items-center justify-between text-xs text-slate-300">
       <div class="flex items-center gap-2 min-w-0">
-        <span id="footer-track-badge" class="px-2 py-0.5 rounded text-[10px] font-mono font-bold text-white bg-emerald-600 shadow-xs shrink-0">AG • LV101E</span>
-        <span id="footer-course-title" class="font-bold text-white tracking-wide truncate text-[11px] sm:text-xs">GSEA Semester 1 General English (AG)</span>
+        <span id="footer-track-badge" class="px-2 py-0.5 rounded text-[10px] font-mono font-bold text-white bg-blue-600 shadow-xs shrink-0">AT • LV125E</span>
+        <span id="footer-course-title" class="font-bold text-white tracking-wide truncate text-[11px] sm:text-xs">GSEA Semester 3 Technical English (AT)</span>
       </div>
       <div class="flex items-center gap-2 shrink-0">
         <span class="text-slate-300 hidden sm:inline text-[11px] sm:text-xs">Phil PARRIS <span class="text-slate-400 font-mono text-[10px] sm:text-[11px]">(LH/LAN)</span></span>
         <span class="text-slate-500 hidden sm:inline">•</span>
-        <span id="footer-version-badge" class="font-mono text-emerald-400 font-bold bg-black/40 px-2 py-0.5 rounded border border-white/10 text-[10px] sm:text-xs">v1.0.0</span>
+        <span id="footer-version-badge" class="font-mono text-blue-400 font-bold bg-black/40 px-2 py-0.5 rounded border border-white/10 text-[10px] sm:text-xs">v1.0.0</span>
       </div>
     </div>
   </footer>
@@ -700,10 +698,10 @@
     // ============================================================================
 
     // 1. Google Apps Script Web App URL (Read-only PIN verification & history log fetching)
-    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzDboduMJRhUKJx0IiJ8RkE5cQm8Cl-HPXq2UXr0me30kdQug62SOCRaERQa3xAk6VGWA/exec";
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwBZE-YeWJB-XduqqjAodoOqbplXaBSA7G0WPAdx4QiMt7dqgrwbQ0SPmpawMsGfYuETg/exec";
 
     // 2. Google Form Submission URL (Zero write-lock buffer)
-    const GOOGLE_FORM_ACTION_URL = "https://docs.google.com/forms/d/e/1FAIpQLScNpCfTcMx5oUQe0CMldXdtcyuJ4nZ3bEya-H8C5x-yGCWOOw/formResponse";
+    const GOOGLE_FORM_ACTION_URL = "https://docs.google.com/forms/d/e/1FAIpQLScHBn586nhdjwnDf_gHqIksIi6ZjOppX3IW6N1VIjnefX1K6A/formResponse";
 
     // 3. Google Form Field Mapping (Verified Entry IDs)
     const GOOGLE_FORM_ENTRIES = {
@@ -732,24 +730,28 @@
         subtitle: "Technical English (LV125E) • Formative Learning Portfolio & Technical Operations Log",
         themeClass: "theme-aas",
         modules: [
-          { key: "Module 1", title: "Module 1: Documents & Maps", formValue: "Documents & Maps" },
-          { key: "Module 2", title: "Module 2: MTF", formValue: "MTF" }
+          { key: "Module 1", title: "Module 1: Documents & Maps (7 Sessions)", formValue: "Documents & Maps", teachingSessions: 6 },
+          { key: "Module 2", title: "Module 2: MTF (8 Sessions)", formValue: "MTF", teachingSessions: 7 }
         ],
         questions: {
           vocabLabel: "1. Key Technical Vocabulary Learnt",
-          vocabInstruction: "List the aviation terms, and technical vocabulary covered in this session. <strong>Please give a detailed explanation of their operational meaning and standard usage in aviation context.</strong>",
+          vocabInstruction: "List the terms and technical vocabulary covered in this session. <strong>Please give a detailed explanation of their meaning and standard usage in aviation context.</strong>",
           vocabPlaceholder: "",
-          contentLabel: "2. Technical Content & Operations Review (What I Learnt in This Session)",
-          contentInstruction: "Summarize the aeronautical topics, operational scenarios, and aviation procedures studied today. <strong>Please give a detailed explanation of the aviation concepts or safety systems explored.</strong>",
+          contentLabel: "2. Technical Content Review (What I Learnt in This Session)",
+          contentInstruction: "Summarize the topics, scenarios, and aviation procedures studied today. <strong>Please give a detailed explanation of the subjects covered.</strong>",
           contentPlaceholder: "",
-          workOnLabel: "3. Technical Communication Areas to Work On Following This Session",
-          workOnInstruction: "Identify your technical communication challenges (pronunciation, grammar, fluency) and operational language gaps. <strong>Please give a detailed explanation of what specific aeronautical terms, technical vocabulary, grammar or pronunciation issues you need to consolidate.</strong>",
+          workOnLabel: "3. Areas to Work On Following This Session",
+          workOnInstruction: "Identify your communication challenges (pronunciation, grammar, fluency) and language gaps. <strong>Please give a detailed explanation of what specific technical terms, vocabulary, grammar, or pronunciation issues you need to consolidate.</strong>",
           workOnPlaceholder: "",
           evalHelpLabel: "4. Technical English Formative Evaluation Relevance & Strategy",
-          evalHelpInstruction: "Connect today's learning to your upcoming 30-minute aeronautical oral evaluation tutorial. <strong>Please give a detailed explanation of how this operational knowledge, technical precision, and communication clarity will help you succeed in your AT formative evaluation.</strong>",
+          evalHelpInstruction: "Connect today's learning to your upcoming 30-minute Technical English oral evaluation tutorial. <strong>Please give a detailed explanation of how this operational knowledge, technical precision, and communication clarity will help you succeed in your AT formative evaluation.</strong>",
           evalHelpPlaceholder: "",
           evalRatingLabel: "5. Technical English Formative Evaluation Preparedness",
-          evalRatingInstruction: "Rate your current confidence and readiness for the upcoming 30-minute Technical English (AT) Formative Evaluation tutorial on a scale of 1 to 10."
+          evalRatingInstruction: "Rate your current confidence and readiness for the upcoming 30-minute Technical English (AT) Formative Evaluation tutorial on a scale of 1 to 10.",
+          mtfPrepLabel: "6. Weekly MTF Preparation",
+          mtfPrepInstruction: "Detail your independent preparation for the MTF test this week. <strong>Please give a detailed explanation with concrete examples of the work that you have carried out to help you with the 6 MTF skills: Vocabulary, fluency, interaction, PSI, grammar and listening comprehension.</strong>",
+          mtfRatingLabel: "7. MTF Test Preparedness Rating",
+          mtfRatingInstruction: "Rate your current confidence and readiness for your upcoming MTF test on a scale of 1 to 10."
         },
         hasToeic: false // Muted per instructions
       }
@@ -818,6 +820,7 @@
       modSelect.innerHTML = config.modules.map((m, idx) => `
         <option value="${m.title}">${m.title}</option>
       `).join("");
+      populateSessionOptionsForModule(modSelect.value);
 
       // 4. Update Question Labels, Instructions and Placeholders
       document.getElementById("lbl-vocab").innerText = config.questions.vocabLabel;
@@ -839,18 +842,8 @@
       document.getElementById("lbl-evalrating").innerText = config.questions.evalRatingLabel;
       document.getElementById("instr-evalrating").innerText = config.questions.evalRatingInstruction;
 
-      // 5. Handle Muting of Questions 8 & 9 (TOEIC)
-      const toeicSection = document.getElementById("toeicSection");
-      const toeicPrep = document.getElementById("toeicPrep");
-      const toeicRating = document.getElementById("toeicRating");
-
-      if (config.hasToeic) {
-        toeicSection.classList.remove("hidden");
-        toeicPrep.required = true;
-      } else {
-        toeicSection.classList.add("hidden");
-        toeicPrep.required = false;
-      }
+      // 5. Handle Module-Based Question Visibility (Module 1: Q1-Q5, Module 2: Q6-Q7)
+      updateQuestionVisibilityByModule(modSelect.value);
 
       // 6. Update URL parameter without reload
       if (userInitiated) {
@@ -931,8 +924,8 @@
 
     function restoreSavedCredentials() {
       try {
-        const savedStudent = localStorage.getItem("gsea_student") || sessionStorage.getItem("gsea_student");
-        const savedPin = localStorage.getItem("gsea_pin") || sessionStorage.getItem("gsea_pin");
+        const savedStudent = localStorage.getItem("gsea_s3_student") || sessionStorage.getItem("gsea_s3_student");
+        const savedPin = localStorage.getItem("gsea_s3_pin") || sessionStorage.getItem("gsea_s3_pin");
         if (savedStudent) {
           document.getElementById("studentSelect").value = savedStudent;
           if (savedPin) {
@@ -948,10 +941,10 @@
       if (pinInput) pinInput.value = "";
 
       try {
-        localStorage.removeItem("gsea_student");
-        localStorage.removeItem("gsea_pin");
-        sessionStorage.removeItem("gsea_student");
-        sessionStorage.removeItem("gsea_pin");
+        localStorage.removeItem("gsea_s3_student");
+        localStorage.removeItem("gsea_s3_pin");
+        sessionStorage.removeItem("gsea_s3_student");
+        sessionStorage.removeItem("gsea_s3_pin");
       } catch (e) {}
 
       currentLoadedLogs = [];
@@ -963,10 +956,10 @@
 
     function signOut() {
       try {
-        localStorage.removeItem("gsea_student");
-        localStorage.removeItem("gsea_pin");
-        sessionStorage.removeItem("gsea_student");
-        sessionStorage.removeItem("gsea_pin");
+        localStorage.removeItem("gsea_s3_student");
+        localStorage.removeItem("gsea_s3_pin");
+        sessionStorage.removeItem("gsea_s3_student");
+        sessionStorage.removeItem("gsea_s3_pin");
       } catch (e) {}
       document.getElementById("studentSelect").value = "";
       document.getElementById("studentPin").value = "";
@@ -998,7 +991,7 @@
     function getDraftStorageKey() {
       const student = document.getElementById("studentSelect").value;
       if (!student) return null;
-      return `gsea_draft_${encodeURIComponent(student)}_${currentTrack}`;
+      return `gsea_s3_draft_${encodeURIComponent(student)}_${currentTrack}`;
     }
 
     function setupAutoSaveListeners() {
@@ -1051,7 +1044,11 @@
         if (!raw) return;
         const draft = JSON.parse(raw);
 
-        if (draft.module && document.getElementById("moduleSelect")) document.getElementById("moduleSelect").value = draft.module;
+        if (draft.module && document.getElementById("moduleSelect")) {
+          document.getElementById("moduleSelect").value = draft.module;
+          populateSessionOptionsForModule(draft.module);
+          updateQuestionVisibilityByModule(draft.module);
+        }
         if (draft.session && document.getElementById("sessionSelect")) document.getElementById("sessionSelect").value = draft.session;
         if (draft.vocab && document.getElementById("vocab")) document.getElementById("vocab").value = draft.vocab;
         if (draft.contentReview && document.getElementById("contentReview")) document.getElementById("contentReview").value = draft.contentReview;
@@ -1114,10 +1111,10 @@
 
         if (data.success) {
           try {
-            localStorage.setItem("gsea_student", student);
-            localStorage.setItem("gsea_pin", pin);
-            sessionStorage.setItem("gsea_student", student);
-            sessionStorage.setItem("gsea_pin", pin);
+            localStorage.setItem("gsea_s3_student", student);
+            localStorage.setItem("gsea_s3_pin", pin);
+            sessionStorage.setItem("gsea_s3_student", student);
+            sessionStorage.setItem("gsea_s3_pin", pin);
           } catch (e) {}
           // Deduplicate logs by (track, moduleKey, sessionNum) — keeping the latest revision
           const rawLogs = data.logs || [];
@@ -1202,10 +1199,10 @@
 
         // Keep authenticated session alive
         try {
-          localStorage.setItem("gsea_student", student);
-          localStorage.setItem("gsea_pin", pin);
-          sessionStorage.setItem("gsea_student", student);
-          sessionStorage.setItem("gsea_pin", pin);
+          localStorage.setItem("gsea_s3_student", student);
+          localStorage.setItem("gsea_s3_pin", pin);
+          sessionStorage.setItem("gsea_s3_student", student);
+          sessionStorage.setItem("gsea_s3_pin", pin);
         } catch (e) {}
 
         // Update signed-in pill status
@@ -1238,16 +1235,25 @@
 
       btn.innerText = isEdit ? "Updating Reflection..." : "Encrypting & Submitting...";
 
-      const isAas = (currentTrack === "aas");
-      const vocab = document.getElementById("vocab").value.trim();
-      const contentReview = document.getElementById("contentReview").value.trim();
-      const workOn = document.getElementById("workOn").value.trim();
-      const evalHelp = document.getElementById("evalHelp").value.trim();
-      const evalRating = document.getElementById("evalRating").value;
+      const isMod2 = (modKey === "Module 2");
+      const rawVocab = document.getElementById("vocab").value.trim();
+      const rawContentReview = document.getElementById("contentReview").value.trim();
+      const rawWorkOn = document.getElementById("workOn").value.trim();
+      const rawEvalHelp = document.getElementById("evalHelp").value.trim();
+      const rawEvalRating = document.getElementById("evalRating").value;
+      const rawToeicPrep = document.getElementById("toeicPrep") ? document.getElementById("toeicPrep").value.trim() : "";
+      const rawToeicRating = document.getElementById("toeicRating") ? document.getElementById("toeicRating").value : "7";
 
-      // When in AAS, automatically mute TOEIC values
-      const toeicPrep = isAas ? "N/A (AT Track)" : (document.getElementById("toeicPrep") ? document.getElementById("toeicPrep").value.trim() : "");
-      const toeicRating = isAas ? "10" : (document.getElementById("toeicRating") ? document.getElementById("toeicRating").value : "10");
+      // Module 1 (Documents & Maps): Questions 1-5 active, Questions 6-7 muted
+      // Module 2 (MTF): Questions 1-5 muted, Questions 6-7 active
+      const vocab = isMod2 ? "N/A (Module 2 - MTF)" : rawVocab;
+      const contentReview = isMod2 ? "N/A (Module 2 - MTF)" : rawContentReview;
+      const workOn = isMod2 ? "N/A (Module 2 - MTF)" : rawWorkOn;
+      const evalHelp = isMod2 ? "N/A (Module 2 - MTF)" : rawEvalHelp;
+      const evalRating = isMod2 ? "10" : rawEvalRating;
+
+      const toeicPrep = isMod2 ? rawToeicPrep : "N/A (Module 1 - Documents & Maps)";
+      const toeicRating = isMod2 ? rawToeicRating : "10";
 
       const payload = {
         student,
@@ -1363,6 +1369,70 @@
     // CHECKLIST & COMPLETION STATUS (Filtered by active track)
     // ============================================================================
 
+    function getTeachingSessionCountForModule(modStr) {
+      const mk = getModuleKey(modStr);
+      return mk === "Module 2" ? 7 : 6;
+    }
+
+    function populateSessionOptionsForModule(modStr) {
+      const sesSelect = document.getElementById("sessionSelect");
+      if (!sesSelect) return;
+      const prevVal = sesSelect.value;
+      const teachingCount = getTeachingSessionCountForModule(modStr);
+      const opts = [];
+      for (let i = 1; i <= teachingCount; i++) {
+        opts.push(`<option value="Session ${i}">Session ${i}</option>`);
+      }
+      opts.push(`<option value="FORMATIVE EVALUATION">FORMATIVE EVALUATION</option>`);
+      sesSelect.innerHTML = opts.join("");
+      if (prevVal && Array.from(sesSelect.options).some(o => o.value === prevVal)) {
+        sesSelect.value = prevVal;
+      }
+    }
+
+    function updateQuestionVisibilityByModule(modStr) {
+      const mk = getModuleKey(modStr);
+      const isMod2 = (mk === "Module 2");
+
+      const mod1Sec = document.getElementById("mod1QuestionsSection");
+      const mod2Sec = document.getElementById("toeicSection");
+
+      const vocabEl = document.getElementById("vocab");
+      const contentEl = document.getElementById("contentReview");
+      const workOnEl = document.getElementById("workOn");
+      const evalHelpEl = document.getElementById("evalHelp");
+      const mtfPrepEl = document.getElementById("toeicPrep");
+
+      if (isMod2) {
+        // Module 2 (MTF): Hide Questions 1-5, Show Questions 6-7
+        if (mod1Sec) mod1Sec.classList.add("hidden");
+        if (mod2Sec) mod2Sec.classList.remove("hidden");
+        if (vocabEl) vocabEl.required = false;
+        if (contentEl) contentEl.required = false;
+        if (workOnEl) workOnEl.required = false;
+        if (evalHelpEl) evalHelpEl.required = false;
+        if (mtfPrepEl) mtfPrepEl.required = true;
+      } else {
+        // Module 1 (Documents & Maps): Show Questions 1-5, Hide Questions 6-7
+        if (mod1Sec) mod1Sec.classList.remove("hidden");
+        if (mod2Sec) mod2Sec.classList.add("hidden");
+        if (vocabEl) vocabEl.required = true;
+        if (contentEl) contentEl.required = true;
+        if (workOnEl) workOnEl.required = true;
+        if (evalHelpEl) evalHelpEl.required = true;
+        if (mtfPrepEl) mtfPrepEl.required = false;
+      }
+    }
+
+    function handleModuleSelectChange() {
+      const modSelect = document.getElementById("moduleSelect");
+      if (modSelect) {
+        populateSessionOptionsForModule(modSelect.value);
+        updateQuestionVisibilityByModule(modSelect.value);
+      }
+      updateSessionAvailability();
+    }
+
     function renderChecklist() {
       const grid = document.getElementById("checklistGrid");
       if (!grid) return;
@@ -1374,41 +1444,50 @@
 
       grid.innerHTML = config.modules.map((mod, mIdx) => {
         const modKey = `Module ${mIdx + 1}`;
+        const teachingCount = mod.teachingSessions || (mIdx === 0 ? 6 : 7);
+        const totalModSessions = teachingCount + 1; // +1 for FE
+        const sessionTokens = [];
+        for (let i = 1; i <= teachingCount; i++) sessionTokens.push(String(i));
+        sessionTokens.push("FE");
+
         let modCompleted = 0;
 
-        const sessionItems = [1, 2, 3, 4, 5].map(sNum => {
-          const sLabel = (sNum === 5) ? "FE" : `S${sNum}`;
+        const sessionItems = sessionTokens.map(tok => {
+          const sLabel = (tok === "FE") ? "FE" : `S${tok}`;
+          const sTitle = (tok === "FE") ? "Formative Evaluation" : `Session ${tok}`;
           const isDone = activeLogs.some(l => 
             getModuleKey(l.module) === modKey && 
-            formatSessionNum(l.session) === String(sNum)
+            formatSessionNum(l.session) === tok
           );
 
           if (isDone) {
             modCompleted++;
             totalCompleted++;
             return `
-              <span class="inline-flex items-center justify-center text-[10px] font-bold font-mono px-2 py-1 rounded bg-emerald-100 text-emerald-800 border border-emerald-300" title="Completed: Session ${sNum}">
+              <span class="inline-flex items-center justify-center text-[10px] font-bold font-mono px-2 py-1 rounded bg-emerald-100 text-emerald-800 border border-emerald-300" title="Completed: ${sTitle}">
                 ✓ ${sLabel}
               </span>
             `;
           } else {
             return `
-              <span class="inline-flex items-center justify-center text-[10px] font-mono px-2 py-1 rounded bg-slate-100 text-slate-400 border border-slate-200" title="Pending: Session ${sNum}">
+              <span class="inline-flex items-center justify-center text-[10px] font-mono px-2 py-1 rounded bg-slate-100 text-slate-400 border border-slate-200" title="Pending: ${sTitle}">
                 ${sLabel}
               </span>
             `;
           }
         }).join("");
 
+        const colsClass = totalModSessions === 8 ? 'grid-cols-4 sm:grid-cols-8' : 'grid-cols-4 sm:grid-cols-7';
+
         return `
           <div class="p-3.5 rounded-xl border border-slate-200 bg-slate-50/70 space-y-2.5">
             <div class="flex items-center justify-between">
-              <span class="text-xs font-bold text-slate-800">${modKey}</span>
-              <span class="text-[10px] font-bold font-mono px-2 py-0.5 rounded-full ${modCompleted === 5 ? 'bg-emerald-100 text-emerald-800' : 'bg-slate-200 text-slate-600'}">
-                ${modCompleted} / 5
+              <span class="text-xs font-bold text-slate-800">${mod.title}</span>
+              <span class="text-[10px] font-bold font-mono px-2 py-0.5 rounded-full ${modCompleted === totalModSessions ? 'bg-emerald-100 text-emerald-800' : 'bg-slate-200 text-slate-600'}">
+                ${modCompleted} / ${totalModSessions}
               </span>
             </div>
-            <div class="grid grid-cols-5 gap-1">
+            <div class="grid ${colsClass} gap-1">
               ${sessionItems}
             </div>
           </div>
@@ -1431,6 +1510,7 @@
 
       const mod = modSelect.value;
       const modKey = getModuleKey(mod);
+      const totalModSessions = getTeachingSessionCountForModule(mod) + 1;
       const options = sesSelect.options;
       let firstAvailableValue = null;
       let hasAvailable = false;
@@ -1484,7 +1564,7 @@
           banner.classList.remove("hidden");
           banner.innerHTML = `
             <span class="text-base shrink-0">🛡️</span>
-            <div><strong>Module Completed:</strong> All 5 sessions for <strong>${escapeHtml(modKey)}</strong> have been completed and recorded. Select another module above to log new entries.</div>
+            <div><strong>Module Completed:</strong> All ${totalModSessions} sessions for <strong>${escapeHtml(modKey)}</strong> have been completed and recorded. Select another module above to log new entries.</div>
           `;
         }
         if (submitBtn) {
@@ -1523,6 +1603,8 @@
           break;
         }
       }
+      populateSessionOptionsForModule(modSelect.value);
+      updateQuestionVisibilityByModule(modSelect.value);
 
       // 3. Update session availability so this session can be selected
       updateSessionAvailability();
@@ -1539,20 +1621,20 @@
       }
 
       // 5. Populate form input fields with existing reflection text
-      document.getElementById("vocab").value = entry.vocab || "";
-      document.getElementById("contentReview").value = entry.contentReview || "";
-      document.getElementById("workOn").value = entry.workOn || "";
-      document.getElementById("evalHelp").value = entry.evalHelp || "";
-      setRating("evalRating", parseInt(entry.evalRating, 10) || 7);
-
-      const isAas = (currentTrack === "aas");
-      if (!isAas) {
+      const isMod2Entry = (targetModKey === "Module 2");
+      if (isMod2Entry) {
         if (document.getElementById("toeicPrep")) {
-          document.getElementById("toeicPrep").value = entry.toeicPrep || "";
+          document.getElementById("toeicPrep").value = (entry.toeicPrep && !entry.toeicPrep.startsWith("N/A")) ? entry.toeicPrep : "";
         }
         if (document.getElementById("toeicRating")) {
           setRating("toeicRating", parseInt(entry.toeicRating, 10) || 7);
         }
+      } else {
+        document.getElementById("vocab").value = (entry.vocab && !entry.vocab.startsWith("N/A")) ? entry.vocab : "";
+        document.getElementById("contentReview").value = (entry.contentReview && !entry.contentReview.startsWith("N/A")) ? entry.contentReview : "";
+        document.getElementById("workOn").value = (entry.workOn && !entry.workOn.startsWith("N/A")) ? entry.workOn : "";
+        document.getElementById("evalHelp").value = (entry.evalHelp && !entry.evalHelp.startsWith("N/A")) ? entry.evalHelp : "";
+        setRating("evalRating", parseInt(entry.evalRating, 10) || 7);
       }
 
       // 6. Show Edit Mode Banner & update buttons
@@ -1642,14 +1724,14 @@
 
       container.innerHTML = filtered.map((entry, idx) => {
         const modKey = getModuleKey(entry.module) || entry.module;
-        const isAasEntry = (currentTrack === "aas");
+        const isMod2Entry = (modKey === "Module 2");
 
         return `
           <div class="p-4 sm:p-5 rounded-xl border border-slate-200 bg-white shadow-xs space-y-3.5 print-page-break">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
               <div class="flex items-center gap-2">
                 <span class="text-xs font-bold px-2.5 py-0.5 rounded-full theme-badge font-mono">
-                  ${escapeHtml(entry.track || currentTrack.toUpperCase())} • ${escapeHtml(modKey)}
+                  AT • ${escapeHtml(modKey)}
                 </span>
                 <span class="text-xs font-semibold text-slate-800 bg-slate-100 px-2 py-0.5 rounded">
                   ${escapeHtml(entry.session)}
@@ -1666,50 +1748,47 @@
               </div>
             </div>
 
-            <!-- Vocabulary Block -->
-            <div>
-              <h4 class="text-xs font-bold text-slate-700">${isAasEntry ? 'Aeronautical Vocabulary & Phraseology' : 'Key Vocabulary & Lexical Structures'}</h4>
-              <p class="text-xs text-slate-800 mt-0.5 whitespace-pre-wrap leading-relaxed">${escapeHtml(entry.vocab || "—")}</p>
-            </div>
-
-            <!-- Content Review Block -->
-            <div>
-              <h4 class="text-xs font-bold text-slate-700">${isAasEntry ? 'Aeronautical Operations & Lesson Content' : 'Lesson Content Review'}</h4>
-              <p class="text-xs text-slate-800 mt-0.5 whitespace-pre-wrap leading-relaxed">${escapeHtml(entry.contentReview || "—")}</p>
-            </div>
-
-            <!-- Target Areas Block -->
-            <div>
-              <h4 class="text-xs font-bold text-slate-700">${isAasEntry ? 'Target Communication Skills to Work On' : 'Target Improvement Areas'}</h4>
-              <p class="text-xs text-slate-800 mt-0.5 whitespace-pre-wrap leading-relaxed">${escapeHtml(entry.workOn || "—")}</p>
-            </div>
-
-            <!-- FE Relevance Block -->
-            <div>
-              <h4 class="text-xs font-bold text-slate-700">Formative Evaluation Relevance &amp; Strategy</h4>
-              <p class="text-xs text-slate-800 mt-0.5 whitespace-pre-wrap leading-relaxed">${escapeHtml(entry.evalHelp || "—")}</p>
-            </div>
-
-            <!-- Rating Badges -->
-            <div class="flex flex-wrap items-center gap-2 pt-1 border-t border-slate-100">
-              <div class="text-[11px] font-semibold text-slate-600 flex items-center gap-1.5">
-                <span>FE Preparedness:</span>
-                <span class="theme-badge font-mono font-bold px-2 py-0.5 rounded-full">${escapeHtml(String(entry.evalRating || "—"))} / 10</span>
+            ${isMod2Entry ? `
+              <!-- Module 2 (MTF): Questions 6 & 7 -->
+              <div>
+                <h4 class="text-xs font-bold text-slate-700">6. Weekly MTF Preparation</h4>
+                <p class="text-xs text-slate-800 mt-0.5 whitespace-pre-wrap leading-relaxed">${escapeHtml(entry.toeicPrep || "—")}</p>
               </div>
-
-              ${!isAasEntry && entry.toeicRating ? `
-                <div class="text-[11px] font-semibold text-slate-600 flex items-center gap-1.5 ml-2">
-                  <span>TOEIC Preparedness:</span>
-                  <span class="bg-slate-100 text-slate-800 border border-slate-300 font-mono font-bold px-2 py-0.5 rounded-full">${escapeHtml(String(entry.toeicRating))} / 10</span>
+              <div class="flex flex-wrap items-center gap-2 pt-1 border-t border-slate-100">
+                <div class="text-[11px] font-semibold text-slate-600 flex items-center gap-1.5">
+                  <span>7. MTF Test Preparedness Rating:</span>
+                  <span class="theme-badge font-mono font-bold px-2 py-0.5 rounded-full">${escapeHtml(String(entry.toeicRating || "—"))} / 10</span>
                 </div>
-              ` : ''}
-            </div>
-
-            ${!isAasEntry && entry.toeicPrep && !entry.toeicPrep.includes("N/A") ? `
-              <div class="text-xs text-slate-600 pt-1">
-                <strong>TOEIC Practice:</strong> ${escapeHtml(entry.toeicPrep)}
               </div>
-            ` : ''}
+            ` : `
+              <!-- Module 1 (Documents & Maps): Questions 1 to 5 -->
+              <div>
+                <h4 class="text-xs font-bold text-slate-700">1. Key Technical Vocabulary Learnt</h4>
+                <p class="text-xs text-slate-800 mt-0.5 whitespace-pre-wrap leading-relaxed">${escapeHtml(entry.vocab || "—")}</p>
+              </div>
+
+              <div>
+                <h4 class="text-xs font-bold text-slate-700">2. Technical Content Review (What I Learnt in This Session)</h4>
+                <p class="text-xs text-slate-800 mt-0.5 whitespace-pre-wrap leading-relaxed">${escapeHtml(entry.contentReview || "—")}</p>
+              </div>
+
+              <div>
+                <h4 class="text-xs font-bold text-slate-700">3. Areas to Work On Following This Session</h4>
+                <p class="text-xs text-slate-800 mt-0.5 whitespace-pre-wrap leading-relaxed">${escapeHtml(entry.workOn || "—")}</p>
+              </div>
+
+              <div>
+                <h4 class="text-xs font-bold text-slate-700">4. Technical English Formative Evaluation Relevance &amp; Strategy</h4>
+                <p class="text-xs text-slate-800 mt-0.5 whitespace-pre-wrap leading-relaxed">${escapeHtml(entry.evalHelp || "—")}</p>
+              </div>
+
+              <div class="flex flex-wrap items-center gap-2 pt-1 border-t border-slate-100">
+                <div class="text-[11px] font-semibold text-slate-600 flex items-center gap-1.5">
+                  <span>5. Technical English Formative Evaluation Preparedness:</span>
+                  <span class="theme-badge font-mono font-bold px-2 py-0.5 rounded-full">${escapeHtml(String(entry.evalRating || "—"))} / 10</span>
+                </div>
+              </div>
+            `}
           </div>
         `;
       }).join("");
@@ -1721,43 +1800,42 @@
 
     function getModuleKey(str) {
       const s = String(str || "").toLowerCase();
-      if (s.includes("1") || s.includes("travel") || s.includes("aerodrome")) return "Module 1";
-      if (s.includes("2") || s.includes("weather") || s.includes("aircraft") || s.includes("aerodynamics")) return "Module 2";
+      if (s.includes("1") || s.includes("documents") || s.includes("maps") || s.includes("travel") || s.includes("aerodrome")) return "Module 1";
+      if (s.includes("2") || s.includes("mtf") || s.includes("weather") || s.includes("aircraft") || s.includes("aerodynamics")) return "Module 2";
       if (s.includes("3") || s.includes("technology") || s.includes("tech") || s.includes("safety") || s.includes("security")) return "Module 3";
       return str;
     }
 
     function formatSessionNum(str) {
       const s = String(str || "").toLowerCase();
-      if (s.includes("1")) return "1";
-      if (s.includes("2")) return "2";
-      if (s.includes("3")) return "3";
+      if (s.includes("formative") || s === "fe" || s.includes("fe1") || s.includes("fe2")) return "FE";
+      if (s.includes("7")) return "7";
+      if (s.includes("6")) return "6";
+      if (s.includes("5")) return "5";
       if (s.includes("4")) return "4";
-      if (s.includes("5") || s.includes("formative")) return "5";
+      if (s.includes("3")) return "3";
+      if (s.includes("2")) return "2";
+      if (s.includes("1")) return "1";
       return s.replace(/\D/g, "") || str;
     }
 
     function getFormModuleValue(mod) {
       const m = String(mod || "").toLowerCase();
-      if (currentTrack === "ag") {
-        if (m.includes("1") || m.includes("travel")) return "Travel, Transport and Leisure";
-        if (m.includes("2") || m.includes("weather")) return "Weather and the Environment";
-        if (m.includes("3") || m.includes("tech")) return "New Technology";
-      } else {
-        if (m.includes("1") || m.includes("aerodrome")) return "Aerodrome";
-        if (m.includes("2") || m.includes("aircraft") || m.includes("aerodynamics")) return "Aircraft and Aerodynamics";
-        if (m.includes("3") || m.includes("safety") || m.includes("security")) return "Safety and Security";
-      }
+      if (m.includes("1") || m.includes("documents") || m.includes("maps")) return "Documents & Maps";
+      if (m.includes("2") || m.includes("mtf")) return "MTF";
       return mod;
     }
 
     function getFormSessionValue(ses) {
       const s = String(ses || "").toLowerCase();
-      if (s.includes("1")) return "1";
-      if (s.includes("2")) return "2";
-      if (s.includes("3")) return "3";
+      if (s.includes("formative") || s === "fe") return "FORMATIVE EVALUATION";
+      if (s.includes("7")) return "7";
+      if (s.includes("6")) return "6";
+      if (s.includes("5")) return "5";
       if (s.includes("4")) return "4";
-      if (s.includes("5") || s.includes("formative")) return "5";
+      if (s.includes("3")) return "3";
+      if (s.includes("2")) return "2";
+      if (s.includes("1")) return "1";
       return s.replace(/\D/g, "") || ses;
     }
 
