@@ -1363,8 +1363,8 @@
         if (semObjEnTab) semObjEnTab.classList.remove('hidden');
         if (semObjFrTab) semObjFrTab.classList.remove('hidden');
 
-        tagEl.textContent = "Technical English (LV125E) • Semester 3";
-        titleEl.textContent = "Student Guide & Course Framework";
+        tagEl.textContent = "LV125E • Technical English";
+        titleEl.textContent = "Student Guide & Objectives";
       } else if (isImmersionSession) {
         if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
