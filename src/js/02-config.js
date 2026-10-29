@@ -127,9 +127,9 @@
           imageUrl: images.admin
         },
         {
-          tag: "Technical English • Course Syllabus",
-          title: "Semester Objectives",
-          description: "Here you can find the complete objectives for the full semester 3.<br><br><em>Subject overview:</em> Comprehensive pedagogical roadmap, learning outcomes, and assessment benchmarks for GSEA Semester 3 (LV125E).<br><br>Consult the full bilingual syllabus (English & French) covering continuous assessment, professional development, technical communication, and evaluation criteria.",
+          tag: "Technical English • Course Guidance",
+          title: "Student Guide & Objectives",
+          description: "Essential student guidance on how to succeed in English this semester, formative evaluation preparation, portfolio requirements, and the official ENAC course syllabus (English & French).",
           isObjectives: true,
           imageUrl: "images/semester_objectives.jpg"
         }

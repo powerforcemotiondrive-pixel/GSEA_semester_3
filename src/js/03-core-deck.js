@@ -918,8 +918,8 @@
 
       if (page.isImmersion) {
         actionContainer.appendChild(createThemedCTA("Open Immersion Guide", "immersion_overview", "immersion.html"));
-      } else if (page.isObjectives || page.title === "Semester Objectives") {
-        actionContainer.appendChild(createThemedCTA("Open Objectives", "sem_obj_en", ""));
+      } else if (page.isObjectives || page.title === "Semester Objectives" || page.title === "Student Guide & Objectives") {
+        actionContainer.appendChild(createThemedCTA("Open Student Guide", "student_guide", ""));
       } else if (page.isAdmin) {
         actionContainer.appendChild(createThemedCTA("Open Resources", "admin_groups", "admin.html"));
       } else if (page.detailsUrl) {
@@ -1319,12 +1319,13 @@
       const progConfig = PROGRAMS_CONFIG[modalState.program] || PROGRAMS_CONFIG.ag;
       const activeModForModal = modulesData[modalState.modNum - 1];
       const activePageForModal = activeModForModal && activeModForModal.pages && activeModForModal.pages[modalState.sessionNum - 1];
-      const isObjectivesSession = tabKey.startsWith('sem_obj_') || modalState.tab.startsWith('sem_obj_');
+      const isObjectivesSession = tabKey === 'student_guide' || tabKey.startsWith('sem_obj_') || modalState.tab === 'student_guide' || modalState.tab.startsWith('sem_obj_');
       const isImmersionSession = !isObjectivesSession && (tabKey === 'immersion' || tabKey.startsWith('immersion_'));
       const isAdminSession = !isObjectivesSession && !isImmersionSession && tabKey.startsWith('admin_');
       const isFeSession = !isObjectivesSession && !isImmersionSession && !isAdminSession && (Boolean(activePageForModal && activePageForModal.isFe) || tabKey.startsWith('fe_'));
       const isDdrsSession = !isObjectivesSession && !isImmersionSession && !isAdminSession && tabKey === 'ddrs';
 
+      const studentGuideTab = document.getElementById('modal-tab-student-guide');
       const semObjEnTab = document.getElementById('modal-tab-sem-obj-en');
       const semObjFrTab = document.getElementById('modal-tab-sem-obj-fr');
       const feGuidelinesTab = document.getElementById('modal-tab-fe-guidelines');
@@ -1358,13 +1359,14 @@
         if (feCriteriaTab) feCriteriaTab.classList.add('hidden');
         standardTabs.forEach(t => t.classList.add('hidden'));
 
+        if (studentGuideTab) studentGuideTab.classList.remove('hidden');
         if (semObjEnTab) semObjEnTab.classList.remove('hidden');
         if (semObjFrTab) semObjFrTab.classList.remove('hidden');
 
-        const isAas = (modalState.program === 'aas' || currentProgram === 'aas');
-        tagEl.textContent = isAas ? "Technical English (LV121E) • Semester 1" : "General English (LV101E) • Semester 1";
-        titleEl.textContent = isAas ? "AT Semester 1 Learning Objectives & Competencies" : "AG Semester 1 Learning Objectives & Competencies";
+        tagEl.textContent = "Technical English (LV125E) • Semester 3";
+        titleEl.textContent = "Student Guide & Course Framework";
       } else if (isImmersionSession) {
+        if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
         if (semObjFrTab) semObjFrTab.classList.add('hidden');
         if (ddrsTabBtn) ddrsTabBtn.classList.add('hidden');
@@ -1383,6 +1385,7 @@
         tagEl.textContent = "General English • S2 Milestone";
         titleEl.textContent = "English Immersion & Destination Guides (End of S2)";
       } else if (isAdminSession) {
+        if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
         if (semObjFrTab) semObjFrTab.classList.add('hidden');
         if (immersionOverviewTab) immersionOverviewTab.classList.add('hidden');
@@ -1401,6 +1404,7 @@
         tagEl.textContent = "GSEA 25A • Course Admin";
         titleEl.textContent = "Course Admin — Class Groups, Teachers, Weekly Calendar & FE Rotas";
       } else if (isFeSession) {
+        if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
         if (semObjFrTab) semObjFrTab.classList.add('hidden');
         if (immersionOverviewTab) immersionOverviewTab.classList.add('hidden');
@@ -1418,6 +1422,7 @@
         tagEl.textContent = `${progConfig.code} Module ${modalState.modNum} • Session ${modalState.sessionNum}`;
         titleEl.textContent = `Session ${modalState.sessionNum} - Formative Evaluation`;
       } else if (isDdrsSession) {
+        if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
         if (semObjFrTab) semObjFrTab.classList.add('hidden');
         if (immersionOverviewTab) immersionOverviewTab.classList.add('hidden');
@@ -1435,6 +1440,7 @@
         tagEl.textContent = `${progConfig.code} Module ${modalState.modNum} • Focus`;
         titleEl.textContent = "DDRS Regulatory Framework";
       } else {
+        if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
         if (semObjFrTab) semObjFrTab.classList.add('hidden');
         if (immersionOverviewTab) immersionOverviewTab.classList.add('hidden');
@@ -1674,7 +1680,9 @@
       const modCourse = getActiveModalCourseData();
       const sessionData = (modCourse.sessions && modCourse.sessions[modalState.sessionNum]) || {};
 
-      if (modalState.tab === 'sem_obj_en') {
+      if (modalState.tab === 'student_guide') {
+        renderStudentGuideTab(theme);
+      } else if (modalState.tab === 'sem_obj_en') {
         renderSemesterObjectivesTab('en', theme);
       } else if (modalState.tab === 'sem_obj_fr') {
         renderSemesterObjectivesTab('fr', theme);
