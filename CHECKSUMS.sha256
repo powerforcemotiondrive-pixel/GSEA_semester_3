@@ -2,16 +2,16 @@
 # ENAC GSEA English Learning Platform — Cryptographic SHA-256 Manifest
 # Author & Pedagogical Architect: Phil PARRIS (Département LH / LAN)
 # © 2026 Phil PARRIS. All Rights Reserved.
-# Generated: 2026-10-29T08:50:54.648Z
+# Generated: 2026-10-30T17:08:22.047Z
 # ============================================================================
 
 566bfda2372c2074afd0570a5dbb1b09287d2c8919433731a6423324952abb27  imsmanifest.xml
 f082869ed2b914ec5b3044ba485b53e0c66b635dfcaa2a4c9068828165ad0e95  COPYRIGHT.md
-84a40085f7ef468778eb3ba9c3d6bbb709125b3a4caf3337f9c0cac8b724adaf  index.html
+f698f63119ab572d234a8335f6f2a4f81081e86ccf4376471d8d66fcd1582041  index.html
 689223b3858fc9b2c1d0a1504a5265c0102e5c42bf68a58f2bc8f065e77a2829  admin.html
 f27913a6aa60f22a70c7d504ae3b55625b2a481a52f2d998e86c7be437a32715  presentation.html
 2b6b502b6b932bf09d07f6639ae803e78c7786b5f14c26b662c225c84dc31686  portfolio.html
-6d57dc0280b98c526b82af7f3726a4f2a30a11c10493a6a4d14b2ffd2499c47f  output.css
+160584739c59fe07f4a08f0dba0c2503eaaad5f4a1fd70a446072726d61a1f63  output.css
 5aad7bd8c5639d1c096ae4a261946b43edd1bf3f32f9596940081084d103007e  data/course-data.js
 bfac1fbaa7fb337e34eed50c87e7a9a449c5be80112aeed6c2ae0254e0724881  images/aas_m1card1.jpg
 f52e89458efa94b0699a10d97147f8a9b99d46395b563ef0f9210a5f2de99fd3  images/aas_m1card2.jpg
@@ -33,10 +33,8 @@ fe31053248645ccbe92d35a3385b096a6aa8a106b4e3f5efa6467a04a60d9c59  images/aas_m3c
 9aeef869b02d3b9e5a57c9ad0fec384c4749110a075b69b434a72b132c66f277  images/fe_aas_mod1.jpg
 5fd3f0c9363dbad60d3b3ca10e01e29022c2c9b76d0764ecea7846199dabcc48  images/fe_aas_mod2.jpg
 397b1b7733621795c3d8b6a347021495fa9dffa965c8fd21d00326a44ea86ab8  images/fe_progress_check.jpg
-9b1ed6df72778eda19c37516596223a6371a7fb1883ab788d2f987c61b1dc490  images/fe_progress_check.png
 24622e60e6cdac9f76ca364d26d443ae71e6e0e8c5fb2f238f21ab2814675e2f  images/s3_m1_session1_easa.jpg
 9ecedb2308c2a37d1429bb6f781d01ec37ccdeba309019c5123e92b77f17232b  images/s3_m1_session2_audit.jpg
 131553e90488749b01e4bc57e38377981aada2298e5ae8d26ce77b6fc6bb2fd6  images/s3_m1_session3_derogation.jpg
 0a09399212bd7a24235638e477ea5e8c1441854c268c3edcd1bc45ab194e95d2  images/semester_objectives.jpg
-3b460ca46e8f5632034ada2f5419f493ce815042e96d9e7700aad4cab0dc9134  images/semester_objectives.png
 6970e2b956c8d6557969a7b3484ffc7590642b8b8e4450ef3ea1a35599700568  images/turnaround_apron.jpg
