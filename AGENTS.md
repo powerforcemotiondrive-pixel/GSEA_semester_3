@@ -28,11 +28,13 @@ Course administration (student lists, teacher assignments, weekly schedules, and
     - `src/js/02-config.js`: Course & program configuration
     - `src/js/03-core-deck.js`: Navigation, deck state, themes, and audio controllers
     - `src/js/04-templates-dispatcher.js`: Lesson content & activity instruction dispatcher
-    - `src/js/05-templates-mod1.js`: Module 1 lesson content (Documents & Maps)
-    - `src/js/08-templates-aas2.js`: Module 2 lesson content (MTF)
+    - `src/js/05-templates-mod1.js`: Module 1 lesson content (AAS & AG)
+    - `src/js/06-templates-ag2.js`: Module 2 General English lesson content
+    - `src/js/07-templates-ag3.js`: Module 3 General English lesson content
+    - `src/js/08-templates-aas2.js`: Module 2 Aeronautical English lesson content
     - `src/js/09-templates-materials-ddrs.js`: Vocabulary revision, study materials, TOEIC, and DDRS tabs
     - `src/js/10-fe-guidelines.js`: Formative evaluation guidelines, rubrics, and criteria
-    - `src/js/11-admin-hub.js`: Promotion rosters, timetables, and rota schedules
+    - `src/js/11-admin-hub.js`: Promotion rosters, timetables, rota schedules, and immersion hub
     - `src/js/12-footer-init.js`: Interactive quiz handlers and DOMContentLoaded initialization
 - **Build & Package (Mandatory SCORM + `.iso` + `.dmg` Rebuild)**:
   - **CRITICAL RULE**: Every time code, content, or assets are updated, the `.iso` (`GSEA_Semester_X_Offline.iso`) and `.dmg` (`GSEA_Semester_X_Mac.dmg`) offline disk images **must** be rebuilt alongside the SCORM `.zip` package.
@@ -117,9 +119,9 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 - **Mandatory Dual-File Synchronization**: Whenever a session title is modified, refined, or retitled in any deck card, the corresponding calendar entries in both `src/js/11-admin-hub.js` and `admin.html` **must** be updated concurrently to match exactly.
 
 ### M. `Semester X Portfolio Summary` Automated Cohort Insights Protocol
-- **Trigger**: Whenever the user sends `Semester X Portfolio Summary` (with a CSV or spreadsheet attached or pasted), the assistant:
+- **Trigger**: Whenever the user sends `Semester 1 Portfolio Summary` (with a CSV or spreadsheet attached or pasted), the assistant:
   1. Writes the raw CSV into `data/portfolio-latest.csv` (which is permanently listed in `.gitignore` to protect student security codes and PII).
-  2. Runs `npm run portfolio:summary` (`node scripts/update-portfolio-summary.js && npm run package && npm run package:moodle`), which extracts top keywords, grammar pitfalls, student reflections, and FE readiness scores, updates `data/portfolio-summary-sX.json`, synchronizes `PORTFOLIO_SUMMARY_DATA` in `src/js/11-admin-hub.js`, and rebuilds all packages (`SCORM.zip`, `SCORM_MOODLE.zip`, `.iso`, `.dmg`).
+  2. Runs `npm run portfolio:summary` (`node scripts/update-portfolio-summary.js && npm run package && npm run package:moodle`), which extracts top keywords, grammar pitfalls, student reflections, and FE readiness scores, updates `data/portfolio-summary-s1.json`, synchronizes `PORTFOLIO_SUMMARY_DATA` in `src/js/11-admin-hub.js`, and rebuilds all packages (`SCORM.zip`, `SCORM_MOODLE.zip`, `.iso`, `.dmg`).
   3. Automatically executes `git commit` AND `git push origin main` in the same step.
 - **Curated High-Impact Synthesis (Anti-Bloat Invariant)**:
   - The Portfolio Summary tab must **always remain a concise, high-yield pedagogical summary**—it must NEVER become a bloated raw catalog of everything everyone wrote.
@@ -129,18 +131,33 @@ Course administration (student lists, teacher assignments, weekly schedules, and
   - **Cohort Reflections**: Maximum of **3 key strengths**, **3 growth areas**, and **1 actionable FE advice bullet point**.
   - **Track Tagging**: Every buzzword and grammar trap must carry a clean track tag (`track: "at"`, `track: "ag"`, or `track: "aas"`) to power the mobile-optimized, zero-clutter 3-way segmented filter bar (`🌐 All` • `✈️ AT` • `🗣️ AG`).
 
+### N. Photography Visuals Integrity & Image Asset Protection Invariant
+- **Protected Master Photography Assets**: All card visuals, especially `images/fe_progress_check.jpg` (Card 05 Formative Evaluation seminar photo) and `images/semester_objectives.jpg` (Card 08 Student Guide & Objectives classroom photo), are **permanent, high-resolution photography assets**.
+- **Strictly Forbidden Optimization Downgrades**: Never delete, compress down to flat clipart, or swap `.jpg` photo assets with legacy flat `.png` icons (`fe_progress_check.png`, `semester_objectives.png`) under the guise of build size reduction or package optimization. The legacy `.png` clipart files are purged from the repository and must never be reintroduced.
+
 ---
 
-## 2. Active Cohort Configuration (GSEA 25A • Semester 3 • 2026–2027)
+## 2. Active Cohort Configuration (GSEA26A • 2026–2027)
 
 *This section defines the active variables for the current cohort. Update this section when rotating students or semesters.*
 
 ### Courses & Timetable
-- **Promotion**: `GSEA 25A` • **30 Students** across **3 Groups** (`Group A: 10`, `Group B: 10`, `Group C: 10`)
-- **Technical English (AT • LV125E)** *(AG disabled in Semester 3)*
-  - **Group A Teacher**: `Teacher A (TBC)`
-  - **Group B Teacher**: `Teacher B (TBC)`
-  - **Group C Teacher**: `Teacher C (TBC)`
+- **Technical English (AT • LV121E)**
+  - **Schedule**: Wednesdays 13h15 – 15h15 (2 Hours)
+  - **Group A Teacher**: Tracy NEILL
+  - **Group B Teacher**: Ally HEWETT
+  - **Evaluation Dates**:
+    - FE1: Wednesday 25 November 2026 (Week 48)
+    - FE2: Wednesday 20 January 2027 (Week 03)
+    - FE3: Wednesday 24 February 2027 (Week 08)
+- **General English (AG • LV101E)**
+  - **Schedule**: Fridays 08h00 – 10h00 (2 Hours)
+  - **Group A Teacher**: Geri MIDDLETON
+  - **Group B Teacher**: Penny WRIGHT
+  - **Evaluation Dates**:
+    - FE1: Friday 27 November 2026 (Week 48)
+    - FE2: Friday 22 January 2027 (Week 03)
+    - FE3: Friday 26 February 2027 (Week 08)
 
 ### Evaluation Structure
 - **Slot Length**: 30 minutes per evaluation slot.
