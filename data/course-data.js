@@ -233,9 +233,30 @@
             "deliverable": "Shared agreement on 2 quick scanning tricks and completed 4-question diagnostic.",
             "teacherNotes": "Encourage spontaneous speaking. Don't worry about perfect grammar during warm-up; focus on building confidence and getting students comfortable talking about rules in English.",
             "newsPrompts": [
-              "Why are official aviation manuals often 300 to 500 pages long?",
-              "When you need to find one specific rule in a huge PDF, what is your personal strategy?",
-              "Have you ever had to explain a complicated rule to someone who didn't understand it?"
+              {
+                "id": 1,
+                "question": "Why are official aviation manuals often 300 to 500 pages long?",
+                "exampleAnswers": [
+                  "In my opinion, it is because aviation safety leaves zero room for guessing. The rules have to cover every possible weather condition, airport layout, aircraft size, and emergency scenario.",
+                  "Also, many rules are written after real accidents. Every time investigators discover a new hazard, a new safety rule is added to make sure it never happens again."
+                ]
+              },
+              {
+                "id": 2,
+                "question": "When you need to find one specific rule in a huge PDF, what is your personal strategy?",
+                "exampleAnswers": [
+                  "I always press Ctrl + F (or Cmd + F) and search for very specific keywords—like 'crane', 'gradient', or '28 days'—rather than reading through dozens of pages.",
+                  "My strategy is to check the Table of Contents first to find the right Subpart (like Subpart H for obstacle surfaces), and then scan the section titles."
+                ]
+              },
+              {
+                "id": 3,
+                "question": "Have you ever had to explain a complicated rule to someone who didn't understand it?",
+                "exampleAnswers": [
+                  "Yes, during an internship, I had to explain to a delivery driver why he couldn't park near the apron gate. I explained that an aircraft was arriving in 15 minutes and needed the space clear.",
+                  "I think the best trick is to explain the safety reason behind the rule ('It protects landing planes from hitting obstacles') rather than just saying 'No, it's forbidden'."
+                ]
+              }
             ],
             "diagnostic": {
               "title": "Airport Rules Entry Spot-Check",
@@ -1002,9 +1023,30 @@
             "deliverable": "Identified top 3 ramp hazards and completed 4-question check.",
             "teacherNotes": "Ramp safety is practical and visual. Encourage students to think of real airport ramps they know (Toulouse, Paris CDG, etc.) where dozens of vehicles move around parked jets.",
             "newsPrompts": [
-              "Why is the ramp (apron) considered the most dangerous work zone at an airport?",
-              "What happens when ground handlers are in a hurry to turn around a delayed flight?",
-              "Who do you think has right-of-way when a baggage tractor meets an aircraft being towed?"
+              {
+                "id": 1,
+                "question": "Why is the ramp (apron) considered the most dangerous work zone at an airport?",
+                "exampleAnswers": [
+                  "Because dozens of different operations happen at the same time in a small area: moving aircraft, baggage tugs, fuel trucks, catering lifts, and technicians walking between stands.",
+                  "Also, jet engines produce dangerous suction in front and extreme blast behind, and high noise levels make it hard to hear approaching vehicles."
+                ]
+              },
+              {
+                "id": 2,
+                "question": "What happens when ground handlers are in a hurry to turn around a delayed flight?",
+                "exampleAnswers": [
+                  "Drivers are tempted to exceed speed limits or skip visual checks, which dramatically increases the risk of clipping an aircraft wing or running over equipment.",
+                  "Rushing also leads to communication breakdowns between the marshaller, the tug driver, and the pushback crew."
+                ]
+              },
+              {
+                "id": 3,
+                "question": "Who do you think has right-of-way when a baggage tractor meets an aircraft being towed?",
+                "exampleAnswers": [
+                  "The aircraft always has absolute right-of-way! Aircraft have massive blind spots, cannot stop quickly, and are extremely expensive to repair if scratched.",
+                  "Ground support vehicles must always yield, stop at a safe distance, and wait for the aircraft to pass completely."
+                ]
+              }
             ],
             "diagnostic": {
               "title": "Ramp Safety & Notice Spot-Check",
@@ -1786,9 +1828,30 @@
             "deliverable": "Shared list of 3 runway repair challenges and completed 4-question check.",
             "teacherNotes": "Real airports cannot simply shut down for 6 weeks when runway pipes break. They need flexible solutions (called exemptions or derogations) that maintain 100% safety through compensatory rules.",
             "newsPrompts": [
-              "What happens if an airport closes its main runway for a month? What is the impact on airlines and passengers?",
-              "Why is the grass area at the end of a runway (RESA) so important for landing planes?",
-              "How can an airport prove that an unusual plan is just as safe as following standard rules?"
+              {
+                "id": 1,
+                "question": "What happens if an airport closes its main runway for a month? What is the impact on airlines and passengers?",
+                "exampleAnswers": [
+                  "Airlines would have to cancel or divert hundreds of flights, costing millions of euros in lost revenue and leaving thousands of passengers stranded.",
+                  "It would also overwhelm regional diversion airports that might not have enough gates or ground equipment to handle the extra traffic."
+                ]
+              },
+              {
+                "id": 2,
+                "question": "Why is the grass area at the end of a runway (RESA) so important for landing planes?",
+                "exampleAnswers": [
+                  "If an aircraft touches down too late or suffers a braking problem on a wet runway, the RESA acts as a safety buffer to stop the plane before it crashes into roads or ditches.",
+                  "It gives pilots and emergency crews valuable extra distance and time to prevent an overrun accident."
+                ]
+              },
+              {
+                "id": 3,
+                "question": "How can an airport prove that an unusual plan is just as safe as following standard rules?",
+                "exampleAnswers": [
+                  "By adding strict compensatory safety rules—such as moving the landing line forward, banning landings in rain, and stationing a fire engine right next to the runway.",
+                  "They also consult airline chief pilots in advance and publish NOTAMs so every pilot knows exactly what to expect before takeoff."
+                ]
+              }
             ],
             "diagnostic": {
               "title": "Runway Works & Exemptions Entry Check",

@@ -110,9 +110,30 @@ const s1LessonContent = {
     deliverable: "Shared agreement on 2 quick scanning tricks and completed 4-question diagnostic.",
     teacherNotes: "Encourage spontaneous speaking. Don't worry about perfect grammar during warm-up; focus on building confidence and getting students comfortable talking about rules in English.",
     newsPrompts: [
-      "Why are official aviation manuals often 300 to 500 pages long?",
-      "When you need to find one specific rule in a huge PDF, what is your personal strategy?",
-      "Have you ever had to explain a complicated rule to someone who didn't understand it?"
+      {
+        id: 1,
+        question: "Why are official aviation manuals often 300 to 500 pages long?",
+        exampleAnswers: [
+          "In my opinion, it is because aviation safety leaves zero room for guessing. The rules have to cover every possible weather condition, airport layout, aircraft size, and emergency scenario.",
+          "Also, many rules are written after real accidents. Every time investigators discover a new hazard, a new safety rule is added to make sure it never happens again."
+        ]
+      },
+      {
+        id: 2,
+        question: "When you need to find one specific rule in a huge PDF, what is your personal strategy?",
+        exampleAnswers: [
+          "I always press Ctrl + F (or Cmd + F) and search for very specific keywords—like 'crane', 'gradient', or '28 days'—rather than reading through dozens of pages.",
+          "My strategy is to check the Table of Contents first to find the right Subpart (like Subpart H for obstacle surfaces), and then scan the section titles."
+        ]
+      },
+      {
+        id: 3,
+        question: "Have you ever had to explain a complicated rule to someone who didn't understand it?",
+        exampleAnswers: [
+          "Yes, during an internship, I had to explain to a delivery driver why he couldn't park near the apron gate. I explained that an aircraft was arriving in 15 minutes and needed the space clear.",
+          "I think the best trick is to explain the safety reason behind the rule ('It protects landing planes from hitting obstacles') rather than just saying 'No, it's forbidden'."
+        ]
+      }
     ],
     diagnostic: {
       title: "Airport Rules Entry Spot-Check",
@@ -451,9 +472,30 @@ const s2LessonContent = {
     deliverable: "Identified top 3 ramp hazards and completed 4-question check.",
     teacherNotes: "Ramp safety is practical and visual. Encourage students to think of real airport ramps they know (Toulouse, Paris CDG, etc.) where dozens of vehicles move around parked jets.",
     newsPrompts: [
-      "Why is the ramp (apron) considered the most dangerous work zone at an airport?",
-      "What happens when ground handlers are in a hurry to turn around a delayed flight?",
-      "Who do you think has right-of-way when a baggage tractor meets an aircraft being towed?"
+      {
+        id: 1,
+        question: "Why is the ramp (apron) considered the most dangerous work zone at an airport?",
+        exampleAnswers: [
+          "Because dozens of different operations happen at the same time in a small area: moving aircraft, baggage tugs, fuel trucks, catering lifts, and technicians walking between stands.",
+          "Also, jet engines produce dangerous suction in front and extreme blast behind, and high noise levels make it hard to hear approaching vehicles."
+        ]
+      },
+      {
+        id: 2,
+        question: "What happens when ground handlers are in a hurry to turn around a delayed flight?",
+        exampleAnswers: [
+          "Drivers are tempted to exceed speed limits or skip visual checks, which dramatically increases the risk of clipping an aircraft wing or running over equipment.",
+          "Rushing also leads to communication breakdowns between the marshaller, the tug driver, and the pushback crew."
+        ]
+      },
+      {
+        id: 3,
+        question: "Who do you think has right-of-way when a baggage tractor meets an aircraft being towed?",
+        exampleAnswers: [
+          "The aircraft always has absolute right-of-way! Aircraft have massive blind spots, cannot stop quickly, and are extremely expensive to repair if scratched.",
+          "Ground support vehicles must always yield, stop at a safe distance, and wait for the aircraft to pass completely."
+        ]
+      }
     ],
     diagnostic: {
       title: "Ramp Safety & Notice Spot-Check",
@@ -809,9 +851,30 @@ const s3LessonContent = {
     deliverable: "Shared list of 3 runway repair challenges and completed 4-question check.",
     teacherNotes: "Real airports cannot simply shut down for 6 weeks when runway pipes break. They need flexible solutions (called exemptions or derogations) that maintain 100% safety through compensatory rules.",
     newsPrompts: [
-      "What happens if an airport closes its main runway for a month? What is the impact on airlines and passengers?",
-      "Why is the grass area at the end of a runway (RESA) so important for landing planes?",
-      "How can an airport prove that an unusual plan is just as safe as following standard rules?"
+      {
+        id: 1,
+        question: "What happens if an airport closes its main runway for a month? What is the impact on airlines and passengers?",
+        exampleAnswers: [
+          "Airlines would have to cancel or divert hundreds of flights, costing millions of euros in lost revenue and leaving thousands of passengers stranded.",
+          "It would also overwhelm regional diversion airports that might not have enough gates or ground equipment to handle the extra traffic."
+        ]
+      },
+      {
+        id: 2,
+        question: "Why is the grass area at the end of a runway (RESA) so important for landing planes?",
+        exampleAnswers: [
+          "If an aircraft touches down too late or suffers a braking problem on a wet runway, the RESA acts as a safety buffer to stop the plane before it crashes into roads or ditches.",
+          "It gives pilots and emergency crews valuable extra distance and time to prevent an overrun accident."
+        ]
+      },
+      {
+        id: 3,
+        question: "How can an airport prove that an unusual plan is just as safe as following standard rules?",
+        exampleAnswers: [
+          "By adding strict compensatory safety rules—such as moving the landing line forward, banning landings in rain, and stationing a fire engine right next to the runway.",
+          "They also consult airline chief pilots in advance and publish NOTAMs so every pilot knows exactly what to expect before takeoff."
+        ]
+      }
     ],
     diagnostic: {
       title: "Runway Works & Exemptions Entry Check",
@@ -1213,15 +1276,46 @@ function generateSession1Template() {
 
             \${renderActivityInstructions(opening, theme)}
 
-            <!-- Discussion Prompts -->
-            <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-2">
-              <div class="flex items-center gap-2">
-                <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
-                <h5 class="text-xs sm:text-sm font-bold text-amber-900">Pair Discussion: Reading Long Manuals</h5>
+            <!-- Pair Discussion Prompts with Revealable Example Answers -->
+            <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-3">
+              <div class="flex items-center justify-between gap-2 border-b border-amber-200/80 pb-2">
+                <div class="flex items-center gap-2">
+                  <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                  <h5 class="text-xs sm:text-sm font-bold text-amber-950">Pair Discussion: Questions &amp; Example Answers to Consider</h5>
+                </div>
+                <span class="text-[10px] font-bold text-amber-700 uppercase tracking-wider">Spoken Ideas</span>
               </div>
-              <ul class="space-y-1.5 pl-5 list-disc text-xs text-amber-900/90 leading-relaxed">
-                \${(opening.newsPrompts || []).map(p => \`<li>\${p}</li>\`).join('')}
-              </ul>
+              <div class="space-y-2.5">
+                \${(opening.newsPrompts || []).map((p, idx) => {
+                  const pId = typeof p === 'object' ? (p.id || idx + 1) : idx + 1;
+                  const qText = typeof p === 'object' ? p.question : p;
+                  const answers = typeof p === 'object' && Array.isArray(p.exampleAnswers) ? p.exampleAnswers : [];
+                  return \`
+                    <div class="p-3 bg-white border border-amber-200/90 rounded-lg shadow-2xs space-y-2">
+                      <div class="flex items-start gap-2">
+                        <span class="text-amber-800 font-black text-xs shrink-0 mt-0.5">0\${pId}.</span>
+                        <p class="text-xs font-bold text-slate-800 leading-snug">\${qText}</p>
+                      </div>
+                      \${answers.length > 0 ? \`
+                        <div class="pt-1">
+                          <button type="button" onclick="const box=document.getElementById('disc-ans-s1-\${pId}'); box.classList.toggle('hidden'); this.querySelector('span').innerText = box.classList.contains('hidden') ? '💡 View Example Ideas &amp; Answers' : 'Hide Example Ideas';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-amber-700 hover:text-amber-900 cursor-pointer">
+                            <span>💡 View Example Ideas &amp; Answers</span> &rarr;
+                          </button>
+                          <div id="disc-ans-s1-\${pId}" class="hidden mt-2 p-2.5 bg-amber-50/90 border border-amber-200 rounded-md text-[11px] text-slate-700 space-y-1.5">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-amber-900 block mb-1">Example Student Answers &amp; Talking Points:</span>
+                            \${answers.map(ans => \`
+                              <div class="flex items-start gap-2">
+                                <span class="text-amber-600 font-bold shrink-0 mt-0.5">&bull;</span>
+                                <span class="italic text-slate-800 leading-relaxed">&ldquo;\${ans}&rdquo;</span>
+                              </div>
+                            \`).join('')}
+                          </div>
+                        </div>
+                      \` : ''}
+                    </div>
+                  \`;
+                }).join('')}
+              </div>
             </div>
 
             <!-- Spot-Check Questions Grid -->
@@ -1534,15 +1628,46 @@ function generateSession2Template() {
 
             \${renderActivityInstructions(opening, theme)}
 
-            <!-- Discussion Prompts -->
-            <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-2">
-              <div class="flex items-center gap-2">
-                <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
-                <h5 class="text-xs sm:text-sm font-bold text-amber-900">Ramp Danger Brainstorm</h5>
+            <!-- Pair Discussion Prompts with Revealable Example Answers -->
+            <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-3">
+              <div class="flex items-center justify-between gap-2 border-b border-amber-200/80 pb-2">
+                <div class="flex items-center gap-2">
+                  <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                  <h5 class="text-xs sm:text-sm font-bold text-amber-950">Pair Discussion: Questions &amp; Example Answers to Consider</h5>
+                </div>
+                <span class="text-[10px] font-bold text-amber-700 uppercase tracking-wider">Spoken Ideas</span>
               </div>
-              <ul class="space-y-1.5 pl-5 list-disc text-xs text-amber-900/90 leading-relaxed">
-                \${(opening.newsPrompts || []).map(p => \`<li>\${p}</li>\`).join('')}
-              </ul>
+              <div class="space-y-2.5">
+                \${(opening.newsPrompts || []).map((p, idx) => {
+                  const pId = typeof p === 'object' ? (p.id || idx + 1) : idx + 1;
+                  const qText = typeof p === 'object' ? p.question : p;
+                  const answers = typeof p === 'object' && Array.isArray(p.exampleAnswers) ? p.exampleAnswers : [];
+                  return \`
+                    <div class="p-3 bg-white border border-amber-200/90 rounded-lg shadow-2xs space-y-2">
+                      <div class="flex items-start gap-2">
+                        <span class="text-amber-800 font-black text-xs shrink-0 mt-0.5">0\${pId}.</span>
+                        <p class="text-xs font-bold text-slate-800 leading-snug">\${qText}</p>
+                      </div>
+                      \${answers.length > 0 ? \`
+                        <div class="pt-1">
+                          <button type="button" onclick="const box=document.getElementById('disc-ans-s2-\${pId}'); box.classList.toggle('hidden'); this.querySelector('span').innerText = box.classList.contains('hidden') ? '💡 View Example Ideas &amp; Answers' : 'Hide Example Ideas';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-amber-700 hover:text-amber-900 cursor-pointer">
+                            <span>💡 View Example Ideas &amp; Answers</span> &rarr;
+                          </button>
+                          <div id="disc-ans-s2-\${pId}" class="hidden mt-2 p-2.5 bg-amber-50/90 border border-amber-200 rounded-md text-[11px] text-slate-700 space-y-1.5">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-amber-900 block mb-1">Example Student Answers &amp; Talking Points:</span>
+                            \${answers.map(ans => \`
+                              <div class="flex items-start gap-2">
+                                <span class="text-amber-600 font-bold shrink-0 mt-0.5">&bull;</span>
+                                <span class="italic text-slate-800 leading-relaxed">&ldquo;\${ans}&rdquo;</span>
+                              </div>
+                            \`).join('')}
+                          </div>
+                        </div>
+                      \` : ''}
+                    </div>
+                  \`;
+                }).join('')}
+              </div>
             </div>
 
             <!-- Spot-Check Grid -->
@@ -1853,15 +1978,46 @@ function generateSession3Template() {
 
             \${renderActivityInstructions(opening, theme)}
 
-            <!-- Discussion Prompts -->
-            <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-2">
-              <div class="flex items-center gap-2">
-                <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
-                <h5 class="text-xs sm:text-sm font-bold text-amber-900">Runway Works Discussion</h5>
+            <!-- Pair Discussion Prompts with Revealable Example Answers -->
+            <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-3">
+              <div class="flex items-center justify-between gap-2 border-b border-amber-200/80 pb-2">
+                <div class="flex items-center gap-2">
+                  <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <h5 class="text-xs sm:text-sm font-bold text-amber-950">Pair Discussion: Questions &amp; Example Answers to Consider</h5>
+                </div>
+                <span class="text-[10px] font-bold text-amber-700 uppercase tracking-wider">Spoken Ideas</span>
               </div>
-              <ul class="space-y-1.5 pl-5 list-disc text-xs text-amber-900/90 leading-relaxed">
-                \${(opening.newsPrompts || []).map(p => \`<li>\${p}</li>\`).join('')}
-              </ul>
+              <div class="space-y-2.5">
+                \${(opening.newsPrompts || []).map((p, idx) => {
+                  const pId = typeof p === 'object' ? (p.id || idx + 1) : idx + 1;
+                  const qText = typeof p === 'object' ? p.question : p;
+                  const answers = typeof p === 'object' && Array.isArray(p.exampleAnswers) ? p.exampleAnswers : [];
+                  return \`
+                    <div class="p-3 bg-white border border-amber-200/90 rounded-lg shadow-2xs space-y-2">
+                      <div class="flex items-start gap-2">
+                        <span class="text-amber-800 font-black text-xs shrink-0 mt-0.5">0\${pId}.</span>
+                        <p class="text-xs font-bold text-slate-800 leading-snug">\${qText}</p>
+                      </div>
+                      \${answers.length > 0 ? \`
+                        <div class="pt-1">
+                          <button type="button" onclick="const box=document.getElementById('disc-ans-s3-\${pId}'); box.classList.toggle('hidden'); this.querySelector('span').innerText = box.classList.contains('hidden') ? '💡 View Example Ideas &amp; Answers' : 'Hide Example Ideas';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-amber-700 hover:text-amber-900 cursor-pointer">
+                            <span>💡 View Example Ideas &amp; Answers</span> &rarr;
+                          </button>
+                          <div id="disc-ans-s3-\${pId}" class="hidden mt-2 p-2.5 bg-amber-50/90 border border-amber-200 rounded-md text-[11px] text-slate-700 space-y-1.5">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-amber-900 block mb-1">Example Student Answers &amp; Talking Points:</span>
+                            \${answers.map(ans => \`
+                              <div class="flex items-start gap-2">
+                                <span class="text-amber-600 font-bold shrink-0 mt-0.5">&bull;</span>
+                                <span class="italic text-slate-800 leading-relaxed">&ldquo;\${ans}&rdquo;</span>
+                              </div>
+                            \`).join('')}
+                          </div>
+                        </div>
+                      \` : ''}
+                    </div>
+                  \`;
+                }).join('')}
+              </div>
             </div>
 
             <!-- Spot-Check Grid -->
