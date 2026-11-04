@@ -1998,7 +1998,7 @@ function generateSession2Template() {
           <!-- Hero Banner & Context -->
           <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
             <div class="relative">
-              <img src="\${hero.image || 'images/s3_m1_session2_audit.jpg'}" alt="\${hero.title || 'Safety Alerts'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/aas_m1card2.jpg'">
+              <img src="\${hero.image || 'images/s3_m1_session2_audit.jpg'}" alt="\${hero.title || 'Safety Alerts'}" class="w-full h-48 sm:h-64 object-cover object-top" style="object-position: center 12%;" onerror="this.src='images/aas_m1card2.jpg'">
               <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4 sm:p-5">
                 <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">Technical English • Module 1</span>
                 <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">\${hero.title || 'Safety Alerts & Ramp Inspections'}</h3>
