@@ -143,7 +143,7 @@
         "session": 1,
         "objectives": {
           "title": "Session 1 - EASA Rules & Finding Information Fast Objectives",
-          "summary": "By the end of this session, GSEA students will be able to navigate dense EASA airport rules without getting lost, understand the difference between mandatory laws and advisory guides, use words for rules (shall, must, should, may) accurately, scan an authentic EASA crane safety specification (+50% length), role-play a polite clarification dialogue with a building contractor, and complete a simple Safety Check.",
+          "summary": "By the end of this session, GSEA students will be able to navigate dense EASA airport rules without getting lost, understand the difference between mandatory laws and advisory guides, use words for rules (shall, must, should, may) accurately, scan an authentic EASA crane safety specification, role-play a polite clarification dialogue with a building contractor, and complete a simple Safety Check.",
           "items": [
             {
               "num": 1,
@@ -189,7 +189,7 @@
             {
               "time": "15-45",
               "title": "Part 2: Reading the EASA Crane Rule (30 mins)",
-              "description": "Reading an authentic +50% expanded EASA extract (CS-ADR-DSN.H.400 and H.415 + GM1) to locate obstacle limitation surfaces, slope gradients, and crane safeguarding rules."
+              "description": "Reading an authentic EASA extract (CS-ADR-DSN.H.400 and H.415 + GM1) to locate obstacle limitation surfaces, slope gradients, and crane safeguarding rules."
             },
             {
               "time": "45-70",
@@ -919,7 +919,7 @@
         "session": 2,
         "objectives": {
           "title": "Session 2 - Safety Alerts & Ramp Inspections Objectives",
-          "summary": "By the end of this session, GSEA students will be able to distinguish mandatory Safety Orders from advisory Bulletins, use gentle, polite sentences (passive voice) during safety audits, read an authentic EASA Ramp Speed Alert (+50% length), participate in a 3-student ramp safety inspection meeting, and complete a simple Safety Check.",
+          "summary": "By the end of this session, GSEA students will be able to distinguish mandatory Safety Orders from advisory Bulletins, use gentle, polite sentences (passive voice) during safety audits, read an authentic EASA Ramp Speed Alert, participate in a 3-student ramp safety inspection meeting, and complete a simple Safety Check.",
           "items": [
             {
               "num": 1,
@@ -944,7 +944,7 @@
             {
               "num": 5,
               "title": "Read the EASA Ramp Speed Alert (Authentic Document Scanning)",
-              "description": "Scan EASA SIB No. 2024-11 on ground vehicle speeding and near-misses around parked aircraft (+50% length)."
+              "description": "Scan EASA SIB No. 2024-11 on ground vehicle speeding and near-misses around parked aircraft."
             },
             {
               "num": 6,
@@ -965,7 +965,7 @@
             {
               "time": "15-45",
               "title": "Part 2: Reading the EASA Ramp Speed Alert (30 mins)",
-              "description": "Reading simulated EASA SIB No. 2024-11 (+50% length) on vehicle speeding, telematics, and the 30-day fix-it plan timeline."
+              "description": "Reading simulated EASA SIB No. 2024-11 on vehicle speeding, telematics, and the 30-day fix-it plan timeline."
             },
             {
               "time": "45-70",
@@ -1694,7 +1694,7 @@
         "session": 3,
         "objectives": {
           "title": "Session 3 - Special Requests & Runway Safety Cases Objectives",
-          "summary": "By the end of this session, GSEA students will be able to explain how airports handle real-world challenges through temporary permissions (exemptions), use connecting words to explain rules and conditions (provided that, due to, in order to, in lieu of), read an authentic runway works exemption file (+50% length), prepare and deliver a 3-minute spoken briefing to airline pilots, and complete a simple Safety Check.",
+          "summary": "By the end of this session, GSEA students will be able to explain how airports handle real-world challenges through temporary permissions (exemptions), use connecting words to explain rules and conditions (provided that, due to, in order to, in lieu of), read an authentic runway works exemption file, prepare and deliver a 3-minute spoken briefing to airline pilots, and complete a simple Safety Check.",
           "items": [
             {
               "num": 1,
@@ -1740,7 +1740,7 @@
             {
               "time": "15-45",
               "title": "Part 2: Reading the Runway Work Request (30 mins)",
-              "description": "Scanning authentic exemption file EASA/ADR-EXEMP/2024-009 (+50% length) for reduced RESA and the 4 compensatory safety rules."
+              "description": "Scanning authentic exemption file EASA/ADR-EXEMP/2024-009 for reduced RESA and the 4 compensatory safety rules."
             },
             {
               "time": "45-70",

@@ -1,6 +1,6 @@
 /**
  * Automated Curriculum Generator for GSEA Semester 3 (Sessions 1, 2, 3)
- * Full B1-B2 Plain English Activities, +50% Authentic EASA Reading Extracts,
+ * Full B1-B2 Plain English Activities, Authentic EASA Reading Extracts,
  * Interactive Mode Badges, Student Instructions, Safety Checks & 90 Vocabulary Terms.
  */
 
@@ -22,7 +22,7 @@ const courseData = require(courseDataPath);
 // --- SESSION 1 DATA ---
 const s1Objectives = {
   title: "Session 1 - EASA Rules & Finding Information Fast Objectives",
-  summary: "By the end of this session, GSEA students will be able to navigate dense EASA airport rules without getting lost, understand the difference between mandatory laws and advisory guides, use words for rules (shall, must, should, may) accurately, scan an authentic EASA crane safety specification (+50% length), role-play a polite clarification dialogue with a building contractor, and complete a simple Safety Check.",
+  summary: "By the end of this session, GSEA students will be able to navigate dense EASA airport rules without getting lost, understand the difference between mandatory laws and advisory guides, use words for rules (shall, must, should, may) accurately, scan an authentic EASA crane safety specification, role-play a polite clarification dialogue with a building contractor, and complete a simple Safety Check.",
   items: [
     {
       num: 1,
@@ -69,7 +69,7 @@ const s1LessonPlan = {
     {
       time: "15-45",
       title: "Part 2: Reading the EASA Crane Rule (30 mins)",
-      description: "Reading an authentic +50% expanded EASA extract (CS-ADR-DSN.H.400 and H.415 + GM1) to locate obstacle limitation surfaces, slope gradients, and crane safeguarding rules."
+      description: "Reading an authentic EASA extract (CS-ADR-DSN.H.400 and H.415 + GM1) to locate obstacle limitation surfaces, slope gradients, and crane safeguarding rules."
     },
     {
       time: "45-70",
@@ -384,7 +384,7 @@ console.log('✓ Prepared Session 1 Data Structure');
 // --- SESSION 2 DATA ---
 const s2Objectives = {
   title: "Session 2 - Safety Alerts & Ramp Inspections Objectives",
-  summary: "By the end of this session, GSEA students will be able to distinguish mandatory Safety Orders from advisory Bulletins, use gentle, polite sentences (passive voice) during safety audits, read an authentic EASA Ramp Speed Alert (+50% length), participate in a 3-student ramp safety inspection meeting, and complete a simple Safety Check.",
+  summary: "By the end of this session, GSEA students will be able to distinguish mandatory Safety Orders from advisory Bulletins, use gentle, polite sentences (passive voice) during safety audits, read an authentic EASA Ramp Speed Alert, participate in a 3-student ramp safety inspection meeting, and complete a simple Safety Check.",
   items: [
     {
       num: 1,
@@ -409,7 +409,7 @@ const s2Objectives = {
     {
       num: 5,
       title: "Read the EASA Ramp Speed Alert (Authentic Document Scanning)",
-      description: "Scan EASA SIB No. 2024-11 on ground vehicle speeding and near-misses around parked aircraft (+50% length)."
+      description: "Scan EASA SIB No. 2024-11 on ground vehicle speeding and near-misses around parked aircraft."
     },
     {
       num: 6,
@@ -431,7 +431,7 @@ const s2LessonPlan = {
     {
       time: "15-45",
       title: "Part 2: Reading the EASA Ramp Speed Alert (30 mins)",
-      description: "Reading simulated EASA SIB No. 2024-11 (+50% length) on vehicle speeding, telematics, and the 30-day fix-it plan timeline."
+      description: "Reading simulated EASA SIB No. 2024-11 on vehicle speeding, telematics, and the 30-day fix-it plan timeline."
     },
     {
       time: "45-70",
@@ -763,7 +763,7 @@ console.log('✓ Prepared Session 2 Data Structure');
 // --- SESSION 3 DATA ---
 const s3Objectives = {
   title: "Session 3 - Special Requests & Runway Safety Cases Objectives",
-  summary: "By the end of this session, GSEA students will be able to explain how airports handle real-world challenges through temporary permissions (exemptions), use connecting words to explain rules and conditions (provided that, due to, in order to, in lieu of), read an authentic runway works exemption file (+50% length), prepare and deliver a 3-minute spoken briefing to airline pilots, and complete a simple Safety Check.",
+  summary: "By the end of this session, GSEA students will be able to explain how airports handle real-world challenges through temporary permissions (exemptions), use connecting words to explain rules and conditions (provided that, due to, in order to, in lieu of), read an authentic runway works exemption file, prepare and deliver a 3-minute spoken briefing to airline pilots, and complete a simple Safety Check.",
   items: [
     {
       num: 1,
@@ -810,7 +810,7 @@ const s3LessonPlan = {
     {
       time: "15-45",
       title: "Part 2: Reading the Runway Work Request (30 mins)",
-      description: "Scanning authentic exemption file EASA/ADR-EXEMP/2024-009 (+50% length) for reduced RESA and the 4 compensatory safety rules."
+      description: "Scanning authentic exemption file EASA/ADR-EXEMP/2024-009 for reduced RESA and the 4 compensatory safety rules."
     },
     {
       time: "45-70",
@@ -1777,7 +1777,7 @@ function generateSession1Template() {
                   <svg width="15" height="15" class="text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                   <span>\${doc.docRef || 'EASA CS-ADR-DSN • Subpart H'}</span>
                 </div>
-                <span class="bg-blue-800 text-blue-100 text-[10px] font-bold px-2 py-0.5 rounded">AUTHENTIC EXTRACT (+50% EXPANDED)</span>
+                <span class="bg-blue-800 text-blue-100 text-[10px] font-bold px-2 py-0.5 rounded">AUTHENTIC EASA EXTRACT</span>
               </div>
               <div class="p-4 font-mono text-[11px] leading-relaxed whitespace-pre-wrap text-slate-200 bg-slate-900/95 max-h-96 overflow-y-auto select-text">\${doc.docText || ''}</div>
             </div>
@@ -2169,7 +2169,7 @@ function generateSession2Template() {
                   <svg width="15" height="15" class="text-amber-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
                   <span>\${doc.docRef || 'EASA SIB No. 2024-11'}</span>
                 </div>
-                <span class="bg-amber-800 text-amber-100 text-[10px] font-bold px-2 py-0.5 rounded">AUTHENTIC EXTRACT (+50% EXPANDED)</span>
+                <span class="bg-amber-800 text-amber-100 text-[10px] font-bold px-2 py-0.5 rounded">AUTHENTIC EASA EXTRACT</span>
               </div>
               <div class="p-4 font-mono text-[11px] leading-relaxed whitespace-pre-wrap text-slate-200 bg-slate-900/95 max-h-96 overflow-y-auto select-text">\${doc.docText || ''}</div>
             </div>
@@ -2559,7 +2559,7 @@ function generateSession3Template() {
                   <svg width="15" height="15" class="text-indigo-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                   <span>\${doc.docRef || 'EASA/ADR-EXEMP/2024-009'}</span>
                 </div>
-                <span class="bg-indigo-800 text-indigo-100 text-[10px] font-bold px-2 py-0.5 rounded">AUTHENTIC EXTRACT (+50% EXPANDED)</span>
+                <span class="bg-indigo-800 text-indigo-100 text-[10px] font-bold px-2 py-0.5 rounded">AUTHENTIC EASA EXTRACT</span>
               </div>
               <div class="p-4 font-mono text-[11px] leading-relaxed whitespace-pre-wrap text-slate-200 bg-slate-900/95 max-h-96 overflow-y-auto select-text">\${doc.docText || ''}</div>
             </div>
