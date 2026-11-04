@@ -142,573 +142,512 @@
       "1": {
         "session": 1,
         "objectives": {
-          "title": "Session 1 - EASA Regulatory Structure & Navigation Objectives",
-          "summary": "By the end of this session, you will be able to demystify EASA document architecture (Regulations, Acceptable Means of Compliance - AMC, and Guidance Material - GM), build baseline navigational vocabulary for aerodrome compliance and safety oversight, accurately identify mandatory requirements versus recommendations, scan authentic EASA extracts, and deliver plain-English explanations during an aerodrome clarification role-play.",
+          "title": "Session 1 - EASA Rules & Finding Information Fast Objectives",
+          "summary": "By the end of this session, GSEA students will be able to navigate dense EASA airport rules without getting lost, understand the difference between mandatory laws and advisory guides, use words for rules (shall, must, should, may) accurately, scan an authentic EASA crane safety specification (+50% length), role-play a polite clarification dialogue with a building contractor, and complete a simple Safety Check.",
           "items": [
             {
               "num": 1,
-              "title": "Discuss Document Navigation & Reading Challenges (Fluency & Spontaneous Speech)",
-              "description": "Engage in an opening discussion on personal experiences with dense official manuals, identifying common reading obstacles and search strategies in 300-page regulatory PDFs."
+              "title": "Talk About Reading Challenges (Fluency & Spontaneous Speech)",
+              "description": "Share what makes long official manuals hard to read in English and agree on simple tricks to find information fast."
             },
             {
               "num": 2,
-              "title": "Understand EASA Regulatory Architecture (Document Hierarchy & Structure)",
-              "description": "Map the formal hierarchy of civil aviation regulations: Basic Regulation, Implementing Rules (IR), Acceptable Means of Compliance (AMC), and Guidance Material (GM)."
+              "title": "Understand the Two Types of Rules (Laws vs. Guides)",
+              "description": "Learn the simple difference between Laws (rules you must follow) and Guides (advice and best practice)."
             },
             {
               "num": 3,
-              "title": "Master Regulatory Vocabulary (Key Technical & Legal Terms)",
-              "description": "Acquire and use core regulatory terms in professional context: binding vs. non-binding, compliance, oversight, provision, applicability, derogation, safeguard, stipulate, and enforce."
+              "title": "Key Words for Rules (Vocabulary Focus)",
+              "description": "Learn and use everyday rule words: must follow (binding), advice (guidance), inspect (oversight), and safety zone (obstacle surface)."
             },
             {
               "num": 4,
-              "title": "Differentiate Obligation from Recommendation (Shall vs. Should Grammar Focus)",
-              "description": "Master the critical linguistic and legal distinction between mandatory requirements (shall / must) and recommended best practice (should / may) in aviation safety specifications."
+              "title": "Words for Rules: Shall, Must, Should, May (Language Focus)",
+              "description": "Practice using shall / must (100% required), shall not (forbidden), should (recommended advice), and may (allowed)."
             },
             {
               "num": 5,
-              "title": "Scan Authentic Regulatory Extracts (Practical Document Scavenger Hunt)",
-              "description": "Navigate authentic extracts from EASA CS-ADR-DSN (Aerodrome Design) and Regulation (EU) No 139/2014 in pairs to locate operational definitions and structural signposts."
+              "title": "Read the EASA Crane Rule (Authentic Document Scanning)",
+              "description": "Scan the simulated EASA document (CS-ADR-DSN.H.400 & H.415) to find where tall cranes and buildings are not allowed near the runway."
             },
             {
               "num": 6,
-              "title": "Handle Spoken Clarification Role-Plays (Interaction & Diplomatic Pushback)",
-              "description": "Role-play a TSEEAC administrative officer clarifying obstacle limitation surface rules for an aerodrome operator, using diplomatic language, polite pushback, and precise referencing."
+              "title": "Speaking Role-Play & Safety Check (Spoken Interaction)",
+              "description": "Role-play a polite conversation with a builder who wants to place a crane near the airport, and complete a simple Safety Check."
             }
           ]
         },
         "lessonPlan": {
           "title": "Session 1 Lesson Plan (2 Hours)",
-          "summary": "A 2-hour interactive communicative session introducing EASA regulatory architecture, legal vocabulary, the shall vs. should safety distinction, a document scavenger hunt with CS-ADR-DSN extracts, and the Clarification Desk role-play simulation.",
+          "summary": "A 2-hour communicative spoken English session for GSEA students covering document reading tricks, EASA crane safety rules, words for rules (shall, must, should, may), an obstacle clarification role-play, and a simple Safety Check.",
           "items": [
             {
-              "time": "00-20",
-              "title": "Part 1: Warm-up & Diagnostic Discussion (20 mins)",
-              "description": "\"Document Horror Stories\": open discussion sharing experiences encountering dense official documents and manuals in English and French, identifying what makes regulatory text intimidating and strategies for navigating 300-page PDFs."
+              "time": "00-15",
+              "title": "Part 1: Warm-up: Reading Long Manuals (15 mins)",
+              "description": "In pairs, GSEA students discuss what makes 300-page official manuals hard to read, share quick scanning strategies, and test entry knowledge with 4 quick spot-check questions."
             },
             {
-              "time": "20-50",
-              "title": "Part 2: Vocabulary & Structural Mapping (30 mins)",
-              "description": "Dissecting regulatory terminology (binding vs. non-binding, compliance, oversight, derogation, stipulate) and document anatomy (Basic Regulation -> IR -> AMC -> GM). Analysis of the critical shall vs. should safety distinction."
+              "time": "15-45",
+              "title": "Part 2: Reading the EASA Crane Rule (30 mins)",
+              "description": "Reading an authentic +50% expanded EASA extract (CS-ADR-DSN.H.400 and H.415 + GM1) to locate obstacle limitation surfaces, slope gradients, and crane safeguarding rules."
             },
             {
-              "time": "50-85",
-              "title": "Part 3: Practical Document Exploration Scavenger Hunt (35 mins)",
-              "description": "Paired investigation using authentic extracts from EASA CS-ADR-DSN and Regulation (EU) No 139/2014. Pairs locate operational definitions, identify obligations vs. recommendations, and spot structural signposts (without prejudice to, notwithstanding, pursuant to)."
+              "time": "45-70",
+              "title": "Part 3: Words for Rules: Shall, Must, Should, May (25 mins)",
+              "description": "Grammar and language clinic clarifying mandatory requirements (shall/must), prohibitions (shall not), and recommendations (should) through 5 practical drills."
             },
             {
-              "time": "85-120",
-              "title": "Part 4: Role-Play: The Clarification Desk & Debrief (35 mins)",
-              "description": "Interactive paired role-play: TSEEAC Administrative Officer clarifies an obstacle limitation surface rule for an Aerodrome Operator seeking a less restrictive interpretation. Debrief focuses on diplomatic language, polite pushback, and precise referencing."
+              "time": "70-105",
+              "title": "Part 4: Speaking Role-Play: Talking to the Builder (35 mins)",
+              "description": "3-student spoken role-play between a GSEA Safety Officer and a Construction Manager discussing a proposed 48m crane near Runway 09, with peer observation."
+            },
+            {
+              "time": "105-120",
+              "title": "Part 5: Safety Check: What Could Go Wrong? (15 mins)",
+              "description": "Collaborative 4-step safety check evaluating the crane hazard, flight risks, protective steps (lowered height, obstacle lights, NOTAM), and the final decision."
             }
           ]
         },
         "lessonContent": {
           "hero": {
+            "title": "EASA Rules & Finding Information Fast",
+            "subtitle": "Navigating Airport Regulations, Words for Rules & Obstacle Safeguarding",
             "image": "images/s3_m1_session1_easa.jpg",
-            "title": "EASA Regulatory Structure & Navigation",
-            "subtitle": "Introduction to EASA Document Architecture & Navigating Official Manuals"
+            "targetLevel": "CEFR B1–B2",
+            "roleContext": "GSEA Student Training • Aerodrome Operations & Rule Compliance",
+            "duration": "120 Minutes"
           },
           "openingSession": {
+            "title": "Activity 1: Warm-up & Entry Spot-Check (15 mins)",
+            "summary": "Break the ice, discuss reading challenges in English, and test your baseline knowledge of airport rules.",
             "modeBadges": [
-              "👥 Pair Spot-Check",
-              "⏱️ 5 min pairs + 5 min debrief",
-              "🗣️ Vocabulary Recall",
-              "🎯 Operational Acronyms"
+              "Pairs (2 students)",
+              "Spoken Discussion",
+              "Timing: 15 mins"
             ],
             "instructions": [
-              "Step 1 (Headlines - 3 mins): In pairs, discuss the headline prompts: \"What airline or air traffic management story made news this week?\"",
-              "Step 2 (Quick Check - 4 mins): Take turns testing each other on the 4 aviation distinctions (e.g. Ground Handler vs. Turnaround Coordinator) without revealing answers.",
-              "Step 3 (Check - 3 mins): Click \"Reveal Answer\" to verify the exact ICAO/operational definitions."
+              "In pairs, discuss the 3 opening questions about reading official manuals in English.",
+              "Read each of the 4 Entry Spot-Check questions below and discuss your answers together.",
+              "Click 'Reveal Answer' to check your reasoning and see the plain English explanation."
             ],
-            "deliverable": "Clearly explain the operational distinction between one pair of roles.",
-            "teacherNotes": "Focus on professional aviation register. Board the core acronyms: AODB (Airport Operational Database), TRC (Turnaround Coordinator), GPU (Ground Power Unit), GSE (Ground Support Equipment). Elicit why clear role boundaries between airlines, aerodrome operators, and ground handlers prevent airside safety incidents.",
-            "title": "Activity 1: Aviation News & Course Entry Warm-Up Check (10 mins)",
-            "summary": "Every class begins with a 10-minute professional opening: analyzing current aviation headlines and discussing recent news stories and events from the world of aviation.",
+            "deliverable": "Shared agreement on 2 quick scanning tricks and completed 4-question diagnostic.",
+            "teacherNotes": "Encourage spontaneous speaking. Don't worry about perfect grammar during warm-up; focus on building confidence and getting students comfortable talking about rules in English.",
             "newsPrompts": [
-              "What major commercial aviation, airline, or airport developments have you noticed in the headlines this week?",
-              "How are international airlines and aerodrome authorities balancing post-pandemic passenger traffic surges with passenger satisfaction and environmental commitments?"
+              "Why are official aviation manuals often 300 to 500 pages long?",
+              "When you need to find one specific rule in a huge PDF, what is your personal strategy?",
+              "Have you ever had to explain a complicated rule to someone who didn't understand it?"
             ],
             "diagnostic": {
-              "title": "Course Entry Warm-Up Check: Aviation Vocabulary Quick Check",
-              "instructions": "Discuss each operational distinction in pairs, then click 'Reveal Answer' to verify your reasoning.",
+              "title": "Airport Rules Entry Spot-Check",
+              "instructions": "Discuss each question with your partner, then click to check your answer.",
               "questions": [
                 {
                   "id": 1,
-                  "q": "What is the fundamental operational difference between Landside and Airside at an airport?",
-                  "answer": "Landside represents the public terminal concourse (ticketing, landside check-in desks, arrivals hall, public car parks) accessible to anyone without travel documents. Airside is the secure operational zone beyond security checkpoints (departure lounges, boarding gates, aprons, taxiways, and runways) accessible only to screened ticketed passengers and badged personnel."
+                  "q": "What is the simple difference between a Law (Regulation) and a Guide (Guidance Material)?",
+                  "answer": "A Law is mandatory (you must obey it 100% or face legal penalties). A Guide gives practical advice and examples to help you follow the law correctly."
                 },
                 {
                   "id": 2,
-                  "q": "What distinguishes an Airline (Air Carrier) from an Aerodrome Operator (Airport Authority)?",
-                  "answer": "An airline owns, leases, and operates aircraft to provide commercial passenger and cargo air transport. An aerodrome operator owns, manages, and maintains airport ground infrastructure (pavement surfaces, lighting, terminals, safety facilities, fire services) and coordinates apron stand allocations."
+                  "q": "In European aviation documents, what does the word 'SHALL' mean?",
+                  "answer": "'Shall' means a mandatory requirement. You have no choice: it is required by law."
                 },
                 {
                   "id": 3,
-                  "q": "What is the legal difference between a Scheduled Flight and a Charter Flight?",
-                  "answer": "A scheduled flight operates according to a published, regular commercial timetable regardless of passenger load. A charter flight is rented or hired as a whole by a specific organization, tour operator, or sports team for a dedicated itinerary outside the regular scheduled timetable."
+                  "q": "What is an 'Obstacle Limitation Surface' (OLS) in everyday words?",
+                  "answer": "It is an invisible safety bubble or slope in the sky around the runway where tall cranes, trees, and buildings are strictly forbidden to protect landing planes."
                 },
                 {
                   "id": 4,
-                  "q": "In European consumer protection (EU261), what is the key distinction between a Delay and a Flight Cancellation?",
-                  "answer": "A delay means the flight operates under its original flight number but departs or arrives behind its published schedule. A cancellation means the planned flight was completely called off, obliging the airline to rebook passengers on alternative flights or issue full refunds plus statutory compensation."
+                  "q": "What is a NOTAM (Notice to Airmen)?",
+                  "answer": "A quick, urgent official alert sent to all pilots informing them about temporary airport hazards, such as closed taxiways, broken lights, or construction cranes."
                 }
               ]
             }
           },
-          "survey": {
+          "documentExtract": {
+            "title": "Activity 2: Reading the EASA Crane Rule (30 mins)",
+            "summary": "Scan an authentic, expanded EASA regulatory extract to locate safety surfaces and crane rules.",
             "modeBadges": [
-              "👥 Speed-Dating Rotation",
-              "⏱️ 4 min per dilemma",
-              "🗣️ Technical Debate",
-              "🎯 Useful Opinion Phrases"
+              "Pairs or Small Groups",
+              "Document Scanning",
+              "Timing: 30 mins"
             ],
             "instructions": [
-              "Step 1 (Pairing): Review Topic 01–04. Partner A argues for stricter regulation; Partner B defends economic flexibility.",
-              "Step 2 (Timed Debate - 3 mins/topic): Debate each statement. Both speakers MUST incorporate at least one opinion phrase from the reference box below.",
-              "Step 3 (Class Consensus): Vote on Topic 01 (Cockpit Defense) and Topic 03 (Turnaround Targets) with a show of hands.",
-              "Step 4 (Speed-Dating Rotation): Partner A stays in place; Partner B rotates clockwise to a new discussion partner."
+              "Examine the official EASA extract below (CS-ADR-DSN Subpart H & GM1).",
+              "Notice the layout: Regulation number, title, sub-paragraphs, and Guidance Material.",
+              "Work with your partner to answer the 4 reading questions below.",
+              "Click 'Reveal Answer' to verify your answers."
             ],
-            "deliverable": "Summarize your partner's argument and deliver a 30-second spoken consensus.",
-            "teacherNotes": "Keep pace brisk. Ring a bell at 4 minutes to force rotation. Note down grammatical errors with modal verbs (\"must to comply\" -> \"must comply\") for the upcoming Language Clinic.",
-            "title": "Activity 2: The Global Aviation Survey (25 mins)",
-            "summary": "Conduct structured speed-dating interviews on 4 prominent commercial aviation dilemmas. Practice expressing nuanced agreement, providing concrete justifications, and using professional phrases to structure your arguments.",
-            "signposts": [
-              "\"From an operational standpoint, I believe...\"",
-              "\"While I understand the commercial justification, I would argue that...\"",
-              "\"We have to balance passenger convenience with strict safety protocols.\"",
-              "\"In my view as a future aviation professional, ...\""
-            ],
-            "topics": [
+            "deliverable": "Completed answers to all 4 reading questions with exact clause references.",
+            "teacherNotes": "Point out how European rules use numbering (H.400, H.415) and how GM (Guidance Material) provides practical explanations. Remind students they don't need to read every single word—train them to scan for keywords like 'gradient', '28 days', and 'NOTAM'.",
+            "docRef": "EASA CS-ADR-DSN • Subpart H — Obstacle Limitation Surfaces",
+            "docText": "[EASA CS-ADR-DSN — BOOK 1: CERTIFICATION SPECIFICATIONS FOR AERODROMES DESIGN]\nSUBPART H — OBSTACLE LIMITATION SURFACES (OLS)\n\nCS-ADR-DSN.H.400 Purpose & Applicability\n(a) The purpose of the obstacle limitation surfaces is to define the airspace around aerodromes to be maintained free from obstacles so as to permit the intended aeroplane operations at the aerodromes to be conducted safely and to prevent the aerodromes from becoming unusable by the growth of obstacles around the aerodromes.\n(b) These specifications shall apply to all runways intended for use by commercial air transport aeroplanes.\n\nCS-ADR-DSN.H.415 Approach Surface Specifications\n(a) Applicability: An approach surface shall be established for each runway direction intended to be used for landing.\n(b) Characteristics: The limits of the approach surface shall comprise:\n    (1) An inner edge of specified length, horizontal and perpendicular to the extended runway centre line, located at a distance of 60 m prior to the runway threshold.\n    (2) Two sides originating at the ends of the inner edge and diverging uniformly at a rate of 10% (Code 3/4) from the extended runway centre line.\n    (3) An outer edge parallel to the inner edge located at the specified distance.\n(c) Elevation: The elevation of the inner edge shall be equal to the elevation of the midpoint of the threshold.\n(d) Slope: The slope of the approach surface shall be measured in the vertical plane containing the centre line of the runway and shall not exceed 2.0% (1:50 gradient) for code number 3 and 4 precision instrument runways.\n(e) Prohibition: New objects or extensions of existing objects shall not be permitted above an approach surface within the aerodrome safeguarding boundary except when, in the opinion of the appropriate authority, the new object or extension would be shielded by an existing immovable object.\n\nGM1 CS-ADR-DSN.H.415 Construction Equipment & Mobile Cranes\n(a) Mobile obstacles, including tall building cranes, concrete pump vehicles, and drilling rigs operating in the vicinity of the aerodrome, constitute temporary obstacles and shall be safeguarded in advance.\n(b) Construction contractors intending to erect any crane exceeding 25 metres above ground level within 4 kilometres of the aerodrome reference point shall provide written notification to the aerodrome operator at least 28 calendar days prior to assembly.\n(c) Where a temporary obstacle penetrates an established obstacle limitation surface, the aerodrome operator shall request the competent civil aviation authority to issue a Notice to Airmen (NOTAM), mandate low-intensity or medium-intensity red obstacle warning lights, and establish operational restrictions if safety margins are compromised.",
+            "questions": [
               {
                 "id": 1,
-                "badge": "Cabin Safety & Alcohol",
-                "statement": "Should airports and airlines enforce a strict two-drink maximum per passenger across all terminal bars and flights to reduce unruly passenger incidents?",
-                "pro": "Alcohol intoxication contributes to over 70% of violent cabin disruptions, endangering cabin crew and resulting in costly emergency diversions.",
-                "con": "A blanket limit unfairly restricts well-behaved passengers, reduces vital retail concession revenues for airports, and is logistically difficult to enforce across transit hubs.",
-                "prompt": "Interview your partner: To what extent do you agree? What alternative prevention strategies could ground staff and cabin crew implement?"
+                "q": "Where does the Approach Surface start in relation to the runway threshold?",
+                "answer": "Clause H.415(b)(1) states it starts at an inner edge located 60 metres prior to the runway threshold."
               },
               {
                 "id": 2,
-                "badge": "Low-Cost vs Legacy Carriers",
-                "statement": "Have budget airlines (Low-Cost Carriers) made flying accessible to everyone, or do extra charges for hand luggage, seat selection, and water make travel frustrating for passengers?",
-                "pro": "Low base fares allow students, families, and budget travelers to fly easily across Europe, paying only for the specific services they choose.",
-                "con": "Extra fees for carry-on bags and basic drinks create confusion, slow down gate boarding, and cause unnecessary stress for passengers and ground staff.",
-                "prompt": "Interview your partner: How do extra baggage fees affect boarding times and ground staff workload?"
+                "q": "What is the maximum allowed upward slope (gradient) for precision runways?",
+                "answer": "Clause H.415(d) states the slope shall not exceed 2.0% (which means a 1:50 gradient)."
               },
               {
                 "id": 3,
-                "badge": "Cockpit Defense & FFDO",
-                "statement": "Should commercial airline captains be authorized to carry concealed firearms in the cockpit under programs such as the US Federal Flight Deck Officer (FFDO) protocol?",
-                "pro": "An armed pilot provides a decisive, last-line physical defense against suicidal hijackers if reinforced cockpit doors are compromised.",
-                "con": "Introducing lethal firearms into a pressurized aircraft creates severe accidental discharge hazards and alters the psychological role of commercial aviators.",
-                "prompt": "Interview your partner: Is a reinforced bulletproof cockpit door sufficient security, or are defensive weapons justified?"
+                "q": "Are builders allowed to build new structures above this approach surface?",
+                "answer": "Clause H.415(e) states new objects shall not be permitted above an approach surface, unless they are shielded by an existing permanent object."
               },
               {
                 "id": 4,
-                "badge": "Decarbonization vs Space Tourism",
-                "statement": "Is commercial space tourism ethically justifiable while mainstream commercial aviation is spending billions trying to transition to Sustainable Aviation Fuel (SAF) and hydrogen?",
-                "pro": "Suborbital space tourism accelerates commercial aerospace engineering, heat-shield materials research, and investment in future high-speed propulsion.",
-                "con": "Suborbital flights generate massive carbon and soot emissions per passenger-minute for ultra-wealthy leisure, undermining public trust in green aviation.",
-                "prompt": "Interview your partner: Should regulatory bodies impose heavy carbon taxes on suborbital leisure flights?"
+                "q": "How many days in advance must a construction company tell the airport before putting up a crane over 25m?",
+                "answer": "Clause GM1 CS-ADR-DSN.H.415(b) requires written notification at least 28 calendar days prior to crane assembly."
               }
             ]
           },
-          "modalsClinic": {
+          "rulesPractice": {
+            "title": "Activity 3: Words for Rules: Must, Shall, Should, May (25 mins)",
+            "summary": "Master the words used in aviation rules to express legal obligations, prohibitions, and advice.",
             "modeBadges": [
-              "👤 Individual Analysis + 👥 Regulatory Peer Check",
-              "⏱️ 10 min rules + 15 min drills",
-              "🎯 Must / May / Shall"
+              "Individual & Pairs",
+              "Language Clinic",
+              "Timing: 25 mins"
             ],
             "instructions": [
-              "Step 1 (Regulatory Guidelines - 8 mins): Study the difference between mandatory obligations (\"must / shall\"), conditional permission (\"may\"), and strict prohibition (\"must not\").",
-              "Step 2 (ICAO Drafting - 10 mins): Complete the regulatory sentence drills by inserting the correct modal verb for aviation security rules.",
-              "Step 3 (Peer Audit - 7 mins): Cross-check your answers with your partner. Explain WHY a recommendation (\"should\") would be legally insufficient in safety directives."
+              "Review the plain English explanation table below.",
+              "Complete the 5 practice sentences by choosing the correct rule word.",
+              "Click 'Check Answer' to verify your choice and read the reason."
             ],
-            "deliverable": "Complete 5 regulatory sentences using accurate ICAO standard modal phrasing.",
-            "teacherNotes": "Highlight that in ICAO Annexes, \"shall\" indicates mandatory standard, while \"should\" is a recommended practice. Point out TOEIC traps where modal verbs are followed by bare infinitives.",
-            "title": "Activity 3: Language Focus: Modals of Obligation, Permission & Prohibition (25 mins)",
-            "summary": "Master the precise grammar of operational authority. Distinguish absolute safety obligations from prohibitions, official authorizations, and operational advice without relying on technical jargon.",
-            "rules": [
+            "deliverable": "Completed 5-question language clinic with 100% correct rule identification.",
+            "teacherNotes": "Emphasize to students that in French 'doit' can mean both 'shall' and 'should'. In English aviation rules, 'shall' is 100% compulsory law, while 'should' is strong advice. Getting this wrong can cause major legal confusion!",
+            "rulesTable": [
               {
-                "title": "1. Strict Obligation (Must / Have to / Be required to)",
-                "rule": "Mandatory safety rules and statutory requirements.",
-                "example": "All ground personnel <strong>are required to wear</strong> high-visibility safety tabards on the active apron."
+                "word": "Shall / Must",
+                "meaning": "100% Mandatory Rule",
+                "example": "The airport shall install red warning lights on the crane.",
+                "tip": "Use when the rule is required by law with zero choice."
               },
               {
-                "title": "2. Strict Prohibition (Must not / Be prohibited from + -ing)",
-                "rule": "Unlawful actions and critical safety hazards.",
-                "example": "Passengers <strong>are strictly prohibited from tampering with</strong> smoke detectors in aircraft lavatories."
+                "word": "Shall not / Must not",
+                "meaning": "Strictly Forbidden",
+                "example": "Cranes shall not penetrate the approach surface.",
+                "tip": "Use when an action is illegal and dangerous."
               },
               {
-                "title": "3. Official Permission (May / Can / Be authorized / permitted to)",
-                "rule": "Formal legal authorizations and operational clearances.",
-                "example": "Only certified technicians <strong>are authorized to connect</strong> the high-voltage ground power unit."
+                "word": "Should",
+                "meaning": "Strong Recommendation",
+                "example": "The builder should lower the crane boom at night.",
+                "tip": "Best practice and advice, but not an absolute legal duty."
               },
               {
-                "title": "4. Operational Recommendations (Should / Be advised to)",
-                "rule": "Professional best practices and passenger advice.",
-                "example": "Airlines <strong>should notify</strong> travelers of schedule revisions via mobile push alerts at least two hours prior."
+                "word": "May",
+                "meaning": "Allowed / Optional",
+                "example": "The contractor may apply for a special night permit.",
+                "tip": "Use when an option or permission is available."
               }
             ],
-            "challenge": {
-              "title": "Interactive Regulatory Challenge: Spot the Correct Modal",
-              "instructions": "Select the correct modal form for each real-world airport scenario, then click 'Verify Rationale' to inspect the rule.",
-              "questions": [
-                {
-                  "id": 1,
-                  "context": "Passenger Security Screening",
-                  "sentence": "Every passenger carry-on bag ________ through the X-ray scanner prior to concourse entry.",
-                  "options": [
-                    "A) must pass",
-                    "B) is prohibited from passing",
-                    "C) should pass if time permits"
-                  ],
-                  "correct": "A) must pass",
-                  "explanation": "Absolute statutory requirement: 100% of carry-on items are required by international civil aviation security standards to undergo screening."
-                },
-                {
-                  "id": 2,
-                  "context": "Apron Vehicular Road Speed Limits",
-                  "sentence": "Service vehicles servicing aircraft ________ 25 km/h within marked apron transit corridors.",
-                  "options": [
-                    "A) are authorized to exceed",
-                    "B) must not exceed",
-                    "C) should not have exceeded"
-                  ],
-                  "correct": "B) must not exceed",
-                  "explanation": "Strict prohibition: Exceeding aerodrome speed limits endangers ramp workers and aircraft."
-                },
-                {
-                  "id": 3,
-                  "context": "Flight Deck Defense Qualification",
-                  "sentence": "Under revised flight deck defense protocols, designated captains ________ defensive equipment exclusively inside the cockpit.",
-                  "options": [
-                    "A) are authorized to carry",
-                    "B) must carry without training",
-                    "C) are prohibited from carry"
-                  ],
-                  "correct": "A) are authorized to carry",
-                  "explanation": "Passive permission pattern: 'be authorized + to-infinitive'. It is an optional legal permission, not a mandatory obligation."
-                },
-                {
-                  "id": 4,
-                  "context": "Boarding Gate Priority Courtesy",
-                  "sentence": "Passengers traveling with infants ________ to board during the priority pre-boarding sequence.",
-                  "options": [
-                    "A) are invited / advised",
-                    "B) are prohibited",
-                    "C) must be forced"
-                  ],
-                  "correct": "A) are invited / advised",
-                  "explanation": "Operational courtesy/advice: Priority boarding is offered for passenger convenience, not legally enforced."
-                }
-              ]
-            }
+            "drills": [
+              {
+                "id": 1,
+                "sentence": "Contractors _______ notify the airport operator 28 days before erecting a tall crane.",
+                "options": [
+                  "shall",
+                  "should",
+                  "may"
+                ],
+                "correct": "shall",
+                "rationale": "This is a mandatory safety rule required by GM1 CS-ADR-DSN.H.415(b)."
+              },
+              {
+                "id": 2,
+                "sentence": "Unshielded objects _______ be permitted above the approach slope.",
+                "options": [
+                  "shall not",
+                  "may not",
+                  "should not"
+                ],
+                "correct": "shall not",
+                "rationale": "Clause H.415(e) strictly forbids new obstacles penetrating the approach surface."
+              },
+              {
+                "id": 3,
+                "sentence": "To reduce danger, builders _______ lower the crane boom whenever winds exceed 30 knots.",
+                "options": [
+                  "should",
+                  "may",
+                  "shall not"
+                ],
+                "correct": "should",
+                "rationale": "This is a strong recommended safety precaution."
+              },
+              {
+                "id": 4,
+                "sentence": "The airport operator _______ issue a temporary permit if all safety conditions are met.",
+                "options": [
+                  "may",
+                  "shall not",
+                  "must not"
+                ],
+                "correct": "may",
+                "rationale": "The operator has the permission and authority to approve it if safe."
+              },
+              {
+                "id": 5,
+                "sentence": "All airside construction workers _______ wear high-visibility vests at all times.",
+                "options": [
+                  "must",
+                  "may",
+                  "could"
+                ],
+                "correct": "must",
+                "rationale": "High-visibility gear is an absolute mandatory safety requirement."
+              }
+            ]
           },
-          "operationalCaseStudy": {
+          "spokenActivity": {
+            "title": "Activity 4: Speaking Role-Play: Talking to the Builder (35 mins)",
+            "summary": "Role-play a polite, professional discussion between a GSEA safety officer and a construction contractor.",
             "modeBadges": [
-              "👥 Case Study Investigation",
-              "⏱️ 8 min reading + 12 min pair analysis + 5 min plenary",
-              "🎯 Passenger Rights vs. Safety"
+              "Groups of 3",
+              "Spoken Role-Play",
+              "Timing: 35 mins"
             ],
             "instructions": [
-              "Step 1 (Read Scenario - 5 mins): Review the Flight AF1420 Operational Incident Briefing, technical failure log, and EU261 passenger entitlement parameters.",
-              "Step 2 (Pair Preparation - 5 mins): Assign roles (Role A: Passenger Service Liaison vs. Role B: Frustrated Business Traveler) and review your communicative goals.",
-              "Step 3 (De-Escalation Simulation - 15 mins): Conduct a 4-minute spoken role-play adhering to passenger rights, then switch roles and repeat."
+              "Form groups of 3 students: Student A (GSEA Safety Officer), Student B (Building Contractor), Student C (Observer / Coach).",
+              "Read the scenario carefully. You have 5 minutes to prepare your arguments.",
+              "Conduct the 6-minute spoken role-play using the 'Useful Phrases' box.",
+              "Student C provides 2 minutes of feedback using the Peer Checklist, then switch roles."
             ],
-            "deliverable": "Draft a 3-point operational passenger briefing resolving the disruption.",
-            "teacherNotes": "Challenge pairs with a curveball: \"The captain claims weather, but maintenance records show a deferred hydraulic valve.\" How does this affect airline liability? Elicit precise modal arguments.",
-            "title": "Activity 4: Operational Dilemma: The EU261 Delay & Disruption Case Study (25 mins)",
-            "summary": "A realistic airport concourse scenario: Flight AF1420 to Paris-CDG is delayed by 4 hours due to an incoming maintenance issue and a destination night curfew. Passengers are anxious and demanding cash payouts.",
-            "incidentBriefing": {
-              "flight": "Flight AF1420",
-              "route": "Toulouse-Blagnac (TLS) ➔ Paris-Charles de Gaulle (CDG)",
-              "aircraft": "Airbus A320-214 (Registration: F-GKXH)",
-              "scheduled": "18h45",
-              "revised": "22h50 (+4h05 delay)",
-              "location": "Concourse B • Gate 14",
-              "passengers": "142 passengers holding at the gate (including 28 with tight international long-haul connections)",
-              "context": "The inbound aircraft arrived at Toulouse with an intermittent amber hydraulic warning light on the Green circuit. Line maintenance was dispatched to replace a hydraulic pressure relief valve. Technical sign-off (AOG release) was completed at 21h30. However, Paris-CDG air traffic flow management calculated that the flight would arrive after 23h30, risking a violation of the strict CDG night noise curfew penalties. A revised departure slot was assigned for 22h50, creating a total delay of 4 hours and 5 minutes. Gate 14 is overcrowded, tension is escalating, and several passengers are demanding cash and alternate routing.",
-              "timeline": [
-                {
-                  "time": "18h15",
-                  "event": "Inbound aircraft touches down at TLS; crew logs intermittent Green hydraulic system pressure drop during taxi-in."
-                },
-                {
-                  "time": "18h45",
-                  "event": "Scheduled departure time. Gate agent announces a provisional 45-minute delay for technical investigation."
-                },
-                {
-                  "time": "19h30",
-                  "event": "Maintenance engineers request a replacement pressure relief valve from station hangar inventory."
-                },
-                {
-                  "time": "21h30",
-                  "event": "Maintenance repairs signed off and certified airworthy. ATC warns that arrival at CDG risks violating the strict 23h30 night noise curfew."
-                },
-                {
-                  "time": "21h45",
-                  "event": "ATC confirms revised departure slot for 22h50. 142 passengers assemble at Gate 14; business travelers demand immediate cash and hotel vouchers."
-                }
-              ],
-              "regulations": {
-                "dutyOfCare": "Under EU261, delays exceeding 2 hours on flights under 1,500 km trigger an immediate statutory Duty of Care: complimentary meal and refreshment vouchers (€15), two free telephone calls or emails, and overnight hotel accommodation plus ground transfers if departure is rescheduled for the following day.",
-                "compensation": "EU261 provides for €250 compensation for delays of 3+ hours upon arrival unless caused by 'extraordinary circumstances'. Technical mechanical faults are classified as inherent operational risks and qualify for compensation, but claims must be submitted online post-travel—ground liaison agents are strictly prohibited from issuing cash at the boarding gate."
-              }
-            },
+            "deliverable": "Spoken role-play completed by all students with agreed safety compromise.",
+            "teacherNotes": "Ensure students use polite, diplomatic English rather than aggressive confrontation. Useful phrases like 'According to the safety rules...' and 'What we can do is...' help maintain a cooperative atmosphere.",
+            "scenario": "A construction company wants to put up a 48-metre mobile crane 1,200 metres from Runway 09 to build a new airport hotel. The crane will penetrate the approach surface by 6 metres. The contractor needs to start tomorrow, but they only sent the request yesterday!",
             "roles": [
               {
-                "role": "Role A: Passenger Service Liaison (AFISO / Operations Trainee)",
-                "mission": "Remain calm, polite, and authoritative. Explain the cause of the delay truthfully without blaming colleagues. Outline immediate entitlements: food/drink vouchers, free telephone calls, and hotel accommodation if rescheduled for tomorrow. Clarify that financial compensation claims (EU261) must be submitted online after the journey, not handed out in cash at the departure gate.",
-                "keyPhrases": [
-                  "\"I completely appreciate your frustration regarding this delay, and I am here to help.\"",
-                  "\"Our primary obligation right now is your comfort and safety.\"",
-                  "\"Under EU261 regulations, we are currently issuing meal and refreshment vouchers.\"",
-                  "\"While cash compensation is not disbursed at the boarding gate, our ground team will provide the official claim dossier.\""
+                "title": "Student A: GSEA Safety Officer",
+                "badge": "Safety & Compliance",
+                "bullets": [
+                  "Explain politely that the 28-day notification rule was not respected.",
+                  "Show that the 48m crane penetrates the approach slope by 6m (illegal).",
+                  "Propose a safe solution: lower the crane to 38m, work only at night (23h–05h) during runway closure, install flashing red lights, and wait 5 days for a NOTAM."
                 ]
               },
               {
-                "role": "Role B: Frustrated Business Traveler",
-                "mission": "You have a vital connecting flight or corporate meeting in Paris tomorrow morning. You are angry about missing your connection and want immediate cash, alternative flight rerouting on another carrier, or instant compensation.",
-                "keyPhrases": [
-                  "\"This delay is completely unacceptable; I'm going to miss my connecting international flight!\"",
-                  "\"Under EU law, you owe me €250 compensation immediately. Where is my cash?\"",
-                  "\"Can you endorse my ticket over to another airline that departs in 45 minutes?\"",
-                  "\"Who is going to pay for my hotel if we don't take off tonight?\""
+                "title": "Student B: Construction Manager",
+                "badge": "Project & Deadlines",
+                "bullets": [
+                  "Explain that delays cost €15,000 per day in rented equipment.",
+                  "Argue that the crane is off to the side and not directly in front of the runway.",
+                  "Try to negotiate starting earlier, but agree to safety lights and night work if necessary."
+                ]
+              },
+              {
+                "title": "Student C: Observer & Coach",
+                "badge": "Peer Feedback",
+                "bullets": [
+                  "Listen carefully to both speakers.",
+                  "Check: Did Student A use correct rule words (shall, must, should)?",
+                  "Check: Was the conversation polite and professional?",
+                  "Give 2 positive points and 1 suggestion for improvement."
                 ]
               }
             ],
-            "task": "Conduct a 4-minute spoken role-play with your partner. Then swap roles. Focus on de-escalation, professional courtesy, and accurate explanation of passenger rights."
+            "usefulPhrases": [
+              "According to EASA safety rules, we cannot allow...",
+              "I completely understand your deadline, but flight safety is our top priority.",
+              "The problem is that the crane penetrates the approach safety surface by 6 metres.",
+              "What we can propose instead is...",
+              "If you agree to work only at night and install red lights, we can approve it.",
+              "Let's write down this agreement so both sides are protected."
+            ]
           },
-          "miniDebate": {
+          "safetyCheck": {
+            "title": "Activity 5: Safety Check: What Could Go Wrong? (15 mins)",
+            "summary": "Work together to evaluate the crane hazard and confirm the safety decision.",
             "modeBadges": [
-              "👥👥 Groups of 4 • Stakeholder Committee",
-              "⏱️ 5 min prep + 15 min debate + 5 min pitch",
-              "🗣️ 60-Second Briefing"
+              "Whole Class / Pairs",
+              "Safety Evaluation",
+              "Timing: 15 mins"
             ],
             "instructions": [
-              "Step 1 (Role Allocation - 5 mins): Form teams of 4: Airport Director, Airline Station Manager, Air Traffic Control Supervisor, Passenger Rights Representative.",
-              "Step 2 (Committee Deliberation - 15 mins): Debate whether to support the total alcohol retail ban or propose a regulated compromise (such as a 2-drink boarding pass cap). Weigh safety against concession revenues.",
-              "Step 3 (Consensus Pitch - 5 mins): Elect a spokesperson to present the committee's final operational decision in 60 seconds."
+              "Review the 4 simple questions in the Safety Check table below.",
+              "Ensure you can explain each row in clear, spoken English.",
+              "Confirm the final decision as a team."
             ],
-            "deliverable": "Deliver a 60-second spoken policy consensus pitch summarizing the committee's agreed solution.",
-            "teacherNotes": "Act as the Civil Aviation Authority Observer. Time each spokesperson strictly at 60 seconds. Evaluate against clarity, target vocabulary, and professional composure.",
-            "title": "Activity 5: Station Mini-Debate & Spoken Consensus Briefing (25 mins)",
-            "summary": "In small groups of 3 to 4, prepare and deliver structured arguments on an aerodrome management policy debate. Structure your arguments with a clear Claim, Operational Evidence, and Real-World Impact.",
-            "motion": "Motion: All commercial aerodromes should introduce a total ban on alcohol retail sales in departure lounges and on flights under 3 hours.",
-            "framework": [
+            "deliverable": "Completed Safety Check table verified by all students.",
+            "teacherNotes": "This plain-English table replaces complicated technical risk matrices. It trains students to articulate problems, consequences, and solutions clearly.",
+            "rows": [
               {
-                "step": "1. State the Core Claim",
-                "desc": "Clearly express your team's stance using formal opinion expressions.",
-                "phrase": "\"Our working group firmly maintains that...\""
+                "question": "1. What is the problem?",
+                "answer": "A contractor wants to place a 48m crane near Runway 09 with only 24 hours notice, penetrating the approach surface by 6m."
               },
               {
-                "step": "2. Operational Evidence",
-                "desc": "Cite ramp delays, cabin diversions, police intervention, or retail concessions impact.",
-                "phrase": "\"Data shows that over 70% of cabin disruptions stem from pre-departure intoxication...\""
+                "question": "2. What could happen?",
+                "answer": "An approaching plane in bad weather or low visibility could collide with the crane, or pilots could get distracted."
               },
               {
-                "step": "3. Balanced Trade-offs",
-                "desc": "Acknowledge the counter-argument and explain why your policy recommendation is superior.",
-                "phrase": "\"While we recognize concession losses, safety compromises cannot be negotiated...\""
+                "question": "3. How do we fix it?",
+                "answer": "1) Reduce crane height to 38m maximum.<br>2) Install medium-intensity flashing red obstacle lights.<br>3) Restrict crane operations to night runway closure (23h00–05h00).<br>4) Issue an official NOTAM to all airlines."
               },
               {
-                "step": "4. Action Recommendation",
-                "desc": "Propose a concrete operational solution.",
-                "phrase": "\"We therefore recommend a digital 2-drink cap linked to boarding pass barcodes.\""
-              }
-            ],
-            "spokenHandoverModel": {
-              "title": "60-Second Team Spokesperson Briefing Model",
-              "text": "\"Good afternoon colleagues. Our working group evaluated the proposed alcohol restrictions across regional aerodromes. On balance, we strongly recommend implementing a digital tracking system linked to boarding passes rather than an outright ban. While an outright ban would immediately reduce disruptive behavior at the gate, it would severely damage airport retail concession revenues—which fund critical safety upgrades—and penalize the 99% of passengers who drink responsibly. By capping alcohol sales at two units per boarding pass scan, aerodrome operations can maintain airport revenue while eliminating gate boarding confrontations.\""
-            }
-          },
-          "closingReview": {
-            "modeBadges": [
-              "👤 Individual Self-Assessment",
-              "⏱️ 10 mins",
-              "📝 Study Log",
-              "🎯 Pronunciation Drill"
-            ],
-            "instructions": [
-              "Step 1 (Pronunciation - 4 mins): Practice pronouncing the 30 core terms with emphasis on word stress (e.g., ca'pacity, co'mpliance, tur'naround).",
-              "Step 2 (Sentence Drill - 3 mins): Write 2 original operational sentences combining at least 3 target terms.",
-              "Step 3 (Formative Evaluation Check - 3 mins): Review the FE1 criteria card and note one personal speaking skill to develop for next week."
-            ],
-            "deliverable": "Complete the session exit ticket and submit your self-assessment log.",
-            "teacherNotes": "Lead choral repetition on tricky stress patterns: \"au'thority\", \"juris'diction\", \"con'tingency\". Remind students about next week's Session 2 content.",
-            "title": "Activity 6: 10-Minute Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-            "summary": "Consolidate today's 30 vocabulary terms, test your word stress, and update your personal English learning portfolio.",
-            "reviewPrompts": [
-              {
-                "title": "Rapid Terminology Match",
-                "desc": "Can you define Unruly Passenger, Ancillary Revenue, and EU261 in your own words without checking your notes?"
-              },
-              {
-                "title": "Word Stress & Pronunciation Spot-Check",
-                "desc": "Check your syllable stress on high-frequency terms: an-CIL-la-ry (4 syllables), pro-HI-bi-ted (4 syllables), al-lo-CA-tion (4 syllables), bio-ME-tric (4 syllables)."
-              },
-              {
-                "title": "Personal Portfolio Reflection",
-                "desc": "Record two new communicative phrases you successfully used during today's survey debate and role-play in your learning log."
+                "question": "4. Our Decision",
+                "answer": "APPROVED WITH CONDITIONS: The contractor may proceed once the 4 protective steps are verified on site."
               }
             ]
           }
         },
         "revision": {
-          "title": "Session 1 Revision - Introduction & Aviation Survey",
-          "summary": "Master the 30 key vocabulary terms for the Introduction & Aviation Survey to discuss security dilemmas, low-cost operations, alternative propulsion, and passenger rights.",
+          "title": "Session 1 Revision - EASA Rules & Airport Obstacle Safeguarding",
+          "summary": "30 essential operational and regulatory vocabulary terms for GSEA students covering EASA document navigation, obstacle limitation surfaces, and rules.",
           "terms": [
             {
               "num": "01",
-              "term": "Unruly Passenger",
-              "definition": "A disruptive traveler who refuses to follow crew instructions or threatens cabin safety."
+              "term": "EASA",
+              "definition": "European Union Aviation Safety Agency: the civil aviation authority setting safety rules across Europe."
             },
             {
               "num": "02",
-              "term": "Air Marshal",
-              "definition": "An undercover law enforcement officer deployed on flights to prevent hijackings and security threats."
+              "term": "Regulation",
+              "definition": "A binding law that all European airports and airlines must follow 100% by law."
             },
             {
               "num": "03",
-              "term": "Flight Deck Security",
-              "definition": "Physical barriers, reinforced cockpit doors, and strict entry rules that protect pilots from intruders."
+              "term": "Guidance Material (GM)",
+              "definition": "Advisory text explaining how to understand and apply official aviation rules in practice."
             },
             {
               "num": "04",
-              "term": "Armed Pilot Protocol (FFDO)",
-              "definition": "A legal framework allowing qualified pilots to carry concealed firearms in the cockpit for defense."
+              "term": "Acceptable Means of Compliance (AMC)",
+              "definition": "Standards and specifications showing one approved way to satisfy an official regulation."
             },
             {
               "num": "05",
-              "term": "Low-Cost Carrier (LCC)",
-              "definition": "An airline offering low base fares while charging extra for luggage, seat selection, and meals."
+              "term": "Mandatory",
+              "definition": "Required by law; something that you have no choice but to do."
             },
             {
               "num": "06",
-              "term": "Ancillary Revenue",
-              "definition": "Extra money an airline makes from optional fees like baggage, snacks, and priority boarding."
+              "term": "Shall",
+              "definition": "The formal legal word indicating an absolute obligation in aviation regulations."
             },
             {
               "num": "07",
-              "term": "Noise Abatement",
-              "definition": "Flight paths, climb angles, and night curfews designed to reduce engine noise over residential areas."
+              "term": "Should",
+              "definition": "The formal word indicating a strong recommendation or best practice, but not an absolute law."
             },
             {
               "num": "08",
-              "term": "Decibel Footprint (EPNdB)",
-              "definition": "The measured noise area an aircraft produces during takeoff, flyover, and landing approach."
+              "term": "May",
+              "definition": "The formal word indicating permission or an optional course of action."
             },
             {
               "num": "09",
-              "term": "Sustainable Aviation Fuel (SAF)",
-              "definition": "Clean jet fuel made from non-fossil waste or plants that significantly cuts net greenhouse gas emissions."
+              "term": "Prohibited",
+              "definition": "Strictly forbidden by law; completely banned."
             },
             {
               "num": "10",
-              "term": "Hydrogen Propulsion",
-              "definition": "Aircraft engines that burn liquid hydrogen or use fuel cells to fly with zero in-flight carbon emissions."
+              "term": "Obstacle",
+              "definition": "Any fixed or mobile object that extends above defined safety heights around an airport."
             },
             {
               "num": "11",
-              "term": "Hybrid-Electric Aircraft",
-              "definition": "Aircraft combining fuel engines and battery motors to cut fuel use and noise during takeoff and climb."
+              "term": "Obstacle Limitation Surface (OLS)",
+              "definition": "An imaginary safety surface in the sky defining airspace that must remain free of tall objects."
             },
             {
               "num": "12",
-              "term": "Space Tourism",
-              "definition": "Commercial suborbital or orbital spaceflights carrying paying private passengers."
+              "term": "Approach Surface",
+              "definition": "An inclined safety plane extending outward and upward from before the runway threshold."
             },
             {
               "num": "13",
-              "term": "Suborbital Trajectory",
-              "definition": "A flight path that briefly reaches the edge of space before returning to Earth without entering orbit."
+              "term": "Threshold",
+              "definition": "The beginning of that portion of the runway usable for landing."
             },
             {
               "num": "14",
-              "term": "Passenger Rights (EU261)",
-              "definition": "Official rules requiring airlines to give cash compensation, meals, or hotels for long flight delays."
+              "term": "Gradient",
+              "definition": "The rate of slope or incline of a surface, expressed as a percentage or ratio (e.g., 2% or 1:50)."
             },
             {
               "num": "15",
-              "term": "Denied Boarding (Bumping)",
-              "definition": "Refusing to let a ticketed passenger board a flight because the airline sold too many seats."
+              "term": "Penetrate",
+              "definition": "To cross or extend through an imaginary safety surface, creating an illegal hazard."
             },
             {
               "num": "16",
-              "term": "Slot Allocation",
-              "definition": "The scheduled permission granted to an airline by airport coordinators to land or take off at a congested hub."
+              "term": "Shielding",
+              "definition": "The principle where an obstacle is protected because a larger, permanent object already stands in front of it."
             },
             {
               "num": "17",
-              "term": "Biometric Screening",
-              "definition": "Automated facial or fingerprint scanning at boarding gates to verify traveler identity quickly."
+              "term": "Safeguarding",
+              "definition": "The legal process of protecting airport airspace from dangerous construction and tall obstacles."
             },
             {
               "num": "18",
-              "term": "Turnaround Time (TAT)",
-              "definition": "The duration an aircraft remains parked at a gate between arriving from one flight and departing on the next."
+              "term": "Notice to Airmen (NOTAM)",
+              "definition": "An official telecommunication message alerting pilots about temporary hazards or changes at an airport."
             },
             {
               "num": "19",
-              "term": "Airside",
-              "definition": "The secure operational zone of an airport beyond security control, including boarding gates, ramps, taxiways, and runways."
+              "term": "Obstacle Warning Light",
+              "definition": "A red or white flashing light placed on tall structures so pilots can see them at night."
             },
             {
               "num": "20",
-              "term": "Landside",
-              "definition": "The public terminal areas (check-in desks, arrivals concourse, public parking) accessible without a boarding pass or security screening."
+              "term": "Boom",
+              "definition": "The long lifting arm of a construction crane."
             },
             {
               "num": "21",
-              "term": "Aerodrome Operator",
-              "definition": "The managing authority responsible for operating, maintaining, and certifying airport infrastructure, runways, and safety services."
+              "term": "Aerodrome Reference Point (ARP)",
+              "definition": "The designated geographic centre point of an airport."
             },
             {
               "num": "22",
-              "term": "Airport Operational Database (AODB)",
-              "definition": "The central IT system that stores, manages, and updates real-time flight schedules, stand allocations, and gate changes."
+              "term": "Prior Notification",
+              "definition": "Official advance warning required before starting building works near an aerodrome (e.g., 28 days)."
             },
             {
               "num": "23",
-              "term": "Turnaround Coordinator (TRC)",
-              "definition": "The airside specialist who manages and synchronizes all ground handling activities between an aircraft's arrival and departure."
+              "term": "Contractor",
+              "definition": "A construction company hired to perform building or maintenance works."
             },
             {
               "num": "24",
-              "term": "Ground Power Unit (GPU)",
-              "definition": "A mobile generator or stand-mounted unit that supplies external electrical power to an aircraft while its engines and APU are turned off."
+              "term": "Compliance",
+              "definition": "Full adherence and obedience to established laws, standards, and safety specifications."
             },
             {
               "num": "25",
-              "term": "Ground Support Equipment (GSE)",
-              "definition": "Specialized apron vehicles and equipment (tugs, belt loaders, stairs, de-icers) used to service aircraft on the ramp."
+              "term": "Non-Compliance",
+              "definition": "A failure to follow a mandatory aviation safety rule."
             },
             {
               "num": "26",
-              "term": "Scheduled Flight",
-              "definition": "A commercial flight operated according to a published, regular timetable regardless of passenger load."
+              "term": "Oversight",
+              "definition": "The ongoing monitoring and inspection of airports by civil aviation authorities to ensure safety."
             },
             {
               "num": "27",
-              "term": "Charter Flight",
-              "definition": "An aircraft hired for a specific private or group itinerary outside the regular published timetable."
+              "term": "Safety Margin",
+              "definition": "An extra buffer of distance or time added to ensure operations remain safe even if an error occurs."
             },
             {
               "num": "28",
-              "term": "Duty of Care",
-              "definition": "The statutory legal obligation of airlines under EU261 to provide food, drinks, communication, and hotel accommodation to passengers during prolonged flight delays."
+              "term": "AIP (Aeronautical Information Publication)",
+              "definition": "The permanent official handbook containing airport operational data, charts, and procedures."
             },
             {
               "num": "29",
-              "term": "Extraordinary Circumstances",
-              "definition": "Unforeseeable and unavoidable operational events (e.g., severe volcanic ash, ATC strikes, unforecast microbursts) that legally exempt airlines from paying cash compensation under EU261."
+              "term": "Temporary Restriction",
+              "definition": "A short-term limitation placed on flights or airport operations during construction works."
             },
             {
               "num": "30",
-              "term": "De-escalation",
-              "definition": "Professional communication strategies used by airport ground staff and cabin crew to calm angry or distressed passengers during delays and flight disruptions."
+              "term": "Safety Check",
+              "definition": "A simple step-by-step review asking: What is the problem? What could happen? How do we fix it?"
             }
           ]
         },
@@ -972,509 +911,511 @@
       "2": {
         "session": 2,
         "objectives": {
-          "title": "Session 2 - Safety Notices & Compliance Monitoring Objectives",
-          "summary": "By the end of this session, you will be able to master the language of safety notices, occurrence reporting, and compliance monitoring within aerodrome administration, differentiate Safety Information Bulletins (SIBs) from Safety Directives (SDs), analyze passive constructions and obligation modals, participate in a 3-role mock compliance audit meeting, and negotiate agreed corrective action wording.",
+          "title": "Session 2 - Safety Alerts & Ramp Inspections Objectives",
+          "summary": "By the end of this session, GSEA students will be able to distinguish mandatory Safety Orders from advisory Bulletins, use gentle, polite sentences (passive voice) during safety audits, read an authentic EASA Ramp Speed Alert (+50% length), participate in a 3-student ramp safety inspection meeting, and complete a simple Safety Check.",
           "items": [
             {
               "num": 1,
-              "title": "Analyze Aerodrome Safety Issue Lifecycles (Fluency & Spontaneous Discussion)",
-              "description": "Engage in an opening discussion on how aerodrome ground hazards or occurrence reports evolve from initial detection to formal safety directives."
+              "title": "Share Airport Ramp Experiences (Fluency & Spontaneous Speech)",
+              "description": "Discuss the busiest and most dangerous areas of an airport ramp and identify top safety hazards."
             },
             {
               "num": 2,
-              "title": "Distinguish Safety Directives from Information Bulletins (Regulatory Authority)",
-              "description": "Differentiate the legal standing and operational impact of mandatory Safety Directives (SDs) versus advisory Safety Information Bulletins (SIBs)."
+              "title": "Understand Safety Notices (Orders vs. Bulletins)",
+              "description": "Learn the clear difference between a mandatory Safety Order (SD) and an advisory Safety Bulletin (SIB)."
             },
             {
               "num": 3,
-              "title": "Acquire Safety Audit & Compliance Lexicon (Key Operational Vocabulary)",
-              "description": "Master and apply core audit terminology: Safety Directive (SD), Safety Information Bulletin (SIB), Non-Compliance (NC), Root Cause Analysis, Mitigation Measure, Corrective Action Plan (CAP), and Audit finding."
+              "title": "Key Words for Ramp Safety (Vocabulary Focus)",
+              "description": "Learn and use essential ramp vocabulary: speed limit, ground vehicle, high-visibility vest, fix-it plan (corrective action), and close call (near-miss)."
             },
             {
               "num": 4,
-              "title": "Decode Passive Voice & Obligation Modals (Grammar in Safety Mandates)",
-              "description": "Analyze formal passive constructions (\"It is recommended that...\", \"Action must be taken to ensure...\") and modal verbs (shall, must, should, may) in official EASA texts."
+              "title": "Polite Language for Inspections (Gentle Passive Voice)",
+              "description": "Practice asking polite, non-blaming questions during safety checks using gentle sentences (\"It was observed that...\", \"Could you explain how...?\")."
             },
             {
               "num": 5,
-              "title": "Role-Play a Compliance Audit Review Meeting (3-Way Collaborative Interaction)",
-              "description": "Participate in small groups (TSEEAC Lead Inspector, Airport Safety Manager, Mediator/Facilitator) reviewing an aerodrome audit finding following an oversight inspection."
+              "title": "Read the EASA Ramp Speed Alert (Authentic Document Scanning)",
+              "description": "Scan EASA SIB No. 2024-11 on ground vehicle speeding and near-misses around parked aircraft (+50% length)."
             },
             {
               "num": 6,
-              "title": "Negotiate Agreed Corrective Actions (Diplomatic Disagreement & Consensus)",
-              "description": "Deploy professional disagreement, polite hedging (\"It would appear that...\", \"From our perspective...\"), and negotiate the final wording and timeline of a Corrective Action Plan."
+              "title": "Ramp Inspection Meeting & Safety Check (Spoken Role-Play)",
+              "description": "Role-play a 3-person safety discussion between an inspector, ramp supervisor, and handler, and complete the Safety Check."
             }
           ]
         },
         "lessonPlan": {
           "title": "Session 2 Lesson Plan (2 Hours)",
-          "summary": "A 2-hour communicative session exploring safety notices, occurrence reporting, authentic EASA SIB and SD analysis with passive voice focus, and a 3-role mock compliance audit meeting between TSEEAC inspectors and airport safety managers.",
+          "summary": "A 2-hour communicative spoken English session on apron safety, EASA Safety Information Bulletins, gentle phrasing during safety inspections, a ramp speed meeting role-play, and a simple Safety Check.",
           "items": [
             {
-              "time": "00-20",
-              "title": "Part 1: Warm-up & Vocabulary Activation (20 mins)",
-              "description": "Brainstorming the lifecycle of an aerodrome safety issue and activating core audit vocabulary (Safety Directive, SIB, Non-Compliance, Root Cause Analysis, Mitigation Measure, CAP, Audit finding)."
+              "time": "00-15",
+              "title": "Part 1: Warm-up: Danger on the Ramp (15 mins)",
+              "description": "Pairs brainstorm ramp hazards (tugs, fuel, jet blast, night shifts) and test entry knowledge with 4 spot-check questions."
             },
             {
-              "time": "20-60",
-              "title": "Part 2: Authentic Document Analysis: SIBs and SDs (40 mins)",
-              "description": "Text breakdown of authentic EASA Safety Information Bulletins (SIBs) and Safety Directives (runway safety / apron operations). Detailed focus on Applicability, Description, Recommended Action, passive voice structures, and modal verbs of obligation."
+              "time": "15-45",
+              "title": "Part 2: Reading the EASA Ramp Speed Alert (30 mins)",
+              "description": "Reading simulated EASA SIB No. 2024-11 (+50% length) on vehicle speeding, telematics, and the 30-day fix-it plan timeline."
             },
             {
-              "time": "60-110",
-              "title": "Part 3: Collaborative Role-Play: The Compliance Audit Meeting (50 mins)",
-              "description": "3-way mock review meeting following an audit finding. Role 1 (TSEEAC Lead Inspector) cites EASA references; Role 2 (Airport Safety Manager) presents operational constraints; Role 3 (Facilitator/Mediator) guides consensus on the Corrective Action Plan."
+              "time": "45-70",
+              "title": "Part 3: Polite Language for Inspections (25 mins)",
+              "description": "Language clinic on gentle phrasing and passive voice to describe safety findings objectively without blaming individuals."
             },
             {
-              "time": "110-120",
-              "title": "Part 4: Debriefing, Consensus Review & Class Wrap-Up (10 mins)",
-              "description": "Final 10-minute debrief: sharing agreed CAP solutions across teams, reviewing diplomatic hedging phrases, and personal portfolio learning logs."
+              "time": "70-105",
+              "title": "Part 4: Speaking Role-Play: The Ramp Safety Meeting (35 mins)",
+              "description": "3-student role-play between a GSEA Safety Auditor, Ground Handling Ramp Supervisor, and Airport Operations Manager to agree on a fix-it plan."
+            },
+            {
+              "time": "105-120",
+              "title": "Part 5: Safety Check: What Could Go Wrong? (15 mins)",
+              "description": "Evaluating speeding baggage tugs, collision risks, speed limiters, toolbox talks, and deciding on compliance approval."
             }
           ]
         },
         "lessonContent": {
           "hero": {
+            "title": "Safety Alerts & Ramp Inspections",
+            "subtitle": "Apron Vehicle Safety, Objective Phrasing & Fix-It Plans",
             "image": "images/s3_m1_session2_audit.jpg",
-            "title": "Safety Notices & Compliance Monitoring",
-            "subtitle": "Deciphering Safety Directives, SIBs & Airport Compliance Audits"
+            "targetLevel": "CEFR B1–B2",
+            "roleContext": "GSEA Student Training • Apron Safety & Ground Operations",
+            "duration": "120 Minutes"
           },
           "openingSession": {
-            "title": "Activity 1: Aviation News & Session 1 Catch-Up Spot-Check (10 mins)",
-            "summary": "Every class begins with a 10-minute professional opening: analyzing current airport technology headlines and spot-checking vocabulary from our previous session.",
+            "title": "Activity 1: Warm-up: Danger on the Ramp (15 mins)",
+            "summary": "Brainstorm airside hazards and check your understanding of airport safety alerts.",
+            "modeBadges": [
+              "Pairs (2 students)",
+              "Spoken Brainstorm",
+              "Timing: 15 mins"
+            ],
+            "instructions": [
+              "In pairs, brainstorm the 3 biggest physical dangers for people working on an airport ramp.",
+              "Read each of the 4 Entry Check questions below and discuss your thoughts.",
+              "Click 'Reveal Answer' to check your reasoning."
+            ],
+            "deliverable": "Identified top 3 ramp hazards and completed 4-question check.",
+            "teacherNotes": "Ramp safety is practical and visual. Encourage students to think of real airport ramps they know (Toulouse, Paris CDG, etc.) where dozens of vehicles move around parked jets.",
             "newsPrompts": [
-              "What recent airport terminal innovations (biometric facial recognition e-gates, CT carry-on scanners, automated baggage drops) have appeared in global travel news?",
-              "How are modern international aerodromes managing rising passenger volumes while maintaining short queue times at security screening?"
+              "Why is the ramp (apron) considered the most dangerous work zone at an airport?",
+              "What happens when ground handlers are in a hurry to turn around a delayed flight?",
+              "Who do you think has right-of-way when a baggage tractor meets an aircraft being towed?"
             ],
-            "catchUpSpotCheck": {
-              "title": "Session 1 Catch-Up Spot-Check: Rapid Terminology Recall",
-              "instructions": "Discuss each question with your partner, then click 'Reveal Answer' to verify your operational understanding.",
+            "diagnostic": {
+              "title": "Ramp Safety & Notice Spot-Check",
+              "instructions": "Discuss each question with your partner, then click to reveal the answer.",
               "questions": [
                 {
                   "id": 1,
-                  "term": "Unruly Passenger",
-                  "q": "What is an 'Unruly Passenger', and what operational consequences can disruptive cabin behavior cause?",
-                  "answer": "An unruly passenger is a traveler who fails to respect crew instructions or disrupts cabin safety. Operational consequences include flight diversions, heavy airline fuel and rescheduling costs, police intervention upon landing, and potential flight bans."
+                  "q": "What is the difference between a Safety Directive (SD) and a Safety Information Bulletin (SIB)?",
+                  "answer": "A Safety Directive is a mandatory legal order requiring immediate action. A Safety Information Bulletin (SIB) is an advisory alert sharing safety lessons and recommended precautions."
                 },
                 {
                   "id": 2,
-                  "term": "Ancillary Revenue",
-                  "q": "How does 'Ancillary Revenue' drive low-cost carrier business models, and where can it create boarding gate delays?",
-                  "answer": "Ancillary revenue is income generated from non-ticket sales (carry-on bags, seat selection, priority boarding). At the boarding gate, measuring oversized carry-on luggage and charging last-minute fees can slow passenger processing and increase turnaround time."
+                  "q": "What does 'FOD' stand for, and why is it so dangerous on the ramp?",
+                  "answer": "Foreign Object Debris (trash, bolts, tools, stones). Jet engines can suck them in and suffer catastrophic internal damage."
                 },
                 {
                   "id": 3,
-                  "term": "Passenger Rights (EU261)",
-                  "q": "Under EU261 regulations, what immediate duty of care must an airline provide during a 4-hour departure delay?",
-                  "answer": "The carrier is obligated to provide free meal and refreshment vouchers, two free telephone calls or emails, and overnight hotel accommodation with ground transport if the departure is postponed to the following day."
+                  "q": "What is an 'Airside Driving Permit' (ADP)?",
+                  "answer": "A special license required by airport authorities before any driver is legally permitted to operate vehicles on taxiways and aprons."
                 },
                 {
                   "id": 4,
-                  "term": "Turnaround Time (TAT)",
-                  "q": "What is 'Turnaround Time (TAT)', and why is it critical for airport ground operations?",
-                  "answer": "TAT is the duration an aircraft remains parked at an apron stand between arrival and departure. Fast turnarounds maximize aircraft utilization and daily flight hours while optimizing apron stand and gate capacity."
+                  "q": "What is a 'Near-Miss' (or close call)?",
+                  "answer": "An unplanned incident that did not cause damage or injury this time, but could have caused a serious accident under slightly different conditions."
                 }
               ]
-            },
+            }
+          },
+          "documentExtract": {
+            "title": "Activity 2: Reading the EASA Ramp Speed Alert (30 mins)",
+            "summary": "Scan an authentic Safety Information Bulletin on ground vehicle speed compliance.",
             "modeBadges": [
-              "👥 Airfield Spot-Check",
-              "⏱️ 5 min pairs + 5 min plenary",
-              "🗣️ Spatial Terminology",
-              "✈️ Aerodrome Movement"
+              "Pairs or Small Groups",
+              "Document Scanning",
+              "Timing: 30 mins"
             ],
             "instructions": [
-              "Step 1 (News Scan - 3 mins): Review the airport technology and innovation headlines with your partner.",
-              "Step 2 (Catch-Up Recall - 4 mins): Take turns quizzing each other on the 4 Session 1 operational distinctions (Apron vs Ramp, Slot vs Schedule, De-icing vs Anti-icing).",
-              "Step 3 (Verification - 3 mins): Click 'Reveal Answer' to check your technical precision. Be ready to give a 30-second operational definition if called upon."
+              "Read the simulated EASA SIB No. 2024-11 below.",
+              "Look for key speed limits, equipment types, and deadlines.",
+              "Answer the 4 reading comprehension questions with your partner.",
+              "Click 'Reveal Answer' to check your answers."
             ],
-            "deliverable": "Deliver a 30-second operational distinction for one pair of airfield terms during teacher check.",
-            "teacherNotes": "Target confusing spatial terminology. Ask: 'Where does ATC ground control authority end and apron management begin?'"
-          },
-          "terminalJourney": {
-            "title": "Activity 2: Passenger Terminal Flow & Facilitation Dilemmas (25 mins)",
-            "summary": "Examine the 5 sequential touchpoints of the passenger journey from landside to airside, followed by paired debate on passenger automation dilemmas.",
-            "stages": [
-              {
-                "num": "01",
-                "title": "Landside Check-In & Bag Drop",
-                "area": "Landside Public Zone",
-                "desc": "Passengers use self-service kiosks to print boarding passes and baggage tags, then deposit luggage at automated conveyor bag drops."
-              },
-              {
-                "num": "02",
-                "title": "Security Screening Checkpoint",
-                "area": "Boundary Transition",
-                "desc": "Carry-on luggage passes through X-ray or CT scanners while travelers proceed through walk-through metal detectors or body scanners."
-              },
-              {
-                "num": "03",
-                "title": "Airside Concourse & Dwell Time",
-                "area": "Airside Secure Zone",
-                "desc": "Ticketed passengers spend their dwell hour in duty-free retail, dining areas, and gate lounges while monitoring Flight Information Displays (FIDS)."
-              },
-              {
-                "num": "04",
-                "title": "Boarding Gate & Jet Bridge",
-                "area": "Airside Departure Gate",
-                "desc": "Gate agents scan boarding passes and verify passports before passengers cross the jet bridge (airbridge) onto the aircraft."
-              },
-              {
-                "num": "05",
-                "title": "Special Assistance (PRM)",
-                "area": "Terminal-Wide Service",
-                "desc": "Dedicated ground teams facilitate Passengers with Reduced Mobility (PRM) via electric buggies, specialized lifts, and priority access."
-              }
-            ],
-            "dilemmas": [
+            "deliverable": "Completed answers to all 4 reading questions with exact paragraph citations.",
+            "teacherNotes": "Emphasize how SIBs present real-world data (14% increase in incidents) followed by practical recommendations. Guide students to notice the difference between general circulation lanes (20 km/h) and the red aircraft stand box (5 km/h).",
+            "docRef": "EASA Safety Information Bulletin • SIB No. 2024-11",
+            "docText": "[EUROPEAN UNION AVIATION SAFETY AGENCY — SAFETY INFORMATION BULLETIN]\nSIB No.: 2024-11 • Issued: 18 April 2024\nSubject: Ground Support Equipment (GSE) Speed Compliance and Apron Safety Management\nApplicability: Aerodrome Operators, Ground Handling Service Providers, and National Competent Authorities\n\n1. Operational Background\n(a) Recent safety occurrence data collected under Regulation (EU) No 376/2014 indicates a 14% rise in ground collisions and near-miss occurrences on aerodrome aprons within the European Union during the last calendar year.\n(b) The majority of reported occurrences involved ground support equipment (GSE), specifically baggage tractors, passenger transport buses, and catering hi-lift trucks operating in excess of posted airside speed limits.\n(c) Multiple occurrences resulted in severe airframe damage, including punctured fuselage skin, crushed engine cowlings, and broken pitot-static probes, requiring aircraft to be grounded for extensive structural repairs.\n\n2. EASA Safety Recommendations\nAerodrome Operators and Ground Handling Service Providers are strongly urged to apply the following safety measures:\n(a) Speed Limit Harmonisation: Implement and strictly enforce a maximum apron speed limit of 20 km/h (12 mph) in general apron circulation lanes, and a reduced speed limit of 5 km/h (3 mph) within the immediate aircraft stand safety area (the red painted boundary surrounding parked aircraft).\n(b) Telematics & Vehicle Tracking: Equip motorized airside vehicles with GPS telematics speed-monitoring devices and automatic warning alarms for unauthorized acceleration.\n(c) Driver Competency & Annual Refresher: Mandate that all airside driving permit (ADP) holders complete annual recurrent training on apron driving hazards, blind spots, and right-of-way rules (aircraft under tow and taxiing aircraft always hold absolute right-of-way).\n(d) Enforcement & Sanctions: Conduct weekly random speed checks using radar speed guns and establish a progressive disciplinary penalty policy for speeding infractions, including temporary suspension of airside access.\n\n3. Corrective Action Plan (Fix-It Plan) Timeline\nGround handling organisations issued with a safety non-compliance notice by aerodrome safety inspectors shall submit a written Fix-It Plan within 30 calendar days of receipt. The plan shall detail root-cause analysis, training records, and verified vehicle governor installations.",
+            "questions": [
               {
                 "id": 1,
-                "badge": "Biometric E-Gates vs Privacy",
-                "statement": "Should international airports implement 100% contactless biometric facial recognition at all checkpoints, replacing physical passports and boarding passes?",
-                "pro": "Biometrics dramatically reduces queue times, eliminates fraudulent documents, and accelerates passenger boarding by over 30%.",
-                "con": "Centralized storage of passenger facial templates poses cyber-security risks, raises civil privacy concerns, and risks algorithmic bias.",
-                "prompt": "Interview your partner: How do you balance passenger processing speed with biometric data privacy?"
+                "q": "What two speed limits does EASA recommend for general lanes and aircraft stand boxes?",
+                "answer": "A maximum of 20 km/h in general apron lanes, and strictly 5 km/h inside the red aircraft stand safety box."
               },
               {
                 "id": 2,
-                "badge": "Fully Automated Bag Drop vs Staffing",
-                "statement": "Should airports replace traditional staffed check-in counters entirely with automated bag-drop conveyor machines?",
-                "pro": "Self-service bag drop cuts airline labor costs, operates 24/7 without shift gaps, and reduces terminal floor space requirements.",
-                "con": "Elderly, disabled, or infrequent travelers struggle with self-tagging, generating passenger stress and kiosk congestion when luggage tags tear.",
-                "prompt": "Interview your partner: What customer assistance protocols should ground operations maintain when check-in is automated?"
-              }
-            ],
-            "modeBadges": [
-              "👥 Sequential Flow Tracing",
-              "⏱️ 8 min pairs + 12 min plenary",
-              "✈️ Passenger Facilitation",
-              "🔍 Bottleneck Identification"
-            ],
-            "instructions": [
-              "Step 1 (Touchpoint Tracing - 4 mins): Trace an international passenger's sequential movement across all 5 concourse touchpoints (Landside Curb to Departure Gate).",
-              "Step 2 (Dilemma Debate - 6 mins): Analyze Facilitation Dilemma 01 (Biometric E-Gates) and Dilemma 02 (Baggage Drop). Formulate your personal stance using the 1–5 scale.",
-              "Step 3 (Mitigation Briefing - 5 mins): In pairs, formulate 2 concrete operational solutions to mitigate peak-hour security queue bottlenecks."
-            ],
-            "deliverable": "Verbal presentation of the 5-step flow sequence and your recommended bottleneck solution.",
-            "teacherNotes": "Check for correct passive voice ('luggage is screened', 'passports are checked'). Emphasize ICAO Annex 9 facilitation principles."
-          },
-          "prepositionsClinic": {
-            "title": "Activity 3: Language Focus: Prepositions of Place, Direction & Movement (25 mins)",
-            "summary": "Master the spatial grammar of aerodrome navigation. Distinguish fixed nodes (AT) from enclosed halls (IN), flat operational surfaces (ON), and linear traversal (ALONG, ACROSS, THROUGH).",
-            "rules": [
-              {
-                "title": "1. AT (Specific Nodes & Points)",
-                "rule": "Counters, gates, holding lines, and exact service stations.",
-                "example": "Passengers must assemble <strong>at Gate B14</strong> twenty minutes prior to departure."
-              },
-              {
-                "title": "2. IN (Enclosed Volumes & Rooms)",
-                "rule": "Interior terminal spaces, lounges, and covered hangars.",
-                "example": "Travelers may wait comfortably <strong>in the departure lounge</strong> or browse duty-free."
-              },
-              {
-                "title": "3. ON (Operational Surfaces & Lines)",
-                "rule": "Pavement, aprons, taxiways, runways, and centerlines.",
-                "example": "The regional aircraft is parked <strong>on Stand 06</strong> on the terminal apron."
-              },
-              {
-                "title": "4. Directional Motion (Through / Along / Across)",
-                "rule": "Traversal path, boundary crossing, and linear tracking.",
-                "example": "The aircraft taxied <strong>along Taxiway Alpha</strong> and held short <strong>of Runway 27</strong>."
-              }
-            ],
-            "challenge": {
-              "title": "Interactive Spatial Challenge: Spot the Correct Preposition",
-              "instructions": "Select the correct spatial preposition for each operational airport scenario, then click 'Verify Rationale' to inspect the rule.",
-              "questions": [
-                {
-                  "id": 1,
-                  "context": "Passenger Security Screening",
-                  "sentence": "Departing passengers must walk ________ the millimeter-wave body scanner before entering airside.",
-                  "options": [
-                    "A) through",
-                    "B) across",
-                    "C) at"
-                  ],
-                  "correct": "A) through",
-                  "explanation": "Traversal through an enclosed 3D threshold or portal requires the preposition 'through'."
-                },
-                {
-                  "id": 2,
-                  "context": "Apron Pushback Procedure",
-                  "sentence": "The pushback tug slowly moved the passenger aircraft backward ________ the active apron transit lane.",
-                  "options": [
-                    "A) onto",
-                    "B) into",
-                    "C) at"
-                  ],
-                  "correct": "A) onto",
-                  "explanation": "Movement towards and positioning upon an open, flat operational pavement surface uses 'onto'."
-                },
-                {
-                  "id": 3,
-                  "context": "Ground Vehicular Traffic Crossing",
-                  "sentence": "Baggage tractor drivers must never drive ________ the active taxiway without visual verification and clearance.",
-                  "options": [
-                    "A) across",
-                    "B) along",
-                    "C) in"
-                  ],
-                  "correct": "A) across",
-                  "explanation": "Motion from one side of a surface boundary or linear corridor to the opposite side requires 'across'."
-                },
-                {
-                  "id": 4,
-                  "context": "Boarding Gate Assembly",
-                  "sentence": "Passenger assistance agents are stationed ________ the automated boarding gate to assist travelers with infants.",
-                  "options": [
-                    "A) at",
-                    "B) on",
-                    "C) in"
-                  ],
-                  "correct": "A) at",
-                  "explanation": "Specific service counters, numbered gates, and operational checkpoints take the preposition 'at'."
-                }
-              ]
-            },
-            "modeBadges": [
-              "👥 Spatial Precision Workshop",
-              "⏱️ 10 min exercise + 15 min plenary",
-              "🗺️ Airfield Prepositions",
-              "🎯 Positional Clarity"
-            ],
-            "instructions": [
-              "Step 1 (Rule Dissection - 5 mins): Study the 4 preposition categories (Position, Movement/Direction, Relative Location, Aerodrome Proximity).",
-              "Step 2 (Interactive Challenge - 8 mins): Complete the 4 airfield spatial scenarios individually, selecting the exact preposition required by ICAO standards.",
-              "Step 3 (Peer Rationale Check - 7 mins): Click 'Verify Rationale' to review the safety justification. Explain why ambiguous prepositions cause runway incursions."
-            ],
-            "deliverable": "100% correct score on the preposition scenarios and spoken justification of the safety risk.",
-            "teacherNotes": "Emphasize ICAO standard phraseology: 'hold short of' vs 'stop at', 'vacate via' vs 'exit on'. Highlight runway incursion accidents caused by preposition ambiguity."
-          },
-          "airsideCaseStudy": {
-            "title": "Activity 4: Operational Case Study: Unauthorized Apron Access (25 mins)",
-            "summary": "A disoriented passenger who missed their boarding call pushed through an emergency exit door onto the terminal apron looking for their plane, triggering a ramp safety alert.",
-            "incidentBriefing": {
-              "incidentId": "SEC-2026-1102-TLS",
-              "time": "14h20 Local",
-              "location": "Stand 4 (South Apron) via Terminal 2 Gate B12",
-              "classification": "Apron Security Breach & Airside Incursion (ICAO Level 2)",
-              "situation": "At 14h20, a passenger who arrived late at Gate B12 found the boarding door locked. Panicked and disoriented, the passenger pushed open emergency fire exit B12-E, sounding a local alarm, and walked directly onto the active apron surface. Ground observers spotted the individual walking along Service Road Bravo, approximately 30 meters from Stand 4, heading towards Taxiway Alpha while an adjacent aircraft on Stand 3 was preparing for engine start.",
-              "immediateHazards": [
-                "Jet engine ingestion & prop-wash hazard from adjacent Stand 3 aircraft",
-                "High-density ramp service traffic along Service Road Bravo (baggage tugs, fuel hydrant trucks)",
-                "Risk of unescorted entry onto active Taxiway Alpha"
-              ],
-              "commChannel": "VHF 121.750 MHz (Aerodrome Ground Movement / Apron Control)"
-            },
-            "roles": [
-              {
-                "role": "Role A: Aerodrome Ground Liaison / AFISO Trainee",
-                "mission": "Broadcast a clear VHF alert to ground vehicles. Give precise spatial coordinates of the passenger using accurate prepositions. Coordinate with the ramp service team to intercept the traveler calmly without causing a panic, and escort them back through the secure airside door.",
-                "keyPhrases": [
-                  "\"All apron vehicles on Service Road Bravo, hold position immediately.\"",
-                  "\"We have an unauthorized passenger on the apron, 30 meters from Stand 4, walking towards Taxiway Alpha.\"",
-                  "\"Ramp Escort Team, please proceed along the yellow safety walkway to intercept the individual.\"",
-                  "\"Sir, please remain at your current position; our ground operations team is escorting you back into the terminal concourse.\""
-                ]
-              },
-              {
-                "role": "Role B: Ramp Service Escort Lead",
-                "mission": "Acknowledge the alert; confirm your vehicle or foot position; intercept the traveler courteously; explain the severe danger of active jet engines, prop wash, and service vehicles; guide them safely back inside the terminal building.",
-                "keyPhrases": [
-                  "\"Ground Liaison, Ramp Escort 2 copies; I have visual contact on the passenger near the fueling hydrant cart.\"",
-                  "\"Approaching the traveler on foot along Stand 4 boundary line now.\"",
-                  "\"Good afternoon sir; this apron area is strictly restricted to authorized staff due to moving aircraft. Please follow me back into the lounge.\"",
-                  "\"Ground Liaison, individual secured and escorted back into Gate B12 lounge. Apron Stand 4 clear to resume operations.\""
-                ]
-              }
-            ],
-            "task": "Conduct a 4-minute spoken VHF radio exchange and de-escalation role-play. Focus on spatial precision, professional composure, and clear prepositions. Then swap roles.",
-            "modeBadges": [
-              "🚨 Safety Incident Case Study",
-              "⏱️ 10 min analysis + 15 min briefing",
-              "🔍 Unauthorized Access",
-              "📋 Corrective Protocol"
-            ],
-            "instructions": [
-              "Step 1 (Incident Dissection - 4 mins): Read the unauthorized apron access scenario: Gate B12 door breach and Stand 4 ramp security alert.",
-              "Step 2 (Role-Play Prep - 6 mins): Partner A takes the Operations Trainee role; Partner B takes the Ramp Lead role. Prepare your VHF radio statements using key phrases.",
-              "Step 3 (Simulation & De-Escalation - 8 mins): Conduct a 4-minute spoken radio exchange handling the incident professionally. Swap roles after 4 minutes."
-            ],
-            "deliverable": "Deliver a 60-second verbal briefing outlining the root causes and your immediate corrective actions.",
-            "teacherNotes": "Act as the Airport Operations Director receiving the incident briefing. Ask probing questions: 'What immediate actions were taken to safeguard the passenger from the active engine hazard on Stand 3?'"
-          },
-          "guidanceWorkshop": {
-            "title": "Activity 5: Airfield Guidance Markings & Spoken Briefing (25 mins)",
-            "summary": "Analyze the visual aids, taxiway guidance lines, and runway designators that ensure safe ground navigation, then deliver a 60-second spoken safety briefing.",
-            "markings": [
-              {
-                "id": 1,
-                "badge": "Magnetic Heading",
-                "title": "Runway Designators (Numbers & Letters)",
-                "desc": "A two-digit number painted on runway thresholds indicating magnetic azimuth to the nearest 10 degrees. Runway 09 points 090° (East); reciprocal threshold 27 points 270° (West). Parallel runways add L (Left), C (Center), or R (Right)."
-              },
-              {
-                "id": 2,
-                "badge": "Taxiway Guidance",
-                "title": "Taxiway Centerline & Boundary Lines",
-                "desc": "A continuous solid yellow line along the center of a taxiway that pilots track with nose gear to ensure wingtip obstacle clearance. Double dashed yellow edge lines denote apron taxi lane boundaries."
+                "q": "What types of ground vehicles were most frequently involved in speeding incidents?",
+                "answer": "Paragraph 1(b) lists baggage tractors, passenger transport buses, and catering hi-lift trucks."
               },
               {
                 "id": 3,
-                "badge": "Mandatory Stop Line",
-                "title": "Runway-Holding Position Markings",
-                "desc": "Consists of two solid yellow lines and two dashed yellow lines painted across the taxiway. Aircraft approaching the runway must stop before the solid lines until cleared to enter or cross."
+                "q": "Who always holds absolute right-of-way over ground vehicles on the apron?",
+                "answer": "Paragraph 2(c) states aircraft under tow and taxiing aircraft always hold absolute right-of-way."
               },
               {
                 "id": 4,
-                "badge": "Incursion Defense",
-                "title": "Stop Bars & Red Mandatory Signs",
-                "desc": "A row of flush red lights embedded across the taxiway pavement accompanied by red signs with white lettering (e.g., 09-27). When illuminated, no vehicle or aircraft may cross."
+                "q": "How many days does a company have to submit their written Fix-It Plan after an inspection notice?",
+                "answer": "Paragraph 3 specifies that the written Fix-It Plan must be submitted within 30 calendar days of receipt."
               }
-            ],
-            "spokenHandoverModel": {
-              "title": "60-Second Airfield Safety Briefing Model",
-              "text": "\"Good morning team. Here is our daily airfield pavement inspection summary for Runway 09/27 and its associated taxiway network. Pavement friction levels along Runway 09 Left are within nominal safety thresholds, but recent repaving near Holding Point Bravo has temporarily obscured the double solid holding position lines. A NOTAM has been issued, and maintenance crews will repaint the mandatory markings tonight at 2300 hours. In the interim, all ground vehicle operators must exercise heightened vigilance when holding short at Bravo, and verify taxiway centerline alignment on Taxiway Alpha due to ongoing apron stand expansion. Thank you.\""
-            },
-            "modeBadges": [
-              "📻 Airside Movement Workshop",
-              "⏱️ 12 min group work + 18 min simulation",
-              "🗺️ Taxiway Markings & Signs",
-              "🗣️ Taxi Routing Briefing"
-            ],
-            "instructions": [
-              "Step 1 (Markings Scan - 4 mins): Review the 4 visual guidance markings (Holding Position, Taxiway Centerline, Mandatory Signage, ILS Critical Boundary).",
-              "Step 2 (Model Study - 4 mins): Study the 60-Second Airfield Safety Briefing Model, paying attention to phonetic alphabet delivery and holding point clarity.",
-              "Step 3 (Spoken Handover Practice - 7 mins): Deliver an oral safety briefing to your partner describing a safe taxi route from Stand 14 to Runway 24L."
-            ],
-            "deliverable": "Flawless read-back of the assigned taxi route with exact pronunciation of phonetic alphabet and taxiway designations.",
-            "teacherNotes": "Strictly enforce readback rules: runway designators, hold short instructions, and altimeter settings must be read back verbatim."
+            ]
           },
-          "closingReview": {
-            "title": "Activity 6: 10-Minute Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-            "summary": "Consolidate today's 18 technical vocabulary terms, practice syllable stress, and update your personal English learning portfolio.",
-            "reviewPrompts": [
-              {
-                "title": "Rapid Operational Distinction",
-                "desc": "Can you explain the practical difference between Movement Area and Manoeuvring Area, and between Dwell Time and TAT?"
-              },
-              {
-                "title": "Word Stress & Pronunciation Spot-Check",
-                "desc": "Check syllable stress: fa-CI-li-ta-tion (5 syllables), ma-NOEU-vring (3 syllables), in-CUR-sion (3 syllables), de-SIG-na-tor (4 syllables)."
-              },
-              {
-                "title": "Personal Portfolio Reflection",
-                "desc": "Record two spatial prepositions and one operational radio phrase you practiced during today's apron case study into your learning log."
-              }
-            ],
+          "rulesPractice": {
+            "title": "Activity 3: Polite Language for Inspections: The Gentle Passive Voice (25 mins)",
+            "summary": "Learn how to describe safety problems objectively and politely without attacking individuals.",
             "modeBadges": [
-              "👥 Rapid Vocabulary Drill",
-              "⏱️ 5 min quiz + 5 min reflection",
-              "🗣️ Phonetic Precision",
-              "📝 Self-Assessment Log"
+              "Individual & Pairs",
+              "Language Clinic",
+              "Timing: 25 mins"
             ],
             "instructions": [
-              "Step 1 (Review Prompts - 4 mins): Work through the 3 closing steps: Self-Check Quiz, Flashcard Review, and Audio Drill.",
-              "Step 2 (Phonetic Challenge - 3 mins): Practice aloud the standard ICAO spelling alphabet for all aerodrome designators (Alpha, Bravo, Charlie...).",
-              "Step 3 (Digital Log - 3 mins): Open the Revision tab and mark your mastered terms for Session 2."
+              "Read the comparison table below showing Harsh vs. Polite Inspection language.",
+              "Notice how using the passive voice ('was observed', 'were not worn') removes personal blame and sounds professional.",
+              "Complete the 5 rewriting exercises, then click 'Check Answer' to see the recommended phrasing."
             ],
-            "deliverable": "Spoken definition of 3 random aerodrome markings terms and completion of the session reflection.",
-            "teacherNotes": "Conduct a rapid whole-class choral drill on high-risk pronunciation items: 'holding position', 'threshold', 'displaced', 'incursion'."
+            "deliverable": "5 professional, non-confrontational inspection statements written and practiced aloud.",
+            "teacherNotes": "In aviation safety culture, we inspect systems and behaviours, not personalities. When inspectors say 'You didn't do this!', people get defensive and hide mistakes. When they say 'It was observed that...', the conversation stays constructive.",
+            "rulesTable": [
+              {
+                "word": "Confrontational (Harsh ❌)",
+                "meaning": "Attacks the person",
+                "example": "You parked the tug in the wrong place!",
+                "tip": "Causes defensive arguments."
+              },
+              {
+                "word": "Professional (Polite ✅)",
+                "meaning": "Describes the facts gently",
+                "example": "The vehicle was observed parked outside the marked safety bay.",
+                "tip": "Keeps people calm and focused on safety."
+              },
+              {
+                "word": "Confrontational (Harsh ❌)",
+                "meaning": "Blames the driver",
+                "example": "Your driver was speeding like crazy!",
+                "tip": "Sounds emotional and unscientific."
+              },
+              {
+                "word": "Professional (Polite ✅)",
+                "meaning": "Quotes the recorded data",
+                "example": "A ground vehicle was recorded travelling at 38 km/h in a 20 km/h zone.",
+                "tip": "Objective, factual, and undeniable."
+              }
+            ],
+            "drills": [
+              {
+                "id": 1,
+                "sentence": "Rewrite: 'Your driver didn't wear his high-visibility vest this morning.'",
+                "options": [
+                  "A high-visibility vest was not worn by the driver during morning operations.",
+                  "Your driver failed completely to wear his vest today.",
+                  "Tell your driver to put a vest on immediately."
+                ],
+                "correct": "A high-visibility vest was not worn by the driver during morning operations.",
+                "rationale": "Using the passive voice describes the missing safety gear without an aggressive accusation."
+              },
+              {
+                "id": 2,
+                "sentence": "Rewrite: 'You left the luggage belt loader blocking the taxi lane.'",
+                "options": [
+                  "The belt loader was observed positioned inside the active taxi lane.",
+                  "You are creating a huge hazard with your belt loader.",
+                  "Who left this stupid machine in the taxi lane?"
+                ],
+                "correct": "The belt loader was observed positioned inside the active taxi lane.",
+                "rationale": "Factual and neutral: focuses on where the machine was found."
+              },
+              {
+                "id": 3,
+                "sentence": "Rewrite: 'You guys never do your vehicle maintenance checks!'",
+                "options": [
+                  "Routine vehicle maintenance logs have not been updated for the past 14 days.",
+                  "Your maintenance is totally unacceptable.",
+                  "Why do you hate doing maintenance?"
+                ],
+                "correct": "Routine vehicle maintenance logs have not been updated for the past 14 days.",
+                "rationale": "Points directly to the missing paperwork rather than insulting the team."
+              },
+              {
+                "id": 4,
+                "sentence": "Rewrite: 'Your team didn't report that scratch on the engine cowling.'",
+                "options": [
+                  "A minor cowling scratch was identified during pre-flight, but no occurrence report was logged.",
+                  "You tried to hide an engine scratch from our inspectors.",
+                  "Explain why you hid this damage!"
+                ],
+                "correct": "A minor cowling scratch was identified during pre-flight, but no occurrence report was logged.",
+                "rationale": "States what was found and what was missing in an objective report format."
+              },
+              {
+                "id": 5,
+                "sentence": "Rewrite: 'You are driving way too fast around the airplane.'",
+                "options": [
+                  "The tug was recorded exceeding the 5 km/h stand limit during the turnaround.",
+                  "Slow down or I will take your badge right now!",
+                  "Do you want to crash into the wing?"
+                ],
+                "correct": "The tug was recorded exceeding the 5 km/h stand limit during the turnaround.",
+                "rationale": "Cites the specific recorded speed limit violation calmly."
+              }
+            ]
+          },
+          "spokenActivity": {
+            "title": "Activity 4: Speaking Role-Play: The Ramp Safety Meeting (35 mins)",
+            "summary": "Role-play a constructive 3-person safety meeting between an auditor, a ramp supervisor, and operations.",
+            "modeBadges": [
+              "Groups of 3",
+              "Spoken Role-Play",
+              "Timing: 35 mins"
+            ],
+            "instructions": [
+              "Form groups of 3: Student A (GSEA Safety Auditor), Student B (Ground Handling Ramp Supervisor), Student C (Airport Operations Manager).",
+              "Read your role instructions and prepare your talking points (5 mins).",
+              "Conduct the 7-minute meeting using polite, non-blaming language.",
+              "Agree on a realistic 30-day Fix-It Plan (Corrective Action Plan)."
+            ],
+            "deliverable": "Agreed 3-point Fix-It Plan recorded by all 3 participants.",
+            "teacherNotes": "Walk around and listen for gentle passive phrasing. Help Student B balance flight departure pressure with safety rules. Ensure Student C keeps the meeting productive.",
+            "scenario": "During an audit at 07h30, an inspector recorded two baggage tugs driving at 38 km/h in a 20 km/h zone. One driver was not wearing a high-vis vest and admitted he skipped his annual refresher training because the team was short-staffed.",
+            "roles": [
+              {
+                "title": "Student A: GSEA Safety Auditor",
+                "badge": "Safety Inspection",
+                "bullets": [
+                  "Present the audit findings calmly using polite passive sentences.",
+                  "Refer to EASA SIB No. 2024-11 regarding speed limits and training.",
+                  "Request a written Fix-It Plan with 3 specific corrective steps within 30 days."
+                ]
+              },
+              {
+                "title": "Student B: Ground Handling Ramp Supervisor",
+                "badge": "Flight Turnarounds",
+                "bullets": [
+                  "Acknowledge the findings without making aggressive excuses.",
+                  "Explain that the morning flight had a 20-minute slot delay and baggage handlers were rushing.",
+                  "Propose 3 practical fixes: speed limiters on tugs, weekly 10-minute toolbox talks, and immediate refresher courses."
+                ]
+              },
+              {
+                "title": "Student C: Airport Operations Manager",
+                "badge": "Meeting Leader",
+                "bullets": [
+                  "Keep the tone positive and constructive: safety is our joint responsibility.",
+                  "Verify that the proposed fixes are realistic and have clear deadlines.",
+                  "Schedule a follow-up spot check in 14 days."
+                ]
+              }
+            ],
+            "usefulPhrases": [
+              "Thank you for meeting today. During our morning inspection, several speed violations were recorded...",
+              "We understand flight turnarounds are demanding, but safety margins must be maintained.",
+              "What concrete steps can your company take to prevent this from happening again?",
+              "We can install mechanical speed governors on all baggage tugs within two weeks.",
+              "We will also hold mandatory 10-minute safety briefings before every morning shift.",
+              "Let's schedule a follow-up check in two weeks to confirm that these measures are working."
+            ]
+          },
+          "safetyCheck": {
+            "title": "Activity 5: Safety Check: What Could Go Wrong? (15 mins)",
+            "summary": "Complete the ramp speed safety check and agree on the final audit decision.",
+            "modeBadges": [
+              "Whole Class / Pairs",
+              "Safety Evaluation",
+              "Timing: 15 mins"
+            ],
+            "instructions": [
+              "Review the 4 simple questions in the Safety Check table below.",
+              "Discuss why each step is necessary in plain English.",
+              "Verify the audit approval decision."
+            ],
+            "deliverable": "Completed Safety Check table verified by all students.",
+            "teacherNotes": "Reinforce that an inspection is only successful when the fix-it plan actually prevents the next accident.",
+            "rows": [
+              {
+                "question": "1. What is the problem?",
+                "answer": "Baggage tractors driving at 38 km/h on the apron (nearly double the 20 km/h limit) and an untrained driver without safety gear."
+              },
+              {
+                "question": "2. What could happen?",
+                "answer": "A collision with an aircraft engine, hitting ground staff walking between stands, or causing severe structural airframe damage."
+              },
+              {
+                "question": "3. How do we fix it?",
+                "answer": "1) Fit electronic speed limiters to all baggage tugs (maximum 20 km/h).<br>2) Conduct weekly 10-minute 'toolbox safety talks' with all drivers.<br>3) Suspend the untrained driver until he completes the official refresher course.<br>4) Perform weekly radar speed spot-checks."
+              },
+              {
+                "question": "4. Our Decision",
+                "answer": "APPROVED: The 30-day Fix-It Plan is accepted with a mandatory re-audit in 14 days."
+              }
+            ]
           }
         },
         "revision": {
-          "title": "Session 2 Revision - Passenger Flow & Airfield Movement Areas",
-          "summary": "Master the 18 key technical vocabulary terms covering passenger terminal flow, airside movement areas, ground markings, and runway numbering.",
+          "title": "Session 2 Revision - Safety Alerts & Ramp Inspections",
+          "summary": "30 essential operational terms for GSEA students covering apron safety, ground support vehicles, inspections, and hazard reporting.",
           "terms": [
             {
               "num": "01",
-              "term": "Landside",
-              "definition": "The public areas of an airport terminal (ticketing, check-in, arrivals hall) accessible without a boarding pass."
+              "term": "Apron / Ramp",
+              "definition": "The designated area of an airport where aircraft are parked, unloaded, refuelled, and boarded."
             },
             {
               "num": "02",
-              "term": "Self-Service Kiosk",
-              "definition": "Automated touchscreens where passengers check in, print boarding passes, and generate baggage tags independently."
+              "term": "Ground Support Equipment (GSE)",
+              "definition": "Specialized motorized and towed vehicles servicing aircraft on the ground (tugs, belt loaders, stairs)."
             },
             {
               "num": "03",
-              "term": "Automated Bag Drop",
-              "definition": "A conveyor system where ticketed travelers scan luggage tags and deposit checked bags without agent help."
+              "term": "Safety Information Bulletin (SIB)",
+              "definition": "An advisory document published by EASA sharing safety lessons, alerts, and recommended practices."
             },
             {
               "num": "04",
-              "term": "Security Screening Checkpoint",
-              "definition": "The inspection point using metal detectors, body scanners, and X-ray machines to examine carry-on luggage."
+              "term": "Safety Directive (SD)",
+              "definition": "A mandatory regulatory order issued to correct an urgent unsafe condition."
             },
             {
               "num": "05",
-              "term": "Airside",
-              "definition": "The secure airport zone beyond security, including departure lounges, duty-free retail, gates, and aircraft stands."
+              "term": "Airside Driving Permit (ADP)",
+              "definition": "An official license authorizing staff to operate motorized vehicles on the aerodrome movement area."
             },
             {
               "num": "06",
-              "term": "Dwell Time",
-              "definition": "The duration passengers spend in the terminal between clearing security and boarding, driving retail revenue."
+              "term": "Speed Limit",
+              "definition": "The maximum legal speed permitted for vehicles operating in apron lanes (typically 20 km/h)."
             },
             {
               "num": "07",
-              "term": "Boarding Gate",
-              "definition": "The concourse doorway and service counter through which ticketed travelers present passes to board."
+              "term": "Aircraft Stand Safety Area",
+              "definition": "The painted red box surrounding a parked aircraft where vehicle speeds are restricted to walking pace (5 km/h)."
             },
             {
               "num": "08",
-              "term": "Jet Bridge (Airbridge)",
-              "definition": "An enclosed, movable telescopic bridge linking the airport departure gate directly to the airplane door."
+              "term": "Right-of-Way",
+              "definition": "The legal priority of one vehicle or aircraft to proceed ahead of another (aircraft always have priority)."
             },
             {
               "num": "09",
-              "term": "Apron (Ramp)",
-              "definition": "The designated paved area where aircraft park to load passengers, refuel, load baggage, and undergo servicing."
+              "term": "Aircraft Under Tow",
+              "definition": "An aeroplane being pulled or pushed by a heavy tractor (tug) using a towbar or towbarless system."
             },
             {
               "num": "10",
-              "term": "Movement Area",
-              "definition": "The aerodrome surface comprising runways, taxiways, and aprons used for aircraft surface movement."
+              "term": "Jet Blast",
+              "definition": "Rapid air stream produced by the engines of an aircraft, dangerous to personnel and equipment behind it."
             },
             {
               "num": "11",
-              "term": "Manoeuvring Area",
-              "definition": "The runways and taxiways strictly managed for aircraft surface movements, distinct from terminal servicing aprons."
+              "term": "FOD (Foreign Object Debris)",
+              "definition": "Loose items, trash, tools, or stones on the apron that can damage aircraft or be ingested by jet engines."
             },
             {
               "num": "12",
-              "term": "Pushback Tug",
-              "definition": "A specialized heavy vehicle used to push aircraft backward out of their parking stands into taxi lanes."
+              "term": "High-Visibility Vest",
+              "definition": "Fluorescent clothing with reflective strips required for all airside personnel to ensure they are visible."
             },
             {
               "num": "13",
-              "term": "Marshaller",
-              "definition": "Ground handling personnel using illuminated wands to guide pilots precisely into an apron parking stand."
+              "term": "Telematics",
+              "definition": "An onboard GPS tracking device recording vehicle speed, position, and harsh acceleration."
             },
             {
               "num": "14",
-              "term": "Foreign Object Debris (FOD)",
-              "definition": "Loose items, trash, or metal fragments on taxiways or runways capable of damaging aircraft engines or tires."
+              "term": "Speed Governor / Limiter",
+              "definition": "A mechanical or electronic device restricting a vehicle engine from exceeding a set speed (e.g. 20 km/h)."
             },
             {
               "num": "15",
-              "term": "Taxiway Centerline",
-              "definition": "A solid yellow line painted on taxiway pavement that pilots align with nose gear to ensure wingtip obstacle clearance."
+              "term": "Near-Miss",
+              "definition": "An unplanned event that did not result in injury or damage, but had significant potential to do so."
             },
             {
               "num": "16",
-              "term": "Runway-Holding Position",
-              "definition": "A mandatory painted marking (two solid and two dashed yellow lines) and red sign where aircraft must stop short."
+              "term": "Occurrence Reporting",
+              "definition": "The mandatory European system (Regulation 376/2014) for logging safety incidents without fear of blame."
             },
             {
               "num": "17",
-              "term": "Runway Incursion",
-              "definition": "Any unauthorized presence of an aircraft, vehicle, or pedestrian on a protected runway surface designated for takeoff or landing."
+              "term": "Fix-It Plan (CAP)",
+              "definition": "A structured Corrective Action Plan submitted by an operator detailing how safety defects will be resolved."
             },
             {
               "num": "18",
-              "term": "Runway Designator (Numbering)",
-              "definition": "The two-digit number painted on a runway end representing its magnetic azimuth rounded to the nearest 10 degrees."
+              "term": "Root Cause",
+              "definition": "The fundamental underlying reason why a safety failure occurred, rather than just the immediate symptom."
+            },
+            {
+              "num": "19",
+              "term": "Toolbox Talk",
+              "definition": "A short 10-minute informal safety briefing held with ramp teams at the beginning of a shift."
+            },
+            {
+              "num": "20",
+              "term": "Marshaller",
+              "definition": "A trained ground operations worker directing aircraft onto stand using hand-held illuminated wands."
+            },
+            {
+              "num": "21",
+              "term": "Turnaround",
+              "definition": "The complete cycle of unloading, servicing, cleaning, refuelling, and boarding an aircraft between flights."
+            },
+            {
+              "num": "22",
+              "term": "Chocks",
+              "definition": "Heavy rubber wedges placed against aircraft wheels to prevent accidental movement when parked."
+            },
+            {
+              "num": "23",
+              "term": "Engine Cowling",
+              "definition": "The removable metal casing covering an aircraft engine, vulnerable to ground vehicle collisions."
+            },
+            {
+              "num": "24",
+              "term": "Pitot Probe",
+              "definition": "A delicate exterior sensor on the aircraft nose measuring airspeed that must never be bumped."
+            },
+            {
+              "num": "25",
+              "term": "Audit Finding",
+              "definition": "A formal written statement by a safety inspector recording a deviation from required standards."
+            },
+            {
+              "num": "26",
+              "term": "Non-Compliance Notice",
+              "definition": "An official document issued to an operator requiring remediation of an observed safety infraction."
+            },
+            {
+              "num": "27",
+              "term": "Passive Voice",
+              "definition": "A grammatical structure ('it was observed') used to describe findings objectively without personal blame."
+            },
+            {
+              "num": "28",
+              "term": "Spot-Check",
+              "definition": "An unannounced, random safety inspection conducted on the ramp to verify compliance."
+            },
+            {
+              "num": "29",
+              "term": "Recurrent Training",
+              "definition": "Regular refresher courses (e.g. annually) ensuring staff keep safety knowledge fresh."
+            },
+            {
+              "num": "30",
+              "term": "Airside Access",
+              "definition": "Security-cleared permission to enter operational areas beyond the terminal passenger screening points."
             }
           ]
         },
@@ -1754,639 +1695,520 @@
       "3": {
         "session": 3,
         "objectives": {
-          "title": "Session 3 - Exemptions, Derogations & Consultations Objectives",
-          "summary": "By the end of this session, you will be able to handle complex administrative workflows involving exemptions, Alternative Means of Compliance (AltMoC), and inter-agency correspondence, apply formal connecting words of justification, critically appraise a derogation request file, and deliver a structured 3-minute inter-service briefing with confident Q&A handling.",
+          "title": "Session 3 - Special Requests & Runway Safety Cases Objectives",
+          "summary": "By the end of this session, GSEA students will be able to explain how airports handle real-world challenges through temporary permissions (exemptions), use connecting words to explain rules and conditions (provided that, due to, in order to, in lieu of), read an authentic runway works exemption file (+50% length), prepare and deliver a 3-minute spoken briefing to airline pilots, and complete a simple Safety Check.",
           "items": [
             {
               "num": 1,
-              "title": "Understand Regulatory Flexibility (Exemptions & AltMoC Framework)",
-              "description": "Explain how regional aerodromes manage situations where strict compliance is impossible, introducing Alternative Means of Compliance (AltMoC) and Article 71 exemption files."
+              "title": "Discuss Temporary Airport Work (Fluency & Spontaneous Speech)",
+              "description": "Brainstorm real reasons airports need to do heavy runway repairs without closing completely."
             },
             {
               "num": 2,
-              "title": "Master Formal Justification & Exception Lexicon (Advanced Technical Vocabulary)",
-              "description": "Acquire and use specialized administrative terms: exemption, derogation, Alternative Means of Compliance (AltMoC), safety case, hazard identification, equivalent level of safety (ELOS), substantiate, and invoke."
+              "title": "Understand Special Permissions (Exemptions & Flexibility)",
+              "description": "Learn how Article 71 permits temporary flexibility when standard rules cannot be met."
             },
             {
               "num": 3,
-              "title": "Deploy Formal Connecting Words (Grammar & Professional Register)",
-              "description": "Accurately apply formal connecting phrases of condition, exception, and justification: in lieu of, subject to approval, on a case-by-case basis, failing which, and provided that."
+              "title": "Connecting Words for Explaining Rules (Language Focus)",
+              "description": "Practice connecting phrases to give clear reasons: because of, provided that, in order to, as long as, in lieu of."
             },
             {
               "num": 4,
-              "title": "Critically Appraise a Derogation Request File (Document Deep-Dive)",
-              "description": "Review an excerpt from an EASA Guidance Material file under Article 71 of Regulation (EU) 2018/1139, evaluating safety cases against the Equivalent Level of Safety test."
+              "title": "Read the Runway Work Request (Authentic Document Scanning)",
+              "description": "Scan an authentic temporary exemption file (EASA/ADR-EXEMP/2024-009) for Runway 26 drainage repairs with a reduced safety area (RESA)."
             },
             {
               "num": 5,
-              "title": "Deliver a 3-Minute Inter-Service Spoken Briefing (Oral Presentation Skills)",
-              "description": "Deliver a concise spoken briefing to stakeholders and airport directors on an upcoming regulatory update or pending exemption request, using clear visual cues and structural signposts."
+              "title": "Deliver a 3-Minute Airline Briefing (Spoken Presentation)",
+              "description": "Prepare and deliver a spoken operational briefing to airline representatives explaining the 4 safety rules protecting flights."
             },
             {
               "num": 6,
-              "title": "Handle Spontaneous Stakeholder Q&A (Interaction & Active Listening)",
-              "description": "Respond effectively and diplomatically to challenging questions from airport management regarding ground handling turnaround impacts and compliance deadlines."
+              "title": "Complete the Decision Safety Check (Risk Evaluation)",
+              "description": "Evaluate the risks and agree on whether the runway works can be safely approved."
             }
           ]
         },
         "lessonPlan": {
           "title": "Session 3 Lesson Plan (2 Hours)",
-          "summary": "A 2-hour interactive session exploring regulatory flexibility clauses, formal connecting words of justification, critical analysis of an EASA Article 71 derogation file, and a 3-minute inter-service briefing simulation with stakeholder Q&A.",
+          "summary": "A 2-hour communicative spoken English session on temporary aerodrome works, Article 71 exemptions, connecting words for explaining rules, an airline operational briefing simulation, and a simple Safety Check.",
           "items": [
             {
               "time": "00-15",
-              "title": "Part 1: Warm-up: Regulatory Flexibility & Operational Exceptions (15 mins)",
-              "description": "Discussion on why strict compliance is sometimes physically or operationally impossible at regional aerodromes, introducing the concepts of AltMoC and Article 71 exemptions under Regulation (EU) 2018/1139."
+              "title": "Part 1: Warm-up: Keeping Airports Open During Repairs (15 mins)",
+              "description": "Pairs discuss how airports maintain operations during runway maintenance and answer 4 spot-check questions."
             },
             {
-              "time": "15-40",
-              "title": "Part 2: Formal Connecting Words & Exception Vocabulary (25 mins)",
-              "description": "Language focus on formal connecting words (in lieu of, subject to approval, on a case-by-case basis, failing which, provided that) and key terms (safety case, hazard identification, equivalent level of safety, substantiate, invoke)."
+              "time": "15-45",
+              "title": "Part 2: Reading the Runway Work Request (30 mins)",
+              "description": "Scanning authentic exemption file EASA/ADR-EXEMP/2024-009 (+50% length) for reduced RESA and the 4 compensatory safety rules."
             },
             {
-              "time": "40-75",
-              "title": "Part 3: Document Deep-Dive: The Derogation Request File (35 mins)",
-              "description": "Critical appraisal of an authentic EASA Guidance Material excerpt and aerodrome safety case summary. Students evaluate whether the proposal meets the Equivalent Level of Safety test and identify missing administrative data."
+              "time": "45-70",
+              "title": "Part 3: Connecting Words: Giving Reasons & Explaining Conditions (25 mins)",
+              "description": "Language clinic practicing condition linkers (provided that, as long as) and purpose/cause linkers (in order to, due to) across 5 exercises."
             },
             {
-              "time": "75-120",
-              "title": "Part 4: Interactive Simulation: The Inter-Service Briefing & Q&A (45 mins)",
-              "description": "Operational committee role-play: TSEEAC officers deliver a 3-minute spoken briefing on a regulatory change or pending exemption, followed by challenging questions from stakeholder peers (airport directors and technical specialists)."
+              "time": "70-105",
+              "title": "Part 4: Spoken Briefing: Explaining the Plan to Airline Pilots (35 mins)",
+              "description": "GSEA students prepare and deliver a 3-minute spoken presentation to airline representatives explaining the 4 safety rules, followed by Q&A."
+            },
+            {
+              "time": "105-120",
+              "title": "Part 5: Safety Check: Is it Safe to Land? (15 mins)",
+              "description": "Structured 4-step safety evaluation of the reduced RESA, overrun risks, compensatory barriers, and granting temporary operational approval."
             }
           ]
         },
         "lessonContent": {
           "hero": {
+            "title": "Special Requests & Runway Safety Cases",
+            "subtitle": "Temporary Works, Connecting Words & Airline Operational Briefings",
             "image": "images/s3_m1_session3_derogation.jpg",
-            "title": "Exemptions, Derogations & Consultations",
-            "subtitle": "Navigating AltMoC, Article 71 Exemption Files & Inter-Service Briefings"
+            "targetLevel": "CEFR B1–B2",
+            "roleContext": "GSEA Student Training • Aerodrome Safety & Works Planning",
+            "duration": "120 Minutes"
           },
           "openingSession": {
-            "title": "Activity 1: Aviation News & Previous Session Vocabulary Spot-Check (10 mins)",
-            "summary": "Every class begins with a 10-minute professional opening: analyzing current aviation headlines and spot-checking vocabulary from our previous session.",
-            "newsPrompts": [
-              "What major aviation, airline, or airport news stories have you noticed in the headlines this week?",
-              "How are airlines or aerodromes adapting to recent seasonal weather disruptions, traffic surges, or fleet developments?"
+            "title": "Activity 1: Warm-up: Keeping Airports Open During Repairs (15 mins)",
+            "summary": "Explore how airports manage urgent runway construction without shutting down completely.",
+            "modeBadges": [
+              "Pairs (2 students)",
+              "Spoken Brainstorm",
+              "Timing: 15 mins"
             ],
-            "spotCheck": {
-              "title": "Session 2 Vocabulary Spot-Check (Passenger Journey & Airfield Movement)",
+            "instructions": [
+              "In pairs, brainstorm what an airport does when its only runway has damaged drainage pipes.",
+              "Discuss the 4 Entry Check questions below.",
+              "Click 'Reveal Answer' to verify your understanding."
+            ],
+            "deliverable": "Shared list of 3 runway repair challenges and completed 4-question check.",
+            "teacherNotes": "Real airports cannot simply shut down for 6 weeks when runway pipes break. They need flexible solutions (called exemptions or derogations) that maintain 100% safety through compensatory rules.",
+            "newsPrompts": [
+              "What happens if an airport closes its main runway for a month? What is the impact on airlines and passengers?",
+              "Why is the grass area at the end of a runway (RESA) so important for landing planes?",
+              "How can an airport prove that an unusual plan is just as safe as following standard rules?"
+            ],
+            "diagnostic": {
+              "title": "Runway Works & Exemptions Entry Check",
+              "instructions": "Discuss each question with your partner, then click to reveal the answer.",
               "questions": [
                 {
                   "id": 1,
-                  "q": "What is the crucial operational distinction between 'airside' and 'landside'?",
-                  "answer": "Landside refers to public terminal areas before security checkpoints; airside encompasses secure boarding gates, ramps, taxiways, and runways accessible only to authorized personnel and ticketed passengers."
+                  "q": "What does RESA stand for, and what is its purpose?",
+                  "answer": "Runway End Safety Area: a cleared, level grass or paved safety buffer beyond the runway designed to stop an aeroplane that overruns or undershoots."
                 },
                 {
                   "id": 2,
-                  "q": "Why do runway designators consist of two numbers, such as Runway 09 and Runway 27?",
-                  "answer": "Runway numbers represent magnetic azimuth headings rounded to the nearest ten degrees (e.g., 09 = 090° East; 27 = 270° West). Opposite runway ends always differ by exactly 180°."
+                  "q": "What is a 'Displaced Threshold'?",
+                  "answer": "A landing line moved down the runway away from the physical end, used during construction or to clear obstacles on approach."
                 },
                 {
                   "id": 3,
-                  "q": "What is the primary function of taxiway centerline lighting and painted yellow lines?",
-                  "answer": "They provide continuous visual guidance to pilots taxying between the runway and parking stands, preventing surface incursions and ensuring wingtip obstacle clearance."
+                  "q": "In European law, what is an 'Article 71 Exemption'?",
+                  "answer": "A legal clause allowing civil aviation authorities to grant temporary flexibility (up to 8 months) for urgent operational needs, provided equivalent safety is proven."
                 },
                 {
                   "id": 4,
-                  "q": "What personal protective equipment (PPE) must apron staff wear airside at all times?",
-                  "answer": "High-visibility vests (fluorescent yellow/orange), hearing protection (ear defenders), steel-toe safety boots, and airport security identification badges (ASIC)."
+                  "q": "What is an 'Airline Flight Operations Committee'?",
+                  "answer": "A regular operational meeting where airport managers brief airline chief pilots and flight dispatchers on runway changes, weather procedures, and construction."
                 }
               ]
-            },
-            "modeBadges": [
-              "👥 Apron News & Spot-Check",
-              "⏱️ 5 min pairs + 5 min plenary",
-              "🗣️ Airside Vocabulary",
-              "✈️ Turnaround Briefing"
-            ],
-            "instructions": [
-              "Step 1 (News Review - 3 mins): Review the Apron Operations and Ground Safety news headlines with your partner.",
-              "Step 2 (Markings Recall - 4 mins): Take turns quizzing each other on 3 aerodrome markings from Session 2 (Holding Position, Taxiway Centerline, ILS Critical Area).",
-              "Step 3 (Spot-Check - 3 mins): Formulate a precise operational definition for one pair of terms when called upon by the instructor."
-            ],
-            "deliverable": "Spoken explanation of one ground handling news item and an accurate Session 2 aerodrome markings definition.",
-            "teacherNotes": "Cold-call pairs. Probe beyond basic definitions: ask why confusing an enhanced centerline with a standard centerline creates a runway incursion risk."
-          },
-          "turnaroundClock": {
-            "title": "Activity 2: The Turnaround Clock (15 mins)",
-            "summary": "The turnaround is the critical period between an aircraft parking at the gate (chocks-on) and departing for its next flight (chocks-off). Modern regional and short-haul turnarounds typically target a 35 to 45-minute servicing window where multiple teams work simultaneously.",
-            "milestones": [
-              {
-                "time": "T+00 to T+05",
-                "phase": "Arrival & Chocks-On",
-                "desc": "Engines spool down, anti-collision beacons switched off, wheel chocks inserted, boarding bridge or airstairs connected, deboarding commences."
-              },
-              {
-                "time": "T+05 to T+20",
-                "phase": "Parallel Ground Servicing",
-                "desc": "Belt loaders position at forward/aft cargo doors; catering hi-lift connects to service doors; GPU supplies 400Hz electricity; potable water and lavatory trucks service underside ports."
-              },
-              {
-                "time": "T+15 to T+30",
-                "phase": "Aircraft Refueling",
-                "desc": "Fuel bowser or hydrant dispenser connects to wing underwing nozzles; fueling is coordinated with cabin safety protocols."
-              },
-              {
-                "time": "T+25 to T+35",
-                "phase": "Boarding & Final Loading",
-                "desc": "Outbound passengers board; outbound baggage loaded and cargo hold secured; final loadsheet and passenger manifest verified."
-              },
-              {
-                "time": "T+35 to T+45",
-                "phase": "Stand Clearance & Pushback",
-                "desc": "Doors closed and cross-checked, jet bridge disconnected, tug connected via bypass pin, pushback clearance approved, chocks removed."
-              }
-            ],
-            "discussionPrompts": [
-              "Why must ground servicing tasks occur in parallel rather than in a linear sequence?",
-              "What safety communication must take place between the ramp coordinator and the flight crew before passenger boarding can begin during refueling?"
-            ],
-            "grammarBox": {
-              "title": "Grammar Focus: Past Simple vs. Present Perfect on the Ramp",
-              "rule": "Use Past Simple for completed actions with a finished time marker (e.g. at 14:10, 10 minutes ago). Use Present Perfect for actions connected to the present, completed recently, or still pending (using already, yet, just).",
-              "examples": [
-                {
-                  "type": "Past Simple",
-                  "text": "\"Flight BA342 <strong>landed</strong> at 14:15, and the marshals <strong>placed</strong> the chocks five minutes later.\""
-                },
-                {
-                  "type": "Present Perfect",
-                  "text": "\"The catering crew <strong>have already loaded</strong> the forward galleys, but the baggage handlers <strong>have not closed</strong> the aft cargo door yet.\""
-                }
-              ]
-            },
-            "modeBadges": [
-              "⏱️ Critical Path Timeline",
-              "⏱️ 5 min analysis + 10 min pairs",
-              "✈️ 35-Min Servicing Window",
-              "🗣️ Sequencing Tenses"
-            ],
-            "instructions": [
-              "Step 1 (Timeline Analysis - 4 mins): Analyze the Turnaround Clock milestones from T-35 (chocks on, engine shutdown) to T+0 (pushback clearance).",
-              "Step 2 (Concurrent Paths - 6 mins): Identify critical path operations that run concurrently: passenger deplaning, baggage offloading, refueling, catering, and cleaning.",
-              "Step 3 (Sequencing Practice - 5 mins): Practice spoken sequencing tenses: describe what must be completed *before* refueling commences and *while* boarding is underway."
-            ],
-            "deliverable": "Deliver a 45-second spoken briefing describing 3 concurrent ramp operations using sequencing linkers ('simultaneously', 'prior to', 'upon completion of').",
-            "teacherNotes": "Emphasize critical path theory: if catering arrives 5 minutes late, why does it cascade into a 20-minute slot loss? Review passive forms ('chocks are inserted', 'fueling is suspended')."
-          },
-          "vehicles": [
-            {
-              "id": 1,
-              "name": "Pushback Tug (Tractor)",
-              "phonetic": "/ˈpʊʃ.bæk tʌɡ/",
-              "category": "Motive Power",
-              "color": "amber",
-              "clues": [
-                "Low-profile, extremely heavy vehicle with four-wheel drive and heavy ballasts.",
-                "Connects to the nose landing gear using a heavy metal towbar or a towbarless cradle lift.",
-                "Used to push the aircraft backwards away from the passenger gate into the taxi lane."
-              ],
-              "sentenceStarters": [
-                "This vehicle is designed to...",
-                "Handlers attach it to the nose gear so that..."
-              ],
-              "modelSentence": "The pushback tug is a heavy, low-profile vehicle that pushes aircraft backward away from the terminal gate into the taxi lane.",
-              "definingPractice": "It is a heavy vehicle which connects to the nose gear to move the aircraft backwards when main engines cannot provide reverse thrust."
-            },
-            {
-              "id": 2,
-              "name": "Ground Power Unit (GPU)",
-              "phonetic": "/ɡraʊnd ˈpaʊ.ər ˈjuː.nɪt/",
-              "category": "Electrical Systems",
-              "color": "blue",
-              "clues": [
-                "Mobile diesel-powered generator or fixed electric cable boom attached to the gate.",
-                "Supplies 115V / 400Hz alternating current through a thick, heavy yellow electrical cable.",
-                "Provides electricity for cabin lighting, air conditioning, and avionics while jet engines are shut down."
-              ],
-              "sentenceStarters": [
-                "This unit is used for...",
-                "Ground staff connect it to the forward fuselage in order to..."
-              ],
-              "modelSentence": "The Ground Power Unit is an external mobile generator that supplies electrical power to the aircraft systems while the main engines and auxiliary power unit are turned off.",
-              "definingPractice": "It is an external power source which supplies electricity to cabin lights and cockpit instruments while on stand."
-            },
-            {
-              "id": 3,
-              "name": "Belt Loader",
-              "phonetic": "/bɛlt ˈloʊ.dər/",
-              "category": "Baggage & Cargo",
-              "color": "emerald",
-              "clues": [
-                "Vehicle fitted with an adjustable, motor-driven inclined conveyor belt.",
-                "Positions directly against the lower cargo door sill of narrow-body aircraft.",
-                "Used by baggage handlers to transfer loose passenger luggage and postal sacks into the hold."
-              ],
-              "sentenceStarters": [
-                "This vehicle is equipped with...",
-                "Ramp handlers rely on it to..."
-              ],
-              "modelSentence": "The belt loader is a motorized conveyor ramp used to load and unload loose passenger baggage and freight into the lower cargo hold.",
-              "definingPractice": "It is a motorized conveyor which allows ramp agents to transfer suitcases into the aircraft belly quickly and safely."
-            },
-            {
-              "id": 4,
-              "name": "Aviation Refueler Truck (Bowser)",
-              "phonetic": "/ˌeɪ.viˈeɪ.ʃən rɪˈfjuː.ə.lər trʌk/",
-              "category": "Aircraft Fueling",
-              "color": "rose",
-              "clues": [
-                "Large tanker truck carrying thousands of liters of Jet A-1 kerosene, or a hydrant dispenser.",
-                "Connects high-pressure delivery hoses directly to refueling intake valves under the wings.",
-                "Equipped with emergency shut-off valves, grounding cables, and fuel filtration meters."
-              ],
-              "sentenceStarters": [
-                "This tanker is designed to...",
-                "Before pumping fuel, operators must ground it so that..."
-              ],
-              "modelSentence": "The aviation refueler is a specialized tanker vehicle designed to pump kerosene into aircraft wing tanks under high pressure.",
-              "definingPractice": "It is a tanker or hydrant vehicle that supplies aviation kerosene directly into the wings while adhering to strict fire safety protocols."
-            },
-            {
-              "id": 5,
-              "name": "Passenger Boarding Stairs (Airstairs)",
-              "phonetic": "/ˈpæs.ən.dʒər ˈbɔːr.dɪŋ steərz/",
-              "category": "Passenger Access",
-              "color": "indigo",
-              "clues": [
-                "Mobile wheeled stairway mounted on a truck chassis or towed manually.",
-                "Elevates to match the sill height of aircraft passenger doors (forward and aft).",
-                "Enables safe boarding and deboarding when an aircraft is parked on a remote parking stand."
-              ],
-              "sentenceStarters": [
-                "This mobile staircase allows passengers to...",
-                "It is driven up to the aircraft doors when..."
-              ],
-              "modelSentence": "Passenger boarding stairs provide an adjustable mobile staircase that allows passengers to embark and disembark safely on remote apron stands.",
-              "definingPractice": "It is a mobile staircase which connects to the cabin doors when a telescopic jet bridge is unavailable."
-            },
-            {
-              "id": 6,
-              "name": "Catering Hi-Lift Truck",
-              "phonetic": "/ˈkeɪ.tər.ɪŋ ˈhaɪ.lɪft trʌk/",
-              "category": "Cabin Servicing",
-              "color": "purple",
-              "clues": [
-                "Large box truck equipped with an electro-hydraulic scissor-lift mechanism.",
-                "Raises the insulated van body up to cabin door level so staff can walk directly inside.",
-                "Transports food meal carts, beverage drawers, and duty-free supplies for galley replenishment."
-              ],
-              "sentenceStarters": [
-                "This vehicle is fitted with a scissor lift so that...",
-                "Catering personnel use it to..."
-              ],
-              "modelSentence": "The catering hi-lift truck is equipped with a hydraulic scissor lift that raises meal carts and galley supplies directly to cabin door height.",
-              "definingPractice": "It is a specialized van which elevates to cabin level to replenish galley trolleys, meals, and beverages between flights."
-            },
-            {
-              "id": 7,
-              "name": "Potable Water Truck",
-              "phonetic": "/ˈpoʊ.tə.bəl ˈwɔː.tər trʌk/",
-              "category": "Sanitary Utilities",
-              "color": "cyan",
-              "clues": [
-                "Sanitary stainless-steel tanker vehicle with dedicated filtration hoses.",
-                "Hooks into the fresh water servicing panel located under the rear fuselage.",
-                "Refills the aircraft drinking water tanks used for lavatory washbasins and hot galley water."
-              ],
-              "sentenceStarters": [
-                "This sanitary tanker is used to...",
-                "It connects to the underside panel in order to..."
-              ],
-              "modelSentence": "The potable water truck is a dedicated sanitary vehicle that replenishes the aircraft tanks with fresh drinking water for lavatory washbasins and galley brewing.",
-              "definingPractice": "It is a stainless-steel service vehicle that pumps purified drinking water into the aircraft storage tanks."
-            },
-            {
-              "id": 8,
-              "name": "Lavatory Service Truck (Waste Servicing)",
-              "phonetic": "/ˈlæv.ə.tɔːr.i ˈsɜːr.vɪs trʌk/",
-              "category": "Waste Disposal",
-              "color": "slate",
-              "clues": [
-                "Specialized vehicle equipped with a heavy-duty suction hose and disinfectant flushing tank.",
-                "Attaches to the toilet waste drainage port on the lower rear fuselage.",
-                "Empties the aircraft vacuum waste holding tanks and rinses them with blue deodorizing chemical."
-              ],
-              "sentenceStarters": [
-                "This vehicle is responsible for...",
-                "Ground staff operate this unit to..."
-              ],
-              "modelSentence": "The lavatory service truck empties the aircraft waste holding tanks and flushes the system with sanitizing chemical fluid during ground turnaround.",
-              "definingPractice": "It is a specialized utility vehicle which drains, vacuums, and disinfects aircraft toilet tanks between scheduled flights."
-            },
-            {
-              "id": 9,
-              "name": "De-icing / Anti-icing Rig",
-              "phonetic": "/diːˈaɪ.sɪŋ rɪɡ/",
-              "category": "Winter Operations",
-              "color": "teal",
-              "clues": [
-                "Heavy truck equipped with a telescoping hydraulic boom and enclosed operator cab.",
-                "Heats and sprays glycol-based de-icing and anti-icing fluids under high pressure.",
-                "Removes frost, snow, and slush from wings and tail surfaces, preventing critical aerodynamic loss."
-              ],
-              "sentenceStarters": [
-                "This rig is deployed whenever...",
-                "The operator in the elevated bucket sprays fluid to..."
-              ],
-              "modelSentence": "The de-icing rig features an elevated cherry-picker bucket from which operators spray heated glycol fluid to remove snow, frost, and ice from wings and tail planes.",
-              "definingPractice": "It is a heavy winter-operations vehicle which sprays heated glycol fluid onto control surfaces to ensure safe aerodynamic lift during takeoff."
-            },
-            {
-              "id": 10,
-              "name": "Follow-Me Car",
-              "phonetic": "/ˈfɑː.loʊ miː kɑːr/",
-              "category": "Airfield Guidance",
-              "color": "amber",
-              "clues": [
-                "Distinctive high-visibility vehicle with yellow-and-black checkered markings and flashing amber beacons.",
-                "Features an illuminated digital display on the roof reading 'FOLLOW ME' or navigational arrows.",
-                "Guides landing aircraft safely across complex taxiway intersections to their designated parking stands."
-              ],
-              "sentenceStarters": [
-                "This vehicle leads aircraft when...",
-                "Ramp safety and aerodrome operations officers dispatch it to..."
-              ],
-              "modelSentence": "The Follow-Me car is a high-visibility guidance vehicle with flashing roof beacons that escorts taxiing aircraft to their assigned stands during low visibility or complex taxi routing.",
-              "definingPractice": "It is a brightly marked safety vehicle which leads arriving aircraft across the taxiway system directly to their parking gate."
             }
-          ],
-          "safetyDelays": {
-            "title": "Activity 4: Apron Safety & Cause-Effect Linkers (25 mins)",
-            "summary": "Every minute on the ramp is strictly accounted for. When an unexpected incident occurs, TSEEAC aerodrome operations officers, AFISOs, and ramp coordinators must communicate the root cause and immediate consequence clearly using formal linkers.",
-            "linkers": [
-              {
-                "category": "Expressing Cause",
-                "pattern": "due to + noun phrase / owing to + noun phrase / because of + noun phrase",
-                "example": "<strong>Owing to a sudden hydraulic failure</strong> on the belt loader, baggage unloading was paused."
-              },
-              {
-                "category": "Expressing Consequence",
-                "pattern": "Consequently, ... / As a result, ... / resulted in + gerund / led to + noun",
-                "example": "The fueling truck arrived late; <strong>consequently</strong>, the flight missed its assigned departure slot."
-              },
-              {
-                "category": "Expressing Operational Conditions",
-                "pattern": "If + Present Simple, [Subject] + will / must + Base Verb",
-                "example": "<strong>If the catering hi-lift does not clear the safety zone</strong>, the pushback tug <strong>cannot attach</strong> the towbar."
-              }
+          },
+          "documentExtract": {
+            "title": "Activity 2: Reading the Runway Work Request (30 mins)",
+            "summary": "Scan an authentic temporary exemption file for Runway 26 drainage culvert repairs.",
+            "modeBadges": [
+              "Pairs or Small Groups",
+              "Document Scanning",
+              "Timing: 30 mins"
             ],
-            "scenarios": [
+            "instructions": [
+              "Read the simulated Exemption File EASA/ADR-EXEMP/2024-009 below.",
+              "Carefully note the 4 Mandatory Safety Rules protecting landing aircraft.",
+              "Work with your partner to answer the 4 comprehension questions.",
+              "Click 'Reveal Answer' to check your answers."
+            ],
+            "deliverable": "Completed comprehension answers identifying the 4 compensatory safety rules.",
+            "teacherNotes": "Help students recognize the logical structure of an exemption file: 1) What is the problem? 2) Why is standard compliance impossible? 3) What extra safety steps are put in place? This forms the basis of their spoken briefing in Activity 4.",
+            "docRef": "European Civil Aviation Authority • Exemption File EASA/ADR-EXEMP/2024-009",
+            "docText": "[EUROPEAN UNION CIVIL AVIATION REGULATORY FRAMEWORK — OPERATIONAL EXEMPTION FILE]\nFile Reference: EASA/ADR-EXEMP/2024-009 • Date: 12 September 2024\nLegal Basis: Regulation (EU) 2018/1139, Article 71 (Urgent Operational Needs & Exceptional Circumstances)\nApplicant: Aerodrome Operations Authority — Toulouse-Blagnac Aerodrome (LFBO)\nSubject: Temporary 45-day Exemption: Runway End Safety Area (RESA) Length Reduction on Runway 26 for Critical Drainage Works\n\n1. Operational Background & Problem Statement\n(a) Heavy rainfall during the previous winter caused significant subsoil subsidence beneath the Runway 26 overrun area, damaging underground concrete stormwater culverts. Failure to replace these culverts threatens runway sub-base structural integrity.\n(b) To allow heavy excavation machinery and concrete pouring within the strip, the available Runway End Safety Area (RESA) beyond the end of the runway strip must be temporarily reduced from the standard 90 metres required by CS-ADR-DSN.A.045 down to 55 metres for a period of 45 consecutive days (15 October to 28 November 2024).\n\n2. Mandatory Compensatory Safety Rules (Flight Protection Barriers)\nPermission for this temporary reduction is granted provided that the aerodrome operator strictly enforces the following four mandatory safety rules:\nRule 1 — Displaced Landing Threshold:\nThe landing threshold for Runway 26 shall be temporarily displaced by 180 metres down the runway. This guarantees that landing aeroplanes have full standard landing distance available (LDA) and touch down well beyond the works zone.\nRule 2 — Wet Runway Ban:\nLandings on Runway 26 shall be strictly prohibited whenever braking action is reported as degraded, or when water depth exceeds 3 millimetres (wet / contaminated runway). Under such meteorological conditions, arriving flights must divert to secondary Runway 14/32 or an alternate aerodrome.\nRule 3 — Crosswind Limitation:\nThe maximum allowable crosswind component for arriving aircraft on Runway 26 is capped at 15 knots (reduced from the standard 25 knots) to prevent directional control loss during landing rollout.\nRule 4 — Dedicated Emergency Standby:\nA dedicated Crash Fire Rescue (RFFS) major foam vehicle shall remain stationary on immediate 60-second standby at Holding Point B2 during all scheduled flight movements.\n\n3. Duration & Notification\nThis operational exemption expires automatically after 45 days. The aerodrome operator shall publish comprehensive NOTAM and AIP Supplements at least 14 days prior to commencing works.",
+            "questions": [
               {
                 "id": 1,
-                "title": "Scenario 1: Hydraulic Fluid Spillage on Stand 12",
-                "cause": "A ruptured high-pressure hose on the pushback tractor spilled hydraulic fluid across the aircraft nose-gear area.",
-                "consequence": "Ramp safety teams were summoned to deploy absorbent granules, suspending all aircraft movements for 25 minutes.",
-                "spokenTask": "Explain this delay to a supervisor using 'due to' and 'resulted in'."
+                "q": "Why does the airport need to reduce the runway safety area (RESA)?",
+                "answer": "Heavy rain damaged concrete stormwater drainage pipes under the overrun area, requiring 45 days of excavation and repairs."
               },
               {
                 "id": 2,
-                "title": "Scenario 2: Foreign Object Debris (FOD) on Taxiway Mike",
-                "cause": "A metal cargo container latch snapped off a baggage trailer and lay on the centerline.",
-                "consequence": "Arriving traffic was halted until an aerodrome safety vehicle completed a sweep and removed the debris.",
-                "spokenTask": "Explain this incident to aerodrome operations using 'owing to' and 'consequently'."
+                "q": "How many metres is the safety area reduced by?",
+                "answer": "It is reduced from standard 90 metres down to 55 metres (a reduction of 35 metres)."
               },
               {
                 "id": 3,
-                "title": "Scenario 3: Severe Wing Contamination in Freezing Fog",
-                "cause": "Sub-zero temperatures and high humidity produced clear ice along the aircraft leading-edge slats.",
-                "consequence": "The captain requested remote anti-icing, requiring a slot revision and an extra 15-minute taxi delay.",
-                "spokenTask": "Explain this operational decision using 'because of' and 'led to'."
+                "q": "What four safety rules protect flights while the runway work takes place?",
+                "answer": "1) 180m displaced threshold, 2) strictly no landings on wet runways, 3) crosswind capped at 15 knots, and 4) fire engine on immediate standby at Holding Point B2."
               },
               {
                 "id": 4,
-                "title": "Scenario 4: Unauthorized Service Vehicle in the Reversing Zone",
-                "cause": "A maintenance contractor van parked directly inside the red no-parking corridor behind the aircraft tail.",
-                "consequence": "The catering hi-lift driver was unable to reverse away from door 2R, blocking ground clearance.",
-                "spokenTask": "Describe the safety hazard using 'as a result of' and 'therefore'."
+                "q": "What must arriving flights do if the runway becomes wet during rain?",
+                "answer": "Landings on Runway 26 are strictly prohibited in wet weather; flights must land on Runway 14/32 or divert to an alternate airport."
               }
-            ],
+            ]
+          },
+          "rulesPractice": {
+            "title": "Activity 3: Connecting Words: Giving Reasons & Explaining Conditions (25 mins)",
+            "summary": "Learn how to link ideas in English using words for conditions, causes, purposes, and replacements.",
             "modeBadges": [
-              "🚨 Apron Safety & Incident Analysis",
-              "⏱️ 10 min analysis + 15 min pairs",
-              "✍️ Cause-Effect Linkers",
-              "📋 Root Cause Analysis"
+              "Individual & Pairs",
+              "Language Clinic",
+              "Timing: 25 mins"
             ],
             "instructions": [
-              "Step 1 (Grammar Review - 5 mins): Review the 4 Cause-Effect grammatical patterns: 'due to / owing to' + noun phrase, 'as a result of', and 'consequently / therefore'.",
-              "Step 2 (Scenario Dissection - 8 mins): Work through the 4 Ramp Incident Case Scenarios (hydraulic fluid spill, FOD on taxiway, wing icing, unauthorized contractor vehicle).",
-              "Step 3 (Spoken Transformation - 7 mins): Deliver the required spoken task for each scenario, transforming the root cause into a professional operational incident report."
+              "Study the Connecting Words table below.",
+              "Notice how phrases like 'provided that', 'due to', and 'in lieu of' make your explanations clear and professional.",
+              "Complete the 5 gap-fill sentences below, then click 'Check Answer' to see the explanation."
             ],
-            "deliverable": "Spoken delivery of 2 formal incident reports using advanced cause-effect linkers without grammatical slips.",
-            "teacherNotes": "Highlight the difference between prepositional linkers ('due to heavy snow') and conjunctive adverbs ('consequently, the apron was closed'). Point out common error: '*due to because'."
-          },
-          "simulation": {
-            "title": "Activity 5: TSEEAC Operations Simulation & Shift Handover Briefing (30 mins)",
-            "context": "Flight BA342 (Airbus A320) is scheduled for a tight 40-minute turnaround. The aircraft arrived on stand at 14:15. Target off-blocks time (pushback) is 14:55. It is currently 14:32. Three simultaneous operational complications have just occurred on the ramp.",
-            "bottlenecks": [
+            "deliverable": "5 accurately completed sentences using professional connecting words.",
+            "teacherNotes": "In spoken briefings, connecting words are essential. They allow students to explain WHY a decision was made and WHAT CONDITIONS must be met without sounding confused.",
+            "rulesTable": [
               {
-                "id": "A",
-                "title": "Electrical Power Trip (GPU)",
-                "desc": "The mobile Ground Power Unit tripped its circuit breaker. The cabin has lost auxiliary power, lighting, and ventilation during warm weather."
+                "word": "Provided that / As long as",
+                "meaning": "On the condition that",
+                "example": "Aircraft may land provided that the runway surface is dry.",
+                "tip": "Introduces a strict safety requirement."
               },
               {
-                "id": "B",
-                "title": "Baggage Conveyor Jam",
-                "desc": "The aft belt loader jammed while unloading 50 heavy transit bags. The replacement belt loader is currently stationed at the remote maintenance hangar."
+                "word": "Due to / Because of",
+                "meaning": "For the reason that",
+                "example": "The safety area is reduced due to urgent drainage culvert repairs.",
+                "tip": "Followed by a noun phrase explaining the cause."
               },
               {
-                "id": "C",
-                "title": "Refueling Safety Hold",
-                "desc": "The refueler arrived 12 minutes late. Ground safety rules strictly forbid fuel pumping while passengers are deboarding unless rescue fire crews are stationed on stand."
+                "word": "In order to",
+                "meaning": "For the purpose of",
+                "example": "We displaced the threshold by 180m in order to protect stopping distance.",
+                "tip": "Followed by an infinitive verb ('in order to protect')."
+              },
+              {
+                "word": "In lieu of",
+                "meaning": "In place of / Instead of",
+                "example": "We positioned temporary orange markers in lieu of standard white paint.",
+                "tip": "Useful when one safety measure replaces another."
+              },
+              {
+                "word": "Unless",
+                "meaning": "Except if",
+                "example": "No heavy aircraft may land unless the crosswind is under 15 knots.",
+                "tip": "Sets a clear boundary condition."
               }
             ],
+            "drills": [
+              {
+                "id": 1,
+                "sentence": "Aircraft may land on Runway 26 _______ the runway surface is completely dry.",
+                "options": [
+                  "provided that",
+                  "in lieu of",
+                  "due to"
+                ],
+                "correct": "provided that",
+                "rationale": "'Provided that' introduces the mandatory safety condition (dry runway)."
+              },
+              {
+                "id": 2,
+                "sentence": "The available safety area was temporarily reduced _______ urgent culvert reconstruction.",
+                "options": [
+                  "due to",
+                  "in order to",
+                  "unless"
+                ],
+                "correct": "due to",
+                "rationale": "'Due to' is followed by the noun phrase 'urgent culvert reconstruction', explaining the cause."
+              },
+              {
+                "id": 3,
+                "sentence": "The threshold was displaced by 180 metres _______ give pilots full stopping distance.",
+                "options": [
+                  "in order to",
+                  "provided that",
+                  "in lieu of"
+                ],
+                "correct": "in order to",
+                "rationale": "'In order to' expresses the purpose and is followed by the base verb 'give'."
+              },
+              {
+                "id": 4,
+                "sentence": "High-intensity flashing guard lights were installed _______ standard painted markings.",
+                "options": [
+                  "in lieu of",
+                  "unless",
+                  "due to"
+                ],
+                "correct": "in lieu of",
+                "rationale": "'In lieu of' means 'instead of' or 'replacing'."
+              },
+              {
+                "id": 5,
+                "sentence": "Approaching aircraft must divert to Runway 14/32 _______ the crosswind component is 15 knots or less.",
+                "options": [
+                  "unless",
+                  "in order to",
+                  "because of"
+                ],
+                "correct": "unless",
+                "rationale": "'Unless' means 'except if the crosswind is 15 knots or less'."
+              }
+            ]
+          },
+          "spokenActivity": {
+            "title": "Activity 4: Spoken Briefing: Explaining the Plan to Airline Pilots (35 mins)",
+            "summary": "Deliver a clear, reassuring 3-minute operational briefing to airline representatives.",
+            "modeBadges": [
+              "Pairs / Small Groups",
+              "Spoken Presentation",
+              "Timing: 35 mins"
+            ],
+            "instructions": [
+              "Work in pairs or groups of 3: Speaker 1 (GSEA Operations Officer), Speaker 2 (Airline Flight Ops Manager), Speaker 3 (Observer / Chief Pilot).",
+              "You have 6 minutes to prepare your 3-minute spoken briefing using the 4-part structure.",
+              "Deliver your briefing aloud. The airline manager asks 2 realistic questions about weather delays or diversions.",
+              "Switch roles so everyone practices delivering the spoken briefing."
+            ],
+            "deliverable": "3-minute spoken briefing delivered with confident explanation of all 4 safety rules.",
+            "teacherNotes": "This activity builds presentation confidence. Remind students: don't read word-for-word from notes! Speak directly, make eye contact, and use signpost phrases like 'Today I will explain...', 'First...', 'In conclusion...'.",
+            "scenario": "You are the GSEA Aerodrome Operations Officer briefing the Airline Flight Operations Committee two weeks before the Runway 26 culvert repairs begin. The airline managers are worried about flight delays, diversions, and passenger disruption.",
             "roles": [
               {
-                "role": "Student A: Ramp Coordinator (Ground Operations)",
-                "mission": "Assess immediate physical safety on the stand. Coordinate ground handling personnel, dispatch replacement equipment, and establish a realistic recovery sequence."
+                "title": "Role A: GSEA Operations Officer (Presenter)",
+                "badge": "Spoken Briefing",
+                "bullets": [
+                  "Welcome the airline representatives and state the purpose of the briefing.",
+                  "Explain why the work is essential (damaged underground drainage culverts).",
+                  "Present the 4 safety rules clearly: displaced threshold, wet ban, crosswind cap, fire engine standby.",
+                  "Reassure airlines that flight safety is 100% protected."
+                ]
               },
               {
-                "role": "Student B: TSEEAC Aerodrome Operations Officer / AFISO",
-                "mission": "Monitor departure slot adherence (CTOT). Liaise with air traffic services regarding a possible 15-minute slot revision, verify fire safety regulations, and prioritize passenger boarding."
+                "title": "Role B: Airline Flight Ops Manager",
+                "badge": "Challenging Q&A",
+                "bullets": [
+                  "Listen to the briefing and take notes on potential flight impacts.",
+                  "Ask: 'What happens if sudden rain begins while our Airbus A320 is on final approach?'",
+                  "Ask: 'Why is the crosswind limit reduced to 15 knots, and will this cause many diversions?'"
+                ]
+              },
+              {
+                "title": "Role C: Observer / Peer Coach",
+                "badge": "Feedback",
+                "bullets": [
+                  "Time the briefing (target: 3 minutes).",
+                  "Check: Did the speaker explain all 4 safety rules clearly?",
+                  "Check: Did the speaker use connecting words (provided that, due to, in order to)?",
+                  "Give 2 positive points and 1 helpful suggestion."
+                ]
               }
             ],
-            "recoveryInstructions": "Work together in pairs to agree on a prioritized 3-step action plan using modal verbs of necessity and obligation (must, should, have to, need to). Prepare to defend your sequence to the class.",
+            "usefulPhrases": [
+              "Good morning everyone. Today I will brief you on the upcoming Runway 26 works...",
+              "The repairs are necessary due to damaged stormwater drainage culverts.",
+              "To ensure that all flights remain completely safe, we have put in place 4 mandatory safety rules.",
+              "First, the threshold has been displaced by 180 metres in order to give aircraft full landing distance.",
+              "Second, landings are strictly prohibited when the runway is wet; flights will divert to Runway 14/32.",
+              "Third, crosswinds are capped at 15 knots, and fourth, a dedicated fire truck is on 60-second standby.",
+              "Are there any questions regarding our operational plan?"
+            ]
+          },
+          "safetyCheck": {
+            "title": "Activity 5: Safety Check: Is it Safe to Land? (15 mins)",
+            "summary": "Complete the decision check table evaluating the reduced safety area and safety rules.",
             "modeBadges": [
-              "📻 TSEEAC Shift Handover Simulation",
-              "⏱️ 12 min prep + 18 min briefings",
-              "🗣️ 60-Second Handover Standard",
-              "🤝 Ramp Crisis Management"
+              "Whole Class / Pairs",
+              "Safety Evaluation",
+              "Timing: 15 mins"
             ],
             "instructions": [
-              "Step 1 (Situation Report - 4 mins): Examine the Operational Situation Report: 3 simultaneous ramp bottlenecks (fuel spill Stand 14, conveyor belt failure Stand 16, lost transfer baggage).",
-              "Step 2 (Role Allocation & Briefing Prep - 8 mins): Partner A acts as Outgoing Ramp Coordinator delivering the 4-part Shift Handover Briefing; Partner B acts as Incoming Ramp Coordinator preparing tactical follow-up questions.",
-              "Step 3 (Simulation & Model Check - 6 mins): Conduct the spoken handover simulation. Review the 60-Second Shift Handover Briefing model or click the audio icon to listen to the speech pronunciation."
+              "Review the 4 questions in the Safety Check table below.",
+              "Check that you can explain each answer clearly in your own words.",
+              "Agree on the final operational decision."
             ],
-            "deliverable": "Flawless delivery of a 60-second spoken shift handover briefing following the 4-part operational standard.",
-            "teacherNotes": "Time each student briefing with a stopwatch. Cut them off at exactly 60 seconds to simulate real-world operational pressure. Evaluate for conciseness, calm delivery, and zero filler words."
-          },
-          "briefing": {
-            "title": "The 60-Second Shift Handover Briefing",
-            "summary": "Professional aviation operations depend on clear, concise spoken handovers. When handing over responsibility to the incoming shift, TSEEAC aerodrome operations personnel and AFISO officers follow a four-part briefing structure:",
-            "structure": [
+            "deliverable": "Completed Safety Check table verified by all students.",
+            "teacherNotes": "Emphasize the concept of 'Compensatory Safety Steps' in plain English: when one standard margin is temporarily reduced, we add other safety rules so total safety never drops.",
+            "rows": [
               {
-                "step": "1. Identification",
-                "desc": "State the stand number, airline, flight number, and aircraft type.",
-                "phrase": "\"Stand Charlie-4 is currently handling Flight BA342, an Airbus A320 inbound from London.\""
+                "question": "1. What is the problem?",
+                "answer": "The Runway End Safety Area (RESA) on Runway 26 is reduced from 90m to 55m for 45 days during drainage works."
               },
               {
-                "step": "2. Operational Status",
-                "desc": "Report what has been completed and what is currently in progress.",
-                "phrase": "\"Deboarding concluded at 14:26; however, cargo unloading and refueling have encountered delays.\""
+                "question": "2. What could happen?",
+                "answer": "If an aircraft lands too long or suffers a braking problem, it could overrun the runway into the excavation ditch."
               },
               {
-                "step": "3. Root Cause of Delay",
-                "desc": "Explain the delay using precise cause-and-effect connectors.",
-                "phrase": "\"Due to an electrical trip on the GPU and a late-arriving fuel dispenser, the turnaround is running 15 minutes behind schedule.\""
+                "question": "3. Why is it safe anyway?",
+                "answer": "Four strict safety rules protect flights:<br>1) 180m displaced threshold gives full stopping distance.<br>2) Landings banned on wet runways.<br>3) Crosswind limit capped at 15 knots.<br>4) Fire rescue engine on 60-second standby at Holding Point B2."
               },
               {
-                "step": "4. Action & Revised ETD",
-                "desc": "State the mitigation in progress and the revised departure time.",
-                "phrase": "\"A backup belt loader is now on stand, and refueling has commenced. Revised off-blocks is 15:15. Slot revision has been coordinated with air traffic services.\""
+                "question": "4. Our Decision",
+                "answer": "APPROVED: The 4 safety rules protect flights; temporary permission is granted for 45 days."
               }
-            ],
-            "spokenModel": "\"Stand Charlie-4 is currently servicing Flight BA342 to London Heathrow. Passenger deboarding concluded on schedule at 14:25; however, cargo loading and refueling have been disrupted. Due to an electrical trip on the GPU and an overheated conveyor on the aft belt loader, handlers were forced to request replacement equipment. Consequently, the turnaround is running 15 minutes behind schedule. The replacement loader has just arrived on stand, and fueling is underway. We have coordinated with air traffic services for a revised departure slot at 15:15. Please monitor the final pushback clearance.\""
-          },
-          "closingReview": {
-            "title": "Activity 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-            "summary": "The final 10 minutes consolidate today's high-yield vocabulary, reinforce syllable stress, and review personal learning objectives.",
-            "reviewPrompts": [
-              {
-                "title": "1. Rapid-Fire Definition Match",
-                "desc": "In pairs, take turns testing each other on 3 random terms from today's 18 vocabulary items without looking at the definitions (e.g. Turnaround Time, Foreign Object Debris, Ground Support Equipment)."
-              },
-              {
-                "title": "2. Word Stress & Pronunciation Spot-Check",
-                "desc": "Check correct syllable stress on key operational words: ca-PA-ci-ty, CON-se-quent-ly, HY-drau-lic, RE-fu-el-er, DE-i-cing, au-THOR-i-za-tion."
-              },
-              {
-                "title": "3. Self-Assessment & Continuous Learning",
-                "desc": "Rate your confidence (1 to 5) explaining ramp delays using formal connectors like 'due to' and 'owing to'. Note any difficult words in your study portfolio."
-              }
-            ],
-            "modeBadges": [
-              "👥 Rapid Vocabulary Drill",
-              "⏱️ 5 min quiz + 5 min reflection",
-              "🗣️ Phonetic Precision",
-              "📝 Self-Assessment Log"
-            ],
-            "instructions": [
-              "Step 1 (Consolidation - 4 mins): Complete the 3-step vocabulary review: Self-Check Quiz, Flashcard Mode, and Pronunciation Drill.",
-              "Step 2 (Peer Quiz - 3 mins): Test your partner on 4 high-risk operational terms: 'chocks', 'conveyor', 'pushback', 'turnaround'.",
-              "Step 3 (Digital Log - 3 mins): Record your 2 personal areas of strength and 1 target for improvement in the digital notebook."
-            ],
-            "deliverable": "Spoken definition of 3 random turnaround terms and completion of the session reflection.",
-            "teacherNotes": "Conduct a rapid whole-class choral drill on high-risk pronunciation items: 'chocks', 'hydraulic', 'conveyance', 'turnaround', 'simultaneous'."
-          },
-          "vehiclesInstruction": {
-            "modeBadges": [
-              "👥 GSE Defining Game",
-              "⏱️ 10 min clues + 15 min model sentences",
-              "🗣️ Defining Relative Clauses",
-              "🚜 Ground Support Equipment"
-            ],
-            "instructions": [
-              "Step 1 (Clue Reading - 5 mins): Student A views the vehicle clues and describes its operational role using defining language without stating the vehicle's name.",
-              "Step 2 (Identification & Model - 5 mins): Student B listens, identifies the vehicle, and formulates a complete spoken definition ('This vehicle is designed to...').",
-              "Step 3 (Verify & Audio - 5 mins): Click 'Reveal Vehicle' to check pronunciation, verify the model sentence, and listen to the audio drill. Then swap roles."
-            ],
-            "deliverable": "Accurately define 4 airside GSE vehicles using relative clauses ('which is used to', 'designed for', 'responsible for').",
-            "teacherNotes": "Circulate and listen for correct relative pronouns ('which/that' for equipment, 'who' for personnel). Correct mispronunciation of 'chocks', 'conveyor', and 'hi-lift'."
+            ]
           }
         },
         "revision": {
-          "title": "Session 3: Ground Operations & Turnaround",
-          "summary": "Review the 18 essential B2 vocabulary terms for airport turnaround and Ground Support Equipment (GSE) to build fluency in operational discussions, shift briefings, and TOEIC comprehension.",
+          "title": "Session 3 Revision - Special Requests & Runway Safety Cases",
+          "summary": "30 essential operational terms for GSEA students covering runway works, temporary permissions (exemptions), and airline briefings.",
           "terms": [
             {
               "num": "01",
-              "term": "Turnaround Time (TAT)",
-              "definition": "The total duration an aircraft remains stationary on stand between its arrival (chocks-on) and its next departure (chocks-off)."
+              "term": "RESA (Runway End Safety Area)",
+              "definition": "An area symmetrical about the extended runway centre line intended to reduce the risk of damage to an aeroplane overrunning or undershooting."
             },
             {
               "num": "02",
-              "term": "Ground Support Equipment (GSE)",
-              "definition": "The specialized fleet of vehicles, tugs, conveyors, and units that service an aircraft on the airport apron."
+              "term": "Displaced Threshold",
+              "definition": "A runway landing threshold located at a point other than the physical beginning of the runway."
             },
             {
               "num": "03",
-              "term": "Chocks-On / Chocks-Off",
-              "definition": "The precise operational times when wooden or rubber wedges are placed against or removed from aircraft landing wheels."
+              "term": "Landing Distance Available (LDA)",
+              "definition": "The length of runway declared available and suitable for the ground run of an aeroplane landing."
             },
             {
               "num": "04",
-              "term": "Pushback Tractor (Tug)",
-              "definition": "A heavy, low-profile vehicle used to push an aircraft backwards from the terminal gate into the taxiway lane."
+              "term": "Exemption",
+              "definition": "An official temporary permission granted by a civil aviation authority to deviate from a standard rule."
             },
             {
               "num": "05",
-              "term": "Ground Power Unit (GPU)",
-              "definition": "A mobile external generator or gate connection that supplies 115V/400Hz electricity to the aircraft while main engines are off."
+              "term": "Article 71",
+              "definition": "The legal clause in EU aviation law allowing temporary exemptions for urgent operational needs."
             },
             {
               "num": "06",
-              "term": "Belt Loader",
-              "definition": "An inclined mobile conveyor belt vehicle used for loading and unloading loose baggage and cargo into the lower aircraft hold."
+              "term": "Derogation",
+              "definition": "An official exemption from or relaxation of a law, rule, or standard."
             },
             {
               "num": "07",
-              "term": "Refueling Hydrant Dispenser",
-              "definition": "A ramp vehicle that connects underground fuel pipelines to aircraft wing tanks under regulated pressure."
+              "term": "Safety Case",
+              "definition": "A structured written justification proving that an operation is safe despite non-standard conditions."
             },
             {
               "num": "08",
-              "term": "Catering Hi-Lift Truck",
-              "definition": "A specialized truck with an elevated scissor-lift body that raises meal and beverage carts directly to cabin galley doors."
+              "term": "Compensatory Measure",
+              "definition": "An additional safety step implemented to replace or balance a temporary reduction in safety margin."
             },
             {
               "num": "09",
-              "term": "Potable Water Truck",
-              "definition": "A dedicated sanitary tanker vehicle that replenishes the aircraft tanks with fresh drinking water for galley and washbasin use."
+              "term": "Culvert",
+              "definition": "An underground concrete pipe or tunnel carrying stormwater drainage underneath a runway."
             },
             {
               "num": "10",
-              "term": "Lavatory Service Unit",
-              "definition": "A ground servicing vehicle that empties, flushes, and sanitizes the aircraft toilet waste holding tanks."
+              "term": "Subsidence",
+              "definition": "The gradual sinking or settling of ground soil that can damage overlying runway pavement."
             },
             {
               "num": "11",
-              "term": "De-icing / Anti-icing Rig",
-              "definition": "A specialized boom truck that sprays heated glycol-water mixtures onto wings and control surfaces to remove frost and ice."
+              "term": "Runway Strip",
+              "definition": "A defined area including the runway and stopway intended to protect aircraft flying over it during take-off or landing."
             },
             {
               "num": "12",
-              "term": "Follow-Me Car",
-              "definition": "A high-visibility safety vehicle with amber flashing lights and illuminated signs that escorts taxiing aircraft to their gate."
+              "term": "Overrun",
+              "definition": "When an aircraft fails to stop before the end of the paved runway surface."
             },
             {
               "num": "13",
-              "term": "Foreign Object Debris (FOD)",
-              "definition": "Any loose item, tool, fragment, or trash on the apron or taxiway that could be ingested by an engine or damage an aircraft tire."
+              "term": "Undershoot",
+              "definition": "When an arriving aircraft touches down short of the runway threshold."
             },
             {
               "num": "14",
-              "term": "Airside Service Road",
-              "definition": "Marked roadway corridors on the ramp reserved strictly for authorized ground support equipment and airport vehicles."
+              "term": "Contaminated Runway",
+              "definition": "A runway where significant portions of the surface are covered by standing water, snow, slush, or ice."
             },
             {
               "num": "15",
-              "term": "Passenger Boarding Bridge (Jet Bridge)",
-              "definition": "An enclosed, movable elevated corridor connecting the terminal gate directly to the forward passenger door of the aircraft."
+              "term": "Braking Action",
+              "definition": "A measure of the tyre-to-surface friction available to slow down a landing aircraft."
             },
             {
               "num": "16",
-              "term": "Baggage Tug & Dolly Train",
-              "definition": "A small motorized towing tractor pulling a train of wheeled carts (dollies) transporting baggage containers or loose luggage."
+              "term": "Crosswind Component",
+              "definition": "The portion of wind blowing perpendicular (90 degrees) to the runway direction."
             },
             {
               "num": "17",
-              "term": "Slot Adherence (CTOT)",
-              "definition": "Departing strictly within the assigned Calculated Take-Off Time window to maintain air traffic flow management compliance."
+              "term": "Holding Point",
+              "definition": "A designated position on a taxiway where aircraft hold before entering or crossing an active runway."
             },
             {
               "num": "18",
-              "term": "Stand Clearance",
-              "definition": "The formal safety confirmation that all vehicles, equipment, and ramp personnel have retreated behind safety lines before pushback."
+              "term": "RFFS (Rescue and Fire Fighting Services)",
+              "definition": "The emergency airport fire brigade equipped with heavy foam vehicles for aircraft incidents."
+            },
+            {
+              "num": "19",
+              "term": "Standby",
+              "definition": "Being in immediate readiness to respond to an emergency situation within seconds."
+            },
+            {
+              "num": "20",
+              "term": "Diversion",
+              "definition": "Rerouting an aircraft to land at an alternative airport when landing at the intended destination is unsafe."
+            },
+            {
+              "num": "21",
+              "term": "Alternate Aerodrome",
+              "definition": "An airport specified in the flight plan where an aircraft can land if landing at destination is impossible."
+            },
+            {
+              "num": "22",
+              "term": "AIP Supplement (SUP)",
+              "definition": "A temporary published change to permanent aeronautical information, usually lasting more than 3 months."
+            },
+            {
+              "num": "23",
+              "term": "Briefing",
+              "definition": "A short, concise spoken presentation giving operational instructions and safety updates to a team."
+            },
+            {
+              "num": "24",
+              "term": "Provided that",
+              "definition": "A linking phrase meaning 'on the strict condition that' (used to introduce mandatory rules)."
+            },
+            {
+              "num": "25",
+              "term": "In lieu of",
+              "definition": "A formal phrase meaning 'in place of' or 'as a replacement for'."
+            },
+            {
+              "num": "26",
+              "term": "Due to",
+              "definition": "A connecting phrase meaning 'caused by' or 'because of', followed by a noun phrase."
+            },
+            {
+              "num": "27",
+              "term": "In order to",
+              "definition": "A linking phrase used to express the purpose of a safety action."
+            },
+            {
+              "num": "28",
+              "term": "Touchdown Zone",
+              "definition": "The portion of a runway beyond the threshold where landing aeroplanes are intended to first make contact."
+            },
+            {
+              "num": "29",
+              "term": "Runway Guard Lights",
+              "definition": "Flashing yellow lights installed at taxiway holding points to warn pilots of an active runway ahead."
+            },
+            {
+              "num": "30",
+              "term": "Temporary Threshold Marking",
+              "definition": "Special paint or portable markings indicating where the temporary landing line begins."
             }
           ]
         },

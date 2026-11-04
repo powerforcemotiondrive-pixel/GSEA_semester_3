@@ -2,9 +2,9 @@
       const feSessionNum = modNumber === 1 ? 7 : (modNumber === 2 ? 8 : 5);
       const aasSessionTitles = {
         1: {
-          s1: "Session 1 - EASA Regulatory Structure & Navigation",
-          s2: "Session 2 - Safety Notices & Compliance Monitoring",
-          s3: "Session 3 - Exemptions, Derogations & Consultations",
+          s1: "Session 1 - EASA Rules & Finding Information Fast",
+          s2: "Session 2 - Safety Alerts & Ramp Inspections",
+          s3: "Session 3 - Special Requests & Runway Safety Cases",
           s4: "Session 4 - Jobs in Aviation",
           s5: "Session 5 - Jobs in Aviation",
           s6: "Session 6 - Jobs in Aviation"
@@ -64,9 +64,9 @@
 
       const aasDescriptions = {
         1: {
-          s1: `Welcome to Technical English Module 1 on Documents & Maps! In this opening session, we demystify EASA document architecture (Regulations, Acceptable Means of Compliance - AMC, and Guidance Material - GM) and build baseline navigational strategies for dense regulatory texts.<br><br><em>Subject overview:</em> Document hierarchy, binding vs non-binding requirements, the critical <em>shall</em> (obligation) vs <em>should</em> (recommendation) distinction, and the Clarification Desk role-play on obstacle limitation surfaces.<br><br>${formativeEvaluationNotice}`,
-          s2: `Welcome to Session 2! We master the language of EASA Safety Information Bulletins (SIBs), Safety Directives (SDs), occurrence reporting, and compliance monitoring within aerodrome administration.<br><br><em>Subject overview:</em> Deciphering official safety notices, passive voice and obligation modals in safety mandates, and a 3-role mock compliance audit meeting between TSEEAC inspectors and airport safety managers.<br><br>${formativeEvaluationNotice}`,
-          s3: `Welcome to Session 3! We navigate complex administrative workflows involving exemptions, Alternative Means of Compliance (AltMoC), and inter-agency consultations.<br><br><em>Subject overview:</em> Regulatory flexibility, Article 71 exemption files, safety cases, connecting words for formal justification, and a 3-minute inter-service spoken briefing simulation.<br><br>${formativeEvaluationNotice}`,
+          s1: `Welcome to Technical English Module 1 on Documents & Maps! In this opening session, GSEA students learn simple strategies to navigate dense EASA airport rules without getting lost.<br><br><em>Subject overview:</em> The difference between mandatory laws and advisory guides, everyday words for rules (shall, must, should, may), reading an authentic EASA crane safety rule, and the Obstacle Clarification role-play.<br><br>${formativeEvaluationNotice}`,
+          s2: `Welcome to Session 2! We explore airport ramp safety, occurrence reporting, and safety notices.<br><br><em>Subject overview:</em> The difference between mandatory Safety Orders and advisory Bulletins, using polite sentences (passive voice) during inspections, reading an EASA notice on ramp vehicle speed limits, and a 3-student safety meeting role-play.<br><br>${formativeEvaluationNotice}`,
+          s3: `Welcome to Session 3! We discover how airports handle real-world challenges through special temporary permissions (exemptions).<br><br><em>Subject overview:</em> Explaining safety solutions, using connecting words (provided that, in lieu of), reading a temporary runway works request, and giving a confident 3-minute spoken briefing to airline pilots.<br><br>${formativeEvaluationNotice}`,
           s4: `Welcome to Session 4! We examine aviation operational careers across landside, airside, flight operations, air traffic services, and civil aviation administration.<br><br><em>Subject overview:</em> Professional roles and jurisdictions: Passenger Service Agents, Ramp Coordinators, Flight Crew, ATCOs (Tower, Approach, En-Route), and TSEEAC functions (AFISO, aerodrome operations coordination, DGAC safety oversight). Expressing duties, authority, and handoff procedures.<br><br>${formativeEvaluationNotice}`,
           s5: `Welcome to Session 5! We examine aviation operational careers across landside, airside, flight operations, air traffic services, and civil aviation administration.<br><br><em>Subject overview:</em> Professional roles and jurisdictions: Passenger Service Agents, Ramp Coordinators, Flight Crew, ATCOs (Tower, Approach, En-Route), and TSEEAC functions (AFISO, aerodrome operations coordination, DGAC safety oversight). Expressing duties, authority, and handoff procedures.<br><br>${formativeEvaluationNotice}`,
           s6: `Welcome to Session 6! We examine aviation operational careers across landside, airside, flight operations, air traffic services, and civil aviation administration.<br><br><em>Subject overview:</em> Professional roles and jurisdictions: Passenger Service Agents, Ramp Coordinators, Flight Crew, ATCOs (Tower, Approach, En-Route), and TSEEAC functions (AFISO, aerodrome operations coordination, DGAC safety oversight). Expressing duties, authority, and handoff procedures.<br><br>${formativeEvaluationNotice}`

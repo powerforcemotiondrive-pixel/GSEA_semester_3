@@ -1065,9 +1065,9 @@
       const feSessionNum = modNumber === 1 ? 7 : (modNumber === 2 ? 8 : 5);
       const aasSessionTitles = {
         1: {
-          s1: "Session 1 - EASA Regulatory Structure & Navigation",
-          s2: "Session 2 - Safety Notices & Compliance Monitoring",
-          s3: "Session 3 - Exemptions, Derogations & Consultations",
+          s1: "Session 1 - EASA Rules & Finding Information Fast",
+          s2: "Session 2 - Safety Alerts & Ramp Inspections",
+          s3: "Session 3 - Special Requests & Runway Safety Cases",
           s4: "Session 4 - Jobs in Aviation",
           s5: "Session 5 - Jobs in Aviation",
           s6: "Session 6 - Jobs in Aviation"
@@ -1127,9 +1127,9 @@
 
       const aasDescriptions = {
         1: {
-          s1: `Welcome to Technical English Module 1 on Documents & Maps! In this opening session, we demystify EASA document architecture (Regulations, Acceptable Means of Compliance - AMC, and Guidance Material - GM) and build baseline navigational strategies for dense regulatory texts.<br><br><em>Subject overview:</em> Document hierarchy, binding vs non-binding requirements, the critical <em>shall</em> (obligation) vs <em>should</em> (recommendation) distinction, and the Clarification Desk role-play on obstacle limitation surfaces.<br><br>${formativeEvaluationNotice}`,
-          s2: `Welcome to Session 2! We master the language of EASA Safety Information Bulletins (SIBs), Safety Directives (SDs), occurrence reporting, and compliance monitoring within aerodrome administration.<br><br><em>Subject overview:</em> Deciphering official safety notices, passive voice and obligation modals in safety mandates, and a 3-role mock compliance audit meeting between TSEEAC inspectors and airport safety managers.<br><br>${formativeEvaluationNotice}`,
-          s3: `Welcome to Session 3! We navigate complex administrative workflows involving exemptions, Alternative Means of Compliance (AltMoC), and inter-agency consultations.<br><br><em>Subject overview:</em> Regulatory flexibility, Article 71 exemption files, safety cases, connecting words for formal justification, and a 3-minute inter-service spoken briefing simulation.<br><br>${formativeEvaluationNotice}`,
+          s1: `Welcome to Technical English Module 1 on Documents & Maps! In this opening session, GSEA students learn simple strategies to navigate dense EASA airport rules without getting lost.<br><br><em>Subject overview:</em> The difference between mandatory laws and advisory guides, everyday words for rules (shall, must, should, may), reading an authentic EASA crane safety rule, and the Obstacle Clarification role-play.<br><br>${formativeEvaluationNotice}`,
+          s2: `Welcome to Session 2! We explore airport ramp safety, occurrence reporting, and safety notices.<br><br><em>Subject overview:</em> The difference between mandatory Safety Orders and advisory Bulletins, using polite sentences (passive voice) during inspections, reading an EASA notice on ramp vehicle speed limits, and a 3-student safety meeting role-play.<br><br>${formativeEvaluationNotice}`,
+          s3: `Welcome to Session 3! We discover how airports handle real-world challenges through special temporary permissions (exemptions).<br><br><em>Subject overview:</em> Explaining safety solutions, using connecting words (provided that, in lieu of), reading a temporary runway works request, and giving a confident 3-minute spoken briefing to airline pilots.<br><br>${formativeEvaluationNotice}`,
           s4: `Welcome to Session 4! We examine aviation operational careers across landside, airside, flight operations, air traffic services, and civil aviation administration.<br><br><em>Subject overview:</em> Professional roles and jurisdictions: Passenger Service Agents, Ramp Coordinators, Flight Crew, ATCOs (Tower, Approach, En-Route), and TSEEAC functions (AFISO, aerodrome operations coordination, DGAC safety oversight). Expressing duties, authority, and handoff procedures.<br><br>${formativeEvaluationNotice}`,
           s5: `Welcome to Session 5! We examine aviation operational careers across landside, airside, flight operations, air traffic services, and civil aviation administration.<br><br><em>Subject overview:</em> Professional roles and jurisdictions: Passenger Service Agents, Ramp Coordinators, Flight Crew, ATCOs (Tower, Approach, En-Route), and TSEEAC functions (AFISO, aerodrome operations coordination, DGAC safety oversight). Expressing duties, authority, and handoff procedures.<br><br>${formativeEvaluationNotice}`,
           s6: `Welcome to Session 6! We examine aviation operational careers across landside, airside, flight operations, air traffic services, and civil aviation administration.<br><br><em>Subject overview:</em> Professional roles and jurisdictions: Passenger Service Agents, Ramp Coordinators, Flight Crew, ATCOs (Tower, Approach, En-Route), and TSEEAC functions (AFISO, aerodrome operations coordination, DGAC safety oversight). Expressing duties, authority, and handoff procedures.<br><br>${formativeEvaluationNotice}`
@@ -3249,11 +3249,10 @@
       const content = sessionData.lessonContent || {};
       const hero = content.hero || {};
       const opening = content.openingSession || {};
-      const survey = content.survey || {};
-      const modals = content.modalsClinic || {};
-      const caseStudy = content.operationalCaseStudy || {};
-      const miniDebate = content.miniDebate || {};
-      const closing = content.closingReview || {};
+      const doc = content.documentExtract || {};
+      const rules = content.rulesPractice || {};
+      const spoken = content.spokenActivity || {};
+      const safety = content.safetyCheck || {};
 
       bodyEl.innerHTML = `
         <div class="space-y-6 printable-lesson-container">
@@ -3264,7 +3263,7 @@
                 <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">DIGITAL WORKSHEET</span>
                 <span class="text-xs font-bold text-slate-700">AT Module 1 • Session 1</span>
               </div>
-              <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">Introduction &amp; Aviation Survey</h3>
+              <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">${hero.title || 'EASA Rules & Finding Information Fast'}</h3>
             </div>
             <button type="button" onclick="window.printLessonContent()" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 shadow-xs transition-all cursor-pointer shrink-0">
               <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
@@ -3275,35 +3274,35 @@
           <!-- Hero Banner & Context -->
           <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
             <div class="relative">
-              <img src="${hero.image || 'images/aas_m1card1.jpg'}" alt="${hero.title || 'Introduction & Aviation Survey'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/aas_m1card1.jpg'">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent flex flex-col justify-end p-4 sm:p-5">
-                <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">Commercial Aviation Dynamics</span>
-                <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'Introduction & Aviation Survey'}</h3>
-                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${hero.subtitle || 'Commercial Aviation Dilemmas, Passenger Disruption & Regulatory Modals'}</p>
+              <img src="${hero.image || 'images/s3_m1_session1_easa.jpg'}" alt="${hero.title || 'EASA Rules'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/aas_m1card1.jpg'">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4 sm:p-5">
+                <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">Technical English • Module 1</span>
+                <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'EASA Rules & Finding Information Fast'}</h3>
+                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${hero.subtitle || 'Navigating Airport Regulations, Words for Rules & Obstacle Safeguarding'}</p>
               </div>
             </div>
             <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-800">Target Level:</span>
-                <span class="bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 rounded">CEFR B2</span>
+                <span class="bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 rounded">${hero.targetLevel || 'CEFR B1–B2'}</span>
                 <span class="text-slate-400">&bull;</span>
-                <span class="font-bold text-slate-800">Role Context:</span>
-                <span class="text-slate-600">AFISO / Aerodrome Ground Operations &amp; Passenger Service</span>
+                <span class="font-bold text-slate-800">Audience:</span>
+                <span class="text-slate-600">${hero.roleContext || 'GSEA Student Training'}</span>
               </div>
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-800">Total Duration:</span>
-                <span class="font-bold text-slate-900">120 Minutes</span>
+                <span class="font-bold text-slate-900">${hero.duration || '120 Minutes'}</span>
               </div>
             </div>
           </div>
 
-          <!-- Activity 1: Aviation News & Entry Diagnostic -->
+          <!-- Activity 1: Warm-up & Entry Spot-Check -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-10m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-15m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Aviation News & Warm-Up Check (10 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Warm-up & Entry Spot-Check (15 mins)'}</h4>
                   <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
                 </div>
               </div>
@@ -3312,62 +3311,21 @@
 
             ${renderActivityInstructions(opening, theme)}
 
-            <!-- Aviation News Prompts -->
+            <!-- Discussion Prompts -->
             <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-2">
               <div class="flex items-center gap-2">
-                <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
-                <h5 class="text-xs sm:text-sm font-bold text-amber-900">Weekly Aviation Headlines</h5>
+                <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                <h5 class="text-xs sm:text-sm font-bold text-amber-900">Pair Discussion: Reading Long Manuals</h5>
               </div>
               <ul class="space-y-1.5 pl-5 list-disc text-xs text-amber-900/90 leading-relaxed">
                 ${(opening.newsPrompts || []).map(p => `<li>${p}</li>`).join('')}
               </ul>
             </div>
 
-            <!-- Operational Acronym Reference -->
-            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5">
-              <div class="flex items-center justify-between gap-2">
-                <div class="flex items-center gap-2">
-                  <span class="w-2 h-2 rounded-full" style="background-color: ${theme.primary};"></span>
-                  <h5 class="text-xs sm:text-sm font-bold text-slate-800">Airside Operations Acronym Reference</h5>
-                </div>
-                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Core Acronyms</span>
-              </div>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
-                <div class="p-2.5 bg-white border border-slate-200 rounded-lg shadow-xs space-y-0.5">
-                  <div class="flex items-center gap-1.5 font-bold text-slate-900">
-                    <span class="px-1.5 py-0.5 bg-sky-100 text-sky-800 rounded text-[10px] font-black">AODB</span>
-                    <span>Airport Operational Database</span>
-                  </div>
-                  <p class="text-[11px] text-slate-600">The central IT database managing real-time flight schedules, stand allocations, and gate changes.</p>
-                </div>
-                <div class="p-2.5 bg-white border border-slate-200 rounded-lg shadow-xs space-y-0.5">
-                  <div class="flex items-center gap-1.5 font-bold text-slate-900">
-                    <span class="px-1.5 py-0.5 bg-emerald-100 text-emerald-800 rounded text-[10px] font-black">TRC</span>
-                    <span>Turnaround Coordinator</span>
-                  </div>
-                  <p class="text-[11px] text-slate-600">The airside manager supervising and synchronizing all ground handling activities between aircraft arrival and departure.</p>
-                </div>
-                <div class="p-2.5 bg-white border border-slate-200 rounded-lg shadow-xs space-y-0.5">
-                  <div class="flex items-center gap-1.5 font-bold text-slate-900">
-                    <span class="px-1.5 py-0.5 bg-amber-100 text-amber-800 rounded text-[10px] font-black">GPU</span>
-                    <span>Ground Power Unit</span>
-                  </div>
-                  <p class="text-[11px] text-slate-600">A mobile generator or stand connector supplying external electrical power to aircraft with engines and APU off.</p>
-                </div>
-                <div class="p-2.5 bg-white border border-slate-200 rounded-lg shadow-xs space-y-0.5">
-                  <div class="flex items-center gap-1.5 font-bold text-slate-900">
-                    <span class="px-1.5 py-0.5 bg-purple-100 text-purple-800 rounded text-[10px] font-black">GSE</span>
-                    <span>Ground Support Equipment</span>
-                  </div>
-                  <p class="text-[11px] text-slate-600">Specialized apron vehicles and equipment (tugs, belt loaders, stairs, de-icers) servicing aircraft on the ramp.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Diagnostic Questions Grid -->
+            <!-- Spot-Check Questions Grid -->
             <div class="space-y-3 pt-1">
               <div class="flex items-center justify-between">
-                <h5 class="text-xs sm:text-sm font-bold text-slate-800">${(opening.diagnostic && opening.diagnostic.title) || 'Course Entry Check: Aviation Vocabulary Spot-Check'}</h5>
+                <h5 class="text-xs sm:text-sm font-bold text-slate-800">${(opening.diagnostic && opening.diagnostic.title) || 'Airport Rules Entry Spot-Check'}</h5>
                 <span class="text-[11px] text-slate-500">${(opening.diagnostic && opening.diagnostic.instructions) || ''}</span>
               </div>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -3382,7 +3340,7 @@
                     </div>
                     <div>
                       <div id="diagnostic-ans-${q.id}" class="hidden p-2.5 bg-white border border-slate-200 rounded-lg text-[11px] text-slate-700 leading-relaxed shadow-xs mb-2">
-                        <span class="font-bold text-slate-900">Operational Distinction:</span> ${q.answer}
+                        <span class="font-bold text-slate-900">Plain English Answer:</span> ${q.answer}
                       </div>
                       <button type="button" id="diagnostic-btn-${q.id}" onclick="window.toggleDiagnosticAnswer(${q.id})" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-slate-600 hover:text-slate-900 cursor-pointer">
                         <span>Reveal Answer</span> &rarr;
@@ -3394,350 +3352,209 @@
             </div>
           </div>
 
-          <!-- Activity 2: The Global Aviation Survey -->
+          <!-- Activity 2: Reading the EASA Crane Rule -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">10-35m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">15-45m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${survey.title || 'Activity 2: The Global Aviation Survey (25 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">${survey.summary || ''}</p>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${doc.title || 'Activity 2: Reading the EASA Crane Rule (30 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${doc.summary || ''}</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Speed-Dating Interviews</span>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Authentic EASA Document</span>
             </div>
 
-            ${renderActivityInstructions(survey, theme)}
+            ${renderActivityInstructions(doc, theme)}
 
-            <!-- Key Phrases for Expressing Opinions Box -->
-            <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
-              <h5 class="text-xs font-bold text-slate-700 uppercase tracking-wider">Key Phrases for Expressing Opinions (Use in Spoken Discussions):</h5>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
-                ${(survey.signposts || []).map(sp => `
-                  <div class="flex items-center gap-2 p-2 bg-white border border-slate-200 rounded-lg shadow-xs">
-                    <span class="text-emerald-600 font-bold">&check;</span>
-                    <span class="font-medium italic">${sp}</span>
+            <!-- Document Viewer Box -->
+            <div class="rounded-xl border border-blue-200 bg-slate-900 text-slate-100 overflow-hidden shadow-sm">
+              <div class="bg-blue-950 px-4 py-2.5 border-b border-blue-800/80 flex items-center justify-between text-xs">
+                <div class="flex items-center gap-2 font-mono font-bold text-blue-200">
+                  <svg width="15" height="15" class="text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                  <span>${doc.docRef || 'EASA CS-ADR-DSN • Subpart H'}</span>
+                </div>
+                <span class="bg-blue-800 text-blue-100 text-[10px] font-bold px-2 py-0.5 rounded">AUTHENTIC EXTRACT (+50% EXPANDED)</span>
+              </div>
+              <div class="p-4 font-mono text-[11px] leading-relaxed whitespace-pre-wrap text-slate-200 bg-slate-900/95 max-h-96 overflow-y-auto select-text">${doc.docText || ''}</div>
+            </div>
+
+            <!-- Reading Questions Grid -->
+            <div class="space-y-3 pt-1">
+              <h5 class="text-xs sm:text-sm font-bold text-slate-800">Reading Comprehension Check (Scan the text above):</h5>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                ${((doc.questions) || []).map(q => `
+                  <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5 flex flex-col justify-between">
+                    <div>
+                      <span class="text-[10px] font-black uppercase tracking-wider text-blue-600">Check ${q.id}</span>
+                      <p class="text-xs font-bold text-slate-800 mt-1">${q.q}</p>
+                    </div>
+                    <div>
+                      <div id="read-ans-s1-${q.id}" class="hidden p-2.5 bg-white border border-slate-200 rounded-lg text-[11px] text-slate-700 leading-relaxed shadow-xs mb-2">
+                        <span class="font-bold text-emerald-800">Answer:</span> ${q.answer}
+                      </div>
+                      <button type="button" onclick="const el=document.getElementById('read-ans-s1-${q.id}'); el.classList.toggle('hidden'); this.querySelector('span').innerText = el.classList.contains('hidden') ? 'Reveal Answer' : 'Hide Answer';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-blue-600 hover:text-blue-800 cursor-pointer">
+                        <span>Reveal Answer</span> &rarr;
+                      </button>
+                    </div>
                   </div>
                 `).join('')}
               </div>
             </div>
+          </div>
 
-            <!-- 4 Topic Cards with Agreement Scale -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
-              ${(survey.topics || []).map(t => `
-                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-3 flex flex-col justify-between">
-                  <div>
-                    <div class="flex items-center justify-between gap-2 border-b border-slate-200/80 pb-2">
-                      <span class="text-white text-[10px] font-bold px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">${t.badge}</span>
-                      <span class="text-[10px] font-bold text-slate-400 uppercase">Topic 0${t.id}</span>
-                    </div>
-                    <p class="text-xs sm:text-sm font-bold text-slate-900 mt-2.5 leading-snug">${t.statement}</p>
-                    
-                    <div class="mt-3 space-y-2 text-[11px]">
-                      <div class="p-2.5 bg-emerald-50/70 border border-emerald-200 rounded-lg text-emerald-900">
-                        <strong class="font-bold text-emerald-950">PRO / In Favor:</strong> ${t.pro}
-                      </div>
-                      <div class="p-2.5 bg-rose-50/70 border border-rose-200 rounded-lg text-rose-900">
-                        <strong class="font-bold text-rose-950">CON / Opposition:</strong> ${t.con}
-                      </div>
-                    </div>
-                  </div>
+          <!-- Activity 3: Words for Rules -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">45-70m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${rules.title || 'Activity 3: Words for Rules: Must, Shall, Should, May (25 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${rules.summary || ''}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Language Focus</span>
+            </div>
 
-                  <div class="pt-2 border-t border-slate-200/80 space-y-2">
-                    <p class="text-[11px] font-medium text-slate-600 italic">&ldquo;${t.prompt}&rdquo;</p>
-                    <div class="no-print pt-1">
-                      <label class="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">Your Personal Stance (1 = Strongly Disagree, 5 = Strongly Agree):</label>
-                      <div class="flex items-center justify-between gap-1 bg-white p-1.5 rounded-lg border border-slate-200">
-                        ${[1, 2, 3, 4, 5].map(score => `
-                          <button type="button" onclick="window.setSurveyAgreement(${t.id}, ${score})" id="survey-${t.id}-btn-${score}" class="flex-1 py-1 text-center text-xs font-bold rounded hover:bg-slate-100 transition-all text-slate-600 border border-transparent">
-                            ${score}
-                          </button>
+            ${renderActivityInstructions(rules, theme)}
+
+            <!-- Rules Explanation Table -->
+            <div class="overflow-x-auto rounded-xl border border-slate-200 shadow-2xs">
+              <table class="w-full text-xs text-left">
+                <thead class="bg-slate-100 text-slate-800 font-bold border-b border-slate-200">
+                  <tr>
+                    <th class="p-2.5">Rule Word</th>
+                    <th class="p-2.5">Meaning</th>
+                    <th class="p-2.5">Real Airport Example</th>
+                    <th class="p-2.5">Memory Tip</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200 text-slate-700 bg-white">
+                  ${(rules.rulesTable || []).map(r => `
+                    <tr class="hover:bg-slate-50">
+                      <td class="p-2.5 font-bold text-blue-900">${r.word}</td>
+                      <td class="p-2.5 font-semibold text-slate-800">${r.meaning}</td>
+                      <td class="p-2.5 italic text-slate-600">"${r.example}"</td>
+                      <td class="p-2.5 text-[11px] text-slate-500">${r.tip}</td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+
+            <!-- 5 Interactive Drills -->
+            <div class="space-y-3 pt-1">
+              <h5 class="text-xs sm:text-sm font-bold text-slate-800">Practice Drills: Choose the correct rule word</h5>
+              <div class="space-y-2.5">
+                ${(rules.drills || []).map(d => `
+                  <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                    <p class="text-xs font-bold text-slate-900">${d.id}. ${d.sentence}</p>
+                    <div class="flex flex-wrap items-center justify-between gap-2">
+                      <div class="flex items-center gap-2">
+                        ${d.options.map(opt => `
+                          <button type="button" onclick="const ans=document.getElementById('drill-ans-s1-${d.id}'); ans.classList.remove('hidden');" class="px-2.5 py-1 bg-white hover:bg-blue-50 border border-slate-300 rounded text-xs font-bold text-slate-700 cursor-pointer">${opt}</button>
                         `).join('')}
                       </div>
-                      <div class="flex justify-between text-[9px] text-slate-400 px-1 mt-0.5">
-                        <span>Disagree</span>
-                        <span>Neutral</span>
-                        <span>Agree</span>
+                      <div id="drill-ans-s1-${d.id}" class="hidden text-xs text-emerald-800 font-bold bg-emerald-50 px-2.5 py-1 rounded border border-emerald-200">
+                        &check; Correct: ${d.correct} (${d.rationale})
                       </div>
                     </div>
-                  </div>
-                </div>
-              `).join('')}
-            </div>
-          </div>
-
-          <!-- Activity 3: Modals Clinic -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">35-60m</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${modals.title || 'Activity 3: Language Focus: Modals of Authority (25 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">${modals.summary || ''}</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Grammar &amp; Precision</span>
-            </div>
-
-            ${renderActivityInstructions(modals, theme)}
-
-            <!-- 4 Rule Cards -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-              ${(modals.rules || []).map((r, i) => {
-                const borderCols = ['border-blue-300 bg-blue-50/60', 'border-rose-300 bg-rose-50/60', 'border-emerald-300 bg-emerald-50/60', 'border-amber-300 bg-amber-50/60'];
-                const textCols = ['text-blue-900', 'text-rose-900', 'text-emerald-900', 'text-amber-900'];
-                return `
-                  <div class="p-3.5 border rounded-xl space-y-2 flex flex-col justify-between ${borderCols[i % 4]}">
-                    <div>
-                      <h5 class="text-xs font-black ${textCols[i % 4]}">${r.title}</h5>
-                      <p class="text-[11px] text-slate-600 mt-1">${r.rule}</p>
-                    </div>
-                    <div class="p-2 bg-white/90 border border-slate-200 rounded-lg text-[11px] text-slate-800 leading-snug">
-                      ${r.example}
-                    </div>
-                  </div>
-                `;
-              }).join('')}
-            </div>
-
-            <!-- Interactive Regulatory Challenge -->
-            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-3">
-              <div class="flex items-center justify-between">
-                <div>
-                  <h5 class="text-xs sm:text-sm font-bold text-slate-900">${(modals.challenge && modals.challenge.title) || 'Interactive Regulatory Challenge: Spot the Correct Modal'}</h5>
-                  <p class="text-[11px] text-slate-500">${(modals.challenge && modals.challenge.instructions) || ''}</p>
-                </div>
-              </div>
-
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1">
-                ${((modals.challenge && modals.challenge.questions) || []).map(q => `
-                  <div class="p-3.5 bg-white border border-slate-200 rounded-xl space-y-2.5 shadow-xs">
-                    <div class="flex items-center justify-between text-[10px] font-bold uppercase tracking-wider text-slate-500 border-b border-slate-100 pb-1.5">
-                      <span>Scenario 0${q.id}: ${q.context}</span>
-                    </div>
-                    <p class="text-xs font-semibold text-slate-800 leading-relaxed">${q.sentence}</p>
-                    
-                    <div class="space-y-1 text-xs">
-                      ${q.options.map((opt) => `
-                        <div class="p-2 bg-slate-50 rounded-lg border border-slate-200 text-slate-700">
-                          ${opt}
-                        </div>
-                      `).join('')}
-                    </div>
-
-                    <div id="modal-chal-ans-${q.id}" class="hidden p-2.5 bg-emerald-50 border border-emerald-200 rounded-lg text-[11px] text-emerald-950 leading-relaxed shadow-xs">
-                      <span class="font-bold text-emerald-900">Correct:</span> ${q.correct}<br>
-                      <span class="font-bold text-emerald-900">Rule:</span> ${q.explanation}
-                    </div>
-
-                    <button type="button" id="modal-chal-btn-${q.id}" onclick="window.toggleModalChallengeAnswer(${q.id})" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-slate-600 hover:text-slate-900 cursor-pointer pt-1">
-                      <span>Verify Rationale</span> &rarr;
-                    </button>
                   </div>
                 `).join('')}
               </div>
             </div>
           </div>
 
-          <!-- Activity 4: Operational Case Study -->
+          <!-- Activity 4: Spoken Role-Play -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">60-85m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">70-105m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${caseStudy.title || 'Activity 4: EU261 Delay & Disruption Case Study (25 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">${caseStudy.summary || ''}</p>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${spoken.title || 'Activity 4: Speaking Role-Play: Talking to the Builder (35 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${spoken.summary || ''}</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">De-Escalation Role-Play</span>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">3-Person Spoken Simulation</span>
             </div>
 
-            ${renderActivityInstructions(caseStudy, theme)}
+            ${renderActivityInstructions(spoken, theme)}
 
-            ${caseStudy.incidentBriefing ? `
-              <!-- Operational Incident Briefing Card -->
-              <div class="rounded-xl border border-slate-300 bg-slate-50/70 overflow-hidden shadow-xs space-y-3">
-                <!-- Flight Dispatch Header Banner -->
-                <div class="px-4 py-3 bg-slate-900 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                  <div class="flex items-center gap-2.5">
-                    <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-rose-600 text-white">Delayed +4h05</span>
-                    <span class="font-bold text-sm text-white">${caseStudy.incidentBriefing.flight} • ${caseStudy.incidentBriefing.route}</span>
-                  </div>
-                  <div class="text-[11px] text-slate-300 flex items-center gap-3">
-                    <span><strong>Sched:</strong> ${caseStudy.incidentBriefing.scheduled}</span>
-                    <span class="text-rose-400 font-bold"><strong>New Slot:</strong> ${caseStudy.incidentBriefing.revised}</span>
-                    <span class="hidden md:inline text-slate-400">| ${caseStudy.incidentBriefing.aircraft}</span>
-                  </div>
-                </div>
-
-                <div class="p-4 space-y-3.5">
-                  <!-- Operational Context -->
-                  <div>
-                    <h5 class="text-xs font-bold uppercase tracking-wider text-slate-700 flex items-center gap-1.5">
-                      <svg width="14" height="14" class="text-slate-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                      Operational Context &amp; Disruption Report
-                    </h5>
-                    <p class="text-xs text-slate-700 leading-relaxed mt-1">
-                      ${caseStudy.incidentBriefing.context}
-                    </p>
-                  </div>
-
-                  <!-- Chronological Incident Timeline -->
-                  <div class="space-y-1.5">
-                    <h5 class="text-xs font-bold uppercase tracking-wider text-slate-700 flex items-center gap-1.5">
-                      <svg width="14" height="14" class="text-slate-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                      Flight Timeline &amp; Incident Log
-                    </h5>
-                    <div class="grid grid-cols-1 gap-1.5">
-                      ${(caseStudy.incidentBriefing.timeline || []).map(item => `
-                        <div class="flex items-start gap-2.5 p-2 bg-white rounded-lg border border-slate-200 text-xs">
-                          <span class="font-mono font-bold text-[11px] px-1.5 py-0.5 rounded bg-slate-100 text-slate-800 shrink-0">${item.time}</span>
-                          <span class="text-slate-700 leading-snug">${item.event}</span>
-                        </div>
-                      `).join('')}
-                    </div>
-                  </div>
-
-                  <!-- EU261 Regulatory Framework Reference -->
-                  ${caseStudy.incidentBriefing.regulations ? `
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
-                      <div class="p-3 bg-emerald-50/70 border border-emerald-200 rounded-lg space-y-1">
-                        <span class="text-[10px] font-black uppercase tracking-wider text-emerald-900 block flex items-center gap-1">
-                          <svg width="12" height="12" class="text-emerald-700" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                          Mandatory Duty of Care (Immediate at Gate)
-                        </span>
-                        <p class="text-[11px] text-emerald-950 leading-relaxed">${caseStudy.incidentBriefing.regulations.dutyOfCare}</p>
-                      </div>
-                      <div class="p-3 bg-amber-50/70 border border-amber-200 rounded-lg space-y-1">
-                        <span class="text-[10px] font-black uppercase tracking-wider text-amber-900 block flex items-center gap-1">
-                          <svg width="12" height="12" class="text-amber-700" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
-                          Financial Compensation (€250 Post-Travel Claim)
-                        </span>
-                        <p class="text-[11px] text-amber-950 leading-relaxed">${caseStudy.incidentBriefing.regulations.compensation}</p>
-                      </div>
-                    </div>
-                  ` : ''}
-                </div>
+            <!-- Scenario Box -->
+            <div class="p-4 bg-sky-50/80 border border-sky-200 rounded-xl space-y-2 text-xs">
+              <div class="flex items-center gap-2 text-sky-950 font-bold">
+                <svg width="16" height="16" class="text-sky-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <span>The Operational Scenario:</span>
               </div>
-            ` : ''}
+              <p class="text-sky-900 leading-relaxed font-medium">${spoken.scenario || ''}</p>
+            </div>
 
             <!-- Role Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              ${(caseStudy.roles || []).map((r, rIdx) => {
-                const isLiaison = rIdx === 0;
-                return `
-                  <div class="p-4 rounded-xl border space-y-3 flex flex-col justify-between ${isLiaison ? 'bg-blue-50/50 border-blue-200' : 'bg-amber-50/50 border-amber-200'}">
-                    <div>
-                      <div class="flex items-center justify-between gap-2 border-b pb-2 ${isLiaison ? 'border-blue-200' : 'border-amber-200'}">
-                        <span class="text-xs font-black uppercase tracking-wider ${isLiaison ? 'text-blue-900' : 'text-amber-900'}">${r.role}</span>
-                        <span class="text-[10px] font-bold px-2 py-0.5 rounded text-white ${isLiaison ? 'bg-blue-600' : 'bg-amber-600'}">${isLiaison ? 'Liaison Trainee' : 'Challenging Client'}</span>
-                      </div>
-                      <div class="mt-2.5 text-xs text-slate-700 leading-relaxed">
-                        <strong class="font-bold text-slate-900">Your Objective:</strong> ${r.mission}
-                      </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 pt-1">
+              ${(spoken.roles || []).map(r => `
+                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2 flex flex-col justify-between">
+                  <div>
+                    <div class="flex items-center justify-between gap-1 border-b border-slate-200 pb-1.5">
+                      <h5 class="text-xs font-bold text-slate-900">${r.title}</h5>
+                      <span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-white text-slate-600 border border-slate-200 shadow-2xs">${r.badge}</span>
                     </div>
-
-                    <div class="space-y-1.5 pt-2 border-t ${isLiaison ? 'border-blue-200' : 'border-amber-200'}">
-                      <span class="text-[10px] font-black uppercase tracking-wider ${isLiaison ? 'text-blue-800' : 'text-amber-800'}">Key Communicative Phrases:</span>
-                      <ul class="space-y-1 text-[11px] text-slate-700 pl-4 list-disc">
-                        ${(r.keyPhrases || []).map(p => `<li>${p}</li>`).join('')}
-                      </ul>
-                    </div>
+                    <ul class="mt-2 space-y-1.5 pl-4 list-disc text-[11px] text-slate-700 leading-relaxed">
+                      ${r.bullets.map(b => `<li>${b}</li>`).join('')}
+                    </ul>
                   </div>
-                `;
-              }).join('')}
-            </div>
-
-            <div class="p-3 bg-slate-100 rounded-xl text-center text-xs font-semibold text-slate-700">
-              ${caseStudy.task || 'Conduct a 4-minute spoken role-play with your partner. Then swap roles. Focus on de-escalation, professional courtesy, and accurate explanation of passenger rights.'}
-            </div>
-          </div>
-
-          <!-- Activity 5: Station Mini-Debate -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">85-110m</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${miniDebate.title || 'Activity 5: Station Mini-Debate & Spoken Consensus Briefing (25 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">${miniDebate.summary || ''}</p>
                 </div>
-              </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Policy Consensus</span>
+              `).join('')}
             </div>
 
-            ${renderActivityInstructions(miniDebate, theme)}
-
-            <!-- Debate Motion Banner -->
-            <div class="p-3.5 bg-slate-900 text-white rounded-xl shadow-xs">
-              <span class="text-[10px] font-bold text-amber-400 uppercase tracking-wider">Formal Policy Motion</span>
-              <p class="text-xs sm:text-sm font-bold text-white mt-0.5">${miniDebate.motion || ''}</p>
-            </div>
-
-            <!-- 4-Step Argument Framework -->
-            <div class="space-y-2">
-              <h5 class="text-xs font-bold text-slate-700 uppercase tracking-wider">Structured Spoken Policy Debate Framework:</h5>
-              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-                ${(miniDebate.framework || []).map(f => `
-                  <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl space-y-2 flex flex-col justify-between">
-                    <div>
-                      <h6 class="text-xs font-bold text-slate-900">${f.step}</h6>
-                      <p class="text-[11px] text-slate-600 mt-1">${f.desc}</p>
-                    </div>
-                    <div class="p-2 bg-white border border-slate-200 rounded-lg text-[10px] italic text-slate-700 font-medium">
-                      ${f.phrase}
-                    </div>
+            <!-- Useful Phrases Box -->
+            <div class="p-4 bg-emerald-50/70 border border-emerald-200 rounded-xl space-y-2 text-xs">
+              <h5 class="font-bold text-emerald-950 flex items-center gap-2">
+                <svg width="15" height="15" class="text-emerald-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/></svg>
+                <span>Useful Conversational Phrases (Use these during the role-play):</span>
+              </h5>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-slate-800">
+                ${(spoken.usefulPhrases || []).map(ph => `
+                  <div class="p-2 bg-white border border-emerald-200 rounded-lg text-[11px] italic text-emerald-950 font-medium shadow-2xs">
+                    &ldquo;${ph}&rdquo;
                   </div>
                 `).join('')}
               </div>
             </div>
-
-            <!-- 60-Second Team Spokesperson Briefing Model -->
-            <div class="p-4 bg-emerald-50/70 border border-emerald-200 rounded-xl space-y-2">
-              <div class="flex items-center justify-between">
-                <span class="text-xs font-bold text-emerald-950 flex items-center gap-1.5">
-                  <svg width="14" height="14" class="text-emerald-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"/></svg>
-                  ${(miniDebate.spokenHandoverModel && miniDebate.spokenHandoverModel.title) || '60-Second Team Spokesperson Briefing Model'}
-                </span>
-                <span class="text-[10px] font-bold text-emerald-700 uppercase tracking-wider">Spoken Benchmark</span>
-              </div>
-              <p class="text-xs text-emerald-900 leading-relaxed italic">
-                &ldquo;${(miniDebate.spokenHandoverModel && miniDebate.spokenHandoverModel.text) || ''}&rdquo;
-              </p>
-            </div>
           </div>
 
-          <!-- Activity 6: Closing Review -->
+          <!-- Activity 5: Safety Check -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">110-120m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">105-120m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: 10-Minute Vocabulary Review & Wrap-Up (10 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">${closing.summary || ''}</p>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 5: Safety Check: What Could Go Wrong? (15 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${safety.summary || ''}</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Closing Consolidation</span>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Simple Safety Check</span>
             </div>
 
-            ${renderActivityInstructions(closing, theme)}
+            ${renderActivityInstructions(safety, theme)}
 
-            <!-- Review Prompts -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-              ${(closing.reviewPrompts || []).map((rp, rpIdx) => `
-                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2 flex flex-col justify-between">
-                  <div>
-                    <span class="text-[10px] font-black uppercase tracking-wider text-slate-500">Step 0${rpIdx + 1}</span>
-                    <h5 class="text-xs font-bold text-slate-900 mt-0.5">${rp.title}</h5>
-                    <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">${rp.desc}</p>
-                  </div>
-                  <div class="pt-2 border-t border-slate-200/80">
-                    <button type="button" onclick="switchModalTab('revision')" class="no-print text-[11px] font-bold text-indigo-600 hover:text-indigo-800 cursor-pointer">
-                      <span>Open Flashcard Review</span> &rarr;
-                    </button>
-                  </div>
-                </div>
-              `).join('')}
+            <!-- Clean Plain English Table -->
+            <div class="overflow-x-auto rounded-xl border border-slate-200 shadow-2xs">
+              <table class="w-full text-xs text-left">
+                <thead class="bg-slate-100 text-slate-800 font-bold border-b border-slate-200">
+                  <tr>
+                    <th class="p-3 w-1/3">Simple Safety Question</th>
+                    <th class="p-3 w-2/3">Agreed Class Answer</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200 text-slate-700 bg-white">
+                  ${(safety.rows || []).map(row => `
+                    <tr class="hover:bg-slate-50">
+                      <td class="p-3 font-bold text-slate-900 bg-slate-50/50">${row.question}</td>
+                      <td class="p-3 text-[11px] leading-relaxed text-slate-800">${row.answer}</td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -3750,11 +3567,10 @@
       const content = sessionData.lessonContent || {};
       const hero = content.hero || {};
       const opening = content.openingSession || {};
-      const journey = content.terminalJourney || {};
-      const preps = content.prepositionsClinic || {};
-      const caseStudy = content.airsideCaseStudy || {};
-      const guidance = content.guidanceWorkshop || {};
-      const closing = content.closingReview || {};
+      const doc = content.documentExtract || {};
+      const rules = content.rulesPractice || {};
+      const spoken = content.spokenActivity || {};
+      const safety = content.safetyCheck || {};
 
       bodyEl.innerHTML = `
         <div class="space-y-6 printable-lesson-container">
@@ -3765,7 +3581,7 @@
                 <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">DIGITAL WORKSHEET</span>
                 <span class="text-xs font-bold text-slate-700">AT Module 1 • Session 2</span>
               </div>
-              <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">Passenger Journey &amp; Airfield Movement</h3>
+              <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">${hero.title || 'Safety Alerts & Ramp Inspections'}</h3>
             </div>
             <button type="button" onclick="window.printLessonContent()" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 shadow-xs transition-all cursor-pointer shrink-0">
               <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
@@ -3776,75 +3592,75 @@
           <!-- Hero Banner & Context -->
           <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
             <div class="relative">
-              <img src="${hero.image || 'images/aas_m1card2.jpg'}" alt="${hero.title || 'Passenger Journey & Airfield Movement'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/aas_m1card2.jpg'">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent flex flex-col justify-end p-4 sm:p-5">
-                <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">Terminal Architecture &amp; Aerodrome Markings</span>
-                <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'Passenger Journey & Airfield Movement'}</h3>
-                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${hero.subtitle || 'Terminal Facilitation, Spatial Prepositions & Airside Guidance Systems'}</p>
+              <img src="${hero.image || 'images/s3_m1_session2_audit.jpg'}" alt="${hero.title || 'Safety Alerts'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/aas_m1card2.jpg'">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4 sm:p-5">
+                <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">Technical English • Module 1</span>
+                <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'Safety Alerts & Ramp Inspections'}</h3>
+                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${hero.subtitle || 'Apron Vehicle Safety, Objective Phrasing & Fix-It Plans'}</p>
               </div>
             </div>
             <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-800">Target Level:</span>
-                <span class="bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 rounded">CEFR B2</span>
+                <span class="bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 rounded">${hero.targetLevel || 'CEFR B1–B2'}</span>
                 <span class="text-slate-400">&bull;</span>
-                <span class="font-bold text-slate-800">Role Context:</span>
-                <span class="text-slate-600">AFISO / Aerodrome Ground Operations &amp; Passenger Facilitation</span>
+                <span class="font-bold text-slate-800">Audience:</span>
+                <span class="text-slate-600">${hero.roleContext || 'GSEA Student Training'}</span>
               </div>
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-800">Total Duration:</span>
-                <span class="font-bold text-slate-900">120 Minutes</span>
+                <span class="font-bold text-slate-900">${hero.duration || '120 Minutes'}</span>
               </div>
             </div>
           </div>
 
-          <!-- Activity 1: Aviation News & Session 1 Catch-Up Spot-Check -->
+          <!-- Activity 1: Warm-up: Danger on the Ramp -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-10m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-15m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Aviation News & Session 1 Catch-Up Spot-Check (10 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Warm-up: Danger on the Ramp (15 mins)'}</h4>
                   <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Opening &amp; Catch-Up</span>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Opening Warm-Up</span>
             </div>
 
             ${renderActivityInstructions(opening, theme)}
 
-            <!-- News Prompts -->
+            <!-- Discussion Prompts -->
             <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-2">
               <div class="flex items-center gap-2">
-                <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
-                <h5 class="text-xs sm:text-sm font-bold text-amber-900">Airport Technology &amp; Innovation Headlines</h5>
+                <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                <h5 class="text-xs sm:text-sm font-bold text-amber-900">Ramp Danger Brainstorm</h5>
               </div>
               <ul class="space-y-1.5 pl-5 list-disc text-xs text-amber-900/90 leading-relaxed">
                 ${(opening.newsPrompts || []).map(p => `<li>${p}</li>`).join('')}
               </ul>
             </div>
 
-            <!-- Catch-Up Spot-Check Grid -->
+            <!-- Spot-Check Grid -->
             <div class="space-y-3 pt-1">
               <div class="flex items-center justify-between">
-                <h5 class="text-xs sm:text-sm font-bold text-slate-800">${(opening.catchUpSpotCheck && opening.catchUpSpotCheck.title) || 'Session 1 Catch-Up Spot-Check'}</h5>
-                <span class="text-[11px] text-slate-500">${(opening.catchUpSpotCheck && opening.catchUpSpotCheck.instructions) || ''}</span>
+                <h5 class="text-xs sm:text-sm font-bold text-slate-800">${(opening.diagnostic && opening.diagnostic.title) || 'Ramp Safety Spot-Check'}</h5>
+                <span class="text-[11px] text-slate-500">${(opening.diagnostic && opening.diagnostic.instructions) || ''}</span>
               </div>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                ${((opening.catchUpSpotCheck && opening.catchUpSpotCheck.questions) || []).map(q => `
+                ${((opening.diagnostic && opening.diagnostic.questions) || []).map(q => `
                   <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5 flex flex-col justify-between">
                     <div>
                       <div class="flex items-center justify-between gap-2">
-                        <span class="text-[10px] font-black uppercase tracking-wider text-slate-500">${q.term}</span>
+                        <span class="text-[10px] font-black uppercase tracking-wider text-slate-500">Question 0${q.id}</span>
                         <span class="w-2 h-2 rounded-full" style="background-color: ${theme.primary};"></span>
                       </div>
                       <p class="text-xs font-bold text-slate-800 mt-1">${q.q}</p>
                     </div>
                     <div>
-                      <div id="catchup-ans-${q.id}" class="hidden p-2.5 bg-white border border-slate-200 rounded-lg text-[11px] text-slate-700 leading-relaxed shadow-xs mb-2">
-                        <span class="font-bold text-slate-900">Operational Key:</span> ${q.answer}
+                      <div id="diagnostic-ans-s2-${q.id}" class="hidden p-2.5 bg-white border border-slate-200 rounded-lg text-[11px] text-slate-700 leading-relaxed shadow-xs mb-2">
+                        <span class="font-bold text-slate-900">Plain English Answer:</span> ${q.answer}
                       </div>
-                      <button type="button" id="catchup-btn-${q.id}" onclick="window.toggleCatchUpAnswer(${q.id})" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-slate-600 hover:text-slate-900 cursor-pointer">
+                      <button type="button" id="diagnostic-btn-s2-${q.id}" onclick="const el=document.getElementById('diagnostic-ans-s2-${q.id}'); el.classList.toggle('hidden'); this.querySelector('span').innerText = el.classList.contains('hidden') ? 'Reveal Answer' : 'Hide Answer';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-slate-600 hover:text-slate-900 cursor-pointer">
                         <span>Reveal Answer</span> &rarr;
                       </button>
                     </div>
@@ -3854,328 +3670,207 @@
             </div>
           </div>
 
-          <!-- Activity 2: Passenger Terminal Flow & Facilitation Dilemmas -->
+          <!-- Activity 2: Reading the EASA Ramp Speed Alert -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">10-35m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">15-45m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${journey.title || 'Activity 2: Passenger Terminal Flow & Dilemmas (25 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">${journey.summary || ''}</p>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${doc.title || 'Activity 2: Reading the EASA Ramp Speed Alert (30 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${doc.summary || ''}</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Journey Mapping</span>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Authentic SIB Extract</span>
             </div>
 
-            ${renderActivityInstructions(journey, theme)}
+            ${renderActivityInstructions(doc, theme)}
 
-            <!-- 5 Sequential Touchpoints -->
-            <div class="space-y-2">
-              <h5 class="text-xs font-bold text-slate-700 uppercase tracking-wider">The 5 Sequential Concourse Touchpoints:</h5>
-              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2.5">
-                ${(journey.stages || []).map(s => `
-                  <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl space-y-1.5 flex flex-col justify-between">
+            <!-- SIB Viewer -->
+            <div class="rounded-xl border border-amber-300 bg-slate-900 text-slate-100 overflow-hidden shadow-sm">
+              <div class="bg-amber-950 px-4 py-2.5 border-b border-amber-800/80 flex items-center justify-between text-xs">
+                <div class="flex items-center gap-2 font-mono font-bold text-amber-200">
+                  <svg width="15" height="15" class="text-amber-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                  <span>${doc.docRef || 'EASA SIB No. 2024-11'}</span>
+                </div>
+                <span class="bg-amber-800 text-amber-100 text-[10px] font-bold px-2 py-0.5 rounded">AUTHENTIC EXTRACT (+50% EXPANDED)</span>
+              </div>
+              <div class="p-4 font-mono text-[11px] leading-relaxed whitespace-pre-wrap text-slate-200 bg-slate-900/95 max-h-96 overflow-y-auto select-text">${doc.docText || ''}</div>
+            </div>
+
+            <!-- Reading Questions -->
+            <div class="space-y-3 pt-1">
+              <h5 class="text-xs sm:text-sm font-bold text-slate-800">Reading Comprehension Check:</h5>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                ${((doc.questions) || []).map(q => `
+                  <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5 flex flex-col justify-between">
                     <div>
-                      <div class="flex items-center justify-between gap-1 border-b border-slate-200/80 pb-1">
-                        <span class="text-[10px] font-black uppercase text-indigo-700">Stage ${s.num}</span>
-                        <span class="text-[9px] font-bold text-slate-400 truncate max-w-[85px]">${s.area}</span>
-                      </div>
-                      <h6 class="text-xs font-bold text-slate-900 mt-1">${s.title}</h6>
-                      <p class="text-[11px] text-slate-600 leading-snug mt-1">${s.desc}</p>
+                      <span class="text-[10px] font-black uppercase tracking-wider text-amber-600">Check ${q.id}</span>
+                      <p class="text-xs font-bold text-slate-800 mt-1">${q.q}</p>
                     </div>
-                  </div>
-                `).join('')}
-              </div>
-            </div>
-
-            <!-- 2 Facilitation Dilemmas -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
-              ${(journey.dilemmas || []).map(d => `
-                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-3 flex flex-col justify-between">
-                  <div>
-                    <div class="flex items-center justify-between gap-2 border-b border-slate-200/80 pb-2">
-                      <span class="text-white text-[10px] font-bold px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">${d.badge}</span>
-                      <span class="text-[10px] font-bold text-slate-400 uppercase">Dilemma 0${d.id}</span>
-                    </div>
-                    <p class="text-xs sm:text-sm font-bold text-slate-900 mt-2 leading-snug">${d.statement}</p>
-                    
-                    <div class="mt-2.5 space-y-2 text-[11px]">
-                      <div class="p-2.5 bg-emerald-50/70 border border-emerald-200 rounded-lg text-emerald-900">
-                        <strong class="font-bold text-emerald-950">PRO / Benefits:</strong> ${d.pro}
-                      </div>
-                      <div class="p-2.5 bg-rose-50/70 border border-rose-200 rounded-lg text-rose-900">
-                        <strong class="font-bold text-rose-950">CON / Concerns:</strong> ${d.con}
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="pt-2 border-t border-slate-200/80 space-y-2">
-                    <p class="text-[11px] font-medium text-slate-600 italic">&ldquo;${d.prompt}&rdquo;</p>
-                    <div class="no-print pt-1">
-                      <label class="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">Your Personal Stance (1 = Strongly Disagree, 5 = Strongly Agree):</label>
-                      <div class="flex items-center justify-between gap-1 bg-white p-1.5 rounded-lg border border-slate-200">
-                        ${[1, 2, 3, 4, 5].map(score => `
-                          <button type="button" onclick="window.setTerminalDebateAgreement(${d.id}, ${score})" id="terminal-debate-${d.id}-btn-${score}" class="flex-1 py-1 text-center text-xs font-bold rounded hover:bg-slate-100 transition-all text-slate-600 border border-transparent">
-                            ${score}
-                          </button>
-                        `).join('')}
-                      </div>
-                      <div class="flex justify-between text-[9px] text-slate-400 px-1 mt-0.5">
-                        <span>Disagree</span>
-                        <span>Neutral</span>
-                        <span>Agree</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              `).join('')}
-            </div>
-          </div>
-
-          <!-- Activity 3: Language Clinic: Prepositions of Place, Direction & Movement -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">35-60m</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${preps.title || 'Activity 3: Prepositions of Place & Movement (25 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">${preps.summary || ''}</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Grammar &amp; Precision</span>
-            </div>
-
-            ${renderActivityInstructions(preps, theme)}
-
-            <!-- 4 Rule Cards -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-              ${(preps.rules || []).map((r, i) => {
-                const borderCols = ['border-blue-300 bg-blue-50/60', 'border-indigo-300 bg-indigo-50/60', 'border-emerald-300 bg-emerald-50/60', 'border-amber-300 bg-amber-50/60'];
-                const textCols = ['text-blue-900', 'text-indigo-900', 'text-emerald-900', 'text-amber-900'];
-                return `
-                  <div class="p-3.5 border rounded-xl space-y-2 flex flex-col justify-between ${borderCols[i % 4]}">
                     <div>
-                      <h5 class="text-xs font-black ${textCols[i % 4]}">${r.title}</h5>
-                      <p class="text-[11px] text-slate-600 mt-1">${r.rule}</p>
+                      <div id="read-ans-s2-${q.id}" class="hidden p-2.5 bg-white border border-slate-200 rounded-lg text-[11px] text-slate-700 leading-relaxed shadow-xs mb-2">
+                        <span class="font-bold text-emerald-800">Answer:</span> ${q.answer}
+                      </div>
+                      <button type="button" onclick="const el=document.getElementById('read-ans-s2-${q.id}'); el.classList.toggle('hidden'); this.querySelector('span').innerText = el.classList.contains('hidden') ? 'Reveal Answer' : 'Hide Answer';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-amber-700 hover:text-amber-900 cursor-pointer">
+                        <span>Reveal Answer</span> &rarr;
+                      </button>
                     </div>
-                    <div class="p-2 bg-white/90 border border-slate-200 rounded-lg text-[11px] text-slate-800 leading-snug">
-                      ${r.example}
-                    </div>
-                  </div>
-                `;
-              }).join('')}
-            </div>
-
-            <!-- Interactive Spatial Challenge -->
-            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-3">
-              <div class="flex items-center justify-between">
-                <div>
-                  <h5 class="text-xs sm:text-sm font-bold text-slate-900">${(preps.challenge && preps.challenge.title) || 'Interactive Spatial Challenge: Spot the Correct Preposition'}</h5>
-                  <p class="text-[11px] text-slate-500">${(preps.challenge && preps.challenge.instructions) || ''}</p>
-                </div>
-              </div>
-
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1">
-                ${((preps.challenge && preps.challenge.questions) || []).map(q => `
-                  <div class="p-3.5 bg-white border border-slate-200 rounded-xl space-y-2.5 shadow-xs">
-                    <div class="flex items-center justify-between text-[10px] font-bold uppercase tracking-wider text-slate-500 border-b border-slate-100 pb-1.5">
-                      <span>Scenario 0${q.id}: ${q.context}</span>
-                    </div>
-                    <p class="text-xs font-semibold text-slate-800 leading-relaxed">${q.sentence}</p>
-                    
-                    <div class="space-y-1 text-xs">
-                      ${q.options.map((opt) => `
-                        <div class="p-2 bg-slate-50 rounded-lg border border-slate-200 text-slate-700">
-                          ${opt}
-                        </div>
-                      `).join('')}
-                    </div>
-
-                    <div id="prep-chal-ans-${q.id}" class="hidden p-2.5 bg-emerald-50 border border-emerald-200 rounded-lg text-[11px] text-emerald-950 leading-relaxed shadow-xs">
-                      <span class="font-bold text-emerald-900">Correct:</span> ${q.correct}<br>
-                      <span class="font-bold text-emerald-900">Rule:</span> ${q.explanation}
-                    </div>
-
-                    <button type="button" id="prep-chal-btn-${q.id}" onclick="window.togglePrepositionChallengeAnswer(${q.id})" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-slate-600 hover:text-slate-900 cursor-pointer pt-1">
-                      <span>Verify Rationale</span> &rarr;
-                    </button>
                   </div>
                 `).join('')}
               </div>
             </div>
           </div>
 
-          <!-- Activity 4: Operational Case Study: Unauthorized Apron Access -->
+          <!-- Activity 3: Polite Language for Inspections -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">60-85m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">45-70m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${caseStudy.title || 'Activity 4: Unauthorized Apron Access Case Study (25 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">${caseStudy.summary || ''}</p>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${rules.title || 'Activity 3: Polite Language for Inspections (25 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${rules.summary || ''}</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Airside Intercept Role-Play</span>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Language Clinic</span>
             </div>
 
-            ${renderActivityInstructions(caseStudy, theme)}
+            ${renderActivityInstructions(rules, theme)}
 
-            ${caseStudy.incidentBriefing ? `
-              <!-- Operational Incident Briefing Card -->
-              <div class="rounded-xl border border-rose-300 bg-rose-50/40 overflow-hidden shadow-xs space-y-3">
-                <!-- Incident Dispatch Header Banner -->
-                <div class="px-4 py-3 bg-slate-900 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                  <div class="flex items-center gap-2.5">
-                    <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-rose-600 text-white">Security Alert</span>
-                    <span class="font-bold text-sm text-white">${caseStudy.incidentBriefing.classification || 'Apron Security Breach'}</span>
-                  </div>
-                  <div class="text-[11px] text-slate-300 flex items-center gap-3">
-                    <span><strong>Time:</strong> ${caseStudy.incidentBriefing.time}</span>
-                    <span class="text-amber-400 font-bold"><strong>Location:</strong> ${caseStudy.incidentBriefing.location}</span>
-                    <span class="hidden md:inline text-slate-400">| ${caseStudy.incidentBriefing.commChannel}</span>
-                  </div>
-                </div>
+            <!-- Comparison Table -->
+            <div class="overflow-x-auto rounded-xl border border-slate-200 shadow-2xs">
+              <table class="w-full text-xs text-left">
+                <thead class="bg-slate-100 text-slate-800 font-bold border-b border-slate-200">
+                  <tr>
+                    <th class="p-2.5">Style</th>
+                    <th class="p-2.5">Tone &amp; Effect</th>
+                    <th class="p-2.5">Example Phrasing</th>
+                    <th class="p-2.5">Why it works</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200 text-slate-700 bg-white">
+                  ${(rules.rulesTable || []).map(r => `
+                    <tr class="hover:bg-slate-50">
+                      <td class="p-2.5 font-bold ${r.word.includes('Harsh') ? 'text-rose-700' : 'text-emerald-700'}">${r.word}</td>
+                      <td class="p-2.5 font-semibold text-slate-800">${r.meaning}</td>
+                      <td class="p-2.5 italic text-slate-600">${r.example}</td>
+                      <td class="p-2.5 text-[11px] text-slate-500">${r.tip}</td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
 
-                <div class="p-4 space-y-3.5">
-                  <!-- Operational Context -->
-                  <div>
-                    <h5 class="text-xs font-bold uppercase tracking-wider text-slate-700 flex items-center gap-1.5">
-                      <svg width="14" height="14" class="text-slate-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                      Incident Situation &amp; Breach Log
-                    </h5>
-                    <p class="text-xs text-slate-700 leading-relaxed mt-1">
-                      ${caseStudy.incidentBriefing.situation}
-                    </p>
-                  </div>
-
-                  <!-- Immediate Hazards -->
-                  <div class="space-y-1.5">
-                    <h5 class="text-xs font-bold uppercase tracking-wider text-slate-700 flex items-center gap-1.5">
-                      <svg width="14" height="14" class="text-rose-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
-                      Immediate Apron Safety Hazards:
-                    </h5>
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
-                      ${(caseStudy.incidentBriefing.immediateHazards || []).map(hz => `
-                        <div class="p-2.5 bg-white border border-rose-200 rounded-lg text-[11px] text-rose-950 flex items-start gap-2 shadow-2xs">
-                          <span class="text-rose-600 font-bold">&bull;</span>
-                          <span>${hz}</span>
-                        </div>
+            <!-- Rewriting Drills -->
+            <div class="space-y-3 pt-1">
+              <h5 class="text-xs sm:text-sm font-bold text-slate-800">Rewriting Drills: Choose the most polite, professional sentence</h5>
+              <div class="space-y-2.5">
+                ${(rules.drills || []).map(d => `
+                  <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                    <p class="text-xs font-bold text-slate-900">${d.id}. ${d.sentence}</p>
+                    <div class="space-y-1.5">
+                      ${d.options.map(opt => `
+                        <div onclick="const ans=document.getElementById('drill-ans-s2-${d.id}'); ans.classList.remove('hidden');" class="p-2 bg-white hover:bg-slate-100 border border-slate-200 rounded text-xs font-medium text-slate-700 cursor-pointer">${opt}</div>
                       `).join('')}
                     </div>
+                    <div id="drill-ans-s2-${d.id}" class="hidden text-xs text-emerald-800 font-bold bg-emerald-50 p-2 rounded border border-emerald-200">
+                      &check; Recommended: "${d.correct}" (${d.rationale})
+                    </div>
                   </div>
-                </div>
+                `).join('')}
               </div>
-            ` : ''}
-
-            <!-- Role Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              ${(caseStudy.roles || []).map((r, rIdx) => {
-                const isLiaison = rIdx === 0;
-                return `
-                  <div class="p-4 rounded-xl border space-y-3 flex flex-col justify-between ${isLiaison ? 'bg-blue-50/50 border-blue-200' : 'bg-emerald-50/50 border-emerald-200'}">
-                    <div>
-                      <div class="flex items-center justify-between gap-2 border-b pb-2 ${isLiaison ? 'border-blue-200' : 'border-emerald-200'}">
-                        <span class="text-xs font-black uppercase tracking-wider ${isLiaison ? 'text-blue-900' : 'text-emerald-900'}">${r.role}</span>
-                        <span class="text-[10px] font-bold px-2 py-0.5 rounded text-white ${isLiaison ? 'bg-blue-600' : 'bg-emerald-600'}">${isLiaison ? 'Operations Trainee' : 'Ramp Lead'}</span>
-                      </div>
-                      <div class="mt-2.5 text-xs text-slate-700 leading-relaxed">
-                        <strong class="font-bold text-slate-900">Your Objective:</strong> ${r.mission}
-                      </div>
-                    </div>
-
-                    <div class="space-y-1.5 pt-2 border-t ${isLiaison ? 'border-blue-200' : 'border-emerald-200'}">
-                      <span class="text-[10px] font-black uppercase tracking-wider ${isLiaison ? 'text-blue-800' : 'text-emerald-800'}">Key VHF &amp; De-escalation Phrases:</span>
-                      <ul class="space-y-1 text-[11px] text-slate-700 pl-4 list-disc">
-                        ${(r.keyPhrases || []).map(p => `<li>${p}</li>`).join('')}
-                      </ul>
-                    </div>
-                  </div>
-                `;
-              }).join('')}
-            </div>
-
-            <div class="p-3 bg-slate-100 rounded-xl text-center text-xs font-semibold text-slate-700">
-              ${caseStudy.task || 'Conduct a 4-minute spoken VHF radio exchange and de-escalation role-play. Focus on spatial precision, professional composure, and clear prepositions. Then swap roles.'}
             </div>
           </div>
 
-          <!-- Activity 5: Airfield Guidance Markings & Spoken Briefing -->
+          <!-- Activity 4: Ramp Safety Meeting -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">85-110m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">70-105m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${guidance.title || 'Activity 5: Airfield Guidance Markings & Spoken Briefing (25 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">${guidance.summary || ''}</p>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${spoken.title || 'Activity 4: Speaking Role-Play: The Ramp Safety Meeting (35 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${spoken.summary || ''}</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Ground Guidance Systems</span>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">3-Person Audit Simulation</span>
             </div>
 
-            ${renderActivityInstructions(guidance, theme)}
+            ${renderActivityInstructions(spoken, theme)}
 
-            <!-- 4 Guidance Markings Cards -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-              ${(guidance.markings || []).map(m => `
+            <!-- Scenario -->
+            <div class="p-4 bg-amber-50/80 border border-amber-200 rounded-xl space-y-2 text-xs">
+              <div class="flex items-center gap-2 text-amber-950 font-bold">
+                <svg width="16" height="16" class="text-amber-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <span>The Operational Audit Scenario:</span>
+              </div>
+              <p class="text-amber-900 leading-relaxed font-medium">${spoken.scenario || ''}</p>
+            </div>
+
+            <!-- 3 Role Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 pt-1">
+              ${(spoken.roles || []).map(r => `
                 <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2 flex flex-col justify-between">
                   <div>
-                    <div class="flex items-center justify-between gap-1 border-b border-slate-200/80 pb-1.5">
-                      <span class="text-white text-[9px] font-bold px-1.5 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">${m.badge}</span>
-                      <span class="text-[10px] font-bold text-slate-400">0${m.id}</span>
+                    <div class="flex items-center justify-between gap-1 border-b border-slate-200 pb-1.5">
+                      <h5 class="text-xs font-bold text-slate-900">${r.title}</h5>
+                      <span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-white text-slate-600 border border-slate-200 shadow-2xs">${r.badge}</span>
                     </div>
-                    <h5 class="text-xs font-bold text-slate-900 mt-1.5">${m.title}</h5>
-                    <p class="text-[11px] text-slate-600 leading-relaxed mt-1">${m.desc}</p>
+                    <ul class="mt-2 space-y-1.5 pl-4 list-disc text-[11px] text-slate-700 leading-relaxed">
+                      ${r.bullets.map(b => `<li>${b}</li>`).join('')}
+                    </ul>
                   </div>
                 </div>
               `).join('')}
             </div>
 
-            <!-- 60-Second Airfield Safety Briefing Model -->
-            <div class="p-4 bg-emerald-50/70 border border-emerald-200 rounded-xl space-y-2">
-              <div class="flex items-center justify-between">
-                <span class="text-xs font-bold text-emerald-950 flex items-center gap-1.5">
-                  <svg width="14" height="14" class="text-emerald-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"/></svg>
-                  ${(guidance.spokenHandoverModel && guidance.spokenHandoverModel.title) || '60-Second Airfield Safety Briefing Model'}
-                </span>
-                <span class="text-[10px] font-bold text-emerald-700 uppercase tracking-wider">Spoken Benchmark</span>
+            <!-- Useful Phrases Box -->
+            <div class="p-4 bg-emerald-50/70 border border-emerald-200 rounded-xl space-y-2 text-xs">
+              <h5 class="font-bold text-emerald-950 flex items-center gap-2">
+                <svg width="15" height="15" class="text-emerald-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/></svg>
+                <span>Useful Conversational Phrases (Constructive &amp; Professional):</span>
+              </h5>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-slate-800">
+                ${(spoken.usefulPhrases || []).map(ph => `
+                  <div class="p-2 bg-white border border-emerald-200 rounded-lg text-[11px] italic text-emerald-950 font-medium shadow-2xs">
+                    &ldquo;${ph}&rdquo;
+                  </div>
+                `).join('')}
               </div>
-              <p class="text-xs text-emerald-900 leading-relaxed italic">
-                &ldquo;${(guidance.spokenHandoverModel && guidance.spokenHandoverModel.text) || ''}&rdquo;
-              </p>
             </div>
           </div>
 
-          <!-- Activity 6: Closing Review -->
+          <!-- Activity 5: Safety Check -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">110-120m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">105-120m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: 10-Minute Vocabulary Review & Wrap-Up (10 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">${closing.summary || ''}</p>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 5: Safety Check: What Could Go Wrong? (15 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${safety.summary || ''}</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Closing Consolidation</span>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Simple Safety Check</span>
             </div>
 
-            ${renderActivityInstructions(closing, theme)}
+            ${renderActivityInstructions(safety, theme)}
 
-            <!-- Review Prompts -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-              ${(closing.reviewPrompts || []).map((rp, rpIdx) => `
-                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2 flex flex-col justify-between">
-                  <div>
-                    <span class="text-[10px] font-black uppercase tracking-wider text-slate-500">Step 0${rpIdx + 1}</span>
-                    <h5 class="text-xs font-bold text-slate-900 mt-0.5">${rp.title}</h5>
-                    <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">${rp.desc}</p>
-                  </div>
-                  <div class="pt-2 border-t border-slate-200/80">
-                    <button type="button" onclick="switchModalTab('revision')" class="no-print text-[11px] font-bold text-indigo-600 hover:text-indigo-800 cursor-pointer">
-                      <span>Open Flashcard Review</span> &rarr;
-                    </button>
-                  </div>
-                </div>
-              `).join('')}
+            <!-- Table -->
+            <div class="overflow-x-auto rounded-xl border border-slate-200 shadow-2xs">
+              <table class="w-full text-xs text-left">
+                <thead class="bg-slate-100 text-slate-800 font-bold border-b border-slate-200">
+                  <tr>
+                    <th class="p-3 w-1/3">Simple Safety Question</th>
+                    <th class="p-3 w-2/3">Agreed Class Answer</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200 text-slate-700 bg-white">
+                  ${(safety.rows || []).map(row => `
+                    <tr class="hover:bg-slate-50">
+                      <td class="p-3 font-bold text-slate-900 bg-slate-50/50">${row.question}</td>
+                      <td class="p-3 text-[11px] leading-relaxed text-slate-800">${row.answer}</td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -4188,13 +3883,10 @@
       const content = sessionData.lessonContent || {};
       const hero = content.hero || {};
       const opening = content.openingSession || {};
-      const clock = content.turnaroundClock || {};
-      const vehicles = content.vehicles || [];
-      const vehiclesInstruction = content.vehiclesInstruction || {};
-      const delays = content.safetyDelays || {};
-      const simulation = content.simulation || {};
-      const briefing = content.briefing || {};
-      const closing = content.closingReview || {};
+      const doc = content.documentExtract || {};
+      const rules = content.rulesPractice || {};
+      const spoken = content.spokenActivity || {};
+      const safety = content.safetyCheck || {};
 
       bodyEl.innerHTML = `
         <div class="space-y-6 printable-lesson-container">
@@ -4205,7 +3897,7 @@
                 <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">DIGITAL WORKSHEET</span>
                 <span class="text-xs font-bold text-slate-700">AT Module 1 • Session 3</span>
               </div>
-              <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">Ground Operations &amp; Turnaround Management</h3>
+              <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">${hero.title || 'Special Requests & Runway Safety Cases'}</h3>
             </div>
             <button type="button" onclick="window.printLessonContent()" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 shadow-xs transition-all cursor-pointer shrink-0">
               <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
@@ -4216,60 +3908,77 @@
           <!-- Hero Banner & Context -->
           <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
             <div class="relative">
-              <img src="${hero.image || 'images/turnaround_apron.jpg'}" alt="${hero.title || 'Apron Turnaround'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/aas_m1card3.jpg'">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent flex flex-col justify-end p-4 sm:p-5">
-                <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">Apron Servicing Envelope</span>
-                <h2 class="text-base sm:text-xl font-black text-white mt-0.5">${hero.title || 'Ground Operations &amp; Turnaround Management'}</h2>
-                <p class="text-xs text-white/90 mt-1 max-w-2xl">${hero.subtitle || 'Coordinating critical ground handling operations in a 35 to 45-minute servicing window.'}</p>
+              <img src="${hero.image || 'images/s3_m1_session3_derogation.jpg'}" alt="${hero.title || 'Special Requests'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/aas_m1card3.jpg'">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4 sm:p-5">
+                <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">Technical English • Module 1</span>
+                <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'Special Requests & Runway Safety Cases'}</h3>
+                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${hero.subtitle || 'Temporary Works, Connecting Words & Airline Operational Briefings'}</p>
+              </div>
+            </div>
+            <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-slate-800">Target Level:</span>
+                <span class="bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 rounded">${hero.targetLevel || 'CEFR B1–B2'}</span>
+                <span class="text-slate-400">&bull;</span>
+                <span class="font-bold text-slate-800">Audience:</span>
+                <span class="text-slate-600">${hero.roleContext || 'GSEA Student Training'}</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-slate-800">Total Duration:</span>
+                <span class="font-bold text-slate-900">${hero.duration || '120 Minutes'}</span>
               </div>
             </div>
           </div>
 
-          <!-- Activity 1: Aviation News & Previous Session Vocabulary Spot-Check (10 mins) -->
-          <div class="bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4">
-            <div class="flex items-center justify-between pb-2 border-b border-slate-100">
+          <!-- Activity 1: Keeping Airports Open During Repairs -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">01</span>
-                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">${opening.title || 'Activity 1: Aviation News &amp; Previous Session Vocabulary Spot-Check (10 mins)'}</h3>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-15m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Warm-up: Keeping Airports Open During Repairs (15 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
+                </div>
               </div>
-              <span class="text-[11px] font-semibold text-slate-500">Warm-Up &amp; Catch-Up</span>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Opening Warm-Up</span>
             </div>
-            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">${opening.summary || ''}</p>
 
             ${renderActivityInstructions(opening, theme)}
 
-            <!-- News Prompts -->
-            <div class="p-3.5 rounded-lg bg-sky-50/70 border border-sky-200">
-              <span class="text-[11px] font-bold text-sky-900 uppercase tracking-wider">📰 Aviation News &amp; Current Events Prompts</span>
-              <ul class="space-y-1.5 mt-2 text-xs text-sky-950">
-                ${(opening.newsPrompts || []).map(p => `
-                  <li class="flex items-start gap-1.5">
-                    <span class="font-bold text-sky-700">&bull;</span>
-                    <span>${p}</span>
-                  </li>
-                `).join('')}
+            <!-- Discussion Prompts -->
+            <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-2">
+              <div class="flex items-center gap-2">
+                <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                <h5 class="text-xs sm:text-sm font-bold text-amber-900">Runway Works Discussion</h5>
+              </div>
+              <ul class="space-y-1.5 pl-5 list-disc text-xs text-amber-900/90 leading-relaxed">
+                ${(opening.newsPrompts || []).map(p => `<li>${p}</li>`).join('')}
               </ul>
             </div>
 
-            <!-- Session 2 Vocabulary Spot-Check -->
-            <div class="space-y-2.5 pt-1">
+            <!-- Spot-Check Grid -->
+            <div class="space-y-3 pt-1">
               <div class="flex items-center justify-between">
-                <span class="text-xs font-bold text-slate-800 uppercase tracking-wider">🎯 Session 2 Catch-Up: Airfield Vocabulary Spot-Check</span>
-                <span class="text-[11px] text-slate-500">Rapid-fire student recall</span>
+                <h5 class="text-xs sm:text-sm font-bold text-slate-800">${(opening.diagnostic && opening.diagnostic.title) || 'Runway Works Entry Check'}</h5>
+                <span class="text-[11px] text-slate-500">${(opening.diagnostic && opening.diagnostic.instructions) || ''}</span>
               </div>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                ${((opening.spotCheck && opening.spotCheck.questions) || []).map(q => `
-                  <div class="p-3 rounded-lg bg-slate-50 border border-slate-200/90 text-xs flex flex-col justify-between space-y-2">
+                ${((opening.diagnostic && opening.diagnostic.questions) || []).map(q => `
+                  <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5 flex flex-col justify-between">
                     <div>
-                      <span class="font-bold text-slate-800 block text-xs">${q.id}. ${q.q}</span>
+                      <div class="flex items-center justify-between gap-2">
+                        <span class="text-[10px] font-black uppercase tracking-wider text-slate-500">Question 0${q.id}</span>
+                        <span class="w-2 h-2 rounded-full" style="background-color: ${theme.primary};"></span>
+                      </div>
+                      <p class="text-xs font-bold text-slate-800 mt-1">${q.q}</p>
                     </div>
                     <div>
-                      <button type="button" onclick="window.toggleSpotCheckAnswer(${q.id})" id="spotcheck-btn-${q.id}" class="no-print text-[11px] font-bold text-indigo-600 hover:text-indigo-800 cursor-pointer">
+                      <div id="diagnostic-ans-s3-${q.id}" class="hidden p-2.5 bg-white border border-slate-200 rounded-lg text-[11px] text-slate-700 leading-relaxed shadow-xs mb-2">
+                        <span class="font-bold text-slate-900">Plain English Answer:</span> ${q.answer}
+                      </div>
+                      <button type="button" id="diagnostic-btn-s3-${q.id}" onclick="const el=document.getElementById('diagnostic-ans-s3-${q.id}'); el.classList.toggle('hidden'); this.querySelector('span').innerText = el.classList.contains('hidden') ? 'Reveal Answer' : 'Hide Answer';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-slate-600 hover:text-slate-900 cursor-pointer">
                         <span>Reveal Answer</span> &rarr;
                       </button>
-                      <div id="spotcheck-ans-${q.id}" class="hidden p-2 mt-1.5 rounded bg-white border border-slate-200 text-[11px] text-slate-700 leading-relaxed italic">
-                        ${q.answer}
-                      </div>
                     </div>
                   </div>
                 `).join('')}
@@ -4277,306 +3986,216 @@
             </div>
           </div>
 
-          <!-- Activity 2: The Turnaround Clock (15 mins) -->
-          <div class="bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4">
-            <div class="flex items-center justify-between pb-2 border-b border-slate-100">
+          <!-- Activity 2: Reading the Runway Work Request -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">02</span>
-                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">${clock.title || 'Activity 2: The Turnaround Clock (15 mins)'}</h3>
-              </div>
-              <span class="text-[11px] font-semibold text-slate-500">Pacing &amp; Tenses</span>
-            </div>
-            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">${clock.summary || ''}</p>
-
-            ${renderActivityInstructions(clock, theme)}
-
-            <!-- Turnaround Timeline -->
-            <div class="space-y-2 pt-1">
-              ${(clock.milestones || []).map(m => `
-                <div class="grid grid-cols-[85px_1fr] sm:grid-cols-[100px_1fr] items-start gap-3 p-3 rounded-lg bg-slate-50 border border-slate-200/80">
-                  <span class="text-[11px] font-black font-mono px-2 py-1 rounded text-center text-white shrink-0 shadow-2xs" style="background-color: ${theme.primary};">${m.time}</span>
-                  <div>
-                    <h5 class="text-xs sm:text-sm font-bold text-slate-800">${m.phase}</h5>
-                    <p class="text-[11px] sm:text-xs text-slate-600 mt-0.5 leading-relaxed">${m.desc}</p>
-                  </div>
-                </div>
-              `).join('')}
-            </div>
-
-            <!-- Discussion & Grammar Box -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-2">
-              <div class="p-3.5 rounded-lg bg-amber-50/70 border border-amber-200">
-                <span class="text-[11px] font-bold text-amber-900 uppercase tracking-wider">Spoken Pair Discussion</span>
-                <ul class="space-y-2 mt-2 text-xs text-amber-950">
-                  ${(clock.discussionPrompts || []).map(q => `
-                    <li class="flex items-start gap-1.5">
-                      <span class="font-bold text-amber-700">&rarr;</span>
-                      <span>${q}</span>
-                    </li>
-                  `).join('')}
-                </ul>
-              </div>
-
-              <div class="p-3.5 rounded-lg bg-indigo-50/70 border border-indigo-200">
-                <span class="text-[11px] font-bold text-indigo-900 uppercase tracking-wider">${(clock.grammarBox && clock.grammarBox.title) || 'Grammar Focus'}</span>
-                <p class="text-[11px] text-indigo-950 mt-1 leading-relaxed">${(clock.grammarBox && clock.grammarBox.rule) || ''}</p>
-                <div class="space-y-1.5 mt-2 pt-2 border-t border-indigo-200/60 text-[11px] text-indigo-950">
-                  ${((clock.grammarBox && clock.grammarBox.examples) || []).map(ex => `
-                    <div><span class="font-bold text-indigo-800">${ex.type}:</span> ${ex.text}</div>
-                  `).join('')}
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">15-45m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${doc.title || 'Activity 2: Reading the Runway Work Request (30 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${doc.summary || ''}</p>
                 </div>
               </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Official Exemption File</span>
             </div>
-          </div>
 
-          <!-- Activity 3: The 10 Airside Vehicles (GSE) Master Index & Defining Game (30 mins) -->
-          <div class="bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-2 border-b border-slate-100 gap-2">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">03</span>
-                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">Activity 3: Airside Vehicles (GSE) Master Index &amp; Defining Game (30 mins)</h3>
+            ${renderActivityInstructions(doc, theme)}
+
+            <!-- Exemption File Viewer -->
+            <div class="rounded-xl border border-indigo-300 bg-slate-900 text-slate-100 overflow-hidden shadow-sm">
+              <div class="bg-indigo-950 px-4 py-2.5 border-b border-indigo-800/80 flex items-center justify-between text-xs">
+                <div class="flex items-center gap-2 font-mono font-bold text-indigo-200">
+                  <svg width="15" height="15" class="text-indigo-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                  <span>${doc.docRef || 'EASA/ADR-EXEMP/2024-009'}</span>
+                </div>
+                <span class="bg-indigo-800 text-indigo-100 text-[10px] font-bold px-2 py-0.5 rounded">AUTHENTIC EXTRACT (+50% EXPANDED)</span>
               </div>
-              <div class="no-print flex items-center gap-1.5">
-                <button type="button" onclick="window.toggleAllVehicles(true)" class="text-[11px] font-bold px-2 py-1 rounded bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all cursor-pointer">Show All Answers</button>
-                <button type="button" onclick="window.toggleAllVehicles(false)" class="text-[11px] font-bold px-2 py-1 rounded bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all cursor-pointer">Show All Clues</button>
-              </div>
+              <div class="p-4 font-mono text-[11px] leading-relaxed whitespace-pre-wrap text-slate-200 bg-slate-900/95 max-h-96 overflow-y-auto select-text">${doc.docText || ''}</div>
             </div>
 
-            ${renderActivityInstructions(vehiclesInstruction, theme)}
-            
-            <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 text-xs text-slate-700 leading-relaxed">
-              <span class="font-bold text-slate-800">Pair Work Task:</span> Student A views the vehicle clues and describes its operational role using defining language (e.g. <em>"This vehicle is designed to...", "Handlers connect it to..."</em>) without stating the vehicle's name. Student B listens and identifies the correct vehicle. Click <strong>Reveal Vehicle</strong> to verify pronunciation and model sentence.
-            </div>
-
-            <!-- 10 Vehicle Cards Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-              ${vehicles.map(v => `
-                <div id="vehicle-card-${v.id}" class="bg-white border border-slate-200 rounded-xl p-3.5 flex flex-col justify-between shadow-2xs hover:border-slate-300 transition-all">
-                  <div>
-                    <div class="flex items-center justify-between gap-2 border-b border-slate-100 pb-2 mb-2.5">
-                      <div class="flex items-center gap-2">
-                        <span class="text-white text-xs font-black px-2 py-0.5 rounded-md shadow-2xs" style="background-color: ${theme.primary};">
-                          ${v.id < 10 ? '0' + v.id : v.id}
-                        </span>
-                        <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-md bg-slate-100 text-slate-700">
-                          ${v.category}
-                        </span>
+            <!-- Reading Questions -->
+            <div class="space-y-3 pt-1">
+              <h5 class="text-xs sm:text-sm font-bold text-slate-800">Reading Comprehension Check:</h5>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                ${((doc.questions) || []).map(q => `
+                  <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5 flex flex-col justify-between">
+                    <div>
+                      <span class="text-[10px] font-black uppercase tracking-wider text-indigo-600">Check ${q.id}</span>
+                      <p class="text-xs font-bold text-slate-800 mt-1">${q.q}</p>
+                    </div>
+                    <div>
+                      <div id="read-ans-s3-${q.id}" class="hidden p-2.5 bg-white border border-slate-200 rounded-lg text-[11px] text-slate-700 leading-relaxed shadow-xs mb-2">
+                        <span class="font-bold text-emerald-800">Answer:</span> ${q.answer}
                       </div>
-                      <button type="button" onclick="window.toggleVehicleCardView(${v.id})" id="vehicle-toggle-btn-${v.id}" class="no-print inline-flex items-center gap-1 text-[11px] font-bold px-2.5 py-1 rounded-md bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all cursor-pointer">
-                        <span>Reveal Vehicle</span> &rarr;
+                      <button type="button" onclick="const el=document.getElementById('read-ans-s3-${q.id}'); el.classList.toggle('hidden'); this.querySelector('span').innerText = el.classList.contains('hidden') ? 'Reveal Answer' : 'Hide Answer';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-indigo-700 hover:text-indigo-900 cursor-pointer">
+                        <span>Reveal Answer</span> &rarr;
                       </button>
                     </div>
-
-                    <!-- Clue View (Default) -->
-                    <div id="vehicle-clue-${v.id}" class="space-y-2">
-                      <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Functional Clues:</span>
-                      <ul class="space-y-1 text-xs text-slate-700">
-                        ${v.clues.map(c => `
-                          <li class="flex items-start gap-1.5">
-                            <span class="text-slate-400 font-bold shrink-0">&bull;</span>
-                            <span>${c}</span>
-                          </li>
-                        `).join('')}
-                      </ul>
-                      <div class="pt-2 border-t border-slate-100 text-[11px]">
-                        <span class="font-bold text-slate-500">Sentence Starter: </span>
-                        <span class="italic text-slate-700">"${v.sentenceStarters[0]}"</span>
-                      </div>
-                    </div>
-
-                    <!-- Revealed View (Initially Hidden) -->
-                    <div id="vehicle-reveal-${v.id}" class="hidden space-y-2">
-                      <div class="flex items-start justify-between gap-2">
-                        <div>
-                          <h5 class="text-sm font-black text-slate-900">${v.name}</h5>
-                          <span class="text-xs font-mono text-slate-500">${v.phonetic}</span>
-                        </div>
-                        <button type="button" onclick="speakWord('${v.name.replace(/'/g, "\\'")}')" class="p-1 rounded bg-slate-100 hover:bg-slate-200 text-slate-600 transition-all cursor-pointer" title="Listen to pronunciation">
-                          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072M18.364 5.636a9 9 0 010 12.728M11 5L6 9H2v6h4l5 4V5z"/></svg>
-                        </button>
-                      </div>
-                      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-xs text-slate-700 leading-relaxed">
-                        <span class="font-bold text-slate-800">Operational Purpose: </span>${v.modelSentence}
-                      </div>
-                      <div class="text-[11px] text-slate-600 italic">
-                        <span class="font-bold not-italic text-slate-700">Model Definition: </span>"${v.definingPractice}"
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              `).join('')}
-            </div>
-          </div>
-
-          <!-- Activity 4: Apron Safety & Cause-Effect Linkers (25 mins) -->
-          <div class="bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4">
-            <div class="flex items-center justify-between pb-2 border-b border-slate-100">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">04</span>
-                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">${delays.title || 'Activity 4: Apron Safety &amp; Cause-Effect Linkers (25 mins)'}</h3>
-              </div>
-              <span class="text-[11px] font-semibold text-slate-500">Formal Grammar</span>
-            </div>
-            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">${delays.summary || ''}</p>
-
-            ${renderActivityInstructions(delays, theme)}
-
-            <!-- Linkers Summary Table -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-              ${(delays.linkers || []).map(l => `
-                <div class="p-3 rounded-lg bg-slate-50 border border-slate-200">
-                  <span class="text-[11px] font-bold text-slate-800 uppercase tracking-wider">${l.category}</span>
-                  <p class="text-xs font-mono text-slate-600 font-semibold mt-1">${l.pattern}</p>
-                  <p class="text-[11px] text-slate-600 italic mt-1.5 leading-snug">${l.example}</p>
-                </div>
-              `).join('')}
-            </div>
-
-            <!-- 4 Ramp Scenarios -->
-            <div class="space-y-3 pt-2">
-              <span class="text-xs font-bold text-slate-700 uppercase tracking-wider">Ramp Incident Case Scenarios:</span>
-              ${(delays.scenarios || []).map(sc => `
-                <div class="p-3.5 rounded-xl border border-slate-200 bg-white shadow-2xs space-y-2">
-                  <div class="flex items-center justify-between gap-2 border-b border-slate-100 pb-1.5">
-                    <h5 class="text-xs sm:text-sm font-bold text-slate-800">${sc.title}</h5>
-                    <button type="button" onclick="window.toggleScenarioModel(${sc.id})" id="scenario-btn-${sc.id}" class="no-print text-[11px] font-bold text-indigo-600 hover:text-indigo-800 transition-all cursor-pointer">
-                      <span>Show Target Model</span> &rarr;
-                    </button>
-                  </div>
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
-                    <div class="p-2 rounded bg-rose-50/60 border border-rose-200/60">
-                      <span class="font-bold text-rose-900 text-[10px] uppercase tracking-wider block">Root Cause</span>
-                      <p class="text-rose-950 mt-0.5">${sc.cause}</p>
-                    </div>
-                    <div class="p-2 rounded bg-amber-50/60 border border-amber-200/60">
-                      <span class="font-bold text-amber-900 text-[10px] uppercase tracking-wider block">Operational Consequence</span>
-                      <p class="text-amber-950 mt-0.5">${sc.consequence}</p>
-                    </div>
-                  </div>
-                  <div class="text-[11px] text-slate-600 font-medium pt-1">
-                    <span class="font-bold text-slate-700">Speaking Task: </span>${sc.spokenTask}
-                  </div>
-                  <div id="scenario-model-${sc.id}" class="hidden p-2.5 rounded bg-slate-50 border border-slate-200 text-xs text-slate-700 italic">
-                    <span class="font-bold not-italic text-slate-800">Target Model Sentence: </span>"${sc.spokenTask.includes('due to') ? 'Due to a ruptured hydraulic hose on the pushback tractor, fluid was spilled on stand, which resulted in a 25-minute movement suspension.' : (sc.spokenTask.includes('owing to') ? 'Owing to foreign object debris located on Taxiway Mike, arrivals were halted; consequently, aerodrome safety teams completed an emergency inspection.' : (sc.spokenTask.includes('because of') ? 'Because of severe ice accumulation on the wing slats, the captain requested remote de-icing, which led to a fifteen-minute slot delay.' : 'As a result of an unauthorized contractor van parked behind the aircraft, the catering hi-lift was unable to reverse; therefore, pushback was held.'))}"
-                  </div>
-                </div>
-              `).join('')}
-            </div>
-          </div>
-
-          <!-- Activity 5: Operations Simulation & Shift Handover Briefing (30 mins) -->
-          <div class="bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4">
-            <div class="flex items-center justify-between pb-2 border-b border-slate-100">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">05</span>
-                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">${simulation.title || 'Activity 5: Operations Simulation &amp; Shift Handover (30 mins)'}</h3>
-              </div>
-              <span class="text-[11px] font-semibold text-slate-500">Collaborative Role-Play &amp; Briefing</span>
-            </div>
-
-            ${renderActivityInstructions(simulation, theme)}
-            
-            <div class="p-3.5 bg-slate-50 rounded-lg border border-slate-200 text-xs text-slate-700 leading-relaxed">
-              <span class="font-bold text-slate-900 block mb-1">Operational Situation Report:</span>
-              ${simulation.context || ''}
-            </div>
-
-            <!-- Bottlenecks Grid -->
-            <div class="space-y-2">
-              <span class="text-xs font-bold text-slate-700 uppercase tracking-wider">3 Simultaneous Ramp Bottlenecks:</span>
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-                ${(simulation.bottlenecks || []).map(b => `
-                  <div class="p-3 rounded-lg bg-rose-50/50 border border-rose-200 text-xs">
-                    <div class="flex items-center gap-1.5 font-bold text-rose-900 mb-1">
-                      <span class="w-4 h-4 rounded-full bg-rose-200 text-rose-800 flex items-center justify-center text-[10px]">${b.id}</span>
-                      <span>${b.title}</span>
-                    </div>
-                    <p class="text-rose-950 text-[11px] leading-relaxed">${b.desc}</p>
                   </div>
                 `).join('')}
               </div>
+            </div>
+          </div>
+
+          <!-- Activity 3: Connecting Words -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">45-70m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${rules.title || 'Activity 3: Connecting Words: Giving Reasons & Explaining Conditions (25 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${rules.summary || ''}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Language Focus</span>
+            </div>
+
+            ${renderActivityInstructions(rules, theme)}
+
+            <!-- Connecting Words Table -->
+            <div class="overflow-x-auto rounded-xl border border-slate-200 shadow-2xs">
+              <table class="w-full text-xs text-left">
+                <thead class="bg-slate-100 text-slate-800 font-bold border-b border-slate-200">
+                  <tr>
+                    <th class="p-2.5">Connecting Word</th>
+                    <th class="p-2.5">Grammar Function</th>
+                    <th class="p-2.5">Runway Safety Example</th>
+                    <th class="p-2.5">Spoken Tip</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200 text-slate-700 bg-white">
+                  ${(rules.rulesTable || []).map(r => `
+                    <tr class="hover:bg-slate-50">
+                      <td class="p-2.5 font-bold text-indigo-900">${r.word}</td>
+                      <td class="p-2.5 font-semibold text-slate-800">${r.meaning}</td>
+                      <td class="p-2.5 italic text-slate-600">${r.example}</td>
+                      <td class="p-2.5 text-[11px] text-slate-500">${r.tip}</td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Drills -->
+            <div class="space-y-3 pt-1">
+              <h5 class="text-xs sm:text-sm font-bold text-slate-800">Gap-Fill Drills: Choose the correct connecting word</h5>
+              <div class="space-y-2.5">
+                ${(rules.drills || []).map(d => `
+                  <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                    <p class="text-xs font-bold text-slate-900">${d.id}. ${d.sentence}</p>
+                    <div class="flex flex-wrap items-center justify-between gap-2">
+                      <div class="flex items-center gap-2">
+                        ${d.options.map(opt => `
+                          <button type="button" onclick="const ans=document.getElementById('drill-ans-s3-${d.id}'); ans.classList.remove('hidden');" class="px-2.5 py-1 bg-white hover:bg-indigo-50 border border-slate-300 rounded text-xs font-bold text-slate-700 cursor-pointer">${opt}</button>
+                        `).join('')}
+                      </div>
+                      <div id="drill-ans-s3-${d.id}" class="hidden text-xs text-emerald-800 font-bold bg-emerald-50 px-2.5 py-1 rounded border border-emerald-200">
+                        &check; Correct: ${d.correct} (${d.rationale})
+                      </div>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </div>
+
+          <!-- Activity 4: Spoken Briefing to Airline Pilots -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">70-105m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${spoken.title || 'Activity 4: Spoken Briefing: Explaining the Plan to Airline Pilots (35 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${spoken.summary || ''}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">3-Minute Spoken Briefing</span>
+            </div>
+
+            ${renderActivityInstructions(spoken, theme)}
+
+            <!-- Scenario -->
+            <div class="p-4 bg-indigo-50/80 border border-indigo-200 rounded-xl space-y-2 text-xs">
+              <div class="flex items-center gap-2 text-indigo-950 font-bold">
+                <svg width="16" height="16" class="text-indigo-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <span>The Operational Briefing Scenario:</span>
+              </div>
+              <p class="text-indigo-900 leading-relaxed font-medium">${spoken.scenario || ''}</p>
             </div>
 
             <!-- Role Cards -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-1">
-              ${(simulation.roles || []).map(r => `
-                <div class="p-3.5 rounded-xl border border-slate-200 bg-white shadow-2xs">
-                  <h5 class="text-xs font-bold uppercase tracking-wider text-slate-900 pb-1 border-b border-slate-100">${r.role}</h5>
-                  <p class="text-xs text-slate-600 mt-2 leading-relaxed">${r.mission}</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 pt-1">
+              ${(spoken.roles || []).map(r => `
+                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2 flex flex-col justify-between">
+                  <div>
+                    <div class="flex items-center justify-between gap-1 border-b border-slate-200 pb-1.5">
+                      <h5 class="text-xs font-bold text-slate-900">${r.title}</h5>
+                      <span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-white text-slate-600 border border-slate-200 shadow-2xs">${r.badge}</span>
+                    </div>
+                    <ul class="mt-2 space-y-1.5 pl-4 list-disc text-[11px] text-slate-700 leading-relaxed">
+                      ${r.bullets.map(b => `<li>${b}</li>`).join('')}
+                    </ul>
+                  </div>
                 </div>
               `).join('')}
             </div>
 
-            <div class="p-3 bg-amber-50 rounded-lg border border-amber-200 text-xs text-amber-950 leading-relaxed">
-              <span class="font-bold text-amber-900">Task: </span>${simulation.recoveryInstructions}
-            </div>
-
-            <!-- Authentic Spoken Handover Briefing Sub-Section -->
-            <div class="pt-3 border-t border-slate-100 space-y-3">
-              <div class="flex items-center justify-between">
-                <span class="text-xs font-bold uppercase tracking-wider text-slate-800">The 60-Second Shift Handover Briefing Framework:</span>
-                <span class="text-[11px] text-slate-500">4-Part Standard</span>
-              </div>
-              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
-                ${(briefing.structure || []).map(st => `
-                  <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-xs">
-                    <span class="font-bold text-slate-900 text-xs block mb-0.5">${st.step}</span>
-                    <p class="text-[10px] text-slate-500 mb-1">${st.desc}</p>
-                    <p class="text-[11px] text-indigo-700 italic border-t border-slate-200/80 pt-1 leading-snug">${st.phrase}</p>
+            <!-- Useful Phrases Box -->
+            <div class="p-4 bg-emerald-50/70 border border-emerald-200 rounded-xl space-y-2 text-xs">
+              <h5 class="font-bold text-emerald-950 flex items-center gap-2">
+                <svg width="15" height="15" class="text-emerald-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/></svg>
+                <span>Useful Briefing Phrases (Clear &amp; Reassuring):</span>
+              </h5>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-slate-800">
+                ${(spoken.usefulPhrases || []).map(ph => `
+                  <div class="p-2 bg-white border border-emerald-200 rounded-lg text-[11px] italic text-emerald-950 font-medium shadow-2xs">
+                    &ldquo;${ph}&rdquo;
                   </div>
                 `).join('')}
-              </div>
-
-              <!-- Spoken Handover Model -->
-              <div class="p-4 rounded-xl bg-slate-900 text-slate-100 space-y-2">
-                <div class="flex items-center justify-between">
-                  <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Authentic Spoken Model Briefing:</span>
-                  <button type="button" onclick="speakWord(document.getElementById('model-handover-text').innerText)" class="no-print inline-flex items-center gap-1.5 px-3 py-1 rounded bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold transition-all cursor-pointer">
-                    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072M18.364 5.636a9 9 0 010 12.728M11 5L6 9H2v6h4l5 4V5z"/></svg>
-                    <span>Listen to Model</span>
-                  </button>
-                </div>
-                <p id="model-handover-text" class="text-xs sm:text-sm text-slate-200 leading-relaxed italic border-l-2 border-amber-400 pl-3">
-                  ${briefing.spokenModel || ''}
-                </p>
               </div>
             </div>
           </div>
 
-          <!-- Activity 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins) -->
-          <div class="bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4">
-            <div class="flex items-center justify-between pb-2 border-b border-slate-100">
+          <!-- Activity 5: Safety Check -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">06</span>
-                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">${closing.title || 'Activity 6: Vocabulary Review &amp; Class Wrap-Up (10 mins)'}</h3>
-              </div>
-              <span class="text-[11px] font-semibold text-slate-500">10-Min Consolidation</span>
-            </div>
-            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">${closing.summary || ''}</p>
-
-            ${renderActivityInstructions(closing, theme)}
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-              ${(closing.reviewPrompts || []).map(rp => `
-                <div class="p-3.5 rounded-xl border border-slate-200 bg-slate-50/80 flex flex-col justify-between space-y-2">
-                  <div>
-                    <h5 class="text-xs font-bold text-slate-900">${rp.title}</h5>
-                    <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">${rp.desc}</p>
-                  </div>
-                  <div class="pt-2 border-t border-slate-200/80">
-                    <button type="button" onclick="switchModalTab('revision')" class="no-print text-[11px] font-bold text-indigo-600 hover:text-indigo-800 cursor-pointer">
-                      <span>Open Flashcard Review</span> &rarr;
-                    </button>
-                  </div>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">105-120m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 5: Safety Check: Is it Safe to Land? (15 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${safety.summary || ''}</p>
                 </div>
-              `).join('')}
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Simple Safety Check</span>
+            </div>
+
+            ${renderActivityInstructions(safety, theme)}
+
+            <!-- Table -->
+            <div class="overflow-x-auto rounded-xl border border-slate-200 shadow-2xs">
+              <table class="w-full text-xs text-left">
+                <thead class="bg-slate-100 text-slate-800 font-bold border-b border-slate-200">
+                  <tr>
+                    <th class="p-3 w-1/3">Simple Safety Question</th>
+                    <th class="p-3 w-2/3">Agreed Class Answer</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200 text-slate-700 bg-white">
+                  ${(safety.rows || []).map(row => `
+                    <tr class="hover:bg-slate-50">
+                      <td class="p-3 font-bold text-slate-900 bg-slate-50/50">${row.question}</td>
+                      <td class="p-3 text-[11px] leading-relaxed text-slate-800">${row.answer}</td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
       `;
     }
 
-    function renderLessonContentTabSession4(sessionData, theme) {
+function renderLessonContentTabSession4(sessionData, theme) {
       const bodyEl = document.getElementById('modal-body');
       if (!bodyEl) return;
       const content = sessionData.lessonContent || {};
@@ -10171,7 +9790,7 @@
             "courseWeek": "W01",
             "week": "W37",
             "date": "Wed 09 Sep",
-            "title": "Session 1 — EASA Regulatory Structure & Navigation",
+            "title": "Session 1 — EASA Rules & Finding Information Fast",
             "subtitle": "",
             "tag": "Teaching Session",
             "isFe": false,
@@ -10186,7 +9805,7 @@
             "courseWeek": "W02",
             "week": "W38",
             "date": "Wed 16 Sep",
-            "title": "Session 2 — Safety Notices & Compliance Monitoring",
+            "title": "Session 2 — Safety Alerts & Ramp Inspections",
             "subtitle": "",
             "tag": "Teaching Session",
             "isFe": false,
@@ -10201,7 +9820,7 @@
             "courseWeek": "W03",
             "week": "W39",
             "date": "Wed 23 Sep",
-            "title": "Session 3 — Exemptions, Derogations & Consultations",
+            "title": "Session 3 — Special Requests & Runway Safety Cases",
             "subtitle": "",
             "tag": "Teaching Session",
             "isFe": false,
