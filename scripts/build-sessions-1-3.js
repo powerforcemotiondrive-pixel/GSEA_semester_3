@@ -1188,6 +1188,413 @@ const outputCourseData = `/**
 });
 `;
 
+
+// Inject Airside Scenario Quizzes for Sessions 1, 2, 3
+m1.sessions["1"].materials.quizTitle = "Airside Scenario Quiz • EASA Rules & Obstacle Safeguarding";
+m1.sessions["1"].materials.quizSubtitle = "Target pace: ~45 seconds per scenario • Mix of Operational Dilemmas & Rule Spot-Checks";
+m1.sessions["1"].materials.toeicQuestions = [
+  {
+    "id": 1,
+    "stem": "A construction contractor arrives at the airport management office at 16h00 on Friday. He requests same-day verbal approval to erect a 42-metre mobile crane tomorrow morning 1.5 km from the runway. Under EASA obstacle safeguarding rules, what is the required operational action?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Grant immediate verbal permission if the contractor agrees to paint the crane bright yellow."
+      },
+      {
+        "letter": "B",
+        "text": "Refuse permission: cranes exceeding 25m within 4km require written notification at least 28 days in advance so obstacle surfaces and NOTAMs can be evaluated."
+      },
+      {
+        "letter": "C",
+        "text": "Advise the builder to call approaching airline pilots on VHF radio."
+      },
+      {
+        "letter": "D",
+        "text": "Approve the request provided the crane only operates during windy weather."
+      }
+    ],
+    "correctLetter": "B",
+    "correctText": "Refuse permission: cranes exceeding 25m within 4km require written notification at least 28 days in advance so obstacle surfaces and NOTAMs can be evaluated.",
+    "analysis": "GM1 CS-ADR-DSN.H.415 specifies that mobile obstacles exceeding 25m within 4km of an aerodrome require written notification at least 28 calendar days prior to assembly to assess penetration of obstacle limitation surfaces and coordinate NOTAM issuance.",
+    "strategy": "Remember the 28-day rule: airport operators need advance time to calculate surface slopes, mandate obstacle lighting, and publish NOTAMs for flight crews."
+  },
+  {
+    "id": 2,
+    "stem": "An aerodrome safety trainee writes four statements explaining EASA regulatory documents. Spot the statement that contains a DANGEROUS ERROR:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Acceptable Means of Compliance (AMC) demonstrate an approved specification to meet a regulation."
+      },
+      {
+        "letter": "B",
+        "text": "The word 'shall' in EASA rules indicates a mandatory obligation that must be obeyed 100%."
+      },
+      {
+        "letter": "C",
+        "text": "Guidance Material (GM) is a legally binding law, and airports can be fined for not following GM advice word-for-word."
+      },
+      {
+        "letter": "D",
+        "text": "New obstacles are strictly prohibited from penetrating the runway approach surface unless shielded."
+      }
+    ],
+    "correctLetter": "C",
+    "correctText": "Guidance Material (GM) is a legally binding law, and airports can be fined for not following GM advice word-for-word.",
+    "analysis": "Statement C is false and legally inaccurate. Guidance Material (GM) is explanatory, advisory text—it is NOT legally binding law. Mandatory requirements are set in Regulations and Certification Specifications using the word 'shall'.",
+    "strategy": "Distinguish 'Binding Law' (Regulations, Implementing Rules) from 'Advisory Guides' (Guidance Material). GM helps explain how to follow rules, but is not law itself."
+  },
+  {
+    "id": 3,
+    "stem": "An engineering consultancy submits runway expansion plans. CS-ADR-DSN.H.415 stipulates that precision runways shall have an approach surface slope not exceeding 2.0% (1:50 gradient), but the draft plans show a 3.5% gradient. What is the required outcome?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The design is acceptable because 'shall' indicates an optional recommendation."
+      },
+      {
+        "letter": "B",
+        "text": "The design cannot be approved as standard because a 3.5% approach slope penetrates the mandatory 2.0% maximum gradient."
+      },
+      {
+        "letter": "C",
+        "text": "The plans are compliant if the airport only serves daytime turboprop flights."
+      },
+      {
+        "letter": "D",
+        "text": "The engineering consultancy can redefine the 2.0% gradient in their private company handbook."
+      }
+    ],
+    "correctLetter": "B",
+    "correctText": "The design cannot be approved as standard because a 3.5% approach slope penetrates the mandatory 2.0% maximum gradient.",
+    "analysis": "The word 'shall' establishes a mandatory specification. A 3.5% approach slope is steeper than the 2.0% (1:50) ceiling, creating an unacceptable obstacle hazard without formal national authority exemption.",
+    "strategy": "In European aerodrome specifications, 'shall' = zero choice. Any design exceeding a numerical 'shall' ceiling is non-compliant."
+  },
+  {
+    "id": 4,
+    "stem": "An airport safety officer drafts a NOTAM to warn pilots about a mobile crane operating near Runway 27. Which statement contains an OPERATIONAL ERROR?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The NOTAM indicates the exact maximum height of the crane boom above ground level."
+      },
+      {
+        "letter": "B",
+        "text": "The NOTAM confirms that medium-intensity flashing red obstacle lights are installed on the crane jib."
+      },
+      {
+        "letter": "C",
+        "text": "The NOTAM assures pilots that the crane will automatically detect approaching aircraft and lower itself into the grass."
+      },
+      {
+        "letter": "D",
+        "text": "The NOTAM specifies the valid operating dates and daily working hours of the crane."
+      }
+    ],
+    "correctLetter": "C",
+    "correctText": "The NOTAM assures pilots that the crane will automatically detect approaching aircraft and lower itself into the grass.",
+    "analysis": "Statement C is completely fictitious and dangerous. Construction cranes do not automatically lower themselves. NOTAMs inform pilots of hazards so flight crews maintain visual vigilance and observe approach safety margins.",
+    "strategy": "A NOTAM provides operational facts (location, elevation, lighting, dates); it does not replace pilot vigilance or physical safeguarding."
+  },
+  {
+    "id": 5,
+    "stem": "A large freight hangar already stands 30 metres high 800m from Runway 09. A developer requests permission to build a small 18m storage annex directly behind the existing hangar. Why may this annex be approved under obstacle rules?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Because storage annexes are exempt from all aviation safety rules."
+      },
+      {
+        "letter": "B",
+        "text": "Under the 'shielding principle', an obstacle does not create a new hazard if it sits entirely within the shadow of an existing permanent, immovable structure."
+      },
+      {
+        "letter": "C",
+        "text": "Because any building under 20 metres is automatically approved near runways."
+      },
+      {
+        "letter": "D",
+        "text": "Because the freight hangar operator agreed to pay double airport landing fees."
+      }
+    ],
+    "correctLetter": "B",
+    "correctText": "Under the 'shielding principle', an obstacle does not create a new hazard if it sits entirely within the shadow of an existing permanent, immovable structure.",
+    "analysis": "CS-ADR-DSN.H.415(e) allows exceptions to approach surface prohibitions when a new object is shielded by an existing immovable obstacle that already penetrates the surface.",
+    "strategy": "Look for the shielding principle: if an immovable building is already blocking the sky, a smaller building directly behind it does not introduce new risk."
+  }
+];
+
+m1.sessions["2"].materials.quizTitle = "Airside Scenario Quiz • Apron Driving & Safety Management";
+m1.sessions["2"].materials.quizSubtitle = "Target pace: ~45 seconds per scenario • Mix of Operational Dilemmas & Rule Spot-Checks";
+m1.sessions["2"].materials.toeicQuestions = [
+  {
+    "id": 1,
+    "stem": "A baggage tractor driver is rushing to deliver last-minute transit bags to Stand 16. A speed radar records the vehicle travelling at 36 km/h in the apron circulation lane and 17 km/h inside the red aircraft stand safety box. How does this compare with EASA SIB No. 2024-11 recommendations?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Fully compliant because baggage delivery is considered an urgent operational need."
+      },
+      {
+        "letter": "B",
+        "text": "Non-compliant: EASA recommends a maximum speed of 20 km/h in general apron lanes and strictly 5 km/h (walking pace) inside the aircraft stand safety box."
+      },
+      {
+        "letter": "C",
+        "text": "Compliant provided the baggage carts are covered with waterproof tarpaulins."
+      },
+      {
+        "letter": "D",
+        "text": "Non-compliant only if passengers are currently boarding the aircraft."
+      }
+    ],
+    "correctLetter": "B",
+    "correctText": "Non-compliant: EASA recommends a maximum speed of 20 km/h in general apron lanes and strictly 5 km/h (walking pace) inside the aircraft stand safety box.",
+    "analysis": "EASA SIB No. 2024-11 establishes clear speed thresholds: 20 km/h for general apron circulation and 5 km/h inside the red stand safety boundary around parked aircraft.",
+    "strategy": "Remember the two magic apron numbers: 20 km/h for lanes, 5 km/h (walking pace) in the red box around aircraft."
+  },
+  {
+    "id": 2,
+    "stem": "Review the four statements regarding apron right-of-way and ground operations. Spot the statement that contains a DANGEROUS SAFETY ERROR:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Aircraft under tow by a pushback tractor always hold absolute right-of-way over all ground vehicles."
+      },
+      {
+        "letter": "B",
+        "text": "A heavy fuel servicing tanker has right-of-way over taxiing aircraft because aviation fuel is highly flammable."
+      },
+      {
+        "letter": "C",
+        "text": "Ground vehicles must stop at a safe distance when an aircraft is manoeuvring onto an active parking stand."
+      },
+      {
+        "letter": "D",
+        "text": "Emergency vehicles with active blue lights and sirens have immediate priority over standard ground handling equipment."
+      }
+    ],
+    "correctLetter": "B",
+    "correctText": "A heavy fuel servicing tanker has right-of-way over taxiing aircraft because aviation fuel is highly flammable.",
+    "analysis": "Statement B is completely false and dangerous. Ground vehicles NEVER have priority over taxiing or moving aircraft. Aircraft have restricted cockpit visibility, jet engine blast hazards, and cannot stop quickly.",
+    "strategy": "Aircraft ALWAYS have absolute right-of-way on the movement area. No commercial ground vehicle ever takes priority over a moving plane."
+  },
+  {
+    "id": 3,
+    "stem": "During a safety audit, an inspector records an unattended baggage belt loader parked inside the aircraft stand taxi lane and a missing fire extinguisher on a fuel truck. Which statement demonstrates professional, non-confrontational phrasing for the audit report?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Your incompetent drivers are completely ruining apron safety with their careless parking!"
+      },
+      {
+        "letter": "B",
+        "text": "It was observed that a belt loader was left positioned inside the active taxi lane, and the required portable fire extinguisher was not located on the refuelling vehicle."
+      },
+      {
+        "letter": "C",
+        "text": "Who gave this driver an airside driving permit? He should be fired immediately."
+      },
+      {
+        "letter": "D",
+        "text": "You failed your audit today because nobody on your team cares about safety."
+      }
+    ],
+    "correctLetter": "B",
+    "correctText": "It was observed that a belt loader was left positioned inside the active taxi lane, and the required portable fire extinguisher was not located on the refuelling vehicle.",
+    "analysis": "Statement B uses objective, passive phrasing ('it was observed that...', 'was left positioned...', 'was not located...'). It focuses on physical safety facts rather than emotional, personal accusations.",
+    "strategy": "In safety oversight, use the passive voice to report observations calmly. Attacking individuals causes people to hide defects; objective reporting leads to corrective fixes."
+  },
+  {
+    "id": 4,
+    "stem": "Four statements outline apron occurrence reporting and driver management. Spot the statement that contains an OPERATIONAL ERROR:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A close call where a baggage tractor stops 10 cm from an aircraft engine must be reported as a safety occurrence."
+      },
+      {
+        "letter": "B",
+        "text": "Operators issued with a safety non-compliance notice must submit a written Fix-It Plan within 30 days."
+      },
+      {
+        "letter": "C",
+        "text": "A minor scratch on an aircraft engine cowling can be ignored if the flight is running 45 minutes late."
+      },
+      {
+        "letter": "D",
+        "text": "Airside driving permits require annual refresher training covering blind spots and right-of-way rules."
+      }
+    ],
+    "correctLetter": "C",
+    "correctText": "A minor scratch on an aircraft engine cowling can be ignored if the flight is running 45 minutes late.",
+    "analysis": "Statement C is illegal and life-threatening. Even a superficial scratch or dent on an engine cowling or fuselage skin can cause catastrophic structural failure under pressurized flight conditions. All airframe contact must be reported immediately.",
+    "strategy": "Zero-tolerance for unreported aircraft contact. Any vehicle impact with an aircraft must trigger immediate technical inspection before departure."
+  },
+  {
+    "id": 5,
+    "stem": "A ground handling manager receives an audit notice citing recurring speeding violations in apron lanes. Which combination of measures in the 30-day Fix-It Plan represents the most effective long-term solution?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Install electronic speed governors set to 20 km/h on all tractors, mandate 10-minute shift toolbox briefings, and monitor telematics logs."
+      },
+      {
+        "letter": "B",
+        "text": "Tell drivers to look out for auditors and slow down when they see a safety vest."
+      },
+      {
+        "letter": "C",
+        "text": "Remove the speedometers from all vehicles so drivers focus on looking out the windscreen."
+      },
+      {
+        "letter": "D",
+        "text": "Replace all motorized baggage tugs with manual handcarts."
+      }
+    ],
+    "correctLetter": "A",
+    "correctText": "Install electronic speed governors set to 20 km/h on all tractors, mandate 10-minute shift toolbox briefings, and monitor telematics logs.",
+    "analysis": "Option A tackles root causes through technical safeguards (speed limiters), cultural communication (toolbox talks), and objective monitoring (telematics tracking).",
+    "strategy": "An effective Fix-It Plan (Corrective Action Plan) combines hardware safeguards, staff training, and data tracking to ensure permanent compliance."
+  }
+];
+
+m1.sessions["3"].materials.quizTitle = "Airside Scenario Quiz • Runway Works & Operational Decisions";
+m1.sessions["3"].materials.quizSubtitle = "Target pace: ~45 seconds per scenario • Mix of Operational Dilemmas & Rule Spot-Checks";
+m1.sessions["3"].materials.toeicQuestions = [
+  {
+    "id": 1,
+    "stem": "Due to underground drainage pipe collapse, Toulouse-Blagnac Airport must excavate the overrun area of Runway 26, reducing the Runway End Safety Area (RESA) from 90m to 55m for 45 days. How can operations continue safely and legally?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "By keeping the excavation secret from flight crews to prevent unnecessary passenger worry."
+      },
+      {
+        "letter": "B",
+        "text": "By applying for an Article 71 Operational Exemption supported by an approved safety case and four mandatory compensatory safety rules."
+      },
+      {
+        "letter": "C",
+        "text": "By closing the airport to all commercial aviation for the entire 45-day repair period."
+      },
+      {
+        "letter": "D",
+        "text": "By declaring that 55m is close enough to 90m so no official permission is required."
+      }
+    ],
+    "correctLetter": "B",
+    "correctText": "By applying for an Article 71 Operational Exemption supported by an approved safety case and four mandatory compensatory safety rules.",
+    "analysis": "Regulation (EU) 2018/1139 Article 71 provides flexibility for urgent operational needs, allowing temporary derogations when equivalent safety is substantiated through compensatory risk barriers.",
+    "strategy": "Article 71 is the legal key: it allows temporary flexibility for urgent airport repairs, provided safety is guaranteed through compensatory rules."
+  },
+  {
+    "id": 2,
+    "stem": "Review the four compensatory safety rules enforced during the Runway 26 drainage repairs. Spot the rule that contains a CRITICAL SAFETY ERROR:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The landing threshold is displaced by 180 metres to guarantee full landing rollout distance."
+      },
+      {
+        "letter": "B",
+        "text": "Landings on Runway 26 are encouraged during heavy rainstorms to test new drainage pipes under pressure."
+      },
+      {
+        "letter": "C",
+        "text": "The maximum allowable crosswind component for landing aircraft is capped at 15 knots (reduced from 25 knots)."
+      },
+      {
+        "letter": "D",
+        "text": "A dedicated airport rescue fire vehicle remains on 60-second standby at Holding Point B2 during flight arrivals."
+      }
+    ],
+    "correctLetter": "B",
+    "correctText": "Landings on Runway 26 are encouraged during heavy rainstorms to test new drainage pipes under pressure.",
+    "analysis": "Rule B is completely false and dangerous. With a shortened RESA (55m), landings are strictly PROHIBITED on Runway 26 whenever the runway is wet or contaminated to eliminate overrun risk. Arriving flights must divert.",
+    "strategy": "Shortened safety area + wet runway = high overrun risk. That is why wet runway landings are 100% banned during the exemption period."
+  },
+  {
+    "id": 3,
+    "stem": "A GSEA operations officer is briefing airline flight dispatchers on the Runway 26 works. Which sentence uses the connecting phrase 'provided that' correctly to express a safety condition?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Aircraft may land on Runway 26 provided that the surface is dry and crosswinds do not exceed 15 knots."
+      },
+      {
+        "letter": "B",
+        "text": "The threshold was displaced provided that damaged concrete stormwater culverts."
+      },
+      {
+        "letter": "C",
+        "text": "Provided that we repaired the culvert, all flights are cancelled."
+      },
+      {
+        "letter": "D",
+        "text": "Pilots will divert provided that in order to protect stopping distance."
+      }
+    ],
+    "correctLetter": "A",
+    "correctText": "Aircraft may land on Runway 26 provided that the surface is dry and crosswinds do not exceed 15 knots.",
+    "analysis": "'Provided that' introduces a mandatory operational condition followed by a full clause ('the surface is dry and crosswinds do not exceed 15 knots').",
+    "strategy": "'Provided that' = 'only on the strict condition that'. It is the primary connector used in operational aviation permissions."
+  },
+  {
+    "id": 4,
+    "stem": "An airline dispatcher reviews declared distances for Runway 26 with a displaced threshold. Which statement contains an OPERATIONAL ERROR?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A displaced threshold moves the landing point further down the paved runway surface."
+      },
+      {
+        "letter": "B",
+        "text": "Landing Distance Available (LDA) starts at the displaced threshold rather than the physical runway end."
+      },
+      {
+        "letter": "C",
+        "text": "The paved runway surface prior to the displaced threshold cannot be used for take-off in the opposite direction."
+      },
+      {
+        "letter": "D",
+        "text": "Temporary threshold markings and lighting must be published in an AIP Supplement and NOTAM."
+      }
+    ],
+    "correctLetter": "C",
+    "correctText": "The paved runway surface prior to the displaced threshold cannot be used for take-off in the opposite direction.",
+    "analysis": "Statement C is incorrect. The paved portion before a displaced threshold is unavailable for landing rollout, but it IS normally available for take-off in both directions and for rollout from the opposite runway end.",
+    "strategy": "Remember displaced threshold rules: you cannot land on it, but aircraft CAN roll out or take off over it."
+  },
+  {
+    "id": 5,
+    "stem": "An arriving flight on 3-mile final approach to Runway 26 receives a wind check from the Tower: 'Wind 340 degrees at 24 knots, crosswind component 18 knots, runway dry.' Under Exemption EASA/ADR-EXEMP/2024-009, what is the mandatory decision?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The flight may land because 18 knots is below the aircraft's standard 25-knot maximum demonstrated crosswind."
+      },
+      {
+        "letter": "B",
+        "text": "The aircraft must go around or divert because the 18-knot crosswind exceeds the temporary 15-knot safety cap."
+      },
+      {
+        "letter": "C",
+        "text": "The pilot can request the fire truck to push the aircraft down the centreline."
+      },
+      {
+        "letter": "D",
+        "text": "The control tower should shut down the runway lights to test night vision."
+      }
+    ],
+    "correctLetter": "B",
+    "correctText": "The aircraft must go around or divert because the 18-knot crosswind exceeds the temporary 15-knot safety cap.",
+    "analysis": "Rule 3 of the Article 71 exemption reduces the allowable crosswind to 15 knots. An 18-knot crosswind violates this compensatory barrier, requiring an immediate go-around and diversion to secondary Runway 14/32.",
+    "strategy": "Temporary exemption rules override standard aircraft limits. If the exemption sets a 15-knot cap, 18 knots is an immediate go-around requirement."
+  }
+];
+
 fs.writeFileSync(courseDataPath, outputCourseData, 'utf8');
 console.log('✅ data/course-data.js successfully written and verified.');
 

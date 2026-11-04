@@ -1471,6 +1471,15 @@
           }
         }
 
+        const tabToeic = document.getElementById('modal-tab-toeic');
+        if (tabToeic) {
+          if (activeSessionData.materials && activeSessionData.materials.quizTitle) {
+            tabToeic.textContent = "Scenario Quiz";
+          } else {
+            tabToeic.textContent = "TOEIC Practice";
+          }
+        }
+
         if (hasLessonContent) {
           if (tabObjectives) tabObjectives.classList.add('hidden');
           if (tabPlan) tabPlan.classList.add('hidden');
