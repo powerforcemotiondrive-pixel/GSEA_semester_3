@@ -673,131 +673,113 @@
           ]
         },
         "materials": {
+          "quizTitle": "Airside Scenario Quiz • EASA Rules & Obstacle Safeguarding",
+          "quizSubtitle": "Target pace: ~45 seconds per scenario • Mix of Operational Dilemmas & Rule Spot-Checks",
           "videos": [
             {
-              "title": "Video 1: Armed Pilots & Cockpit Defense",
-              "watchUrl": "https://www.youtube.com/watch?v=udS812jbAiE",
-              "tag": "Security & Policy",
-              "videoId": "udS812jbAiE",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/udS812jbAiE",
-              "caption": "Focus: Examine the legal debates, psychological screening, and operational safety rules of the Federal Flight Deck Officer (FFDO) armed pilot program."
+              "title": "Video 1: Obstacle Limitation Surfaces (OLS) 3D Animation",
+              "channel": "Aviation Safety & Aerodrome Engineering",
+              "duration": "6 mins",
+              "videoId": "oeJcvKZG2w8",
+              "watchUrl": "https://www.youtube.com/watch?v=oeJcvKZG2w8",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/oeJcvKZG2w8",
+              "caption": "Visual 3D fly-through demonstrating how the approach, transitional, and horizontal surfaces protect runways from tall cranes and obstacles."
             },
             {
-              "title": "Video 2: Aircraft Turnaround Efficiency",
-              "watchUrl": "https://www.youtube.com/watch?v=EiKeGmkX6fY",
-              "tag": "Airline Operations",
-              "videoId": "EiKeGmkX6fY",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/EiKeGmkX6fY",
-              "caption": "Focus: Analyze ramp handling coordination, turnaround sequence choreography, refueling protocols, and rapid passenger deplaning/boarding."
+              "title": "Video 2: How EASA Makes Aviation Regulations in Europe",
+              "channel": "EASA Official",
+              "duration": "5 mins",
+              "videoId": "XeUxBxDUGCk",
+              "watchUrl": "https://www.youtube.com/watch?v=XeUxBxDUGCk",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/XeUxBxDUGCk",
+              "caption": "An official guide explaining how Basic Regulations, Implementing Rules (IR), Acceptable Means of Compliance (AMC), and Guidance Material (GM) work together."
             },
             {
-              "title": "Video 3: The Future of Aviation Propulsion",
-              "watchUrl": "https://www.youtube.com/watch?v=7KkBE0HgNJQ",
-              "tag": "Clean Technology",
-              "videoId": "7KkBE0HgNJQ",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/7KkBE0HgNJQ",
-              "caption": "Focus: Compare cryogenic hydrogen fuel tanks, battery weight limitations, and hybrid propulsion systems for regional air travel."
+              "title": "Video 3: Understanding NOTAMs for Flight Operations",
+              "channel": "FlightInsight",
+              "duration": "7 mins",
+              "videoId": "H701DOaQvDM",
+              "watchUrl": "https://www.youtube.com/watch?v=H701DOaQvDM",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/H701DOaQvDM",
+              "caption": "A practical breakdown of how Notice to Airmen (NOTAM) alerts inform pilots about temporary airport hazards, broken lights, and construction cranes."
             }
           ],
           "articles": [
             {
-              "topic": "Cabin Safety & Passenger Behavior",
-              "sourceTag": "Aviation Safety Weekly",
-              "heading": "Zero Tolerance at 35,000 Feet: Should Airlines Enact Strict Airport and In-Flight Alcohol Bans?",
-              "snippet": "Following an increase in violent in-flight incidents, flight attendants' unions and international aviation regulators debate whether pre-departure airport bar sales and in-flight alcohol service require mandatory statutory limits.",
-              "readTime": "Estimated read: 4 mins",
-              "url": "https://www.iata.org/en/pressroom/2023-releases/2023-06-05-01/"
+              "topic": "EASA Certification Specifications",
+              "sourceTag": "Official Regulation",
+              "heading": "CS-ADR-DSN Subpart H: Obstacle Limitation Surfaces and Aerodrome Safeguarding",
+              "snippet": "Official European Union Aviation Safety Agency specifications defining the geometry, slopes, and permissible boundaries for approach, take-off, and transitional surfaces around European commercial aerodromes.",
+              "readTime": "Estimated read: 5 mins",
+              "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/aerodromes"
             },
             {
-              "topic": "Passenger Rights & Regulation",
-              "sourceTag": "Air Transport Law Journal",
-              "heading": "EU261 and Extraordinary Circumstances: Balancing Passenger Redress with Carrier Viability",
-              "snippet": "How European compensation rules for 3-hour flight delays impact legacy and budget airlines during air traffic management industrial actions and adverse weather, and where passenger rights draw the line.",
-              "readTime": "Estimated read: 5 mins",
-              "url": "https://transport.ec.europa.eu/transport-themes/passenger-rights/air_en"
+              "topic": "Safety Encyclopedia",
+              "sourceTag": "SKYbrary Safety",
+              "heading": "Obstacle Limitation Surfaces (OLS): Mitigating Construction Hazards Near Airports",
+              "snippet": "Comprehensive operational guide explaining the legal procedures for construction crane permits, the 28-day notification rule, obstacle lighting requirements, and temporary NOTAM publications.",
+              "readTime": "Estimated read: 4 mins",
+              "url": "https://skybrary.aero/articles/obstacle-limitation-surfaces-ols"
             }
           ],
           "resources": [
             {
-              "url": "https://www.icao.int/Security/Pages/default.aspx",
-              "tag": "01 • Global Security",
-              "name": "ICAO Aviation Security (AVSEC)",
-              "desc": "Official international standards on cockpit barriers, unruly passengers, and unlawful interference countermeasures."
+              "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/aerodromes",
+              "tag": "01 • European Standards",
+              "name": "EASA Easy Access Rules for Aerodromes",
+              "desc": "Consolidated regulatory portal containing Regulation (EU) No 139/2014, CS-ADR-DSN, and Acceptable Means of Compliance (AMC)."
             },
             {
-              "url": "https://www.tsa.gov/for-industry/law-enforcement-programs",
-              "tag": "02 • Cockpit Defense",
-              "name": "TSA Federal Flight Deck Officer (FFDO)",
-              "desc": "Protocols, firearm qualification guidelines, and legal authorities governing armed commercial flight crew."
+              "url": "https://skybrary.aero/articles/obstacle-limitation-surfaces-ols",
+              "tag": "02 • Airspace Safeguarding",
+              "name": "SKYbrary: Obstacle Limitation Surfaces (OLS)",
+              "desc": "Peer-reviewed aviation safety directory detailing inner horizontal, conical, and approach surface slope gradients."
             },
             {
-              "url": "https://www.easa.europa.eu/en/domains/environment",
-              "tag": "03 • Noise Standards",
-              "name": "EASA Environmental Noise & Emissions",
-              "desc": "European aviation environmental portal tracking noise abatement climb procedures, curfews, and decibel limits."
+              "url": "https://www.icao.int/safety/airnavigation/Pages/aerodromes.aspx",
+              "tag": "03 • Global Standards",
+              "name": "ICAO Annex 14 Volume I (Aerodrome Design)",
+              "desc": "International Civil Aviation Organization standards governing runway physical characteristics and obstacle clearance boundaries."
             },
             {
-              "url": "https://www.clean-aviation.eu",
-              "tag": "04 • Future Propulsion",
-              "name": "Clean Aviation Joint Undertaking",
-              "desc": "European public-private initiative developing hydrogen combustion engines and hybrid-electric commuter aircraft."
+              "url": "https://www.sia.aviation-civile.gouv.fr",
+              "tag": "04 • Live Flight Data",
+              "name": "French DGAC SIA (Aeronautical Information Service)",
+              "desc": "Official French state portal for aeronautical charts, AIP manuals, and live NOTAM telecommunication queries."
             },
             {
-              "url": "https://aci.aero",
-              "tag": "05 • Airport Operations",
-              "name": "Airports Council International (ACI World)",
-              "desc": "Global operational benchmarks on passenger terminal handling, turnaround efficiency, and apron safety."
+              "url": "https://www.aci-europe.org",
+              "tag": "05 • Airport Management",
+              "name": "ACI Europe Technical & Safety Committee",
+              "desc": "Airport operators association establishing guidelines on aerodrome obstacle evaluations and city urban planning coordination."
             },
             {
-              "url": "https://europa.eu/youreurope/citizens/travel/passenger-rights/air/index_en.htm",
-              "tag": "06 • Passenger Rights",
-              "name": "European Commission Air Passenger Rights",
-              "desc": "Statutory European consumer protection guide on long tarmac delays, missed connections, and cancellations."
+              "url": "https://oeaaa.faa.gov",
+              "tag": "06 • Airspace Analysis",
+              "name": "FAA Obstacle Evaluation & Airport Airspace Analysis (OE/AAA)",
+              "desc": "Public digital system for evaluating proposed building cranes, masts, and wind turbines penetrating flight paths."
             }
           ],
           "grammar": {
-            "title": "Modal Verbs of Obligation, Permission & Prohibition",
-            "badge": "B1–B2 Grammar Focus",
-            "patternTitle": "Regulatory Formula",
-            "formula": "Subject + Modal / Semi-Modal + Base Verb (Infinitive)",
-            "rulesTitle": "Core Regulatory Rules",
+            "title": "Words for Rules: Shall, Must, Should & May",
+            "badge": "CEFR B1–B2 Focus",
+            "patternTitle": "Aviation Regulatory Rule Pattern",
+            "formula": "Subject + SHALL / MUST + Base Verb (100% Law) | Subject + SHOULD + Base Verb (Recommendation)",
+            "rulesTitle": "When to Use Each Rule Word",
             "rules": [
-              "<strong style=\"color: #1e293b;\">1. Strict Obligation (Must / Have to / Be required to):</strong> Mandatory safety rules (<em>\"All commercial aircrew <strong>must carry</strong> government credentials\"</em> / <em>\"Passengers <strong>are required to follow</strong> crew instructions\"</em>).",
-              "<strong style=\"color: #1e293b;\">2. Strict Prohibition (Must not / May not / Be prohibited from):</strong> Unlawful actions (<em>\"Travelers <strong>are strictly prohibited from entering</strong> the flight deck without authorization\"</em>).",
-              "<strong style=\"color: #1e293b;\">3. Official Permission (May / Can / Be authorized to):</strong> Legal authorization (<em>\"Deputized Federal Flight Deck Officers <strong>are authorized to carry</strong> defensive equipment in flight\"</em>).",
-              "<strong style=\"color: #1e293b;\">4. Operational Recommendations (Should / Be advised to):</strong> Best practice guidelines (<em>\"Carriers <strong>should notify</strong> passengers of schedule revisions in advance\"</em>)."
+              "<strong>SHALL / MUST (Obligation):</strong> Used exclusively when an action is 100% required by aviation law. Zero choice or exception is permitted.",
+              "<strong>SHALL NOT / MUST NOT (Prohibition):</strong> Used when an action is strictly forbidden and creates an immediate safety violation.",
+              "<strong>SHOULD (Recommendation):</strong> Expresses recommended industry best practice or guidance. It is strongly advised, but not an absolute legal duty.",
+              "<strong>MAY (Permission):</strong> Indicates that an option, discretion, or special authorization is available if conditions are met."
             ],
-            "trap": "<strong>⚠️ TOEIC Part 5 Verb Pattern Alert:</strong> Pure modals (<em>must, may, should, can</em>) are always followed directly by the bare infinitive (no \"to\"). Regulatory semi-modals require <strong>to + verb</strong> (<em>is required to submit</em>, <em>is authorized to board</em>) or preposition + gerund (<em>prohibited from smoking</em>).",
-            "examplesTitle": "Aerodrome & Security Examples",
+            "trap": "<strong>⚠️ Spoken English Pitfall:</strong> In French, the verb <em>'devoir'</em> (il doit) is often translated as either <em>'shall'</em> or <em>'should'</em>. In European aviation law, confusing these two is a serious legal error! Always use <em>'shall/must'</em> for mandatory laws and <em>'should'</em> for advisory best practice.",
+            "examplesTitle": "Authentic EASA Operational Examples",
             "examples": [
-              "<em>\"Flight attendants <strong>must verify</strong> that all overhead compartments are securely latched before taxi.\"</em>",
-              "<em>\"Under EU261 regulations, delayed travelers <strong>are entitled to receive</strong> meals and hotel accommodation.\"</em>"
+              "The aerodrome operator <strong>shall</strong> establish an approach surface for each runway direction intended for landing.",
+              "New objects <strong>shall not</strong> be permitted above the approach slope within the safeguarding boundary.",
+              "Construction contractors <strong>should</strong> lower the crane boom to ground level during overnight periods.",
+              "The civil aviation authority <strong>may</strong> grant a temporary night permit provided safety lights are active."
             ]
-          },
-          "toeic": {
-            "stem": "Under revised flight deck defense protocols, certified airline captains are officially authorized ________ defensive equipment exclusively inside the cockpit.",
-            "options": [
-              {
-                "letter": "A",
-                "text": "carry"
-              },
-              {
-                "letter": "B",
-                "text": "to carry"
-              },
-              {
-                "letter": "C",
-                "text": "carrying"
-              },
-              {
-                "letter": "D",
-                "text": "carried"
-              }
-            ],
-            "correctLetter": "B",
-            "correctText": "to carry",
-            "analysis": "The passive semi-modal construction \"be authorized + to-infinitive\" governs official permissions in workplace safety and TOEIC Part 5 grammar.",
-            "strategy": "Memorize the three regulatory verb patterns: (1) modal + bare verb, (2) be required/authorized + to + verb, and (3) be prohibited from + -ing."
           },
           "toeicQuestions": [
             {
@@ -930,10 +912,7 @@
               "analysis": "CS-ADR-DSN.H.415(e) allows exceptions to approach surface prohibitions when a new object is shielded by an existing immovable obstacle that already penetrates the surface.",
               "strategy": "Look for the shielding principle: if an immovable building is already blocking the sky, a smaller building directly behind it does not introduce new risk."
             }
-          ],
-          "pageUrl": "session1/admat_aas1.html",
-          "quizTitle": "Airside Scenario Quiz • EASA Rules & Obstacle Safeguarding",
-          "quizSubtitle": "Target pace: ~45 seconds per scenario • Mix of Operational Dilemmas & Rule Spot-Checks"
+          ]
         }
       },
       "2": {
@@ -1469,147 +1448,113 @@
           ]
         },
         "materials": {
+          "quizTitle": "Airside Scenario Quiz • Apron Driving & Safety Management",
+          "quizSubtitle": "Target pace: ~45 seconds per scenario • Mix of Operational Dilemmas & Rule Spot-Checks",
           "videos": [
             {
-              "title": "Video 1: Passenger Flow Architecture",
-              "watchUrl": "https://www.youtube.com/watch?v=oeJcvKZG2w8",
-              "tag": "Landside Design",
-              "videoId": "oeJcvKZG2w8",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/oeJcvKZG2w8",
-              "caption": "Focus: Examine terminal wayfinding psychology, queue mitigation at security checkpoints, and concourse commercial layouts shaping the airside dwell hour."
+              "title": "Video 1: Airport Ramp Safety & Co-Activity Hazards",
+              "channel": "EASA Together4Safety / IATA",
+              "duration": "6 mins",
+              "videoId": "EiKeGmkX6fY",
+              "watchUrl": "https://www.youtube.com/watch?v=EiKeGmkX6fY",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/EiKeGmkX6fY",
+              "caption": "Visual breakdown of high-risk apron zones, blind spots, vehicle circulation lanes, jet engine blast, and safe technician movement between parked aircraft."
             },
             {
-              "title": "Video 2: Taxi & Line-Up Procedures",
-              "watchUrl": "https://www.youtube.com/watch?v=XeUxBxDUGCk",
-              "tag": "Airside Taxi",
-              "videoId": "XeUxBxDUGCk",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/XeUxBxDUGCk",
-              "caption": "Focus: Follow cockpit taxi procedures from gate stand to runway: yellow centerline tracking, taxiway speed rules, holding short at threshold lines, and lining up."
+              "title": "Video 2: Ground Support Equipment (GSE) Collisions & Near-Misses",
+              "channel": "Aviation Investigation & Safety",
+              "duration": "8 mins",
+              "videoId": "R90mroZyAL4",
+              "watchUrl": "https://www.youtube.com/watch?v=R90mroZyAL4",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/R90mroZyAL4",
+              "caption": "Real apron surveillance analysis showing how vehicle speeding and tight turnaround pressure lead to fuselage scratches and engine cowling strikes."
             },
             {
-              "title": "Video 3: Runway Numbers & Markings",
-              "watchUrl": "https://www.youtube.com/watch?v=H701DOaQvDM",
-              "tag": "Ground Guidance",
-              "videoId": "H701DOaQvDM",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/H701DOaQvDM",
-              "caption": "Focus: Learn how magnetic bearings determine runway numbers (09/27), parallel designations (L, C, R), and the meaning of piano key threshold markings."
+              "title": "Video 3: Airside Driving & Pushback Safety Rules",
+              "channel": "Swissport / Menzies Ground Operations",
+              "duration": "5 mins",
+              "videoId": "2BZbHAJQ70s",
+              "watchUrl": "https://www.youtube.com/watch?v=2BZbHAJQ70s",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/2BZbHAJQ70s",
+              "caption": "Covers the 20 km/h apron speed limit, the 5 km/h stand limit, and why moving aircraft always hold absolute right-of-way over ground vehicles."
             }
           ],
           "articles": [
             {
-              "topic": "Terminal Facilitation",
-              "sourceTag": "ACI World Insights",
-              "heading": "Airport Passenger Journey Continuity: Building Trust Across Touchpoints",
-              "snippet": "Airports Council International explores integrated passenger flows from curb to gate, evaluating self-service bag drop, biometric checkpoints, and dwell time optimization in international terminals.",
-              "readTime": "Estimated read: 6 mins",
-              "url": "https://blog.aci.aero/customer-experience/airport-passenger-journey-continuity/"
-            },
-            {
-              "topic": "Aerodrome Infrastructure",
-              "sourceTag": "SKYbrary Aviation Safety",
-              "heading": "Movement Area Safety & Aerodrome Operations (ICAO Annex 14)",
-              "snippet": "A regulatory breakdown contrasting the manoeuvring area (runways and taxiways strictly controlled by ATC Tower/Ground) with the apron, establishing operational boundaries and safety management protocols.",
-              "readTime": "Estimated read: 7 mins",
-              "url": "https://skybrary.aero/articles/movement-area"
-            },
-            {
-              "topic": "Navigation Technology",
-              "sourceTag": "Simple Flying Tech",
-              "heading": "How Do Airports Number Their Runways? A Technical Guide",
-              "snippet": "An accessible engineering explanation of magnetic compass azimuths, 180-degree reciprocal ends, parallel runway letters, and why shifting magnetic poles force airports to repaint numbers over time.",
+              "topic": "EASA Safety Notice",
+              "sourceTag": "SIB No. 2024-11",
+              "heading": "Ground Support Equipment (GSE) Speed Compliance & Apron Incident Mitigation",
+              "snippet": "Analysis of recent European safety occurrence data highlighting a 14% rise in apron collisions, with mandatory recommendations for 20 km/h circulation lane speed caps and telematics monitoring.",
               "readTime": "Estimated read: 5 mins",
-              "url": "https://simpleflying.com/runways-naming/"
+              "url": "https://www.easa.europa.eu/en/domains/safety-management/ground-handling"
             },
             {
-              "topic": "Surface Safety",
-              "sourceTag": "SKYbrary Safety Table",
-              "heading": "Taxiway Surface Markings, Mandatory Signs & Holding Positions",
-              "snippet": "Visual safety guidelines covering yellow taxiway centerlines, enhanced markings, runway holding positions (two solid and two dashed yellow lines), and illuminated stop bars designed to prevent runway incursions.",
-              "readTime": "Estimated read: 8 mins",
-              "url": "https://skybrary.aero/articles/taxiway-surface-markings-and-signs"
+              "topic": "Ramp Safety Best Practices",
+              "sourceTag": "IATA / ACI",
+              "heading": "Apron Management & Ground Vehicle Incursion Prevention (AHM 630)",
+              "snippet": "IATA Airport Handling Manual guidelines on stand safety markings, vehicle separation buffers, non-punitive occurrence reporting, and effective Corrective Action Plans (CAP).",
+              "readTime": "Estimated read: 4 mins",
+              "url": "https://skybrary.aero/articles/ground-operations"
             }
           ],
           "resources": [
             {
-              "url": "https://www.icao.int/safety/airnavigation/Pages/aerodromes.aspx",
-              "tag": "01 • Global Standards",
-              "name": "ICAO Aerodromes Portal",
-              "desc": "Official international standards for runway dimensions, pavement visual aids, ground lighting, and aerodrome safety certificates."
+              "url": "https://www.easa.europa.eu/en/domains/safety-management/ground-handling",
+              "tag": "01 • European Safety Hub",
+              "name": "EASA Ground Handling Safety Portal",
+              "desc": "Official European Union Aviation Safety Agency guidelines on apron co-activity, ramp incidents, and ground handling certificates."
             },
             {
-              "url": "https://skybrary.aero/articles/taxiway-surface-markings-and-signs",
-              "tag": "02 • Safety Encyclopedia",
-              "name": "SKYbrary Surface Markings",
-              "desc": "Comprehensive illustrated directory of airport pavement markings, holding position lines, and mandatory instruction signs."
+              "url": "https://www.iata.org/en/programs/safety/ground-operations",
+              "tag": "02 • Global Ramp Standards",
+              "name": "IATA Airport Handling Manual (AHM)",
+              "desc": "International Air Transport Association baseline procedures for safe aircraft pushback, baggage handling, and GSE maintenance."
             },
             {
-              "url": "https://www.flightradar24.com",
-              "tag": "03 • Live Ground Tracking",
-              "name": "Flightradar24 Surface Radar",
-              "desc": "Real-time interactive radar tracking showing commercial airliners taxiing from gate stands across taxiways to active runways worldwide."
+              "url": "https://skybrary.aero/articles/ground-operations",
+              "tag": "03 • Safety Encyclopedia",
+              "name": "SKYbrary: Ground Operations & Ramp Safety",
+              "desc": "Interactive repository of apron vehicle collisions, jet blast incidents, and human factors in tight aircraft turnaround schedules."
             },
             {
-              "url": "https://www.faa.gov/airports/runway_safety",
-              "tag": "04 • Incursion Prevention",
-              "name": "FAA Runway Safety Office",
-              "desc": "Interactive airfield diagram quizzes, surface navigation animations, and training resources aimed at eliminating runway incursions."
+              "url": "https://aci.aero/programs-services/airport-safety",
+              "tag": "04 • Apron Guidelines",
+              "name": "ACI World Apron Safety Handbook",
+              "desc": "Airports Council International best practices on apron painted safety markings, speed enforcement, and FOD management."
             },
             {
-              "url": "https://aci.aero",
-              "tag": "05 • Airport Management",
-              "name": "Airports Council International (ACI)",
-              "desc": "Global association benchmark reports on terminal efficiency, baggage automation, and Airport Service Quality (ASQ) metrics."
+              "url": "https://bea.aero",
+              "tag": "05 • Occurrence Investigation",
+              "name": "French BEA Airside Occurrence Reports",
+              "desc": "Official safety investigation reports detailing ground vehicle incidents and near-misses on French and European aerodromes."
             },
             {
-              "url": "https://aircraft.airbus.com",
-              "tag": "06 • Aircraft Engineering",
-              "name": "Airbus Safety & Ground Operations",
-              "desc": "Manufacturer briefings on runway braking friction, Runway Overrun Prevention Systems (ROPS), and aircraft apron maneuvering dynamics."
+              "url": "https://aviation-safety.net",
+              "tag": "06 • Ground Damage Stats",
+              "name": "Flight Safety Foundation Ground Damage Database",
+              "desc": "Statistical database analyzing recurring apron vehicle accidents and cost-effective preventative solutions."
             }
           ],
           "grammar": {
-            "title": "Prepositions of Place, Direction & Movement",
-            "badge": "B1–B2 Grammar Focus",
-            "patternTitle": "Spatial Guide",
-            "formula": "AT (Point/Gate) • IN (Enclosed Room) • ON (Surface/Apron) • ACROSS / ALONG (Movement)",
-            "rulesTitle": "Static Positions vs. Dynamic Direction",
+            "title": "The Gentle Passive Voice for Safety Inspections",
+            "badge": "CEFR B1–B2 Focus",
+            "patternTitle": "Objective Audit Sentence Pattern",
+            "formula": "It was observed that + Subject + was / were + Past Participle (Factual & Non-Blaming)",
+            "rulesTitle": "Why Use the Gentle Passive in Safety Audits?",
             "rules": [
-              "<strong style=\"color: #1e293b;\">1. AT (Specific Service Points &amp; Nodes):</strong> Counters, desks, and intersections (<em>\"Check in <strong>at</strong> the automated kiosk\"</em> / <em>\"Hold <strong>at</strong> Holding Point Alpha\"</em> / <em>\"Board <strong>at</strong> Gate B22\"</em>).",
-              "<strong style=\"color: #1e293b;\">2. IN (Enclosed Volumes &amp; Concourse Halls):</strong> Inside rooms or buildings (<em>\"Wait <strong>in</strong> the departure lounge\"</em> / <em>\"Shop <strong>in</strong> duty-free\"</em> / <em>\"Inspect engines <strong>in</strong> Hangar 2\"</em>).",
-              "<strong style=\"color: #1e293b;\">3. ON (Pavement Surfaces &amp; Movement Lines):</strong> Flat operational ground (<em>\"Parked <strong>on</strong> the apron\"</em> / <em>\"Taxiing <strong>on</strong> Taxiway Bravo\"</em> / <em>\"Aligning <strong>on</strong> Runway 09L\"</em> / <em>\"Centered <strong>on</strong> the yellow line\"</em>).",
-              "<strong style=\"color: #1e293b;\">4. Directional Prepositions (Through / Along / Across):</strong> Path and transit (<em>\"Walk <strong>through</strong> security screening\"</em> / <em>\"Taxi <strong>along</strong> the centerline\"</em> / <em>\"Never drive <strong>across</strong> an active runway\"</em>)."
+              "<strong>Focus on the Physical System, Not the Individual:</strong> Say <em>'The vehicle was parked in the taxi lane'</em> rather than <em>'You parked the vehicle in the taxi lane'</em>.",
+              "<strong>Report Recorded Data Objectively:</strong> Use recorded facts: <em>'The baggage tug was clocked at 36 km/h'</em> rather than emotional accusations like <em>'Your driver was speeding dangerously'</em>.",
+              "<strong>Encourage Non-Punitive Safety Reporting:</strong> Under EASA 'Just Culture' principles, constructive phrasing prevents workers from hiding mistakes and encourages root-cause solutions.",
+              "<strong>Structure for Written & Spoken Findings:</strong> Start with <em>'During the morning walkaround, it was identified that...'</em> or <em>'Logs show that refresher training has not yet been completed.'</em>"
             ],
-            "trap": "<strong>⚠️ TOEIC Part 5 Preposition Trap:</strong> Beware of verb collocations! Static locations use <em>at, in, on</em> (<em>wait at the gate</em>). Motion towards a destination requires <em>to, into, onto, across</em> (<em>proceed to the gate</em>, <em>walk onto the jet bridge</em>). Don't confuse stationary states with directional transit!",
-            "examplesTitle": "Airfield & Concourse Examples",
+            "trap": "<strong>⚠️ Spoken English Pitfall:</strong> Using the direct active voice (<em>'You failed to...'</em> or <em>'Your team broke the rule'</em>) triggers immediate defensive reactions and arguments. In international aviation oversight, professional officers always report what <em>was observed</em> rather than who <em>is guilty</em>.",
+            "examplesTitle": "Professional Audit Phrasing Examples",
             "examples": [
-              "<em>\"Passengers must pass <strong>through</strong> security before entering the retail concourse.\"</em>",
-              "<em>\"Flight 840 is cleared to taxi <strong>along</strong> Taxiway Juliet and hold short <strong>at</strong> Runway 27.\"</em>"
+              "A high-visibility safety vest <strong>was not worn</strong> by the ramp driver during the turnaround.",
+              "The baggage tractor <strong>was recorded travelling</strong> at 36 km/h in a 20 km/h circulation lane.",
+              "A minor cowling scratch <strong>was identified</strong> during pre-flight inspection, but no occurrence report <strong>was logged</strong>.",
+              "Written training records <strong>have not been submitted</strong> to the aerodrome safety office."
             ]
-          },
-          "toeic": {
-            "stem": "Ground vehicles servicing aircraft on the terminal apron are strictly forbidden from driving ________ the marked runway boundary lines without obtaining direct clearance from air traffic control.",
-            "options": [
-              {
-                "letter": "A",
-                "text": "across"
-              },
-              {
-                "letter": "B",
-                "text": "into"
-              },
-              {
-                "letter": "C",
-                "text": "along"
-              },
-              {
-                "letter": "D",
-                "text": "between"
-              }
-            ],
-            "correctLetter": "A",
-            "correctText": "across",
-            "analysis": "The preposition \"across\" denotes transverse motion from one side of a surface boundary to the other (driving across a line or runway). In TOEIC Part 5, spatial prepositions of traversal (across) are frequently tested against parallel motion (along) or interior motion (into).",
-            "strategy": "Always check whether the verb denotes traversal (crossing over: across), linear alignment (parallel to: along), or entry into an enclosed space (into / through)."
           },
           "toeicQuestions": [
             {
@@ -1742,10 +1687,7 @@
               "analysis": "Option A tackles root causes through technical safeguards (speed limiters), cultural communication (toolbox talks), and objective monitoring (telematics tracking).",
               "strategy": "An effective Fix-It Plan (Corrective Action Plan) combines hardware safeguards, staff training, and data tracking to ensure permanent compliance."
             }
-          ],
-          "pageUrl": "session2/admat_aas1.html",
-          "quizTitle": "Airside Scenario Quiz • Apron Driving & Safety Management",
-          "quizSubtitle": "Target pace: ~45 seconds per scenario • Mix of Operational Dilemmas & Rule Spot-Checks"
+          ]
         }
       },
       "3": {
@@ -2290,133 +2232,115 @@
           ]
         },
         "materials": {
+          "quizTitle": "Airside Scenario Quiz • Runway Works & Operational Decisions",
+          "quizSubtitle": "Target pace: ~45 seconds per scenario • Mix of Operational Dilemmas & Rule Spot-Checks",
           "videos": [
             {
-              "title": "Video 1: What Happens To An Aircraft During Its Turnaround?",
-              "watchUrl": "https://www.youtube.com/watch?v=EiKeGmkX6fY",
-              "tag": "Ground Handling",
+              "title": "Video 1: Runway End Safety Areas (RESA) & Overrun Accidents",
+              "channel": "ICAO Safety / NLR Research",
+              "duration": "7 mins",
+              "videoId": "7KkBE0HgNJQ",
+              "watchUrl": "https://www.youtube.com/watch?v=7KkBE0HgNJQ",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/7KkBE0HgNJQ",
+              "caption": "Explains why 90m and 240m safety buffers are required beyond runway ends, how overruns occur in wet weather, and how engineered arresting beds work."
+            },
+            {
+              "title": "Video 2: Displaced Thresholds & Declared Distances Explained",
+              "channel": "Boldmethod Pilot Training",
+              "duration": "6 mins",
+              "videoId": "udS812jbAiE",
+              "watchUrl": "https://www.youtube.com/watch?v=udS812jbAiE",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/udS812jbAiE",
+              "caption": "Flight pilot perspective on how landing distances (LDA) change when thresholds are moved forward for runway construction or obstacle clearance."
+            },
+            {
+              "title": "Video 3: How Major Airports Resurface Runways Without Closing",
+              "channel": "Megaprojects / Airport Engineering",
+              "duration": "8 mins",
               "videoId": "EiKeGmkX6fY",
+              "watchUrl": "https://www.youtube.com/watch?v=EiKeGmkX6fY",
               "embedUrl": "https://www.youtube-nocookie.com/embed/EiKeGmkX6fY",
-              "caption": "Focus: Step-by-step breakdown of the rapid 35 to 45-minute commercial aircraft turnaround: blocks-on, chocks, deplaning, baggage handling, fueling, catering, and pushback."
+              "caption": "Engineering documentary showing how major airports conduct night runway culvert repairs and resurfacing while maintaining commercial operations by day."
+            }
+          ],
+          "articles": [
+            {
+              "topic": "European Regulatory Flexibility",
+              "sourceTag": "Article 71 Exemption",
+              "heading": "EASA Flexibility Provisions: Navigating Urgent Operational Exemptions in Aerodrome Works",
+              "snippet": "Explaining the legal framework of Article 71 in Regulation (EU) 2018/1139, permitting temporary derogations for critical airport repairs when equivalent safety is substantiated through compensatory risk controls.",
+              "readTime": "Estimated read: 5 mins",
+              "url": "https://www.easa.europa.eu/en/domains/air-operations"
             },
             {
-              "title": "Video 2: 20 Types of Aircraft Ground Support Equipment (GSE)",
-              "watchUrl": "https://www.youtube.com/watch?v=R90mroZyAL4",
-              "tag": "Vehicle Operations",
-              "videoId": "R90mroZyAL4",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/R90mroZyAL4",
-              "caption": "Focus: Visual field guide to the specialized vehicles operating on the apron stand: pushback tugs, ground power units (GPU), belt loaders, catering hi-lifts, and de-icing rigs."
+              "topic": "Runway Safety Case Study",
+              "sourceTag": "SKYbrary Analysis",
+              "heading": "Runway End Safety Areas (RESA) & Declared Distance Adjustments During Construction",
+              "snippet": "Technical examination of how displaced thresholds, wet runway prohibitions, and emergency standby units compensate for shortened overrun buffers during major airside drainage works.",
+              "readTime": "Estimated read: 5 mins",
+              "url": "https://skybrary.aero/articles/runway-end-safety-area"
+            }
+          ],
+          "resources": [
+            {
+              "url": "https://skybrary.aero/articles/runway-end-safety-area",
+              "tag": "01 • Overrun Prevention",
+              "name": "SKYbrary: Runway End Safety Area (RESA)",
+              "desc": "Detailed analysis of runway overrun buffer dimensions, arrestor beds (EMAS), and drainage culvert safeguarding."
             },
             {
-              "title": "Video 3: Pushback Operations & Electric Tugs",
-              "watchUrl": "https://www.youtube.com/watch?v=2BZbHAJQ70s",
-              "tag": "Ramp Safety",
-              "videoId": "2BZbHAJQ70s",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/2BZbHAJQ70s",
-              "caption": "Focus: Captain Joe explains how pushback tractors maneuver commercial airliners out of the gate, interphone headset communication, and next-generation electric tug innovations."
+              "url": "https://skybrary.aero/articles/displaced-threshold",
+              "tag": "02 • Declared Distances",
+              "name": "SKYbrary: Displaced Thresholds & Declared Distances",
+              "desc": "Comprehensive guide explaining how TORA, TODA, ASDA, and LDA are declared and recalculated during runway maintenance."
+            },
+            {
+              "url": "https://www.eurocontrol.int/runway-safety",
+              "tag": "03 • European Action Plan",
+              "name": "Eurocontrol Runway Safety (EAPPRE)",
+              "desc": "European Action Plan for the Prevention of Runway Excursions detailing operational restrictions in degraded weather."
+            },
+            {
+              "url": "https://www.easa.europa.eu/en/domains/air-operations",
+              "tag": "04 • Legal Flexibility",
+              "name": "EASA Air Operations & Article 71 Exemptions",
+              "desc": "European regulatory framework governing temporary operational permits, safety risk assessments, and authority approvals."
+            },
+            {
+              "url": "https://www.faa.gov/airports/engineering",
+              "tag": "05 • Airfield Engineering",
+              "name": "FAA Airport Construction Safety Standards",
+              "desc": "Advisory Circulars detailing operational safety plans during airport construction and underground pipe replacements."
+            },
+            {
+              "url": "https://www.toulouse.aeroport.fr",
+              "tag": "06 • Operational Base",
+              "name": "Toulouse-Blagnac Aerodrome Operations (LFBO)",
+              "desc": "Official operational notices, runway maintenance timetables, and airline consultative committee updates."
             }
           ],
           "grammar": {
-            "title": "Cause, Effect & Relative Clauses in Ground Operations",
-            "badge": "B2 Professional Grammar Focus",
-            "patternTitle": "The Cause & Effect Framework",
-            "formula": "Due to / Owing to + [Noun Phrase], [Subject] + [Verb]  |  [Cause] + led to / resulted in + [Noun / Gerund]",
-            "rulesTitle": "Operational Usage Rules",
+            "title": "Connecting Words for Explaining Rules & Conditions",
+            "badge": "CEFR B1–B2 Focus",
+            "patternTitle": "Rule & Operational Condition Linkers",
+            "formula": "Permission Clause + PROVIDED THAT + Mandatory Safety Condition (Condition Linker)",
+            "rulesTitle": "How to Give Clear Reasons in Spoken Briefings",
             "rules": [
-              "<strong style=\"color: #1e293b;\">1. Formal Prepositional Causes (Due to / Owing to):</strong> Followed strictly by a noun phrase or gerund, never by a full subject+verb clause (*\"<strong>Due to heavy ramp congestion</strong>, the refueler was delayed\"*).",
-              "<strong style=\"color: #1e293b;\">2. Result Verbs (Led to / Resulted in):</strong> Express the direct outcome of an event (*\"An overheated conveyor <strong>resulted in</strong> a 15-minute baggage delay\"*).",
-              "<strong style=\"color: #1e293b;\">3. Defining Relative Clauses (Which / That):</strong> Used to clearly define airside vehicles and technical equipment without jargon (*\"The GPU is a mobile generator <strong>that supplies electricity</strong> to the cabin\"*).",
-              "<strong style=\"color: #1e293b;\">4. Transitional Connectors (Consequently / As a result):</strong> Placed at the start of a sentence followed by a comma to introduce a consequence."
+              "<strong>PROVIDED THAT / AS LONG AS (Condition):</strong> Introduces an essential safety boundary. Example: <em>'Aircraft may land provided that the runway surface is dry.'</em>",
+              "<strong>DUE TO / BECAUSE OF (Cause):</strong> Followed by a noun phrase explaining why an unusual action was necessary. Example: <em>'The RESA is reduced due to underground culvert repairs.'</em>",
+              "<strong>IN ORDER TO (Purpose):</strong> Followed by an infinitive verb to explain the safety goal. Example: <em>'We displaced the threshold by 180m in order to protect stopping distance.'</em>",
+              "<strong>IN LIEU OF (Replacement):</strong> Means 'in place of' when substituting one safety barrier for another. Example: <em>'Temporary flashing guard lights were installed in lieu of painted lines.'</em>",
+              "<strong>UNLESS (Exception):</strong> Sets an absolute restriction. Example: <em>'No landings are permitted unless crosswinds are below 15 knots.'</em>"
             ],
-            "trap": "<strong>⚠️ The Common Grammar Trap:</strong> Do not write <em>due to because</em> or follow <em>due to</em> with a full sentence! Say <em>\"Due to the storm\"</em> (noun phrase), NOT <em>\"Due to the storm was bad\"</em>. For full clauses, use <em>\"Because the storm was severe...\"</em>.",
-            "examplesTitle": "Ground Handling Examples",
+            "trap": "<strong>⚠️ Spoken English Pitfall:</strong> Do not say <em>'due to repair'</em> (verb). Always follow <em>'due to'</em> with a noun phrase: <em>'due to drainage repairs'</em>. To express purpose with a verb, always use <em>'in order to + verb'</em> (e.g. <em>'in order to repair the pipe'</em>).",
+            "examplesTitle": "Operational Runway Briefing Examples",
             "examples": [
-              "<em>\"<strong>Owing to a mechanical defect</strong> on the pushback tractor, stand clearance was postponed by ten minutes.\"</em>",
-              "<em>\"The belt loader experienced an electrical failure, <strong>which prevented handlers</strong> from unloading the forward hold on schedule.\"</em>"
+              "Aircraft may land on Runway 26 <strong>provided that</strong> the runway braking action is reported as good.",
+              "The available safety area was reduced from 90m to 55m <strong>due to</strong> critical drainage pipe excavation.",
+              "The threshold was displaced by 180 metres <strong>in order to guarantee</strong> standard landing rollout distance.",
+              "Dedicated fire rescue vehicles are stationed at Holding Point B2 <strong>in lieu of</strong> normal fire station response times."
             ]
           },
-          "toeic": {
-            "stem": "Due to a temporary failure of the mobile ground power unit, cabin air conditioning ________ until the auxiliary system was activated.",
-            "options": [
-              {
-                "letter": "A",
-                "text": "was suspended"
-              },
-              {
-                "letter": "B",
-                "text": "to suspend"
-              },
-              {
-                "letter": "C",
-                "text": "suspending"
-              },
-              {
-                "letter": "D",
-                "text": "suspends"
-              }
-            ],
-            "correctLetter": "A",
-            "correctText": "was suspended",
-            "analysis": "The sentence requires a past passive finite verb: the air conditioning was suspended by ground crew until power was restored.",
-            "strategy": "Identify the passive receiver of the action (\"air conditioning\") and the past context (\"was activated\"), requiring was + past participle."
-          },
-          "resources": [
-            {
-              "url": "https://www.icao.int",
-              "tag": "01 • Regulatory Standard",
-              "name": "ICAO Annex 14 (Aerodromes)",
-              "desc": "International Standards and Recommended Practices for aerodrome design, apron management, and visual aids."
-            },
-            {
-              "url": "https://www.iata.org",
-              "tag": "02 • Ramp Operations Manual",
-              "name": "IATA Airport Handling Manual (AHM)",
-              "desc": "Global industry baseline procedures for safe and efficient ground handling operations and GSE standards."
-            },
-            {
-              "url": "https://www.easa.europa.eu",
-              "tag": "03 • European Safety Guidance",
-              "name": "EASA Ground Handling Safety Hub",
-              "desc": "Safety promotion bulletins addressing ramp collision prevention, turnaround hazards, and human factors."
-            },
-            {
-              "url": "https://www.aci.aero",
-              "tag": "04 • Apron Best Practices",
-              "name": "ACI World Apron Safety Guidelines",
-              "desc": "Airports Council International recommendations on apron markings, service vehicle routing, and FOD management."
-            },
-            {
-              "url": "https://www.skybrary.aero",
-              "tag": "05 • Safety Knowledge Network",
-              "name": "SKYbrary Aviation Safety: Ground Operations",
-              "desc": "Peer-reviewed aviation safety repository detailing turnaround incident analysis and mitigation strategies."
-            },
-            {
-              "url": "https://www.etsglobal.org/fr/fr",
-              "tag": "06 • TOEIC Listening & Reading",
-              "name": "ETS Global Professional English",
-              "desc": "Practice materials for workplace and transportation logistics reading comprehension."
-            }
-          ],
-          "pageUrl": "session3/admat_aas1.html",
-          "articles": [
-            {
-              "topic": "IATA Operational Safety Briefing",
-              "sourceTag": "Industry Safety Report",
-              "heading": "Managing Parallel Servicing Hazards during Fast-Turnaround Operations",
-              "snippet": "An analysis of simultaneous ground servicing workflows, vehicle clearance corridors, and communication protocols between cockpit and apron crews.",
-              "readTime": "Estimated read: 5-7 mins",
-              "url": "https://www.iata.org"
-            },
-            {
-              "topic": "Aerodrome Operations Journal",
-              "sourceTag": "Decarbonization & Innovation",
-              "heading": "Electrification of Ground Support Equipment on European Aprons",
-              "snippet": "Examining the transition from diesel-powered tugs and belt loaders to zero-emission battery electric GSE across major hub airports.",
-              "readTime": "Estimated read: 5-7 mins",
-              "url": "https://www.aci.aero"
-            }
-          ],
           "toeicQuestions": [
             {
               "id": 1,
@@ -2548,9 +2472,7 @@
               "analysis": "Rule 3 of the Article 71 exemption reduces the allowable crosswind to 15 knots. An 18-knot crosswind violates this compensatory barrier, requiring an immediate go-around and diversion to secondary Runway 14/32.",
               "strategy": "Temporary exemption rules override standard aircraft limits. If the exemption sets a 15-knot cap, 18 knots is an immediate go-around requirement."
             }
-          ],
-          "quizTitle": "Airside Scenario Quiz • Runway Works & Operational Decisions",
-          "quizSubtitle": "Target pace: ~45 seconds per scenario • Mix of Operational Dilemmas & Rule Spot-Checks"
+          ]
         }
       },
       "4": {
