@@ -2479,519 +2479,496 @@
         "session": 4,
         "objectives": {
           "title": "Session 4 - Aerodrome Ground Layouts & Taxiway Navigation Objectives",
-          "summary": "By the end of this session, you will be able to distinguish and categorize aviation operational professions across landside, airside, flight operations, air traffic services, and civil aviation administration (TSEEAC), accurately articulate professional duties and jurisdictions using formal B2 structures, and collaborate effectively during operational handoffs.",
+          "summary": "By the end of this session, GSEA students will be able to describe aerodrome ground layouts with confidence in English, read ground movement charts (GMC/ADC), use prepositions of place accurately, guide aircraft across taxiways and holding points, role-play a ground movement clearance with a runway crossing, and complete a collaborative Safety Check on runway incursion hazards.",
           "items": [
             {
               "num": 1,
-              "title": "Categorize Aviation Operational Roles (Vocabulary & Classification)",
-              "description": "Distinguish between Landside (passenger handling, security screening, border control), Airside (turnaround coordination, ramp dispatch, marshalling, pushback), Flight Crew (captain, first officer, purser), Air Traffic Control (tower, approach, en-route), and Civil Aviation Administration (TSEEAC)."
+              "title": "Talk About Airport Ground Layouts (Fluency & Spontaneous Speech)",
+              "description": "Discuss why navigating complex international airports on the ground is demanding for pilots, and share tricks for understanding airport maps quickly."
             },
             {
               "num": 2,
-              "title": "Clarify TSEEAC Operational Functions (Institutional Precision)",
-              "description": "Accurately explain that TSEEAC personnel are NOT air traffic controllers (no tactical separation authority), but perform critical functions including AFISO (flight information and alerting services), aerodrome operations coordination, and DGAC safety oversight."
+              "title": "Read a Ground Movement Chart (Chart Scanning)",
+              "description": "Scan a simulated aerodrome ground chart to identify runways, parallel taxiways, rapid exit taxiways, aprons, holding bays, and hot spots."
             },
             {
               "num": 3,
-              "title": "Express Professional Duties & Authority (Grammar in Context)",
-              "description": "Master and apply functional formulas: 'be responsible for + -ing', 'be tasked with + -ing', 'be in charge of + noun', 'have authority over / to', and 'ensure that + clause'."
+              "title": "Words for Airport Locations (Vocabulary Focus)",
+              "description": "Learn and use essential ground terms: apron, taxiway, holding point, stop bar, hot spot, and displaced threshold."
             },
             {
               "num": 4,
-              "title": "Simulate Professional Shift & Turnaround Handoffs (Speaking Fluency)",
-              "description": "Conduct structured peer briefings between adjacent roles (Turnaround Coordinator <-> First Officer, AFISO <-> VFR Pilot, Terminal Duty Manager <-> Ramp Supervisor) to resolve operational bottlenecks."
+              "title": "Prepositions of Place (Language Focus)",
+              "description": "Practice describing where facilities and aircraft are located using precise position words: adjacent to, opposite, parallel to, between, at the intersection of, short of, and beyond."
             },
             {
               "num": 5,
-              "title": "Debate Airport Operational Dilemmas (Interaction & Negotiation)",
-              "description": "Analyze complex airport operational dilemmas (e.g. winter weather diversions and ramp congestion) from specific professional viewpoints and negotiate a consensus action plan."
+              "title": "Speaking Role-Play: Ground Movement Challenge (Spoken Interaction)",
+              "description": "Role-play a clear, polite conversation between an Aerodrome Ground Controller and a Pilot taxiing from the apron to the runway with an active runway crossing."
             },
             {
               "num": 6,
-              "title": "Refine Professional Aviation Vocabulary Pronunciation (Phonology)",
-              "description": "Place accurate primary and secondary word stress on complex professional terms (au-THOR-i-ty, re-SPON-si-ble, co-OR-di-na-tor, tech-NI-cian, o-ver-SIGHT, sur-VEIL-lance)."
-            },
-            {
-              "num": 7,
-              "title": "Master Prepositions of Responsibility & Passive Voice (TOEIC Practice)",
-              "description": "Identify common test traps in TOEIC Parts 5 & 6, particularly verbs of obligation, prepositions of responsibility ('responsible for', 'in charge of'), and passive verb structures in airport notices."
+              "title": "Safety Check: Preventing Runway Incursions (Operational Discussion)",
+              "description": "Collaborate in teams to analyze a confusing taxiway intersection, evaluate collision risks, and agree on clear safety solutions."
             }
           ]
         },
         "lessonPlan": {
           "title": "Session 4 Lesson Plan (2 Hours)",
-          "summary": "A 2-hour communicative session featuring an aviation news opening, Session 3 turnaround spot-checking, the aviation roles overview, functional responsibility and authority grammar drills, 'Day in the Life' role handoffs, a winter weather operational dilemma debate, and a 10-minute vocabulary consolidation review.",
+          "summary": "A 2-hour communicative spoken English session for GSEA students covering aerodrome ground layouts, ground movement charts, prepositions of place, a realistic taxi clearance role-play, and a collaborative runway incursion Safety Check.",
           "items": [
             {
-              "time": "00-10",
-              "title": "Part 1: Aviation News, Current Events & Session 3 Spot-Check (10 mins)",
-              "description": "Opening 10-minute warm-up: discuss recent international aviation headlines followed by rapid spot-checking of Session 3 turnaround and GSE vocabulary (GPU, ASU, Pushback Tug, Chocks, FOD, Belt Loader)."
+              "time": "00-15",
+              "title": "Part 1: Warm-up: Navigating on the Ground (15 mins)",
+              "description": "In pairs, students discuss the challenges of taxiing at unfamiliar airports, explain common ground confusion, and test entry knowledge with 4 quick spot-check questions."
             },
             {
-              "time": "10-30",
-              "title": "Part 2: Aviation Roles Across the Industry (20 mins)",
-              "description": "Explore the five operational domains (Landside, Airside/Ramp, Flight Crew, ATCOs, and TSEEAC). Clarify the core distinction between ATCO tactical separation authority and TSEEAC AFISO/auditing responsibilities."
+              "time": "15-45",
+              "title": "Part 2: Reading the Ground Movement Chart (GMC) (30 mins)",
+              "description": "Reading a simulated aerodrome ground movement chart (LFMT) to locate runways, parallel taxiway Alpha, rapid exits Bravo and Charlie, crossing taxiway Delta, and Hot Spot 1."
             },
             {
-              "time": "30-50",
-              "title": "Part 3: Functional Grammar Focus: Responsibilities, Duties & Jurisdiction (20 mins)",
-              "description": "Examine high-yield B2 structures: 'responsible for + -ing', 'tasked with + -ing', 'in charge of', 'have authority over / to', 'ensure that', and 'report to vs. liaise with'. Practice with interactive scenario prompts."
+              "time": "45-70",
+              "title": "Part 3: Language Clinic: Prepositions of Place (25 mins)",
+              "description": "Oral drills and pair practice using prepositions of place (adjacent to, opposite, parallel to, between, at the intersection of, short of, beyond) to describe airport facilities."
             },
             {
-              "time": "50-75",
-              "title": "Part 4: Role-Play Simulation: 'A Day in the Life' Operational Handoffs (25 mins)",
-              "description": "Collaborative paired and triad role-play: simulate professional handoffs and resolve bottlenecks between Turnaround Coordinator <-> First Officer, AFISO <-> Inbound Pilot, and Terminal Duty Manager <-> Ramp Supervisor."
+              "time": "70-105",
+              "title": "Part 4: Speaking Role-Play: Ground Movement Challenge (35 mins)",
+              "description": "3-student spoken simulation between a Ground Controller and an Airline Pilot taxiing from Stand 14 to Runway 14L with an active runway crossing, observed with a peer checklist."
             },
             {
-              "time": "75-110",
-              "title": "Part 5: Aviation Career Forum & Operational Dilemma Debate (35 mins)",
-              "description": "Interactive multi-stakeholder debate: resolve an emergency aerodrome diversion scenario during freezing fog and ramp congestion. Argue priorities, negotiate trade-offs, and establish a consensus sequence."
-            },
-            {
-              "time": "110-120",
-              "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-              "description": "Final 10-minute consolidation: rapid recall of the 18 aviation profession terms, word stress and phonological drills, personal reflection, and continuous learning log update."
+              "time": "105-120",
+              "title": "Part 5: Safety Check: Preventing Runway Incursions (15 mins)",
+              "description": "Collaborative 4-step safety analysis evaluating a confusing intersection hazard, collision risks, illuminated stop bars, and agreed standard phraseology."
             }
           ]
         },
         "lessonContent": {
           "hero": {
-            "image": "images/aas_m1card4.jpg",
-            "title": "Jobs in Aviation: Roles, Responsibilities & Operational Interfaces",
-            "subtitle": "Landside, Airside, Flight Crew, Air Traffic Services & Civil Aviation Corps (TSEEAC)"
+            "title": "Aerodrome Ground Layouts & Taxiway Navigation",
+            "subtitle": "Ground Movement Charts (GMC), Taxiway Designations, Holding Points & Prepositions of Place",
+            "image": "images/s3_m1_session4_aerodrome.jpg",
+            "targetLevel": "CEFR B1–B2",
+            "roleContext": "GSEA Student Training • Aerodrome Ground Operations & Technical English",
+            "duration": "120 Minutes"
           },
           "openingSession": {
-            "title": "Activity 1: Aviation News & Session 3 Spot-Check (10 mins)",
-            "summary": "Every session begins with a 10-minute professional opening: analyzing current aviation headlines followed by rapid spot-checking of Session 3 ground operations and GSE vocabulary.",
+            "title": "Activity 1: Warm-up & Entry Spot-Check (15 mins)",
+            "summary": "Break the ice, discuss the challenges of ground navigation at major airports, and test your baseline knowledge of aerodrome ground markings.",
             "modeBadges": [
-              "👥 Pairs / Plenary",
-              "⏱️ 10 mins",
-              "🗣️ Operational Recall Drill",
-              "🎯 Technical Vocabulary & Fluency"
+              "Pairs (2 students)",
+              "Spoken Discussion",
+              "Timing: 15 mins"
             ],
             "instructions": [
-              "Step 1 (Aviation News Exchange - 4 mins): In pairs, discuss the current aviation headlines prompt. Share one news item regarding airport staffing, ATM capacity, or airline operations.",
-              "Step 2 (Session 3 GSE Spot-Check - 4 mins): Quiz your partner on Questions 1 to 4 (GPU function, Marshaller guidance, turnaround time critical path, FOD prevention) before revealing answers.",
-              "Step 3 (Class Operational Recap - 2 mins): Plenary review of one GSE definition. Highlight why GPU usage reduces ramp emissions and APU wear."
+              "In pairs, discuss the 3 opening questions about navigating airports on the ground.",
+              "Read each of the 4 Entry Spot-Check questions below and discuss your answers together.",
+              "Click 'Reveal Answer' to check your reasoning and see the plain English explanation."
             ],
-            "deliverable": "Spoken explanation of 1 aviation operational news item and an accurate technical explanation of GPU or turnaround time.",
-            "teacherNotes": "Cold-call pairs. Probe beyond superficial definitions: ask what happens to an aircraft's departure slot if the GPU fails during pushback disconnect.",
+            "deliverable": "Shared agreement on 2 common ground taxi challenges and completed 4-question diagnostic.",
+            "teacherNotes": "Encourage spontaneous speaking. Don't worry about technical phraseology yet; focus on helping students describe physical spaces and directions naturally in English.",
             "newsPrompts": [
-              "What aviation, airline, or ATM news stories caught your attention in the headlines this week?",
-              "How are airports and air navigation service providers managing staffing, recruitment, or new operational procedures this season?"
+              {
+                "id": 1,
+                "question": "Why do pilots often say taxiing at a large international airport can be more stressful than flying?",
+                "exampleAnswers": [
+                  "In my opinion, it is because airports like Paris Charles de Gaulle or London Heathrow have dozens of intersecting taxiways, constant radio calls, construction zones, and tight turns.",
+                  "Also, from the cockpit, visibility of ground markings can be limited, especially at night or in heavy rain and fog. One wrong turn can lead right onto an active runway."
+                ]
+              },
+              {
+                "id": 2,
+                "question": "When you look at an airport map, how do you quickly distinguish between a runway and a taxiway?",
+                "exampleAnswers": [
+                  "Runways always have numbers based on their magnetic heading (like 14L or 32R) and white centerline markings, while taxiways use single letters (like Alpha or Bravo) and yellow centerlines.",
+                  "Also, runways are generally wider and longer with bright approach lights, whereas taxiways have blue edge lights and green centerlines."
+                ]
+              },
+              {
+                "id": 3,
+                "question": "What is the single most important rule when an aircraft approaches an active runway holding point?",
+                "exampleAnswers": [
+                  "The pilot must stop completely before the solid yellow line and hold short until receiving explicit, clear permission from the tower controller to enter or cross.",
+                  "Even if the runway looks empty, crossing without a clearance is a dangerous runway incursion."
+                ]
+              }
             ],
-            "spotCheck": {
-              "title": "Session 3 Vocabulary Spot-Check (Ground Operations & GSE)",
-              "questions": [
-                {
-                  "id": 1,
-                  "q": "What is the primary function of a Ground Power Unit (GPU) during an aircraft turnaround?",
-                  "answer": "A GPU supplies 400Hz AC electrical power to the aircraft while parked at the gate stand, allowing the flight crew to shut down the main engines and auxiliary power unit (APU) to save fuel and reduce ramp emissions."
-                },
-                {
-                  "id": 2,
-                  "q": "How does a Marshaller guide an arriving aircraft to its parking stand when automated docking is unavailable?",
-                  "answer": "A marshaller uses illuminated wands or visual hand signals to direct the flight deck along the painted yellow lead-in line to the precise nosewheel stop mark."
-                },
-                {
-                  "id": 3,
-                  "q": "What is turnaround time (TAT) and why is minimizing it critical for airlines?",
-                  "answer": "Turnaround time is the elapsed period from chocks-on at arrival to chocks-off at departure. Minimizing TAT maximizes aircraft daily utilization and prevents knock-on departure slot delays."
-                },
-                {
-                  "id": 4,
-                  "q": "What is Foreign Object Debris (FOD) and how do ramp teams prevent it?",
-                  "answer": "FOD is any loose item, tool, fragment, or trash on the apron or taxiway that could be ingested by a jet engine or damage tires; ground crews conduct continuous visual scans and regular FOD sweeps."
-                }
-              ]
-            }
+            "spotCheckQuestions": [
+              {
+                "id": 1,
+                "question": "What does a taxiway holding position marking (Pattern A) look like on the ground?",
+                "options": [
+                  "A single dashed white line across the tarmac.",
+                  "Two solid yellow lines and two dashed yellow lines across the taxiway.",
+                  "A red square with white numbers.",
+                  "A solid green circle painted in the middle of the apron."
+                ],
+                "correct": 1,
+                "explanation": "Pattern A consists of two solid yellow lines and two dashed yellow lines. When taxiing towards a runway, you face the solid lines first and you must NEVER cross them without ATC clearance."
+              },
+              {
+                "id": 2,
+                "question": "What does the term 'Hold Short' mean in plain, everyday English?",
+                "options": [
+                  "Speed up to clear the runway quickly.",
+                  "Turn around immediately and return to the parking stand.",
+                  "Stop completely before the specified line or runway and wait for further instructions.",
+                  "Pause for five seconds and then continue taxiing."
+                ],
+                "correct": 2,
+                "explanation": "'Hold short' means stop completely before reaching the designated point and do not move forward until you receive clear, explicit permission."
+              },
+              {
+                "id": 3,
+                "question": "Why are some taxiways called 'Rapid Exit' or 'High-Speed' taxiways?",
+                "options": [
+                  "They are reserved exclusively for emergency fire vehicles.",
+                  "They are connected to the runway at an angle (usually 30°) so landing planes can turn off safely at higher speeds, freeing up the runway faster.",
+                  "They allow planes to taxi at 50 knots back to the terminal.",
+                  "They are built downhill so planes roll without using engine thrust."
+                ],
+                "correct": 1,
+                "explanation": "Rapid exit taxiways are angled at approximately 30 degrees, allowing landing aircraft to exit the runway at around 30 to 50 knots, which reduces runway occupancy time."
+              },
+              {
+                "id": 4,
+                "question": "What is an airport 'Hot Spot' (HS) on an aerodrome chart?",
+                "options": [
+                  "A designated area where aircraft engines overheat in hot weather.",
+                  "A location with free Wi-Fi for passengers on the apron.",
+                  "A specific location on the airport with a history or potential risk of confusion or runway collisions.",
+                  "The official smoking area for ground handling staff."
+                ],
+                "correct": 2,
+                "explanation": "A Hot Spot is a clearly marked location on the airport map where complex geometry, confusing signs, or blind spots create a higher risk of runway incursions."
+              }
+            ]
           },
-          "jobTaxonomy": {
-            "title": "Activity 2: Aviation Roles Across the Industry (20 mins)",
-            "summary": "Aviation is an intricate ecosystem where specialized professions collaborate seamlessly. Explore the five primary operational domains, their key responsibilities, and the essential distinction between ATCO separation authority and TSEEAC functions.",
-            "modeBadges": [
-              "👥 Small Groups (3-4)",
-              "⏱️ 20 mins",
-              "🧭 Roles & Jurisdiction Analysis",
-              "🎯 Operational Domain Mastery"
-            ],
-            "instructions": [
-              "Step 1 (Domain Exploration - 8 mins): Study the 5 operational domains: Landside, Airside, Flight Crew, ATCOs, and TSEEAC. Identify the primary physical jurisdiction and core duty for each.",
-              "Step 2 (Crucial Distinction Audit - 6 mins): Analyze the structural legal difference between ATCOs (tactical separation authority) and TSEEAC / AFISOs (flight information and advisory services without separation authority).",
-              "Step 3 (Role Matching Drill - 6 mins): In pairs, randomly name a professional role (e.g. TRC, AFISO, Marshaller, Tower ATCO). Your partner must state the domain, primary duty, and whom they report to."
-            ],
-            "deliverable": "Accurate categorization of all 5 domains and a clear spoken explanation distinguishing ATCO separation authority from TSEEAC AFISO flight information.",
-            "teacherNotes": "Emphasize the ENAC/DGAC institutional distinction: TSEEAC is a civil aviation body, AFISOs provide information/alerting, whereas ATCOs hold licensing to issue binding separation clearances.",
-            "domains": [
+          "chartExtract": {
+            "title": "Activity 2: Reading the Ground Movement Chart (GMC) (30 mins)",
+            "summary": "Analyze a simulated Ground Movement Chart for Blagnac-Montpellier Airport (LFMT) and practice identifying key operational areas.",
+            "badge": "SIMULATED AERODROME GROUND CHART • LFMT",
+            "callsign": "Blagnac-Montpellier Airport (LFMT / Elev 495 ft)",
+            "sections": [
               {
-                "id": "landside",
-                "name": "1. Landside Operations",
-                "color": "sky",
-                "roles": [
-                  "Passenger Service Agent (PSA)",
-                  "Security Screening Officer",
-                  "Terminal Duty Manager",
-                  "Border Control Officer"
-                ],
-                "description": "Manages passenger processing, documentation verification, terminal safety, and accessibility before the airside security boundary.",
-                "keyJurisdiction": "Public terminal zones, check-in concourses, baggage drop systems, and departure lounge coordination.",
-                "sampleDuty": "Passenger Service Agents verify travel documents, handle gate boarding announcements, and manage baggage reconciliation."
+                "heading": "1. Runway Infrastructure & Orientation",
+                "details": [
+                  "Primary Runway 14L/32R: Length 3,500m, Width 45m, Asphalt surface, CAT III ILS equipped, lighted centerline.",
+                  "Secondary Runway 14R/32L: Length 2,500m, Width 45m, Visual/Non-precision, separated from 14L by 380 metres.",
+                  "Operational rule: Runway 14L is used for commercial jet departures and arrivals; Runway 14R is used for general aviation and maintenance flights."
+                ]
               },
               {
-                "id": "airside",
-                "name": "2. Airside & Ramp Operations",
-                "color": "amber",
-                "roles": [
-                  "Turnaround Coordinator (TRC)",
-                  "Ramp Agent / Baggage Handler",
-                  "Marshaller",
-                  "Pushback Tug Driver",
-                  "De-icing Rig Operator",
-                  "Refueller / Hydrant Dispenser"
-                ],
-                "description": "Coordinates all parallel ground servicing operations around the aircraft within the designated safety servicing envelope.",
-                "keyJurisdiction": "Apron stands, equipment staging lanes, airside service roads, and aircraft servicing envelopes.",
-                "sampleDuty": "The Turnaround Coordinator oversees parallel servicing tasks, monitors fuel and baggage loading, and enforces on-time departure."
+                "heading": "2. Taxiway Network & Designations",
+                "details": [
+                  "Taxiway Alpha (A): Main parallel taxiway running parallel to Runway 14L along its eastern side.",
+                  "Taxiway Bravo (B): High-speed rapid exit taxiway connected at 30° to Runway 14L, 1,800m from threshold.",
+                  "Taxiway Charlie (C): Second high-speed exit connected at 30° to Runway 14L, 2,400m from threshold.",
+                  "Taxiway Delta (D): 90-degree crossing taxiway connecting Apron North across Runway 14R to Taxiway Alpha.",
+                  "Taxiway Echo (E): End-around perimeter taxiway leading to the Runway 14L departure holding bay."
+                ]
               },
               {
-                "id": "flightcrew",
-                "name": "3. Aircraft Flight Crew",
-                "color": "indigo",
-                "roles": [
-                  "Captain (Pilot-in-Command)",
-                  "First Officer (Co-Pilot)",
-                  "Purser / Senior Cabin Manager",
-                  "Cabin Crew / Flight Attendant"
-                ],
-                "description": "Responsible for the safe navigation, operation, passenger welfare, and emergency readiness of the aircraft from off-blocks to on-blocks.",
-                "keyJurisdiction": "Cockpit flight deck, passenger cabin, aircraft technical logbook, and emergency systems.",
-                "sampleDuty": "The First Officer performs external walkaround inspections, cross-checks FMC route programming, and monitors radio communications."
+                "heading": "3. Aprons, Stands & Facilities",
+                "details": [
+                  "Apron North: Commercial passenger terminal with Stands 1 to 16. Stand 14 is equipped with an airbridge.",
+                  "Cargo Ramp: Situated on the western boundary, opposite the main passenger terminal.",
+                  "De-icing Pad: Positioned between Taxiway Bravo and the maintenance hangar.",
+                  "Fire & Rescue Station: Located adjacent to Apron North with direct emergency access to both runways."
+                ]
               },
               {
-                "id": "atco",
-                "name": "4. Air Traffic Control Officers (ATCOs)",
-                "color": "rose",
-                "roles": [
-                  "Aerodrome / Tower ATCO",
-                  "Approach Radar Controller (APP)",
-                  "Area / En-Route Controller (ACC)"
-                ],
-                "description": "Licensed air traffic controllers possessing executive legal authority to issue binding clearances and ensure safe tactical separation between aircraft in flight and on active movement areas.",
-                "keyJurisdiction": "Active runways, taxiways, controlled airspace sectors, and terminal maneuvering areas (TMA).",
-                "sampleDuty": "Tower ATCOs issue mandatory takeoff and landing clearances, manage runway sequencing, and maintain aircraft separation."
-              },
-              {
-                "id": "tseeac",
-                "name": "5. Civil Aviation Operations Corps (TSEEAC)",
-                "color": "emerald",
-                "roles": [
-                  "Aerodrome Flight Information Service Officer (AFISO)",
-                  "Aerodrome Operations Coordinator",
-                  "DGAC Aviation Safety Inspector",
-                  "Air Navigation Technical Support Officer"
-                ],
-                "description": "Civil aviation civil servants who perform critical operations, flight information, safety oversight, and aerodrome management. IMPORTANT: TSEEAC personnel are NOT air traffic controllers and do NOT have separation authority; AFISOs provide advisory flight information and alerting service at non-controlled aerodromes.",
-                "keyJurisdiction": "AFIS aerodromes, civil aviation regional directorates (DSAC), airport safety coordination, and technical surveillance.",
-                "sampleDuty": "An AFISO provides weather reports, runway conditions, and traffic advisories to pilots, while DGAC safety inspectors conduct regulatory compliance audits."
+                "heading": "4. Holding Points & Hot Spots",
+                "details": [
+                  "Holding Point A1: Located at the threshold of Runway 14L; CAT I/II/III illuminated stop bars installed.",
+                  "Holding Point D1: Located short of Runway 14R on Taxiway Delta; mandatory stop line.",
+                  "Hot Spot 1 (HS1): Complex intersection of Taxiway Alpha, Delta, and apron taxilane where ground vehicles cross aircraft routes.",
+                  "Hot Spot 2 (HS2): Intersection of Taxiway Delta and Runway 14R where line of sight from the control tower is partially obstructed during morning mist."
+                ]
               }
             ]
           },
           "grammarClinic": {
-            "title": "Activity 3: Language Focus: Roles, Responsibilities & Authority (20 mins)",
-            "summary": "Professional aviation communication demands absolute precision when describing who does what, who reports to whom, and who holds regulatory authority.",
-            "modeBadges": [
-              "👤 Individual -> 👥 Pairs",
-              "⏱️ 20 mins",
-              "✍️ Operational Syntax Drill",
-              "🎯 Collocation & Precision"
-            ],
-            "instructions": [
-              "Step 1 (Formula Mastery - 5 mins): Review the 6 authority and responsibility structures above. Note preposition rules: 'responsible FOR + -ing', 'tasked WITH + -ing', 'authority OVER / TO + verb'.",
-              "Step 2 (Role Duty Construction - 10 mins): With a partner, write 3 operational sentences describing different aviation roles using: (1) 'be tasked with', (2) 'have authority to', and (3) 'liaise with vs. report to'.",
-              "Step 3 (Roles & Responsibilities Challenge - 5 mins): Complete the 4 interactive grammar challenge questions individually, check your answers, and discuss the preposition rules."
-            ],
-            "deliverable": "4 verified practice question answers + 3 original spoken or written role-duty descriptions demonstrating correct prepositional collocations.",
-            "teacherNotes": "Stamp out 'responsible OF' immediately (French interference). Highlight the difference between hierarchical reporting ('reports to the TRC') and lateral coordination ('liaises with fueling').",
-            "formulas": [
+            "title": "Activity 3: Language Clinic: Prepositions of Place (25 mins)",
+            "summary": "Master clear position words to describe airport facilities and aircraft locations with precision and confidence.",
+            "rules": [
               {
-                "structure": "be responsible for + -ing / noun",
-                "usage": "Core ongoing duty or accountability",
-                "example": "The Turnaround Coordinator is responsible for ensuring all servicing vehicles clear the stand before pushback."
+                "term": "parallel to",
+                "meaning": "Running alongside in the same direction at an equal distance.",
+                "example": "Taxiway Alpha runs parallel to Runway 14L on its eastern side."
               },
               {
-                "structure": "be tasked with + -ing / noun",
-                "usage": "Official assignment, directive, or designated role",
-                "example": "The AFIS officer is tasked with providing traffic information and weather advisories to inbound aircraft."
+                "term": "adjacent to",
+                "meaning": "Very close or next to something, often sharing a boundary.",
+                "example": "The airport fire station is located adjacent to Apron North."
               },
               {
-                "structure": "be in charge of + noun / -ing",
-                "usage": "Supervisory oversight of a team, facility, or zone",
-                "example": "The Terminal Duty Manager is in charge of passenger concourse flow and emergency crowd management."
+                "term": "opposite",
+                "meaning": "Directly across from something, facing it.",
+                "example": "The cargo ramp is directly opposite the passenger terminal."
               },
               {
-                "structure": "have authority over / to + verb",
-                "usage": "Legal jurisdiction or executive command power",
-                "example": "Tower ATCOs have authority over active runways and issue binding takeoff and landing clearances."
+                "term": "between ... and ...",
+                "meaning": "In the middle space separating two objects or locations.",
+                "example": "The de-icing pad is located between Taxiway Bravo and the hangar."
               },
               {
-                "structure": "ensure that + clause",
-                "usage": "Verification, quality control, and safety compliance",
-                "example": "Safety inspectors ensure that airline maintenance procedures comply with DGAC regulations."
+                "term": "at the intersection of",
+                "meaning": "At the point where two or more paths, roads, or taxiways cross.",
+                "example": "Hot Spot 1 is located at the intersection of Taxiway Alpha and Taxiway Delta."
               },
               {
-                "structure": "report to vs. liaise with",
-                "usage": "Hierarchy vs. horizontal peer collaboration",
-                "example": "The Ramp Agent reports to the Turnaround Coordinator and liaises with fueling technicians."
+                "term": "short of",
+                "meaning": "Stopping before reaching a specific point, line, or boundary.",
+                "example": "Air France 412, hold short of Runway 14R on Taxiway Delta."
+              },
+              {
+                "term": "beyond",
+                "meaning": "Further away than a specified point or boundary.",
+                "example": "The blast pad extends 150 metres beyond the threshold of Runway 32R."
               }
             ],
-            "roleClinic": [
+            "drills": [
               {
                 "id": 1,
-                "prompt": "The First Officer is tasked with (conducting / to conduct / conduct) the pre-flight external walkaround inspection.",
-                "answer": "conducting",
-                "explanation": "'Be tasked with' is followed by the preposition 'with', which requires a gerund (-ing)."
+                "prompt": "Where is the main fire station located relative to Apron North?",
+                "targetAnswer": "The fire station is located adjacent to Apron North, giving emergency vehicles direct access to both runways."
               },
               {
                 "id": 2,
-                "prompt": "Unlike ATCOs, AFISOs do not have authority (to separate / separating / for separate) aircraft tactically.",
-                "answer": "to separate",
-                "explanation": "'Have authority to' is followed by the base infinitive ('to separate')."
+                "prompt": "Where does Taxiway Alpha lie relative to Runway 14L?",
+                "targetAnswer": "Taxiway Alpha runs parallel to Runway 14L along its entire eastern length."
               },
               {
                 "id": 3,
-                "prompt": "The Ramp Agent is responsible (for / of / to) securing the wheel chocks once the aircraft comes to a stop.",
-                "answer": "for",
-                "explanation": "'Responsible for' is the correct prepositional collocation (avoid the French false friend 'responsible of')."
+                "prompt": "Where is the cargo ramp situated relative to the passenger terminal?",
+                "targetAnswer": "The cargo ramp is situated on the west side of the airfield, directly opposite the main passenger terminal."
               },
               {
                 "id": 4,
-                "prompt": "The Turnaround Coordinator must ensure (that / what / which) the cargo hold doors are locked before pushback.",
-                "answer": "that",
-                "explanation": "'Ensure' takes a content clause starting with 'that' ('ensure that + subject + verb')."
+                "prompt": "Where should an aircraft stop when taxiing on Delta towards Runway 14R?",
+                "targetAnswer": "The aircraft must hold short of Runway 14R at holding point D1 until cleared to cross."
+              },
+              {
+                "id": 5,
+                "prompt": "Where is Hot Spot 1 located on the aerodrome chart?",
+                "targetAnswer": "Hot Spot 1 is located right at the intersection of Taxiway Alpha and Taxiway Delta."
               }
             ]
           },
-          "handoffSimulation": {
-            "title": "Activity 4: Pairwork & Triad Simulation — 'A Day in the Life' Role Handoff (25 mins)",
-            "summary": "Effective inter-departmental handoffs prevent bottlenecks and eliminate miscommunication. Work in pairs or triads to conduct professional operational handovers.",
-            "modeBadges": [
-              "👥 Pairs / Triads",
-              "⏱️ 25 mins",
-              "🎭 Operational Interface Simulation",
-              "🎯 Radio & Handoff Fluency"
-            ],
-            "instructions": [
-              "Step 1 (Scenario Assignment - 5 mins): Choose Pair 1 (TRC <-> Flight Deck), Pair 2 (AFISO <-> Inbound VFR), or Pair 3 (Terminal Manager <-> Ramp Supervisor). Read your specific role context.",
-              "Step 2 (Simulation Rehearsal - 12 mins): Conduct the operational handoff in character. You must incorporate at least two of the mandatory target phrases (e.g., 'tasked with', 'liaised with', 'ensure that').",
-              "Step 3 (Role Reversal & Feedback - 8 mins): Swap roles and repeat the dialogue under modified conditions (e.g. 5 minutes until slot loss or sudden weather degradation)."
-            ],
-            "deliverable": "A 2-minute fluent operational handoff dialogue successfully resolving an operational conflict using mandatory responsibility formulas.",
-            "teacherNotes": "Listen for realistic aviation tone: professional, concise, assertive, but collaborative. Ensure students actually use the target phrases rather than informal conversational English.",
-            "scenarios": [
+          "roleplaySimulation": {
+            "title": "Activity 4: Speaking Role-Play: Ground Movement Challenge (35 mins)",
+            "summary": "Simulate a realistic spoken interaction between an Aerodrome Ground Controller and an Airline Pilot taxiing from Stand 14 to Runway 14L.",
+            "situation": "Flight AFR 412 (Airbus A320) is parked at Stand 14 on Apron North. The pilot has completed pushback and engine start and requests taxi clearance to Runway 14L. The route requires taxiing along Taxiway Delta, crossing active Runway 14R, joining Taxiway Alpha, and holding short of Runway 14L at holding point A1.",
+            "roles": [
               {
-                "id": "pair1",
-                "title": "Pair 1: Turnaround Coordinator (TRC) <-> First Officer (Flight Deck)",
-                "context": "Flight AF418 is scheduled off-blocks in 8 minutes. Cargo loading is complete, but the refueller was held up by a minor hose leak. The First Officer needs the final fuel uplift and signed load sheet.",
-                "roleA": "Turnaround Coordinator: Confirm fuel uplift of 5,800 kg, present the final trim sheet for Captain's signature, and report stand clearance status.",
-                "roleB": "First Officer: Cross-check the fuel quantity against FMC calculations, verify the center of gravity (CG) limits on the trim sheet, and request pushback readiness.",
-                "targetPhrases": [
-                  "\"I am responsible for confirming that all ground equipment has detached...\"",
-                  "\"Could you ensure that the load sheet reflects the actual fuel on board?\"",
-                  "\"We liaised with the fueling technician, and all safety valves are verified.\""
-                ]
+                "role": "Role A: Ground Controller",
+                "instructions": "Issue progressive taxi instructions. Give the taxi route: 'Taxi via Delta, hold short of Runway 14R'. When the runway is clear, instruct: 'Cross Runway 14R, taxi via Alpha to holding point A1, Runway 14L'. Listen carefully to the pilot's readback and correct any missing information immediately."
               },
               {
-                "id": "pair2",
-                "title": "Pair 2: AFISO (TSEEAC) <-> Inbound VFR Aircraft",
-                "context": "A Cessna 172 is inbound to a non-controlled regional airfield. The AFISO is on duty in the aerodrome flight information station. Low winter sun and flocking birds have been observed near Runway 26 threshold.",
-                "roleA": "AFISO (TSEEAC): Provide aerodrome flight information: runway in use 26, surface wind 240/12kt, QNH 1018, cautionary bird advisory, and report on opposing glider traffic.",
-                "roleB": "VFR Pilot: Acknowledge information, report position over visual reporting point (Sierra), and state intentions for standard overhead join.",
-                "targetPhrases": [
-                  "\"Information only: Runway 26 in use, wind 240 degrees at 12 knots...\"",
-                  "\"Be advised, a flock of lapwings has been reported near the threshold...\"",
-                  "\"As an AFISO, I am tasked with providing traffic and safety advisories.\""
-                ]
+                "role": "Role B: Airline Pilot (AFR 412)",
+                "instructions": "Call Ground Control at Stand 14 ready to taxi. Read back all instructions completely, especially the runway hold-short instruction. Ask for clarification if you are unsure whether you are cleared to cross Runway 14R. Confirm when holding short at holding point A1."
               },
               {
-                "id": "pair3",
-                "title": "Pair 3: Terminal Duty Manager <-> Ramp Operations Supervisor",
-                "context": "A group of 14 delayed transit passengers from a connecting transatlantic flight has just cleared security. The departure flight has a strict 10-minute CTOT slot.",
-                "roleA": "Terminal Duty Manager: Request a 5-minute gate hold to allow the transit passengers to board, arguing customer service and connection costs.",
-                "roleB": "Ramp Operations Supervisor: Defend the slot departure, explaining the financial and network penalties of missing the Eurocontrol CTOT slot.",
-                "targetPhrases": [
-                  "\"We are in charge of passenger processing and must avoid misconnecting passengers...\"",
-                  "\"If we miss this slot, ATC will hold the flight for at least 45 minutes...\"",
-                  "\"Can we ensure that baggage is prioritized while passengers board through the gate?\""
-                ]
+                "role": "Role C: Peer Observer & Safety Auditor",
+                "instructions": "Use the checklist below to evaluate your peers. Did the pilot read back 'hold short of Runway 14R'? Did the controller give clear prepositions of place? Was the spoken English natural and confident?"
               }
+            ],
+            "checklist": [
+              "Controller used clear, unambiguous taxi instructions with correct taxiway names.",
+              "Pilot read back the runway holding point instruction word-for-word ('Hold short of Runway 14R').",
+              "Both speakers used natural, communicative English without long unnatural hesitations.",
+              "Clear verification was made before crossing the active runway."
+            ],
+            "phrases": [
+              "Ground, Air France 412, Stand 14, request taxi to Runway 14L.",
+              "Air France 412, taxi via Delta, hold short of Runway 14R.",
+              "Taxi via Delta, hold short of Runway 14R, Air France 412.",
+              "Air France 412, cross Runway 14R, taxi via Alpha to holding point A1.",
+              "Cross Runway 14R, taxi via Alpha to holding point A1, Air France 412."
             ]
           },
-          "careerForumDebate": {
-            "title": "Activity 5: Aviation Career Forum & Operational Dilemma Debate (35 mins)",
-            "summary": "A fast-moving winter weather front brings freezing fog, reducing Runway Visual Range (RVR) to 350m at a regional aerodrome. Stand capacity is at 95%, de-icing rigs are working at maximum throughput, and two inbound diversions are requesting priority due to fuel minimums. Each team represents an aviation profession, defends operational priorities, and negotiates a consensus action plan.",
-            "modeBadges": [
-              "👥 4-Way Multi-Stakeholder Forum",
-              "⏱️ 35 mins",
-              "⚡ Crisis Management Negotiation",
-              "🎯 Consensus Building"
-            ],
-            "instructions": [
-              "Step 1 (Crisis Briefing & Stance - 8 mins): Read the Winter Storm & Diversion Gridlock scenario. Assign one stakeholder role per team member (ATCO, AFISO/Ops, TRC/Ground, Captain). Review your non-negotiable priority.",
-              "Step 2 (Stakeholder Round-Robin - 12 mins): Each stakeholder presents their operational dilemma and proposed sequence of events. State what your role can and cannot concede.",
-              "Step 3 (Consensus Negotiation & Rating - 15 mins): Negotiate a sequential 3-step action plan using conditional language ('Provided that...', 'On condition that...'). Vote on the 3 consensus challenges in the agreement tracker."
-            ],
-            "deliverable": "A negotiated 3-step crisis operational resolution signed off by all 4 stakeholders, balancing fuel safety, stand capacity, de-icing holdover times, and slot preservation.",
-            "teacherNotes": "Maintain high tension! Remind them that if no decision is made within 20 minutes, the Captain's crew times out, the diversion exhausts fuel reserves, and runway friction degrades further. Demand conditional structures.",
-            "scenario": "Regional Aerodrome 'Echo-Delta' is experiencing severe winter weather with RVR 350m and freezing drizzle. Only 2 parking stands remain open. Two diverted commercial jets are in the holding pattern, one declaring 'Minimum Fuel'. On the ground, an outbound flight on Stand 2 has passengers boarded, but its holdover time has expired, requiring a second de-icing cycle.",
-            "stakeholders": [
+          "safetyCheck": {
+            "title": "Activity 5: Safety Check: Preventing Runway Incursions (15 mins)",
+            "summary": "Work in teams to analyze how confusing taxiway intersections lead to runway incursions and decide on practical safety defenses.",
+            "steps": [
               {
-                "name": "Tower & Approach ATCOs",
-                "priority": "Runway safety, separation in holding stacks, and emergency prioritization for the minimum-fuel diversion.",
-                "stance": "Has sole authority over runway access; demands clear runway sequencing and will not clear departures until emergency fuel traffic lands."
+                "step": 1,
+                "title": "Identify the Hazard",
+                "text": "At Hot Spot 1, Taxiway Delta crosses active Runway 14R at a 90-degree angle. During early morning mist, pilots exiting Apron North have mistaken holding point D1 for an apron taxilane stop line, resulting in two near-incursions in the past 6 months."
               },
               {
-                "name": "AFISO / Aerodrome Operations Coordinator (TSEEAC)",
-                "priority": "Airfield friction coefficient measurement, snow and de-icing coordinator, apron safety compliance, and stand allocation.",
-                "stance": "Liaises between airport authority and services; ensures de-icing pad does not gridlock and coordinates snow clearing plows on taxiways."
+                "step": 2,
+                "title": "Evaluate the Operational Risk",
+                "text": "If an aircraft crosses holding point D1 without clearance while a light twin or business jet is on takeoff roll or landing on Runway 14R, a catastrophic high-speed collision could occur."
               },
               {
-                "name": "Turnaround Coordinator & Ground Handling Lead",
-                "priority": "Ramp safety, ground equipment availability, de-icing fluid inventory, and baggage handling for diverted passengers.",
-                "stance": "Warns that ramp handlers are nearing maximum duty limits and de-icing fluid is at critical reserves; insists on clearing Stand 2 first."
+                "step": 3,
+                "title": "Propose Protective Actions",
+                "text": "1. Install illuminated red stop bars that remain turned on until ATC manually clears the crossing.\n2. Paint enhanced yellow taxiway centerline markings 45 metres prior to holding point D1.\n3. Add flashing yellow runway guard lights (wig-wags) on both sides of the taxiway.\n4. Mandate that Ground Controllers use progressive taxi instructions and always require a full verbal readback."
               },
               {
-                "name": "Airline Captain (Outbound Flight on Stand 2)",
-                "priority": "Passenger welfare, flight duty period (FDP) limits, and slot adherence.",
-                "stance": "Argues that if the aircraft is not de-iced and dispatched within 20 minutes, the crew will exceed legal duty hours and the flight must be cancelled."
-              }
-            ],
-            "consensusChallenge": "In mixed teams of 4, negotiate a step-by-step priority sequence using conditional structures ('Provided that...', 'As long as...', 'On condition that...') to resolve the standoff safely and efficiently."
-          },
-          "closingReview": {
-            "title": "Activity 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-            "summary": "The final 10 minutes consolidate today's high-yield vocabulary, reinforce syllable stress on professional job titles, and update your personal continuous assessment log.",
-            "modeBadges": [
-              "👤 Individual & 👥 Pairs",
-              "⏱️ 10 mins",
-              "⚡ Syllable Stress & Self-Audit",
-              "🎯 Formative Synthesis"
-            ],
-            "instructions": [
-              "Step 1 (Pronunciation Practice - 4 mins): Practice pronouncing the 6 multisyllabic professional titles aloud with correct syllable stress: au-THOR-i-ty (2nd), re-SPON-si-ble (2nd), co-OR-di-na-tor (2nd), o-ver-SIGHT (1st).",
-              "Step 2 (Rapid-Fire Partner Quiz - 4 mins): Test your partner on 3 random terms from today's session (e.g. PSA vs. TRC, AFISO jurisdiction, Foreign Object Debris prevention).",
-              "Step 3 (Self-Assessment & Portfolio - 2 mins): Rate your confidence (1 to 5) in explaining your future aviation profession. Record target terms in your semester study log."
-            ],
-            "deliverable": "Accurate pronunciation of 4 key multisyllabic aviation terms + complete self-assessment entry in study portfolio.",
-            "teacherNotes": "Focus on primary stress in technical nouns vs. verbs. Remind students that Session 5 is Formative Evaluation 1: ensure portfolios, vocabulary logs, and presentations are fully prepped.",
-            "reviewPrompts": [
-              {
-                "title": "1. Syllable Stress & Pronunciation Practice",
-                "desc": "Drill accurate syllable stress: au-THOR-i-ty (2nd), re-SPON-si-ble (2nd), tech-NI-cian (2nd), co-OR-di-na-tor (2nd), o-ver-SIGHT (1st), sur-VEIL-lance (2nd)."
-              },
-              {
-                "title": "2. Rapid-Fire Retrieval Quiz",
-                "desc": "In pairs, quiz each other on 3 random terms from today's 18 vocabulary bank without checking notes (e.g. AFISO vs. ATCO, Turnaround Coordinator, Flight Dispatcher)."
-              },
-              {
-                "title": "3. Self-Assessment & Continuous Learning",
-                "desc": "Rate your ability (1 to 5) to explain the responsibilities of your future aviation profession. Update your study portfolio with target expressions."
+                "step": 4,
+                "title": "Agree on the Team Decision",
+                "text": "Agree with your team on the two most effective safety improvements and record your conclusions in the Operational Notes section below."
               }
             ]
           }
         },
         "revision": {
-          "title": "Session 4: Jobs in Aviation",
-          "summary": "Review the 18 key technical and professional terms covering landside, airside, flight crew, air traffic control (ATCO), and civil aviation administration (TSEEAC / AFISO) to enhance your speaking fluency and TOEIC accuracy.",
+          "title": "Session 4 Revision - Aerodrome Ground Layouts & Taxiway Navigation",
+          "summary": "30 essential operational and ground navigation vocabulary terms for GSEA students covering aerodrome charts, taxiways, holding points, and surface markings.",
           "terms": [
             {
               "num": "01",
-              "term": "Aerodrome Flight Information Service Officer (AFISO)",
-              "definition": "A certified aeronautical station officer (often TSEEAC) providing traffic advisories, aerodrome conditions, and alerting services to aircraft at non-controlled aerodromes without separation authority."
+              "term": "Aerodrome Ground Chart (ADC)",
+              "definition": "An official aeronautical chart showing the layout of runways, taxiways, aprons, and airport buildings."
             },
             {
               "num": "02",
-              "term": "Air Traffic Control Officer (ATCO)",
-              "definition": "A licensed professional legally authorized to issue mandatory control clearances and maintain safe tactical separation between aircraft in flight and maneuvering on active airport surfaces."
+              "term": "Ground Movement Chart (GMC)",
+              "definition": "A detailed large-scale chart used by pilots and ground controllers to navigate complex taxiways and apron stands."
             },
             {
               "num": "03",
-              "term": "Turnaround Coordinator (TRC)",
-              "definition": "The ground handling operations lead on the apron responsible for orchestrating servicing teams, monitoring critical-path milestones, and ensuring punctual departure."
+              "term": "Apron (Ramp)",
+              "definition": "A defined area on an airport intended to accommodate aircraft for boarding, loading, refueling, or parking."
             },
             {
               "num": "04",
-              "term": "Ramp Agent",
-              "definition": "An airside ground handler responsible for loading and unloading baggage and cargo, positioning ground support equipment, and securing the aircraft servicing envelope."
+              "term": "Taxiway",
+              "definition": "A defined path on an airport established for the taxiing of aircraft between one part of the aerodrome and another."
             },
             {
               "num": "05",
-              "term": "Marshaller",
-              "definition": "A trained apron ground handler who uses illuminated wands or visual hand signals to guide an incoming aircraft along the taxi line to its exact parking mark."
+              "term": "Parallel Taxiway",
+              "definition": "A taxiway that runs alongside and parallel to a runway, allowing aircraft to clear the runway quickly."
             },
             {
               "num": "06",
-              "term": "Flight Operations Officer / Dispatcher",
-              "definition": "A licensed flight planning specialist who calculates fuel requirements, monitors en-route NOTAMs and weather, prepares flight plans, and co-signs the dispatch release with the captain."
+              "term": "Rapid Exit Taxiway",
+              "definition": "A taxiway connected to a runway at an acute angle (typically 30°) designed for landing planes to turn off at higher speeds."
             },
             {
               "num": "07",
-              "term": "Passenger Service Agent (PSA)",
-              "definition": "A landside airline or ground handling employee who assists travelers at check-in desks, checks travel documentation, reconciles hold luggage, and conducts gate boarding."
+              "term": "Runway Holding Point",
+              "definition": "A designated location on a taxiway where aircraft and vehicles must stop and hold until cleared onto an active runway."
             },
             {
               "num": "08",
-              "term": "Aviation Safety Inspector",
-              "definition": "A civil aviation authority official (e.g. DGAC/DSAC, often TSEEAC) tasked with auditing airlines, maintenance repair organizations, and aerodromes for strict regulatory compliance."
+              "term": "Intermediate Holding Point",
+              "definition": "A designated position on a taxiway for traffic control where an aircraft stops until further instructed by ATC."
             },
             {
               "num": "09",
-              "term": "Aerodrome Operations Coordinator",
-              "definition": "An airport duty specialist (often TSEEAC) responsible for inspecting runway pavement friction, monitoring obstacle limitation surfaces, managing wildlife hazards, and coordinating apron works."
+              "term": "Pattern A Holding Line",
+              "definition": "A ground marking with two solid yellow lines and two dashed yellow lines; you must never cross the solid lines toward the runway without clearance."
             },
             {
               "num": "10",
-              "term": "Avionics Technician",
-              "definition": "A certified aircraft maintenance engineer specialized in troubleshooting, repairing, calibrating, and certifying cockpit flight management computers, radar, and navigation systems."
+              "term": "Pattern B Holding Line",
+              "definition": "A ladder-style ground marking used at CAT II/III precision runway holding positions to protect ILS signals."
             },
             {
               "num": "11",
-              "term": "First Officer",
-              "definition": "The second-in-command pilot on the flight deck who shares flight navigation, radio communications, and system monitoring duties with the Captain."
+              "term": "Stop Bar",
+              "definition": "A row of red lights across a taxiway showing that traffic must stop; when turned off by ATC, the taxiway is open."
             },
             {
               "num": "12",
-              "term": "Purser / Cabin Manager",
-              "definition": "The senior cabin crew member responsible for supervising cabin attendants, directing in-flight passenger safety procedures, and coordinating with the flight deck."
+              "term": "Hot Spot (HS)",
+              "definition": "A location on an aerodrome movement area with a history or potential risk of collision or runway incursion."
             },
             {
               "num": "13",
-              "term": "Security Screening Officer",
-              "definition": "A certified landside security officer who operates X-ray scanners, millimeter-wave body scanners, and explosive trace detectors to screen passengers and carry-on luggage."
+              "term": "Mandatory Instruction Sign",
+              "definition": "A red sign with white lettering indicating a runway entrance, critical area, or prohibited zone."
             },
             {
               "num": "14",
-              "term": "De-icing Rig Operator",
-              "definition": "A specialized ramp technician who operates aerial boom trucks to spray heated glycol mixtures onto aircraft surfaces to eradicate snow, frost, and ice contamination."
+              "term": "Location Sign",
+              "definition": "A black sign with yellow lettering identifying the specific taxiway or runway on which the aircraft is currently located."
             },
             {
               "num": "15",
-              "term": "Pushback Tug Driver",
-              "definition": "A heavy-equipment ramp driver specialized in connecting towbars or towbarless cradles to safely push aircraft backward out of gate stands into the taxi lane."
+              "term": "Direction Sign",
+              "definition": "A yellow sign with black lettering and arrows indicating the designations and directions of intersecting taxiways."
             },
             {
               "num": "16",
-              "term": "Airfield Maintenance Technician",
-              "definition": "A technical specialist who inspects and maintains aeronautical ground lighting (AGL), taxiway guidance signage, runway markings, and perimeter security fences."
+              "term": "De-icing Pad",
+              "definition": "An area on an apron or taxiway equipped for applying heated de-icing and anti-icing fluids to aircraft."
             },
             {
               "num": "17",
-              "term": "Refueller / Fuel Hydrant Operator",
-              "definition": "A ramp fueling technician who connects mobile fuel bowsers or underground hydrant dispensers to aircraft fuel valves to deliver precise, contamination-tested Jet-A1."
+              "term": "Holding Bay",
+              "definition": "An area adjacent to a taxiway where aircraft can be held or bypassed to facilitate efficient ground traffic movement."
             },
             {
               "num": "18",
-              "term": "Load Controller / Weight & Balance Specialist",
-              "definition": "An operations professional who calculates aircraft center-of-gravity (CG), models payload distribution, and generates the official load and trim sheet required for safe takeoff."
+              "term": "Displaced Threshold",
+              "definition": "A runway threshold located at a point other than the beginning of the runway, often used when obstacles penetrate approach paths."
+            },
+            {
+              "num": "19",
+              "term": "Blast Pad",
+              "definition": "A specially surfaced area preceding a runway threshold designed to prevent ground erosion from jet engine blast."
+            },
+            {
+              "num": "20",
+              "term": "Stopway",
+              "definition": "A defined rectangular area at the end of the takeoff run in which an aircraft can be stopped during an abandoned takeoff."
+            },
+            {
+              "num": "21",
+              "term": "Clearway",
+              "definition": "A defined rectangular area at the end of the runway over which an aircraft can make part of its initial climb."
+            },
+            {
+              "num": "22",
+              "term": "Runway Incursion",
+              "definition": "Any occurrence involving the incorrect presence of an aircraft, vehicle, or person on an active runway protected area."
+            },
+            {
+              "num": "23",
+              "term": "Hold Short",
+              "definition": "An ATC instruction directing a pilot or driver to stop completely before reaching a runway or taxiway and wait."
+            },
+            {
+              "num": "24",
+              "term": "Progressive Taxi",
+              "definition": "Step-by-step taxi instructions issued by ground control to assist a pilot unfamiliar with the airport layout."
+            },
+            {
+              "num": "25",
+              "term": "Surface Movement Radar (SMR)",
+              "definition": "Radar equipment specifically designed to detect and display the position of aircraft and vehicles on the airfield surface."
+            },
+            {
+              "num": "26",
+              "term": "Enhanced Taxiway Centerline",
+              "definition": "Dashed yellow lines alongside the centerline starting 45m before a runway holding position to alert pilots."
+            },
+            {
+              "num": "27",
+              "term": "Follow-Me Vehicle",
+              "definition": "An airport ground vehicle equipped with flashing lights that guides aircraft along taxiways to designated parking stands."
+            },
+            {
+              "num": "28",
+              "term": "Pushback",
+              "definition": "The procedure during which an aircraft is pushed backwards away from an airport gate or parking stand by a tug vehicle."
+            },
+            {
+              "num": "29",
+              "term": "Maneuvering Area",
+              "definition": "That part of an aerodrome used for the takeoff, landing, and taxiing of aircraft, excluding aprons."
+            },
+            {
+              "num": "30",
+              "term": "Movement Area",
+              "definition": "That part of an aerodrome used for aircraft surface movement, consisting of the maneuvering area and the aprons."
             }
           ]
         },
@@ -3142,650 +3119,631 @@
           ],
           "toeicQuestions": [
             {
-              "stem": "The Turnaround Coordinator is directly responsible ________ supervising the loading of cargo and ensuring compliance with the weight schedule.",
+              "id": 1,
+              "stem": "While taxiing an A320 along Taxiway Delta towards Runway 14R, the pilot sees two solid yellow lines followed by two dashed yellow lines painted across the asphalt. What is the mandatory action?",
               "options": [
                 {
                   "letter": "A",
-                  "text": "with"
+                  "text": "Cross the lines without stopping if no other aircraft is visible on the runway."
                 },
                 {
                   "letter": "B",
-                  "text": "for"
+                  "text": "Stop completely before the solid lines and wait for explicit clearance to cross from air traffic control."
                 },
                 {
                   "letter": "C",
-                  "text": "of"
+                  "text": "Increase taxi speed to clear the crossing zone as rapidly as possible."
                 },
                 {
                   "letter": "D",
-                  "text": "to"
+                  "text": "Switch the aircraft transponder to standby mode and turn left onto the grass."
                 }
               ],
               "correctLetter": "B",
-              "correctText": "for",
-              "analysis": "\"Responsible for\" is the fixed prepositional collocation followed by a gerund (\"supervising\").",
-              "strategy": "Spot \"responsible\" -> immediately look for \"for + -ing/noun\". Avoid the common French false friend \"responsible of\"."
+              "correctText": "Stop completely before the solid lines and wait for explicit clearance to cross from air traffic control.",
+              "analysis": "Pattern A holding point lines feature two solid lines on the taxiway side and two dashed lines on the runway side. An aircraft approaching from the solid side must never cross without explicit ATC clearance.",
+              "strategy": "Remember: solid lines mean stop. Dashed lines mean you may exit the runway freely without stopping."
             },
             {
-              "stem": "Unlike aerodrome controllers who issue clearances, AFIS officers are tasked with ________ flight information and meteorological updates to inbound pilots.",
+              "id": 2,
+              "stem": "An aerodrome ground controller says: 'Air France 412, taxi via Alpha, hold short of Runway 14R at Delta.' What is the required readback from the flight crew?",
               "options": [
                 {
                   "letter": "A",
-                  "text": "provide"
+                  "text": "'Roger, rolling, Air France 412.'"
                 },
                 {
                   "letter": "B",
-                  "text": "provides"
+                  "text": "'Taxi via Alpha, hold short of Runway 14R at Delta, Air France 412.'"
                 },
                 {
                   "letter": "C",
-                  "text": "providing"
+                  "text": "'Copied, taxiing to the terminal, Air France 412.'"
                 },
                 {
                   "letter": "D",
-                  "text": "provided"
-                }
-              ],
-              "correctLetter": "C",
-              "correctText": "providing",
-              "analysis": "\"Be tasked with\" is followed by a preposition (\"with\"), which requires a gerund (\"providing\") or a noun phrase.",
-              "strategy": "Identify \"tasked with\" -> verb must be in the gerund form (-ing)."
-            },
-            {
-              "stem": "Before releasing the aircraft for departure, the flight dispatcher must verify that all load sheets ________ by the captain.",
-              "options": [
-                {
-                  "letter": "A",
-                  "text": "have signed"
-                },
-                {
-                  "letter": "B",
-                  "text": "have been signed"
-                },
-                {
-                  "letter": "C",
-                  "text": "will sign"
-                },
-                {
-                  "letter": "D",
-                  "text": "signing"
+                  "text": "'Cleared across Runway 14R, Air France 412.'"
                 }
               ],
               "correctLetter": "B",
-              "correctText": "have been signed",
-              "analysis": "Passive voice is required because load sheets cannot sign themselves; they must be signed by the captain.",
-              "strategy": "Check if the subject (\"all load sheets\") is the actor or the receiver of the verb. Since it is the receiver, choose passive voice \"have been signed\"."
+              "correctText": "'Taxi via Alpha, hold short of Runway 14R at Delta, Air France 412.'",
+              "analysis": "ICAO and EASA standard radiotelephony rules mandate a full word-for-word readback of all runway hold-short instructions including the runway identifier and taxiway location.",
+              "strategy": "Hold-short clearances must always be repeated completely with the aircraft callsign. A simple 'Roger' is never acceptable."
             },
             {
-              "stem": "The civil aviation safety inspector conducted an unannounced audit in order to ensure ________ ground handling personnel were strictly following apron safety protocols.",
+              "id": 3,
+              "stem": "Which airport ground sign is characterized by yellow letters and symbols on a black background?",
               "options": [
                 {
                   "letter": "A",
-                  "text": "that"
+                  "text": "A Mandatory Instruction Sign showing a runway entrance."
                 },
                 {
                   "letter": "B",
-                  "text": "what"
+                  "text": "A Location Sign identifying the taxiway on which the aircraft is currently located."
                 },
                 {
                   "letter": "C",
-                  "text": "which"
+                  "text": "A Direction Sign pointing towards another taxiway."
                 },
                 {
                   "letter": "D",
-                  "text": "where"
+                  "text": "A Destination Sign showing the international terminal."
                 }
               ],
-              "correctLetter": "A",
-              "correctText": "that",
-              "analysis": "\"Ensure that\" introduces a content clause detailing what is being verified or secured.",
-              "strategy": "\"Ensure\" takes a \"that\" clause (\"ensure that + subject + verb\")."
+              "correctLetter": "B",
+              "correctText": "A Location Sign identifying the taxiway on which the aircraft is currently located.",
+              "analysis": "Remember the golden memory rule: 'Yellow on black is where you're at' (Location Sign), while 'Black on yellow points to another fellow' (Direction Sign).",
+              "strategy": "Black background with yellow lettering confirms your present location."
             },
             {
-              "stem": "The airport duty manager was commended for handling the ramp emergency calmly, ________ severe winter weather conditions.",
+              "id": 4,
+              "stem": "Why are illuminated red stop bars installed across taxiway holding positions at major international airports?",
               "options": [
                 {
                   "letter": "A",
-                  "text": "despite"
+                  "text": "To help ground staff find their luggage carts at night."
                 },
                 {
                   "letter": "B",
-                  "text": "although"
+                  "text": "To serve as an active physical visual barrier preventing aircraft and vehicles from entering an active runway without clearance."
                 },
                 {
                   "letter": "C",
-                  "text": "unless"
+                  "text": "To indicate that the runway surface is undergoing routine grass cutting."
                 },
                 {
                   "letter": "D",
-                  "text": "whereas"
+                  "text": "To warn birds not to land on the paved tarmac."
+                }
+              ],
+              "correctLetter": "B",
+              "correctText": "To serve as an active physical visual barrier preventing aircraft and vehicles from entering an active runway without clearance.",
+              "analysis": "Red stop bars provide a high-visibility safeguard. Pilots and vehicle drivers must never cross an illuminated red stop bar, even if verbal clearance has been issued, until the lights are switched off.",
+              "strategy": "Never cross red lights on the airfield under any operational circumstance."
+            },
+            {
+              "id": 5,
+              "stem": "What is the primary operational advantage of a high-speed rapid exit taxiway connected to a runway at an angle of 30 degrees?",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "It allows landing aircraft to turn off the runway at higher speeds, reducing runway occupancy time for following arrivals."
+                },
+                {
+                  "letter": "B",
+                  "text": "It provides a shortcut for catering trucks moving between terminals."
+                },
+                {
+                  "letter": "C",
+                  "text": "It eliminates the need for air traffic controllers in the tower."
+                },
+                {
+                  "letter": "D",
+                  "text": "It prevents aircraft tires from wearing down during braking."
                 }
               ],
               "correctLetter": "A",
-              "correctText": "despite",
-              "analysis": "\"Despite\" is a preposition expressing concession followed by a noun phrase (\"severe winter weather conditions\").",
-              "strategy": "Check what follows the blank. \"Severe winter weather conditions\" is a noun phrase, so a preposition (\"despite\") is required rather than a subordinating conjunction like \"although\"."
+              "correctText": "It allows landing aircraft to turn off the runway at higher speeds, reducing runway occupancy time for following arrivals.",
+              "analysis": "By exiting at speeds between 30 and 50 knots via a 30-degree turn, aircraft spend significantly less time on the runway, increasing the airport's overall landing capacity.",
+              "strategy": "Think capacity: rapid exits get aircraft off the active runway quickly so the next plane can land."
             }
-          ]
+          ],
+          "quizTitle": "Airside Scenario Quiz • Aerodrome Ground Layouts & Taxiway Navigation",
+          "quizSubtitle": "Target pace: ~45 seconds per scenario • Mix of Ground Navigation Dilemmas & Chart Spot-Checks"
         }
       },
       "5": {
         "session": 5,
         "objectives": {
           "title": "Session 5 - Airspace Corridors: SIDs, STARs & Transition Routes Objectives",
-          "summary": "By the end of this session, you will be able to distinguish and categorize aviation operational professions across landside, airside, flight operations, air traffic services, and civil aviation administration (TSEEAC), accurately articulate professional duties and jurisdictions using formal B2 structures, and collaborate effectively during operational handoffs.",
+          "summary": "By the end of this session, GSEA students will be able to explain the purpose of standard instrument departures and arrivals in plain English, trace route corridors on simulated charts, use prepositions of movement and direction accurately, role-play a cockpit departure briefing and weather diversion, and complete a collaborative Safety Check on managing route deviations.",
           "items": [
             {
               "num": 1,
-              "title": "Categorize Aviation Operational Roles (Vocabulary & Classification)",
-              "description": "Distinguish between Landside (passenger handling, security screening, border control), Airside (turnaround coordination, ramp dispatch, marshalling, pushback), Flight Crew (captain, first officer, purser), Air Traffic Control (tower, approach, en-route), and Civil Aviation Administration (TSEEAC)."
+              "title": "Talk About Airspace Corridors (Fluency & Spontaneous Speech)",
+              "description": "Discuss how structured departure and arrival routes organize heavy air traffic flow around major cities and reduce radio congestion."
             },
             {
               "num": 2,
-              "title": "Clarify TSEEAC Operational Functions (Institutional Precision)",
-              "description": "Accurately explain that TSEEAC personnel are NOT air traffic controllers (no tactical separation authority), but perform critical functions including AFISO (flight information and alerting services), aerodrome operations coordination, and DGAC safety oversight."
+              "title": "Read a SID & STAR Route Chart (Chart Scanning)",
+              "description": "Scan a simulated departure chart (GAILLAC 4A) to locate waypoints, climb restrictions, minimum safe altitudes (MSA), and transition altitudes."
             },
             {
               "num": 3,
-              "title": "Express Professional Duties & Authority (Grammar in Context)",
-              "description": "Master and apply functional formulas: 'be responsible for + -ing', 'be tasked with + -ing', 'be in charge of + noun', 'have authority over / to', and 'ensure that + clause'."
+              "title": "Words for Corridors & Altitudes (Vocabulary Focus)",
+              "description": "Learn and use essential route vocabulary: waypoint, fly-by vs fly-over, flight level, transition altitude, minimum safe altitude, and holding fix."
             },
             {
               "num": 4,
-              "title": "Simulate Professional Shift & Turnaround Handoffs (Speaking Fluency)",
-              "description": "Conduct structured peer briefings between adjacent roles (Turnaround Coordinator <-> First Officer, AFISO <-> VFR Pilot, Terminal Duty Manager <-> Ramp Supervisor) to resolve operational bottlenecks."
+              "title": "Prepositions of Movement & Direction (Language Focus)",
+              "description": "Practice describing flight paths using dynamic movement words: climb straight ahead to, turn left towards, proceed via, along corridor, maintain until, and intersect."
             },
             {
               "num": 5,
-              "title": "Debate Airport Operational Dilemmas (Interaction & Negotiation)",
-              "description": "Analyze complex airport operational dilemmas (e.g. winter weather diversions and ramp congestion) from specific professional viewpoints and negotiate a consensus action plan."
+              "title": "Speaking Role-Play: Departure Briefing & Storm Diversion (Spoken Interaction)",
+              "description": "Role-play a pre-departure cockpit briefing followed by an urgent radio request to divert 20 degrees around a developing storm cell."
             },
             {
               "num": 6,
-              "title": "Refine Professional Aviation Vocabulary Pronunciation (Phonology)",
-              "description": "Place accurate primary and secondary word stress on complex professional terms (au-THOR-i-ty, re-SPON-si-ble, co-OR-di-na-tor, tech-NI-cian, o-ver-SIGHT, sur-VEIL-lance)."
-            },
-            {
-              "num": 7,
-              "title": "Master Prepositions of Responsibility & Passive Voice (TOEIC Practice)",
-              "description": "Identify common test traps in TOEIC Parts 5 & 6, particularly verbs of obligation, prepositions of responsibility ('responsible for', 'in charge of'), and passive verb structures in airport notices."
+              "title": "Safety Check: Managing Route Deviations & Level Busts (Operational Discussion)",
+              "description": "Collaborate in teams to analyze a departure route deviation hazard, evaluate terrain risks, and agree on clear safety solutions."
             }
           ]
         },
         "lessonPlan": {
-          "title": "Session 4 Lesson Plan (2 Hours)",
-          "summary": "A 2-hour communicative session featuring an aviation news opening, Session 3 turnaround spot-checking, the aviation roles overview, functional responsibility and authority grammar drills, 'Day in the Life' role handoffs, a winter weather operational dilemma debate, and a 10-minute vocabulary consolidation review.",
+          "title": "Session 5 Lesson Plan (2 Hours)",
+          "summary": "A 2-hour communicative spoken English session for GSEA students covering SIDs, STARs, prepositions of movement, a cockpit briefing and weather diversion role-play, and a collaborative Safety Check on departure deviations.",
           "items": [
             {
-              "time": "00-10",
-              "title": "Part 1: Aviation News, Current Events & Session 3 Spot-Check (10 mins)",
-              "description": "Opening 10-minute warm-up: discuss recent international aviation headlines followed by rapid spot-checking of Session 3 turnaround and GSE vocabulary (GPU, ASU, Pushback Tug, Chocks, FOD, Belt Loader)."
+              "time": "00-15",
+              "title": "Part 1: Warm-up: Why SIDs and STARs Exist (15 mins)",
+              "description": "In pairs, students discuss how structured departure corridors prevent mid-air conflicts around busy airports, and test entry knowledge with 4 quick spot-check questions."
             },
             {
-              "time": "10-30",
-              "title": "Part 2: Aviation Roles Across the Industry (20 mins)",
-              "description": "Explore the five operational domains (Landside, Airside/Ramp, Flight Crew, ATCOs, and TSEEAC). Clarify the core distinction between ATCO tactical separation authority and TSEEAC AFISO/auditing responsibilities."
+              "time": "15-45",
+              "title": "Part 2: Reading the Simulated SID & STAR Route Chart (30 mins)",
+              "description": "Analyzing the simulated GAILLAC 4A departure chart from Runway 14L, tracing waypoints, altitude restrictions, and the GAILLAC holding pattern."
             },
             {
-              "time": "30-50",
-              "title": "Part 3: Functional Grammar Focus: Responsibilities, Duties & Jurisdiction (20 mins)",
-              "description": "Examine high-yield B2 structures: 'responsible for + -ing', 'tasked with + -ing', 'in charge of', 'have authority over / to', 'ensure that', and 'report to vs. liaise with'. Practice with interactive scenario prompts."
+              "time": "45-70",
+              "title": "Part 3: Language Clinic: Prepositions of Movement & Direction (25 mins)",
+              "description": "Oral drills and pair practice using prepositions of movement (climb straight ahead to, turn left towards, proceed via, along, maintain until, intersect) to describe flight profiles."
             },
             {
-              "time": "50-75",
-              "title": "Part 4: Role-Play Simulation: 'A Day in the Life' Operational Handoffs (25 mins)",
-              "description": "Collaborative paired and triad role-play: simulate professional handoffs and resolve bottlenecks between Turnaround Coordinator <-> First Officer, AFISO <-> Inbound Pilot, and Terminal Duty Manager <-> Ramp Supervisor."
+              "time": "70-105",
+              "title": "Part 4: Speaking Role-Play: Departure Briefing & Storm Diversion (35 mins)",
+              "description": "3-student spoken simulation: Captain briefings First Officer on the departure, followed by an urgent radio request to ATC to divert around a thunderstorm, with Peer Observer checklist."
             },
             {
-              "time": "75-110",
-              "title": "Part 5: Aviation Career Forum & Operational Dilemma Debate (35 mins)",
-              "description": "Interactive multi-stakeholder debate: resolve an emergency aerodrome diversion scenario during freezing fog and ramp congestion. Argue priorities, negotiate trade-offs, and establish a consensus sequence."
-            },
-            {
-              "time": "110-120",
-              "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-              "description": "Final 10-minute consolidation: rapid recall of the 18 aviation profession terms, word stress and phonological drills, personal reflection, and continuous learning log update."
+              "time": "105-120",
+              "title": "Part 5: Safety Check: Managing Route Deviations & Level Busts (15 mins)",
+              "description": "Collaborative 4-step safety analysis evaluating severe storm hazards, terrain clearance (MSA), sector coordination, and pilot readback verification."
             }
           ]
         },
         "lessonContent": {
           "hero": {
-            "image": "images/aas_m1card4.jpg",
-            "title": "Jobs in Aviation: Roles, Responsibilities & Operational Interfaces",
-            "subtitle": "Landside, Airside, Flight Crew, Air Traffic Services & Civil Aviation Corps (TSEEAC)"
+            "title": "Airspace Corridors: SIDs, STARs & Transition Routes",
+            "subtitle": "Departure Routes, Terminal Arrivals, Waypoints, Flight Levels & Prepositions of Movement",
+            "image": "images/s3_m1_session5_sid_star.jpg",
+            "targetLevel": "CEFR B1–B2",
+            "roleContext": "GSEA Student Training • Terminal Airspace Navigation & Technical English",
+            "duration": "120 Minutes"
           },
           "openingSession": {
-            "title": "Activity 1: Aviation News & Session 3 Spot-Check (10 mins)",
-            "summary": "Every session begins with a 10-minute professional opening: analyzing current aviation headlines followed by rapid spot-checking of Session 3 ground operations and GSE vocabulary.",
+            "title": "Activity 1: Warm-up & Entry Spot-Check (15 mins)",
+            "summary": "Break the ice, discuss how airspace corridors keep skyways organized, and test your baseline knowledge of departure chart symbols.",
             "modeBadges": [
-              "👥 Pairs / Plenary",
-              "⏱️ 10 mins",
-              "🗣️ Operational Recall Drill",
-              "🎯 Technical Vocabulary & Fluency"
+              "Pairs (2 students)",
+              "Spoken Discussion",
+              "Timing: 15 mins"
             ],
             "instructions": [
-              "Step 1 (Aviation News Exchange - 4 mins): In pairs, discuss the current aviation headlines prompt. Share one news item regarding airport staffing, ATM capacity, or airline operations.",
-              "Step 2 (Session 3 GSE Spot-Check - 4 mins): Quiz your partner on Questions 1 to 4 (GPU function, Marshaller guidance, turnaround time critical path, FOD prevention) before revealing answers.",
-              "Step 3 (Class Operational Recap - 2 mins): Plenary review of one GSE definition. Highlight why GPU usage reduces ramp emissions and APU wear."
+              "In pairs, discuss the 3 opening questions about airspace corridors and departure routes.",
+              "Read each of the 4 Entry Spot-Check questions below and discuss your answers together.",
+              "Click 'Reveal Answer' to check your reasoning and see the plain English explanation."
             ],
-            "deliverable": "Spoken explanation of 1 aviation operational news item and an accurate technical explanation of GPU or turnaround time.",
-            "teacherNotes": "Cold-call pairs. Probe beyond superficial definitions: ask what happens to an aircraft's departure slot if the GPU fails during pushback disconnect.",
+            "deliverable": "Shared agreement on why standard corridors are safer than ad-hoc radar vectors, and completed 4-question diagnostic.",
+            "teacherNotes": "Encourage spontaneous speaking. Help students feel comfortable using dynamic motion verbs (climb, turn, proceed, join) to describe three-dimensional flight paths.",
             "newsPrompts": [
-              "What aviation, airline, or ATM news stories caught your attention in the headlines this week?",
-              "How are airports and air navigation service providers managing staffing, recruitment, or new operational procedures this season?"
+              {
+                "id": 1,
+                "question": "Imagine if every aircraft leaving a major hub chose its own climb path and direction. What would happen?",
+                "exampleAnswers": [
+                  "It would be total chaos! Air traffic controllers would have to issue hundreds of individual heading calls every minute, which would saturate radio frequencies.",
+                  "Standard routes create predictable, highway-like corridors where aircraft are separated by design, keeping both pilots and controllers safe."
+                ]
+              },
+              {
+                "id": 2,
+                "question": "What is the difference between a waypoint that is a 'fly-by' point and one that is a 'fly-over' point?",
+                "exampleAnswers": [
+                  "A fly-by waypoint allows the flight management computer to anticipate the turn slightly early so the plane cuts the corner smoothly and stays on track.",
+                  "A fly-over waypoint means the aircraft must pass directly over the top of the point before initiating the turn, which is usually required to avoid high terrain or noise-sensitive towns."
+                ]
+              },
+              {
+                "id": 3,
+                "question": "Why do charts specify both an initial altitude and a 'Transition Altitude'?",
+                "exampleAnswers": [
+                  "The initial altitude keeps the climbing aircraft safely below arriving traffic in the terminal area.",
+                  "The Transition Altitude (like 5,000 ft) is where pilots switch their altimeters from local ground pressure to the standard 1013 hPa setting so all cruising aircraft share the exact same vertical reference."
+                ]
+              }
             ],
-            "spotCheck": {
-              "title": "Session 3 Vocabulary Spot-Check (Ground Operations & GSE)",
-              "questions": [
-                {
-                  "id": 1,
-                  "q": "What is the primary function of a Ground Power Unit (GPU) during an aircraft turnaround?",
-                  "answer": "A GPU supplies 400Hz AC electrical power to the aircraft while parked at the gate stand, allowing the flight crew to shut down the main engines and auxiliary power unit (APU) to save fuel and reduce ramp emissions."
-                },
-                {
-                  "id": 2,
-                  "q": "How does a Marshaller guide an arriving aircraft to its parking stand when automated docking is unavailable?",
-                  "answer": "A marshaller uses illuminated wands or visual hand signals to direct the flight deck along the painted yellow lead-in line to the precise nosewheel stop mark."
-                },
-                {
-                  "id": 3,
-                  "q": "What is turnaround time (TAT) and why is minimizing it critical for airlines?",
-                  "answer": "Turnaround time is the elapsed period from chocks-on at arrival to chocks-off at departure. Minimizing TAT maximizes aircraft daily utilization and prevents knock-on departure slot delays."
-                },
-                {
-                  "id": 4,
-                  "q": "What is Foreign Object Debris (FOD) and how do ramp teams prevent it?",
-                  "answer": "FOD is any loose item, tool, fragment, or trash on the apron or taxiway that could be ingested by a jet engine or damage tires; ground crews conduct continuous visual scans and regular FOD sweeps."
-                }
-              ]
-            }
+            "spotCheckQuestions": [
+              {
+                "id": 1,
+                "question": "What does the abbreviation 'SID' stand for in air traffic terminology?",
+                "options": [
+                  "Surface Incident Detection.",
+                  "Standard Instrument Departure.",
+                  "Special IFR Direction.",
+                  "Secondary Inbound Descent."
+                ],
+                "correct": 1,
+                "explanation": "SID stands for Standard Instrument Departure—a published flight route connecting an aerodrome to the en-route airway system."
+              },
+              {
+                "id": 2,
+                "question": "On an aeronautical chart, how is a 'fly-over' waypoint symbolized differently from a standard 'fly-by' waypoint?",
+                "options": [
+                  "It is colored bright red instead of blue.",
+                  "It is a four-pointed star enclosed inside a circle.",
+                  "It has a small airplane icon next to it.",
+                  "It is written in italic capital letters."
+                ],
+                "correct": 1,
+                "explanation": "A fly-over waypoint is shown as a star (or triangle) enclosed in a circle, indicating the aircraft must fly directly overhead before beginning its turn."
+              },
+              {
+                "id": 3,
+                "question": "What does an altitude constraint written as 'FL070+' indicate on a departure chart?",
+                "options": [
+                  "The pilot must level off exactly at FL070 and hold indefinitely.",
+                  "The aircraft must cross that waypoint at Flight Level 070 or higher.",
+                  "The aircraft must be below FL070 to avoid military airspace.",
+                  "The aircraft must fly 70 knots faster than normal."
+                ],
+                "correct": 1,
+                "explanation": "The plus sign indicates 'at or above'. FL070+ means the aircraft must cross the fix at or higher than Flight Level 070 (7,000 feet on standard altimeter setting)."
+              },
+              {
+                "id": 4,
+                "question": "What is the purpose of a published 'Minimum Safe Altitude' (MSA) on a route chart?",
+                "options": [
+                  "It is the minimum speed at which an aircraft can fly without stalling.",
+                  "It provides at least 1,000 feet of clearance above all terrain and obstacles within 25 nautical miles of the navigation aid.",
+                  "It indicates the lowest altitude for opening the cabin passenger doors.",
+                  "It is the altitude where clouds permanently disappear."
+                ],
+                "correct": 1,
+                "explanation": "The MSA guarantees at least 1,000 feet of obstacle clearance (or 2,000 feet in mountainous areas) within 25 NM, providing an emergency safety floor."
+              }
+            ]
           },
-          "jobTaxonomy": {
-            "title": "Activity 2: Aviation Roles Across the Industry (20 mins)",
-            "summary": "Aviation is an intricate ecosystem where specialized professions collaborate seamlessly. Explore the five primary operational domains, their key responsibilities, and the essential distinction between ATCO separation authority and TSEEAC functions.",
-            "modeBadges": [
-              "👥 Small Groups (3-4)",
-              "⏱️ 20 mins",
-              "🧭 Roles & Jurisdiction Analysis",
-              "🎯 Operational Domain Mastery"
-            ],
-            "instructions": [
-              "Step 1 (Domain Exploration - 8 mins): Study the 5 operational domains: Landside, Airside, Flight Crew, ATCOs, and TSEEAC. Identify the primary physical jurisdiction and core duty for each.",
-              "Step 2 (Crucial Distinction Audit - 6 mins): Analyze the structural legal difference between ATCOs (tactical separation authority) and TSEEAC / AFISOs (flight information and advisory services without separation authority).",
-              "Step 3 (Role Matching Drill - 6 mins): In pairs, randomly name a professional role (e.g. TRC, AFISO, Marshaller, Tower ATCO). Your partner must state the domain, primary duty, and whom they report to."
-            ],
-            "deliverable": "Accurate categorization of all 5 domains and a clear spoken explanation distinguishing ATCO separation authority from TSEEAC AFISO flight information.",
-            "teacherNotes": "Emphasize the ENAC/DGAC institutional distinction: TSEEAC is a civil aviation body, AFISOs provide information/alerting, whereas ATCOs hold licensing to issue binding separation clearances.",
-            "domains": [
+          "chartExtract": {
+            "title": "Activity 2: Reading the Simulated SID & STAR Route Chart (30 mins)",
+            "summary": "Analyze the simulated GAILLAC 4A Departure from Runway 14L and understand key navigation milestones and constraints.",
+            "badge": "SIMULATED DEPARTURE ROUTE CHART • GAILLAC 4A (LFMT)",
+            "callsign": "Blagnac-Montpellier Airport (LFMT) • Runway 14L Departures",
+            "sections": [
               {
-                "id": "landside",
-                "name": "1. Landside Operations",
-                "color": "sky",
-                "roles": [
-                  "Passenger Service Agent (PSA)",
-                  "Security Screening Officer",
-                  "Terminal Duty Manager",
-                  "Border Control Officer"
-                ],
-                "description": "Manages passenger processing, documentation verification, terminal safety, and accessibility before the airside security boundary.",
-                "keyJurisdiction": "Public terminal zones, check-in concourses, baggage drop systems, and departure lounge coordination.",
-                "sampleDuty": "Passenger Service Agents verify travel documents, handle gate boarding announcements, and manage baggage reconciliation."
+                "heading": "1. Initial Climb Profile & Heading",
+                "details": [
+                  "Runway Alignment: After liftoff from Runway 14L, climb straight ahead on runway track 142° magnetic.",
+                  "Initial Altitude Constraint: Maintain runway track until reaching 3,000 ft QNH or 5 DME from TOU VOR (whichever occurs first).",
+                  "Noise Abatement Constraint: No turns are permitted below 3,000 ft to protect surrounding residential areas from engine noise."
+                ]
               },
               {
-                "id": "airside",
-                "name": "2. Airside & Ramp Operations",
-                "color": "amber",
-                "roles": [
-                  "Turnaround Coordinator (TRC)",
-                  "Ramp Agent / Baggage Handler",
-                  "Marshaller",
-                  "Pushback Tug Driver",
-                  "De-icing Rig Operator",
-                  "Refueller / Hydrant Dispenser"
-                ],
-                "description": "Coordinates all parallel ground servicing operations around the aircraft within the designated safety servicing envelope.",
-                "keyJurisdiction": "Apron stands, equipment staging lanes, airside service roads, and aircraft servicing envelopes.",
-                "sampleDuty": "The Turnaround Coordinator oversees parallel servicing tasks, monitors fuel and baggage loading, and enforces on-time departure."
+                "heading": "2. Turn & En-Route Interception",
+                "details": [
+                  "First Turn: At 3,000 ft, turn left directly towards waypoint GAILLAC (GAI VOR/DME 114.4 MHz).",
+                  "Intermediate Constraint: Cross 8 DME TOU at or above 4,000 ft.",
+                  "Fix Constraint: Cross GAI VOR at or above FL070.",
+                  "En-Route Join: From GAI, proceed along airway UM733 towards waypoint MENDE to join cruising airway network."
+                ]
               },
               {
-                "id": "flightcrew",
-                "name": "3. Aircraft Flight Crew",
-                "color": "indigo",
-                "roles": [
-                  "Captain (Pilot-in-Command)",
-                  "First Officer (Co-Pilot)",
-                  "Purser / Senior Cabin Manager",
-                  "Cabin Crew / Flight Attendant"
-                ],
-                "description": "Responsible for the safe navigation, operation, passenger welfare, and emergency readiness of the aircraft from off-blocks to on-blocks.",
-                "keyJurisdiction": "Cockpit flight deck, passenger cabin, aircraft technical logbook, and emergency systems.",
-                "sampleDuty": "The First Officer performs external walkaround inspections, cross-checks FMC route programming, and monitors radio communications."
+                "heading": "3. Speed & Altitude Safeguards",
+                "details": [
+                  "Speed Limit: Maximum indicated airspeed 250 knots below FL100 unless cleared by ATC.",
+                  "Transition Altitude (TA): 5,000 ft AMSL (set standard altimeter pressure 1013.25 hPa on passing 5,000 ft).",
+                  "Minimum Safe Altitude (MSA): 4,200 ft within 25 NM north and east; 7,800 ft to the south towards the Pyrenees mountain sector."
+                ]
               },
               {
-                "id": "atco",
-                "name": "4. Air Traffic Control Officers (ATCOs)",
-                "color": "rose",
-                "roles": [
-                  "Aerodrome / Tower ATCO",
-                  "Approach Radar Controller (APP)",
-                  "Area / En-Route Controller (ACC)"
-                ],
-                "description": "Licensed air traffic controllers possessing executive legal authority to issue binding clearances and ensure safe tactical separation between aircraft in flight and on active movement areas.",
-                "keyJurisdiction": "Active runways, taxiways, controlled airspace sectors, and terminal maneuvering areas (TMA).",
-                "sampleDuty": "Tower ATCOs issue mandatory takeoff and landing clearances, manage runway sequencing, and maintain aircraft separation."
-              },
-              {
-                "id": "tseeac",
-                "name": "5. Civil Aviation Operations Corps (TSEEAC)",
-                "color": "emerald",
-                "roles": [
-                  "Aerodrome Flight Information Service Officer (AFISO)",
-                  "Aerodrome Operations Coordinator",
-                  "DGAC Aviation Safety Inspector",
-                  "Air Navigation Technical Support Officer"
-                ],
-                "description": "Civil aviation civil servants who perform critical operations, flight information, safety oversight, and aerodrome management. IMPORTANT: TSEEAC personnel are NOT air traffic controllers and do NOT have separation authority; AFISOs provide advisory flight information and alerting service at non-controlled aerodromes.",
-                "keyJurisdiction": "AFIS aerodromes, civil aviation regional directorates (DSAC), airport safety coordination, and technical surveillance.",
-                "sampleDuty": "An AFISO provides weather reports, runway conditions, and traffic advisories to pilots, while DGAC safety inspectors conduct regulatory compliance audits."
+                "heading": "4. Holding Pattern at GAILLAC (GAI)",
+                "details": [
+                  "Inbound Course: 215° magnetic towards GAI VOR.",
+                  "Turn Direction: Right-hand turns; standard 1-minute outbound leg.",
+                  "Minimum Holding Level: FL080; maximum holding speed 230 knots."
+                ]
               }
             ]
           },
           "grammarClinic": {
-            "title": "Activity 3: Language Focus: Roles, Responsibilities & Authority (20 mins)",
-            "summary": "Professional aviation communication demands absolute precision when describing who does what, who reports to whom, and who holds regulatory authority.",
-            "modeBadges": [
-              "👤 Individual -> 👥 Pairs",
-              "⏱️ 20 mins",
-              "✍️ Operational Syntax Drill",
-              "🎯 Collocation & Precision"
-            ],
-            "instructions": [
-              "Step 1 (Formula Mastery - 5 mins): Review the 6 authority and responsibility structures above. Note preposition rules: 'responsible FOR + -ing', 'tasked WITH + -ing', 'authority OVER / TO + verb'.",
-              "Step 2 (Role Duty Construction - 10 mins): With a partner, write 3 operational sentences describing different aviation roles using: (1) 'be tasked with', (2) 'have authority to', and (3) 'liaise with vs. report to'.",
-              "Step 3 (Roles & Responsibilities Challenge - 5 mins): Complete the 4 interactive grammar challenge questions individually, check your answers, and discuss the preposition rules."
-            ],
-            "deliverable": "4 verified practice question answers + 3 original spoken or written role-duty descriptions demonstrating correct prepositional collocations.",
-            "teacherNotes": "Stamp out 'responsible OF' immediately (French interference). Highlight the difference between hierarchical reporting ('reports to the TRC') and lateral coordination ('liaises with fueling').",
-            "formulas": [
+            "title": "Activity 3: Language Clinic: Prepositions of Movement & Direction (25 mins)",
+            "summary": "Practice using dynamic prepositions and motion verbs to describe three-dimensional flight paths with precision.",
+            "rules": [
               {
-                "structure": "be responsible for + -ing / noun",
-                "usage": "Core ongoing duty or accountability",
-                "example": "The Turnaround Coordinator is responsible for ensuring all servicing vehicles clear the stand before pushback."
+                "term": "climb straight ahead to",
+                "meaning": "Maintain the runway alignment while ascending to a specified altitude.",
+                "example": "After liftoff, climb straight ahead to 3,000 feet on runway track 142°."
               },
               {
-                "structure": "be tasked with + -ing / noun",
-                "usage": "Official assignment, directive, or designated role",
-                "example": "The AFIS officer is tasked with providing traffic information and weather advisories to inbound aircraft."
+                "term": "turn left / right towards",
+                "meaning": "Change magnetic heading to point directly at a navigation fix or waypoint.",
+                "example": "At 3,000 feet, turn left directly towards waypoint GAILLAC."
               },
               {
-                "structure": "be in charge of + noun / -ing",
-                "usage": "Supervisory oversight of a team, facility, or zone",
-                "example": "The Terminal Duty Manager is in charge of passenger concourse flow and emergency crowd management."
+                "term": "proceed via",
+                "meaning": "Follow a designated route, corridor, or sequence of waypoints.",
+                "example": "Proceed via airway UM733 towards waypoint MENDE."
               },
               {
-                "structure": "have authority over / to + verb",
-                "usage": "Legal jurisdiction or executive command power",
-                "example": "Tower ATCOs have authority over active runways and issue binding takeoff and landing clearances."
+                "term": "along",
+                "meaning": "Moving in a line parallel to or following a corridor or radial.",
+                "example": "Fly along the 142-degree outbound radial until intercepting the turn point."
               },
               {
-                "structure": "ensure that + clause",
-                "usage": "Verification, quality control, and safety compliance",
-                "example": "Safety inspectors ensure that airline maintenance procedures comply with DGAC regulations."
+                "term": "cross at or above",
+                "meaning": "Pass over a specific fix at an altitude equal to or greater than the restriction.",
+                "example": "Cross waypoint GAILLAC at or above flight level 070."
               },
               {
-                "structure": "report to vs. liaise with",
-                "usage": "Hierarchy vs. horizontal peer collaboration",
-                "example": "The Ramp Agent reports to the Turnaround Coordinator and liaises with fueling technicians."
+                "term": "maintain ... until ...",
+                "meaning": "Continue a speed, heading, or altitude until a specific event or condition occurs.",
+                "example": "Maintain 250 knots until passing through 10,000 feet."
+              },
+              {
+                "term": "intersect",
+                "meaning": "To cross or join another path, beam, or route line.",
+                "example": "Turn right heading 260 to intersect the localizer course."
               }
             ],
-            "roleClinic": [
+            "drills": [
               {
                 "id": 1,
-                "prompt": "The First Officer is tasked with (conducting / to conduct / conduct) the pre-flight external walkaround inspection.",
-                "answer": "conducting",
-                "explanation": "'Be tasked with' is followed by the preposition 'with', which requires a gerund (-ing)."
+                "prompt": "How does the pilot fly immediately after takeoff on Runway 14L?",
+                "targetAnswer": "After takeoff, the pilot climbs straight ahead on runway heading 142° until reaching 3,000 feet."
               },
               {
                 "id": 2,
-                "prompt": "Unlike ATCOs, AFISOs do not have authority (to separate / separating / for separate) aircraft tactically.",
-                "answer": "to separate",
-                "explanation": "'Have authority to' is followed by the base infinitive ('to separate')."
+                "prompt": "What action is required once passing 3,000 feet?",
+                "targetAnswer": "At 3,000 feet, the aircraft turns left directly towards waypoint GAILLAC."
               },
               {
                 "id": 3,
-                "prompt": "The Ramp Agent is responsible (for / of / to) securing the wheel chocks once the aircraft comes to a stop.",
-                "answer": "for",
-                "explanation": "'Responsible for' is the correct prepositional collocation (avoid the French false friend 'responsible of')."
+                "prompt": "What is the altitude restriction at waypoint GAILLAC?",
+                "targetAnswer": "The aircraft must cross waypoint GAILLAC at or above Flight Level 070."
               },
               {
                 "id": 4,
-                "prompt": "The Turnaround Coordinator must ensure (that / what / which) the cargo hold doors are locked before pushback.",
-                "answer": "that",
-                "explanation": "'Ensure' takes a content clause starting with 'that' ('ensure that + subject + verb')."
+                "prompt": "How does the aircraft join the main airway system after GAILLAC?",
+                "targetAnswer": "The aircraft proceeds via airway UM733 towards waypoint MENDE to join cruising airspace."
+              },
+              {
+                "id": 5,
+                "prompt": "What speed restriction applies during the initial climb below FL100?",
+                "targetAnswer": "The flight crew must maintain an indicated airspeed of 250 knots or less until passing through 10,000 feet."
               }
             ]
           },
-          "handoffSimulation": {
-            "title": "Activity 4: Pairwork & Triad Simulation — 'A Day in the Life' Role Handoff (25 mins)",
-            "summary": "Effective inter-departmental handoffs prevent bottlenecks and eliminate miscommunication. Work in pairs or triads to conduct professional operational handovers.",
-            "modeBadges": [
-              "👥 Pairs / Triads",
-              "⏱️ 25 mins",
-              "🎭 Operational Interface Simulation",
-              "🎯 Radio & Handoff Fluency"
-            ],
-            "instructions": [
-              "Step 1 (Scenario Assignment - 5 mins): Choose Pair 1 (TRC <-> Flight Deck), Pair 2 (AFISO <-> Inbound VFR), or Pair 3 (Terminal Manager <-> Ramp Supervisor). Read your specific role context.",
-              "Step 2 (Simulation Rehearsal - 12 mins): Conduct the operational handoff in character. You must incorporate at least two of the mandatory target phrases (e.g., 'tasked with', 'liaised with', 'ensure that').",
-              "Step 3 (Role Reversal & Feedback - 8 mins): Swap roles and repeat the dialogue under modified conditions (e.g. 5 minutes until slot loss or sudden weather degradation)."
-            ],
-            "deliverable": "A 2-minute fluent operational handoff dialogue successfully resolving an operational conflict using mandatory responsibility formulas.",
-            "teacherNotes": "Listen for realistic aviation tone: professional, concise, assertive, but collaborative. Ensure students actually use the target phrases rather than informal conversational English.",
-            "scenarios": [
+          "roleplaySimulation": {
+            "title": "Activity 4: Speaking Role-Play: Departure Briefing & Storm Diversion (35 mins)",
+            "summary": "Simulate a two-part spoken challenge: a cockpit departure briefing followed by an urgent radio request to divert around a thunderstorm.",
+            "situation": "Part 1: The Captain of AFR 624 briefs the First Officer on the GAILLAC 4A departure before takeoff from Runway 14L.\nPart 2: Climbing through 4,500 ft, airborne weather radar shows a severe convective storm cell building directly over the turn towards GAILLAC. The pilot contacts Departure Radar to request a heading 20 degrees left of track.",
+            "roles": [
               {
-                "id": "pair1",
-                "title": "Pair 1: Turnaround Coordinator (TRC) <-> First Officer (Flight Deck)",
-                "context": "Flight AF418 is scheduled off-blocks in 8 minutes. Cargo loading is complete, but the refueller was held up by a minor hose leak. The First Officer needs the final fuel uplift and signed load sheet.",
-                "roleA": "Turnaround Coordinator: Confirm fuel uplift of 5,800 kg, present the final trim sheet for Captain's signature, and report stand clearance status.",
-                "roleB": "First Officer: Cross-check the fuel quantity against FMC calculations, verify the center of gravity (CG) limits on the trim sheet, and request pushback readiness.",
-                "targetPhrases": [
-                  "\"I am responsible for confirming that all ground equipment has detached...\"",
-                  "\"Could you ensure that the load sheet reflects the actual fuel on board?\"",
-                  "\"We liaised with the fueling technician, and all safety valves are verified.\""
-                ]
+                "role": "Role A: Airline Captain (AFR 624)",
+                "instructions": "Brief the First Officer clearly: state the runway (14L), the initial climb (straight ahead to 3,000 ft), the turn point (left direct GAILLAC), the altitude restriction (cross GAI at or above FL070), and the transition altitude (5,000 ft). In Part 2, call Departure Radar calmly to request a 20-degree left heading deviation to avoid the storm cell."
               },
               {
-                "id": "pair2",
-                "title": "Pair 2: AFISO (TSEEAC) <-> Inbound VFR Aircraft",
-                "context": "A Cessna 172 is inbound to a non-controlled regional airfield. The AFISO is on duty in the aerodrome flight information station. Low winter sun and flocking birds have been observed near Runway 26 threshold.",
-                "roleA": "AFISO (TSEEAC): Provide aerodrome flight information: runway in use 26, surface wind 240/12kt, QNH 1018, cautionary bird advisory, and report on opposing glider traffic.",
-                "roleB": "VFR Pilot: Acknowledge information, report position over visual reporting point (Sierra), and state intentions for standard overhead join.",
-                "targetPhrases": [
-                  "\"Information only: Runway 26 in use, wind 240 degrees at 12 knots...\"",
-                  "\"Be advised, a flock of lapwings has been reported near the threshold...\"",
-                  "\"As an AFISO, I am tasked with providing traffic and safety advisories.\""
-                ]
+                "role": "Role B: Departure Radar Controller",
+                "instructions": "In Part 1, listen to the briefing as the First Officer and confirm agreement. In Part 2, receive the pilot's diversion request. Check your radar display, check terrain clearance (MSA 4,200 ft), approve the 20-degree left turn, and clear the flight to continue climb to FL090."
               },
               {
-                "id": "pair3",
-                "title": "Pair 3: Terminal Duty Manager <-> Ramp Operations Supervisor",
-                "context": "A group of 14 delayed transit passengers from a connecting transatlantic flight has just cleared security. The departure flight has a strict 10-minute CTOT slot.",
-                "roleA": "Terminal Duty Manager: Request a 5-minute gate hold to allow the transit passengers to board, arguing customer service and connection costs.",
-                "roleB": "Ramp Operations Supervisor: Defend the slot departure, explaining the financial and network penalties of missing the Eurocontrol CTOT slot.",
-                "targetPhrases": [
-                  "\"We are in charge of passenger processing and must avoid misconnecting passengers...\"",
-                  "\"If we miss this slot, ATC will hold the flight for at least 45 minutes...\"",
-                  "\"Can we ensure that baggage is prioritized while passengers board through the gate?\""
-                ]
+                "role": "Role C: Peer Observer & Safety Auditor",
+                "instructions": "Use the checklist below to assess your peers. Was the departure briefing structured and clear? Did the pilot use standard prepositions of movement? Was the radio request calm and precise?"
               }
+            ],
+            "checklist": [
+              "Captain covered all 5 key briefing points (runway, climb, turn, altitude restriction, TA).",
+              "Both speakers used natural, communicative English without long unnatural pauses.",
+              "Pilot stated the reason for diversion clearly ('due to weather/convective cell').",
+              "Controller confirmed terrain clearance before approving the deviation."
+            ],
+            "phrases": [
+              "This will be the GAILLAC 4A departure from Runway 14L.",
+              "After liftoff, climb straight ahead on track 142° to 3,000 feet.",
+              "At 3,000 feet, turn left direct to GAILLAC, crossing GAI at or above FL070.",
+              "Departure, Air France 624, climbing through 4,500 feet, request heading 20 degrees left of track due to weather.",
+              "Air France 624, left heading 20 degrees approved, climb to FL090, report when able to proceed direct GAILLAC."
             ]
           },
-          "careerForumDebate": {
-            "title": "Activity 5: Aviation Career Forum & Operational Dilemma Debate (35 mins)",
-            "summary": "A fast-moving winter weather front brings freezing fog, reducing Runway Visual Range (RVR) to 350m at a regional aerodrome. Stand capacity is at 95%, de-icing rigs are working at maximum throughput, and two inbound diversions are requesting priority due to fuel minimums. Each team represents an aviation profession, defends operational priorities, and negotiates a consensus action plan.",
-            "modeBadges": [
-              "👥 4-Way Multi-Stakeholder Forum",
-              "⏱️ 35 mins",
-              "⚡ Crisis Management Negotiation",
-              "🎯 Consensus Building"
-            ],
-            "instructions": [
-              "Step 1 (Crisis Briefing & Stance - 8 mins): Read the Winter Storm & Diversion Gridlock scenario. Assign one stakeholder role per team member (ATCO, AFISO/Ops, TRC/Ground, Captain). Review your non-negotiable priority.",
-              "Step 2 (Stakeholder Round-Robin - 12 mins): Each stakeholder presents their operational dilemma and proposed sequence of events. State what your role can and cannot concede.",
-              "Step 3 (Consensus Negotiation & Rating - 15 mins): Negotiate a sequential 3-step action plan using conditional language ('Provided that...', 'On condition that...'). Vote on the 3 consensus challenges in the agreement tracker."
-            ],
-            "deliverable": "A negotiated 3-step crisis operational resolution signed off by all 4 stakeholders, balancing fuel safety, stand capacity, de-icing holdover times, and slot preservation.",
-            "teacherNotes": "Maintain high tension! Remind them that if no decision is made within 20 minutes, the Captain's crew times out, the diversion exhausts fuel reserves, and runway friction degrades further. Demand conditional structures.",
-            "scenario": "Regional Aerodrome 'Echo-Delta' is experiencing severe winter weather with RVR 350m and freezing drizzle. Only 2 parking stands remain open. Two diverted commercial jets are in the holding pattern, one declaring 'Minimum Fuel'. On the ground, an outbound flight on Stand 2 has passengers boarded, but its holdover time has expired, requiring a second de-icing cycle.",
-            "stakeholders": [
+          "safetyCheck": {
+            "title": "Activity 5: Safety Check: Managing Departure Route Deviations & Level Busts (15 mins)",
+            "summary": "Work in teams to analyze the safety hazards when weather forces aircraft off published departure corridors.",
+            "steps": [
               {
-                "name": "Tower & Approach ATCOs",
-                "priority": "Runway safety, separation in holding stacks, and emergency prioritization for the minimum-fuel diversion.",
-                "stance": "Has sole authority over runway access; demands clear runway sequencing and will not clear departures until emergency fuel traffic lands."
+                "step": 1,
+                "title": "Identify the Hazard",
+                "text": "During heavy summer convective weather, a climbing jet turns off the GAILLAC 4A SID corridor to avoid severe hail. In doing so, it moves towards rising mountainous terrain to the south where the Minimum Safe Altitude is 7,800 ft."
               },
               {
-                "name": "AFISO / Aerodrome Operations Coordinator (TSEEAC)",
-                "priority": "Airfield friction coefficient measurement, snow and de-icing coordinator, apron safety compliance, and stand allocation.",
-                "stance": "Liaises between airport authority and services; ensures de-icing pad does not gridlock and coordinates snow clearing plows on taxiways."
+                "step": 2,
+                "title": "Evaluate the Operational Risk",
+                "text": "If the aircraft turns towards high terrain without climbing above the sector MSA, or if an altitude bust occurs due to pilot distraction in heavy turbulence, terrain proximity warnings (CFIT risk) or conflict with inbound arrival traffic could happen."
               },
               {
-                "name": "Turnaround Coordinator & Ground Handling Lead",
-                "priority": "Ramp safety, ground equipment availability, de-icing fluid inventory, and baggage handling for diverted passengers.",
-                "stance": "Warns that ramp handlers are nearing maximum duty limits and de-icing fluid is at critical reserves; insists on clearing Stand 2 first."
+                "step": 3,
+                "title": "Propose Protective Actions",
+                "text": "1. Always verify sector Minimum Safe Altitude (MSA) before authorizing or executing any off-route heading vector.\n2. ATC must issue an immediate climb clearance above the terrain floor (FL090 or higher) when approving diversions.\n3. Flight crew must cross-check navigation displays and maintain sterile cockpit procedures during weather deviations.\n4. Ensure full readback of assigned tactical headings and target flight levels."
               },
               {
-                "name": "Airline Captain (Outbound Flight on Stand 2)",
-                "priority": "Passenger welfare, flight duty period (FDP) limits, and slot adherence.",
-                "stance": "Argues that if the aircraft is not de-iced and dispatched within 20 minutes, the crew will exceed legal duty hours and the flight must be cancelled."
-              }
-            ],
-            "consensusChallenge": "In mixed teams of 4, negotiate a step-by-step priority sequence using conditional structures ('Provided that...', 'As long as...', 'On condition that...') to resolve the standoff safely and efficiently."
-          },
-          "closingReview": {
-            "title": "Activity 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-            "summary": "The final 10 minutes consolidate today's high-yield vocabulary, reinforce syllable stress on professional job titles, and update your personal continuous assessment log.",
-            "modeBadges": [
-              "👤 Individual & 👥 Pairs",
-              "⏱️ 10 mins",
-              "⚡ Syllable Stress & Self-Audit",
-              "🎯 Formative Synthesis"
-            ],
-            "instructions": [
-              "Step 1 (Pronunciation Practice - 4 mins): Practice pronouncing the 6 multisyllabic professional titles aloud with correct syllable stress: au-THOR-i-ty (2nd), re-SPON-si-ble (2nd), co-OR-di-na-tor (2nd), o-ver-SIGHT (1st).",
-              "Step 2 (Rapid-Fire Partner Quiz - 4 mins): Test your partner on 3 random terms from today's session (e.g. PSA vs. TRC, AFISO jurisdiction, Foreign Object Debris prevention).",
-              "Step 3 (Self-Assessment & Portfolio - 2 mins): Rate your confidence (1 to 5) in explaining your future aviation profession. Record target terms in your semester study log."
-            ],
-            "deliverable": "Accurate pronunciation of 4 key multisyllabic aviation terms + complete self-assessment entry in study portfolio.",
-            "teacherNotes": "Focus on primary stress in technical nouns vs. verbs. Remind students that Session 5 is Formative Evaluation 1: ensure portfolios, vocabulary logs, and presentations are fully prepped.",
-            "reviewPrompts": [
-              {
-                "title": "1. Syllable Stress & Pronunciation Practice",
-                "desc": "Drill accurate syllable stress: au-THOR-i-ty (2nd), re-SPON-si-ble (2nd), tech-NI-cian (2nd), co-OR-di-na-tor (2nd), o-ver-SIGHT (1st), sur-VEIL-lance (2nd)."
-              },
-              {
-                "title": "2. Rapid-Fire Retrieval Quiz",
-                "desc": "In pairs, quiz each other on 3 random terms from today's 18 vocabulary bank without checking notes (e.g. AFISO vs. ATCO, Turnaround Coordinator, Flight Dispatcher)."
-              },
-              {
-                "title": "3. Self-Assessment & Continuous Learning",
-                "desc": "Rate your ability (1 to 5) to explain the responsibilities of your future aviation profession. Update your study portfolio with target expressions."
+                "step": 4,
+                "title": "Agree on the Team Decision",
+                "text": "Agree with your team on the two most critical safety safeguards and record your conclusions in the Operational Notes section below."
               }
             ]
           }
         },
         "revision": {
-          "title": "Session 4: Jobs in Aviation",
-          "summary": "Review the 18 key technical and professional terms covering landside, airside, flight crew, air traffic control (ATCO), and civil aviation administration (TSEEAC / AFISO) to enhance your speaking fluency and TOEIC accuracy.",
+          "title": "Session 5 Revision - Airspace Corridors: SIDs, STARs & Transition Routes",
+          "summary": "30 essential operational and terminal navigation vocabulary terms for GSEA students covering departure routes, arrivals, waypoints, and prepositions of movement.",
           "terms": [
             {
               "num": "01",
-              "term": "Aerodrome Flight Information Service Officer (AFISO)",
-              "definition": "A certified aeronautical station officer (often TSEEAC) providing traffic advisories, aerodrome conditions, and alerting services to aircraft at non-controlled aerodromes without separation authority."
+              "term": "Standard Instrument Departure (SID)",
+              "definition": "A published IFR departure route linking an airport to a specified point on an en-route airway."
             },
             {
               "num": "02",
-              "term": "Air Traffic Control Officer (ATCO)",
-              "definition": "A licensed professional legally authorized to issue mandatory control clearances and maintain safe tactical separation between aircraft in flight and maneuvering on active airport surfaces."
+              "term": "Standard Terminal Arrival Route (STAR)",
+              "definition": "A published IFR arrival route linking an en-route point to a point where an approach can begin."
             },
             {
               "num": "03",
-              "term": "Turnaround Coordinator (TRC)",
-              "definition": "The ground handling operations lead on the apron responsible for orchestrating servicing teams, monitoring critical-path milestones, and ensuring punctual departure."
+              "term": "Waypoint",
+              "definition": "A specified geographical location used to define an area navigation (RNAV) route or flight path."
             },
             {
               "num": "04",
-              "term": "Ramp Agent",
-              "definition": "An airside ground handler responsible for loading and unloading baggage and cargo, positioning ground support equipment, and securing the aircraft servicing envelope."
+              "term": "Fly-by Waypoint",
+              "definition": "A waypoint that allows turn anticipation to smoothly join the next segment of a route."
             },
             {
               "num": "05",
-              "term": "Marshaller",
-              "definition": "A trained apron ground handler who uses illuminated wands or visual hand signals to guide an incoming aircraft along the taxi line to its exact parking mark."
+              "term": "Fly-over Waypoint",
+              "definition": "A waypoint at which an aircraft must fly directly overhead before starting a turn."
             },
             {
               "num": "06",
-              "term": "Flight Operations Officer / Dispatcher",
-              "definition": "A licensed flight planning specialist who calculates fuel requirements, monitors en-route NOTAMs and weather, prepares flight plans, and co-signs the dispatch release with the captain."
+              "term": "Flight Level (FL)",
+              "definition": "An altitude reference surface based on standard pressure (1013.25 hPa), expressed in hundreds of feet."
             },
             {
               "num": "07",
-              "term": "Passenger Service Agent (PSA)",
-              "definition": "A landside airline or ground handling employee who assists travelers at check-in desks, checks travel documentation, reconciles hold luggage, and conducts gate boarding."
+              "term": "Transition Altitude (TA)",
+              "definition": "The altitude at or below which vertical position is controlled by reference to local ground pressure (QNH)."
             },
             {
               "num": "08",
-              "term": "Aviation Safety Inspector",
-              "definition": "A civil aviation authority official (e.g. DGAC/DSAC, often TSEEAC) tasked with auditing airlines, maintenance repair organizations, and aerodromes for strict regulatory compliance."
+              "term": "Transition Level (TRL)",
+              "definition": "The lowest flight level available above the transition altitude, where altimeters are set to standard pressure."
             },
             {
               "num": "09",
-              "term": "Aerodrome Operations Coordinator",
-              "definition": "An airport duty specialist (often TSEEAC) responsible for inspecting runway pavement friction, monitoring obstacle limitation surfaces, managing wildlife hazards, and coordinating apron works."
+              "term": "Transition Layer",
+              "definition": "The airspace between the transition altitude and transition level where altimeter settings change."
             },
             {
               "num": "10",
-              "term": "Avionics Technician",
-              "definition": "A certified aircraft maintenance engineer specialized in troubleshooting, repairing, calibrating, and certifying cockpit flight management computers, radar, and navigation systems."
+              "term": "Minimum Safe Altitude (MSA)",
+              "definition": "The lowest altitude providing at least 1,000 feet of obstacle clearance within a 25 NM radius."
             },
             {
               "num": "11",
-              "term": "First Officer",
-              "definition": "The second-in-command pilot on the flight deck who shares flight navigation, radio communications, and system monitoring duties with the Captain."
+              "term": "Altitude Window",
+              "definition": "A published vertical constraint requiring an aircraft to cross a waypoint between two specified altitudes."
             },
             {
               "num": "12",
-              "term": "Purser / Cabin Manager",
-              "definition": "The senior cabin crew member responsible for supervising cabin attendants, directing in-flight passenger safety procedures, and coordinating with the flight deck."
+              "term": "Speed Restriction",
+              "definition": "A mandatory maximum or minimum indicated airspeed published on a chart or instructed by ATC."
             },
             {
               "num": "13",
-              "term": "Security Screening Officer",
-              "definition": "A certified landside security officer who operates X-ray scanners, millimeter-wave body scanners, and explosive trace detectors to screen passengers and carry-on luggage."
+              "term": "Holding Pattern",
+              "definition": "A predetermined racetrack flight maneuver keeping an aircraft within specified airspace while awaiting clearance."
             },
             {
               "num": "14",
-              "term": "De-icing Rig Operator",
-              "definition": "A specialized ramp technician who operates aerial boom trucks to spray heated glycol mixtures onto aircraft surfaces to eradicate snow, frost, and ice contamination."
+              "term": "Inbound Track",
+              "definition": "The magnetic heading flown directly towards a holding fix or navigation facility."
             },
             {
               "num": "15",
-              "term": "Pushback Tug Driver",
-              "definition": "A heavy-equipment ramp driver specialized in connecting towbars or towbarless cradles to safely push aircraft backward out of gate stands into the taxi lane."
+              "term": "Outbound Leg",
+              "definition": "The segment of a holding pattern flown in the opposite direction of the inbound track, usually timed for 1 minute."
             },
             {
               "num": "16",
-              "term": "Airfield Maintenance Technician",
-              "definition": "A technical specialist who inspects and maintains aeronautical ground lighting (AGL), taxiway guidance signage, runway markings, and perimeter security fences."
+              "term": "Holding Fix",
+              "definition": "A specified location defined by a navaid, waypoint, or intersection where a holding pattern begins."
             },
             {
               "num": "17",
-              "term": "Refueller / Fuel Hydrant Operator",
-              "definition": "A ramp fueling technician who connects mobile fuel bowsers or underground hydrant dispensers to aircraft fuel valves to deliver precise, contamination-tested Jet-A1."
+              "term": "Rate of Climb",
+              "definition": "The vertical speed at which an aircraft gains altitude, typically expressed in feet per minute (fpm)."
             },
             {
               "num": "18",
-              "term": "Load Controller / Weight & Balance Specialist",
-              "definition": "An operations professional who calculates aircraft center-of-gravity (CG), models payload distribution, and generates the official load and trim sheet required for safe takeoff."
+              "term": "Climb Gradient",
+              "definition": "The ratio of altitude gained to horizontal distance covered, expressed as a percentage or ft/NM."
+            },
+            {
+              "num": "19",
+              "term": "Noise Abatement Procedure",
+              "definition": "Operational climb procedures designed to minimize aircraft noise over populated communities near an airport."
+            },
+            {
+              "num": "20",
+              "term": "Track (TR)",
+              "definition": "The actual path of an aircraft projected over the ground, expressed in degrees from North."
+            },
+            {
+              "num": "21",
+              "term": "Heading (HDG)",
+              "definition": "The direction in which the nose of an aircraft points, expressed in degrees from North."
+            },
+            {
+              "num": "22",
+              "term": "Airway",
+              "definition": "A controlled airspace corridor established with navigation aids for en-route flight."
+            },
+            {
+              "num": "23",
+              "term": "Upper Airspace",
+              "definition": "Airspace above a specified flight level (often FL195) reserved for high-altitude en-route cruising."
+            },
+            {
+              "num": "24",
+              "term": "Terminal Control Area (TMA)",
+              "definition": "A controlled airspace established around one or more major airports to manage arriving and departing traffic."
+            },
+            {
+              "num": "25",
+              "term": "Control Zone (CTR)",
+              "definition": "Controlled airspace extending upwards from the ground to a specified limit immediately around an aerodrome."
+            },
+            {
+              "num": "26",
+              "term": "Level Bust",
+              "definition": "Any unauthorized deviation from an assigned altitude or flight level greater than 300 feet."
+            },
+            {
+              "num": "27",
+              "term": "Area Navigation (RNAV)",
+              "definition": "A navigation method permitting flight on any desired path using ground, satellite, or inertial navigation."
+            },
+            {
+              "num": "28",
+              "term": "Radar Vectoring",
+              "definition": "Providing navigational guidance to an aircraft in the form of specific magnetic headings using radar."
+            },
+            {
+              "num": "29",
+              "term": "Clearance Limit",
+              "definition": "The point to which an aircraft is granted an air traffic control clearance."
+            },
+            {
+              "num": "30",
+              "term": "Lost Communications Procedure",
+              "definition": "The published set of standardized flight actions to follow if two-way radio contact is lost."
             }
           ]
         },
@@ -3936,650 +3894,631 @@
           ],
           "toeicQuestions": [
             {
-              "stem": "The Turnaround Coordinator is directly responsible ________ supervising the loading of cargo and ensuring compliance with the weight schedule.",
+              "id": 1,
+              "stem": "While flying the GAILLAC 4A departure, the chart specifies: 'Cross GAI at or above FL070.' What does this restriction mean for the climbing aircraft?",
               "options": [
                 {
                   "letter": "A",
-                  "text": "with"
+                  "text": "The aircraft must level off at FL060 and request lower."
                 },
                 {
                   "letter": "B",
-                  "text": "for"
+                  "text": "The aircraft must reach at least Flight Level 070 by the time it reaches waypoint GAILLAC."
                 },
                 {
                   "letter": "C",
-                  "text": "of"
+                  "text": "The aircraft must remain below FL070 until passing GAILLAC."
                 },
                 {
                   "letter": "D",
-                  "text": "to"
+                  "text": "The aircraft may ignore the altitude restriction if flying in visual conditions."
                 }
               ],
               "correctLetter": "B",
-              "correctText": "for",
-              "analysis": "\"Responsible for\" is the fixed prepositional collocation followed by a gerund (\"supervising\").",
-              "strategy": "Spot \"responsible\" -> immediately look for \"for + -ing/noun\". Avoid the common French false friend \"responsible of\"."
+              "correctText": "The aircraft must reach at least Flight Level 070 by the time it reaches waypoint GAILLAC.",
+              "analysis": "'At or above FL070' establishes an altitude floor to ensure vertical separation from arriving traffic corridors and adequate terrain clearance.",
+              "strategy": "Remember: 'at or above' (+) sets a minimum altitude floor that the aircraft must meet or exceed."
             },
             {
-              "stem": "Unlike aerodrome controllers who issue clearances, AFIS officers are tasked with ________ flight information and meteorological updates to inbound pilots.",
+              "id": 2,
+              "stem": "Why do aeronautical charts define a 'Transition Altitude' (such as 5,000 ft AMSL)?",
               "options": [
                 {
                   "letter": "A",
-                  "text": "provide"
+                  "text": "It is the altitude where the autopilot must be disconnected."
                 },
                 {
                   "letter": "B",
-                  "text": "provides"
+                  "text": "It is the altitude where flight crews change altimeter subscale from local airport pressure (QNH) to standard pressure (1013.25 hPa)."
                 },
                 {
                   "letter": "C",
-                  "text": "providing"
+                  "text": "It is the altitude where flight attendants may start serving beverages."
                 },
                 {
                   "letter": "D",
-                  "text": "provided"
-                }
-              ],
-              "correctLetter": "C",
-              "correctText": "providing",
-              "analysis": "\"Be tasked with\" is followed by a preposition (\"with\"), which requires a gerund (\"providing\") or a noun phrase.",
-              "strategy": "Identify \"tasked with\" -> verb must be in the gerund form (-ing)."
-            },
-            {
-              "stem": "Before releasing the aircraft for departure, the flight dispatcher must verify that all load sheets ________ by the captain.",
-              "options": [
-                {
-                  "letter": "A",
-                  "text": "have signed"
-                },
-                {
-                  "letter": "B",
-                  "text": "have been signed"
-                },
-                {
-                  "letter": "C",
-                  "text": "will sign"
-                },
-                {
-                  "letter": "D",
-                  "text": "signing"
+                  "text": "It is the boundary where aircraft must turn off all exterior lights."
                 }
               ],
               "correctLetter": "B",
-              "correctText": "have been signed",
-              "analysis": "Passive voice is required because load sheets cannot sign themselves; they must be signed by the captain.",
-              "strategy": "Check if the subject (\"all load sheets\") is the actor or the receiver of the verb. Since it is the receiver, choose passive voice \"have been signed\"."
+              "correctText": "It is the altitude where flight crews change altimeter subscale from local airport pressure (QNH) to standard pressure (1013.25 hPa).",
+              "analysis": "Above Transition Altitude, all aircraft fly using Flight Levels referenced to standard atmospheric pressure (1013.25 hPa), guaranteeing identical vertical separation regardless of local weather differences.",
+              "strategy": "Climbing through Transition Altitude = set standard 1013."
             },
             {
-              "stem": "The civil aviation safety inspector conducted an unannounced audit in order to ensure ________ ground handling personnel were strictly following apron safety protocols.",
+              "id": 3,
+              "stem": "A flight crew climbing on a departure notices severe thunderstorm activity building across the planned track. What is the standard operational procedure?",
               "options": [
                 {
                   "letter": "A",
-                  "text": "that"
+                  "text": "Turn immediately without contacting air traffic control."
                 },
                 {
                   "letter": "B",
-                  "text": "what"
+                  "text": "Request a weather deviation heading from air traffic control stating the direction and degrees required."
                 },
                 {
                   "letter": "C",
-                  "text": "which"
+                  "text": "Fly directly through the center of the storm at maximum engine power."
                 },
                 {
                   "letter": "D",
-                  "text": "where"
+                  "text": "Descend to 500 feet above ground level to fly beneath the clouds."
                 }
               ],
-              "correctLetter": "A",
-              "correctText": "that",
-              "analysis": "\"Ensure that\" introduces a content clause detailing what is being verified or secured.",
-              "strategy": "\"Ensure\" takes a \"that\" clause (\"ensure that + subject + verb\")."
+              "correctLetter": "B",
+              "correctText": "Request a weather deviation heading from air traffic control stating the direction and degrees required.",
+              "analysis": "Pilots must contact ATC as early as possible to request a tactical heading vector (e.g. 'request heading 20 degrees left due to weather') so controllers can coordinate with adjacent airspace sectors.",
+              "strategy": "Communicate early: specify direction, heading, and the reason ('due to weather')."
             },
             {
-              "stem": "The airport duty manager was commended for handling the ramp emergency calmly, ________ severe winter weather conditions.",
+              "id": 4,
+              "stem": "What is an altitude deviation of more than 300 feet from an assigned clearance commonly called in safety reporting?",
               "options": [
                 {
                   "letter": "A",
-                  "text": "despite"
+                  "text": "A glide path anomaly."
                 },
                 {
                   "letter": "B",
-                  "text": "although"
+                  "text": "A level bust."
                 },
                 {
                   "letter": "C",
-                  "text": "unless"
+                  "text": "A terrain intrusion."
                 },
                 {
                   "letter": "D",
-                  "text": "whereas"
+                  "text": "A vertical climb runaway."
                 }
               ],
-              "correctLetter": "A",
-              "correctText": "despite",
-              "analysis": "\"Despite\" is a preposition expressing concession followed by a noun phrase (\"severe winter weather conditions\").",
-              "strategy": "Check what follows the blank. \"Severe winter weather conditions\" is a noun phrase, so a preposition (\"despite\") is required rather than a subordinating conjunction like \"although\"."
+              "correctLetter": "B",
+              "correctText": "A level bust.",
+              "analysis": "A 'level bust' occurs whenever an aircraft deviates more than 300 ft from its assigned level in controlled airspace, potentially eroding vertical separation with other aircraft.",
+              "strategy": "Level bust = altitude deviation greater than 300 feet."
+            },
+            {
+              "id": 5,
+              "stem": "On an instrument departure plate, what does a maximum speed limit of '250 kt below FL100' aim to achieve?",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "It saves engine fuel during the initial climb."
+                },
+                {
+                  "letter": "B",
+                  "text": "It standardizes traffic speeds in high-density terminal airspace, allowing controllers to sequence aircraft safely and see-and-avoid visual traffic."
+                },
+                {
+                  "letter": "C",
+                  "text": "It prevents supersonic shockwaves over the airport."
+                },
+                {
+                  "letter": "D",
+                  "text": "It reduces tire wear during gear retraction."
+                }
+              ],
+              "correctLetter": "B",
+              "correctText": "It standardizes traffic speeds in high-density terminal airspace, allowing controllers to sequence aircraft safely and see-and-avoid visual traffic.",
+              "analysis": "The 250 kt rule below 10,000 ft / FL100 harmonizes speed differences between various aircraft types and provides adequate reaction time in crowded terminal areas.",
+              "strategy": "Standard terminal speed = 250 knots max below FL100."
             }
-          ]
+          ],
+          "quizTitle": "Airside Scenario Quiz • Airspace Corridors: SIDs, STARs & Transition Routes",
+          "quizSubtitle": "Target pace: ~45 seconds per scenario • Mix of Departure Route Dilemmas & Chart Spot-Checks"
         }
       },
       "6": {
         "session": 6,
         "objectives": {
           "title": "Session 6 - Approach Plates: Final Corridors & Go-Around Paths Objectives",
-          "summary": "By the end of this session, you will be able to distinguish and categorize aviation operational professions across landside, airside, flight operations, air traffic services, and civil aviation administration (TSEEAC), accurately articulate professional duties and jurisdictions using formal B2 structures, and collaborate effectively during operational handoffs.",
+          "summary": "By the end of this session, GSEA students will be able to read and explain instrument approach plates (IAC / ILS) in plain English, use vertical flight path language accurately, understand decision heights and landing minimums, role-play an approach briefing and unexpected go-around execution, and complete a collaborative Safety Check on unstabilized approach criteria.",
           "items": [
             {
               "num": 1,
-              "title": "Categorize Aviation Operational Roles (Vocabulary & Classification)",
-              "description": "Distinguish between Landside (passenger handling, security screening, border control), Airside (turnaround coordination, ramp dispatch, marshalling, pushback), Flight Crew (captain, first officer, purser), Air Traffic Control (tower, approach, en-route), and Civil Aviation Administration (TSEEAC)."
+              "title": "Talk About the Final Approach Phase (Fluency & Spontaneous Speech)",
+              "description": "Discuss why the final 3 minutes of flight represent the highest workload phase for pilots, and what factors make landing demanding."
             },
             {
               "num": 2,
-              "title": "Clarify TSEEAC Operational Functions (Institutional Precision)",
-              "description": "Accurately explain that TSEEAC personnel are NOT air traffic controllers (no tactical separation authority), but perform critical functions including AFISO (flight information and alerting services), aerodrome operations coordination, and DGAC safety oversight."
+              "title": "Read an ILS Approach Plate (Chart Scanning)",
+              "description": "Scan a simulated ILS Runway 14L approach plate to locate the localizer course, Final Approach Fix (FAF), glide path angle (3.0°), and decision altitude (DA)."
             },
             {
               "num": 3,
-              "title": "Express Professional Duties & Authority (Grammar in Context)",
-              "description": "Master and apply functional formulas: 'be responsible for + -ing', 'be tasked with + -ing', 'be in charge of + noun', 'have authority over / to', and 'ensure that + clause'."
+              "title": "Words for Vertical Profiles & Minimums (Vocabulary Focus)",
+              "description": "Learn and use essential approach vocabulary: glide slope, localizer, decision altitude/height, minimum descent altitude, RVR, and missed approach point."
             },
             {
               "num": 4,
-              "title": "Simulate Professional Shift & Turnaround Handoffs (Speaking Fluency)",
-              "description": "Conduct structured peer briefings between adjacent roles (Turnaround Coordinator <-> First Officer, AFISO <-> VFR Pilot, Terminal Duty Manager <-> Ramp Supervisor) to resolve operational bottlenecks."
+              "title": "Describing Vertical Paths & Altitude Callouts (Language Focus)",
+              "description": "Practice cockpit altitude and path callouts: on the glide slope, slightly high/low, at the final approach fix, upon reaching minimums, and positive climb, gear up."
             },
             {
               "num": 5,
-              "title": "Debate Airport Operational Dilemmas (Interaction & Negotiation)",
-              "description": "Analyze complex airport operational dilemmas (e.g. winter weather diversions and ramp congestion) from specific professional viewpoints and negotiate a consensus action plan."
+              "title": "Speaking Role-Play: Final Approach & Go-Around Decision (Spoken Interaction)",
+              "description": "Role-play a tense final approach where a vehicle incursion on the runway forces the controller to command an immediate go-around."
             },
             {
               "num": 6,
-              "title": "Refine Professional Aviation Vocabulary Pronunciation (Phonology)",
-              "description": "Place accurate primary and secondary word stress on complex professional terms (au-THOR-i-ty, re-SPON-si-ble, co-OR-di-na-tor, tech-NI-cian, o-ver-SIGHT, sur-VEIL-lance)."
-            },
-            {
-              "num": 7,
-              "title": "Master Prepositions of Responsibility & Passive Voice (TOEIC Practice)",
-              "description": "Identify common test traps in TOEIC Parts 5 & 6, particularly verbs of obligation, prepositions of responsibility ('responsible for', 'in charge of'), and passive verb structures in airport notices."
+              "title": "Safety Check: Unstabilized Approach & Go-Around Culture (Operational Discussion)",
+              "description": "Collaborate in teams to analyze unstabilized approach risks, overcome hesitation traps, and support a blame-free go-around safety culture."
             }
           ]
         },
         "lessonPlan": {
-          "title": "Session 4 Lesson Plan (2 Hours)",
-          "summary": "A 2-hour communicative session featuring an aviation news opening, Session 3 turnaround spot-checking, the aviation roles overview, functional responsibility and authority grammar drills, 'Day in the Life' role handoffs, a winter weather operational dilemma debate, and a 10-minute vocabulary consolidation review.",
+          "title": "Session 6 Lesson Plan (2 Hours)",
+          "summary": "A 2-hour communicative spoken English session for GSEA students covering ILS approach plates, vertical path language, landing minimums, an emergency go-around role-play, and a collaborative Safety Check on unstabilized approaches.",
           "items": [
             {
-              "time": "00-10",
-              "title": "Part 1: Aviation News, Current Events & Session 3 Spot-Check (10 mins)",
-              "description": "Opening 10-minute warm-up: discuss recent international aviation headlines followed by rapid spot-checking of Session 3 turnaround and GSE vocabulary (GPU, ASU, Pushback Tug, Chocks, FOD, Belt Loader)."
+              "time": "00-15",
+              "title": "Part 1: Warm-up: The Final 3 Minutes Before Touchdown (15 mins)",
+              "description": "In pairs, students discuss cockpit workload on final approach, explain the concept of stabilized approach gates, and test entry knowledge with 4 quick spot-check questions."
             },
             {
-              "time": "10-30",
-              "title": "Part 2: Aviation Roles Across the Industry (20 mins)",
-              "description": "Explore the five operational domains (Landside, Airside/Ramp, Flight Crew, ATCOs, and TSEEAC). Clarify the core distinction between ATCO tactical separation authority and TSEEAC AFISO/auditing responsibilities."
+              "time": "15-45",
+              "title": "Part 2: Reading the Simulated ILS Approach Plate (30 mins)",
+              "description": "Analyzing the plan view and profile view of the simulated ILS Runway 14L plate at LFMT, identifying the FAF Maltese cross, glide path angle, and missed approach routing."
             },
             {
-              "time": "30-50",
-              "title": "Part 3: Functional Grammar Focus: Responsibilities, Duties & Jurisdiction (20 mins)",
-              "description": "Examine high-yield B2 structures: 'responsible for + -ing', 'tasked with + -ing', 'in charge of', 'have authority over / to', 'ensure that', and 'report to vs. liaise with'. Practice with interactive scenario prompts."
+              "time": "45-70",
+              "title": "Part 3: Language Clinic: Vertical Paths & Cockpit Callouts (25 mins)",
+              "description": "Oral drills and pair practice using vertical flight terminology (on the glide slope, at the final approach fix, upon reaching minimums, go-around positive climb) to describe landings."
             },
             {
-              "time": "50-75",
-              "title": "Part 4: Role-Play Simulation: 'A Day in the Life' Operational Handoffs (25 mins)",
-              "description": "Collaborative paired and triad role-play: simulate professional handoffs and resolve bottlenecks between Turnaround Coordinator <-> First Officer, AFISO <-> Inbound Pilot, and Terminal Duty Manager <-> Ramp Supervisor."
+              "time": "70-105",
+              "title": "Part 4: Speaking Role-Play: Final Approach & Go-Around Decision (35 mins)",
+              "description": "3-student spoken simulation: Approach/Tower Controller commands an immediate go-around due to a vehicle crossing the runway on 2-mile final; Pilot executes missed approach, observed with checklist."
             },
             {
-              "time": "75-110",
-              "title": "Part 5: Aviation Career Forum & Operational Dilemma Debate (35 mins)",
-              "description": "Interactive multi-stakeholder debate: resolve an emergency aerodrome diversion scenario during freezing fog and ramp congestion. Argue priorities, negotiate trade-offs, and establish a consensus sequence."
-            },
-            {
-              "time": "110-120",
-              "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-              "description": "Final 10-minute consolidation: rapid recall of the 18 aviation profession terms, word stress and phonological drills, personal reflection, and continuous learning log update."
+              "time": "105-120",
+              "title": "Part 5: Safety Check: Unstabilized Approach & Go-Around Culture (15 mins)",
+              "description": "Collaborative 4-step safety analysis evaluating unstabilized descent rates, late configuration, go-around hesitation, and promoting a blame-free safety policy."
             }
           ]
         },
         "lessonContent": {
           "hero": {
-            "image": "images/aas_m1card4.jpg",
-            "title": "Jobs in Aviation: Roles, Responsibilities & Operational Interfaces",
-            "subtitle": "Landside, Airside, Flight Crew, Air Traffic Services & Civil Aviation Corps (TSEEAC)"
+            "title": "Approach Plates: Final Corridors & Go-Around Paths",
+            "subtitle": "Instrument Approach Charts (IAC), Glide Slopes, Decision Heights & Missed Approach Paths",
+            "image": "images/s3_m1_session6_approach.jpg",
+            "targetLevel": "CEFR B1–B2",
+            "roleContext": "GSEA Student Training • Final Approach Operations & Technical English",
+            "duration": "120 Minutes"
           },
           "openingSession": {
-            "title": "Activity 1: Aviation News & Session 3 Spot-Check (10 mins)",
-            "summary": "Every session begins with a 10-minute professional opening: analyzing current aviation headlines followed by rapid spot-checking of Session 3 ground operations and GSE vocabulary.",
+            "title": "Activity 1: Warm-up & Entry Spot-Check (15 mins)",
+            "summary": "Break the ice, discuss the intense workload during the final 3 minutes before touchdown, and test your baseline knowledge of approach plate symbols.",
             "modeBadges": [
-              "👥 Pairs / Plenary",
-              "⏱️ 10 mins",
-              "🗣️ Operational Recall Drill",
-              "🎯 Technical Vocabulary & Fluency"
+              "Pairs (2 students)",
+              "Spoken Discussion",
+              "Timing: 15 mins"
             ],
             "instructions": [
-              "Step 1 (Aviation News Exchange - 4 mins): In pairs, discuss the current aviation headlines prompt. Share one news item regarding airport staffing, ATM capacity, or airline operations.",
-              "Step 2 (Session 3 GSE Spot-Check - 4 mins): Quiz your partner on Questions 1 to 4 (GPU function, Marshaller guidance, turnaround time critical path, FOD prevention) before revealing answers.",
-              "Step 3 (Class Operational Recap - 2 mins): Plenary review of one GSE definition. Highlight why GPU usage reduces ramp emissions and APU wear."
+              "In pairs, discuss the 3 opening questions about flying the final approach.",
+              "Read each of the 4 Entry Spot-Check questions below and discuss your answers together.",
+              "Click 'Reveal Answer' to check your reasoning and see the plain English explanation."
             ],
-            "deliverable": "Spoken explanation of 1 aviation operational news item and an accurate technical explanation of GPU or turnaround time.",
-            "teacherNotes": "Cold-call pairs. Probe beyond superficial definitions: ask what happens to an aircraft's departure slot if the GPU fails during pushback disconnect.",
+            "deliverable": "Shared agreement on what constitutes a safe stabilized approach, and completed 4-question diagnostic.",
+            "teacherNotes": "Encourage spontaneous speaking. Help students understand that a go-around is not a failure, but a normal, professional safety decision.",
             "newsPrompts": [
-              "What aviation, airline, or ATM news stories caught your attention in the headlines this week?",
-              "How are airports and air navigation service providers managing staffing, recruitment, or new operational procedures this season?"
+              {
+                "id": 1,
+                "question": "Why do aviation safety experts call the final approach phase the 'most critical three minutes' of flight?",
+                "exampleAnswers": [
+                  "Because the aircraft is close to the ground, flying at relatively slow speed with flaps and landing gear extended, leaving very little margin for error.",
+                  "Also, both pilots must manage radio communications, cross-check flight instruments, watch for visual references, and be ready to execute a go-around at a second's notice."
+                ]
+              },
+              {
+                "id": 2,
+                "question": "What is the crucial difference between a Decision Altitude (DA) and a Minimum Descent Altitude (MDA)?",
+                "exampleAnswers": [
+                  "A Decision Altitude is used on a precision approach (like an ILS); as soon as you reach that exact altitude, you must either see the runway or start climbing immediately.",
+                  "A Minimum Descent Altitude is used on a non-precision approach; you descend to that altitude, level off, and fly flat until you reach the missed approach point."
+                ]
+              },
+              {
+                "id": 3,
+                "question": "Why do some flight crews hesitate to initiate a go-around, even when the approach is unstabilized?",
+                "exampleAnswers": [
+                  "Psychological pressure! Flight crews naturally want to complete the flight on schedule to avoid delays, extra fuel burn, or passenger inconvenience.",
+                  "That is why modern airline safety culture stresses that a go-around is always the correct, blame-free decision whenever any doubt exists."
+                ]
+              }
             ],
-            "spotCheck": {
-              "title": "Session 3 Vocabulary Spot-Check (Ground Operations & GSE)",
-              "questions": [
-                {
-                  "id": 1,
-                  "q": "What is the primary function of a Ground Power Unit (GPU) during an aircraft turnaround?",
-                  "answer": "A GPU supplies 400Hz AC electrical power to the aircraft while parked at the gate stand, allowing the flight crew to shut down the main engines and auxiliary power unit (APU) to save fuel and reduce ramp emissions."
-                },
-                {
-                  "id": 2,
-                  "q": "How does a Marshaller guide an arriving aircraft to its parking stand when automated docking is unavailable?",
-                  "answer": "A marshaller uses illuminated wands or visual hand signals to direct the flight deck along the painted yellow lead-in line to the precise nosewheel stop mark."
-                },
-                {
-                  "id": 3,
-                  "q": "What is turnaround time (TAT) and why is minimizing it critical for airlines?",
-                  "answer": "Turnaround time is the elapsed period from chocks-on at arrival to chocks-off at departure. Minimizing TAT maximizes aircraft daily utilization and prevents knock-on departure slot delays."
-                },
-                {
-                  "id": 4,
-                  "q": "What is Foreign Object Debris (FOD) and how do ramp teams prevent it?",
-                  "answer": "FOD is any loose item, tool, fragment, or trash on the apron or taxiway that could be ingested by a jet engine or damage tires; ground crews conduct continuous visual scans and regular FOD sweeps."
-                }
-              ]
-            }
+            "spotCheckQuestions": [
+              {
+                "id": 1,
+                "question": "What does the Maltese Cross symbol represent on an instrument approach plate profile view?",
+                "options": [
+                  "The airport medical center.",
+                  "The Final Approach Fix (FAF) where the final descent begins.",
+                  "The location of the primary control tower.",
+                  "The point where cabin crew must sit down."
+                ],
+                "correct": 1,
+                "explanation": "The Maltese Cross marks the Final Approach Fix (FAF), the critical point on the approach where the aircraft initiates its final glide slope descent toward the runway."
+              },
+              {
+                "id": 2,
+                "question": "What is the standard glide path angle for an Instrument Landing System (ILS) precision approach?",
+                "options": [
+                  "1.5 degrees.",
+                  "3.0 degrees.",
+                  "6.0 degrees.",
+                  "9.0 degrees."
+                ],
+                "correct": 1,
+                "explanation": "The standard ILS glide path angle is 3.0 degrees, providing a steady descent of approximately 318 feet per nautical mile (around 700–800 fpm at typical jet approach speeds)."
+              },
+              {
+                "id": 3,
+                "question": "What does 'RVR 550m' mean in the landing minimums section of an approach plate?",
+                "options": [
+                  "The runway is 550 metres long.",
+                  "Runway Visual Range: the horizontal distance down the runway that a pilot can see runway lights or markings is at least 550 metres.",
+                  "The cloud base is 550 metres above the runway.",
+                  "The radar antenna is located 550 metres from the tower."
+                ],
+                "correct": 1,
+                "explanation": "RVR stands for Runway Visual Range—the measured horizontal visibility down the runway surface, which must meet or exceed the published minimum (e.g. 550m for CAT I) to attempt a landing."
+              },
+              {
+                "id": 4,
+                "question": "If visual references are lost or not seen upon reaching Decision Altitude, what must the pilot do?",
+                "options": [
+                  "Descend an extra 100 feet to see under the fog.",
+                  "Immediately execute the published missed approach procedure (go-around).",
+                  "Switch off the autopilot and guess the runway centerline.",
+                  "Circle around the runway at 200 feet."
+                ],
+                "correct": 1,
+                "explanation": "At Decision Altitude, if required visual references (approach lights, threshold markings) are not distinctly visible, the pilot MUST immediately initiate a missed approach without hesitation."
+              }
+            ]
           },
-          "jobTaxonomy": {
-            "title": "Activity 2: Aviation Roles Across the Industry (20 mins)",
-            "summary": "Aviation is an intricate ecosystem where specialized professions collaborate seamlessly. Explore the five primary operational domains, their key responsibilities, and the essential distinction between ATCO separation authority and TSEEAC functions.",
-            "modeBadges": [
-              "👥 Small Groups (3-4)",
-              "⏱️ 20 mins",
-              "🧭 Roles & Jurisdiction Analysis",
-              "🎯 Operational Domain Mastery"
-            ],
-            "instructions": [
-              "Step 1 (Domain Exploration - 8 mins): Study the 5 operational domains: Landside, Airside, Flight Crew, ATCOs, and TSEEAC. Identify the primary physical jurisdiction and core duty for each.",
-              "Step 2 (Crucial Distinction Audit - 6 mins): Analyze the structural legal difference between ATCOs (tactical separation authority) and TSEEAC / AFISOs (flight information and advisory services without separation authority).",
-              "Step 3 (Role Matching Drill - 6 mins): In pairs, randomly name a professional role (e.g. TRC, AFISO, Marshaller, Tower ATCO). Your partner must state the domain, primary duty, and whom they report to."
-            ],
-            "deliverable": "Accurate categorization of all 5 domains and a clear spoken explanation distinguishing ATCO separation authority from TSEEAC AFISO flight information.",
-            "teacherNotes": "Emphasize the ENAC/DGAC institutional distinction: TSEEAC is a civil aviation body, AFISOs provide information/alerting, whereas ATCOs hold licensing to issue binding separation clearances.",
-            "domains": [
+          "chartExtract": {
+            "title": "Activity 2: Reading the Simulated ILS Approach Plate (30 mins)",
+            "summary": "Analyze the plan view, vertical profile view, and missed approach instructions for the simulated ILS Runway 14L at LFMT.",
+            "badge": "SIMULATED INSTRUMENT APPROACH PLATE • ILS RWY 14L (LFMT)",
+            "callsign": "Blagnac-Montpellier Airport (LFMT / Elev 495 ft) • ILS or LOC Rwy 14L",
+            "sections": [
               {
-                "id": "landside",
-                "name": "1. Landside Operations",
-                "color": "sky",
-                "roles": [
-                  "Passenger Service Agent (PSA)",
-                  "Security Screening Officer",
-                  "Terminal Duty Manager",
-                  "Border Control Officer"
-                ],
-                "description": "Manages passenger processing, documentation verification, terminal safety, and accessibility before the airside security boundary.",
-                "keyJurisdiction": "Public terminal zones, check-in concourses, baggage drop systems, and departure lounge coordination.",
-                "sampleDuty": "Passenger Service Agents verify travel documents, handle gate boarding announcements, and manage baggage reconciliation."
+                "heading": "1. Navigation Frequencies & Course Data",
+                "details": [
+                  "Localizer Frequency: I-MT 109.3 MHz • Final Approach Track: 142° magnetic.",
+                  "Initial Approach Fix (IAF): Waypoint CAPDENAC at 5,000 ft QNH.",
+                  "Intermediate Fix (IF): Waypoint BLAGY at 4,000 ft QNH.",
+                  "Final Approach Fix (FAF): Maltese Cross at 5.2 DME I-MT at 2,000 ft QNH."
+                ]
               },
               {
-                "id": "airside",
-                "name": "2. Airside & Ramp Operations",
-                "color": "amber",
-                "roles": [
-                  "Turnaround Coordinator (TRC)",
-                  "Ramp Agent / Baggage Handler",
-                  "Marshaller",
-                  "Pushback Tug Driver",
-                  "De-icing Rig Operator",
-                  "Refueller / Hydrant Dispenser"
-                ],
-                "description": "Coordinates all parallel ground servicing operations around the aircraft within the designated safety servicing envelope.",
-                "keyJurisdiction": "Apron stands, equipment staging lanes, airside service roads, and aircraft servicing envelopes.",
-                "sampleDuty": "The Turnaround Coordinator oversees parallel servicing tasks, monitors fuel and baggage loading, and enforces on-time departure."
+                "heading": "2. Vertical Profile & Descent Data",
+                "details": [
+                  "Glide Path Angle: 3.00° (318 ft per nautical mile, approx 750 fpm descent at 140 kt groundspeed).",
+                  "Threshold Crossing Height (TCH): 50 ft above runway elevation.",
+                  "Aerodrome Elevation: 495 ft AMSL • Touchdown Zone Elevation (TDZE): 492 ft AMSL."
+                ]
               },
               {
-                "id": "flightcrew",
-                "name": "3. Aircraft Flight Crew",
-                "color": "indigo",
-                "roles": [
-                  "Captain (Pilot-in-Command)",
-                  "First Officer (Co-Pilot)",
-                  "Purser / Senior Cabin Manager",
-                  "Cabin Crew / Flight Attendant"
-                ],
-                "description": "Responsible for the safe navigation, operation, passenger welfare, and emergency readiness of the aircraft from off-blocks to on-blocks.",
-                "keyJurisdiction": "Cockpit flight deck, passenger cabin, aircraft technical logbook, and emergency systems.",
-                "sampleDuty": "The First Officer performs external walkaround inspections, cross-checks FMC route programming, and monitors radio communications."
+                "heading": "3. Published Landing Minimums",
+                "details": [
+                  "CAT I ILS Precision Minimums: Decision Altitude (DA) 692 ft AMSL (Decision Height 200 ft AGL) • RVR 550m.",
+                  "LOC Only (Non-Precision) Minimums: Minimum Descent Altitude (MDA) 890 ft AMSL (MDH 395 ft AGL) • Visibility 1,500m.",
+                  "Circling Minimums: MDA 1,050 ft AMSL • Visibility 2,400m."
+                ]
               },
               {
-                "id": "atco",
-                "name": "4. Air Traffic Control Officers (ATCOs)",
-                "color": "rose",
-                "roles": [
-                  "Aerodrome / Tower ATCO",
-                  "Approach Radar Controller (APP)",
-                  "Area / En-Route Controller (ACC)"
-                ],
-                "description": "Licensed air traffic controllers possessing executive legal authority to issue binding clearances and ensure safe tactical separation between aircraft in flight and on active movement areas.",
-                "keyJurisdiction": "Active runways, taxiways, controlled airspace sectors, and terminal maneuvering areas (TMA).",
-                "sampleDuty": "Tower ATCOs issue mandatory takeoff and landing clearances, manage runway sequencing, and maintain aircraft separation."
-              },
-              {
-                "id": "tseeac",
-                "name": "5. Civil Aviation Operations Corps (TSEEAC)",
-                "color": "emerald",
-                "roles": [
-                  "Aerodrome Flight Information Service Officer (AFISO)",
-                  "Aerodrome Operations Coordinator",
-                  "DGAC Aviation Safety Inspector",
-                  "Air Navigation Technical Support Officer"
-                ],
-                "description": "Civil aviation civil servants who perform critical operations, flight information, safety oversight, and aerodrome management. IMPORTANT: TSEEAC personnel are NOT air traffic controllers and do NOT have separation authority; AFISOs provide advisory flight information and alerting service at non-controlled aerodromes.",
-                "keyJurisdiction": "AFIS aerodromes, civil aviation regional directorates (DSAC), airport safety coordination, and technical surveillance.",
-                "sampleDuty": "An AFISO provides weather reports, runway conditions, and traffic advisories to pilots, while DGAC safety inspectors conduct regulatory compliance audits."
+                "heading": "4. Published Missed Approach Procedure (Go-Around)",
+                "details": [
+                  "Initial Climb: Climb straight ahead on runway track 142° to 2,500 ft QNH.",
+                  "Turn Instruction: At 2,500 ft, turn left climbing to 4,000 ft direct to TOU VOR/DME.",
+                  "Holding Instruction: Enter published holding pattern at TOU VOR at 4,000 ft, or as directed by ATC."
+                ]
               }
             ]
           },
           "grammarClinic": {
-            "title": "Activity 3: Language Focus: Roles, Responsibilities & Authority (20 mins)",
-            "summary": "Professional aviation communication demands absolute precision when describing who does what, who reports to whom, and who holds regulatory authority.",
-            "modeBadges": [
-              "👤 Individual -> 👥 Pairs",
-              "⏱️ 20 mins",
-              "✍️ Operational Syntax Drill",
-              "🎯 Collocation & Precision"
-            ],
-            "instructions": [
-              "Step 1 (Formula Mastery - 5 mins): Review the 6 authority and responsibility structures above. Note preposition rules: 'responsible FOR + -ing', 'tasked WITH + -ing', 'authority OVER / TO + verb'.",
-              "Step 2 (Role Duty Construction - 10 mins): With a partner, write 3 operational sentences describing different aviation roles using: (1) 'be tasked with', (2) 'have authority to', and (3) 'liaise with vs. report to'.",
-              "Step 3 (Roles & Responsibilities Challenge - 5 mins): Complete the 4 interactive grammar challenge questions individually, check your answers, and discuss the preposition rules."
-            ],
-            "deliverable": "4 verified practice question answers + 3 original spoken or written role-duty descriptions demonstrating correct prepositional collocations.",
-            "teacherNotes": "Stamp out 'responsible OF' immediately (French interference). Highlight the difference between hierarchical reporting ('reports to the TRC') and lateral coordination ('liaises with fueling').",
-            "formulas": [
+            "title": "Activity 3: Language Clinic: Describing Vertical Paths & Cockpit Callouts (25 mins)",
+            "summary": "Master clear spoken terminology for vertical flight path tracking, approach warnings, and go-around execution.",
+            "rules": [
               {
-                "structure": "be responsible for + -ing / noun",
-                "usage": "Core ongoing duty or accountability",
-                "example": "The Turnaround Coordinator is responsible for ensuring all servicing vehicles clear the stand before pushback."
+                "term": "on the glide slope",
+                "meaning": "Tracking the electronic 3.0-degree descent beam perfectly.",
+                "example": "We are fully established on the localizer and on the glide slope."
               },
               {
-                "structure": "be tasked with + -ing / noun",
-                "usage": "Official assignment, directive, or designated role",
-                "example": "The AFIS officer is tasked with providing traffic information and weather advisories to inbound aircraft."
+                "term": "above / below the glide path",
+                "meaning": "Displaced vertically from the planned descent path.",
+                "example": "Check your sink rate; we are one dot below the glide path."
               },
               {
-                "structure": "be in charge of + noun / -ing",
-                "usage": "Supervisory oversight of a team, facility, or zone",
-                "example": "The Terminal Duty Manager is in charge of passenger concourse flow and emergency crowd management."
+                "term": "at the final approach fix",
+                "meaning": "Passing the Maltese cross where the final descent begins.",
+                "example": "At the final approach fix: 5.2 DME, 2,000 feet verified, gear down."
               },
               {
-                "structure": "have authority over / to + verb",
-                "usage": "Legal jurisdiction or executive command power",
-                "example": "Tower ATCOs have authority over active runways and issue binding takeoff and landing clearances."
+                "term": "upon reaching decision altitude",
+                "meaning": "At the exact altitude where the landing or go-around choice must be made.",
+                "example": "Upon reaching decision altitude at 692 feet, call 'runway in sight' or 'go-around'."
               },
               {
-                "structure": "ensure that + clause",
-                "usage": "Verification, quality control, and safety compliance",
-                "example": "Safety inspectors ensure that airline maintenance procedures comply with DGAC regulations."
+                "term": "level off at",
+                "meaning": "Stopping descent and maintaining level flight.",
+                "example": "For the LOC approach, descend to MDA and level off at 890 feet."
               },
               {
-                "structure": "report to vs. liaise with",
-                "usage": "Hierarchy vs. horizontal peer collaboration",
-                "example": "The Ramp Agent reports to the Turnaround Coordinator and liaises with fueling technicians."
+                "term": "execute missed approach",
+                "meaning": "Initiate the published climb and turn procedure away from the runway.",
+                "example": "Visual reference not acquired at minimums—executing missed approach."
+              },
+              {
+                "term": "positive climb, gear up",
+                "meaning": "Confirming altimeter and vertical speed show a steady climb before retracting landing gear.",
+                "example": "Go-around, set flaps 15, positive climb confirmed, gear up."
               }
             ],
-            "roleClinic": [
+            "drills": [
               {
                 "id": 1,
-                "prompt": "The First Officer is tasked with (conducting / to conduct / conduct) the pre-flight external walkaround inspection.",
-                "answer": "conducting",
-                "explanation": "'Be tasked with' is followed by the preposition 'with', which requires a gerund (-ing)."
+                "prompt": "How does the pilot announce that both beams are captured on final approach?",
+                "targetAnswer": "We are fully established on the localizer and on the glide slope."
               },
               {
                 "id": 2,
-                "prompt": "Unlike ATCOs, AFISOs do not have authority (to separate / separating / for separate) aircraft tactically.",
-                "answer": "to separate",
-                "explanation": "'Have authority to' is followed by the base infinitive ('to separate')."
+                "prompt": "What altitude check is made at the Final Approach Fix (5.2 DME)?",
+                "targetAnswer": "At the final approach fix: 5.2 DME, altitude 2,000 feet verified, descent continuing."
               },
               {
                 "id": 3,
-                "prompt": "The Ramp Agent is responsible (for / of / to) securing the wheel chocks once the aircraft comes to a stop.",
-                "answer": "for",
-                "explanation": "'Responsible for' is the correct prepositional collocation (avoid the French false friend 'responsible of')."
+                "prompt": "What is the mandatory pilot callout upon reaching Decision Altitude (692 ft) in thick cloud?",
+                "targetAnswer": "Minimums! No visual contact—go-around, flaps 15, positive climb, gear up!"
               },
               {
                 "id": 4,
-                "prompt": "The Turnaround Coordinator must ensure (that / what / which) the cargo hold doors are locked before pushback.",
-                "answer": "that",
-                "explanation": "'Ensure' takes a content clause starting with 'that' ('ensure that + subject + verb')."
+                "prompt": "What is the initial climb instruction on the published missed approach procedure?",
+                "targetAnswer": "Climb straight ahead on runway track 142° to 2,500 feet, then turn left towards TOU VOR."
+              },
+              {
+                "id": 5,
+                "prompt": "What does the pilot call when altimeter and VSI confirm ascending flight during a go-around?",
+                "targetAnswer": "Positive climb confirmed—gear up, set climb thrust."
               }
             ]
           },
-          "handoffSimulation": {
-            "title": "Activity 4: Pairwork & Triad Simulation — 'A Day in the Life' Role Handoff (25 mins)",
-            "summary": "Effective inter-departmental handoffs prevent bottlenecks and eliminate miscommunication. Work in pairs or triads to conduct professional operational handovers.",
-            "modeBadges": [
-              "👥 Pairs / Triads",
-              "⏱️ 25 mins",
-              "🎭 Operational Interface Simulation",
-              "🎯 Radio & Handoff Fluency"
-            ],
-            "instructions": [
-              "Step 1 (Scenario Assignment - 5 mins): Choose Pair 1 (TRC <-> Flight Deck), Pair 2 (AFISO <-> Inbound VFR), or Pair 3 (Terminal Manager <-> Ramp Supervisor). Read your specific role context.",
-              "Step 2 (Simulation Rehearsal - 12 mins): Conduct the operational handoff in character. You must incorporate at least two of the mandatory target phrases (e.g., 'tasked with', 'liaised with', 'ensure that').",
-              "Step 3 (Role Reversal & Feedback - 8 mins): Swap roles and repeat the dialogue under modified conditions (e.g. 5 minutes until slot loss or sudden weather degradation)."
-            ],
-            "deliverable": "A 2-minute fluent operational handoff dialogue successfully resolving an operational conflict using mandatory responsibility formulas.",
-            "teacherNotes": "Listen for realistic aviation tone: professional, concise, assertive, but collaborative. Ensure students actually use the target phrases rather than informal conversational English.",
-            "scenarios": [
+          "roleplaySimulation": {
+            "title": "Activity 4: Speaking Role-Play: Final Approach & Go-Around Decision (35 mins)",
+            "summary": "Simulate a high-stress final approach scenario where an unexpected runway incursion forces an immediate go-around.",
+            "situation": "Flight AFR 884 is on 3-mile final approach for Runway 14L in light drizzle. At 400 ft AGL, the Tower Controller spots an airport maintenance vehicle inadvertently crossing the runway holding point at Taxiway Charlie. The Controller commands an immediate go-around; the pilot executes the missed approach procedure smoothly.",
+            "roles": [
               {
-                "id": "pair1",
-                "title": "Pair 1: Turnaround Coordinator (TRC) <-> First Officer (Flight Deck)",
-                "context": "Flight AF418 is scheduled off-blocks in 8 minutes. Cargo loading is complete, but the refueller was held up by a minor hose leak. The First Officer needs the final fuel uplift and signed load sheet.",
-                "roleA": "Turnaround Coordinator: Confirm fuel uplift of 5,800 kg, present the final trim sheet for Captain's signature, and report stand clearance status.",
-                "roleB": "First Officer: Cross-check the fuel quantity against FMC calculations, verify the center of gravity (CG) limits on the trim sheet, and request pushback readiness.",
-                "targetPhrases": [
-                  "\"I am responsible for confirming that all ground equipment has detached...\"",
-                  "\"Could you ensure that the load sheet reflects the actual fuel on board?\"",
-                  "\"We liaised with the fueling technician, and all safety valves are verified.\""
-                ]
+                "role": "Role A: Tower Controller",
+                "instructions": "Monitor final approach. Spot the vehicle incursion on Runway 14L at Taxiway Charlie. Transmit immediately with calm authority: 'Air France 884, go around immediately, vehicle on the runway! Climb straight ahead to 2,500 feet, maintain runway heading.' After the pilot reads back, instruct them to contact Departure Radar on 124.35 MHz."
               },
               {
-                "id": "pair2",
-                "title": "Pair 2: AFISO (TSEEAC) <-> Inbound VFR Aircraft",
-                "context": "A Cessna 172 is inbound to a non-controlled regional airfield. The AFISO is on duty in the aerodrome flight information station. Low winter sun and flocking birds have been observed near Runway 26 threshold.",
-                "roleA": "AFISO (TSEEAC): Provide aerodrome flight information: runway in use 26, surface wind 240/12kt, QNH 1018, cautionary bird advisory, and report on opposing glider traffic.",
-                "roleB": "VFR Pilot: Acknowledge information, report position over visual reporting point (Sierra), and state intentions for standard overhead join.",
-                "targetPhrases": [
-                  "\"Information only: Runway 26 in use, wind 240 degrees at 12 knots...\"",
-                  "\"Be advised, a flock of lapwings has been reported near the threshold...\"",
-                  "\"As an AFISO, I am tasked with providing traffic and safety advisories.\""
-                ]
+                "role": "Role B: Airline Pilot (AFR 884)",
+                "instructions": "Fly the final approach, calling out '1,000 ft stabilized'. Receive the controller's emergency go-around instruction. Immediately read back: 'Going around, climb to 2,500 feet on runway heading, Air France 884.' Announce cockpit actions: 'Go-around, flaps 15, maximum thrust, positive climb, gear up.' Then contact Departure Radar as instructed."
               },
               {
-                "id": "pair3",
-                "title": "Pair 3: Terminal Duty Manager <-> Ramp Operations Supervisor",
-                "context": "A group of 14 delayed transit passengers from a connecting transatlantic flight has just cleared security. The departure flight has a strict 10-minute CTOT slot.",
-                "roleA": "Terminal Duty Manager: Request a 5-minute gate hold to allow the transit passengers to board, arguing customer service and connection costs.",
-                "roleB": "Ramp Operations Supervisor: Defend the slot departure, explaining the financial and network penalties of missing the Eurocontrol CTOT slot.",
-                "targetPhrases": [
-                  "\"We are in charge of passenger processing and must avoid misconnecting passengers...\"",
-                  "\"If we miss this slot, ATC will hold the flight for at least 45 minutes...\"",
-                  "\"Can we ensure that baggage is prioritized while passengers board through the gate?\""
-                ]
+                "role": "Role C: Peer Observer & Safety Auditor",
+                "instructions": "Use the checklist below to assess your peers. Did the controller speak with calm, decisive authority? Did the pilot read back the go-around instruction without delay? Were cockpit actions announced in proper sequence?"
               }
+            ],
+            "checklist": [
+              "Controller gave clear, decisive go-around instruction with the immediate reason ('vehicle on runway').",
+              "Pilot acknowledged and read back the go-around instruction without hesitation.",
+              "Cockpit go-around sequence was called out cleanly (thrust, flaps, positive climb, gear up).",
+              "Both speakers maintained professional composure and clear pronunciation."
+            ],
+            "phrases": [
+              "Tower, Air France 884, 4-mile final, Runway 14L.",
+              "Air France 884, go around immediately! Vehicle on runway, climb straight ahead 2,500 feet.",
+              "Going around, climb straight ahead 2,500 feet, Air France 884.",
+              "Go-around, set go-around thrust, flaps 15.",
+              "Positive climb verified, gear up. Contact Departure on 124.35, Air France 884."
             ]
           },
-          "careerForumDebate": {
-            "title": "Activity 5: Aviation Career Forum & Operational Dilemma Debate (35 mins)",
-            "summary": "A fast-moving winter weather front brings freezing fog, reducing Runway Visual Range (RVR) to 350m at a regional aerodrome. Stand capacity is at 95%, de-icing rigs are working at maximum throughput, and two inbound diversions are requesting priority due to fuel minimums. Each team represents an aviation profession, defends operational priorities, and negotiates a consensus action plan.",
-            "modeBadges": [
-              "👥 4-Way Multi-Stakeholder Forum",
-              "⏱️ 35 mins",
-              "⚡ Crisis Management Negotiation",
-              "🎯 Consensus Building"
-            ],
-            "instructions": [
-              "Step 1 (Crisis Briefing & Stance - 8 mins): Read the Winter Storm & Diversion Gridlock scenario. Assign one stakeholder role per team member (ATCO, AFISO/Ops, TRC/Ground, Captain). Review your non-negotiable priority.",
-              "Step 2 (Stakeholder Round-Robin - 12 mins): Each stakeholder presents their operational dilemma and proposed sequence of events. State what your role can and cannot concede.",
-              "Step 3 (Consensus Negotiation & Rating - 15 mins): Negotiate a sequential 3-step action plan using conditional language ('Provided that...', 'On condition that...'). Vote on the 3 consensus challenges in the agreement tracker."
-            ],
-            "deliverable": "A negotiated 3-step crisis operational resolution signed off by all 4 stakeholders, balancing fuel safety, stand capacity, de-icing holdover times, and slot preservation.",
-            "teacherNotes": "Maintain high tension! Remind them that if no decision is made within 20 minutes, the Captain's crew times out, the diversion exhausts fuel reserves, and runway friction degrades further. Demand conditional structures.",
-            "scenario": "Regional Aerodrome 'Echo-Delta' is experiencing severe winter weather with RVR 350m and freezing drizzle. Only 2 parking stands remain open. Two diverted commercial jets are in the holding pattern, one declaring 'Minimum Fuel'. On the ground, an outbound flight on Stand 2 has passengers boarded, but its holdover time has expired, requiring a second de-icing cycle.",
-            "stakeholders": [
+          "safetyCheck": {
+            "title": "Activity 5: Safety Check: Unstabilized Approach & Go-Around Culture (15 mins)",
+            "summary": "Work in teams to analyze the risks of unstabilized approaches and agree on how to build a strong go-around safety culture.",
+            "steps": [
               {
-                "name": "Tower & Approach ATCOs",
-                "priority": "Runway safety, separation in holding stacks, and emergency prioritization for the minimum-fuel diversion.",
-                "stance": "Has sole authority over runway access; demands clear runway sequencing and will not clear departures until emergency fuel traffic lands."
+                "step": 1,
+                "title": "Identify the Hazard",
+                "text": "At 1,000 ft AGL in instrument meteorological conditions (IMC), an approaching aircraft is flying 25 knots above target approach speed with a descent rate of 1,200 fpm. The landing gear is down, but flaps are not yet in final landing configuration."
               },
               {
-                "name": "AFISO / Aerodrome Operations Coordinator (TSEEAC)",
-                "priority": "Airfield friction coefficient measurement, snow and de-icing coordinator, apron safety compliance, and stand allocation.",
-                "stance": "Liaises between airport authority and services; ensures de-icing pad does not gridlock and coordinates snow clearing plows on taxiways."
+                "step": 2,
+                "title": "Evaluate the Operational Risk",
+                "text": "Continuing an unstabilized approach below 1,000 ft dramatically increases the risk of hard landings, runway excursions (overrunning the paved runway), tail strikes, or loss of control close to the ground."
               },
               {
-                "name": "Turnaround Coordinator & Ground Handling Lead",
-                "priority": "Ramp safety, ground equipment availability, de-icing fluid inventory, and baggage handling for diverted passengers.",
-                "stance": "Warns that ramp handlers are nearing maximum duty limits and de-icing fluid is at critical reserves; insists on clearing Stand 2 first."
+                "step": 3,
+                "title": "Propose Protective Actions",
+                "text": "1. Enforce strict stabilized approach criteria: on flight path, target speed -0/+10 kt, sink rate <= 1,000 fpm, landing flaps set by 1,000 ft in IMC (500 ft in VMC).\n2. Mandate an automatic go-around if any single stabilized approach parameter is exceeded.\n3. Foster a blame-free safety policy: flight crews are commended, never reprimanded or questioned, for executing a safety go-around.\n4. Tower controllers should issue go-around instructions proactively whenever runway separation becomes marginal."
               },
               {
-                "name": "Airline Captain (Outbound Flight on Stand 2)",
-                "priority": "Passenger welfare, flight duty period (FDP) limits, and slot adherence.",
-                "stance": "Argues that if the aircraft is not de-iced and dispatched within 20 minutes, the crew will exceed legal duty hours and the flight must be cancelled."
-              }
-            ],
-            "consensusChallenge": "In mixed teams of 4, negotiate a step-by-step priority sequence using conditional structures ('Provided that...', 'As long as...', 'On condition that...') to resolve the standoff safely and efficiently."
-          },
-          "closingReview": {
-            "title": "Activity 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-            "summary": "The final 10 minutes consolidate today's high-yield vocabulary, reinforce syllable stress on professional job titles, and update your personal continuous assessment log.",
-            "modeBadges": [
-              "👤 Individual & 👥 Pairs",
-              "⏱️ 10 mins",
-              "⚡ Syllable Stress & Self-Audit",
-              "🎯 Formative Synthesis"
-            ],
-            "instructions": [
-              "Step 1 (Pronunciation Practice - 4 mins): Practice pronouncing the 6 multisyllabic professional titles aloud with correct syllable stress: au-THOR-i-ty (2nd), re-SPON-si-ble (2nd), co-OR-di-na-tor (2nd), o-ver-SIGHT (1st).",
-              "Step 2 (Rapid-Fire Partner Quiz - 4 mins): Test your partner on 3 random terms from today's session (e.g. PSA vs. TRC, AFISO jurisdiction, Foreign Object Debris prevention).",
-              "Step 3 (Self-Assessment & Portfolio - 2 mins): Rate your confidence (1 to 5) in explaining your future aviation profession. Record target terms in your semester study log."
-            ],
-            "deliverable": "Accurate pronunciation of 4 key multisyllabic aviation terms + complete self-assessment entry in study portfolio.",
-            "teacherNotes": "Focus on primary stress in technical nouns vs. verbs. Remind students that Session 5 is Formative Evaluation 1: ensure portfolios, vocabulary logs, and presentations are fully prepped.",
-            "reviewPrompts": [
-              {
-                "title": "1. Syllable Stress & Pronunciation Practice",
-                "desc": "Drill accurate syllable stress: au-THOR-i-ty (2nd), re-SPON-si-ble (2nd), tech-NI-cian (2nd), co-OR-di-na-tor (2nd), o-ver-SIGHT (1st), sur-VEIL-lance (2nd)."
-              },
-              {
-                "title": "2. Rapid-Fire Retrieval Quiz",
-                "desc": "In pairs, quiz each other on 3 random terms from today's 18 vocabulary bank without checking notes (e.g. AFISO vs. ATCO, Turnaround Coordinator, Flight Dispatcher)."
-              },
-              {
-                "title": "3. Self-Assessment & Continuous Learning",
-                "desc": "Rate your ability (1 to 5) to explain the responsibilities of your future aviation profession. Update your study portfolio with target expressions."
+                "step": 4,
+                "title": "Agree on the Team Decision",
+                "text": "Agree with your team on the two most effective safety defenses to prevent runway landing accidents and record your conclusions in the Operational Notes section below."
               }
             ]
           }
         },
         "revision": {
-          "title": "Session 4: Jobs in Aviation",
-          "summary": "Review the 18 key technical and professional terms covering landside, airside, flight crew, air traffic control (ATCO), and civil aviation administration (TSEEAC / AFISO) to enhance your speaking fluency and TOEIC accuracy.",
+          "title": "Session 6 Revision - Approach Plates: Final Corridors & Go-Around Paths",
+          "summary": "30 essential operational and approach navigation vocabulary terms for GSEA students covering ILS plates, glide slopes, decision heights, and missed approach procedures.",
           "terms": [
             {
               "num": "01",
-              "term": "Aerodrome Flight Information Service Officer (AFISO)",
-              "definition": "A certified aeronautical station officer (often TSEEAC) providing traffic advisories, aerodrome conditions, and alerting services to aircraft at non-controlled aerodromes without separation authority."
+              "term": "Instrument Approach Chart (IAC)",
+              "definition": "An aeronautical chart showing the established instrument approach procedure to a specific runway."
             },
             {
               "num": "02",
-              "term": "Air Traffic Control Officer (ATCO)",
-              "definition": "A licensed professional legally authorized to issue mandatory control clearances and maintain safe tactical separation between aircraft in flight and maneuvering on active airport surfaces."
+              "term": "Instrument Landing System (ILS)",
+              "definition": "A precision runway approach aid providing both horizontal (localizer) and vertical (glide path) guidance."
             },
             {
               "num": "03",
-              "term": "Turnaround Coordinator (TRC)",
-              "definition": "The ground handling operations lead on the apron responsible for orchestrating servicing teams, monitoring critical-path milestones, and ensuring punctual departure."
+              "term": "Localizer (LOC)",
+              "definition": "The component of an ILS providing lateral (left/right) tracking along the runway centerline."
             },
             {
               "num": "04",
-              "term": "Ramp Agent",
-              "definition": "An airside ground handler responsible for loading and unloading baggage and cargo, positioning ground support equipment, and securing the aircraft servicing envelope."
+              "term": "Glide Path (Glide Slope)",
+              "definition": "The component of an ILS providing vertical guidance along a specified descent angle (normally 3 degrees)."
             },
             {
               "num": "05",
-              "term": "Marshaller",
-              "definition": "A trained apron ground handler who uses illuminated wands or visual hand signals to guide an incoming aircraft along the taxi line to its exact parking mark."
+              "term": "Final Approach Fix (FAF)",
+              "definition": "The point in an instrument approach where the final descent segment begins, marked by a Maltese cross."
             },
             {
               "num": "06",
-              "term": "Flight Operations Officer / Dispatcher",
-              "definition": "A licensed flight planning specialist who calculates fuel requirements, monitors en-route NOTAMs and weather, prepares flight plans, and co-signs the dispatch release with the captain."
+              "term": "Initial Approach Fix (IAF)",
+              "definition": "The fix that marks the beginning of the initial approach segment towards the runway."
             },
             {
               "num": "07",
-              "term": "Passenger Service Agent (PSA)",
-              "definition": "A landside airline or ground handling employee who assists travelers at check-in desks, checks travel documentation, reconciles hold luggage, and conducts gate boarding."
+              "term": "Intermediate Fix (IF)",
+              "definition": "The fix marking the end of the initial segment and beginning of the intermediate segment for final configuration."
             },
             {
               "num": "08",
-              "term": "Aviation Safety Inspector",
-              "definition": "A civil aviation authority official (e.g. DGAC/DSAC, often TSEEAC) tasked with auditing airlines, maintenance repair organizations, and aerodromes for strict regulatory compliance."
+              "term": "Decision Altitude (DA)",
+              "definition": "A specified altitude (mean sea level) in a precision approach where a missed approach must be initiated if no visual reference."
             },
             {
               "num": "09",
-              "term": "Aerodrome Operations Coordinator",
-              "definition": "An airport duty specialist (often TSEEAC) responsible for inspecting runway pavement friction, monitoring obstacle limitation surfaces, managing wildlife hazards, and coordinating apron works."
+              "term": "Decision Height (DH)",
+              "definition": "A specified height (above runway threshold) in a precision approach where a missed approach must be initiated if no visual reference."
             },
             {
               "num": "10",
-              "term": "Avionics Technician",
-              "definition": "A certified aircraft maintenance engineer specialized in troubleshooting, repairing, calibrating, and certifying cockpit flight management computers, radar, and navigation systems."
+              "term": "Minimum Descent Altitude (MDA)",
+              "definition": "The lowest altitude in a non-precision approach below which descent cannot be made without visual references."
             },
             {
               "num": "11",
-              "term": "First Officer",
-              "definition": "The second-in-command pilot on the flight deck who shares flight navigation, radio communications, and system monitoring duties with the Captain."
+              "term": "Runway Visual Range (RVR)",
+              "definition": "The distance down the runway that a pilot on the centerline can see runway surface markings or lights."
             },
             {
               "num": "12",
-              "term": "Purser / Cabin Manager",
-              "definition": "The senior cabin crew member responsible for supervising cabin attendants, directing in-flight passenger safety procedures, and coordinating with the flight deck."
+              "term": "Missed Approach Procedure (Go-Around)",
+              "definition": "The published flight procedure to follow if an approach cannot be safely completed to a landing."
             },
             {
               "num": "13",
-              "term": "Security Screening Officer",
-              "definition": "A certified landside security officer who operates X-ray scanners, millimeter-wave body scanners, and explosive trace detectors to screen passengers and carry-on luggage."
+              "term": "Missed Approach Point (MAPt)",
+              "definition": "The point in an instrument approach procedure at or before which a missed approach must be initiated."
             },
             {
               "num": "14",
-              "term": "De-icing Rig Operator",
-              "definition": "A specialized ramp technician who operates aerial boom trucks to spray heated glycol mixtures onto aircraft surfaces to eradicate snow, frost, and ice contamination."
+              "term": "Touchdown Zone Elevation (TDZE)",
+              "definition": "The highest elevation in the first 3,000 feet of the landing runway surface."
             },
             {
               "num": "15",
-              "term": "Pushback Tug Driver",
-              "definition": "A heavy-equipment ramp driver specialized in connecting towbars or towbarless cradles to safely push aircraft backward out of gate stands into the taxi lane."
+              "term": "Precision Approach",
+              "definition": "An instrument approach and landing utilizing both precision lateral and vertical guidance (such as CAT I, II, or III ILS)."
             },
             {
               "num": "16",
-              "term": "Airfield Maintenance Technician",
-              "definition": "A technical specialist who inspects and maintains aeronautical ground lighting (AGL), taxiway guidance signage, runway markings, and perimeter security fences."
+              "term": "Non-Precision Approach",
+              "definition": "An instrument approach utilizing lateral navigation guidance without vertical glide path guidance (e.g. VOR, LOC-only)."
             },
             {
               "num": "17",
-              "term": "Refueller / Fuel Hydrant Operator",
-              "definition": "A ramp fueling technician who connects mobile fuel bowsers or underground hydrant dispensers to aircraft fuel valves to deliver precise, contamination-tested Jet-A1."
+              "term": "Visual References",
+              "definition": "Physical ground features (approach lights, threshold markings) required to continue an approach below DA/MDA."
             },
             {
               "num": "18",
-              "term": "Load Controller / Weight & Balance Specialist",
-              "definition": "An operations professional who calculates aircraft center-of-gravity (CG), models payload distribution, and generates the official load and trim sheet required for safe takeoff."
+              "term": "Stabilized Approach",
+              "definition": "An approach where airspeed, descent rate, engine thrust, and landing configuration are within exact limits by a set gate."
+            },
+            {
+              "num": "19",
+              "term": "Sink Rate",
+              "definition": "The rate of descent of an aircraft toward the ground, which should not exceed 1,000 feet per minute on final approach."
+            },
+            {
+              "num": "20",
+              "term": "Maltese Cross",
+              "definition": "The chart symbol designating the Final Approach Fix for an approach on an instrument plate profile view."
+            },
+            {
+              "num": "21",
+              "term": "Glide Path Angle",
+              "definition": "The angle of descent of the electronic glide slope beam, typically calibrated at 3.0 degrees."
+            },
+            {
+              "num": "22",
+              "term": "Threshold Crossing Height (TCH)",
+              "definition": "The theoretical height in feet above the runway threshold where the aircraft's glide path antenna crosses (normally 50 ft)."
+            },
+            {
+              "num": "23",
+              "term": "Runway Threshold",
+              "definition": "The beginning of that portion of the runway usable for landing."
+            },
+            {
+              "num": "24",
+              "term": "Approach Lighting System (ALS)",
+              "definition": "A system of high-intensity lights extending outward from the runway threshold to assist visual landing transition."
+            },
+            {
+              "num": "25",
+              "term": "Visual Descent Point (VDP)",
+              "definition": "A defined point on a non-precision approach from which normal descent from the MDA to the runway may begin."
+            },
+            {
+              "num": "26",
+              "term": "Balked Landing",
+              "definition": "A discontinued landing attempt initiated after the aircraft has descended below decision height or after touchdown."
+            },
+            {
+              "num": "27",
+              "term": "Holding on Missed Approach",
+              "definition": "The published holding fix where an aircraft holds after executing a go-around while awaiting a second approach or diversion."
+            },
+            {
+              "num": "28",
+              "term": "Alternate Aerodrome",
+              "definition": "An aerodrome to which an aircraft can proceed if landing at the destination becomes impossible or inadvisable."
+            },
+            {
+              "num": "29",
+              "term": "Fuel Diversion",
+              "definition": "Diverting to an alternate aerodrome before fuel reserves drop below the legal minimum final reserve fuel."
+            },
+            {
+              "num": "30",
+              "term": "Go-Around Mindset",
+              "definition": "The safety philosophy where every approach is planned as a go-around until confirming all landing criteria are met."
             }
           ]
         },
@@ -4730,131 +4669,138 @@
           ],
           "toeicQuestions": [
             {
-              "stem": "The Turnaround Coordinator is directly responsible ________ supervising the loading of cargo and ensuring compliance with the weight schedule.",
+              "id": 1,
+              "stem": "While flying an ILS approach to Runway 14L, the flight crew reaches Decision Altitude (692 ft AMSL / 200 ft AGL) in thick cloud with zero visual contact with the runway lights. What is the mandatory pilot action?",
               "options": [
                 {
                   "letter": "A",
-                  "text": "with"
+                  "text": "Descend another 100 feet to check if the fog clears closer to the grass."
                 },
                 {
                   "letter": "B",
-                  "text": "for"
+                  "text": "Immediately initiate a missed approach (go-around) by applying go-around thrust and pitching into a positive climb."
                 },
                 {
                   "letter": "C",
-                  "text": "of"
+                  "text": "Level off at 692 feet and fly straight ahead until hearing the landing gear touch down."
                 },
                 {
                   "letter": "D",
-                  "text": "to"
+                  "text": "Ask the tower controller to guess whether the runway is clear."
                 }
               ],
               "correctLetter": "B",
-              "correctText": "for",
-              "analysis": "\"Responsible for\" is the fixed prepositional collocation followed by a gerund (\"supervising\").",
-              "strategy": "Spot \"responsible\" -> immediately look for \"for + -ing/noun\". Avoid the common French false friend \"responsible of\"."
+              "correctText": "Immediately initiate a missed approach (go-around) by applying go-around thrust and pitching into a positive climb.",
+              "analysis": "Under ICAO and EASA rules, at Decision Altitude on a precision approach, if required visual references are not visible, an immediate missed approach must be initiated. Continuing descent without visual reference is strictly prohibited.",
+              "strategy": "No visual reference at DA = immediate go-around."
             },
             {
-              "stem": "Unlike aerodrome controllers who issue clearances, AFIS officers are tasked with ________ flight information and meteorological updates to inbound pilots.",
+              "id": 2,
+              "stem": "On an approach chart profile view, what does the 'Maltese Cross' symbol signify to the flight crew?",
               "options": [
                 {
                   "letter": "A",
-                  "text": "provide"
+                  "text": "The location of the airport medical emergency station."
                 },
                 {
                   "letter": "B",
-                  "text": "provides"
+                  "text": "The Final Approach Fix (FAF), indicating where the final descent segment begins."
                 },
                 {
                   "letter": "C",
-                  "text": "providing"
+                  "text": "The missed approach holding fix."
                 },
                 {
                   "letter": "D",
-                  "text": "provided"
-                }
-              ],
-              "correctLetter": "C",
-              "correctText": "providing",
-              "analysis": "\"Be tasked with\" is followed by a preposition (\"with\"), which requires a gerund (\"providing\") or a noun phrase.",
-              "strategy": "Identify \"tasked with\" -> verb must be in the gerund form (-ing)."
-            },
-            {
-              "stem": "Before releasing the aircraft for departure, the flight dispatcher must verify that all load sheets ________ by the captain.",
-              "options": [
-                {
-                  "letter": "A",
-                  "text": "have signed"
-                },
-                {
-                  "letter": "B",
-                  "text": "have been signed"
-                },
-                {
-                  "letter": "C",
-                  "text": "will sign"
-                },
-                {
-                  "letter": "D",
-                  "text": "signing"
+                  "text": "The point where cabin crew must make the final landing announcement."
                 }
               ],
               "correctLetter": "B",
-              "correctText": "have been signed",
-              "analysis": "Passive voice is required because load sheets cannot sign themselves; they must be signed by the captain.",
-              "strategy": "Check if the subject (\"all load sheets\") is the actor or the receiver of the verb. Since it is the receiver, choose passive voice \"have been signed\"."
+              "correctText": "The Final Approach Fix (FAF), indicating where the final descent segment begins.",
+              "analysis": "The Maltese Cross represents the Final Approach Fix on profile views, marking where the final approach segment begins and where altitude checks are confirmed against distance.",
+              "strategy": "Maltese Cross = Final Approach Fix (FAF)."
             },
             {
-              "stem": "The civil aviation safety inspector conducted an unannounced audit in order to ensure ________ ground handling personnel were strictly following apron safety protocols.",
+              "id": 3,
+              "stem": "What is the primary operational criteria for an approach to be considered 'stabilized' at 1,000 feet in instrument conditions?",
               "options": [
                 {
                   "letter": "A",
-                  "text": "that"
+                  "text": "Engines at idle thrust, flaps retracted, and passenger seatbelt sign turned off."
                 },
                 {
                   "letter": "B",
-                  "text": "what"
+                  "text": "Aircraft on correct flight path, correct landing configuration (gear and flaps set), speed within -0/+10 kt of target, and sink rate 1,000 fpm or less."
                 },
                 {
                   "letter": "C",
-                  "text": "which"
+                  "text": "Autopilot disconnected and flight attendants serving coffee in the galley."
                 },
                 {
                   "letter": "D",
-                  "text": "where"
+                  "text": "Aircraft flying at 250 knots with speedbrakes fully extended."
                 }
               ],
-              "correctLetter": "A",
-              "correctText": "that",
-              "analysis": "\"Ensure that\" introduces a content clause detailing what is being verified or secured.",
-              "strategy": "\"Ensure\" takes a \"that\" clause (\"ensure that + subject + verb\")."
+              "correctLetter": "B",
+              "correctText": "Aircraft on correct flight path, correct landing configuration (gear and flaps set), speed within -0/+10 kt of target, and sink rate 1,000 fpm or less.",
+              "analysis": "A stabilized approach requires the aircraft to be configured, on speed, on lateral and vertical path, with engines spooled and sink rate <= 1,000 fpm by the 1,000 ft IMC gate.",
+              "strategy": "Stabilized = configured, on path, on speed, sink rate <= 1,000 fpm."
             },
             {
-              "stem": "The airport duty manager was commended for handling the ramp emergency calmly, ________ severe winter weather conditions.",
+              "id": 4,
+              "stem": "Why does modern airline safety culture promote a 'Go-Around Mindset'?",
               "options": [
                 {
                   "letter": "A",
-                  "text": "despite"
+                  "text": "Because practicing go-arounds burns more fuel and lowers aircraft landing weight."
                 },
                 {
                   "letter": "B",
-                  "text": "although"
+                  "text": "Because treating every approach as a planned go-around ensures pilots never hesitate to abort a landing if parameters become unsafe."
                 },
                 {
                   "letter": "C",
-                  "text": "unless"
+                  "text": "Because go-arounds give passengers a better panoramic view of the airport."
                 },
                 {
                   "letter": "D",
-                  "text": "whereas"
+                  "text": "Because controllers need extra time to complete paperwork between flights."
                 }
               ],
-              "correctLetter": "A",
-              "correctText": "despite",
-              "analysis": "\"Despite\" is a preposition expressing concession followed by a noun phrase (\"severe winter weather conditions\").",
-              "strategy": "Check what follows the blank. \"Severe winter weather conditions\" is a noun phrase, so a preposition (\"despite\") is required rather than a subordinating conjunction like \"although\"."
+              "correctLetter": "B",
+              "correctText": "Because treating every approach as a planned go-around ensures pilots never hesitate to abort a landing if parameters become unsafe.",
+              "analysis": "A go-around mindset eliminates hesitation. If the pilot assumes a go-around is normal, landing becomes a bonus only executed when all conditions are 100% verified.",
+              "strategy": "Plan to go around; only land if everything is perfect."
+            },
+            {
+              "id": 5,
+              "stem": "On the simulated ILS Runway 14L approach plate, what is the published initial action on the missed approach procedure?",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "Turn immediately right heading 320 degrees to return to the airport terminal."
+                },
+                {
+                  "letter": "B",
+                  "text": "Climb straight ahead on runway track 142° to 2,500 feet before turning."
+                },
+                {
+                  "letter": "C",
+                  "text": "Descend to 200 feet and circle around the control tower."
+                },
+                {
+                  "letter": "D",
+                  "text": "Cut engine power and glide towards the nearest open field."
+                }
+              ],
+              "correctLetter": "B",
+              "correctText": "Climb straight ahead on runway track 142° to 2,500 feet before turning.",
+              "analysis": "The published procedure specifies: 'Climb straight ahead on runway track 142° to 2,500 ft QNH. At 2,500 ft, turn left climbing to 4,000 ft direct to TOU VOR and hold.'",
+              "strategy": "Always follow the published straight-ahead climb to clear obstacles before turning."
             }
-          ]
+          ],
+          "quizTitle": "Airside Scenario Quiz • Approach Plates: Final Corridors & Go-Around Paths",
+          "quizSubtitle": "Target pace: ~45 seconds per scenario • Mix of Final Approach Dilemmas & Go-Around Spot-Checks"
         }
       }
     }
