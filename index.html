@@ -354,6 +354,11 @@
       will-change: transform;
     }
 
+    /* Screen display: student digital notes print representation hidden */
+    .notes-print-display {
+      display: none;
+    }
+
     @media print {
       /* Page Setup: Standard A4 with clean margins */
       @page {
@@ -487,6 +492,24 @@
       svg {
         max-width: 100% !important;
         height: auto !important;
+      }
+
+      /* Print formatting for student digital notes */
+      .notes-textarea-container textarea {
+        display: none !important;
+      }
+      .notes-textarea-container .notes-print-display {
+        display: block !important;
+        white-space: pre-wrap !important;
+        font-family: inherit !important;
+        font-size: 8.5pt !important;
+        line-height: 1.35 !important;
+        color: #0f172a !important;
+        border: 1px solid #cbd5e1 !important;
+        border-radius: 6px !important;
+        padding: 5px 8px !important;
+        background: #f8fafc !important;
+        min-height: 20pt !important;
       }
     }
   </style>
@@ -2377,6 +2400,48 @@
       }
     }
 
+    // --- In-Worksheet Digital Note-Taking & Storage Controller ---
+    window.__GSEA_NOTES_CACHE = window.__GSEA_NOTES_CACHE || {};
+
+    window.getLessonNote = function(sessionNum, noteKey) {
+      const fullKey = `gsea_s3_m1_s${sessionNum}_${noteKey}`;
+      try {
+        const val = localStorage.getItem(fullKey);
+        return val !== null ? val : (window.__GSEA_NOTES_CACHE[fullKey] || '');
+      } catch (e) {
+        return window.__GSEA_NOTES_CACHE[fullKey] || '';
+      }
+    };
+
+    window.saveLessonNote = function(sessionNum, noteKey, value) {
+      const fullKey = `gsea_s3_m1_s${sessionNum}_${noteKey}`;
+      try {
+        localStorage.setItem(fullKey, value);
+      } catch (e) {
+        window.__GSEA_NOTES_CACHE[fullKey] = value;
+      }
+      const printEl = document.getElementById(`print-notes-${noteKey}-s${sessionNum}`);
+      if (printEl) {
+        printEl.textContent = value || `[No ${noteKey} notes recorded]`;
+      }
+
+      const statusEl = document.getElementById(`notes-status-s${sessionNum}`);
+      if (statusEl) {
+        statusEl.innerHTML = `<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg><span>Auto-saved locally</span>`;
+      }
+    };
+
+    window.clearLessonNotes = function(sessionNum) {
+      if (!confirm('Clear your saved notes for this session?')) return;
+      ['roleplay', 'safety'].forEach(noteKey => {
+        window.saveLessonNote(sessionNum, noteKey, '');
+        const textarea = document.getElementById(`notes-${noteKey}-s${sessionNum}`);
+        if (textarea) textarea.value = '';
+        const printEl = document.getElementById(`print-notes-${noteKey}-s${sessionNum}`);
+        if (printEl) printEl.textContent = `[No ${noteKey} notes recorded]`;
+      });
+    };
+
     // --- Continuous Assessment Criteria Deep-Dive Data & Modal Controller ---
     const CRITERIA_DATA = {
       'Fluency': {
@@ -3644,6 +3709,46 @@
               </table>
             </div>
           </div>
+
+          <!-- Activity 6: Operational Notes & Safeguarding Decision -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs bg-slate-800">NOTES</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">Activity 6: Operational Notes & Safeguarding Decision</h4>
+                  <p class="text-[11px] text-slate-500">Record your team's role-play conclusions and safeguarding decisions for the crane. Auto-saved in browser.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 text-[11px]">
+                <span id="notes-status-s1" class="font-bold text-emerald-600 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span>Auto-saved locally</span>
+                </span>
+                <button type="button" onclick="window.clearLessonNotes('1')" class="text-slate-400 hover:text-rose-600 underline cursor-pointer no-print ml-2 font-medium">Clear</button>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div class="notes-textarea-container">
+                <label class="block text-xs font-bold text-slate-800 mb-1 flex items-center justify-between">
+                  <span>1. Negotiation Outcome with Building Contractor:</span>
+                  <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saves on typing</span>
+                </label>
+                <textarea id="notes-roleplay-s1" oninput="window.saveLessonNote('1', 'roleplay', this.value)" rows="3" placeholder="e.g., Agreed conditions with contractor: 28-day notice confirmed, boom must be lowered below 35m during active flight hours (06h00–22h00), red obstacle warning lights installed at crane tip..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('1', 'roleplay') : ''}</textarea>
+                <div id="print-notes-roleplay-s1" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('1', 'roleplay') : '') || '[No negotiation notes recorded]'}</div>
+              </div>
+
+              <div class="notes-textarea-container">
+                <label class="block text-xs font-bold text-slate-800 mb-1 flex items-center justify-between">
+                  <span>2. Safeguarding Record & NOTAM Decision:</span>
+                  <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saves on typing</span>
+                </label>
+                <textarea id="notes-safety-s1" oninput="window.saveLessonNote('1', 'safety', this.value)" rows="3" placeholder="e.g., OLS approach surface protected (gradient 2%). Issue NOTAM 48 hours prior to crane erection stating temporary obstacle 48m AGL at 2,200m from Runway 09 threshold..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('1', 'safety') : ''}</textarea>
+                <div id="print-notes-safety-s1" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('1', 'safety') : '') || '[No safeguarding decision recorded]'}</div>
+              </div>
+            </div>
+          </div>
         </div>
       `;
     }
@@ -3989,6 +4094,46 @@
                   `).join('')}
                 </tbody>
               </table>
+            </div>
+          </div>
+
+          <!-- Activity 6: Operational Notes & Ramp Safety Decision -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs bg-slate-800">NOTES</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">Activity 6: Operational Notes & Ramp Safety Decision</h4>
+                  <p class="text-[11px] text-slate-500">Record your team's audit findings and corrective actions for apron vehicles. Auto-saved in browser.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 text-[11px]">
+                <span id="notes-status-s2" class="font-bold text-emerald-600 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span>Auto-saved locally</span>
+                </span>
+                <button type="button" onclick="window.clearLessonNotes('2')" class="text-slate-400 hover:text-rose-600 underline cursor-pointer no-print ml-2 font-medium">Clear</button>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div class="notes-textarea-container">
+                <label class="block text-xs font-bold text-slate-800 mb-1 flex items-center justify-between">
+                  <span>1. Ramp Audit Findings & Driver Clarification:</span>
+                  <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saves on typing</span>
+                </label>
+                <textarea id="notes-roleplay-s2" oninput="window.saveLessonNote('2', 'roleplay', this.value)" rows="3" placeholder="e.g., Vehicle tug observed exceeding 20 km/h in lane B. Baggage handler explained time pressure for flight AF1234. Objective evidence: telematics record showed 27 km/h..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('2', 'roleplay') : ''}</textarea>
+                <div id="print-notes-roleplay-s2" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('2', 'roleplay') : '') || '[No audit notes recorded]'}</div>
+              </div>
+
+              <div class="notes-textarea-container">
+                <label class="block text-xs font-bold text-slate-800 mb-1 flex items-center justify-between">
+                  <span>2. Corrective Action Plan (CAP) & Occurrence Report Decision:</span>
+                  <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saves on typing</span>
+                </label>
+                <textarea id="notes-safety-s2" oninput="window.saveLessonNote('2', 'safety', this.value)" rows="3" placeholder="e.g., Level 2 finding issued. Handler must submit CAP within 14 days. Corrective actions: fit speed limiter at 20 km/h, conduct 10-minute toolbox talk on right-of-way, log occurrence under Regulation 376/2014..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('2', 'safety') : ''}</textarea>
+                <div id="print-notes-safety-s2" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('2', 'safety') : '') || '[No CAP decision recorded]'}</div>
+              </div>
             </div>
           </div>
         </div>
@@ -4338,6 +4483,46 @@
                   `).join('')}
                 </tbody>
               </table>
+            </div>
+          </div>
+
+          <!-- Activity 6: Operational Notes & Runway Works Decision -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs bg-slate-800">NOTES</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">Activity 6: Operational Notes & Runway Works Decision</h4>
+                  <p class="text-[11px] text-slate-500">Record your team's airline briefing points and Article 71 compensatory measures. Auto-saved in browser.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 text-[11px]">
+                <span id="notes-status-s3" class="font-bold text-emerald-600 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span>Auto-saved locally</span>
+                </span>
+                <button type="button" onclick="window.clearLessonNotes('3')" class="text-slate-400 hover:text-rose-600 underline cursor-pointer no-print ml-2 font-medium">Clear</button>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div class="notes-textarea-container">
+                <label class="block text-xs font-bold text-slate-800 mb-1 flex items-center justify-between">
+                  <span>1. Flight Operations & Airline Briefing Talking Points:</span>
+                  <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saves on typing</span>
+                </label>
+                <textarea id="notes-roleplay-s3" oninput="window.saveLessonNote('3', 'roleplay', this.value)" rows="3" placeholder="e.g., Runway 27 threshold temporarily displaced by 150m. Landing Distance Available (LDA) reduced to 1,950m. Take-Off Run Available (TORA) unchanged at 2,400m..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('3', 'roleplay') : ''}</textarea>
+                <div id="print-notes-roleplay-s3" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('3', 'roleplay') : '') || '[No flight ops briefing notes recorded]'}</div>
+              </div>
+
+              <div class="notes-textarea-container">
+                <label class="block text-xs font-bold text-slate-800 mb-1 flex items-center justify-between">
+                  <span>2. Article 71 Exemption & Compensatory Measures Decision:</span>
+                  <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saves on typing</span>
+                </label>
+                <textarea id="notes-safety-s3" oninput="window.saveLessonNote('3', 'safety', this.value)" rows="3" placeholder="e.g., Granted under Article 71 for 6 weeks. Compensatory measures: wet runway operations strictly prohibited, crosswind limit lowered to 15 kts, RFFS fire crew on standby at taxiway C during heavy arrivals..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('3', 'safety') : ''}</textarea>
+                <div id="print-notes-safety-s3" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('3', 'safety') : '') || '[No compensatory measures recorded]'}</div>
+              </div>
             </div>
           </div>
         </div>
@@ -7693,25 +7878,90 @@ function renderLessonContentTabSession4(sessionData, theme) {
     function renderRevisionTab(sessionData, theme) {
       const bodyEl = document.getElementById('modal-body');
       const rev = sessionData.revision || { terms: [], summary: '' };
-      const terms = Array.isArray(rev) ? rev : (rev.terms || sessionData.vocabulary || []);
+      const sessionTerms = Array.isArray(rev) ? rev : (rev.terms || sessionData.vocabulary || []);
       const masteredList = getMasteredTerms(modalState.modNum, modalState.sessionNum);
       const isGrid = modalState.flashcardMode === 'grid';
+      modalState.vocabScope = modalState.vocabScope || 'session';
+
+      // Gather module terms across all sessions in this module
+      const modCourse = getActiveModalCourseData();
+      let moduleTerms = [];
+      if (modCourse && modCourse.sessions) {
+        const sKeys = Object.keys(modCourse.sessions).sort((a,b) => parseInt(a) - parseInt(b));
+        sKeys.forEach(sNum => {
+          const s = modCourse.sessions[sNum];
+          const sRev = s.revision || {};
+          const sTerms = Array.isArray(sRev) ? sRev : (sRev.terms || s.vocabulary || []);
+          sTerms.forEach(t => {
+            moduleTerms.push({ ...t, sessionNum: sNum });
+          });
+        });
+      }
+      if (moduleTerms.length === 0) {
+        moduleTerms = sessionTerms.map(t => ({ ...t, sessionNum: modalState.sessionNum }));
+      }
+
+      const activeTerms = (modalState.vocabScope === 'module' && isGrid)
+        ? moduleTerms
+        : sessionTerms.map(t => ({ ...t, sessionNum: modalState.sessionNum }));
+
+      const currentSearch = (modalState.vocabSearch || '').trim().toLowerCase();
 
       let innerContent = '';
       if (isGrid) {
         innerContent = `
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            ${terms.map(t => {
+          <!-- Real-Time Search & Scope Controls -->
+          <div class="p-3 bg-white border border-slate-200 rounded-xl shadow-xs space-y-2.5">
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5">
+              
+              <!-- Search Input -->
+              <div class="relative flex-1">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                </div>
+                <input type="text" id="vocab-search-input" value="${modalState.vocabSearch || ''}" oninput="window.filterVocabCards(this.value)" placeholder="Search ${activeTerms.length} terms or definitions in real-time..." class="w-full pl-9 pr-8 py-1.5 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400">
+                ${modalState.vocabSearch ? `
+                  <button type="button" onclick="window.clearVocabSearch()" class="absolute inset-y-0 right-0 pr-2.5 flex items-center text-slate-400 hover:text-slate-600 cursor-pointer" title="Clear search">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+                  </button>
+                ` : ''}
+              </div>
+
+              <!-- Scope Toggle (This Session vs All Module 1) -->
+              <div class="flex items-center gap-2 shrink-0">
+                <div class="inline-flex rounded-lg border border-slate-200 p-0.5 bg-slate-100 text-[11px] font-bold select-none">
+                  <button type="button" onclick="window.setVocabScope('session')" class="px-2.5 py-1 rounded-md transition-all cursor-pointer ${modalState.vocabScope !== 'module' ? 'bg-white shadow-xs text-blue-600' : 'text-slate-500 hover:text-slate-800'}">This Session (${sessionTerms.length})</button>
+                  <button type="button" onclick="window.setVocabScope('module')" class="px-2.5 py-1 rounded-md transition-all cursor-pointer ${modalState.vocabScope === 'module' ? 'bg-white shadow-xs text-blue-600' : 'text-slate-500 hover:text-slate-800'}">Module 1 (${moduleTerms.length})</button>
+                </div>
+                <span id="vocab-match-count" class="text-[11px] font-mono text-slate-500 hidden sm:inline shrink-0">${activeTerms.length} terms</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Empty Search State -->
+          <div id="vocab-empty-banner" class="hidden p-8 bg-white border border-slate-200 rounded-xl text-center text-slate-500 text-xs space-y-2">
+            <svg class="w-8 h-8 mx-auto text-slate-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path stroke-linecap="round" d="M9 11h4"/></svg>
+            <p>No vocabulary terms found matching your search.</p>
+            <button type="button" onclick="window.clearVocabSearch()" class="px-3 py-1 text-xs font-bold bg-blue-50 text-blue-600 hover:bg-blue-100 rounded-md transition-all cursor-pointer">Clear Search Filter</button>
+          </div>
+
+          <!-- Cards Grid -->
+          <div id="vocab-cards-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            ${activeTerms.map(t => {
               const isMastered = masteredList.includes(t.term);
+              const termLower = (t.term || '').toLowerCase();
+              const defLower = (t.definition || '').toLowerCase();
+              const matches = !currentSearch || termLower.includes(currentSearch) || defLower.includes(currentSearch);
               return `
-                <div class="bg-white border ${isMastered ? 'border-emerald-300 ring-1 ring-emerald-200' : 'border-slate-200'} rounded-xl p-3 flex flex-col justify-between shadow-xs transition-all">
+                <div class="vocab-card bg-white border ${isMastered ? 'border-emerald-300 ring-1 ring-emerald-200' : 'border-slate-200'} rounded-xl p-3 flex flex-col justify-between shadow-xs transition-all ${matches ? '' : 'hidden'}" data-term="${termLower.replace(/"/g, '&quot;')}" data-def="${defLower.replace(/"/g, '&quot;')}">
                   <div>
                     <div class="flex items-center justify-between pb-1.5 border-b border-slate-100 gap-1.5">
                       <div class="flex items-center gap-1.5 truncate">
                         <button type="button" onclick="speakWord('${t.term.replace(/'/g, "\\'")}')" title="Pronounce word" class="hover:scale-110 active:scale-95 transition-all text-slate-400 hover:text-slate-700 cursor-pointer flex items-center justify-center"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg></button>
                         <h4 class="text-xs sm:text-sm font-bold text-slate-800 truncate">${t.term}</h4>
                       </div>
-                      <span class="text-white text-[10px] font-bold px-1.5 py-0.5 rounded shrink-0 shadow-xs" style="background-color: ${theme.accent};">${t.num}</span>
+                      <span class="text-white text-[10px] font-bold px-1.5 py-0.5 rounded shrink-0 shadow-xs" style="background-color: ${theme.accent};">${modalState.vocabScope === 'module' ? `S${t.sessionNum} • ${t.num}` : t.num}</span>
                     </div>
                     <p class="text-[11px] text-slate-600 leading-relaxed pt-2">${t.definition}</p>
                   </div>
@@ -7727,7 +7977,8 @@ function renderLessonContentTabSession4(sessionData, theme) {
           </div>
         `;
       } else {
-        // Flashcard Trainer View
+        // Flashcard Trainer View (Always uses current session terms)
+        const terms = sessionTerms;
         if (terms.length === 0) {
           innerContent = `<div class="p-4 bg-white rounded-xl text-center text-slate-500 text-xs">No terms available.</div>`;
         } else {
@@ -7799,11 +8050,11 @@ function renderLessonContentTabSession4(sessionData, theme) {
         <div class="space-y-4">
           <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-xs flex flex-wrap items-center justify-between gap-3">
             <div>
-              <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Curriculum Vocabulary (18 Terms)</span>
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Curriculum Vocabulary (${sessionTerms.length} Terms)</span>
               <div class="flex items-center gap-2 mt-0.5">
-                <span class="text-xs font-semibold text-slate-700">${masteredList.length} of ${terms.length} mastered</span>
+                <span class="text-xs font-semibold text-slate-700">${masteredList.length} of ${sessionTerms.length} mastered</span>
                 <div class="w-24 h-2 bg-slate-200 rounded-full overflow-hidden">
-                  <div class="h-full bg-emerald-500 rounded-full transition-all duration-300" style="width: ${(masteredList.length / (terms.length || 1)) * 100}%"></div>
+                  <div class="h-full bg-emerald-500 rounded-full transition-all duration-300" style="width: ${(masteredList.length / (sessionTerms.length || 1)) * 100}%"></div>
                 </div>
               </div>
             </div>
@@ -7819,6 +8070,36 @@ function renderLessonContentTabSession4(sessionData, theme) {
         </div>
       `;
     }
+
+    window.filterVocabCards = function(query) {
+      modalState.vocabSearch = query;
+      const q = (query || '').trim().toLowerCase();
+      const cards = document.querySelectorAll('.vocab-card');
+      let matchCount = 0;
+      cards.forEach(card => {
+        const term = card.getAttribute('data-term') || '';
+        const def = card.getAttribute('data-def') || '';
+        const matches = !q || term.includes(q) || def.includes(q);
+        card.classList.toggle('hidden', !matches);
+        if (matches) matchCount++;
+      });
+      const counter = document.getElementById('vocab-match-count');
+      if (counter) counter.textContent = q ? `Showing ${matchCount} of ${cards.length}` : `${cards.length} terms`;
+      const emptyBanner = document.getElementById('vocab-empty-banner');
+      if (emptyBanner) emptyBanner.classList.toggle('hidden', matchCount > 0);
+    };
+
+    window.clearVocabSearch = function() {
+      modalState.vocabSearch = '';
+      const input = document.getElementById('vocab-search-input');
+      if (input) input.value = '';
+      window.filterVocabCards('');
+    };
+
+    window.setVocabScope = function(scope) {
+      modalState.vocabScope = scope;
+      renderModalBody();
+    };
 
     function renderMaterialsTab(sessionData, theme) {
       const bodyEl = document.getElementById('modal-body');
@@ -11709,6 +11990,8 @@ function renderLessonContentTabSession4(sessionData, theme) {
 
     function setFlashcardMode(mode) {
       modalState.flashcardMode = mode;
+      modalState.flashcardIdx = 0;
+      modalState.flashcardFlipped = false;
       renderModalBody();
     }
 

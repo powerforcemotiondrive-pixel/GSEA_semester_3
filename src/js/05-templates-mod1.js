@@ -343,6 +343,46 @@
               </table>
             </div>
           </div>
+
+          <!-- Activity 6: Operational Notes & Safeguarding Decision -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs bg-slate-800">NOTES</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">Activity 6: Operational Notes & Safeguarding Decision</h4>
+                  <p class="text-[11px] text-slate-500">Record your team's role-play conclusions and safeguarding decisions for the crane. Auto-saved in browser.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 text-[11px]">
+                <span id="notes-status-s1" class="font-bold text-emerald-600 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span>Auto-saved locally</span>
+                </span>
+                <button type="button" onclick="window.clearLessonNotes('1')" class="text-slate-400 hover:text-rose-600 underline cursor-pointer no-print ml-2 font-medium">Clear</button>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div class="notes-textarea-container">
+                <label class="block text-xs font-bold text-slate-800 mb-1 flex items-center justify-between">
+                  <span>1. Negotiation Outcome with Building Contractor:</span>
+                  <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saves on typing</span>
+                </label>
+                <textarea id="notes-roleplay-s1" oninput="window.saveLessonNote('1', 'roleplay', this.value)" rows="3" placeholder="e.g., Agreed conditions with contractor: 28-day notice confirmed, boom must be lowered below 35m during active flight hours (06h00–22h00), red obstacle warning lights installed at crane tip..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('1', 'roleplay') : ''}</textarea>
+                <div id="print-notes-roleplay-s1" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('1', 'roleplay') : '') || '[No negotiation notes recorded]'}</div>
+              </div>
+
+              <div class="notes-textarea-container">
+                <label class="block text-xs font-bold text-slate-800 mb-1 flex items-center justify-between">
+                  <span>2. Safeguarding Record & NOTAM Decision:</span>
+                  <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saves on typing</span>
+                </label>
+                <textarea id="notes-safety-s1" oninput="window.saveLessonNote('1', 'safety', this.value)" rows="3" placeholder="e.g., OLS approach surface protected (gradient 2%). Issue NOTAM 48 hours prior to crane erection stating temporary obstacle 48m AGL at 2,200m from Runway 09 threshold..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('1', 'safety') : ''}</textarea>
+                <div id="print-notes-safety-s1" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('1', 'safety') : '') || '[No safeguarding decision recorded]'}</div>
+              </div>
+            </div>
+          </div>
         </div>
       `;
     }
@@ -688,6 +728,46 @@
                   `).join('')}
                 </tbody>
               </table>
+            </div>
+          </div>
+
+          <!-- Activity 6: Operational Notes & Ramp Safety Decision -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs bg-slate-800">NOTES</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">Activity 6: Operational Notes & Ramp Safety Decision</h4>
+                  <p class="text-[11px] text-slate-500">Record your team's audit findings and corrective actions for apron vehicles. Auto-saved in browser.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 text-[11px]">
+                <span id="notes-status-s2" class="font-bold text-emerald-600 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span>Auto-saved locally</span>
+                </span>
+                <button type="button" onclick="window.clearLessonNotes('2')" class="text-slate-400 hover:text-rose-600 underline cursor-pointer no-print ml-2 font-medium">Clear</button>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div class="notes-textarea-container">
+                <label class="block text-xs font-bold text-slate-800 mb-1 flex items-center justify-between">
+                  <span>1. Ramp Audit Findings & Driver Clarification:</span>
+                  <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saves on typing</span>
+                </label>
+                <textarea id="notes-roleplay-s2" oninput="window.saveLessonNote('2', 'roleplay', this.value)" rows="3" placeholder="e.g., Vehicle tug observed exceeding 20 km/h in lane B. Baggage handler explained time pressure for flight AF1234. Objective evidence: telematics record showed 27 km/h..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('2', 'roleplay') : ''}</textarea>
+                <div id="print-notes-roleplay-s2" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('2', 'roleplay') : '') || '[No audit notes recorded]'}</div>
+              </div>
+
+              <div class="notes-textarea-container">
+                <label class="block text-xs font-bold text-slate-800 mb-1 flex items-center justify-between">
+                  <span>2. Corrective Action Plan (CAP) & Occurrence Report Decision:</span>
+                  <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saves on typing</span>
+                </label>
+                <textarea id="notes-safety-s2" oninput="window.saveLessonNote('2', 'safety', this.value)" rows="3" placeholder="e.g., Level 2 finding issued. Handler must submit CAP within 14 days. Corrective actions: fit speed limiter at 20 km/h, conduct 10-minute toolbox talk on right-of-way, log occurrence under Regulation 376/2014..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('2', 'safety') : ''}</textarea>
+                <div id="print-notes-safety-s2" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('2', 'safety') : '') || '[No CAP decision recorded]'}</div>
+              </div>
             </div>
           </div>
         </div>
@@ -1037,6 +1117,46 @@
                   `).join('')}
                 </tbody>
               </table>
+            </div>
+          </div>
+
+          <!-- Activity 6: Operational Notes & Runway Works Decision -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs bg-slate-800">NOTES</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">Activity 6: Operational Notes & Runway Works Decision</h4>
+                  <p class="text-[11px] text-slate-500">Record your team's airline briefing points and Article 71 compensatory measures. Auto-saved in browser.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 text-[11px]">
+                <span id="notes-status-s3" class="font-bold text-emerald-600 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span>Auto-saved locally</span>
+                </span>
+                <button type="button" onclick="window.clearLessonNotes('3')" class="text-slate-400 hover:text-rose-600 underline cursor-pointer no-print ml-2 font-medium">Clear</button>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div class="notes-textarea-container">
+                <label class="block text-xs font-bold text-slate-800 mb-1 flex items-center justify-between">
+                  <span>1. Flight Operations & Airline Briefing Talking Points:</span>
+                  <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saves on typing</span>
+                </label>
+                <textarea id="notes-roleplay-s3" oninput="window.saveLessonNote('3', 'roleplay', this.value)" rows="3" placeholder="e.g., Runway 27 threshold temporarily displaced by 150m. Landing Distance Available (LDA) reduced to 1,950m. Take-Off Run Available (TORA) unchanged at 2,400m..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('3', 'roleplay') : ''}</textarea>
+                <div id="print-notes-roleplay-s3" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('3', 'roleplay') : '') || '[No flight ops briefing notes recorded]'}</div>
+              </div>
+
+              <div class="notes-textarea-container">
+                <label class="block text-xs font-bold text-slate-800 mb-1 flex items-center justify-between">
+                  <span>2. Article 71 Exemption & Compensatory Measures Decision:</span>
+                  <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saves on typing</span>
+                </label>
+                <textarea id="notes-safety-s3" oninput="window.saveLessonNote('3', 'safety', this.value)" rows="3" placeholder="e.g., Granted under Article 71 for 6 weeks. Compensatory measures: wet runway operations strictly prohibited, crosswind limit lowered to 15 kts, RFFS fire crew on standby at taxiway C during heavy arrivals..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('3', 'safety') : ''}</textarea>
+                <div id="print-notes-safety-s3" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('3', 'safety') : '') || '[No compensatory measures recorded]'}</div>
+              </div>
             </div>
           </div>
         </div>

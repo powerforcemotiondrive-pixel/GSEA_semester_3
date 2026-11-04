@@ -1087,6 +1087,48 @@
       }
     }
 
+    // --- In-Worksheet Digital Note-Taking & Storage Controller ---
+    window.__GSEA_NOTES_CACHE = window.__GSEA_NOTES_CACHE || {};
+
+    window.getLessonNote = function(sessionNum, noteKey) {
+      const fullKey = `gsea_s3_m1_s${sessionNum}_${noteKey}`;
+      try {
+        const val = localStorage.getItem(fullKey);
+        return val !== null ? val : (window.__GSEA_NOTES_CACHE[fullKey] || '');
+      } catch (e) {
+        return window.__GSEA_NOTES_CACHE[fullKey] || '';
+      }
+    };
+
+    window.saveLessonNote = function(sessionNum, noteKey, value) {
+      const fullKey = `gsea_s3_m1_s${sessionNum}_${noteKey}`;
+      try {
+        localStorage.setItem(fullKey, value);
+      } catch (e) {
+        window.__GSEA_NOTES_CACHE[fullKey] = value;
+      }
+      const printEl = document.getElementById(`print-notes-${noteKey}-s${sessionNum}`);
+      if (printEl) {
+        printEl.textContent = value || `[No ${noteKey} notes recorded]`;
+      }
+
+      const statusEl = document.getElementById(`notes-status-s${sessionNum}`);
+      if (statusEl) {
+        statusEl.innerHTML = `<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg><span>Auto-saved locally</span>`;
+      }
+    };
+
+    window.clearLessonNotes = function(sessionNum) {
+      if (!confirm('Clear your saved notes for this session?')) return;
+      ['roleplay', 'safety'].forEach(noteKey => {
+        window.saveLessonNote(sessionNum, noteKey, '');
+        const textarea = document.getElementById(`notes-${noteKey}-s${sessionNum}`);
+        if (textarea) textarea.value = '';
+        const printEl = document.getElementById(`print-notes-${noteKey}-s${sessionNum}`);
+        if (printEl) printEl.textContent = `[No ${noteKey} notes recorded]`;
+      });
+    };
+
     // --- Continuous Assessment Criteria Deep-Dive Data & Modal Controller ---
     const CRITERIA_DATA = {
       'Fluency': {
