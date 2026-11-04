@@ -1,0 +1,248 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 680" width="100%" height="100%" style="background-color: #0f172a; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;">
+  <defs>
+    <!-- Grid pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.75"/>
+    </pattern>
+    <!-- Runway holding line Pattern A -->
+    <pattern id="holdingLineA" width="8" height="12" patternUnits="userSpaceOnUse">
+      <line x1="1" y1="0" x2="1" y2="12" stroke="#eab308" stroke-width="1.5"/>
+      <line x1="4" y1="0" x2="4" y2="12" stroke="#eab308" stroke-width="1.5"/>
+      <line x1="7" y1="0" x2="7" y2="5" stroke="#eab308" stroke-width="1.5"/>
+      <line x1="7" y1="7" x2="7" y2="12" stroke="#eab308" stroke-width="1.5"/>
+    </pattern>
+    <!-- Hotspot glow filter -->
+    <filter id="glowRed" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Grid -->
+  <rect width="960" height="680" fill="#0b1120"/>
+  <rect width="960" height="680" fill="url(#grid)" opacity="0.6"/>
+
+  <!-- Chart Border -->
+  <rect x="16" y="16" width="928" height="648" fill="none" stroke="#334155" stroke-width="1.5" rx="8"/>
+
+  <!-- Header Banner -->
+  <rect x="16" y="16" width="928" height="64" fill="#0f172a" rx="8"/>
+  <line x1="16" y1="80" x2="944" y2="80" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="36" y="44" fill="#38bdf8" font-size="14" font-weight="bold" letter-spacing="2">LFMT / BLAGNAC-MONTPELLIER</text>
+  <text x="36" y="66" fill="#f8fafc" font-size="18" font-weight="900" letter-spacing="1">AERODROME GROUND MOVEMENT CHART (GMC / ADC)</text>
+
+  <rect x="670" y="26" width="254" height="44" fill="#1e293b" rx="6" stroke="#475569" stroke-width="1"/>
+  <text x="682" y="43" fill="#94a3b8" font-size="10" font-weight="bold">ELEV 495 FT • MAG VAR 1°E</text>
+  <text x="682" y="60" fill="#38bdf8" font-size="11" font-weight="bold">GND 121.750 • TWR 118.100 • ATIS 128.225</text>
+
+  <!-- Compass Rose (North Arrow) -->
+  <g transform="translate(870, 130)">
+    <circle cx="0" cy="0" r="26" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+    <polygon points="0,-22 6,0 0,4 -6,0" fill="#ef4444"/>
+    <polygon points="0,22 6,0 0,-4 -6,0" fill="#94a3b8"/>
+    <text x="-4" y="-26" fill="#ef4444" font-size="11" font-weight="900">N</text>
+    <text x="7" y="18" fill="#64748b" font-size="9">1°E</text>
+  </g>
+
+  <!-- Scale Bar -->
+  <g transform="translate(36, 620)">
+    <rect x="0" y="0" width="200" height="4" fill="#475569"/>
+    <rect x="0" y="0" width="50" height="4" fill="#38bdf8"/>
+    <rect x="100" y="0" width="50" height="4" fill="#38bdf8"/>
+    <text x="0" y="-6" fill="#94a3b8" font-size="9">0m</text>
+    <text x="45" y="-6" fill="#94a3b8" font-size="9">250m</text>
+    <text x="95" y="-6" fill="#94a3b8" font-size="9">500m</text>
+    <text x="190" y="-6" fill="#94a3b8" font-size="9">1,000m</text>
+    <text x="215" y="2" fill="#64748b" font-size="9" font-style="italic">SCALE 1 : 15,000</text>
+  </g>
+
+  <!-- Legend Box (Bottom Right) -->
+  <g transform="translate(670, 520)">
+    <rect x="0" y="0" width="254" height="124" fill="#0f172a" rx="6" stroke="#334155" stroke-width="1.2"/>
+    <text x="12" y="18" fill="#e2e8f0" font-size="10" font-weight="bold" letter-spacing="1">CHART LEGEND &amp; SYMBOLS</text>
+    
+    <line x1="12" y1="34" x2="36" y2="34" stroke="#f8fafc" stroke-width="4"/>
+    <text x="44" y="37" fill="#cbd5e1" font-size="10">Runway (Asphalt)</text>
+
+    <line x1="12" y1="52" x2="36" y2="52" stroke="#eab308" stroke-width="2.5"/>
+    <text x="44" y="55" fill="#cbd5e1" font-size="10">Taxiway &amp; Centerline</text>
+
+    <line x1="12" y1="70" x2="36" y2="70" stroke="#ef4444" stroke-width="3" stroke-dasharray="4,2"/>
+    <text x="44" y="73" fill="#cbd5e1" font-size="10">Pattern A Holding Line</text>
+
+    <circle cx="24" cy="88" r="6" fill="none" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="2,2"/>
+    <text x="44" y="91" fill="#ef4444" font-size="10" font-weight="bold">Hot Spot (HS) Area</text>
+
+    <rect x="14" y="102" width="18" height="12" fill="#0284c7" rx="2"/>
+    <text x="44" y="111" fill="#38bdf8" font-size="10">Stand / Gate Location</text>
+  </g>
+
+  <!-- ==================== AIRFIELD GEOMETRY ==================== -->
+  <!-- Orientation: Diagonal NW-SE (Heading approx 142° / 322°) -->
+
+  <!-- Blast Pads & Displaced Thresholds -->
+  <!-- 14L Blast Pad -->
+  <polygon points="120,130 152,154 134,178 102,154" fill="#334155" stroke="#475569" stroke-width="1"/>
+  <!-- 32R Blast Pad -->
+  <polygon points="768,616 800,640 782,664 750,640" fill="#334155" stroke="#475569" stroke-width="1"/>
+
+  <!-- ================= RUNWAY 14L / 32R (PRIMARY) ================= -->
+  <!-- Main paved body: 3,500m x 45m -->
+  <polygon points="135,142 815,652 785,675 105,165" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+  <!-- Runway Centerline -->
+  <line x1="120" y1="153" x2="800" y2="663" stroke="#f8fafc" stroke-width="2" stroke-dasharray="14,10"/>
+  <!-- Threshold markings 14L -->
+  <g transform="translate(142, 170) rotate(37)">
+    <line x1="-14" y1="-10" x2="14" y2="-10" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="-14" y1="-6" x2="14" y2="-6" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="-14" y1="-2" x2="14" y2="-2" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="-14" y1="2" x2="14" y2="2" stroke="#f8fafc" stroke-width="2"/>
+    <text x="-12" y="24" fill="#f8fafc" font-size="16" font-weight="900">14L</text>
+  </g>
+  <!-- Threshold markings 32R -->
+  <g transform="translate(775, 645) rotate(37)">
+    <line x1="-14" y1="-10" x2="14" y2="-10" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="-14" y1="-6" x2="14" y2="-6" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="-14" y1="-2" x2="14" y2="-2" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="-14" y1="2" x2="14" y2="2" stroke="#f8fafc" stroke-width="2"/>
+    <text x="-12" y="-18" fill="#f8fafc" font-size="16" font-weight="900">32R</text>
+  </g>
+
+  <!-- ================= RUNWAY 14R / 32L (SECONDARY) ================= -->
+  <!-- Parallel runway separated by 380m: 2,500m x 45m -->
+  <polygon points="50,250 540,617 520,632 30,265" fill="#1e293b" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="40" y1="257" x2="530" y2="624" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="10,8"/>
+  <g transform="translate(68, 280) rotate(37)">
+    <text x="-12" y="18" fill="#f8fafc" font-size="13" font-weight="900">14R</text>
+  </g>
+  <g transform="translate(500, 605) rotate(37)">
+    <text x="-12" y="-10" fill="#f8fafc" font-size="13" font-weight="900">32L</text>
+  </g>
+
+  <!-- ================= TAXIWAY ALPHA (PARALLEL TO 14L) ================= -->
+  <!-- Runs east of 14L from threshold to threshold -->
+  <polygon points="215,100 870,590 850,605 195,115" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+  <!-- Taxiway Alpha Centerline -->
+  <line x1="205" y1="107" x2="860" y2="597" stroke="#eab308" stroke-width="2"/>
+  
+  <!-- Taxiway Alpha Location Badges -->
+  <rect x="250" y="125" width="22" height="18" fill="#000" rx="3" stroke="#eab308" stroke-width="1.2"/>
+  <text x="256" y="138" fill="#eab308" font-size="11" font-weight="bold">A</text>
+
+  <rect x="520" y="328" width="22" height="18" fill="#000" rx="3" stroke="#eab308" stroke-width="1.2"/>
+  <text x="526" y="341" fill="#eab308" font-size="11" font-weight="bold">A</text>
+
+  <rect x="760" y="508" width="22" height="18" fill="#000" rx="3" stroke="#eab308" stroke-width="1.2"/>
+  <text x="766" y="521" fill="#eab308" font-size="11" font-weight="bold">A</text>
+
+  <!-- ================= HIGH-SPEED EXIT BRAVO (30 DEG ANGLE) ================= -->
+  <path d="M 440 370 Q 460 360 500 330" fill="none" stroke="#1e293b" stroke-width="24"/>
+  <path d="M 440 370 Q 460 360 500 330" fill="none" stroke="#eab308" stroke-width="2"/>
+  <rect x="465" y="336" width="22" height="18" fill="#000" rx="3" stroke="#eab308" stroke-width="1.2"/>
+  <text x="472" y="349" fill="#eab308" font-size="11" font-weight="bold">B</text>
+
+  <!-- ================= HIGH-SPEED EXIT CHARLIE (30 DEG ANGLE) ================= -->
+  <path d="M 580 475 Q 600 465 640 435" fill="none" stroke="#1e293b" stroke-width="24"/>
+  <path d="M 580 475 Q 600 465 640 435" fill="none" stroke="#eab308" stroke-width="2"/>
+  <rect x="605" y="442" width="22" height="18" fill="#000" rx="3" stroke="#eab308" stroke-width="1.2"/>
+  <text x="612" y="455" fill="#eab308" font-size="11" font-weight="bold">C</text>
+
+  <!-- ================= CROSSING TAXIWAY DELTA ================= -->
+  <!-- Connects Apron North across Runway 14R to Taxiway Alpha -->
+  <polygon points="120,440 450,200 465,220 135,460" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+  <line x1="127" y1="450" x2="457" y2="210" stroke="#eab308" stroke-width="2"/>
+  
+  <rect x="235" y="355" width="22" height="18" fill="#000" rx="3" stroke="#eab308" stroke-width="1.2"/>
+  <text x="241" y="368" fill="#eab308" font-size="11" font-weight="bold">D</text>
+
+  <!-- ================= HOLDING POINT D1 (Pattern A on Delta) ================= -->
+  <!-- Before crossing Runway 14R -->
+  <g transform="translate(190, 402) rotate(-37)">
+    <line x1="-16" y1="-2" x2="16" y2="-2" stroke="#ef4444" stroke-width="3"/>
+    <line x1="-16" y1="2" x2="16" y2="2" stroke="#eab308" stroke-width="1.5" stroke-dasharray="4,2"/>
+    <!-- Stop Bar Red Lights -->
+    <circle cx="-12" cy="-6" r="2" fill="#ef4444"/>
+    <circle cx="-4" cy="-6" r="2" fill="#ef4444"/>
+    <circle cx="4" cy="-6" r="2" fill="#ef4444"/>
+    <circle cx="12" cy="-6" r="2" fill="#ef4444"/>
+    <rect x="22" y="-9" width="28" height="16" fill="#b91c1c" rx="2" stroke="#fff" stroke-width="0.8"/>
+    <text x="25" y="3" fill="#fff" font-size="9" font-weight="bold">14R-D1</text>
+  </g>
+
+  <!-- ================= HOLDING POINT A1 (At Runway 14L Threshold) ================= -->
+  <g transform="translate(178, 148) rotate(-37)">
+    <line x1="-16" y1="-2" x2="16" y2="-2" stroke="#ef4444" stroke-width="3"/>
+    <line x1="-16" y1="2" x2="16" y2="2" stroke="#eab308" stroke-width="1.5" stroke-dasharray="4,2"/>
+    <rect x="22" y="-9" width="28" height="16" fill="#b91c1c" rx="2" stroke="#fff" stroke-width="0.8"/>
+    <text x="25" y="3" fill="#fff" font-size="9" font-weight="bold">14L-A1</text>
+  </g>
+
+  <!-- ================= APRON NORTH & TERMINAL ================= -->
+  <!-- Passenger Terminal Ramp -->
+  <polygon points="40,380 180,280 260,390 120,490" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+  <rect x="40" y="380" width="130" height="25" fill="#0f172a" rx="4" stroke="#475569" stroke-width="1"/>
+  <text x="48" y="396" fill="#38bdf8" font-size="10" font-weight="bold">MAIN TERMINAL 1</text>
+
+  <!-- Stands on Apron North -->
+  <!-- Stand 12 -->
+  <circle cx="140" cy="340" r="10" fill="#0284c7" stroke="#38bdf8" stroke-width="1"/>
+  <text x="134" y="343" fill="#fff" font-size="9" font-weight="bold">12</text>
+  <!-- Stand 14 (The scenario stand!) -->
+  <g transform="translate(175, 365)">
+    <circle cx="0" cy="0" r="13" fill="#0369a1" stroke="#38bdf8" stroke-width="2"/>
+    <text x="-7" y="4" fill="#fff" font-size="11" font-weight="900">14</text>
+    <!-- Little plane icon at Stand 14 -->
+    <path d="M 0,-8 L 2,-2 L 7,1 L 2,2 L 2,6 L 4,8 L 0,7 L -4,8 L -2,6 L -2,2 L -7,1 L -2,-2 Z" fill="#38bdf8"/>
+    <!-- Callsign tag -->
+    <rect x="18" y="-9" width="56" height="16" fill="#0f172a" rx="3" stroke="#38bdf8" stroke-width="1"/>
+    <text x="22" y="3" fill="#38bdf8" font-size="9" font-weight="bold">AFR 412</text>
+  </g>
+  <!-- Stand 16 -->
+  <circle cx="210" cy="390" r="10" fill="#0284c7" stroke="#38bdf8" stroke-width="1"/>
+  <text x="204" y="393" fill="#fff" font-size="9" font-weight="bold">16</text>
+
+  <!-- ================= CARGO RAMP ================= -->
+  <!-- Situated west, opposite terminal -->
+  <polygon points="10,180 70,135 120,200 60,245" fill="#1e293b" stroke="#64748b" stroke-width="1"/>
+  <text x="25" y="210" fill="#94a3b8" font-size="9" font-weight="bold">CARGO RAMP</text>
+
+  <!-- ================= DE-ICING PAD ================= -->
+  <!-- Positioned between Taxiway Bravo and Maintenance Hangar -->
+  <polygon points="520,260 580,215 620,265 560,310" fill="#1e293b" stroke="#38bdf8" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="535" y="265" fill="#38bdf8" font-size="9" font-weight="bold">DE-ICING PAD</text>
+  <text x="542" y="278" fill="#94a3b8" font-size="8">(BAYS 1 &amp; 2)</text>
+
+  <!-- ================= AIRPORT FIRE & RESCUE STATION ================= -->
+  <rect x="235" y="270" width="50" height="30" fill="#991b1b" rx="4" stroke="#f87171" stroke-width="1"/>
+  <text x="242" y="284" fill="#fff" font-size="8" font-weight="bold">FIRE &amp; RESCUE</text>
+  <text x="252" y="294" fill="#fca5a5" font-size="7">STATION</text>
+
+  <!-- ================= HOT SPOT 1 (HS1) ================= -->
+  <!-- Complex intersection of Taxiway Alpha, Delta and taxilane -->
+  <g transform="translate(435, 230)">
+    <ellipse cx="0" cy="0" rx="34" ry="24" fill="#ef4444" fill-opacity="0.15" stroke="#ef4444" stroke-width="2" stroke-dasharray="4,3" filter="url(#glowRed)"/>
+    <!-- Warning Callout Box -->
+    <rect x="15" y="-36" width="165" height="34" fill="#1e293b" rx="4" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="24" y="-22" fill="#ef4444" font-size="10" font-weight="900">HOT SPOT 1 (HS1)</text>
+    <text x="24" y="-9" fill="#f8fafc" font-size="8">Alpha / Delta Intersection</text>
+  </g>
+
+  <!-- ================= HOT SPOT 2 (HS2) ================= -->
+  <!-- Holding Point D1 Runway 14R Crossing -->
+  <g transform="translate(195, 410)">
+    <ellipse cx="0" cy="0" rx="30" ry="20" fill="#ef4444" fill-opacity="0.15" stroke="#ef4444" stroke-width="2" stroke-dasharray="4,3"/>
+    <!-- Warning Callout Box -->
+    <rect x="-160" y="15" width="155" height="34" fill="#1e293b" rx="4" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="-152" y="29" fill="#ef4444" font-size="10" font-weight="900">HOT SPOT 2 (HS2)</text>
+    <text x="-152" y="42" fill="#f8fafc" font-size="8">Runway 14R Holding Point D1</text>
+  </g>
+
+  <!-- ================= ROLE-PLAY TAXI ROUTE OVERLAY (DASHED CYAN) ================= -->
+  <!-- Route: Stand 14 -> Delta -> cross 14R -> Alpha -> Holding Point A1 -->
+  <path d="M 175 365 L 205 385 L 360 270 L 450 205 L 380 150 L 195 130" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="6,4" opacity="0.85"/>
+  <polygon points="195,130 205,125 203,135" fill="#38bdf8"/>
+  <rect x="290" y="240" width="90" height="16" fill="#0f172a" rx="3" stroke="#38bdf8" stroke-width="1"/>
+  <text x="296" y="252" fill="#38bdf8" font-size="8" font-weight="bold">TAXI ROUTE AFR 412</text>
+
+</svg>

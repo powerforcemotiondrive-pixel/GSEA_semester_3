@@ -4551,6 +4551,7 @@
       const opening = content.openingSession || {};
       const chart = content.chartExtract || {};
       const clinic = content.grammarClinic || {};
+      const game = content.communicativeGame || {};
       const roleplay = content.roleplaySimulation || {};
       const safety = content.safetyCheck || {};
 
@@ -4690,43 +4691,83 @@
             </div>
           </div>
 
-          <!-- Activity 2: Reading the Chart Extract -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+          <!-- Activity 2: Visual Chart & Description Clinic -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-5">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">15-45m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">15-40m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${chart.title || 'Activity 2: Reading the Chart Extract (30 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${chart.title || 'Activity 2: Visual Chart & Description Clinic (25 mins)'}</h4>
                   <p class="text-[11px] text-slate-500">${chart.summary || ''}</p>
                 </div>
               </div>
-              <span class="bg-blue-100 text-blue-800 text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">${chart.badge || 'CHART EXTRACT'}</span>
+              <span class="bg-blue-100 text-blue-800 text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">${chart.badge || 'AERONAUTICAL CHART'}</span>
             </div>
 
-            <!-- Chart Terminal Header -->
-            <div class="p-3.5 bg-slate-900 text-white rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-              <div class="flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span class="text-xs font-mono font-bold tracking-wide uppercase">${chart.callsign || 'AUTHENTIC SIMULATION'}</span>
-              </div>
-              <span class="text-[10px] font-mono text-slate-300">ICAO / EASA STANDARD SPECIFICATION</span>
-            </div>
-
-            <!-- Structured Extract Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              ${(chart.sections || []).map(sec => `
-                <div class="p-4 bg-slate-50 border border-slate-200 rounded-lg space-y-2">
-                  <h5 class="text-xs font-black text-slate-800 border-b border-slate-200 pb-1.5">${sec.heading}</h5>
-                  <ul class="space-y-1.5 text-xs text-slate-700">
-                    ${sec.details.map(d => `
-                      <li class="flex items-start gap-2">
-                        <span class="text-blue-600 font-bold mt-0.5">&bull;</span>
-                        <span class="leading-relaxed">${d}</span>
-                      </li>
-                    `).join('')}
-                  </ul>
+            <!-- Visual Chart Container -->
+            <div class="bg-slate-950 rounded-xl overflow-hidden border border-slate-800 shadow-md">
+              <div class="p-3 bg-slate-900 border-b border-slate-800 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span class="text-xs font-mono font-bold text-white tracking-wide uppercase">${chart.callsign || 'LFMT SPECIFICATION'}</span>
                 </div>
-              `).join('')}
+                <div class="flex items-center gap-2">
+                  <a href="${chart.visualChart}" target="_blank" rel="noopener noreferrer" class="no-print inline-flex items-center gap-1.5 px-2.5 py-1 text-[11px] font-bold text-slate-200 bg-slate-800 hover:bg-slate-700 rounded border border-slate-600 transition-colors">
+                    <svg class="w-3.5 h-3.5 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    <span>Inspect / Open Full Chart</span>
+                  </a>
+                </div>
+              </div>
+              <div class="p-2 sm:p-4 bg-slate-950 flex items-center justify-center">
+                <img src="${chart.visualChart}" alt="${chart.badge}" class="w-full max-w-4xl h-auto rounded shadow-sm border border-slate-800/80 cursor-pointer transition-transform hover:scale-[1.005]" onclick="window.open('${chart.visualChart}', '_blank')" title="Click to view full size">
+              </div>
+            </div>
+
+            <!-- Speaking Skill Clinic (Map / Flight Path / Profile Description) -->
+            
+            <!-- Map Description Skill Box -->
+            <div class="p-4 bg-indigo-50/60 border border-indigo-200 rounded-xl space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
+                  <h5 class="text-xs font-black uppercase tracking-wider text-indigo-900">${chart.mapDescriptionClinic?.title || 'Map Orientation Skill'}</h5>
+                </div>
+                <span class="text-[10px] font-bold text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded">Spoken Fluency</span>
+              </div>
+              <p class="text-xs text-slate-700 leading-relaxed">${chart.mapDescriptionClinic?.summary || ''}</p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                ${(chart.mapDescriptionClinic?.phrases || []).map(p => `
+                  <div class="p-2.5 bg-white border border-indigo-100 rounded-lg text-xs space-y-0.5">
+                    <span class="text-[10px] font-bold text-indigo-600 uppercase">${p.label}:</span>
+                    <p class="text-slate-800 italic text-[11px]">&ldquo;${p.phrase}&rdquo;</p>
+                  </div>
+                `).join('')}
+              </div>
+              <div class="p-2.5 bg-white border border-indigo-200 rounded-lg text-[11px] text-indigo-900 font-bold flex items-center gap-2">
+                <span>⏱️</span>
+                <span>${chart.mapDescriptionClinic?.challenge || ''}</span>
+              </div>
+            </div>
+
+
+            <!-- Structured Technical Specifications -->
+            <div class="space-y-2 pt-2 border-t border-slate-100">
+              <h5 class="text-xs font-black uppercase tracking-wider text-slate-700">Chart Operational Notes &amp; Data:</h5>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                ${(chart.sections || []).map(sec => `
+                  <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-lg space-y-1.5">
+                    <h6 class="text-xs font-black text-slate-800 border-b border-slate-200 pb-1">${sec.heading}</h6>
+                    <ul class="space-y-1 text-xs text-slate-700">
+                      ${sec.details.map(d => `
+                        <li class="flex items-start gap-1.5">
+                          <span class="text-blue-600 font-bold mt-0.5">&bull;</span>
+                          <span class="leading-relaxed text-[11px]">${d}</span>
+                        </li>
+                      `).join('')}
+                    </ul>
+                  </div>
+                `).join('')}
+              </div>
             </div>
           </div>
 
@@ -4734,7 +4775,7 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">45-70m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">40-65m</span>
                 <div>
                   <h4 class="text-sm sm:text-base font-black text-slate-900">${clinic.title || 'Activity 3: Language Clinic (25 mins)'}</h4>
                   <p class="text-[11px] text-slate-500">${clinic.summary || ''}</p>
@@ -4778,13 +4819,69 @@
             </div>
           </div>
 
-          <!-- Activity 4: Interactive Spoken Role-Play -->
+          <!-- Activity 4: Distinct Communicative Game -->
+          
+          <!-- Activity 4: Blind Taxi Navigator Game -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">70-105m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">65-90m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${roleplay.title || 'Activity 4: Spoken Role-Play (35 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${game.title || 'Activity 4: 🎮 The Blind Taxi Navigator Game (25 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${game.summary || ''}</p>
+                </div>
+              </div>
+              <span class="bg-amber-100 text-amber-900 text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">INFORMATION-GAP GAME</span>
+            </div>
+
+            <!-- Game Instructions -->
+            <div class="p-3.5 bg-amber-50/70 border border-amber-200 rounded-lg text-xs space-y-1.5">
+              <span class="font-bold text-amber-900 uppercase text-[10px] tracking-wider">How to Play:</span>
+              <ul class="list-disc pl-4 space-y-1 text-slate-700 text-[11px]">
+                ${(game.instructions || []).map(i => `<li>${i}</li>`).join('')}
+              </ul>
+            </div>
+
+            <!-- 4 Secret Missions -->
+            <div class="space-y-2">
+              <h5 class="text-xs font-black uppercase tracking-wider text-slate-700">Choose a Secret Mission (Student A Only):</h5>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                ${(game.missions || []).map(m => `
+                  <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-1.5">
+                    <div class="flex items-center justify-between">
+                      <span class="text-xs font-bold text-slate-900">${m.mission}</span>
+                    </div>
+                    <button type="button" onclick="this.nextElementSibling.classList.toggle('hidden')" class="text-[10px] font-bold text-blue-600 hover:underline cursor-pointer">
+                      Show Route Guidance Hints
+                    </button>
+                    <div class="hidden text-[11px] text-slate-600 bg-white p-2 rounded border border-slate-200 italic">
+                      Hints: ${m.hints}
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
+            <!-- Sample Game Dialogue -->
+            <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-2">
+              <div class="flex items-center justify-between">
+                <h5 class="text-xs font-bold text-slate-800">Model Spoken Game Dialogue:</h5>
+                <span class="text-[10px] font-medium text-slate-500">Notice clear prepositions of place and distances</span>
+              </div>
+              <div class="p-2.5 bg-white rounded border border-slate-200 space-y-1 text-[11px] font-mono text-slate-700">
+                ${(game.sampleDialogue || []).map(d => `<p>${d}</p>`).join('')}
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Activity 5: Spoken Role-Play Simulation -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">90-105m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${roleplay.title || 'Activity 5: Spoken Role-Play (20 mins)'}</h4>
                   <p class="text-[11px] text-slate-500">${roleplay.summary || ''}</p>
                 </div>
               </div>
@@ -4794,7 +4891,7 @@
             <!-- Situation Brief -->
             <div class="p-3.5 bg-emerald-50/70 border border-emerald-200 rounded-lg text-xs space-y-1">
               <span class="font-bold text-emerald-900 uppercase text-[10px] tracking-wider">Scenario Situation Brief:</span>
-              <p class="text-slate-800 leading-relaxed">${roleplay.situation || ''}</p>
+              <p class="text-slate-800 leading-relaxed whitespace-pre-line">${roleplay.situation || ''}</p>
             </div>
 
             <!-- Role Cards -->
@@ -4831,13 +4928,13 @@
             </div>
           </div>
 
-          <!-- Activity 5: Safety Check -->
+          <!-- Activity 6: Safety Check -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">105-120m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 5: Safety Check (15 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 6: Safety Check (15 mins)'}</h4>
                   <p class="text-[11px] text-slate-500">${safety.summary || ''}</p>
                 </div>
               </div>
@@ -4857,14 +4954,14 @@
             </div>
           </div>
 
-          <!-- Activity 6: Operational Notes -->
+          <!-- Activity 7: Operational Notes -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs bg-slate-800">NOTES</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">Activity 6: Operational Notes &amp; Decisions</h4>
-                  <p class="text-[11px] text-slate-500">Record your team's role-play conclusions and safety decisions. Auto-saved in browser local storage.</p>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">Activity 7: Operational Notes &amp; Game Records</h4>
+                  <p class="text-[11px] text-slate-500">Record your team's role-play conclusions and game decisions. Auto-saved in browser local storage.</p>
                 </div>
               </div>
               <div class="flex items-center gap-2 text-[11px]">
@@ -4879,7 +4976,7 @@
             <div class="space-y-4">
               <div class="notes-textarea-container">
                 <label class="block text-xs font-bold text-slate-800 mb-1 flex items-center justify-between">
-                  <span>1. Taxi Clearance & Runway Crossing Routing Notes:</span>
+                  <span>1. Blind Taxi Navigator & Taxi Clearance Routing Notes:</span>
                   <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saves on typing</span>
                 </label>
                 <textarea id="notes-roleplay-s4" oninput="window.saveLessonNote('4', 'roleplay', this.value)" rows="3" placeholder="e.g., Assigned routing for AFR 412: Stand 14 via Taxiway Delta, hold short of Runway 14R at holding point D1. Crossed 14R upon clearance, joined Taxiway Alpha to holding point A1..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('4', 'roleplay') : ''}</textarea>
@@ -4908,6 +5005,7 @@
       const opening = content.openingSession || {};
       const chart = content.chartExtract || {};
       const clinic = content.grammarClinic || {};
+      const game = content.communicativeGame || {};
       const roleplay = content.roleplaySimulation || {};
       const safety = content.safetyCheck || {};
 
@@ -5047,43 +5145,83 @@
             </div>
           </div>
 
-          <!-- Activity 2: Reading the Chart Extract -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+          <!-- Activity 2: Visual Chart & Description Clinic -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-5">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">15-45m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">15-40m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${chart.title || 'Activity 2: Reading the Chart Extract (30 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${chart.title || 'Activity 2: Visual Chart & Description Clinic (25 mins)'}</h4>
                   <p class="text-[11px] text-slate-500">${chart.summary || ''}</p>
                 </div>
               </div>
-              <span class="bg-blue-100 text-blue-800 text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">${chart.badge || 'CHART EXTRACT'}</span>
+              <span class="bg-blue-100 text-blue-800 text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">${chart.badge || 'AERONAUTICAL CHART'}</span>
             </div>
 
-            <!-- Chart Terminal Header -->
-            <div class="p-3.5 bg-slate-900 text-white rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-              <div class="flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span class="text-xs font-mono font-bold tracking-wide uppercase">${chart.callsign || 'AUTHENTIC SIMULATION'}</span>
-              </div>
-              <span class="text-[10px] font-mono text-slate-300">ICAO / EASA STANDARD SPECIFICATION</span>
-            </div>
-
-            <!-- Structured Extract Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              ${(chart.sections || []).map(sec => `
-                <div class="p-4 bg-slate-50 border border-slate-200 rounded-lg space-y-2">
-                  <h5 class="text-xs font-black text-slate-800 border-b border-slate-200 pb-1.5">${sec.heading}</h5>
-                  <ul class="space-y-1.5 text-xs text-slate-700">
-                    ${sec.details.map(d => `
-                      <li class="flex items-start gap-2">
-                        <span class="text-blue-600 font-bold mt-0.5">&bull;</span>
-                        <span class="leading-relaxed">${d}</span>
-                      </li>
-                    `).join('')}
-                  </ul>
+            <!-- Visual Chart Container -->
+            <div class="bg-slate-950 rounded-xl overflow-hidden border border-slate-800 shadow-md">
+              <div class="p-3 bg-slate-900 border-b border-slate-800 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span class="text-xs font-mono font-bold text-white tracking-wide uppercase">${chart.callsign || 'LFMT SPECIFICATION'}</span>
                 </div>
-              `).join('')}
+                <div class="flex items-center gap-2">
+                  <a href="${chart.visualChart}" target="_blank" rel="noopener noreferrer" class="no-print inline-flex items-center gap-1.5 px-2.5 py-1 text-[11px] font-bold text-slate-200 bg-slate-800 hover:bg-slate-700 rounded border border-slate-600 transition-colors">
+                    <svg class="w-3.5 h-3.5 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    <span>Inspect / Open Full Chart</span>
+                  </a>
+                </div>
+              </div>
+              <div class="p-2 sm:p-4 bg-slate-950 flex items-center justify-center">
+                <img src="${chart.visualChart}" alt="${chart.badge}" class="w-full max-w-4xl h-auto rounded shadow-sm border border-slate-800/80 cursor-pointer transition-transform hover:scale-[1.005]" onclick="window.open('${chart.visualChart}', '_blank')" title="Click to view full size">
+              </div>
+            </div>
+
+            <!-- Speaking Skill Clinic (Map / Flight Path / Profile Description) -->
+            
+            <!-- Flight Path Narration Skill Box -->
+            <div class="p-4 bg-purple-50/60 border border-purple-200 rounded-xl space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-purple-600"></span>
+                  <h5 class="text-xs font-black uppercase tracking-wider text-purple-900">${chart.flightPathClinic?.title || 'Flight Path Narration Skill'}</h5>
+                </div>
+                <span class="text-[10px] font-bold text-purple-700 bg-purple-100 px-2 py-0.5 rounded">Sequential Speaking</span>
+              </div>
+              <p class="text-xs text-slate-700 leading-relaxed">${chart.flightPathClinic?.summary || ''}</p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                ${(chart.flightPathClinic?.phrases || []).map(p => `
+                  <div class="p-2.5 bg-white border border-purple-100 rounded-lg text-xs space-y-0.5">
+                    <span class="text-[10px] font-bold text-purple-600 uppercase">${p.label}:</span>
+                    <p class="text-slate-800 italic text-[11px]">&ldquo;${p.phrase}&rdquo;</p>
+                  </div>
+                `).join('')}
+              </div>
+              <div class="p-2.5 bg-white border border-purple-200 rounded-lg text-[11px] text-purple-900 font-bold flex items-center gap-2">
+                <span>⏱️</span>
+                <span>${chart.flightPathClinic?.challenge || ''}</span>
+              </div>
+            </div>
+
+
+            <!-- Structured Technical Specifications -->
+            <div class="space-y-2 pt-2 border-t border-slate-100">
+              <h5 class="text-xs font-black uppercase tracking-wider text-slate-700">Chart Operational Notes &amp; Data:</h5>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                ${(chart.sections || []).map(sec => `
+                  <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-lg space-y-1.5">
+                    <h6 class="text-xs font-black text-slate-800 border-b border-slate-200 pb-1">${sec.heading}</h6>
+                    <ul class="space-y-1 text-xs text-slate-700">
+                      ${sec.details.map(d => `
+                        <li class="flex items-start gap-1.5">
+                          <span class="text-blue-600 font-bold mt-0.5">&bull;</span>
+                          <span class="leading-relaxed text-[11px]">${d}</span>
+                        </li>
+                      `).join('')}
+                    </ul>
+                  </div>
+                `).join('')}
+              </div>
             </div>
           </div>
 
@@ -5091,7 +5229,7 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">45-70m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">40-65m</span>
                 <div>
                   <h4 class="text-sm sm:text-base font-black text-slate-900">${clinic.title || 'Activity 3: Language Clinic (25 mins)'}</h4>
                   <p class="text-[11px] text-slate-500">${clinic.summary || ''}</p>
@@ -5135,13 +5273,64 @@
             </div>
           </div>
 
-          <!-- Activity 4: Interactive Spoken Role-Play -->
+          <!-- Activity 4: Distinct Communicative Game -->
+          
+          <!-- Activity 4: Airspace Detective Game -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">70-105m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">65-90m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${roleplay.title || 'Activity 4: Spoken Role-Play (35 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${game.title || 'Activity 4: 🔍 Airspace Detective: Spot the Route Trap (25 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${game.summary || ''}</p>
+                </div>
+              </div>
+              <span class="bg-indigo-100 text-indigo-900 text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">LOGIC &amp; SPEAKING GAME</span>
+            </div>
+
+            <!-- Game Instructions -->
+            <div class="p-3.5 bg-indigo-50/70 border border-indigo-200 rounded-lg text-xs space-y-1.5">
+              <span class="font-bold text-indigo-900 uppercase text-[10px] tracking-wider">How to Play:</span>
+              <ul class="list-disc pl-4 space-y-1 text-slate-700 text-[11px]">
+                ${(game.instructions || []).map(i => `<li>${i}</li>`).join('')}
+              </ul>
+            </div>
+
+            <!-- 4 Clearance Cases -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              ${(game.cases || []).map(c => `
+                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-lg space-y-2 flex flex-col justify-between">
+                  <div>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase">${c.id}</span>
+                    <p class="text-xs font-mono font-bold text-slate-800 mt-1 leading-relaxed">&ldquo;${c.clearance}&rdquo;</p>
+                  </div>
+                  <div class="pt-2 border-t border-slate-200">
+                    <button type="button" onclick="this.nextElementSibling.classList.toggle('hidden')" class="text-[10px] font-bold text-blue-600 hover:underline cursor-pointer">
+                      Reveal Detective Report
+                    </button>
+                    <div class="hidden mt-1 p-2 bg-white rounded border border-slate-200 text-[11px]">
+                      <span class="font-bold ${c.status.includes('TRAP') ? 'text-rose-600' : 'text-emerald-600'}">${c.status}:</span>
+                      <p class="text-slate-600 mt-0.5 leading-relaxed">${c.note}</p>
+                    </div>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+
+            <div class="p-3 bg-amber-50 border border-amber-200 rounded-lg text-xs text-amber-900 font-bold flex items-center gap-2">
+              <span>🎤</span>
+              <span>${game.challengeQuestion || ''}</span>
+            </div>
+          </div>
+
+
+          <!-- Activity 5: Spoken Role-Play Simulation -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">90-105m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${roleplay.title || 'Activity 5: Spoken Role-Play (20 mins)'}</h4>
                   <p class="text-[11px] text-slate-500">${roleplay.summary || ''}</p>
                 </div>
               </div>
@@ -5151,7 +5340,7 @@
             <!-- Situation Brief -->
             <div class="p-3.5 bg-emerald-50/70 border border-emerald-200 rounded-lg text-xs space-y-1">
               <span class="font-bold text-emerald-900 uppercase text-[10px] tracking-wider">Scenario Situation Brief:</span>
-              <p class="text-slate-800 leading-relaxed">${roleplay.situation || ''}</p>
+              <p class="text-slate-800 leading-relaxed whitespace-pre-line">${roleplay.situation || ''}</p>
             </div>
 
             <!-- Role Cards -->
@@ -5188,13 +5377,13 @@
             </div>
           </div>
 
-          <!-- Activity 5: Safety Check -->
+          <!-- Activity 6: Safety Check -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">105-120m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 5: Safety Check (15 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 6: Safety Check (15 mins)'}</h4>
                   <p class="text-[11px] text-slate-500">${safety.summary || ''}</p>
                 </div>
               </div>
@@ -5214,14 +5403,14 @@
             </div>
           </div>
 
-          <!-- Activity 6: Operational Notes -->
+          <!-- Activity 7: Operational Notes -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs bg-slate-800">NOTES</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">Activity 6: Operational Notes &amp; Decisions</h4>
-                  <p class="text-[11px] text-slate-500">Record your team's role-play conclusions and safety decisions. Auto-saved in browser local storage.</p>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">Activity 7: Operational Notes &amp; Game Records</h4>
+                  <p class="text-[11px] text-slate-500">Record your team's role-play conclusions and game decisions. Auto-saved in browser local storage.</p>
                 </div>
               </div>
               <div class="flex items-center gap-2 text-[11px]">
@@ -5236,10 +5425,10 @@
             <div class="space-y-4">
               <div class="notes-textarea-container">
                 <label class="block text-xs font-bold text-slate-800 mb-1 flex items-center justify-between">
-                  <span>1. Departure Briefing & Storm Diversion Routing Notes:</span>
+                  <span>1. Airspace Detective Findings & Departure Routing Notes:</span>
                   <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saves on typing</span>
                 </label>
-                <textarea id="notes-roleplay-s5" oninput="window.saveLessonNote('5', 'roleplay', this.value)" rows="3" placeholder="e.g., GAILLAC 4A departure briefed: Climb runway heading 142° to 3,000 ft, turn left direct GAI VOR. Weather avoidance: Requested 20° left heading at 4,500 ft to clear CB cell; approved by ATC to FL090..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('5', 'roleplay') : ''}</textarea>
+                <textarea id="notes-roleplay-s5" oninput="window.saveLessonNote('5', 'roleplay', this.value)" rows="3" placeholder="e.g., GAILLAC 4A departure briefed: Climb runway heading 142° to 3,000 ft, turn left direct GAI VOR. Caught Case Bravo trap: turn at 1,200 ft violates noise abatement. Weather avoidance: Requested 20° left heading at 4,500 ft to clear CB cell..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('5', 'roleplay') : ''}</textarea>
                 <div id="print-notes-roleplay-s5" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('5', 'roleplay') : '') || '[No simulation notes recorded]'}</div>
               </div>
 
@@ -5265,6 +5454,7 @@
       const opening = content.openingSession || {};
       const chart = content.chartExtract || {};
       const clinic = content.grammarClinic || {};
+      const game = content.communicativeGame || {};
       const roleplay = content.roleplaySimulation || {};
       const safety = content.safetyCheck || {};
 
@@ -5404,43 +5594,83 @@
             </div>
           </div>
 
-          <!-- Activity 2: Reading the Chart Extract -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+          <!-- Activity 2: Visual Chart & Description Clinic -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-5">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">15-45m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">15-40m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${chart.title || 'Activity 2: Reading the Chart Extract (30 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${chart.title || 'Activity 2: Visual Chart & Description Clinic (25 mins)'}</h4>
                   <p class="text-[11px] text-slate-500">${chart.summary || ''}</p>
                 </div>
               </div>
-              <span class="bg-blue-100 text-blue-800 text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">${chart.badge || 'CHART EXTRACT'}</span>
+              <span class="bg-blue-100 text-blue-800 text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">${chart.badge || 'AERONAUTICAL CHART'}</span>
             </div>
 
-            <!-- Chart Terminal Header -->
-            <div class="p-3.5 bg-slate-900 text-white rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-              <div class="flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span class="text-xs font-mono font-bold tracking-wide uppercase">${chart.callsign || 'AUTHENTIC SIMULATION'}</span>
-              </div>
-              <span class="text-[10px] font-mono text-slate-300">ICAO / EASA STANDARD SPECIFICATION</span>
-            </div>
-
-            <!-- Structured Extract Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              ${(chart.sections || []).map(sec => `
-                <div class="p-4 bg-slate-50 border border-slate-200 rounded-lg space-y-2">
-                  <h5 class="text-xs font-black text-slate-800 border-b border-slate-200 pb-1.5">${sec.heading}</h5>
-                  <ul class="space-y-1.5 text-xs text-slate-700">
-                    ${sec.details.map(d => `
-                      <li class="flex items-start gap-2">
-                        <span class="text-blue-600 font-bold mt-0.5">&bull;</span>
-                        <span class="leading-relaxed">${d}</span>
-                      </li>
-                    `).join('')}
-                  </ul>
+            <!-- Visual Chart Container -->
+            <div class="bg-slate-950 rounded-xl overflow-hidden border border-slate-800 shadow-md">
+              <div class="p-3 bg-slate-900 border-b border-slate-800 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span class="text-xs font-mono font-bold text-white tracking-wide uppercase">${chart.callsign || 'LFMT SPECIFICATION'}</span>
                 </div>
-              `).join('')}
+                <div class="flex items-center gap-2">
+                  <a href="${chart.visualChart}" target="_blank" rel="noopener noreferrer" class="no-print inline-flex items-center gap-1.5 px-2.5 py-1 text-[11px] font-bold text-slate-200 bg-slate-800 hover:bg-slate-700 rounded border border-slate-600 transition-colors">
+                    <svg class="w-3.5 h-3.5 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    <span>Inspect / Open Full Chart</span>
+                  </a>
+                </div>
+              </div>
+              <div class="p-2 sm:p-4 bg-slate-950 flex items-center justify-center">
+                <img src="${chart.visualChart}" alt="${chart.badge}" class="w-full max-w-4xl h-auto rounded shadow-sm border border-slate-800/80 cursor-pointer transition-transform hover:scale-[1.005]" onclick="window.open('${chart.visualChart}', '_blank')" title="Click to view full size">
+              </div>
+            </div>
+
+            <!-- Speaking Skill Clinic (Map / Flight Path / Profile Description) -->
+            
+            <!-- Profile View Skill Box -->
+            <div class="p-4 bg-cyan-50/60 border border-cyan-200 rounded-xl space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-cyan-600"></span>
+                  <h5 class="text-xs font-black uppercase tracking-wider text-cyan-900">${chart.profileClinic?.title || 'Profile View Briefing Skill'}</h5>
+                </div>
+                <span class="text-[10px] font-bold text-cyan-700 bg-cyan-100 px-2 py-0.5 rounded">Vertical Descent</span>
+              </div>
+              <p class="text-xs text-slate-700 leading-relaxed">${chart.profileClinic?.summary || ''}</p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                ${(chart.profileClinic?.phrases || []).map(p => `
+                  <div class="p-2.5 bg-white border border-cyan-100 rounded-lg text-xs space-y-0.5">
+                    <span class="text-[10px] font-bold text-cyan-600 uppercase">${p.label}:</span>
+                    <p class="text-slate-800 italic text-[11px]">&ldquo;${p.phrase}&rdquo;</p>
+                  </div>
+                `).join('')}
+              </div>
+              <div class="p-2.5 bg-white border border-cyan-200 rounded-lg text-[11px] text-cyan-900 font-bold flex items-center gap-2">
+                <span>⏱️</span>
+                <span>${chart.profileClinic?.challenge || ''}</span>
+              </div>
+            </div>
+
+
+            <!-- Structured Technical Specifications -->
+            <div class="space-y-2 pt-2 border-t border-slate-100">
+              <h5 class="text-xs font-black uppercase tracking-wider text-slate-700">Chart Operational Notes &amp; Data:</h5>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                ${(chart.sections || []).map(sec => `
+                  <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-lg space-y-1.5">
+                    <h6 class="text-xs font-black text-slate-800 border-b border-slate-200 pb-1">${sec.heading}</h6>
+                    <ul class="space-y-1 text-xs text-slate-700">
+                      ${sec.details.map(d => `
+                        <li class="flex items-start gap-1.5">
+                          <span class="text-blue-600 font-bold mt-0.5">&bull;</span>
+                          <span class="leading-relaxed text-[11px]">${d}</span>
+                        </li>
+                      `).join('')}
+                    </ul>
+                  </div>
+                `).join('')}
+              </div>
             </div>
           </div>
 
@@ -5448,7 +5678,7 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">45-70m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">40-65m</span>
                 <div>
                   <h4 class="text-sm sm:text-base font-black text-slate-900">${clinic.title || 'Activity 3: Language Clinic (25 mins)'}</h4>
                   <p class="text-[11px] text-slate-500">${clinic.summary || ''}</p>
@@ -5492,13 +5722,59 @@
             </div>
           </div>
 
-          <!-- Activity 4: Interactive Spoken Role-Play -->
+          <!-- Activity 4: Distinct Communicative Game -->
+          
+          <!-- Activity 4: Go / No-Go Lightning Challenge Game -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">70-105m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">65-90m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${roleplay.title || 'Activity 4: Spoken Role-Play (35 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${game.title || 'Activity 4: ⚡ Go / No-Go Lightning Challenge (25 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${game.summary || ''}</p>
+                </div>
+              </div>
+              <span class="bg-rose-100 text-rose-900 text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">LIGHTNING DECISION GAME</span>
+            </div>
+
+            <!-- Game Instructions -->
+            <div class="p-3.5 bg-rose-50/70 border border-rose-200 rounded-lg text-xs space-y-1.5">
+              <span class="font-bold text-rose-900 uppercase text-[10px] tracking-wider">Lightning Challenge Rules:</span>
+              <ul class="list-disc pl-4 space-y-1 text-slate-700 text-[11px]">
+                ${(game.instructions || []).map(i => `<li>${i}</li>`).join('')}
+              </ul>
+            </div>
+
+            <!-- 6 Dilemma Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              ${(game.cards || []).map(card => `
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-2 flex flex-col justify-between">
+                  <div>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase">Dilemma Card 0${card.id}</span>
+                    <p class="text-xs font-bold text-slate-800 mt-1 leading-relaxed">${card.situation}</p>
+                  </div>
+                  <div class="pt-2 border-t border-slate-200">
+                    <button type="button" onclick="this.nextElementSibling.classList.toggle('hidden')" class="text-[10px] font-bold text-blue-600 hover:underline cursor-pointer">
+                      Reveal Verdict &amp; Defense
+                    </button>
+                    <div class="hidden mt-1 p-2 bg-white rounded border border-slate-200 text-[11px]">
+                      <span class="font-bold ${card.verdict.includes('GO-AROUND') ? 'text-rose-600' : 'text-emerald-600'}">${card.verdict}</span>
+                      <p class="text-slate-600 mt-0.5 leading-relaxed">${card.defense}</p>
+                    </div>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+
+          <!-- Activity 5: Spoken Role-Play Simulation -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">90-105m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${roleplay.title || 'Activity 5: Spoken Role-Play (20 mins)'}</h4>
                   <p class="text-[11px] text-slate-500">${roleplay.summary || ''}</p>
                 </div>
               </div>
@@ -5508,7 +5784,7 @@
             <!-- Situation Brief -->
             <div class="p-3.5 bg-emerald-50/70 border border-emerald-200 rounded-lg text-xs space-y-1">
               <span class="font-bold text-emerald-900 uppercase text-[10px] tracking-wider">Scenario Situation Brief:</span>
-              <p class="text-slate-800 leading-relaxed">${roleplay.situation || ''}</p>
+              <p class="text-slate-800 leading-relaxed whitespace-pre-line">${roleplay.situation || ''}</p>
             </div>
 
             <!-- Role Cards -->
@@ -5545,13 +5821,13 @@
             </div>
           </div>
 
-          <!-- Activity 5: Safety Check -->
+          <!-- Activity 6: Safety Check -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">105-120m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 5: Safety Check (15 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 6: Safety Check (15 mins)'}</h4>
                   <p class="text-[11px] text-slate-500">${safety.summary || ''}</p>
                 </div>
               </div>
@@ -5571,14 +5847,14 @@
             </div>
           </div>
 
-          <!-- Activity 6: Operational Notes -->
+          <!-- Activity 7: Operational Notes -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs bg-slate-800">NOTES</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">Activity 6: Operational Notes &amp; Decisions</h4>
-                  <p class="text-[11px] text-slate-500">Record your team's role-play conclusions and safety decisions. Auto-saved in browser local storage.</p>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">Activity 7: Operational Notes &amp; Game Records</h4>
+                  <p class="text-[11px] text-slate-500">Record your team's role-play conclusions and game decisions. Auto-saved in browser local storage.</p>
                 </div>
               </div>
               <div class="flex items-center gap-2 text-[11px]">
@@ -5593,10 +5869,10 @@
             <div class="space-y-4">
               <div class="notes-textarea-container">
                 <label class="block text-xs font-bold text-slate-800 mb-1 flex items-center justify-between">
-                  <span>1. Final Approach Briefing & Go-Around Execution Notes:</span>
+                  <span>1. Go / No-Go Lightning Defense & Go-Around Execution Notes:</span>
                   <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saves on typing</span>
                 </label>
-                <textarea id="notes-roleplay-s6" oninput="window.saveLessonNote('6', 'roleplay', this.value)" rows="3" placeholder="e.g., ILS Runway 14L briefed: Localizer 109.3 MHz, inbound track 142°, FAF 5.2 DME at 2,000 ft, DA 692 ft (DH 200 ft). Go-around called at 400 ft due to vehicle on runway: climbed straight ahead to 2,500 ft, flaps 15, gear up..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('6', 'roleplay') : ''}</textarea>
+                <textarea id="notes-roleplay-s6" oninput="window.saveLessonNote('6', 'roleplay', this.value)" rows="3" placeholder="e.g., ILS Runway 14L briefed: Localizer 109.3 MHz, inbound track 142°, FAF 5.2 DME at 2,000 ft, DA 692 ft (DH 200 ft). Defended Card 1 (sink rate > 1,000 fpm = automatic go-around). Go-around called at 400 ft due to vehicle on runway: climbed straight ahead to 2,500 ft, flaps 15, gear up..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('6', 'roleplay') : ''}</textarea>
                 <div id="print-notes-roleplay-s6" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('6', 'roleplay') : '') || '[No simulation notes recorded]'}</div>
               </div>
 

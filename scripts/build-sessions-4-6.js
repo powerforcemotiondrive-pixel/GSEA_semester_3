@@ -1,8 +1,8 @@
 /**
  * Automated Curriculum Generator for GSEA Semester 3 (Sessions 4, 5, 6)
  * Module 1: Aerodrome Maps & Airspace Charts
- * 100% Spoken English, B1-B2 Plain English, Zero Jargon, Interactive Role-Plays,
- * Reading Chart Extracts, Safety Checks & 90 Vocabulary Terms.
+ * Full Visual Charts, Distinct Communicative Games, Map Description Clinics,
+ * Spoken Direction Role-Plays, Safety Checks & 90 Vocabulary Terms.
  */
 
 const fs = require('fs');
@@ -13,7 +13,7 @@ const courseDataPath = path.join(rootDir, 'data', 'course-data.js');
 const templatesMod1Path = path.join(rootDir, 'src', 'js', '05-templates-mod1.js');
 const dispatcherPath = path.join(rootDir, 'src', 'js', '04-templates-dispatcher.js');
 
-console.log('🚀 Running GSEA Semester 3 Curriculum Generator for Sessions 4, 5 & 6...');
+console.log('🚀 Running Enhanced GSEA Semester 3 Curriculum Generator with Visual Charts & Games...');
 
 // ============================================================================
 // PART A: UPDATE data/course-data.js
@@ -27,69 +27,69 @@ const m1 = courseData.aas ? courseData.aas[1] : courseData[1];
 // ----------------------------------------------------------------------------
 const s4Objectives = {
   title: "Session 4 - Aerodrome Ground Layouts & Taxiway Navigation Objectives",
-  summary: "By the end of this session, GSEA students will be able to describe aerodrome ground layouts with confidence in English, read ground movement charts (GMC/ADC), use prepositions of place accurately, guide aircraft across taxiways and holding points, role-play a ground movement clearance with a runway crossing, and complete a collaborative Safety Check on runway incursion hazards.",
+  summary: "By the end of this session, GSEA students will be able to orient someone to an airport map with natural spoken confidence, navigate a visual Ground Movement Chart (GMC), give precise physical directions using prepositions of place, play the 'Blind Taxi Navigator' information-gap game, role-play an active runway crossing taxi clearance, and complete a collaborative Safety Check on runway incursion hazards.",
   items: [
     {
       num: 1,
-      title: "Talk About Airport Ground Layouts (Fluency & Spontaneous Speech)",
-      description: "Discuss why navigating complex international airports on the ground is demanding for pilots, and share tricks for understanding airport maps quickly."
+      title: "Orient Someone to an Airport Map (Map Description Skill)",
+      description: "Learn and use natural spoken phrases to introduce an airport layout to a colleague (at the top, running north-to-south, directly opposite, adjacent to)."
     },
     {
       num: 2,
-      title: "Read a Ground Movement Chart (Chart Scanning)",
-      description: "Scan a simulated aerodrome ground chart to identify runways, parallel taxiways, rapid exit taxiways, aprons, holding bays, and hot spots."
+      title: "Read a Visual Ground Movement Chart (Visual Chart Scanning)",
+      description: "Scan the visual LFMT aerodrome ground movement chart to identify runways, parallel taxiway Alpha, rapid exits Bravo and Charlie, crossing taxiway Delta, and Hot Spot 1."
     },
     {
       num: 3,
-      title: "Words for Airport Locations (Vocabulary Focus)",
-      description: "Learn and use essential ground terms: apron, taxiway, holding point, stop bar, hot spot, and displaced threshold."
+      title: "Prepositions of Place & Physical Directions (Language Focus)",
+      description: "Master precise location words: adjacent to, opposite, parallel to, between, at the intersection of, short of, and beyond."
     },
     {
       num: 4,
-      title: "Prepositions of Place (Language Focus)",
-      description: "Practice describing where facilities and aircraft are located using precise position words: adjacent to, opposite, parallel to, between, at the intersection of, short of, and beyond."
+      title: "Communicative Game: 🎮 The Blind Taxi Navigator (Information-Gap Game)",
+      description: "Guide your partner from an assigned parking stand to a secret airfield destination using only spoken turn-by-turn physical directions."
     },
     {
       num: 5,
-      title: "Speaking Role-Play: Ground Movement Challenge (Spoken Interaction)",
-      description: "Role-play a clear, polite conversation between an Aerodrome Ground Controller and a Pilot taxiing from the apron to the runway with an active runway crossing."
+      title: "Speaking Role-Play: Ground Movement Challenge & 'Lost on Tarmac'",
+      description: "Role-play a Ground Controller issuing taxi instructions with an active runway crossing, and talk a confused ground driver back to safety."
     },
     {
       num: 6,
       title: "Safety Check: Preventing Runway Incursions (Operational Discussion)",
-      description: "Collaborate in teams to analyze a confusing taxiway intersection, evaluate collision risks, and agree on clear safety solutions."
+      description: "Collaborate in teams to analyze a confusing multi-taxiway intersection, evaluate collision risks, and agree on clear safety solutions."
     }
   ]
 };
 
 const s4LessonPlan = {
   title: "Session 4 Lesson Plan (2 Hours)",
-  summary: "A 2-hour communicative spoken English session for GSEA students covering aerodrome ground layouts, ground movement charts, prepositions of place, a realistic taxi clearance role-play, and a collaborative runway incursion Safety Check.",
+  summary: "A 2-hour communicative spoken English session covering visual ground chart reading, map orientation skills, prepositions of place, the 'Blind Taxi Navigator' game, a runway crossing role-play, and a runway incursion Safety Check.",
   items: [
     {
       time: "00-15",
       title: "Part 1: Warm-up: Navigating on the Ground (15 mins)",
-      description: "In pairs, students discuss the challenges of taxiing at unfamiliar airports, explain common ground confusion, and test entry knowledge with 4 quick spot-check questions."
+      description: "In pairs, students discuss why taxiing at unfamiliar airports is demanding, share personal navigation tricks, and test entry knowledge with 4 spot-check questions."
     },
     {
-      time: "15-45",
-      title: "Part 2: Reading the Ground Movement Chart (GMC) (30 mins)",
-      description: "Reading a simulated aerodrome ground movement chart (LFMT) to locate runways, parallel taxiway Alpha, rapid exits Bravo and Charlie, crossing taxiway Delta, and Hot Spot 1."
+      time: "15-40",
+      title: "Part 2: Visual Chart & Map Orientation Clinic (25 mins)",
+      description: "Analyzing the visual LFMT Ground Movement Chart (GMC), learning standard phrases for orienting colleagues to a map, and completing a 60-second map description challenge."
     },
     {
-      time: "45-70",
-      title: "Part 3: Language Clinic: Prepositions of Place (25 mins)",
-      description: "Oral drills and pair practice using prepositions of place (adjacent to, opposite, parallel to, between, at the intersection of, short of, beyond) to describe airport facilities."
+      time: "40-65",
+      title: "Part 3: Language Clinic: Prepositions of Place & Directions (25 mins)",
+      description: "Oral drills and pair practice using prepositions of place (adjacent to, opposite, parallel to, between, at the intersection of, short of, beyond) to give crisp physical directions."
     },
     {
-      time: "70-105",
-      title: "Part 4: Speaking Role-Play: Ground Movement Challenge (35 mins)",
-      description: "3-student spoken simulation between a Ground Controller and an Airline Pilot taxiing from Stand 14 to Runway 14L with an active runway crossing, observed with a peer checklist."
+      time: "65-90",
+      title: "Part 4: Communicative Game: 🎮 The Blind Taxi Navigator (25 mins)",
+      description: "Information-gap partner game: Student A guides Student B across the airport to a secret destination using step-by-step spoken directions while Student B traces the route."
     },
     {
-      time: "105-120",
-      title: "Part 5: Safety Check: Preventing Runway Incursions (15 mins)",
-      description: "Collaborative 4-step safety analysis evaluating a confusing intersection hazard, collision risks, illuminated stop bars, and agreed standard phraseology."
+      time: "90-120",
+      title: "Part 5: Speaking Role-Play & Safety Check (30 mins)",
+      description: "Spoken simulation: Ground Controller issues progressive taxi instructions with an active runway crossing, followed by a 4-step collaborative Safety Check on Hot Spot 1."
     }
   ]
 };
@@ -97,7 +97,7 @@ const s4LessonPlan = {
 const s4LessonContent = {
   hero: {
     title: "Aerodrome Ground Layouts & Taxiway Navigation",
-    subtitle: "Ground Movement Charts (GMC), Taxiway Designations, Holding Points & Prepositions of Place",
+    subtitle: "Visual Ground Movement Charts (GMC), Map Orientation, Prepositions of Place & 'Blind Taxi Navigator' Game",
     image: "images/s3_m1_session4_aerodrome.jpg",
     targetLevel: "CEFR B1–B2",
     roleContext: "GSEA Student Training • Aerodrome Ground Operations & Technical English",
@@ -113,7 +113,7 @@ const s4LessonContent = {
       "Click 'Reveal Answer' to check your reasoning and see the plain English explanation."
     ],
     deliverable: "Shared agreement on 2 common ground taxi challenges and completed 4-question diagnostic.",
-    teacherNotes: "Encourage spontaneous speaking. Don't worry about technical phraseology yet; focus on helping students describe physical spaces and directions naturally in English.",
+    teacherNotes: "Encourage spontaneous speaking. Help students describe physical spaces and relative directions naturally in English without worrying about technical jargon.",
     newsPrompts: [
       {
         id: 1,
@@ -192,10 +192,24 @@ const s4LessonContent = {
     ]
   },
   chartExtract: {
-    title: "Activity 2: Reading the Ground Movement Chart (GMC) (30 mins)",
-    summary: "Analyze a simulated Ground Movement Chart for Blagnac-Montpellier Airport (LFMT) and practice identifying key operational areas.",
-    badge: "SIMULATED AERODROME GROUND CHART • LFMT",
+    title: "Activity 2: Visual Chart & Map Orientation Clinic (25 mins)",
+    summary: "Inspect the visual Ground Movement Chart (LFMT) and learn natural spoken patterns to walk a colleague through an aerodrome layout.",
+    visualChart: "images/charts/chart_s4_gmc_lfmt.svg",
+    badge: "AUTHENTIC SIMULATION • LFMT GROUND MOVEMENT CHART",
     callsign: "Blagnac-Montpellier Airport (LFMT / Elev 495 ft)",
+    mapDescriptionClinic: {
+      title: "Speaking Skill: How to Orient & Describe an Airport Map",
+      summary: "Use these natural spoken templates to introduce an airport layout clearly without hesitations:",
+      phrases: [
+        { label: "Overall Orientation", phrase: "If you look at the overall layout, the airport is oriented northwest to southeast, with two parallel runways." },
+        { label: "Main Runway", phrase: "The primary runway is 14L/32R on the east side, spanning 3,500 metres with full CAT III ILS capability." },
+        { label: "Parallel Taxiway", phrase: "Running parallel to Runway 14L along its entire eastern edge is Taxiway Alpha." },
+        { label: "Terminals & Stands", phrase: "Over on the southwest side, you can see Apron North with the passenger terminal and Stands 1 through 16." },
+        { label: "Opposite Facilities", phrase: "Directly opposite the terminal on the western boundary is the cargo ramp, while the fire station sits adjacent to Apron North." },
+        { label: "Caution Areas", phrase: "Notice Hot Spot 1 at the junction of Alpha and Delta, where crossing vehicles create an incursion risk." }
+      ],
+      challenge: "Partner Challenge: Take turns giving your partner a 60-second spoken overview of the LFMT layout using at least 4 of the phrases above!"
+    },
     sections: [
       {
         heading: "1. Runway Infrastructure & Orientation",
@@ -236,8 +250,8 @@ const s4LessonContent = {
     ]
   },
   grammarClinic: {
-    title: "Activity 3: Language Clinic: Prepositions of Place (25 mins)",
-    summary: "Master clear position words to describe airport facilities and aircraft locations with precision and confidence.",
+    title: "Activity 3: Language Clinic: Prepositions of Place & Physical Directions (25 mins)",
+    summary: "Master clear position words and direction-giving phrases to describe airport facilities with precision.",
     rules: [
       {
         term: "parallel to",
@@ -303,18 +317,61 @@ const s4LessonContent = {
       }
     ]
   },
+  communicativeGame: {
+    title: "Activity 4: Communicative Game: 🎮 The Blind Taxi Navigator (25 mins)",
+    summary: "An information-gap spoken game. Guide your partner from your parking stand to a mystery airfield destination using step-by-step oral directions.",
+    instructions: [
+      "Student A (The Navigator): Pick one of the 4 Secret Missions below (do NOT tell your partner the destination). Look at the visual chart.",
+      "Student B (The Pilot/Driver): Close your eyes or place your finger on the starting point on the chart. Do not look ahead.",
+      "Student A gives clear, step-by-step physical directions: 'Start at Stand 14. Turn right onto Taxiway Delta. Taxi forward 150m until you reach the red holding line...'",
+      "Student B traces the route with their finger. When Student A says 'You have arrived!', Student B must announce where they think they are!",
+      "Switch roles and try another mission."
+    ],
+    missions: [
+      {
+        id: 1,
+        mission: "Mission 1 (Cargo Delivery): Start at Stand 14 &rarr; Target: Cargo Ramp",
+        hints: "Turn right onto Delta, hold short of 14R, cross runway, turn left onto perimeter taxilane, proceed opposite passenger terminal."
+      },
+      {
+        id: 2,
+        mission: "Mission 2 (Winter De-icing): Start at Stand 16 &rarr; Target: De-icing Bay 2",
+        hints: "Taxi along Delta, cross Runway 14R, turn left onto Alpha, taxi past Hot Spot 1, turn right into the pad between Bravo and the hangar."
+      },
+      {
+        id: 3,
+        mission: "Mission 3 (Emergency Drill): Start at Fire Station &rarr; Target: Holding Point A1 (Runway 14L)",
+        hints: "Exit station onto apron taxilane, join Delta, cross 14R, turn left on Alpha, taxi north to holding point A1."
+      },
+      {
+        id: 4,
+        mission: "Mission 4 (Late Departure): Start at Cargo Ramp &rarr; Target: Stand 12 (Main Terminal)",
+        hints: "Taxi east along perimeter, cross Runway 14R carefully, enter Apron North, park at Stand 12 directly opposite the cargo ramp."
+      }
+    ],
+    sampleDialogue: [
+      "Navigator: 'Start at Stand 14 on Apron North. Push back facing east.'",
+      "Pilot: 'Facing east, copied.'",
+      "Navigator: 'Taxi straight ahead on Taxiway Delta for about 150 metres. Look for the red stop bar and hold short of Runway 14R.'",
+      "Pilot: 'Holding short of Runway 14R on Delta.'",
+      "Navigator: 'Cleared across Runway 14R. Cross directly to the opposite side and turn left onto Taxiway Alpha. Pass Hot Spot 1 on your right.'",
+      "Pilot: 'Crossing 14R, turning left onto Alpha.'",
+      "Navigator: 'Continue straight along Alpha for 300 metres. Stop at the intersection before Bravo. Turn right into the paved pad. You have arrived! Where are you?'",
+      "Pilot: 'I am at the De-icing Pad between Taxiway Bravo and the hangar!' (Correct!)"
+    ]
+  },
   roleplaySimulation: {
-    title: "Activity 4: Speaking Role-Play: Ground Movement Challenge (35 mins)",
-    summary: "Simulate a realistic spoken interaction between an Aerodrome Ground Controller and an Airline Pilot taxiing from Stand 14 to Runway 14L.",
-    situation: "Flight AFR 412 (Airbus A320) is parked at Stand 14 on Apron North. The pilot has completed pushback and engine start and requests taxi clearance to Runway 14L. The route requires taxiing along Taxiway Delta, crossing active Runway 14R, joining Taxiway Alpha, and holding short of Runway 14L at holding point A1.",
+    title: "Activity 5: Speaking Role-Play: Ground Movement Challenge & 'Lost on Tarmac' (25 mins)",
+    summary: "Simulate a realistic spoken interaction between Ground Control and Flight AFR 412, plus a quick recovery dialogue with a lost driver.",
+    situation: "Part 1: Flight AFR 412 (Airbus A320) is parked at Stand 14 on Apron North. The pilot requests taxi clearance to Runway 14L. The route requires taxiing along Delta, crossing active Runway 14R, joining Taxiway Alpha, and holding short of 14L at A1.\nPart 2 (Spoken Twist): A ground baggage tug driver has taken a wrong turn in thick fog and is lost near Hot Spot 1. Ground Control must give calm, clear directions to guide the tug back to Apron North.",
     roles: [
       {
         role: "Role A: Ground Controller",
-        instructions: "Issue progressive taxi instructions. Give the taxi route: 'Taxi via Delta, hold short of Runway 14R'. When the runway is clear, instruct: 'Cross Runway 14R, taxi via Alpha to holding point A1, Runway 14L'. Listen carefully to the pilot's readback and correct any missing information immediately."
+        instructions: "Issue progressive taxi instructions. Give the taxi route: 'Taxi via Delta, hold short of Runway 14R'. When the runway is clear, instruct: 'Cross Runway 14R, taxi via Alpha to holding point A1, Runway 14L'. In Part 2, guide the lost tug driver away from the runway using simple landmarks."
       },
       {
-        role: "Role B: Airline Pilot (AFR 412)",
-        instructions: "Call Ground Control at Stand 14 ready to taxi. Read back all instructions completely, especially the runway hold-short instruction. Ask for clarification if you are unsure whether you are cleared to cross Runway 14R. Confirm when holding short at holding point A1."
+        role: "Role B: Airline Pilot (AFR 412) / Lost Tug Driver",
+        instructions: "In Part 1, call Ground ready to taxi. Read back all instructions completely, especially the runway hold-short command. In Part 2, act as the lost tug driver: describe what you see around you ('I see a red stop bar and a yellow taxiway sign saying Delta') and follow directions."
       },
       {
         role: "Role C: Peer Observer & Safety Auditor",
@@ -325,18 +382,18 @@ const s4LessonContent = {
       "Controller used clear, unambiguous taxi instructions with correct taxiway names.",
       "Pilot read back the runway holding point instruction word-for-word ('Hold short of Runway 14R').",
       "Both speakers used natural, communicative English without long unnatural hesitations.",
-      "Clear verification was made before crossing the active runway."
+      "Clear direction words (left, right, ahead, opposite) were used to recover the lost driver."
     ],
     phrases: [
       "Ground, Air France 412, Stand 14, request taxi to Runway 14L.",
       "Air France 412, taxi via Delta, hold short of Runway 14R.",
       "Taxi via Delta, hold short of Runway 14R, Air France 412.",
       "Air France 412, cross Runway 14R, taxi via Alpha to holding point A1.",
-      "Cross Runway 14R, taxi via Alpha to holding point A1, Air France 412."
+      "Tug 4, do you see the bright fire station lights on your left? Turn left towards the station immediately."
     ]
   },
   safetyCheck: {
-    title: "Activity 5: Safety Check: Preventing Runway Incursions (15 mins)",
+    title: "Activity 6: Safety Check: Preventing Runway Incursions (15 mins)",
     summary: "Work in teams to analyze how confusing taxiway intersections lead to runway incursions and decide on practical safety defenses.",
     steps: [
       {
@@ -363,142 +420,36 @@ const s4LessonContent = {
   }
 };
 
-const s4RevisionTerms = [
-  { num: "01", term: "Aerodrome Ground Chart (ADC)", definition: "An official aeronautical chart showing the layout of runways, taxiways, aprons, and airport buildings." },
-  { num: "02", term: "Ground Movement Chart (GMC)", definition: "A detailed large-scale chart used by pilots and ground controllers to navigate complex taxiways and apron stands." },
-  { num: "03", term: "Apron (Ramp)", definition: "A defined area on an airport intended to accommodate aircraft for boarding, loading, refueling, or parking." },
-  { num: "04", term: "Taxiway", definition: "A defined path on an airport established for the taxiing of aircraft between one part of the aerodrome and another." },
-  { num: "05", term: "Parallel Taxiway", definition: "A taxiway that runs alongside and parallel to a runway, allowing aircraft to clear the runway quickly." },
-  { num: "06", term: "Rapid Exit Taxiway", definition: "A taxiway connected to a runway at an acute angle (typically 30°) designed for landing planes to turn off at higher speeds." },
-  { num: "07", term: "Runway Holding Point", definition: "A designated location on a taxiway where aircraft and vehicles must stop and hold until cleared onto an active runway." },
-  { num: "08", term: "Intermediate Holding Point", definition: "A designated position on a taxiway for traffic control where an aircraft stops until further instructed by ATC." },
-  { num: "09", term: "Pattern A Holding Line", definition: "A ground marking with two solid yellow lines and two dashed yellow lines; you must never cross the solid lines toward the runway without clearance." },
-  { num: "10", term: "Pattern B Holding Line", definition: "A ladder-style ground marking used at CAT II/III precision runway holding positions to protect ILS signals." },
-  { num: "11", term: "Stop Bar", definition: "A row of red lights across a taxiway showing that traffic must stop; when turned off by ATC, the taxiway is open." },
-  { num: "12", term: "Hot Spot (HS)", definition: "A location on an aerodrome movement area with a history or potential risk of collision or runway incursion." },
-  { num: "13", term: "Mandatory Instruction Sign", definition: "A red sign with white lettering indicating a runway entrance, critical area, or prohibited zone." },
-  { num: "14", term: "Location Sign", definition: "A black sign with yellow lettering identifying the specific taxiway or runway on which the aircraft is currently located." },
-  { num: "15", term: "Direction Sign", definition: "A yellow sign with black lettering and arrows indicating the designations and directions of intersecting taxiways." },
-  { num: "16", term: "De-icing Pad", definition: "An area on an apron or taxiway equipped for applying heated de-icing and anti-icing fluids to aircraft." },
-  { num: "17", term: "Holding Bay", definition: "An area adjacent to a taxiway where aircraft can be held or bypassed to facilitate efficient ground traffic movement." },
-  { num: "18", term: "Displaced Threshold", definition: "A runway threshold located at a point other than the beginning of the runway, often used when obstacles penetrate approach paths." },
-  { num: "19", term: "Blast Pad", definition: "A specially surfaced area preceding a runway threshold designed to prevent ground erosion from jet engine blast." },
-  { num: "20", term: "Stopway", definition: "A defined rectangular area at the end of the takeoff run in which an aircraft can be stopped during an abandoned takeoff." },
-  { num: "21", term: "Clearway", definition: "A defined rectangular area at the end of the runway over which an aircraft can make part of its initial climb." },
-  { num: "22", term: "Runway Incursion", definition: "Any occurrence involving the incorrect presence of an aircraft, vehicle, or person on an active runway protected area." },
-  { num: "23", term: "Hold Short", definition: "An ATC instruction directing a pilot or driver to stop completely before reaching a runway or taxiway and wait." },
-  { num: "24", term: "Progressive Taxi", definition: "Step-by-step taxi instructions issued by ground control to assist a pilot unfamiliar with the airport layout." },
-  { num: "25", term: "Surface Movement Radar (SMR)", definition: "Radar equipment specifically designed to detect and display the position of aircraft and vehicles on the airfield surface." },
-  { num: "26", term: "Enhanced Taxiway Centerline", definition: "Dashed yellow lines alongside the centerline starting 45m before a runway holding position to alert pilots." },
-  { num: "27", term: "Follow-Me Vehicle", definition: "An airport ground vehicle equipped with flashing lights that guides aircraft along taxiways to designated parking stands." },
-  { num: "28", term: "Pushback", definition: "The procedure during which an aircraft is pushed backwards away from an airport gate or parking stand by a tug vehicle." },
-  { num: "29", term: "Maneuvering Area", definition: "That part of an aerodrome used for the takeoff, landing, and taxiing of aircraft, excluding aprons." },
-  { num: "30", term: "Movement Area", definition: "That part of an aerodrome used for aircraft surface movement, consisting of the maneuvering area and the aprons." }
-];
-
-const s4QuizQuestions = [
-  {
-    id: 1,
-    stem: "While taxiing an A320 along Taxiway Delta towards Runway 14R, the pilot sees two solid yellow lines followed by two dashed yellow lines painted across the asphalt. What is the mandatory action?",
-    options: [
-      { letter: "A", text: "Cross the lines without stopping if no other aircraft is visible on the runway." },
-      { letter: "B", text: "Stop completely before the solid lines and wait for explicit clearance to cross from air traffic control." },
-      { letter: "C", text: "Increase taxi speed to clear the crossing zone as rapidly as possible." },
-      { letter: "D", text: "Switch the aircraft transponder to standby mode and turn left onto the grass." }
-    ],
-    correctLetter: "B",
-    correctText: "Stop completely before the solid lines and wait for explicit clearance to cross from air traffic control.",
-    analysis: "Pattern A holding point lines feature two solid lines on the taxiway side and two dashed lines on the runway side. An aircraft approaching from the solid side must never cross without explicit ATC clearance.",
-    strategy: "Remember: solid lines mean stop. Dashed lines mean you may exit the runway freely without stopping."
-  },
-  {
-    id: 2,
-    stem: "An aerodrome ground controller says: 'Air France 412, taxi via Alpha, hold short of Runway 14R at Delta.' What is the required readback from the flight crew?",
-    options: [
-      { letter: "A", text: "'Roger, rolling, Air France 412.'" },
-      { letter: "B", text: "'Taxi via Alpha, hold short of Runway 14R at Delta, Air France 412.'" },
-      { letter: "C", text: "'Copied, taxiing to the terminal, Air France 412.'" },
-      { letter: "D", text: "'Cleared across Runway 14R, Air France 412.'" }
-    ],
-    correctLetter: "B",
-    correctText: "'Taxi via Alpha, hold short of Runway 14R at Delta, Air France 412.'",
-    analysis: "ICAO and EASA standard radiotelephony rules mandate a full word-for-word readback of all runway hold-short instructions including the runway identifier and taxiway location.",
-    strategy: "Hold-short clearances must always be repeated completely with the aircraft callsign. A simple 'Roger' is never acceptable."
-  },
-  {
-    id: 3,
-    stem: "Which airport ground sign is characterized by yellow letters and symbols on a black background?",
-    options: [
-      { letter: "A", text: "A Mandatory Instruction Sign showing a runway entrance." },
-      { letter: "B", text: "A Location Sign identifying the taxiway on which the aircraft is currently located." },
-      { letter: "C", text: "A Direction Sign pointing towards another taxiway." },
-      { letter: "D", text: "A Destination Sign showing the international terminal." }
-    ],
-    correctLetter: "B",
-    correctText: "A Location Sign identifying the taxiway on which the aircraft is currently located.",
-    analysis: "Remember the golden memory rule: 'Yellow on black is where you're at' (Location Sign), while 'Black on yellow points to another fellow' (Direction Sign).",
-    strategy: "Black background with yellow lettering confirms your present location."
-  },
-  {
-    id: 4,
-    stem: "Why are illuminated red stop bars installed across taxiway holding positions at major international airports?",
-    options: [
-      { letter: "A", text: "To help ground staff find their luggage carts at night." },
-      { letter: "B", text: "To serve as an active physical visual barrier preventing aircraft and vehicles from entering an active runway without clearance." },
-      { letter: "C", text: "To indicate that the runway surface is undergoing routine grass cutting." },
-      { letter: "D", text: "To warn birds not to land on the paved tarmac." }
-    ],
-    correctLetter: "B",
-    correctText: "To serve as an active physical visual barrier preventing aircraft and vehicles from entering an active runway without clearance.",
-    analysis: "Red stop bars provide a high-visibility safeguard. Pilots and vehicle drivers must never cross an illuminated red stop bar, even if verbal clearance has been issued, until the lights are switched off.",
-    strategy: "Never cross red lights on the airfield under any operational circumstance."
-  },
-  {
-    id: 5,
-    stem: "What is the primary operational advantage of a high-speed rapid exit taxiway connected to a runway at an angle of 30 degrees?",
-    options: [
-      { letter: "A", text: "It allows landing aircraft to turn off the runway at higher speeds, reducing runway occupancy time for following arrivals." },
-      { letter: "B", text: "It provides a shortcut for catering trucks moving between terminals." },
-      { letter: "C", text: "It eliminates the need for air traffic controllers in the tower." },
-      { letter: "D", text: "It prevents aircraft tires from wearing down during braking." }
-    ],
-    correctLetter: "A",
-    correctText: "It allows landing aircraft to turn off the runway at higher speeds, reducing runway occupancy time for following arrivals.",
-    analysis: "By exiting at speeds between 30 and 50 knots via a 30-degree turn, aircraft spend significantly less time on the runway, increasing the airport's overall landing capacity.",
-    strategy: "Think capacity: rapid exits get aircraft off the active runway quickly so the next plane can land."
-  }
-];
-
 // ----------------------------------------------------------------------------
 // SESSION 5 DATA: Airspace Corridors: SIDs, STARs & Transition Routes
 // ----------------------------------------------------------------------------
 const s5Objectives = {
   title: "Session 5 - Airspace Corridors: SIDs, STARs & Transition Routes Objectives",
-  summary: "By the end of this session, GSEA students will be able to explain the purpose of standard instrument departures and arrivals in plain English, trace route corridors on simulated charts, use prepositions of movement and direction accurately, role-play a cockpit departure briefing and weather diversion, and complete a collaborative Safety Check on managing route deviations.",
+  summary: "By the end of this session, GSEA students will be able to explain airspace corridors in plain English, narrate a flight route sequentially using prepositions of movement, scan the visual GAILLAC 4A departure chart, play the 'Airspace Detective' logic game to spot dangerous clearance errors, role-play a cockpit departure briefing and weather diversion, and complete a collaborative Safety Check on route deviations.",
   items: [
     {
       num: 1,
-      title: "Talk About Airspace Corridors (Fluency & Spontaneous Speech)",
-      description: "Discuss how structured departure and arrival routes organize heavy air traffic flow around major cities and reduce radio congestion."
+      title: "Trace a Flight Path Aloud (Sequential Narration Skill)",
+      description: "Learn and use professional spoken patterns to walk a colleague through a 3D flight corridor from takeoff to cruising level."
     },
     {
       num: 2,
-      title: "Read a SID & STAR Route Chart (Chart Scanning)",
-      description: "Scan a simulated departure chart (GAILLAC 4A) to locate waypoints, climb restrictions, minimum safe altitudes (MSA), and transition altitudes."
+      title: "Read a Visual SID & STAR Route Chart (Visual Chart Scanning)",
+      description: "Scan the visual GAILLAC 4A departure chart to locate waypoints, climb restrictions, minimum safe altitudes (MSA), and the GAILLAC holding pattern."
     },
     {
       num: 3,
-      title: "Words for Corridors & Altitudes (Vocabulary Focus)",
-      description: "Learn and use essential route vocabulary: waypoint, fly-by vs fly-over, flight level, transition altitude, minimum safe altitude, and holding fix."
+      title: "Prepositions of Movement & Direction (Language Focus)",
+      description: "Master dynamic motion words: climb straight ahead to, turn left towards, proceed via, along corridor, maintain until, and intersect."
     },
     {
       num: 4,
-      title: "Prepositions of Movement & Direction (Language Focus)",
-      description: "Practice describing flight paths using dynamic movement words: climb straight ahead to, turn left towards, proceed via, along corridor, maintain until, and intersect."
+      title: "Communicative Game: 🔍 Airspace Detective: Spot the Route Trap",
+      description: "Review 4 simulated flight clearances with a partner, race to detect the hidden safety trap, explain the hazard in spoken English, and issue the correction."
     },
     {
       num: 5,
-      title: "Speaking Role-Play: Departure Briefing & Storm Diversion (Spoken Interaction)",
+      title: "Speaking Role-Play: Departure Briefing & Storm Diversion",
       description: "Role-play a pre-departure cockpit briefing followed by an urgent radio request to divert 20 degrees around a developing storm cell."
     },
     {
@@ -511,32 +462,32 @@ const s5Objectives = {
 
 const s5LessonPlan = {
   title: "Session 5 Lesson Plan (2 Hours)",
-  summary: "A 2-hour communicative spoken English session for GSEA students covering SIDs, STARs, prepositions of movement, a cockpit briefing and weather diversion role-play, and a collaborative Safety Check on departure deviations.",
+  summary: "A 2-hour communicative spoken English session covering visual SID charts, sequential flight path narration, prepositions of movement, the 'Airspace Detective' game, a weather diversion role-play, and an altitude safety check.",
   items: [
     {
       time: "00-15",
       title: "Part 1: Warm-up: Why SIDs and STARs Exist (15 mins)",
-      description: "In pairs, students discuss how structured departure corridors prevent mid-air conflicts around busy airports, and test entry knowledge with 4 quick spot-check questions."
+      description: "In pairs, students discuss how structured departure corridors prevent air traffic conflicts, and test entry knowledge with 4 spot-check questions."
     },
     {
-      time: "15-45",
-      title: "Part 2: Reading the Simulated SID & STAR Route Chart (30 mins)",
-      description: "Analyzing the simulated GAILLAC 4A departure chart from Runway 14L, tracing waypoints, altitude restrictions, and the GAILLAC holding pattern."
+      time: "15-40",
+      title: "Part 2: Visual Chart & Flight Path Narration Clinic (25 mins)",
+      description: "Analyzing the visual GAILLAC 4A departure chart, learning standard storytelling phrases for narrating a flight path sequentially, and completing a 60-second route briefing."
     },
     {
-      time: "45-70",
+      time: "40-65",
       title: "Part 3: Language Clinic: Prepositions of Movement & Direction (25 mins)",
-      description: "Oral drills and pair practice using prepositions of movement (climb straight ahead to, turn left towards, proceed via, along, maintain until, intersect) to describe flight profiles."
+      description: "Oral drills and pair practice using prepositions of movement (climb straight ahead to, turn left towards, proceed via, along, maintain until, intersect) to describe 3D climb paths."
     },
     {
-      time: "70-105",
-      title: "Part 4: Speaking Role-Play: Departure Briefing & Storm Diversion (35 mins)",
-      description: "3-student spoken simulation: Captain briefings First Officer on the departure, followed by an urgent radio request to ATC to divert around a thunderstorm, with Peer Observer checklist."
+      time: "65-90",
+      title: "Part 4: Communicative Game: 🔍 Airspace Detective: Spot the Route Trap (25 mins)",
+      description: "Spoken detective game: pairs review 4 departure clearance cases, spot the single illegal clearance, explain the danger in spoken English, and propose the fix."
     },
     {
-      time: "105-120",
-      title: "Part 5: Safety Check: Managing Route Deviations & Level Busts (15 mins)",
-      description: "Collaborative 4-step safety analysis evaluating severe storm hazards, terrain clearance (MSA), sector coordination, and pilot readback verification."
+      time: "90-120",
+      title: "Part 5: Speaking Role-Play & Safety Check (30 mins)",
+      description: "Spoken simulation: Captain briefs First Officer on GAILLAC 4A, calls Departure Radar for a 20° weather diversion around a storm cell, and completes a terrain safety check."
     }
   ]
 };
@@ -544,7 +495,7 @@ const s5LessonPlan = {
 const s5LessonContent = {
   hero: {
     title: "Airspace Corridors: SIDs, STARs & Transition Routes",
-    subtitle: "Departure Routes, Terminal Arrivals, Waypoints, Flight Levels & Prepositions of Movement",
+    subtitle: "Visual Departure Charts (GAILLAC 4A), Sequential Path Narration, Prepositions of Movement & 'Airspace Detective' Game",
     image: "images/s3_m1_session5_sid_star.jpg",
     targetLevel: "CEFR B1–B2",
     roleContext: "GSEA Student Training • Terminal Airspace Navigation & Technical English",
@@ -639,10 +590,24 @@ const s5LessonContent = {
     ]
   },
   chartExtract: {
-    title: "Activity 2: Reading the Simulated SID & STAR Route Chart (30 mins)",
-    summary: "Analyze the simulated GAILLAC 4A Departure from Runway 14L and understand key navigation milestones and constraints.",
-    badge: "SIMULATED DEPARTURE ROUTE CHART • GAILLAC 4A (LFMT)",
+    title: "Activity 2: Visual Chart & Flight Path Narration Clinic (25 mins)",
+    summary: "Inspect the visual GAILLAC 4A Departure Chart and learn how to narrate a flight path sequentially like an airline flight crew.",
+    visualChart: "images/charts/chart_s5_sid_lfmt.svg",
+    badge: "AUTHENTIC SIMULATION • SID GAILLAC 4A (LFMT)",
     callsign: "Blagnac-Montpellier Airport (LFMT) • Runway 14L Departures",
+    flightPathClinic: {
+      title: "Speaking Skill: How to Trace a Flight Path Aloud (Sequential Narration)",
+      summary: "Use these sequential phrases to describe a 3D departure route smoothly from liftoff to en-route cruise:",
+      phrases: [
+        { label: "1. Liftoff & Initial Track", phrase: "Our flight departs Runway 14L on an initial climb track of 142 degrees magnetic." },
+        { label: "2. Noise Abatement Altitude", phrase: "We maintain runway heading until reaching 3,000 feet or 5 DME, which protects residential areas from noise." },
+        { label: "3. The Climbing Turn", phrase: "Upon passing 3,000 feet, we execute a climbing left turn direct towards waypoint GAILLAC (GAI VOR/DME 114.4)." },
+        { label: "4. Altitude Milestones", phrase: "We must cross 8 DME at or above 4,000 feet, and cross GAILLAC at or above Flight Level 070." },
+        { label: "5. Transition Altitude", phrase: "At 5,000 feet, we switch altimeters from local QNH to the standard 1013 setting." },
+        { label: "6. En-route Join", phrase: "From GAILLAC, we proceed along airway UM733 towards waypoint MENDE to join high-altitude airspace." }
+      ],
+      challenge: "Partner Challenge: Take turns narrating the entire GAILLAC 4A departure to your partner from memory in 60 seconds!"
+    },
     sections: [
       {
         heading: "1. Initial Climb Profile & Heading",
@@ -747,8 +712,45 @@ const s5LessonContent = {
       }
     ]
   },
+  communicativeGame: {
+    title: "Activity 4: Communicative Game: 🔍 Airspace Detective: Spot the Route Trap (25 mins)",
+    summary: "Review 4 simulated departure clearances with your partner. Three are legal, but one contains a dangerous error. Find it, explain the hazard, and fix it!",
+    instructions: [
+      "In pairs, read each of the 4 simulated ATC clearances below.",
+      "Three clearances follow the GAILLAC 4A rules perfectly, but ONE contains a dangerous procedural violation.",
+      "Discuss with your partner: Which case is the TRAP? Why is it dangerous? What is the correct radio instruction?",
+      "Click 'Reveal Detective Report' to check if your team caught the culprit!"
+    ],
+    cases: [
+      {
+        id: "Case Alpha",
+        clearance: "AFR 210, cleared GAILLAC 4A departure, after liftoff climb straight ahead to 3,000 ft, turn left direct GAILLAC, climb to FL090, cross GAI at or above FL070.",
+        status: "LEGAL",
+        note: "Follows all altitude, noise abatement, and route restrictions."
+      },
+      {
+        id: "Case Bravo (THE TRAP!)",
+        clearance: "AFR 442, cleared GAILLAC 4A departure. Airborne off 14L at 1,200 ft, immediate left turn direct GAILLAC approved for traffic shortcut, climb to FL080.",
+        status: "DANGEROUS TRAP!",
+        note: "VIOLATION! The chart strictly mandates: 'No turns below 3,000 ft QNH for noise abatement'. Turning at 1,200 ft violates local noise regulations and risks loss of separation with arrival corridors!"
+      },
+      {
+        id: "Case Charlie",
+        clearance: "AFR 884, climbing through 4,000 ft on GAILLAC 4A, maintain 240 knots indicated until passing FL100, climb to FL120.",
+        status: "LEGAL",
+        note: "Speed is 240 kt (below the 250 kt max limit) and climb profile is respected."
+      },
+      {
+        id: "Case Delta",
+        clearance: "AFR 915, passing 3,500 ft, left turn direct GAILLAC approved, enter holding pattern at GAILLAC at FL080, right-hand turns, 1-minute legs.",
+        status: "LEGAL",
+        note: "Holding parameters match the published plate: FL080 min, right turns, 1 min legs."
+      }
+    ],
+    challengeQuestion: "Explain to the class: What makes Case Bravo dangerous, and how would you correct the controller's instruction in clear English?"
+  },
   roleplaySimulation: {
-    title: "Activity 4: Speaking Role-Play: Departure Briefing & Storm Diversion (35 mins)",
+    title: "Activity 5: Speaking Role-Play: Departure Briefing & Storm Diversion (25 mins)",
     summary: "Simulate a two-part spoken challenge: a cockpit departure briefing followed by an urgent radio request to divert around a thunderstorm.",
     situation: "Part 1: The Captain of AFR 624 briefs the First Officer on the GAILLAC 4A departure before takeoff from Runway 14L.\nPart 2: Climbing through 4,500 ft, airborne weather radar shows a severe convective storm cell building directly over the turn towards GAILLAC. The pilot contacts Departure Radar to request a heading 20 degrees left of track.",
     roles: [
@@ -780,7 +782,7 @@ const s5LessonContent = {
     ]
   },
   safetyCheck: {
-    title: "Activity 5: Safety Check: Managing Departure Route Deviations & Level Busts (15 mins)",
+    title: "Activity 6: Safety Check: Managing Departure Route Deviations & Level Busts (15 mins)",
     summary: "Work in teams to analyze the safety hazards when weather forces aircraft off published departure corridors.",
     steps: [
       {
@@ -807,142 +809,36 @@ const s5LessonContent = {
   }
 };
 
-const s5RevisionTerms = [
-  { num: "01", term: "Standard Instrument Departure (SID)", definition: "A published IFR departure route linking an airport to a specified point on an en-route airway." },
-  { num: "02", term: "Standard Terminal Arrival Route (STAR)", definition: "A published IFR arrival route linking an en-route point to a point where an approach can begin." },
-  { num: "03", term: "Waypoint", definition: "A specified geographical location used to define an area navigation (RNAV) route or flight path." },
-  { num: "04", term: "Fly-by Waypoint", definition: "A waypoint that allows turn anticipation to smoothly join the next segment of a route." },
-  { num: "05", term: "Fly-over Waypoint", definition: "A waypoint at which an aircraft must fly directly overhead before starting a turn." },
-  { num: "06", term: "Flight Level (FL)", definition: "An altitude reference surface based on standard pressure (1013.25 hPa), expressed in hundreds of feet." },
-  { num: "07", term: "Transition Altitude (TA)", definition: "The altitude at or below which vertical position is controlled by reference to local ground pressure (QNH)." },
-  { num: "08", term: "Transition Level (TRL)", definition: "The lowest flight level available above the transition altitude, where altimeters are set to standard pressure." },
-  { num: "09", term: "Transition Layer", definition: "The airspace between the transition altitude and transition level where altimeter settings change." },
-  { num: "10", term: "Minimum Safe Altitude (MSA)", definition: "The lowest altitude providing at least 1,000 feet of obstacle clearance within a 25 NM radius." },
-  { num: "11", term: "Altitude Window", definition: "A published vertical constraint requiring an aircraft to cross a waypoint between two specified altitudes." },
-  { num: "12", term: "Speed Restriction", definition: "A mandatory maximum or minimum indicated airspeed published on a chart or instructed by ATC." },
-  { num: "13", term: "Holding Pattern", definition: "A predetermined racetrack flight maneuver keeping an aircraft within specified airspace while awaiting clearance." },
-  { num: "14", term: "Inbound Track", definition: "The magnetic heading flown directly towards a holding fix or navigation facility." },
-  { num: "15", term: "Outbound Leg", definition: "The segment of a holding pattern flown in the opposite direction of the inbound track, usually timed for 1 minute." },
-  { num: "16", term: "Holding Fix", definition: "A specified location defined by a navaid, waypoint, or intersection where a holding pattern begins." },
-  { num: "17", term: "Rate of Climb", definition: "The vertical speed at which an aircraft gains altitude, typically expressed in feet per minute (fpm)." },
-  { num: "18", term: "Climb Gradient", definition: "The ratio of altitude gained to horizontal distance covered, expressed as a percentage or ft/NM." },
-  { num: "19", term: "Noise Abatement Procedure", definition: "Operational climb procedures designed to minimize aircraft noise over populated communities near an airport." },
-  { num: "20", term: "Track (TR)", definition: "The actual path of an aircraft projected over the ground, expressed in degrees from North." },
-  { num: "21", term: "Heading (HDG)", definition: "The direction in which the nose of an aircraft points, expressed in degrees from North." },
-  { num: "22", term: "Airway", definition: "A controlled airspace corridor established with navigation aids for en-route flight." },
-  { num: "23", term: "Upper Airspace", definition: "Airspace above a specified flight level (often FL195) reserved for high-altitude en-route cruising." },
-  { num: "24", term: "Terminal Control Area (TMA)", definition: "A controlled airspace established around one or more major airports to manage arriving and departing traffic." },
-  { num: "25", term: "Control Zone (CTR)", definition: "Controlled airspace extending upwards from the ground to a specified limit immediately around an aerodrome." },
-  { num: "26", term: "Level Bust", definition: "Any unauthorized deviation from an assigned altitude or flight level greater than 300 feet." },
-  { num: "27", term: "Area Navigation (RNAV)", definition: "A navigation method permitting flight on any desired path using ground, satellite, or inertial navigation." },
-  { num: "28", term: "Radar Vectoring", definition: "Providing navigational guidance to an aircraft in the form of specific magnetic headings using radar." },
-  { num: "29", term: "Clearance Limit", definition: "The point to which an aircraft is granted an air traffic control clearance." },
-  { num: "30", term: "Lost Communications Procedure", definition: "The published set of standardized flight actions to follow if two-way radio contact is lost." }
-];
-
-const s5QuizQuestions = [
-  {
-    id: 1,
-    stem: "While flying the GAILLAC 4A departure, the chart specifies: 'Cross GAI at or above FL070.' What does this restriction mean for the climbing aircraft?",
-    options: [
-      { letter: "A", text: "The aircraft must level off at FL060 and request lower." },
-      { letter: "B", text: "The aircraft must reach at least Flight Level 070 by the time it reaches waypoint GAILLAC." },
-      { letter: "C", text: "The aircraft must remain below FL070 until passing GAILLAC." },
-      { letter: "D", text: "The aircraft may ignore the altitude restriction if flying in visual conditions." }
-    ],
-    correctLetter: "B",
-    correctText: "The aircraft must reach at least Flight Level 070 by the time it reaches waypoint GAILLAC.",
-    analysis: "'At or above FL070' establishes an altitude floor to ensure vertical separation from arriving traffic corridors and adequate terrain clearance.",
-    strategy: "Remember: 'at or above' (+) sets a minimum altitude floor that the aircraft must meet or exceed."
-  },
-  {
-    id: 2,
-    stem: "Why do aeronautical charts define a 'Transition Altitude' (such as 5,000 ft AMSL)?",
-    options: [
-      { letter: "A", text: "It is the altitude where the autopilot must be disconnected." },
-      { letter: "B", text: "It is the altitude where flight crews change altimeter subscale from local airport pressure (QNH) to standard pressure (1013.25 hPa)." },
-      { letter: "C", text: "It is the altitude where flight attendants may start serving beverages." },
-      { letter: "D", text: "It is the boundary where aircraft must turn off all exterior lights." }
-    ],
-    correctLetter: "B",
-    correctText: "It is the altitude where flight crews change altimeter subscale from local airport pressure (QNH) to standard pressure (1013.25 hPa).",
-    analysis: "Above Transition Altitude, all aircraft fly using Flight Levels referenced to standard atmospheric pressure (1013.25 hPa), guaranteeing identical vertical separation regardless of local weather differences.",
-    strategy: "Climbing through Transition Altitude = set standard 1013."
-  },
-  {
-    id: 3,
-    stem: "A flight crew climbing on a departure notices severe thunderstorm activity building across the planned track. What is the standard operational procedure?",
-    options: [
-      { letter: "A", text: "Turn immediately without contacting air traffic control." },
-      { letter: "B", text: "Request a weather deviation heading from air traffic control stating the direction and degrees required." },
-      { letter: "C", text: "Fly directly through the center of the storm at maximum engine power." },
-      { letter: "D", text: "Descend to 500 feet above ground level to fly beneath the clouds." }
-    ],
-    correctLetter: "B",
-    correctText: "Request a weather deviation heading from air traffic control stating the direction and degrees required.",
-    analysis: "Pilots must contact ATC as early as possible to request a tactical heading vector (e.g. 'request heading 20 degrees left due to weather') so controllers can coordinate with adjacent airspace sectors.",
-    strategy: "Communicate early: specify direction, heading, and the reason ('due to weather')."
-  },
-  {
-    id: 4,
-    stem: "What is an altitude deviation of more than 300 feet from an assigned clearance commonly called in safety reporting?",
-    options: [
-      { letter: "A", text: "A glide path anomaly." },
-      { letter: "B", text: "A level bust." },
-      { letter: "C", text: "A terrain intrusion." },
-      { letter: "D", text: "A vertical climb runaway." }
-    ],
-    correctLetter: "B",
-    correctText: "A level bust.",
-    analysis: "A 'level bust' occurs whenever an aircraft deviates more than 300 ft from its assigned level in controlled airspace, potentially eroding vertical separation with other aircraft.",
-    strategy: "Level bust = altitude deviation greater than 300 feet."
-  },
-  {
-    id: 5,
-    stem: "On an instrument departure plate, what does a maximum speed limit of '250 kt below FL100' aim to achieve?",
-    options: [
-      { letter: "A", text: "It saves engine fuel during the initial climb." },
-      { letter: "B", text: "It standardizes traffic speeds in high-density terminal airspace, allowing controllers to sequence aircraft safely and see-and-avoid visual traffic." },
-      { letter: "C", text: "It prevents supersonic shockwaves over the airport." },
-      { letter: "D", text: "It reduces tire wear during gear retraction." }
-    ],
-    correctLetter: "B",
-    correctText: "It standardizes traffic speeds in high-density terminal airspace, allowing controllers to sequence aircraft safely and see-and-avoid visual traffic.",
-    analysis: "The 250 kt rule below 10,000 ft / FL100 harmonizes speed differences between various aircraft types and provides adequate reaction time in crowded terminal areas.",
-    strategy: "Standard terminal speed = 250 knots max below FL100."
-  }
-];
-
 // ----------------------------------------------------------------------------
 // SESSION 6 DATA: Approach Plates: Final Corridors & Go-Around Paths
 // ----------------------------------------------------------------------------
 const s6Objectives = {
   title: "Session 6 - Approach Plates: Final Corridors & Go-Around Paths Objectives",
-  summary: "By the end of this session, GSEA students will be able to read and explain instrument approach plates (IAC / ILS) in plain English, use vertical flight path language accurately, understand decision heights and landing minimums, role-play an approach briefing and unexpected go-around execution, and complete a collaborative Safety Check on unstabilized approach criteria.",
+  summary: "By the end of this session, GSEA students will be able to read and explain visual approach plates (IAC / ILS) in plain English, explain vertical descent profiles aloud, play the fast-paced 'Go / No-Go Lightning Challenge', role-play an emergency go-around command, and complete a collaborative Safety Check on unstabilized approach criteria.",
   items: [
     {
       num: 1,
-      title: "Talk About the Final Approach Phase (Fluency & Spontaneous Speech)",
-      description: "Discuss why the final 3 minutes of flight represent the highest workload phase for pilots, and what factors make landing demanding."
+      title: "Read the Side-View Profile Aloud (Profile Briefing Skill)",
+      description: "Learn and use standard spoken patterns to explain vertical descent profiles, FAF Maltese cross, glide path angles, and decision heights."
     },
     {
       num: 2,
-      title: "Read an ILS Approach Plate (Chart Scanning)",
-      description: "Scan a simulated ILS Runway 14L approach plate to locate the localizer course, Final Approach Fix (FAF), glide path angle (3.0°), and decision altitude (DA)."
+      title: "Read a Visual Approach Plate (Visual Chart Scanning)",
+      description: "Scan the visual ILS Runway 14L approach plate to identify plan view fixes (CAPDENAC, BLAGY), FAF at 5.2 DME, 3.0° glide slope, and decision altitude (692 ft)."
     },
     {
       num: 3,
-      title: "Words for Vertical Profiles & Minimums (Vocabulary Focus)",
-      description: "Learn and use essential approach vocabulary: glide slope, localizer, decision altitude/height, minimum descent altitude, RVR, and missed approach point."
+      title: "Vertical Paths & Cockpit Callouts (Language Focus)",
+      description: "Master vertical flight terminology: on the glide slope, slightly high/low, at the final approach fix, upon reaching minimums, and positive climb, gear up."
     },
     {
       num: 4,
-      title: "Describing Vertical Paths & Altitude Callouts (Language Focus)",
-      description: "Practice cockpit altitude and path callouts: on the glide slope, slightly high/low, at the final approach fix, upon reaching minimums, and positive climb, gear up."
+      title: "Communicative Game: ⚡ Go / No-Go Lightning Challenge",
+      description: "Fast-paced rapid-fire round! Take turns reading approach dilemma cards, call out 'CONTINUE!' or 'GO-AROUND!' in 3 seconds, and defend your choice."
     },
     {
       num: 5,
-      title: "Speaking Role-Play: Final Approach & Go-Around Decision (Spoken Interaction)",
+      title: "Speaking Role-Play: Low Visibility Approach & Emergency Go-Around",
       description: "Role-play a tense final approach where a vehicle incursion on the runway forces the controller to command an immediate go-around."
     },
     {
@@ -955,32 +851,32 @@ const s6Objectives = {
 
 const s6LessonPlan = {
   title: "Session 6 Lesson Plan (2 Hours)",
-  summary: "A 2-hour communicative spoken English session for GSEA students covering ILS approach plates, vertical path language, landing minimums, an emergency go-around role-play, and a collaborative Safety Check on unstabilized approaches.",
+  summary: "A 2-hour communicative spoken English session covering visual ILS approach plates, profile view briefings, the 'Go / No-Go Lightning Challenge' game, an emergency go-around role-play, and an unstabilized approach safety check.",
   items: [
     {
       time: "00-15",
       title: "Part 1: Warm-up: The Final 3 Minutes Before Touchdown (15 mins)",
-      description: "In pairs, students discuss cockpit workload on final approach, explain the concept of stabilized approach gates, and test entry knowledge with 4 quick spot-check questions."
+      description: "In pairs, students discuss cockpit workload on final approach, explain stabilized approach gates, and test entry knowledge with 4 spot-check questions."
     },
     {
-      time: "15-45",
-      title: "Part 2: Reading the Simulated ILS Approach Plate (30 mins)",
-      description: "Analyzing the plan view and profile view of the simulated ILS Runway 14L plate at LFMT, identifying the FAF Maltese cross, glide path angle, and missed approach routing."
+      time: "15-40",
+      title: "Part 2: Visual Chart & Profile View Briefing Clinic (25 mins)",
+      description: "Analyzing the visual ILS Runway 14L plate at LFMT, learning standard phrases to describe the vertical step-down profile, and completing a 60-second approach briefing."
     },
     {
-      time: "45-70",
+      time: "40-65",
       title: "Part 3: Language Clinic: Vertical Paths & Cockpit Callouts (25 mins)",
-      description: "Oral drills and pair practice using vertical flight terminology (on the glide slope, at the final approach fix, upon reaching minimums, go-around positive climb) to describe landings."
+      description: "Oral drills and pair practice using vertical flight terminology (on the glide slope, at the final approach fix, upon reaching minimums, go-around positive climb)."
     },
     {
-      time: "70-105",
-      title: "Part 4: Speaking Role-Play: Final Approach & Go-Around Decision (35 mins)",
-      description: "3-student spoken simulation: Approach/Tower Controller commands an immediate go-around due to a vehicle crossing the runway on 2-mile final; Pilot executes missed approach, observed with checklist."
+      time: "65-90",
+      title: "Part 4: Communicative Game: ⚡ Go / No-Go Lightning Challenge (25 mins)",
+      description: "Rapid-fire partner game: students evaluate 6 high-pressure approach scenarios, make instant 3-second 'Continue' or 'Go-Around' calls, and defend their choice."
     },
     {
-      time: "105-120",
-      title: "Part 5: Safety Check: Unstabilized Approach & Go-Around Culture (15 mins)",
-      description: "Collaborative 4-step safety analysis evaluating unstabilized descent rates, late configuration, go-around hesitation, and promoting a blame-free safety policy."
+      time: "90-120",
+      title: "Part 5: Speaking Role-Play & Safety Check (30 mins)",
+      description: "Spoken simulation: Tower Controller commands an immediate go-around due to a vehicle crossing Runway 14L on 2-mile final, followed by a 4-step Safety Check on stabilized criteria."
     }
   ]
 };
@@ -988,7 +884,7 @@ const s6LessonPlan = {
 const s6LessonContent = {
   hero: {
     title: "Approach Plates: Final Corridors & Go-Around Paths",
-    subtitle: "Instrument Approach Charts (IAC), Glide Slopes, Decision Heights & Missed Approach Paths",
+    subtitle: "Visual ILS Plates (Plan & Profile Views), Vertical Flight Callouts & 'Go / No-Go Lightning Challenge' Game",
     image: "images/s3_m1_session6_approach.jpg",
     targetLevel: "CEFR B1–B2",
     roleContext: "GSEA Student Training • Final Approach Operations & Technical English",
@@ -1083,10 +979,24 @@ const s6LessonContent = {
     ]
   },
   chartExtract: {
-    title: "Activity 2: Reading the Simulated ILS Approach Plate (30 mins)",
-    summary: "Analyze the plan view, vertical profile view, and missed approach instructions for the simulated ILS Runway 14L at LFMT.",
-    badge: "SIMULATED INSTRUMENT APPROACH PLATE • ILS RWY 14L (LFMT)",
+    title: "Activity 2: Visual Chart & Profile View Briefing Clinic (25 mins)",
+    summary: "Inspect the visual ILS Runway 14L plate (Plan View + Profile View) and master how to deliver a crisp spoken approach briefing.",
+    visualChart: "images/charts/chart_s6_approach_lfmt.svg",
+    badge: "AUTHENTIC SIMULATION • ILS RWY 14L APPROACH PLATE (LFMT)",
     callsign: "Blagnac-Montpellier Airport (LFMT / Elev 495 ft) • ILS or LOC Rwy 14L",
+    profileClinic: {
+      title: "Speaking Skill: How to Read the Side-View (Profile) Aloud",
+      summary: "Use these spoken patterns to walk your colleague through the vertical approach profile from the FAF to the runway:",
+      phrases: [
+        { label: "1. Navigation Setup", phrase: "This will be the ILS Runway 14L approach, tuned to localizer 109.3 MHz with an inbound track of 142 degrees." },
+        { label: "2. Intermediate Fix", phrase: "We cross BLAGY at 9 DME at an altitude of 4,000 feet, where we begin configuring flaps and gear." },
+        { label: "3. Final Approach Fix", phrase: "The Maltese Cross marks the Final Approach Fix at 5.2 DME at 2,000 feet, where we intercept the 3-degree glide slope." },
+        { label: "4. Vertical Descent", phrase: "Following the 3-degree glide slope downwards, our target descent rate is approximately 750 feet per minute." },
+        { label: "5. Decision Altitude", phrase: "Our CAT I Decision Altitude is 692 feet, which gives us a decision height of exactly 200 feet above the touchdown zone." },
+        { label: "6. Missed Approach", phrase: "In the event of a go-around: climb straight ahead on track 142° to 2,500 feet, then turn left climbing to 4,000 feet direct TOU VOR." }
+      ],
+      challenge: "Partner Challenge: Take turns delivering the full approach briefing to your partner in 60 seconds!"
+    },
     sections: [
       {
         heading: "1. Navigation Frequencies & Course Data",
@@ -1124,7 +1034,7 @@ const s6LessonContent = {
     ]
   },
   grammarClinic: {
-    title: "Activity 3: Language Clinic: Describing Vertical Paths & Cockpit Callouts (25 mins)",
+    title: "Activity 3: Language Clinic: Vertical Paths & Cockpit Callouts (25 mins)",
     summary: "Master clear spoken terminology for vertical flight path tracking, approach warnings, and go-around execution.",
     rules: [
       {
@@ -1191,8 +1101,57 @@ const s6LessonContent = {
       }
     ]
   },
+  communicativeGame: {
+    title: "Activity 4: Communicative Game: ⚡ Go / No-Go Lightning Challenge (25 mins)",
+    summary: "A high-speed approach dilemma game. Take turns reading the 6 dilemma cards below. You have 3 seconds to shout 'CONTINUE!' or 'GO-AROUND!', and 2 complete sentences to defend your choice!",
+    instructions: [
+      "Student A reads a Dilemma Card aloud to Student B.",
+      "Student B must shout either 'CONTINUE!' or 'GO-AROUND!' within 3 SECONDS.",
+      "Student B immediately gives 2 complete spoken sentences defending their decision based on stabilized approach rules.",
+      "Student A checks the model defense and awards 2 points for a prompt, correct call + 2 points for fluent justification.",
+      "Switch roles for the next card!"
+    ],
+    cards: [
+      {
+        id: 1,
+        situation: "At 1,000 ft in IMC: airspeed is 170 kt (target approach speed 140 kt), flaps are at position 2 (landing flaps required), and sink rate is 1,300 fpm. Continue or Go-Around?",
+        verdict: "GO-AROUND!",
+        defense: "The approach is completely unstabilized! The airspeed is 30 knots high, the landing flaps are not set, and the descent rate exceeds the 1,000 fpm safety limit."
+      },
+      {
+        id: 2,
+        situation: "At Decision Altitude 692 ft (200 ft AGL): thick fog rolls over the threshold. Zero approach lights or runway markings are visible. Continue or Go-Around?",
+        verdict: "GO-AROUND!",
+        defense: "Under CAT I ILS rules, visual references are mandatory at Decision Altitude! Without visual contact with the lights or runway, an immediate missed approach must be executed."
+      },
+      {
+        id: 3,
+        situation: "At 500 ft in VMC: aircraft is perfectly aligned on the localizer and glide slope, landing gear down and locked, landing flaps 30 set, speed steady at 142 kt with a 700 fpm descent rate. Continue or Go-Around?",
+        verdict: "CONTINUE!",
+        defense: "All stabilized approach criteria are fully satisfied! The aircraft is in final landing configuration, on speed, on flight path, with normal sink rate."
+      },
+      {
+        id: 4,
+        situation: "At 300 ft on short final: the runway and threshold lights are in plain sight, but the Tower Controller suddenly announces: 'Operations vehicle crossing runway at Taxiway Charlie!' Continue or Go-Around?",
+        verdict: "GO-AROUND!",
+        defense: "The runway is physically obstructed! Continuing the landing creates a severe risk of a high-speed collision, so we must execute an immediate go-around."
+      },
+      {
+        id: 5,
+        situation: "At 400 ft in VMC: the pilot forgot to set full landing flaps. The First Officer realizes and says: 'Wait, let me select flaps full right now!' Continue or Go-Around?",
+        verdict: "GO-AROUND!",
+        defense: "Configuring flaps below the stabilized gate (500 ft in VMC) is strictly forbidden! Trying to configure at 400 ft destabilizes aircraft trim and airspeed close to the ground."
+      },
+      {
+        id: 6,
+        situation: "At 800 ft in light rain: bright approach lighting system is spotted, localizer and glide slope are centered, airspeed is on target, landing clearance received. Continue or Go-Around?",
+        verdict: "CONTINUE!",
+        defense: "The approach is stabilized, visual references are acquired well before minimums, and landing clearance has been confirmed by air traffic control."
+      }
+    ]
+  },
   roleplaySimulation: {
-    title: "Activity 4: Speaking Role-Play: Final Approach & Go-Around Decision (35 mins)",
+    title: "Activity 5: Speaking Role-Play: Low Visibility Approach & Emergency Go-Around (25 mins)",
     summary: "Simulate a high-stress final approach scenario where an unexpected runway incursion forces an immediate go-around.",
     situation: "Flight AFR 884 is on 3-mile final approach for Runway 14L in light drizzle. At 400 ft AGL, the Tower Controller spots an airport maintenance vehicle inadvertently crossing the runway holding point at Taxiway Charlie. The Controller commands an immediate go-around; the pilot executes the missed approach procedure smoothly.",
     roles: [
@@ -1224,7 +1183,7 @@ const s6LessonContent = {
     ]
   },
   safetyCheck: {
-    title: "Activity 5: Safety Check: Unstabilized Approach & Go-Around Culture (15 mins)",
+    title: "Activity 6: Safety Check: Unstabilized Approach & Go-Around Culture (15 mins)",
     summary: "Work in teams to analyze the risks of unstabilized approaches and agree on how to build a strong go-around safety culture.",
     steps: [
       {
@@ -1251,150 +1210,20 @@ const s6LessonContent = {
   }
 };
 
-const s6RevisionTerms = [
-  { num: "01", term: "Instrument Approach Chart (IAC)", definition: "An aeronautical chart showing the established instrument approach procedure to a specific runway." },
-  { num: "02", term: "Instrument Landing System (ILS)", definition: "A precision runway approach aid providing both horizontal (localizer) and vertical (glide path) guidance." },
-  { num: "03", term: "Localizer (LOC)", definition: "The component of an ILS providing lateral (left/right) tracking along the runway centerline." },
-  { num: "04", term: "Glide Path (Glide Slope)", definition: "The component of an ILS providing vertical guidance along a specified descent angle (normally 3 degrees)." },
-  { num: "05", term: "Final Approach Fix (FAF)", definition: "The point in an instrument approach where the final descent segment begins, marked by a Maltese cross." },
-  { num: "06", term: "Initial Approach Fix (IAF)", definition: "The fix that marks the beginning of the initial approach segment towards the runway." },
-  { num: "07", term: "Intermediate Fix (IF)", definition: "The fix marking the end of the initial segment and beginning of the intermediate segment for final configuration." },
-  { num: "08", term: "Decision Altitude (DA)", definition: "A specified altitude (mean sea level) in a precision approach where a missed approach must be initiated if no visual reference." },
-  { num: "09", term: "Decision Height (DH)", definition: "A specified height (above runway threshold) in a precision approach where a missed approach must be initiated if no visual reference." },
-  { num: "10", term: "Minimum Descent Altitude (MDA)", definition: "The lowest altitude in a non-precision approach below which descent cannot be made without visual references." },
-  { num: "11", term: "Runway Visual Range (RVR)", definition: "The distance down the runway that a pilot on the centerline can see runway surface markings or lights." },
-  { num: "12", term: "Missed Approach Procedure (Go-Around)", definition: "The published flight procedure to follow if an approach cannot be safely completed to a landing." },
-  { num: "13", term: "Missed Approach Point (MAPt)", definition: "The point in an instrument approach procedure at or before which a missed approach must be initiated." },
-  { num: "14", term: "Touchdown Zone Elevation (TDZE)", definition: "The highest elevation in the first 3,000 feet of the landing runway surface." },
-  { num: "15", term: "Precision Approach", definition: "An instrument approach and landing utilizing both precision lateral and vertical guidance (such as CAT I, II, or III ILS)." },
-  { num: "16", term: "Non-Precision Approach", definition: "An instrument approach utilizing lateral navigation guidance without vertical glide path guidance (e.g. VOR, LOC-only)." },
-  { num: "17", term: "Visual References", definition: "Physical ground features (approach lights, threshold markings) required to continue an approach below DA/MDA." },
-  { num: "18", term: "Stabilized Approach", definition: "An approach where airspeed, descent rate, engine thrust, and landing configuration are within exact limits by a set gate." },
-  { num: "19", term: "Sink Rate", definition: "The rate of descent of an aircraft toward the ground, which should not exceed 1,000 feet per minute on final approach." },
-  { num: "20", term: "Maltese Cross", definition: "The chart symbol designating the Final Approach Fix for an approach on an instrument plate profile view." },
-  { num: "21", term: "Glide Path Angle", definition: "The angle of descent of the electronic glide slope beam, typically calibrated at 3.0 degrees." },
-  { num: "22", term: "Threshold Crossing Height (TCH)", definition: "The theoretical height in feet above the runway threshold where the aircraft's glide path antenna crosses (normally 50 ft)." },
-  { num: "23", term: "Runway Threshold", definition: "The beginning of that portion of the runway usable for landing." },
-  { num: "24", term: "Approach Lighting System (ALS)", definition: "A system of high-intensity lights extending outward from the runway threshold to assist visual landing transition." },
-  { num: "25", term: "Visual Descent Point (VDP)", definition: "A defined point on a non-precision approach from which normal descent from the MDA to the runway may begin." },
-  { num: "26", term: "Balked Landing", definition: "A discontinued landing attempt initiated after the aircraft has descended below decision height or after touchdown." },
-  { num: "27", term: "Holding on Missed Approach", definition: "The published holding fix where an aircraft holds after executing a go-around while awaiting a second approach or diversion." },
-  { num: "28", term: "Alternate Aerodrome", definition: "An aerodrome to which an aircraft can proceed if landing at the destination becomes impossible or inadvisable." },
-  { num: "29", term: "Fuel Diversion", definition: "Diverting to an alternate aerodrome before fuel reserves drop below the legal minimum final reserve fuel." },
-  { num: "30", term: "Go-Around Mindset", definition: "The safety philosophy where every approach is planned as a go-around until confirming all landing criteria are met." }
-];
-
-const s6QuizQuestions = [
-  {
-    id: 1,
-    stem: "While flying an ILS approach to Runway 14L, the flight crew reaches Decision Altitude (692 ft AMSL / 200 ft AGL) in thick cloud with zero visual contact with the runway lights. What is the mandatory pilot action?",
-    options: [
-      { letter: "A", text: "Descend another 100 feet to check if the fog clears closer to the grass." },
-      { letter: "B", text: "Immediately initiate a missed approach (go-around) by applying go-around thrust and pitching into a positive climb." },
-      { letter: "C", text: "Level off at 692 feet and fly straight ahead until hearing the landing gear touch down." },
-      { letter: "D", text: "Ask the tower controller to guess whether the runway is clear." }
-    ],
-    correctLetter: "B",
-    correctText: "Immediately initiate a missed approach (go-around) by applying go-around thrust and pitching into a positive climb.",
-    analysis: "Under ICAO and EASA rules, at Decision Altitude on a precision approach, if required visual references are not visible, an immediate missed approach must be initiated. Continuing descent without visual reference is strictly prohibited.",
-    strategy: "No visual reference at DA = immediate go-around."
-  },
-  {
-    id: 2,
-    stem: "On an approach chart profile view, what does the 'Maltese Cross' symbol signify to the flight crew?",
-    options: [
-      { letter: "A", text: "The location of the airport medical emergency station." },
-      { letter: "B", text: "The Final Approach Fix (FAF), indicating where the final descent segment begins." },
-      { letter: "C", text: "The missed approach holding fix." },
-      { letter: "D", text: "The point where cabin crew must make the final landing announcement." }
-    ],
-    correctLetter: "B",
-    correctText: "The Final Approach Fix (FAF), indicating where the final descent segment begins.",
-    analysis: "The Maltese Cross represents the Final Approach Fix on profile views, marking where the final approach segment begins and where altitude checks are confirmed against distance.",
-    strategy: "Maltese Cross = Final Approach Fix (FAF)."
-  },
-  {
-    id: 3,
-    stem: "What is the primary operational criteria for an approach to be considered 'stabilized' at 1,000 feet in instrument conditions?",
-    options: [
-      { letter: "A", text: "Engines at idle thrust, flaps retracted, and passenger seatbelt sign turned off." },
-      { letter: "B", text: "Aircraft on correct flight path, correct landing configuration (gear and flaps set), speed within -0/+10 kt of target, and sink rate 1,000 fpm or less." },
-      { letter: "C", text: "Autopilot disconnected and flight attendants serving coffee in the galley." },
-      { letter: "D", text: "Aircraft flying at 250 knots with speedbrakes fully extended." }
-    ],
-    correctLetter: "B",
-    correctText: "Aircraft on correct flight path, correct landing configuration (gear and flaps set), speed within -0/+10 kt of target, and sink rate 1,000 fpm or less.",
-    analysis: "A stabilized approach requires the aircraft to be configured, on speed, on lateral and vertical path, with engines spooled and sink rate <= 1,000 fpm by the 1,000 ft IMC gate.",
-    strategy: "Stabilized = configured, on path, on speed, sink rate <= 1,000 fpm."
-  },
-  {
-    id: 4,
-    stem: "Why does modern airline safety culture promote a 'Go-Around Mindset'?",
-    options: [
-      { letter: "A", text: "Because practicing go-arounds burns more fuel and lowers aircraft landing weight." },
-      { letter: "B", text: "Because treating every approach as a planned go-around ensures pilots never hesitate to abort a landing if parameters become unsafe." },
-      { letter: "C", text: "Because go-arounds give passengers a better panoramic view of the airport." },
-      { letter: "D", text: "Because controllers need extra time to complete paperwork between flights." }
-    ],
-    correctLetter: "B",
-    correctText: "Because treating every approach as a planned go-around ensures pilots never hesitate to abort a landing if parameters become unsafe.",
-    analysis: "A go-around mindset eliminates hesitation. If the pilot assumes a go-around is normal, landing becomes a bonus only executed when all conditions are 100% verified.",
-    strategy: "Plan to go around; only land if everything is perfect."
-  },
-  {
-    id: 5,
-    stem: "On the simulated ILS Runway 14L approach plate, what is the published initial action on the missed approach procedure?",
-    options: [
-      { letter: "A", text: "Turn immediately right heading 320 degrees to return to the airport terminal." },
-      { letter: "B", text: "Climb straight ahead on runway track 142° to 2,500 feet before turning." },
-      { letter: "C", text: "Descend to 200 feet and circle around the control tower." },
-      { letter: "D", text: "Cut engine power and glide towards the nearest open field." }
-    ],
-    correctLetter: "B",
-    correctText: "Climb straight ahead on runway track 142° to 2,500 feet before turning.",
-    analysis: "The published procedure specifies: 'Climb straight ahead on runway track 142° to 2,500 ft QNH. At 2,500 ft, turn left climbing to 4,000 ft direct to TOU VOR and hold.'",
-    strategy: "Always follow the published straight-ahead climb to clear obstacles before turning."
-  }
-];
-
 // ----------------------------------------------------------------------------
 // ATTACH DATA TO courseData
 // ----------------------------------------------------------------------------
 m1.sessions["4"].objectives = s4Objectives;
 m1.sessions["4"].lessonPlan = s4LessonPlan;
 m1.sessions["4"].lessonContent = s4LessonContent;
-m1.sessions["4"].revision = {
-  title: "Session 4 Revision - Aerodrome Ground Layouts & Taxiway Navigation",
-  summary: "30 essential operational and ground navigation vocabulary terms for GSEA students covering aerodrome charts, taxiways, holding points, and surface markings.",
-  terms: s4RevisionTerms
-};
-m1.sessions["4"].materials.quizTitle = "Airside Scenario Quiz • Aerodrome Ground Layouts & Taxiway Navigation";
-m1.sessions["4"].materials.quizSubtitle = "Target pace: ~45 seconds per scenario • Mix of Ground Navigation Dilemmas & Chart Spot-Checks";
-m1.sessions["4"].materials.toeicQuestions = s4QuizQuestions;
 
 m1.sessions["5"].objectives = s5Objectives;
 m1.sessions["5"].lessonPlan = s5LessonPlan;
 m1.sessions["5"].lessonContent = s5LessonContent;
-m1.sessions["5"].revision = {
-  title: "Session 5 Revision - Airspace Corridors: SIDs, STARs & Transition Routes",
-  summary: "30 essential operational and terminal navigation vocabulary terms for GSEA students covering departure routes, arrivals, waypoints, and prepositions of movement.",
-  terms: s5RevisionTerms
-};
-m1.sessions["5"].materials.quizTitle = "Airside Scenario Quiz • Airspace Corridors: SIDs, STARs & Transition Routes";
-m1.sessions["5"].materials.quizSubtitle = "Target pace: ~45 seconds per scenario • Mix of Departure Route Dilemmas & Chart Spot-Checks";
-m1.sessions["5"].materials.toeicQuestions = s5QuizQuestions;
 
 m1.sessions["6"].objectives = s6Objectives;
 m1.sessions["6"].lessonPlan = s6LessonPlan;
 m1.sessions["6"].lessonContent = s6LessonContent;
-m1.sessions["6"].revision = {
-  title: "Session 6 Revision - Approach Plates: Final Corridors & Go-Around Paths",
-  summary: "30 essential operational and approach navigation vocabulary terms for GSEA students covering ILS plates, glide slopes, decision heights, and missed approach procedures.",
-  terms: s6RevisionTerms
-};
-m1.sessions["6"].materials.quizTitle = "Airside Scenario Quiz • Approach Plates: Final Corridors & Go-Around Paths";
-m1.sessions["6"].materials.quizSubtitle = "Target pace: ~45 seconds per scenario • Mix of Final Approach Dilemmas & Go-Around Spot-Checks";
-m1.sessions["6"].materials.toeicQuestions = s6QuizQuestions;
 
 // Serialize courseData back to data/course-data.js
 const outputCourseData = `/**
@@ -1421,14 +1250,14 @@ const outputCourseData = `/**
 `;
 
 fs.writeFileSync(courseDataPath, outputCourseData, 'utf8');
-console.log('✓ Successfully updated data/course-data.js for Sessions 4, 5 & 6 (90 vocab terms + quizzes + plans).');
+console.log('✓ Successfully updated data/course-data.js with enhanced activities and games.');
 
 // ============================================================================
 // PART B: UPDATE src/js/05-templates-mod1.js
 // ============================================================================
 
 // Function generator for Sessions 4, 5, 6
-function generateTemplateFunction(sessionNum, sessionTag, moduleName, note1Label, note1Placeholder, note2Label, note2Placeholder) {
+function generateTemplateFunction(sessionNum, sessionTag, moduleName, note1Label, note1Placeholder, note2Label, note2Placeholder, gameRenderer, clinicRenderer) {
   return `    function renderLessonContentTabSession${sessionNum}(sessionData, theme) {
       const bodyEl = document.getElementById('modal-body');
       if (!bodyEl) return;
@@ -1437,6 +1266,7 @@ function generateTemplateFunction(sessionNum, sessionTag, moduleName, note1Label
       const opening = content.openingSession || {};
       const chart = content.chartExtract || {};
       const clinic = content.grammarClinic || {};
+      const game = content.communicativeGame || {};
       const roleplay = content.roleplaySimulation || {};
       const safety = content.safetyCheck || {};
 
@@ -1576,43 +1406,59 @@ function generateTemplateFunction(sessionNum, sessionTag, moduleName, note1Label
             </div>
           </div>
 
-          <!-- Activity 2: Reading the Chart Extract -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+          <!-- Activity 2: Visual Chart & Description Clinic -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-5">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: \${theme.primary};">15-45m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: \${theme.primary};">15-40m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">\${chart.title || 'Activity 2: Reading the Chart Extract (30 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">\${chart.title || 'Activity 2: Visual Chart & Description Clinic (25 mins)'}</h4>
                   <p class="text-[11px] text-slate-500">\${chart.summary || ''}</p>
                 </div>
               </div>
-              <span class="bg-blue-100 text-blue-800 text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">\${chart.badge || 'CHART EXTRACT'}</span>
+              <span class="bg-blue-100 text-blue-800 text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">\${chart.badge || 'AERONAUTICAL CHART'}</span>
             </div>
 
-            <!-- Chart Terminal Header -->
-            <div class="p-3.5 bg-slate-900 text-white rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-              <div class="flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span class="text-xs font-mono font-bold tracking-wide uppercase">\${chart.callsign || 'AUTHENTIC SIMULATION'}</span>
-              </div>
-              <span class="text-[10px] font-mono text-slate-300">ICAO / EASA STANDARD SPECIFICATION</span>
-            </div>
-
-            <!-- Structured Extract Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              \${(chart.sections || []).map(sec => \`
-                <div class="p-4 bg-slate-50 border border-slate-200 rounded-lg space-y-2">
-                  <h5 class="text-xs font-black text-slate-800 border-b border-slate-200 pb-1.5">\${sec.heading}</h5>
-                  <ul class="space-y-1.5 text-xs text-slate-700">
-                    \${sec.details.map(d => \`
-                      <li class="flex items-start gap-2">
-                        <span class="text-blue-600 font-bold mt-0.5">&bull;</span>
-                        <span class="leading-relaxed">\${d}</span>
-                      </li>
-                    \`).join('')}
-                  </ul>
+            <!-- Visual Chart Container -->
+            <div class="bg-slate-950 rounded-xl overflow-hidden border border-slate-800 shadow-md">
+              <div class="p-3 bg-slate-900 border-b border-slate-800 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span class="text-xs font-mono font-bold text-white tracking-wide uppercase">\${chart.callsign || 'LFMT SPECIFICATION'}</span>
                 </div>
-              \`).join('')}
+                <div class="flex items-center gap-2">
+                  <a href="\${chart.visualChart}" target="_blank" rel="noopener noreferrer" class="no-print inline-flex items-center gap-1.5 px-2.5 py-1 text-[11px] font-bold text-slate-200 bg-slate-800 hover:bg-slate-700 rounded border border-slate-600 transition-colors">
+                    <svg class="w-3.5 h-3.5 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    <span>Inspect / Open Full Chart</span>
+                  </a>
+                </div>
+              </div>
+              <div class="p-2 sm:p-4 bg-slate-950 flex items-center justify-center">
+                <img src="\${chart.visualChart}" alt="\${chart.badge}" class="w-full max-w-4xl h-auto rounded shadow-sm border border-slate-800/80 cursor-pointer transition-transform hover:scale-[1.005]" onclick="window.open('\${chart.visualChart}', '_blank')" title="Click to view full size">
+              </div>
+            </div>
+
+            <!-- Speaking Skill Clinic (Map / Flight Path / Profile Description) -->
+            ${clinicRenderer}
+
+            <!-- Structured Technical Specifications -->
+            <div class="space-y-2 pt-2 border-t border-slate-100">
+              <h5 class="text-xs font-black uppercase tracking-wider text-slate-700">Chart Operational Notes &amp; Data:</h5>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                \${(chart.sections || []).map(sec => \`
+                  <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-lg space-y-1.5">
+                    <h6 class="text-xs font-black text-slate-800 border-b border-slate-200 pb-1">\${sec.heading}</h6>
+                    <ul class="space-y-1 text-xs text-slate-700">
+                      \${sec.details.map(d => \`
+                        <li class="flex items-start gap-1.5">
+                          <span class="text-blue-600 font-bold mt-0.5">&bull;</span>
+                          <span class="leading-relaxed text-[11px]">\${d}</span>
+                        </li>
+                      \`).join('')}
+                    </ul>
+                  </div>
+                \`).join('')}
+              </div>
             </div>
           </div>
 
@@ -1620,7 +1466,7 @@ function generateTemplateFunction(sessionNum, sessionTag, moduleName, note1Label
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: \${theme.primary};">45-70m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: \${theme.primary};">40-65m</span>
                 <div>
                   <h4 class="text-sm sm:text-base font-black text-slate-900">\${clinic.title || 'Activity 3: Language Clinic (25 mins)'}</h4>
                   <p class="text-[11px] text-slate-500">\${clinic.summary || ''}</p>
@@ -1664,13 +1510,16 @@ function generateTemplateFunction(sessionNum, sessionTag, moduleName, note1Label
             </div>
           </div>
 
-          <!-- Activity 4: Interactive Spoken Role-Play -->
+          <!-- Activity 4: Distinct Communicative Game -->
+          ${gameRenderer}
+
+          <!-- Activity 5: Spoken Role-Play Simulation -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: \${theme.primary};">70-105m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: \${theme.primary};">90-105m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">\${roleplay.title || 'Activity 4: Spoken Role-Play (35 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">\${roleplay.title || 'Activity 5: Spoken Role-Play (20 mins)'}</h4>
                   <p class="text-[11px] text-slate-500">\${roleplay.summary || ''}</p>
                 </div>
               </div>
@@ -1680,7 +1529,7 @@ function generateTemplateFunction(sessionNum, sessionTag, moduleName, note1Label
             <!-- Situation Brief -->
             <div class="p-3.5 bg-emerald-50/70 border border-emerald-200 rounded-lg text-xs space-y-1">
               <span class="font-bold text-emerald-900 uppercase text-[10px] tracking-wider">Scenario Situation Brief:</span>
-              <p class="text-slate-800 leading-relaxed">\${roleplay.situation || ''}</p>
+              <p class="text-slate-800 leading-relaxed whitespace-pre-line">\${roleplay.situation || ''}</p>
             </div>
 
             <!-- Role Cards -->
@@ -1717,13 +1566,13 @@ function generateTemplateFunction(sessionNum, sessionTag, moduleName, note1Label
             </div>
           </div>
 
-          <!-- Activity 5: Safety Check -->
+          <!-- Activity 6: Safety Check -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: \${theme.primary};">105-120m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">\${safety.title || 'Activity 5: Safety Check (15 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">\${safety.title || 'Activity 6: Safety Check (15 mins)'}</h4>
                   <p class="text-[11px] text-slate-500">\${safety.summary || ''}</p>
                 </div>
               </div>
@@ -1743,14 +1592,14 @@ function generateTemplateFunction(sessionNum, sessionTag, moduleName, note1Label
             </div>
           </div>
 
-          <!-- Activity 6: Operational Notes -->
+          <!-- Activity 7: Operational Notes -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs bg-slate-800">NOTES</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">Activity 6: Operational Notes &amp; Decisions</h4>
-                  <p class="text-[11px] text-slate-500">Record your team's role-play conclusions and safety decisions. Auto-saved in browser local storage.</p>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">Activity 7: Operational Notes &amp; Game Records</h4>
+                  <p class="text-[11px] text-slate-500">Record your team's role-play conclusions and game decisions. Auto-saved in browser local storage.</p>
                 </div>
               </div>
               <div class="flex items-center gap-2 text-[11px]">
@@ -1787,34 +1636,277 @@ function generateTemplateFunction(sessionNum, sessionTag, moduleName, note1Label
     }`;
 }
 
+// ----------------------------------------------------------------------------
+// SESSION 4 CUSTOM RENDERERS: Map Clinic & Blind Taxi Navigator Game
+// ----------------------------------------------------------------------------
+const s4ClinicRenderer = `
+            <!-- Map Description Skill Box -->
+            <div class="p-4 bg-indigo-50/60 border border-indigo-200 rounded-xl space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
+                  <h5 class="text-xs font-black uppercase tracking-wider text-indigo-900">\${chart.mapDescriptionClinic?.title || 'Map Orientation Skill'}</h5>
+                </div>
+                <span class="text-[10px] font-bold text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded">Spoken Fluency</span>
+              </div>
+              <p class="text-xs text-slate-700 leading-relaxed">\${chart.mapDescriptionClinic?.summary || ''}</p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                \${(chart.mapDescriptionClinic?.phrases || []).map(p => \`
+                  <div class="p-2.5 bg-white border border-indigo-100 rounded-lg text-xs space-y-0.5">
+                    <span class="text-[10px] font-bold text-indigo-600 uppercase">\${p.label}:</span>
+                    <p class="text-slate-800 italic text-[11px]">&ldquo;\${p.phrase}&rdquo;</p>
+                  </div>
+                \`).join('')}
+              </div>
+              <div class="p-2.5 bg-white border border-indigo-200 rounded-lg text-[11px] text-indigo-900 font-bold flex items-center gap-2">
+                <span>⏱️</span>
+                <span>\${chart.mapDescriptionClinic?.challenge || ''}</span>
+              </div>
+            </div>
+`;
+
+const s4GameRenderer = `
+          <!-- Activity 4: Blind Taxi Navigator Game -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: \${theme.primary};">65-90m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">\${game.title || 'Activity 4: 🎮 The Blind Taxi Navigator Game (25 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">\${game.summary || ''}</p>
+                </div>
+              </div>
+              <span class="bg-amber-100 text-amber-900 text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">INFORMATION-GAP GAME</span>
+            </div>
+
+            <!-- Game Instructions -->
+            <div class="p-3.5 bg-amber-50/70 border border-amber-200 rounded-lg text-xs space-y-1.5">
+              <span class="font-bold text-amber-900 uppercase text-[10px] tracking-wider">How to Play:</span>
+              <ul class="list-disc pl-4 space-y-1 text-slate-700 text-[11px]">
+                \${(game.instructions || []).map(i => \`<li>\${i}</li>\`).join('')}
+              </ul>
+            </div>
+
+            <!-- 4 Secret Missions -->
+            <div class="space-y-2">
+              <h5 class="text-xs font-black uppercase tracking-wider text-slate-700">Choose a Secret Mission (Student A Only):</h5>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                \${(game.missions || []).map(m => \`
+                  <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-1.5">
+                    <div class="flex items-center justify-between">
+                      <span class="text-xs font-bold text-slate-900">\${m.mission}</span>
+                    </div>
+                    <button type="button" onclick="this.nextElementSibling.classList.toggle('hidden')" class="text-[10px] font-bold text-blue-600 hover:underline cursor-pointer">
+                      Show Route Guidance Hints
+                    </button>
+                    <div class="hidden text-[11px] text-slate-600 bg-white p-2 rounded border border-slate-200 italic">
+                      Hints: \${m.hints}
+                    </div>
+                  </div>
+                \`).join('')}
+              </div>
+            </div>
+
+            <!-- Sample Game Dialogue -->
+            <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-2">
+              <div class="flex items-center justify-between">
+                <h5 class="text-xs font-bold text-slate-800">Model Spoken Game Dialogue:</h5>
+                <span class="text-[10px] font-medium text-slate-500">Notice clear prepositions of place and distances</span>
+              </div>
+              <div class="p-2.5 bg-white rounded border border-slate-200 space-y-1 text-[11px] font-mono text-slate-700">
+                \${(game.sampleDialogue || []).map(d => \`<p>\${d}</p>\`).join('')}
+              </div>
+            </div>
+          </div>
+`;
+
+// ----------------------------------------------------------------------------
+// SESSION 5 CUSTOM RENDERERS: Flight Path Narration & Airspace Detective Game
+// ----------------------------------------------------------------------------
+const s5ClinicRenderer = `
+            <!-- Flight Path Narration Skill Box -->
+            <div class="p-4 bg-purple-50/60 border border-purple-200 rounded-xl space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-purple-600"></span>
+                  <h5 class="text-xs font-black uppercase tracking-wider text-purple-900">\${chart.flightPathClinic?.title || 'Flight Path Narration Skill'}</h5>
+                </div>
+                <span class="text-[10px] font-bold text-purple-700 bg-purple-100 px-2 py-0.5 rounded">Sequential Speaking</span>
+              </div>
+              <p class="text-xs text-slate-700 leading-relaxed">\${chart.flightPathClinic?.summary || ''}</p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                \${(chart.flightPathClinic?.phrases || []).map(p => \`
+                  <div class="p-2.5 bg-white border border-purple-100 rounded-lg text-xs space-y-0.5">
+                    <span class="text-[10px] font-bold text-purple-600 uppercase">\${p.label}:</span>
+                    <p class="text-slate-800 italic text-[11px]">&ldquo;\${p.phrase}&rdquo;</p>
+                  </div>
+                \`).join('')}
+              </div>
+              <div class="p-2.5 bg-white border border-purple-200 rounded-lg text-[11px] text-purple-900 font-bold flex items-center gap-2">
+                <span>⏱️</span>
+                <span>\${chart.flightPathClinic?.challenge || ''}</span>
+              </div>
+            </div>
+`;
+
+const s5GameRenderer = `
+          <!-- Activity 4: Airspace Detective Game -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: \${theme.primary};">65-90m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">\${game.title || 'Activity 4: 🔍 Airspace Detective: Spot the Route Trap (25 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">\${game.summary || ''}</p>
+                </div>
+              </div>
+              <span class="bg-indigo-100 text-indigo-900 text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">LOGIC &amp; SPEAKING GAME</span>
+            </div>
+
+            <!-- Game Instructions -->
+            <div class="p-3.5 bg-indigo-50/70 border border-indigo-200 rounded-lg text-xs space-y-1.5">
+              <span class="font-bold text-indigo-900 uppercase text-[10px] tracking-wider">How to Play:</span>
+              <ul class="list-disc pl-4 space-y-1 text-slate-700 text-[11px]">
+                \${(game.instructions || []).map(i => \`<li>\${i}</li>\`).join('')}
+              </ul>
+            </div>
+
+            <!-- 4 Clearance Cases -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              \${(game.cases || []).map(c => \`
+                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-lg space-y-2 flex flex-col justify-between">
+                  <div>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase">\${c.id}</span>
+                    <p class="text-xs font-mono font-bold text-slate-800 mt-1 leading-relaxed">&ldquo;\${c.clearance}&rdquo;</p>
+                  </div>
+                  <div class="pt-2 border-t border-slate-200">
+                    <button type="button" onclick="this.nextElementSibling.classList.toggle('hidden')" class="text-[10px] font-bold text-blue-600 hover:underline cursor-pointer">
+                      Reveal Detective Report
+                    </button>
+                    <div class="hidden mt-1 p-2 bg-white rounded border border-slate-200 text-[11px]">
+                      <span class="font-bold \${c.status.includes('TRAP') ? 'text-rose-600' : 'text-emerald-600'}">\${c.status}:</span>
+                      <p class="text-slate-600 mt-0.5 leading-relaxed">\${c.note}</p>
+                    </div>
+                  </div>
+                </div>
+              \`).join('')}
+            </div>
+
+            <div class="p-3 bg-amber-50 border border-amber-200 rounded-lg text-xs text-amber-900 font-bold flex items-center gap-2">
+              <span>🎤</span>
+              <span>\${game.challengeQuestion || ''}</span>
+            </div>
+          </div>
+`;
+
+// ----------------------------------------------------------------------------
+// SESSION 6 CUSTOM RENDERERS: Profile Clinic & Go/No-Go Lightning Challenge
+// ----------------------------------------------------------------------------
+const s6ClinicRenderer = `
+            <!-- Profile View Skill Box -->
+            <div class="p-4 bg-cyan-50/60 border border-cyan-200 rounded-xl space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-cyan-600"></span>
+                  <h5 class="text-xs font-black uppercase tracking-wider text-cyan-900">\${chart.profileClinic?.title || 'Profile View Briefing Skill'}</h5>
+                </div>
+                <span class="text-[10px] font-bold text-cyan-700 bg-cyan-100 px-2 py-0.5 rounded">Vertical Descent</span>
+              </div>
+              <p class="text-xs text-slate-700 leading-relaxed">\${chart.profileClinic?.summary || ''}</p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                \${(chart.profileClinic?.phrases || []).map(p => \`
+                  <div class="p-2.5 bg-white border border-cyan-100 rounded-lg text-xs space-y-0.5">
+                    <span class="text-[10px] font-bold text-cyan-600 uppercase">\${p.label}:</span>
+                    <p class="text-slate-800 italic text-[11px]">&ldquo;\${p.phrase}&rdquo;</p>
+                  </div>
+                \`).join('')}
+              </div>
+              <div class="p-2.5 bg-white border border-cyan-200 rounded-lg text-[11px] text-cyan-900 font-bold flex items-center gap-2">
+                <span>⏱️</span>
+                <span>\${chart.profileClinic?.challenge || ''}</span>
+              </div>
+            </div>
+`;
+
+const s6GameRenderer = `
+          <!-- Activity 4: Go / No-Go Lightning Challenge Game -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: \${theme.primary};">65-90m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">\${game.title || 'Activity 4: ⚡ Go / No-Go Lightning Challenge (25 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">\${game.summary || ''}</p>
+                </div>
+              </div>
+              <span class="bg-rose-100 text-rose-900 text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">LIGHTNING DECISION GAME</span>
+            </div>
+
+            <!-- Game Instructions -->
+            <div class="p-3.5 bg-rose-50/70 border border-rose-200 rounded-lg text-xs space-y-1.5">
+              <span class="font-bold text-rose-900 uppercase text-[10px] tracking-wider">Lightning Challenge Rules:</span>
+              <ul class="list-disc pl-4 space-y-1 text-slate-700 text-[11px]">
+                \${(game.instructions || []).map(i => \`<li>\${i}</li>\`).join('')}
+              </ul>
+            </div>
+
+            <!-- 6 Dilemma Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              \${(game.cards || []).map(card => \`
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-2 flex flex-col justify-between">
+                  <div>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase">Dilemma Card 0\${card.id}</span>
+                    <p class="text-xs font-bold text-slate-800 mt-1 leading-relaxed">\${card.situation}</p>
+                  </div>
+                  <div class="pt-2 border-t border-slate-200">
+                    <button type="button" onclick="this.nextElementSibling.classList.toggle('hidden')" class="text-[10px] font-bold text-blue-600 hover:underline cursor-pointer">
+                      Reveal Verdict &amp; Defense
+                    </button>
+                    <div class="hidden mt-1 p-2 bg-white rounded border border-slate-200 text-[11px]">
+                      <span class="font-bold \${card.verdict.includes('GO-AROUND') ? 'text-rose-600' : 'text-emerald-600'}">\${card.verdict}</span>
+                      <p class="text-slate-600 mt-0.5 leading-relaxed">\${card.defense}</p>
+                    </div>
+                  </div>
+                </div>
+              \`).join('')}
+            </div>
+          </div>
+`;
+
 const s4TemplateCode = generateTemplateFunction(
   4,
   's4',
   'Aerodrome Ground Layouts & Taxiway Navigation',
-  'Taxi Clearance & Runway Crossing Routing Notes',
+  'Blind Taxi Navigator & Taxi Clearance Routing Notes',
   'e.g., Assigned routing for AFR 412: Stand 14 via Taxiway Delta, hold short of Runway 14R at holding point D1. Crossed 14R upon clearance, joined Taxiway Alpha to holding point A1...',
   'Runway Incursion Safety Defenses & Hot Spot 1 Action',
-  'e.g., Mandatory red stop bars installed at D1. Enhanced yellow centerline markings painted 45m prior to stop line. Progressive taxi instructions and full verbal readback enforced...'
+  'e.g., Mandatory red stop bars installed at D1. Enhanced yellow centerline markings painted 45m prior to stop line. Progressive taxi instructions and full verbal readback enforced...',
+  s4GameRenderer,
+  s4ClinicRenderer
 );
 
 const s5TemplateCode = generateTemplateFunction(
   5,
   's5',
   'Airspace Corridors: SIDs, STARs & Transition Routes',
-  'Departure Briefing & Storm Diversion Routing Notes',
-  'e.g., GAILLAC 4A departure briefed: Climb runway heading 142° to 3,000 ft, turn left direct GAI VOR. Weather avoidance: Requested 20° left heading at 4,500 ft to clear CB cell; approved by ATC to FL090...',
+  'Airspace Detective Findings & Departure Routing Notes',
+  'e.g., GAILLAC 4A departure briefed: Climb runway heading 142° to 3,000 ft, turn left direct GAI VOR. Caught Case Bravo trap: turn at 1,200 ft violates noise abatement. Weather avoidance: Requested 20° left heading at 4,500 ft to clear CB cell...',
   'Departure Route Deviation & Level Bust Safety Record',
-  'e.g., Verified Minimum Safe Altitude (MSA 4,200 ft). Cross-checked terrain floor to south (Pyrenees sector 7,800 ft). Maintained sterile cockpit and 100% verbal readback of tactical headings...'
+  'e.g., Verified Minimum Safe Altitude (MSA 4,200 ft). Cross-checked terrain floor to south (Pyrenees sector 7,800 ft). Maintained sterile cockpit and 100% verbal readback of tactical headings...',
+  s5GameRenderer,
+  s5ClinicRenderer
 );
 
 const s6TemplateCode = generateTemplateFunction(
   6,
   's6',
   'Approach Plates: Final Corridors & Go-Around Paths',
-  'Final Approach Briefing & Go-Around Execution Notes',
-  'e.g., ILS Runway 14L briefed: Localizer 109.3 MHz, inbound track 142°, FAF 5.2 DME at 2,000 ft, DA 692 ft (DH 200 ft). Go-around called at 400 ft due to vehicle on runway: climbed straight ahead to 2,500 ft, flaps 15, gear up...',
+  'Go / No-Go Lightning Defense & Go-Around Execution Notes',
+  'e.g., ILS Runway 14L briefed: Localizer 109.3 MHz, inbound track 142°, FAF 5.2 DME at 2,000 ft, DA 692 ft (DH 200 ft). Defended Card 1 (sink rate > 1,000 fpm = automatic go-around). Go-around called at 400 ft due to vehicle on runway: climbed straight ahead to 2,500 ft, flaps 15, gear up...',
   'Stabilized Approach Criteria & Blame-Free Policy Agreement',
-  'e.g., Enforced 1,000 ft IMC stabilized gate (path, speed -0/+10 kt, sink rate <= 1,000 fpm). Confirmed blame-free go-around policy: all flight crews empowered to abort approach whenever doubt exists...'
+  'e.g., Enforced 1,000 ft IMC stabilized gate (path, speed -0/+10 kt, sink rate <= 1,000 fpm). Confirmed blame-free go-around policy: all flight crews empowered to abort approach whenever doubt exists...',
+  s6GameRenderer,
+  s6ClinicRenderer
 );
 
 // Read existing src/js/05-templates-mod1.js
@@ -1829,47 +1921,6 @@ if (s4Index !== -1) {
 // Append new Session 4, 5, 6 renderers
 const updatedTemplatesMod1 = templatesMod1.trimEnd() + '\n\n' + s4TemplateCode + '\n\n' + s5TemplateCode + '\n\n' + s6TemplateCode + '\n';
 fs.writeFileSync(templatesMod1Path, updatedTemplatesMod1, 'utf8');
-console.log('✓ Successfully updated src/js/05-templates-mod1.js with full templates for Sessions 4, 5 & 6.');
+console.log('✓ Successfully updated src/js/05-templates-mod1.js with full templates and games for Sessions 4, 5 & 6.');
 
-// ============================================================================
-// PART C: UPDATE src/js/04-templates-dispatcher.js
-// ============================================================================
-
-let dispatcherCode = fs.readFileSync(dispatcherPath, 'utf8');
-
-// Ensure dispatcher routes to session 4, 5, 6
-const oldBranch = `      if (modalState.sessionNum === 1) {
-        renderLessonContentTabSession1(sessionData, theme);
-      } else if (modalState.sessionNum === 2) {
-        renderLessonContentTabSession2(sessionData, theme);
-      } else if (modalState.sessionNum === 3) {
-        renderLessonContentTabSession3(sessionData, theme);
-      } else {
-        renderLessonContentTabSession4(sessionData, theme);
-      }`;
-
-const newBranch = `      if (modalState.sessionNum === 1) {
-        renderLessonContentTabSession1(sessionData, theme);
-      } else if (modalState.sessionNum === 2) {
-        renderLessonContentTabSession2(sessionData, theme);
-      } else if (modalState.sessionNum === 3) {
-        renderLessonContentTabSession3(sessionData, theme);
-      } else if (modalState.sessionNum === 4) {
-        renderLessonContentTabSession4(sessionData, theme);
-      } else if (modalState.sessionNum === 5) {
-        renderLessonContentTabSession5(sessionData, theme);
-      } else if (modalState.sessionNum === 6) {
-        renderLessonContentTabSession6(sessionData, theme);
-      } else {
-        renderLessonContentTabSession4(sessionData, theme);
-      }`;
-
-if (dispatcherCode.includes(oldBranch)) {
-  dispatcherCode = dispatcherCode.replace(oldBranch, newBranch);
-  fs.writeFileSync(dispatcherPath, dispatcherCode, 'utf8');
-  console.log('✓ Successfully updated src/js/04-templates-dispatcher.js with branches for Sessions 4, 5 & 6.');
-} else {
-  console.log('ℹ Dispatcher already contains or has different branch structure.');
-}
-
-console.log('🎉 Sessions 4, 5 & 6 Curriculum Build Complete!');
+console.log('🎉 Enhanced Sessions 4, 5 & 6 Curriculum Build Complete!');

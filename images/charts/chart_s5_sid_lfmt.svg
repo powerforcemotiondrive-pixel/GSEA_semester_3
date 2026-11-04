@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 680" width="100%" height="100%" style="background-color: #0b1120; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;">
+  <defs>
+    <!-- Grid -->
+    <pattern id="sidGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.75"/>
+    </pattern>
+    <!-- Weather storm gradient -->
+    <radialGradient id="stormGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#f97316" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#eab308" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="680" fill="#0b1120"/>
+  <rect width="960" height="680" fill="url(#sidGrid)" opacity="0.6"/>
+
+  <!-- Border -->
+  <rect x="16" y="16" width="928" height="648" fill="none" stroke="#334155" stroke-width="1.5" rx="8"/>
+
+  <!-- Header Banner -->
+  <rect x="16" y="16" width="928" height="64" fill="#0f172a" rx="8"/>
+  <line x1="16" y1="80" x2="944" y2="80" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="36" y="44" fill="#a855f7" font-size="14" font-weight="bold" letter-spacing="2">LFMT / BLAGNAC-MONTPELLIER</text>
+  <text x="36" y="66" fill="#f8fafc" font-size="18" font-weight="900" letter-spacing="1">STANDARD INSTRUMENT DEPARTURE (SID) • GAILLAC 4A (GAI 4A)</text>
+
+  <rect x="670" y="26" width="254" height="44" fill="#1e293b" rx="6" stroke="#475569" stroke-width="1"/>
+  <text x="682" y="43" fill="#94a3b8" font-size="10" font-weight="bold">TRANS ALT: 5,000 FT • MAG VAR 1°E</text>
+  <text x="682" y="60" fill="#c084fc" font-size="11" font-weight="bold">DEP 124.350 • TWR 118.100 • APP 120.250</text>
+
+  <!-- ================= MSA ROSE (TOP RIGHT) ================= -->
+  <g transform="translate(860, 150)">
+    <circle cx="0" cy="0" r="44" fill="#0f172a" stroke="#475569" stroke-width="1.5"/>
+    <line x1="-44" y1="0" x2="44" y2="0" stroke="#334155" stroke-width="1"/>
+    <line x1="0" y1="-44" x2="0" y2="44" stroke="#334155" stroke-width="1"/>
+    <!-- North sector MSA -->
+    <text x="0" y="-18" fill="#38bdf8" font-size="11" font-weight="900" text-anchor="middle">4,200</text>
+    <!-- South sector (Pyrenees) MSA -->
+    <text x="0" y="26" fill="#ef4444" font-size="11" font-weight="900" text-anchor="middle">7,800</text>
+    <text x="0" y="-48" fill="#94a3b8" font-size="8" text-anchor="middle">MSA 25 NM TOU VOR</text>
+    <!-- Small mountain icon south -->
+    <path d="M -12,32 L -6,22 L 0,32 L 6,24 L 12,32 Z" fill="#ef4444" opacity="0.6"/>
+  </g>
+
+  <!-- ================= AIRPORT LOCATION & RUNWAY 14L ================= -->
+  <g transform="translate(180, 500)">
+    <!-- Aerodrome Circle -->
+    <circle cx="0" cy="0" r="14" fill="#1e293b" stroke="#94a3b8" stroke-width="2"/>
+    <circle cx="0" cy="0" r="3" fill="#f8fafc"/>
+    <text x="-40" y="30" fill="#f8fafc" font-size="12" font-weight="900">LFMT / RWY 14L</text>
+    <text x="-35" y="44" fill="#94a3b8" font-size="9">ELEV 495 FT</text>
+    <!-- Runway 14L line -->
+    <line x1="-12" y1="-16" x2="12" y2="16" stroke="#f8fafc" stroke-width="5"/>
+    <line x1="-12" y1="-16" x2="12" y2="16" stroke="#0f172a" stroke-width="1"/>
+  </g>
+
+  <!-- ================= DEPARTURE ROUTING (GAILLAC 4A) ================= -->
+  <!-- Phase 1: Climb straight ahead on track 142° to 3,000 ft / 5 DME -->
+  <line x1="180" y1="500" x2="280" y2="600" stroke="#c084fc" stroke-width="4"/>
+  <polygon points="280,600 268,588 272,602 258,605" fill="#c084fc"/>
+
+  <!-- Track callout 142° -->
+  <rect x="235" y="525" width="60" height="18" fill="#1e293b" rx="3" stroke="#a855f7" stroke-width="1"/>
+  <text x="242" y="538" fill="#e9d5ff" font-size="10" font-weight="bold">TR 142°</text>
+
+  <!-- Turn Point at 3,000 ft / 5 DME -->
+  <g transform="translate(280, 600)">
+    <circle cx="0" cy="0" r="6" fill="#0f172a" stroke="#eab308" stroke-width="2"/>
+    <!-- Note box -->
+    <rect x="15" y="-12" width="160" height="32" fill="#0f172a" rx="4" stroke="#eab308" stroke-width="1.2"/>
+    <text x="22" y="2" fill="#eab308" font-size="9" font-weight="bold">TURN POINT: 3,000 FT / 5 DME</text>
+    <text x="22" y="14" fill="#94a3b8" font-size="8">Turn Left Direct GAILLAC (GAI)</text>
+  </g>
+
+  <!-- Phase 2: Climbing Left Turn towards GAILLAC -->
+  <path d="M 280 600 Q 420 620 540 450 T 680 220" fill="none" stroke="#c084fc" stroke-width="4"/>
+
+  <!-- Intermediate Altitude Constraint: 8 DME TOU at or above 4,000 FT -->
+  <g transform="translate(500, 480)">
+    <!-- Triangle fix -->
+    <polygon points="0,-7 7,5 -7,5" fill="#38bdf8" stroke="#0284c7" stroke-width="1.2"/>
+    <rect x="15" y="-14" width="115" height="28" fill="#1e293b" rx="4" stroke="#38bdf8" stroke-width="1"/>
+    <text x="22" y="-1" fill="#38bdf8" font-size="9" font-weight="bold">8 DME TOU</text>
+    <text x="22" y="10" fill="#f8fafc" font-size="8">AT OR ABOVE 4,000 FT</text>
+  </g>
+
+  <!-- ================= WAYPOINT GAILLAC (GAI VOR/DME 114.4) ================= -->
+  <g transform="translate(680, 220)">
+    <!-- VOR Symbol (Compass Hexagon) -->
+    <polygon points="0,-16 14,-8 14,8 0,16 -14,8 -14,-8" fill="#1e293b" stroke="#c084fc" stroke-width="2.5"/>
+    <circle cx="0" cy="0" r="4" fill="#c084fc"/>
+    <!-- Waypoint Identification Box -->
+    <rect x="-140" y="-45" width="130" height="38" fill="#0f172a" rx="4" stroke="#c084fc" stroke-width="1.5"/>
+    <text x="-132" y="-30" fill="#f8fafc" font-size="11" font-weight="900">GAILLAC (GAI)</text>
+    <text x="-132" y="-17" fill="#c084fc" font-size="9">VOR/DME 114.40 MHz</text>
+
+    <!-- Altitude Constraint Badge: FL070+ -->
+    <rect x="25" y="-14" width="85" height="26" fill="#1e293b" rx="4" stroke="#10b981" stroke-width="1.5"/>
+    <text x="33" y="3" fill="#10b981" font-size="12" font-weight="900">FL070+</text>
+  </g>
+
+  <!-- ================= HOLDING PATTERN AT GAILLAC ================= -->
+  <!-- Inbound Track 215°, Right turns, 1-min legs -->
+  <g transform="translate(680, 220) rotate(35)">
+    <!-- Racetrack -->
+    <path d="M 0 0 L 0 -90 A 25 25 0 0 1 50 -90 L 50 0 A 25 25 0 0 1 0 0" fill="none" stroke="#eab308" stroke-width="2" stroke-dasharray="4,2"/>
+    <!-- Inbound Arrow -->
+    <line x1="0" y1="-60" x2="0" y2="-20" stroke="#eab308" stroke-width="2.5"/>
+    <polygon points="0,-20 -4,-30 4,-30" fill="#eab308"/>
+    <rect x="-65" y="-55" width="60" height="18" fill="#0f172a" rx="3" stroke="#eab308" stroke-width="1"/>
+    <text x="-58" y="-42" fill="#eab308" font-size="9" font-weight="bold">INB 215°</text>
+    <text x="60" y="-45" fill="#f8fafc" font-size="8">HOLDING GAI</text>
+    <text x="60" y="-33" fill="#94a3b8" font-size="7">MIN FL080 • MAX 230 KT</text>
+  </g>
+
+  <!-- ================= EN-ROUTE AIRWAY JOIN (UM733 TO MENDE) ================= -->
+  <line x1="680" y1="220" x2="880" y2="120" stroke="#c084fc" stroke-width="3" stroke-dasharray="8,4"/>
+  <polygon points="880,120 864,124 870,134" fill="#c084fc"/>
+  <rect x="730" y="145" width="105" height="20" fill="#1e293b" rx="3" stroke="#a855f7" stroke-width="1"/>
+  <text x="738" y="159" fill="#e9d5ff" font-size="9" font-weight="bold">AIRWAY UM733 &gt;&gt;</text>
+
+  <!-- ================= ACTIVE THUNDERSTORM CELL (CONVECTIVE HAZARD) ================= -->
+  <!-- Placed directly over the left turn corridor for the roleplay simulation -->
+  <g transform="translate(430, 430)">
+    <ellipse cx="0" cy="0" rx="65" ry="45" fill="url(#stormGrad)"/>
+    <!-- Lightning bolt icon -->
+    <polygon points="-5,-15 5,-2 0,0 6,15 -6,2 0,0" fill="#facc15" stroke="#ca8a04" stroke-width="1"/>
+    <rect x="-85" y="-55" width="170" height="24" fill="#1e293b" rx="4" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="-78" y="-39" fill="#ef4444" font-size="9" font-weight="900">ACTIVE CB CELL (TOPS FL320)</text>
+
+    <!-- Weather Deviation Arrow (20° Left) -->
+    <path d="M -100 80 Q -60 -20 20 -80" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="6,4"/>
+    <polygon points="20,-80 8,-74 15,-66" fill="#38bdf8"/>
+    <rect x="-140" y="20" width="125" height="26" fill="#0f172a" rx="4" stroke="#38bdf8" stroke-width="1.2"/>
+    <text x="-132" y="33" fill="#38bdf8" font-size="9" font-weight="bold">AFR 624 DIVERSION</text>
+    <text x="-132" y="43" fill="#f8fafc" font-size="7">Heading 20° Left Approved</text>
+  </g>
+
+  <!-- ================= SPEED & CLIMB RESTRICTIONS FOOTER ================= -->
+  <g transform="translate(36, 100)">
+    <rect x="0" y="0" width="260" height="70" fill="#0f172a" rx="6" stroke="#334155" stroke-width="1.2"/>
+    <text x="12" y="18" fill="#e2e8f0" font-size="10" font-weight="bold">OPERATIONAL DEPARTURE RULES</text>
+    <text x="12" y="34" fill="#f87171" font-size="9">• SPEED: MAX 250 KT BELOW FL100</text>
+    <text x="12" y="48" fill="#38bdf8" font-size="9">• MIN CLIMB GRADIENT: 5.2% (316 FT/NM)</text>
+    <text x="12" y="62" fill="#facc15" font-size="9">• NOISE ABATEMENT: NO TURN BELOW 3,000 FT</text>
+  </g>
+
+</svg>

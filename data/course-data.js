@@ -2479,75 +2479,75 @@
         "session": 4,
         "objectives": {
           "title": "Session 4 - Aerodrome Ground Layouts & Taxiway Navigation Objectives",
-          "summary": "By the end of this session, GSEA students will be able to describe aerodrome ground layouts with confidence in English, read ground movement charts (GMC/ADC), use prepositions of place accurately, guide aircraft across taxiways and holding points, role-play a ground movement clearance with a runway crossing, and complete a collaborative Safety Check on runway incursion hazards.",
+          "summary": "By the end of this session, GSEA students will be able to orient someone to an airport map with natural spoken confidence, navigate a visual Ground Movement Chart (GMC), give precise physical directions using prepositions of place, play the 'Blind Taxi Navigator' information-gap game, role-play an active runway crossing taxi clearance, and complete a collaborative Safety Check on runway incursion hazards.",
           "items": [
             {
               "num": 1,
-              "title": "Talk About Airport Ground Layouts (Fluency & Spontaneous Speech)",
-              "description": "Discuss why navigating complex international airports on the ground is demanding for pilots, and share tricks for understanding airport maps quickly."
+              "title": "Orient Someone to an Airport Map (Map Description Skill)",
+              "description": "Learn and use natural spoken phrases to introduce an airport layout to a colleague (at the top, running north-to-south, directly opposite, adjacent to)."
             },
             {
               "num": 2,
-              "title": "Read a Ground Movement Chart (Chart Scanning)",
-              "description": "Scan a simulated aerodrome ground chart to identify runways, parallel taxiways, rapid exit taxiways, aprons, holding bays, and hot spots."
+              "title": "Read a Visual Ground Movement Chart (Visual Chart Scanning)",
+              "description": "Scan the visual LFMT aerodrome ground movement chart to identify runways, parallel taxiway Alpha, rapid exits Bravo and Charlie, crossing taxiway Delta, and Hot Spot 1."
             },
             {
               "num": 3,
-              "title": "Words for Airport Locations (Vocabulary Focus)",
-              "description": "Learn and use essential ground terms: apron, taxiway, holding point, stop bar, hot spot, and displaced threshold."
+              "title": "Prepositions of Place & Physical Directions (Language Focus)",
+              "description": "Master precise location words: adjacent to, opposite, parallel to, between, at the intersection of, short of, and beyond."
             },
             {
               "num": 4,
-              "title": "Prepositions of Place (Language Focus)",
-              "description": "Practice describing where facilities and aircraft are located using precise position words: adjacent to, opposite, parallel to, between, at the intersection of, short of, and beyond."
+              "title": "Communicative Game: 🎮 The Blind Taxi Navigator (Information-Gap Game)",
+              "description": "Guide your partner from an assigned parking stand to a secret airfield destination using only spoken turn-by-turn physical directions."
             },
             {
               "num": 5,
-              "title": "Speaking Role-Play: Ground Movement Challenge (Spoken Interaction)",
-              "description": "Role-play a clear, polite conversation between an Aerodrome Ground Controller and a Pilot taxiing from the apron to the runway with an active runway crossing."
+              "title": "Speaking Role-Play: Ground Movement Challenge & 'Lost on Tarmac'",
+              "description": "Role-play a Ground Controller issuing taxi instructions with an active runway crossing, and talk a confused ground driver back to safety."
             },
             {
               "num": 6,
               "title": "Safety Check: Preventing Runway Incursions (Operational Discussion)",
-              "description": "Collaborate in teams to analyze a confusing taxiway intersection, evaluate collision risks, and agree on clear safety solutions."
+              "description": "Collaborate in teams to analyze a confusing multi-taxiway intersection, evaluate collision risks, and agree on clear safety solutions."
             }
           ]
         },
         "lessonPlan": {
           "title": "Session 4 Lesson Plan (2 Hours)",
-          "summary": "A 2-hour communicative spoken English session for GSEA students covering aerodrome ground layouts, ground movement charts, prepositions of place, a realistic taxi clearance role-play, and a collaborative runway incursion Safety Check.",
+          "summary": "A 2-hour communicative spoken English session covering visual ground chart reading, map orientation skills, prepositions of place, the 'Blind Taxi Navigator' game, a runway crossing role-play, and a runway incursion Safety Check.",
           "items": [
             {
               "time": "00-15",
               "title": "Part 1: Warm-up: Navigating on the Ground (15 mins)",
-              "description": "In pairs, students discuss the challenges of taxiing at unfamiliar airports, explain common ground confusion, and test entry knowledge with 4 quick spot-check questions."
+              "description": "In pairs, students discuss why taxiing at unfamiliar airports is demanding, share personal navigation tricks, and test entry knowledge with 4 spot-check questions."
             },
             {
-              "time": "15-45",
-              "title": "Part 2: Reading the Ground Movement Chart (GMC) (30 mins)",
-              "description": "Reading a simulated aerodrome ground movement chart (LFMT) to locate runways, parallel taxiway Alpha, rapid exits Bravo and Charlie, crossing taxiway Delta, and Hot Spot 1."
+              "time": "15-40",
+              "title": "Part 2: Visual Chart & Map Orientation Clinic (25 mins)",
+              "description": "Analyzing the visual LFMT Ground Movement Chart (GMC), learning standard phrases for orienting colleagues to a map, and completing a 60-second map description challenge."
             },
             {
-              "time": "45-70",
-              "title": "Part 3: Language Clinic: Prepositions of Place (25 mins)",
-              "description": "Oral drills and pair practice using prepositions of place (adjacent to, opposite, parallel to, between, at the intersection of, short of, beyond) to describe airport facilities."
+              "time": "40-65",
+              "title": "Part 3: Language Clinic: Prepositions of Place & Directions (25 mins)",
+              "description": "Oral drills and pair practice using prepositions of place (adjacent to, opposite, parallel to, between, at the intersection of, short of, beyond) to give crisp physical directions."
             },
             {
-              "time": "70-105",
-              "title": "Part 4: Speaking Role-Play: Ground Movement Challenge (35 mins)",
-              "description": "3-student spoken simulation between a Ground Controller and an Airline Pilot taxiing from Stand 14 to Runway 14L with an active runway crossing, observed with a peer checklist."
+              "time": "65-90",
+              "title": "Part 4: Communicative Game: 🎮 The Blind Taxi Navigator (25 mins)",
+              "description": "Information-gap partner game: Student A guides Student B across the airport to a secret destination using step-by-step spoken directions while Student B traces the route."
             },
             {
-              "time": "105-120",
-              "title": "Part 5: Safety Check: Preventing Runway Incursions (15 mins)",
-              "description": "Collaborative 4-step safety analysis evaluating a confusing intersection hazard, collision risks, illuminated stop bars, and agreed standard phraseology."
+              "time": "90-120",
+              "title": "Part 5: Speaking Role-Play & Safety Check (30 mins)",
+              "description": "Spoken simulation: Ground Controller issues progressive taxi instructions with an active runway crossing, followed by a 4-step collaborative Safety Check on Hot Spot 1."
             }
           ]
         },
         "lessonContent": {
           "hero": {
             "title": "Aerodrome Ground Layouts & Taxiway Navigation",
-            "subtitle": "Ground Movement Charts (GMC), Taxiway Designations, Holding Points & Prepositions of Place",
+            "subtitle": "Visual Ground Movement Charts (GMC), Map Orientation, Prepositions of Place & 'Blind Taxi Navigator' Game",
             "image": "images/s3_m1_session4_aerodrome.jpg",
             "targetLevel": "CEFR B1–B2",
             "roleContext": "GSEA Student Training • Aerodrome Ground Operations & Technical English",
@@ -2567,7 +2567,7 @@
               "Click 'Reveal Answer' to check your reasoning and see the plain English explanation."
             ],
             "deliverable": "Shared agreement on 2 common ground taxi challenges and completed 4-question diagnostic.",
-            "teacherNotes": "Encourage spontaneous speaking. Don't worry about technical phraseology yet; focus on helping students describe physical spaces and directions naturally in English.",
+            "teacherNotes": "Encourage spontaneous speaking. Help students describe physical spaces and relative directions naturally in English without worrying about technical jargon.",
             "newsPrompts": [
               {
                 "id": 1,
@@ -2646,10 +2646,42 @@
             ]
           },
           "chartExtract": {
-            "title": "Activity 2: Reading the Ground Movement Chart (GMC) (30 mins)",
-            "summary": "Analyze a simulated Ground Movement Chart for Blagnac-Montpellier Airport (LFMT) and practice identifying key operational areas.",
-            "badge": "SIMULATED AERODROME GROUND CHART • LFMT",
+            "title": "Activity 2: Visual Chart & Map Orientation Clinic (25 mins)",
+            "summary": "Inspect the visual Ground Movement Chart (LFMT) and learn natural spoken patterns to walk a colleague through an aerodrome layout.",
+            "visualChart": "images/charts/chart_s4_gmc_lfmt.svg",
+            "badge": "AUTHENTIC SIMULATION • LFMT GROUND MOVEMENT CHART",
             "callsign": "Blagnac-Montpellier Airport (LFMT / Elev 495 ft)",
+            "mapDescriptionClinic": {
+              "title": "Speaking Skill: How to Orient & Describe an Airport Map",
+              "summary": "Use these natural spoken templates to introduce an airport layout clearly without hesitations:",
+              "phrases": [
+                {
+                  "label": "Overall Orientation",
+                  "phrase": "If you look at the overall layout, the airport is oriented northwest to southeast, with two parallel runways."
+                },
+                {
+                  "label": "Main Runway",
+                  "phrase": "The primary runway is 14L/32R on the east side, spanning 3,500 metres with full CAT III ILS capability."
+                },
+                {
+                  "label": "Parallel Taxiway",
+                  "phrase": "Running parallel to Runway 14L along its entire eastern edge is Taxiway Alpha."
+                },
+                {
+                  "label": "Terminals & Stands",
+                  "phrase": "Over on the southwest side, you can see Apron North with the passenger terminal and Stands 1 through 16."
+                },
+                {
+                  "label": "Opposite Facilities",
+                  "phrase": "Directly opposite the terminal on the western boundary is the cargo ramp, while the fire station sits adjacent to Apron North."
+                },
+                {
+                  "label": "Caution Areas",
+                  "phrase": "Notice Hot Spot 1 at the junction of Alpha and Delta, where crossing vehicles create an incursion risk."
+                }
+              ],
+              "challenge": "Partner Challenge: Take turns giving your partner a 60-second spoken overview of the LFMT layout using at least 4 of the phrases above!"
+            },
             "sections": [
               {
                 "heading": "1. Runway Infrastructure & Orientation",
@@ -2690,8 +2722,8 @@
             ]
           },
           "grammarClinic": {
-            "title": "Activity 3: Language Clinic: Prepositions of Place (25 mins)",
-            "summary": "Master clear position words to describe airport facilities and aircraft locations with precision and confidence.",
+            "title": "Activity 3: Language Clinic: Prepositions of Place & Physical Directions (25 mins)",
+            "summary": "Master clear position words and direction-giving phrases to describe airport facilities with precision.",
             "rules": [
               {
                 "term": "parallel to",
@@ -2757,18 +2789,61 @@
               }
             ]
           },
+          "communicativeGame": {
+            "title": "Activity 4: Communicative Game: 🎮 The Blind Taxi Navigator (25 mins)",
+            "summary": "An information-gap spoken game. Guide your partner from your parking stand to a mystery airfield destination using step-by-step oral directions.",
+            "instructions": [
+              "Student A (The Navigator): Pick one of the 4 Secret Missions below (do NOT tell your partner the destination). Look at the visual chart.",
+              "Student B (The Pilot/Driver): Close your eyes or place your finger on the starting point on the chart. Do not look ahead.",
+              "Student A gives clear, step-by-step physical directions: 'Start at Stand 14. Turn right onto Taxiway Delta. Taxi forward 150m until you reach the red holding line...'",
+              "Student B traces the route with their finger. When Student A says 'You have arrived!', Student B must announce where they think they are!",
+              "Switch roles and try another mission."
+            ],
+            "missions": [
+              {
+                "id": 1,
+                "mission": "Mission 1 (Cargo Delivery): Start at Stand 14 &rarr; Target: Cargo Ramp",
+                "hints": "Turn right onto Delta, hold short of 14R, cross runway, turn left onto perimeter taxilane, proceed opposite passenger terminal."
+              },
+              {
+                "id": 2,
+                "mission": "Mission 2 (Winter De-icing): Start at Stand 16 &rarr; Target: De-icing Bay 2",
+                "hints": "Taxi along Delta, cross Runway 14R, turn left onto Alpha, taxi past Hot Spot 1, turn right into the pad between Bravo and the hangar."
+              },
+              {
+                "id": 3,
+                "mission": "Mission 3 (Emergency Drill): Start at Fire Station &rarr; Target: Holding Point A1 (Runway 14L)",
+                "hints": "Exit station onto apron taxilane, join Delta, cross 14R, turn left on Alpha, taxi north to holding point A1."
+              },
+              {
+                "id": 4,
+                "mission": "Mission 4 (Late Departure): Start at Cargo Ramp &rarr; Target: Stand 12 (Main Terminal)",
+                "hints": "Taxi east along perimeter, cross Runway 14R carefully, enter Apron North, park at Stand 12 directly opposite the cargo ramp."
+              }
+            ],
+            "sampleDialogue": [
+              "Navigator: 'Start at Stand 14 on Apron North. Push back facing east.'",
+              "Pilot: 'Facing east, copied.'",
+              "Navigator: 'Taxi straight ahead on Taxiway Delta for about 150 metres. Look for the red stop bar and hold short of Runway 14R.'",
+              "Pilot: 'Holding short of Runway 14R on Delta.'",
+              "Navigator: 'Cleared across Runway 14R. Cross directly to the opposite side and turn left onto Taxiway Alpha. Pass Hot Spot 1 on your right.'",
+              "Pilot: 'Crossing 14R, turning left onto Alpha.'",
+              "Navigator: 'Continue straight along Alpha for 300 metres. Stop at the intersection before Bravo. Turn right into the paved pad. You have arrived! Where are you?'",
+              "Pilot: 'I am at the De-icing Pad between Taxiway Bravo and the hangar!' (Correct!)"
+            ]
+          },
           "roleplaySimulation": {
-            "title": "Activity 4: Speaking Role-Play: Ground Movement Challenge (35 mins)",
-            "summary": "Simulate a realistic spoken interaction between an Aerodrome Ground Controller and an Airline Pilot taxiing from Stand 14 to Runway 14L.",
-            "situation": "Flight AFR 412 (Airbus A320) is parked at Stand 14 on Apron North. The pilot has completed pushback and engine start and requests taxi clearance to Runway 14L. The route requires taxiing along Taxiway Delta, crossing active Runway 14R, joining Taxiway Alpha, and holding short of Runway 14L at holding point A1.",
+            "title": "Activity 5: Speaking Role-Play: Ground Movement Challenge & 'Lost on Tarmac' (25 mins)",
+            "summary": "Simulate a realistic spoken interaction between Ground Control and Flight AFR 412, plus a quick recovery dialogue with a lost driver.",
+            "situation": "Part 1: Flight AFR 412 (Airbus A320) is parked at Stand 14 on Apron North. The pilot requests taxi clearance to Runway 14L. The route requires taxiing along Delta, crossing active Runway 14R, joining Taxiway Alpha, and holding short of 14L at A1.\nPart 2 (Spoken Twist): A ground baggage tug driver has taken a wrong turn in thick fog and is lost near Hot Spot 1. Ground Control must give calm, clear directions to guide the tug back to Apron North.",
             "roles": [
               {
                 "role": "Role A: Ground Controller",
-                "instructions": "Issue progressive taxi instructions. Give the taxi route: 'Taxi via Delta, hold short of Runway 14R'. When the runway is clear, instruct: 'Cross Runway 14R, taxi via Alpha to holding point A1, Runway 14L'. Listen carefully to the pilot's readback and correct any missing information immediately."
+                "instructions": "Issue progressive taxi instructions. Give the taxi route: 'Taxi via Delta, hold short of Runway 14R'. When the runway is clear, instruct: 'Cross Runway 14R, taxi via Alpha to holding point A1, Runway 14L'. In Part 2, guide the lost tug driver away from the runway using simple landmarks."
               },
               {
-                "role": "Role B: Airline Pilot (AFR 412)",
-                "instructions": "Call Ground Control at Stand 14 ready to taxi. Read back all instructions completely, especially the runway hold-short instruction. Ask for clarification if you are unsure whether you are cleared to cross Runway 14R. Confirm when holding short at holding point A1."
+                "role": "Role B: Airline Pilot (AFR 412) / Lost Tug Driver",
+                "instructions": "In Part 1, call Ground ready to taxi. Read back all instructions completely, especially the runway hold-short command. In Part 2, act as the lost tug driver: describe what you see around you ('I see a red stop bar and a yellow taxiway sign saying Delta') and follow directions."
               },
               {
                 "role": "Role C: Peer Observer & Safety Auditor",
@@ -2779,18 +2854,18 @@
               "Controller used clear, unambiguous taxi instructions with correct taxiway names.",
               "Pilot read back the runway holding point instruction word-for-word ('Hold short of Runway 14R').",
               "Both speakers used natural, communicative English without long unnatural hesitations.",
-              "Clear verification was made before crossing the active runway."
+              "Clear direction words (left, right, ahead, opposite) were used to recover the lost driver."
             ],
             "phrases": [
               "Ground, Air France 412, Stand 14, request taxi to Runway 14L.",
               "Air France 412, taxi via Delta, hold short of Runway 14R.",
               "Taxi via Delta, hold short of Runway 14R, Air France 412.",
               "Air France 412, cross Runway 14R, taxi via Alpha to holding point A1.",
-              "Cross Runway 14R, taxi via Alpha to holding point A1, Air France 412."
+              "Tug 4, do you see the bright fire station lights on your left? Turn left towards the station immediately."
             ]
           },
           "safetyCheck": {
-            "title": "Activity 5: Safety Check: Preventing Runway Incursions (15 mins)",
+            "title": "Activity 6: Safety Check: Preventing Runway Incursions (15 mins)",
             "summary": "Work in teams to analyze how confusing taxiway intersections lead to runway incursions and decide on practical safety defenses.",
             "steps": [
               {
@@ -3257,31 +3332,31 @@
         "session": 5,
         "objectives": {
           "title": "Session 5 - Airspace Corridors: SIDs, STARs & Transition Routes Objectives",
-          "summary": "By the end of this session, GSEA students will be able to explain the purpose of standard instrument departures and arrivals in plain English, trace route corridors on simulated charts, use prepositions of movement and direction accurately, role-play a cockpit departure briefing and weather diversion, and complete a collaborative Safety Check on managing route deviations.",
+          "summary": "By the end of this session, GSEA students will be able to explain airspace corridors in plain English, narrate a flight route sequentially using prepositions of movement, scan the visual GAILLAC 4A departure chart, play the 'Airspace Detective' logic game to spot dangerous clearance errors, role-play a cockpit departure briefing and weather diversion, and complete a collaborative Safety Check on route deviations.",
           "items": [
             {
               "num": 1,
-              "title": "Talk About Airspace Corridors (Fluency & Spontaneous Speech)",
-              "description": "Discuss how structured departure and arrival routes organize heavy air traffic flow around major cities and reduce radio congestion."
+              "title": "Trace a Flight Path Aloud (Sequential Narration Skill)",
+              "description": "Learn and use professional spoken patterns to walk a colleague through a 3D flight corridor from takeoff to cruising level."
             },
             {
               "num": 2,
-              "title": "Read a SID & STAR Route Chart (Chart Scanning)",
-              "description": "Scan a simulated departure chart (GAILLAC 4A) to locate waypoints, climb restrictions, minimum safe altitudes (MSA), and transition altitudes."
+              "title": "Read a Visual SID & STAR Route Chart (Visual Chart Scanning)",
+              "description": "Scan the visual GAILLAC 4A departure chart to locate waypoints, climb restrictions, minimum safe altitudes (MSA), and the GAILLAC holding pattern."
             },
             {
               "num": 3,
-              "title": "Words for Corridors & Altitudes (Vocabulary Focus)",
-              "description": "Learn and use essential route vocabulary: waypoint, fly-by vs fly-over, flight level, transition altitude, minimum safe altitude, and holding fix."
+              "title": "Prepositions of Movement & Direction (Language Focus)",
+              "description": "Master dynamic motion words: climb straight ahead to, turn left towards, proceed via, along corridor, maintain until, and intersect."
             },
             {
               "num": 4,
-              "title": "Prepositions of Movement & Direction (Language Focus)",
-              "description": "Practice describing flight paths using dynamic movement words: climb straight ahead to, turn left towards, proceed via, along corridor, maintain until, and intersect."
+              "title": "Communicative Game: 🔍 Airspace Detective: Spot the Route Trap",
+              "description": "Review 4 simulated flight clearances with a partner, race to detect the hidden safety trap, explain the hazard in spoken English, and issue the correction."
             },
             {
               "num": 5,
-              "title": "Speaking Role-Play: Departure Briefing & Storm Diversion (Spoken Interaction)",
+              "title": "Speaking Role-Play: Departure Briefing & Storm Diversion",
               "description": "Role-play a pre-departure cockpit briefing followed by an urgent radio request to divert 20 degrees around a developing storm cell."
             },
             {
@@ -3293,39 +3368,39 @@
         },
         "lessonPlan": {
           "title": "Session 5 Lesson Plan (2 Hours)",
-          "summary": "A 2-hour communicative spoken English session for GSEA students covering SIDs, STARs, prepositions of movement, a cockpit briefing and weather diversion role-play, and a collaborative Safety Check on departure deviations.",
+          "summary": "A 2-hour communicative spoken English session covering visual SID charts, sequential flight path narration, prepositions of movement, the 'Airspace Detective' game, a weather diversion role-play, and an altitude safety check.",
           "items": [
             {
               "time": "00-15",
               "title": "Part 1: Warm-up: Why SIDs and STARs Exist (15 mins)",
-              "description": "In pairs, students discuss how structured departure corridors prevent mid-air conflicts around busy airports, and test entry knowledge with 4 quick spot-check questions."
+              "description": "In pairs, students discuss how structured departure corridors prevent air traffic conflicts, and test entry knowledge with 4 spot-check questions."
             },
             {
-              "time": "15-45",
-              "title": "Part 2: Reading the Simulated SID & STAR Route Chart (30 mins)",
-              "description": "Analyzing the simulated GAILLAC 4A departure chart from Runway 14L, tracing waypoints, altitude restrictions, and the GAILLAC holding pattern."
+              "time": "15-40",
+              "title": "Part 2: Visual Chart & Flight Path Narration Clinic (25 mins)",
+              "description": "Analyzing the visual GAILLAC 4A departure chart, learning standard storytelling phrases for narrating a flight path sequentially, and completing a 60-second route briefing."
             },
             {
-              "time": "45-70",
+              "time": "40-65",
               "title": "Part 3: Language Clinic: Prepositions of Movement & Direction (25 mins)",
-              "description": "Oral drills and pair practice using prepositions of movement (climb straight ahead to, turn left towards, proceed via, along, maintain until, intersect) to describe flight profiles."
+              "description": "Oral drills and pair practice using prepositions of movement (climb straight ahead to, turn left towards, proceed via, along, maintain until, intersect) to describe 3D climb paths."
             },
             {
-              "time": "70-105",
-              "title": "Part 4: Speaking Role-Play: Departure Briefing & Storm Diversion (35 mins)",
-              "description": "3-student spoken simulation: Captain briefings First Officer on the departure, followed by an urgent radio request to ATC to divert around a thunderstorm, with Peer Observer checklist."
+              "time": "65-90",
+              "title": "Part 4: Communicative Game: 🔍 Airspace Detective: Spot the Route Trap (25 mins)",
+              "description": "Spoken detective game: pairs review 4 departure clearance cases, spot the single illegal clearance, explain the danger in spoken English, and propose the fix."
             },
             {
-              "time": "105-120",
-              "title": "Part 5: Safety Check: Managing Route Deviations & Level Busts (15 mins)",
-              "description": "Collaborative 4-step safety analysis evaluating severe storm hazards, terrain clearance (MSA), sector coordination, and pilot readback verification."
+              "time": "90-120",
+              "title": "Part 5: Speaking Role-Play & Safety Check (30 mins)",
+              "description": "Spoken simulation: Captain briefs First Officer on GAILLAC 4A, calls Departure Radar for a 20° weather diversion around a storm cell, and completes a terrain safety check."
             }
           ]
         },
         "lessonContent": {
           "hero": {
             "title": "Airspace Corridors: SIDs, STARs & Transition Routes",
-            "subtitle": "Departure Routes, Terminal Arrivals, Waypoints, Flight Levels & Prepositions of Movement",
+            "subtitle": "Visual Departure Charts (GAILLAC 4A), Sequential Path Narration, Prepositions of Movement & 'Airspace Detective' Game",
             "image": "images/s3_m1_session5_sid_star.jpg",
             "targetLevel": "CEFR B1–B2",
             "roleContext": "GSEA Student Training • Terminal Airspace Navigation & Technical English",
@@ -3424,10 +3499,42 @@
             ]
           },
           "chartExtract": {
-            "title": "Activity 2: Reading the Simulated SID & STAR Route Chart (30 mins)",
-            "summary": "Analyze the simulated GAILLAC 4A Departure from Runway 14L and understand key navigation milestones and constraints.",
-            "badge": "SIMULATED DEPARTURE ROUTE CHART • GAILLAC 4A (LFMT)",
+            "title": "Activity 2: Visual Chart & Flight Path Narration Clinic (25 mins)",
+            "summary": "Inspect the visual GAILLAC 4A Departure Chart and learn how to narrate a flight path sequentially like an airline flight crew.",
+            "visualChart": "images/charts/chart_s5_sid_lfmt.svg",
+            "badge": "AUTHENTIC SIMULATION • SID GAILLAC 4A (LFMT)",
             "callsign": "Blagnac-Montpellier Airport (LFMT) • Runway 14L Departures",
+            "flightPathClinic": {
+              "title": "Speaking Skill: How to Trace a Flight Path Aloud (Sequential Narration)",
+              "summary": "Use these sequential phrases to describe a 3D departure route smoothly from liftoff to en-route cruise:",
+              "phrases": [
+                {
+                  "label": "1. Liftoff & Initial Track",
+                  "phrase": "Our flight departs Runway 14L on an initial climb track of 142 degrees magnetic."
+                },
+                {
+                  "label": "2. Noise Abatement Altitude",
+                  "phrase": "We maintain runway heading until reaching 3,000 feet or 5 DME, which protects residential areas from noise."
+                },
+                {
+                  "label": "3. The Climbing Turn",
+                  "phrase": "Upon passing 3,000 feet, we execute a climbing left turn direct towards waypoint GAILLAC (GAI VOR/DME 114.4)."
+                },
+                {
+                  "label": "4. Altitude Milestones",
+                  "phrase": "We must cross 8 DME at or above 4,000 feet, and cross GAILLAC at or above Flight Level 070."
+                },
+                {
+                  "label": "5. Transition Altitude",
+                  "phrase": "At 5,000 feet, we switch altimeters from local QNH to the standard 1013 setting."
+                },
+                {
+                  "label": "6. En-route Join",
+                  "phrase": "From GAILLAC, we proceed along airway UM733 towards waypoint MENDE to join high-altitude airspace."
+                }
+              ],
+              "challenge": "Partner Challenge: Take turns narrating the entire GAILLAC 4A departure to your partner from memory in 60 seconds!"
+            },
             "sections": [
               {
                 "heading": "1. Initial Climb Profile & Heading",
@@ -3532,8 +3639,45 @@
               }
             ]
           },
+          "communicativeGame": {
+            "title": "Activity 4: Communicative Game: 🔍 Airspace Detective: Spot the Route Trap (25 mins)",
+            "summary": "Review 4 simulated departure clearances with your partner. Three are legal, but one contains a dangerous error. Find it, explain the hazard, and fix it!",
+            "instructions": [
+              "In pairs, read each of the 4 simulated ATC clearances below.",
+              "Three clearances follow the GAILLAC 4A rules perfectly, but ONE contains a dangerous procedural violation.",
+              "Discuss with your partner: Which case is the TRAP? Why is it dangerous? What is the correct radio instruction?",
+              "Click 'Reveal Detective Report' to check if your team caught the culprit!"
+            ],
+            "cases": [
+              {
+                "id": "Case Alpha",
+                "clearance": "AFR 210, cleared GAILLAC 4A departure, after liftoff climb straight ahead to 3,000 ft, turn left direct GAILLAC, climb to FL090, cross GAI at or above FL070.",
+                "status": "LEGAL",
+                "note": "Follows all altitude, noise abatement, and route restrictions."
+              },
+              {
+                "id": "Case Bravo (THE TRAP!)",
+                "clearance": "AFR 442, cleared GAILLAC 4A departure. Airborne off 14L at 1,200 ft, immediate left turn direct GAILLAC approved for traffic shortcut, climb to FL080.",
+                "status": "DANGEROUS TRAP!",
+                "note": "VIOLATION! The chart strictly mandates: 'No turns below 3,000 ft QNH for noise abatement'. Turning at 1,200 ft violates local noise regulations and risks loss of separation with arrival corridors!"
+              },
+              {
+                "id": "Case Charlie",
+                "clearance": "AFR 884, climbing through 4,000 ft on GAILLAC 4A, maintain 240 knots indicated until passing FL100, climb to FL120.",
+                "status": "LEGAL",
+                "note": "Speed is 240 kt (below the 250 kt max limit) and climb profile is respected."
+              },
+              {
+                "id": "Case Delta",
+                "clearance": "AFR 915, passing 3,500 ft, left turn direct GAILLAC approved, enter holding pattern at GAILLAC at FL080, right-hand turns, 1-minute legs.",
+                "status": "LEGAL",
+                "note": "Holding parameters match the published plate: FL080 min, right turns, 1 min legs."
+              }
+            ],
+            "challengeQuestion": "Explain to the class: What makes Case Bravo dangerous, and how would you correct the controller's instruction in clear English?"
+          },
           "roleplaySimulation": {
-            "title": "Activity 4: Speaking Role-Play: Departure Briefing & Storm Diversion (35 mins)",
+            "title": "Activity 5: Speaking Role-Play: Departure Briefing & Storm Diversion (25 mins)",
             "summary": "Simulate a two-part spoken challenge: a cockpit departure briefing followed by an urgent radio request to divert around a thunderstorm.",
             "situation": "Part 1: The Captain of AFR 624 briefs the First Officer on the GAILLAC 4A departure before takeoff from Runway 14L.\nPart 2: Climbing through 4,500 ft, airborne weather radar shows a severe convective storm cell building directly over the turn towards GAILLAC. The pilot contacts Departure Radar to request a heading 20 degrees left of track.",
             "roles": [
@@ -3565,7 +3709,7 @@
             ]
           },
           "safetyCheck": {
-            "title": "Activity 5: Safety Check: Managing Departure Route Deviations & Level Busts (15 mins)",
+            "title": "Activity 6: Safety Check: Managing Departure Route Deviations & Level Busts (15 mins)",
             "summary": "Work in teams to analyze the safety hazards when weather forces aircraft off published departure corridors.",
             "steps": [
               {
@@ -4032,31 +4176,31 @@
         "session": 6,
         "objectives": {
           "title": "Session 6 - Approach Plates: Final Corridors & Go-Around Paths Objectives",
-          "summary": "By the end of this session, GSEA students will be able to read and explain instrument approach plates (IAC / ILS) in plain English, use vertical flight path language accurately, understand decision heights and landing minimums, role-play an approach briefing and unexpected go-around execution, and complete a collaborative Safety Check on unstabilized approach criteria.",
+          "summary": "By the end of this session, GSEA students will be able to read and explain visual approach plates (IAC / ILS) in plain English, explain vertical descent profiles aloud, play the fast-paced 'Go / No-Go Lightning Challenge', role-play an emergency go-around command, and complete a collaborative Safety Check on unstabilized approach criteria.",
           "items": [
             {
               "num": 1,
-              "title": "Talk About the Final Approach Phase (Fluency & Spontaneous Speech)",
-              "description": "Discuss why the final 3 minutes of flight represent the highest workload phase for pilots, and what factors make landing demanding."
+              "title": "Read the Side-View Profile Aloud (Profile Briefing Skill)",
+              "description": "Learn and use standard spoken patterns to explain vertical descent profiles, FAF Maltese cross, glide path angles, and decision heights."
             },
             {
               "num": 2,
-              "title": "Read an ILS Approach Plate (Chart Scanning)",
-              "description": "Scan a simulated ILS Runway 14L approach plate to locate the localizer course, Final Approach Fix (FAF), glide path angle (3.0°), and decision altitude (DA)."
+              "title": "Read a Visual Approach Plate (Visual Chart Scanning)",
+              "description": "Scan the visual ILS Runway 14L approach plate to identify plan view fixes (CAPDENAC, BLAGY), FAF at 5.2 DME, 3.0° glide slope, and decision altitude (692 ft)."
             },
             {
               "num": 3,
-              "title": "Words for Vertical Profiles & Minimums (Vocabulary Focus)",
-              "description": "Learn and use essential approach vocabulary: glide slope, localizer, decision altitude/height, minimum descent altitude, RVR, and missed approach point."
+              "title": "Vertical Paths & Cockpit Callouts (Language Focus)",
+              "description": "Master vertical flight terminology: on the glide slope, slightly high/low, at the final approach fix, upon reaching minimums, and positive climb, gear up."
             },
             {
               "num": 4,
-              "title": "Describing Vertical Paths & Altitude Callouts (Language Focus)",
-              "description": "Practice cockpit altitude and path callouts: on the glide slope, slightly high/low, at the final approach fix, upon reaching minimums, and positive climb, gear up."
+              "title": "Communicative Game: ⚡ Go / No-Go Lightning Challenge",
+              "description": "Fast-paced rapid-fire round! Take turns reading approach dilemma cards, call out 'CONTINUE!' or 'GO-AROUND!' in 3 seconds, and defend your choice."
             },
             {
               "num": 5,
-              "title": "Speaking Role-Play: Final Approach & Go-Around Decision (Spoken Interaction)",
+              "title": "Speaking Role-Play: Low Visibility Approach & Emergency Go-Around",
               "description": "Role-play a tense final approach where a vehicle incursion on the runway forces the controller to command an immediate go-around."
             },
             {
@@ -4068,39 +4212,39 @@
         },
         "lessonPlan": {
           "title": "Session 6 Lesson Plan (2 Hours)",
-          "summary": "A 2-hour communicative spoken English session for GSEA students covering ILS approach plates, vertical path language, landing minimums, an emergency go-around role-play, and a collaborative Safety Check on unstabilized approaches.",
+          "summary": "A 2-hour communicative spoken English session covering visual ILS approach plates, profile view briefings, the 'Go / No-Go Lightning Challenge' game, an emergency go-around role-play, and an unstabilized approach safety check.",
           "items": [
             {
               "time": "00-15",
               "title": "Part 1: Warm-up: The Final 3 Minutes Before Touchdown (15 mins)",
-              "description": "In pairs, students discuss cockpit workload on final approach, explain the concept of stabilized approach gates, and test entry knowledge with 4 quick spot-check questions."
+              "description": "In pairs, students discuss cockpit workload on final approach, explain stabilized approach gates, and test entry knowledge with 4 spot-check questions."
             },
             {
-              "time": "15-45",
-              "title": "Part 2: Reading the Simulated ILS Approach Plate (30 mins)",
-              "description": "Analyzing the plan view and profile view of the simulated ILS Runway 14L plate at LFMT, identifying the FAF Maltese cross, glide path angle, and missed approach routing."
+              "time": "15-40",
+              "title": "Part 2: Visual Chart & Profile View Briefing Clinic (25 mins)",
+              "description": "Analyzing the visual ILS Runway 14L plate at LFMT, learning standard phrases to describe the vertical step-down profile, and completing a 60-second approach briefing."
             },
             {
-              "time": "45-70",
+              "time": "40-65",
               "title": "Part 3: Language Clinic: Vertical Paths & Cockpit Callouts (25 mins)",
-              "description": "Oral drills and pair practice using vertical flight terminology (on the glide slope, at the final approach fix, upon reaching minimums, go-around positive climb) to describe landings."
+              "description": "Oral drills and pair practice using vertical flight terminology (on the glide slope, at the final approach fix, upon reaching minimums, go-around positive climb)."
             },
             {
-              "time": "70-105",
-              "title": "Part 4: Speaking Role-Play: Final Approach & Go-Around Decision (35 mins)",
-              "description": "3-student spoken simulation: Approach/Tower Controller commands an immediate go-around due to a vehicle crossing the runway on 2-mile final; Pilot executes missed approach, observed with checklist."
+              "time": "65-90",
+              "title": "Part 4: Communicative Game: ⚡ Go / No-Go Lightning Challenge (25 mins)",
+              "description": "Rapid-fire partner game: students evaluate 6 high-pressure approach scenarios, make instant 3-second 'Continue' or 'Go-Around' calls, and defend their choice."
             },
             {
-              "time": "105-120",
-              "title": "Part 5: Safety Check: Unstabilized Approach & Go-Around Culture (15 mins)",
-              "description": "Collaborative 4-step safety analysis evaluating unstabilized descent rates, late configuration, go-around hesitation, and promoting a blame-free safety policy."
+              "time": "90-120",
+              "title": "Part 5: Speaking Role-Play & Safety Check (30 mins)",
+              "description": "Spoken simulation: Tower Controller commands an immediate go-around due to a vehicle crossing Runway 14L on 2-mile final, followed by a 4-step Safety Check on stabilized criteria."
             }
           ]
         },
         "lessonContent": {
           "hero": {
             "title": "Approach Plates: Final Corridors & Go-Around Paths",
-            "subtitle": "Instrument Approach Charts (IAC), Glide Slopes, Decision Heights & Missed Approach Paths",
+            "subtitle": "Visual ILS Plates (Plan & Profile Views), Vertical Flight Callouts & 'Go / No-Go Lightning Challenge' Game",
             "image": "images/s3_m1_session6_approach.jpg",
             "targetLevel": "CEFR B1–B2",
             "roleContext": "GSEA Student Training • Final Approach Operations & Technical English",
@@ -4199,10 +4343,42 @@
             ]
           },
           "chartExtract": {
-            "title": "Activity 2: Reading the Simulated ILS Approach Plate (30 mins)",
-            "summary": "Analyze the plan view, vertical profile view, and missed approach instructions for the simulated ILS Runway 14L at LFMT.",
-            "badge": "SIMULATED INSTRUMENT APPROACH PLATE • ILS RWY 14L (LFMT)",
+            "title": "Activity 2: Visual Chart & Profile View Briefing Clinic (25 mins)",
+            "summary": "Inspect the visual ILS Runway 14L plate (Plan View + Profile View) and master how to deliver a crisp spoken approach briefing.",
+            "visualChart": "images/charts/chart_s6_approach_lfmt.svg",
+            "badge": "AUTHENTIC SIMULATION • ILS RWY 14L APPROACH PLATE (LFMT)",
             "callsign": "Blagnac-Montpellier Airport (LFMT / Elev 495 ft) • ILS or LOC Rwy 14L",
+            "profileClinic": {
+              "title": "Speaking Skill: How to Read the Side-View (Profile) Aloud",
+              "summary": "Use these spoken patterns to walk your colleague through the vertical approach profile from the FAF to the runway:",
+              "phrases": [
+                {
+                  "label": "1. Navigation Setup",
+                  "phrase": "This will be the ILS Runway 14L approach, tuned to localizer 109.3 MHz with an inbound track of 142 degrees."
+                },
+                {
+                  "label": "2. Intermediate Fix",
+                  "phrase": "We cross BLAGY at 9 DME at an altitude of 4,000 feet, where we begin configuring flaps and gear."
+                },
+                {
+                  "label": "3. Final Approach Fix",
+                  "phrase": "The Maltese Cross marks the Final Approach Fix at 5.2 DME at 2,000 feet, where we intercept the 3-degree glide slope."
+                },
+                {
+                  "label": "4. Vertical Descent",
+                  "phrase": "Following the 3-degree glide slope downwards, our target descent rate is approximately 750 feet per minute."
+                },
+                {
+                  "label": "5. Decision Altitude",
+                  "phrase": "Our CAT I Decision Altitude is 692 feet, which gives us a decision height of exactly 200 feet above the touchdown zone."
+                },
+                {
+                  "label": "6. Missed Approach",
+                  "phrase": "In the event of a go-around: climb straight ahead on track 142° to 2,500 feet, then turn left climbing to 4,000 feet direct TOU VOR."
+                }
+              ],
+              "challenge": "Partner Challenge: Take turns delivering the full approach briefing to your partner in 60 seconds!"
+            },
             "sections": [
               {
                 "heading": "1. Navigation Frequencies & Course Data",
@@ -4240,7 +4416,7 @@
             ]
           },
           "grammarClinic": {
-            "title": "Activity 3: Language Clinic: Describing Vertical Paths & Cockpit Callouts (25 mins)",
+            "title": "Activity 3: Language Clinic: Vertical Paths & Cockpit Callouts (25 mins)",
             "summary": "Master clear spoken terminology for vertical flight path tracking, approach warnings, and go-around execution.",
             "rules": [
               {
@@ -4307,8 +4483,57 @@
               }
             ]
           },
+          "communicativeGame": {
+            "title": "Activity 4: Communicative Game: ⚡ Go / No-Go Lightning Challenge (25 mins)",
+            "summary": "A high-speed approach dilemma game. Take turns reading the 6 dilemma cards below. You have 3 seconds to shout 'CONTINUE!' or 'GO-AROUND!', and 2 complete sentences to defend your choice!",
+            "instructions": [
+              "Student A reads a Dilemma Card aloud to Student B.",
+              "Student B must shout either 'CONTINUE!' or 'GO-AROUND!' within 3 SECONDS.",
+              "Student B immediately gives 2 complete spoken sentences defending their decision based on stabilized approach rules.",
+              "Student A checks the model defense and awards 2 points for a prompt, correct call + 2 points for fluent justification.",
+              "Switch roles for the next card!"
+            ],
+            "cards": [
+              {
+                "id": 1,
+                "situation": "At 1,000 ft in IMC: airspeed is 170 kt (target approach speed 140 kt), flaps are at position 2 (landing flaps required), and sink rate is 1,300 fpm. Continue or Go-Around?",
+                "verdict": "GO-AROUND!",
+                "defense": "The approach is completely unstabilized! The airspeed is 30 knots high, the landing flaps are not set, and the descent rate exceeds the 1,000 fpm safety limit."
+              },
+              {
+                "id": 2,
+                "situation": "At Decision Altitude 692 ft (200 ft AGL): thick fog rolls over the threshold. Zero approach lights or runway markings are visible. Continue or Go-Around?",
+                "verdict": "GO-AROUND!",
+                "defense": "Under CAT I ILS rules, visual references are mandatory at Decision Altitude! Without visual contact with the lights or runway, an immediate missed approach must be executed."
+              },
+              {
+                "id": 3,
+                "situation": "At 500 ft in VMC: aircraft is perfectly aligned on the localizer and glide slope, landing gear down and locked, landing flaps 30 set, speed steady at 142 kt with a 700 fpm descent rate. Continue or Go-Around?",
+                "verdict": "CONTINUE!",
+                "defense": "All stabilized approach criteria are fully satisfied! The aircraft is in final landing configuration, on speed, on flight path, with normal sink rate."
+              },
+              {
+                "id": 4,
+                "situation": "At 300 ft on short final: the runway and threshold lights are in plain sight, but the Tower Controller suddenly announces: 'Operations vehicle crossing runway at Taxiway Charlie!' Continue or Go-Around?",
+                "verdict": "GO-AROUND!",
+                "defense": "The runway is physically obstructed! Continuing the landing creates a severe risk of a high-speed collision, so we must execute an immediate go-around."
+              },
+              {
+                "id": 5,
+                "situation": "At 400 ft in VMC: the pilot forgot to set full landing flaps. The First Officer realizes and says: 'Wait, let me select flaps full right now!' Continue or Go-Around?",
+                "verdict": "GO-AROUND!",
+                "defense": "Configuring flaps below the stabilized gate (500 ft in VMC) is strictly forbidden! Trying to configure at 400 ft destabilizes aircraft trim and airspeed close to the ground."
+              },
+              {
+                "id": 6,
+                "situation": "At 800 ft in light rain: bright approach lighting system is spotted, localizer and glide slope are centered, airspeed is on target, landing clearance received. Continue or Go-Around?",
+                "verdict": "CONTINUE!",
+                "defense": "The approach is stabilized, visual references are acquired well before minimums, and landing clearance has been confirmed by air traffic control."
+              }
+            ]
+          },
           "roleplaySimulation": {
-            "title": "Activity 4: Speaking Role-Play: Final Approach & Go-Around Decision (35 mins)",
+            "title": "Activity 5: Speaking Role-Play: Low Visibility Approach & Emergency Go-Around (25 mins)",
             "summary": "Simulate a high-stress final approach scenario where an unexpected runway incursion forces an immediate go-around.",
             "situation": "Flight AFR 884 is on 3-mile final approach for Runway 14L in light drizzle. At 400 ft AGL, the Tower Controller spots an airport maintenance vehicle inadvertently crossing the runway holding point at Taxiway Charlie. The Controller commands an immediate go-around; the pilot executes the missed approach procedure smoothly.",
             "roles": [
@@ -4340,7 +4565,7 @@
             ]
           },
           "safetyCheck": {
-            "title": "Activity 5: Safety Check: Unstabilized Approach & Go-Around Culture (15 mins)",
+            "title": "Activity 6: Safety Check: Unstabilized Approach & Go-Around Culture (15 mins)",
             "summary": "Work in teams to analyze the risks of unstabilized approaches and agree on how to build a strong go-around safety culture.",
             "steps": [
               {

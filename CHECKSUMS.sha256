@@ -2,17 +2,17 @@
 # ENAC GSEA English Learning Platform — Cryptographic SHA-256 Manifest
 # Author & Pedagogical Architect: Phil PARRIS (Département LH / LAN)
 # © 2026 Phil PARRIS. All Rights Reserved.
-# Generated: 2026-11-04T19:41:00.032Z
+# Generated: 2026-11-04T19:59:23.071Z
 # ============================================================================
 
-a50c3ab872a13499115ba9d1c2ca263cc030d966fcd286d825d8931bc739e87b  imsmanifest.xml
+ea1456a8e664d5347383c28ba563e21e88053e78b6d3675e1d1a0af2f34cdd5b  imsmanifest.xml
 f082869ed2b914ec5b3044ba485b53e0c66b635dfcaa2a4c9068828165ad0e95  COPYRIGHT.md
-8d864224d25c511989e424e9da237edb0e7a861199acab8385e72c258de57484  index.html
+840e8d41dba84cbd9f1a040fadd84dd4215f50390313f4c662388b65b9fcb3b3  index.html
 15fa773230b62cba91d871c2e13f72a383c721302946b6231bf6986ad814a70a  admin.html
 f27913a6aa60f22a70c7d504ae3b55625b2a481a52f2d998e86c7be437a32715  presentation.html
 2b6b502b6b932bf09d07f6639ae803e78c7786b5f14c26b662c225c84dc31686  portfolio.html
-1fed3ee51a595d2b4dab758906f52e851868421a050a1503335e012a8e83fd18  output.css
-b487dff311dfea48982db1efac9d7744835889a629d9d545930c3abf0c50500b  data/course-data.js
+9cf4bcb00cd7a9c46414a4abbb7dd2946c77df68b6da2e95c87eb9a18c63c73b  output.css
+e6de3aab2a0507b5f93b220ec83ef732873cb3e67ff1d1c9188291a799961d46  data/course-data.js
 bfac1fbaa7fb337e34eed50c87e7a9a449c5be80112aeed6c2ae0254e0724881  images/aas_m1card1.jpg
 f52e89458efa94b0699a10d97147f8a9b99d46395b563ef0f9210a5f2de99fd3  images/aas_m1card2.jpg
 e0334c57519ecb7b3677770af7648e2b89d60539902763194f701ce3b0de0f1c  images/aas_m1card3.jpg
@@ -25,6 +25,9 @@ be6cfd5ea480d8a4fa99a89239e600740f51ea2d2805437325d4a4eba808d6c4  images/aas_m2c
 4c1fc557694197b0009b9c33b7d767c1ed569658b04972cc5dd965e118f4a3ee  images/aas_m3card2.jpg
 3f2a0030ae7aa96e3ba6bd26aa75e9c661575d4b15949958a0b4dfee4240f2e6  images/aas_m3card3.jpg
 fe31053248645ccbe92d35a3385b096a6aa8a106b4e3f5efa6467a04a60d9c59  images/aas_m3card4.jpg
+46f880e327c47f4bc2f7cd69eae6915062bc2b2809ba3c65075b68c03dc4e9ad  images/charts/chart_s4_gmc_lfmt.svg
+8cfc49512e8eae98dd3a4d3c86ec9e13a7a8305684588d4959433b958ca5a1ae  images/charts/chart_s5_sid_lfmt.svg
+f534723f8a06deace222068d45591c28511bb52c5aeab4c0a214c65da016d665  images/charts/chart_s6_approach_lfmt.svg
 875492fdd635c9526c885935261d6626686a2ed57955355c4418105a6a6b00e9  images/course_admin.jpg
 25be4d485fc0dbd024ba8b36856b160cb2a3dbba4c5dbaa2c3f98ae59f71328c  images/ddrs_aas_mod1.jpg
 8bac59dfd79178dda6433c4d75d4a77463f2d2368a19e091f169ce6775778ad3  images/ddrs_aas_mod2.jpg
