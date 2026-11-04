@@ -348,35 +348,35 @@ GM1 CS-ADR-DSN.H.415 Construction Equipment & Mobile Cranes
 
 const s1RevisionTerms = [
   { num: "01", term: "EASA", definition: "European Union Aviation Safety Agency: the civil aviation authority setting safety rules across Europe." },
-  { num: "02", term: "Regulation", definition: "A binding law that all European airports and airlines must follow 100% by law." },
-  { num: "03", term: "Guidance Material (GM)", definition: "Advisory text explaining how to understand and apply official aviation rules in practice." },
-  { num: "04", term: "Acceptable Means of Compliance (AMC)", definition: "Standards and specifications showing one approved way to satisfy an official regulation." },
-  { num: "05", term: "Mandatory", definition: "Required by law; something that you have no choice but to do." },
-  { num: "06", term: "Shall", definition: "The formal legal word indicating an absolute obligation in aviation regulations." },
-  { num: "07", term: "Should", definition: "The formal word indicating a strong recommendation or best practice, but not an absolute law." },
-  { num: "08", term: "May", definition: "The formal word indicating permission or an optional course of action." },
-  { num: "09", term: "Prohibited", definition: "Strictly forbidden by law; completely banned." },
-  { num: "10", term: "Obstacle", definition: "Any fixed or mobile object that extends above defined safety heights around an airport." },
-  { num: "11", term: "Obstacle Limitation Surface (OLS)", definition: "An imaginary safety surface in the sky defining airspace that must remain free of tall objects." },
-  { num: "12", term: "Approach Surface", definition: "An inclined safety plane extending outward and upward from before the runway threshold." },
-  { num: "13", term: "Threshold", definition: "The beginning of that portion of the runway usable for landing." },
-  { num: "14", term: "Gradient", definition: "The rate of slope or incline of a surface, expressed as a percentage or ratio (e.g., 2% or 1:50)." },
-  { num: "15", term: "Penetrate", definition: "To cross or extend through an imaginary safety surface, creating an illegal hazard." },
-  { num: "16", term: "Shielding", definition: "The principle where an obstacle is protected because a larger, permanent object already stands in front of it." },
-  { num: "17", term: "Safeguarding", definition: "The legal process of protecting airport airspace from dangerous construction and tall obstacles." },
-  { num: "18", term: "Notice to Airmen (NOTAM)", definition: "An official telecommunication message alerting pilots about temporary hazards or changes at an airport." },
-  { num: "19", term: "Obstacle Warning Light", definition: "A red or white flashing light placed on tall structures so pilots can see them at night." },
-  { num: "20", term: "Boom", definition: "The long lifting arm of a construction crane." },
-  { num: "21", term: "Aerodrome Reference Point (ARP)", definition: "The designated geographic centre point of an airport." },
-  { num: "22", term: "Prior Notification", definition: "Official advance warning required before starting building works near an aerodrome (e.g., 28 days)." },
-  { num: "23", term: "Contractor", definition: "A construction company hired to perform building or maintenance works." },
-  { num: "24", term: "Compliance", definition: "Full adherence and obedience to established laws, standards, and safety specifications." },
-  { num: "25", term: "Non-Compliance", definition: "A failure to follow a mandatory aviation safety rule." },
-  { num: "26", term: "Oversight", definition: "The ongoing monitoring and inspection of airports by civil aviation authorities to ensure safety." },
-  { num: "27", term: "Safety Margin", definition: "An extra buffer of distance or time added to ensure operations remain safe even if an error occurs." },
-  { num: "28", term: "AIP (Aeronautical Information Publication)", definition: "The permanent official handbook containing airport operational data, charts, and procedures." },
-  { num: "29", term: "Temporary Restriction", definition: "A short-term limitation placed on flights or airport operations during construction works." },
-  { num: "30", term: "Safety Check", definition: "A simple step-by-step review asking: What is the problem? What could happen? How do we fix it?" }
+  { num: "02", term: "Basic Regulation", definition: "Regulation (EU) 2018/1139: the overarching European law establishing EASA and primary aviation rules." },
+  { num: "03", term: "Hard Law", definition: "Legally binding aviation regulations that must be followed 100% by law across all EU Member States." },
+  { num: "04", term: "Soft Law", definition: "Non-binding advisory material, standards, and recommendations providing guidance without direct legal penalty." },
+  { num: "05", term: "Implementing Rule (IR)", definition: "Binding European executive regulations that apply directly in all Member States (e.g. Regulation 139/2014)." },
+  { num: "06", term: "Certification Specifications (CS)", definition: "Technical aerodrome design standards adopted by EASA (such as CS-ADR-DSN for runways and taxiways)." },
+  { num: "07", term: "Acceptable Means of Compliance (AMC)", definition: "Official technical specifications illustrating one approved way to comply with a binding rule." },
+  { num: "08", term: "Guidance Material (GM)", definition: "Non-binding explanatory text and advice on how to understand and apply rules in daily practice." },
+  { num: "09", term: "Alternative Means of Compliance (AltMoC)", definition: "An alternative method used by an airport to meet an Implementing Rule instead of the published AMC." },
+  { num: "10", term: "Easy Access Rules", definition: "EASA consolidated publications combining Hard Law, AMC, and GM together into a single organized manual." },
+  { num: "11", term: "Subpart", definition: "A major chapter or section within an EASA aviation rulebook (e.g., Subpart B: Certification)." },
+  { num: "12", term: "Clause / Article", definition: "A numbered individual paragraph or legal requirement within an official regulation." },
+  { num: "13", term: "Cross-Reference", definition: "A note or link directing the reader to another related document, article, or specification." },
+  { num: "14", term: "Shall", definition: "The formal legal word indicating an absolute, mandatory requirement that must be followed 100%." },
+  { num: "15", term: "Shall Not", definition: "The formal legal phrase indicating a strict, absolute prohibition; completely forbidden." },
+  { num: "16", term: "Should", definition: "The formal word indicating a strong recommendation or best practice, but not an absolute legal duty." },
+  { num: "17", term: "May", definition: "The formal word indicating permission, allowance, or an optional course of action." },
+  { num: "18", term: "Applicability", definition: "The official scope defining which airports, operators, or personnel a specific rule applies to." },
+  { num: "19", term: "Compliance", definition: "Full adherence and obedience to established laws, standards, and safety specifications." },
+  { num: "20", term: "Oversight", definition: "The ongoing monitoring, inspection, and auditing by civil aviation authorities to ensure safety standards." },
+  { num: "21", term: "Obstacle Limitation Surface (OLS)", definition: "Imaginary safety surfaces in the sky defining airspace that must remain free of tall objects." },
+  { num: "22", term: "Approach Surface", definition: "An inclined safety plane extending outward and upward before the runway threshold." },
+  { num: "23", term: "Inner Edge", definition: "The horizontal baseline of an approach surface closest to the runway threshold." },
+  { num: "24", term: "Slope Gradient", definition: "The rate of incline of a safety surface, expressed as a ratio or percentage (e.g., 2% or 1:50)." },
+  { num: "25", term: "Penetration", definition: "When a building, tree, or crane extends above an imaginary obstacle limitation surface, creating a hazard." },
+  { num: "26", term: "Shielding Principle", definition: "The rule allowing an obstacle if a larger, permanent structure already exists in front of it." },
+  { num: "27", term: "Safeguarding Boundary", definition: "The legally defined geographic consultation zone around an aerodrome protecting flight paths." },
+  { num: "28", term: "Prior Notification", definition: "Official advance notice required before starting construction or erecting cranes near an airport (e.g., 28 days)." },
+  { num: "29", term: "Notice to Airmen (NOTAM)", definition: "An official telecommunication message alerting pilots about temporary hazards or changes at an airport." },
+  { num: "30", term: "AIP (Aeronautical Information Publication)", definition: "The permanent official manual containing aerodrome charts, procedures, and operational data." }
 ];
 
 console.log('✓ Prepared Session 1 Data Structure');
@@ -726,36 +726,36 @@ Ground handling organisations issued with a safety non-compliance notice by aero
 };
 
 const s2RevisionTerms = [
-  { num: "01", term: "Apron / Ramp", definition: "The designated area of an airport where aircraft are parked, unloaded, refuelled, and boarded." },
-  { num: "02", term: "Ground Support Equipment (GSE)", definition: "Specialized motorized and towed vehicles servicing aircraft on the ground (tugs, belt loaders, stairs)." },
+  { num: "01", term: "Part-ADR.OPS", definition: "EASA aerodrome operational requirements covering day-to-day operations and maintenance." },
+  { num: "02", term: "Part-ADR.OR", definition: "EASA aerodrome organization requirements covering management systems and operator duties." },
   { num: "03", term: "Safety Information Bulletin (SIB)", definition: "An advisory document published by EASA sharing safety lessons, alerts, and recommended practices." },
-  { num: "04", term: "Safety Directive (SD)", definition: "A mandatory regulatory order issued to correct an urgent unsafe condition." },
-  { num: "05", term: "Airside Driving Permit (ADP)", definition: "An official license authorizing staff to operate motorized vehicles on the aerodrome movement area." },
-  { num: "06", term: "Speed Limit", definition: "The maximum legal speed permitted for vehicles operating in apron lanes (typically 20 km/h)." },
-  { num: "07", term: "Aircraft Stand Safety Area", definition: "The painted red box surrounding a parked aircraft where vehicle speeds are restricted to walking pace (5 km/h)." },
-  { num: "08", term: "Right-of-Way", definition: "The legal priority of one vehicle or aircraft to proceed ahead of another (aircraft always have priority)." },
-  { num: "09", term: "Aircraft Under Tow", definition: "An aeroplane being pulled or pushed by a heavy tractor (tug) using a towbar or towbarless system." },
-  { num: "10", term: "Jet Blast", definition: "Rapid air stream produced by the engines of an aircraft, dangerous to personnel and equipment behind it." },
-  { num: "11", term: "FOD (Foreign Object Debris)", definition: "Loose items, trash, tools, or stones on the apron that can damage aircraft or be ingested by jet engines." },
-  { num: "12", term: "High-Visibility Vest", definition: "Fluorescent clothing with reflective strips required for all airside personnel to ensure they are visible." },
-  { num: "13", term: "Telematics", definition: "An onboard GPS tracking device recording vehicle speed, position, and harsh acceleration." },
-  { num: "14", term: "Speed Governor / Limiter", definition: "A mechanical or electronic device restricting a vehicle engine from exceeding a set speed (e.g. 20 km/h)." },
-  { num: "15", term: "Near-Miss", definition: "An unplanned event that did not result in injury or damage, but had significant potential to do so." },
-  { num: "16", term: "Occurrence Reporting", definition: "The mandatory European system (Regulation 376/2014) for logging safety incidents without fear of blame." },
-  { num: "17", term: "Fix-It Plan (CAP)", definition: "A structured Corrective Action Plan submitted by an operator detailing how safety defects will be resolved." },
-  { num: "18", term: "Root Cause", definition: "The fundamental underlying reason why a safety failure occurred, rather than just the immediate symptom." },
-  { num: "19", term: "Toolbox Talk", definition: "A short 10-minute informal safety briefing held with ramp teams at the beginning of a shift." },
-  { num: "20", term: "Marshaller", definition: "A trained ground operations worker directing aircraft onto stand using hand-held illuminated wands." },
-  { num: "21", term: "Turnaround", definition: "The complete cycle of unloading, servicing, cleaning, refuelling, and boarding an aircraft between flights." },
-  { num: "22", term: "Chocks", definition: "Heavy rubber wedges placed against aircraft wheels to prevent accidental movement when parked." },
-  { num: "23", term: "Engine Cowling", definition: "The removable metal casing covering an aircraft engine, vulnerable to ground vehicle collisions." },
-  { num: "24", term: "Pitot Probe", definition: "A delicate exterior sensor on the aircraft nose measuring airspeed that must never be bumped." },
-  { num: "25", term: "Audit Finding", definition: "A formal written statement by a safety inspector recording a deviation from required standards." },
-  { num: "26", term: "Non-Compliance Notice", definition: "An official document issued to an operator requiring remediation of an observed safety infraction." },
-  { num: "27", term: "Passive Voice", definition: "A grammatical structure ('it was observed') used to describe findings objectively without personal blame." },
-  { num: "28", term: "Spot-Check", definition: "An unannounced, random safety inspection conducted on the ramp to verify compliance." },
-  { num: "29", term: "Recurrent Training", definition: "Regular refresher courses (e.g. annually) ensuring staff keep safety knowledge fresh." },
-  { num: "30", term: "Airside Access", definition: "Security-cleared permission to enter operational areas beyond the terminal passenger screening points." }
+  { num: "04", term: "Safety Directive (SD)", definition: "A mandatory regulatory order issued by an authority to correct an urgent unsafe condition." },
+  { num: "05", term: "Information Notice (IN)", definition: "An administrative circular providing general updates, advice, or procedural clarifications." },
+  { num: "06", term: "Safety Occurrence", definition: "Any safety-related event, incident, or malfunction that endangers or could endanger an operation." },
+  { num: "07", term: "Occurrence Reporting (Regulation 376/2014)", definition: "The mandatory European system for logging and reporting safety occurrences without fear of blame." },
+  { num: "08", term: "Just Culture", definition: "A safety culture where staff are encouraged to report mistakes honestly without fear of unfair punishment." },
+  { num: "09", term: "Near-Miss / Close Call", definition: "An unplanned event where an accident was narrowly avoided, providing vital lessons for prevention." },
+  { num: "10", term: "Apron Management Service (AMS)", definition: "The airport unit responsible for regulating ground movement, parking, and apron safety." },
+  { num: "11", term: "Aircraft Stand Safety Area", definition: "The painted red box surrounding a parked aircraft where vehicle speeds are restricted to walking pace (5 km/h)." },
+  { num: "12", term: "Airside Driving Permit (ADP)", definition: "An official license authorizing airport staff to drive vehicles on the aerodrome movement area." },
+  { num: "13", term: "Right-of-Way", definition: "The legal priority of one vehicle or aircraft to proceed ahead of another; aircraft always have priority." },
+  { num: "14", term: "Speed Governor / Limiter", definition: "A mechanical or electronic device restricting a ground vehicle from exceeding set speed limits (e.g. 20 km/h)." },
+  { num: "15", term: "Telematics", definition: "An onboard vehicle tracking unit recording real-time speed, location, and driving behaviour." },
+  { num: "16", term: "FOD (Foreign Object Debris)", definition: "Loose items, rubbish, tools, or stones on the apron that can damage aircraft or jet engines." },
+  { num: "17", term: "Compliance Monitoring System (CMS)", definition: "An internal auditing system used by an aerodrome operator to verify continuous compliance with rules." },
+  { num: "18", term: "Safety Audit", definition: "A systematic, independent inspection to verify whether operational activities comply with planned arrangements." },
+  { num: "19", term: "Audit Finding", definition: "A formal written statement by a safety inspector recording a deviation from required standards." },
+  { num: "20", term: "Level 1 Finding", definition: "A serious non-compliance with significant safety risk requiring immediate corrective action." },
+  { num: "21", term: "Level 2 Finding", definition: "A non-compliance that does not pose an immediate risk but must be resolved within a defined deadline." },
+  { num: "22", term: "Non-Compliance Notice (NCN)", definition: "An official document issued to an operator requiring remediation of an observed safety infraction." },
+  { num: "23", term: "Root Cause Analysis (RCA)", definition: "The structured process of identifying the fundamental reason why a safety failure occurred." },
+  { num: "24", term: "Corrective Action Plan (CAP / Fix-It Plan)", definition: "A structured written plan submitted by an operator detailing how safety defects will be resolved." },
+  { num: "25", term: "Objective Evidence", definition: "Physical documents, records, photos, or logs proving whether a safety standard was actually met." },
+  { num: "26", term: "Passive Voice in Audits", definition: "Objective phrasing ('it was observed', 'records were not provided') used to describe findings without personal blame." },
+  { num: "27", term: "Spot-Check", definition: "An unannounced, random safety inspection conducted on the ramp to verify compliance." },
+  { num: "28", term: "Recurrent Training", definition: "Regular refresher courses (e.g. annually) ensuring staff keep safety knowledge fresh." },
+  { num: "29", term: "Aerodrome Manual (AOM)", definition: "The master legal document describing an airport's infrastructure, equipment, and operating procedures." },
+  { num: "30", term: "Standard Operating Procedure (SOP)", definition: "Step-by-step written instructions designed by an operator to carry out complex routine tasks safely." }
 ];
 
 console.log('✓ Prepared Session 2 Data Structure');
@@ -1093,36 +1093,36 @@ This operational exemption expires automatically after 45 days. The aerodrome op
 };
 
 const s3RevisionTerms = [
-  { num: "01", term: "RESA (Runway End Safety Area)", definition: "An area symmetrical about the extended runway centre line intended to reduce the risk of damage to an aeroplane overrunning or undershooting." },
-  { num: "02", term: "Displaced Threshold", definition: "A runway landing threshold located at a point other than the physical beginning of the runway." },
-  { num: "03", term: "Landing Distance Available (LDA)", definition: "The length of runway declared available and suitable for the ground run of an aeroplane landing." },
-  { num: "04", term: "Exemption", definition: "An official temporary permission granted by a civil aviation authority to deviate from a standard rule." },
-  { num: "05", term: "Article 71", definition: "The legal clause in EU aviation law allowing temporary exemptions for urgent operational needs." },
-  { num: "06", term: "Derogation", definition: "An official exemption from or relaxation of a law, rule, or standard." },
-  { num: "07", term: "Safety Case", definition: "A structured written justification proving that an operation is safe despite non-standard conditions." },
-  { num: "08", term: "Compensatory Measure", definition: "An additional safety step implemented to replace or balance a temporary reduction in safety margin." },
-  { num: "09", term: "Culvert", definition: "An underground concrete pipe or tunnel carrying stormwater drainage underneath a runway." },
-  { num: "10", term: "Subsidence", definition: "The gradual sinking or settling of ground soil that can damage overlying runway pavement." },
-  { num: "11", term: "Runway Strip", definition: "A defined area including the runway and stopway intended to protect aircraft flying over it during take-off or landing." },
-  { num: "12", term: "Overrun", definition: "When an aircraft fails to stop before the end of the paved runway surface." },
-  { num: "13", term: "Undershoot", definition: "When an arriving aircraft touches down short of the runway threshold." },
-  { num: "14", term: "Contaminated Runway", definition: "A runway where significant portions of the surface are covered by standing water, snow, slush, or ice." },
-  { num: "15", term: "Braking Action", definition: "A measure of the tyre-to-surface friction available to slow down a landing aircraft." },
-  { num: "16", term: "Crosswind Component", definition: "The portion of wind blowing perpendicular (90 degrees) to the runway direction." },
-  { num: "17", term: "Holding Point", definition: "A designated position on a taxiway where aircraft hold before entering or crossing an active runway." },
-  { num: "18", term: "RFFS (Rescue and Fire Fighting Services)", definition: "The emergency airport fire brigade equipped with heavy foam vehicles for aircraft incidents." },
-  { num: "19", term: "Standby", definition: "Being in immediate readiness to respond to an emergency situation within seconds." },
-  { num: "20", term: "Diversion", definition: "Rerouting an aircraft to land at an alternative airport when landing at the intended destination is unsafe." },
-  { num: "21", term: "Alternate Aerodrome", definition: "An airport specified in the flight plan where an aircraft can land if landing at destination is impossible." },
-  { num: "22", term: "AIP Supplement (SUP)", definition: "A temporary published change to permanent aeronautical information, usually lasting more than 3 months." },
-  { num: "23", term: "Briefing", definition: "A short, concise spoken presentation giving operational instructions and safety updates to a team." },
-  { num: "24", term: "Provided that", definition: "A linking phrase meaning 'on the strict condition that' (used to introduce mandatory rules)." },
-  { num: "25", term: "In lieu of", definition: "A formal phrase meaning 'in place of' or 'as a replacement for'." },
-  { num: "26", term: "Due to", definition: "A connecting phrase meaning 'caused by' or 'because of', followed by a noun phrase." },
-  { num: "27", term: "In order to", definition: "A linking phrase used to express the purpose of a safety action." },
-  { num: "28", term: "Touchdown Zone", definition: "The portion of a runway beyond the threshold where landing aeroplanes are intended to first make contact." },
-  { num: "29", term: "Runway Guard Lights", definition: "Flashing yellow lights installed at taxiway holding points to warn pilots of an active runway ahead." },
-  { num: "30", term: "Temporary Threshold Marking", definition: "Special paint or portable markings indicating where the temporary landing line begins." }
+  { num: "01", term: "Article 71 Exemption", definition: "The legal clause in EU aviation law allowing temporary exemptions for urgent operational needs." },
+  { num: "02", term: "Derogation", definition: "An official temporary exemption from or relaxation of a regulatory requirement granted by the authority." },
+  { num: "03", term: "Safety Assessment / Safety Case", definition: "A structured written justification proving that an operation is safe despite non-standard conditions." },
+  { num: "04", term: "Equivalent Level of Safety (ELOS)", definition: "Proof that alternative safety measures provide the same protection as the standard rule." },
+  { num: "05", term: "Compensatory Measure", definition: "An additional safety step implemented to replace or balance a temporary reduction in safety margin." },
+  { num: "06", term: "Aeronautical Study", definition: "A technical engineering study evaluating the impact of non-standard conditions on flight operations." },
+  { num: "07", term: "Runway End Safety Area (RESA)", definition: "An area symmetrical about the extended runway centerline intended to reduce risk if an aeroplane overruns or undershoots." },
+  { num: "08", term: "Displaced Threshold", definition: "A runway landing threshold located at a point other than the physical beginning of the runway." },
+  { num: "09", term: "Declared Distances", definition: "The four official operational distances published for a runway: TORA, TODA, ASDA, and LDA." },
+  { num: "10", term: "TORA (Take-Off Run Available)", definition: "The length of runway declared available and suitable for the ground run of an aeroplane taking off." },
+  { num: "11", term: "TODA (Take-Off Distance Available)", definition: "The length of the take-off run available plus the length of the clearway, if provided." },
+  { num: "12", term: "ASDA (Accelerate-Stop Distance Available)", definition: "The length of the take-off run available plus the length of the stopway, if provided." },
+  { num: "13", term: "LDA (Landing Distance Available)", definition: "The length of runway declared available and suitable for the ground run of an aeroplane landing." },
+  { num: "14", term: "Overrun", definition: "When an aircraft fails to stop before the end of the paved runway surface." },
+  { num: "15", term: "Undershoot", definition: "When an arriving aircraft touches down short of the runway threshold." },
+  { num: "16", term: "Temporary Operational Restriction", definition: "A short-term limitation placed on flights or airport operations during construction works." },
+  { num: "17", term: "Contaminated Runway", definition: "A runway where significant portions of the surface are covered by standing water, snow, slush, or ice." },
+  { num: "18", term: "Braking Action", definition: "A measure of the tyre-to-surface friction available to slow down a landing aircraft." },
+  { num: "19", term: "Crosswind Component", definition: "The portion of wind blowing perpendicular (90 degrees) to the runway direction." },
+  { num: "20", term: "Holding Point", definition: "A designated position on a taxiway where aircraft hold before entering or crossing an active runway." },
+  { num: "21", term: "RFFS (Rescue and Fire Fighting Services)", definition: "The emergency airport fire brigade equipped with heavy foam vehicles for aircraft incidents." },
+  { num: "22", term: "Standby Status", definition: "Positioning emergency fire crews in immediate operational readiness near the runway during high-risk operations." },
+  { num: "23", term: "AIP Supplement (SUP)", definition: "A temporary published change to permanent aeronautical information, usually lasting more than 3 months." },
+  { num: "24", term: "NOTAM Trigger", definition: "An operational event or change that legally requires the immediate issuance of a Notice to Airmen." },
+  { num: "25", term: "Inter-Service Consultation", definition: "Formal coordination between air traffic control, airport safety, airlines, and maintenance services." },
+  { num: "26", term: "Flight Operations Briefing", definition: "A short, concise presentation giving pilots and dispatchers key operational constraints and rules." },
+  { num: "27", term: "Condition Linker (Provided that)", definition: "A formal linking phrase meaning 'on the strict condition that', used to introduce mandatory rules." },
+  { num: "28", term: "Cause Linker (Due to)", definition: "A connecting phrase meaning 'caused by' or 'because of', connecting an effect directly to an operational hazard." },
+  { num: "29", term: "Purpose Linker (In order to)", definition: "A linking phrase used to express the purpose of a safety action or compensatory measure." },
+  { num: "30", term: "Runway Safety Team (RST)", definition: "A multi-disciplinary committee of controllers, pilots, and airport staff focused on runway hazard prevention." }
 ];
 
 console.log('✓ Prepared Session 3 Data Structure');
@@ -1139,8 +1139,8 @@ m1.sessions["1"].objectives = s1Objectives;
 m1.sessions["1"].lessonPlan = s1LessonPlan;
 m1.sessions["1"].lessonContent = s1LessonContent;
 m1.sessions["1"].revision = {
-  title: s1RevisionTerms[0] ? "Session 1 Revision - EASA Rules & Airport Obstacle Safeguarding" : m1.sessions["1"].revision.title,
-  summary: "30 essential operational and regulatory vocabulary terms for GSEA students covering EASA document navigation, obstacle limitation surfaces, and rules.",
+  title: "Session 1 Revision - EASA Rules, Document Navigation & OLS",
+  summary: "30 essential operational and regulatory vocabulary terms for GSEA students covering EASA document structure, rule hierarchy, and obstacle safeguarding.",
   terms: s1RevisionTerms
 };
 
@@ -1149,8 +1149,8 @@ m1.sessions["2"].objectives = s2Objectives;
 m1.sessions["2"].lessonPlan = s2LessonPlan;
 m1.sessions["2"].lessonContent = s2LessonContent;
 m1.sessions["2"].revision = {
-  title: "Session 2 Revision - Safety Alerts & Ramp Inspections",
-  summary: "30 essential operational terms for GSEA students covering apron safety, ground support vehicles, inspections, and hazard reporting.",
+  title: "Session 2 Revision - Safety Notices, Apron Rules & Compliance Audits",
+  summary: "30 essential operational terms for GSEA students covering EASA safety notices, ramp safety rules, occurrence reporting, and audit findings.",
   terms: s2RevisionTerms
 };
 
@@ -1159,8 +1159,8 @@ m1.sessions["3"].objectives = s3Objectives;
 m1.sessions["3"].lessonPlan = s3LessonPlan;
 m1.sessions["3"].lessonContent = s3LessonContent;
 m1.sessions["3"].revision = {
-  title: "Session 3 Revision - Special Requests & Runway Safety Cases",
-  summary: "30 essential operational terms for GSEA students covering runway works, temporary permissions (exemptions), and airline briefings.",
+  title: "Session 3 Revision - Operational Exemptions, Safety Cases & Runway Works",
+  summary: "30 essential operational terms for GSEA students covering Article 71 exemptions, safety assessments, declared distances, and compensatory measures.",
   terms: s3RevisionTerms
 };
 
