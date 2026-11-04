@@ -2478,7 +2478,7 @@
       "4": {
         "session": 4,
         "objectives": {
-          "title": "Session 4 - Jobs in Aviation Objectives",
+          "title": "Session 4 - Aerodrome Ground Layouts & Taxiway Navigation Objectives",
           "summary": "By the end of this session, you will be able to distinguish and categorize aviation operational professions across landside, airside, flight operations, air traffic services, and civil aviation administration (TSEEAC), accurately articulate professional duties and jurisdictions using formal B2 structures, and collaborate effectively during operational handoffs.",
           "items": [
             {
@@ -3272,7 +3272,7 @@
       "5": {
         "session": 5,
         "objectives": {
-          "title": "Session 5 - Jobs in Aviation Objectives",
+          "title": "Session 5 - Airspace Corridors: SIDs, STARs & Transition Routes Objectives",
           "summary": "By the end of this session, you will be able to distinguish and categorize aviation operational professions across landside, airside, flight operations, air traffic services, and civil aviation administration (TSEEAC), accurately articulate professional duties and jurisdictions using formal B2 structures, and collaborate effectively during operational handoffs.",
           "items": [
             {
@@ -4066,7 +4066,7 @@
       "6": {
         "session": 6,
         "objectives": {
-          "title": "Session 6 - Jobs in Aviation Objectives",
+          "title": "Session 6 - Approach Plates: Final Corridors & Go-Around Paths Objectives",
           "summary": "By the end of this session, you will be able to distinguish and categorize aviation operational professions across landside, airside, flight operations, air traffic services, and civil aviation administration (TSEEAC), accurately articulate professional duties and jurisdictions using formal B2 structures, and collaborate effectively during operational handoffs.",
           "items": [
             {

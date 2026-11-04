@@ -1095,9 +1095,9 @@
           s1: "Session 1 - EASA Rules & Finding Information Fast",
           s2: "Session 2 - Safety Alerts & Ramp Inspections",
           s3: "Session 3 - Special Requests & Runway Safety Cases",
-          s4: "Session 4 - Jobs in Aviation",
-          s5: "Session 5 - Jobs in Aviation",
-          s6: "Session 6 - Jobs in Aviation"
+          s4: "Session 4 - Aerodrome Ground Layouts & Taxiway Navigation",
+          s5: "Session 5 - Airspace Corridors: SIDs, STARs & Transition Routes",
+          s6: "Session 6 - Approach Plates: Final Corridors & Go-Around Paths"
         },
         2: {
           s1: "Session 1 - Aerodynamics & Flight Principles",
@@ -1123,7 +1123,9 @@
           card1: "images/s3_m1_session1_easa.jpg",
           card2: "images/s3_m1_session2_audit.jpg",
           card3: "images/s3_m1_session3_derogation.jpg",
-          card4: "images/aas_m1card4.jpg",
+          card4: "images/s3_m1_session4_aerodrome.jpg",
+          card5: "images/s3_m1_session5_sid_star.jpg",
+          card6: "images/s3_m1_session6_approach.jpg",
           fe: "images/fe_progress_check.jpg",
           ddrs: "images/ddrs_aas_mod1.jpg",
           admin: "images/course_admin.jpg"
@@ -1157,9 +1159,9 @@
           s1: `Welcome to Technical English Module 1 on Documents & Maps! In this opening session, GSEA students learn simple strategies to navigate dense EASA airport rules without getting lost.<br><br><em>Subject overview:</em> The difference between mandatory laws and advisory guides, everyday words for rules (shall, must, should, may), reading an authentic EASA crane safety rule, and the Obstacle Clarification role-play.<br><br>${formativeEvaluationNotice}`,
           s2: `Welcome to Session 2! We explore airport ramp safety, occurrence reporting, and safety notices.<br><br><em>Subject overview:</em> The difference between mandatory Safety Orders and advisory Bulletins, using polite sentences (passive voice) during inspections, reading an EASA notice on ramp vehicle speed limits, and a 3-student safety meeting role-play.<br><br>${formativeEvaluationNotice}`,
           s3: `Welcome to Session 3! We discover how airports handle real-world challenges through special temporary permissions (exemptions).<br><br><em>Subject overview:</em> Explaining safety solutions, using connecting words (provided that, in lieu of), reading a temporary runway works request, and giving a confident 3-minute spoken briefing to airline pilots.<br><br>${formativeEvaluationNotice}`,
-          s4: `Welcome to Session 4! We examine aviation operational careers across landside, airside, flight operations, air traffic services, and civil aviation administration.<br><br><em>Subject overview:</em> Professional roles and jurisdictions: Passenger Service Agents, Ramp Coordinators, Flight Crew, ATCOs (Tower, Approach, En-Route), and TSEEAC functions (AFISO, aerodrome operations coordination, DGAC safety oversight). Expressing duties, authority, and handoff procedures.<br><br>${formativeEvaluationNotice}`,
-          s5: `Welcome to Session 5! We examine aviation operational careers across landside, airside, flight operations, air traffic services, and civil aviation administration.<br><br><em>Subject overview:</em> Professional roles and jurisdictions: Passenger Service Agents, Ramp Coordinators, Flight Crew, ATCOs (Tower, Approach, En-Route), and TSEEAC functions (AFISO, aerodrome operations coordination, DGAC safety oversight). Expressing duties, authority, and handoff procedures.<br><br>${formativeEvaluationNotice}`,
-          s6: `Welcome to Session 6! We examine aviation operational careers across landside, airside, flight operations, air traffic services, and civil aviation administration.<br><br><em>Subject overview:</em> Professional roles and jurisdictions: Passenger Service Agents, Ramp Coordinators, Flight Crew, ATCOs (Tower, Approach, En-Route), and TSEEAC functions (AFISO, aerodrome operations coordination, DGAC safety oversight). Expressing duties, authority, and handoff procedures.<br><br>${formativeEvaluationNotice}`
+          s4: `Welcome to Session 4! We explore aerodrome ground charts (ADC & GMC), airport infrastructure layout, and ground navigation.<br><br><em>Subject overview:</em> Runway orientations, displaced thresholds, taxiways, holding points, aprons, de-icing bays, and hot spots. Using prepositions of place and relative positioning (adjacent to, parallel to, at the junction of) to give confident, unambiguous spoken taxi instructions across complex airport surfaces.<br><br>${formativeEvaluationNotice}`,
+          s5: `Welcome to Session 5! We analyze Standard Instrument Departure (SID) and Standard Terminal Arrival Route (STAR) charts.<br><br><em>Subject overview:</em> Terminal airspace corridors, waypoints, climb gradients, and noise abatement turns. Using prepositions of movement and progression (tracking towards, proceeding via, climbing through, leveling off at) to brief flight routes and coordinate spoken weather diversions around storms.<br><br>${formativeEvaluationNotice}`,
+          s6: `Welcome to Session 6! We master Instrument Approach Charts (IAC), final descent profiles, and go-around paths.<br><br><em>Subject overview:</em> Glide paths, localizer alignment, decision altitudes, and missed approach procedures. Delivering a structured 3-minute spoken approach briefing and verbally executing contingency go-around routing when an active runway is compromised.<br><br>${formativeEvaluationNotice}`
         },
         2: {
           s1: `Welcome to Module 2 on MTF! In this opening session, we explore the four fundamental forces of flight, aircraft control axes, and wing airflow dynamics while developing spoken fluency and cause-and-effect structures.<br><br><em>Subject overview:</em> Lift, weight, thrust, and drag in equilibrium; pitch, roll, and yaw control surfaces; angle of attack, boundary layer separation, and stall recovery procedures.<br><br>${formativeEvaluationNotice}`,
@@ -1191,7 +1193,7 @@
           tag: tagLabel,
           title: titles[`s${s}`] || titles.s4,
           description: desc[`s${s}`] || desc.s4,
-          imageUrl: s <= 4 ? images[`card${s}`] : images.card4
+          imageUrl: images[`card${s}`] || images.card4
         });
       }
 
@@ -10575,7 +10577,7 @@ function renderLessonContentTabSession4(sessionData, theme) {
             "courseWeek": "W04",
             "week": "W40",
             "date": "Wed 30 Sep",
-            "title": "Session 4 — Jobs in Aviation",
+            "title": "Session 4 — Aerodrome Ground Layouts & Taxiway Navigation",
             "subtitle": "",
             "tag": "Teaching Session",
             "isFe": false,
@@ -10590,7 +10592,7 @@ function renderLessonContentTabSession4(sessionData, theme) {
             "courseWeek": "W05",
             "week": "W41",
             "date": "Wed 07 Oct",
-            "title": "Session 5 — Jobs in Aviation",
+            "title": "Session 5 — Airspace Corridors: SIDs, STARs & Transition Routes",
             "subtitle": "",
             "tag": "Teaching Session",
             "isFe": false,
@@ -10605,7 +10607,7 @@ function renderLessonContentTabSession4(sessionData, theme) {
             "courseWeek": "W06",
             "week": "W42",
             "date": "Wed 14 Oct",
-            "title": "Session 6 — Jobs in Aviation",
+            "title": "Session 6 — Approach Plates: Final Corridors & Go-Around Paths",
             "subtitle": "",
             "tag": "Teaching Session • Prep FE1",
             "isFe": false,
