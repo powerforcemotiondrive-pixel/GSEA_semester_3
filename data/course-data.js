@@ -142,7 +142,7 @@
       "1": {
         "session": 1,
         "objectives": {
-          "title": "Session 1 - EASA Rules & Finding Information Fast Objectives",
+          "title": "Session 1 Objectives - EASA Rules & Finding Information Fast",
           "summary": "By the end of this session, GSEA students will be able to navigate dense EASA airport rules without getting lost, understand the difference between mandatory laws and advisory guides, use words for rules (shall, must, should, may) accurately, scan an authentic EASA crane safety specification, role-play a polite clarification dialogue with a building contractor, and complete a simple Safety Check.",
           "items": [
             {
@@ -918,7 +918,7 @@
       "2": {
         "session": 2,
         "objectives": {
-          "title": "Session 2 - Safety Alerts & Ramp Inspections Objectives",
+          "title": "Session 2 Objectives - Safety Alerts & Ramp Inspections",
           "summary": "By the end of this session, GSEA students will be able to distinguish mandatory Safety Orders from advisory Bulletins, use gentle, polite sentences (passive voice) during safety audits, read an authentic EASA Ramp Speed Alert, participate in a 3-student ramp safety inspection meeting, and complete a simple Safety Check.",
           "items": [
             {
@@ -1693,7 +1693,7 @@
       "3": {
         "session": 3,
         "objectives": {
-          "title": "Session 3 - Special Requests & Runway Safety Cases Objectives",
+          "title": "Session 3 Objectives - Special Requests & Runway Safety Cases",
           "summary": "By the end of this session, GSEA students will be able to explain how airports handle real-world challenges through temporary permissions (exemptions), use connecting words to explain rules and conditions (provided that, due to, in order to, in lieu of), read an authentic runway works exemption file, prepare and deliver a 3-minute spoken briefing to airline pilots, and complete a simple Safety Check.",
           "items": [
             {
@@ -2478,7 +2478,7 @@
       "4": {
         "session": 4,
         "objectives": {
-          "title": "Session 4 - Aerodrome Ground Layouts & Taxiway Navigation Objectives",
+          "title": "Session 4 Objectives - Aerodrome Ground Layouts & Taxiway Navigation",
           "summary": "By the end of this session, GSEA students will be able to orient someone to an airport map with natural spoken confidence, navigate a visual Ground Movement Chart (GMC), give precise physical directions using prepositions of place, play the 'Blind Taxi Navigator' information-gap game, role-play an active runway crossing taxi clearance, and complete a collaborative Safety Check on runway incursion hazards.",
           "items": [
             {
@@ -3331,7 +3331,7 @@
       "5": {
         "session": 5,
         "objectives": {
-          "title": "Session 5 - Airspace Corridors: SIDs, STARs & Transition Routes Objectives",
+          "title": "Session 5 Objectives - Airspace Corridors: SIDs, STARs & Transition Routes",
           "summary": "By the end of this session, GSEA students will be able to explain airspace corridors in plain English, narrate a flight route sequentially using prepositions of movement, scan the visual GAILLAC 4A departure chart, play the 'Airspace Detective' logic game to spot dangerous clearance errors, role-play a cockpit departure briefing and weather diversion, and complete a collaborative Safety Check on route deviations.",
           "items": [
             {
@@ -4175,7 +4175,7 @@
       "6": {
         "session": 6,
         "objectives": {
-          "title": "Session 6 - Approach Plates: Final Corridors & Go-Around Paths Objectives",
+          "title": "Session 6 Objectives - Approach Plates: Final Corridors & Go-Around Paths",
           "summary": "By the end of this session, GSEA students will be able to read and explain visual approach plates (IAC / ILS) in plain English, explain vertical descent profiles aloud, play the fast-paced 'Go / No-Go Lightning Challenge', role-play an emergency go-around command, and complete a collaborative Safety Check on unstabilized approach criteria.",
           "items": [
             {
@@ -5161,7 +5161,7 @@
       "1": {
         "session": 1,
         "objectives": {
-          "title": "Session 1 - Aerodynamics & Flight Principles Objectives",
+          "title": "Session 1 Objectives - Aerodynamics & Flight Principles",
           "summary": "By the end of this session, you will be able to explain the four fundamental forces of flight, describe the three aircraft axes and their corresponding control surfaces, use cause-and-effect conditionals accurately, and communicate aerodynamic flight scenarios with professional B2 fluency.",
           "items": [
             {
@@ -5807,7 +5807,7 @@
       "2": {
         "session": 2,
         "objectives": {
-          "title": "Session 2 - Aircraft Anatomy: Structure & Systems Objectives",
+          "title": "Session 2 Objectives - Aircraft Anatomy: Structure & Systems",
           "summary": "By the end of this session, you will be able to identify external and internal aircraft parts from diagrams, use spatial prepositions and functional descriptors accurately, conduct a simulated pre-flight exterior walkaround, and report mechanical defects in professional B2 English.",
           "items": [
             {
@@ -6483,7 +6483,7 @@
       "3": {
         "session": 3,
         "objectives": {
-          "title": "Session 3 - Commercial Aircraft & Airlines Objectives",
+          "title": "Session 3 Objectives - Commercial Aircraft & Airlines",
           "summary": "By the end of this session, you will be able to categorize commercial aircraft types, compare airliner specifications and manufacturer strategies (Airbus vs. Boeing), deploy comparative structures with confidence, and participate in an airline fleet selection committee simulation.",
           "items": [
             {
@@ -7101,7 +7101,7 @@
       "4": {
         "session": 4,
         "objectives": {
-          "title": "Session 4 - Significant Aviation Accidents & Aircraft Types Objectives",
+          "title": "Session 4 Objectives - Significant Aviation Accidents & Aircraft Types",
           "summary": "By the end of this session, you will be able to analyze landmark aviation accidents and the aircraft types involved, use past narrative tenses and sequencing linkers, conduct a 15-minute quick-fire group research sprint, and deliver a collaborative 5-minute accident briefing to classmates.",
           "items": [
             {
@@ -7735,7 +7735,7 @@
       "5": {
         "session": 5,
         "objectives": {
-          "title": "Session 5 - Significant Aviation Accidents & Aircraft Types Objectives",
+          "title": "Session 5 Objectives - Significant Aviation Accidents & Aircraft Types",
           "summary": "By the end of this session, you will be able to analyze landmark aviation accidents and the aircraft types involved, use past narrative tenses and sequencing linkers, conduct a 15-minute quick-fire group research sprint, and deliver a collaborative 5-minute accident briefing to classmates.",
           "items": [
             {
@@ -8369,7 +8369,7 @@
       "6": {
         "session": 6,
         "objectives": {
-          "title": "Session 6 - Significant Aviation Accidents & Aircraft Types Objectives",
+          "title": "Session 6 Objectives - Significant Aviation Accidents & Aircraft Types",
           "summary": "By the end of this session, you will be able to analyze landmark aviation accidents and the aircraft types involved, use past narrative tenses and sequencing linkers, conduct a 15-minute quick-fire group research sprint, and deliver a collaborative 5-minute accident briefing to classmates.",
           "items": [
             {
@@ -9003,7 +9003,7 @@
       "7": {
         "session": 7,
         "objectives": {
-          "title": "Session 7 - Significant Aviation Accidents & Aircraft Types Objectives",
+          "title": "Session 7 Objectives - Significant Aviation Accidents & Aircraft Types",
           "summary": "By the end of this session, you will be able to analyze landmark aviation accidents and the aircraft types involved, use past narrative tenses and sequencing linkers, conduct a 15-minute quick-fire group research sprint, and deliver a collaborative 5-minute accident briefing to classmates.",
           "items": [
             {
@@ -9718,7 +9718,7 @@
       "1": {
         "session": 1,
         "objectives": {
-          "title": "Session 1 - Health & Human Factors in Aviation Objectives",
+          "title": "Session 1 Objectives - Health & Human Factors in Aviation",
           "summary": "By the end of this session, you will be able to recognize and report in-flight medical emergencies, analyze pilot and controller fatigue using scientific human factors frameworks, apply the IMSAFE self-assessment model, execute a medical diversion decision protocol, and pronounce aeromedical vocabulary with accurate syllable stress.",
           "items": [
             {
@@ -10386,7 +10386,7 @@
       "2": {
         "session": 2,
         "objectives": {
-          "title": "Session 2 - Meteorology & Severe Weather in Commercial Aviation Objectives",
+          "title": "Session 2 Objectives - Meteorology & Severe Weather in Commercial Aviation",
           "summary": "By the end of this session, you will be able to evaluate the operational impacts of severe atmospheric hazards on commercial flight operations, decode complex METAR and TAF meteorological reports, explain the aerodynamic physics of microbursts and structural icing, analyze landmark weather accident case studies (Delta 191 & BA 009), and execute a terminal weather diversion routing under fuel constraints.",
           "items": [
             {
@@ -11063,7 +11063,7 @@
       "3": {
         "session": 3,
         "objectives": {
-          "title": "Session 3 - Aviation Safety vs. Security: Airport Protection & Aircraft Checks Objectives",
+          "title": "Session 3 Objectives - Aviation Safety vs. Security: Airport Protection & Aircraft Checks",
           "summary": "By the end of this session, you will be able to articulate the fundamental legal, operational, and literal distinction between Aviation Safety and Aviation Security, analyze the concentric security layers of international airports, conduct and explain a pre-flight exterior walkaround safety inspection, apply Minimum Equipment List (MEL) deferral rules, and lead a coordinated response to a dual-track safety and security incident.",
           "items": [
             {
@@ -11702,7 +11702,7 @@
       "4": {
         "session": 4,
         "objectives": {
-          "title": "Session 4 - Global Semester Review & 3-Team Aviation Quiz Objectives",
+          "title": "Session 4 Objectives - Global Semester Review & 3-Team Aviation Quiz",
           "summary": "By the end of this session, you will be able to summarize all core Semester 1 Technical English competencies across Aerodromes (Module 1), Aircraft & Aerodynamics (Module 2), and Health, Meteorology & Safety/Security (Module 3), compete successfully in a multi-round 3-team technical aviation quiz, and structure a high-scoring 10-12 minute Press Briefing on a major aviation current event for Formative Evaluation 3 (FE3).",
           "items": [
             {

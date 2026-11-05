@@ -26,7 +26,7 @@ const m1 = courseData.aas ? courseData.aas[1] : courseData[1];
 // SESSION 4 DATA: Aerodrome Ground Layouts & Taxiway Navigation
 // ----------------------------------------------------------------------------
 const s4Objectives = {
-  title: "Session 4 - Aerodrome Ground Layouts & Taxiway Navigation Objectives",
+  title: "Session 4 Objectives - Aerodrome Ground Layouts & Taxiway Navigation",
   summary: "By the end of this session, GSEA students will be able to orient someone to an airport map with natural spoken confidence, navigate a visual Ground Movement Chart (GMC), give precise physical directions using prepositions of place, play the 'Blind Taxi Navigator' information-gap game, role-play an active runway crossing taxi clearance, and complete a collaborative Safety Check on runway incursion hazards.",
   items: [
     {
@@ -424,7 +424,7 @@ const s4LessonContent = {
 // SESSION 5 DATA: Airspace Corridors: SIDs, STARs & Transition Routes
 // ----------------------------------------------------------------------------
 const s5Objectives = {
-  title: "Session 5 - Airspace Corridors: SIDs, STARs & Transition Routes Objectives",
+  title: "Session 5 Objectives - Airspace Corridors: SIDs, STARs & Transition Routes",
   summary: "By the end of this session, GSEA students will be able to explain airspace corridors in plain English, narrate a flight route sequentially using prepositions of movement, scan the visual GAILLAC 4A departure chart, play the 'Airspace Detective' logic game to spot dangerous clearance errors, role-play a cockpit departure briefing and weather diversion, and complete a collaborative Safety Check on route deviations.",
   items: [
     {
@@ -813,7 +813,7 @@ const s5LessonContent = {
 // SESSION 6 DATA: Approach Plates: Final Corridors & Go-Around Paths
 // ----------------------------------------------------------------------------
 const s6Objectives = {
-  title: "Session 6 - Approach Plates: Final Corridors & Go-Around Paths Objectives",
+  title: "Session 6 Objectives - Approach Plates: Final Corridors & Go-Around Paths",
   summary: "By the end of this session, GSEA students will be able to read and explain visual approach plates (IAC / ILS) in plain English, explain vertical descent profiles aloud, play the fast-paced 'Go / No-Go Lightning Challenge', role-play an emergency go-around command, and complete a collaborative Safety Check on unstabilized approach criteria.",
   items: [
     {

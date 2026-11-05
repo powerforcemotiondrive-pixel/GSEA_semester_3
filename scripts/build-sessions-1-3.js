@@ -21,7 +21,7 @@ const courseData = require(courseDataPath);
 
 // --- SESSION 1 DATA ---
 const s1Objectives = {
-  title: "Session 1 - EASA Rules & Finding Information Fast Objectives",
+  title: "Session 1 Objectives - EASA Rules & Finding Information Fast",
   summary: "By the end of this session, GSEA students will be able to navigate dense EASA airport rules without getting lost, understand the difference between mandatory laws and advisory guides, use words for rules (shall, must, should, may) accurately, scan an authentic EASA crane safety specification, role-play a polite clarification dialogue with a building contractor, and complete a simple Safety Check.",
   items: [
     {
@@ -383,7 +383,7 @@ console.log('✓ Prepared Session 1 Data Structure');
 
 // --- SESSION 2 DATA ---
 const s2Objectives = {
-  title: "Session 2 - Safety Alerts & Ramp Inspections Objectives",
+  title: "Session 2 Objectives - Safety Alerts & Ramp Inspections",
   summary: "By the end of this session, GSEA students will be able to distinguish mandatory Safety Orders from advisory Bulletins, use gentle, polite sentences (passive voice) during safety audits, read an authentic EASA Ramp Speed Alert, participate in a 3-student ramp safety inspection meeting, and complete a simple Safety Check.",
   items: [
     {
@@ -762,7 +762,7 @@ console.log('✓ Prepared Session 2 Data Structure');
 
 // --- SESSION 3 DATA ---
 const s3Objectives = {
-  title: "Session 3 - Special Requests & Runway Safety Cases Objectives",
+  title: "Session 3 Objectives - Special Requests & Runway Safety Cases",
   summary: "By the end of this session, GSEA students will be able to explain how airports handle real-world challenges through temporary permissions (exemptions), use connecting words to explain rules and conditions (provided that, due to, in order to, in lieu of), read an authentic runway works exemption file, prepare and deliver a 3-minute spoken briefing to airline pilots, and complete a simple Safety Check.",
   items: [
     {
