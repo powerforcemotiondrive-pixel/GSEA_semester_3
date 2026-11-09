@@ -752,6 +752,10 @@
               <svg class="w-3.5 h-3.5 opacity-80" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
               <span>My Notes</span>
             </button>
+            <button data-tab="slides" id="modal-tab-slides" class="modal-tab-btn flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer whitespace-nowrap shrink-0 hidden">
+              <svg class="w-3.5 h-3.5 opacity-80" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"/></svg>
+              <span>Class Slides</span>
+            </button>
             <button data-tab="ddrs" id="modal-tab-ddrs" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">DDRS</button>
             <!-- Formative Evaluation Tabs -->
             <button data-tab="fe_guidelines" id="modal-tab-fe-guidelines" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">FE Guidelines</button>
@@ -1380,6 +1384,14 @@
           return;
         }
 
+        const projEl = document.getElementById('gsea-projector-theatre-modal');
+        const isProjOpen = projEl && !projEl.classList.contains('hidden');
+
+        if (e.key === 'Escape' && isProjOpen) {
+          if (window.toggleProjectorMode) window.toggleProjectorMode(false);
+          return;
+        }
+
         const modalEl = document.getElementById('deck-resource-modal');
         const isModalOpen = modalEl && !modalEl.classList.contains('hidden');
 
@@ -1404,8 +1416,26 @@
 
         // 4. ARROW KEYS: Left / Right Navigation (Drawer Tabs, Flashcards, or Deck Cards)
         if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+          // If projector theatre mode is open:
+          const projEl = document.getElementById('gsea-projector-theatre-modal');
+          const isProjOpen = projEl && !projEl.classList.contains('hidden');
+          if (isProjOpen) {
+            e.preventDefault();
+            if (e.key === 'ArrowLeft' && window.changePresentationSlide) { window.changePresentationSlide(-1); return; }
+            if (e.key === 'ArrowRight' && window.changePresentationSlide) { window.changePresentationSlide(1); return; }
+            return;
+          }
+
           // If drawer is open:
           if (isModalOpen) {
+            // If in active presentation slides mode without Shift key, step through slides!
+            const isSlidesMode = modalState.tab === 'slides';
+            if (isSlidesMode && !e.shiftKey) {
+              e.preventDefault();
+              if (e.key === 'ArrowLeft' && window.changePresentationSlide) { window.changePresentationSlide(-1); return; }
+              if (e.key === 'ArrowRight' && window.changePresentationSlide) { window.changePresentationSlide(1); return; }
+            }
+
             // If in active flashcards mode without Shift key, step through flashcards
             if (isFlashcardsMode && !e.shiftKey) {
               if (e.key === 'ArrowLeft') { prevFlashcard(); return; }
@@ -3090,10 +3120,12 @@
       const tabContent = document.getElementById('modal-tab-content');
       const tabObjectives = document.getElementById('modal-tab-objectives');
       const tabPlan = document.getElementById('modal-tab-plan');
+      const tabSlides = document.getElementById('modal-tab-slides');
       const standardTabs = document.querySelectorAll('.modal-tab-standard');
 
       if (tabPlanObj) tabPlanObj.classList.add('hidden');
       if (tabContent) tabContent.classList.add('hidden');
+      if (tabSlides) tabSlides.classList.add('hidden');
 
       if (isObjectivesSession) {
         if (immersionOverviewTab) immersionOverviewTab.classList.add('hidden');
@@ -3208,6 +3240,15 @@
         const hasLessonContent = Boolean(activeSessionData.lessonContent);
 
         standardTabs.forEach(t => t.classList.remove('hidden'));
+
+        const hasSlides = Boolean(activeSessionData.presentation && activeSessionData.presentation.slides && activeSessionData.presentation.slides.length > 0);
+        if (tabSlides) {
+          if (hasSlides) {
+            tabSlides.classList.remove('hidden');
+          } else {
+            tabSlides.classList.add('hidden');
+          }
+        }
 
         const toeicGuideTab = document.getElementById('modal-tab-toeic-guide');
         if (toeicGuideTab) toeicGuideTab.classList.add('hidden');
@@ -3503,6 +3544,8 @@
         renderMaterialsTab(sessionData, theme);
       } else if (modalState.tab === 'notepad') {
         renderNotepadTab(sessionData, theme);
+      } else if (modalState.tab === 'slides') {
+        renderPresentationSlideDeckTab(sessionData, theme);
       } else if (modalState.tab === 'toeic' || modalState.tab === 'toeic_guide') {
         modalState.tab = 'content';
         renderLessonContentTab(sessionData, theme);
@@ -10756,6 +10799,366 @@ function renderLessonContentTabSession3(sessionData, theme) {
           }, 300);
         });
       }
+    }
+
+
+    /* =========================================================================
+     * IN-DRAWER PRESENTATION SLIDE DECK ENGINE (TEACHER PROJECTION SYSTEM)
+     * ========================================================================= */
+
+    window.__GSEA_SLIDE_STATE = window.__GSEA_SLIDE_STATE || {
+      currentSlide: 0,
+      projectorMode: false,
+      showPrompts: false
+    };
+
+    window.jumpToPresentationSlide = function(index) {
+      if (!window.__GSEA_SLIDE_STATE) {
+        window.__GSEA_SLIDE_STATE = { currentSlide: 0, projectorMode: false, showPrompts: false };
+      }
+      window.__GSEA_SLIDE_STATE.currentSlide = index;
+      if (window.__GSEA_SLIDE_STATE.projectorMode) {
+        window.renderProjectorTheatre();
+      } else {
+        renderPresentationSlideDeckTab();
+      }
+    };
+
+    window.changePresentationSlide = function(delta) {
+      if (!window.__GSEA_SLIDE_STATE) {
+        window.__GSEA_SLIDE_STATE = { currentSlide: 0, projectorMode: false, showPrompts: false };
+      }
+      const sessionData = window.__GSEA_CURRENT_SESSION_DATA || {};
+      const slides = (sessionData.presentation && sessionData.presentation.slides) || [];
+      if (slides.length === 0) return;
+      let nextIdx = window.__GSEA_SLIDE_STATE.currentSlide + delta;
+      if (nextIdx < 0) nextIdx = slides.length - 1;
+      if (nextIdx >= slides.length) nextIdx = 0;
+      window.jumpToPresentationSlide(nextIdx);
+    };
+
+    window.toggleTeacherPrompts = function() {
+      if (!window.__GSEA_SLIDE_STATE) {
+        window.__GSEA_SLIDE_STATE = { currentSlide: 0, projectorMode: false, showPrompts: false };
+      }
+      window.__GSEA_SLIDE_STATE.showPrompts = !window.__GSEA_SLIDE_STATE.showPrompts;
+      if (window.__GSEA_SLIDE_STATE.projectorMode) {
+        window.renderProjectorTheatre();
+      } else {
+        renderPresentationSlideDeckTab();
+      }
+    };
+
+    window.toggleProjectorMode = function(forceState) {
+      if (!window.__GSEA_SLIDE_STATE) {
+        window.__GSEA_SLIDE_STATE = { currentSlide: 0, projectorMode: false, showPrompts: false };
+      }
+      if (typeof forceState === "boolean") {
+        window.__GSEA_SLIDE_STATE.projectorMode = forceState;
+      } else {
+        window.__GSEA_SLIDE_STATE.projectorMode = !window.__GSEA_SLIDE_STATE.projectorMode;
+      }
+
+      let theatreEl = document.getElementById("gsea-projector-theatre-modal");
+      if (!theatreEl) {
+        theatreEl = document.createElement("div");
+        theatreEl.id = "gsea-projector-theatre-modal";
+        theatreEl.className = "fixed inset-0 z-[100] bg-slate-950/95 backdrop-blur-md flex flex-col p-4 sm:p-8 overflow-y-auto hidden";
+        document.body.appendChild(theatreEl);
+      }
+
+      if (window.__GSEA_SLIDE_STATE.projectorMode) {
+        theatreEl.classList.remove("hidden");
+        document.body.style.overflow = "hidden";
+        window.renderProjectorTheatre();
+      } else {
+        theatreEl.classList.add("hidden");
+        const modalEl = document.getElementById("deck-resource-modal");
+        if (modalEl && !modalEl.classList.contains("hidden")) {
+          document.body.style.overflow = "hidden";
+        } else {
+          document.body.style.overflow = "";
+        }
+        renderPresentationSlideDeckTab();
+      }
+    };
+
+    window.renderProjectorTheatre = function() {
+      const theatreEl = document.getElementById("gsea-projector-theatre-modal");
+      if (!theatreEl) return;
+      const sessionData = window.__GSEA_CURRENT_SESSION_DATA || {};
+      const theme = window.__GSEA_CURRENT_THEME || { primary: "#002855", primaryDark: "#001a38", accent: "#0284c7" };
+      const pres = sessionData.presentation || {};
+      const slides = pres.slides || [];
+      if (slides.length === 0) {
+        theatreEl.innerHTML = `<div class="text-white text-center m-auto">No slides available. <button onclick="window.toggleProjectorMode(false)" class="ml-4 px-4 py-2 bg-slate-800 rounded-lg cursor-pointer">Close</button></div>`;
+        return;
+      }
+
+      let currentIdx = (window.__GSEA_SLIDE_STATE && window.__GSEA_SLIDE_STATE.currentSlide) || 0;
+      if (currentIdx >= slides.length) currentIdx = 0;
+      if (currentIdx < 0) currentIdx = slides.length - 1;
+      window.__GSEA_SLIDE_STATE.currentSlide = currentIdx;
+      const slide = slides[currentIdx];
+      const showPrompts = Boolean(window.__GSEA_SLIDE_STATE.showPrompts);
+
+      theatreEl.innerHTML = `
+        <div class="max-w-6xl w-full mx-auto flex-1 flex flex-col justify-between select-none">
+          <!-- Top Control Bar -->
+          <div class="flex items-center justify-between gap-3 border-b border-slate-800 pb-3 mb-4 shrink-0">
+            <div class="flex items-center gap-3">
+              <span class="px-2.5 py-1 rounded-md text-xs font-black uppercase tracking-wider text-white shadow-xs" style="background-color: ${theme.primary};">
+                Projector Mode • Slide ${currentIdx + 1} of ${slides.length}
+              </span>
+              <span class="text-xs sm:text-sm font-semibold text-slate-400 hidden sm:inline">${pres.title || ""}</span>
+            </div>
+
+            <!-- Stepper Pills -->
+            <div class="flex items-center gap-1 sm:gap-1.5">
+              ${slides.map((s, idx) => `
+                <button type="button" onclick="window.jumpToPresentationSlide(${idx})" class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg text-xs font-bold transition-all cursor-pointer flex items-center justify-center ${idx === currentIdx ? "bg-sky-500 text-white shadow-md ring-2 ring-sky-300" : "bg-slate-800 text-slate-400 hover:bg-slate-700 hover:text-white"}">
+                  ${idx + 1}
+                </button>
+              `).join("")}
+            </div>
+
+            <!-- Action Controls -->
+            <div class="flex items-center gap-2">
+              <button type="button" onclick="window.changePresentationSlide(-1)" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-bold transition-all cursor-pointer shadow-xs flex items-center gap-1">
+                <span>&larr; Prev</span>
+              </button>
+              <button type="button" onclick="window.changePresentationSlide(1)" class="px-3 py-1.5 bg-sky-600 hover:bg-sky-500 text-white rounded-lg text-xs font-bold transition-all cursor-pointer shadow-xs flex items-center gap-1">
+                <span>Next &rarr;</span>
+              </button>
+              <button type="button" onclick="window.toggleProjectorMode(false)" class="ml-2 px-3 py-1.5 bg-rose-900/80 hover:bg-rose-800 text-rose-200 hover:text-white rounded-lg text-xs font-bold transition-all cursor-pointer border border-rose-700/50 flex items-center gap-1.5">
+                <span>✕ Exit</span>
+                <kbd class="font-mono text-[10px] text-rose-300 bg-rose-950 px-1 py-0.5 rounded">Esc</kbd>
+              </button>
+            </div>
+          </div>
+
+          <!-- Main Slide Content Canvas (Optimized for High-Visibility Beamer Projection) -->
+          <div class="flex-1 flex flex-col justify-center my-auto p-6 sm:p-10 bg-slate-900/90 border border-slate-800 rounded-3xl shadow-2xl space-y-6">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="inline-block px-2.5 py-0.5 rounded text-[11px] font-black uppercase tracking-widest text-sky-400 bg-sky-950/80 border border-sky-800/60">
+                  ${slide.badge}
+                </span>
+                <span class="text-xs font-mono text-slate-400">KEY CONCEPT • TECHNICAL ENGLISH AT</span>
+              </div>
+              <h2 class="text-2xl sm:text-4xl font-black text-white tracking-tight leading-snug">${slide.title}</h2>
+              <p class="text-sm sm:text-base text-slate-300 font-medium mt-1">${slide.subtitle}</p>
+            </div>
+
+            <!-- Responsive Cards Grid -->
+            <div class="grid grid-cols-1 ${slide.cards.length === 4 ? "sm:grid-cols-2 lg:grid-cols-4" : "sm:grid-cols-3"} gap-4">
+              ${slide.cards.map(c => `
+                <div class="p-4 sm:p-5 bg-slate-800/90 border border-slate-700/90 rounded-2xl flex flex-col justify-between shadow-md hover:border-sky-500/50 transition-all">
+                  <div>
+                    <span class="inline-block px-2 py-0.5 rounded text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider text-sky-300 bg-sky-950/80 border border-sky-900 mb-2">
+                      ${c.tag}
+                    </span>
+                    <h3 class="text-base sm:text-lg font-bold text-white mb-2 leading-snug">${c.heading}</h3>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">${c.text}</p>
+                  </div>
+                </div>
+              `).join("")}
+            </div>
+
+            <!-- Optional Warning Banner -->
+            ${slide.warning ? `
+              <div class="p-3.5 bg-amber-950/70 border border-amber-600/70 text-amber-200 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 shadow-xs">
+                <span class="text-base">⚠️</span>
+                <span>${slide.warning}</span>
+              </div>
+            ` : ""}
+
+            <!-- Bottom Takeaway Banner -->
+            <div class="p-4 bg-sky-950/80 border border-sky-600/60 text-sky-100 rounded-2xl text-xs sm:text-sm font-semibold flex items-start gap-3 shadow-md">
+              <span class="text-lg shrink-0 mt-0.5">💡</span>
+              <div>
+                <strong class="font-black text-sky-300 uppercase tracking-wide mr-1.5">Key Operational Takeaway:</strong>
+                <span>${slide.takeaway}</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Teacher Prompts Bar -->
+          <div class="mt-4 pt-3 border-t border-slate-800 shrink-0">
+            <div class="flex items-center justify-between mb-2">
+              <button type="button" onclick="window.toggleTeacherPrompts()" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${showPrompts ? "bg-emerald-600 text-white" : "bg-slate-800 hover:bg-slate-700 text-slate-300"}">
+                <span>🗣️ Teacher Speaking Prompts &amp; Facilitation Questions</span>
+                <span class="text-[10px]">${showPrompts ? "▲ Hide" : "▼ Reveal"}</span>
+              </button>
+              <span class="text-[11px] text-slate-400 font-mono hidden sm:inline">Shortcuts: [← / →] Navigate Slides • [Esc] Exit Projector</span>
+            </div>
+
+            ${showPrompts ? `
+              <div class="p-4 bg-emerald-950/80 border border-emerald-700/80 rounded-2xl text-emerald-100 text-xs sm:text-sm leading-relaxed shadow-lg">
+                <div class="flex items-start gap-2.5">
+                  <span class="text-base shrink-0">🎯</span>
+                  <div class="space-y-1">
+                    <p class="font-bold text-emerald-300">Classroom Speaking Facilitation:</p>
+                    <p>${slide.teacherPrompt}</p>
+                    <p class="text-[11px] text-emerald-300/80 italic mt-1">Teaching Note: Classroom pacing and speaking depth are entirely at the teacher's autonomy. Encourage peer interaction and communicative fluency.</p>
+                  </div>
+                </div>
+              </div>
+            ` : ""}
+          </div>
+        </div>
+      `;
+    };
+
+    function renderPresentationSlideDeckTab(sessionData, theme) {
+      const bodyEl = document.getElementById("modal-body");
+      if (!bodyEl) return;
+
+      if (sessionData) window.__GSEA_CURRENT_SESSION_DATA = sessionData;
+      if (theme) window.__GSEA_CURRENT_THEME = theme;
+
+      const currentSession = sessionData || window.__GSEA_CURRENT_SESSION_DATA || {};
+      const currentTheme = theme || window.__GSEA_CURRENT_THEME || { primary: "#002855", primaryDark: "#001a38", accent: "#0284c7" };
+      const pres = currentSession.presentation || {};
+      const slides = pres.slides || [];
+
+      if (slides.length === 0) {
+        bodyEl.innerHTML = `
+          <div class="p-6 bg-white border border-slate-200 rounded-xl text-center space-y-2">
+            <span class="text-3xl">🖥️</span>
+            <h3 class="text-base font-bold text-slate-800">No Slides Configured</h3>
+            <p class="text-xs text-slate-500">There is currently no presentation slide deck available for this session.</p>
+          </div>
+        `;
+        return;
+      }
+
+      if (!window.__GSEA_SLIDE_STATE) {
+        window.__GSEA_SLIDE_STATE = { currentSlide: 0, projectorMode: false, showPrompts: false };
+      }
+
+      let currentIdx = window.__GSEA_SLIDE_STATE.currentSlide || 0;
+      if (currentIdx >= slides.length) currentIdx = 0;
+      if (currentIdx < 0) currentIdx = slides.length - 1;
+      window.__GSEA_SLIDE_STATE.currentSlide = currentIdx;
+      const slide = slides[currentIdx];
+      const showPrompts = Boolean(window.__GSEA_SLIDE_STATE.showPrompts);
+
+      bodyEl.innerHTML = `
+        <div class="space-y-4 max-w-4xl mx-auto select-none">
+          <!-- Top Control Header Card -->
+          <div class="p-3.5 sm:p-4 bg-white border border-slate-200 rounded-xl shadow-xs">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-b border-slate-100 pb-3 mb-3">
+              <div>
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-[10px] font-bold text-white uppercase tracking-wider shadow-xs" style="background-color: ${currentTheme.primary};">
+                    Class Slides • Slide ${currentIdx + 1} of ${slides.length}
+                  </span>
+                  <span class="text-xs font-semibold text-slate-400">Classroom Projection Deck</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-black text-slate-800 leading-snug">${pres.title || "Session Class Slides"}</h3>
+              </div>
+
+              <!-- Quick Action Toolbar -->
+              <div class="flex items-center flex-wrap gap-2 shrink-0">
+                <button type="button" onclick="window.toggleProjectorMode(true)" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-slate-900 hover:bg-black text-white text-xs font-bold rounded-lg transition-all cursor-pointer shadow-xs hover:shadow-md" title="Project full-screen onto beamer or classroom display">
+                  <svg class="w-3.5 h-3.5 text-sky-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+                  <span>⛶ Projector Mode</span>
+                </button>
+                <div class="flex items-center gap-1 border-l border-slate-200 pl-2">
+                  <button type="button" onclick="window.changePresentationSlide(-1)" class="px-2.5 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold rounded-lg transition-all cursor-pointer shadow-2xs">
+                    &larr; Prev
+                  </button>
+                  <button type="button" onclick="window.changePresentationSlide(1)" class="px-2.5 py-1.5 text-white text-xs font-bold rounded-lg transition-all cursor-pointer shadow-2xs" style="background-color: ${currentTheme.accent};">
+                    Next &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stepper Pills Bar -->
+            <div class="flex items-center justify-between gap-2 pt-0.5">
+              <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Slide Navigator:</span>
+              <div class="flex items-center gap-1 sm:gap-1.5 overflow-x-auto pb-0.5">
+                ${slides.map((s, idx) => `
+                  <button type="button" onclick="window.jumpToPresentationSlide(${idx})" class="w-6.5 h-6.5 sm:w-7 sm:h-7 rounded-md text-[11px] font-bold transition-all cursor-pointer flex items-center justify-center ${idx === currentIdx ? "text-white shadow-xs" : "bg-slate-100 text-slate-600 hover:bg-slate-200"}" style="${idx === currentIdx ? "background-color: " + currentTheme.primary + ";" : ""}">
+                    ${idx + 1}
+                  </button>
+                `).join("")}
+              </div>
+            </div>
+          </div>
+
+          <!-- Main In-Drawer Slide Card Viewport -->
+          <div class="p-4 sm:p-6 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
+            <div class="border-b border-slate-100 pb-3">
+              <span class="inline-block px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider text-sky-800 bg-sky-50 border border-sky-200 mb-1">
+                ${slide.badge}
+              </span>
+              <h2 class="text-lg sm:text-2xl font-black text-slate-900 leading-snug">${slide.title}</h2>
+              <p class="text-xs sm:text-sm text-slate-500 font-medium mt-0.5">${slide.subtitle}</p>
+            </div>
+
+            <!-- Structured Card Columns -->
+            <div class="grid grid-cols-1 ${slide.cards.length === 4 ? "sm:grid-cols-2" : "sm:grid-cols-3"} gap-3">
+              ${slide.cards.map(c => `
+                <div class="p-3.5 bg-slate-50 border border-slate-200/80 rounded-xl flex flex-col justify-between hover:border-slate-300 transition-all">
+                  <div>
+                    <span class="inline-block text-[9.5px] font-bold uppercase tracking-wider text-slate-500 mb-1">
+                      ${c.tag}
+                    </span>
+                    <h3 class="text-sm font-bold text-slate-800 mb-1 leading-snug">${c.heading}</h3>
+                    <p class="text-[11.5px] text-slate-600 leading-relaxed">${c.text}</p>
+                  </div>
+                </div>
+              `).join("")}
+            </div>
+
+            <!-- Optional Warning Banner -->
+            ${slide.warning ? `
+              <div class="p-3 bg-amber-50 border border-amber-200 rounded-xl text-amber-900 text-xs font-semibold flex items-center gap-2">
+                <span class="text-base shrink-0">⚠️</span>
+                <span>${slide.warning}</span>
+              </div>
+            ` : ""}
+
+            <!-- Bottom Takeaway Banner -->
+            <div class="p-3 bg-slate-900 text-white rounded-xl text-xs font-medium flex items-start gap-2.5 shadow-xs">
+              <span class="text-base shrink-0 mt-0.5">💡</span>
+              <div class="leading-relaxed">
+                <strong class="font-bold text-sky-300 uppercase tracking-wider mr-1">Key Operational Takeaway:</strong>
+                <span>${slide.takeaway}</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Collapsible Teacher Facilitation Notes -->
+          <div class="border border-slate-200 rounded-xl bg-white overflow-hidden shadow-xs">
+            <button type="button" onclick="window.toggleTeacherPrompts()" class="w-full flex items-center justify-between p-3 text-left hover:bg-slate-50 transition-colors cursor-pointer select-none">
+              <div class="flex items-center gap-2 text-xs font-bold text-slate-700">
+                <span>🗣️ Teacher Speaking Prompts &amp; Concept Checkers</span>
+                <span class="px-1.5 py-0.2 rounded text-[10px] font-semibold ${showPrompts ? "bg-emerald-100 text-emerald-800" : "bg-slate-100 text-slate-600"}">
+                  ${showPrompts ? "Active" : "Click to View"}
+                </span>
+              </div>
+              <span class="text-xs text-slate-400">${showPrompts ? "▲ Hide" : "▼ View"}</span>
+            </button>
+
+            ${showPrompts ? `
+              <div class="p-3.5 bg-emerald-50/70 border-t border-emerald-100 text-emerald-950 text-xs leading-relaxed space-y-1.5">
+                <div class="flex items-start gap-2">
+                  <span class="text-sm shrink-0">🎯</span>
+                  <div class="space-y-1">
+                    <p class="font-bold text-emerald-900">Spoken Facilitation Prompt:</p>
+                    <p class="text-emerald-800">${slide.teacherPrompt}</p>
+                    <p class="text-[10.5px] text-emerald-700/80 italic mt-1">Classroom pacing and discussion depth are determined entirely by the teacher based on communicative flow. No rigid minute breakdowns.</p>
+                  </div>
+                </div>
+              </div>
+            ` : ""}
+          </div>
+        </div>
+      `;
     }
     function renderFeGuidelinesTab(modNum, theme) {
       const bodyEl = document.getElementById('modal-body');

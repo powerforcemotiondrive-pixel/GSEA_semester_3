@@ -53,6 +53,14 @@
           return;
         }
 
+        const projEl = document.getElementById('gsea-projector-theatre-modal');
+        const isProjOpen = projEl && !projEl.classList.contains('hidden');
+
+        if (e.key === 'Escape' && isProjOpen) {
+          if (window.toggleProjectorMode) window.toggleProjectorMode(false);
+          return;
+        }
+
         const modalEl = document.getElementById('deck-resource-modal');
         const isModalOpen = modalEl && !modalEl.classList.contains('hidden');
 
@@ -77,8 +85,26 @@
 
         // 4. ARROW KEYS: Left / Right Navigation (Drawer Tabs, Flashcards, or Deck Cards)
         if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+          // If projector theatre mode is open:
+          const projEl = document.getElementById('gsea-projector-theatre-modal');
+          const isProjOpen = projEl && !projEl.classList.contains('hidden');
+          if (isProjOpen) {
+            e.preventDefault();
+            if (e.key === 'ArrowLeft' && window.changePresentationSlide) { window.changePresentationSlide(-1); return; }
+            if (e.key === 'ArrowRight' && window.changePresentationSlide) { window.changePresentationSlide(1); return; }
+            return;
+          }
+
           // If drawer is open:
           if (isModalOpen) {
+            // If in active presentation slides mode without Shift key, step through slides!
+            const isSlidesMode = modalState.tab === 'slides';
+            if (isSlidesMode && !e.shiftKey) {
+              e.preventDefault();
+              if (e.key === 'ArrowLeft' && window.changePresentationSlide) { window.changePresentationSlide(-1); return; }
+              if (e.key === 'ArrowRight' && window.changePresentationSlide) { window.changePresentationSlide(1); return; }
+            }
+
             // If in active flashcards mode without Shift key, step through flashcards
             if (isFlashcardsMode && !e.shiftKey) {
               if (e.key === 'ArrowLeft') { prevFlashcard(); return; }
@@ -1763,10 +1789,12 @@
       const tabContent = document.getElementById('modal-tab-content');
       const tabObjectives = document.getElementById('modal-tab-objectives');
       const tabPlan = document.getElementById('modal-tab-plan');
+      const tabSlides = document.getElementById('modal-tab-slides');
       const standardTabs = document.querySelectorAll('.modal-tab-standard');
 
       if (tabPlanObj) tabPlanObj.classList.add('hidden');
       if (tabContent) tabContent.classList.add('hidden');
+      if (tabSlides) tabSlides.classList.add('hidden');
 
       if (isObjectivesSession) {
         if (immersionOverviewTab) immersionOverviewTab.classList.add('hidden');
@@ -1881,6 +1909,15 @@
         const hasLessonContent = Boolean(activeSessionData.lessonContent);
 
         standardTabs.forEach(t => t.classList.remove('hidden'));
+
+        const hasSlides = Boolean(activeSessionData.presentation && activeSessionData.presentation.slides && activeSessionData.presentation.slides.length > 0);
+        if (tabSlides) {
+          if (hasSlides) {
+            tabSlides.classList.remove('hidden');
+          } else {
+            tabSlides.classList.add('hidden');
+          }
+        }
 
         const toeicGuideTab = document.getElementById('modal-tab-toeic-guide');
         if (toeicGuideTab) toeicGuideTab.classList.add('hidden');
@@ -2176,6 +2213,8 @@
         renderMaterialsTab(sessionData, theme);
       } else if (modalState.tab === 'notepad') {
         renderNotepadTab(sessionData, theme);
+      } else if (modalState.tab === 'slides') {
+        renderPresentationSlideDeckTab(sessionData, theme);
       } else if (modalState.tab === 'toeic' || modalState.tab === 'toeic_guide') {
         modalState.tab = 'content';
         renderLessonContentTab(sessionData, theme);

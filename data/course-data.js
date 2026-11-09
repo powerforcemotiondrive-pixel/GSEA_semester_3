@@ -793,6 +793,173 @@
             }
           }
         },
+        "presentation": {
+          "title": "Session 1 Class Presentation \u2022 EASA Rules & Aerodrome Safeguarding",
+          "subtitle": "Interactive Projection Slide Deck for Point ADR.OPS.B.070, Statutory Modals & OLS Protection",
+          "slides": [
+                    {
+                              "num": "01",
+                              "badge": "01 \u2022 Legal Authority & Scope",
+                              "title": "EASA Regulation (EU) No 139/2014 \u2022 Part-ADR.OPS",
+                              "subtitle": "European Aviation Safety Framework for Aerodrome Operations",
+                              "takeaway": "Safety in the aerodrome environment is legally defined and regulated at European level, leaving zero tolerance for uncoordinated airside changes.",
+                              "cards": [
+                                        {
+                                                  "tag": "Core Mandate",
+                                                  "heading": "Protecting Aircraft Operations",
+                                                  "text": "Establishes binding European standards to protect aircraft during approach, landing, taxiing, and departure within the aerodrome safeguarding perimeter."
+                                        },
+                                        {
+                                                  "tag": "Key Operational Regulations",
+                                                  "heading": "Point ADR.OPS.B.070 & B.075",
+                                                  "text": "Direct statutory duty governing aerodrome works safety, obstacle reporting, and the safeguarding of visual lines of sight and obstacle limitation surfaces."
+                                        },
+                                        {
+                                                  "tag": "Obligated Stakeholders",
+                                                  "heading": "Who Must Comply?",
+                                                  "text": "Aerodrome operators, air navigation service providers (ANSPs), airside contractors, and maintenance teams operate under unified EASA compliance."
+                                        }
+                              ],
+                              "teacherPrompt": "Ask the class: Why can a national airport not simply invent its own local obstacle rules? What gives EASA regulations superior legal force over individual aerodrome manuals?"
+                    },
+                    {
+                              "num": "02",
+                              "badge": "02 \u2022 Regulatory Architecture",
+                              "title": "Hard Law vs. Soft Law \u2022 How EASA Rules Work",
+                              "subtitle": "Understanding the Vital Operational Distinction between IR, AMC, and GM",
+                              "takeaway": "Implementing Rules tell you WHAT you must achieve by law; AMC gives an approved way HOW to do it; GM explains the technical reasoning.",
+                              "cards": [
+                                        {
+                                                  "tag": "Hard Law (Mandatory)",
+                                                  "heading": "Implementing Rules (IR)",
+                                                  "text": "European Commission executive regulations. 100% legally binding across all EU Member States. Zero deviation permitted without formal state derogation."
+                                        },
+                                        {
+                                                  "tag": "Soft Law (Approved Means)",
+                                                  "heading": "Acceptable Means of Compliance (AMC)",
+                                                  "text": "Official technical specifications illustrating approved compliance. Following AMC creates legal presumption of compliance; deviations require formal AltMOC validation."
+                                        },
+                                        {
+                                                  "tag": "Advisory Material",
+                                                  "heading": "Guidance Material (GM)",
+                                                  "text": "Non-binding explanatory text, real-world examples, and statutory background assisting aerodrome personnel in everyday operational decision-making."
+                                        }
+                              ],
+                              "teacherPrompt": "Concept check: If an airport invents an innovative laser scanning method to monitor runway obstacle clearances instead of the published AMC, can they use it immediately? What is an AltMOC?"
+                    },
+                    {
+                              "num": "03",
+                              "badge": "03 \u2022 Statutory Modals",
+                              "title": "Words for Rules \u2022 Shall, Should, May & Shall Not",
+                              "subtitle": "Legal Precision & Operational Obligation in European Aviation Law",
+                              "takeaway": "In European aviation law, confusing 'shall' and 'should' is a severe regulatory error. One is an inescapable legal obligation; the other is recommended guidance.",
+                              "cards": [
+                                        {
+                                                  "tag": "100% Law \u2022 Obligation",
+                                                  "heading": "SHALL / MUST",
+                                                  "text": "Absolute mandatory statutory duty. Zero choice, zero delay permitted. E.g.: 'The aerodrome operator shall establish procedures for aerodrome works safety.'"
+                                        },
+                                        {
+                                                  "tag": "Prohibition \u2022 Violation",
+                                                  "heading": "SHALL NOT / MUST NOT",
+                                                  "text": "Strict prohibition. Non-compliance results in an immediate safety violation. E.g.: 'Unplanned works shall not take place on active runways.'"
+                                        },
+                                        {
+                                                  "tag": "Recommendation \u2022 AMC",
+                                                  "heading": "SHOULD",
+                                                  "text": "Strongly recommended best practice. Advisable under AMC; alternatives require approved equivalent safety cases. E.g.: 'Equipment should remain outside active strips.'"
+                                        },
+                                        {
+                                                  "tag": "Permission \u2022 Discretion",
+                                                  "heading": "MAY / CAN",
+                                                  "text": "Statutory discretion or optional authorization under defined regulatory conditions. E.g.: 'Low-height apron equipment may be exempted from flashing beacons.'"
+                                        }
+                              ],
+                              "warning": "\u26a0\ufe0f French Spoken Trap: The French verb 'devoir' translates to both 'shall' and 'should'. Always use 'shall/must' for binding obligations and 'should' for advisory guidance.",
+                              "teacherPrompt": "Pair exercise: Have students contrast: 'The contractor shall inspect the runway' vs. 'The contractor should inspect the runway.' Who is legally responsible if FOD causes an engine strike?"
+                    },
+                    {
+                              "num": "04",
+                              "badge": "04 \u2022 Airspace Protection",
+                              "title": "Obstacle Limitation Surfaces (OLS) & Safeguarding",
+                              "subtitle": "Protecting the 3D Flight Corridors around Active Runways",
+                              "takeaway": "The Shielding Principle: a new structure breaching an OLS can only be approved without operational restrictions if completely shielded by an existing permanent obstacle.",
+                              "cards": [
+                                        {
+                                                  "tag": "In-Flight Corridors",
+                                                  "heading": "Approach & Take-Off Climb",
+                                                  "text": "Inclined 3D planes extending from runway ends to protect aircraft during the critical low-altitude approach, landing flare, and initial climb-out phases."
+                                        },
+                                        {
+                                                  "tag": "Lateral Protection",
+                                                  "heading": "Transitional & Inner Horizontal",
+                                                  "text": "Sloping lateral surfaces flanking the runway strip and a horizontal ceiling protecting aircraft flying visual circuits and missed-approach maneuvers."
+                                        },
+                                        {
+                                                  "tag": "Tower Visual Line of Sight",
+                                                  "heading": "VCR Line of Sight & Infringement",
+                                                  "text": "Direct line of sight from the Visual Control Room (Tower cab). Obstacle Infringement occurs whenever a crane or building breaches an established OLS plane."
+                                        }
+                              ],
+                              "teacherPrompt": "Ask the class: A mobile crane is 45m high and located 800m north of Runway 14L. Why must the aerodrome safety team check both OLS breach and Tower visual line of sight?"
+                    },
+                    {
+                              "num": "05",
+                              "badge": "05 \u2022 Works Safety",
+                              "title": "Aerodrome Works Safety & Threshold Displacement",
+                              "subtitle": "Point ADR.OPS.B.070 Requirements for Active Airside Maintenance",
+                              "takeaway": "No runway may be reopened following night maintenance without formal hand-back inspection and ATC clearance under the broom-clean standard.",
+                              "cards": [
+                                        {
+                                                  "tag": "Runway Recalibration",
+                                                  "heading": "Displaced Threshold & Distances",
+                                                  "text": "When maintenance affects the runway extremity, the landing threshold is moved forward. Declared distances (TORA, TODA, ASDA, LDA) must be recalculated and published."
+                                        },
+                                        {
+                                                  "tag": "Airside Demarcation",
+                                                  "heading": "Frangible Barriers & Conspicuous Markings",
+                                                  "text": "Worksite perimeters must feature low-mass frangible barriers, red/white chequered flags, and flashing aviation-yellow beacons visible day and night."
+                                        },
+                                        {
+                                                  "tag": "Pavement Hand-Back",
+                                                  "heading": "Broom-Clean Pavement Standard",
+                                                  "text": "Before hand-back to flight operations at dawn, the pavement must be inspected, free of loose aggregate or tools, certified 100% FOD-free, and signed off with ATC."
+                                        }
+                              ],
+                              "teacherPrompt": "Discussion: What is the operational difference between TORA (Take-Off Run Available) and LDA (Landing Distance Available) when Runway 09 has a displaced threshold?"
+                    },
+                    {
+                              "num": "06",
+                              "badge": "06 \u2022 Information Flow",
+                              "title": "Operational Notice Flow \u2022 NOTAM & AIP Publishing",
+                              "subtitle": "How Airside Safeguarding Changes Reach the Cockpit & Dispatchers",
+                              "takeaway": "A pilot reads the NOTAM before engine start. Precise coordinates, heights in feet AMSL, and accurate operational times ensure international flight safety.",
+                              "cards": [
+                                        {
+                                                  "tag": "Step 1 \u2022 Notification",
+                                                  "heading": "Contractor / Sponsor Application",
+                                                  "text": "Promoter submits exact GPS coordinates, maximum jib elevation AMSL, and operating schedule to the Aerodrome Operator 30+ days in advance."
+                                        },
+                                        {
+                                                  "tag": "Step 2 \u2022 Safety Review",
+                                                  "heading": "Aerodrome Technical Assessment",
+                                                  "text": "Safety department verifies OLS penetration, Tower line-of-sight clearance, radar interference, and lighting requirements."
+                                        },
+                                        {
+                                                  "tag": "Step 3 \u2022 State Validation",
+                                                  "heading": "Civil Aviation Authority (CAA / DGAC)",
+                                                  "text": "National competent authority validates the safeguarding analysis, conditions the permit, and authorizes aeronautical notification."
+                                        },
+                                        {
+                                                  "tag": "Step 4 \u2022 Publication",
+                                                  "heading": "NOTAM & AIP Dissemination",
+                                                  "text": "AIS transmits temporary international NOTAM telecommunications or updates permanent AIP charts for global flight crew briefing."
+                                        }
+                              ],
+                              "teacherPrompt": "Wrap-up question: An uncoordinated crane arrives at 07:00 next to the taxiway. What immediate action must airside operations take, and what happens to flight operations until resolved?"
+                    }
+          ]
+},
         "revision": {
                   "title": "Session 1 Vocabulary • EASA Rules & Safeguarding",
                   "summary": "Master the 30 high-frequency regulatory terms, modal indicators, and safeguarding concepts from Regulation (EU) No 139/2014 Part-ADR.OPS.",
