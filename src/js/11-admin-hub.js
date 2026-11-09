@@ -114,7 +114,7 @@
             "courseWeek": "W02",
             "week": "W38",
             "date": "Wed 16 Sep",
-            "title": "Session 2 — Safety Alerts & Ramp Inspections",
+            "title": "Session 2 — Safety Alerts & Ramp Briefings",
             "subtitle": "",
             "tag": "Teaching Session",
             "isFe": false,

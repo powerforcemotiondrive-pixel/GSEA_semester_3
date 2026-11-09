@@ -3,7 +3,7 @@
       const aasSessionTitles = {
         1: {
           s1: "Session 1 - EASA Rules & Modal Precision",
-          s2: "Session 2 - Safety Alerts & Ramp Inspections",
+          s2: "Session 2 - Safety Alerts & Ramp Briefings",
           s3: "Session 3 - Special Requests & Runway Safety Cases",
           s4: "Session 4 - Aerodrome Ground Layouts & Taxiway Navigation",
           s5: "Session 5 - Airspace Corridors: SIDs, STARs & Transition Routes",
