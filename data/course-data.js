@@ -228,8 +228,7 @@
             "summary": "Break the ice, discuss reading challenges in English, and test your baseline knowledge of airport rules.",
             "modeBadges": [
               "Pairs (2 students)",
-              "Spoken Discussion",
-              "Timing: 15 mins"
+              "Spoken Discussion"
             ],
             "instructions": [
               "In pairs, discuss the 3 opening questions about reading official manuals in English.",
@@ -333,8 +332,7 @@
             "summary": "Scan an authentic, expanded EASA regulatory extract to locate safety surfaces and crane rules.",
             "modeBadges": [
               "Pairs or Small Groups",
-              "Document Scanning",
-              "Timing: 30 mins"
+              "Document Scanning"
             ],
             "instructions": [
               "Examine the official EASA extract below (CS-ADR-DSN Subpart H & GM1).",
@@ -428,8 +426,7 @@
             "summary": "Master the words used in aviation rules to express legal obligations, prohibitions, and advice.",
             "modeBadges": [
               "Individual & Pairs",
-              "Language Clinic",
-              "Timing: 25 mins"
+              "Language Clinic"
             ],
             "instructions": [
               "Review the plain English explanation table below.",
@@ -556,8 +553,7 @@
             "summary": "Role-play a polite, professional discussion between a GSEA safety officer and a construction contractor.",
             "modeBadges": [
               "Groups of 3",
-              "Spoken Role-Play",
-              "Timing: 35 mins"
+              "Spoken Role-Play"
             ],
             "instructions": [
               "Form groups of 3 students: Student A (GSEA Safety Officer), Student B (Building Contractor), Student C (Observer / Coach).",
@@ -671,8 +667,7 @@
             "summary": "Work together to evaluate the crane hazard and confirm the safety decision.",
             "modeBadges": [
               "Whole Class / Pairs",
-              "Safety Evaluation",
-              "Timing: 15 mins"
+              "Safety Evaluation"
             ],
             "instructions": [
               "Review the 4 simple questions in the Safety Check table below.",
@@ -1855,8 +1850,7 @@
             "summary": "Explore how airports manage urgent runway construction without shutting down completely.",
             "modeBadges": [
               "Pairs (2 students)",
-              "Spoken Brainstorm",
-              "Timing: 15 mins"
+              "Spoken Brainstorm"
             ],
             "instructions": [
               "In pairs, brainstorm what an airport does when its only runway has damaged drainage pipes.",
@@ -1930,8 +1924,7 @@
             "summary": "Scan an authentic temporary exemption file for Runway 26 drainage culvert repairs.",
             "modeBadges": [
               "Pairs or Small Groups",
-              "Document Scanning",
-              "Timing: 30 mins"
+              "Document Scanning"
             ],
             "instructions": [
               "Read the simulated Exemption File EASA/ADR-EXEMP/2024-009 below.",
@@ -1975,8 +1968,7 @@
             "summary": "Learn how to link ideas in English using words for conditions, causes, purposes, and replacements.",
             "modeBadges": [
               "Individual & Pairs",
-              "Language Clinic",
-              "Timing: 25 mins"
+              "Language Clinic"
             ],
             "instructions": [
               "Study the Connecting Words table below.",
@@ -2090,8 +2082,7 @@
             "summary": "Deliver a clear, reassuring 3-minute operational briefing to airline representatives.",
             "modeBadges": [
               "Pairs / Small Groups",
-              "Spoken Presentation",
-              "Timing: 35 mins"
+              "Spoken Presentation"
             ],
             "instructions": [
               "Work in pairs or groups of 3: Speaker 1 (GSEA Operations Officer), Speaker 2 (Airline Flight Ops Manager), Speaker 3 (Observer / Chief Pilot).",
@@ -2151,8 +2142,7 @@
             "summary": "Complete the decision check table evaluating the reduced safety area and safety rules.",
             "modeBadges": [
               "Whole Class / Pairs",
-              "Safety Evaluation",
-              "Timing: 15 mins"
+              "Safety Evaluation"
             ],
             "instructions": [
               "Review the 4 questions in the Safety Check table below.",
@@ -2740,8 +2730,7 @@
             "summary": "Break the ice, discuss the challenges of ground navigation at major airports, and test your baseline knowledge of aerodrome ground markings.",
             "modeBadges": [
               "Pairs (2 students)",
-              "Spoken Discussion",
-              "Timing: 15 mins"
+              "Spoken Discussion"
             ],
             "instructions": [
               "In pairs, discuss the 3 opening questions about navigating airports on the ground.",
@@ -3707,8 +3696,7 @@
             "summary": "Break the ice, discuss how airspace corridors keep skyways organized, and test your baseline knowledge of departure chart symbols.",
             "modeBadges": [
               "Pairs (2 students)",
-              "Spoken Discussion",
-              "Timing: 15 mins"
+              "Spoken Discussion"
             ],
             "instructions": [
               "In pairs, discuss the 3 opening questions about airspace corridors and departure routes.",
@@ -4665,8 +4653,7 @@
             "summary": "Break the ice, discuss the intense workload during the final 3 minutes before touchdown, and test your baseline knowledge of approach plate symbols.",
             "modeBadges": [
               "Pairs (2 students)",
-              "Spoken Discussion",
-              "Timing: 15 mins"
+              "Spoken Discussion"
             ],
             "instructions": [
               "In pairs, discuss the 3 opening questions about flying the final approach.",
