@@ -982,19 +982,19 @@
         actionContainer.appendChild(createThemedCTA("Open Resources", "fe_guidelines", ""));
       } else {
         // Sessions 1 to 6: In-deck modal workspace hub
-        actionContainer.appendChild(createThemedCTA("Open Digital Worksheet", "content", ""));
+        actionContainer.appendChild(createThemedCTA("Open Resources", "content", ""));
 
-        // Secondary CTA: Session Overview & Speaking Task Pop-Up (matching module theme color)
+        // Secondary CTA: Overview & Task Pop-Up (matching module highlight/accent color like Semester 1)
         const overviewBtn = document.createElement('button');
         overviewBtn.type = 'button';
         overviewBtn.className = "inline-flex items-center gap-2 text-white px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-lg text-xs font-bold tracking-wide shadow-xs transition-all duration-150 cursor-pointer select-none border border-black/10 hover:shadow-md hover:-translate-y-[1px] active:translate-y-0";
-        const ctaBg = mod.primary || mod.accent;
-        const ctaHover = mod.primaryDark || mod.accentDark;
+        const ctaBg = mod.accent || mod.primary;
+        const ctaHover = mod.accentDark || mod.primaryDark;
         overviewBtn.style.backgroundColor = ctaBg;
         overviewBtn.onmouseenter = () => overviewBtn.style.backgroundColor = ctaHover;
         overviewBtn.onmouseleave = () => overviewBtn.style.backgroundColor = ctaBg;
-        overviewBtn.innerHTML = `<span>Overview &amp; Speaking Task</span> <span class="font-bold text-sm leading-none" aria-hidden="true">⇥</span>`;
-        overviewBtn.title = "Open Session Overview, 10 Useful Words & Group Speaking Task";
+        overviewBtn.innerHTML = `<span>Overview &amp; Task</span> <span class="font-bold text-sm leading-none" aria-hidden="true">⇥</span>`;
+        overviewBtn.title = "Open Session Overview, 10 Useful Words & Authentic EASA Task";
         overviewBtn.addEventListener('click', () => {
           openSessionOverviewModal(mod.id, currentIndex + 1);
         });
