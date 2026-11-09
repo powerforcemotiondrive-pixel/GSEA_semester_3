@@ -1,4 +1,4 @@
-    function renderLessonContentTabSession1(sessionData, theme) {
+        function renderLessonContentTabSession1(sessionData, theme) {
       const bodyEl = document.getElementById('modal-body');
       if (!bodyEl) return;
       const content = sessionData.lessonContent || {};
@@ -18,7 +18,7 @@
                 <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">DIGITAL WORKSHEET</span>
                 <span class="text-xs font-bold text-slate-700">AT Module 1 • Session 1</span>
               </div>
-              <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">${hero.title || 'EASA Rules & Finding Information Fast'}</h3>
+              <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">${hero.title || 'EASA Rules & Modal Precision'}</h3>
             </div>
             <button type="button" onclick="window.printLessonContent()" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 shadow-xs transition-all cursor-pointer shrink-0">
               <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
@@ -32,8 +32,8 @@
               <img src="${hero.image || 'images/s3_m1_session1_easa.jpg'}" alt="${hero.title || 'EASA Rules'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/aas_m1card1.jpg'">
               <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4 sm:p-5">
                 <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">Technical English • Module 1</span>
-                <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'EASA Rules & Finding Information Fast'}</h3>
-                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${hero.subtitle || 'Navigating Airport Regulations, Words for Rules & Obstacle Safeguarding'}</p>
+                <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'EASA Rules & Modal Precision'}</h3>
+                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${hero.subtitle || 'Navigating Airport Regulations, Modal Authority & Safeguarding in Plain English'}</p>
               </div>
             </div>
             <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
@@ -42,7 +42,7 @@
                 <span class="bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 rounded">${hero.targetLevel || 'CEFR B1–B2'}</span>
                 <span class="text-slate-400">&bull;</span>
                 <span class="font-bold text-slate-800">Audience:</span>
-                <span class="text-slate-600">${hero.roleContext || 'GSEA Student Training'}</span>
+                <span class="text-slate-600">${hero.roleContext || 'GSEA Student Training (TSEEAC Airside & Safeguarding Focus)'}</span>
               </div>
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-800">Total Duration:</span>
@@ -51,14 +51,14 @@
             </div>
           </div>
 
-          <!-- Activity 1: Warm-up & Entry Spot-Check -->
+          <!-- Activity 1: Warm-up & The Modal Spectrum -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 1</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Warm-up & Entry Spot-Check'}</h4>
-                  <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Warm-up & The Modal Spectrum'}</h4>
+                  <p class="text-[11px] text-slate-500">${opening.summary || 'Discuss document reading hurdles, test diagnostic entry knowledge, and explore the modal commitment ladder.'}</p>
                 </div>
               </div>
               <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Opening Warm-Up</span>
@@ -128,7 +128,7 @@
                       <div id="diagnostic-ans-${q.id}" class="hidden p-2.5 bg-white border border-slate-200 rounded-lg text-[11px] text-slate-700 leading-relaxed shadow-xs mb-2">
                         <span class="font-bold text-slate-900">Plain English Answer:</span> ${q.answer}
                       </div>
-                      <button type="button" id="diagnostic-btn-${q.id}" onclick="window.toggleDiagnosticAnswer(${q.id})" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-slate-600 hover:text-slate-900 cursor-pointer">
+                      <button type="button" onclick="const el=document.getElementById('diagnostic-ans-${q.id}'); el.classList.toggle('hidden'); this.querySelector('span').innerText = el.classList.contains('hidden') ? 'Reveal Answer' : 'Hide Answer';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-slate-600 hover:text-slate-900 cursor-pointer">
                         <span>Reveal Answer</span> &rarr;
                       </button>
                     </div>
@@ -136,16 +136,58 @@
                 `).join('')}
               </div>
             </div>
+
+            <!-- Modal Commitment Spectrum Table (Bolstered Component) -->
+            <div class="mt-4 p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-3">
+              <div class="flex items-center justify-between gap-2 border-b border-slate-200 pb-2">
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-black px-2 py-0.5 rounded bg-indigo-100 text-indigo-800">LANGUAGE MATRIX</span>
+                  <h5 class="text-xs sm:text-sm font-bold text-slate-900">The Modal Authority Spectrum in Airport Operations</h5>
+                </div>
+                <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Spoken Authority & Commitment</span>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed">In European aerodrome rules (EASA / ICAO), modal verbs convey strict legal authority. Notice how authority steps down from 100% mandatory law to optional recommendations and discretionary guidance:</p>
+              <div class="overflow-x-auto rounded-xl border border-slate-200 shadow-2xs">
+                <table class="w-full text-xs text-left">
+                  <thead class="bg-slate-100 text-slate-800 font-bold border-b border-slate-200">
+                    <tr>
+                      <th class="p-2.5">Modal Level</th>
+                      <th class="p-2.5">Commitment Level</th>
+                      <th class="p-2.5">Regulatory Meaning & Rule Type</th>
+                      <th class="p-2.5">Tone in Spoken Commands</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-slate-200 bg-white">
+                    ${(opening.modalSpectrum || []).map(m => {
+                      const badgeBg = m.color === 'rose' ? 'bg-rose-100 text-rose-800 border-rose-200' :
+                                      m.color === 'red' ? 'bg-red-100 text-red-800 border-red-200' :
+                                      m.color === 'amber' ? 'bg-amber-100 text-amber-800 border-amber-200' :
+                                      'bg-emerald-100 text-emerald-800 border-emerald-200';
+                      return `
+                        <tr class="hover:bg-slate-50">
+                          <td class="p-2.5 font-black font-mono">
+                            <span class="px-2 py-0.5 rounded text-[11px] font-bold border ${badgeBg}">${m.level}</span>
+                          </td>
+                          <td class="p-2.5 font-bold text-slate-800">${m.commitment}</td>
+                          <td class="p-2.5 text-slate-600">${m.desc}</td>
+                          <td class="p-2.5 font-medium italic text-slate-700">${m.tone}</td>
+                        </tr>
+                      `;
+                    }).join('')}
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
 
-          <!-- Activity 2: Reading the EASA Crane Rule -->
+          <!-- Activity 2: Reading the EASA Crane Rule & Jargon Buster -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 2</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${doc.title || 'Activity 2: Reading the EASA Crane Rule'}</h4>
-                  <p class="text-[11px] text-slate-500">${doc.summary || ''}</p>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${doc.title || 'Activity 2: Reading the EASA Crane Rule & Jargon Buster'}</h4>
+                  <p class="text-[11px] text-slate-500">${doc.summary || 'Scan the authentic EASA CS-ADR-DSN extract and decode bureaucratic legal expressions into plain operational English.'}</p>
                 </div>
               </div>
               <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Authentic EASA Document</span>
@@ -187,16 +229,50 @@
                 `).join('')}
               </div>
             </div>
+
+            <!-- Jargon Buster: Bureaucratic Legal English to Plain Operational English (Bolstered Component) -->
+            <div class="mt-4 p-4 bg-blue-50/70 border border-blue-200 rounded-xl space-y-3">
+              <div class="flex items-center justify-between gap-2 border-b border-blue-200/80 pb-2">
+                <div class="flex items-center gap-2">
+                  <svg width="16" height="16" class="text-blue-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+                  <h5 class="text-xs sm:text-sm font-bold text-blue-950">Jargon Buster: Decoding Dense Regulatory English</h5>
+                </div>
+                <span class="text-[10px] font-bold text-blue-700 uppercase tracking-wider">Paraphrasing Clinic</span>
+              </div>
+              <p class="text-xs text-blue-900 leading-relaxed">Official EASA and DGAC documents use heavy legalistic boilerplate. Practice translating these 8 formal expressions into clear, natural plain English:</p>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+                ${(doc.jargonBuster || []).map(jb => `
+                  <div class="p-3 bg-white border border-blue-200 rounded-lg shadow-2xs space-y-2 flex flex-col justify-between">
+                    <div>
+                      <div class="flex items-center justify-between gap-2">
+                        <span class="text-[10px] font-black uppercase tracking-wider text-blue-600">Formal Phrase 0${jb.id}</span>
+                        <span class="text-[10px] font-bold text-slate-400 bg-slate-100 px-1.5 py-0.5 rounded">${jb.note}</span>
+                      </div>
+                      <p class="text-xs font-black font-mono text-slate-800 mt-1">&ldquo;${jb.formal}&rdquo;</p>
+                    </div>
+                    <div>
+                      <div id="jargon-ans-s1-${jb.id}" class="hidden p-2 bg-emerald-50 border border-emerald-200 rounded text-xs text-emerald-950 font-bold mb-1.5">
+                        <span class="text-emerald-700 text-[10px] font-black uppercase block">Plain English Equivalent:</span>
+                        ${jb.plain}
+                      </div>
+                      <button type="button" onclick="const el=document.getElementById('jargon-ans-s1-${jb.id}'); el.classList.toggle('hidden'); this.querySelector('span').innerText = el.classList.contains('hidden') ? 'Decode to Plain English' : 'Hide Translation';" class="no-print inline-flex items-center gap-1 text-[11px] font-bold text-blue-600 hover:text-blue-900 cursor-pointer">
+                        <span>Decode to Plain English</span> &rarr;
+                      </button>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
           </div>
 
-          <!-- Activity 3: Words for Rules -->
+          <!-- Activity 3: Language Clinic: Words for Rules & Direct Phrasing -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 3</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${rules.title || 'Activity 3: Words for Rules: Must, Shall, Should, May'}</h4>
-                  <p class="text-[11px] text-slate-500">${rules.summary || ''}</p>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${rules.title || 'Activity 3: Language Clinic: Words for Rules & Direct Phrasing'}</h4>
+                  <p class="text-[11px] text-slate-500">${rules.summary || 'Master modal commitment through practical drills and transform heavy nominalizations into direct ramp instructions.'}</p>
                 </div>
               </div>
               <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Language Focus</span>
@@ -220,7 +296,7 @@
                     <tr class="hover:bg-slate-50">
                       <td class="p-2.5 font-bold text-blue-900">${r.word}</td>
                       <td class="p-2.5 font-semibold text-slate-800">${r.meaning}</td>
-                      <td class="p-2.5 italic text-slate-600">"${r.example}"</td>
+                      <td class="p-2.5 italic text-slate-600">&ldquo;${r.example}&rdquo;</td>
                       <td class="p-2.5 text-[11px] text-slate-500">${r.tip}</td>
                     </tr>
                   `).join('')}
@@ -249,28 +325,133 @@
                 `).join('')}
               </div>
             </div>
+
+            <!-- De-Nominalization Clinic (Bolstered Component) -->
+            <div class="mt-4 p-4 bg-indigo-50/70 border border-indigo-200 rounded-xl space-y-3">
+              <div class="flex items-center justify-between gap-2 border-b border-indigo-200/80 pb-2">
+                <div class="flex items-center gap-2">
+                  <svg width="16" height="16" class="text-indigo-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                  <h5 class="text-xs sm:text-sm font-bold text-indigo-950">De-Nominalization Clinic: From Heavy Nouns to Direct Ramp Commands</h5>
+                </div>
+                <span class="text-[10px] font-bold text-indigo-700 uppercase tracking-wider">Spoken Clarity</span>
+              </div>
+              <p class="text-xs text-indigo-900 leading-relaxed">Regulations love long nouns (<em>implementation, notification, cessation, placement</em>). On the ramp, pilots, handlers, and airside drivers need direct, active verbs. Transform these 3 heavy regulatory extracts into direct spoken instructions:</p>
+              <div class="space-y-3">
+                ${(rules.denominalizationClinic || []).map(item => `
+                  <div class="p-3.5 bg-white border border-indigo-200 rounded-xl space-y-2.5">
+                    <div class="space-y-1">
+                      <span class="text-[10px] font-black uppercase tracking-wider text-indigo-700">Case 0${item.id} • Heavy Written Regulation:</span>
+                      <p class="text-xs font-mono text-slate-700 bg-slate-50 p-2.5 rounded border border-slate-200 leading-relaxed">&ldquo;${item.legal}&rdquo;</p>
+                    </div>
+                    <div id="denom-ans-s1-${item.id}" class="hidden p-3 bg-emerald-50 border border-emerald-200 rounded-lg text-xs space-y-1">
+                      <div class="flex items-center gap-2">
+                        <span class="text-emerald-800 font-black uppercase text-[10px] tracking-wider">&check; Direct Spoken Ramp Phrasing:</span>
+                      </div>
+                      <p class="font-bold text-emerald-950 text-xs sm:text-sm">&ldquo;${item.direct}&rdquo;</p>
+                      <p class="text-[11px] text-emerald-800/90 pt-1 font-medium">${item.explanation}</p>
+                    </div>
+                    <button type="button" onclick="const el=document.getElementById('denom-ans-s1-${item.id}'); el.classList.toggle('hidden'); this.querySelector('span').innerText = el.classList.contains('hidden') ? 'Reveal Direct Ramp Phrasing' : 'Hide Ramp Phrasing';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-indigo-700 hover:text-indigo-950 cursor-pointer">
+                      <span>Reveal Direct Ramp Phrasing</span> &rarr;
+                    </button>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
           </div>
 
-          <!-- Activity 4: Spoken Role-Play -->
+          <!-- Activity 4: Spoken Interaction: Spot the Bug & Contractor Role-Play -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 4</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${spoken.title || 'Activity 4: Speaking Role-Play: Talking to the Builder'}</h4>
-                  <p class="text-[11px] text-slate-500">${spoken.summary || ''}</p>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${spoken.title || 'Activity 4: Spoken Interaction: Spot the Bug & Contractor Role-Play'}</h4>
+                  <p class="text-[11px] text-slate-500">${spoken.summary || 'Play the Spot the Compliance Bug listening barrier game, then role-play the 3-student Runway 09 crane safeguarding negotiation.'}</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">3-Person Spoken Simulation</span>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Spoken Interaction</span>
             </div>
 
             ${renderActivityInstructions(spoken, theme)}
 
+            <!-- Interactive Auditory Discrimination Game: Spot the Compliance Bug (Bolstered Component) -->
+            <div class="p-4 bg-purple-50/70 border border-purple-200 rounded-xl space-y-3">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-purple-200/80 pb-2">
+                <div class="flex items-center gap-2">
+                  <svg width="18" height="18" class="text-purple-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
+                  <div>
+                    <h5 class="text-xs sm:text-sm font-black text-purple-950">${(spoken.spotTheBug && spoken.spotTheBug.title) || 'Interactive Listening Barrier Game: Spot the Compliance Bug'}</h5>
+                    <p class="text-[11px] text-purple-800">${(spoken.spotTheBug && spoken.spotTheBug.instructions) || 'Student A reads aloud. Student B listens to catch errors in modal tone, numbers, or deadlines.'}</p>
+                  </div>
+                </div>
+                <span class="text-[10px] font-bold text-purple-800 bg-purple-100 px-2 py-0.5 rounded border border-purple-200 shrink-0">Auditory Barrier Game</span>
+              </div>
+
+              <!-- Checking & Interruption Phrases -->
+              <div class="p-3 bg-white border border-purple-200 rounded-lg space-y-1.5">
+                <span class="text-[10px] font-black uppercase tracking-wider text-purple-900 block">Target Spoken Interruption Phrases (Use these as soon as you hear a bug):</span>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  ${((spoken.spotTheBug && spoken.spotTheBug.checkingPhrases) || []).map(ph => `
+                    <div class="p-2 bg-purple-50/60 border border-purple-100 rounded text-[11px] font-semibold text-purple-950 flex items-center gap-2">
+                      <span class="text-purple-600 font-bold">&bull;</span>
+                      <span>&ldquo;${ph}&rdquo;</span>
+                    </div>
+                  `).join('')}
+                </div>
+              </div>
+
+              <!-- Interactive Pair Scenario Cards -->
+              <div class="space-y-3 pt-1">
+                ${((spoken.spotTheBug && spoken.spotTheBug.pairs) || []).map(pair => `
+                  <div class="p-3.5 bg-white border border-purple-200/90 rounded-xl space-y-3 shadow-2xs">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-purple-100 pb-2">
+                      <span class="text-xs font-black text-purple-950">Scenario ${pair.id}: ${pair.topic}</span>
+                      <div class="flex items-center gap-1.5 no-print">
+                        <button type="button" onclick="document.getElementById('bug-view-a-${pair.id}').classList.remove('hidden'); document.getElementById('bug-view-b-${pair.id}').classList.add('hidden'); this.className='px-2 py-0.5 rounded text-[10px] font-bold bg-purple-700 text-white cursor-pointer'; this.nextElementSibling.className='px-2 py-0.5 rounded text-[10px] font-bold bg-purple-100 text-purple-800 hover:bg-purple-200 cursor-pointer';" class="px-2 py-0.5 rounded text-[10px] font-bold bg-purple-700 text-white cursor-pointer">Student A (Reader)</button>
+                        <button type="button" onclick="document.getElementById('bug-view-b-${pair.id}').classList.remove('hidden'); document.getElementById('bug-view-a-${pair.id}').classList.add('hidden'); this.className='px-2 py-0.5 rounded text-[10px] font-bold bg-purple-700 text-white cursor-pointer'; this.previousElementSibling.className='px-2 py-0.5 rounded text-[10px] font-bold bg-purple-100 text-purple-800 hover:bg-purple-200 cursor-pointer';" class="px-2 py-0.5 rounded text-[10px] font-bold bg-purple-100 text-purple-800 hover:bg-purple-200 cursor-pointer">Student B (Detector)</button>
+                      </div>
+                    </div>
+
+                    <!-- Student A View (Clean Official Copy) -->
+                    <div id="bug-view-a-${pair.id}" class="space-y-2">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[10px] font-black uppercase text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded border border-emerald-200">Student A • Official Text (Read aloud at normal pace):</span>
+                      </div>
+                      <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg font-mono text-xs text-slate-800 leading-relaxed select-text">
+                        ${pair.studentA}
+                      </div>
+                    </div>
+
+                    <!-- Student B View (Bugged Copy) -->
+                    <div id="bug-view-b-${pair.id}" class="hidden space-y-2">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[10px] font-black uppercase text-rose-800 bg-rose-100 px-2 py-0.5 rounded border border-rose-200">Student B • Bugged Copy (Listen to Partner &amp; Catch Errors):</span>
+                      </div>
+                      <div class="p-3 bg-rose-50/50 border border-rose-200 rounded-lg font-mono text-xs text-slate-800 leading-relaxed select-text">
+                        ${pair.studentB}
+                      </div>
+                      <div>
+                        <div id="bug-reveal-${pair.id}" class="hidden p-3 bg-purple-50 border border-purple-200 rounded-lg text-xs space-y-1.5 mt-2">
+                          <span class="text-[10px] font-black uppercase tracking-wider text-purple-900 block">Bugs Placed in Student B's Text:</span>
+                          <ul class="list-disc pl-4 space-y-1 text-[11px] text-purple-950 font-medium">
+                            ${pair.bugs.map(b => `<li>${b}</li>`).join('')}
+                          </ul>
+                        </div>
+                        <button type="button" onclick="const el=document.getElementById('bug-reveal-${pair.id}'); el.classList.toggle('hidden'); this.querySelector('span').innerText = el.classList.contains('hidden') ? 'Reveal 3 Intentional Bugs' : 'Hide Bugs';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-purple-700 hover:text-purple-950 cursor-pointer mt-1">
+                          <span>Reveal 3 Intentional Bugs</span> &rarr;
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
             <!-- Scenario Box -->
-            <div class="p-4 bg-sky-50/80 border border-sky-200 rounded-xl space-y-2 text-xs">
+            <div class="p-4 bg-sky-50/80 border border-sky-200 rounded-xl space-y-2 text-xs mt-4">
               <div class="flex items-center gap-2 text-sky-950 font-bold">
                 <svg width="16" height="16" class="text-sky-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                <span>The Operational Scenario:</span>
+                <span>The Operational Scenario: Runway 09 Crane Safeguarding Negotiation</span>
               </div>
               <p class="text-sky-900 leading-relaxed font-medium">${spoken.scenario || ''}</p>
             </div>
@@ -308,17 +489,17 @@
             </div>
           </div>
 
-          <!-- Activity 5: Safety Check -->
+          <!-- Activity 5: Safety Check & Rules to Reality -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">105-120m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
                 <div>
                   <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 5: Safety Check: What Could Go Wrong?'}</h4>
-                  <p class="text-[11px] text-slate-500">${safety.summary || ''}</p>
+                  <p class="text-[11px] text-slate-500">${safety.summary || 'Collaborative 4-step safety check and 60-second unscripted ramp reality explanation.'}</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Simple Safety Check</span>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Safety Analysis</span>
             </div>
 
             ${renderActivityInstructions(safety, theme)}
@@ -342,6 +523,18 @@
                 </tbody>
               </table>
             </div>
+
+            <!-- Rules to Reality Wrap-Up (Bolstered Component) -->
+            <div class="mt-4 p-4 bg-amber-50/80 border border-amber-200 rounded-xl space-y-2.5">
+              <div class="flex items-center justify-between gap-2 border-b border-amber-200 pb-2">
+                <div class="flex items-center gap-2">
+                  <svg width="16" height="16" class="text-amber-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <h5 class="text-xs sm:text-sm font-bold text-amber-950">${(safety.rulesToReality && safety.rulesToReality.title) || 'Rules to Reality: 60-Second Pair Spoken Wrap-Up'}</h5>
+                </div>
+                <span class="text-[10px] font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded border border-amber-200">Spoken Fluency</span>
+              </div>
+              <p class="text-xs text-amber-900 leading-relaxed font-medium">${(safety.rulesToReality && safety.rulesToReality.prompt) || 'Pick one operational rule from today (crane height, FOD, apron speed, refuelling in lightning, or glycol runoff). In pairs, deliver an unscripted 60-second operational summary explaining: 1) What is the exact rule? 2) Why do ground teams sometimes ignore it? 3) What is the real-world safety consequence on the ramp?'}</p>
+            </div>
           </div>
 
           <!-- Activity 6: Operational Notes & Safeguarding Decision -->
@@ -350,7 +543,7 @@
               <div class="flex items-center gap-2">
                 <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs bg-slate-800">NOTES</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">Activity 6: Operational Notes & Safeguarding Decision</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">Activity 6: Operational Notes &amp; Safeguarding Decision</h4>
                   <p class="text-[11px] text-slate-500">Record your team's role-play conclusions and safeguarding decisions for the crane. Auto-saved in browser.</p>
                 </div>
               </div>
@@ -375,7 +568,7 @@
 
               <div class="notes-textarea-container">
                 <label class="block text-xs font-bold text-slate-800 mb-1 flex items-center justify-between">
-                  <span>2. Safeguarding Record & NOTAM Decision:</span>
+                  <span>2. Safeguarding Record &amp; NOTAM Decision:</span>
                   <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saves on typing</span>
                 </label>
                 <textarea id="notes-safety-s1" oninput="window.saveLessonNote('1', 'safety', this.value)" rows="3" placeholder="e.g., OLS approach surface protected (gradient 2%). Issue NOTAM 48 hours prior to crane erection stating temporary obstacle 48m AGL at 2,200m from Runway 09 threshold..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('1', 'safety') : ''}</textarea>
@@ -387,7 +580,7 @@
       `;
     }
 
-    function renderLessonContentTabSession2(sessionData, theme) {
+function renderLessonContentTabSession2(sessionData, theme) {
       const bodyEl = document.getElementById('modal-body');
       if (!bodyEl) return;
       const content = sessionData.lessonContent || {};
@@ -699,7 +892,7 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">105-120m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
                 <div>
                   <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 5: Safety Check: What Could Go Wrong?'}</h4>
                   <p class="text-[11px] text-slate-500">${safety.summary || ''}</p>
@@ -1088,7 +1281,7 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">105-120m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
                 <div>
                   <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 5: Safety Check: Is it Safe to Land?'}</h4>
                   <p class="text-[11px] text-slate-500">${safety.summary || ''}</p>
@@ -1552,7 +1745,7 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">105-120m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
                 <div>
                   <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 6: Safety Check'}</h4>
                   <p class="text-[11px] text-slate-500">${safety.summary || ''}</p>
@@ -2001,7 +2194,7 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">105-120m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
                 <div>
                   <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 6: Safety Check'}</h4>
                   <p class="text-[11px] text-slate-500">${safety.summary || ''}</p>
@@ -2445,7 +2638,7 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">105-120m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
                 <div>
                   <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 6: Safety Check'}</h4>
                   <p class="text-[11px] text-slate-500">${safety.summary || ''}</p>

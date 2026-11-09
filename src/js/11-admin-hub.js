@@ -99,7 +99,7 @@
             "courseWeek": "W01",
             "week": "W37",
             "date": "Wed 09 Sep",
-            "title": "Session 1 — EASA Rules & Finding Information Fast",
+            "title": "Session 1 — EASA Rules & Modal Precision",
             "subtitle": "",
             "tag": "Teaching Session",
             "isFe": false,

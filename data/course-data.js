@@ -142,85 +142,85 @@
       "1": {
         "session": 1,
         "objectives": {
-          "title": "Session 1 Objectives - EASA Rules & Finding Information Fast",
-          "summary": "By the end of this session, GSEA students will be able to navigate dense EASA airport rules without getting lost, understand the difference between mandatory laws and advisory guides, use words for rules (shall, must, should, may) accurately, scan an authentic EASA crane safety specification, role-play a polite clarification dialogue with a building contractor, and complete a simple Safety Check.",
+          "title": "Session 1 Objectives - EASA Rules & Modal Precision",
+          "summary": "By the end of this session, GSEA students will be able to navigate dense airport regulations with confidence, identify the critical differences in spoken authority between mandatory rules (shall/must), recommendations (should), and permissions (may/can), decode formal bureaucratic jargon into plain English, transform heavy written passive text into clear spoken ramp instructions, actively catch compliance errors in peer speech, and successfully role-play an obstacle safety negotiation.",
           "items": [
             {
               "num": 1,
-              "title": "Talk About Reading Challenges (Fluency & Spontaneous Speech)",
-              "description": "Share what makes long official manuals hard to read in English and agree on simple tricks to find information fast.",
+              "title": "Navigating Technical Documentation (Reading Strategies & Fluency)",
+              "description": "Discuss common frustrations with 300-page official manuals and apply practical scanning techniques to locate safety-critical details quickly without getting bogged down in legal text.",
               "part": "Part 1"
             },
             {
               "num": 2,
-              "title": "Understand the Two Types of Rules (Laws vs. Guides)",
-              "description": "Learn the simple difference between Laws (rules you must follow) and Guides (advice and best practice).",
+              "title": "The Modal Authority Spectrum (Language Accuracy & Tone)",
+              "description": "Master the spoken authority ladder in technical operations: 100% legal obligation (shall / must), zero tolerance prohibition (shall not), 75% standard best practice (should), and optional permission (may / can).",
               "part": "Part 2"
             },
             {
               "num": 3,
-              "title": "Key Words for Rules (Vocabulary Focus)",
-              "description": "Learn and use everyday rule words: must follow (binding), advice (guidance), inspect (oversight), and safety zone (obstacle surface).",
+              "title": "Jargon Buster: Decoding Formal English (Vocabulary & Paraphrasing)",
+              "description": "Translate 8 formal regulatory expressions (pursuant to, without prejudice to, derogation, competent authority, repealed with effect from) into natural, plain operational English.",
               "part": "Part 3"
             },
             {
               "num": 4,
-              "title": "Words for Rules: Shall, Must, Should, May (Language Focus)",
-              "description": "Practice using shall / must (100% required), shall not (forbidden), should (recommended advice), and may (allowed).",
+              "title": "Direct Phrasing & De-Nominalization (Clarity Clinic)",
+              "description": "Convert stiff, noun-heavy administrative sentences into direct, active spoken instructions suitable for fast-paced airside communications.",
               "part": "Part 4"
             },
             {
               "num": 5,
-              "title": "Read the EASA Crane Rule (Authentic Document Scanning)",
-              "description": "Scan the simulated EASA document (CS-ADR-DSN.H.400 & H.415) to find where tall cranes and buildings are not allowed near the runway.",
+              "title": "Auditory Discrimination: Spot the Compliance Bug (Active Listening & Interruption)",
+              "description": "Listen closely to peer read-throughs and use polite, professional interruption phrases (\"Hold on, did you say SHALL or SHOULD?\", \"Wait, is that 24 hours or 72 hours?\") to detect intentional errors in authority and factual parameters.",
               "part": "Part 5"
             },
             {
               "num": 6,
-              "title": "Speaking Role-Play & Safety Check (Spoken Interaction)",
-              "description": "Role-play a polite conversation with a builder who wants to place a crane near the airport, and complete a simple Safety Check.",
+              "title": "Collaborative Negotiation & Safety Decision (Spoken Interaction)",
+              "description": "Role-play a realistic 3-student discussion between a GSEA Safety Officer and a Construction Manager regarding a crane near Runway 09, apply EASA obstacle rules, and complete a collaborative Safety Check.",
               "part": "Part 6"
             }
           ]
         },
         "lessonPlan": {
-          "title": "Session 1 Lesson Plan (2 Hours)",
-          "summary": "A 2-hour communicative spoken English session for GSEA students covering document reading tricks, EASA crane safety rules, words for rules (shall, must, should, may), an obstacle clarification role-play, and a simple Safety Check.",
+          "title": "Session 1 Lesson Plan - EASA Rules & Modal Precision (2 Hours)",
+          "summary": "A 2-hour communicative spoken English session for GSEA students covering document scanning strategies, the modal commitment spectrum, a plain English jargon buster, de-nominalization for direct ramp speech, the interactive Spot the Compliance Bug listening game, an authentic obstacle safeguarding negotiation, and a collaborative Safety Check.",
           "items": [
             {
-              "title": "Part 1: Warm-up: Reading Long Manuals",
-              "description": "In pairs, GSEA students discuss what makes 300-page official manuals hard to read, share quick scanning strategies, and test entry knowledge with 4 quick spot-check questions.",
-              "part": "Part 1"
+              "part": "Part 1",
+              "title": "Part 1: Warm-up & The Modal Spectrum",
+              "description": "Students discuss what makes 300-page official manuals hard to read in English, test entry knowledge with 4 quick spot-check questions, and explore the interactive Modal Spectrum Table (SHALL/MUST 100% -> SHOULD 75% -> MAY/CAN 0-50%), discussing how modal choice changes the tone of operational commands."
             },
             {
-              "title": "Part 2: Reading the EASA Crane Rule",
-              "description": "Reading an authentic EASA extract (CS-ADR-DSN.H.400 and H.415 + GM1) to locate obstacle limitation surfaces, slope gradients, and crane safeguarding rules.",
-              "part": "Part 2"
+              "part": "Part 2",
+              "title": "Part 2: Authentic Document Extract & Jargon Buster",
+              "description": "Students scan authentic EASA extracts (obstacle limitation rules for cranes & FOD control regulations) and complete the Jargon Buster matching clinic, translating 8 formal bureaucratic phrases into plain operational English."
             },
             {
-              "title": "Part 3: Words for Rules: Shall, Must, Should, May",
-              "description": "Grammar and language clinic clarifying mandatory requirements (shall/must), prohibitions (shall not), and recommendations (should) through 5 practical drills.",
-              "part": "Part 3"
+              "part": "Part 3",
+              "title": "Part 3: Language Clinic: Words for Rules & Direct Phrasing",
+              "description": "Students complete 5 modal accuracy drills and work through the De-Nominalization Clinic, practicing how to rewrite and speak heavy legal text as crisp, direct ramp instructions."
             },
             {
-              "title": "Part 4: Speaking Role-Play: Talking to the Builder",
-              "description": "3-student spoken role-play between a GSEA Safety Officer and a Construction Manager discussing a proposed 48m crane near Runway 09, with peer observation.",
-              "part": "Part 4"
+              "part": "Part 4",
+              "title": "Part 4: Spoken Interaction: Spot the Bug & Contractor Role-Play",
+              "description": "In pairs, students play the Spot the Compliance Bug auditory barrier game, using spoken checking and interruption phrases to catch contradictions in apron speed, lightning refuelling, occurrence reporting, and de-icing runoff. Students then transition into the 3-way Crane Negotiation Role-Play debating a 48m crane near Runway 09."
             },
             {
-              "title": "Part 5: Safety Check: What Could Go Wrong?",
-              "description": "Collaborative 4-step safety check evaluating the crane hazard, flight risks, protective steps (lowered height, obstacle lights, NOTAM), and the final decision.",
-              "part": "Part 5"
+              "part": "Part 5",
+              "title": "Part 5: Safety Check & Rules to Reality",
+              "description": "Students collaborate on the 4-step crane risk evaluation (hazard, flight risk, protective mitigations, final decision) and deliver an unscripted 60-second pair explanation describing what happens in reality on the ramp if rules are ignored."
             }
           ]
         },
         "lessonContent": {
           "hero": {
-            "title": "EASA Rules & Finding Information Fast",
-            "subtitle": "Navigating Airport Regulations, Words for Rules & Obstacle Safeguarding",
+            "title": "EASA Rules & Modal Precision",
+            "subtitle": "Navigating Airport Regulations, Modal Authority & Safeguarding in Plain English",
             "image": "images/s3_m1_session1_easa.jpg",
             "targetLevel": "CEFR B1–B2",
-            "roleContext": "GSEA Student Training • Aerodrome Operations & Rule Compliance",
+            "roleContext": "GSEA Student Training (TSEEAC Airside & Safeguarding Focus)",
             "duration": "120 Minutes"
           },
           "openingSession": {
@@ -296,7 +296,37 @@
                   "part": "Part 4"
                 }
               ]
-            }
+            },
+            "modalSpectrum": [
+              {
+                "level": "SHALL / MUST",
+                "commitment": "100% Mandatory",
+                "desc": "Strict legal obligation. Non-compliance constitutes a safety breach or legal violation.",
+                "tone": "Firm command / direct order",
+                "color": "rose"
+              },
+              {
+                "level": "SHALL NOT",
+                "commitment": "Prohibition",
+                "desc": "Zero tolerance. Strictly forbidden under law or operational directives.",
+                "tone": "Absolute restriction",
+                "color": "red"
+              },
+              {
+                "level": "SHOULD",
+                "commitment": "75% Recommended (AMC)",
+                "desc": "Acceptable Means of Compliance. Standard best practice; deviations require formal safety approval.",
+                "tone": "Strong recommendation / best practice",
+                "color": "amber"
+              },
+              {
+                "level": "MAY / CAN",
+                "commitment": "0–50% Discretionary (GM)",
+                "desc": "Guidance Material. An authorized option, illustrative example, or statutory permission.",
+                "tone": "Permitted option / practical method",
+                "color": "emerald"
+              }
+            ]
           },
           "documentExtract": {
             "title": "Activity 2: Reading the EASA Crane Rule",
@@ -340,6 +370,56 @@
                 "q": "How many days in advance must a construction company tell the airport before putting up a crane over 25m?",
                 "answer": "Clause GM1 CS-ADR-DSN.H.415(b) requires written notification at least 28 calendar days prior to crane assembly.",
                 "part": "Part 4"
+              }
+            ],
+            "jargonBuster": [
+              {
+                "id": 1,
+                "formal": "Pursuant to Article 4(...)",
+                "plain": "Following / According to Article 4",
+                "note": "Direct reference to an active rule"
+              },
+              {
+                "id": 2,
+                "formal": "Without prejudice to Subpart C(...)",
+                "plain": "Without affecting or altering existing rules in Subpart C",
+                "note": "Protects existing regulations"
+              },
+              {
+                "id": 3,
+                "formal": "Shall enter into force on(...)",
+                "plain": "Becomes legally binding and active on [date]",
+                "note": "Official starting date"
+              },
+              {
+                "id": 4,
+                "formal": "Competent authority",
+                "plain": "The official oversight body (e.g., DSAC / DGAC in France)",
+                "note": "Regulatory inspectorate"
+              },
+              {
+                "id": 5,
+                "formal": "Derogation from the rule",
+                "plain": "An authorized exception to the general requirement",
+                "note": "Official exemption"
+              },
+              {
+                "id": 6,
+                "formal": "Consolidated version",
+                "plain": "Combined updated text containing all previous amendments",
+                "note": "All-in-one text"
+              },
+              {
+                "id": 7,
+                "formal": "Opt-outs notified by Member States",
+                "plain": "Formal exemptions permitted to Member States",
+                "note": "National exemptions"
+              },
+              {
+                "id": 8,
+                "formal": "Repealed with effect from(...)",
+                "plain": "Officially cancelled and replaced starting on [date]",
+                "note": "Outdated rule removed"
               }
             ]
           },
@@ -449,6 +529,26 @@
                 "rationale": "High-visibility gear is an absolute mandatory safety requirement.",
                 "part": "Part 5"
               }
+            ],
+            "denominalizationClinic": [
+              {
+                "id": 1,
+                "legal": "Implementation of immediate containment measures shall be conducted by the operator upon the identification of a hydraulic fluid spill exceeding 5 square metres.",
+                "direct": "Ground staff must contain hydraulic spills over 5 m² immediately.",
+                "explanation": "Convert passive nominalization \"implementation shall be conducted upon identification\" into direct, active imperative speech (\"must contain immediately\")."
+              },
+              {
+                "id": 2,
+                "legal": "Notification of the competent authority regarding runway incursions should be executed by the safety manager within a timeframe not exceeding 72 hours.",
+                "direct": "The safety manager should notify DSAC of runway incursions within 72 hours.",
+                "explanation": "Convert \"notification should be executed within a timeframe not exceeding\" into clear active verb \"should notify\"."
+              },
+              {
+                "id": 3,
+                "legal": "Placement of rubber chocks against the main landing gear tyres shall be performed immediately upon the complete cessation of aircraft movement.",
+                "direct": "Handlers must chock the main wheels immediately after the aircraft stops.",
+                "explanation": "Convert \"placement shall be performed upon complete cessation\" into direct spoken command \"must chock after the aircraft stops\"."
+              }
             ]
           },
           "spokenActivity": {
@@ -508,7 +608,63 @@
               "What we can propose instead is...",
               "If you agree to work only at night and install red lights, we can approve it.",
               "Let's write down this agreement so both sides are protected."
-            ]
+            ],
+            "spotTheBug": {
+              "title": "Interactive Listening Barrier Game: Spot the Compliance Bug",
+              "instructions": "Student A reads the authentic EASA extract aloud clearly at normal operational pace. Student B follows their bugged copy and must interrupt immediately using spoken checking phrases when they hear a contradiction in modal tone, numbers, or deadlines.",
+              "checkingPhrases": [
+                "Hold on a second, did you say SHALL or SHOULD?",
+                "Wait, let me double check that number—did you say 5 km or 15 km?",
+                "Stop there—that sounds optional, but isn't it mandatory?",
+                "Wait, did you say 24 hours or 72 hours?"
+              ],
+              "pairs": [
+                {
+                  "id": 1,
+                  "topic": "Apron Vehicle Movement & Right of Way (ADR.OPS.B.028)",
+                  "studentA": "Drivers operating on the airside movement area SHALL give way to moving aircraft, aircraft under tow, and emergency response vehicles displaying active visual beacons. Except when strictly necessary for aircraft servicing operations, vehicles SHALL NOT be driven within the designated aircraft safety envelope. Aerodrome operators SHOULD establish mandatory maximum apron speed limits not exceeding 25 km/h on standard roadways and 10 km/h in the vicinity of aircraft stands.",
+                  "studentB": "Drivers operating on the airside movement area MAY give way to moving aircraft, aircraft under tow, and emergency response vehicles displaying active visual beacons. Except when strictly necessary for aircraft servicing operations, vehicles SHALL be driven within the designated aircraft safety envelope. Aerodrome operators SHOULD establish mandatory maximum apron speed limits not exceeding 40 km/h on standard roadways and 10 km/h in the vicinity of aircraft stands.",
+                  "bugs": [
+                    "Bug 1: 'shall give way' changed to 'may give way' (Replaced strict legal command with optional courtesy)",
+                    "Bug 2: 'shall not be driven' changed to 'shall be driven' (Prohibited area turned into mandatory command)",
+                    "Bug 3: '25 km/h' changed to '40 km/h' (Factual/numerical parameter alteration)"
+                  ]
+                },
+                {
+                  "id": 2,
+                  "topic": "Fuelling Safety & Lightning (ADR.OPS.B.055)",
+                  "studentA": "Aircraft refuelling with passengers embarking, on board, or disembarking SHALL only take place when ground staff maintain a clear evacuation path through at least two cabin exits. All refuelling operations SHALL cease immediately if lightning discharges are detected within a 5-kilometre radius of the aerodrome perimeter. Aerodrome personnel SHOULD verify that fire-fighting suppression equipment is positioned within 30 metres of the fuelling connection point.",
+                  "studentB": "Aircraft refuelling with passengers embarking, on board, or disembarking SHOULD only take place when ground staff maintain a clear evacuation path through at least two cabin exits. All refuelling operations SHALL cease immediately if lightning discharges are detected within a 15-kilometre radius of the aerodrome perimeter. Aerodrome personnel MAY verify that fire-fighting suppression equipment is positioned within 30 metres of the fuelling connection point.",
+                  "bugs": [
+                    "Bug 1: 'shall only take place' changed to 'should only take place' (Demoted hard law to AMC recommendation)",
+                    "Bug 2: '5-kilometre' changed to '15-kilometre' (Factual weather distance bug)",
+                    "Bug 3: 'should verify' changed to 'may verify' (Demoted recommended safety measure to optional discretion)"
+                  ]
+                },
+                {
+                  "id": 3,
+                  "topic": "Occurrence Reporting & Timelines (ADR.OPS.B.080)",
+                  "studentA": "Aerodrome operators and ground handling service providers SHALL report any safety-related occurrence involving runway incursions or aircraft damage to the competent authority within 72 hours of becoming aware of the event. Reports SHALL contain all relevant factual details regarding the environmental conditions, personnel qualifications, and equipment involved. When supplementary safety information becomes available after the initial submission, the operator SHOULD provide an updated analysis to the competent authority without undue delay.",
+                  "studentB": "Aerodrome operators and ground handling service providers SHALL report any safety-related occurrence involving runway incursions or aircraft damage to the competent authority within 24 hours of becoming aware of the event. Reports MAY contain all relevant factual details regarding the environmental conditions, personnel qualifications, and equipment involved. When supplementary safety information becomes available after the initial submission, the operator SHALL NOT provide an updated analysis to the competent authority without undue delay.",
+                  "bugs": [
+                    "Bug 1: '72 hours' changed to '24 hours' (Procedural deadline error)",
+                    "Bug 2: 'shall contain' changed to 'may contain' (Diluted mandatory report contents into optional suggestions)",
+                    "Bug 3: 'should provide' changed to 'shall not provide' (Reversed compliance obligation into a prohibition)"
+                  ]
+                },
+                {
+                  "id": 4,
+                  "topic": "De-icing Fluid Containment & Runoff (ADR.OPS.B.035)",
+                  "studentA": "De-icing operations SHALL take place exclusively on designated de-icing pads equipped with fluid recovery drainage valves. Aerodrome operators SHALL NOT permit contaminated glycol fluid to drain into unlined perimeter ditches or municipal freshwater channels. In the event of an uncontained chemical release exceeding 500 litres, the aerodrome operator SHALL inform the competent authority within 2 hours.",
+                  "studentB": "De-icing operations SHOULD take place exclusively on designated de-icing pads equipped with fluid recovery drainage valves. Aerodrome operators MAY permit contaminated glycol fluid to drain into unlined perimeter ditches or municipal freshwater channels. In the event of an uncontained chemical release exceeding 50 litres, the aerodrome operator SHALL inform the competent authority within 2 hours.",
+                  "bugs": [
+                    "Bug 1: 'shall take place' changed to 'should take place' (Hard law downgraded to AMC)",
+                    "Bug 2: 'shall not permit' changed to 'may permit' (Prohibited environmental violation turned into permitted action)",
+                    "Bug 3: '500 litres' changed to '50 litres' (Threshold reporting parameter bug)"
+                  ]
+                }
+              ]
+            }
           },
           "safetyCheck": {
             "title": "Activity 5: Safety Check: What Could Go Wrong?",
@@ -546,7 +702,11 @@
                 "answer": "APPROVED WITH CONDITIONS: The contractor may proceed once the 4 protective steps are verified on site.",
                 "part": "Part 4"
               }
-            ]
+            ],
+            "rulesToReality": {
+              "title": "Rules to Reality: 60-Second Pair Spoken Wrap-Up",
+              "prompt": "Pick one operational rule from today (crane height, FOD, apron speed, refuelling in lightning, or glycol runoff). In pairs, deliver an unscripted 60-second operational summary explaining: 1) What is the exact rule? 2) Why do ground teams sometimes ignore it? 3) What is the real-world safety consequence on the ramp?"
+            }
           }
         },
         "revision": {

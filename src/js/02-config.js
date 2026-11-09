@@ -2,7 +2,7 @@
       const feSessionNum = modNumber === 1 ? 7 : (modNumber === 2 ? 8 : 5);
       const aasSessionTitles = {
         1: {
-          s1: "Session 1 - EASA Rules & Finding Information Fast",
+          s1: "Session 1 - EASA Rules & Modal Precision",
           s2: "Session 2 - Safety Alerts & Ramp Inspections",
           s3: "Session 3 - Special Requests & Runway Safety Cases",
           s4: "Session 4 - Aerodrome Ground Layouts & Taxiway Navigation",
