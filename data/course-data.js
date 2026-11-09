@@ -2460,6 +2460,97 @@
       },
       "3": {
         "session": 3,
+        "overview": {
+          "intro": "Welcome to Session 3 of Technical English on Special Requests & Runway Safety Cases! This session trains GSEA students to navigate the complex regulatory process of temporary operational exemptions under Basic Regulation (EU) 2018/1139 Article 71 and Point ADR.OR.B.040. You will explore how aerodrome operators manage major airside infrastructure repairs, calculate temporary declared distances with displaced thresholds, formulate compensatory safety measures to prove an Equivalent Level of Safety (ELOS), and deliver reassuring operational briefings to international airline flight dispatchers.",
+          "whyItMatters": "Unplanned structural defects beneath active runways\u2014such as stormwater culvert subsidence\u2014cannot be repaired without altering certified runway dimensions. Completely shutting down an international runway disrupts global flight networks and costs millions of euros. Instead, airside managers use Article 71 exemptions to maintain safe flight operations by establishing temporary displaced thresholds, reduced Runway End Safety Areas (RESA), and strict weather limits (dry-runway only, 15-knot crosswind caps). Delivering precise, unambiguous verbal briefings ensures airline chief pilots and flight crews trust and accept modified runway operations.",
+          "keyTerms": [
+                    {
+                              "term": "Article 71 Exemption",
+                              "ipa": "/\u02c8\u0251\u02d0.t\u026a.kl\u0329 \u02ccsev.\u0259n.ti\u02c8w\u028cn \u026a\u0261\u02c8zemp.\u0283\u0259n/",
+                              "definition": "The formal clause in Regulation (EU) 2018/1139 granting temporary flexibility from aviation standards for urgent operational needs up to 60 days."
+                    },
+                    {
+                              "term": "Derogation",
+                              "ipa": "/\u02ccder.\u0259\u02c8\u0261e\u026a.\u0283\u0259n/",
+                              "definition": "An official statutory relaxation or authorized deviation from an established aerodrome design specification approved by the competent authority."
+                    },
+                    {
+                              "term": "Safety Assessment / Safety Case",
+                              "ipa": "/\u02c8se\u026af.ti ke\u026as/",
+                              "definition": "A documented technical justification proving that an operation with non-compliant dimensions achieves an equivalent level of safety through mitigations."
+                    },
+                    {
+                              "term": "Equivalent Level of Safety (ELOS)",
+                              "ipa": "/\u026a\u02c8kw\u026av.\u0259l.\u0259nt \u02c8lev.l\u0329 \u0259v \u02c8se\u026af.ti/",
+                              "definition": "The statutory standard proving that alternative compensatory measures provide the same high level of protection as standard compliance."
+                    },
+                    {
+                              "term": "Compensatory Measure",
+                              "ipa": "/k\u0259m\u02c8pen.s\u0259.t\u0259r.i \u02c8me\u0292.\u0259r/",
+                              "definition": "An additional operational rule\u2014such as dry-runway limitations or enhanced fire standby\u2014implemented to balance a temporary reduction in safety buffers."
+                    },
+                    {
+                              "term": "Runway End Safety Area (RESA)",
+                              "ipa": "/\u02c8r\u028cn.we\u026a end \u02c8se\u026af.ti \u02c8e\u0259.ri.\u0259/",
+                              "definition": "An unobstructed area symmetrical about the extended runway centerline protecting landing aircraft from overrun and undershoot hazards."
+                    },
+                    {
+                              "term": "Declared Distances (TORA / LDA)",
+                              "ipa": "/d\u026a\u02c8kle\u0259d \u02c8d\u026as.t\u0259ns.\u026az/",
+                              "definition": "The certified published runway lengths for flight planning: Take-Off Run Available (TORA) and Landing Distance Available (LDA)."
+                    },
+                    {
+                              "term": "AIP Supplement (SUP)",
+                              "ipa": "/\u02cce\u026a.a\u026a\u02c8pi\u02d0 \u02c8s\u028cp.l\u026a.m\u0259nt/",
+                              "definition": "A temporary published operational document issued at least 28 days in advance detailing major aerodrome works, revised distances, and chart modifications."
+                    },
+                    {
+                              "term": "Condition Linker (Provided that)",
+                              "ipa": "/pr\u0259\u02c8va\u026a.d\u026ad \u00f0\u00e6t/",
+                              "definition": "A formal connecting phrase meaning 'on the strict condition that', establishing an essential prerequisite for an operational permission."
+                    },
+                    {
+                              "term": "Runway Safety Team (RST)",
+                              "ipa": "/\u02c8r\u028cn.we\u026a \u02c8se\u026af.ti ti\u02d0m/",
+                              "definition": "A multidisciplinary advisory group uniting aerodrome operators, air traffic controllers, pilots, and technical teams to prevent runway excursions."
+                    }
+          ],
+          "speakingTask": {
+                    "title": "Authentic EASA Task \u2022 Runway Safety Case & Operational Exemption",
+                    "instructions": "Working in pairs or trios, open the authentic EASA Exemption File (EASA/ADR-EXEMP/2024-009) below. Each group reviews one operational dimension of the Runway 26 culvert rehabilitation, analyzes the practical constraints, and delivers a concise 2-minute spoken briefing explaining their safety decisions using today's technical vocabulary.",
+                    "document": {
+                              "title": "EASA Exemption File & Safety Case: Runway 26 Culvert Rehabilitation",
+                              "subtitle": "Regulation (EU) 2018/1139 Article 71 Synthesis \u2022 Displaced Threshold & Reduced RESA",
+                              "filename": "GSEA_S3_M1_S3_EASA_Runway_Safety_Case.pdf",
+                              "path": "docs/GSEA_S3_M1_S3_EASA_Runway_Safety_Case.pdf",
+                              "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
+                    },
+                    "requirements": [
+                              "Use at least 4 of today's 10 technical terms from the list above.",
+                              "Cite specific operational measures from Section 4 and Section 6 of the EASA Exemption File.",
+                              "Ensure both partners actively speak and explain practical solutions without reading verbatim."
+                    ],
+                    "statements": {
+                              "group1": "Group 1 Statement (Physical Geometry & Declared Distances): How does displacing Threshold 26 forward by 320m alter the declared distances (TORA, TODA, ASDA, LDA), and how does a 120m temporary RESA guarantee overrun protection?",
+                              "group2": "Group 2 Statement (Compensatory Measures & ELOS): Why are dry-runway limitations, a 15-knot crosswind cap, and dedicated RFFS rapid intervention standby essential to achieve an Equivalent Level of Safety under Article 71?",
+                              "group3": "Group 3 Statement (Airline Briefing & Linguistic Connectors): Deliver a 2-minute verbal briefing to airline flight operations managers using conditional connecting words ('provided that', 'subject to', 'in lieu of') to reassure them that modified operations are safe."
+                    },
+                    "usefulPhrases": [
+                              "Under Article 71 of Regulation (EU) 2018/1139, our airport is implementing a temporary exemption for...",
+                              "To protect the excavation site, Threshold 26 is displaced by 320 metres, resulting in an LDA of 2,680 metres...",
+                              "Operations are strictly authorized provided that the runway surface condition remains completely dry...",
+                              "A temporary 120-metre RESA has been established in lieu of the standard 240-metre recommended buffer...",
+                              "We have issued AIP SUP 014/24 and trigger NOTAMs in order to ensure seamless flight planning for your dispatchers..."
+                    ]
+          },
+          "document": {
+                    "title": "EASA Exemption File & Safety Case: Runway 26 Culvert Rehabilitation",
+                    "subtitle": "Regulation (EU) 2018/1139 Article 71 Synthesis \u2022 Displaced Threshold & Reduced RESA",
+                    "filename": "GSEA_S3_M1_S3_EASA_Runway_Safety_Case.pdf",
+                    "path": "docs/GSEA_S3_M1_S3_EASA_Runway_Safety_Case.pdf",
+                    "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
+          }
+},
         "objectives": {
           "title": "Session 3 Objectives - Special Requests & Runway Safety Cases",
           "summary": "By the end of this session, GSEA students will be able to explain how airports handle real-world challenges through temporary permissions (exemptions), use connecting words to explain rules and conditions (provided that, due to, in order to, in lieu of), read an authentic runway works exemption file, prepare and deliver a 3-minute spoken briefing to airline pilots, and complete a simple Safety Check.",
@@ -2873,313 +2964,516 @@
           }
         },
         "revision": {
-          "title": "Session 3 Revision - Operational Exemptions, Safety Cases & Runway Works",
-          "summary": "30 essential operational terms for GSEA students covering Article 71 exemptions, safety assessments, declared distances, and compensatory measures.",
+          "title": "Session 3 Vocabulary \u2022 Operational Exemptions & Runway Safety Cases",
+          "summary": "Master the 30 essential regulatory terms, declared distance formulas, compensatory measures, and connecting linkers from Regulation (EU) 2018/1139 Article 71 and Point ADR.OR.B.040.",
           "terms": [
-            {
-              "num": "01",
-              "term": "Article 71 Exemption",
-              "definition": "The legal clause in EU aviation law allowing temporary exemptions for urgent operational needs.",
-              "part": "Part 1"
-            },
-            {
-              "num": "02",
-              "term": "Derogation",
-              "definition": "An official temporary exemption from or relaxation of a regulatory requirement granted by the authority.",
-              "part": "Part 2"
-            },
-            {
-              "num": "03",
-              "term": "Safety Assessment / Safety Case",
-              "definition": "A structured written justification proving that an operation is safe despite non-standard conditions.",
-              "part": "Part 3"
-            },
-            {
-              "num": "04",
-              "term": "Equivalent Level of Safety (ELOS)",
-              "definition": "Proof that alternative safety measures provide the same protection as the standard rule.",
-              "part": "Part 4"
-            },
-            {
-              "num": "05",
-              "term": "Compensatory Measure",
-              "definition": "An additional safety step implemented to replace or balance a temporary reduction in safety margin.",
-              "part": "Part 5"
-            },
-            {
-              "num": "06",
-              "term": "Aeronautical Study",
-              "definition": "A technical engineering study evaluating the impact of non-standard conditions on flight operations.",
-              "part": "Part 6"
-            },
-            {
-              "num": "07",
-              "term": "Runway End Safety Area (RESA)",
-              "definition": "An area symmetrical about the extended runway centerline intended to reduce risk if an aeroplane overruns or undershoots.",
-              "part": "Part 7"
-            },
-            {
-              "num": "08",
-              "term": "Displaced Threshold",
-              "definition": "A runway landing threshold located at a point other than the physical beginning of the runway.",
-              "part": "Part 8"
-            },
-            {
-              "num": "09",
-              "term": "Declared Distances",
-              "definition": "The four official operational distances published for a runway: TORA, TODA, ASDA, and LDA.",
-              "part": "Part 9"
-            },
-            {
-              "num": "10",
-              "term": "TORA (Take-Off Run Available)",
-              "definition": "The length of runway declared available and suitable for the ground run of an aeroplane taking off.",
-              "part": "Part 10"
-            },
-            {
-              "num": "11",
-              "term": "TODA (Take-Off Distance Available)",
-              "definition": "The length of the take-off run available plus the length of the clearway, if provided.",
-              "part": "Part 11"
-            },
-            {
-              "num": "12",
-              "term": "ASDA (Accelerate-Stop Distance Available)",
-              "definition": "The length of the take-off run available plus the length of the stopway, if provided.",
-              "part": "Part 12"
-            },
-            {
-              "num": "13",
-              "term": "LDA (Landing Distance Available)",
-              "definition": "The length of runway declared available and suitable for the ground run of an aeroplane landing.",
-              "part": "Part 13"
-            },
-            {
-              "num": "14",
-              "term": "Overrun",
-              "definition": "When an aircraft fails to stop before the end of the paved runway surface.",
-              "part": "Part 14"
-            },
-            {
-              "num": "15",
-              "term": "Undershoot",
-              "definition": "When an arriving aircraft touches down short of the runway threshold.",
-              "part": "Part 15"
-            },
-            {
-              "num": "16",
-              "term": "Temporary Operational Restriction",
-              "definition": "A short-term limitation placed on flights or airport operations during construction works.",
-              "part": "Part 16"
-            },
-            {
-              "num": "17",
-              "term": "Contaminated Runway",
-              "definition": "A runway where significant portions of the surface are covered by standing water, snow, slush, or ice.",
-              "part": "Part 17"
-            },
-            {
-              "num": "18",
-              "term": "Braking Action",
-              "definition": "A measure of the tyre-to-surface friction available to slow down a landing aircraft.",
-              "part": "Part 18"
-            },
-            {
-              "num": "19",
-              "term": "Crosswind Component",
-              "definition": "The portion of wind blowing perpendicular (90 degrees) to the runway direction.",
-              "part": "Part 19"
-            },
-            {
-              "num": "20",
-              "term": "Holding Point",
-              "definition": "A designated position on a taxiway where aircraft hold before entering or crossing an active runway.",
-              "part": "Part 20"
-            },
-            {
-              "num": "21",
-              "term": "RFFS (Rescue and Fire Fighting Services)",
-              "definition": "The emergency airport fire brigade equipped with heavy foam vehicles for aircraft incidents.",
-              "part": "Part 21"
-            },
-            {
-              "num": "22",
-              "term": "Standby Status",
-              "definition": "Positioning emergency fire crews in immediate operational readiness near the runway during high-risk operations.",
-              "part": "Part 22"
-            },
-            {
-              "num": "23",
-              "term": "AIP Supplement (SUP)",
-              "definition": "A temporary published change to permanent aeronautical information, usually lasting more than 3 months.",
-              "part": "Part 23"
-            },
-            {
-              "num": "24",
-              "term": "NOTAM Trigger",
-              "definition": "An operational event or change that legally requires the immediate issuance of a Notice to Airmen.",
-              "part": "Part 24"
-            },
-            {
-              "num": "25",
-              "term": "Inter-Service Consultation",
-              "definition": "Formal coordination between air traffic control, airport safety, airlines, and maintenance services.",
-              "part": "Part 25"
-            },
-            {
-              "num": "26",
-              "term": "Flight Operations Briefing",
-              "definition": "A short, concise presentation giving pilots and dispatchers key operational constraints and rules.",
-              "part": "Part 26"
-            },
-            {
-              "num": "27",
-              "term": "Condition Linker (Provided that)",
-              "definition": "A formal linking phrase meaning 'on the strict condition that', used to introduce mandatory rules.",
-              "part": "Part 27"
-            },
-            {
-              "num": "28",
-              "term": "Cause Linker (Due to)",
-              "definition": "A connecting phrase meaning 'caused by' or 'because of', connecting an effect directly to an operational hazard.",
-              "part": "Part 28"
-            },
-            {
-              "num": "29",
-              "term": "Purpose Linker (In order to)",
-              "definition": "A linking phrase used to express the purpose of a safety action or compensatory measure.",
-              "part": "Part 29"
-            },
-            {
-              "num": "30",
-              "term": "Runway Safety Team (RST)",
-              "definition": "A multi-disciplinary committee of controllers, pilots, and airport staff focused on runway hazard prevention.",
-              "part": "Part 30"
-            }
+                    {
+                              "num": "01",
+                              "term": "Article 71 Exemption",
+                              "definition": "The formal clause in Regulation (EU) 2018/1139 permitting temporary flexibility from standard technical requirements for urgent operational needs up to 60 days.",
+                              "part": "Part 1"
+                    },
+                    {
+                              "num": "02",
+                              "term": "Derogation",
+                              "definition": "An official statutory relaxation or authorized deviation from an established aerodrome design specification approved by the competent authority.",
+                              "part": "Part 2"
+                    },
+                    {
+                              "num": "03",
+                              "term": "Safety Assessment / Safety Case",
+                              "definition": "A documented technical justification proving that an operation with non-compliant dimensions achieves an equivalent level of safety through mitigations.",
+                              "part": "Part 3"
+                    },
+                    {
+                              "num": "04",
+                              "term": "Equivalent Level of Safety (ELOS)",
+                              "definition": "The statutory standard proving that alternative compensatory measures provide the same high level of protection as standard compliance.",
+                              "part": "Part 4"
+                    },
+                    {
+                              "num": "05",
+                              "term": "Compensatory Measure",
+                              "definition": "An additional operational rule\u2014such as dry-runway limitations or enhanced fire standby\u2014implemented to balance a temporary reduction in safety buffers.",
+                              "part": "Part 5"
+                    },
+                    {
+                              "num": "06",
+                              "term": "Aeronautical Study",
+                              "definition": "A formal engineering analysis evaluating the flight safety impact of non-standard aerodrome physical conditions on aircraft performance.",
+                              "part": "Part 6"
+                    },
+                    {
+                              "num": "07",
+                              "term": "Runway End Safety Area (RESA)",
+                              "definition": "An unobstructed area symmetrical about the extended runway centerline protecting landing aircraft from overrun and undershoot hazards.",
+                              "part": "Part 7"
+                    },
+                    {
+                              "num": "08",
+                              "term": "Displaced Threshold",
+                              "definition": "A runway threshold located at a point other than the physical extremity of the pavement, permanently or temporarily shortening landing distance.",
+                              "part": "Part 8"
+                    },
+                    {
+                              "num": "09",
+                              "term": "Declared Distances",
+                              "definition": "The four certified operational distances published for a runway: TORA, TODA, ASDA, and LDA, used by airlines for aircraft performance calculations.",
+                              "part": "Part 9"
+                    },
+                    {
+                              "num": "10",
+                              "term": "TORA (Take-Off Run Available)",
+                              "definition": "The length of runway declared available and suitable for the ground run of an aircraft taking off.",
+                              "part": "Part 10"
+                    },
+                    {
+                              "num": "11",
+                              "term": "ASDA (Accelerate-Stop Distance Available)",
+                              "definition": "The length of the take-off run available plus the length of any stopway declared available for an abandoned take-off.",
+                              "part": "Part 11"
+                    },
+                    {
+                              "num": "12",
+                              "term": "LDA (Landing Distance Available)",
+                              "definition": "The length of runway declared available and suitable for the ground run of an aircraft landing.",
+                              "part": "Part 12"
+                    },
+                    {
+                              "num": "13",
+                              "term": "Overrun",
+                              "definition": "An operational event where an aircraft fails to stop before the end of the declared runway surface during landing or rejected take-off.",
+                              "part": "Part 13"
+                    },
+                    {
+                              "num": "14",
+                              "term": "Undershoot",
+                              "definition": "An operational event where an arriving aircraft touches down short of the declared landing threshold.",
+                              "part": "Part 14"
+                    },
+                    {
+                              "num": "15",
+                              "term": "Contaminated Runway",
+                              "definition": "A runway where more than 25% of the surface area is covered by standing water, slush, or ice, significantly degrading braking friction.",
+                              "part": "Part 15"
+                    },
+                    {
+                              "num": "16",
+                              "term": "Braking Action Friction",
+                              "definition": "The measured or reported friction coefficient available between aircraft tyres and the pavement to decelerate safely.",
+                              "part": "Part 16"
+                    },
+                    {
+                              "num": "17",
+                              "term": "Crosswind Component",
+                              "definition": "The vector component of wind blowing perpendicular to the runway centerline, challenging directional control during landing rollout.",
+                              "part": "Part 17"
+                    },
+                    {
+                              "num": "18",
+                              "term": "Temporary Operational Restriction",
+                              "definition": "A short-term mandatory limitation placed on flight weights, weather minima, or aircraft types during aerodrome maintenance.",
+                              "part": "Part 18"
+                    },
+                    {
+                              "num": "19",
+                              "term": "RFFS (Rescue and Fire Fighting Services)",
+                              "definition": "The specialized aerodrome emergency service categorized by response times, water/foam discharge capacity, and vehicle fleets.",
+                              "part": "Part 19"
+                    },
+                    {
+                              "num": "20",
+                              "term": "Standby Status",
+                              "definition": "The positioning of emergency rescue vehicles at intermediate holding points to ensure rapid response times under 60 seconds.",
+                              "part": "Part 20"
+                    },
+                    {
+                              "num": "21",
+                              "term": "Holding Point",
+                              "definition": "A marked and lit position on a taxiway where aircraft and vehicles hold until explicitly cleared onto the active runway by ATC.",
+                              "part": "Part 21"
+                    },
+                    {
+                              "num": "22",
+                              "term": "Inter-Service Consultation",
+                              "definition": "Formal coordination between aerodrome safety managers, air traffic controllers, and airline flight operations before altering procedures.",
+                              "part": "Part 22"
+                    },
+                    {
+                              "num": "23",
+                              "term": "Runway Safety Team (RST)",
+                              "definition": "A multidisciplinary advisory committee uniting airport operators, controllers, pilots, and technical teams to prevent runway excursions.",
+                              "part": "Part 23"
+                    },
+                    {
+                              "num": "24",
+                              "term": "Flight Operations Briefing",
+                              "definition": "A concise operational briefing delivered to airline flight dispatchers detailing altered declared distances and worksite precautions.",
+                              "part": "Part 24"
+                    },
+                    {
+                              "num": "25",
+                              "term": "AIP Supplement (SUP)",
+                              "definition": "A temporary published operational circular issued 28 days in advance detailing major aerodrome works, revised distances, and chart changes.",
+                              "part": "Part 25"
+                    },
+                    {
+                              "num": "26",
+                              "term": "NOTAM Trigger",
+                              "definition": "An operational condition or threshold change that legally mandates the immediate transmission of a Notice to Airmen via AFTN.",
+                              "part": "Part 26"
+                    },
+                    {
+                              "num": "27",
+                              "term": "Condition Linker (Provided that)",
+                              "definition": "A formal connecting phrase meaning 'on the strict condition that', introducing an essential prerequisite for a regulatory permission.",
+                              "part": "Part 27"
+                    },
+                    {
+                              "num": "28",
+                              "term": "Condition Linker (Subject to)",
+                              "definition": "A formal connecting phrase subordinating an operational permission to continuous regulatory verification or external approval.",
+                              "part": "Part 28"
+                    },
+                    {
+                              "num": "29",
+                              "term": "Substitution Linker (In lieu of)",
+                              "definition": "A formal connecting phrase meaning 'in place of' or 'substituting for', identifying an approved alternative compliance measure.",
+                              "part": "Part 29"
+                    },
+                    {
+                              "num": "30",
+                              "term": "Concession Linker (Notwithstanding)",
+                              "definition": "A formal legal connector meaning 'despite' or 'without being restricted by', authorizing an exceptional action despite a general rule.",
+                              "part": "Part 30"
+                    }
           ]
-        },
+},
         "materials": {
-          "quizTitle": "Airside Scenario Quiz • Runway Works & Operational Decisions",
-          "quizSubtitle": "Target pace: ~45 seconds per scenario • Mix of Operational Dilemmas & Rule Spot-Checks",
+          "quizTitle": "Airside Scenario Quiz \u2022 Operational Exemptions & Safety Cases",
+          "quiz": [
+                    {
+                              "question": "Under Basic Regulation (EU) 2018/1139 Article 71, what is the maximum duration an aerodrome operator may benefit from an urgent operational exemption without formal Commission review?",
+                              "options": [
+                                        "14 calendar days",
+                                        "Two months (60 calendar days)",
+                                        "Six months",
+                                        "One full calendar year"
+                              ],
+                              "correct": 1,
+                              "explanation": "Article 71(1) stipulates that Member States and aerodrome operators may grant temporary exemptions for urgent unforeseen operational needs up to a statutory ceiling of two months (60 calendar days)."
+                    },
+                    {
+                              "question": "When Runway 26 has its landing threshold displaced forward by 320 metres, which declared distance is directly reduced for arriving aircraft?",
+                              "options": [
+                                        "TORA (Take-Off Run Available)",
+                                        "TODA (Take-Off Distance Available)",
+                                        "LDA (Landing Distance Available)",
+                                        "ASDA on the opposite runway"
+                              ],
+                              "correct": 2,
+                              "explanation": "Displacing the landing threshold forward reduces the Landing Distance Available (LDA) for Runway 26 by exactly 320m, because aircraft cannot land short of the displaced threshold."
+                    },
+                    {
+                              "question": "What is the primary operational function of an Equivalent Level of Safety (ELOS) assessment in a runway safety case?",
+                              "options": [
+                                        "To eliminate all aircraft landing weight restrictions",
+                                        "To demonstrate that alternative compensatory measures provide the same high level of safety as standard CS-ADR-DSN compliance",
+                                        "To bypass National Competent Authority safety audits",
+                                        "To authorize operations without publishing a NOTAM"
+                              ],
+                              "correct": 1,
+                              "explanation": "An ELOS assessment proves scientifically that mandated compensatory measures (e.g. dry runway limits, PAPI realignment, RFFS standby) fully offset non-standard runway dimensions, keeping overall risk at a low, acceptable level."
+                    },
+                    {
+                              "question": "In formal aviation safety briefings, what is the legal meaning of the connecting phrase 'provided that'?",
+                              "options": [
+                                        "It introduces an optional recommendation that pilots may ignore",
+                                        "It indicates an absolute prerequisite condition without which the operational permission is immediately invalid",
+                                        "It expresses a past historical event",
+                                        "It serves as a synonym for 'notwithstanding'"
+                              ],
+                              "correct": 1,
+                              "explanation": "'Provided that' establishes a binding conditional requirement. If the stated condition (e.g., dry surface) is breached, the authorization to land terminates immediately."
+                    }
+          ],
           "videos": [
-            {
-              "title": "Video 1: Runway End Safety Areas (RESA) & Overrun Accidents",
-              "channel": "ICAO Safety / NLR Research",
-              "duration": "7 mins",
-              "videoId": "7KkBE0HgNJQ",
-              "watchUrl": "https://www.youtube.com/watch?v=7KkBE0HgNJQ",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/7KkBE0HgNJQ",
-              "caption": "Explains why 90m and 240m safety buffers are required beyond runway ends, how overruns occur in wet weather, and how engineered arresting beds work.",
-              "part": "Part 1"
-            },
-            {
-              "title": "Video 2: Displaced Thresholds & Declared Distances Explained",
-              "channel": "Boldmethod Pilot Training",
-              "duration": "6 mins",
-              "videoId": "udS812jbAiE",
-              "watchUrl": "https://www.youtube.com/watch?v=udS812jbAiE",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/udS812jbAiE",
-              "caption": "Flight pilot perspective on how landing distances (LDA) change when thresholds are moved forward for runway construction or obstacle clearance.",
-              "part": "Part 2"
-            },
-            {
-              "title": "Video 3: How Major Airports Resurface Runways Without Closing",
-              "channel": "Megaprojects / Airport Engineering",
-              "duration": "8 mins",
-              "videoId": "EiKeGmkX6fY",
-              "watchUrl": "https://www.youtube.com/watch?v=EiKeGmkX6fY",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/EiKeGmkX6fY",
-              "caption": "Engineering documentary showing how major airports conduct night runway culvert repairs and resurfacing while maintaining commercial operations by day.",
-              "part": "Part 3"
-            }
+                    {
+                              "title": "Video 1: Runway End Safety Areas (RESA) & Overrun Accidents",
+                              "channel": "ICAO Safety / NLR Research",
+                              "duration": "7 mins",
+                              "videoId": "7KkBE0HgNJQ",
+                              "watchUrl": "https://www.youtube.com/watch?v=7KkBE0HgNJQ",
+                              "embedUrl": "https://www.youtube-nocookie.com/embed/7KkBE0HgNJQ",
+                              "caption": "Explains why 90m and 240m safety buffers are required beyond runway ends, how overruns occur in wet weather, and how engineered arresting beds work.",
+                              "part": "Part 1"
+                    },
+                    {
+                              "title": "Video 2: Displaced Thresholds & Declared Distances Explained",
+                              "channel": "Boldmethod Pilot Training",
+                              "duration": "6 mins",
+                              "videoId": "udS812jbAiE",
+                              "watchUrl": "https://www.youtube.com/watch?v=udS812jbAiE",
+                              "embedUrl": "https://www.youtube-nocookie.com/embed/udS812jbAiE",
+                              "caption": "Flight pilot perspective on how landing distances (LDA) change when thresholds are moved forward for runway construction or obstacle clearance.",
+                              "part": "Part 2"
+                    },
+                    {
+                              "title": "Video 3: How Major Airports Resurface Runways Without Closing",
+                              "channel": "Megaprojects / Airport Engineering",
+                              "duration": "8 mins",
+                              "videoId": "EiKeGmkX6fY",
+                              "watchUrl": "https://www.youtube.com/watch?v=EiKeGmkX6fY",
+                              "embedUrl": "https://www.youtube-nocookie.com/embed/EiKeGmkX6fY",
+                              "caption": "Engineering documentary showing how major airports conduct night runway culvert repairs and resurfacing while maintaining commercial operations by day.",
+                              "part": "Part 3"
+                    }
           ],
           "articles": [
-            {
-              "topic": "European Regulatory Flexibility",
-              "sourceTag": "Article 71 Exemption",
-              "heading": "EASA Flexibility Provisions: Navigating Urgent Operational Exemptions in Aerodrome Works",
-              "snippet": "Explaining the legal framework of Article 71 in Regulation (EU) 2018/1139, permitting temporary derogations for critical airport repairs when equivalent safety is substantiated through compensatory risk controls.",
-              "readTime": "Estimated read: 5 mins",
-              "url": "https://www.easa.europa.eu/en/domains/air-operations",
-              "part": "Part 1"
-            },
-            {
-              "topic": "Runway Safety Case Study",
-              "sourceTag": "SKYbrary Analysis",
-              "heading": "Runway End Safety Areas (RESA) & Declared Distance Adjustments During Construction",
-              "snippet": "Technical examination of how displaced thresholds, wet runway prohibitions, and emergency standby units compensate for shortened overrun buffers during major airside drainage works.",
-              "readTime": "Estimated read: 5 mins",
-              "url": "https://skybrary.aero/articles/runway-end-safety-area",
-              "part": "Part 2"
-            }
-          ],
-          "resources": [
-            {
-              "url": "https://skybrary.aero/articles/runway-end-safety-area",
-              "tag": "01 • Overrun Prevention",
-              "name": "SKYbrary: Runway End Safety Area (RESA)",
-              "desc": "Detailed analysis of runway overrun buffer dimensions, arrestor beds (EMAS), and drainage culvert safeguarding.",
-              "part": "Part 1"
-            },
-            {
-              "url": "https://skybrary.aero/articles/displaced-threshold",
-              "tag": "02 • Declared Distances",
-              "name": "SKYbrary: Displaced Thresholds & Declared Distances",
-              "desc": "Comprehensive guide explaining how TORA, TODA, ASDA, and LDA are declared and recalculated during runway maintenance.",
-              "part": "Part 2"
-            },
-            {
-              "url": "https://www.eurocontrol.int/runway-safety",
-              "tag": "03 • European Action Plan",
-              "name": "Eurocontrol Runway Safety (EAPPRE)",
-              "desc": "European Action Plan for the Prevention of Runway Excursions detailing operational restrictions in degraded weather.",
-              "part": "Part 3"
-            },
-            {
-              "url": "https://www.easa.europa.eu/en/domains/air-operations",
-              "tag": "04 • Legal Flexibility",
-              "name": "EASA Air Operations & Article 71 Exemptions",
-              "desc": "European regulatory framework governing temporary operational permits, safety risk assessments, and authority approvals.",
-              "part": "Part 4"
-            },
-            {
-              "url": "https://www.faa.gov/airports/engineering",
-              "tag": "05 • Airfield Engineering",
-              "name": "FAA Airport Construction Safety Standards",
-              "desc": "Advisory Circulars detailing operational safety plans during airport construction and underground pipe replacements.",
-              "part": "Part 5"
-            },
-            {
-              "url": "https://www.toulouse.aeroport.fr",
-              "tag": "06 • Operational Base",
-              "name": "Toulouse-Blagnac Aerodrome Operations (LFBO)",
-              "desc": "Official operational notices, runway maintenance timetables, and airline consultative committee updates.",
-              "part": "Part 6"
-            }
+                    {
+                              "title": "The Engineering of Article 71: How European Airports Secure Urgent Operational Exemptions",
+                              "source": "Journal of European Airport Law & Management",
+                              "summary": "An in-depth analysis of the legal mechanisms, safety cases, and EASA notification timelines required to obtain temporary exemptions under Regulation (EU) 2018/1139.",
+                              "readTime": "5 min read",
+                              "content": "Article 71(1) of the Basic Regulation is European aviation's primary safety valve for unforeseen operational crises. When subterranean sinkholes, culvert collapses, or severe frost heave compromise an active runway, operators cannot wait 6 months for a standard regulatory variation. By compiling an urgent safety case detailing exact hazard mitigations, certified declared distance recalculations, and daily audit regimes, airports obtain up to 60 days of temporary statutory relief while repairs proceed."
+                    },
+                    {
+                              "title": "Overrun Dynamics & RESA Compromises: Mitigating Risk with Engineered Arresting Systems",
+                              "source": "Aviation Safety & Flight Mechanics Digest",
+                              "summary": "How aerodrome operators balance shortened Runway End Safety Areas with dry-runway rules, crosswind caps, and arresting technologies during major works.",
+                              "readTime": "4 min read",
+                              "content": "Standard EASA Certification Specifications recommend a 240m RESA beyond the runway strip end to safely arrest overrunning jets. When culvert excavation forces a temporary reduction to 120m, compensatory measures must eliminate the root causes of landing overruns. By mandating that flights only land on dry pavement, capping allowable crosswinds at 15 knots, and moving the PAPI aim point, the probability of an aircraft reaching the safety buffer drops by an order of magnitude."
+                    },
+                    {
+                              "title": "Translating Recalculated Declared Distances into Cockpit Flight Management Systems (FMS)",
+                              "source": "International Flight Dispatch & Ops Review",
+                              "summary": "The critical operational coordination between aerodrome civil engineers, AIS cartographers, and airline dispatchers during displaced threshold reconfigurations.",
+                              "readTime": "4 min read",
+                              "content": "Recalculating declared distances on paper is meaningless unless the data flows accurately to the flight deck. Through AIP Supplements published 28 days in advance and Class 1 trigger NOTAMs, revised TORA and LDA coordinates are ingested into airline flight planning software. Before engine start, dispatchers verify that landing performance calculations account for the displaced threshold, ensuring flight crews know their exact stopping margin."
+                    }
           ],
           "grammar": {
-            "title": "Connecting Words for Explaining Rules & Conditions",
-            "badge": "CEFR B1–B2 Focus",
-            "patternTitle": "Rule & Operational Condition Linkers",
-            "formula": "Permission Clause + PROVIDED THAT + Mandatory Safety Condition (Condition Linker)",
-            "rulesTitle": "How to Give Clear Reasons in Spoken Briefings",
-            "rules": [
-              "<strong>PROVIDED THAT / AS LONG AS (Condition):</strong> Introduces an essential safety boundary. Example: <em>'Aircraft may land provided that the runway surface is dry.'</em>",
-              "<strong>DUE TO / BECAUSE OF (Cause):</strong> Followed by a noun phrase explaining why an unusual action was necessary. Example: <em>'The RESA is reduced due to underground culvert repairs.'</em>",
-              "<strong>IN ORDER TO (Purpose):</strong> Followed by an infinitive verb to explain the safety goal. Example: <em>'We displaced the threshold by 180m in order to protect stopping distance.'</em>",
-              "<strong>IN LIEU OF (Replacement):</strong> Means 'in place of' when substituting one safety barrier for another. Example: <em>'Temporary flashing guard lights were installed in lieu of painted lines.'</em>",
-              "<strong>UNLESS (Exception):</strong> Sets an absolute restriction. Example: <em>'No landings are permitted unless crosswinds are below 15 knots.'</em>"
-            ],
-            "trap": "<strong>⚠️ Spoken English Pitfall:</strong> Do not say <em>'due to repair'</em> (verb). Always follow <em>'due to'</em> with a noun phrase: <em>'due to drainage repairs'</em>. To express purpose with a verb, always use <em>'in order to + verb'</em> (e.g. <em>'in order to repair the pipe'</em>).",
-            "examplesTitle": "Operational Runway Briefing Examples",
-            "examples": [
-              "Aircraft may land on Runway 26 <strong>provided that</strong> the runway braking action is reported as good.",
-              "The available safety area was reduced from 90m to 55m <strong>due to</strong> critical drainage pipe excavation.",
-              "The threshold was displaced by 180 metres <strong>in order to guarantee</strong> standard landing rollout distance.",
-              "Dedicated fire rescue vehicles are stationed at Holding Point B2 <strong>in lieu of</strong> normal fire station response times."
-            ]
-          }
-        }
+                    "title": "Connecting Words for Explaining Rules & Conditions",
+                    "badge": "CEFR B1\u2013B2 Focus",
+                    "patternTitle": "The Conditional Regulatory Pattern",
+                    "formula": "Main Safety Rule + CONNECTING WORD (Provided that / Subject to / In lieu of) + Condition Clause",
+                    "rulesTitle": "How to Use Each Connecting Word in Aviation Operations",
+                    "rules": [
+                              "<strong>PROVIDED THAT (Essential Condition):</strong> Means 'on the strict condition that'. Used when a permission depends 100% on a specific safety rule being satisfied.",
+                              "<strong>SUBJECT TO (Regulatory Oversight):</strong> Means 'dependent on formal approval or continuous monitoring'. Subordinates an action to ongoing supervision.",
+                              "<strong>IN LIEU OF (Substitution):</strong> Means 'in place of' or 'instead of'. Used when an approved alternative measure replaces a standard specification.",
+                              "<strong>NOTWITHSTANDING (Exceptional Override):</strong> Means 'in spite of' or 'despite'. Authorizes an exceptional action despite a general restriction."
+                    ],
+                    "trap": "<strong>\u26a0\ufe0f Spoken English Pitfall:</strong> French speakers frequently confuse 'provided that' with 'in case of' (<em>'en cas de'</em>). In aviation briefings, 'in case of' introduces an emergency contingency (<em>'in case of fire, evacuate'</em>), whereas 'provided that' introduces a mandatory condition for permission (<em>'landings are permitted provided that the runway is dry'</em>). Never mix them up!",
+                    "examplesTitle": "Authentic EASA Part-ADR.OPS Operational Examples",
+                    "examples": [
+                              "Operations on Runway 26 are authorized <strong>provided that</strong> the pavement condition is certified as dry.",
+                              "The temporary exemption is granted <strong>subject to</strong> daily joint safety audits between ATC and airport operations.",
+                              "A temporary 120-metre RESA has been established <strong>in lieu of</strong> the standard 240-metre buffer zone.",
+                              "<strong>Notwithstanding</strong> normal airside speed limits, emergency fire vehicles may exceed 30 km/h during standby deployment."
+                    ]
+          },
+          "portals": [
+                    {
+                              "url": "https://www.easa.europa.eu/en/document-library/regulations/regulation-eu-20181139",
+                              "tag": "01 \u2022 European Basic Regulation",
+                              "name": "EASA Basic Regulation (EU) 2018/1139",
+                              "desc": "Official statutory text of Article 71 flexibility provisions and emergency operational exemptions.",
+                              "part": "Part 1"
+                    },
+                    {
+                              "url": "https://www.skybrary.aero/articles/runway-end-safety-area-resa",
+                              "tag": "02 \u2022 Global Safety Resource",
+                              "name": "SKYbrary Runway End Safety Area (RESA)",
+                              "desc": "International safety analysis of runway overrun buffer zones and aircraft arresting dynamics.",
+                              "part": "Part 2"
+                    },
+                    {
+                              "url": "https://www.icao.int/safety/airnavigation/Pages/aerodromes.aspx",
+                              "tag": "03 \u2022 Global Standards",
+                              "name": "ICAO Doc 9981 (PANS-Aerodromes)",
+                              "desc": "Procedures for air navigation services governing aerodrome safety assessments during non-standard works.",
+                              "part": "Part 3"
+                    },
+                    {
+                              "url": "https://oeaaa.faa.gov",
+                              "tag": "04 \u2022 Airspace & Safety Cases",
+                              "name": "FAA Airport Safety Assessment Methodology",
+                              "desc": "Standard engineering guidelines for evaluating temporary runway modifications and threshold displacements.",
+                              "part": "Part 4"
+                    },
+                    {
+                              "url": "https://www.aci-europe.org",
+                              "tag": "05 \u2022 Airport Operators",
+                              "name": "ACI Europe Technical Operations Committee",
+                              "desc": "Best practices for aerodrome works safety, displaced thresholds, and airline coordination.",
+                              "part": "Part 5"
+                    },
+                    {
+                              "url": "https://www.ecologie.gouv.fr/direction-generale-laviation-civile-dgac",
+                              "tag": "06 \u2022 French Authority",
+                              "name": "French DGAC / DSAC Aerodrome Oversight",
+                              "desc": "French state portal for national aerodrome safety audits, derogations, and AIP Supplements.",
+                              "part": "Part 6"
+                    }
+          ]
+},
+        "presentation": {
+          "title": "Session 3 Class Presentation \u2022 Operational Exemptions & Runway Safety Cases",
+          "subtitle": "Interactive Classroom Slide Deck for Regulation (EU) 2018/1139 Article 71, ELOS & Declared Distances",
+          "slides": [
+                    {
+                              "num": "01",
+                              "badge": "01 \u2022 Statutory Framework",
+                              "title": "Article 71 Exemptions \u2022 Flexibility in European Law",
+                              "subtitle": "Regulation (EU) 2018/1139 & Point ADR.OR.B.040 Legal Architecture",
+                              "takeaway": "Article 71 allows up to 60 days of temporary statutory relief for urgent operational needs, provided an Equivalent Level of Safety is proven.",
+                              "cards": [
+                                        {
+                                                  "tag": "Statutory Jurisdiction",
+                                                  "heading": "Article 71(1) Flexibility",
+                                                  "text": "Empowers Member States and aerodrome operators to grant temporary exemptions from technical standards in urgent operational circumstances."
+                                        },
+                                        {
+                                                  "tag": "Statutory Time Limit",
+                                                  "heading": "60-Day Maximum Ceiling",
+                                                  "text": "Exemptions cannot exceed two months (60 calendar days) without formal European Commission notification and safety review."
+                                        },
+                                        {
+                                                  "tag": "Regulatory Duty",
+                                                  "heading": "Point ADR.OR.B.040",
+                                                  "text": "Mandates prior approval from the National Competent Authority (DSAC) before altering runway physical characteristics or declared distances."
+                                        }
+                              ],
+                              "teacherPrompt": "Ask the class: Why does European law provide Article 71 flexibility rather than forcing an airport to shut down completely when a runway defect occurs?"
+                    },
+                    {
+                              "num": "02",
+                              "badge": "02 \u2022 Safety Methodology",
+                              "title": "The Safety Case & Equivalent Level of Safety (ELOS)",
+                              "subtitle": "Proving that Alternative Mitigations Match Standard Safety Buffers",
+                              "takeaway": "An ELOS assessment scientifically demonstrates that operational restrictions compensate fully for reduced physical runway buffers.",
+                              "cards": [
+                                        {
+                                                  "tag": "Core Concept",
+                                                  "heading": "Equivalent Level of Safety (ELOS)",
+                                                  "text": "Demonstrates that alternative operational rules provide the same level of risk protection as standard CS-ADR-DSN compliance."
+                                        },
+                                        {
+                                                  "tag": "Risk Assessment",
+                                                  "heading": "Hazard Identification (HIRA)",
+                                                  "text": "Evaluates landing overrun, undershoot, and foreign object debris (FOD) probabilities under modified physical dimensions."
+                                        },
+                                        {
+                                                  "tag": "Residual Risk",
+                                                  "heading": "Tolerable Risk Matrix",
+                                                  "text": "Initial high-risk ratings (e.g., 4A overrun risk) must be mitigated down to Low (1B) before operational approval is granted."
+                                        }
+                              ],
+                              "teacherPrompt": "Concept check: What is the difference between a Derogation (relaxation of a rule) and an ELOS (proof that safety remains 100% equivalent)?"
+                    },
+                    {
+                              "num": "03",
+                              "badge": "03 \u2022 Physical Geometry",
+                              "title": "Declared Distances & Threshold Displacement Geometry",
+                              "subtitle": "How Moving the Threshold by 320m Alters Runway Performance",
+                              "takeaway": "Displacing Threshold 26 forward reduces landing distance (LDA) but preserves full take-off run (TORA) on the opposite runway direction.",
+                              "cards": [
+                                        {
+                                                  "tag": "Landing Distance",
+                                                  "heading": "LDA Reduced to 2,680m",
+                                                  "text": "Landing threshold displaced forward by 320m to clear the excavation zone. Aircraft must touch down beyond the worksite."
+                                        },
+                                        {
+                                                  "tag": "Overrun Protection",
+                                                  "heading": "Temporary 120m RESA",
+                                                  "text": "A certified 120m by 90m Runway End Safety Area is established in lieu of the standard 240m buffer, exceeding Code 4 minimums."
+                                        },
+                                        {
+                                                  "tag": "Opposite Direction",
+                                                  "heading": "RWY 08 Overrun ASDA",
+                                                  "text": "Full 3,000m TORA is available on Runway 08 for take-off, but ASDA is capped at 2,680m to protect the western excavation site."
+                                        }
+                              ],
+                              "teacherPrompt": "Discussion: Why can an aircraft take off over a displaced threshold, but cannot land on it? Contrast TORA and LDA."
+                    },
+                    {
+                              "num": "04",
+                              "badge": "04 \u2022 Operational Controls",
+                              "title": "Mandatory Compensatory Safety Measures in Action",
+                              "subtitle": "Strict Weather & Emergency Conditions Governing Modified Operations",
+                              "takeaway": "Compensatory measures are non-negotiable: dry runway only, 15-knot crosswind caps, and dedicated fire service standby.",
+                              "cards": [
+                                        {
+                                                  "tag": "Surface Condition",
+                                                  "heading": "Dry Runway Operation Only",
+                                                  "text": "Nil standing water, slush, or ice. If rain reduces braking action below 'Good', commercial landings on Runway 26 are suspended."
+                                        },
+                                        {
+                                                  "tag": "Wind Limitations",
+                                                  "heading": "15-Knot Crosswind Cap",
+                                                  "text": "Maximum allowable crosswind component is capped at 15 knots to prevent lateral landing deviation on the shortened pavement."
+                                        },
+                                        {
+                                                  "tag": "Emergency Standby",
+                                                  "heading": "RFFS Category 7 on Standby",
+                                                  "text": "Heavy Rapid Intervention Vehicle stationed at Holding Point Bravo, maintaining emergency response times under 60 seconds."
+                                        }
+                              ],
+                              "teacherPrompt": "Ask students: What happens at 14:00 if a sudden heavy rainstorm wets the runway? Who makes the call to suspend operations?"
+                    },
+                    {
+                              "num": "05",
+                              "badge": "05 \u2022 Precision Language",
+                              "title": "Conditional Connecting Language \u2022 Words for Rules",
+                              "subtitle": "Mastering 'Provided that', 'Subject to', 'In lieu of' & 'Notwithstanding'",
+                              "takeaway": "In European aviation safety cases, connecting words establish inescapable legal prerequisites and statutory boundaries.",
+                              "cards": [
+                                        {
+                                                  "tag": "Prerequisite Condition",
+                                                  "heading": "Provided that",
+                                                  "text": "Establishes a mandatory condition: 'Operations are permitted provided that the friction coefficient exceeds 0.50.'"
+                                        },
+                                        {
+                                                  "tag": "Supervisory Condition",
+                                                  "heading": "Subject to",
+                                                  "text": "Subordinates an authorization to oversight: 'Approval is subject to daily joint safety audits between ATC and airport staff.'"
+                                        },
+                                        {
+                                                  "tag": "Approved Substitution",
+                                                  "heading": "In lieu of",
+                                                  "text": "Replaces standard compliance: 'A 120m RESA is established in lieu of the standard 240m recommended buffer.'"
+                                        }
+                              ],
+                              "teacherPrompt": "Pair exercise: Have students practice constructing operational directives using 'provided that' and 'in lieu of' without looking at notes."
+                    },
+                    {
+                              "num": "06",
+                              "badge": "06 \u2022 Dissemination",
+                              "title": "Aeronautical Dissemination & Flight Ops Briefings",
+                              "subtitle": "How Operational Changes Reach Airline Dispatchers & Cockpits",
+                              "takeaway": "AIP Supplements and trigger NOTAMs ensure airline dispatchers calculate accurate landing performance before flight release.",
+                              "cards": [
+                                        {
+                                                  "tag": "Advance Publication",
+                                                  "heading": "AIP Supplement (SUP 014/24)",
+                                                  "text": "Published 28 days in advance to update airline flight management computers (FMC) and navigation chart databases."
+                                        },
+                                        {
+                                                  "tag": "Instant Notice",
+                                                  "heading": "Class 1 Trigger NOTAM",
+                                                  "text": "Promulgated globally via AFTN, detailing the 320m displaced threshold, recalculated distances, and dry-runway rules."
+                                        },
+                                        {
+                                                  "tag": "Crew Coordination",
+                                                  "heading": "Flight Ops Briefing Package",
+                                                  "text": "Airline dispatchers brief flight crews on modified performance calculations, ensuring full operational awareness."
+                                        }
+                              ],
+                              "teacherPrompt": "Wrap-up question: An international flight is inbound from London Heathrow. Where and when does the pilot learn about the displaced threshold?"
+                    }
+          ]
+}
       },
       "4": {
         "session": 4,
