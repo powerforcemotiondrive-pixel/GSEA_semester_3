@@ -141,6 +141,95 @@
     "sessions": {
       "1": {
         "session": 1,
+        "overview": {
+                  "intro": "Welcome to Session 1 of Technical English on Regulatory Documentation! This opening session trains GSEA students to navigate authentic European civil aviation regulations (EASA Easy Access Rules for Aerodromes — Part-ADR.OPS) with confidence. You will master the exact legal and operational weight of core modal verbs (shall, must, should, may), explore how European directives govern airside safety and Foreign Object Debris (FOD) control programmes, and learn how to translate dense legal language into clear, spoken ramp directives.",
+                  "whyItMatters": "In European airport operations, modal verbs define the precise legal obligation of every rule. For TSEEAC airside personnel, safety inspectors, and aerodrome managers, mistaking 'should' (an advisory recommendation) for 'shall' (a mandatory hard law) can result in regulatory breaches, audit non-compliance, or catastrophic runway incidents. Delivering clear, de-nominalized verbal instructions ensures multinational ground crews understand safety responsibilities immediately.",
+                  "keyTerms": [
+                            {
+                                      "term": "Hard Law (Cover Regulation)",
+                                      "ipa": "/hɑːd lɔː/",
+                                      "definition": "Mandatory European implementing rules (using 'shall', 'shall not', or 'must') where non-compliance constitutes a direct legal breach."
+                            },
+                            {
+                                      "term": "Acceptable Means of Compliance (AMC)",
+                                      "ipa": "/əkˈsept.ə.bl̩ miːnz əv kəmˈplaɪ.əns/",
+                                      "definition": "Standard technical specifications and advisory procedures (using 'should'); alternative means (AltMOC) require formal safety justification and authority validation."
+                            },
+                            {
+                                      "term": "Guidance Material (GM)",
+                                      "ipa": "/ˈɡaɪ.dəns məˈtɪə.ri.əl/",
+                                      "definition": "Non-binding explanatory text, illustrative practical examples, or statutory permissions (using 'may' or 'can') to assist aerodrome compliance."
+                            },
+                            {
+                                      "term": "Derogation",
+                                      "ipa": "/ˌder.əˈɡeɪ.ʃən/",
+                                      "definition": "A formal, authorized statutory exemption or exception to an otherwise mandatory regulatory rule granted by the competent authority."
+                            },
+                            {
+                                      "term": "Pursuant to",
+                                      "ipa": "/pəˈsjuː.ənt tuː/",
+                                      "definition": "Formal legal phrase meaning 'in accordance with' or 'following the specific requirements of' an EU article or regulatory subpart."
+                            },
+                            {
+                                      "term": "Without prejudice to",
+                                      "ipa": "/wɪˈðaʊt ˈpredʒ.ə.dɪs tuː/",
+                                      "definition": "Legal phrasing meaning that a specific local rule or exception does not alter, restrict, or invalidate existing safety requirements elsewhere."
+                            },
+                            {
+                                      "term": "Consolidated Version",
+                                      "ipa": "/kənˈsɒl.ɪ.deɪ.tɪd ˈvɜː.ʃən/",
+                                      "definition": "An officially merged updated regulatory text incorporating the basic regulation alongside all subsequent amendments and revisions."
+                            },
+                            {
+                                      "term": "Competent Authority",
+                                      "ipa": "/ˈkɒm.pɪ.tənt ɔːˈθɒr.ə.ti/",
+                                      "definition": "The official national or European oversight body responsible for aerodrome certification and inspection (e.g. DSAC/DGAC in France, EASA in Europe)."
+                            },
+                            {
+                                      "term": "Foreign Object Debris (FOD)",
+                                      "ipa": "/ˈfɒr.ən ˈɒb.dʒɪkt ˈdeb.riː/",
+                                      "definition": "Any loose item, substance, or contaminant on airside movement areas that has the potential to cause structural damage to aircraft."
+                            },
+                            {
+                                      "term": "De-Nominalization",
+                                      "ipa": "/diːˌnɒm.ɪ.nəl.aɪˈzeɪ.ʃən/",
+                                      "definition": "Converting passive, noun-heavy legal phrasing ('Implementation of inspection shall be conducted') into direct, active spoken operational English ('Ground crews must inspect')."
+                            }
+                  ],
+                  "speakingTask": {
+                            "title": "Authentic EASA Document Workshop • 'Spot the Compliance Bug'",
+                            "instructions": "This extension activity provides authentic regulatory practice. Open the official EASA PDF extract below. Working in pairs or trios, Student A reviews the authentic EASA clauses while Student B challenges potential discrepancies in legal weight (shall vs. should), factual numbers (e.g. speed limits or reporting deadlines), and operational duties. Conclude with a 2-minute spoken summary.",
+                            "document": {
+                                      "title": "EASA Class 1 Document Extract: Part-ADR.OPS (Apron Safety & FOD)",
+                                      "subtitle": "Official ENAC / DGAC Training Handout • Authentic Regulatory Language & Activity Cards",
+                                      "filename": "GSEA_S3_M1_S1_Regulatory_Documentation.pdf",
+                                      "path": "docs/GSEA_S3_M1_S1_Regulatory_Documentation.pdf",
+                                      "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
+                            },
+                            "requirements": [
+                                      "Use at least 4 of today's 10 technical terms (e.g., Hard Law, AMC, Competent Authority, Derogation).",
+                                      "Identify the critical modal anchor ('shall', 'should', or 'may') and justify why it matters operationally.",
+                                      "Ensure both partners actively speak during your 2-minute summary or pair debate."
+                            ],
+                            "checkingPhrases": [
+                                      "\"Hold on, did you say SHALL or SHOULD?\"",
+                                      "\"Wait, did you say 2 hours or 24 hours?\"",
+                                      "\"Stop there—did you say MAY or MUST NOT?\"",
+                                      "\"Let's check the exact clause in Subpart ADR.OPS.B...\""
+                            ],
+                            "statements": {
+                                      "group1": "Ramp collisions and apron vehicle incidents are driven by turnaround time pressure rather than a lack of EASA regulatory knowledge.",
+                                      "group2": "Allowing airports to propose Alternative Means of Compliance (AltMOC) creates safety risks because different hubs interpret 'acceptable' differently.",
+                                      "group3": "Passive, nominalized safety directives cause operational non-compliance on the ramp because ground crews cannot identify who is responsible for action."
+                            },
+                            "usefulPhrases": [
+                                      "Under Subpart ADR.OPS.B, the mandatory requirement is...",
+                                      "The critical modal anchor here is 'shall', which indicates an inescapable obligation...",
+                                      "In our operational opinion, changing this rule from AMC to Hard Law would...",
+                                      "To summarise our pair's assessment of this safety case..."
+                            ]
+                  }
+        },
         "objectives": {
           "title": "Session 1 Objectives - EASA Rules & Modal Precision",
           "summary": "By the end of this session, GSEA students will be able to navigate dense airport regulations with confidence, identify the critical differences in spoken authority between mandatory rules (shall/must), recommendations (should), and permissions (may/can), decode formal bureaucratic jargon into plain English, transform heavy written passive text into clear spoken ramp instructions, actively catch compliance errors in peer speech, and successfully role-play an obstacle safety negotiation.",
