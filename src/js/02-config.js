@@ -5,9 +5,9 @@
           s1: "Session 1 - EASA Rules & Modal Precision",
           s2: "Session 2 - Safety Alerts & Ramp Briefings",
           s3: "Session 3 - Special Requests & Runway Safety Cases",
-          s4: "Session 4 - Aerodrome Ground Layouts & Taxiway Navigation",
-          s5: "Session 5 - Airspace Corridors: SIDs, STARs & Transition Routes",
-          s6: "Session 6 - Approach Plates: Final Corridors & Go-Around Paths"
+          s4: "Session 4 - Ground Inspection & Audit Findings",
+          s5: "Session 5 - Multi-Source Incident Investigation & Root Cause Analysis",
+          s6: "Session 6 - The Corrective Action Plan (CAP) & Lesson 7 Prep"
         },
         2: {
           s1: "Session 1 - Aerodynamics & Flight Principles",
@@ -171,7 +171,7 @@
           {
             id: 1,
             name: "Module 1",
-            subtitle: "Documents & Maps",
+            subtitle: "EASA Regulations & Safety Cases",
             supertitle: "GSEA AT SEMESTER 3 - MODULE 1: DOCUMENTS & MAPS",
             ...AAS_MODULE_THEMES[1],
             pages: createModulePages(1, 'aas')

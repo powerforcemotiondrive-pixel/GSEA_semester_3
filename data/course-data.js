@@ -3477,783 +3477,780 @@
       },
       "4": {
         "session": 4,
+        "overview": {
+          "intro": "Welcome to Session 4 of Technical English on Ground Inspection & Audit Findings! This session trains GSEA students to bridge the gap between physical airfield walkarounds and formal regulatory reporting under Regulation (EU) No 139/2014 Part-ADR.AR.C.055. You will learn to categorize non-compliances into Level 1 (immediate operational hazard) and Level 2 (systemic issue requiring a 30-day corrective action plan), use past modal deductions (must have, could have, should have) to deduce how defects occurred, and deliver crisp 2-minute oral audit debriefs to airport executives.",
+          "whyItMatters": "Airside safety oversight is not just filling out paperwork\u2014it is an active defense against runway incursions, apron fires, and catastrophic engine failures. When an aerodrome inspector notices an uncontained fuel puddle flowing towards an apron drain, overgrown airfield grass hiding runway guard lights, or loose lockwire in a staging area, they must accurately classify the operational risk and explain the root cause clearly in spoken English. Mastering past modal deductions allows technical officers to reconstruct causal chains and communicate urgent safety decisions without ambiguity.",
+          "keyTerms": [
+                    {
+                              "term": "Level 1 Finding",
+                              "ipa": "/\u02c8lev.l\u0329 w\u028cn \u02c8fa\u026an.d\u026a\u014b/",
+                              "definition": "A critical non-compliance with aerodrome safety standards that lowers safety or seriously hazards aircraft operations, requiring immediate operational restriction."
+                    },
+                    {
+                              "term": "Level 2 Finding",
+                              "ipa": "/\u02c8lev.l\u0329 tu\u02d0 \u02c8fa\u026an.d\u026a\u014b/",
+                              "definition": "A non-compliance with aerodrome specifications or procedures that could lower safety if uncorrected, requiring a formal 30-day Corrective Action Plan."
+                    },
+                    {
+                              "term": "Non-Conformance",
+                              "ipa": "/\u02ccn\u0252n.k\u0259n\u02c8f\u0254\u02d0.m\u0259ns/",
+                              "definition": "A documented failure to meet a specific technical specification, statutory regulation, or certified aerodrome manual procedure."
+                    },
+                    {
+                              "term": "Corrective Action Plan (CAP)",
+                              "ipa": "/k\u0259\u02c8rek.t\u026av \u02c8\u00e6k.\u0283\u0259n pl\u00e6n/",
+                              "definition": "A formal documented schedule submitted by the aerodrome operator detailing specific actions, responsible persons, and deadlines to resolve an audit finding."
+                    },
+                    {
+                              "term": "Past Modal Deduction",
+                              "ipa": "/p\u0251\u02d0st \u02c8m\u0259\u028a.d\u0259l d\u026a\u02c8d\u028ck.\u0283\u0259n/",
+                              "definition": "A spoken grammatical construction (must have, could have, should have + past participle) used by inspectors to deduce how an airfield incident or defect occurred."
+                    },
+                    {
+                              "term": "Foreign Object Debris (FOD)",
+                              "ipa": "/\u02c8f\u0252r.\u0259n \u02c8\u0252b.d\u0292\u026akt \u02c8deb.ri\u02d0/",
+                              "definition": "Any loose item, metal lockwire, baggage tag, or gravel on an apron or taxiway capable of damaging aircraft tires or being ingested into jet engines."
+                    },
+                    {
+                              "term": "Runway Guard Lights (RGL)",
+                              "ipa": "/\u02c8r\u028cn.we\u026a \u0261\u0251\u02d0d la\u026ats/",
+                              "definition": "Elevated or in-pavement yellow alternating flasher fixtures (wig-wags) positioned at taxiway holding positions to warn flight crews before entering an active runway."
+                    },
+                    {
+                              "term": "Containment Boom",
+                              "ipa": "/k\u0259n\u02c8te\u026an.m\u0259nt bu\u02d0m/",
+                              "definition": "A portable floating or weighted barrier deployed on apron pavement to block fuel spills from reaching stormwater drains or unsealed soil."
+                    },
+                    {
+                              "term": "Unpaved Runway Strip",
+                              "ipa": "/\u028cn\u02c8pe\u026avd \u02c8r\u028cn.we\u026a str\u026ap/",
+                              "definition": "The prepared grassy ground area bordering runways and taxiways which must be kept mowed (maximum 200 mm height) to prevent obscuring optical lighting."
+                    },
+                    {
+                              "term": "Audit Observation",
+                              "ipa": "/\u02c8\u0254\u02d0.d\u026at \u02cc\u0252b.z\u0259\u02c8ve\u026a.\u0283\u0259n/",
+                              "definition": "A factual statement of operational reality recorded by an airside safety inspector during an audit walkaround, supported by photographic or measured evidence."
+                    }
+          ],
+          "speakingTask": {
+                    "title": "Authentic EASA Task \u2022 Photo-Audit Challenge & 3-Bullet Debrief",
+                    "instructions": "Working in pairs or trios, open the authentic EASA Airfield Audit Report (EASA/ADR-INSP/2024-012) below. Each group reviews one physical non-conformance exhibit, uses past modal deductions (must have, could have, should have) to determine how the failure occurred, and delivers a concise 2-minute oral audit debrief to the Airport Director.",
+                    "document": {
+                              "title": "EASA Airfield Audit & Ground Inspection Report: Non-Conformance Findings",
+                              "subtitle": "Point ADR.AR.C.055 Audit Observations \u2022 Fuel Spills, RGL Obscuration & FOD Control",
+                              "filename": "GSEA_S3_M1_S4_EASA_Airfield_Audit_Report.pdf",
+                              "path": "docs/GSEA_S3_M1_S4_EASA_Airfield_Audit_Report.pdf",
+                              "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
+                    },
+                    "requirements": [
+                              "Use at least 4 of today's 10 technical terms from the list above.",
+                              "Formulate at least two clear past modal deductions (must have / could have / should have + past participle).",
+                              "Deliver a structured 3-bullet formal oral debrief (Finding & Location, Root Cause Deduction, Immediate Action & Deadline)."
+                    ],
+                    "statements": {
+                              "group1": "Group 1 Statement (Exhibit 01 \u2022 Stand 14 Fuel Hydrant Spill): Explain why an uncontained 42 m\u00b2 fuel spill flowing toward a storm drain is classified as a Level 1 Finding, and deduce how the deadman valve was jammed.",
+                              "group2": "Group 2 Statement (Exhibit 02 \u2022 Holding Point B2 Obscured Guard Lights): Explain why 650 mm tall overgrown grass obscuring runway guard lights degrades incursion protection, and deduce why maintenance missed this location.",
+                              "group3": "Group 3 Statement (Exhibit 03 \u2022 Stand 12 Missing FOD Stations): Explain how missing magnetic FOD bins and scattered lockwire threaten operating jet engines, and deduce why ground crews left debris on the ramp."
+                    },
+                    "usefulPhrases": [
+                              "Based on the physical evidence on Stand 14, the refueling crew must have failed to...",
+                              "The fuel spill could have entered the water table if...",
+                              "Under Point ADR.AR.C.055, this non-compliance is classified as a Level 1 finding because...",
+                              "The airfield maintenance team should have mowed the grass around Taxiway Bravo 2...",
+                              "To eliminate this immediate hazard, our inspection team has ordered..."
+                    ]
+          },
+          "document": {
+                    "title": "EASA Airfield Audit & Ground Inspection Report: Non-Conformance Findings",
+                    "subtitle": "Point ADR.AR.C.055 Audit Observations \u2022 Fuel Spills, RGL Obscuration & FOD Control",
+                    "filename": "GSEA_S3_M1_S4_EASA_Airfield_Audit_Report.pdf",
+                    "path": "docs/GSEA_S3_M1_S4_EASA_Airfield_Audit_Report.pdf",
+                    "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
+          }
+},
         "objectives": {
-          "title": "Session 4 Objectives - Aerodrome Ground Layouts & Taxiway Navigation",
-          "summary": "By the end of this session, GSEA students will be able to orient someone to an airport map with natural spoken confidence, navigate a visual Ground Movement Chart (GMC), give precise physical directions using prepositions of place, play the 'Blind Taxi Navigator' information-gap game, role-play an active runway crossing taxi clearance, and complete a collaborative Safety Check on runway incursion hazards.",
+          "title": "Session 4 Objectives - Ground Inspection & Audit Findings",
+          "summary": "By the end of this session, GSEA students will be able to distinguish between Level 1 and Level 2 EASA non-conformances, use past modal deductions (must have, could have, should have) to explain how airfield deficiencies occurred, analyze authentic inspection schematics and photos, and deliver a structured 3-bullet oral audit debrief to an airport director.",
           "items": [
-            {
-              "num": 1,
-              "title": "Orient Someone to an Airport Map (Map Description Skill)",
-              "description": "Learn and use natural spoken phrases to introduce an airport layout to a colleague (at the top, running north-to-south, directly opposite, adjacent to).",
-              "part": "Part 1"
-            },
-            {
-              "num": 2,
-              "title": "Read a Visual Ground Movement Chart (Visual Chart Scanning)",
-              "description": "Scan the visual LFMT aerodrome ground movement chart to identify runways, parallel taxiway Alpha, rapid exits Bravo and Charlie, crossing taxiway Delta, and Hot Spot 1.",
-              "part": "Part 2"
-            },
-            {
-              "num": 3,
-              "title": "Prepositions of Place & Physical Directions (Language Focus)",
-              "description": "Master precise location words: adjacent to, opposite, parallel to, between, at the intersection of, short of, and beyond.",
-              "part": "Part 3"
-            },
-            {
-              "num": 4,
-              "title": "Communicative Game: 🎮 The Blind Taxi Navigator (Information-Gap Game)",
-              "description": "Guide your partner from an assigned parking stand to a secret airfield destination using only spoken turn-by-turn physical directions.",
-              "part": "Part 4"
-            },
-            {
-              "num": 5,
-              "title": "Speaking Role-Play: Ground Movement Challenge & 'Lost on Tarmac'",
-              "description": "Role-play a Ground Controller issuing taxi instructions with an active runway crossing, and talk a confused ground driver back to safety.",
-              "part": "Part 5"
-            },
-            {
-              "num": 6,
-              "title": "Safety Check: Preventing Runway Incursions (Operational Discussion)",
-              "description": "Collaborate in teams to analyze a confusing multi-taxiway intersection, evaluate collision risks, and agree on clear safety solutions.",
-              "part": "Part 6"
-            }
+                    {
+                              "num": 1,
+                              "title": "Categorize Audit Observations (EASA Part-ADR.AR.C.055)",
+                              "description": "Distinguish between Level 1 immediate hazards (stand/taxiway restriction) and Level 2 systemic non-compliances (30-day corrective action deadline).",
+                              "part": "Part 1"
+                    },
+                    {
+                              "num": 2,
+                              "title": "Inspect Real Airfield Exhibits (Schematic & Photo Scanning)",
+                              "description": "Scan technical CAD drawings and inspection evidence covering fuel hydrant leaks, obscured runway guard lights, and uncontained ramp FOD.",
+                              "part": "Part 2"
+                    },
+                    {
+                              "num": 3,
+                              "title": "Past Modal Deductions for Root Cause Analysis (Language Focus)",
+                              "description": "Master past modals (must have, could have, should have, can't have + past participle) to reconstruct failure sequences during technical debriefs.",
+                              "part": "Part 3"
+                    },
+                    {
+                              "num": 4,
+                              "title": "The Photo-Audit Speaking Challenge (Collaborative Simulation)",
+                              "description": "Working in pairs or trios, inspect an authentic non-conformance exhibit, formulate spoken deductions, and challenge partner conclusions.",
+                              "part": "Part 4"
+                    },
+                    {
+                              "num": 5,
+                              "title": "Deliver the 3-Bullet Oral Audit Notice (Operational Debrief)",
+                              "description": "Synthesize findings and deliver a professional 2-minute oral briefing addressing the Airport Director with immediate enforcement decisions.",
+                              "part": "Part 5"
+                    }
           ]
-        },
+},
         "lessonPlan": {
-          "title": "Session 4 Lesson Plan (2 Hours)",
-          "summary": "A 2-hour communicative spoken English session covering visual ground chart reading, map orientation skills, prepositions of place, the 'Blind Taxi Navigator' game, a runway crossing role-play, and a runway incursion Safety Check.",
-          "items": [
-            {
-              "title": "Part 1: Warm-up: Navigating on the Ground",
-              "description": "In pairs, students discuss why taxiing at unfamiliar airports is demanding, share personal navigation tricks, and test entry knowledge with 4 spot-check questions.",
-              "part": "Part 1"
-            },
-            {
-              "title": "Part 2: Visual Chart & Map Orientation Clinic",
-              "description": "Analyzing the visual LFMT Ground Movement Chart (GMC), learning standard phrases for orienting colleagues to a map, and completing a 60-second map description challenge.",
-              "part": "Part 2"
-            },
-            {
-              "title": "Part 3: Language Clinic: Prepositions of Place & Directions",
-              "description": "Oral drills and pair practice using prepositions of place (adjacent to, opposite, parallel to, between, at the intersection of, short of, beyond) to give crisp physical directions.",
-              "part": "Part 3"
-            },
-            {
-              "title": "Part 4: Communicative Game: 🎮 The Blind Taxi Navigator",
-              "description": "Information-gap partner game: Student A guides Student B across the airport to a secret destination using step-by-step spoken directions while Student B traces the route.",
-              "part": "Part 4"
-            },
-            {
-              "title": "Part 5: Speaking Role-Play & Safety Check",
-              "description": "Spoken simulation: Ground Controller issues progressive taxi instructions with an active runway crossing, followed by a 4-step collaborative Safety Check on Hot Spot 1.",
-              "part": "Part 5"
-            }
+          "title": "Session 4 Lesson Plan - Ground Inspection & Audit Findings (2 Hours)",
+          "summary": "A communicative 4-part lesson guiding students from field photo observations to formal audit debriefs using past modal deductions.",
+          "parts": [
+                    {
+                              "num": "Part 1",
+                              "title": "Ramp Observation Warm-Up & Finding Classification",
+                              "description": "Activate background knowledge on airside safety walkarounds; establish the statutory distinction between Level 1 critical hazards and Level 2 systemic findings under Part-ADR.AR.C.055."
+                    },
+                    {
+                              "num": "Part 2",
+                              "title": "Analyzing Field Inspection Exhibits & Technical CAD Schematics",
+                              "description": "Students inspect three real-world inspection exhibits (Stand 14 fuel spill, Taxiway B2 obscured guard lights, Stand 12 missing FOD bins), identifying cited rules and physical evidence."
+                    },
+                    {
+                              "num": "Part 3",
+                              "title": "Grammar Clinic \u2022 Past Modal Deductions for Root Cause Analysis",
+                              "description": "Focus on expressing deduction and certainty about past events using must have, could have, should have, and can't have + past participle."
+                    },
+                    {
+                              "num": "Part 4",
+                              "title": "Photo-Audit Spoken Debrief Challenge & 3-Bullet Executive Notice",
+                              "description": "Teams synthesize their assigned finding, deduce root causes, agree on immediate mitigations, and deliver a formal 2-minute spoken briefing to the Airport Director."
+                    }
           ]
-        },
+},
         "lessonContent": {
           "hero": {
-            "title": "Aerodrome Ground Layouts & Taxiway Navigation",
-            "subtitle": "Visual Ground Movement Charts (GMC), Map Orientation, Prepositions of Place & 'Blind Taxi Navigator' Game",
-            "image": "images/s3_m1_session4_aerodrome.jpg",
-            "targetLevel": "CEFR B1–B2",
-            "roleContext": "GSEA Student Training • Aerodrome Ground Operations & Technical English",
-            "duration": "120 Minutes"
+                    "title": "Ground Inspection & Audit Findings (Field to Report)",
+                    "subtitle": "Translating Airfield Non-Conformities into Spoken Technical Debriefs",
+                    "context": "Airside operations inspectors conduct daily walkarounds of aprons, taxiways, and holding positions. When physical defects or unsafe handling behaviors are discovered, inspectors must accurately classify the finding under EASA Part-ADR.AR.C.055, deduce how the failure occurred using past modals, and verbally brief airport leadership on immediate corrective actions.",
+                    "image": "images/s3_m1_session4_banner.jpg",
+                    "targetLevel": "CEFR B1\u2013B2",
+                    "roleContext": "Airside Safety Inspector / Aerodrome Auditor"
           },
           "openingSession": {
-            "title": "Activity 1: Warm-up & Entry Spot-Check",
-            "summary": "Break the ice, discuss the challenges of ground navigation at major airports, and test your baseline knowledge of aerodrome ground markings.",
-            "modeBadges": [
-              "Pairs (2 students)",
-              "Spoken Discussion"
-            ],
-            "instructions": [
-              "In pairs, discuss the 3 opening questions about navigating airports on the ground.",
-              "Read each of the 4 Entry Spot-Check questions below and discuss your answers together.",
-              "Click 'Reveal Answer' to check your reasoning and see the plain English explanation."
-            ],
-            "deliverable": "Shared agreement on 2 common ground taxi challenges and completed 4-question diagnostic.",
-            "teacherNotes": "Encourage spontaneous speaking. Help students describe physical spaces and relative directions naturally in English without worrying about technical jargon.",
-            "newsPrompts": [
-              {
-                "id": 1,
-                "question": "Why do pilots often say taxiing at a large international airport can be more stressful than flying?",
-                "exampleAnswers": [
-                  "In my opinion, it is because airports like Paris Charles de Gaulle or London Heathrow have dozens of intersecting taxiways, constant radio calls, construction zones, and tight turns.",
-                  "Also, from the cockpit, visibility of ground markings can be limited, especially at night or in heavy rain and fog. One wrong turn can lead right onto an active runway."
-                ],
-                "part": "Part 1"
-              },
-              {
-                "id": 2,
-                "question": "When you look at an airport map, how do you quickly distinguish between a runway and a taxiway?",
-                "exampleAnswers": [
-                  "Runways always have numbers based on their magnetic heading (like 14L or 32R) and white centerline markings, while taxiways use single letters (like Alpha or Bravo) and yellow centerlines.",
-                  "Also, runways are generally wider and longer with bright approach lights, whereas taxiways have blue edge lights and green centerlines."
-                ],
-                "part": "Part 2"
-              },
-              {
-                "id": 3,
-                "question": "What is the single most important rule when an aircraft approaches an active runway holding point?",
-                "exampleAnswers": [
-                  "The pilot must stop completely before the solid yellow line and hold short until receiving explicit, clear permission from the tower controller to enter or cross.",
-                  "Even if the runway looks empty, crossing without a clearance is a dangerous runway incursion."
-                ],
-                "part": "Part 3"
-              }
-            ],
-            "spotCheckQuestions": [
-              {
-                "id": 1,
-                "question": "What does a taxiway holding position marking (Pattern A) look like on the ground?",
-                "options": [
-                  "A single dashed white line across the tarmac.",
-                  "Two solid yellow lines and two dashed yellow lines across the taxiway.",
-                  "A red square with white numbers.",
-                  "A solid green circle painted in the middle of the apron."
-                ],
-                "correct": 1,
-                "explanation": "Pattern A consists of two solid yellow lines and two dashed yellow lines. When taxiing towards a runway, you face the solid lines first and you must NEVER cross them without ATC clearance.",
-                "part": "Part 1"
-              },
-              {
-                "id": 2,
-                "question": "What does the term 'Hold Short' mean in plain, everyday English?",
-                "options": [
-                  "Speed up to clear the runway quickly.",
-                  "Turn around immediately and return to the parking stand.",
-                  "Stop completely before the specified line or runway and wait for further instructions.",
-                  "Pause for five seconds and then continue taxiing."
-                ],
-                "correct": 2,
-                "explanation": "'Hold short' means stop completely before reaching the designated point and do not move forward until you receive clear, explicit permission.",
-                "part": "Part 2"
-              },
-              {
-                "id": 3,
-                "question": "Why are some taxiways called 'Rapid Exit' or 'High-Speed' taxiways?",
-                "options": [
-                  "They are reserved exclusively for emergency fire vehicles.",
-                  "They are connected to the runway at an angle (usually 30°) so landing planes can turn off safely at higher speeds, freeing up the runway faster.",
-                  "They allow planes to taxi at 50 knots back to the terminal.",
-                  "They are built downhill so planes roll without using engine thrust."
-                ],
-                "correct": 1,
-                "explanation": "Rapid exit taxiways are angled at approximately 30 degrees, allowing landing aircraft to exit the runway at around 30 to 50 knots, which reduces runway occupancy time.",
-                "part": "Part 3"
-              },
-              {
-                "id": 4,
-                "question": "What is an airport 'Hot Spot' (HS) on an aerodrome chart?",
-                "options": [
-                  "A designated area where aircraft engines overheat in hot weather.",
-                  "A location with free Wi-Fi for passengers on the apron.",
-                  "A specific location on the airport with a history or potential risk of confusion or runway collisions.",
-                  "The official smoking area for ground handling staff."
-                ],
-                "correct": 2,
-                "explanation": "A Hot Spot is a clearly marked location on the airport map where complex geometry, confusing signs, or blind spots create a higher risk of runway incursions.",
-                "part": "Part 4"
-              }
-            ]
+                    "title": "Opening Warm-Up \u2022 Field Observations to Formal Reports",
+                    "instructions": "Discuss these three real-world inspection questions with your partner before opening the official EASA report:",
+                    "questions": [
+                              {
+                                        "num": "01",
+                                        "q": "What is the very first thing an airside inspector should do upon discovering a 40-square-meter fuel puddle near an active storm drain?",
+                                        "hint": "Think about containment vs. reporting hierarchy (stop flow, deploy booms, alert RFFS)."
+                              },
+                              {
+                                        "num": "02",
+                                        "q": "Why does European aviation law distinguish between Level 1 findings (immediate stand closure) and Level 2 findings (30-day corrective deadline)?",
+                                        "hint": "Consider the difference between an immediate flight hazard and an administrative/maintenance flaw."
+                              },
+                              {
+                                        "num": "03",
+                                        "q": "How does using past modals ('The driver must have forgotten...', 'The fuel could have reached...') help safety engineers conduct fair root-cause analysis without premature blame?",
+                                        "hint": "Notice how modals express logical deduction based on physical clues rather than personal accusations."
+                              }
+                    ],
+                    "teacherPrompt": "Encourage students to speak freely using everyday words. Ask: Have you ever seen a fuel spill or overgrown grass at an airport? What was the immediate risk?"
           },
-          "chartExtract": {
-            "title": "Activity 2: Visual Chart & Map Orientation Clinic",
-            "summary": "Inspect the visual Ground Movement Chart (LFMT) and learn natural spoken patterns to walk a colleague through an aerodrome layout.",
-            "visualChart": "images/charts/chart_s4_gmc_lfmt.svg",
-            "badge": "AUTHENTIC SIMULATION • LFMT GROUND MOVEMENT CHART",
-            "callsign": "Blagnac-Montpellier Airport (LFMT / Elev 495 ft)",
-            "mapDescriptionClinic": {
-              "title": "Speaking Skill: How to Orient & Describe an Airport Map",
-              "summary": "Use these natural spoken templates to introduce an airport layout clearly without hesitations:",
-              "phrases": [
-                {
-                  "label": "Overall Orientation",
-                  "phrase": "If you look at the overall layout, the airport is oriented northwest to southeast, with two parallel runways.",
-                  "part": "Part 1"
-                },
-                {
-                  "label": "Main Runway",
-                  "phrase": "The primary runway is 14L/32R on the east side, spanning 3,500 metres with full CAT III ILS capability.",
-                  "part": "Part 2"
-                },
-                {
-                  "label": "Parallel Taxiway",
-                  "phrase": "Running parallel to Runway 14L along its entire eastern edge is Taxiway Alpha.",
-                  "part": "Part 3"
-                },
-                {
-                  "label": "Terminals & Stands",
-                  "phrase": "Over on the southwest side, you can see Apron North with the passenger terminal and Stands 1 through 16.",
-                  "part": "Part 4"
-                },
-                {
-                  "label": "Opposite Facilities",
-                  "phrase": "Directly opposite the terminal on the western boundary is the cargo ramp, while the fire station sits adjacent to Apron North.",
-                  "part": "Part 5"
-                },
-                {
-                  "label": "Caution Areas",
-                  "phrase": "Notice Hot Spot 1 at the junction of Alpha and Delta, where crossing vehicles create an incursion risk.",
-                  "part": "Part 6"
-                }
-              ],
-              "challenge": "Partner Challenge: Take turns giving your partner a 60-second spoken overview of the LFMT layout using at least 4 of the phrases above!"
-            },
-            "sections": [
-              {
-                "heading": "1. Runway Infrastructure & Orientation",
-                "details": [
-                  "Primary Runway 14L/32R: Length 3,500m, Width 45m, Asphalt surface, CAT III ILS equipped, lighted centerline.",
-                  "Secondary Runway 14R/32L: Length 2,500m, Width 45m, Visual/Non-precision, separated from 14L by 380 metres.",
-                  "Operational rule: Runway 14L is used for commercial jet departures and arrivals; Runway 14R is used for general aviation and maintenance flights."
-                ],
-                "part": "Part 1"
-              },
-              {
-                "heading": "2. Taxiway Network & Designations",
-                "details": [
-                  "Taxiway Alpha (A): Main parallel taxiway running parallel to Runway 14L along its eastern side.",
-                  "Taxiway Bravo (B): High-speed rapid exit taxiway connected at 30° to Runway 14L, 1,800m from threshold.",
-                  "Taxiway Charlie (C): Second high-speed exit connected at 30° to Runway 14L, 2,400m from threshold.",
-                  "Taxiway Delta (D): 90-degree crossing taxiway connecting Apron North across Runway 14R to Taxiway Alpha.",
-                  "Taxiway Echo (E): End-around perimeter taxiway leading to the Runway 14L departure holding bay."
-                ],
-                "part": "Part 2"
-              },
-              {
-                "heading": "3. Aprons, Stands & Facilities",
-                "details": [
-                  "Apron North: Commercial passenger terminal with Stands 1 to 16. Stand 14 is equipped with an airbridge.",
-                  "Cargo Ramp: Situated on the western boundary, opposite the main passenger terminal.",
-                  "De-icing Pad: Positioned between Taxiway Bravo and the maintenance hangar.",
-                  "Fire & Rescue Station: Located adjacent to Apron North with direct emergency access to both runways."
-                ],
-                "part": "Part 3"
-              },
-              {
-                "heading": "4. Holding Points & Hot Spots",
-                "details": [
-                  "Holding Point A1: Located at the threshold of Runway 14L; CAT I/II/III illuminated stop bars installed.",
-                  "Holding Point D1: Located short of Runway 14R on Taxiway Delta; mandatory stop line.",
-                  "Hot Spot 1 (HS1): Complex intersection of Taxiway Alpha, Delta, and apron taxilane where ground vehicles cross aircraft routes.",
-                  "Hot Spot 2 (HS2): Intersection of Taxiway Delta and Runway 14R where line of sight from the control tower is partially obstructed during morning mist."
-                ],
-                "part": "Part 4"
-              }
-            ]
+          "documentExtract": {
+                    "title": "Activity 1: EASA Field Audit Dossier & Inspection Exhibits",
+                    "badge": "Official Oversight Record \u2022 EASA/ADR-INSP/2024-012",
+                    "summary": "Review the three field audit exhibits documented during the comprehensive airside inspection of St. Exup\u00e9ry International Aerodrome (LFSE):",
+                    "exhibits": [
+                              {
+                                        "id": "FIND-01",
+                                        "level": "Level 1 Finding",
+                                        "levelClass": "text-red-700 bg-red-50 border-red-200",
+                                        "location": "Stand 14 (Widebody Ramp)",
+                                        "rule": "Point ADR.OPS.B.010 & ADR.OPS.B.025",
+                                        "title": "Jet A-1 Fuel Hydrant Servicing Spill near Storm Drain",
+                                        "facts": "A 42 m\u00b2 uncontained kerosene pool was expanding across Stand 14 concrete pavement, within 8.2 meters of an unsealed stormwater drain inlet. The deadman handle was mechanically jammed with wire, and refueling crew had departed without deploying absorbent booms.",
+                                        "enforcement": "Immediate stand closure enacted; aircraft boarding halted until RFFS washdown and boom containment confirmed."
+                              },
+                              {
+                                        "id": "FIND-02",
+                                        "level": "Level 2 Finding",
+                                        "levelClass": "text-amber-800 bg-amber-50 border-amber-200",
+                                        "location": "Taxiway Bravo 2 (Runway 08L Holding Point)",
+                                        "rule": "CS-ADR-DSN.M.710 & Point ADR.OPS.B.015",
+                                        "title": "Obscured Runway Guard Lights (Wig-Wags)",
+                                        "facts": "Elevated Configuration A flashing yellow guard lights were obscured by unmaintained wild grasses reaching 650 mm in height (maximum certified limit is 200 mm). Beam visibility was degraded by an estimated 60% during dusk taxiing.",
+                                        "enforcement": "30-day Corrective Action Plan issued; groundskeeping team dispatched for emergency grass cutting within 24 hours."
+                              },
+                              {
+                                        "id": "FIND-03",
+                                        "level": "Level 2 Finding",
+                                        "levelClass": "text-amber-800 bg-amber-50 border-amber-200",
+                                        "location": "Stand 12 Equipment Staging Area (ESA)",
+                                        "rule": "Point ADR.OPS.B.016 & CS-ADR-DSN.Q.850",
+                                        "title": "Missing Covered Magnetic FOD Receptacles",
+                                        "facts": "The mandatory covered magnetic FOD bin was absent from a high-traffic GSE parking staging zone. Inspectors discovered loose metallic lockwire offcuts, sheared bolt heads, and baggage tags scattered within 12 meters of active aircraft engine intake danger zones.",
+                                        "enforcement": "30-day CAP issued; immediate ground sweep completed; permanent magnetic bin re-installation required within 7 days."
+                              }
+                    ]
           },
-          "grammarClinic": {
-            "title": "Activity 3: Language Clinic: Prepositions of Place & Physical Directions",
-            "summary": "Master clear position words and direction-giving phrases to describe airport facilities with precision.",
-            "rules": [
-              {
-                "term": "parallel to",
-                "meaning": "Running alongside in the same direction at an equal distance.",
-                "example": "Taxiway Alpha runs parallel to Runway 14L on its eastern side.",
-                "part": "Part 1"
-              },
-              {
-                "term": "adjacent to",
-                "meaning": "Very close or next to something, often sharing a boundary.",
-                "example": "The airport fire station is located adjacent to Apron North.",
-                "part": "Part 2"
-              },
-              {
-                "term": "opposite",
-                "meaning": "Directly across from something, facing it.",
-                "example": "The cargo ramp is directly opposite the passenger terminal.",
-                "part": "Part 3"
-              },
-              {
-                "term": "between ... and ...",
-                "meaning": "In the middle space separating two objects or locations.",
-                "example": "The de-icing pad is located between Taxiway Bravo and the hangar.",
-                "part": "Part 4"
-              },
-              {
-                "term": "at the intersection of",
-                "meaning": "At the point where two or more paths, roads, or taxiways cross.",
-                "example": "Hot Spot 1 is located at the intersection of Taxiway Alpha and Taxiway Delta.",
-                "part": "Part 5"
-              },
-              {
-                "term": "short of",
-                "meaning": "Stopping before reaching a specific point, line, or boundary.",
-                "example": "Air France 412, hold short of Runway 14R on Taxiway Delta.",
-                "part": "Part 6"
-              },
-              {
-                "term": "beyond",
-                "meaning": "Further away than a specified point or boundary.",
-                "example": "The blast pad extends 150 metres beyond the threshold of Runway 32R.",
-                "part": "Part 7"
-              }
-            ],
-            "drills": [
-              {
-                "id": 1,
-                "prompt": "Where is the main fire station located relative to Apron North?",
-                "targetAnswer": "The fire station is located adjacent to Apron North, giving emergency vehicles direct access to both runways.",
-                "part": "Part 1"
-              },
-              {
-                "id": 2,
-                "prompt": "Where does Taxiway Alpha lie relative to Runway 14L?",
-                "targetAnswer": "Taxiway Alpha runs parallel to Runway 14L along its entire eastern length.",
-                "part": "Part 2"
-              },
-              {
-                "id": 3,
-                "prompt": "Where is the cargo ramp situated relative to the passenger terminal?",
-                "targetAnswer": "The cargo ramp is situated on the west side of the airfield, directly opposite the main passenger terminal.",
-                "part": "Part 3"
-              },
-              {
-                "id": 4,
-                "prompt": "Where should an aircraft stop when taxiing on Delta towards Runway 14R?",
-                "targetAnswer": "The aircraft must hold short of Runway 14R at holding point D1 until cleared to cross.",
-                "part": "Part 4"
-              },
-              {
-                "id": 5,
-                "prompt": "Where is Hot Spot 1 located on the aerodrome chart?",
-                "targetAnswer": "Hot Spot 1 is located right at the intersection of Taxiway Alpha and Taxiway Delta.",
-                "part": "Part 5"
-              }
-            ]
+          "rulesPractice": {
+                    "title": "Activity 2: Grammar Clinic \u2022 Past Modal Deductions for Root Cause Analysis",
+                    "summary": "When investigating how an airfield deficiency occurred, safety engineers use past modals to deduce causes based on physical evidence:",
+                    "formula": "Modal Verb (must / could / should / can't) + HAVE + Past Participle (V3)",
+                    "rules": [
+                              {
+                                        "modal": "must have + V3",
+                                        "meaning": "95% certainty: Logical deduction based on strong physical proof.",
+                                        "example": "The bowser driver <strong>must have jammed</strong> the deadman valve with wire to avoid holding it manually."
+                              },
+                              {
+                                        "modal": "could have + V3",
+                                        "meaning": "Possibility / Alternative outcome that did not happen.",
+                                        "example": "The fuel spill <strong>could have entered</strong> the municipal drainage system if the inspector had arrived 10 minutes later."
+                              },
+                              {
+                                        "modal": "should have + V3",
+                                        "meaning": "Unfulfilled obligation / Best practice that was neglected.",
+                                        "example": "The groundskeeping crew <strong>should have mowed</strong> the grass around Taxiway Bravo 2 during their bi-weekly cycle."
+                              },
+                              {
+                                        "modal": "can't have + V3",
+                                        "meaning": "Impossibility: Logical deduction that an event was impossible.",
+                                        "example": "The flight crew <strong>can't have seen</strong> the yellow flasher beam through the dense 650 mm tall vegetation."
+                              }
+                    ],
+                    "trap": "Common Trap: Do NOT use 'must of' or 'should of'. Always use 'must HAVE' + past participle (*must have failed*, *should have cleaned*).",
+                    "practiceItems": [
+                              {
+                                        "prompt": "1. Evidence: Puddle of Jet A-1 is 42 m\u00b2 wide and flowing towards drain. Deduce what the refueling handler failed to do.",
+                                        "model": "The handler <strong>must have failed to monitor</strong> the hose coupling during the fuel upload."
+                              },
+                              {
+                                        "prompt": "2. Evidence: 650 mm tall weeds around Runway Guard Light fixture. Deduce what the groundskeeping team neglected.",
+                                        "model": "The maintenance team <strong>should have inspected</strong> and mowed the unpaved taxiway strip before grass exceeded 200 mm."
+                              },
+                              {
+                                        "prompt": "3. Evidence: Metallic lockwire lying on apron pavement 10 m from engine intake. Deduce the potential hazard.",
+                                        "model": "An operating turbofan engine <strong>could have ingested</strong> the loose wire and suffered severe compressor blade damage."
+                              },
+                              {
+                                        "prompt": "4. Evidence: Fuel hydrant pit was unattended while active pumping was underway.",
+                                        "model": "The technician <strong>can't have followed</strong> standard apron safety operating procedures."
+                              }
+                    ]
           },
-          "communicativeGame": {
-            "title": "Activity 4: Communicative Game: 🎮 The Blind Taxi Navigator",
-            "summary": "An information-gap spoken game. Guide your partner from your parking stand to a mystery airfield destination using step-by-step oral directions.",
-            "instructions": [
-              "Student A (The Navigator): Pick one of the 4 Secret Missions below (do NOT tell your partner the destination). Look at the visual chart.",
-              "Student B (The Pilot/Driver): Close your eyes or place your finger on the starting point on the chart. Do not look ahead.",
-              "Student A gives clear, step-by-step physical directions: 'Start at Stand 14. Turn right onto Taxiway Delta. Taxi forward 150m until you reach the red holding line...'",
-              "Student B traces the route with their finger. When Student A says 'You have arrived!', Student B must announce where they think they are!",
-              "Switch roles and try another mission."
-            ],
-            "missions": [
-              {
-                "id": 1,
-                "mission": "Mission 1 (Cargo Delivery): Start at Stand 14 &rarr; Target: Cargo Ramp",
-                "hints": "Turn right onto Delta, hold short of 14R, cross runway, turn left onto perimeter taxilane, proceed opposite passenger terminal.",
-                "part": "Part 1"
-              },
-              {
-                "id": 2,
-                "mission": "Mission 2 (Winter De-icing): Start at Stand 16 &rarr; Target: De-icing Bay 2",
-                "hints": "Taxi along Delta, cross Runway 14R, turn left onto Alpha, taxi past Hot Spot 1, turn right into the pad between Bravo and the hangar.",
-                "part": "Part 2"
-              },
-              {
-                "id": 3,
-                "mission": "Mission 3 (Emergency Drill): Start at Fire Station &rarr; Target: Holding Point A1 (Runway 14L)",
-                "hints": "Exit station onto apron taxilane, join Delta, cross 14R, turn left on Alpha, taxi north to holding point A1.",
-                "part": "Part 3"
-              },
-              {
-                "id": 4,
-                "mission": "Mission 4 (Late Departure): Start at Cargo Ramp &rarr; Target: Stand 12 (Main Terminal)",
-                "hints": "Taxi east along perimeter, cross Runway 14R carefully, enter Apron North, park at Stand 12 directly opposite the cargo ramp.",
-                "part": "Part 4"
-              }
-            ],
-            "sampleDialogue": [
-              "Navigator: 'Start at Stand 14 on Apron North. Push back facing east.'",
-              "Pilot: 'Facing east, copied.'",
-              "Navigator: 'Taxi straight ahead on Taxiway Delta for about 150 metres. Look for the red stop bar and hold short of Runway 14R.'",
-              "Pilot: 'Holding short of Runway 14R on Delta.'",
-              "Navigator: 'Cleared across Runway 14R. Cross directly to the opposite side and turn left onto Taxiway Alpha. Pass Hot Spot 1 on your right.'",
-              "Pilot: 'Crossing 14R, turning left onto Alpha.'",
-              "Navigator: 'Continue straight along Alpha for 300 metres. Stop at the intersection before Bravo. Turn right into the paved pad. You have arrived! Where are you?'",
-              "Pilot: 'I am at the De-icing Pad between Taxiway Bravo and the hangar!' (Correct!)"
-            ]
-          },
-          "roleplaySimulation": {
-            "title": "Activity 5: Speaking Role-Play: Ground Movement Challenge & 'Lost on Tarmac'",
-            "summary": "Simulate a realistic spoken interaction between Ground Control and Flight AFR 412, plus a quick recovery dialogue with a lost driver.",
-            "situation": "Part 1: Flight AFR 412 (Airbus A320) is parked at Stand 14 on Apron North. The pilot requests taxi clearance to Runway 14L. The route requires taxiing along Delta, crossing active Runway 14R, joining Taxiway Alpha, and holding short of 14L at A1.\nPart 2 (Spoken Twist): A ground baggage tug driver has taken a wrong turn in thick fog and is lost near Hot Spot 1. Ground Control must give calm, clear directions to guide the tug back to Apron North.",
-            "roles": [
-              {
-                "role": "Role A: Ground Controller",
-                "instructions": "Issue progressive taxi instructions. Give the taxi route: 'Taxi via Delta, hold short of Runway 14R'. When the runway is clear, instruct: 'Cross Runway 14R, taxi via Alpha to holding point A1, Runway 14L'. In Part 2, guide the lost tug driver away from the runway using simple landmarks.",
-                "part": "Part 1"
-              },
-              {
-                "role": "Role B: Airline Pilot (AFR 412) / Lost Tug Driver",
-                "instructions": "In Part 1, call Ground ready to taxi. Read back all instructions completely, especially the runway hold-short command. In Part 2, act as the lost tug driver: describe what you see around you ('I see a red stop bar and a yellow taxiway sign saying Delta') and follow directions.",
-                "part": "Part 2"
-              },
-              {
-                "role": "Role C: Peer Observer & Safety Auditor",
-                "instructions": "Use the checklist below to evaluate your peers. Did the pilot read back 'hold short of Runway 14R'? Did the controller give clear prepositions of place? Was the spoken English natural and confident?",
-                "part": "Part 3"
-              }
-            ],
-            "checklist": [
-              "Controller used clear, unambiguous taxi instructions with correct taxiway names.",
-              "Pilot read back the runway holding point instruction word-for-word ('Hold short of Runway 14R').",
-              "Both speakers used natural, communicative English without long unnatural hesitations.",
-              "Clear direction words (left, right, ahead, opposite) were used to recover the lost driver."
-            ],
-            "phrases": [
-              "Ground, Air France 412, Stand 14, request taxi to Runway 14L.",
-              "Air France 412, taxi via Delta, hold short of Runway 14R.",
-              "Taxi via Delta, hold short of Runway 14R, Air France 412.",
-              "Air France 412, cross Runway 14R, taxi via Alpha to holding point A1.",
-              "Tug 4, do you see the bright fire station lights on your left? Turn left towards the station immediately."
-            ]
+          "spokenActivity": {
+                    "title": "Activity 3: Spoken Team Challenge \u2022 The Photo-Audit Field Briefing",
+                    "instructions": "Divide into pairs or trios. Each group takes one finding exhibit (Group 1: Stand 14 Fuel Spill; Group 2: Holding Point B2 Guard Lights; Group 3: Stand 12 Missing FOD Bins). Complete these steps in English:",
+                    "steps": [
+                              "Step 1: Inspect the CAD schematic and physical evidence in the PDF report.",
+                              "Step 2: Formulate at least 3 past modal deductions explaining how the condition developed.",
+                              "Step 3: Agree on whether the non-compliance is Level 1 or Level 2, citing EASA Part-ADR.AR.C.055.",
+                              "Step 4: Role-play partner: Partner A presents the findings; Partner B acts as the Safety Manager, challenging deductions and asking clarifying questions."
+                    ],
+                    "checkingPrompts": [
+                              "How can you be certain that the driver must have jammed the deadman valve?",
+                              "What makes you classify this as a Level 1 rather than a Level 2 finding?",
+                              "Could the fuel spill have been prevented with automated shut-off sensors?",
+                              "What immediate operational restrictions are you enacting on this aircraft stand?"
+                    ]
           },
           "safetyCheck": {
-            "title": "Activity 6: Safety Check: Preventing Runway Incursions",
-            "summary": "Work in teams to analyze how confusing taxiway intersections lead to runway incursions and decide on practical safety defenses.",
-            "steps": [
-              {
-                "step": 1,
-                "title": "Identify the Hazard",
-                "text": "At Hot Spot 1, Taxiway Delta crosses active Runway 14R at a 90-degree angle. During early morning mist, pilots exiting Apron North have mistaken holding point D1 for an apron taxilane stop line, resulting in two near-incursions in the past 6 months."
-              },
-              {
-                "step": 2,
-                "title": "Evaluate the Operational Risk",
-                "text": "If an aircraft crosses holding point D1 without clearance while a light twin or business jet is on takeoff roll or landing on Runway 14R, a catastrophic high-speed collision could occur."
-              },
-              {
-                "step": 3,
-                "title": "Propose Protective Actions",
-                "text": "1. Install illuminated red stop bars that remain turned on until ATC manually clears the crossing.\n2. Paint enhanced yellow taxiway centerline markings 45 metres prior to holding point D1.\n3. Add flashing yellow runway guard lights (wig-wags) on both sides of the taxiway.\n4. Mandate that Ground Controllers use progressive taxi instructions and always require a full verbal readback."
-              },
-              {
-                "step": 4,
-                "title": "Agree on the Team Decision",
-                "text": "Agree with your team on the two most effective safety improvements and record your conclusions in the Operational Notes section below."
-              }
-            ]
+                    "title": "Activity 4: Operational Safety Check \u2022 Delivering the 3-Bullet Audit Notice",
+                    "instructions": "Synthesize your group's findings and deliver a crisp, 2-minute oral audit debrief addressing the Airport Director. Use this professional 3-bullet template:",
+                    "template": [
+                              "Bullet 1 (Finding & Location): 'Director, our audit team has recorded a [Level 1 / Level 2] non-conformance at [Location] under Point [EASA Standard]...'",
+                              "Bullet 2 (Root Cause Modal Deduction): 'Based on physical evidence, the operator must have... and the condition could have resulted in...'",
+                              "Bullet 3 (Immediate Action & Deadline): 'We have immediately enacted [closure / restriction], and require a formal CAP submitted within [immediate / 30 calendar days].'"
+                    ],
+                    "modelResponse": "Director, our audit team has recorded a Level 1 non-conformance on Stand 14 under Point ADR.OPS.B.010 and B.025. Based on physical evidence, the refueling crew must have jammed the deadman valve with wire and failed to deploy containment booms, which could have contaminated the local water table through the nearby storm drain. We have immediately closed Stand 14 to all aircraft operations, and require a full occurrence report and hydrant recertification before the stand may reopen."
           }
-        },
+},
         "revision": {
-          "title": "Session 4 Revision - Aerodrome Ground Layouts & Taxiway Navigation",
-          "summary": "30 essential operational and ground navigation vocabulary terms for GSEA students covering aerodrome charts, taxiways, holding points, and surface markings.",
+          "title": "Session 4 Vocabulary \u2022 Ground Inspection & Audit Findings",
+          "summary": "30 essential technical terms for GSEA students covering EASA audit findings, apron fuel safety, lighting maintenance, FOD control, and past modal deduction language.",
           "terms": [
-            {
-              "num": "01",
-              "term": "Aerodrome Ground Chart (ADC)",
-              "definition": "An official aeronautical chart showing the layout of runways, taxiways, aprons, and airport buildings.",
-              "part": "Part 1"
-            },
-            {
-              "num": "02",
-              "term": "Ground Movement Chart (GMC)",
-              "definition": "A detailed large-scale chart used by pilots and ground controllers to navigate complex taxiways and apron stands.",
-              "part": "Part 2"
-            },
-            {
-              "num": "03",
-              "term": "Apron (Ramp)",
-              "definition": "A defined area on an airport intended to accommodate aircraft for boarding, loading, refueling, or parking.",
-              "part": "Part 3"
-            },
-            {
-              "num": "04",
-              "term": "Taxiway",
-              "definition": "A defined path on an airport established for the taxiing of aircraft between one part of the aerodrome and another.",
-              "part": "Part 4"
-            },
-            {
-              "num": "05",
-              "term": "Parallel Taxiway",
-              "definition": "A taxiway that runs alongside and parallel to a runway, allowing aircraft to clear the runway quickly.",
-              "part": "Part 5"
-            },
-            {
-              "num": "06",
-              "term": "Rapid Exit Taxiway",
-              "definition": "A taxiway connected to a runway at an acute angle (typically 30°) designed for landing planes to turn off at higher speeds.",
-              "part": "Part 6"
-            },
-            {
-              "num": "07",
-              "term": "Runway Holding Point",
-              "definition": "A designated location on a taxiway where aircraft and vehicles must stop and hold until cleared onto an active runway.",
-              "part": "Part 7"
-            },
-            {
-              "num": "08",
-              "term": "Intermediate Holding Point",
-              "definition": "A designated position on a taxiway for traffic control where an aircraft stops until further instructed by ATC.",
-              "part": "Part 8"
-            },
-            {
-              "num": "09",
-              "term": "Pattern A Holding Line",
-              "definition": "A ground marking with two solid yellow lines and two dashed yellow lines; you must never cross the solid lines toward the runway without clearance.",
-              "part": "Part 9"
-            },
-            {
-              "num": "10",
-              "term": "Pattern B Holding Line",
-              "definition": "A ladder-style ground marking used at CAT II/III precision runway holding positions to protect ILS signals.",
-              "part": "Part 10"
-            },
-            {
-              "num": "11",
-              "term": "Stop Bar",
-              "definition": "A row of red lights across a taxiway showing that traffic must stop; when turned off by ATC, the taxiway is open.",
-              "part": "Part 11"
-            },
-            {
-              "num": "12",
-              "term": "Hot Spot (HS)",
-              "definition": "A location on an aerodrome movement area with a history or potential risk of collision or runway incursion.",
-              "part": "Part 12"
-            },
-            {
-              "num": "13",
-              "term": "Mandatory Instruction Sign",
-              "definition": "A red sign with white lettering indicating a runway entrance, critical area, or prohibited zone.",
-              "part": "Part 13"
-            },
-            {
-              "num": "14",
-              "term": "Location Sign",
-              "definition": "A black sign with yellow lettering identifying the specific taxiway or runway on which the aircraft is currently located.",
-              "part": "Part 14"
-            },
-            {
-              "num": "15",
-              "term": "Direction Sign",
-              "definition": "A yellow sign with black lettering and arrows indicating the designations and directions of intersecting taxiways.",
-              "part": "Part 15"
-            },
-            {
-              "num": "16",
-              "term": "De-icing Pad",
-              "definition": "An area on an apron or taxiway equipped for applying heated de-icing and anti-icing fluids to aircraft.",
-              "part": "Part 16"
-            },
-            {
-              "num": "17",
-              "term": "Holding Bay",
-              "definition": "An area adjacent to a taxiway where aircraft can be held or bypassed to facilitate efficient ground traffic movement.",
-              "part": "Part 17"
-            },
-            {
-              "num": "18",
-              "term": "Displaced Threshold",
-              "definition": "A runway threshold located at a point other than the beginning of the runway, often used when obstacles penetrate approach paths.",
-              "part": "Part 18"
-            },
-            {
-              "num": "19",
-              "term": "Blast Pad",
-              "definition": "A specially surfaced area preceding a runway threshold designed to prevent ground erosion from jet engine blast.",
-              "part": "Part 19"
-            },
-            {
-              "num": "20",
-              "term": "Stopway",
-              "definition": "A defined rectangular area at the end of the takeoff run in which an aircraft can be stopped during an abandoned takeoff.",
-              "part": "Part 20"
-            },
-            {
-              "num": "21",
-              "term": "Clearway",
-              "definition": "A defined rectangular area at the end of the runway over which an aircraft can make part of its initial climb.",
-              "part": "Part 21"
-            },
-            {
-              "num": "22",
-              "term": "Runway Incursion",
-              "definition": "Any occurrence involving the incorrect presence of an aircraft, vehicle, or person on an active runway protected area.",
-              "part": "Part 22"
-            },
-            {
-              "num": "23",
-              "term": "Hold Short",
-              "definition": "An ATC instruction directing a pilot or driver to stop completely before reaching a runway or taxiway and wait.",
-              "part": "Part 23"
-            },
-            {
-              "num": "24",
-              "term": "Progressive Taxi",
-              "definition": "Step-by-step taxi instructions issued by ground control to assist a pilot unfamiliar with the airport layout.",
-              "part": "Part 24"
-            },
-            {
-              "num": "25",
-              "term": "Surface Movement Radar (SMR)",
-              "definition": "Radar equipment specifically designed to detect and display the position of aircraft and vehicles on the airfield surface.",
-              "part": "Part 25"
-            },
-            {
-              "num": "26",
-              "term": "Enhanced Taxiway Centerline",
-              "definition": "Dashed yellow lines alongside the centerline starting 45m before a runway holding position to alert pilots.",
-              "part": "Part 26"
-            },
-            {
-              "num": "27",
-              "term": "Follow-Me Vehicle",
-              "definition": "An airport ground vehicle equipped with flashing lights that guides aircraft along taxiways to designated parking stands.",
-              "part": "Part 27"
-            },
-            {
-              "num": "28",
-              "term": "Pushback",
-              "definition": "The procedure during which an aircraft is pushed backwards away from an airport gate or parking stand by a tug vehicle.",
-              "part": "Part 28"
-            },
-            {
-              "num": "29",
-              "term": "Maneuvering Area",
-              "definition": "That part of an aerodrome used for the takeoff, landing, and taxiing of aircraft, excluding aprons.",
-              "part": "Part 29"
-            },
-            {
-              "num": "30",
-              "term": "Movement Area",
-              "definition": "That part of an aerodrome used for aircraft surface movement, consisting of the maneuvering area and the aprons.",
-              "part": "Part 30"
-            }
+                    {
+                              "num": "01",
+                              "term": "Level 1 Finding",
+                              "definition": "A critical non-compliance that lowers safety or seriously hazards aircraft operations, requiring immediate operational restriction.",
+                              "part": "Part 1"
+                    },
+                    {
+                              "num": "02",
+                              "term": "Level 2 Finding",
+                              "definition": "A systemic non-compliance that could lower safety if uncorrected, requiring a formal 30-day Corrective Action Plan.",
+                              "part": "Part 2"
+                    },
+                    {
+                              "num": "03",
+                              "term": "Non-Conformance",
+                              "definition": "A documented failure of an aerodrome facility or procedure to comply with statutory standards or the certified manual.",
+                              "part": "Part 3"
+                    },
+                    {
+                              "num": "04",
+                              "term": "Corrective Action Plan (CAP)",
+                              "definition": "A formal action schedule submitted by the aerodrome operator detailing solutions, responsibilities, and deadlines to close an audit finding.",
+                              "part": "Part 4"
+                    },
+                    {
+                              "num": "05",
+                              "term": "Immediate Operational Restriction",
+                              "definition": "A mandatory statutory order temporarily closing or restricting an aircraft stand, taxiway, or runway due to a Level 1 hazard.",
+                              "part": "Part 5"
+                    },
+                    {
+                              "num": "06",
+                              "term": "Point ADR.AR.C.055",
+                              "definition": "The European statutory standard governing findings, non-conformances, and enforcement actions by the competent authority.",
+                              "part": "Part 6"
+                    },
+                    {
+                              "num": "07",
+                              "term": "Fuel Hydrant Pit",
+                              "definition": "An underground airside refueling connection point on an apron stand where pressurized aviation kerosene is transferred to aircraft.",
+                              "part": "Part 7"
+                    },
+                    {
+                              "num": "08",
+                              "term": "Deadman Control Mechanism",
+                              "definition": "A mandatory hand-held safety trigger on refueling equipment that immediately cuts off fuel flow if released by the operator.",
+                              "part": "Part 8"
+                    },
+                    {
+                              "num": "09",
+                              "term": "Containment Boom",
+                              "definition": "A flexible, weighted floating or pavement barrier deployed around fuel leaks to prevent hazardous hydrocarbons from spreading.",
+                              "part": "Part 9"
+                    },
+                    {
+                              "num": "10",
+                              "term": "Stormwater Drain Inlet",
+                              "definition": "A surface grating on an apron pavement designed to drain rainwater, which must be protected during fuel servicing.",
+                              "part": "Part 10"
+                    },
+                    {
+                              "num": "11",
+                              "term": "Absorbent Granules",
+                              "definition": "Granular airside spill response material spread over hydrocarbon leaks to soak up kerosene and neutralize ignition hazards.",
+                              "part": "Part 11"
+                    },
+                    {
+                              "num": "12",
+                              "term": "Hydrocarbon Contamination",
+                              "definition": "The dangerous pollution of airport groundwater, storm drainage, or soil caused by uncontained jet fuel or motor oil spills.",
+                              "part": "Part 12"
+                    },
+                    {
+                              "num": "13",
+                              "term": "Runway Guard Lights (RGL)",
+                              "definition": "A pair of alternating flashing yellow optical units installed beside a taxiway holding position to prevent inadvertent runway incursions.",
+                              "part": "Part 13"
+                    },
+                    {
+                              "num": "14",
+                              "term": "Configuration A Guard Light",
+                              "definition": "The elevated pairs of yellow flashing lights positioned on both sides of a taxiway at the runway holding position line.",
+                              "part": "Part 14"
+                    },
+                    {
+                              "num": "15",
+                              "term": "CS-ADR-DSN.M.710",
+                              "definition": "The European aerodrome design specification setting physical elevation, color, and beam intensity standards for runway guard lights.",
+                              "part": "Part 15"
+                    },
+                    {
+                              "num": "16",
+                              "term": "Overgrown Airfield Vegetation",
+                              "definition": "Tall wild grasses or weeds exceeding 200 mm in height that obstruct pilot sightlines or hide visual airfield ground aids.",
+                              "part": "Part 16"
+                    },
+                    {
+                              "num": "17",
+                              "term": "Luminous Beam Obscuration",
+                              "definition": "The reduction in optical light intensity reaching a pilot cockpit caused by dirt, damaged lenses, or blocking vegetation.",
+                              "part": "Part 17"
+                    },
+                    {
+                              "num": "18",
+                              "term": "Inadvertent Runway Incursion",
+                              "definition": "The unauthorized entry of an aircraft, vehicle, or pedestrian onto an active runway surface, creating a severe collision hazard.",
+                              "part": "Part 18"
+                    },
+                    {
+                              "num": "19",
+                              "term": "Foreign Object Debris (FOD)",
+                              "definition": "Any loose item on an apron or taxiway capable of damaging aircraft structures, puncturing tires, or destroying jet engines.",
+                              "part": "Part 19"
+                    },
+                    {
+                              "num": "20",
+                              "term": "Engine Ingestion Danger Zone",
+                              "definition": "The 15-meter critical safety perimeter in front of operating turbofan engines where loose debris can be sucked inside.",
+                              "part": "Part 20"
+                    },
+                    {
+                              "num": "21",
+                              "term": "Magnetic FOD Receptacle",
+                              "definition": "A specialized heavy-duty airside disposal bin equipped with magnetic bars to securely collect metallic lockwire and bolts.",
+                              "part": "Part 21"
+                    },
+                    {
+                              "num": "22",
+                              "term": "Metallic Lockwire Offcuts",
+                              "definition": "Sharp stainless-steel wire pieces clipped during airframe or brake servicing that pose a critical tire puncture and ingestion threat.",
+                              "part": "Part 22"
+                    },
+                    {
+                              "num": "23",
+                              "term": "GSE Staging Area",
+                              "definition": "A designated painted zone where ground support vehicles park safely before aircraft arrival and during turnaround.",
+                              "part": "Part 23"
+                    },
+                    {
+                              "num": "24",
+                              "term": "Daily Airside Walkaround",
+                              "definition": "The routine visual inspection conducted by airport operations staff on foot or in vehicles to detect pavement defects and hazards.",
+                              "part": "Part 24"
+                    },
+                    {
+                              "num": "25",
+                              "term": "Deduction Modal (Must have + V3)",
+                              "definition": "A spoken grammatical structure expressing near-certainty that an action happened in the past based on physical proof.",
+                              "part": "Part 25"
+                    },
+                    {
+                              "num": "26",
+                              "term": "Possibility Modal (Could have + V3)",
+                              "definition": "A spoken structure expressing an alternative past outcome or risk that was possible but did not materialize.",
+                              "part": "Part 26"
+                    },
+                    {
+                              "num": "27",
+                              "term": "Obligation Modal (Should have + V3)",
+                              "definition": "A spoken structure identifying an unfulfilled duty or standard procedure that was neglected by operational personnel.",
+                              "part": "Part 27"
+                    },
+                    {
+                              "num": "28",
+                              "term": "Impossibility Modal (Can't have + V3)",
+                              "definition": "A spoken structure expressing that an event was logically impossible in the past based on available facts.",
+                              "part": "Part 28"
+                    },
+                    {
+                              "num": "29",
+                              "term": "Root Cause Analysis (RCA)",
+                              "definition": "A structured investigation methodology that uncovers the underlying systemic failures behind an operational non-conformance.",
+                              "part": "Part 29"
+                    },
+                    {
+                              "num": "30",
+                              "term": "Oral Audit Debrief",
+                              "definition": "A concise, structured spoken presentation delivered by airside inspectors to airport executives summarizing findings and mitigations.",
+                              "part": "Part 30"
+                    }
           ]
-        },
+},
         "materials": {
+          "quizTitle": "Airfield Audit & Past Modal Scenarios Quiz",
+          "quiz": [
+                    {
+                              "q": "An airside inspector discovers an uncontained 42 m\u00b2 Jet A-1 kerosene spill expanding toward an active storm drain on Stand 14. Under Point ADR.AR.C.055, how is this finding classified?",
+                              "options": [
+                                        "Level 1 Finding: It creates an immediate fire and environmental hazard that lowers safety, requiring immediate stand closure.",
+                                        "Level 2 Finding: The operator is granted a standard 30-day period to mop up the fuel and submit paperwork.",
+                                        "Observation Notice: Fuel spills on aprons are considered normal industrial wear and require no action.",
+                                        "Administrative Note: The airline is billed for fuel loss but the stand remains fully operational."
+                              ],
+                              "correct": 0,
+                              "explanation": "Under Point ADR.AR.C.055, any non-compliance that lowers safety or seriously hazards aircraft operations or environmental safety must be classified as a Level 1 Finding, triggering immediate operational restriction."
+                    },
+                    {
+                              "q": "Which sentence correctly uses past modal deduction to explain why a groundskeeping team missed tall weeds around a runway guard light?",
+                              "options": [
+                                        "The maintenance crew must have skipped Taxiway Bravo 2 during their scheduled mowing cycle.",
+                                        "The maintenance crew must of skip Taxiway Bravo 2 during their mowing cycle.",
+                                        "The maintenance crew should to have skipped Taxiway Bravo 2 during their cycle.",
+                                        "The maintenance crew could having skipped Taxiway Bravo 2 during their mowing."
+                              ],
+                              "correct": 0,
+                              "explanation": "Past modal deduction uses the formula: modal + have + past participle (must have skipped). Never use 'must of'."
+                    },
+                    {
+                              "q": "Why is unmaintained grass exceeding 650 mm in height around Runway Guard Lights dangerous to airside operations?",
+                              "options": [
+                                        "It obscures the yellow alternating flasher beams, preventing taxiing pilots from seeing the active runway holding line at night.",
+                                        "It attracts birds to nest inside the electrical light fixture housing.",
+                                        "It increases fuel consumption for aircraft waiting at the holding point.",
+                                        "It interferes with VHF aeronautical radio communications between the tower and pilots."
+                              ],
+                              "correct": 0,
+                              "explanation": "Runway guard lights provide critical visual warning to prevent runway incursions. Obscuring the beam by 60% leaves flight crews without high-intensity visual warnings before crossing active runways."
+                    },
+                    {
+                              "q": "What is the primary danger of metallic lockwire offcuts and sheared bolts scattered in an Equipment Staging Area near Stand 12?",
+                              "options": [
+                                        "They can puncture aircraft tires or be ingested into high-bypass turbofan engines during ground taxi, destroying compressor blades.",
+                                        "They cause radio signal interference with apron GPS geofencing equipment.",
+                                        "They violate municipal noise abatement regulations during night turnarounds.",
+                                        "They reduce the braking friction coefficient of painted stand lead-in lines."
+                              ],
+                              "correct": 0,
+                              "explanation": "Metallic Foreign Object Debris (FOD) within the 15-meter engine hazard zone can be ingested by jet engines, causing catastrophic blade damage costing millions of euros."
+                    }
+          ],
           "videos": [
-            {
-              "title": "Video 1: Boeing 777 Airport Ground Handling: Start to Finish",
-              "watchUrl": "https://www.youtube.com/watch?v=KSfgLX5j-lQ",
-              "tag": "Ground Operations",
-              "videoId": "KSfgLX5j-lQ",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/KSfgLX5j-lQ",
-              "caption": "Focus: Authentic real-world turnaround coordination: marshaling, chock placement, GPU connection, belt loaders, baggage logistics, and pushback operations.",
-              "part": "Part 1"
-            },
-            {
-              "title": "Video 2: Inside Air Traffic Control",
-              "watchUrl": "https://www.youtube.com/watch?v=R90mroZyAL4",
-              "tag": "Air Traffic Services",
-              "videoId": "R90mroZyAL4",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/R90mroZyAL4",
-              "caption": "Focus: Tower, approach, and en-route controllers managing active runways, sector handoffs, tactical separation authority, and standard phraseology.",
-              "part": "Part 2"
-            },
-            {
-              "title": "Video 3: AFIS & Regional Aerodrome Operations",
-              "watchUrl": "https://www.youtube.com/watch?v=2BZbHAJQ70s",
-              "tag": "TSEEAC / AFISO Focus",
-              "videoId": "2BZbHAJQ70s",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/2BZbHAJQ70s",
-              "caption": "Focus: Aerodrome Flight Information Service (AFIS) officers providing flight information, weather reports, and alerting service without air traffic control separation.",
-              "part": "Part 3"
-            }
+                    {
+                              "title": "Video 1: EASA Aerodrome Oversight & Airside Audit Walkarounds",
+                              "duration": "8:45",
+                              "summary": "Follow European civil aviation inspectors during a live airside compliance audit evaluating apron stands, fuel hydrant safety, and non-conformance logging."
+                    },
+                    {
+                              "title": "Video 2: Ramp Fuel Servicing Emergencies & Spill Containment",
+                              "duration": "6:20",
+                              "summary": "Technical briefing on deadman control valves, high-pressure hydrant pits, pneumatic drain plugs, and immediate absorbent boom deployment."
+                    },
+                    {
+                              "title": "Video 3: Runway Incursion Prevention & Guard Light Maintenance",
+                              "duration": "7:15",
+                              "summary": "Aviation safety documentary examining how visual airfield ground aids and unobstructed sightlines prevent inadvertent runway incursions."
+                    }
+          ],
+          "articles": [
+                    {
+                              "title": "From Inspection to Enforcement: Understanding EASA Level 1 vs. Level 2 Findings",
+                              "source": "Journal of Aerodrome Safety & Certification",
+                              "readTime": "6 min read",
+                              "summary": "A practical operational guide for airside engineers detailing when an inspector must order an immediate stand shutdown versus when a 30-day Corrective Action Plan applies."
+                    },
+                    {
+                              "title": "Preventing Environmental Infiltration: Fuel Hydrant Safety & Drain Traps",
+                              "source": "Airport Ground Operations Review",
+                              "readTime": "5 min read",
+                              "summary": "Analysis of apron pavement drainage systems, oil-water interceptors, and mandatory ground handler response times during Jet A-1 servicing spills."
+                    },
+                    {
+                              "title": "The Invisible Threat: Managing Airfield Vegetation to Protect Optical Lighting Systems",
+                              "source": "Airside Infrastructure & Systems Engineering",
+                              "readTime": "5 min read",
+                              "summary": "Case studies demonstrating how unmaintained grass strips degrade runway guard light and stop bar conspicuity, contributing to runway confusion incidents."
+                    }
           ],
           "grammar": {
-            "title": "Expressing Professional Responsibilities, Duties & Authority",
-            "badge": "B2 Functional Grammar Focus",
-            "patternTitle": "Responsibility & Authority Formulas",
-            "formula": "BE RESPONSIBLE FOR + -ING • BE TASKED WITH + -ING • HAVE AUTHORITY OVER / TO • ENSURE THAT + CLAUSE",
-            "rulesTitle": "Core Formulas & Jurisdictional Prepositions",
-            "rules": [
-              "<strong style=\"color: #1e293b;\">1. BE RESPONSIBLE FOR + Gerund / Noun:</strong> Core ongoing duty or accountability (<span style=\"font-weight: 700; color: #c0684f;\">responsible for coordinating</span>, <span style=\"font-weight: 700; color: #c0684f;\">responsible for flight safety</span>).",
-              "<strong style=\"color: #1e293b;\">2. BE TASKED WITH + Gerund / Noun:</strong> Designated operational mission or assigned mandate (<span style=\"font-weight: 700; color: #c0684f;\">tasked with conducting</span>, <span style=\"font-weight: 700; color: #c0684f;\">tasked with safety audits</span>).",
-              "<strong style=\"color: #1e293b;\">3. HAVE AUTHORITY OVER / TO:</strong> Legal command power (<span style=\"font-weight: 600; color: #334155;\">have authority over active runways</span> [ATCO], <span style=\"font-weight: 600; color: #334155;\">authority to issue clearances</span>).",
-              "<strong style=\"color: #1e293b;\">4. ENSURE THAT + Clause:</strong> Verification and quality assurance (<span style=\"font-weight: 600; color: #334155;\">ensure that cargo doors are latched</span>, <span style=\"font-weight: 600; color: #334155;\">ensure that weight limits are respected</span>).",
-              "<strong style=\"color: #1e293b;\">5. REPORT TO vs. LIAISE WITH:</strong> Upward hierarchy (<span style=\"font-weight: 600; color: #334155;\">reports to the chief pilot</span>) vs. lateral coordination (<span style=\"font-weight: 600; color: #334155;\">liaises with apron controllers</span>)."
-            ],
-            "trap": "<strong>⚠️ Common Preposition & False Friend Trap:</strong> Never say <em>responsible of</em>—always use <strong>responsible for + -ing</strong>. Also, strictly distinguish <em>control</em> (ATCO issuing binding separation orders) from <em>provide information</em> (AFISO advising pilots without executive control clearances).",
-            "examplesTitle": "Operational Responsibility Examples",
-            "examples": [
-              "<em>\"The Turnaround Coordinator is <strong>responsible for ensuring</strong> that all ground support equipment is detached before pushback.\"</em>",
-              "<em>\"Unlike aerodrome controllers, AFISOs are <strong>tasked with providing</strong> traffic information rather than tactical separation clearances.\"</em>"
-            ]
+                    "title": "Grammar Clinic \u2022 Past Modal Deductions for Root Cause Analysis",
+                    "badge": "Language for Technical Reasoning",
+                    "patternTitle": "Expressing Degrees of Certainty About Past Operational Failures",
+                    "formula": "Modal Verb (must / could / should / can't) + HAVE + Past Participle (V3)",
+                    "rulesTitle": "Core Operational Meanings in Accident & Audit Analysis",
+                    "rules": [
+                              "<strong>must have + V3:</strong> Expresses strong deduction based on physical evidence (<em>'The driver must have jammed the deadman valve with wire.'</em>).",
+                              "<strong>could have + V3:</strong> Expresses past capability or potential risk that was avoided (<em>'The fuel could have reached the river without emergency booms.'</em>).",
+                              "<strong>should have + V3:</strong> Identifies an unperformed safety duty or procedure (<em>'The supervisor should have inspected the hose coupling before pumping.'</em>).",
+                              "<strong>can't have + V3:</strong> Expresses logical impossibility in the past (<em>'The pilot can't have seen the yellow flasher through the 650 mm tall weeds.'</em>)."
+                    ],
+                    "trap": "Pronunciation & Writing Trap: Never write 'must of' or 'could of'. In rapid spoken English, 'must have' sounds like /\u02c8m\u028cs.t\u0259v/, but is always spelled 'must have'.",
+                    "examplesTitle": "Authentic Spoken Audit Comparisons",
+                    "examples": [
+                              "The handler <strong>must have failed to latch</strong> the hydrant coupler properly.",
+                              "The spill <strong>could have ignited</strong> if an auxiliary power unit (APU) was started nearby.",
+                              "The aerodrome operator <strong>should have mowed</strong> Taxiway Bravo 2 before grass exceeded 200 mm.",
+                              "The technician <strong>can't have performed</strong> the mandatory pre-fueling walkaround."
+                    ]
           },
-          "resources": [
-            {
-              "url": "https://www.ecologie.gouv.fr/concours-dgac",
-              "tag": "01 • Civil Aviation Authority",
-              "name": "DGAC Careers & TSEEAC Competitions",
-              "desc": "Official French civil aviation authority portal detailing TSEEAC, IEEAC, and ATCO recruitment competitions and corps duties.",
-              "part": "Part 1"
-            },
-            {
-              "url": "https://www.eurocontrol.int/careers",
-              "tag": "02 • European ATM Network",
-              "name": "Eurocontrol Air Traffic Management",
-              "desc": "Pan-European air navigation services, controller profiles, and ATM network operations.",
-              "part": "Part 2"
-            },
-            {
-              "url": "https://www.iata.org/en/programs/ops-infra/ground-operations/",
-              "tag": "03 • Ramp & Apron Standards",
-              "name": "IATA Ground Operations Hub (IGOM)",
-              "desc": "Global airline industry standards for apron safety, aircraft turnaround, and ground support equipment handling.",
-              "part": "Part 3"
-            },
-            {
-              "url": "https://www.ifatca.org",
-              "tag": "04 • Professional Association",
-              "name": "IFATCA Air Traffic Controllers",
-              "desc": "Worldwide federation representing over 50,000 air traffic controllers across 130 countries.",
-              "part": "Part 4"
-            },
-            {
-              "url": "https://www.icao.int",
-              "tag": "05 • Global Standards",
-              "name": "ICAO Personnel Licensing (Annex 1)",
-              "desc": "International civil aviation benchmarks for pilots, flight dispatchers, ATCOs, and aeronautical station operators.",
-              "part": "Part 5"
-            },
-            {
-              "url": "https://www.easa.europa.eu",
-              "tag": "06 • Technical Regulations",
-              "name": "EASA Regulations & Safety Standards",
-              "desc": "Official European aerodrome regulations, certification specifications, and safety directives for civil aviation professionals.",
-              "part": "Part 6"
-            }
-          ],
-          "pageUrl": "session4/admat_aas1.html",
-          "articles": [
-            {
-              "topic": "FlightGlobal / Aviation Careers",
-              "sourceTag": "Career Insight",
-              "heading": "Beyond the Flight Deck: The Essential Network of Airport Operations",
-              "snippet": "An in-depth look at the landside, airside, and regulatory roles that keep international aviation flowing seamlessly 24/7.",
-              "readTime": "Estimated read: 5-6 mins",
-              "url": "https://www.flightglobal.com",
-              "part": "Part 1"
-            },
-            {
-              "topic": "DGAC France / ENAC Portal",
-              "sourceTag": "Civil Aviation Careers",
-              "heading": "The Modern Role of TSEEAC: From AFIS to Safety Oversight",
-              "snippet": "How France's Civil Aviation Operations Corps supports regional aerodrome operations, civil aviation safety inspections, and air navigation technical support.",
-              "readTime": "Estimated read: 5-7 mins",
-              "url": "https://www.ecologie.gouv.fr/direction-generale-laviation-civile-dgac",
-              "part": "Part 2"
-            },
-            {
-              "topic": "Eurocontrol ATM Careers",
-              "sourceTag": "Operational Profile",
-              "heading": "ATCO vs AFISO: Understanding the Scope of Air Traffic Services",
-              "snippet": "Comparing tactical separation authority in controlled airspace with flight information and advisory services at regional fields.",
-              "readTime": "Estimated read: 6-8 mins",
-              "url": "https://www.eurocontrol.int",
-              "part": "Part 3"
-            },
-            {
-              "topic": "IATA Ground Operations Bulletin",
-              "sourceTag": "Safety & Turnaround",
-              "heading": "The Turnaround Coordinator: Heartbeat of On-Time Performance",
-              "snippet": "Why ramp coordinators, loadmasters, and flight dispatchers form the vital link between airline schedules and safety compliance.",
-              "readTime": "Estimated read: 5-6 mins",
-              "url": "https://www.iata.org",
-              "part": "Part 4"
-            }
-          ],
-          "quizTitle": "Airside Scenario Quiz • Aerodrome Ground Layouts & Taxiway Navigation",
-          "quizSubtitle": "Target pace: ~45 seconds per scenario • Mix of Ground Navigation Dilemmas & Chart Spot-Checks"
-        }
+          "portals": [
+                    {
+                              "name": "EASA Aerodrome Rules (Part-ADR)",
+                              "url": "https://www.easa.europa.eu/en/domains/aerodromes-and-air-traffic-management",
+                              "desc": "Official European regulations for aerodrome certification, operations, and oversight inspection."
+                    },
+                    {
+                              "name": "Direction de la S\u00e9curit\u00e9 de l'Aviation Civile (DSAC)",
+                              "url": "https://www.ecologie.gouv.fr/direction-securite-laviation-civile-dsac",
+                              "desc": "French national civil aviation oversight authority governing aerodrome audits and inspections."
+                    },
+                    {
+                              "name": "ICAO Runway Safety Programme",
+                              "url": "https://www.icao.int/safety/RunwaySafety",
+                              "desc": "Global guidelines on runway incursion prevention, visual ground aids, and marking standards."
+                    },
+                    {
+                              "name": "Eurocontrol Airport Safety Hub",
+                              "url": "https://www.eurocontrol.int",
+                              "desc": "European operational safety data, apron collision alerts, and runway safety team toolkits."
+                    },
+                    {
+                              "name": "FAA Airport Safety & Standards",
+                              "url": "https://www.faa.gov/airports/airport_safety",
+                              "desc": "Federal aviation regulations, airfield inspection checklists, and foreign object debris control."
+                    },
+                    {
+                              "name": "Bureau d'Enqu\u00eates et d'Analyses (BEA)",
+                              "url": "https://bea.aero",
+                              "desc": "Official French safety investigation reports analyzing ground occurrences and ramp accidents."
+                    }
+          ]
+},
+        "presentation": {
+          "title": "Session 4 Class Presentation \u2022 Ground Inspection & Audit Findings",
+          "slides": [
+                    {
+                              "num": "01",
+                              "badge": "01 \u2022 Statutory Architecture",
+                              "title": "Airfield Ground Inspections \u2022 The Legal Framework",
+                              "subtitle": "Regulation (EU) No 139/2014 & Point ADR.AR.C.055 Oversight",
+                              "takeaway": "Airside audits verify that aerodrome physical facilities and management systems comply continuously with certified safety standards.",
+                              "cards": [
+                                        {
+                                                  "tag": "Statutory Authority",
+                                                  "heading": "Competent Authority Role",
+                                                  "text": "EASA and national authorities (DSAC) conduct periodic inspections to identify physical defects, procedural gaps, and apron safety risks."
+                                        },
+                                        {
+                                                  "tag": "Operator Duty",
+                                                  "heading": "Point ADR.OPS.B.010",
+                                                  "text": "Aerodrome operators must inspect paved surfaces, lighting aids, and ground servicing equipment daily to ensure uncompromised safety."
+                                        },
+                                        {
+                                                  "tag": "Evidence Standard",
+                                                  "heading": "Objective Observations",
+                                                  "text": "Every audit finding must be backed by documented evidence: physical measurements, photographic exhibits, or recorded operational logs."
+                                        }
+                              ],
+                              "teacherPrompt": "Ask the class: What is the difference between a routine maintenance check by the airport and a formal regulatory audit by the authority?"
+                    },
+                    {
+                              "num": "02",
+                              "badge": "02 \u2022 Non-Conformance Classification",
+                              "title": "Level 1 vs. Level 2 Findings \u2022 Enforcing Safety",
+                              "subtitle": "Point ADR.AR.C.055 Statutory Classification & Action Timelines",
+                              "takeaway": "Level 1 findings trigger immediate stand or taxiway closure; Level 2 findings require a 30-day Corrective Action Plan (CAP).",
+                              "cards": [
+                                        {
+                                                  "tag": "Critical Hazard",
+                                                  "heading": "Level 1 Finding",
+                                                  "text": "Any significant non-compliance that lowers safety or seriously hazards aircraft operations. Results in immediate operational restriction or closure."
+                                        },
+                                        {
+                                                  "tag": "Systemic Flaw",
+                                                  "heading": "Level 2 Finding",
+                                                  "text": "Any non-compliance that could lower safety if uncorrected. The operator receives a formal 30-calendar-day deadline to submit a CAP."
+                                        },
+                                        {
+                                                  "tag": "Escalation Risk",
+                                                  "heading": "Failure to Remediate",
+                                                  "text": "If a Level 2 finding is not resolved within the approved CAP timeframe, the authority automatically escalates it to a Level 1 restriction."
+                                        }
+                              ],
+                              "teacherPrompt": "Present a quick scenario: A taxiway centerline light is burned out. Is this Level 1 or Level 2? What if ALL centerline lights are out during low visibility?"
+                    },
+                    {
+                              "num": "03",
+                              "badge": "03 \u2022 Field Exhibit 01",
+                              "title": "Stand 14 Fuel Hydrant Spill \u2022 Fire & Environmental Hazard",
+                              "subtitle": "Uncontained Jet A-1 Servicing Spill & Inactive Safety Controls",
+                              "takeaway": "Fuel spills spreading toward unsealed drains represent an immediate hazard requiring stand shutdown and boom containment.",
+                              "cards": [
+                                        {
+                                                  "tag": "Physical Hazard",
+                                                  "heading": "42 m\u00b2 Spill Perimeter",
+                                                  "text": "Uncontained Jet A-1 kerosene was actively spreading across Stand 14 within 8.2 meters of an unsealed stormwater drain inlet."
+                                        },
+                                        {
+                                                  "tag": "Defective Control",
+                                                  "heading": "Jammed Deadman Valve",
+                                                  "text": "Inspectors discovered the spring-loaded deadman handle wedged open with wire, defeating the automatic emergency fuel cut-off mechanism."
+                                        },
+                                        {
+                                                  "tag": "Regulatory Finding",
+                                                  "heading": "Level 1 Enacted",
+                                                  "text": "Immediate stand shutdown ordered. RFFS foam/water washdown and pneumatic drain seals required before aircraft operations may resume."
+                                        }
+                              ],
+                              "teacherPrompt": "Ask: Use 'must have' to explain why the deadman was wedged. (e.g. 'The worker must have wanted to rest his hand during the 40-minute fuel uplift.')"
+                    },
+                    {
+                              "num": "04",
+                              "badge": "04 \u2022 Field Exhibit 02",
+                              "title": "Taxiway B2 Obscured Guard Lights \u2022 Incursion Risk",
+                              "subtitle": "Overgrown Grass Degrading Optical Conspicuity at Runway 08L",
+                              "takeaway": "Runway guard lights must remain fully conspicuous; overgrown vegetation creates dangerous incursion hot spots.",
+                              "cards": [
+                                        {
+                                                  "tag": "Observed Defect",
+                                                  "heading": "650 mm Grass Height",
+                                                  "text": "Wild grasses exceeded the 200 mm certified limit by more than 300%, obscuring the yellow alternating flasher fixtures on Taxiway Bravo 2."
+                                        },
+                                        {
+                                                  "tag": "Safety Consequence",
+                                                  "heading": "60% Optical Loss",
+                                                  "text": "Flight crews taxiing at dusk or under night operations are deprived of the high-intensity visual cue warning of an active runway crossing."
+                                        },
+                                        {
+                                                  "tag": "Regulatory Finding",
+                                                  "heading": "Level 2 with 24h Action",
+                                                  "text": "CS-ADR-DSN.M.710 non-compliance logged; 30-day CAP required with emergency groundskeeping mowers dispatched within 24 hours."
+                                        }
+                              ],
+                              "teacherPrompt": "Prompt students: Use 'could have' to explain what might have happened if an aircraft taxied past Holding Point B2."
+                    },
+                    {
+                              "num": "05",
+                              "badge": "05 \u2022 Field Exhibit 03",
+                              "title": "Stand 12 GSE Staging \u2022 Foreign Object Debris (FOD)",
+                              "subtitle": "Missing Magnetic Receptacles & Engine Ingestion Danger",
+                              "takeaway": "Loose metallic debris in staging areas threatens aircraft tires and engine fan blades during turnaround taxiing.",
+                              "cards": [
+                                        {
+                                                  "tag": "Observed Defect",
+                                                  "heading": "Missing Magnetic Bin",
+                                                  "text": "The mandatory covered magnetic FOD receptacle was absent from the Equipment Staging Area serving high-workload Stand 12."
+                                        },
+                                        {
+                                                  "tag": "Debris Hazard",
+                                                  "heading": "Lockwire & Bolts",
+                                                  "text": "Sharp stainless lockwire offcuts and plastic film were scattered within 12 meters of operating turbofan engine ingestion danger zones."
+                                        },
+                                        {
+                                                  "tag": "Regulatory Finding",
+                                                  "heading": "Level 2 Non-Conformance",
+                                                  "text": "Point ADR.OPS.B.016 non-compliance logged. Immediate ramp sweep completed and permanent bin installation ordered within 7 calendar days."
+                                        }
+                              ],
+                              "teacherPrompt": "Ask: Why are magnetic bins mandatory on aprons rather than standard open trash cans?"
+                    },
+                    {
+                              "num": "06",
+                              "badge": "06 \u2022 Spoken Language Clinic",
+                              "title": "Past Modal Deductions & The 3-Bullet Debrief",
+                              "subtitle": "Grammar for Technical Reasoning & Executive Spoken Briefings",
+                              "takeaway": "Structure oral debriefs into 3 concise bullets: Finding & Location, Root Cause Deduction, Immediate Action & Deadline.",
+                              "cards": [
+                                        {
+                                                  "tag": "Certainty",
+                                                  "heading": "Must have + V3",
+                                                  "text": "'The ground crew must have abandoned the bowser without checking the hose coupling latch.'"
+                                        },
+                                        {
+                                                  "tag": "Alternative Risk",
+                                                  "heading": "Could have + V3",
+                                                  "text": "'The metallic lockwire could have punctured the nosewheel tire during taxiing.'"
+                                        },
+                                        {
+                                                  "tag": "Unmet Duty",
+                                                  "heading": "Should have + V3",
+                                                  "text": "'The maintenance supervisor should have mowed Taxiway B2 during the morning sweep.'"
+                                        }
+                              ],
+                              "teacherPrompt": "Have two students volunteer to role-play the 3-bullet debrief to the Airport Director right now!"
+                    }
+          ]
+}
       },
       "5": {
         "session": 5,
