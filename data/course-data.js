@@ -142,91 +142,91 @@
       "1": {
         "session": 1,
         "overview": {
-                  "intro": "Welcome to Session 1 of Technical English on Regulatory Documentation! This opening session trains GSEA students to navigate authentic European civil aviation regulations (EASA Easy Access Rules for Aerodromes — Part-ADR.OPS) with confidence. You will master the exact legal and operational weight of core modal verbs (shall, must, should, may), explore how European directives govern airside safety and Foreign Object Debris (FOD) control programmes, and learn how to translate dense legal language into clear, spoken ramp directives.",
-                  "whyItMatters": "In European airport operations, modal verbs define the precise legal obligation of every rule. For TSEEAC airside personnel, safety inspectors, and aerodrome managers, mistaking 'should' (an advisory recommendation) for 'shall' (a mandatory hard law) can result in regulatory breaches, audit non-compliance, or catastrophic runway incidents. Delivering clear, de-nominalized verbal instructions ensures multinational ground crews understand safety responsibilities immediately.",
+                  "intro": "Welcome to Session 1 of Technical English on Regulatory Documentation! This opening session trains GSEA students to navigate authentic European civil aviation regulations (EASA Easy Access Rules for Aerodromes — Part-ADR.OPS) with confidence. You will master the exact legal and operational weight of core modal verbs (shall, must, should, may), explore how European directives govern aerodrome obstacle control, safeguarding surfaces, and aerodrome works safety, and learn how to translate dense legal language into clear, spoken operational instructions.",
+                  "whyItMatters": "In European airport operations, modal verbs define the precise legal obligation of every rule. For TSEEAC airside personnel, safety inspectors, and aerodrome managers, mistaking 'should' (an advisory recommendation) for 'shall' (a mandatory hard law) can result in regulatory breaches, audit non-compliance, or catastrophic runway incidents. Delivering clear, de-nominalized verbal instructions ensures multinational ground crews and construction contractors understand safety responsibilities immediately.",
                   "keyTerms": [
                             {
-                                      "term": "Hard Law (Cover Regulation)",
-                                      "ipa": "/hɑːd lɔː/",
-                                      "definition": "Mandatory European implementing rules (using 'shall', 'shall not', or 'must') where non-compliance constitutes a direct legal breach."
+                                      "term": "Obstacle Limitation Surface (OLS)",
+                                      "ipa": "/ˈɒb.stə.kl̩ ˌlɪm.ɪˈteɪ.ʃən ˈsɜː.fɪs/",
+                                      "definition": "Airspace boundaries around an aerodrome kept strictly free from obstructions to protect aircraft during takeoff, climb, and approach."
                             },
                             {
-                                      "term": "Acceptable Means of Compliance (AMC)",
-                                      "ipa": "/əkˈsept.ə.bl̩ miːnz əv kəmˈplaɪ.əns/",
-                                      "definition": "Standard technical specifications and advisory procedures (using 'should'); alternative means (AltMOC) require formal safety justification and authority validation."
+                                      "term": "Safeguarding",
+                                      "ipa": "/ˈseɪfˌɡɑː.dɪŋ/",
+                                      "definition": "Mandatory surveillance and coordination process controlling developments, crane permits, and land use within and around the aerodrome."
                             },
                             {
-                                      "term": "Guidance Material (GM)",
-                                      "ipa": "/ˈɡaɪ.dəns məˈtɪə.ri.əl/",
-                                      "definition": "Non-binding explanatory text, illustrative practical examples, or statutory permissions (using 'may' or 'can') to assist aerodrome compliance."
+                                      "term": "Visual Line of Sight (VCR)",
+                                      "ipa": "/ˈvɪʒ.u.əl laɪn əv saɪt/",
+                                      "definition": "Unobstructed direct visibility required from the Air Traffic Control Tower Visual Cab Room to all active movement areas."
                             },
                             {
-                                      "term": "Derogation",
-                                      "ipa": "/ˌder.əˈɡeɪ.ʃən/",
-                                      "definition": "A formal, authorized statutory exemption or exception to an otherwise mandatory regulatory rule granted by the competent authority."
+                                      "term": "Displaced Threshold",
+                                      "ipa": "/dɪsˈpleɪst ˈθreʃ.həʊld/",
+                                      "definition": "A designated landing threshold relocated down the runway to provide obstacle clearance during aerodrome works."
                             },
                             {
-                                      "term": "Pursuant to",
-                                      "ipa": "/pəˈsjuː.ənt tuː/",
-                                      "definition": "Formal legal phrase meaning 'in accordance with' or 'following the specific requirements of' an EU article or regulatory subpart."
+                                      "term": "Declared Distances (TORA / LDA)",
+                                      "ipa": "/dɪˈkleəd ˈdɪs.təns.ɪz/",
+                                      "definition": "Officially published runway operational lengths (e.g. Take-Off Run Available, Landing Distance Available) recalculated during maintenance."
                             },
                             {
-                                      "term": "Without prejudice to",
-                                      "ipa": "/wɪˈðaʊt ˈpredʒ.ə.dɪs tuː/",
-                                      "definition": "Legal phrasing meaning that a specific local rule or exception does not alter, restrict, or invalidate existing safety requirements elsewhere."
+                                      "term": "NOTAM (Notice to Airmen)",
+                                      "ipa": "/ˈnəʊ.tæm/",
+                                      "definition": "Telecommunication notice published without delay to alert pilots to temporary changes in runway lengths, worksites, or unserviceable visual aids."
                             },
                             {
-                                      "term": "Consolidated Version",
-                                      "ipa": "/kənˈsɒl.ɪ.deɪ.tɪd ˈvɜː.ʃən/",
-                                      "definition": "An officially merged updated regulatory text incorporating the basic regulation alongside all subsequent amendments and revisions."
+                                      "term": "Frangible Barrier",
+                                      "ipa": "/ˈfræn.dʒɪ.bl̩ ˈbær.i.ər/",
+                                      "definition": "Lightweight, hazard-marked barriers designed to break safely upon impact without endangering aircraft."
                             },
                             {
-                                      "term": "Competent Authority",
-                                      "ipa": "/ˈkɒm.pɪ.tənt ɔːˈθɒr.ə.ti/",
-                                      "definition": "The official national or European oversight body responsible for aerodrome certification and inspection (e.g. DSAC/DGAC in France, EASA in Europe)."
+                                      "term": "Broom-Clean",
+                                      "ipa": "/bruːm kliːn/",
+                                      "definition": "Operational certification that a runway surface is completely swept, inspected, and certified free of foreign object debris (FOD) before reopening."
                             },
                             {
-                                      "term": "Foreign Object Debris (FOD)",
-                                      "ipa": "/ˈfɒr.ən ˈɒb.dʒɪkt ˈdeb.riː/",
-                                      "definition": "Any loose item, substance, or contaminant on airside movement areas that has the potential to cause structural damage to aircraft."
+                                      "term": "Hand-Back Criteria",
+                                      "ipa": "/hænd bæk kraɪˈtɪə.ri.ə/",
+                                      "definition": "Formal safety conditions and joint physical inspection protocols required before returning a closed taxiway or runway to live air traffic."
                             },
                             {
-                                      "term": "De-Nominalization",
-                                      "ipa": "/diːˌnɒm.ɪ.nəl.aɪˈzeɪ.ʃən/",
-                                      "definition": "Converting passive, noun-heavy legal phrasing ('Implementation of inspection shall be conducted') into direct, active spoken operational English ('Ground crews must inspect')."
+                                      "term": "Conspicuous Marking",
+                                      "ipa": "/kənˈspɪk.ju.əs ˈmɑː.kɪŋ/",
+                                      "definition": "High-visibility paint schemes and flashing obstacle beacons required on all airside vehicles operating on movement areas."
                             }
                   ],
                   "speakingTask": {
-                            "title": "Authentic EASA Document Workshop • 'Spot the Compliance Bug'",
-                            "instructions": "This extension activity provides authentic regulatory practice. Open the official EASA PDF extract below. Working in pairs or trios, Student A reviews the authentic EASA clauses while Student B challenges potential discrepancies in legal weight (shall vs. should), factual numbers (e.g. speed limits or reporting deadlines), and operational duties. Conclude with a 2-minute spoken summary.",
+                            "title": "Authentic EASA Workshop • Obstacle Safeguarding & Aerodrome Works Safety",
+                            "instructions": "This extension activity provides authentic regulatory practice using the official EASA Part-ADR.OPS synthesis below. Working in pairs or trios, Student A formulates mandatory safeguarding requirements, temporary obstacle buffer zones, and NOTAM notifications under Point ADR.OPS.B.070, while Student B audits the hand-back criteria, broom-clean inspection protocol, and vehicle lighting under Points ADR.OPS.B.075 & B.080. Conclude with a 2-minute spoken summary.",
                             "document": {
-                                      "title": "EASA Class 1 Document Extract: Part-ADR.OPS (Apron Safety & FOD)",
-                                      "subtitle": "Official ENAC / DGAC Training Handout • Authentic Regulatory Language & Activity Cards",
-                                      "filename": "GSEA_S3_M1_S1_Regulatory_Documentation.pdf",
-                                      "path": "docs/GSEA_S3_M1_S1_Regulatory_Documentation.pdf",
+                                      "title": "EASA Part-ADR.OPS Synthesis: Obstacle Safeguarding & Aerodrome Works Safety",
+                                      "subtitle": "Regulation (EU) No 139/2014 Extract • Points ADR.OPS.B.070, B.075 & B.080",
+                                      "filename": "GSEA_S3_M1_S1_EASA_Part_ADR_OPS_Synthesis.pdf",
+                                      "path": "docs/GSEA_S3_M1_S1_EASA_Part_ADR_OPS_Synthesis.pdf",
                                       "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
                             },
                             "requirements": [
-                                      "Use at least 4 of today's 10 technical terms (e.g., Hard Law, AMC, Competent Authority, Derogation).",
+                                      "Use at least 4 of today's 10 technical terms (e.g. OLS, Safeguarding, Displaced Threshold, Broom-Clean).",
                                       "Identify the critical modal anchor ('shall', 'should', or 'may') and justify why it matters operationally.",
                                       "Ensure both partners actively speak during your 2-minute summary or pair debate."
                             ],
                             "checkingPhrases": [
-                                      "\"Hold on, did you say SHALL or SHOULD?\"",
-                                      "\"Wait, did you say 2 hours or 24 hours?\"",
-                                      "\"Stop there—did you say MAY or MUST NOT?\"",
-                                      "\"Let's check the exact clause in Subpart ADR.OPS.B...\""
+                                      "\"Hold on, does Point ADR.OPS.B.070 classify that as Hard Law (shall) or an AMC (should)?\"",
+                                      "\"Wait, what declared distances are affected: TORA, ASDA, or LDA?\"",
+                                      "\"Stop there—has the pavement been certified broom-clean before hand-back?\"",
+                                      "\"Let's verify the exact clause in Subpart ADR.OPS.B.075 regarding tower visual lines of sight...\""
                             ],
                             "statements": {
-                                      "group1": "Ramp collisions and apron vehicle incidents are driven by turnaround time pressure rather than a lack of EASA regulatory knowledge.",
-                                      "group2": "Allowing airports to propose Alternative Means of Compliance (AltMOC) creates safety risks because different hubs interpret 'acceptable' differently.",
-                                      "group3": "Passive, nominalized safety directives cause operational non-compliance on the ramp because ground crews cannot identify who is responsible for action."
+                                      "group1": "Contractor works near an active runway create higher incursion risks than normal flight operations, even when marked with unserviceability lights.",
+                                      "group2": "Mandatory line-of-sight protection from the control tower (VCR) should strictly prohibit any temporary construction cranes within 3 km of the aerodrome boundary.",
+                                      "group3": "A shortened runway declared distance (TORA/LDA) should automatically trigger daytime-only operations, regardless of weather conditions."
                             },
                             "usefulPhrases": [
-                                      "Under Subpart ADR.OPS.B, the mandatory requirement is...",
-                                      "The critical modal anchor here is 'shall', which indicates an inescapable obligation...",
-                                      "In our operational opinion, changing this rule from AMC to Hard Law would...",
-                                      "To summarise our pair's assessment of this safety case..."
+                                      "Under Point ADR.OPS.B.070, the operator must establish procedures ensuring that...",
+                                      "Prior to hand-back and return to service, a joint physical inspection must certify that...",
+                                      "The obstacle limitation surface (OLS) is penetrated by mobile equipment, which requires...",
+                                      "To mitigate the risk of surface contamination or runway incursions, our team proposes..."
                             ]
                   }
         },
