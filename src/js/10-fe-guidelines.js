@@ -242,7 +242,7 @@
                 <strong>2. Plant Words:</strong> Select 6 to 8 technical terms beforehand and use them naturally in context.
               </div>
               <div class="p-2.5 bg-white rounded-lg border border-slate-200 shadow-2xs">
-                <strong>3. Vocabulary Log:</strong> Have your portfolio open. Note: TOEIC drills are maintained independently and not graded here.
+                <strong>3. Vocabulary Log:</strong> Have your portfolio open to review recorded technical terms.
               </div>
             </div>
           </div>
@@ -552,8 +552,8 @@
                     <span class="text-[10px] font-black uppercase text-slate-400">Stage 4</span>
                     <span class="px-2 py-0.5 rounded text-white font-mono text-[10px] font-bold" style="background-color: ${theme.primary};">22–26 min</span>
                   </div>
-                  <h5 class="text-xs font-bold text-slate-800 mt-2">Portfolio &amp; TOEIC Audit</h5>
-                  <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">Review personal Vocabulary Log (72 Module 3 aeronautical terms), TOEIC exercise completion, and self-study progress.</p>
+                  <h5 class="text-xs font-bold text-slate-800 mt-2">Aeronautical Portfolio Audit</h5>
+                  <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">Review personal Technical Vocabulary Log and course self-study progress.</p>
                 </div>
                 <div class="mt-2 pt-2 border-t border-slate-100 text-[10px] text-slate-400 font-semibold">Continuous learning check</div>
               </div>
@@ -770,7 +770,7 @@
                 <div>
                   <h5 class="text-xs sm:text-sm font-bold text-slate-800">Exhibit Autonomous Portfolio Habits &amp; Self-Critique</h5>
                   <p class="text-[11px] sm:text-xs text-slate-600 leading-relaxed mt-0.5">
-                    Present an updated personal vocabulary log with recorded Module 1 vocabulary. Arrive prepared to discuss personal strong points and weak points constructively. <em>(Note: TOEIC practice is maintained independently on the AAS portal and is not graded in this evaluation).</em>
+                    Present an updated personal vocabulary log with recorded Module 1 vocabulary. Arrive prepared to discuss personal strong points and weak points constructively.
                   </p>
                 </div>
               </div>
@@ -848,7 +848,7 @@
                 <div>
                   <h5 class="text-xs sm:text-sm font-bold text-slate-800">Exhibit Autonomous Portfolio Habits &amp; Self-Critique</h5>
                   <p class="text-[11px] sm:text-xs text-slate-600 leading-relaxed mt-0.5">
-                    Present an updated personal vocabulary log with recorded Module 2 vocabulary. Arrive prepared to discuss personal strong points and weak points constructively. <em>(Note: TOEIC practice is maintained independently on the AAS portal and is not graded in this evaluation).</em>
+                    Present an updated personal vocabulary log with recorded Module 2 vocabulary. Arrive prepared to discuss personal strong points and weak points constructively.
                   </p>
                 </div>
               </div>
@@ -926,7 +926,7 @@
                 <div>
                   <h5 class="text-xs sm:text-sm font-bold text-slate-800">Exhibit Autonomous Portfolio Habits &amp; Constructive Self-Critique</h5>
                   <p class="text-[11px] sm:text-xs text-slate-600 leading-relaxed mt-0.5">
-                    Present an updated personal vocabulary log with recorded Module 3 vocabulary. Arrive prepared to discuss personal strengths and two concrete action targets for Semester 2. <em>(Note: TOEIC practice is maintained independently on the AAS portal and is not graded in this evaluation).</em>
+                    Present an updated personal vocabulary log with recorded Module 3 vocabulary. Arrive prepared to discuss personal strengths and two concrete action targets for Semester 2.
                   </p>
                 </div>
               </div>
@@ -1000,7 +1000,7 @@
                 <tr class="hover:bg-slate-50/60">
                   <td class="p-3 font-bold text-slate-800">6. Portfolio &amp; Self-Critique</td>
                   <td class="p-3 text-center font-bold font-mono text-white rounded" style="background-color: ${theme.primary};">2.5</td>
-                  <td class="p-3 text-slate-600">Updated personal vocabulary log with Module 1 terms, and mature self-critique of strong and weak points. <em>(Note: TOEIC testing does not factor into this grade).</em></td>
+                  <td class="p-3 text-slate-600">Updated personal vocabulary log with Module 1 terms, and mature self-critique of strong and weak points.</td>
                 </tr>
                 <tr class="bg-slate-50 font-bold border-t-2 border-slate-300">
                   <td class="p-3 uppercase">Total Score</td>
@@ -1093,7 +1093,7 @@
                 <tr class="hover:bg-slate-50/60">
                   <td class="p-3 font-bold text-slate-800">6. Portfolio &amp; Self-Critique</td>
                   <td class="p-3 text-center font-bold font-mono text-white rounded" style="background-color: ${theme.primary};">2.5</td>
-                  <td class="p-3 text-slate-600">Updated personal vocabulary log with Module 2 terms, and mature self-critique of strong and weak points. <em>(Note: TOEIC testing does not factor into this grade).</em></td>
+                  <td class="p-3 text-slate-600">Updated personal vocabulary log with Module 2 terms, and mature self-critique of strong and weak points.</td>
                 </tr>
                 <tr class="bg-slate-50 font-bold border-t-2 border-slate-300">
                   <td class="p-3 uppercase">Total Score</td>
@@ -1186,7 +1186,7 @@
                 <tr class="hover:bg-slate-50/60">
                   <td class="p-3 font-bold text-slate-800">6. Portfolio &amp; Self-Critique</td>
                   <td class="p-3 text-center font-bold font-mono text-white rounded" style="background-color: ${theme.primary};">2</td>
-                  <td class="p-3 text-slate-600">Updated personal vocabulary log with Module 3 terms, and mature self-critique identifying personal strong points and Semester 2 action targets. <em>(Note: TOEIC testing does not factor into this grade).</em></td>
+                  <td class="p-3 text-slate-600">Updated personal vocabulary log with Module 3 terms, and mature self-critique identifying personal strong points and Semester 2 action targets.</td>
                 </tr>
                 <tr class="bg-slate-50 font-bold border-t-2 border-slate-300">
                   <td class="p-3 uppercase">Total Score</td>

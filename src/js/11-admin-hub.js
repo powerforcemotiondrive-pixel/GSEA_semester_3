@@ -1073,8 +1073,8 @@
                 <p class="text-slate-600">Have your slides or handouts ready to display immediately. Do not read from notes!</p>
               </div>
               <div class="p-3 bg-white border border-slate-200 rounded-lg">
-                <strong class="text-slate-800 block font-bold mb-1">3. Vocabulary &amp; TOEIC</strong>
-                <p class="text-slate-600">Have your vocabulary logs and completed TOEIC practice records open and ready for inspection.</p>
+                <strong class="text-slate-800 block font-bold mb-1">3. Technical Vocabulary &amp; Portfolio</strong>
+                <p class="text-slate-600">Have your technical vocabulary logs and portfolio reflection entries open and ready for inspection.</p>
               </div>
               <div class="p-3 bg-white border border-slate-200 rounded-lg">
                 <strong class="text-slate-800 block font-bold mb-1">4. Self-Critique Ready</strong>
@@ -1219,14 +1219,14 @@
             <div class="flex items-center justify-between">
               <div class="flex items-center gap-2">
                 <span class="w-6 h-6 rounded-md bg-slate-900 text-white flex items-center justify-center font-bold text-xs">2</span>
-                <h4 class="font-bold text-slate-900 text-sm">${isFr ? 'Les 6 Compétences Orales Clés (Test MTF) &amp; TOEIC' : 'The 6 Core Spoken Competencies (MTF Test) &amp; TOEIC'}</h4>
+                <h4 class="font-bold text-slate-900 text-sm">${isFr ? 'Les 6 Compétences Orales Clés (Test MTF)' : 'The 6 Core Spoken Competencies (MTF Test)'}</h4>
               </div>
               <span class="text-[10px] font-mono uppercase bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-bold">${isFr ? 'Évalué en S3' : 'Tested in S3'}</span>
             </div>
             <p class="text-xs text-slate-600 leading-relaxed">
               ${isFr 
                 ? 'Développez les 6 compétences fondamentales évaluées lors de l\'examen oral MTF en semestre 3, et suivez votre TOEIC sur GlobalExam :'
-                : 'Track your growth in all 6 competencies tested during the oral MTF test, and monitor your TOEIC listening and reading via GlobalExam:'}
+                : 'Track your growth in all 6 competencies tested during the oral MTF test, and build spontaneous speaking fluency for technical operations:'}
             </p>
             <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 pt-1 text-xs">
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
@@ -1334,12 +1334,12 @@
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
                 <div class="font-bold text-slate-900 flex items-center gap-1.5">
                   <span>🔎</span>
-                  <span>${isFr ? 'Ressources Complémentaires &amp; TOEIC' : 'Additional Materials &amp; TOEIC'}</span>
+                  <span>${isFr ? 'Ressources Complémentaires' : 'Additional Study Materials'}</span>
                 </div>
                 <p class="text-[11.5px] text-slate-600 leading-relaxed">
                   ${isFr 
                     ? 'Des documents optionnels pour approfondir les sujets, accompagnés d\'un entraînement TOEIC hebdomadaire.'
-                    : 'Optional extra resources for students who wish to explore the subject further, plus weekly TOEIC practice exercises to prepare for the test.'}
+                    : 'Optional extra resources for students who wish to explore the subject further, plus supplementary reading and briefing resources to expand technical operational knowledge.'}
                 </p>
               </div>
             </div>

@@ -1,5 +1,5 @@
     const createModulePages = (modNumber) => {
-      const feSessionNum = modNumber === 1 ? 7 : (modNumber === 2 ? 8 : 5);
+      const feSessionNum = modNumber === 1 ? 7 : 8;
       const aasSessionTitles = {
         1: {
           s1: "Session 1 - EASA Rules & Modal Precision",
@@ -17,12 +17,6 @@
           s5: "Session 5 - Significant Aviation Accidents & Aircraft Types",
           s6: "Session 6 - Significant Aviation Accidents & Aircraft Types",
           s7: "Session 7 - Significant Aviation Accidents & Aircraft Types"
-        },
-        3: {
-          s1: "Session 1 - Health & Human Factors in Aviation",
-          s2: "Session 2 - Meteorology & Severe Weather in Aviation",
-          s3: "Session 3 - Aviation Safety vs. Security: Airport & Aircraft Checks",
-          s4: "Session 4 - Global Semester Review & 3-Team Quiz"
         }
       };
 
@@ -62,7 +56,7 @@
 
       const images = moduleImages[modNumber] || moduleImages[1];
 
-      const formativeEvaluationNotice = `All our work this module builds progressively toward your Formative Evaluation in Session ${feSessionNum}. Review the vocabulary from the vocabulary section on this page before your evaluation, along with the TOEIC exercises and your personal portfolio.`;
+      const formativeEvaluationNotice = `All our work this module builds progressively toward your Formative Evaluation in Session ${feSessionNum}. Review the vocabulary from the vocabulary section on this page before your evaluation, along with your personal portfolio and course study materials.`;
 
       const aasDescriptions = {
         1: {
@@ -81,12 +75,6 @@
           s5: `Welcome to Session 5! We investigate landmark aviation accidents throughout history, analyzing the aircraft types involved, mechanical versus human contributing factors, and permanent safety evolutions.<br><br><em>Subject overview:</em> Accident investigation methodology (CVR/FDR, BEA, NTSB), past narrative tenses, and an in-class 15-minute quick-fire group research sprint analyzing landmark case studies followed by spoken safety presentations.<br><br>${formativeEvaluationNotice}`,
           s6: `Welcome to Session 6! We investigate landmark aviation accidents throughout history, analyzing the aircraft types involved, mechanical versus human contributing factors, and permanent safety evolutions.<br><br><em>Subject overview:</em> Accident investigation methodology (CVR/FDR, BEA, NTSB), past narrative tenses, and an in-class 15-minute quick-fire group research sprint analyzing landmark case studies followed by spoken safety presentations.<br><br>${formativeEvaluationNotice}`,
           s7: `Welcome to Session 7! We investigate landmark aviation accidents throughout history, analyzing the aircraft types involved, mechanical versus human contributing factors, and permanent safety evolutions.<br><br><em>Subject overview:</em> Accident investigation methodology (CVR/FDR, BEA, NTSB), past narrative tenses, and an in-class 15-minute quick-fire group research sprint analyzing landmark case studies followed by spoken safety presentations.<br><br>${formativeEvaluationNotice}`
-        },
-        3: {
-          s1: `Welcome to Module 3!`,
-          s2: `Welcome to Session 2!`,
-          s3: `Welcome to Session 3!`,
-          s4: `Welcome to Session 4!`
         }
       };
 
@@ -168,20 +156,6 @@
         activeMenuBg: "rgba(2, 132, 199, 0.12)",
         activeMenuText: "#0284c7",
         activeMenuBorder: "#0284c7"
-      },
-      3: {
-        primary: "#1a2332", // Stealth Cockpit Charcoal (Safety & Crisis Management)
-        primaryDark: "#121924",
-        primaryDarker: "#0b1018",
-        accent: "#0f766e", // Aviation System Teal / Safe Status
-        accentDark: "#115e59",
-        accentDarker: "#134e4a",
-        highlight: "#ccfbf1",
-        worksheet: "#1a2332",
-        worksheetDark: "#121924",
-        activeMenuBg: "rgba(15, 118, 110, 0.12)",
-        activeMenuText: "#0f766e",
-        activeMenuBorder: "#0f766e"
       }
     };
 
@@ -209,15 +183,6 @@
             supertitle: "GSEA AT SEMESTER 3 - MODULE 2: MTF",
             ...AAS_MODULE_THEMES[2],
             pages: createModulePages(2, 'aas')
-          },
-          {
-            id: 3,
-            name: "Module 3",
-            subtitle: "Disabled",
-            supertitle: "GSEA AT SEMESTER 3 - MODULE 3",
-            disabled: true,
-            ...AAS_MODULE_THEMES[3],
-            pages: createModulePages(3, 'aas')
           }
         ]
       }
