@@ -794,311 +794,320 @@
           }
         },
         "revision": {
-          "title": "Session 1 Revision - EASA Rules, Document Navigation & OLS",
-          "summary": "30 essential operational and regulatory vocabulary terms for GSEA students covering EASA document structure, rule hierarchy, and obstacle safeguarding.",
-          "terms": [
-            {
-              "num": "01",
-              "term": "EASA",
-              "definition": "European Union Aviation Safety Agency: the civil aviation authority setting safety rules across Europe.",
-              "part": "Part 1"
-            },
-            {
-              "num": "02",
-              "term": "Basic Regulation",
-              "definition": "Regulation (EU) 2018/1139: the overarching European law establishing EASA and primary aviation rules.",
-              "part": "Part 2"
-            },
-            {
-              "num": "03",
-              "term": "Hard Law",
-              "definition": "Legally binding aviation regulations that must be followed 100% by law across all EU Member States.",
-              "part": "Part 3"
-            },
-            {
-              "num": "04",
-              "term": "Soft Law",
-              "definition": "Non-binding advisory material, standards, and recommendations providing guidance without direct legal penalty.",
-              "part": "Part 4"
-            },
-            {
-              "num": "05",
-              "term": "Implementing Rule (IR)",
-              "definition": "Binding European executive regulations that apply directly in all Member States (e.g. Regulation 139/2014).",
-              "part": "Part 5"
-            },
-            {
-              "num": "06",
-              "term": "Certification Specifications (CS)",
-              "definition": "Technical aerodrome design standards adopted by EASA (such as CS-ADR-DSN for runways and taxiways).",
-              "part": "Part 6"
-            },
-            {
-              "num": "07",
-              "term": "Acceptable Means of Compliance (AMC)",
-              "definition": "Official technical specifications illustrating one approved way to comply with a binding rule.",
-              "part": "Part 7"
-            },
-            {
-              "num": "08",
-              "term": "Guidance Material (GM)",
-              "definition": "Non-binding explanatory text and advice on how to understand and apply rules in daily practice.",
-              "part": "Part 8"
-            },
-            {
-              "num": "09",
-              "term": "Alternative Means of Compliance (AltMoC)",
-              "definition": "An alternative method used by an airport to meet an Implementing Rule instead of the published AMC.",
-              "part": "Part 9"
-            },
-            {
-              "num": "10",
-              "term": "Easy Access Rules",
-              "definition": "EASA consolidated publications combining Hard Law, AMC, and GM together into a single organized manual.",
-              "part": "Part 10"
-            },
-            {
-              "num": "11",
-              "term": "Subpart",
-              "definition": "A major chapter or section within an EASA aviation rulebook (e.g., Subpart B: Certification).",
-              "part": "Part 11"
-            },
-            {
-              "num": "12",
-              "term": "Clause / Article",
-              "definition": "A numbered individual paragraph or legal requirement within an official regulation.",
-              "part": "Part 12"
-            },
-            {
-              "num": "13",
-              "term": "Cross-Reference",
-              "definition": "A note or link directing the reader to another related document, article, or specification.",
-              "part": "Part 13"
-            },
-            {
-              "num": "14",
-              "term": "Shall",
-              "definition": "The formal legal word indicating an absolute, mandatory requirement that must be followed 100%.",
-              "part": "Part 14"
-            },
-            {
-              "num": "15",
-              "term": "Shall Not",
-              "definition": "The formal legal phrase indicating a strict, absolute prohibition; completely forbidden.",
-              "part": "Part 15"
-            },
-            {
-              "num": "16",
-              "term": "Should",
-              "definition": "The formal word indicating a strong recommendation or best practice, but not an absolute legal duty.",
-              "part": "Part 16"
-            },
-            {
-              "num": "17",
-              "term": "May",
-              "definition": "The formal word indicating permission, allowance, or an optional course of action.",
-              "part": "Part 17"
-            },
-            {
-              "num": "18",
-              "term": "Applicability",
-              "definition": "The official scope defining which airports, operators, or personnel a specific rule applies to.",
-              "part": "Part 18"
-            },
-            {
-              "num": "19",
-              "term": "Compliance",
-              "definition": "Full adherence and obedience to established laws, standards, and safety specifications.",
-              "part": "Part 19"
-            },
-            {
-              "num": "20",
-              "term": "Oversight",
-              "definition": "The ongoing monitoring, inspection, and auditing by civil aviation authorities to ensure safety standards.",
-              "part": "Part 20"
-            },
-            {
-              "num": "21",
-              "term": "Obstacle Limitation Surface (OLS)",
-              "definition": "Imaginary safety surfaces in the sky defining airspace that must remain free of tall objects.",
-              "part": "Part 21"
-            },
-            {
-              "num": "22",
-              "term": "Approach Surface",
-              "definition": "An inclined safety plane extending outward and upward before the runway threshold.",
-              "part": "Part 22"
-            },
-            {
-              "num": "23",
-              "term": "Inner Edge",
-              "definition": "The horizontal baseline of an approach surface closest to the runway threshold.",
-              "part": "Part 23"
-            },
-            {
-              "num": "24",
-              "term": "Slope Gradient",
-              "definition": "The rate of incline of a safety surface, expressed as a ratio or percentage (e.g., 2% or 1:50).",
-              "part": "Part 24"
-            },
-            {
-              "num": "25",
-              "term": "Penetration",
-              "definition": "When a building, tree, or crane extends above an imaginary obstacle limitation surface, creating a hazard.",
-              "part": "Part 25"
-            },
-            {
-              "num": "26",
-              "term": "Shielding Principle",
-              "definition": "The rule allowing an obstacle if a larger, permanent structure already exists in front of it.",
-              "part": "Part 26"
-            },
-            {
-              "num": "27",
-              "term": "Safeguarding Boundary",
-              "definition": "The legally defined geographic consultation zone around an aerodrome protecting flight paths.",
-              "part": "Part 27"
-            },
-            {
-              "num": "28",
-              "term": "Prior Notification",
-              "definition": "Official advance notice required before starting construction or erecting cranes near an airport (e.g., 28 days).",
-              "part": "Part 28"
-            },
-            {
-              "num": "29",
-              "term": "Notice to Airmen (NOTAM)",
-              "definition": "An official telecommunication message alerting pilots about temporary hazards or changes at an airport.",
-              "part": "Part 29"
-            },
-            {
-              "num": "30",
-              "term": "AIP (Aeronautical Information Publication)",
-              "definition": "The permanent official manual containing aerodrome charts, procedures, and operational data.",
-              "part": "Part 30"
-            }
-          ]
+                  "title": "Session 1 Vocabulary • EASA Rules & Safeguarding",
+                  "summary": "Master the 30 high-frequency regulatory terms, modal indicators, and safeguarding concepts from Regulation (EU) No 139/2014 Part-ADR.OPS.",
+                  "terms": [
+                            {
+                                      "num": "01",
+                                      "term": "EASA",
+                                      "definition": "European Union Aviation Safety Agency: the civil aviation authority establishing binding safety standards and Easy Access Rules across Europe.",
+                                      "part": "Part 1"
+                            },
+                            {
+                                      "num": "02",
+                                      "term": "Hard Law (Implementing Rules / IR)",
+                                      "definition": "Legally binding European Commission regulations that impose inescapable obligations under law across all EU Member States.",
+                                      "part": "Part 2"
+                            },
+                            {
+                                      "num": "03",
+                                      "term": "Soft Law (AMC & GM)",
+                                      "definition": "Non-binding technical standards, advisory guidelines, and explanatory materials providing acceptable means of compliance.",
+                                      "part": "Part 3"
+                            },
+                            {
+                                      "num": "04",
+                                      "term": "Acceptable Means of Compliance (AMC)",
+                                      "definition": "Official technical specifications illustrating an approved method to meet an Implementing Rule; deviations require formal validation.",
+                                      "part": "Part 4"
+                            },
+                            {
+                                      "num": "05",
+                                      "term": "Guidance Material (GM)",
+                                      "definition": "Non-binding explanatory text, illustrative practical examples, or statutory permissions assisting daily operational compliance.",
+                                      "part": "Part 5"
+                            },
+                            {
+                                      "num": "06",
+                                      "term": "Alternative Means of Compliance (AltMOC)",
+                                      "definition": "A formal alternative method proposed by an airport operator to satisfy an Implementing Rule instead of the published AMC.",
+                                      "part": "Part 6"
+                            },
+                            {
+                                      "num": "07",
+                                      "term": "Shall / Shall Not",
+                                      "definition": "The formal regulatory words designating a strict, mandatory legal obligation (100% commitment) or an absolute prohibition.",
+                                      "part": "Part 7"
+                            },
+                            {
+                                      "num": "08",
+                                      "term": "Should",
+                                      "definition": "The standard regulatory word designating an Acceptable Means of Compliance (AMC) recommendation or industry best practice.",
+                                      "part": "Part 8"
+                            },
+                            {
+                                      "num": "09",
+                                      "term": "May / Can",
+                                      "definition": "The formal regulatory words designating Guidance Material (GM), discretionary options, or statutory permission.",
+                                      "part": "Part 9"
+                            },
+                            {
+                                      "num": "10",
+                                      "term": "Derogation",
+                                      "definition": "An authorized legal exemption or formal waiver from a general regulatory requirement granted by the competent authority.",
+                                      "part": "Part 10"
+                            },
+                            {
+                                      "num": "11",
+                                      "term": "Pursuant to",
+                                      "definition": "Formal legal phrasing meaning 'following' or 'in strict accordance with' a specific article or regulatory subpart.",
+                                      "part": "Part 11"
+                            },
+                            {
+                                      "num": "12",
+                                      "term": "Without prejudice to",
+                                      "definition": "Formal legal phrasing indicating that a local rule or exception does not alter or invalidate existing regulations elsewhere.",
+                                      "part": "Part 12"
+                            },
+                            {
+                                      "num": "13",
+                                      "term": "Obstacle Limitation Surface (OLS)",
+                                      "definition": "Defined airspace planes (approach, transitional, horizontal) kept strictly free from obstructions to protect aircraft operations.",
+                                      "part": "Part 13"
+                            },
+                            {
+                                      "num": "14",
+                                      "term": "Safeguarding Boundary",
+                                      "definition": "The legally defined geographic consultation zone around an aerodrome protecting flight paths and line of sight.",
+                                      "part": "Part 14"
+                            },
+                            {
+                                      "num": "15",
+                                      "term": "Visual Line of Sight (VCR)",
+                                      "definition": "Unobstructed direct visibility required from the Air Traffic Control Tower Visual Cab Room to all active movement surfaces.",
+                                      "part": "Part 15"
+                            },
+                            {
+                                      "num": "16",
+                                      "term": "Obstacle Infringement",
+                                      "definition": "The unsafe condition when a permanent building, mobile crane, or temporary structure breaches or extends above an established OLS.",
+                                      "part": "Part 16"
+                            },
+                            {
+                                      "num": "17",
+                                      "term": "Shielding Principle",
+                                      "definition": "The regulatory allowance permitting an obstacle if an existing, permanent, and larger structure already shadows the obstruction.",
+                                      "part": "Part 17"
+                            },
+                            {
+                                      "num": "18",
+                                      "term": "Competent Authority",
+                                      "definition": "The designated national aviation safety oversight body (e.g. DSAC/DGAC in France, EASA in Europe) responsible for audits and permits.",
+                                      "part": "Part 18"
+                            },
+                            {
+                                      "num": "19",
+                                      "term": "Aerodrome Works Safety",
+                                      "definition": "Procedures under Point ADR.OPS.B.070 ensuring unannounced works are prohibited and aircraft operations remain uncompromised.",
+                                      "part": "Part 19"
+                            },
+                            {
+                                      "num": "20",
+                                      "term": "Displaced Threshold",
+                                      "definition": "A runway threshold relocated further down the paved surface to ensure obstacle clearance during resurfacing works.",
+                                      "part": "Part 20"
+                            },
+                            {
+                                      "num": "21",
+                                      "term": "Declared Distances (TORA / LDA)",
+                                      "definition": "Officially published operational runway lengths (e.g. Take-Off Run Available, Landing Distance Available) recalculated during maintenance.",
+                                      "part": "Part 21"
+                            },
+                            {
+                                      "num": "22",
+                                      "term": "Frangible Barrier",
+                                      "definition": "Lightweight, hazard-marked barriers and unserviceability cones designed to break safely upon impact without damaging aircraft.",
+                                      "part": "Part 22"
+                            },
+                            {
+                                      "num": "23",
+                                      "term": "Broom-Clean",
+                                      "definition": "Operational certification certifying that a pavement is completely swept and free of foreign object debris (FOD) before reopening.",
+                                      "part": "Part 23"
+                            },
+                            {
+                                      "num": "24",
+                                      "term": "Hand-Back Criteria",
+                                      "definition": "Formal safety conditions and joint physical inspection protocols satisfied before returning a closed runway to live traffic.",
+                                      "part": "Part 24"
+                            },
+                            {
+                                      "num": "25",
+                                      "term": "Conspicuous Marking",
+                                      "definition": "High-visibility paint schemes and contrasting geometric symbols required on all airside vehicles and mobile objects.",
+                                      "part": "Part 25"
+                            },
+                            {
+                                      "num": "26",
+                                      "term": "Flashing Obstacle Beacon",
+                                      "definition": "Mandatory high-intensity yellow or red service lights displayed on airside vehicles operating on movement areas.",
+                                      "part": "Part 26"
+                            },
+                            {
+                                      "num": "27",
+                                      "term": "Foreign Object Debris (FOD)",
+                                      "definition": "Any loose object, gravel, tool, or contaminant on movement areas capable of causing engine or structural damage.",
+                                      "part": "Part 27"
+                            },
+                            {
+                                      "num": "28",
+                                      "term": "NOTAM (Notice to Airmen)",
+                                      "definition": "An official telecommunication notice published without delay informing pilots of temporary runway closures, crane hazards, or altered lights.",
+                                      "part": "Part 28"
+                            },
+                            {
+                                      "num": "29",
+                                      "term": "AIP (Aeronautical Information Publication)",
+                                      "definition": "The permanent national manual containing authoritative aerodrome data, charts, and operational procedures.",
+                                      "part": "Part 29"
+                            },
+                            {
+                                      "num": "30",
+                                      "term": "De-Nominalization",
+                                      "definition": "Converting passive, noun-heavy legal phrasing ('Notification shall be executed') into direct, active spoken operational instructions ('Ground staff must notify').",
+                                      "part": "Part 30"
+                            }
+                  ]
         },
         "materials": {
-          "quizTitle": "Airside Scenario Quiz • EASA Rules & Obstacle Safeguarding",
-          "quizSubtitle": "Target pace: ~45 seconds per scenario • Mix of Operational Dilemmas & Rule Spot-Checks",
-          "videos": [
-            {
-              "title": "Video 1: Obstacle Limitation Surfaces (OLS) 3D Animation",
-              "channel": "Aviation Safety & Aerodrome Engineering",
-              "duration": "6 mins",
-              "videoId": "oeJcvKZG2w8",
-              "watchUrl": "https://www.youtube.com/watch?v=oeJcvKZG2w8",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/oeJcvKZG2w8",
-              "caption": "Visual 3D fly-through demonstrating how the approach, transitional, and horizontal surfaces protect runways from tall cranes and obstacles.",
-              "part": "Part 1"
-            },
-            {
-              "title": "Video 2: How EASA Makes Aviation Regulations in Europe",
-              "channel": "EASA Official",
-              "duration": "5 mins",
-              "videoId": "XeUxBxDUGCk",
-              "watchUrl": "https://www.youtube.com/watch?v=XeUxBxDUGCk",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/XeUxBxDUGCk",
-              "caption": "An official guide explaining how Basic Regulations, Implementing Rules (IR), Acceptable Means of Compliance (AMC), and Guidance Material (GM) work together.",
-              "part": "Part 2"
-            },
-            {
-              "title": "Video 3: Understanding NOTAMs for Flight Operations",
-              "channel": "FlightInsight",
-              "duration": "7 mins",
-              "videoId": "H701DOaQvDM",
-              "watchUrl": "https://www.youtube.com/watch?v=H701DOaQvDM",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/H701DOaQvDM",
-              "caption": "A practical breakdown of how Notice to Airmen (NOTAM) alerts inform pilots about temporary airport hazards, broken lights, and construction cranes.",
-              "part": "Part 3"
-            }
-          ],
-          "articles": [
-            {
-              "topic": "EASA Certification Specifications",
-              "sourceTag": "Official Regulation",
-              "heading": "CS-ADR-DSN Subpart H: Obstacle Limitation Surfaces and Aerodrome Safeguarding",
-              "snippet": "Official European Union Aviation Safety Agency specifications defining the geometry, slopes, and permissible boundaries for approach, take-off, and transitional surfaces around European commercial aerodromes.",
-              "readTime": "Estimated read: 5 mins",
-              "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/aerodromes",
-              "part": "Part 1"
-            },
-            {
-              "topic": "Safety Encyclopedia",
-              "sourceTag": "SKYbrary Safety",
-              "heading": "Obstacle Limitation Surfaces (OLS): Mitigating Construction Hazards Near Airports",
-              "snippet": "Comprehensive operational guide explaining the legal procedures for construction crane permits, the 28-day notification rule, obstacle lighting requirements, and temporary NOTAM publications.",
-              "readTime": "Estimated read: 4 mins",
-              "url": "https://skybrary.aero/articles/obstacle-limitation-surfaces-ols",
-              "part": "Part 2"
-            }
-          ],
-          "resources": [
-            {
-              "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/aerodromes",
-              "tag": "01 • European Standards",
-              "name": "EASA Easy Access Rules for Aerodromes",
-              "desc": "Consolidated regulatory portal containing Regulation (EU) No 139/2014, CS-ADR-DSN, and Acceptable Means of Compliance (AMC).",
-              "part": "Part 1"
-            },
-            {
-              "url": "https://skybrary.aero/articles/obstacle-limitation-surfaces-ols",
-              "tag": "02 • Airspace Safeguarding",
-              "name": "SKYbrary: Obstacle Limitation Surfaces (OLS)",
-              "desc": "Peer-reviewed aviation safety directory detailing inner horizontal, conical, and approach surface slope gradients.",
-              "part": "Part 2"
-            },
-            {
-              "url": "https://www.icao.int/safety/airnavigation/Pages/aerodromes.aspx",
-              "tag": "03 • Global Standards",
-              "name": "ICAO Annex 14 Volume I (Aerodrome Design)",
-              "desc": "International Civil Aviation Organization standards governing runway physical characteristics and obstacle clearance boundaries.",
-              "part": "Part 3"
-            },
-            {
-              "url": "https://www.sia.aviation-civile.gouv.fr",
-              "tag": "04 • Live Flight Data",
-              "name": "French DGAC SIA (Aeronautical Information Service)",
-              "desc": "Official French state portal for aeronautical charts, AIP manuals, and live NOTAM telecommunication queries.",
-              "part": "Part 4"
-            },
-            {
-              "url": "https://www.aci-europe.org",
-              "tag": "05 • Airport Management",
-              "name": "ACI Europe Technical & Safety Committee",
-              "desc": "Airport operators association establishing guidelines on aerodrome obstacle evaluations and city urban planning coordination.",
-              "part": "Part 5"
-            },
-            {
-              "url": "https://oeaaa.faa.gov",
-              "tag": "06 • Airspace Analysis",
-              "name": "FAA Obstacle Evaluation & Airport Airspace Analysis (OE/AAA)",
-              "desc": "Public digital system for evaluating proposed building cranes, masts, and wind turbines penetrating flight paths.",
-              "part": "Part 6"
-            }
-          ],
-          "grammar": {
-            "title": "Words for Rules: Shall, Must, Should & May",
-            "badge": "CEFR B1–B2 Focus",
-            "patternTitle": "Aviation Regulatory Rule Pattern",
-            "formula": "Subject + SHALL / MUST + Base Verb (100% Law) | Subject + SHOULD + Base Verb (Recommendation)",
-            "rulesTitle": "When to Use Each Rule Word",
-            "rules": [
-              "<strong>SHALL / MUST (Obligation):</strong> Used exclusively when an action is 100% required by aviation law. Zero choice or exception is permitted.",
-              "<strong>SHALL NOT / MUST NOT (Prohibition):</strong> Used when an action is strictly forbidden and creates an immediate safety violation.",
-              "<strong>SHOULD (Recommendation):</strong> Expresses recommended industry best practice or guidance. It is strongly advised, but not an absolute legal duty.",
-              "<strong>MAY (Permission):</strong> Indicates that an option, discretion, or special authorization is available if conditions are met."
-            ],
-            "trap": "<strong>⚠️ Spoken English Pitfall:</strong> In French, the verb <em>'devoir'</em> (il doit) is often translated as either <em>'shall'</em> or <em>'should'</em>. In European aviation law, confusing these two is a serious legal error! Always use <em>'shall/must'</em> for mandatory laws and <em>'should'</em> for advisory best practice.",
-            "examplesTitle": "Authentic EASA Operational Examples",
-            "examples": [
-              "The aerodrome operator <strong>shall</strong> establish an approach surface for each runway direction intended for landing.",
-              "New objects <strong>shall not</strong> be permitted above the approach slope within the safeguarding boundary.",
-              "Construction contractors <strong>should</strong> lower the crane boom to ground level during overnight periods.",
-              "The civil aviation authority <strong>may</strong> grant a temporary night permit provided safety lights are active."
-            ]
-          }
+                  "quizTitle": "Airside Scenario Quiz • EASA Rules & Obstacle Safeguarding",
+                  "quizSubtitle": "Target pace: ~45 seconds per scenario • Mix of Operational Dilemmas & Rule Spot-Checks",
+                  "videos": [
+                            {
+                                      "title": "Video 1: Obstacle Limitation Surfaces (OLS) 3D Animation",
+                                      "channel": "Aviation Safety & Aerodrome Engineering",
+                                      "duration": "6 mins",
+                                      "videoId": "oeJcvKZG2w8",
+                                      "watchUrl": "https://www.youtube.com/watch?v=oeJcvKZG2w8",
+                                      "embedUrl": "https://www.youtube-nocookie.com/embed/oeJcvKZG2w8",
+                                      "caption": "Visual 3D fly-through demonstrating how the approach, transitional, and horizontal surfaces protect runways from tall cranes and obstacles.",
+                                      "part": "Part 1"
+                            },
+                            {
+                                      "title": "Video 2: How EASA Makes Aviation Regulations in Europe",
+                                      "channel": "EASA Official",
+                                      "duration": "5 mins",
+                                      "videoId": "XeUxBxDUGCk",
+                                      "watchUrl": "https://www.youtube.com/watch?v=XeUxBxDUGCk",
+                                      "embedUrl": "https://www.youtube-nocookie.com/embed/XeUxBxDUGCk",
+                                      "caption": "An official guide explaining how Basic Regulations, Implementing Rules (IR), Acceptable Means of Compliance (AMC), and Guidance Material (GM) work together.",
+                                      "part": "Part 2"
+                            },
+                            {
+                                      "title": "Video 3: Understanding NOTAMs for Flight Operations",
+                                      "channel": "FlightInsight",
+                                      "duration": "7 mins",
+                                      "videoId": "H701DOaQvDM",
+                                      "watchUrl": "https://www.youtube.com/watch?v=H701DOaQvDM",
+                                      "embedUrl": "https://www.youtube-nocookie.com/embed/H701DOaQvDM",
+                                      "caption": "A practical breakdown of how Notice to Airmen (NOTAM) alerts inform pilots about temporary airport hazards, broken lights, and construction cranes.",
+                                      "part": "Part 3"
+                            }
+                  ],
+                  "articles": [
+                            {
+                                      "topic": "EASA Certification Specifications",
+                                      "sourceTag": "Official Regulation",
+                                      "heading": "CS-ADR-DSN Subpart H: Obstacle Limitation Surfaces and Aerodrome Safeguarding",
+                                      "snippet": "Official European Union Aviation Safety Agency specifications defining the geometry, slopes, and permissible boundaries for approach, take-off, and transitional surfaces around European commercial aerodromes.",
+                                      "readTime": "Estimated read: 5 mins",
+                                      "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/aerodromes",
+                                      "part": "Part 1"
+                            },
+                            {
+                                      "topic": "Safety Encyclopedia",
+                                      "sourceTag": "SKYbrary Safety",
+                                      "heading": "Obstacle Limitation Surfaces (OLS): Mitigating Construction Hazards Near Airports",
+                                      "snippet": "Comprehensive operational guide explaining the legal procedures for construction crane permits, the 28-day notification rule, obstacle lighting requirements, and temporary NOTAM publications.",
+                                      "readTime": "Estimated read: 4 mins",
+                                      "url": "https://skybrary.aero/articles/obstacle-limitation-surfaces-ols",
+                                      "part": "Part 2"
+                            },
+                            {
+                                      "topic": "Aerodrome Works Safety",
+                                      "sourceTag": "EASA Part-ADR.OPS",
+                                      "heading": "Managing Runway Safety During Maintenance: Displaced Thresholds & Hand-Back Criteria",
+                                      "snippet": "Operational synthesis detailing Point ADR.OPS.B.070 requirements for declared distance recalculations, buffer zone demarcation, and joint broom-clean inspections before returning runways to live air traffic.",
+                                      "readTime": "Estimated read: 4-5 mins",
+                                      "url": "https://skybrary.aero/articles/aerodrome-works-safety",
+                                      "part": "Part 3"
+                            }
+                  ],
+                  "resources": [
+                            {
+                                      "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/aerodromes",
+                                      "tag": "01 • European Standards",
+                                      "name": "EASA Easy Access Rules for Aerodromes",
+                                      "desc": "Consolidated regulatory portal containing Regulation (EU) No 139/2014, CS-ADR-DSN, and Acceptable Means of Compliance (AMC).",
+                                      "part": "Part 1"
+                            },
+                            {
+                                      "url": "https://skybrary.aero/articles/obstacle-limitation-surfaces-ols",
+                                      "tag": "02 • Airspace Safeguarding",
+                                      "name": "SKYbrary: Obstacle Limitation Surfaces (OLS)",
+                                      "desc": "Peer-reviewed aviation safety directory detailing inner horizontal, conical, and approach surface slope gradients.",
+                                      "part": "Part 2"
+                            },
+                            {
+                                      "url": "https://www.icao.int/safety/airnavigation/Pages/aerodromes.aspx",
+                                      "tag": "03 • Global Standards",
+                                      "name": "ICAO Annex 14 Volume I (Aerodrome Design)",
+                                      "desc": "International Civil Aviation Organization standards governing runway physical characteristics and obstacle clearance boundaries.",
+                                      "part": "Part 3"
+                            },
+                            {
+                                      "url": "https://www.sia.aviation-civile.gouv.fr",
+                                      "tag": "04 • Live Flight Data",
+                                      "name": "French DGAC SIA (Aeronautical Information Service)",
+                                      "desc": "Official French state portal for aeronautical charts, AIP manuals, and live NOTAM telecommunication queries.",
+                                      "part": "Part 4"
+                            },
+                            {
+                                      "url": "https://www.aci-europe.org",
+                                      "tag": "05 • Airport Management",
+                                      "name": "ACI Europe Technical & Safety Committee",
+                                      "desc": "Airport operators association establishing guidelines on aerodrome obstacle evaluations and city urban planning coordination.",
+                                      "part": "Part 5"
+                            },
+                            {
+                                      "url": "https://oeaaa.faa.gov",
+                                      "tag": "06 • Airspace Analysis",
+                                      "name": "FAA Obstacle Evaluation & Airport Airspace Analysis (OE/AAA)",
+                                      "desc": "Public digital system for evaluating proposed building cranes, masts, and wind turbines penetrating flight paths.",
+                                      "part": "Part 6"
+                            }
+                  ],
+                  "grammar": {
+                            "title": "Words for Rules: Shall, Must, Should & May",
+                            "badge": "CEFR B1–B2 Focus",
+                            "patternTitle": "Aviation Regulatory Rule Pattern",
+                            "formula": "Subject + SHALL / MUST + Base Verb (100% Law) | Subject + SHOULD + Base Verb (Recommendation)",
+                            "rulesTitle": "When to Use Each Rule Word",
+                            "rules": [
+                                      "<strong>SHALL / MUST (Obligation):</strong> Used exclusively when an action is 100% required by aviation law. Zero choice or exception is permitted.",
+                                      "<strong>SHALL NOT / MUST NOT (Prohibition):</strong> Used when an action is strictly forbidden and creates an immediate safety violation.",
+                                      "<strong>SHOULD (Recommendation):</strong> Expresses recommended industry best practice or AMC guidance. It is strongly advised, but alternative methods (AltMOC) may be validated.",
+                                      "<strong>MAY (Permission):</strong> Indicates that an option, discretion, or special statutory authorization is available under defined conditions."
+                            ],
+                            "trap": "<strong>⚠️ Spoken English Pitfall:</strong> In French, the verb <em>'devoir'</em> (il doit) is often translated as either <em>'shall'</em> or <em>'should'</em>. In European aviation law, confusing these two is a serious legal error! Always use <em>'shall/must'</em> for mandatory laws and <em>'should'</em> for advisory best practice.",
+                            "examplesTitle": "Authentic EASA Operational Examples (Point ADR.OPS.B.070 & B.075)",
+                            "examples": [
+                                      "The aerodrome operator <strong>shall</strong> establish procedures ensuring aircraft safety is not compromised by aerodrome works.",
+                                      "Unplanned works on active runways or taxiways <strong>shall not</strong> be permitted without prior coordination.",
+                                      "Equipment and temporary scaffolding <strong>should</strong> remain strictly outside the cleared runway strip while active.",
+                                      "Dedicated apron-only servicing equipment <strong>may</strong> be exempted from flashing beacons under conditions defined in the aerodrome manual."
+                            ]
+                  }
         }
       },
       "2": {
