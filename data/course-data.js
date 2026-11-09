@@ -2214,28 +2214,40 @@
                     }
           ],
           "articles": [
-                    {
-                              "title": "Telematics & Geofencing: How Modern Hubs Enforce Apron Speed Regimes",
-                              "source": "Airport Operations International \u2022 Technical Digest",
-                              "summary": "How European international aerodromes deploy automated satellite geofencing to physically restrict ground vehicle speed inside aircraft servicing bays.",
-                              "readTime": "4 min read",
-                              "content": "Modern airport aprons are high-density, multi-stakeholder operational environments where tight turnaround targets collide with strict safety limits. Under Point ADR.OPS.B.025, aerodrome operators must establish enforceable movement rules. Leading European hubs now integrate GPS telematics directly into ground support equipment (GSE). When a baggage tug or belt loader crosses the virtual boundary into an aircraft stand, on-board governors automatically restrict throttle response, capping speed at 10 km/h regardless of driver acceleration."
-                    },
-                    {
-                              "title": "The Hidden Hazard of Unreported Composite Airframe Ramp Contacts",
-                              "source": "Aviation Safety Review \u2022 Structural Engineering",
-                              "summary": "Investigating how low-speed ground vehicle scrapes with carbon-fiber fuselages can cause internal composite delamination without visible exterior paint loss.",
-                              "readTime": "5 min read",
-                              "content": "Unlike conventional aluminum alloy airframes which show visible dents following vehicle impacts, modern carbon-fiber reinforced polymer (CFRP) fuselages (such as on the Airbus A350 and Boeing 787) may absorb a low-speed GSE impact with zero visible surface deformation. However, internal structural plies can suffer severe subsurface delamination. If ground staff fail to report a 5 km/h contact due to fear of disciplinary action, the aircraft may depart with critically degraded structural integrity."
-                    },
-                    {
-                              "title": "Designing Apron Visual Road Markings under CS-ADR-DSN",
-                              "source": "EASA Infrastructure Standards Journal",
-                              "summary": "A civil engineering guide to implementing standardized speed roundels, stop bars, yield markings, and convex blind-spot mirrors across complex apron layouts.",
-                              "readTime": "4 min read",
-                              "content": "Under EASA Certification Specifications (CS-ADR-DSN), visual movement area markings must provide unmistakable guidance to ground operators day and night. Apron roadways require retroreflective white or yellow boundary lines, high-contrast speed limit roundels at all major entry junctions, and mandatory stop bars before active taxi lane crossings. In congested baggage tunnels, convex safety mirrors must be positioned at every 90-degree corner to eliminate blind-spot collisions."
-                    }
-          ],
+          {
+                    "topic": "Vehicle Telematics",
+                    "sourceTag": "EASA SIB 2024-09",
+                    "heading": "Telematics & Geofencing: How Modern Hubs Enforce Apron Speed Regimes",
+                    "title": "Telematics & Geofencing: How Modern Hubs Enforce Apron Speed Regimes",
+                    "snippet": "How European international aerodromes deploy automated satellite geofencing to physically restrict ground vehicle speed inside aircraft servicing bays.",
+                    "summary": "How European international aerodromes deploy automated satellite geofencing to physically restrict ground vehicle speed inside aircraft servicing bays.",
+                    "readTime": "Estimated read: 4 mins",
+                    "url": "https://ad.easa.europa.eu/ad/2024-09",
+                    "part": "Part 1"
+          },
+          {
+                    "topic": "Composite Airframe Safety",
+                    "sourceTag": "Accident Investigation",
+                    "heading": "The Hidden Hazard of Unreported Composite Airframe Ramp Contacts",
+                    "title": "The Hidden Hazard of Unreported Composite Airframe Ramp Contacts",
+                    "snippet": "Investigating how low-speed ground vehicle scrapes with carbon-fiber fuselages can cause internal composite delamination without visible exterior paint loss.",
+                    "summary": "Investigating how low-speed ground vehicle scrapes with carbon-fiber fuselages can cause internal composite delamination without visible exterior paint loss.",
+                    "readTime": "Estimated read: 5 mins",
+                    "url": "https://skybrary.aero/articles/ground-handling-risk",
+                    "part": "Part 2"
+          },
+          {
+                    "topic": "Apron Markings & Design",
+                    "sourceTag": "CS-ADR-DSN.M",
+                    "heading": "Designing Apron Visual Road Markings under CS-ADR-DSN",
+                    "title": "Designing Apron Visual Road Markings under CS-ADR-DSN",
+                    "snippet": "A civil engineering guide to implementing standardized speed roundels, stop bars, yield markings, and convex blind-spot mirrors across complex apron layouts.",
+                    "summary": "A civil engineering guide to implementing standardized speed roundels, stop bars, yield markings, and convex blind-spot mirrors across complex apron layouts.",
+                    "readTime": "Estimated read: 4 mins",
+                    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/aerodromes",
+                    "part": "Part 3"
+          }
+],
           "grammar": {
                     "title": "De-Nominalization: Turning Stiff Rules into Active Commands",
                     "badge": "CEFR B1\u2013B2 Spoken Precision",
@@ -2256,50 +2268,82 @@
                               "Stiff: <em>'Maintain verification of driver authorization documentation.'</em> -> Active: <strong>'Check driver permits daily.'</strong>"
                     ]
           },
+          "resources": [
+          {
+                    "tag": "EASA Official",
+                    "name": "EASA Aerodrome Easy Access Rules",
+                    "desc": "Consolidated European regulations for aerodrome design, operations, and safety management.",
+                    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/aerodromes"
+          },
+          {
+                    "tag": "National Oversight",
+                    "name": "Direction de la S\u00e9curit\u00e9 de l'Aviation Civile (DSAC)",
+                    "desc": "French national civil aviation authority oversight directives, circulars, and audit procedures.",
+                    "url": "https://www.ecologie.gouv.fr/direction-securite-laviation-civile-dsac"
+          },
+          {
+                    "tag": "Global Safety",
+                    "name": "SKYbrary Aviation Safety Repository",
+                    "desc": "International operational encyclopedia covering apron accidents, runway safety, and human factors.",
+                    "url": "https://skybrary.aero"
+          },
+          {
+                    "tag": "ATM & Apron",
+                    "name": "Eurocontrol Airport Operations Centre",
+                    "desc": "European operational safety alerts, apron management toolkits, and runway incursion data.",
+                    "url": "https://www.eurocontrol.int"
+          },
+          {
+                    "tag": "Accident Investigation",
+                    "name": "Bureau d'Enqu\u00eates et d'Analyses (BEA)",
+                    "desc": "Official French aviation safety investigation agency reports analyzing ground occurrences.",
+                    "url": "https://bea.aero"
+          },
+          {
+                    "tag": "US FAA Standards",
+                    "name": "FAA Airport Safety & CertAlerts",
+                    "desc": "Advisory circulars, airport visual aid engineering briefs, and foreign object debris management.",
+                    "url": "https://www.faa.gov/airports/airport_safety"
+          }
+],
           "portals": [
-                    {
-                              "url": "https://www.easa.europa.eu/en/domains/air-operations/ground-safety",
-                              "tag": "01 \u2022 European Regulation",
-                              "name": "EASA Ground Safety & Apron Priorities",
-                              "desc": "Official portal for European Plan for Aviation Safety (EPAS) ramp collision initiatives.",
-                              "part": "Part 1"
-                    },
-                    {
-                              "url": "https://www.skybrary.aero/articles/ground-operations",
-                              "tag": "02 \u2022 Global Safety Knowledge",
-                              "name": "SKYbrary Aviation Safety \u2022 Ground Operations",
-                              "desc": "Comprehensive international database of ramp accident investigations and GSE safety bulletins.",
-                              "part": "Part 2"
-                    },
-                    {
-                              "url": "https://www.icao.int/safety/airnavigation/Pages/aerodromes.aspx",
-                              "tag": "03 \u2022 ICAO Standards",
-                              "name": "ICAO Doc 9137 Part 8 (Airport Operational Services)",
-                              "desc": "Global civil aviation standards governing apron management services and vehicle movement control.",
-                              "part": "Part 3"
-                    },
-                    {
-                              "url": "https://www.aviationreporting.eu",
-                              "tag": "04 \u2022 Occurrence Reporting",
-                              "name": "European Central Repository (ECR / ECCAIRS 2)",
-                              "desc": "Official EU occurrence reporting portal operating under Regulation (EU) No 376/2014.",
-                              "part": "Part 4"
-                    },
-                    {
-                              "url": "https://www.aci-europe.org",
-                              "tag": "05 \u2022 Airport Operators",
-                              "name": "ACI World Ramp Safety Handbook & Guidelines",
-                              "desc": "International airport council best practices for ground handling safety and speed management.",
-                              "part": "Part 5"
-                    },
-                    {
-                              "url": "https://www.ecologie.gouv.fr/direction-generale-laviation-civile-dgac",
-                              "tag": "06 \u2022 French Authority",
-                              "name": "French DGAC / DSAC Ground Safety Oversight",
-                              "desc": "National safety oversight bulletins, apron driving regulations, and airport audit frameworks in France.",
-                              "part": "Part 6"
-                    }
-          ]
+          {
+                    "tag": "EASA Official",
+                    "name": "EASA Aerodrome Easy Access Rules",
+                    "desc": "Consolidated European regulations for aerodrome design, operations, and safety management.",
+                    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/aerodromes"
+          },
+          {
+                    "tag": "National Oversight",
+                    "name": "Direction de la S\u00e9curit\u00e9 de l'Aviation Civile (DSAC)",
+                    "desc": "French national civil aviation authority oversight directives, circulars, and audit procedures.",
+                    "url": "https://www.ecologie.gouv.fr/direction-securite-laviation-civile-dsac"
+          },
+          {
+                    "tag": "Global Safety",
+                    "name": "SKYbrary Aviation Safety Repository",
+                    "desc": "International operational encyclopedia covering apron accidents, runway safety, and human factors.",
+                    "url": "https://skybrary.aero"
+          },
+          {
+                    "tag": "ATM & Apron",
+                    "name": "Eurocontrol Airport Operations Centre",
+                    "desc": "European operational safety alerts, apron management toolkits, and runway incursion data.",
+                    "url": "https://www.eurocontrol.int"
+          },
+          {
+                    "tag": "Accident Investigation",
+                    "name": "Bureau d'Enqu\u00eates et d'Analyses (BEA)",
+                    "desc": "Official French aviation safety investigation agency reports analyzing ground occurrences.",
+                    "url": "https://bea.aero"
+          },
+          {
+                    "tag": "US FAA Standards",
+                    "name": "FAA Airport Safety & CertAlerts",
+                    "desc": "Advisory circulars, airport visual aid engineering briefs, and foreign object debris management.",
+                    "url": "https://www.faa.gov/airports/airport_safety"
+          }
+]
 },
         "presentation": {
           "title": "Session 2 Class Presentation \u2022 Ramp Safety & Apron Speed Management",
@@ -3230,28 +3274,40 @@
                     }
           ],
           "articles": [
-                    {
-                              "title": "The Engineering of Article 71: How European Airports Secure Urgent Operational Exemptions",
-                              "source": "Journal of European Airport Law & Management",
-                              "summary": "An in-depth analysis of the legal mechanisms, safety cases, and EASA notification timelines required to obtain temporary exemptions under Regulation (EU) 2018/1139.",
-                              "readTime": "5 min read",
-                              "content": "Article 71(1) of the Basic Regulation is European aviation's primary safety valve for unforeseen operational crises. When subterranean sinkholes, culvert collapses, or severe frost heave compromise an active runway, operators cannot wait 6 months for a standard regulatory variation. By compiling an urgent safety case detailing exact hazard mitigations, certified declared distance recalculations, and daily audit regimes, airports obtain up to 60 days of temporary statutory relief while repairs proceed."
-                    },
-                    {
-                              "title": "Overrun Dynamics & RESA Compromises: Mitigating Risk with Engineered Arresting Systems",
-                              "source": "Aviation Safety & Flight Mechanics Digest",
-                              "summary": "How aerodrome operators balance shortened Runway End Safety Areas with dry-runway rules, crosswind caps, and arresting technologies during major works.",
-                              "readTime": "4 min read",
-                              "content": "Standard EASA Certification Specifications recommend a 240m RESA beyond the runway strip end to safely arrest overrunning jets. When culvert excavation forces a temporary reduction to 120m, compensatory measures must eliminate the root causes of landing overruns. By mandating that flights only land on dry pavement, capping allowable crosswinds at 15 knots, and moving the PAPI aim point, the probability of an aircraft reaching the safety buffer drops by an order of magnitude."
-                    },
-                    {
-                              "title": "Translating Recalculated Declared Distances into Cockpit Flight Management Systems (FMS)",
-                              "source": "International Flight Dispatch & Ops Review",
-                              "summary": "The critical operational coordination between aerodrome civil engineers, AIS cartographers, and airline dispatchers during displaced threshold reconfigurations.",
-                              "readTime": "4 min read",
-                              "content": "Recalculating declared distances on paper is meaningless unless the data flows accurately to the flight deck. Through AIP Supplements published 28 days in advance and Class 1 trigger NOTAMs, revised TORA and LDA coordinates are ingested into airline flight planning software. Before engine start, dispatchers verify that landing performance calculations account for the displaced threshold, ensuring flight crews know their exact stopping margin."
-                    }
-          ],
+          {
+                    "topic": "Operational Flexibility",
+                    "sourceTag": "Regulation (EU) 2018/1139",
+                    "heading": "The Engineering of Article 71: How European Airports Secure Urgent Operational Exemptions",
+                    "title": "The Engineering of Article 71: How European Airports Secure Urgent Operational Exemptions",
+                    "snippet": "An in-depth analysis of the legal mechanisms, safety cases, and EASA notification timelines required to obtain temporary exemptions under Regulation (EU) 2018/1139.",
+                    "summary": "An in-depth analysis of the legal mechanisms, safety cases, and EASA notification timelines required to obtain temporary exemptions under Regulation (EU) 2018/1139.",
+                    "readTime": "Estimated read: 5 mins",
+                    "url": "https://www.easa.europa.eu/en/document-library/regulations/regulation-eu-20181139",
+                    "part": "Part 1"
+          },
+          {
+                    "topic": "Runway Safety Buffers",
+                    "sourceTag": "CS-ADR-DSN.B.200",
+                    "heading": "Overrun Dynamics & RESA Compromises: Mitigating Risk with Engineered Arresting Systems",
+                    "title": "Overrun Dynamics & RESA Compromises: Mitigating Risk with Engineered Arresting Systems",
+                    "snippet": "How aerodrome operators balance shortened Runway End Safety Areas with dry-runway rules, crosswind caps, and arresting technologies during major works.",
+                    "summary": "How aerodrome operators balance shortened Runway End Safety Areas with dry-runway rules, crosswind caps, and arresting technologies during major works.",
+                    "readTime": "Estimated read: 4 mins",
+                    "url": "https://skybrary.aero/articles/runway-end-safety-area-resa",
+                    "part": "Part 2"
+          },
+          {
+                    "topic": "Aeronautical Information",
+                    "sourceTag": "Point ADR.OPS.B.070",
+                    "heading": "Translating Recalculated Declared Distances into Cockpit Flight Management Systems (FMS)",
+                    "title": "Translating Recalculated Declared Distances into Cockpit Flight Management Systems (FMS)",
+                    "snippet": "The critical operational coordination between aerodrome civil engineers, AIS cartographers, and airline dispatchers during displaced threshold reconfigurations.",
+                    "summary": "The critical operational coordination between aerodrome civil engineers, AIS cartographers, and airline dispatchers during displaced threshold reconfigurations.",
+                    "readTime": "Estimated read: 4 mins",
+                    "url": "https://skybrary.aero/articles/declared-distances",
+                    "part": "Part 3"
+          }
+],
           "grammar": {
                     "title": "Connecting Words for Explaining Rules & Conditions",
                     "badge": "CEFR B1\u2013B2 Focus",
@@ -3273,50 +3329,82 @@
                               "<strong>Notwithstanding</strong> normal airside speed limits, emergency fire vehicles may exceed 30 km/h during standby deployment."
                     ]
           },
+          "resources": [
+          {
+                    "tag": "EASA Official",
+                    "name": "EASA Aerodrome Easy Access Rules",
+                    "desc": "Consolidated European regulations for aerodrome design, operations, and safety management.",
+                    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/aerodromes"
+          },
+          {
+                    "tag": "National Oversight",
+                    "name": "Direction de la S\u00e9curit\u00e9 de l'Aviation Civile (DSAC)",
+                    "desc": "French national civil aviation authority oversight directives, circulars, and audit procedures.",
+                    "url": "https://www.ecologie.gouv.fr/direction-securite-laviation-civile-dsac"
+          },
+          {
+                    "tag": "Global Safety",
+                    "name": "SKYbrary Aviation Safety Repository",
+                    "desc": "International operational encyclopedia covering apron accidents, runway safety, and human factors.",
+                    "url": "https://skybrary.aero"
+          },
+          {
+                    "tag": "ATM & Apron",
+                    "name": "Eurocontrol Airport Operations Centre",
+                    "desc": "European operational safety alerts, apron management toolkits, and runway incursion data.",
+                    "url": "https://www.eurocontrol.int"
+          },
+          {
+                    "tag": "Accident Investigation",
+                    "name": "Bureau d'Enqu\u00eates et d'Analyses (BEA)",
+                    "desc": "Official French aviation safety investigation agency reports analyzing ground occurrences.",
+                    "url": "https://bea.aero"
+          },
+          {
+                    "tag": "US FAA Standards",
+                    "name": "FAA Airport Safety & CertAlerts",
+                    "desc": "Advisory circulars, airport visual aid engineering briefs, and foreign object debris management.",
+                    "url": "https://www.faa.gov/airports/airport_safety"
+          }
+],
           "portals": [
-                    {
-                              "url": "https://www.easa.europa.eu/en/document-library/regulations/regulation-eu-20181139",
-                              "tag": "01 \u2022 European Basic Regulation",
-                              "name": "EASA Basic Regulation (EU) 2018/1139",
-                              "desc": "Official statutory text of Article 71 flexibility provisions and emergency operational exemptions.",
-                              "part": "Part 1"
-                    },
-                    {
-                              "url": "https://www.skybrary.aero/articles/runway-end-safety-area-resa",
-                              "tag": "02 \u2022 Global Safety Resource",
-                              "name": "SKYbrary Runway End Safety Area (RESA)",
-                              "desc": "International safety analysis of runway overrun buffer zones and aircraft arresting dynamics.",
-                              "part": "Part 2"
-                    },
-                    {
-                              "url": "https://www.icao.int/safety/airnavigation/Pages/aerodromes.aspx",
-                              "tag": "03 \u2022 Global Standards",
-                              "name": "ICAO Doc 9981 (PANS-Aerodromes)",
-                              "desc": "Procedures for air navigation services governing aerodrome safety assessments during non-standard works.",
-                              "part": "Part 3"
-                    },
-                    {
-                              "url": "https://oeaaa.faa.gov",
-                              "tag": "04 \u2022 Airspace & Safety Cases",
-                              "name": "FAA Airport Safety Assessment Methodology",
-                              "desc": "Standard engineering guidelines for evaluating temporary runway modifications and threshold displacements.",
-                              "part": "Part 4"
-                    },
-                    {
-                              "url": "https://www.aci-europe.org",
-                              "tag": "05 \u2022 Airport Operators",
-                              "name": "ACI Europe Technical Operations Committee",
-                              "desc": "Best practices for aerodrome works safety, displaced thresholds, and airline coordination.",
-                              "part": "Part 5"
-                    },
-                    {
-                              "url": "https://www.ecologie.gouv.fr/direction-generale-laviation-civile-dgac",
-                              "tag": "06 \u2022 French Authority",
-                              "name": "French DGAC / DSAC Aerodrome Oversight",
-                              "desc": "French state portal for national aerodrome safety audits, derogations, and AIP Supplements.",
-                              "part": "Part 6"
-                    }
-          ]
+          {
+                    "tag": "EASA Official",
+                    "name": "EASA Aerodrome Easy Access Rules",
+                    "desc": "Consolidated European regulations for aerodrome design, operations, and safety management.",
+                    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/aerodromes"
+          },
+          {
+                    "tag": "National Oversight",
+                    "name": "Direction de la S\u00e9curit\u00e9 de l'Aviation Civile (DSAC)",
+                    "desc": "French national civil aviation authority oversight directives, circulars, and audit procedures.",
+                    "url": "https://www.ecologie.gouv.fr/direction-securite-laviation-civile-dsac"
+          },
+          {
+                    "tag": "Global Safety",
+                    "name": "SKYbrary Aviation Safety Repository",
+                    "desc": "International operational encyclopedia covering apron accidents, runway safety, and human factors.",
+                    "url": "https://skybrary.aero"
+          },
+          {
+                    "tag": "ATM & Apron",
+                    "name": "Eurocontrol Airport Operations Centre",
+                    "desc": "European operational safety alerts, apron management toolkits, and runway incursion data.",
+                    "url": "https://www.eurocontrol.int"
+          },
+          {
+                    "tag": "Accident Investigation",
+                    "name": "Bureau d'Enqu\u00eates et d'Analyses (BEA)",
+                    "desc": "Official French aviation safety investigation agency reports analyzing ground occurrences.",
+                    "url": "https://bea.aero"
+          },
+          {
+                    "tag": "US FAA Standards",
+                    "name": "FAA Airport Safety & CertAlerts",
+                    "desc": "Advisory circulars, airport visual aid engineering briefs, and foreign object debris management.",
+                    "url": "https://www.faa.gov/airports/airport_safety"
+          }
+]
 },
         "presentation": {
           "title": "Session 3 Class Presentation \u2022 Operational Exemptions & Runway Safety Cases",
@@ -4023,25 +4111,40 @@
                     }
           ],
           "articles": [
-                    {
-                              "title": "From Inspection to Enforcement: Understanding EASA Level 1 vs. Level 2 Findings",
-                              "source": "Journal of Aerodrome Safety & Certification",
-                              "readTime": "6 min read",
-                              "summary": "A practical operational guide for airside engineers detailing when an inspector must order an immediate stand shutdown versus when a 30-day Corrective Action Plan applies."
-                    },
-                    {
-                              "title": "Preventing Environmental Infiltration: Fuel Hydrant Safety & Drain Traps",
-                              "source": "Airport Ground Operations Review",
-                              "readTime": "5 min read",
-                              "summary": "Analysis of apron pavement drainage systems, oil-water interceptors, and mandatory ground handler response times during Jet A-1 servicing spills."
-                    },
-                    {
-                              "title": "The Invisible Threat: Managing Airfield Vegetation to Protect Optical Lighting Systems",
-                              "source": "Airside Infrastructure & Systems Engineering",
-                              "readTime": "5 min read",
-                              "summary": "Case studies demonstrating how unmaintained grass strips degrade runway guard light and stop bar conspicuity, contributing to runway confusion incidents."
-                    }
-          ],
+          {
+                    "topic": "EASA Oversight & Compliance",
+                    "sourceTag": "Part-ADR.AR.C.055",
+                    "heading": "From Inspection to Enforcement: Understanding EASA Level 1 vs. Level 2 Findings",
+                    "title": "From Inspection to Enforcement: Understanding EASA Level 1 vs. Level 2 Findings",
+                    "snippet": "A practical operational guide for airside engineers detailing when an inspector must order an immediate stand shutdown versus when a 30-day Corrective Action Plan applies.",
+                    "summary": "A practical operational guide for airside engineers detailing when an inspector must order an immediate stand shutdown versus when a 30-day Corrective Action Plan applies.",
+                    "readTime": "Estimated read: 6 mins",
+                    "url": "https://www.easa.europa.eu/en/domains/aerodromes-and-air-traffic-management",
+                    "part": "Part 1"
+          },
+          {
+                    "topic": "Apron Hydrant Safety",
+                    "sourceTag": "Point ADR.OPS.B.025",
+                    "heading": "Preventing Environmental Infiltration: Fuel Hydrant Safety & Drain Traps",
+                    "title": "Preventing Environmental Infiltration: Fuel Hydrant Safety & Drain Traps",
+                    "snippet": "Analysis of apron pavement drainage systems, oil-water interceptors, and mandatory ground handler response times during Jet A-1 servicing spills.",
+                    "summary": "Analysis of apron pavement drainage systems, oil-water interceptors, and mandatory ground handler response times during Jet A-1 servicing spills.",
+                    "readTime": "Estimated read: 5 mins",
+                    "url": "https://skybrary.aero/articles/refuelling-safety-procedures",
+                    "part": "Part 2"
+          },
+          {
+                    "topic": "Visual Aids Maintenance",
+                    "sourceTag": "CS-ADR-DSN.M.710",
+                    "heading": "The Invisible Threat: Managing Airfield Vegetation to Protect Optical Lighting Systems",
+                    "title": "The Invisible Threat: Managing Airfield Vegetation to Protect Optical Lighting Systems",
+                    "snippet": "Case studies demonstrating how unmaintained grass strips degrade runway guard light and stop bar conspicuity, contributing to runway confusion incidents.",
+                    "summary": "Case studies demonstrating how unmaintained grass strips degrade runway guard light and stop bar conspicuity, contributing to runway confusion incidents.",
+                    "readTime": "Estimated read: 5 mins",
+                    "url": "https://skybrary.aero/articles/runway-guard-lights-rgl",
+                    "part": "Part 3"
+          }
+],
           "grammar": {
                     "title": "Grammar Clinic \u2022 Past Modal Deductions for Root Cause Analysis",
                     "badge": "Language for Technical Reasoning",
@@ -4063,38 +4166,82 @@
                               "The technician <strong>can't have performed</strong> the mandatory pre-fueling walkaround."
                     ]
           },
+          "resources": [
+          {
+                    "tag": "EASA Official",
+                    "name": "EASA Aerodrome Easy Access Rules",
+                    "desc": "Consolidated European regulations for aerodrome design, operations, and safety management.",
+                    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/aerodromes"
+          },
+          {
+                    "tag": "National Oversight",
+                    "name": "Direction de la S\u00e9curit\u00e9 de l'Aviation Civile (DSAC)",
+                    "desc": "French national civil aviation authority oversight directives, circulars, and audit procedures.",
+                    "url": "https://www.ecologie.gouv.fr/direction-securite-laviation-civile-dsac"
+          },
+          {
+                    "tag": "Global Safety",
+                    "name": "SKYbrary Aviation Safety Repository",
+                    "desc": "International operational encyclopedia covering apron accidents, runway safety, and human factors.",
+                    "url": "https://skybrary.aero"
+          },
+          {
+                    "tag": "ATM & Apron",
+                    "name": "Eurocontrol Airport Operations Centre",
+                    "desc": "European operational safety alerts, apron management toolkits, and runway incursion data.",
+                    "url": "https://www.eurocontrol.int"
+          },
+          {
+                    "tag": "Accident Investigation",
+                    "name": "Bureau d'Enqu\u00eates et d'Analyses (BEA)",
+                    "desc": "Official French aviation safety investigation agency reports analyzing ground occurrences.",
+                    "url": "https://bea.aero"
+          },
+          {
+                    "tag": "US FAA Standards",
+                    "name": "FAA Airport Safety & CertAlerts",
+                    "desc": "Advisory circulars, airport visual aid engineering briefs, and foreign object debris management.",
+                    "url": "https://www.faa.gov/airports/airport_safety"
+          }
+],
           "portals": [
-                    {
-                              "name": "EASA Aerodrome Rules (Part-ADR)",
-                              "url": "https://www.easa.europa.eu/en/domains/aerodromes-and-air-traffic-management",
-                              "desc": "Official European regulations for aerodrome certification, operations, and oversight inspection."
-                    },
-                    {
-                              "name": "Direction de la S\u00e9curit\u00e9 de l'Aviation Civile (DSAC)",
-                              "url": "https://www.ecologie.gouv.fr/direction-securite-laviation-civile-dsac",
-                              "desc": "French national civil aviation oversight authority governing aerodrome audits and inspections."
-                    },
-                    {
-                              "name": "ICAO Runway Safety Programme",
-                              "url": "https://www.icao.int/safety/RunwaySafety",
-                              "desc": "Global guidelines on runway incursion prevention, visual ground aids, and marking standards."
-                    },
-                    {
-                              "name": "Eurocontrol Airport Safety Hub",
-                              "url": "https://www.eurocontrol.int",
-                              "desc": "European operational safety data, apron collision alerts, and runway safety team toolkits."
-                    },
-                    {
-                              "name": "FAA Airport Safety & Standards",
-                              "url": "https://www.faa.gov/airports/airport_safety",
-                              "desc": "Federal aviation regulations, airfield inspection checklists, and foreign object debris control."
-                    },
-                    {
-                              "name": "Bureau d'Enqu\u00eates et d'Analyses (BEA)",
-                              "url": "https://bea.aero",
-                              "desc": "Official French safety investigation reports analyzing ground occurrences and ramp accidents."
-                    }
-          ]
+          {
+                    "tag": "EASA Official",
+                    "name": "EASA Aerodrome Easy Access Rules",
+                    "desc": "Consolidated European regulations for aerodrome design, operations, and safety management.",
+                    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/aerodromes"
+          },
+          {
+                    "tag": "National Oversight",
+                    "name": "Direction de la S\u00e9curit\u00e9 de l'Aviation Civile (DSAC)",
+                    "desc": "French national civil aviation authority oversight directives, circulars, and audit procedures.",
+                    "url": "https://www.ecologie.gouv.fr/direction-securite-laviation-civile-dsac"
+          },
+          {
+                    "tag": "Global Safety",
+                    "name": "SKYbrary Aviation Safety Repository",
+                    "desc": "International operational encyclopedia covering apron accidents, runway safety, and human factors.",
+                    "url": "https://skybrary.aero"
+          },
+          {
+                    "tag": "ATM & Apron",
+                    "name": "Eurocontrol Airport Operations Centre",
+                    "desc": "European operational safety alerts, apron management toolkits, and runway incursion data.",
+                    "url": "https://www.eurocontrol.int"
+          },
+          {
+                    "tag": "Accident Investigation",
+                    "name": "Bureau d'Enqu\u00eates et d'Analyses (BEA)",
+                    "desc": "Official French aviation safety investigation agency reports analyzing ground occurrences.",
+                    "url": "https://bea.aero"
+          },
+          {
+                    "tag": "US FAA Standards",
+                    "name": "FAA Airport Safety & CertAlerts",
+                    "desc": "Advisory circulars, airport visual aid engineering briefs, and foreign object debris management.",
+                    "url": "https://www.faa.gov/airports/airport_safety"
+          }
+]
 },
         "presentation": {
           "title": "Session 4 Class Presentation \u2022 Ground Inspection & Audit Findings",
