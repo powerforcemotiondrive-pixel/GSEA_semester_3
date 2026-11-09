@@ -1334,30 +1334,42 @@
                               "definition": "Hazardous condition where a GSE contact or fuselage scrape is concealed or unrecorded, allowing an aircraft to depart with compromised airworthiness."
                     }
           ],
-          "speakingTask": {
-                    "title": "Authentic EASA Task \u2022 SIB 2024-09 Ramp Collision Mitigation",
+                    "speakingTask": {
+                    "title": "Authentic EASA Task • SIB 2024-09 Ramp Collision Mitigation",
                     "instructions": "Working in pairs or trios, open the authentic EASA Safety Information Bulletin (SIB No. 2024-09) below. Each group reviews one operational section, analyzes the practical challenge, and delivers a concise 2-minute spoken briefing explaining their safety solutions using today's technical vocabulary.",
+                    "document": {
+                              "title": "EASA SIB No. 2024-09: Mitigation of Ramp Collision Risks & Speed Management",
+                              "subtitle": "EASA Safety Information Bulletin • Issued 14 October 2024 (4 Pages)",
+                              "filename": "GSEA_S3_M1_S2_EASA_SIB_2024_09_Ramp_Safety.pdf",
+                              "path": "docs/GSEA_S3_M1_S2_EASA_SIB_2024_09_Ramp_Safety.pdf",
+                              "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
+                    },
                     "requirements": [
                               "Use at least 4 of today's 10 technical terms from the list above.",
                               "Cite specific operational measures from Section 4 of EASA SIB No. 2024-09.",
                               "Ensure both partners actively speak and explain practical ramp solutions without reading verbatim."
                     ],
                     "statements": {
-                              "group1": "Group 1 Statement (Infrastructure & Speed Regimes): How do differentiated speed limits (25\u201330 km/h on roadways vs. 5\u201310 km/h on stands) and CS-ADR-DSN road markings mitigate high-energy ramp impacts?",
+                              "group1": "Group 1 Statement (Infrastructure & Speed Regimes): How do differentiated speed limits (25–30 km/h on roadways vs. 5–10 km/h on stands) and CS-ADR-DSN road markings mitigate high-energy ramp impacts?",
                               "group2": "Group 2 Statement (Telematics & Equipment Control): Why are physical speed governors and GPS geofencing more effective than speed limit signs alone on high-workload turnaround aprons?",
                               "group3": "Group 3 Statement (Driver Authorisation & Just Culture): How can aerodrome operators balance strict Apron Driving Authorisation (ADA) testing with a non-punitive Just Culture so minor scrapes are reported immediately?"
-                    }
+                    },
+                    "usefulPhrases": [
+                              "According to EASA SIB 2024-09, ground collisions are primarily caused by...",
+                              "Under Point ADR.OPS.B.025, the aerodrome operator must enforce...",
+                              "In the vicinity of parked aircraft, speed must be restricted to walking pace...",
+                              "A non-punitive Just Culture ensures that ground personnel report...",
+                              "To mitigate high-energy vehicle impacts on the ramp, our group recommends..."
+                    ]
           },
           "document": {
-                    "title": "EASA Safety Information Bulletin SIB No. 2024-09",
-                    "badge": "Authentic EASA SIB \u2022 Ground Safety Priority",
-                    "desc": "Official European Union Aviation Safety Agency bulletin detailing ramp collision risk mitigation, vehicle speed zoning, GSE telematics, and Just Culture reporting on aerodrome aprons.",
-                    "url": "docs/GSEA_S3_M1_S2_EASA_SIB_2024_09_Ramp_Safety.pdf",
-                    "pages": "4 Pages (Full Technical Publication)",
-                    "fileSize": "78 KB",
-                    "downloadName": "EASA_SIB_2024_09_Ramp_Safety.pdf"
+                    "title": "EASA SIB No. 2024-09: Mitigation of Ramp Collision Risks & Speed Management",
+                    "subtitle": "EASA Safety Information Bulletin • Issued 14 October 2024 (4 Pages)",
+                    "filename": "GSEA_S3_M1_S2_EASA_SIB_2024_09_Ramp_Safety.pdf",
+                    "path": "docs/GSEA_S3_M1_S2_EASA_SIB_2024_09_Ramp_Safety.pdf",
+                    "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
           }
-},
+        },
         "objectives": {
           "title": "Session 2 Objectives - Safety Alerts & Ramp Briefings",
           "summary": "By the end of this session, GSEA students will be able to distinguish mandatory Safety Directives from advisory Safety Information Bulletins, de-nominalize heavy regulatory text into direct active instructions, synthesize dense safety alerts into the Executive 3-Bullet Rule (maximum 12 words per action), apply text chunking and intonation to eliminate flat delivery, deliver a professional 90-second morning safety briefing to ramp teams, and field spontaneous operational challenge questions with confidence.",
