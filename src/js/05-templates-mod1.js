@@ -1881,11 +1881,10 @@ function renderLessonContentTabSession3(sessionData, theme) {
       const content = sessionData.lessonContent || {};
       const hero = content.hero || {};
       const opening = content.openingSession || {};
-      const chart = content.chartExtract || {};
-      const clinic = content.grammarClinic || {};
-      const game = content.communicativeGame || {};
-      const roleplay = content.roleplaySimulation || {};
-      const safety = content.safetyCheck || {};
+      const photoExhibits = content.photoExhibits || [];
+      const dossier = content.dossier || {};
+      const swissCheese = content.swissCheeseMatrix || {};
+      const debrief = content.debriefTask || {};
 
       bodyEl.innerHTML = `
         <div class="space-y-6 printable-lesson-container">
@@ -1896,7 +1895,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                 <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">DIGITAL WORKSHEET</span>
                 <span class="text-xs font-bold text-slate-700">AT Module 1 • Session 5</span>
               </div>
-              <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">${hero.title || 'Airspace Corridors: SIDs, STARs & Transition Routes'}</h3>
+              <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">${hero.title || 'Multi-Source Incident Investigation & Root Cause Analysis'}</h3>
             </div>
             <button type="button" onclick="window.printLessonContent()" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 shadow-xs transition-all cursor-pointer shrink-0">
               <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
@@ -1907,11 +1906,11 @@ function renderLessonContentTabSession3(sessionData, theme) {
           <!-- Hero Banner & Context -->
           <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
             <div class="relative">
-              <img src="${hero.image || 'images/s3_m1_session5_banner.jpg'}" alt="${hero.title || 'Airspace Corridors: SIDs, STARs & Transition Routes'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/aas_m1card5.jpg'">
+              <img src="${hero.image || 'images/s3_m1_session5_investigation.jpg'}" alt="${hero.title || 'Multi-Source Incident Investigation'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/aas_m1card5.jpg'">
               <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4 sm:p-5">
                 <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">Technical English • Module 1</span>
-                <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'Airspace Corridors: SIDs, STARs & Transition Routes'}</h3>
-                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${hero.subtitle || ''}</p>
+                <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'Multi-Source Incident Investigation & Root Cause Analysis'}</h3>
+                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${hero.subtitle || 'Reconstructing Airfield Ground Occurrences & Applying the Swiss Cheese Model'}</p>
               </div>
             </div>
             <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
@@ -1920,403 +1919,211 @@ function renderLessonContentTabSession3(sessionData, theme) {
                 <span class="bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 rounded">${hero.targetLevel || 'CEFR B1–B2'}</span>
                 <span class="text-slate-400">&bull;</span>
                 <span class="font-bold text-slate-800">Audience:</span>
-                <span class="text-slate-600">${hero.roleContext || 'GSEA Student Training'}</span>
+                <span class="text-slate-600">${hero.roleContext || 'Airside Safety Investigators & Operations'}</span>
               </div>
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-800">Total Duration:</span>
-                <span class="font-bold text-slate-900">${hero.duration || '120 Minutes'}</span>
+                <span class="font-semibold text-slate-700">2 Hours (Teacher-Paced)</span>
               </div>
             </div>
           </div>
 
-          <!-- Activity 1: Warm-up & Entry Spot-Check -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 1</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Warm-up & Entry Spot-Check'}</h4>
-                  <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
+          <!-- Context Alert Box -->
+          <div class="p-4 rounded-xl bg-blue-50/80 border border-blue-200 text-blue-950 text-xs sm:text-[13px] leading-relaxed shadow-2xs space-y-1.5">
+            <div class="flex items-center gap-2 font-bold text-blue-900 uppercase tracking-wider text-[11px]">
+              <svg class="w-4 h-4 text-blue-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/></svg>
+              <span>Operational Investigation Context: Occurrence Dossier BEA/EASA-2024-089</span>
+            </div>
+            <p>Airside occurrences rarely result from a single failure. When an airliner experiences a pushback shear pin fracture or a contaminated runway excursion, safety investigators synthesize fragmented records—ATC voice logs, METAR storm decodes, deferred maintenance logs, and pilot occurrence reports. By applying the Swiss Cheese Model, investigators uncover latent organizational flaws behind active frontline slips.</p>
+          </div>
+
+          <!-- Stage 1: Visual Evidence & Photo Description Challenge -->
+          <div class="p-4 sm:p-5 rounded-xl bg-white border border-slate-200 shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+              <div>
+                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Part 1: Visual Evidence</span>
+                <h4 class="text-sm sm:text-base font-black text-slate-900">Occurrence Photo Description Challenge • Reconstructing Physical Causal Chains</h4>
+              </div>
+              <span class="text-xs font-bold text-emerald-800 bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded-full">Interactive Photos</span>
+            </div>
+
+            <p class="text-xs sm:text-[13px] text-slate-600 leading-relaxed">
+              In pairs, inspect the <strong>three photographic evidence exhibits</strong> from Occurrence 2024-089 below. Click any image to enlarge in full-screen lightbox. Practice describing what you see, identifying the physical damage, and deducing the operational trigger using targeted cause-and-effect connectors (<em>stemming from</em>, <em>triggered by</em>, <em>resulting in</em>, <em>attributable to</em>).
+            </p>
+
+            <!-- 3 Rich Interactive Photo Description Cards -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 pt-1">
+              ${photoExhibits.map((photo, pIdx) => `
+                <div class="p-3.5 bg-white border border-emerald-200 rounded-xl shadow-xs space-y-3 flex flex-col justify-between">
+                  <div class="space-y-2">
+                    <div class="flex items-center justify-between gap-2">
+                      <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-sky-100 text-sky-900 border border-sky-200">${photo.badge || `Exhibit 0${pIdx + 1}`}</span>
+                      <span class="text-[10px] font-bold text-slate-400">Physical Evidence</span>
+                    </div>
+                    <div class="relative rounded-lg overflow-hidden border border-slate-200 group cursor-pointer" onclick="window.openImageLightbox('${photo.image}', '${photo.title}')">
+                      <img src="${photo.image}" alt="${photo.title}" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300">
+                      <div class="absolute bottom-1.5 right-1.5 bg-black/75 text-white text-[9px] font-bold px-1.5 py-0.5 rounded flex items-center gap-1 backdrop-blur-xs">
+                        <span>🔍 Enlarge</span>
+                      </div>
+                    </div>
+                    <h5 class="text-xs font-black text-slate-900">${photo.title}</h5>
+                    <p class="text-[11.5px] text-slate-600 leading-snug">${photo.caption}</p>
+                  </div>
+                  <div class="p-2.5 rounded-lg bg-emerald-50/60 border border-emerald-100 text-[11px] text-emerald-950 italic space-y-1">
+                    <strong>Model Spoken Causal Description:</strong>
+                    <p>&ldquo;${photo.modelSpoken}&rdquo;</p>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+
+            <!-- Spoken Practice Prompts -->
+            <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+              <span class="text-[11px] font-bold text-slate-700 uppercase tracking-wider block">Useful Spoken Connectors for Photo Description:</span>
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 text-xs text-slate-800">
+                <div class="p-2 bg-white rounded border border-slate-200">
+                  <strong class="text-rose-700 block">STEM FROM</strong>
+                  <span class="text-[11px] text-slate-500">Points backward to background origin</span>
+                </div>
+                <div class="p-2 bg-white rounded border border-slate-200">
+                  <strong class="text-amber-700 block">TRIGGERED BY</strong>
+                  <span class="text-[11px] text-slate-500">Identifies the immediate active spark</span>
+                </div>
+                <div class="p-2 bg-white rounded border border-slate-200">
+                  <strong class="text-blue-700 block">RESULTING IN</strong>
+                  <span class="text-[11px] text-slate-500">Connects directly to physical outcome</span>
+                </div>
+                <div class="p-2 bg-white rounded border border-slate-200">
+                  <strong class="text-emerald-700 block">ATTRIBUTABLE TO</strong>
+                  <span class="text-[11px] text-slate-500">Assigns operational responsibility</span>
                 </div>
               </div>
-              <div class="flex flex-wrap items-center gap-1.5">
-                ${(opening.modeBadges || []).map(b => `<span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded border border-slate-200">${b}</span>`).join('')}
+            </div>
+          </div>
+
+          <!-- Stage 2: The Multi-Source Incident Dossier -->
+          <div class="p-4 sm:p-5 rounded-xl bg-white border border-slate-200 shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+              <div>
+                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Part 2: Evidence Synthesis</span>
+                <h4 class="text-sm sm:text-base font-black text-slate-900">${dossier.title || 'BEA/EASA Technical Incident Dossier • Occurrence Dossier 2024-089'}</h4>
               </div>
+              <span class="text-xs font-bold text-sky-800 bg-sky-50 border border-sky-200 px-2.5 py-1 rounded-full">4-Source Dossier</span>
             </div>
 
-            <!-- Student Instructions & Teacher Notes -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 p-3.5 bg-slate-50 rounded-lg border border-slate-200 text-xs">
-              <div class="md:col-span-2 space-y-1.5">
-                <span class="font-bold text-slate-800 flex items-center gap-1">
-                  <svg class="w-3.5 h-3.5 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z"/></svg>
-                  Student Instructions:
-                </span>
-                <ul class="list-disc pl-4 space-y-1 text-slate-600 text-[11px]">
-                  ${(opening.instructions || []).map(inst => `<li>${inst}</li>`).join('')}
-                </ul>
-              </div>
-              <div class="space-y-1.5 bg-white p-2.5 rounded border border-slate-200">
-                <span class="font-bold text-slate-800 flex items-center gap-1">
-                  <svg class="w-3.5 h-3.5 text-amber-500" fill="currentColor" viewBox="0 0 20 20"><path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"/></svg>
-                  Teaching Staff Notes:
-                </span>
-                <p class="text-[11px] text-slate-600 leading-relaxed">${opening.teacherNotes || ''}</p>
-              </div>
-            </div>
+            <p class="text-xs sm:text-[13px] text-slate-600 leading-relaxed">
+              Use the tab switcher below to inspect the four operational records. Look for contradictions and chronological correlations between ATC instructions, weather deterioration, maintenance items, and pilot statements.
+            </p>
 
-            <!-- Spoken Discussion Prompts -->
-            <div class="space-y-3 pt-2">
-              <h5 class="text-xs font-black uppercase tracking-wider text-slate-700">Opening Discussion Questions:</h5>
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-                ${(opening.newsPrompts || []).map((p, idx) => `
-                  <div class="p-3 bg-white border border-slate-200 rounded-lg shadow-2xs flex flex-col justify-between">
-                    <div>
-                      <div class="flex items-center justify-between text-[11px] font-bold text-slate-400 mb-1">
-                        <span>QUESTION 0${idx + 1}</span>
-                        <span class="text-blue-600">Discuss with Partner</span>
-                      </div>
-                      <p class="text-xs font-bold text-slate-800 mb-2">${p.question}</p>
-                    </div>
-                    <div class="pt-2 border-t border-slate-100">
-                      <button type="button" onclick="this.nextElementSibling.classList.toggle('hidden')" class="text-[10px] font-bold text-blue-600 hover:underline cursor-pointer flex items-center gap-1">
-                        <span>Show Sample Spoken Answers</span>
-                        <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-                      </button>
-                      <div class="hidden mt-2 p-2 bg-slate-50 rounded text-[11px] text-slate-600 space-y-1.5 border border-slate-200">
-                        ${(p.exampleAnswers || []).map(ans => `<p class="leading-relaxed">&ldquo;${ans}&rdquo;</p>`).join('')}
-                      </div>
-                    </div>
-                  </div>
+            <!-- Dossier Tabs -->
+            <div class="border border-slate-200 rounded-xl overflow-hidden bg-slate-50">
+              <div class="flex flex-wrap border-b border-slate-200 bg-white" id="dossier-tab-header">
+                ${(dossier.tabs || []).map((t, tIdx) => `
+                  <button type="button" onclick="window.switchDossierTab('${t.id}')" class="dossier-tab-btn px-4 py-2.5 text-xs font-bold border-b-2 transition-all cursor-pointer flex items-center gap-2 ${tIdx === 0 ? 'border-sky-600 text-sky-700 bg-sky-50/50' : 'border-transparent text-slate-500 hover:text-slate-800'}" data-dossier-tab="${t.id}">
+                    <span>${t.title}</span>
+                  </button>
                 `).join('')}
               </div>
-            </div>
 
-            <!-- Entry Spot-Check Diagnostics -->
-            <div class="space-y-3 pt-3 border-t border-slate-100">
-              <div class="flex items-center justify-between">
-                <h5 class="text-xs font-black uppercase tracking-wider text-slate-700">Entry Spot-Check Diagnostic (4 Questions):</h5>
-                <span class="text-[11px] font-medium text-slate-500">Test baseline comprehension</span>
-              </div>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                ${(opening.spotCheckQuestions || []).map(q => `
-                  <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-lg space-y-2">
-                    <p class="text-xs font-bold text-slate-900">${q.id}. ${q.question}</p>
-                    <div class="space-y-1">
-                      ${q.options.map((opt, oIdx) => `
-                        <div class="text-[11px] text-slate-700 flex items-start gap-1.5">
-                          <span class="font-bold text-slate-500">${String.fromCharCode(65 + oIdx)})</span>
-                          <span>${opt}</span>
-                        </div>
+              <div class="p-4 sm:p-5" id="dossier-tab-content">
+                ${(dossier.tabs || []).map((t, tIdx) => `
+                  <div id="dossier-pane-${t.id}" class="dossier-pane space-y-3 ${tIdx === 0 ? '' : 'hidden'}">
+                    <div class="flex items-center justify-between">
+                      <span class="text-xs font-bold text-slate-700 uppercase tracking-wider">${t.badge}</span>
+                      <span class="text-[10px] font-bold text-slate-400 bg-white px-2 py-0.5 rounded border border-slate-200">Official Record</span>
+                    </div>
+                    <div class="bg-white p-3.5 sm:p-4 rounded-lg border border-slate-200 font-mono text-[11px] sm:text-xs text-slate-800 space-y-1.5 leading-relaxed overflow-x-auto">
+                      ${t.content.map(line => `
+                        <div class="${line.startsWith('14:') ? 'text-blue-900 font-bold' : (line.startsWith('METAR') || line.startsWith('SPECI') ? 'text-amber-900 font-bold' : (line.startsWith('Statement') ? 'text-purple-900 font-bold mt-2' : ''))}">${line}</div>
                       `).join('')}
                     </div>
-                    <div class="pt-2 border-t border-slate-200 flex items-center justify-between">
-                      <button type="button" onclick="this.nextElementSibling.classList.toggle('hidden')" class="text-[10px] font-black text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 px-2 py-0.5 rounded cursor-pointer">
-                        Reveal Answer
-                      </button>
-                      <div class="hidden text-[11px] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">
-                        ${q.explanation}
-                      </div>
-                    </div>
                   </div>
                 `).join('')}
               </div>
             </div>
           </div>
 
-          <!-- Activity 2: Visual Chart & Description Clinic -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-5">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 2</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${chart.title || 'Activity 2: Visual Chart & Description Clinic'}</h4>
-                  <p class="text-[11px] text-slate-500">${chart.summary || ''}</p>
-                </div>
+          <!-- Stage 3: The Swiss Cheese Model Root Cause Matrix -->
+          <div class="p-4 sm:p-5 rounded-xl bg-white border border-slate-200 shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+              <div>
+                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Part 3: Root Cause Mapping</span>
+                <h4 class="text-sm sm:text-base font-black text-slate-900">${swissCheese.title || 'The Swiss Cheese Model: Root Cause Synthesis Matrix'}</h4>
               </div>
-              <span class="bg-blue-100 text-blue-800 text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">${chart.badge || 'AERONAUTICAL CHART'}</span>
+              <span class="text-xs font-bold text-amber-800 bg-amber-50 border border-amber-200 px-2.5 py-1 rounded-full">Systemic Safety</span>
             </div>
 
-            <!-- Visual Chart Container -->
-            <div class="bg-slate-950 rounded-xl overflow-hidden border border-slate-800 shadow-md">
-              <div class="p-3 bg-slate-900 border-b border-slate-800 flex items-center justify-between">
-                <div class="flex items-center gap-2">
-                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                  <span class="text-xs font-mono font-bold text-white tracking-wide uppercase">${chart.callsign || 'LFMT SPECIFICATION'}</span>
+            <p class="text-xs sm:text-[13px] text-slate-600 leading-relaxed">
+              James Reason's model illustrates that accidents occur only when holes in successive organizational and operational barriers align. Review how the findings from Occurrence 2024-089 map across the four structural layers:
+            </p>
+
+            <!-- 4 Swiss Cheese Layers Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
+              ${(swissCheese.layers || []).map((layer, lIdx) => `
+                <div class="p-4 rounded-xl border ${lIdx === 0 ? 'bg-rose-50/60 border-rose-200' : (lIdx === 1 ? 'bg-amber-50/60 border-amber-200' : (lIdx === 2 ? 'bg-blue-50/60 border-blue-200' : 'bg-emerald-50/60 border-emerald-200'))} space-y-2.5">
+                  <div class="flex items-center justify-between gap-2 border-b pb-2 ${lIdx === 0 ? 'border-rose-200 text-rose-950' : (lIdx === 1 ? 'border-amber-200 text-amber-950' : (lIdx === 2 ? 'border-blue-200 text-blue-950' : 'border-emerald-200 text-emerald-950'))}">
+                    <h5 class="text-xs font-black">${layer.category}</h5>
+                    <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-white/80 border">${layer.badge}</span>
+                  </div>
+                  <ul class="space-y-1.5 text-xs text-slate-700 leading-snug">
+                    ${layer.items.map(it => `
+                      <li class="flex items-start gap-1.5">
+                        <span class="font-bold shrink-0 ${lIdx === 0 ? 'text-rose-600' : (lIdx === 1 ? 'text-amber-600' : (lIdx === 2 ? 'text-blue-600' : 'text-emerald-600'))}">&bull;</span>
+                        <span>${it}</span>
+                      </li>
+                    `).join('')}
+                  </ul>
                 </div>
-                <div class="flex items-center gap-2">
-                  <a href="${chart.visualChart}" target="_blank" rel="noopener noreferrer" class="no-print inline-flex items-center gap-1.5 px-2.5 py-1 text-[11px] font-bold text-slate-200 bg-slate-800 hover:bg-slate-700 rounded border border-slate-600 transition-colors">
-                    <svg class="w-3.5 h-3.5 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    <span>Inspect / Open Full Chart</span>
-                  </a>
-                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- Stage 4: Oral Technical Debriefing & Notes -->
+          <div class="p-4 sm:p-5 rounded-xl bg-white border border-slate-200 shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+              <div>
+                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Part 4: Executive Presentation</span>
+                <h4 class="text-sm sm:text-base font-black text-slate-900">${debrief.title || 'Executive Debriefing to the Airport Safety Directorate'}</h4>
               </div>
-              <div class="p-2 sm:p-4 bg-slate-950 flex items-center justify-center">
-                <img src="${chart.visualChart}" alt="${chart.badge}" class="w-full max-w-4xl h-auto rounded shadow-sm border border-slate-800/80 cursor-pointer transition-transform hover:scale-[1.005]" onclick="window.open('${chart.visualChart}', '_blank')" title="Click to view full size">
-              </div>
+              <span class="text-xs font-bold text-indigo-800 bg-indigo-50 border border-indigo-200 px-2.5 py-1 rounded-full">Spoken Simulation</span>
             </div>
 
-            <!-- Speaking Skill Clinic (Map / Flight Path / Profile Description) -->
-            
-            <!-- Flight Path Narration Skill Box -->
-            <div class="p-4 bg-purple-50/60 border border-purple-200 rounded-xl space-y-3">
+            <p class="text-xs sm:text-[13px] text-slate-600 leading-relaxed">
+              ${debrief.leadPrompt || 'Working with your partner, prepare a concise 2-minute oral presentation summarizing findings, root causes, and safety recommendations.'}
+            </p>
+
+            <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl space-y-1.5 text-xs text-slate-700">
+              <strong class="text-slate-900 block font-bold text-[11px] uppercase tracking-wider">Recommended Debriefing Structure:</strong>
+              ${(debrief.structureSteps || []).map(step => `<div class="text-[11.5px]">&bull; ${step}</div>`).join('')}
+            </div>
+
+            <!-- Digital Notes Area -->
+            <div class="space-y-2 pt-2">
               <div class="flex items-center justify-between">
-                <div class="flex items-center gap-2">
-                  <span class="w-2 h-2 rounded-full bg-purple-600"></span>
-                  <h5 class="text-xs font-black uppercase tracking-wider text-purple-900">${chart.flightPathClinic?.title || 'Flight Path Narration Skill'}</h5>
+                <label for="notes-s5-debrief" class="text-xs font-bold text-slate-800 uppercase tracking-wider">Your Team Debriefing Notes &amp; Recommendations:</label>
+                <span class="text-[10px] text-slate-400 font-medium no-print">Auto-saves locally</span>
+              </div>
+              <textarea id="notes-s5-debrief" oninput="window.saveLessonNote('5', 'debrief', this.value); window.updateWordCount && window.updateWordCount(this.value, 'word-count-s5');" rows="5" placeholder="Draft your 2-minute oral debriefing here using cause-and-effect connectors: stemming from, triggered by, resulting in, attributable to, consequently..." class="w-full p-3.5 text-xs sm:text-[13px] bg-slate-50 border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans shadow-inner">${window.getLessonNote ? window.getLessonNote('5', 'debrief') : ''}</textarea>
+              <div class="flex items-center justify-between text-[11px] text-slate-400 no-print">
+                <span id="word-count-s5">Word count: 0 words</span>
+                <span class="italic">Saved to local browser cache</span>
+              </div>
+            </div>
+
+            <!-- Revealable Model Debriefing Script -->
+            <div class="pt-2">
+              <button type="button" onclick="const p = document.getElementById('model-s5-script'); p.classList.toggle('hidden');" class="inline-flex items-center gap-1.5 text-xs font-bold text-sky-700 hover:text-sky-900 bg-sky-50 hover:bg-sky-100 border border-sky-200 px-3.5 py-2 rounded-lg transition-colors cursor-pointer">
+                <span>💡 Reveal Model Executive Briefing Script</span>
+                <span>&darr;</span>
+              </button>
+              <div id="model-s5-script" class="hidden mt-3 p-4 bg-slate-900 text-white rounded-xl space-y-2 border border-slate-800 text-xs sm:text-[12.5px] leading-relaxed shadow-lg">
+                <div class="flex items-center justify-between text-sky-400 border-b border-slate-800 pb-2">
+                  <span class="font-bold uppercase tracking-wider text-[10px]">Model Spoken Briefing (Audio Transcript)</span>
+                  <button type="button" onclick="if(window.speakText) window.speakText(document.getElementById('s5-model-text').innerText)" class="px-2.5 py-1 bg-sky-600 hover:bg-sky-500 text-white rounded text-[10px] font-bold cursor-pointer">🔊 Read Aloud</button>
                 </div>
-                <span class="text-[10px] font-bold text-purple-700 bg-purple-100 px-2 py-0.5 rounded">Sequential Speaking</span>
-              </div>
-              <p class="text-xs text-slate-700 leading-relaxed">${chart.flightPathClinic?.summary || ''}</p>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                ${(chart.flightPathClinic?.phrases || []).map(p => `
-                  <div class="p-2.5 bg-white border border-purple-100 rounded-lg text-xs space-y-0.5">
-                    <span class="text-[10px] font-bold text-purple-600 uppercase">${p.label}:</span>
-                    <p class="text-slate-800 italic text-[11px]">&ldquo;${p.phrase}&rdquo;</p>
-                  </div>
-                `).join('')}
-              </div>
-              <div class="p-2.5 bg-white border border-purple-200 rounded-lg text-[11px] text-purple-900 font-bold flex items-center gap-2">
-                <span>⏱️</span>
-                <span>${chart.flightPathClinic?.challenge || ''}</span>
-              </div>
-            </div>
-
-
-            <!-- Structured Technical Specifications -->
-            <div class="space-y-2 pt-2 border-t border-slate-100">
-              <h5 class="text-xs font-black uppercase tracking-wider text-slate-700">Chart Operational Notes &amp; Data:</h5>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                ${(chart.sections || []).map(sec => `
-                  <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-lg space-y-1.5">
-                    <h6 class="text-xs font-black text-slate-800 border-b border-slate-200 pb-1">${sec.heading}</h6>
-                    <ul class="space-y-1 text-xs text-slate-700">
-                      ${sec.details.map(d => `
-                        <li class="flex items-start gap-1.5">
-                          <span class="text-blue-600 font-bold mt-0.5">&bull;</span>
-                          <span class="leading-relaxed text-[11px]">${d}</span>
-                        </li>
-                      `).join('')}
-                    </ul>
-                  </div>
-                `).join('')}
-              </div>
-            </div>
-          </div>
-
-          <!-- Activity 3: Language Clinic -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 3</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${clinic.title || 'Activity 3: Language Clinic'}</h4>
-                  <p class="text-[11px] text-slate-500">${clinic.summary || ''}</p>
+                <div id="s5-model-text" class="text-slate-200 whitespace-pre-line pt-1">
+                  ${debrief.modelDebriefScript || ''}
                 </div>
-              </div>
-              <span class="bg-purple-100 text-purple-800 text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">LANGUAGE FOCUS</span>
-            </div>
-
-            <!-- Rules Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              ${(clinic.rules || []).map(r => `
-                <div class="p-3 bg-purple-50/50 border border-purple-200 rounded-lg space-y-1">
-                  <span class="text-xs font-black text-purple-900 font-mono">${r.term}</span>
-                  <p class="text-[11px] text-slate-600">${r.meaning}</p>
-                  <p class="text-[11px] text-purple-800 italic pt-1 border-t border-purple-100">&ldquo;${r.example}&rdquo;</p>
-                </div>
-              `).join('')}
-            </div>
-
-            <!-- Practical Oral Drills -->
-            <div class="space-y-3 pt-3 border-t border-slate-100">
-              <h5 class="text-xs font-black uppercase tracking-wider text-slate-700">Practical Spoken Drills (In Pairs):</h5>
-              <div class="space-y-2">
-                ${(clinic.drills || []).map(d => `
-                  <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                    <div class="space-y-0.5">
-                      <span class="text-[10px] font-bold text-slate-400 uppercase">Drill ${d.id}</span>
-                      <p class="text-xs font-bold text-slate-800">${d.prompt}</p>
-                    </div>
-                    <div class="shrink-0">
-                      <button type="button" onclick="this.nextElementSibling.classList.toggle('hidden')" class="text-[10px] font-bold text-blue-600 hover:underline cursor-pointer">
-                        Reveal Model Spoken Response
-                      </button>
-                      <div class="hidden text-xs text-blue-900 font-medium bg-blue-50 p-2 rounded border border-blue-200 mt-1 sm:max-w-md">
-                        &ldquo;${d.targetAnswer}&rdquo;
-                      </div>
-                    </div>
-                  </div>
-                `).join('')}
-              </div>
-            </div>
-          </div>
-
-          <!-- Activity 4: Distinct Communicative Game -->
-          
-          <!-- Activity 4: Airspace Detective Game -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 4</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${game.title || 'Activity 4: 🔍 Airspace Detective: Spot the Route Trap'}</h4>
-                  <p class="text-[11px] text-slate-500">${game.summary || ''}</p>
-                </div>
-              </div>
-              <span class="bg-indigo-100 text-indigo-900 text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">LOGIC &amp; SPEAKING GAME</span>
-            </div>
-
-            <!-- Game Instructions -->
-            <div class="p-3.5 bg-indigo-50/70 border border-indigo-200 rounded-lg text-xs space-y-1.5">
-              <span class="font-bold text-indigo-900 uppercase text-[10px] tracking-wider">How to Play:</span>
-              <ul class="list-disc pl-4 space-y-1 text-slate-700 text-[11px]">
-                ${(game.instructions || []).map(i => `<li>${i}</li>`).join('')}
-              </ul>
-            </div>
-
-            <!-- 4 Clearance Cases -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              ${(game.cases || []).map(c => `
-                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-lg space-y-2 flex flex-col justify-between">
-                  <div>
-                    <span class="text-[10px] font-bold text-slate-400 uppercase">${c.id}</span>
-                    <p class="text-xs font-mono font-bold text-slate-800 mt-1 leading-relaxed">&ldquo;${c.clearance}&rdquo;</p>
-                  </div>
-                  <div class="pt-2 border-t border-slate-200">
-                    <button type="button" onclick="this.nextElementSibling.classList.toggle('hidden')" class="text-[10px] font-bold text-blue-600 hover:underline cursor-pointer">
-                      Reveal Detective Report
-                    </button>
-                    <div class="hidden mt-1 p-2 bg-white rounded border border-slate-200 text-[11px]">
-                      <span class="font-bold ${c.status.includes('TRAP') ? 'text-rose-600' : 'text-emerald-600'}">${c.status}:</span>
-                      <p class="text-slate-600 mt-0.5 leading-relaxed">${c.note}</p>
-                    </div>
-                  </div>
-                </div>
-              `).join('')}
-            </div>
-
-            <div class="p-3 bg-amber-50 border border-amber-200 rounded-lg text-xs text-amber-900 font-bold flex items-center gap-2">
-              <span>🎤</span>
-              <span>${game.challengeQuestion || ''}</span>
-            </div>
-          </div>
-
-
-          <!-- Activity 5: Spoken Role-Play Simulation -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${roleplay.title || 'Activity 5: Spoken Role-Play'}</h4>
-                  <p class="text-[11px] text-slate-500">${roleplay.summary || ''}</p>
-                </div>
-              </div>
-              <span class="bg-emerald-100 text-emerald-800 text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">SPOKEN SIMULATION</span>
-            </div>
-
-            <!-- Situation Brief -->
-            <div class="p-3.5 bg-emerald-50/70 border border-emerald-200 rounded-lg text-xs space-y-1">
-              <span class="font-bold text-emerald-900 uppercase text-[10px] tracking-wider">Scenario Situation Brief:</span>
-              <p class="text-slate-800 leading-relaxed whitespace-pre-line">${roleplay.situation || ''}</p>
-            </div>
-
-            <!-- Role Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-              ${(roleplay.roles || []).map(r => `
-                <div class="p-3.5 bg-white border border-slate-200 rounded-lg space-y-2 shadow-2xs flex flex-col justify-between">
-                  <div>
-                    <h5 class="text-xs font-black text-slate-900 border-b border-slate-100 pb-1.5">${r.role}</h5>
-                    <p class="text-[11px] text-slate-600 leading-relaxed pt-1.5">${r.instructions}</p>
-                  </div>
-                </div>
-              `).join('')}
-            </div>
-
-            <!-- Observer Checklist & Useful Phrases -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-              <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-2">
-                <h5 class="text-xs font-bold text-slate-800">Peer Observer Checklist:</h5>
-                <ul class="space-y-1 text-[11px] text-slate-600">
-                  ${(roleplay.checklist || []).map(c => `
-                    <li class="flex items-center gap-1.5">
-                      <input type="checkbox" class="rounded text-blue-600">
-                      <span>${c}</span>
-                    </li>
-                  `).join('')}
-                </ul>
-              </div>
-              <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-2">
-                <h5 class="text-xs font-bold text-slate-800">Key Communicative Phrases:</h5>
-                <ul class="space-y-1 text-[11px] text-slate-700 italic">
-                  ${(roleplay.phrases || []).map(p => `<li>&bull; &ldquo;${p}&rdquo;</li>`).join('')}
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Activity 6: Safety Check -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 6: Safety Check'}</h4>
-                  <p class="text-[11px] text-slate-500">${safety.summary || ''}</p>
-                </div>
-              </div>
-              <span class="bg-rose-100 text-rose-800 text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">SAFETY ANALYSIS</span>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-              ${(safety.steps || []).map(s => `
-                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-lg space-y-1.5">
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-5 h-5 rounded-full bg-slate-800 text-white font-bold text-[10px] flex items-center justify-center">${s.step}</span>
-                    <h5 class="text-xs font-bold text-slate-900">${s.title}</h5>
-                  </div>
-                  <p class="text-[11px] text-slate-600 leading-relaxed whitespace-pre-line">${s.text}</p>
-                </div>
-              `).join('')}
-            </div>
-          </div>
-
-          <!-- Activity 7: Operational Notes -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs bg-slate-800">NOTES</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">Activity 7: Operational Notes &amp; Game Records</h4>
-                  <p class="text-[11px] text-slate-500">Record your team's role-play conclusions and game decisions. Auto-saved in browser local storage.</p>
-                </div>
-              </div>
-              <div class="flex items-center gap-2 text-[11px]">
-                <span id="notes-status-s5" class="font-bold text-emerald-600 flex items-center gap-1">
-                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  <span>Auto-saved locally</span>
-                </span>
-                <button type="button" onclick="window.clearLessonNotes('5')" class="text-slate-400 hover:text-rose-600 underline cursor-pointer no-print ml-2 font-medium">Clear</button>
-              </div>
-            </div>
-
-            <div class="space-y-4">
-              <div class="notes-textarea-container">
-                <label class="block text-xs font-bold text-slate-800 mb-1 flex items-center justify-between">
-                  <span>1. Airspace Detective Findings & Departure Routing Notes:</span>
-                  <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saves on typing</span>
-                </label>
-                <textarea id="notes-roleplay-s5" oninput="window.saveLessonNote('5', 'roleplay', this.value)" rows="3" placeholder="e.g., GAILLAC 4A departure briefed: Climb runway heading 142° to 3,000 ft, turn left direct GAI VOR. Caught Case Bravo trap: turn at 1,200 ft violates noise abatement. Weather avoidance: Requested 20° left heading at 4,500 ft to clear CB cell..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('5', 'roleplay') : ''}</textarea>
-                <div id="print-notes-roleplay-s5" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('5', 'roleplay') : '') || '[No simulation notes recorded]'}</div>
-              </div>
-
-              <div class="notes-textarea-container">
-                <label class="block text-xs font-bold text-slate-800 mb-1 flex items-center justify-between">
-                  <span>2. Departure Route Deviation & Level Bust Safety Record:</span>
-                  <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saves on typing</span>
-                </label>
-                <textarea id="notes-safety-s5" oninput="window.saveLessonNote('5', 'safety', this.value)" rows="3" placeholder="e.g., Verified Minimum Safe Altitude (MSA 4,200 ft). Cross-checked terrain floor to south (Pyrenees sector 7,800 ft). Maintained sterile cockpit and 100% verbal readback of tactical headings..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('5', 'safety') : ''}</textarea>
-                <div id="print-notes-safety-s5" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('5', 'safety') : '') || '[No safety check decision recorded]'}</div>
               </div>
             </div>
           </div>

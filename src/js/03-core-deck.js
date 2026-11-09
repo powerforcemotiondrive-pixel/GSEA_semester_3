@@ -2449,3 +2449,26 @@
       modal.classList.remove("hidden");
       document.body.style.overflow = "hidden";
     };
+
+    // Multi-Source Dossier Tab Switcher (Session 5)
+    window.switchDossierTab = function(tabId) {
+      const btns = document.querySelectorAll(".dossier-tab-btn");
+      btns.forEach(b => {
+        if (b.getAttribute("data-dossier-tab") === tabId) {
+          b.classList.add("border-sky-600", "text-sky-700", "bg-sky-50/50");
+          b.classList.remove("border-transparent", "text-slate-500");
+        } else {
+          b.classList.remove("border-sky-600", "text-sky-700", "bg-sky-50/50");
+          b.classList.add("border-transparent", "text-slate-500");
+        }
+      });
+      const panes = document.querySelectorAll(".dossier-pane");
+      panes.forEach(p => {
+        if (p.id === "dossier-pane-" + tabId) {
+          p.classList.remove("hidden");
+        } else {
+          p.classList.add("hidden");
+        }
+      });
+    };
+

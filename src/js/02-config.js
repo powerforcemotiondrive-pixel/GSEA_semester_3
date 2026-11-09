@@ -28,7 +28,7 @@
           card2: "images/s3_m1_session2_audit.jpg",
           card3: "images/s3_m1_session3_derogation.jpg",
           card4: "images/s3_m1_session4_aerodrome.jpg",
-          card5: "images/s3_m1_session5_sid_star.jpg",
+          card5: "images/s3_m1_session5_investigation.jpg",
           card6: "images/s3_m1_session6_approach.jpg",
           fe: "images/fe_progress_check.jpg",
           ddrs: "images/ddrs_aas_mod1.jpg",
@@ -63,8 +63,8 @@
           s1: `Welcome to Technical English Module 1 on Documents & Maps! In this opening session, GSEA students learn simple strategies to navigate dense EASA airport rules without getting lost.<br><br><em>Subject overview:</em> The difference between mandatory laws and advisory guides, everyday words for rules (shall, must, should, may), reading an authentic EASA crane safety rule, and the Obstacle Clarification role-play.<br><br>${formativeEvaluationNotice}`,
           s2: `Welcome to Session 2! We explore airport ramp safety, occurrence reporting, and safety notices.<br><br><em>Subject overview:</em> The difference between mandatory Safety Orders and advisory Bulletins, using polite sentences (passive voice) during inspections, reading an EASA notice on ramp vehicle speed limits, and a 3-student safety meeting role-play.<br><br>${formativeEvaluationNotice}`,
           s3: `Welcome to Session 3! We discover how airports handle real-world challenges through special temporary permissions (exemptions).<br><br><em>Subject overview:</em> Explaining safety solutions, using connecting words (provided that, in lieu of), reading a temporary runway works request, and giving a confident 3-minute spoken briefing to airline pilots.<br><br>${formativeEvaluationNotice}`,
-          s4: `Welcome to Session 4! We explore aerodrome ground charts (ADC & GMC), airport infrastructure layout, and ground navigation.<br><br><em>Subject overview:</em> Runway orientations, displaced thresholds, taxiways, holding points, aprons, de-icing bays, and hot spots. Using prepositions of place and relative positioning (adjacent to, parallel to, at the junction of) to give confident, unambiguous spoken taxi instructions across complex airport surfaces.<br><br>${formativeEvaluationNotice}`,
-          s5: `Welcome to Session 5! We analyze Standard Instrument Departure (SID) and Standard Terminal Arrival Route (STAR) charts.<br><br><em>Subject overview:</em> Terminal airspace corridors, waypoints, climb gradients, and noise abatement turns. Using prepositions of movement and progression (tracking towards, proceeding via, climbing through, leveling off at) to brief flight routes and coordinate spoken weather diversions around storms.<br><br>${formativeEvaluationNotice}`,
+          s4: `Welcome to Session 4! We bridge the gap between physical airfield walkarounds and formal audit reporting under Regulation (EU) No 139/2014 Part-ADR.AR.C.055.<br><br><em>Subject overview:</em> Level 1 vs. Level 2 findings, past modal deductions (must have, could have, should have), photo-audit challenge on ramp non-conformities, and delivering a 2-minute oral audit notice to the Airport Director.<br><br>${formativeEvaluationNotice}`,
+          s5: `Welcome to Session 5! We investigate aircraft ground occurrences by piecing together fragmented operational records across multiple sources.<br><br><em>Subject overview:</em> Synthesizing ATC tower transcripts, METAR storm decodes, aircraft maintenance defect logs, and Mandatory Occurrence Reports (MORs). Applying the Swiss Cheese Model to isolate latent organizational flaws from active triggers, using cause-and-effect connectors (stemming from, triggered by, resulting in), and presenting an oral debriefing to the Airport Safety Directorate.<br><br>${formativeEvaluationNotice}`,
           s6: `Welcome to Session 6! We master Instrument Approach Charts (IAC), final descent profiles, and go-around paths.<br><br><em>Subject overview:</em> Glide paths, localizer alignment, decision altitudes, and missed approach procedures. Delivering a structured 3-minute spoken approach briefing and verbally executing contingency go-around routing when an active runway is compromised.<br><br>${formativeEvaluationNotice}`
         },
         2: {
@@ -85,7 +85,7 @@
       for (let s = 1; s <= teachingSessionsCount; s++) {
         let tagLabel = `Module ${modNumber} • Session ${s}`;
         if (modNumber === 1) {
-          tagLabel = s <= 3 ? `Module 1 • Documents • Session ${s}` : `Module 1 • Maps & Charts • Session ${s}`;
+          tagLabel = s <= 3 ? `Module 1 • Documents • Session ${s}` : `Module 1 • Operations & Safety • Session ${s}`;
         }
         teachingPages.push({
           tag: tagLabel,
