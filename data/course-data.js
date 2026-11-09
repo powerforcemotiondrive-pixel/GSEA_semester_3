@@ -1279,6 +1279,85 @@
       },
       "2": {
         "session": 2,
+        "overview": {
+          "intro": "Welcome to Session 2 of Technical English on Safety Alerts & Ramp Briefings! This session focuses on authentic European civil aviation safety notices (EASA Safety Information Bulletin SIB No. 2024-09 on Ramp Collision Risks & Ground Vehicle Speed Management). You will learn how advisory Bulletins differ legally from mandatory Directives, explore operational apron zoning and vehicle telematics under Point ADR.OPS.B.025, de-nominalize stiff regulatory clauses into direct active commands, and deliver structured 90-second safety briefings that keep ramp operations safe.",
+          "whyItMatters": "On European airport aprons, ground support equipment (GSE) operates in close proximity to multimillion-euro aircraft and ground personnel under tight 30-minute turnaround pressures. High-energy vehicle impacts with aircraft fuselages, radomes, and engine cowlings have repeatedly gone unreported by fearful ground staff, resulting in aircraft departing with undetected structural damage. Mastering non-punitive Just Culture reporting, speed enforcement zones, and clear spoken verbal briefings is vital for TSEEAC airside operations managers and ramp safety inspectors.",
+          "keyTerms": [
+                    {
+                              "term": "Apron Driving Authorisation (ADA)",
+                              "ipa": "/\u02c8e\u026a.pr\u0259n \u02c8dra\u026a.v\u026a\u014b \u02cc\u0254\u02d0.\u03b8\u0259r.a\u026a\u02c8ze\u026a.\u0283\u0259n/",
+                              "definition": "Official aerodrome permit certifying that an airside driver has completed mandatory regulatory safety training and vehicle handling assessments under ADR.OR.D.017."
+                    },
+                    {
+                              "term": "Ground Support Equipment (GSE)",
+                              "ipa": "/\u0261ra\u028and s\u0259\u02c8p\u0254\u02d0t \u026a\u02c8kw\u026ap.m\u0259nt/",
+                              "definition": "Specialized ramp servicing vehicles, including baggage tugs, belt loaders, pushback tractors, catering lifters, and mobile passenger steps."
+                    },
+                    {
+                              "term": "Equipment Clearance Area (ECA)",
+                              "ipa": "/\u026a\u02c8kw\u026ap.m\u0259nt \u02c8kl\u026a\u0259.r\u0259ns \u02c8e\u0259.ri.\u0259/",
+                              "definition": "Marked apron pavement surrounding an aircraft parking stand that must remain 100% clear of all vehicles until the aircraft has stopped and engines are shut down."
+                    },
+                    {
+                              "term": "Equipment Staging Area (ESA)",
+                              "ipa": "/\u026a\u02c8kw\u026ap.m\u0259nt \u02c8ste\u026a.d\u0292\u026a\u014b \u02c8e\u0259.ri.\u0259/",
+                              "definition": "Designated painted holding box where ground equipment is parked safely before aircraft arrival and during turnaround servicing."
+                    },
+                    {
+                              "term": "Differentiated Speed Regimes",
+                              "ipa": "/\u02ccd\u026af.\u0259\u02c8ren.\u0283i.e\u026a.t\u026ad spi\u02d0d re\u026a\u02c8\u0292i\u02d0mz/",
+                              "definition": "Tiered vehicular speed limits tailored to distinct apron zones: 25\u201330 km/h on main apron roadways, 5\u201310 km/h walking pace near aircraft, and 10\u201315 km/h in baggage tunnels."
+                    },
+                    {
+                              "term": "GPS Geofencing",
+                              "ipa": "/\u02ccd\u0292i\u02d0.pi\u02d0\u02c8es \u02c8d\u0292i\u02d0.\u0259\u028a.fens.\u026a\u014b/",
+                              "definition": "Satellite-based virtual perimeter that triggers automated telematics controls to physically restrict vehicle top speed upon entering aircraft parking stands."
+                    },
+                    {
+                              "term": "Speed Governor",
+                              "ipa": "/spi\u02d0d \u02c8\u0261\u028cv.\u0259n.\u0259r/",
+                              "definition": "Mechanical or electronic limiting device installed on ground vehicles to physically cap the maximum achievable velocity."
+                    },
+                    {
+                              "term": "Just Culture",
+                              "ipa": "/d\u0292\u028cst \u02c8k\u028cl.t\u0283\u0259r/",
+                              "definition": "Operational safety framework where frontline workers are actively encouraged to report occurrences and minor contacts without fear of punitive reprisal, except in cases of gross negligence."
+                    },
+                    {
+                              "term": "Ramp Safety Committee (RSC)",
+                              "ipa": "/r\u00e6mp \u02c8se\u026af.ti k\u0259\u02c8m\u026at.i/",
+                              "definition": "Regular collaborative forum uniting aerodrome operators, airlines, and ground handlers to analyze telematics trends, speed audits, and near-miss occurrences."
+                    },
+                    {
+                              "term": "Unreported Structural Impact",
+                              "ipa": "/\u02cc\u028cn.r\u026a\u02c8p\u0254\u02d0.t\u026ad \u02c8str\u028ck.t\u0283\u0259r.\u0259l \u02c8\u026am.p\u00e6kt/",
+                              "definition": "Hazardous condition where a GSE contact or fuselage scrape is concealed or unrecorded, allowing an aircraft to depart with compromised airworthiness."
+                    }
+          ],
+          "speakingTask": {
+                    "title": "Authentic EASA Task \u2022 SIB 2024-09 Ramp Collision Mitigation",
+                    "instructions": "Working in pairs or trios, open the authentic EASA Safety Information Bulletin (SIB No. 2024-09) below. Each group reviews one operational section, analyzes the practical challenge, and delivers a concise 2-minute spoken briefing explaining their safety solutions using today's technical vocabulary.",
+                    "requirements": [
+                              "Use at least 4 of today's 10 technical terms from the list above.",
+                              "Cite specific operational measures from Section 4 of EASA SIB No. 2024-09.",
+                              "Ensure both partners actively speak and explain practical ramp solutions without reading verbatim."
+                    ],
+                    "statements": {
+                              "group1": "Group 1 Statement (Infrastructure & Speed Regimes): How do differentiated speed limits (25\u201330 km/h on roadways vs. 5\u201310 km/h on stands) and CS-ADR-DSN road markings mitigate high-energy ramp impacts?",
+                              "group2": "Group 2 Statement (Telematics & Equipment Control): Why are physical speed governors and GPS geofencing more effective than speed limit signs alone on high-workload turnaround aprons?",
+                              "group3": "Group 3 Statement (Driver Authorisation & Just Culture): How can aerodrome operators balance strict Apron Driving Authorisation (ADA) testing with a non-punitive Just Culture so minor scrapes are reported immediately?"
+                    }
+          },
+          "document": {
+                    "title": "EASA Safety Information Bulletin SIB No. 2024-09",
+                    "badge": "Authentic EASA SIB \u2022 Ground Safety Priority",
+                    "desc": "Official European Union Aviation Safety Agency bulletin detailing ramp collision risk mitigation, vehicle speed zoning, GSE telematics, and Just Culture reporting on aerodrome aprons.",
+                    "url": "docs/GSEA_S3_M1_S2_EASA_SIB_2024_09_Ramp_Safety.pdf",
+                    "pages": "4 Pages (Full Technical Publication)",
+                    "fileSize": "78 KB",
+                    "downloadName": "EASA_SIB_2024_09_Ramp_Safety.pdf"
+          }
+},
         "objectives": {
           "title": "Session 2 Objectives - Safety Alerts & Ramp Briefings",
           "summary": "By the end of this session, GSEA students will be able to distinguish mandatory Safety Directives from advisory Safety Information Bulletins, de-nominalize heavy regulatory text into direct active instructions, synthesize dense safety alerts into the Executive 3-Bullet Rule (maximum 12 words per action), apply text chunking and intonation to eliminate flat delivery, deliver a professional 90-second morning safety briefing to ramp teams, and field spontaneous operational challenge questions with confidence.",
@@ -1867,7 +1946,505 @@
               "prompt": "In pairs, deliver an unscripted 60-second operational summary explaining: 1) What was the core message of your SIB? 2) Why do ground crews sometimes cut corners under tight 30-minute turnarounds? 3) How does an active, chunked 90-second verbal briefing prevent a catastrophic incident on the tarmac?"
             }
           }
-        }
+        },
+        "revision": {
+          "title": "Session 2 Vocabulary \u2022 Ramp Safety & Vehicle Speed Management",
+          "summary": "Master the 30 high-frequency regulatory terms, ground equipment concepts, and occurrence reporting principles from EASA SIB No. 2024-09 and Part-ADR.OPS.B.025.",
+          "terms": [
+                    {
+                              "num": "01",
+                              "term": "Safety Information Bulletin (SIB)",
+                              "definition": "An advisory, non-mandatory EASA safety publication highlighting recurring operational hazards and recommended risk mitigation strategies.",
+                              "part": "Part 1"
+                    },
+                    {
+                              "num": "02",
+                              "term": "Safety Directive (SD)",
+                              "definition": "A mandatory statutory order issued by a competent authority under ADR.AR.A.040 to address an immediate unsafe aerodrome condition.",
+                              "part": "Part 2"
+                    },
+                    {
+                              "num": "03",
+                              "term": "European Central Repository (ECR)",
+                              "definition": "The centralized EU database collecting and analyzing civil aviation occurrence reports pursuant to Regulation (EU) No 376/2014.",
+                              "part": "Part 3"
+                    },
+                    {
+                              "num": "04",
+                              "term": "Point ADR.OPS.B.025",
+                              "definition": "The EASA implementing rule establishing aerodrome operator obligations for vehicle operation, driver licensing, and movement area speed rules.",
+                              "part": "Part 4"
+                    },
+                    {
+                              "num": "05",
+                              "term": "National Competent Authority (NCA / DSAC)",
+                              "definition": "The national civil aviation administration responsible for safety certification, regulatory oversight, and statutory enforcement at aerodromes.",
+                              "part": "Part 5"
+                    },
+                    {
+                              "num": "06",
+                              "term": "Ground Handling Service Provider (GHSP)",
+                              "definition": "A commercial organization contracted by airlines to perform ramp servicing, baggage handling, pushback, and aircraft turnaround operations.",
+                              "part": "Part 6"
+                    },
+                    {
+                              "num": "07",
+                              "term": "Apron Roadway",
+                              "definition": "A painted, designated vehicular transit route on the apron surface outside aircraft parking positions, typically regulated at 25\u201330 km/h.",
+                              "part": "Part 7"
+                    },
+                    {
+                              "num": "08",
+                              "term": "Aircraft Stand / Servicing Zone",
+                              "definition": "The designated apron area where an aircraft is parked, where vehicular speeds are strictly capped at walking pace (5\u201310 km/h).",
+                              "part": "Part 8"
+                    },
+                    {
+                              "num": "09",
+                              "term": "Baggage Make-up Area",
+                              "definition": "An enclosed or semi-enclosed apron sorting facility with heavy tug traffic, capped at 10\u201315 km/h with mandatory blind-corner mirrors.",
+                              "part": "Part 9"
+                    },
+                    {
+                              "num": "10",
+                              "term": "Equipment Clearance Area (ECA)",
+                              "definition": "A marked perimeter surrounding an aircraft stand kept strictly clear of all vehicles until the aircraft has stopped and engines are shut down.",
+                              "part": "Part 10"
+                    },
+                    {
+                              "num": "11",
+                              "term": "Equipment Staging Area (ESA)",
+                              "definition": "A painted holding bay where ground support equipment waits safely outside the aircraft path prior to turnaround commencement.",
+                              "part": "Part 11"
+                    },
+                    {
+                              "num": "12",
+                              "term": "Differentiated Speed Limits",
+                              "definition": "Tiered vehicular speed boundaries tailored to specific risk levels across roadways, parking stands, and baggage handling facilities.",
+                              "part": "Part 12"
+                    },
+                    {
+                              "num": "13",
+                              "term": "Ground Support Equipment (GSE)",
+                              "definition": "Motorized and towed airside equipment including baggage tractors, belt loaders, pushback tugs, catering vehicles, and de-icing rigs.",
+                              "part": "Part 13"
+                    },
+                    {
+                              "num": "14",
+                              "term": "Speed Governor",
+                              "definition": "A mechanical or electronic device installed on airside vehicles that physically prevents the throttle from exceeding a calibrated speed limit.",
+                              "part": "Part 14"
+                    },
+                    {
+                              "num": "15",
+                              "term": "GPS Geofencing",
+                              "definition": "Satellite navigation technology that automatically throttles a ground vehicle's top speed when crossing into an aircraft parking stand perimeter.",
+                              "part": "Part 15"
+                    },
+                    {
+                              "num": "16",
+                              "term": "Vehicle Telematics",
+                              "definition": "On-board electronic logging systems monitoring vehicle location, speed thresholds, sudden braking, and collision impacts in real time.",
+                              "part": "Part 16"
+                    },
+                    {
+                              "num": "17",
+                              "term": "Tractor-Trailer Train",
+                              "definition": "A motorized baggage tug towing multiple connected baggage carts, requiring extended stopping distances and wide cornering clearances.",
+                              "part": "Part 17"
+                    },
+                    {
+                              "num": "18",
+                              "term": "Blind-Spot Geometry",
+                              "definition": "Areas around widebody aircraft fuselages, engines, and heavy GSE where the driver's direct field of view is completely obstructed.",
+                              "part": "Part 18"
+                    },
+                    {
+                              "num": "19",
+                              "term": "Apron Driving Authorisation (ADA)",
+                              "definition": "The mandatory aerodrome driving permit issued only after passing theoretical regulations and practical vehicle handling tests.",
+                              "part": "Part 19"
+                    },
+                    {
+                              "num": "20",
+                              "term": "Point ADR.OR.D.017",
+                              "definition": "The EASA organization requirement mandating formal training syllabi, driving proficiency tests, and recurrent assessments for airside staff.",
+                              "part": "Part 20"
+                    },
+                    {
+                              "num": "21",
+                              "term": "Vehicle Roadworthiness",
+                              "definition": "The certified mechanical condition of an airside vehicle, verifying operational brakes, steering, lights, horns, and emergency cut-offs.",
+                              "part": "Part 21"
+                    },
+                    {
+                              "num": "22",
+                              "term": "Mobile Radar Unit",
+                              "definition": "Portable speed-detection radar deployed by aerodrome safety inspectors to monitor vehicular compliance on major apron roadways.",
+                              "part": "Part 22"
+                    },
+                    {
+                              "num": "23",
+                              "term": "CS-ADR-DSN Visual Standards",
+                              "definition": "EASA Certification Specifications establishing official visual requirements for movement area road markings, roundels, and stop bars.",
+                              "part": "Part 23"
+                    },
+                    {
+                              "num": "24",
+                              "term": "Right-of-Way Rule",
+                              "definition": "The foundational airside traffic rule giving absolute priority to moving or taxiing aircraft and emergency vehicles over service traffic.",
+                              "part": "Part 24"
+                    },
+                    {
+                              "num": "25",
+                              "term": "Just Culture",
+                              "definition": "An operational safety framework where personnel are encouraged to report mistakes and near-misses without fear of punitive action.",
+                              "part": "Part 25"
+                    },
+                    {
+                              "num": "26",
+                              "term": "Unreported Aircraft Impact",
+                              "definition": "A hazardous situation where low-speed vehicle contact with an airframe is concealed, risking departure with uninspected structural damage.",
+                              "part": "Part 26"
+                    },
+                    {
+                              "num": "27",
+                              "term": "Near-Miss Occurrence",
+                              "definition": "An unplanned event that did not result in injury or structural damage but had significant potential to cause a collision.",
+                              "part": "Part 27"
+                    },
+                    {
+                              "num": "28",
+                              "term": "Ramp Safety Committee (RSC)",
+                              "definition": "A joint multi-agency forum uniting the airport operator, airlines, and ground handlers to review safety data and audit speed compliance.",
+                              "part": "Part 28"
+                    },
+                    {
+                              "num": "29",
+                              "term": "Joint Safety Audit",
+                              "definition": "A formal collaborative inspection conducted by aerodrome inspectors and ground handling managers to verify apron safety practices.",
+                              "part": "Part 29"
+                    },
+                    {
+                              "num": "30",
+                              "term": "De-Nominalization",
+                              "definition": "The communicative language technique of converting heavy passive noun phrases into direct, punchy active spoken commands.",
+                              "part": "Part 30"
+                    }
+          ]
+},
+        "materials": {
+          "quizTitle": "Airside Scenario Quiz \u2022 Ramp Safety & SIB 2024-09",
+          "quiz": [
+                    {
+                              "question": "Under EASA SIB No. 2024-09, what is the maximum recommended vehicle speed in the immediate vicinity of a parked aircraft on stand?",
+                              "options": [
+                                        "25\u201330 km/h (Standard apron road speed)",
+                                        "5\u201310 km/h (Strict walking pace)",
+                                        "15\u201320 km/h (Baggage tunnel speed)",
+                                        "No speed limit applies once the aircraft engines are off"
+                              ],
+                              "correct": 1,
+                              "explanation": "Section 4.A of SIB No. 2024-09 explicitly recommends that vehicle speeds in Aircraft Stand / Servicing Zones be strictly limited to 5\u201310 km/h (walking pace) in the vicinity of parked aircraft."
+                    },
+                    {
+                              "question": "What is the primary operational purpose of establishing a designated Equipment Clearance Area (ECA)?",
+                              "options": [
+                                        "To store decommissioned vehicles awaiting maintenance",
+                                        "To ensure the stand remains completely clear of GSE until the aircraft has stopped and engines are shutdown",
+                                        "To allow baggage tugs to overtake slower catering trucks",
+                                        "To park private passenger vehicles near the terminal gate"
+                              ],
+                              "correct": 1,
+                              "explanation": "Equipment Clearance Areas (ECA) ensure an unobstructed safety buffer around the aircraft trajectory during arrival, preventing premature servicing approaches while engines and collision lights are active."
+                    },
+                    {
+                              "question": "If a ground vehicle makes minor contact with an aircraft fuselage causing only a superficial scratch, what must happen under a Just Culture framework?",
+                              "options": [
+                                        "The driver should wipe the scratch and proceed if departure time is within 10 minutes",
+                                        "The driver must immediately report the contact to the safety team without fear of punishment, enabling a mandatory maintenance inspection",
+                                        "The handling company must issue an immediate suspension before investigating",
+                                        "Only contacts exceeding 20 km/h require mandatory occurrence reporting"
+                              ],
+                              "correct": 1,
+                              "explanation": "Under Section 4.B of SIB 2024-09 and Just Culture principles, even superficial low-speed scrapes must be reported immediately without punitive fear to guarantee certified maintenance release before flight."
+                    },
+                    {
+                              "question": "What is the fundamental legal difference between an EASA Safety Information Bulletin (SIB) and a Safety Directive (SD)?",
+                              "options": [
+                                        "An SIB is legally binding while an SD is merely advisory",
+                                        "An SIB is informative and non-mandatory guidance, whereas an SD is a mandatory European statutory order",
+                                        "An SIB is published by national airlines while an SD is issued by ICAO",
+                                        "There is no legal difference; both carry immediate regulatory penalties"
+                              ],
+                              "correct": 1,
+                              "explanation": "Section 5 of SIB 2024-09 specifies that an SIB is informative and non-mandatory. A Safety Directive (SD) under ADR.AR.A.040 is a mandatory statutory instrument issued to correct an urgent unsafe condition."
+                    }
+          ],
+          "videos": [
+                    {
+                              "title": "EASA Ground Safety & Ramp Collision Precursor Analysis",
+                              "duration": "8 mins",
+                              "summary": "Technical briefing analyzing European Central Repository (ECR) safety data, exploring root causes of apron vehicle collisions and near-misses.",
+                              "url": "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"
+                    },
+                    {
+                              "title": "Apron Vehicle Operations & Stand Clearance Demarcation",
+                              "duration": "10 mins",
+                              "summary": "Operational visual walkthrough illustrating Equipment Clearance Areas (ECA), Equipment Staging Areas (ESA), and tractor-trailer blind-spot geometry.",
+                              "url": "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"
+                    },
+                    {
+                              "title": "Just Culture in Ground Handling & Non-Punitive Reporting",
+                              "duration": "7 mins",
+                              "summary": "Industry safety seminar detailing how transparent, non-punitive incident reporting prevents undetected aircraft structural damage.",
+                              "url": "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"
+                    }
+          ],
+          "articles": [
+                    {
+                              "title": "Telematics & Geofencing: How Modern Hubs Enforce Apron Speed Regimes",
+                              "source": "Airport Operations International \u2022 Technical Digest",
+                              "summary": "How European international aerodromes deploy automated satellite geofencing to physically restrict ground vehicle speed inside aircraft servicing bays.",
+                              "readTime": "4 min read",
+                              "content": "Modern airport aprons are high-density, multi-stakeholder operational environments where tight turnaround targets collide with strict safety limits. Under Point ADR.OPS.B.025, aerodrome operators must establish enforceable movement rules. Leading European hubs now integrate GPS telematics directly into ground support equipment (GSE). When a baggage tug or belt loader crosses the virtual boundary into an aircraft stand, on-board governors automatically restrict throttle response, capping speed at 10 km/h regardless of driver acceleration."
+                    },
+                    {
+                              "title": "The Hidden Hazard of Unreported Composite Airframe Ramp Contacts",
+                              "source": "Aviation Safety Review \u2022 Structural Engineering",
+                              "summary": "Investigating how low-speed ground vehicle scrapes with carbon-fiber fuselages can cause internal composite delamination without visible exterior paint loss.",
+                              "readTime": "5 min read",
+                              "content": "Unlike conventional aluminum alloy airframes which show visible dents following vehicle impacts, modern carbon-fiber reinforced polymer (CFRP) fuselages (such as on the Airbus A350 and Boeing 787) may absorb a low-speed GSE impact with zero visible surface deformation. However, internal structural plies can suffer severe subsurface delamination. If ground staff fail to report a 5 km/h contact due to fear of disciplinary action, the aircraft may depart with critically degraded structural integrity."
+                    },
+                    {
+                              "title": "Designing Apron Visual Road Markings under CS-ADR-DSN",
+                              "source": "EASA Infrastructure Standards Journal",
+                              "summary": "A civil engineering guide to implementing standardized speed roundels, stop bars, yield markings, and convex blind-spot mirrors across complex apron layouts.",
+                              "readTime": "4 min read",
+                              "content": "Under EASA Certification Specifications (CS-ADR-DSN), visual movement area markings must provide unmistakable guidance to ground operators day and night. Apron roadways require retroreflective white or yellow boundary lines, high-contrast speed limit roundels at all major entry junctions, and mandatory stop bars before active taxi lane crossings. In congested baggage tunnels, convex safety mirrors must be positioned at every 90-degree corner to eliminate blind-spot collisions."
+                    }
+          ],
+          "grammar": {
+                    "title": "De-Nominalization: Turning Stiff Rules into Active Commands",
+                    "badge": "CEFR B1\u2013B2 Spoken Precision",
+                    "patternTitle": "The Simplification Formula",
+                    "formula": "Heavy Stiff Noun Phrase -> Direct Imperative Verb + Clear Operational Object",
+                    "rulesTitle": "Why De-Nominalization Matters on the Ramp",
+                    "rules": [
+                              "<strong>Heavy Written Style (Nominalization):</strong> Bureaucratic aviation texts stack abstract nouns (e.g., <em>'the execution of verification'</em>, <em>'prior to the initiation of pushback'</em>).",
+                              "<strong>Active Spoken Style (De-Nominalization):</strong> In real-time ramp briefings, replace abstract nouns with direct action verbs (e.g., <em>'verify immediately'</em>, <em>'before you push back'</em>).",
+                              "<strong>Clarity under Pressure:</strong> Ground handlers working with high-noise turbine environments require crisp, unmistakable instructions containing zero grammatical clutter."
+                    ],
+                    "trap": "<strong>\u26a0\ufe0f Spoken English Pitfall:</strong> French speakers frequently translate noun-heavy structures literally (<em>'proc\u00e9der \u00e0 la v\u00e9rification'</em> -> <em>'proceed to the verification'</em>). In English ramp briefings, this sounds bureaucratic and slows comprehension. Always use the active verb: <strong>'Check the area'</strong> or <strong>'Inspect the stand'</strong>!",
+                    "examplesTitle": "Authentic EASA Part-ADR.OPS Simplification Examples",
+                    "examples": [
+                              "Stiff: <em>'The execution of surveillance of vehicle velocity shall be conducted.'</em> -> Active: <strong>'Monitor vehicle speed continuously.'</strong>",
+                              "Stiff: <em>'Prior to the commencement of aircraft pushback operations...'</em> -> Active: <strong>'Before you push back the aircraft...'</strong>",
+                              "Stiff: <em>'Effect the immediate notification of structural contacts.'</em> -> Active: <strong>'Report any aircraft contact immediately.'</strong>",
+                              "Stiff: <em>'Maintain verification of driver authorization documentation.'</em> -> Active: <strong>'Check driver permits daily.'</strong>"
+                    ]
+          },
+          "portals": [
+                    {
+                              "url": "https://www.easa.europa.eu/en/domains/air-operations/ground-safety",
+                              "tag": "01 \u2022 European Regulation",
+                              "name": "EASA Ground Safety & Apron Priorities",
+                              "desc": "Official portal for European Plan for Aviation Safety (EPAS) ramp collision initiatives.",
+                              "part": "Part 1"
+                    },
+                    {
+                              "url": "https://www.skybrary.aero/articles/ground-operations",
+                              "tag": "02 \u2022 Global Safety Knowledge",
+                              "name": "SKYbrary Aviation Safety \u2022 Ground Operations",
+                              "desc": "Comprehensive international database of ramp accident investigations and GSE safety bulletins.",
+                              "part": "Part 2"
+                    },
+                    {
+                              "url": "https://www.icao.int/safety/airnavigation/Pages/aerodromes.aspx",
+                              "tag": "03 \u2022 ICAO Standards",
+                              "name": "ICAO Doc 9137 Part 8 (Airport Operational Services)",
+                              "desc": "Global civil aviation standards governing apron management services and vehicle movement control.",
+                              "part": "Part 3"
+                    },
+                    {
+                              "url": "https://www.aviationreporting.eu",
+                              "tag": "04 \u2022 Occurrence Reporting",
+                              "name": "European Central Repository (ECR / ECCAIRS 2)",
+                              "desc": "Official EU occurrence reporting portal operating under Regulation (EU) No 376/2014.",
+                              "part": "Part 4"
+                    },
+                    {
+                              "url": "https://www.aci-europe.org",
+                              "tag": "05 \u2022 Airport Operators",
+                              "name": "ACI World Ramp Safety Handbook & Guidelines",
+                              "desc": "International airport council best practices for ground handling safety and speed management.",
+                              "part": "Part 5"
+                    },
+                    {
+                              "url": "https://www.ecologie.gouv.fr/direction-generale-laviation-civile-dgac",
+                              "tag": "06 \u2022 French Authority",
+                              "name": "French DGAC / DSAC Ground Safety Oversight",
+                              "desc": "National safety oversight bulletins, apron driving regulations, and airport audit frameworks in France.",
+                              "part": "Part 6"
+                    }
+          ]
+},
+        "presentation": {
+          "title": "Session 2 Class Presentation \u2022 Ramp Safety & Apron Speed Management",
+          "subtitle": "Interactive Classroom Slide Deck for EASA SIB No. 2024-09, Point ADR.OPS.B.025 & Just Culture",
+          "slides": [
+                    {
+                              "num": "01",
+                              "badge": "01 \u2022 Legal Basis & Scope",
+                              "title": "EASA SIB No. 2024-09 \u2022 Ramp Collision Risk Mitigation",
+                              "subtitle": "Understanding Safety Information Bulletins & Point ADR.OPS.B.025",
+                              "takeaway": "An SIB is advisory guidance highlighting recurring European trends, whereas Point ADR.OPS.B.025 imposes mandatory apron vehicle movement rules.",
+                              "cards": [
+                                        {
+                                                  "tag": "SIB Legal Status",
+                                                  "heading": "Advisory vs. Mandatory",
+                                                  "text": "Safety Information Bulletins are non-mandatory publications. They do not constitute binding regulations but represent urgent safety intelligence."
+                                        },
+                                        {
+                                                  "tag": "European Data Source",
+                                                  "heading": "ECR Trend Analysis",
+                                                  "text": "Issued following recurring ground collision trends reported to the European Central Repository under Regulation (EU) No 376/2014."
+                                        },
+                                        {
+                                                  "tag": "Regulatory Duty",
+                                                  "heading": "Point ADR.OPS.B.025",
+                                                  "text": "Mandates that aerodrome operators establish and enforce strict rules governing vehicle movement, speed, driver training, and roadworthiness."
+                                        }
+                              ],
+                              "teacherPrompt": "Ask the class: What is the legal difference between an EASA Safety Information Bulletin and a Safety Directive? Can an airport be fined for ignoring an SIB directly?"
+                    },
+                    {
+                              "num": "02",
+                              "badge": "02 \u2022 Hazard Assessment",
+                              "title": "Primary Ramp Collision Hazards & Operational Precursors",
+                              "subtitle": "Why High-Energy Vehicle Impacts Threaten Airworthiness & Personnel",
+                              "takeaway": "Excessive speed and blind-spot turns during high-workload turnarounds are the top precursors to catastrophic ramp structural damage.",
+                              "cards": [
+                                        {
+                                                  "tag": "Airframe Integrity",
+                                                  "heading": "Unreported Structural Damage",
+                                                  "text": "High-speed GSE impacts with fuselages, radomes, and engine cowlings frequently go unreported, allowing aircraft to depart with hidden damage."
+                                        },
+                                        {
+                                                  "tag": "Airside Incursions",
+                                                  "heading": "Taxiway Separation Breaches",
+                                                  "text": "Vehicles exceeding designated speed thresholds fail to brake before entering active aircraft taxi lanes, creating close-quarter collision hazards."
+                                        },
+                                        {
+                                                  "tag": "Workplace Safety",
+                                                  "heading": "Personnel Hazards in ECA / ESA",
+                                                  "text": "Speeding inside congested Equipment Clearance Areas directly correlates with ground crew crush injuries during pushback and baggage handling."
+                                        }
+                              ],
+                              "teacherPrompt": "Concept check: Why is low-speed impact with a modern composite aircraft (e.g. A350) potentially more dangerous than impact with an older aluminum airframe?"
+                    },
+                    {
+                              "num": "03",
+                              "badge": "03 \u2022 Apron Speed Zoning",
+                              "title": "Differentiated Speed Regimes \u2022 Tailored Safety Limits",
+                              "subtitle": "Section 4.A Recommendations for Movement Area Infrastructure",
+                              "takeaway": "Speed limits must be strictly tiered by operational risk: 25\u201330 km/h on open roads, but strictly 5\u201310 km/h walking pace near aircraft.",
+                              "cards": [
+                                        {
+                                                  "tag": "Apron Roadways",
+                                                  "heading": "25\u201330 km/h Maximum",
+                                                  "text": "General apron transit roads outside parking stands. Vehicles must yield right-of-way to all moving aircraft and emergency traffic."
+                                        },
+                                        {
+                                                  "tag": "Aircraft Servicing Stands",
+                                                  "heading": "5\u201310 km/h (Walking Pace)",
+                                                  "text": "Immediate servicing perimeter around parked aircraft. Strict walking pace is enforced to prevent high-energy contact with airframe structures."
+                                        },
+                                        {
+                                                  "tag": "Baggage Make-up Facilities",
+                                                  "heading": "10\u201315 km/h with Mirrors",
+                                                  "text": "Enclosed or semi-enclosed sorting halls and baggage tunnels. Capped speed and mandatory convex blind-corner mirrors protect foot personnel."
+                                        }
+                              ],
+                              "teacherPrompt": "Discussion: Why does EASA specify 'walking pace' for aircraft stands? How does a driver judge 5 km/h without staring constantly at their speedometer?"
+                    },
+                    {
+                              "num": "04",
+                              "badge": "04 \u2022 Tech Controls",
+                              "title": "Telematics, GPS Geofencing & Mechanical Limiting",
+                              "subtitle": "Using Modern Technology to Eliminate Human Error in Speed Control",
+                              "takeaway": "Physical speed governors and satellite geofencing enforce compliance automatically, removing reliance on driver judgment alone.",
+                              "cards": [
+                                        {
+                                                  "tag": "Hardware Control",
+                                                  "heading": "Physical & Electronic Governors",
+                                                  "text": "Factory-calibrated speed limiters permanently fitted to GSE engines, making it mechanically impossible to exceed regulatory speed limits."
+                                        },
+                                        {
+                                                  "tag": "Satellite Perimeter",
+                                                  "heading": "Automated GPS Geofencing",
+                                                  "text": "Real-time satellite positioning automatically throttles GSE acceleration down to 10 km/h the instant a vehicle enters a painted stand perimeter."
+                                        },
+                                        {
+                                                  "tag": "Black-Box Telemetry",
+                                                  "heading": "Vehicle Telematics Tracking",
+                                                  "text": "On-board sensors log driving speed, harsh braking, and impact telemetry, providing verifiable data for safety audits and incident reviews."
+                                        }
+                              ],
+                              "teacherPrompt": "Debate: Ground handlers argue that GPS geofencing is too expensive for small contractors. How should an aerodrome operator answer this objection?"
+                    },
+                    {
+                              "num": "05",
+                              "badge": "05 \u2022 Human Factors",
+                              "title": "Driver Licensing Rigour (ADA) & Just Culture",
+                              "subtitle": "Balancing Strict Qualification with Transparent Incident Reporting",
+                              "takeaway": "A true Just Culture ensures ground staff report every low-speed bump immediately without fear of dismissal, protecting flight safety.",
+                              "cards": [
+                                        {
+                                                  "tag": "Licensing Standards",
+                                                  "heading": "Apron Driving Authorisation (ADA)",
+                                                  "text": "ADR.OR.D.017 syllabi must include practical tests on stopping distances of heavy tractor-trailer trains and widebody blind spots."
+                                        },
+                                        {
+                                                  "tag": "Active Enforcement",
+                                                  "heading": "Radar Surveillance & Audits",
+                                                  "text": "Deployment of mobile radar units and fixed speed cameras to detect speeding violations before collisions occur on major apron routes."
+                                        },
+                                        {
+                                                  "tag": "Non-Punitive Culture",
+                                                  "heading": "Transparent 'Just Culture'",
+                                                  "text": "Frontline personnel report low-speed scrapes without fear of punishment. Safety inspections can then be completed prior to flight release."
+                                        }
+                              ],
+                              "teacherPrompt": "Pair exercise: A baggage driver scratches an aircraft belly panel. Role-play the conversation between the ramp supervisor and the driver under Just Culture principles."
+                    },
+                    {
+                              "num": "06",
+                              "badge": "06 \u2022 Governance",
+                              "title": "Stakeholder Coordination \u2022 Ramp Safety Committee (RSC)",
+                              "subtitle": "Section 4.C Framework for Multi-Agency Ground Safety Governance",
+                              "takeaway": "Ramp safety is a joint responsibility. The Ramp Safety Committee unites airport operators, ground handlers, and airlines into a single safety team.",
+                              "cards": [
+                                        {
+                                                  "tag": "Collaborative Forum",
+                                                  "heading": "Ramp Safety Committee (RSC)",
+                                                  "text": "Regular monthly meetings reviewing vehicle telematics trends, speed audit violations, and near-miss occurrence reports across all operators."
+                                        },
+                                        {
+                                                  "tag": "Joint Inspections",
+                                                  "heading": "Joint Operational Safety Audits",
+                                                  "text": "Aerodrome inspectors and ground handling managers conduct joint ramp spot-checks, ensuring third-party compliance with the Aerodrome Manual."
+                                        },
+                                        {
+                                                  "tag": "Continuous Improvement",
+                                                  "heading": "Safety Priority Ground Safety",
+                                                  "text": "Feeding local ramp occurrence data into the European Plan for Aviation Safety (EPAS) to continually refine airport infrastructure design."
+                                        }
+                              ],
+                              "teacherPrompt": "Wrap-up question: What happens if an airline ground handler refuses to attend the Ramp Safety Committee? What legal power does the Aerodrome Operator possess?"
+                    }
+          ]
+}
       },
       "3": {
         "session": 3,
