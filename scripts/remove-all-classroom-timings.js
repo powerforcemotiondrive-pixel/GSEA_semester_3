@@ -2,10 +2,12 @@
  * scripts/remove-all-classroom-timings.js
  * 
  * Enforces Rule 1.Q (Teacher Autonomy & Zero Classroom Timings Invariant)
- * across Semester 3 Module 1 & Module 2:
- * 1. src/js/05-templates-mod1.js
- * 2. src/js/08-templates-aas2.js
- * 3. data/course-data.js (Modules 1 and 2)
+ * across Semester 3:
+ * 1. src/js/03-core-deck.js
+ * 2. src/js/05-templates-mod1.js
+ * 3. src/js/08-templates-aas2.js
+ * 4. src/js/08b-templates-aas3.js
+ * 5. data/course-data.js (Modules 1, 2, and 3)
  */
 
 const fs = require('fs');
@@ -55,14 +57,11 @@ function cleanText(text) {
 }
 
 // ==========================================
-// 1. CLEAN data/course-data.js (Modules 1 and 2)
+// 1. CLEAN data/course-data.js
 // ==========================================
-console.log('🔄 Cleaning data/course-data.js (Modules 1 and 2)...');
+console.log('🔄 Cleaning data/course-data.js...');
 const courseDataPath = path.join(rootDir, 'data', 'course-data.js');
 
-let fileRaw = fs.readFileSync(courseDataPath, 'utf8');
-
-// Load data object
 const courseData = require(courseDataPath);
 const aasData = courseData.aas || courseData;
 
@@ -73,12 +72,23 @@ function cleanObjectDeep(obj) {
   if (!obj || typeof obj !== 'object') return;
 
   if (Array.isArray(obj)) {
-    obj.forEach(item => cleanObjectDeep(item));
+    obj.forEach((item, idx) => {
+      if (item && typeof item === 'object') {
+        if ('time' in item) {
+          delete item.time;
+          cdTextsCleaned++;
+        }
+        if (!item.part && !item.step) {
+          item.part = `Part ${idx + 1}`;
+        }
+      }
+      cleanObjectDeep(item);
+    });
     return;
   }
 
   for (const key of Object.keys(obj)) {
-    if (key === 'time' && typeof obj[key] === 'string' && /^\d{2}[–-]\d{2}$/.test(obj[key])) {
+    if (key === 'time') {
       delete obj[key];
       cdTextsCleaned++;
     } else if (key === 'title' || key === 'stage' || key === 'step' || key === 'part') {
@@ -99,8 +109,8 @@ function cleanObjectDeep(obj) {
   }
 }
 
-// Clean Modules 1 and 2
-for (const m of ['1', '2']) {
+// Clean Modules 1, 2, and 3
+for (const m of ['1', '2', '3']) {
   if (aasData[m] && aasData[m].sessions) {
     for (const s of Object.keys(aasData[m].sessions)) {
       cleanObjectDeep(aasData[m].sessions[s]);
@@ -135,14 +145,15 @@ const footer = `;
 `;
 
 fs.writeFileSync(courseDataPath, header + JSON.stringify(aasData, null, 2) + footer, 'utf8');
-console.log(`  ✓ course-data.js: ${cdTitlesCleaned} titles/stages cleaned, ${cdTextsCleaned} texts cleaned.`);
+console.log(`  ✓ course-data.js: ${cdTitlesCleaned} titles/stages cleaned, ${cdTextsCleaned} texts/times cleaned.`);
 
 // ==========================================
-// 2. CLEAN TEMPLATE FILES (Modules 1 and 2)
+// 2. CLEAN TEMPLATE FILES
 // ==========================================
 const templateFiles = [
   'src/js/05-templates-mod1.js',
-  'src/js/08-templates-aas2.js'
+  'src/js/08-templates-aas2.js',
+  'src/js/08b-templates-aas3.js'
 ];
 
 const badgeReplacements = [
@@ -154,17 +165,23 @@ const badgeReplacements = [
   { from: />15-45m</g, to: '>Part 2<' },
   { from: />30-50m</g, to: '>Part 3<' },
   { from: />35-55m</g, to: '>Part 3<' },
+  { from: />35-60m</g, to: '>Part 3<' },
   { from: />40-65m</g, to: '>Part 3<' },
   { from: />45-70m</g, to: '>Part 3<' },
   { from: />50-65m</g, to: '>Part 4<' },
+  { from: />50-75m</g, to: '>Part 4<' },
   { from: />50-80m</g, to: '>Part 4<' },
+  { from: />50-85m</g, to: '>Part 4<' },
   { from: />55-85m</g, to: '>Part 4<' },
+  { from: />60-85m</g, to: '>Part 4<' },
   { from: />65-90m</g, to: '>Part 4<' },
   { from: />65-110m</g, to: '>Part 5<' },
   { from: />70-105m</g, to: '>Part 4<' },
+  { from: />75-110m</g, to: '>Part 5<' },
   { from: />80-110m</g, to: '>Part 5<' },
   { from: />85-110m</g, to: '>Part 5<' },
-  { from: />90-105m</g, to: '>Part 5<' }
+  { from: />90-105m</g, to: '>Part 5<' },
+  { from: />110-120m</g, to: '>Part 6<' }
 ];
 
 for (const relPath of templateFiles) {
@@ -192,4 +209,4 @@ for (const relPath of templateFiles) {
   console.log(`  ✓ ${relPath} updated successfully.`);
 }
 
-console.log('✅ ALL CLASSROOM TIMINGS REMOVED ACROSS MODULES 1 AND 2 IN SEMESTER 3!');
+console.log('✅ ALL CLASSROOM TIMINGS REMOVED ACROSS SEMESTER 3!');
