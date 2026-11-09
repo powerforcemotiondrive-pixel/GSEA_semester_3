@@ -283,7 +283,7 @@
                 <span class="text-[11px] text-slate-500">Industry Reports &amp; Case Studies</span>
               </div>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-                ${articles.map(a => {
+                ${articles.map((a, idx) => {
                   const heading = a.heading || a.title || 'Technical Article';
                   const snippet = a.snippet || a.summary || a.desc || '';
                   const topic = a.topic || (a.source ? a.source.split('•')[0].trim() : 'Case Study');
@@ -302,10 +302,10 @@
                     </div>
                     <div class="pt-3 mt-3 border-t border-slate-100 flex items-center justify-between text-xs">
                       <span class="text-[11px] text-slate-400">${readTime}</span>
-                      <a href="${url}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-white font-bold text-xs px-3 py-1.5 rounded-lg shadow-xs hover:opacity-95 transition-all no-underline cursor-pointer" style="background-color: ${theme.primary};">
+                      <button type="button" onclick="window.openArticleReader(modalState.sessionNum, ${idx})" class="inline-flex items-center gap-1.5 text-white font-bold text-xs px-3.5 py-1.5 rounded-lg shadow-xs hover:opacity-95 transition-all cursor-pointer" style="background-color: ${theme.primary};">
                         <span>Read Article</span>
-                        <span>→</span>
-                      </a>
+                        <span>&rarr;</span>
+                      </button>
                     </div>
                   </article>
                 `;}).join('')}
