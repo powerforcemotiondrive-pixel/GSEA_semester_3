@@ -2867,6 +2867,7 @@
         const docSubtitle = doc.subtitle || doc.desc || "EASA Regulatory Publication";
         const docPath = doc.path || doc.url || "#";
         const docNote = doc.moodleNote || "Also available in your ENAC Moodle course space under Regulatory Documentation";
+        const docButtonText = doc.buttonText || (docTitle.includes("BEA") || docTitle.includes("Incident") ? "Open Incident Dossier (PDF)" : "Open EASA Extract (PDF)");
         documentBannerHTML = `
           <div class="p-3.5 bg-white border border-emerald-300 rounded-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-2xs">
             <div class="flex items-center gap-3 min-w-0">
@@ -2880,7 +2881,7 @@
               </div>
             </div>
             <a href="${docPath}" target="_blank" class="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-bold text-white bg-emerald-700 hover:bg-emerald-800 shadow-xs transition-all cursor-pointer shrink-0 w-full sm:w-auto">
-              <span>Open EASA Extract (PDF)</span>
+              <span>${docButtonText}</span>
               <span aria-hidden="true">&rarr;</span>
             </a>
           </div>

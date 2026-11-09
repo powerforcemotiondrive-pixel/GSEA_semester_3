@@ -4693,6 +4693,7 @@
             "document": {
               "title": "BEA/EASA Technical Incident Dossier: Multi-Source Occurrence Dossier 2024-089",
               "subtitle": "Chronological Cross-Analysis • ATC Logs, METAR Windshear, MEL Defect & MOR Statements",
+              "buttonText": "Open Incident Dossier (PDF)",
               "filename": "GSEA_S3_M1_S5_Incident_Investigation_Dossier.pdf",
               "path": "docs/GSEA_S3_M1_S5_Incident_Investigation_Dossier.pdf",
               "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
@@ -4713,7 +4714,8 @@
           "document": {
             "title": "BEA/EASA Technical Incident Dossier: Multi-Source Occurrence Dossier 2024-089",
             "subtitle": "Chronological Cross-Analysis • ATC Logs, METAR Windshear, MEL Defect & MOR Statements",
-            "filename": "GSEA_S3_M1_S5_Incident_Investigation_Dossier.pdf",
+            "buttonText": "Open Incident Dossier (PDF)",
+              "filename": "GSEA_S3_M1_S5_Incident_Investigation_Dossier.pdf",
             "path": "docs/GSEA_S3_M1_S5_Incident_Investigation_Dossier.pdf",
             "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
           }
@@ -14750,7 +14752,8 @@
               "document": {
                 "title": "BEA/EASA Technical Incident Dossier: Multi-Source Occurrence Dossier 2024-089",
                 "subtitle": "Chronological Cross-Analysis • ATC Logs, METAR Windshear, MEL Defect & MOR Statements",
-                "filename": "GSEA_S3_M1_S5_Incident_Investigation_Dossier.pdf",
+                "buttonText": "Open Incident Dossier (PDF)",
+              "filename": "GSEA_S3_M1_S5_Incident_Investigation_Dossier.pdf",
                 "path": "docs/GSEA_S3_M1_S5_Incident_Investigation_Dossier.pdf",
                 "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
               },
@@ -14770,6 +14773,7 @@
             "document": {
               "title": "BEA/EASA Technical Incident Dossier: Multi-Source Occurrence Dossier 2024-089",
               "subtitle": "Chronological Cross-Analysis • ATC Logs, METAR Windshear, MEL Defect & MOR Statements",
+              "buttonText": "Open Incident Dossier (PDF)",
               "filename": "GSEA_S3_M1_S5_Incident_Investigation_Dossier.pdf",
               "path": "docs/GSEA_S3_M1_S5_Incident_Investigation_Dossier.pdf",
               "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
