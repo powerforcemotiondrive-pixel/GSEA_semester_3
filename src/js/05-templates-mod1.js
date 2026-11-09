@@ -55,9 +55,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-15m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 1</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Warm-up & Entry Spot-Check (15 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Warm-up & Entry Spot-Check'}</h4>
                   <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
                 </div>
               </div>
@@ -142,9 +142,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">15-45m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 2</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${doc.title || 'Activity 2: Reading the EASA Crane Rule (30 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${doc.title || 'Activity 2: Reading the EASA Crane Rule'}</h4>
                   <p class="text-[11px] text-slate-500">${doc.summary || ''}</p>
                 </div>
               </div>
@@ -193,9 +193,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">45-70m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 3</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${rules.title || 'Activity 3: Words for Rules: Must, Shall, Should, May (25 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${rules.title || 'Activity 3: Words for Rules: Must, Shall, Should, May'}</h4>
                   <p class="text-[11px] text-slate-500">${rules.summary || ''}</p>
                 </div>
               </div>
@@ -255,9 +255,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">70-105m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 4</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${spoken.title || 'Activity 4: Speaking Role-Play: Talking to the Builder (35 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${spoken.title || 'Activity 4: Speaking Role-Play: Talking to the Builder'}</h4>
                   <p class="text-[11px] text-slate-500">${spoken.summary || ''}</p>
                 </div>
               </div>
@@ -314,7 +314,7 @@
               <div class="flex items-center gap-2">
                 <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">105-120m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 5: Safety Check: What Could Go Wrong? (15 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 5: Safety Check: What Could Go Wrong?'}</h4>
                   <p class="text-[11px] text-slate-500">${safety.summary || ''}</p>
                 </div>
               </div>
@@ -444,9 +444,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-15m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 1</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Warm-up: Danger on the Ramp (15 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Warm-up: Danger on the Ramp'}</h4>
                   <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
                 </div>
               </div>
@@ -531,9 +531,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">15-45m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 2</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${doc.title || 'Activity 2: Reading the EASA Ramp Speed Alert (30 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${doc.title || 'Activity 2: Reading the EASA Ramp Speed Alert'}</h4>
                   <p class="text-[11px] text-slate-500">${doc.summary || ''}</p>
                 </div>
               </div>
@@ -582,9 +582,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">45-70m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 3</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${rules.title || 'Activity 3: Polite Language for Inspections (25 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${rules.title || 'Activity 3: Polite Language for Inspections'}</h4>
                   <p class="text-[11px] text-slate-500">${rules.summary || ''}</p>
                 </div>
               </div>
@@ -642,9 +642,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">70-105m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 4</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${spoken.title || 'Activity 4: Speaking Role-Play: The Ramp Safety Meeting (35 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${spoken.title || 'Activity 4: Speaking Role-Play: The Ramp Safety Meeting'}</h4>
                   <p class="text-[11px] text-slate-500">${spoken.summary || ''}</p>
                 </div>
               </div>
@@ -701,7 +701,7 @@
               <div class="flex items-center gap-2">
                 <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">105-120m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 5: Safety Check: What Could Go Wrong? (15 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 5: Safety Check: What Could Go Wrong?'}</h4>
                   <p class="text-[11px] text-slate-500">${safety.summary || ''}</p>
                 </div>
               </div>
@@ -831,9 +831,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-15m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 1</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Warm-up: Keeping Airports Open During Repairs (15 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Warm-up: Keeping Airports Open During Repairs'}</h4>
                   <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
                 </div>
               </div>
@@ -918,9 +918,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">15-45m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 2</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${doc.title || 'Activity 2: Reading the Runway Work Request (30 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${doc.title || 'Activity 2: Reading the Runway Work Request'}</h4>
                   <p class="text-[11px] text-slate-500">${doc.summary || ''}</p>
                 </div>
               </div>
@@ -969,9 +969,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">45-70m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 3</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${rules.title || 'Activity 3: Connecting Words: Giving Reasons & Explaining Conditions (25 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${rules.title || 'Activity 3: Connecting Words: Giving Reasons & Explaining Conditions'}</h4>
                   <p class="text-[11px] text-slate-500">${rules.summary || ''}</p>
                 </div>
               </div>
@@ -1031,9 +1031,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">70-105m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 4</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${spoken.title || 'Activity 4: Spoken Briefing: Explaining the Plan to Airline Pilots (35 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${spoken.title || 'Activity 4: Spoken Briefing: Explaining the Plan to Airline Pilots'}</h4>
                   <p class="text-[11px] text-slate-500">${spoken.summary || ''}</p>
                 </div>
               </div>
@@ -1090,7 +1090,7 @@
               <div class="flex items-center gap-2">
                 <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">105-120m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 5: Safety Check: Is it Safe to Land? (15 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 5: Safety Check: Is it Safe to Land?'}</h4>
                   <p class="text-[11px] text-slate-500">${safety.summary || ''}</p>
                 </div>
               </div>
@@ -1221,9 +1221,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-15m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 1</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Warm-up & Entry Spot-Check (15 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Warm-up & Entry Spot-Check'}</h4>
                   <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
                 </div>
               </div>
@@ -1315,9 +1315,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-5">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">15-40m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 2</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${chart.title || 'Activity 2: Visual Chart & Description Clinic (25 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${chart.title || 'Activity 2: Visual Chart & Description Clinic'}</h4>
                   <p class="text-[11px] text-slate-500">${chart.summary || ''}</p>
                 </div>
               </div>
@@ -1395,9 +1395,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">40-65m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 3</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${clinic.title || 'Activity 3: Language Clinic (25 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${clinic.title || 'Activity 3: Language Clinic'}</h4>
                   <p class="text-[11px] text-slate-500">${clinic.summary || ''}</p>
                 </div>
               </div>
@@ -1445,9 +1445,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">65-90m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 4</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${game.title || 'Activity 4: 🎮 The Blind Taxi Navigator Game (25 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${game.title || 'Activity 4: 🎮 The Blind Taxi Navigator Game'}</h4>
                   <p class="text-[11px] text-slate-500">${game.summary || ''}</p>
                 </div>
               </div>
@@ -1499,9 +1499,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">90-105m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${roleplay.title || 'Activity 5: Spoken Role-Play (20 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${roleplay.title || 'Activity 5: Spoken Role-Play'}</h4>
                   <p class="text-[11px] text-slate-500">${roleplay.summary || ''}</p>
                 </div>
               </div>
@@ -1554,7 +1554,7 @@
               <div class="flex items-center gap-2">
                 <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">105-120m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 6: Safety Check (15 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 6: Safety Check'}</h4>
                   <p class="text-[11px] text-slate-500">${safety.summary || ''}</p>
                 </div>
               </div>
@@ -1675,9 +1675,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-15m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 1</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Warm-up & Entry Spot-Check (15 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Warm-up & Entry Spot-Check'}</h4>
                   <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
                 </div>
               </div>
@@ -1769,9 +1769,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-5">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">15-40m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 2</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${chart.title || 'Activity 2: Visual Chart & Description Clinic (25 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${chart.title || 'Activity 2: Visual Chart & Description Clinic'}</h4>
                   <p class="text-[11px] text-slate-500">${chart.summary || ''}</p>
                 </div>
               </div>
@@ -1849,9 +1849,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">40-65m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 3</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${clinic.title || 'Activity 3: Language Clinic (25 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${clinic.title || 'Activity 3: Language Clinic'}</h4>
                   <p class="text-[11px] text-slate-500">${clinic.summary || ''}</p>
                 </div>
               </div>
@@ -1899,9 +1899,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">65-90m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 4</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${game.title || 'Activity 4: 🔍 Airspace Detective: Spot the Route Trap (25 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${game.title || 'Activity 4: 🔍 Airspace Detective: Spot the Route Trap'}</h4>
                   <p class="text-[11px] text-slate-500">${game.summary || ''}</p>
                 </div>
               </div>
@@ -1948,9 +1948,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">90-105m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${roleplay.title || 'Activity 5: Spoken Role-Play (20 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${roleplay.title || 'Activity 5: Spoken Role-Play'}</h4>
                   <p class="text-[11px] text-slate-500">${roleplay.summary || ''}</p>
                 </div>
               </div>
@@ -2003,7 +2003,7 @@
               <div class="flex items-center gap-2">
                 <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">105-120m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 6: Safety Check (15 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 6: Safety Check'}</h4>
                   <p class="text-[11px] text-slate-500">${safety.summary || ''}</p>
                 </div>
               </div>
@@ -2124,9 +2124,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-15m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 1</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Warm-up & Entry Spot-Check (15 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Warm-up & Entry Spot-Check'}</h4>
                   <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
                 </div>
               </div>
@@ -2218,9 +2218,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-5">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">15-40m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 2</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${chart.title || 'Activity 2: Visual Chart & Description Clinic (25 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${chart.title || 'Activity 2: Visual Chart & Description Clinic'}</h4>
                   <p class="text-[11px] text-slate-500">${chart.summary || ''}</p>
                 </div>
               </div>
@@ -2298,9 +2298,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">40-65m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 3</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${clinic.title || 'Activity 3: Language Clinic (25 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${clinic.title || 'Activity 3: Language Clinic'}</h4>
                   <p class="text-[11px] text-slate-500">${clinic.summary || ''}</p>
                 </div>
               </div>
@@ -2348,9 +2348,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">65-90m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 4</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${game.title || 'Activity 4: ⚡ Go / No-Go Lightning Challenge (25 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${game.title || 'Activity 4: ⚡ Go / No-Go Lightning Challenge'}</h4>
                   <p class="text-[11px] text-slate-500">${game.summary || ''}</p>
                 </div>
               </div>
@@ -2392,9 +2392,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">90-105m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${roleplay.title || 'Activity 5: Spoken Role-Play (20 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${roleplay.title || 'Activity 5: Spoken Role-Play'}</h4>
                   <p class="text-[11px] text-slate-500">${roleplay.summary || ''}</p>
                 </div>
               </div>
@@ -2447,7 +2447,7 @@
               <div class="flex items-center gap-2">
                 <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">105-120m</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 6: Safety Check (15 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 6: Safety Check'}</h4>
                   <p class="text-[11px] text-slate-500">${safety.summary || ''}</p>
                 </div>
               </div>

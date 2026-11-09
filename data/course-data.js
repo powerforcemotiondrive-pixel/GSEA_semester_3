@@ -182,28 +182,25 @@
           "summary": "A 2-hour communicative spoken English session for GSEA students covering document reading tricks, EASA crane safety rules, words for rules (shall, must, should, may), an obstacle clarification role-play, and a simple Safety Check.",
           "items": [
             {
-              "time": "00-15",
-              "title": "Part 1: Warm-up: Reading Long Manuals (15 mins)",
+              "title": "Part 1: Warm-up: Reading Long Manuals",
               "description": "In pairs, GSEA students discuss what makes 300-page official manuals hard to read, share quick scanning strategies, and test entry knowledge with 4 quick spot-check questions."
             },
             {
-              "time": "15-45",
-              "title": "Part 2: Reading the EASA Crane Rule (30 mins)",
+              "title": "Part 2: Reading the EASA Crane Rule",
               "description": "Reading an authentic EASA extract (CS-ADR-DSN.H.400 and H.415 + GM1) to locate obstacle limitation surfaces, slope gradients, and crane safeguarding rules."
             },
             {
-              "time": "45-70",
-              "title": "Part 3: Words for Rules: Shall, Must, Should, May (25 mins)",
+              "title": "Part 3: Words for Rules: Shall, Must, Should, May",
               "description": "Grammar and language clinic clarifying mandatory requirements (shall/must), prohibitions (shall not), and recommendations (should) through 5 practical drills."
             },
             {
               "time": "70-105",
-              "title": "Part 4: Speaking Role-Play: Talking to the Builder (35 mins)",
+              "title": "Part 4: Speaking Role-Play: Talking to the Builder",
               "description": "3-student spoken role-play between a GSEA Safety Officer and a Construction Manager discussing a proposed 48m crane near Runway 09, with peer observation."
             },
             {
               "time": "105-120",
-              "title": "Part 5: Safety Check: What Could Go Wrong? (15 mins)",
+              "title": "Part 5: Safety Check: What Could Go Wrong?",
               "description": "Collaborative 4-step safety check evaluating the crane hazard, flight risks, protective steps (lowered height, obstacle lights, NOTAM), and the final decision."
             }
           ]
@@ -218,7 +215,7 @@
             "duration": "120 Minutes"
           },
           "openingSession": {
-            "title": "Activity 1: Warm-up & Entry Spot-Check (15 mins)",
+            "title": "Activity 1: Warm-up & Entry Spot-Check",
             "summary": "Break the ice, discuss reading challenges in English, and test your baseline knowledge of airport rules.",
             "modeBadges": [
               "Pairs (2 students)",
@@ -286,7 +283,7 @@
             }
           },
           "documentExtract": {
-            "title": "Activity 2: Reading the EASA Crane Rule (30 mins)",
+            "title": "Activity 2: Reading the EASA Crane Rule",
             "summary": "Scan an authentic, expanded EASA regulatory extract to locate safety surfaces and crane rules.",
             "modeBadges": [
               "Pairs or Small Groups",
@@ -327,7 +324,7 @@
             ]
           },
           "rulesPractice": {
-            "title": "Activity 3: Words for Rules: Must, Shall, Should, May (25 mins)",
+            "title": "Activity 3: Words for Rules: Must, Shall, Should, May",
             "summary": "Master the words used in aviation rules to express legal obligations, prohibitions, and advice.",
             "modeBadges": [
               "Individual & Pairs",
@@ -426,7 +423,7 @@
             ]
           },
           "spokenActivity": {
-            "title": "Activity 4: Speaking Role-Play: Talking to the Builder (35 mins)",
+            "title": "Activity 4: Speaking Role-Play: Talking to the Builder",
             "summary": "Role-play a polite, professional discussion between a GSEA safety officer and a construction contractor.",
             "modeBadges": [
               "Groups of 3",
@@ -482,7 +479,7 @@
             ]
           },
           "safetyCheck": {
-            "title": "Activity 5: Safety Check: What Could Go Wrong? (15 mins)",
+            "title": "Activity 5: Safety Check: What Could Go Wrong?",
             "summary": "Work together to evaluate the crane hazard and confirm the safety decision.",
             "modeBadges": [
               "Whole Class / Pairs",
@@ -958,28 +955,25 @@
           "summary": "A 2-hour communicative spoken English session on apron safety, EASA Safety Information Bulletins, gentle phrasing during safety inspections, a ramp speed meeting role-play, and a simple Safety Check.",
           "items": [
             {
-              "time": "00-15",
-              "title": "Part 1: Warm-up: Danger on the Ramp (15 mins)",
+              "title": "Part 1: Warm-up: Danger on the Ramp",
               "description": "Pairs brainstorm ramp hazards (tugs, fuel, jet blast, night shifts) and test entry knowledge with 4 spot-check questions."
             },
             {
-              "time": "15-45",
-              "title": "Part 2: Reading the EASA Ramp Speed Alert (30 mins)",
+              "title": "Part 2: Reading the EASA Ramp Speed Alert",
               "description": "Reading simulated EASA SIB No. 2024-11 on vehicle speeding, telematics, and the 30-day fix-it plan timeline."
             },
             {
-              "time": "45-70",
-              "title": "Part 3: Polite Language for Inspections (25 mins)",
+              "title": "Part 3: Polite Language for Inspections",
               "description": "Language clinic on gentle phrasing and passive voice to describe safety findings objectively without blaming individuals."
             },
             {
               "time": "70-105",
-              "title": "Part 4: Speaking Role-Play: The Ramp Safety Meeting (35 mins)",
+              "title": "Part 4: Speaking Role-Play: The Ramp Safety Meeting",
               "description": "3-student role-play between a GSEA Safety Auditor, Ground Handling Ramp Supervisor, and Airport Operations Manager to agree on a fix-it plan."
             },
             {
               "time": "105-120",
-              "title": "Part 5: Safety Check: What Could Go Wrong? (15 mins)",
+              "title": "Part 5: Safety Check: What Could Go Wrong?",
               "description": "Evaluating speeding baggage tugs, collision risks, speed limiters, toolbox talks, and deciding on compliance approval."
             }
           ]
@@ -994,7 +988,7 @@
             "duration": "120 Minutes"
           },
           "openingSession": {
-            "title": "Activity 1: Warm-up: Danger on the Ramp (15 mins)",
+            "title": "Activity 1: Warm-up: Danger on the Ramp",
             "summary": "Brainstorm airside hazards and check your understanding of airport safety alerts.",
             "modeBadges": [
               "Pairs (2 students)",
@@ -1062,7 +1056,7 @@
             }
           },
           "documentExtract": {
-            "title": "Activity 2: Reading the EASA Ramp Speed Alert (30 mins)",
+            "title": "Activity 2: Reading the EASA Ramp Speed Alert",
             "summary": "Scan an authentic Safety Information Bulletin on ground vehicle speed compliance.",
             "modeBadges": [
               "Pairs or Small Groups",
@@ -1103,7 +1097,7 @@
             ]
           },
           "rulesPractice": {
-            "title": "Activity 3: Polite Language for Inspections: The Gentle Passive Voice (25 mins)",
+            "title": "Activity 3: Polite Language for Inspections: The Gentle Passive Voice",
             "summary": "Learn how to describe safety problems objectively and politely without attacking individuals.",
             "modeBadges": [
               "Individual & Pairs",
@@ -1202,7 +1196,7 @@
             ]
           },
           "spokenActivity": {
-            "title": "Activity 4: Speaking Role-Play: The Ramp Safety Meeting (35 mins)",
+            "title": "Activity 4: Speaking Role-Play: The Ramp Safety Meeting",
             "summary": "Role-play a constructive 3-person safety meeting between an auditor, a ramp supervisor, and operations.",
             "modeBadges": [
               "Groups of 3",
@@ -1257,7 +1251,7 @@
             ]
           },
           "safetyCheck": {
-            "title": "Activity 5: Safety Check: What Could Go Wrong? (15 mins)",
+            "title": "Activity 5: Safety Check: What Could Go Wrong?",
             "summary": "Complete the ramp speed safety check and agree on the final audit decision.",
             "modeBadges": [
               "Whole Class / Pairs",
@@ -1733,28 +1727,25 @@
           "summary": "A 2-hour communicative spoken English session on temporary aerodrome works, Article 71 exemptions, connecting words for explaining rules, an airline operational briefing simulation, and a simple Safety Check.",
           "items": [
             {
-              "time": "00-15",
-              "title": "Part 1: Warm-up: Keeping Airports Open During Repairs (15 mins)",
+              "title": "Part 1: Warm-up: Keeping Airports Open During Repairs",
               "description": "Pairs discuss how airports maintain operations during runway maintenance and answer 4 spot-check questions."
             },
             {
-              "time": "15-45",
-              "title": "Part 2: Reading the Runway Work Request (30 mins)",
+              "title": "Part 2: Reading the Runway Work Request",
               "description": "Scanning authentic exemption file EASA/ADR-EXEMP/2024-009 for reduced RESA and the 4 compensatory safety rules."
             },
             {
-              "time": "45-70",
-              "title": "Part 3: Connecting Words: Giving Reasons & Explaining Conditions (25 mins)",
+              "title": "Part 3: Connecting Words: Giving Reasons & Explaining Conditions",
               "description": "Language clinic practicing condition linkers (provided that, as long as) and purpose/cause linkers (in order to, due to) across 5 exercises."
             },
             {
               "time": "70-105",
-              "title": "Part 4: Spoken Briefing: Explaining the Plan to Airline Pilots (35 mins)",
+              "title": "Part 4: Spoken Briefing: Explaining the Plan to Airline Pilots",
               "description": "GSEA students prepare and deliver a 3-minute spoken presentation to airline representatives explaining the 4 safety rules, followed by Q&A."
             },
             {
               "time": "105-120",
-              "title": "Part 5: Safety Check: Is it Safe to Land? (15 mins)",
+              "title": "Part 5: Safety Check: Is it Safe to Land?",
               "description": "Structured 4-step safety evaluation of the reduced RESA, overrun risks, compensatory barriers, and granting temporary operational approval."
             }
           ]
@@ -1769,7 +1760,7 @@
             "duration": "120 Minutes"
           },
           "openingSession": {
-            "title": "Activity 1: Warm-up: Keeping Airports Open During Repairs (15 mins)",
+            "title": "Activity 1: Warm-up: Keeping Airports Open During Repairs",
             "summary": "Explore how airports manage urgent runway construction without shutting down completely.",
             "modeBadges": [
               "Pairs (2 students)",
@@ -1837,7 +1828,7 @@
             }
           },
           "documentExtract": {
-            "title": "Activity 2: Reading the Runway Work Request (30 mins)",
+            "title": "Activity 2: Reading the Runway Work Request",
             "summary": "Scan an authentic temporary exemption file for Runway 26 drainage culvert repairs.",
             "modeBadges": [
               "Pairs or Small Groups",
@@ -1878,7 +1869,7 @@
             ]
           },
           "rulesPractice": {
-            "title": "Activity 3: Connecting Words: Giving Reasons & Explaining Conditions (25 mins)",
+            "title": "Activity 3: Connecting Words: Giving Reasons & Explaining Conditions",
             "summary": "Learn how to link ideas in English using words for conditions, causes, purposes, and replacements.",
             "modeBadges": [
               "Individual & Pairs",
@@ -1983,7 +1974,7 @@
             ]
           },
           "spokenActivity": {
-            "title": "Activity 4: Spoken Briefing: Explaining the Plan to Airline Pilots (35 mins)",
+            "title": "Activity 4: Spoken Briefing: Explaining the Plan to Airline Pilots",
             "summary": "Deliver a clear, reassuring 3-minute operational briefing to airline representatives.",
             "modeBadges": [
               "Pairs / Small Groups",
@@ -2041,7 +2032,7 @@
             ]
           },
           "safetyCheck": {
-            "title": "Activity 5: Safety Check: Is it Safe to Land? (15 mins)",
+            "title": "Activity 5: Safety Check: Is it Safe to Land?",
             "summary": "Complete the decision check table evaluating the reduced safety area and safety rules.",
             "modeBadges": [
               "Whole Class / Pairs",
@@ -2518,28 +2509,24 @@
           "summary": "A 2-hour communicative spoken English session covering visual ground chart reading, map orientation skills, prepositions of place, the 'Blind Taxi Navigator' game, a runway crossing role-play, and a runway incursion Safety Check.",
           "items": [
             {
-              "time": "00-15",
-              "title": "Part 1: Warm-up: Navigating on the Ground (15 mins)",
+              "title": "Part 1: Warm-up: Navigating on the Ground",
               "description": "In pairs, students discuss why taxiing at unfamiliar airports is demanding, share personal navigation tricks, and test entry knowledge with 4 spot-check questions."
             },
             {
-              "time": "15-40",
-              "title": "Part 2: Visual Chart & Map Orientation Clinic (25 mins)",
+              "title": "Part 2: Visual Chart & Map Orientation Clinic",
               "description": "Analyzing the visual LFMT Ground Movement Chart (GMC), learning standard phrases for orienting colleagues to a map, and completing a 60-second map description challenge."
             },
             {
-              "time": "40-65",
-              "title": "Part 3: Language Clinic: Prepositions of Place & Directions (25 mins)",
+              "title": "Part 3: Language Clinic: Prepositions of Place & Directions",
               "description": "Oral drills and pair practice using prepositions of place (adjacent to, opposite, parallel to, between, at the intersection of, short of, beyond) to give crisp physical directions."
             },
             {
-              "time": "65-90",
-              "title": "Part 4: Communicative Game: 🎮 The Blind Taxi Navigator (25 mins)",
+              "title": "Part 4: Communicative Game: 🎮 The Blind Taxi Navigator",
               "description": "Information-gap partner game: Student A guides Student B across the airport to a secret destination using step-by-step spoken directions while Student B traces the route."
             },
             {
               "time": "90-120",
-              "title": "Part 5: Speaking Role-Play & Safety Check (30 mins)",
+              "title": "Part 5: Speaking Role-Play & Safety Check",
               "description": "Spoken simulation: Ground Controller issues progressive taxi instructions with an active runway crossing, followed by a 4-step collaborative Safety Check on Hot Spot 1."
             }
           ]
@@ -2554,7 +2541,7 @@
             "duration": "120 Minutes"
           },
           "openingSession": {
-            "title": "Activity 1: Warm-up & Entry Spot-Check (15 mins)",
+            "title": "Activity 1: Warm-up & Entry Spot-Check",
             "summary": "Break the ice, discuss the challenges of ground navigation at major airports, and test your baseline knowledge of aerodrome ground markings.",
             "modeBadges": [
               "Pairs (2 students)",
@@ -2646,7 +2633,7 @@
             ]
           },
           "chartExtract": {
-            "title": "Activity 2: Visual Chart & Map Orientation Clinic (25 mins)",
+            "title": "Activity 2: Visual Chart & Map Orientation Clinic",
             "summary": "Inspect the visual Ground Movement Chart (LFMT) and learn natural spoken patterns to walk a colleague through an aerodrome layout.",
             "visualChart": "images/charts/chart_s4_gmc_lfmt.svg",
             "badge": "AUTHENTIC SIMULATION • LFMT GROUND MOVEMENT CHART",
@@ -2722,7 +2709,7 @@
             ]
           },
           "grammarClinic": {
-            "title": "Activity 3: Language Clinic: Prepositions of Place & Physical Directions (25 mins)",
+            "title": "Activity 3: Language Clinic: Prepositions of Place & Physical Directions",
             "summary": "Master clear position words and direction-giving phrases to describe airport facilities with precision.",
             "rules": [
               {
@@ -2790,7 +2777,7 @@
             ]
           },
           "communicativeGame": {
-            "title": "Activity 4: Communicative Game: 🎮 The Blind Taxi Navigator (25 mins)",
+            "title": "Activity 4: Communicative Game: 🎮 The Blind Taxi Navigator",
             "summary": "An information-gap spoken game. Guide your partner from your parking stand to a mystery airfield destination using step-by-step oral directions.",
             "instructions": [
               "Student A (The Navigator): Pick one of the 4 Secret Missions below (do NOT tell your partner the destination). Look at the visual chart.",
@@ -2833,7 +2820,7 @@
             ]
           },
           "roleplaySimulation": {
-            "title": "Activity 5: Speaking Role-Play: Ground Movement Challenge & 'Lost on Tarmac' (25 mins)",
+            "title": "Activity 5: Speaking Role-Play: Ground Movement Challenge & 'Lost on Tarmac'",
             "summary": "Simulate a realistic spoken interaction between Ground Control and Flight AFR 412, plus a quick recovery dialogue with a lost driver.",
             "situation": "Part 1: Flight AFR 412 (Airbus A320) is parked at Stand 14 on Apron North. The pilot requests taxi clearance to Runway 14L. The route requires taxiing along Delta, crossing active Runway 14R, joining Taxiway Alpha, and holding short of 14L at A1.\nPart 2 (Spoken Twist): A ground baggage tug driver has taken a wrong turn in thick fog and is lost near Hot Spot 1. Ground Control must give calm, clear directions to guide the tug back to Apron North.",
             "roles": [
@@ -2865,7 +2852,7 @@
             ]
           },
           "safetyCheck": {
-            "title": "Activity 6: Safety Check: Preventing Runway Incursions (15 mins)",
+            "title": "Activity 6: Safety Check: Preventing Runway Incursions",
             "summary": "Work in teams to analyze how confusing taxiway intersections lead to runway incursions and decide on practical safety defenses.",
             "steps": [
               {
@@ -3371,28 +3358,24 @@
           "summary": "A 2-hour communicative spoken English session covering visual SID charts, sequential flight path narration, prepositions of movement, the 'Airspace Detective' game, a weather diversion role-play, and an altitude safety check.",
           "items": [
             {
-              "time": "00-15",
-              "title": "Part 1: Warm-up: Why SIDs and STARs Exist (15 mins)",
+              "title": "Part 1: Warm-up: Why SIDs and STARs Exist",
               "description": "In pairs, students discuss how structured departure corridors prevent air traffic conflicts, and test entry knowledge with 4 spot-check questions."
             },
             {
-              "time": "15-40",
-              "title": "Part 2: Visual Chart & Flight Path Narration Clinic (25 mins)",
+              "title": "Part 2: Visual Chart & Flight Path Narration Clinic",
               "description": "Analyzing the visual GAILLAC 4A departure chart, learning standard storytelling phrases for narrating a flight path sequentially, and completing a 60-second route briefing."
             },
             {
-              "time": "40-65",
-              "title": "Part 3: Language Clinic: Prepositions of Movement & Direction (25 mins)",
+              "title": "Part 3: Language Clinic: Prepositions of Movement & Direction",
               "description": "Oral drills and pair practice using prepositions of movement (climb straight ahead to, turn left towards, proceed via, along, maintain until, intersect) to describe 3D climb paths."
             },
             {
-              "time": "65-90",
-              "title": "Part 4: Communicative Game: 🔍 Airspace Detective: Spot the Route Trap (25 mins)",
+              "title": "Part 4: Communicative Game: 🔍 Airspace Detective: Spot the Route Trap",
               "description": "Spoken detective game: pairs review 4 departure clearance cases, spot the single illegal clearance, explain the danger in spoken English, and propose the fix."
             },
             {
               "time": "90-120",
-              "title": "Part 5: Speaking Role-Play & Safety Check (30 mins)",
+              "title": "Part 5: Speaking Role-Play & Safety Check",
               "description": "Spoken simulation: Captain briefs First Officer on GAILLAC 4A, calls Departure Radar for a 20° weather diversion around a storm cell, and completes a terrain safety check."
             }
           ]
@@ -3407,7 +3390,7 @@
             "duration": "120 Minutes"
           },
           "openingSession": {
-            "title": "Activity 1: Warm-up & Entry Spot-Check (15 mins)",
+            "title": "Activity 1: Warm-up & Entry Spot-Check",
             "summary": "Break the ice, discuss how airspace corridors keep skyways organized, and test your baseline knowledge of departure chart symbols.",
             "modeBadges": [
               "Pairs (2 students)",
@@ -3499,7 +3482,7 @@
             ]
           },
           "chartExtract": {
-            "title": "Activity 2: Visual Chart & Flight Path Narration Clinic (25 mins)",
+            "title": "Activity 2: Visual Chart & Flight Path Narration Clinic",
             "summary": "Inspect the visual GAILLAC 4A Departure Chart and learn how to narrate a flight path sequentially like an airline flight crew.",
             "visualChart": "images/charts/chart_s5_sid_lfmt.svg",
             "badge": "AUTHENTIC SIMULATION • SID GAILLAC 4A (LFMT)",
@@ -3572,7 +3555,7 @@
             ]
           },
           "grammarClinic": {
-            "title": "Activity 3: Language Clinic: Prepositions of Movement & Direction (25 mins)",
+            "title": "Activity 3: Language Clinic: Prepositions of Movement & Direction",
             "summary": "Practice using dynamic prepositions and motion verbs to describe three-dimensional flight paths with precision.",
             "rules": [
               {
@@ -3640,7 +3623,7 @@
             ]
           },
           "communicativeGame": {
-            "title": "Activity 4: Communicative Game: 🔍 Airspace Detective: Spot the Route Trap (25 mins)",
+            "title": "Activity 4: Communicative Game: 🔍 Airspace Detective: Spot the Route Trap",
             "summary": "Review 4 simulated departure clearances with your partner. Three are legal, but one contains a dangerous error. Find it, explain the hazard, and fix it!",
             "instructions": [
               "In pairs, read each of the 4 simulated ATC clearances below.",
@@ -3677,7 +3660,7 @@
             "challengeQuestion": "Explain to the class: What makes Case Bravo dangerous, and how would you correct the controller's instruction in clear English?"
           },
           "roleplaySimulation": {
-            "title": "Activity 5: Speaking Role-Play: Departure Briefing & Storm Diversion (25 mins)",
+            "title": "Activity 5: Speaking Role-Play: Departure Briefing & Storm Diversion",
             "summary": "Simulate a two-part spoken challenge: a cockpit departure briefing followed by an urgent radio request to divert around a thunderstorm.",
             "situation": "Part 1: The Captain of AFR 624 briefs the First Officer on the GAILLAC 4A departure before takeoff from Runway 14L.\nPart 2: Climbing through 4,500 ft, airborne weather radar shows a severe convective storm cell building directly over the turn towards GAILLAC. The pilot contacts Departure Radar to request a heading 20 degrees left of track.",
             "roles": [
@@ -3709,7 +3692,7 @@
             ]
           },
           "safetyCheck": {
-            "title": "Activity 6: Safety Check: Managing Departure Route Deviations & Level Busts (15 mins)",
+            "title": "Activity 6: Safety Check: Managing Departure Route Deviations & Level Busts",
             "summary": "Work in teams to analyze the safety hazards when weather forces aircraft off published departure corridors.",
             "steps": [
               {
@@ -4215,28 +4198,24 @@
           "summary": "A 2-hour communicative spoken English session covering visual ILS approach plates, profile view briefings, the 'Go / No-Go Lightning Challenge' game, an emergency go-around role-play, and an unstabilized approach safety check.",
           "items": [
             {
-              "time": "00-15",
-              "title": "Part 1: Warm-up: The Final 3 Minutes Before Touchdown (15 mins)",
+              "title": "Part 1: Warm-up: The Final 3 Minutes Before Touchdown",
               "description": "In pairs, students discuss cockpit workload on final approach, explain stabilized approach gates, and test entry knowledge with 4 spot-check questions."
             },
             {
-              "time": "15-40",
-              "title": "Part 2: Visual Chart & Profile View Briefing Clinic (25 mins)",
+              "title": "Part 2: Visual Chart & Profile View Briefing Clinic",
               "description": "Analyzing the visual ILS Runway 14L plate at LFMT, learning standard phrases to describe the vertical step-down profile, and completing a 60-second approach briefing."
             },
             {
-              "time": "40-65",
-              "title": "Part 3: Language Clinic: Vertical Paths & Cockpit Callouts (25 mins)",
+              "title": "Part 3: Language Clinic: Vertical Paths & Cockpit Callouts",
               "description": "Oral drills and pair practice using vertical flight terminology (on the glide slope, at the final approach fix, upon reaching minimums, go-around positive climb)."
             },
             {
-              "time": "65-90",
-              "title": "Part 4: Communicative Game: ⚡ Go / No-Go Lightning Challenge (25 mins)",
+              "title": "Part 4: Communicative Game: ⚡ Go / No-Go Lightning Challenge",
               "description": "Rapid-fire partner game: students evaluate 6 high-pressure approach scenarios, make instant 3-second 'Continue' or 'Go-Around' calls, and defend their choice."
             },
             {
               "time": "90-120",
-              "title": "Part 5: Speaking Role-Play & Safety Check (30 mins)",
+              "title": "Part 5: Speaking Role-Play & Safety Check",
               "description": "Spoken simulation: Tower Controller commands an immediate go-around due to a vehicle crossing Runway 14L on 2-mile final, followed by a 4-step Safety Check on stabilized criteria."
             }
           ]
@@ -4251,7 +4230,7 @@
             "duration": "120 Minutes"
           },
           "openingSession": {
-            "title": "Activity 1: Warm-up & Entry Spot-Check (15 mins)",
+            "title": "Activity 1: Warm-up & Entry Spot-Check",
             "summary": "Break the ice, discuss the intense workload during the final 3 minutes before touchdown, and test your baseline knowledge of approach plate symbols.",
             "modeBadges": [
               "Pairs (2 students)",
@@ -4343,7 +4322,7 @@
             ]
           },
           "chartExtract": {
-            "title": "Activity 2: Visual Chart & Profile View Briefing Clinic (25 mins)",
+            "title": "Activity 2: Visual Chart & Profile View Briefing Clinic",
             "summary": "Inspect the visual ILS Runway 14L plate (Plan View + Profile View) and master how to deliver a crisp spoken approach briefing.",
             "visualChart": "images/charts/chart_s6_approach_lfmt.svg",
             "badge": "AUTHENTIC SIMULATION • ILS RWY 14L APPROACH PLATE (LFMT)",
@@ -4416,7 +4395,7 @@
             ]
           },
           "grammarClinic": {
-            "title": "Activity 3: Language Clinic: Vertical Paths & Cockpit Callouts (25 mins)",
+            "title": "Activity 3: Language Clinic: Vertical Paths & Cockpit Callouts",
             "summary": "Master clear spoken terminology for vertical flight path tracking, approach warnings, and go-around execution.",
             "rules": [
               {
@@ -4484,7 +4463,7 @@
             ]
           },
           "communicativeGame": {
-            "title": "Activity 4: Communicative Game: ⚡ Go / No-Go Lightning Challenge (25 mins)",
+            "title": "Activity 4: Communicative Game: ⚡ Go / No-Go Lightning Challenge",
             "summary": "A high-speed approach dilemma game. Take turns reading the 6 dilemma cards below. You have 3 seconds to shout 'CONTINUE!' or 'GO-AROUND!', and 2 complete sentences to defend your choice!",
             "instructions": [
               "Student A reads a Dilemma Card aloud to Student B.",
@@ -4533,7 +4512,7 @@
             ]
           },
           "roleplaySimulation": {
-            "title": "Activity 5: Speaking Role-Play: Low Visibility Approach & Emergency Go-Around (25 mins)",
+            "title": "Activity 5: Speaking Role-Play: Low Visibility Approach & Emergency Go-Around",
             "summary": "Simulate a high-stress final approach scenario where an unexpected runway incursion forces an immediate go-around.",
             "situation": "Flight AFR 884 is on 3-mile final approach for Runway 14L in light drizzle. At 400 ft AGL, the Tower Controller spots an airport maintenance vehicle inadvertently crossing the runway holding point at Taxiway Charlie. The Controller commands an immediate go-around; the pilot executes the missed approach procedure smoothly.",
             "roles": [
@@ -4565,7 +4544,7 @@
             ]
           },
           "safetyCheck": {
-            "title": "Activity 6: Safety Check: Unstabilized Approach & Go-Around Culture (15 mins)",
+            "title": "Activity 6: Safety Check: Unstabilized Approach & Go-Around Culture",
             "summary": "Work in teams to analyze the risks of unstabilized approaches and agree on how to build a strong go-around safety culture.",
             "steps": [
               {
@@ -5196,33 +5175,29 @@
           "summary": "A 2-hour communicative session featuring an aviation news warm-up, flight forces diagnostic, cause-and-effect language clinic, the 3-axes kinesthetic simulation, an operational stall scenario, and vocabulary consolidation.",
           "items": [
             {
-              "time": "00-10",
-              "title": "Part 1: Aviation News & Course Entry Warm-Up Check (10 mins)",
+              "title": "Part 1: Aviation News & Course Entry Warm-Up Check",
               "description": "Weekly aviation news warm-up and diagnostic spot-check connecting Module 1 aerodrome operations to airborne flight physics."
             },
             {
-              "time": "10-30",
-              "title": "Part 2: The Four Forces & Airflow Quick Check (20 mins)",
+              "title": "Part 2: The Four Forces & Airflow Quick Check",
               "description": "Interactive vocabulary matching: connecting lift, thrust, weight, drag, airfoil camber, and angle of attack to real flight phases."
             },
             {
-              "time": "30-50",
-              "title": "Part 3: Language Focus: Cause & Effect Linkers (20 mins)",
+              "title": "Part 3: Language Focus: Cause & Effect Linkers",
               "description": "Expressing aerodynamic consequences with conditionals and causal connectors (if, when, as a result of, leads to, unless)."
             },
             {
-              "time": "50-80",
-              "title": "Part 4: The 3 Axes & Control Surfaces Game / Role-Play (30 mins)",
+              "title": "Part 4: The 3 Axes & Control Surfaces Game / Role-Play",
               "description": "Interactive kinesthetic 'Human Flight Simulator' game and pilot-to-flight-test-engineer debriefing role-play."
             },
             {
               "time": "80-110",
-              "title": "Part 5: Aerodynamic Dilemma: High-Altitude Stall Recovery (30 mins)",
+              "title": "Part 5: Aerodynamic Dilemma: High-Altitude Stall Recovery",
               "description": "Operational case study: analyzing stall warnings, high-altitude buffeting, and crew communication during flight envelope excursions."
             },
             {
               "time": "110-120",
-              "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
+              "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up",
               "description": "Pronunciation stress practice (aero-DY-na-mics, cam-ber, sta-bi-LI-zer, ai-ler-on) and personal learning log entry."
             }
           ]
@@ -5249,8 +5224,8 @@
             ],
             "deliverable": "Accurately explain the difference between Angle of Attack and Pitch Attitude during the instructor spot-check.",
             "teacherNotes": "Use a model aircraft or your hands to demonstrate pitch attitude vs. relative wind and angle of attack. Ensure students realize AoA can exceed critical limit even in nose-low attitudes.",
-            "title": "Activity 1: Aviation News & Principles Warm-Up (10 mins)",
-            "summary": "Opening 10-minute warm-up examining current aerospace headlines and testing foundational aerodynamic concepts.",
+            "title": "Activity 1: Aviation News & Principles Warm-Up",
+            "summary": "Opening warm-up examining current aerospace headlines and testing foundational aerodynamic concepts.",
             "newsPrompts": [
               "Airlines evaluate next-generation winglet retrofits to shave 3% off cruise fuel burn on transatlantic routes.",
               "FAA issues updated training advisory for transport category pilots on high-altitude stall recognition and recovery.",
@@ -5296,7 +5271,7 @@
             ],
             "deliverable": "Clearly explain the force balance equations for both level flight and a banked turn in technical B2 English.",
             "teacherNotes": "Emphasize that lift acts perpendicular to the flight path / relative wind, while weight acts toward Earth's center. In a turn, vertical component of lift balances weight, requiring increased total lift (load factor / G-load).",
-            "title": "Activity 2: The Four Forces in Equilibrium & Maneuvers (20 mins)",
+            "title": "Activity 2: The Four Forces in Equilibrium & Maneuvers",
             "summary": "Analyze the 4 forces acting on an aircraft and explain how pilots create unbalance to maneuver.",
             "forces": [
               {
@@ -5342,7 +5317,7 @@
             ],
             "deliverable": "Flawlessly formulate 4 conditional aerodynamic statements with correct tense agreement and causal connectors.",
             "teacherNotes": "Warn students against common errors: using \"will\" in the if-clause (\"If airspeed will drop...\" ❌) and confusing \"due to\" (requires noun) with \"because\" (requires clause).",
-            "title": "Activity 3: Language Focus: Cause & Effect in Flight Physics (20 mins)",
+            "title": "Activity 3: Language Focus: Cause & Effect in Flight Physics",
             "summary": "Mastering conditional structures and causal connectors to explain aerodynamic phenomena in plain B2 English.",
             "structures": [
               {
@@ -5391,7 +5366,7 @@
             ],
             "deliverable": "A 2-minute fluent pilot-to-engineer debrief detailing control surface deflections and aircraft axis reactions.",
             "teacherNotes": "This high-energy activity builds muscular and spatial memory. Ensure students use correct technical verbs: deflect, pivot, rotate, yaw, roll, pitch up/down. Check for proper preposition use (around the vertical axis).",
-            "title": "Activity 4: The 3 Axes & Control Surfaces Game / Role-Play (30 mins)",
+            "title": "Activity 4: The 3 Axes & Control Surfaces Game / Role-Play",
             "summary": "Interactive 'Human Flight Simulator' kinesthetic game and pilot-to-flight-test-engineer debrief role-play.",
             "axes": [
               {
@@ -5440,7 +5415,7 @@
             ],
             "deliverable": "A clear 3-step cockpit communication script followed by an authentic 2-minute cockpit CRM debrief.",
             "teacherNotes": "Reference high-profile real-world accidents (AF447, Colgan 3407) where pulling back on the stick stalled the aircraft into the ground or ocean. Reinforce the aerodynamic invariant: The only way to recover from a stall is to reduce the angle of attack below the critical limit.",
-            "title": "Activity 5: Operational Scenario: Stall Recovery & High-Altitude Turbulence (30 mins)",
+            "title": "Activity 5: Operational Scenario: Stall Recovery & High-Altitude Turbulence",
             "summary": "Team case study analyzing stall warnings, stick-shaker activation, and crew coordination during atmospheric turbulence.",
             "scenarioText": "Cruising at FL370 in turbulent air near the equator, Flight 204 encounters severe mountain wave downdrafts. The airspeed drops rapidly toward the low-speed buffet boundary. Suddenly, the master warning chimes and the stick-shaker vibrates violently. The junior First Officer reflexively pulls back on the sidestick, increasing the angle of attack.",
             "tasks": [
@@ -5462,7 +5437,7 @@
             ],
             "deliverable": "Verbally confirm mastery of the 3 technical checkpoints and demonstrate accurate stress placement on key aerodynamic terms.",
             "teacherNotes": "Quickly drill the class on word stress for \"aerodynamics\" (stress on NAM) and \"equilibrium\" (stress on LIB). Preview Session 2: Aircraft Anatomy (internal systems and external walkarounds).",
-            "title": "Activity 6: Vocabulary Review & Class Wrap-Up (10 mins)",
+            "title": "Activity 6: Vocabulary Review & Class Wrap-Up",
             "summary": "Consolidate the 18 key aerodynamic terms, verify pronunciation stress, and prepare for Session 2 Aircraft Anatomy.",
             "checkpoints": [
               "Can you explain the 4 forces of flight and how they balance in level cruise?",
@@ -5842,33 +5817,29 @@
           "summary": "A 2-hour communicative session combining aviation news, an airframe diagram labeling challenge, spatial grammar clinic, a 360-degree walkaround inspection simulation, MEL defect handovers, and pronunciation drills.",
           "items": [
             {
-              "time": "00-10",
-              "title": "Part 1: Aviation News & Session 1 Aerodynamics Spot-Check (10 mins)",
+              "title": "Part 1: Aviation News & Session 1 Aerodynamics Spot-Check",
               "description": "Weekly aviation news warm-up and rapid spot-check on the 4 forces, angle of attack, and the 3 aircraft axes."
             },
             {
-              "time": "10-35",
-              "title": "Part 2: Airframe Diagram Labeling Race (25 mins)",
+              "title": "Part 2: Airframe Diagram Labeling Race",
               "description": "Collaborative visual diagram race: identifying and labeling external control surfaces and internal cabin/cockpit zones."
             },
             {
-              "time": "35-55",
-              "title": "Part 3: Language Focus: Spatial Prepositions & Functions (20 mins)",
+              "title": "Part 3: Language Focus: Spatial Prepositions & Functions",
               "description": "Describing locations and mechanical functions using relative clauses and spatial prepositions (situated along, mounted to, designed to)."
             },
             {
-              "time": "55-85",
-              "title": "Part 4: Pre-Flight Walkaround Inspection Role-Play (30 mins)",
+              "title": "Part 4: Pre-Flight Walkaround Inspection Role-Play",
               "description": "Captain & Ramp Maintenance Engineer simulation: performing an exterior walkaround and reporting simulated defects."
             },
             {
               "time": "85-110",
-              "title": "Part 5: Cockpit & Cabin Defect Handover Workshop (25 mins)",
+              "title": "Part 5: Cockpit & Cabin Defect Handover Workshop",
               "description": "Consulting the Minimum Equipment List (MEL) to negotiate dispatch decisions for inoperative cabin or airframe items."
             },
             {
               "time": "110-120",
-              "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
+              "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up",
               "description": "Pronunciation stress practice (fu-se-lage, emp-en-nage, hy-drau-lic, ra-dome) and vocabulary log consolidation."
             }
           ]
@@ -5895,7 +5866,7 @@
             ],
             "deliverable": "Verbally answer all 4 spot-check questions with technical accuracy using correct aviation vocabulary.",
             "teacherNotes": "Ensure students connect Session 1's aerodynamic concepts (pitch, roll, yaw, lift) to the physical surfaces examined today (elevators, ailerons, rudder, flaps, slats).",
-            "title": "Activity 1: Aviation News & Session 1 Spot-Check (10 mins)",
+            "title": "Activity 1: Aviation News & Session 1 Spot-Check",
             "summary": "Opening news debrief followed by a rapid-fire check on aerodynamics from Session 1.",
             "newsPrompts": [
               "Airbus introduces lightweight titanium-printed hydraulic brackets to save airframe weight on new deliveries.",
@@ -5942,7 +5913,7 @@
             ],
             "deliverable": "Accurately describe the location, function, and pre-flight inspection checkpoint for at least 4 airframe components to your partner.",
             "teacherNotes": "Emphasize correct stress on aviation compound nouns: PITOT probe, HORIZONTAL stabilizer, VORTEX generator, RADOME. Watch for confusion between flaps (lift augmentation) and spoilers (lift dumping).",
-            "title": "Activity 2: Airframe Anatomy Labeling Challenge (25 mins)",
+            "title": "Activity 2: Airframe Anatomy Labeling Challenge",
             "summary": "Identify and describe the key external parts and internal zones of a commercial transport aircraft.",
             "externalParts": [
               {
@@ -6032,7 +6003,7 @@
             ],
             "deliverable": "Produce 3 grammatically sound spoken technical sentences combining spatial prepositions with functional relative clauses.",
             "teacherNotes": "Drill the prepositional phrases that often cause trouble: 'forward of', 'aft of', 'inboard of', 'outboard of', 'underneath the belly'. Insist on relative clauses: '...which is designed to relieve...', '...through which air flows...'.",
-            "title": "Activity 3: Language Focus: Spatial Prepositions & Functions (20 mins)",
+            "title": "Activity 3: Language Focus: Spatial Prepositions & Functions",
             "summary": "Formulating clear, professional technical descriptions of aircraft parts and their relative positions.",
             "patterns": [
               {
@@ -6064,7 +6035,7 @@
             ],
             "deliverable": "Conduct a realistic walkaround dialogue applying standard aviation terminology for damage (gouges, delamination, hydraulic weeping, bird strike).",
             "teacherNotes": "Listen for realistic aviation communication: clear, concise, objective. Discourage vague language ('it looks broken'); require specific technical descriptors ('there is hydraulic weeping around the actuator seal', 'delamination extending 3 centimeters').",
-            "title": "Activity 4: Pre-Flight Exterior Walkaround Role-Play (30 mins)",
+            "title": "Activity 4: Pre-Flight Exterior Walkaround Role-Play",
             "summary": "Captain & Line Maintenance Engineer simulation: performing a 360-degree exterior walkaround and reporting simulated defects.",
             "defectCards": [
               {
@@ -6100,7 +6071,7 @@
             ],
             "deliverable": "Present a structured 2-minute verbal dispatch recommendation to the class for all 3 MEL items citing operational restrictions.",
             "teacherNotes": "Ensure students know what MEL Category A, B, C, and D mean in aviation. Ask: 'Can we dispatch with an inoperative APU if ground power and air start units are available at the destination?' Require technical justification.",
-            "title": "Activity 5: Minimum Equipment List (MEL) Dispatch Workshop (25 mins)",
+            "title": "Activity 5: Minimum Equipment List (MEL) Dispatch Workshop",
             "summary": "Reviewing the Minimum Equipment List (MEL) to make safe dispatch decisions for inoperative equipment.",
             "melItems": [
               {
@@ -6130,7 +6101,7 @@
             ],
             "deliverable": "Demonstrate accurate pronunciation and primary stress placement on 6 multisyllabic aircraft parts and confirm mastery of key anatomy concepts.",
             "teacherNotes": "Conduct a choral pronunciation drill for 'fuselage' (/ˈfjuːzəlɑːʒ/) and 'empennage' (/ˌɒmpɪˈnɑːʒ/). Preview Session 3: Commercial Aircraft & Fleet Types (narrow-body, wide-body, regional).",
-            "title": "Activity 6: Vocabulary Review & Class Wrap-Up (10 mins)",
+            "title": "Activity 6: Vocabulary Review & Class Wrap-Up",
             "summary": "Drill tricky aeronautical component pronunciation and consolidate learning logs ahead of Session 3.",
             "wordsToPronounce": [
               "fu-se-lage",
@@ -6518,33 +6489,29 @@
           "summary": "A 2-hour communicative session covering commercial aviation news, commercial aircraft classification, comparative data clinic, an airline fleet selection pitch simulation, and duopoly debates.",
           "items": [
             {
-              "time": "00-10",
-              "title": "Part 1: Aviation News & Session 2 Anatomy Spot-Check (10 mins)",
+              "title": "Part 1: Aviation News & Session 2 Anatomy Spot-Check",
               "description": "Weekly aviation news review and rapid spot-check on aircraft parts and pre-flight walkaround defect reporting."
             },
             {
-              "time": "10-35",
-              "title": "Part 2: Commercial Aircraft Classification Table (25 mins)",
+              "title": "Part 2: Commercial Aircraft Classification Table",
               "description": "Interactive fleet categorization: classifying regional, narrowbody, widebody, and freighter models by range, capacity, and mission."
             },
             {
-              "time": "35-55",
-              "title": "Part 3: Language Focus: Comparative & Superlative Data (20 mins)",
+              "title": "Part 3: Language Focus: Comparative & Superlative Data",
               "description": "Evaluating commercial figures with comparative structures (burns 20% less fuel, substantially greater range, the most cost-effective)."
             },
             {
-              "time": "55-85",
-              "title": "Part 4: Airline Fleet Selection Committee Simulation (30 mins)",
+              "title": "Part 4: Airline Fleet Selection Committee Simulation",
               "description": "Pairs act as airline fleet planning directors preparing an aircraft purchase pitch for new routes, defending their choice to classmates."
             },
             {
               "time": "85-110",
-              "title": "Part 5: Global Manufacturer Debate & Industry Trends (25 mins)",
+              "title": "Part 5: Global Manufacturer Debate & Industry Trends",
               "description": "Class debate: Hub-and-spoke vs. point-to-point routes; Airbus vs. Boeing duopoly competition; the entry of COMAC C919."
             },
             {
               "time": "110-120",
-              "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
+              "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up",
               "description": "Pronunciation drill on commercial terms (ma-nu-fac-tu-rer, tur-bo-prop, ca-pa-ci-ty, ef-fi-cien-cy) and learning log consolidation."
             }
           ]
@@ -6559,7 +6526,7 @@
             "duration": "120 Minutes"
           },
           "openingSession": {
-            "title": "Activity 1: Aviation News & Session 2 Spot-Check (10 mins)",
+            "title": "Activity 1: Aviation News & Session 2 Spot-Check",
             "summary": "News review followed by quick vocabulary check on aircraft parts.",
             "modeBadges": [
               "Pairs",
@@ -6606,7 +6573,7 @@
             }
           },
           "fleetTaxonomy": {
-            "title": "Activity 2: Commercial Aircraft Classification Table (25 mins)",
+            "title": "Activity 2: Commercial Aircraft Classification Table",
             "summary": "Classify commercial passenger and freighter aircraft into operational categories.",
             "modeBadges": [
               "Pairs / Small Groups",
@@ -6652,7 +6619,7 @@
             ]
           },
           "comparativeClinic": {
-            "title": "Activity 3: Language Focus: Comparative & Superlative Data (20 mins)",
+            "title": "Activity 3: Language Focus: Comparative & Superlative Data",
             "summary": "Mastering modifiers and comparative structures to evaluate aircraft efficiency and fleet statistics.",
             "modeBadges": [
               "Pairs / Individual",
@@ -6685,7 +6652,7 @@
             ]
           },
           "fleetCommitteeSimulation": {
-            "title": "Activity 4: Airline Fleet Selection Committee Simulation (30 mins)",
+            "title": "Activity 4: Airline Fleet Selection Committee Simulation",
             "summary": "Pairs represent airline management committees pitching an aircraft purchase order for a new route network.",
             "modeBadges": [
               "Pairs",
@@ -6716,7 +6683,7 @@
             ]
           },
           "globalLandscapeDebate": {
-            "title": "Activity 5: Global Manufacturer Debate & Industry Trends (25 mins)",
+            "title": "Activity 5: Global Manufacturer Debate & Industry Trends",
             "summary": "Class debate exploring the Airbus-Boeing duopoly, supply chain bottlenecks, and the emergence of COMAC.",
             "modeBadges": [
               "Plenary / Fishbowl",
@@ -6737,7 +6704,7 @@
             ]
           },
           "closingReview": {
-            "title": "Activity 6: Vocabulary Review & Pronunciation Wrap-Up (10 mins)",
+            "title": "Activity 6: Vocabulary Review & Pronunciation Wrap-Up",
             "summary": "Consolidate the 18 commercial fleet terms and prepare for Session 4 Aviation Accidents.",
             "modeBadges": [
               "Plenary",
@@ -7133,36 +7100,32 @@
         },
         "lessonPlan": {
           "title": "Session 4 Lesson Plan (2 Hours)",
-          "summary": "A 2-hour interactive workshop covering aviation safety news, crash investigation vocabulary, past tenses clinic, the 15-minute group research sprint, 5-minute class accident presentations, and FE2 briefing.",
+          "summary": "A 2-hour interactive workshop covering aviation safety news, crash investigation vocabulary, past tenses clinic, the group research sprint, 5-minute class accident presentations, and FE2 briefing.",
           "items": [
             {
-              "time": "00-10",
-              "title": "Part 1: Aviation News & Session 3 Fleet Spot-Check (10 mins)",
+              "title": "Part 1: Aviation News & Session 3 Fleet Spot-Check",
               "description": "Weekly aviation news review and rapid spot-check on commercial aircraft categories and airline operating models."
             },
             {
-              "time": "10-30",
-              "title": "Part 2: Accident Investigation Terminology (20 mins)",
+              "title": "Part 2: Accident Investigation Terminology",
               "description": "Key vocabulary of air crash investigation: CVR/FDR black boxes, BEA/NTSB roles, CFIT, mechanical failure vs. human factors."
             },
             {
-              "time": "30-50",
-              "title": "Part 3: Language Focus: Narrative Past Tenses & Sequencers (20 mins)",
+              "title": "Part 3: Language Focus: Narrative Past Tenses & Sequencers",
               "description": "Grammar focus: past simple, past continuous, and past perfect for accident chronology (had leveled off when, was descending because)."
             },
             {
-              "time": "50-65",
-              "title": "Part 4: 15-Minute Group Research & Preparation Sprint (15 mins)",
+              "title": "Part 4: 15-Minute Group Research & Preparation Sprint",
               "description": "Small teams (3-4 students) select an accident case study, extract the timeline, aircraft specifications, root causes, and safety fixes."
             },
             {
               "time": "65-110",
-              "title": "Part 5: Spoken Group Presentations & Safety Debrief (45 mins)",
-              "description": "Each team delivers a 5-minute presentation to the class using whiteboard / screen bullet supports, followed by peer Q&A."
+              "title": "Part 5: Spoken Group Presentations & Safety Debrief",
+              "description": "Each team delivers a spoken presentation to the class using whiteboard / screen bullet supports, followed by peer Q&A."
             },
             {
               "time": "110-120",
-              "title": "Part 6: Vocabulary Review, Pronunciation & FE2 Prep (10 mins)",
+              "title": "Part 6: Vocabulary Review, Pronunciation & FE2 Prep",
               "description": "Pronunciation drill (in-ves-ti-GA-tion, mal-func-tion, pre-ci-pi-ta-tion, fa-tigue) and guidelines for the Session 5 Formative Evaluation."
             }
           ]
@@ -7177,7 +7140,7 @@
             "duration": "120 Minutes"
           },
           "openingSession": {
-            "title": "Activity 1: Aviation News & Session 3 Spot-Check (10 mins)",
+            "title": "Activity 1: Aviation News & Session 3 Spot-Check",
             "summary": "News review followed by quick vocabulary check on commercial fleets.",
             "modeBadges": [
               "Pairs",
@@ -7224,7 +7187,7 @@
             }
           },
           "investigationLexis": {
-            "title": "Activity 2: Accident Investigation Terminology & Causal Chains (20 mins)",
+            "title": "Activity 2: Accident Investigation Terminology & Causal Chains",
             "summary": "Learn and deploy specialized safety vocabulary used by investigation authorities (BEA, NTSB, AAIB).",
             "modeBadges": [
               "Pairs",
@@ -7262,7 +7225,7 @@
             ]
           },
           "pastNarrativesClinic": {
-            "title": "Activity 3: Language Focus: Narrative Past Tenses & Sequencers (20 mins)",
+            "title": "Activity 3: Language Focus: Narrative Past Tenses & Sequencers",
             "summary": "Combining Past Simple, Past Continuous, and Past Perfect to build clear chronological incident reports.",
             "modeBadges": [
               "Pairs / Individual",
@@ -7295,7 +7258,7 @@
             ]
           },
           "groupResearchSprint": {
-            "title": "Activity 4: 15-Minute Group Research & Preparation Sprint (15 mins)",
+            "title": "Activity 4: 15-Minute Group Research & Preparation Sprint",
             "summary": "Small groups (3-4 students) select one landmark accident case study. Within 15 minutes, prepare a 5-minute spoken briefing for classmates.",
             "modeBadges": [
               "Small Groups (3-4)",
@@ -7355,7 +7318,7 @@
             ]
           },
           "presentationsDebrief": {
-            "title": "Activity 5: Spoken Group Presentations & Class Debrief (45 mins)",
+            "title": "Activity 5: Spoken Group Presentations & Class Debrief",
             "summary": "Each group presents their 5-minute accident analysis using whiteboard or slide bullet points, followed by class Q&A.",
             "modeBadges": [
               "Small Groups",
@@ -7377,7 +7340,7 @@
             ]
           },
           "closingReview": {
-            "title": "Activity 6: Vocabulary Review & Formative Evaluation 2 Prep (10 mins)",
+            "title": "Activity 6: Vocabulary Review & Formative Evaluation 2 Prep",
             "summary": "Review the 18 accident investigation terms and review expectations for Session 5 Formative Evaluation 2.",
             "modeBadges": [
               "Plenary",
@@ -7767,36 +7730,32 @@
         },
         "lessonPlan": {
           "title": "Session 4 Lesson Plan (2 Hours)",
-          "summary": "A 2-hour interactive workshop covering aviation safety news, crash investigation vocabulary, past tenses clinic, the 15-minute group research sprint, 5-minute class accident presentations, and FE2 briefing.",
+          "summary": "A 2-hour interactive workshop covering aviation safety news, crash investigation vocabulary, past tenses clinic, the group research sprint, 5-minute class accident presentations, and FE2 briefing.",
           "items": [
             {
-              "time": "00-10",
-              "title": "Part 1: Aviation News & Session 3 Fleet Spot-Check (10 mins)",
+              "title": "Part 1: Aviation News & Session 3 Fleet Spot-Check",
               "description": "Weekly aviation news review and rapid spot-check on commercial aircraft categories and airline operating models."
             },
             {
-              "time": "10-30",
-              "title": "Part 2: Accident Investigation Terminology (20 mins)",
+              "title": "Part 2: Accident Investigation Terminology",
               "description": "Key vocabulary of air crash investigation: CVR/FDR black boxes, BEA/NTSB roles, CFIT, mechanical failure vs. human factors."
             },
             {
-              "time": "30-50",
-              "title": "Part 3: Language Focus: Narrative Past Tenses & Sequencers (20 mins)",
+              "title": "Part 3: Language Focus: Narrative Past Tenses & Sequencers",
               "description": "Grammar focus: past simple, past continuous, and past perfect for accident chronology (had leveled off when, was descending because)."
             },
             {
-              "time": "50-65",
-              "title": "Part 4: 15-Minute Group Research & Preparation Sprint (15 mins)",
+              "title": "Part 4: 15-Minute Group Research & Preparation Sprint",
               "description": "Small teams (3-4 students) select an accident case study, extract the timeline, aircraft specifications, root causes, and safety fixes."
             },
             {
               "time": "65-110",
-              "title": "Part 5: Spoken Group Presentations & Safety Debrief (45 mins)",
-              "description": "Each team delivers a 5-minute presentation to the class using whiteboard / screen bullet supports, followed by peer Q&A."
+              "title": "Part 5: Spoken Group Presentations & Safety Debrief",
+              "description": "Each team delivers a spoken presentation to the class using whiteboard / screen bullet supports, followed by peer Q&A."
             },
             {
               "time": "110-120",
-              "title": "Part 6: Vocabulary Review, Pronunciation & FE2 Prep (10 mins)",
+              "title": "Part 6: Vocabulary Review, Pronunciation & FE2 Prep",
               "description": "Pronunciation drill (in-ves-ti-GA-tion, mal-func-tion, pre-ci-pi-ta-tion, fa-tigue) and guidelines for the Session 5 Formative Evaluation."
             }
           ]
@@ -7811,7 +7770,7 @@
             "duration": "120 Minutes"
           },
           "openingSession": {
-            "title": "Activity 1: Aviation News & Session 3 Spot-Check (10 mins)",
+            "title": "Activity 1: Aviation News & Session 3 Spot-Check",
             "summary": "News review followed by quick vocabulary check on commercial fleets.",
             "modeBadges": [
               "Pairs",
@@ -7858,7 +7817,7 @@
             }
           },
           "investigationLexis": {
-            "title": "Activity 2: Accident Investigation Terminology & Causal Chains (20 mins)",
+            "title": "Activity 2: Accident Investigation Terminology & Causal Chains",
             "summary": "Learn and deploy specialized safety vocabulary used by investigation authorities (BEA, NTSB, AAIB).",
             "modeBadges": [
               "Pairs",
@@ -7896,7 +7855,7 @@
             ]
           },
           "pastNarrativesClinic": {
-            "title": "Activity 3: Language Focus: Narrative Past Tenses & Sequencers (20 mins)",
+            "title": "Activity 3: Language Focus: Narrative Past Tenses & Sequencers",
             "summary": "Combining Past Simple, Past Continuous, and Past Perfect to build clear chronological incident reports.",
             "modeBadges": [
               "Pairs / Individual",
@@ -7929,7 +7888,7 @@
             ]
           },
           "groupResearchSprint": {
-            "title": "Activity 4: 15-Minute Group Research & Preparation Sprint (15 mins)",
+            "title": "Activity 4: 15-Minute Group Research & Preparation Sprint",
             "summary": "Small groups (3-4 students) select one landmark accident case study. Within 15 minutes, prepare a 5-minute spoken briefing for classmates.",
             "modeBadges": [
               "Small Groups (3-4)",
@@ -7989,7 +7948,7 @@
             ]
           },
           "presentationsDebrief": {
-            "title": "Activity 5: Spoken Group Presentations & Class Debrief (45 mins)",
+            "title": "Activity 5: Spoken Group Presentations & Class Debrief",
             "summary": "Each group presents their 5-minute accident analysis using whiteboard or slide bullet points, followed by class Q&A.",
             "modeBadges": [
               "Small Groups",
@@ -8011,7 +7970,7 @@
             ]
           },
           "closingReview": {
-            "title": "Activity 6: Vocabulary Review & Formative Evaluation 2 Prep (10 mins)",
+            "title": "Activity 6: Vocabulary Review & Formative Evaluation 2 Prep",
             "summary": "Review the 18 accident investigation terms and review expectations for Session 5 Formative Evaluation 2.",
             "modeBadges": [
               "Plenary",
@@ -8401,36 +8360,32 @@
         },
         "lessonPlan": {
           "title": "Session 4 Lesson Plan (2 Hours)",
-          "summary": "A 2-hour interactive workshop covering aviation safety news, crash investigation vocabulary, past tenses clinic, the 15-minute group research sprint, 5-minute class accident presentations, and FE2 briefing.",
+          "summary": "A 2-hour interactive workshop covering aviation safety news, crash investigation vocabulary, past tenses clinic, the group research sprint, 5-minute class accident presentations, and FE2 briefing.",
           "items": [
             {
-              "time": "00-10",
-              "title": "Part 1: Aviation News & Session 3 Fleet Spot-Check (10 mins)",
+              "title": "Part 1: Aviation News & Session 3 Fleet Spot-Check",
               "description": "Weekly aviation news review and rapid spot-check on commercial aircraft categories and airline operating models."
             },
             {
-              "time": "10-30",
-              "title": "Part 2: Accident Investigation Terminology (20 mins)",
+              "title": "Part 2: Accident Investigation Terminology",
               "description": "Key vocabulary of air crash investigation: CVR/FDR black boxes, BEA/NTSB roles, CFIT, mechanical failure vs. human factors."
             },
             {
-              "time": "30-50",
-              "title": "Part 3: Language Focus: Narrative Past Tenses & Sequencers (20 mins)",
+              "title": "Part 3: Language Focus: Narrative Past Tenses & Sequencers",
               "description": "Grammar focus: past simple, past continuous, and past perfect for accident chronology (had leveled off when, was descending because)."
             },
             {
-              "time": "50-65",
-              "title": "Part 4: 15-Minute Group Research & Preparation Sprint (15 mins)",
+              "title": "Part 4: 15-Minute Group Research & Preparation Sprint",
               "description": "Small teams (3-4 students) select an accident case study, extract the timeline, aircraft specifications, root causes, and safety fixes."
             },
             {
               "time": "65-110",
-              "title": "Part 5: Spoken Group Presentations & Safety Debrief (45 mins)",
-              "description": "Each team delivers a 5-minute presentation to the class using whiteboard / screen bullet supports, followed by peer Q&A."
+              "title": "Part 5: Spoken Group Presentations & Safety Debrief",
+              "description": "Each team delivers a spoken presentation to the class using whiteboard / screen bullet supports, followed by peer Q&A."
             },
             {
               "time": "110-120",
-              "title": "Part 6: Vocabulary Review, Pronunciation & FE2 Prep (10 mins)",
+              "title": "Part 6: Vocabulary Review, Pronunciation & FE2 Prep",
               "description": "Pronunciation drill (in-ves-ti-GA-tion, mal-func-tion, pre-ci-pi-ta-tion, fa-tigue) and guidelines for the Session 5 Formative Evaluation."
             }
           ]
@@ -8445,7 +8400,7 @@
             "duration": "120 Minutes"
           },
           "openingSession": {
-            "title": "Activity 1: Aviation News & Session 3 Spot-Check (10 mins)",
+            "title": "Activity 1: Aviation News & Session 3 Spot-Check",
             "summary": "News review followed by quick vocabulary check on commercial fleets.",
             "modeBadges": [
               "Pairs",
@@ -8492,7 +8447,7 @@
             }
           },
           "investigationLexis": {
-            "title": "Activity 2: Accident Investigation Terminology & Causal Chains (20 mins)",
+            "title": "Activity 2: Accident Investigation Terminology & Causal Chains",
             "summary": "Learn and deploy specialized safety vocabulary used by investigation authorities (BEA, NTSB, AAIB).",
             "modeBadges": [
               "Pairs",
@@ -8530,7 +8485,7 @@
             ]
           },
           "pastNarrativesClinic": {
-            "title": "Activity 3: Language Focus: Narrative Past Tenses & Sequencers (20 mins)",
+            "title": "Activity 3: Language Focus: Narrative Past Tenses & Sequencers",
             "summary": "Combining Past Simple, Past Continuous, and Past Perfect to build clear chronological incident reports.",
             "modeBadges": [
               "Pairs / Individual",
@@ -8563,7 +8518,7 @@
             ]
           },
           "groupResearchSprint": {
-            "title": "Activity 4: 15-Minute Group Research & Preparation Sprint (15 mins)",
+            "title": "Activity 4: 15-Minute Group Research & Preparation Sprint",
             "summary": "Small groups (3-4 students) select one landmark accident case study. Within 15 minutes, prepare a 5-minute spoken briefing for classmates.",
             "modeBadges": [
               "Small Groups (3-4)",
@@ -8623,7 +8578,7 @@
             ]
           },
           "presentationsDebrief": {
-            "title": "Activity 5: Spoken Group Presentations & Class Debrief (45 mins)",
+            "title": "Activity 5: Spoken Group Presentations & Class Debrief",
             "summary": "Each group presents their 5-minute accident analysis using whiteboard or slide bullet points, followed by class Q&A.",
             "modeBadges": [
               "Small Groups",
@@ -8645,7 +8600,7 @@
             ]
           },
           "closingReview": {
-            "title": "Activity 6: Vocabulary Review & Formative Evaluation 2 Prep (10 mins)",
+            "title": "Activity 6: Vocabulary Review & Formative Evaluation 2 Prep",
             "summary": "Review the 18 accident investigation terms and review expectations for Session 5 Formative Evaluation 2.",
             "modeBadges": [
               "Plenary",
@@ -9035,36 +8990,32 @@
         },
         "lessonPlan": {
           "title": "Session 4 Lesson Plan (2 Hours)",
-          "summary": "A 2-hour interactive workshop covering aviation safety news, crash investigation vocabulary, past tenses clinic, the 15-minute group research sprint, 5-minute class accident presentations, and FE2 briefing.",
+          "summary": "A 2-hour interactive workshop covering aviation safety news, crash investigation vocabulary, past tenses clinic, the group research sprint, 5-minute class accident presentations, and FE2 briefing.",
           "items": [
             {
-              "time": "00-10",
-              "title": "Part 1: Aviation News & Session 3 Fleet Spot-Check (10 mins)",
+              "title": "Part 1: Aviation News & Session 3 Fleet Spot-Check",
               "description": "Weekly aviation news review and rapid spot-check on commercial aircraft categories and airline operating models."
             },
             {
-              "time": "10-30",
-              "title": "Part 2: Accident Investigation Terminology (20 mins)",
+              "title": "Part 2: Accident Investigation Terminology",
               "description": "Key vocabulary of air crash investigation: CVR/FDR black boxes, BEA/NTSB roles, CFIT, mechanical failure vs. human factors."
             },
             {
-              "time": "30-50",
-              "title": "Part 3: Language Focus: Narrative Past Tenses & Sequencers (20 mins)",
+              "title": "Part 3: Language Focus: Narrative Past Tenses & Sequencers",
               "description": "Grammar focus: past simple, past continuous, and past perfect for accident chronology (had leveled off when, was descending because)."
             },
             {
-              "time": "50-65",
-              "title": "Part 4: 15-Minute Group Research & Preparation Sprint (15 mins)",
+              "title": "Part 4: 15-Minute Group Research & Preparation Sprint",
               "description": "Small teams (3-4 students) select an accident case study, extract the timeline, aircraft specifications, root causes, and safety fixes."
             },
             {
               "time": "65-110",
-              "title": "Part 5: Spoken Group Presentations & Safety Debrief (45 mins)",
-              "description": "Each team delivers a 5-minute presentation to the class using whiteboard / screen bullet supports, followed by peer Q&A."
+              "title": "Part 5: Spoken Group Presentations & Safety Debrief",
+              "description": "Each team delivers a spoken presentation to the class using whiteboard / screen bullet supports, followed by peer Q&A."
             },
             {
               "time": "110-120",
-              "title": "Part 6: Vocabulary Review, Pronunciation & FE2 Prep (10 mins)",
+              "title": "Part 6: Vocabulary Review, Pronunciation & FE2 Prep",
               "description": "Pronunciation drill (in-ves-ti-GA-tion, mal-func-tion, pre-ci-pi-ta-tion, fa-tigue) and guidelines for the Session 5 Formative Evaluation."
             }
           ]
@@ -9079,7 +9030,7 @@
             "duration": "120 Minutes"
           },
           "openingSession": {
-            "title": "Activity 1: Aviation News & Session 3 Spot-Check (10 mins)",
+            "title": "Activity 1: Aviation News & Session 3 Spot-Check",
             "summary": "News review followed by quick vocabulary check on commercial fleets.",
             "modeBadges": [
               "Pairs",
@@ -9126,7 +9077,7 @@
             }
           },
           "investigationLexis": {
-            "title": "Activity 2: Accident Investigation Terminology & Causal Chains (20 mins)",
+            "title": "Activity 2: Accident Investigation Terminology & Causal Chains",
             "summary": "Learn and deploy specialized safety vocabulary used by investigation authorities (BEA, NTSB, AAIB).",
             "modeBadges": [
               "Pairs",
@@ -9164,7 +9115,7 @@
             ]
           },
           "pastNarrativesClinic": {
-            "title": "Activity 3: Language Focus: Narrative Past Tenses & Sequencers (20 mins)",
+            "title": "Activity 3: Language Focus: Narrative Past Tenses & Sequencers",
             "summary": "Combining Past Simple, Past Continuous, and Past Perfect to build clear chronological incident reports.",
             "modeBadges": [
               "Pairs / Individual",
@@ -9197,7 +9148,7 @@
             ]
           },
           "groupResearchSprint": {
-            "title": "Activity 4: 15-Minute Group Research & Preparation Sprint (15 mins)",
+            "title": "Activity 4: 15-Minute Group Research & Preparation Sprint",
             "summary": "Small groups (3-4 students) select one landmark accident case study. Within 15 minutes, prepare a 5-minute spoken briefing for classmates.",
             "modeBadges": [
               "Small Groups (3-4)",
@@ -9257,7 +9208,7 @@
             ]
           },
           "presentationsDebrief": {
-            "title": "Activity 5: Spoken Group Presentations & Class Debrief (45 mins)",
+            "title": "Activity 5: Spoken Group Presentations & Class Debrief",
             "summary": "Each group presents their 5-minute accident analysis using whiteboard or slide bullet points, followed by class Q&A.",
             "modeBadges": [
               "Small Groups",
@@ -9279,7 +9230,7 @@
             ]
           },
           "closingReview": {
-            "title": "Activity 6: Vocabulary Review & Formative Evaluation 2 Prep (10 mins)",
+            "title": "Activity 6: Vocabulary Review & Formative Evaluation 2 Prep",
             "summary": "Review the 18 accident investigation terms and review expectations for Session 5 Formative Evaluation 2.",
             "modeBadges": [
               "Plenary",
