@@ -1704,41 +1704,138 @@ function renderLessonContentTabSession3(sessionData, theme) {
             </div>
           </div>
 
-          <!-- Activity 3: Spoken Team Challenge • The Photo-Audit Field Briefing -->
+          <!-- Activity 3: Spoken Team Challenge • The 3-Photo Ramp Description Workshop -->
           <div class="p-4 sm:p-5 rounded-xl bg-emerald-50/80 border border-emerald-200 shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-emerald-200/80 pb-3">
               <div>
                 <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-700 text-white font-black text-[10px] uppercase tracking-wider mb-1">
-                  Part 4: Spoken Interaction
+                  Part 4: Spoken Picture Description Workshop
                 </span>
-                <h4 class="text-sm sm:text-base font-black text-emerald-950">${spoken.title || 'Activity 3: Spoken Team Challenge • The Photo-Audit Field Briefing'}</h4>
+                <h4 class="text-sm sm:text-base font-black text-emerald-950">Activity 3: Spoken Team Challenge • The 3-Photo Ramp Description Workshop</h4>
+                <p class="text-xs text-emerald-800 font-medium">Pairs / Trios Speaking Challenge • Detailed Scene Description &amp; Past Modal Deductions</p>
               </div>
               <span class="inline-flex items-center text-[11px] font-semibold text-emerald-800 bg-white px-2.5 py-1 rounded-md border border-emerald-200 shrink-0">
-                Pairs / Trios Role-Play
+                3 Authentic Ramp Exhibits
               </span>
             </div>
 
-            <p class="text-xs text-emerald-950 font-medium leading-relaxed">${spoken.instructions || 'Divide into pairs or trios. Each group takes one finding exhibit (Group 1: Stand 14 Fuel Spill; Group 2: Holding Point B2 Guard Lights; Group 3: Stand 12 Missing FOD Bins). Complete these steps in English:'}</p>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-              ${(spoken.steps || []).map(st => `
-                <div class="p-2.5 bg-white border border-emerald-200 rounded-lg text-xs font-semibold text-emerald-950 flex items-center gap-2">
-                  <span class="text-emerald-700 font-bold">&bull;</span>
-                  <span>${st}</span>
+            <!-- Method Scaffold for B1/B2 Learners -->
+            <div class="p-3.5 bg-white border border-emerald-300 rounded-xl space-y-2">
+              <div class="flex items-center gap-2 text-emerald-950 font-bold text-xs uppercase tracking-wider">
+                <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+                <span>The 4-Step Picture Description Method for Pairs &amp; Trios</span>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 text-xs text-emerald-950 font-medium">
+                <div class="p-2 rounded-lg bg-emerald-50/80 border border-emerald-100">
+                  <strong class="text-emerald-900 block mb-0.5">Step 1: Set the Scene</strong>
+                  <span class="text-[11px] text-emerald-800">Foreground, background, aircraft type, equipment, weather.</span>
                 </div>
-              `).join('')}
+                <div class="p-2 rounded-lg bg-emerald-50/80 border border-emerald-100">
+                  <strong class="text-emerald-900 block mb-0.5">Step 2: Ongoing Actions</strong>
+                  <span class="text-[11px] text-emerald-800">Use Present Continuous (is driving, are inspecting, is leaking).</span>
+                </div>
+                <div class="p-2 rounded-lg bg-emerald-50/80 border border-emerald-100">
+                  <strong class="text-emerald-900 block mb-0.5">Step 3: Spot the Hazard</strong>
+                  <span class="text-[11px] text-emerald-800">Identify the physical non-conformance or safety threat.</span>
+                </div>
+                <div class="p-2 rounded-lg bg-emerald-50/80 border border-emerald-100">
+                  <strong class="text-emerald-900 block mb-0.5">Step 4: Past Modals</strong>
+                  <span class="text-[11px] text-emerald-800">Formulate 2 deductions: must have, could have, should have + V3.</span>
+                </div>
+              </div>
             </div>
 
-            <!-- Partner Checking Prompts -->
-            <div class="p-3.5 bg-white border border-emerald-300 rounded-xl space-y-2">
-              <span class="text-[11px] font-bold text-emerald-900 uppercase tracking-wider block">Partner B Role: Active Safety Manager Prompts</span>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-emerald-950 italic">
-                ${(spoken.checkingPrompts || []).map(p => `
-                  <div class="p-2 bg-emerald-50/60 rounded border border-emerald-100 flex items-start gap-1.5">
-                    <span class="text-emerald-600 font-bold shrink-0">&ldquo;</span>
-                    <span>${p}&rdquo;</span>
+            <!-- 3 Rich Interactive Photo Description Cards -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 pt-1">
+              
+              <!-- Photo 1: Fuel Spill -->
+              <div class="p-3.5 bg-white border border-emerald-200 rounded-xl shadow-xs space-y-3 flex flex-col justify-between">
+                <div class="space-y-2">
+                  <div class="flex items-center justify-between gap-2">
+                    <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-red-100 text-red-800 border border-red-200">Group 1 • Fuel Servicing</span>
+                    <span class="text-[10px] font-bold text-slate-400">Level 1 Finding</span>
                   </div>
-                `).join('')}
+                  <div class="relative rounded-lg overflow-hidden border border-slate-200 group cursor-pointer" onclick="window.openImageLightbox('images/s3_s4_ramp_fuel_spill.jpg', 'Exhibit 01 • Ramp Fuel Servicing & Spillage Incident')">
+                    <img src="images/s3_s4_ramp_fuel_spill.jpg" alt="Ramp Fuel Servicing Spill" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute bottom-1.5 right-1.5 bg-black/75 text-white text-[9px] font-bold px-1.5 py-0.5 rounded flex items-center gap-1 backdrop-blur-xs">
+                      <span>🔍 Enlarge</span>
+                    </div>
+                  </div>
+                  <h5 class="text-xs font-black text-slate-900">Exhibit 01: Fuel Hydrant Spill & Drain Hazard</h5>
+                  <p class="text-[11.5px] text-slate-600 leading-snug">Two ground handlers in neon vests assess an uncontained fuel spill spreading near the hydrant dispenser and an active storm drain.</p>
+                </div>
+                <div class="p-2.5 rounded-lg bg-emerald-50/60 border border-emerald-100 text-[11px] text-emerald-950 italic space-y-1">
+                  <strong>Model Spoken Description:</strong>
+                  <p>&ldquo;In the foreground, a dark puddle of kerosene is spreading across the concrete. Two handlers are observing it. The bowser operator <strong>must have failed to latch</strong> the hose, and the spill <strong>could have entered</strong> the storm drain.&rdquo;</p>
+                </div>
+              </div>
+
+              <!-- Photo 2: GSE Congestion -->
+              <div class="p-3.5 bg-white border border-emerald-200 rounded-xl shadow-xs space-y-3 flex flex-col justify-between">
+                <div class="space-y-2">
+                  <div class="flex items-center justify-between gap-2">
+                    <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-amber-100 text-amber-900 border border-amber-200">Group 2 • Airside Traffic</span>
+                    <span class="text-[10px] font-bold text-slate-400">Speed & Clearance</span>
+                  </div>
+                  <div class="relative rounded-lg overflow-hidden border border-slate-200 group cursor-pointer" onclick="window.openImageLightbox('images/s3_s4_ramp_gse_congestion.jpg', 'Exhibit 02 • Airside Traffic & GSE Congestion')">
+                    <img src="images/s3_s4_ramp_gse_congestion.jpg" alt="Airside Traffic & GSE Congestion" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute bottom-1.5 right-1.5 bg-black/75 text-white text-[9px] font-bold px-1.5 py-0.5 rounded flex items-center gap-1 backdrop-blur-xs">
+                      <span>🔍 Enlarge</span>
+                    </div>
+                  </div>
+                  <h5 class="text-xs font-black text-slate-900">Exhibit 02: High-Density GSE Turnaround Traffic</h5>
+                  <p class="text-[11.5px] text-slate-600 leading-snug">A baggage tug pulling luggage carts maneuvers near a belt loader and elevated catering truck within narrow aircraft wing clearances.</p>
+                </div>
+                <div class="p-2.5 rounded-lg bg-emerald-50/60 border border-emerald-100 text-[11px] text-emerald-950 italic space-y-1">
+                  <strong>Model Spoken Description:</strong>
+                  <p>&ldquo;In the foreground, a baggage tug is pulling three luggage carts very close to the wing. The drivers <strong>must have been rushing</strong> under turnaround pressure, and a vehicle <strong>could have struck</strong> the engine cowl.&rdquo;</p>
+                </div>
+              </div>
+
+              <!-- Photo 3: FOD Inspection -->
+              <div class="p-3.5 bg-white border border-emerald-200 rounded-xl shadow-xs space-y-3 flex flex-col justify-between">
+                <div class="space-y-2">
+                  <div class="flex items-center justify-between gap-2">
+                    <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-amber-100 text-amber-900 border border-amber-200">Group 3 • FOD Control</span>
+                    <span class="text-[10px] font-bold text-slate-400">Engine Ingestion</span>
+                  </div>
+                  <div class="relative rounded-lg overflow-hidden border border-slate-200 group cursor-pointer" onclick="window.openImageLightbox('images/s3_s4_ramp_fod_inspection.jpg', 'Exhibit 03 • Ramp FOD Walkdown & Debris Scatter')">
+                    <img src="images/s3_s4_ramp_fod_inspection.jpg" alt="Ramp FOD Walkdown" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute bottom-1.5 right-1.5 bg-black/75 text-white text-[9px] font-bold px-1.5 py-0.5 rounded flex items-center gap-1 backdrop-blur-xs">
+                      <span>🔍 Enlarge</span>
+                    </div>
+                  </div>
+                  <h5 class="text-xs font-black text-slate-900">Exhibit 03: Ramp Walkdown & Lockwire Scatter</h5>
+                  <p class="text-[11.5px] text-slate-600 leading-snug">Two inspectors conduct a walkdown on the concrete stand. One kneels to examine metallic lockwire offcuts and tags near the engine intake path.</p>
+                </div>
+                <div class="p-2.5 rounded-lg bg-emerald-50/60 border border-emerald-100 text-[11px] text-emerald-950 italic space-y-1">
+                  <strong>Model Spoken Description:</strong>
+                  <p>&ldquo;Here an inspector is kneeling to point at metallic wire on the apron. A technician <strong>must have clipped the lockwire</strong> without a collection pouch, and the jet engine <strong>could have ingested</strong> it.&rdquo;</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Partner B Checking Prompts -->
+            <div class="p-3.5 bg-white border border-emerald-300 rounded-xl space-y-2">
+              <span class="text-[11px] font-bold text-emerald-900 uppercase tracking-wider block">Partner B Role: Active Checking &amp; Questioning Prompts</span>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-emerald-950 italic">
+                <div class="p-2 bg-emerald-50/60 rounded border border-emerald-100 flex items-start gap-1.5">
+                  <span class="text-emerald-600 font-bold shrink-0">&ldquo;</span>
+                  <span>Can you point to the exact location of the hazard in the photograph?&rdquo;</span>
+                </div>
+                <div class="p-2 bg-emerald-50/60 rounded border border-emerald-100 flex items-start gap-1.5">
+                  <span class="text-emerald-600 font-bold shrink-0">&ldquo;</span>
+                  <span>Why do you say the ground handler must have failed to monitor the hose?&rdquo;</span>
+                </div>
+                <div class="p-2 bg-emerald-50/60 rounded border border-emerald-100 flex items-start gap-1.5">
+                  <span class="text-emerald-600 font-bold shrink-0">&ldquo;</span>
+                  <span>What could have happened if the flight crew started the auxiliary power unit?&rdquo;</span>
+                </div>
+                <div class="p-2 bg-emerald-50/60 rounded border border-emerald-100 flex items-start gap-1.5">
+                  <span class="text-emerald-600 font-bold shrink-0">&ldquo;</span>
+                  <span>How does your photo justify classifying this as a Level 1 or Level 2 finding?&rdquo;</span>
+                </div>
               </div>
             </div>
           </div>

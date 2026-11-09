@@ -2307,3 +2307,29 @@
       `;
     }
 
+
+    // Lightbox modal for full-resolution ramp photo inspection
+    window.openImageLightbox = function(src, title) {
+      let modal = document.getElementById('gsea-image-lightbox-modal');
+      if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 'gsea-image-lightbox-modal';
+        modal.className = 'fixed inset-0 z-[200] bg-slate-950/90 backdrop-blur-sm flex flex-col items-center justify-center p-4 transition-opacity';
+        modal.onclick = function(e) {
+          if (e.target === modal) modal.classList.add('hidden');
+        };
+        document.body.appendChild(modal);
+      }
+      modal.innerHTML = `
+        <div class="relative max-w-4xl max-h-[92vh] bg-slate-900 border border-slate-700 rounded-2xl overflow-hidden shadow-2xl flex flex-col w-full" onclick="event.stopPropagation()">
+          <div class="flex items-center justify-between px-4 py-2.5 bg-slate-950 border-b border-slate-800 text-white text-xs font-bold">
+            <span class="truncate">${title || 'Ramp Photo Exhibit'}</span>
+            <button type="button" onclick="document.getElementById('gsea-image-lightbox-modal').classList.add('hidden')" class="px-2 py-0.5 rounded hover:bg-slate-800 text-slate-400 hover:text-white cursor-pointer transition-colors text-base font-bold">&times;</button>
+          </div>
+          <div class="p-2 sm:p-3 overflow-auto flex items-center justify-center bg-black/60">
+            <img src="${src}" alt="${title || 'Exhibit'}" class="max-w-full max-h-[76vh] object-contain rounded-lg shadow-md">
+          </div>
+        </div>
+      `;
+      modal.classList.remove('hidden');
+    };

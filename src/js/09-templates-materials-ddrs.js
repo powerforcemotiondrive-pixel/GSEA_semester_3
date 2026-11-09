@@ -1622,6 +1622,16 @@
               <p class="text-xs sm:text-sm text-slate-500 font-medium mt-0.5">${slide.subtitle}</p>
             </div>
 
+            <!-- Optional Photo Exhibit Banner -->
+            ${slide.image ? `
+              <div class="rounded-xl overflow-hidden border border-slate-200 shadow-2xs mb-3 group relative cursor-pointer" onclick="window.openImageLightbox('${slide.image}', '${(slide.title || 'Slide Photo').replace(/'/g, "\\'")}')">
+                <img src="${slide.image}" alt="${slide.title || 'Exhibit'}" class="w-full h-44 sm:h-56 object-cover group-hover:scale-[1.01] transition-transform duration-200">
+                <div class="absolute bottom-2 right-2 bg-black/75 text-white text-[10px] font-bold px-2 py-1 rounded backdrop-blur-xs flex items-center gap-1 shadow-xs">
+                  <span>🔍 Click to inspect full resolution</span>
+                </div>
+              </div>
+            ` : ''}
+
             <!-- Structured Card Columns -->
             <div class="grid grid-cols-1 ${slide.cards.length === 4 ? "sm:grid-cols-2" : "sm:grid-cols-3"} gap-3">
               ${slide.cards.map(c => `

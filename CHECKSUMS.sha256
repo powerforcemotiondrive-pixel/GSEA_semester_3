@@ -2,16 +2,16 @@
 # ENAC GSEA English Learning Platform — Cryptographic SHA-256 Manifest
 # Author & Pedagogical Architect: Phil PARRIS (Département LH / LAN)
 # © 2026 Phil PARRIS. All Rights Reserved.
-# Generated: 2026-11-09T16:54:51.006Z
+# Generated: 2026-11-09T17:12:18.229Z
 # ============================================================================
 
-7a782c9276c1284fbd58bf6aca8ec7515473fa43b664e9414548fcc31bca0d60  imsmanifest.xml
+3c9d7e1aeacf6e66a202ea8d7a626d5c7aa990f98edc190a77f586e8e02ae3d2  imsmanifest.xml
 f082869ed2b914ec5b3044ba485b53e0c66b635dfcaa2a4c9068828165ad0e95  COPYRIGHT.md
-f9d8f49de2093687ec8b7ce62ccc9a929f6037d2e26eaba11914cf65be2b9b1e  index.html
+1b3315537bde231ec1fe7b70219ea71b7f3110398bd3fe89a1e2749c0c62d624  index.html
 e5e4dcd3da87e00edd13269d78b4b380dc88f4f1f6480ee5796541cce24e0e22  admin.html
 f27913a6aa60f22a70c7d504ae3b55625b2a481a52f2d998e86c7be437a32715  presentation.html
 2b6b502b6b932bf09d07f6639ae803e78c7786b5f14c26b662c225c84dc31686  portfolio.html
-150495e88c6c2492b1f9275455d8f4f3dac1f758e86fee8a0f8ad8214ef9e78a  output.css
+8561373ea76fc1e1b281685bb38c42b51090573e3554c000de45518e326a1b61  output.css
 181739845562a40f8688747051d2ab5bc19d4c3a466e86c94c0f570673f8255d  data/course-data.js
 bfac1fbaa7fb337e34eed50c87e7a9a449c5be80112aeed6c2ae0254e0724881  images/aas_m1card1.jpg
 f52e89458efa94b0699a10d97147f8a9b99d46395b563ef0f9210a5f2de99fd3  images/aas_m1card2.jpg
@@ -42,5 +42,8 @@ f2287bb65f200efd4effdaf67b07c5d910badb842d766c278a165b041285fdc3  images/charts/
 d53782018fa1b2d9276a5bd97f1e28a911f203408e2e67136e6393ccfcdc68e7  images/s3_m1_session4_aerodrome.jpg
 f50d9f679fcc6b19f3ec016b1470246395f03a762c33f177d1e930fb3d78f36f  images/s3_m1_session5_sid_star.jpg
 c67966ac4aad1dff1514ab9f173ae75255163452751dee94933a2b09b2830384  images/s3_m1_session6_approach.jpg
+12890fbdaec7eac31efd9d9b0c7827d4ccae73fcc0b92dd351c8511ab2732e33  images/s3_s4_ramp_fod_inspection.jpg
+4abd34428093ae6b965bdcbac7b94f0a557796fe90d78a74eee3d28b94b71ff7  images/s3_s4_ramp_fuel_spill.jpg
+688b306ff364d26aae1461b4eb247c4733e6206583ca6299f6403382863dd7f3  images/s3_s4_ramp_gse_congestion.jpg
 0a09399212bd7a24235638e477ea5e8c1441854c268c3edcd1bc45ab194e95d2  images/semester_objectives.jpg
 6970e2b956c8d6557969a7b3484ffc7590642b8b8e4450ef3ea1a35599700568  images/turnaround_apron.jpg
