@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Session 7 Lesson Worksheet - Flipped Classroom Peer-Teaching Workshop</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 10mm 12mm 12mm 12mm;
+      @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 8pt;
+        color: #64748b;
+        font-weight: 700;
+      }
+      @bottom-left {
+        content: "ENAC • GSEA Semester 3 Technical English (AT • LV125E) • Phil PARRIS";
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 7.5pt;
+        color: #94a3b8;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 9pt;
+      line-height: 1.4;
+      color: #1e293b;
+      background: #ffffff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      page-break-after: always;
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+    }
+
+    /* Running Header */
+    .doc-header {
+      border-bottom: 2px solid #1e3a8a;
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .doc-header .agency {
+      font-size: 7.5pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #1e3a8a;
+    }
+
+    .doc-header .ref {
+      font-size: 7pt;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-weight: 700;
+      color: #64748b;
+      background: #f1f5f9;
+      padding: 1.5px 5px;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Titles */
+    h1 {
+      font-size: 15pt;
+      font-weight: 900;
+      color: #0f172a;
+      letter-spacing: -0.4px;
+      line-height: 1.15;
+      margin-bottom: 3px;
+    }
+
+    h2 {
+      font-size: 10.5pt;
+      font-weight: 800;
+      color: #1e3a8a;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    h3 {
+      font-size: 9pt;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 3px;
+    }
+
+    p {
+      margin-bottom: 6px;
+      color: #334155;
+      font-size: 8.5pt;
+      line-height: 1.35;
+    }
+
+    /* Badges & Callouts */
+    .badge {
+      display: inline-block;
+      font-size: 7pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .badge-primary { background: #1e3a8a; color: #ffffff; }
+    .badge-amber { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+    .badge-blue { background: #eff6ff; color: #1e40af; border: 1px solid #bfdbfe; }
+    .badge-emerald { background: #ecfdf5; color: #065f46; border: 1px solid #a7f3d0; }
+    .badge-rose { background: #fff1f2; color: #9f1239; border: 1px solid #fecdd3; }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 8px 10px;
+      margin-bottom: 8px;
+    }
+
+    .card-accent {
+      border-left: 3px solid #1e3a8a;
+      background: #f8fafc;
+    }
+
+    .card-amber {
+      border-left: 3px solid #d97706;
+      background: #fffbeb;
+    }
+
+    .card-emerald {
+      border-left: 3px solid #059669;
+      background: #f0fdf4;
+    }
+
+    /* Grids & Tables */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 6px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 8pt;
+      margin-bottom: 8px;
+    }
+
+    th, td {
+      border: 1px solid #e2e8f0;
+      padding: 5px 7px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f1f5f9;
+      color: #0f172a;
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 7pt;
+      letter-spacing: 0.5px;
+    }
+
+    /* Fill-in boxes */
+    .form-box {
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      background: #f8fafc;
+      padding: 6px;
+      min-height: 44px;
+      margin-top: 3px;
+      font-size: 8pt;
+      color: #64748b;
+      font-family: inherit;
+    }
+
+    .form-box-lg {
+      min-height: 68px;
+    }
+
+    .form-box-sm {
+      min-height: 32px;
+    }
+
+    .bullet-list {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 6px;
+    }
+
+    .bullet-list li {
+      position: relative;
+      padding-left: 12px;
+      font-size: 8pt;
+      line-height: 1.35;
+      color: #334155;
+      margin-bottom: 3px;
+    }
+
+    .bullet-list li::before {
+      content: "•";
+      position: absolute;
+      left: 2px;
+      color: #1e3a8a;
+      font-weight: 900;
+    }
+
+    /* Footer stamp */
+    .footer-stamp {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 3px;
+      font-size: 7pt;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 1: COVER & SESSION OVERVIEW                                    -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ÉCOLE NATIONALE DE L'AVIATION CIVILE • GSEA SEMESTER 3</span>
+      <span class="ref">REF: EASA-FE1-S7-2026</span>
+    </div>
+
+    <!-- Title Banner -->
+    <div style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: #ffffff; padding: 14px 16px; border-radius: 8px; margin-bottom: 12px;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px;">
+        <span class="badge" style="background: #f59e0b; color: #000000; font-weight: 900;">FORMATIVE EVALUATION 1 • LV125E</span>
+        <span style="font-size: 8pt; font-family: ui-monospace, monospace; color: #cbd5e1;">CEFR B2 • 20 POINTS</span>
+      </div>
+      <h1 style="color: #ffffff; margin-bottom: 4px;">Session 7 Lesson Worksheet: Flipped Classroom Peer-Teaching Workshop</h1>
+      <p style="color: #cbd5e1; font-size: 9pt; margin-bottom: 0; line-height: 1.35;">
+        Student teams of 3 to 4 take the floor as technical aviation instructors to deliver an engaging 30-minute interactive lesson to classmates based on Module 1 EASA aerodrome operations.
+      </p>
+    </div>
+
+    <!-- Session Metadata Grid -->
+    <div class="grid-4" style="margin-bottom: 10px;">
+      <div class="card card-accent" style="margin-bottom: 0;">
+        <span style="font-size: 6.5pt; font-weight: 800; color: #64748b; text-transform: uppercase; display: block;">Track &amp; Module</span>
+        <strong style="font-size: 8.5pt; color: #0f172a;">AT • Module 1 (LV125E)</strong>
+      </div>
+      <div class="card card-accent" style="margin-bottom: 0;">
+        <span style="font-size: 6.5pt; font-weight: 800; color: #64748b; text-transform: uppercase; display: block;">Session Duration</span>
+        <strong style="font-size: 8.5pt; color: #0f172a;">2 Hours (30-Min Lessons)</strong>
+      </div>
+      <div class="card card-accent" style="margin-bottom: 0;">
+        <span style="font-size: 6.5pt; font-weight: 800; color: #64748b; text-transform: uppercase; display: block;">Delivery Format</span>
+        <strong style="font-size: 8.5pt; color: #0f172a;">Teams of 3 to 4 Students</strong>
+      </div>
+      <div class="card card-accent" style="margin-bottom: 0;">
+        <span style="font-size: 6.5pt; font-weight: 800; color: #64748b; text-transform: uppercase; display: block;">Continuous Assessment</span>
+        <strong style="font-size: 8.5pt; color: #0f172a;">FE1 Graded out of 20</strong>
+      </div>
+    </div>
+
+    <!-- Document Overview & Executive Summary -->
+    <div class="card" style="margin-bottom: 10px; border-left: 3px solid #2563eb;">
+      <h2 style="font-size: 9.5pt; margin-bottom: 4px;">1. Executive Summary &amp; Professional Aviation Relevance</h2>
+      <p style="font-size: 8pt; margin-bottom: 4px; text-align: justify;">
+        Teaching a complex technical subject to others is one of the most effective ways to solidify language mastery and professional communicative presence. In airside operations, civil aviation oversight, and flight operations management, future ENAC graduates are regularly required to deliver safety briefings, train frontline ground teams, explain complex EASA regulatory updates, and facilitate collaborative decision-making across international teams.
+      </p>
+      <p style="font-size: 8pt; margin-bottom: 0; text-align: justify;">
+        Developing the confidence to give direct spoken instructions, facilitate interactive peer discussions, and think on your feet in English transforms passive technical knowledge into active leadership communication. In this session, student pods lead 30-minute interactive workshops, practicing instruction delivery, checking understanding, table coaching, and leading plenary debriefs.
+      </p>
+    </div>
+
+    <!-- 5 Communicative Objectives -->
+    <div class="card" style="margin-bottom: 10px;">
+      <h2 style="font-size: 9.5pt; margin-bottom: 6px;">2. Five Core Spoken Communicative Objectives (CEFR B2 Level)</h2>
+      <div class="grid-2" style="gap: 6px;">
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 5px; padding: 6px 8px;">
+          <div style="display: flex; align-items: center; gap: 4px; margin-bottom: 2px;">
+            <span class="badge badge-primary">OBJ 01</span>
+            <strong style="font-size: 8pt; color: #0f172a;">Structure a 30-Min Lesson</strong>
+          </div>
+          <p style="font-size: 7.5pt; color: #475569; margin: 0;">Lead an engaging, well-timed lesson on an authentic EASA aerodrome topic without reading from scripts or notes.</p>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 5px; padding: 6px 8px;">
+          <div style="display: flex; align-items: center; gap: 4px; margin-bottom: 2px;">
+            <span class="badge badge-primary">OBJ 02</span>
+            <strong style="font-size: 8pt; color: #0f172a;">Deliver Clear Instructions (ICQs)</strong>
+          </div>
+          <p style="font-size: 7.5pt; color: #475569; margin: 0;">Give direct step-by-step instructions in plain B2 English and use Instruction Checking Questions before group work.</p>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 5px; padding: 6px 8px;">
+          <div style="display: flex; align-items: center; gap: 4px; margin-bottom: 2px;">
+            <span class="badge badge-primary">OBJ 03</span>
+            <strong style="font-size: 8pt; color: #0f172a;">Facilitate Spoken Interaction</strong>
+          </div>
+          <p style="font-size: 7.5pt; color: #475569; margin: 0;">Circulate among student pairs, prompt active discussion, provide helpful hints, and maintain an English-only atmosphere.</p>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 5px; padding: 6px 8px;">
+          <div style="display: flex; align-items: center; gap: 4px; margin-bottom: 2px;">
+            <span class="badge badge-primary">OBJ 04</span>
+            <strong style="font-size: 8pt; color: #0f172a;">Deploy Module 1 Aerodrome Terms</strong>
+          </div>
+          <p style="font-size: 7.5pt; color: #475569; margin: 0;">Naturally integrate 6 to 8 specialized technical terms (OLS, SIB, derogation, Level 1 non-compliance, CAP, Swiss Cheese).</p>
+        </div>
+      </div>
+      <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 5px; padding: 6px 8px; margin-top: 6px;">
+        <div style="display: flex; align-items: center; gap: 4px; margin-bottom: 2px;">
+          <span class="badge badge-primary">OBJ 05</span>
+          <strong style="font-size: 8pt; color: #0f172a;">Lead Plenary Debrief &amp; Peer Feedback</strong>
+        </div>
+        <p style="font-size: 7.5pt; color: #475569; margin: 0;">Synthesize group findings, invite peer questions, conduct honest self-evaluation, and deliver constructive spoken feedback.</p>
+      </div>
+    </div>
+
+    <!-- Table of Contents / Index -->
+    <div class="card" style="margin-bottom: 0;">
+      <h2 style="font-size: 9.5pt; margin-bottom: 6px;">3. Worksheet Structure &amp; Table of Contents</h2>
+      <table style="margin-bottom: 0;">
+        <thead>
+          <tr>
+            <th style="width: 14%;">Page</th>
+            <th style="width: 36%;">Core Learning Section</th>
+            <th style="width: 50%;">Professional Focus &amp; Practical Spoken Outcome</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Page 1</strong></td>
+            <td>Cover, Objectives &amp; Index</td>
+            <td>Course metadata, executive summary, 5 B2 communicative goals, roadmap.</td>
+          </tr>
+          <tr>
+            <td><strong>Page 2</strong></td>
+            <td>Part 1: Entry Diagnostic &amp; Part 2: Architecture</td>
+            <td>4 spoken facilitation spot-checks + 4-stage 30-minute lesson delivery design.</td>
+          </tr>
+          <tr>
+            <td><strong>Page 3</strong></td>
+            <td>Spoken Facilitation Toolkit &amp; Language Clinic</td>
+            <td>Direct instructions, ICQs, table coaching, debrief phrases + 5 spoken drills.</td>
+          </tr>
+          <tr>
+            <td><strong>Page 4</strong></td>
+            <td>Official 20-Point Marking Rubric &amp; Bands</td>
+            <td>4 evaluation criteria (5 pts each) + 4 CEFR B2 performance standards.</td>
+          </tr>
+          <tr>
+            <td><strong>Page 5</strong></td>
+            <td>Peer Observation &amp; Scoring Matrix</td>
+            <td>Live evaluation scorecards for student pods evaluating presenting teams.</td>
+          </tr>
+          <tr>
+            <td><strong>Page 6</strong></td>
+            <td>Activity 5: Safety Check Decision Table</td>
+            <td>Systemic communication risks, briefing failures, and EASA risk controls.</td>
+          </tr>
+          <tr>
+            <td><strong>Page 7</strong></td>
+            <td>Activity 6: Portfolio Integration &amp; Sign-Off</td>
+            <td>Self-reflection, teacher feedback targets, top 10 vocabulary &amp; FE1 sign-off.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="footer-stamp">
+      <span>GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span>Document Ref: EASA-FE1-S7-WS</span>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 2: DIAGNOSTIC & 4-STAGE LESSON ARCHITECTURE                    -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">PART 1: ENTRY DIAGNOSTIC &bull; PART 2: LESSON ARCHITECTURE</span>
+      <span class="ref">SECTION: FACILITATION FOUNDATIONS</span>
+    </div>
+
+    <h2>Part 1: Entry Diagnostic Spot-Check — Spoken Facilitation &amp; Instruction Techniques</h2>
+    <p style="font-size: 8pt; margin-bottom: 8px;">
+      Before teams take the floor, test your spoken facilitation knowledge with these 4 quick-fire spot-check questions on instruction checking, active monitoring, pacing, and debriefing.
+    </p>
+
+    <!-- 4 Diagnostic Cards -->
+    <div class="grid-2" style="gap: 8px; margin-bottom: 12px;">
+      <div class="card card-accent" style="margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+          <strong style="font-size: 8pt; color: #1e3a8a;">Q1: Instruction Checking Questions</strong>
+          <span class="badge badge-blue">Clarity Check</span>
+        </div>
+        <p style="font-size: 7.5pt; font-weight: 700; color: #0f172a; margin-bottom: 3px;">What is an ICQ, and why is asking "Do you understand?" ineffective?</p>
+        <div style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 6px; font-size: 7.5pt; color: #334155; line-height: 1.3;">
+          <strong>Model Answer:</strong> An ICQ verifies specific task parameters (e.g., <em>"Are you working in pairs or alone?"</em>, <em>"How many minutes do you have?"</em>). Asking <em>"Do you understand?"</em> produces reflexive nods without confirming comprehension.
+        </div>
+      </div>
+
+      <div class="card card-accent" style="margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+          <strong style="font-size: 8pt; color: #1e3a8a;">Q2: Active Table Coaching</strong>
+          <span class="badge badge-blue">Group Monitoring</span>
+        </div>
+        <p style="font-size: 7.5pt; font-weight: 700; color: #0f172a; margin-bottom: 3px;">What should student instructors do while classmates work in pairs?</p>
+        <div style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 6px; font-size: 7.5pt; color: #334155; line-height: 1.3;">
+          <strong>Model Answer:</strong> Instructors circulate actively among tables to listen to discussions, clarify ambiguities, prompt quieter students with guiding questions, and maintain an English-only atmosphere without interrupting unnecessarily.
+        </div>
+      </div>
+
+      <div class="card card-accent" style="margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+          <strong style="font-size: 8pt; color: #1e3a8a;">Q3: Timebox Management</strong>
+          <span class="badge badge-amber">Pacing Control</span>
+        </div>
+        <p style="font-size: 7.5pt; font-weight: 700; color: #0f172a; margin-bottom: 3px;">How should a team manage the 30-minute timebox if an activity runs over?</p>
+        <div style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 6px; font-size: 7.5pt; color: #334155; line-height: 1.3;">
+          <strong>Model Answer:</strong> Issue a clear spoken time warning (<em>"Two minutes remaining, please finalize conclusions"</em>), accelerate transition to debrief, and nominate specific teams for highlights rather than hearing every pair.
+        </div>
+      </div>
+
+      <div class="card card-accent" style="margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+          <strong style="font-size: 8pt; color: #1e3a8a;">Q4: Plenary Debrief Quality</strong>
+          <span class="badge badge-emerald">Class Synthesis</span>
+        </div>
+        <p style="font-size: 7.5pt; font-weight: 700; color: #0f172a; margin-bottom: 3px;">What makes a plenary debrief effective in technical English?</p>
+        <div style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 6px; font-size: 7.5pt; color: #334155; line-height: 1.3;">
+          <strong>Model Answer:</strong> An effective debrief synthesizes peer discoveries, elicits contrasting solutions, highlights accurately deployed aerodrome phraseology, and gives immediate actionable feedback rather than simply reading slides.
+        </div>
+      </div>
+    </div>
+
+    <h2>Part 2: The 30-Minute Flipped Lesson Architecture (4 Stages)</h2>
+    <p style="font-size: 8pt; margin-bottom: 8px;">
+      Zero rigid minute breakdowns. Each team determines its internal dwell time and discussion pacing according to peer engagement and communicative flow:
+    </p>
+
+    <!-- 4 Stages Detailed Grid -->
+    <div class="grid-2" style="gap: 8px; margin-bottom: 10px;">
+      <!-- Stage 1 -->
+      <div class="card" style="border-top: 3px solid #1e3a8a; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+          <span class="badge badge-primary">STAGE 1</span>
+          <strong style="font-size: 7.5pt; color: #1e3a8a;">OPENING PHASE</strong>
+        </div>
+        <h3 style="font-size: 8.5pt; margin-bottom: 3px;">Welcome &amp; Context Hook</h3>
+        <p style="font-size: 7.5pt; margin-bottom: 4px;">Introduce your team of instructors and set the real-world aerodrome scenario. Hook peer curiosity with a compelling problem:</p>
+        <ul class="bullet-list" style="margin-bottom: 0;">
+          <li>State clear, plain-language session goals (e.g. <em>"Today we evaluate Runway 14L friction loss"</em>).</li>
+          <li>Display a visual exhibit (photo, diagram, or NOTAM extract).</li>
+          <li>Ask an opening engagement question to activate background knowledge.</li>
+        </ul>
+      </div>
+
+      <!-- Stage 2 -->
+      <div class="card" style="border-top: 3px solid #d97706; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+          <span class="badge badge-amber">STAGE 2</span>
+          <strong style="font-size: 7.5pt; color: #d97706;">CORE ACTIVITY</strong>
+        </div>
+        <h3 style="font-size: 8.5pt; margin-bottom: 3px;">Instructions &amp; Spoken Task</h3>
+        <p style="font-size: 7.5pt; margin-bottom: 4px;">Deliver step-by-step instructions in plain B2 English before breaking classmates into pairs or small groups:</p>
+        <ul class="bullet-list" style="margin-bottom: 0;">
+          <li>Use numbered imperatives (<em>"Step 1: identify the hazard. Step 2: draft mitigation"</em>).</li>
+          <li>Ask 2 to 3 targeted ICQs before saying "begin".</li>
+          <li>Designate partner roles (e.g. Aerodrome Inspector vs. Airside Operations Manager).</li>
+        </ul>
+      </div>
+
+      <!-- Stage 3 -->
+      <div class="card" style="border-top: 3px solid #2563eb; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+          <span class="badge badge-blue">STAGE 3</span>
+          <strong style="font-size: 7.5pt; color: #2563eb;">ACTIVE COACHING</strong>
+        </div>
+        <h3 style="font-size: 8.5pt; margin-bottom: 3px;">Circulating &amp; Table Support</h3>
+        <p style="font-size: 7.5pt; margin-bottom: 4px;">All team instructors split across the room to support, monitor, and coach student pairs:</p>
+        <ul class="bullet-list" style="margin-bottom: 0;">
+          <li>Circulate between tables; avoid standing together at the front whiteboard.</li>
+          <li>Prompt quieter learners with guiding questions (e.g. <em>"What does Part-ADR require?"</em>).</li>
+          <li>Gently re-channel French discussions back into professional English.</li>
+        </ul>
+      </div>
+
+      <!-- Stage 4 -->
+      <div class="card" style="border-top: 3px solid #059669; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+          <span class="badge badge-emerald">STAGE 4</span>
+          <strong style="font-size: 7.5pt; color: #059669;">DEBRIEF PHASE</strong>
+        </div>
+        <h3 style="font-size: 8.5pt; margin-bottom: 3px;">Plenary Review &amp; Debrief</h3>
+        <p style="font-size: 7.5pt; margin-bottom: 4px;">Bring the whole class together to compare solutions, synthesize insights, and celebrate communicative success:</p>
+        <ul class="bullet-list" style="margin-bottom: 0;">
+          <li>Nominate specific tables to share their primary safety recommendations.</li>
+          <li>Recap the core technical distinction (e.g. Level 1 immediate closure vs Level 2 CAP).</li>
+          <li>Thank classmates for active participation and invite peer questions.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Instructor Planning Notes Box -->
+    <div class="card card-accent" style="margin-bottom: 0;">
+      <strong style="font-size: 8pt; color: #0f172a; display: block; margin-bottom: 3px;">Student Instructor Planning Notes: 30-Minute Lesson Outline</strong>
+      <div class="grid-2" style="gap: 6px;">
+        <div class="form-box form-box-sm">Opening Hook &amp; Scenario chosen:</div>
+        <div class="form-box form-box-sm">Interactive Spoken Task for Classmates:</div>
+      </div>
+    </div>
+
+    <div class="footer-stamp">
+      <span>GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span>Document Ref: EASA-FE1-S7-WS</span>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 3: FACILITATION TOOLKIT & LANGUAGE CLINIC                      -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">PART 3: SPOKEN FACILITATION TOOLKIT &bull; LANGUAGE CLINIC</span>
+      <span class="ref">SECTION: INSTRUCTIONAL SPOKEN FLUENCY</span>
+    </div>
+
+    <h2>Spoken Facilitation Toolkit — Phrases for Student Instructors</h2>
+    <p style="font-size: 8pt; margin-bottom: 8px;">
+      Deploy these practical, natural B2 phrases during your 30-minute delivery to direct the room, check understanding, coach pairs, and lead the debrief:
+    </p>
+
+    <!-- 4 Toolkit Boxes Grid -->
+    <div class="grid-2" style="gap: 8px; margin-bottom: 12px;">
+      <!-- Box 1 -->
+      <div class="card" style="border-left: 3px solid #2563eb; background: #eff6ff; margin-bottom: 0;">
+        <div style="display: flex; align-items: center; gap: 4px; margin-bottom: 4px;">
+          <span style="font-size: 10pt;">📢</span>
+          <strong style="font-size: 8pt; color: #1e40af; text-transform: uppercase;">1. Opening Hook &amp; Instructions</strong>
+        </div>
+        <ul class="bullet-list" style="margin-bottom: 0;">
+          <li><em>"Good morning everyone. Today our team is putting you in the shoes of airport safety managers..."</em></li>
+          <li><em>"Our primary objective by the end of this 30-minute session is to agree on..."</em></li>
+          <li><em>"Please work in pairs with the person sitting next to you."</em></li>
+          <li><em>"Step one is to examine the chart. Step two is to identify the non-compliance."</em></li>
+        </ul>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="card" style="border-left: 3px solid #d97706; background: #fffbeb; margin-bottom: 0;">
+        <div style="display: flex; align-items: center; gap: 4px; margin-bottom: 4px;">
+          <span style="font-size: 10pt;">❓</span>
+          <strong style="font-size: 8pt; color: #92400e; text-transform: uppercase;">2. Instruction Checking Questions (ICQs)</strong>
+        </div>
+        <ul class="bullet-list" style="margin-bottom: 0;">
+          <li><em>"Before we start, who can explain what you need to do in step 1?"</em></li>
+          <li><em>"Are you working individually or in pairs?"</em></li>
+          <li><em>"What should your team have written down when time is up?"</em></li>
+          <li><em>"You have 8 minutes for this phase. Any questions before we start?"</em></li>
+        </ul>
+      </div>
+
+      <!-- Box 3 -->
+      <div class="card" style="border-left: 3px solid #7c3aed; background: #f5f3ff; margin-bottom: 0;">
+        <div style="display: flex; align-items: center; gap: 4px; margin-bottom: 4px;">
+          <span style="font-size: 10pt;">👥</span>
+          <strong style="font-size: 8pt; color: #5b21b6; text-transform: uppercase;">3. Circulating &amp; Table Coaching</strong>
+        </div>
+        <ul class="bullet-list" style="margin-bottom: 0;">
+          <li><em>"How are things progressing over here? Any questions on the regulatory rule?"</em></li>
+          <li><em>"What does EASA Part-ADR state about temporary obstacle exemptions?"</em></li>
+          <li><em>"Try using 'provided that' to express the conditional safety measure."</em></li>
+          <li><em>"Two minutes remaining, everyone. Please start wrapping up your notes."</em></li>
+        </ul>
+      </div>
+
+      <!-- Box 4 -->
+      <div class="card" style="border-left: 3px solid #059669; background: #ecfdf5; margin-bottom: 0;">
+        <div style="display: flex; align-items: center; gap: 4px; margin-bottom: 4px;">
+          <span style="font-size: 10pt;">🎯</span>
+          <strong style="font-size: 8pt; color: #065f46; text-transform: uppercase;">4. Plenary Debrief &amp; Eliciting</strong>
+        </div>
+        <ul class="bullet-list" style="margin-bottom: 0;">
+          <li><em>"Let us hear from Team B. What root cause did your group identify?"</em></li>
+          <li><em>"Did any other team reach a different conclusion for this audit finding?"</em></li>
+          <li><em>"To recap, the key technical distinction between Level 1 and Level 2 is..."</em></li>
+          <li><em>"Great participation everyone. Thank you for your active engagement."</em></li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Language Clinic: Spoken Facilitation &amp; Instruction Drills</h2>
+    <p style="font-size: 8pt; margin-bottom: 8px;">
+      Transform hesitant, vague teacher talk into direct, confident spoken instructions:
+    </p>
+
+    <!-- 5 Drills Table -->
+    <table style="margin-bottom: 0;">
+      <thead>
+        <tr>
+          <th style="width: 25%;">Facilitation Scenario</th>
+          <th style="width: 33%;">❌ Hesitant / Vague Spoken English</th>
+          <th style="width: 42%;">✅ Plain B2 Facilitation (Direct &amp; Confident)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>1. Directing Pairwork &amp; Steps</strong><br><span style="font-size: 6.5pt; color: #64748b;">Step sequencing</span></td>
+          <td style="color: #991b1b; background: #fff1f2;"><em>"Maybe you can look at the paper and see what is wrong, do it with someone."</em></td>
+          <td style="color: #065f46; background: #ecfdf5;"><strong>"Please work in pairs. Step one: examine the obstacle limitation surface on page 3. Step two: circle the antenna penetration. You have four minutes."</strong></td>
+        </tr>
+        <tr>
+          <td><strong>2. Formulating ICQs</strong><br><span style="font-size: 6.5pt; color: #64748b;">Verifying comprehension</span></td>
+          <td style="color: #991b1b; background: #fff1f2;"><em>"Do you understand the activity?"</em></td>
+          <td style="color: #065f46; background: #ecfdf5;"><strong>"Before we begin: Sarah, how many root causes does your pair need to write? Exactly, three. And David, how much time do you have? Six minutes."</strong></td>
+        </tr>
+        <tr>
+          <td><strong>3. Table Coaching &amp; Hints</strong><br><span style="font-size: 6.5pt; color: #64748b;">Guiding stuck students</span></td>
+          <td style="color: #991b1b; background: #fff1f2;"><em>"Why are you not talking? You must write the answer."</em></td>
+          <td style="color: #065f46; background: #ecfdf5;"><strong>"How is it going over here? Look back at EASA Part-ADR.OR.D.005: does this containment failure pose an immediate hazard to flight operations, or can it be managed within 30 days?"</strong></td>
+        </tr>
+        <tr>
+          <td><strong>4. English Immersion Reminder</strong><br><span style="font-size: 6.5pt; color: #64748b;">Encouraging English</span></td>
+          <td style="color: #991b1b; background: #fff1f2;"><em>"No French, English please!"</em></td>
+          <td style="color: #065f46; background: #ecfdf5;"><strong>"Remember everyone, 100% English only. If you need the word for 'brise-souffle', it is 'jet blast deflector'. Keep the discussion in English!"</strong></td>
+        </tr>
+        <tr>
+          <td><strong>5. Transition to Debrief</strong><br><span style="font-size: 6.5pt; color: #64748b;">Nominating speakers</span></td>
+          <td style="color: #991b1b; background: #fff1f2;"><em>"Okay time is up. Who wants to talk?"</em></td>
+          <td style="color: #065f46; background: #ecfdf5;"><strong>"Time is up, everyone. Let us hear from Team C. Alexandre, what was the primary systemic cause your group agreed on?"</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="footer-stamp">
+      <span>GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span>Document Ref: EASA-FE1-S7-WS</span>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 4: MARKING RUBRIC & PERFORMANCE BANDS                          -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">PART 4: OFFICIAL FE1 MARKING RUBRIC &bull; PERFORMANCE BANDS</span>
+      <span class="ref">REF: EASA-FE1-RUBRIC-20PTS</span>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+      <h2>Official 20-Point Formative Evaluation Marking Rubric</h2>
+      <span class="badge badge-primary" style="font-size: 8pt;">Total: 20 Points • 4 Criteria (5 Pts Each)</span>
+    </div>
+    <p style="font-size: 8pt; margin-bottom: 8px;">
+      Assessment is criteria-referenced across 4 instructional and communicative competencies. Student teams are evaluated on preparation, communicative ideas, spoken instruction delivery, and classroom peer engagement:
+    </p>
+
+    <!-- 4 Criteria Table -->
+    <table style="margin-bottom: 10px;">
+      <thead>
+        <tr>
+          <th style="width: 28%;">Assessment Criterion</th>
+          <th style="width: 8%; text-align: center;">Pts</th>
+          <th style="width: 64%;">Teacher &amp; Peer Expectations (CEFR B2 Level • Spoken Technical English)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong>1. Lesson Preparation &amp; Structure</strong><br>
+            <span style="font-size: 7pt; color: #64748b;">Objectives, timing balance &amp; team coordination</span>
+          </td>
+          <td style="text-align: center; font-weight: 900; color: #1e3a8a; font-size: 10pt; background: #f8fafc;">5</td>
+          <td style="font-size: 7.5pt; color: #334155;">
+            Well-organized 30-minute lesson structure with clear learning objectives; engaging context hook; smooth sequence of steps; balanced, equal contribution across all 3 to 4 team members. <strong>Zero reading from written notes or scripts!</strong>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong>2. Communicative Activity &amp; Ideas</strong><br>
+            <span style="font-size: 7pt; color: #64748b;">Originality, peer interaction &amp; task design</span>
+          </td>
+          <td style="text-align: center; font-weight: 900; color: #1e3a8a; font-size: 10pt; background: #f8fafc;">5</td>
+          <td style="font-size: 7.5pt; color: #334155;">
+            Creative, engaging communicative task (role-play, incident debate, audit inspection, or CAP negotiation) that gets classmates actively speaking in pairs/groups; avoids passive lecturing; keeps students invested throughout.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong>3. Instruction Delivery &amp; Facilitation</strong><br>
+            <span style="font-size: 7pt; color: #64748b;">Clarity, voice projection, ICQs &amp; group monitoring</span>
+          </td>
+          <td style="text-align: center; font-weight: 900; color: #1e3a8a; font-size: 10pt; background: #f8fafc;">5</td>
+          <td style="font-size: 7.5pt; color: #334155;">
+            Spoken instructions delivered in clear, plain B2 English without confusion; effective checking of comprehension (ICQs) before starting; active circulating among tables to coach peers; confident moderation of the plenary debrief.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong>4. Technical English &amp; Pronunciation</strong><br>
+            <span style="font-size: 7pt; color: #64748b;">Accuracy, vocabulary activation &amp; spoken fluency</span>
+          </td>
+          <td style="text-align: center; font-weight: 900; color: #1e3a8a; font-size: 10pt; background: #f8fafc;">5</td>
+          <td style="font-size: 7.5pt; color: #334155;">
+            Natural activation of at least 6 to 8 specialized Module 1 aerodrome terms (OLS, SIB, derogation, Level 1 non-compliance, Swiss Cheese, CAP); intelligible pronunciation and correct word stress; solid grammatical control with functional structures.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Four CEFR B2 Performance Bands</h2>
+    <p style="font-size: 8pt; margin-bottom: 8px;">
+      Evaluation standards applied across all student pods during the live teaching showcase:
+    </p>
+
+    <!-- 4 Performance Bands Grid -->
+    <div class="grid-2" style="gap: 8px; margin-bottom: 10px;">
+      <div class="card card-emerald" style="margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+          <strong style="font-size: 8pt; color: #065f46;">Exemplary Leadership</strong>
+          <span class="badge badge-emerald">18–20 PTS</span>
+        </div>
+        <p style="font-size: 7.5pt; color: #334155; margin-bottom: 0;">
+          Dynamic student leadership; highly engaging communicative activity; crystal-clear instructions; 100% peer speaking engagement; rich technical aerodrome vocabulary deployed naturally; balanced, equal team contribution.
+        </p>
+      </div>
+
+      <div class="card card-accent" style="margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+          <strong style="font-size: 8pt; color: #1e40af;">Solid Professional B2</strong>
+          <span class="badge badge-blue">14–17 PTS</span>
+        </div>
+        <p style="font-size: 7.5pt; color: #334155; margin-bottom: 0;">
+          Good lesson structure; classmates actively participate in pairwork; clear spoken instructions with minor slips; good aerodrome terminology; balanced teamwork; confident handling of the debrief.
+        </p>
+      </div>
+
+      <div class="card card-amber" style="margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+          <strong style="font-size: 8pt; color: #92400e;">Developing Fluency</strong>
+          <span class="badge badge-amber">10–13 PTS</span>
+        </div>
+        <p style="font-size: 7.5pt; color: #334155; margin-bottom: 0;">
+          Overly lecture-heavy; limited pair speaking time; instructions unclear requiring teacher intervention; unequal team participation; occasional reliance on written scripts; terminology applied inconsistently.
+        </p>
+      </div>
+
+      <div class="card" style="border-left: 3px solid #e11d48; background: #fff1f2; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+          <strong style="font-size: 8pt; color: #9f1239;">Needs Improvement</strong>
+          <span class="badge badge-rose">&lt; 10 PTS</span>
+        </div>
+        <p style="font-size: 7.5pt; color: #334155; margin-bottom: 0;">
+          Direct reading aloud from slides or notes; no interactive activity for classmates; severe communication breakdown; silent team members; lack of preparation; insufficient technical vocabulary.
+        </p>
+      </div>
+    </div>
+
+    <!-- Official Marking Rubric Sign-off Grid -->
+    <div class="card" style="margin-bottom: 0;">
+      <strong style="font-size: 8pt; color: #0f172a; display: block; margin-bottom: 4px;">Formative Evaluation 1 Score Breakdown (Teacher &amp; Peer Record)</strong>
+      <div class="grid-4" style="gap: 6px;">
+        <div class="form-box form-box-sm">Structure: _____ / 5</div>
+        <div class="form-box form-box-sm">Activity: _____ / 5</div>
+        <div class="form-box form-box-sm">Instructions: _____ / 5</div>
+        <div class="form-box form-box-sm">Language: _____ / 5</div>
+      </div>
+      <div style="margin-top: 4px; display: flex; justify-content: space-between; align-items: center; font-size: 7.5pt; color: #64748b;">
+        <span>Total FE1 Score: <strong>_____ / 20 Points</strong></span>
+        <span>Evaluator Signature: ____________________________________</span>
+      </div>
+    </div>
+
+    <div class="footer-stamp">
+      <span>GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span>Document Ref: EASA-FE1-S7-WS</span>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 5: PEER OBSERVATION & SCORING MATRIX                           -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">PART 5: PEER OBSERVATION &bull; EVALUATION ROSTER</span>
+      <span class="ref">SECTION: PEER-TO-PEER COACHING</span>
+    </div>
+
+    <h2>Live Peer Observation &amp; Scoring Matrix</h2>
+    <p style="font-size: 8pt; margin-bottom: 8px;">
+      When other teams are delivering their 30-minute lessons, complete the observation matrix below. Your constructive feedback helps your peers sharpen their professional leadership:
+    </p>
+
+    <!-- Scorecard 1 -->
+    <div class="card" style="border-top: 3px solid #1e3a8a; margin-bottom: 8px; padding: 6px 10px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+        <div style="display: flex; align-items: center; gap: 6px;">
+          <span class="badge badge-primary">EVALUATION 1</span>
+          <strong style="font-size: 8pt; color: #0f172a;">Team Evaluated: ________________________________</strong>
+        </div>
+        <span style="font-size: 7.5pt; color: #64748b;">Topic: ________________________________</span>
+      </div>
+      <div class="grid-4" style="gap: 4px; margin-bottom: 4px;">
+        <div style="font-size: 7.5pt; background: #f8fafc; border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">Structure: __ / 5</div>
+        <div style="font-size: 7.5pt; background: #f8fafc; border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">Activity: __ / 5</div>
+        <div style="font-size: 7.5pt; background: #f8fafc; border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">Instructions: __ / 5</div>
+        <div style="font-size: 7.5pt; background: #f8fafc; border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">Language: __ / 5</div>
+      </div>
+      <div class="grid-2" style="gap: 6px;">
+        <div>
+          <span style="font-size: 7pt; font-weight: 700; color: #065f46;">✅ Key Strengths &amp; Clear Instructions:</span>
+          <div class="form-box form-box-sm"></div>
+        </div>
+        <div>
+          <span style="font-size: 7pt; font-weight: 700; color: #92400e;">💡 Actionable Tip for Growth:</span>
+          <div class="form-box form-box-sm"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scorecard 2 -->
+    <div class="card" style="border-top: 3px solid #d97706; margin-bottom: 8px; padding: 6px 10px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+        <div style="display: flex; align-items: center; gap: 6px;">
+          <span class="badge badge-amber">EVALUATION 2</span>
+          <strong style="font-size: 8pt; color: #0f172a;">Team Evaluated: ________________________________</strong>
+        </div>
+        <span style="font-size: 7.5pt; color: #64748b;">Topic: ________________________________</span>
+      </div>
+      <div class="grid-4" style="gap: 4px; margin-bottom: 4px;">
+        <div style="font-size: 7.5pt; background: #f8fafc; border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">Structure: __ / 5</div>
+        <div style="font-size: 7.5pt; background: #f8fafc; border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">Activity: __ / 5</div>
+        <div style="font-size: 7.5pt; background: #f8fafc; border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">Instructions: __ / 5</div>
+        <div style="font-size: 7.5pt; background: #f8fafc; border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">Language: __ / 5</div>
+      </div>
+      <div class="grid-2" style="gap: 6px;">
+        <div>
+          <span style="font-size: 7pt; font-weight: 700; color: #065f46;">✅ Key Strengths &amp; Clear Instructions:</span>
+          <div class="form-box form-box-sm"></div>
+        </div>
+        <div>
+          <span style="font-size: 7pt; font-weight: 700; color: #92400e;">💡 Actionable Tip for Growth:</span>
+          <div class="form-box form-box-sm"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scorecard 3 -->
+    <div class="card" style="border-top: 3px solid #059669; margin-bottom: 8px; padding: 6px 10px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+        <div style="display: flex; align-items: center; gap: 6px;">
+          <span class="badge badge-emerald">EVALUATION 3</span>
+          <strong style="font-size: 8pt; color: #0f172a;">Team Evaluated: ________________________________</strong>
+        </div>
+        <span style="font-size: 7.5pt; color: #64748b;">Topic: ________________________________</span>
+      </div>
+      <div class="grid-4" style="gap: 4px; margin-bottom: 4px;">
+        <div style="font-size: 7.5pt; background: #f8fafc; border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">Structure: __ / 5</div>
+        <div style="font-size: 7.5pt; background: #f8fafc; border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">Activity: __ / 5</div>
+        <div style="font-size: 7.5pt; background: #f8fafc; border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">Instructions: __ / 5</div>
+        <div style="font-size: 7.5pt; background: #f8fafc; border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">Language: __ / 5</div>
+      </div>
+      <div class="grid-2" style="gap: 6px;">
+        <div>
+          <span style="font-size: 7pt; font-weight: 700; color: #065f46;">✅ Key Strengths &amp; Clear Instructions:</span>
+          <div class="form-box form-box-sm"></div>
+        </div>
+        <div>
+          <span style="font-size: 7pt; font-weight: 700; color: #92400e;">💡 Actionable Tip for Growth:</span>
+          <div class="form-box form-box-sm"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Peer Feedback Guidelines Callout -->
+    <div class="card card-accent" style="margin-bottom: 0;">
+      <h3 style="font-size: 8pt; margin-bottom: 2px;">Peer Feedback Golden Rules: Constructive, Specific &amp; Actionable</h3>
+      <p style="font-size: 7.5pt; margin-bottom: 0; line-height: 1.35;">
+        When delivering spoken feedback to classmates, focus on what you observed rather than personal judgment. Highlight clear instruction delivery (<em>"Your ICQ on the timebox made the exercise immediately clear"</em>), praise accurate aerodrome terminology, and offer one practical suggestion for future airside leadership.
+      </p>
+    </div>
+
+    <div class="footer-stamp">
+      <span>GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span>Document Ref: EASA-FE1-S7-WS</span>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 6: SAFETY CHECK DECISION TABLE                                 -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ACTIVITY 5: SAFETY CHECK &bull; SYSTEMIC RISK DECISION TABLE</span>
+      <span class="ref">SECTION: AERODROME SAFETY OVERSIGHT</span>
+    </div>
+
+    <h2>Activity 5: Safety Check — Systemic Communication &amp; Briefing Failures</h2>
+    <p style="font-size: 8pt; margin-bottom: 8px;">
+      Review the 4 questions in the Safety Check table to analyze how ambiguous spoken instructions, unstandardized terminology, and poor briefings create operational hazards on the airfield:
+    </p>
+
+    <!-- Safety Check Table -->
+    <table style="margin-bottom: 10px;">
+      <thead>
+        <tr>
+          <th style="width: 32%;">Simple Safety Question</th>
+          <th style="width: 68%;">Agreed Class Answer &amp; Regulatory Standard (EASA Part-ADR.OR.D.015)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-weight: 800; color: #0f172a; background: #f8fafc;">
+            1. What is the systemic communication problem?
+          </td>
+          <td style="font-size: 8pt; color: #334155; line-height: 1.35;">
+            Airfield operations rely heavily on spoken communication during shift handovers, contractor briefings, and ramp coordination. Ambiguous instructions, inconsistent phraseology, or passive listening create immediate latent hazards.
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight: 800; color: #0f172a; background: #f8fafc;">
+            2. What could happen if uncorrected?
+          </td>
+          <td style="font-size: 8pt; color: #334155; line-height: 1.35;">
+            Misunderstood runway closure limits, unclear vehicle routing, or unconfirmed safety exemptions can trigger runway incursions, ground collisions, and unauthorized access to active movement areas.
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight: 800; color: #0f172a; background: #f8fafc;">
+            3. How do we fix it?
+          </td>
+          <td style="font-size: 8pt; color: #334155; line-height: 1.35;">
+            Enforce standardized B2 plain English instruction protocols: require explicit readbacks, ask targeted Instruction Checking Questions (ICQs) before work begins, and verify physical understanding rather than assuming compliance.
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight: 800; color: #0f172a; background: #f8fafc;">
+            4. Directorate Operational Decision
+          </td>
+          <td style="font-size: 8pt; color: #334155; line-height: 1.35;">
+            Mandate that all aerodrome supervisors, team leaders, and safety instructors complete certified spoken briefing assessments under EASA Part-ADR.OR.D.015, enforcing standardized interactive briefing techniques across all airside teams.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Airfield Briefing Protocols & Risk Controls -->
+    <h2>Standardized Spoken Briefing Protocols (Airfield Operations)</h2>
+    <p style="font-size: 8pt; margin-bottom: 8px;">
+      Four non-negotiable operational rules for delivering technical briefings on active movement areas:
+    </p>
+
+    <div class="grid-2" style="gap: 8px; margin-bottom: 10px;">
+      <div class="card card-accent" style="margin-bottom: 0;">
+        <strong style="font-size: 8pt; color: #1e3a8a; display: block; margin-bottom: 2px;">1. Standardized Plain Terminology</strong>
+        <p style="font-size: 7.5pt; color: #475569; margin-bottom: 0;">
+          Use established ICAO/EASA aerodrome terms (e.g. <em>holding point</em>, <em>apron stand</em>, <em>displaced threshold</em>). Avoid colloquialisms or local airfield slang that international drivers or contractors might misunderstand.
+        </p>
+      </div>
+
+      <div class="card card-accent" style="margin-bottom: 0;">
+        <strong style="font-size: 8pt; color: #1e3a8a; display: block; margin-bottom: 2px;">2. Mandatory Readback Verification</strong>
+        <p style="font-size: 7.5pt; color: #475569; margin-bottom: 0;">
+          Every critical safety instruction—especially vehicle routing, active runway crossing permits, and work zone boundaries—requires an explicit, verbatim verbal readback before movement commences.
+        </p>
+      </div>
+
+      <div class="card card-accent" style="margin-bottom: 0;">
+        <strong style="font-size: 8pt; color: #1e3a8a; display: block; margin-bottom: 2px;">3. Direct Instruction Checking (ICQs)</strong>
+        <p style="font-size: 7.5pt; color: #475569; margin-bottom: 0;">
+          Verify understanding with direct questions: <em>"Which taxiway is closed?"</em>, <em>"What is the maximum vehicle speed on Apron 2?"</em>. Never rely on passive head-nodding.
+        </p>
+      </div>
+
+      <div class="card card-accent" style="margin-bottom: 0;">
+        <strong style="font-size: 8pt; color: #1e3a8a; display: block; margin-bottom: 2px;">4. Closed-Loop Shift Handovers</strong>
+        <p style="font-size: 7.5pt; color: #475569; margin-bottom: 0;">
+          Outgoing and incoming airside supervisors must conduct a face-to-face spoken debriefing, verifying open NOTAMs, active work in progress, and unserviceable airfield ground lighting (AGL).
+        </p>
+      </div>
+    </div>
+
+    <!-- Student Risk Synthesis Box -->
+    <div class="card" style="margin-bottom: 0;">
+      <strong style="font-size: 8pt; color: #0f172a; display: block; margin-bottom: 3px;">Operational Synthesis: How Did Your Team Ensure Clear Communication?</strong>
+      <div class="form-box form-box-sm">Explain how your pod used ICQs and structured steps to prevent misunderstanding during your 30-minute lesson:</div>
+    </div>
+
+    <div class="footer-stamp">
+      <span>GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span>Document Ref: EASA-FE1-S7-WS</span>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 7: PORTFOLIO INTEGRATION & FE1 SIGN-OFF                        -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ACTIVITY 6: PORTFOLIO INTEGRATION &bull; FE1 SIGN-OFF</span>
+      <span class="ref">SECTION: CONTINUOUS ASSESSMENT DOSSIER</span>
+    </div>
+
+    <h2>Activity 6: Operational Notes &amp; Portfolio Debriefing</h2>
+    <p style="font-size: 8pt; margin-bottom: 8px;">
+      Log your personal lesson delivery reflections, teacher feedback targets, and key vocabulary directly into your learning portfolio:
+    </p>
+
+    <!-- Reflection Textarea Boxes -->
+    <div class="card" style="margin-bottom: 10px;">
+      <strong style="font-size: 8pt; color: #0f172a; display: block; margin-bottom: 3px;">1. Team Lesson Delivery &amp; Self-Evaluation</strong>
+      <p style="font-size: 7.5pt; color: #64748b; margin-bottom: 4px;">What went well during your 30-minute lesson? How did classmates respond to your task? How well did your team manage pacing?</p>
+      <div class="form-box form-box-lg"></div>
+    </div>
+
+    <div class="card" style="margin-bottom: 10px;">
+      <strong style="font-size: 8pt; color: #0f172a; display: block; margin-bottom: 3px;">2. Teacher Feedback &amp; Portfolio Action Plan</strong>
+      <p style="font-size: 7.5pt; color: #64748b; margin-bottom: 4px;">Record key feedback points: Spoken technical fluency highlights, pronunciation targets, and specific goals for Module 2:</p>
+      <div class="form-box form-box-lg"></div>
+    </div>
+
+    <!-- 10 Core Vocabulary in Action Grid -->
+    <h2>Top 10 Module 1 Airfield Vocabulary in Action</h2>
+    <p style="font-size: 8pt; margin-bottom: 6px;">Key technical terms activated across Sessions 1 to 7:</p>
+    <div class="grid-2" style="gap: 5px; margin-bottom: 10px;">
+      <div style="font-size: 7.5pt; background: #f8fafc; border: 1px solid #e2e8f0; padding: 3px 6px; border-radius: 4px;">
+        <strong>1. OLS Safeguarding:</strong> Protecting Obstacle Limitation Surfaces under CS-ADR-DSN.
+      </div>
+      <div style="font-size: 7.5pt; background: #f8fafc; border: 1px solid #e2e8f0; padding: 3px 6px; border-radius: 4px;">
+        <strong>2. Displaced Threshold:</strong> Temporary relocation of runway landing threshold due to work.
+      </div>
+      <div style="font-size: 7.5pt; background: #f8fafc; border: 1px solid #e2e8f0; padding: 3px 6px; border-radius: 4px;">
+        <strong>3. SIB Advisory:</strong> Safety Information Bulletin issued by EASA for operational awareness.
+      </div>
+      <div style="font-size: 7.5pt; background: #f8fafc; border: 1px solid #e2e8f0; padding: 3px 6px; border-radius: 4px;">
+        <strong>4. Level 1 Non-Compliance:</strong> Significant safety finding requiring immediate corrective action.
+      </div>
+      <div style="font-size: 7.5pt; background: #f8fafc; border: 1px solid #e2e8f0; padding: 3px 6px; border-radius: 4px;">
+        <strong>5. Corrective Action Plan:</strong> Formal 30-day root-cause remediation roadmap under ADR.OR.D.005.
+      </div>
+      <div style="font-size: 7.5pt; background: #f8fafc; border: 1px solid #e2e8f0; padding: 3px 6px; border-radius: 4px;">
+        <strong>6. Swiss Cheese Model:</strong> Systemic alignment of latent organizational and active failures.
+      </div>
+      <div style="font-size: 7.5pt; background: #f8fafc; border: 1px solid #e2e8f0; padding: 3px 6px; border-radius: 4px;">
+        <strong>7. Instruction Checking (ICQ):</strong> Targeted questions verifying comprehension before group tasks.
+      </div>
+      <div style="font-size: 7.5pt; background: #f8fafc; border: 1px solid #e2e8f0; padding: 3px 6px; border-radius: 4px;">
+        <strong>8. Jet Blast Deflector:</strong> Physical barrier shielding service roads from aircraft engine thrust.
+      </div>
+      <div style="font-size: 7.5pt; background: #f8fafc; border: 1px solid #e2e8f0; padding: 3px 6px; border-radius: 4px;">
+        <strong>9. Friction Decay:</strong> Loss of runway macro-texture caused by rubber deposit buildup.
+      </div>
+      <div style="font-size: 7.5pt; background: #f8fafc; border: 1px solid #e2e8f0; padding: 3px 6px; border-radius: 4px;">
+        <strong>10. Plenary Debrief:</strong> Whole-class discussion synthesizing student findings and lessons learned.
+      </div>
+    </div>
+
+    <!-- Official FE1 Formative Evaluation Sign-Off Dossier -->
+    <div class="card card-emerald" style="margin-bottom: 0;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+        <strong style="font-size: 8.5pt; color: #065f46;">Formative Evaluation 1 Official Sign-Off Dossier</strong>
+        <span class="badge badge-emerald">MODULE 1 COMPLETE</span>
+      </div>
+      <p style="font-size: 7.5pt; color: #334155; margin-bottom: 6px;">
+        Congratulations on successfully completing Module 1 (Aerodrome Regulations &amp; Safety Operations)! This evaluation validates your ability to lead, instruct, and communicate technical aviation concepts in professional B2 English.
+      </p>
+      <div class="grid-3" style="gap: 6px;">
+        <div class="form-box form-box-sm">Student Name / ID:</div>
+        <div class="form-box form-box-sm">Final FE1 Grade: _____ / 20</div>
+        <div class="form-box form-box-sm">Teacher Signature:</div>
+      </div>
+    </div>
+
+    <div class="footer-stamp">
+      <span>GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span>Document Ref: EASA-FE1-S7-WS</span>
+    </div>
+  </div>
+
+</body>
+</html>
