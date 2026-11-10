@@ -1017,8 +1017,8 @@
           overviewBtn.style.backgroundColor = ctaBg;
           overviewBtn.onmouseenter = () => overviewBtn.style.backgroundColor = ctaHover;
           overviewBtn.onmouseleave = () => overviewBtn.style.backgroundColor = ctaBg;
-          overviewBtn.innerHTML = `<span>Overview &amp; Task</span> <span class="font-bold text-sm leading-none" aria-hidden="true">⇥</span>`;
-          overviewBtn.title = "Open Session Overview, 10 Useful Words & Authentic Task";
+          overviewBtn.innerHTML = `<span>Session Overview</span> <span class="font-bold text-sm leading-none" aria-hidden="true">⇥</span>`;
+          overviewBtn.title = "Open Session Overview & 10 Useful Words";
           overviewBtn.addEventListener('click', () => {
             openSessionOverviewModal(mod.id, currentIndex + 1);
           });
@@ -1661,6 +1661,7 @@
           </div>
         </div>
 
+${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.session === 7 || sessionData.session === '7')) || !task || (!task.instructions && !task.title)) ? '' : `
         <!-- Section 4: ADDITIONAL SPEAKING ACTIVITY -->
         <div class="p-4 sm:p-5 rounded-xl bg-emerald-50/80 border border-emerald-200 shadow-2xs space-y-4">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-emerald-200/80 pb-3">
@@ -1705,6 +1706,7 @@
             </div>
           </div>
         </div>
+        `}
       `;
     }
 
@@ -1890,19 +1892,26 @@
         if (ddrsTabBtn) ddrsTabBtn.classList.add('hidden');
         standardTabs.forEach(t => t.classList.add('hidden'));
         if (feGuidelinesTab) feGuidelinesTab.classList.remove('hidden');
-        if (feObjectivesTab) feObjectivesTab.classList.remove('hidden');
+        if (feObjectivesTab) feObjectivesTab.classList.add('hidden'); // Merged into Guidelines & Objectives
         if (feCriteriaTab) feCriteriaTab.classList.remove('hidden');
 
-        // For Module 1 Session 7: Unhide Plan, Content, Vocabulary, Materials and Notes
+        // For Module 1 Session 7: Show Guidelines & Objectives, Criteria, Live Classroom Studio, and Notes (strictly hide Plan, Vocab, Materials)
         if (modalState.sessionNum === 7 && modalState.modNum === 1) {
-          if (tabPlan) tabPlan.classList.remove('hidden');
+          if (feGuidelinesTab) feGuidelinesTab.classList.remove('hidden');
+          if (feObjectivesTab) feObjectivesTab.classList.add('hidden');
+          if (feCriteriaTab) feCriteriaTab.classList.remove('hidden');
           if (tabContent) tabContent.classList.remove('hidden');
+          if (tabPlan) tabPlan.classList.add('hidden');
           const tabVocab = document.getElementById('modal-tab-revision');
           const tabMat = document.getElementById('modal-tab-materials');
           const tabNotes = document.getElementById('modal-tab-notepad');
-          if (tabVocab) tabVocab.classList.remove('hidden');
-          if (tabMat) tabMat.classList.remove('hidden');
+          if (tabVocab) tabVocab.classList.add('hidden');
+          if (tabMat) tabMat.classList.add('hidden');
           if (tabNotes) tabNotes.classList.remove('hidden');
+
+          if (['plan', 'objectives', 'revision', 'materials', 'fe_objectives'].includes(modalState.tab)) {
+            modalState.tab = 'fe_guidelines';
+          }
         }
 
         tagEl.textContent = `${progConfig.code} Module ${modalState.modNum} • Session ${modalState.sessionNum}`;
