@@ -5254,10 +5254,11 @@ function renderLessonContentTabSession3(sessionData, theme) {
               </div>
               <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">${hero.title || 'Special Requests & Runway Safety Cases'}</h3>
             </div>
-            <button type="button" onclick="window.printLessonContent()" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 shadow-xs transition-all cursor-pointer shrink-0">
-              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
-              <span>Print / Save Lesson PDF</span>
-            </button>
+            <a href="docs/GSEA_S3_M1_S3_Lesson_Worksheet.pdf" target="_blank" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-white bg-blue-700 hover:bg-blue-800 shadow-xs transition-all cursor-pointer shrink-0">
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              <span>Lesson Worksheet (PDF)</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
           </div>
 
           <!-- Hero Banner & Context -->
@@ -5540,6 +5541,31 @@ function renderLessonContentTabSession3(sessionData, theme) {
                 `).join('')}
               </div>
             </div>
+
+            <!-- Student C Interactive Peer Feedback Checklist -->
+            <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-3">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-amber-200/80 pb-2">
+                <div class="flex items-center gap-2">
+                  <svg width="16" height="16" class="text-amber-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+                  <h5 class="text-xs sm:text-sm font-bold text-amber-950">Student C: Observer &amp; Peer Feedback Checklist</h5>
+                </div>
+                <span class="text-[10px] font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded border border-amber-200">Interactive Peer Evaluation</span>
+              </div>
+              <p class="text-xs text-amber-900 leading-relaxed">During the 6-minute simulation, Student C evaluates both speakers and checks off these 4 criteria before giving 2 minutes of spoken feedback:</p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                ${((spoken.peerChecklist) || [
+                  { id: 1, label: "Did Student A explain the 4 safety rules clearly (displaced threshold 180m, dry runway only, 15 kt crosswind, RFFS standby)?" },
+                  { id: 2, label: "Did both speakers use condition words correctly (provided that, due to, in lieu of, unless, in order to)?" },
+                  { id: 3, label: "Was the spoken briefing concise, reassuring, and delivered within the 3-minute limit?" },
+                  { id: 4, label: "Did Student A answer the airline pilot's safety questions with confidence and calm authority?" }
+                ]).map(item => `
+                  <label class="flex items-start gap-2.5 p-2.5 bg-white border border-amber-200 rounded-lg shadow-2xs cursor-pointer hover:bg-amber-50/50 transition-all select-none">
+                    <input type="checkbox" class="mt-0.5 rounded border-amber-300 text-amber-600 focus:ring-amber-500 h-4 w-4 shrink-0">
+                    <span class="text-slate-800 font-medium leading-snug">${item.label}</span>
+                  </label>
+                `).join('')}
+              </div>
+            </div>
           </div>
 
           <!-- Activity 5: Safety Check -->
@@ -5603,7 +5629,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                   <span>1. Flight Operations & Airline Briefing Talking Points:</span>
                   <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saves on typing</span>
                 </label>
-                <textarea id="notes-roleplay-s3" oninput="window.saveLessonNote('3', 'roleplay', this.value)" rows="3" placeholder="e.g., Runway 27 threshold temporarily displaced by 150m. Landing Distance Available (LDA) reduced to 1,950m. Take-Off Run Available (TORA) unchanged at 2,400m..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('3', 'roleplay') : ''}</textarea>
+                <textarea id="notes-roleplay-s3" oninput="window.saveLessonNote('3', 'roleplay', this.value)" rows="3" placeholder="e.g., Runway 26 threshold temporarily displaced by 180m. Landing Distance Available (LDA) reduced to 2,820m. Take-Off Run Available (TORA) unchanged at 3,000m from Holding Point B2..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('3', 'roleplay') : ''}</textarea>
                 <div id="print-notes-roleplay-s3" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('3', 'roleplay') : '') || '[No flight ops briefing notes recorded]'}</div>
               </div>
 
@@ -5612,7 +5638,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                   <span>2. Article 71 Exemption & Compensatory Measures Decision:</span>
                   <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saves on typing</span>
                 </label>
-                <textarea id="notes-safety-s3" oninput="window.saveLessonNote('3', 'safety', this.value)" rows="3" placeholder="e.g., Granted under Article 71 for 6 weeks. Compensatory measures: wet runway operations strictly prohibited, crosswind limit lowered to 15 kts, RFFS fire crew on standby at taxiway C during heavy arrivals..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('3', 'safety') : ''}</textarea>
+                <textarea id="notes-safety-s3" oninput="window.saveLessonNote('3', 'safety', this.value)" rows="3" placeholder="e.g., Granted under Article 71 for 45 days. Compensatory measures: wet runway operations strictly prohibited, crosswind limit lowered to 15 kts, temporary 55m RESA with decelerating overrun bed, RFFS fire crew on standby at taxiway B during operations..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('3', 'safety') : ''}</textarea>
                 <div id="print-notes-safety-s3" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('3', 'safety') : '') || '[No compensatory measures recorded]'}</div>
               </div>
             </div>

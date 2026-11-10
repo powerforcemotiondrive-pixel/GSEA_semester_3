@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Session 3 Lesson Worksheet - Special Requests & Runway Safety Cases</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 10mm 12mm 12mm 12mm;
+      @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 8pt;
+        color: #64748b;
+        font-weight: 700;
+      }
+      @bottom-left {
+        content: "ENAC • GSEA Semester 3 Technical English (AT • LV125E) • Phil PARRIS";
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 7.5pt;
+        color: #94a3b8;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 9pt;
+      line-height: 1.4;
+      color: #1e293b;
+      background: #ffffff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      page-break-after: always;
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+    }
+
+    /* Running Header */
+    .doc-header {
+      border-bottom: 2px solid #1e3a8a;
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .doc-header .agency {
+      font-size: 7.5pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #1e3a8a;
+    }
+
+    .doc-header .ref {
+      font-size: 7pt;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-weight: 700;
+      color: #64748b;
+      background: #f1f5f9;
+      padding: 1.5px 5px;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Titles */
+    h1 {
+      font-size: 16pt;
+      font-weight: 900;
+      color: #0f172a;
+      letter-spacing: -0.4px;
+      line-height: 1.15;
+      margin-bottom: 3px;
+    }
+
+    h2 {
+      font-size: 11pt;
+      font-weight: 800;
+      color: #1e3a8a;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    h3 {
+      font-size: 9pt;
+      font-weight: 750;
+      color: #0f172a;
+      margin-bottom: 3px;
+    }
+
+    p {
+      margin-bottom: 6px;
+      color: #334155;
+    }
+
+    /* Cards & Containers */
+    .card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 8px 10px;
+      margin-bottom: 8px;
+      page-break-inside: avoid;
+    }
+
+    .card-tint-blue {
+      background: #f8fafc;
+      border-color: #cbd5e1;
+    }
+
+    .card-tint-amber {
+      background: #fffbeb;
+      border-color: #fde68a;
+    }
+
+    .card-tint-purple {
+      background: #faf5ff;
+      border-color: #e9d5ff;
+    }
+
+    .card-tint-emerald {
+      background: #f0fdf4;
+      border-color: #bbf7d0;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 7pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 2px 6px;
+      border-radius: 3px;
+      vertical-align: middle;
+    }
+
+    .badge-primary {
+      background: #1e3a8a;
+      color: #ffffff;
+    }
+
+    .badge-amber {
+      background: #d97706;
+      color: #ffffff;
+    }
+
+    .badge-emerald {
+      background: #059669;
+      color: #ffffff;
+    }
+
+    .badge-purple {
+      background: #7e22ce;
+      color: #ffffff;
+    }
+
+    .badge-rose {
+      background: #e11d48;
+      color: #ffffff;
+    }
+
+    .badge-slate {
+      background: #e2e8f0;
+      color: #334155;
+    }
+
+    /* Tables */
+    .index-table, .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 8pt;
+      margin-top: 4px;
+    }
+
+    .index-table th, .data-table th {
+      background: #f1f5f9;
+      color: #0f172a;
+      font-weight: 800;
+      text-align: left;
+      padding: 5px 7px;
+      border: 1px solid #cbd5e1;
+    }
+
+    .index-table td, .data-table td {
+      padding: 4.5px 7px;
+      border: 1px solid #e2e8f0;
+      vertical-align: top;
+    }
+
+    .index-table tr:nth-child(even), .data-table tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    /* Instruction Box */
+    .instruction-box {
+      background: #f8fafc;
+      border-left: 3px solid #2563eb;
+      padding: 6px 9px;
+      margin-bottom: 8px;
+      border-radius: 0 5px 5px 0;
+      font-size: 8pt;
+    }
+
+    .instruction-box ol, .instruction-box ul {
+      padding-left: 14px;
+      margin-top: 3px;
+    }
+
+    .instruction-box li {
+      margin-bottom: 1.5px;
+      color: #334155;
+    }
+
+    /* Grid Layouts */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .code-box {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 7.2pt;
+      background: #0f172a;
+      color: #f1f5f9;
+      padding: 8px 10px;
+      border-radius: 5px;
+      line-height: 1.35;
+      white-space: pre-wrap;
+      margin-bottom: 8px;
+    }
+
+    .checklist-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 5px;
+      padding: 4px 6px;
+      background: #ffffff;
+      border: 1px solid #fde68a;
+      border-radius: 4px;
+      margin-bottom: 3px;
+      font-size: 8pt;
+    }
+
+    .checkbox {
+      width: 11px;
+      height: 11px;
+      border: 1.5px solid #d97706;
+      border-radius: 2px;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .writing-line {
+      border-bottom: 1px dashed #cbd5e1;
+      height: 20px;
+      margin-bottom: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 1: COVER, SUMMARY, OBJECTIVES & WORKSHEET INDEX               -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">École Nationale de l'Aviation Civile • Département LH/LAN</span>
+      <span class="ref">GSEA S3 • AT LV125E • SESSION 3</span>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #1e3a8a, #0f172a); color: white; padding: 12px 16px; border-radius: 7px; margin-bottom: 10px;">
+      <div style="font-size: 8pt; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px; color: #fde68a; margin-bottom: 3px;">
+        Technical English • Module 1 (EASA Docs, Safety &amp; Audits)
+      </div>
+      <h1 style="color: white; margin-bottom: 2px;">Session 3: Special Requests &amp; Runway Safety Cases</h1>
+      <p style="color: #cbd5e1; font-size: 8.5pt; line-height: 1.35; margin-bottom: 0;">
+        Article 71 Exemption Cases, Displaced Thresholds &amp; Airline Operational Briefings
+      </p>
+    </div>
+
+    <!-- Lesson Summary -->
+    <div class="card card-tint-blue" style="border-left: 3.5px solid #1e3a8a; padding: 7px 10px; margin-bottom: 8px;">
+      <h3 style="color: #1e3a8a; font-size: 9pt; margin-bottom: 3px;">📌 Lesson Summary &amp; Operational Context</h3>
+      <p style="font-size: 8pt; margin-bottom: 3px; line-height: 1.35;">
+        Unplanned structural defects beneath active runways—such as stormwater culvert subsidence—cannot be repaired without altering certified runway dimensions. Completely shutting down an international runway disrupts global flight networks and costs airlines millions of euros. Instead, airside managers use Article 71 flexibility exemptions under Regulation (EU) 2018/1139 to maintain safe flight operations by establishing temporary displaced thresholds, reduced Runway End Safety Areas (RESA), and strict compensatory limits (dry-runway only, 15-knot crosswind caps, and dedicated RFFS forward standby). In this session, GSEA students examine an authentic runway exemption dossier (EASA/ADR-EXEMP/2024-009), master 5 professional connecting words (provided that, due to, in order to, in lieu of, unless), and deliver a structured 3-minute spoken briefing to airline flight operations managers with peer feedback.
+      </p>
+      <div style="font-size: 7.5pt; color: #475569; display: flex; gap: 12px; margin-top: 4px;">
+        <span><strong>Target Level:</strong> CEFR B1–B2</span>
+        <span><strong>Audience:</strong> GSEA Student Training (TSEEAC Airside &amp; Airport Ops)</span>
+        <span><strong>Total Duration:</strong> 120 Minutes</span>
+      </div>
+    </div>
+
+    <!-- Core Spoken Learning Objectives -->
+    <div class="card" style="padding: 7px 10px; margin-bottom: 8px;">
+      <h3 style="color: #0f172a; font-size: 8.5pt; margin-bottom: 4px;">🎯 Core Spoken Learning Objectives (5 Key Competencies)</h3>
+      <table class="data-table" style="font-size: 7.5pt;">
+        <thead>
+          <tr>
+            <th style="width: 28px;">#</th>
+            <th style="width: 140px;">Learning Objective</th>
+            <th>Operational Spoken Competency</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight: 800; color: #1e3a8a;">1</td>
+            <td style="font-weight: 700;">Article 71 Exemption Framework</td>
+            <td>Explain why aerodromes require temporary exemptions under Article 71 of Regulation (EU) 2018/1139 during urgent airside civil engineering works.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 800; color: #1e3a8a;">2</td>
+            <td style="font-weight: 700;">Declared Distances &amp; Thresholds</td>
+            <td>Articulate the physical impact of a 180m displaced threshold on LDA (2,820m) vs TORA (3,000m), and justify temporary 55m RESA buffers in plain English.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 800; color: #1e3a8a;">3</td>
+            <td style="font-weight: 700;">Condition Words for Rules</td>
+            <td>Master 5 professional linking words (provided that, due to, in order to, in lieu of, unless) to explain complex safety rules and dependencies clearly.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 800; color: #1e3a8a;">4</td>
+            <td style="font-weight: 700;">3-Minute Airline Spoken Briefing</td>
+            <td>Deliver a structured, reassuring spoken briefing to airline flight operations managers, defending 4 mandatory safety rules without hesitation.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 800; color: #1e3a8a;">5</td>
+            <td style="font-weight: 700;">Practical 4-Step Safety Decision</td>
+            <td>Evaluate operational runway hazards and confirm compensatory risk controls (dry-only, 15kt crosswind cap, RFFS standby) using a plain-English safety check.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Worksheet Index / Table of Contents -->
+    <div class="card card-tint-amber" style="padding: 7px 10px; margin-bottom: 0;">
+      <h3 style="color: #92400e; font-size: 8.5pt; margin-bottom: 3px;">📑 Worksheet Table of Contents &amp; Activity Guide</h3>
+      <table class="index-table" style="font-size: 7.5pt;">
+        <thead>
+          <tr>
+            <th style="width: 60px;">Section</th>
+            <th style="width: 170px;">Activity Title</th>
+            <th>Pedagogical Focus &amp; Student Spoken Deliverable</th>
+            <th style="width: 45px; text-align: center;">Page</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 1</td>
+            <td>Warm-up: Keeping Runways Safe During Repairs</td>
+            <td>Pair discussion on runway shutdown costs, compensatory buffers, and diagnostic spot-check.</td>
+            <td style="text-align: center; font-weight: 700;">Page 2</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 2</td>
+            <td>Reading Runway Work Request (EASA/ADR-EXEMP)</td>
+            <td>Scanning authentic exemption dossier for culvert subsidence, displaced threshold, and 4 rules.</td>
+            <td style="text-align: center; font-weight: 700;">Page 3</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 3</td>
+            <td>Language Focus: Words for Rules &amp; Conditions</td>
+            <td>Mastering 5 condition words (provided that, due to, in lieu of, etc.) through practical drills.</td>
+            <td style="text-align: center; font-weight: 700;">Page 4</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 4</td>
+            <td>Spoken Simulation: Airline Operational Briefing</td>
+            <td>Delivering a 3-minute oral briefing as GSEA Operations Officer across 3 structured roles.</td>
+            <td style="text-align: center; font-weight: 700;">Page 5</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 4 (cont)</td>
+            <td>Student C: Observer &amp; Peer Feedback Checklist</td>
+            <td>Evaluating spoken briefing on 4 criteria with structured 1-minute peer coaching protocol.</td>
+            <td style="text-align: center; font-weight: 700;">Page 6</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 5 &amp; 6</td>
+            <td>Safety Check Table &amp; Operational Works Decision</td>
+            <td>4-step decision check table, 60-second pair wrap-up, and written compensatory plan.</td>
+            <td style="text-align: center; font-weight: 700;">Page 7</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 2: PART 1 — WARM-UP & ENTRY SPOT-CHECK                        -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 1: WARM-UP &amp; ENTRY SPOT-CHECK</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 1</span> Activity 1: Warm-up: Keeping Airports Open During Repairs</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions:</strong>
+      <ol>
+        <li><strong>Step 1: Pair Discussion:</strong> In pairs, discuss the 3 operational questions below. Consider the massive economic and logistical impact of closing a major international runway.</li>
+        <li><strong>Step 2: Compensatory Safeguards:</strong> Brainstorm what extra safety cushions (speed limits, weather restrictions, fire cover) can compensate for reduced runway safety buffers.</li>
+        <li><strong>Step 3: Diagnostic Check:</strong> Test your baseline knowledge with the 4 spot-check questions covering Article 71, displaced thresholds, and RESA definitions.</li>
+      </ol>
+    </div>
+
+    <!-- Pair Discussion Prompts -->
+    <div class="card card-tint-amber" style="margin-bottom: 8px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+        <h3 style="color: #92400e; font-size: 8.5pt;">💬 Pair Discussion: Operational Questions &amp; Talking Points</h3>
+        <span class="badge badge-amber">Speaking Warm-Up</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px;">
+        <div style="background: white; border: 1px solid #fde68a; border-radius: 5px; padding: 6px 8px;">
+          <p style="font-weight: 700; color: #0f172a; font-size: 8pt; margin-bottom: 2px;">
+            01. Why can't an airport simply close a runway for 6 weeks to repair a drainage ditch?
+          </p>
+          <p style="font-size: 7.5pt; color: #475569; margin-bottom: 0; font-style: italic;">
+            💡 <strong>Talking Points:</strong> A total shutdown would divert hundreds of international flights, disrupt airline networks, cause severe passenger delays, and cost millions of euros. Major airports must find safe ways to carry out essential repairs while keeping runways open.
+          </p>
+        </div>
+        <div style="background: white; border: 1px solid #fde68a; border-radius: 5px; padding: 6px 8px;">
+          <p style="font-weight: 700; color: #0f172a; font-size: 8pt; margin-bottom: 2px;">
+            02. If the runway end safety area (RESA) is reduced from 90m to 55m, what extra rules can keep aircraft safe?
+          </p>
+          <p style="font-size: 7.5pt; color: #475569; margin-bottom: 0; font-style: italic;">
+            💡 <strong>Talking Points:</strong> When a physical safety buffer is reduced, we introduce strict operational restrictions: allowing landings only when the runway is completely dry, capping crosswinds at 15 knots, displacing the landing threshold forward, and stationing a fire engine nearby.
+          </p>
+        </div>
+        <div style="background: white; border: 1px solid #fde68a; border-radius: 5px; padding: 6px 8px;">
+          <p style="font-weight: 700; color: #0f172a; font-size: 8pt; margin-bottom: 2px;">
+            03. How would you explain a temporary runway modification to an anxious airline pilot?
+          </p>
+          <p style="font-size: 7.5pt; color: #475569; margin-bottom: 0; font-style: italic;">
+            💡 <strong>Talking Points:</strong> Be clear, direct, and reassuring. State the exact available landing distance (LDA), explain the extra safety measures in place, and use clear connecting words like "Operations are authorized provided that the runway is dry."
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Diagnostic Entry Spot-Check -->
+    <div class="card card-tint-blue" style="margin-bottom: 0;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+        <h3 style="color: #1e3a8a; font-size: 8.5pt;">🎯 Aerodrome Rules Entry Spot-Check (Baseline Verification)</h3>
+        <span class="badge badge-primary">Knowledge Check</span>
+      </div>
+      <div class="grid-2" style="margin-bottom: 0;">
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 8px;">
+          <div style="font-size: 7pt; font-weight: 800; color: #2563eb; text-transform: uppercase;">Question 01</div>
+          <p style="font-weight: 700; font-size: 7.5pt; color: #0f172a; margin: 2px 0;">What is an Article 71 exemption under EASA rules?</p>
+          <p style="font-size: 7.2pt; color: #334155; margin-bottom: 0; background: #f8fafc; padding: 3px 5px; border-radius: 3px; border-left: 2px solid #2563eb;">
+            <strong>Plain English:</strong> A legal safety rule in European aviation law that allows an airport to temporarily adapt certain standards during urgent repairs, provided that compensatory safety measures maintain equivalent safety.
+          </p>
+        </div>
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 8px;">
+          <div style="font-size: 7pt; font-weight: 800; color: #2563eb; text-transform: uppercase;">Question 02</div>
+          <p style="font-weight: 700; font-size: 7.5pt; color: #0f172a; margin: 2px 0;">What happens when a runway threshold is temporarily displaced?</p>
+          <p style="font-size: 7.2pt; color: #334155; margin-bottom: 0; background: #f8fafc; padding: 3px 5px; border-radius: 3px; border-left: 2px solid #2563eb;">
+            <strong>Plain English:</strong> The designated landing point is moved further down the runway, reducing Landing Distance Available (LDA). The full runway length remains available for departures (TORA) in the opposite direction.
+          </p>
+        </div>
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 8px;">
+          <div style="font-size: 7pt; font-weight: 800; color: #2563eb; text-transform: uppercase;">Question 03</div>
+          <p style="font-weight: 700; font-size: 7.5pt; color: #0f172a; margin: 2px 0;">What does RESA stand for, and what is its purpose?</p>
+          <p style="font-size: 7.2pt; color: #334155; margin-bottom: 0; background: #f8fafc; padding: 3px 5px; border-radius: 3px; border-left: 2px solid #2563eb;">
+            <strong>Plain English:</strong> Runway End Safety Area: a cleared, flat buffer zone beyond the runway end designed to protect aircraft from damage in case they land short (undershoot) or overrun the end.
+          </p>
+        </div>
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 8px;">
+          <div style="font-size: 7pt; font-weight: 800; color: #2563eb; text-transform: uppercase;">Question 04</div>
+          <p style="font-weight: 700; font-size: 7.5pt; color: #0f172a; margin: 2px 0;">Who must receive advance notification before temporary runway works commence?</p>
+          <p style="font-size: 7.2pt; color: #334155; margin-bottom: 0; background: #f8fafc; padding: 3px 5px; border-radius: 3px; border-left: 2px solid #2563eb;">
+            <strong>Plain English:</strong> Airlines, flight operations dispatchers, air traffic controllers, and pilots must receive advance notice via official NOTAMs and AIP Supplements before any runway changes take effect.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 3: PART 2 — AUTHENTIC DOCUMENT & COMPREHENSION CHECK          -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 2: AUTHENTIC EASA DOCUMENT SCAN</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 2</span> Activity 2: Reading Authentic Runway Work Request &amp; Comprehension Check</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions:</strong>
+      <ol>
+        <li><strong>Step 1: Document Scan:</strong> Scan the authentic EASA Article 71 exemption dossier below for Toulouse-Blagnac Airport (LFBO).</li>
+        <li><strong>Step 2: Geometry &amp; Distances:</strong> Identify the physical changes: displaced threshold distance, revised LDA, preserved TORA, and temporary RESA.</li>
+        <li><strong>Step 3: Compensatory Measures:</strong> Note the 4 mandatory safety rules required to maintain equivalent safety during the 45-day works period.</li>
+        <li><strong>Step 4: Comprehension Checks:</strong> Verify your understanding with the 4 reading checks at the bottom of the page.</li>
+      </ol>
+    </div>
+
+    <!-- Authentic Document Box -->
+    <div style="margin-bottom: 8px;">
+      <div style="background: #1e3a8a; color: white; padding: 4px 8px; border-radius: 5px 5px 0 0; font-size: 7.5pt; font-weight: 700; display: flex; justify-content: space-between;">
+        <span>AUTHENTIC REGULATORY DOSSIER • EASA CS-ADR-DSN / REGULATION (EU) 2018/1139</span>
+        <span style="font-family: monospace;">File Ref: EASA/ADR-EXEMP/2024-009</span>
+      </div>
+      <div class="code-box" style="border-radius: 0 0 5px 5px; margin-bottom: 0;">AERODROME SAFETY DIRECTIVE • TEMPORARY EXEMPTION DOSSIER
+File Ref: EASA/ADR-EXEMP/2024-009
+Aerodrome: Toulouse-Blagnac (LFBO) • Runway 26
+Subject: Article 71 Flexibility Provision — Stormwater Culvert Subsidence Remediation
+
+1. OPERATIONAL CONTEXT:
+Heavy winter runoff caused acute soil erosion and structural subsidence around the reinforced concrete stormwater culvert located beneath the Runway 26 threshold safety strip. Structural integrity analysis mandates immediate excavation and concrete relining.
+
+2. REVISED RUNWAY GEOMETRY:
+- Certified Total Runway Length: 3,000 metres.
+- Threshold 26 Displaced: Temporarily displaced forward by 180 metres.
+- Landing Distance Available (LDA): Reduced to 2,820 metres (sufficient for Code C/D commercial transports).
+- Take-Off Run Available (TORA): Preserved at 3,000 metres for Runway 26 departures.
+- Runway End Safety Area (RESA): Temporarily reduced from certified 90m to 55m adjacent to the excavation zone.
+
+3. MANDATORY COMPENSATORY SAFETY MEASURES:
+In accordance with Regulation (EU) 2018/1139 Article 71, continuous flight operations are conditionally approved subject to strict compensatory risk mitigation:
+(a) Dry Runway Constraint: Runway 26 landing operations are strictly restricted to completely dry surface conditions. In the event of dampness, wet pavement, or standing water, landings must immediately divert to Runway 14/32.
+(b) Maximum Crosswind Limitation: The maximum allowable crosswind component for landing aircraft is capped at 15 knots.
+(c) Frangible Delineation &amp; Lighting: The worksite perimeter is enclosed with low-mass frangible barriers and continuous flashing red warning beacons.
+(d) Dedicated RFFS Standby: One Major Foam Tender (RFFS Category 7) shall maintain a 60-second forward standby position at Taxiway B holding point during all landing windows.</div>
+    </div>
+
+    <!-- Reading Comprehension Checks Grid -->
+    <div class="card card-tint-blue" style="margin-bottom: 0;">
+      <h3 style="color: #1e3a8a; font-size: 8.5pt; margin-bottom: 4px;">🔍 Reading Comprehension Check (Scan the text above)</h3>
+      <div class="grid-2" style="margin-bottom: 0;">
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 5px; padding: 5px 7px;">
+          <div style="font-size: 7pt; font-weight: 800; color: #2563eb; text-transform: uppercase;">Check 01</div>
+          <p style="font-weight: 700; font-size: 7.5pt; color: #0f172a; margin: 1px 0;">Why does the Runway 26 threshold need to be displaced by 180 metres?</p>
+          <p style="font-size: 7.2pt; color: #059669; font-weight: 600; margin-bottom: 0;">
+            <strong>Answer:</strong> To keep landing aircraft safely away from the stormwater drainage culvert excavation work, while preserving 2,820m of safe landing distance (LDA).
+          </p>
+        </div>
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 5px; padding: 5px 7px;">
+          <div style="font-size: 7pt; font-weight: 800; color: #2563eb; text-transform: uppercase;">Check 02</div>
+          <p style="font-weight: 700; font-size: 7.5pt; color: #0f172a; margin: 1px 0;">What are the two certified runway distance parameters (LDA &amp; TORA)?</p>
+          <p style="font-size: 7.2pt; color: #059669; font-weight: 600; margin-bottom: 0;">
+            <strong>Answer:</strong> LDA is reduced to 2,820 metres (for landings), while TORA remains at the full 3,000 metres (for departures from Holding Point B2).
+          </p>
+        </div>
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 5px; padding: 5px 7px;">
+          <div style="font-size: 7pt; font-weight: 800; color: #2563eb; text-transform: uppercase;">Check 03</div>
+          <p style="font-weight: 700; font-size: 7.5pt; color: #0f172a; margin: 1px 0;">What weather restrictions apply during the temporary exemption period?</p>
+          <p style="font-size: 7.2pt; color: #059669; font-weight: 600; margin-bottom: 0;">
+            <strong>Answer:</strong> Aircraft may only land when the runway is completely dry; operations are prohibited in rain, and crosswinds must not exceed 15 knots.
+          </p>
+        </div>
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 5px; padding: 5px 7px;">
+          <div style="font-size: 7pt; font-weight: 800; color: #2563eb; text-transform: uppercase;">Check 04</div>
+          <p style="font-weight: 700; font-size: 7.5pt; color: #0f172a; margin: 1px 0;">What dedicated emergency rescue measure is required on site?</p>
+          <p style="font-size: 7.2pt; color: #059669; font-weight: 600; margin-bottom: 0;">
+            <strong>Answer:</strong> One dedicated airport fire rescue tender (RFFS Category 7) must maintain 60-second forward standby at Taxiway B holding point during landing windows.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 4: PART 3 — LANGUAGE CLINIC & CONNECTING WORDS                -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 3: LANGUAGE CLINIC &amp; CONNECTING WORDS</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 3</span> Activity 3: Language Focus: Connecting Words for Explaining Rules &amp; Conditions</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions:</strong>
+      <ol>
+        <li><strong>Step 1: Connecting Words Table:</strong> Review the 5 connecting words below. Notice how phrases like <em>'provided that'</em>, <em>'due to'</em>, and <em>'in lieu of'</em> make spoken briefings clear, logical, and professional.</li>
+        <li><strong>Step 2: Practice Gap-Fill Drills:</strong> Complete the 5 gap-fill sentences below. Verify the correct option and read the grammatical rationale aloud with your partner.</li>
+        <li><strong>Step 3: Spoken Formulation:</strong> Practice delivering 1-sentence conditional summaries aloud using the formula: <em>"Condition + Main Rule + Safety Benefit"</em>.</li>
+      </ol>
+    </div>
+
+    <!-- Connecting Words Table -->
+    <div class="card" style="padding: 6px 8px; margin-bottom: 8px;">
+      <h3 style="color: #0f172a; font-size: 8.5pt; margin-bottom: 3px;">📘 Key Connecting Words for Safety Cases &amp; Conditional Rules</h3>
+      <table class="data-table" style="font-size: 7.5pt;">
+        <thead>
+          <tr>
+            <th style="width: 130px;">Connecting Word</th>
+            <th style="width: 120px;">Plain English Meaning</th>
+            <th>Real Airport Example</th>
+            <th style="width: 140px;">Memory &amp; Spoken Tip</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Provided that / As long as</td>
+            <td>On the condition that</td>
+            <td>"Aircraft may land <strong>provided that</strong> the runway surface is dry."</td>
+            <td>Introduces a strict mandatory safety condition.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Due to / Because of</td>
+            <td>For the reason that</td>
+            <td>"The safety area is reduced <strong>due to</strong> urgent culvert repairs."</td>
+            <td>Followed by a noun phrase explaining the cause.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">In order to</td>
+            <td>For the purpose of</td>
+            <td>"We displaced Threshold 26 <strong>in order to</strong> protect stopping distance."</td>
+            <td>Followed by an infinitive verb (<em>'in order to protect'</em>).</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">In lieu of</td>
+            <td>In place of / Instead of</td>
+            <td>"We positioned temporary markers <strong>in lieu of</strong> standard paint."</td>
+            <td>Useful when one safety measure replaces another.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Unless</td>
+            <td>Except if</td>
+            <td>"No aircraft may land <strong>unless</strong> the crosswind is under 15 knots."</td>
+            <td>Sets a clear boundary condition or operational cutoff.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 5 Practice Drills -->
+    <div class="card card-tint-blue" style="padding: 6px 8px; margin-bottom: 8px;">
+      <h3 style="color: #1e3a8a; font-size: 8.5pt; margin-bottom: 3px;">✏️ Practice Drills: Choose the Correct Connecting Word</h3>
+      <div style="display: flex; flex-direction: column; gap: 4.5px;">
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 6px; font-size: 7.5pt;">
+          <strong>1.</strong> Aircraft may land on Runway 26 <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> the runway surface is completely dry.<br>
+          <span style="color: #475569;">Options: [provided that | in lieu of | due to]</span> &rarr;
+          <strong style="color: #059669;">provided that</strong> <em>('Provided that' introduces the mandatory safety condition: dry runway).</em>
+        </div>
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 6px; font-size: 7.5pt;">
+          <strong>2.</strong> The available safety area was temporarily reduced <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> urgent culvert reconstruction.<br>
+          <span style="color: #475569;">Options: [due to | in order to | unless]</span> &rarr;
+          <strong style="color: #059669;">due to</strong> <em>('Due to' is followed by the noun phrase 'urgent culvert reconstruction', explaining the cause).</em>
+        </div>
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 6px; font-size: 7.5pt;">
+          <strong>3.</strong> The threshold was displaced by 180 metres <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> give pilots full stopping distance.<br>
+          <span style="color: #475569;">Options: [in order to | provided that | in lieu of]</span> &rarr;
+          <strong style="color: #059669;">in order to</strong> <em>('In order to' expresses purpose and is followed by the base verb 'give').</em>
+        </div>
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 6px; font-size: 7.5pt;">
+          <strong>4.</strong> High-intensity flashing guard lights were installed <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> standard painted markings.<br>
+          <span style="color: #475569;">Options: [in lieu of | unless | due to]</span> &rarr;
+          <strong style="color: #059669;">in lieu of</strong> <em>('In lieu of' means 'instead of' or 'replacing').</em>
+        </div>
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 6px; font-size: 7.5pt;">
+          <strong>5.</strong> Approaching aircraft must divert to Runway 14/32 <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> the crosswind component is 15 knots or less.<br>
+          <span style="color: #475569;">Options: [unless | in order to | because of]</span> &rarr;
+          <strong style="color: #059669;">unless</strong> <em>('Unless' means 'except if the crosswind is 15 knots or less').</em>
+        </div>
+      </div>
+    </div>
+
+    <!-- Spoken Clinic Callout -->
+    <div class="card card-tint-emerald" style="padding: 6px 8px; margin-bottom: 0;">
+      <h3 style="color: #065f46; font-size: 8pt; margin-bottom: 2px;">💡 Executive Speaking Clinic: Linking Complex Rules Aloud</h3>
+      <p style="font-size: 7.5pt; color: #065f46; margin-bottom: 0; line-height: 1.35;">
+        In operational safety meetings, avoid trailing, disorganized sentences. Use the professional pattern: <strong>"Due to [cause], we have [action taken] in order to [safety objective], provided that [strict condition] is respected."</strong> Practice saying: <em>"Due to culvert subsidence, we displaced Threshold 26 by 180 metres in order to protect stopping distance, provided that the runway is dry."</em>
+      </p>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 5: PART 4 — SPOKEN SIMULATION: AIRLINE BRIEFING               -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 4: SPOKEN SIMULATION — AIRLINE BRIEFING</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 4</span> Activity 4: Spoken Briefing: Explaining the Plan to Airline Pilots</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions:</strong>
+      <ol>
+        <li><strong>Step 1: Role Allocation:</strong> Form groups of 3 students: Student A (GSEA Operations Officer / Presenter), Student B (Airline Flight Ops Manager), and Student C (Observer / Peer Coach).</li>
+        <li><strong>Step 2: Preparation (6 Mins):</strong> Review the operational scenario and role cards below. Student A prepares a structured 3-minute spoken presentation covering the 4 mandatory safety rules.</li>
+        <li><strong>Step 3: Spoken Briefing (3 Mins):</strong> Student A delivers the briefing aloud without reading verbatim from notes. Speak calmly, make eye contact, and use the provided briefing phrases.</li>
+        <li><strong>Step 4: Airline Challenge (2 Mins):</strong> Student B asks 2 realistic challenge questions regarding wet runway diversions and crosswind limits. Student A responds with authority.</li>
+      </ol>
+    </div>
+
+    <!-- Scenario Box -->
+    <div class="card card-tint-blue" style="border-left: 3px solid #2563eb; padding: 6px 8px; margin-bottom: 8px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+        <h3 style="color: #1e3a8a; font-size: 8.5pt;">📋 Operational Scenario: Runway 26 Airline Briefing</h3>
+        <span class="badge badge-primary">Briefing Context</span>
+      </div>
+      <p style="font-size: 7.5pt; line-height: 1.35; color: #1e293b; margin-bottom: 0;">
+        You are the GSEA Aerodrome Operations Officer briefing the Airline Flight Operations Committee two weeks before the Runway 26 culvert repairs begin. The airline managers are worried about flight delays, diversions, fuel burn, and passenger disruption. Your objective is to explain the civil engineering necessity and prove that the 4 compensatory safety rules guarantee 100% safety.
+      </p>
+    </div>
+
+    <!-- 3 Role Cards -->
+    <div class="grid-3" style="margin-bottom: 8px;">
+      <!-- Role A -->
+      <div class="card" style="border-top: 3px solid #2563eb; padding: 6px 8px; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+          <h3 style="color: #1e3a8a; font-size: 8pt;">Role A: GSEA Ops Officer</h3>
+          <span class="badge badge-primary" style="font-size: 6.5pt;">Presenter</span>
+        </div>
+        <ul style="font-size: 7.2pt; padding-left: 12px; color: #334155; line-height: 1.35;">
+          <li>Welcome airline managers &amp; state purpose clearly.</li>
+          <li>Explain cause: damaged stormwater culverts.</li>
+          <li>Detail 4 rules: 180m displaced threshold (2,820m LDA), dry ban, 15kt crosswind cap, fire tender.</li>
+          <li>Reassure pilots that flight safety is 100% protected.</li>
+        </ul>
+      </div>
+
+      <!-- Role B -->
+      <div class="card" style="border-top: 3px solid #d97706; padding: 6px 8px; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+          <h3 style="color: #92400e; font-size: 8pt;">Role B: Airline Flight Ops</h3>
+          <span class="badge badge-amber" style="font-size: 6.5pt;">Challenger</span>
+        </div>
+        <ul style="font-size: 7.2pt; padding-left: 12px; color: #334155; line-height: 1.35;">
+          <li>Listen carefully and note operational constraints.</li>
+          <li>Challenge 1: "What happens if sudden rain starts while our A320 is on short final?"</li>
+          <li>Challenge 2: "Why is crosswind capped at 15 knots, and will this force expensive diversions?"</li>
+        </ul>
+      </div>
+
+      <!-- Role C -->
+      <div class="card" style="border-top: 3px solid #7e22ce; padding: 6px 8px; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+          <h3 style="color: #6b21a8; font-size: 8pt;">Role C: Observer / Coach</h3>
+          <span class="badge badge-purple" style="font-size: 6.5pt;">Evaluator</span>
+        </div>
+        <ul style="font-size: 7.2pt; padding-left: 12px; color: #334155; line-height: 1.35;">
+          <li>Time the briefing strictly (target: 3 minutes).</li>
+          <li>Check: Did Student A explain all 4 safety rules?</li>
+          <li>Check: Were condition words used correctly?</li>
+          <li>Fill out Student C Peer Checklist on Page 6.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Useful Phrases Box -->
+    <div class="card card-tint-emerald" style="padding: 6px 8px; margin-bottom: 0;">
+      <h3 style="color: #065f46; font-size: 8pt; margin-bottom: 3px;">🗣️ Useful Spoken Briefing Phrases (Clear &amp; Reassuring)</h3>
+      <div class="grid-2" style="font-size: 7.2pt; color: #065f46; margin-bottom: 0;">
+        <div>
+          <p style="margin-bottom: 2px;">&bull; "Good morning everyone. Today I will brief you on the upcoming Runway 26 works..."</p>
+          <p style="margin-bottom: 2px;">&bull; "The repairs are necessary due to damaged stormwater drainage culverts."</p>
+          <p style="margin-bottom: 2px;">&bull; "To ensure all flights remain completely safe, we have put in place 4 mandatory safety rules."</p>
+          <p style="margin-bottom: 0;">&bull; "First, the threshold has been displaced by 180 metres in order to give aircraft full landing distance."</p>
+        </div>
+        <div>
+          <p style="margin-bottom: 2px;">&bull; "Second, landings are strictly prohibited when the runway is wet; flights will divert to Runway 14/32."</p>
+          <p style="margin-bottom: 2px;">&bull; "Third, crosswinds are capped at 15 knots, and fourth, a dedicated fire truck is on 60-second standby."</p>
+          <p style="margin-bottom: 0;">&bull; "Are there any questions regarding our operational safety plan?"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 6: PART 4 (CONT) — OBSERVER CHECKLIST & PEER COACHING         -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 4 (CONT): OBSERVER CHECKLIST &amp; COACHING</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 4 (cont)</span> Activity 4: Student C: Observer &amp; Peer Feedback Checklist</h2>
+
+    <div class="instruction-box">
+      <strong>Student C Instructions (Observer &amp; Peer Coach):</strong>
+      <ol>
+        <li><strong>Step 1: Active Listening:</strong> Listen attentively during Student A's 3-minute oral briefing and the subsequent Q&amp;A session with Student B.</li>
+        <li><strong>Step 2: Complete Checklist:</strong> Check off the 4 evaluation criteria below. Note specific phrases used or missed.</li>
+        <li><strong>Step 3: 1-Minute Peer Coaching:</strong> Deliver oral feedback following the 3-step coaching protocol: Praise &rarr; Growth Point &rarr; Practice.</li>
+      </ol>
+    </div>
+
+    <!-- Student C Peer Checklist -->
+    <div class="card card-tint-amber" style="padding: 8px 10px; margin-bottom: 8px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+        <h3 style="color: #92400e; font-size: 8.5pt;">📋 Student C Interactive Peer Evaluation Checklist</h3>
+        <span class="badge badge-amber">Observer Form</span>
+      </div>
+      <p style="font-size: 7.5pt; color: #78350f; margin-bottom: 6px;">Check off each criterion during the spoken simulation:</p>
+      
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div>
+          <strong style="color: #0f172a;">1. Explanation of 4 Mandatory Safety Rules:</strong><br>
+          <span style="color: #475569; font-size: 7.2pt;">Did Student A clearly explain the 180m displaced threshold (LDA 2,820m), the dry-runway constraint, the 15-knot crosswind cap, and the dedicated Category 7 fire engine forward standby?</span>
+        </div>
+      </div>
+
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div>
+          <strong style="color: #0f172a;">2. Use of Professional Condition Words:</strong><br>
+          <span style="color: #475569; font-size: 7.2pt;">Did both speakers use condition linkers accurately (<em>'provided that'</em>, <em>'due to'</em>, <em>'in order to'</em>, <em>'in lieu of'</em>, <em>'unless'</em>) to explain the operational justification without confusion?</span>
+        </div>
+      </div>
+
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div>
+          <strong style="color: #0f172a;">3. Time Management &amp; Spoken Delivery:</strong><br>
+          <span style="color: #475569; font-size: 7.2pt;">Was the briefing delivered within the 3-minute limit? Was the tone confident, reassuring, and professional, maintaining eye contact without verbatim reading?</span>
+        </div>
+      </div>
+
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div>
+          <strong style="color: #0f172a;">4. Airline Challenge Handling (Q&amp;A Authority):</strong><br>
+          <span style="color: #475569; font-size: 7.2pt;">Did Student A respond to Student B's questions on sudden weather changes and flight diversions with calm authority, defending flight safety as the absolute priority?</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1-Minute Peer Coaching Protocol -->
+    <div class="card card-tint-purple" style="padding: 8px 10px; margin-bottom: 8px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+        <h3 style="color: #6b21a8; font-size: 8.5pt;">⏱️ 1-Minute Spoken Peer Coaching Protocol</h3>
+        <span class="badge badge-purple">Feedback Structure</span>
+      </div>
+      <div class="grid-3" style="font-size: 7.2pt; color: #3b0764; margin-bottom: 0;">
+        <div style="background: white; border: 1px solid #e9d5ff; border-radius: 4px; padding: 4px 6px;">
+          <strong style="color: #7e22ce;">Step 1: Praise (15s)</strong><br>
+          "Your opening was very clear, and you explained the 180m threshold displacement and 2,820m LDA with great confidence."
+        </div>
+        <div style="background: white; border: 1px solid #e9d5ff; border-radius: 4px; padding: 4px 6px;">
+          <strong style="color: #7e22ce;">Step 2: Growth (25s)</strong><br>
+          "When explaining the crosswind rule, you hesitated slightly. Make sure to pause before stating the 15-knot limit."
+        </div>
+        <div style="background: white; border: 1px solid #e9d5ff; border-radius: 4px; padding: 4px 6px;">
+          <strong style="color: #7e22ce;">Step 3: Action Tip (20s)</strong><br>
+          "Practice saying: 'For crosswinds | our limit is strictly 15 knots | due to the narrower safety margin.'"
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripted Model Dialogue -->
+    <div class="card" style="padding: 6px 8px; margin-bottom: 0;">
+      <h3 style="color: #0f172a; font-size: 8pt; margin-bottom: 2px;">💬 Scripted Model Dialogue: Authentic Peer Feedback</h3>
+      <div style="font-size: 7.2pt; color: #334155; line-height: 1.35;">
+        <p style="margin-bottom: 2px;"><strong>Student C (Coach):</strong> "Great briefing! You covered all 4 rules and answered the question about sudden rain immediately: 'If rain begins on short final, aircraft must execute a missed approach and divert to Runway 14/32.' That sounded very professional."</p>
+        <p style="margin-bottom: 2px;"><strong>Student A (Presenter):</strong> "Thanks! Was my pace okay when explaining the declared distances?"</p>
+        <p style="margin-bottom: 0;"><strong>Student C (Coach):</strong> "The numbers were accurate, but remember to emphasize <em>'provided that'</em> to make the dry runway requirement stand out clearly to the airline managers."</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 7: PART 5 & 6 — SAFETY CHECK & OPERATIONAL DECISION           -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 5 &amp; 6: SAFETY CHECK &amp; OPERATIONAL NOTES</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 5</span> Activity 5: Safety Check: Is it Safe to Land?</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions:</strong>
+      <ol>
+        <li><strong>Step 1: Evaluate the Hazard:</strong> Review the 4 simple questions in the Safety Check table below.</li>
+        <li><strong>Step 2: Spoken Defense:</strong> In pairs, practice explaining each row aloud in your own words. Why do compensatory rules ensure total safety?</li>
+        <li><strong>Step 3: Confirm Decision:</strong> Confirm the agreed operational decision as a team.</li>
+      </ol>
+    </div>
+
+    <!-- Safety Check Table -->
+    <div class="card" style="padding: 6px 8px; margin-bottom: 8px;">
+      <h3 style="color: #0f172a; font-size: 8.5pt; margin-bottom: 3px;">🛡️ Decision Check Table: Reduced RESA &amp; Compensatory Rules</h3>
+      <table class="data-table" style="font-size: 7.5pt;">
+        <thead>
+          <tr>
+            <th style="width: 130px;">Simple Safety Question</th>
+            <th>Agreed Class Operational Answer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a; background: #f8fafc;">1. What is the problem?</td>
+            <td>The Runway End Safety Area (RESA) on Runway 26 is temporarily reduced from certified 90m to 55m for 45 days during urgent stormwater culvert subsidence repairs.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a; background: #f8fafc;">2. What could happen?</td>
+            <td>If an approaching aircraft lands long or suffers degraded braking, it could overrun the runway into the excavation ditch, risking landing gear collapse.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a; background: #f8fafc;">3. Why is it safe anyway?</td>
+            <td>Four strict compensatory rules protect operations: 1) 180m displaced threshold gives full stopping distance (2,820m LDA); 2) Landings banned on wet pavement; 3) Crosswinds capped at 15 knots; 4) Fire tender on 60-second forward standby at Holding Point B2.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 800; color: #059669; background: #f0fdf4;">4. Our Decision</td>
+            <td><strong>APPROVED:</strong> The 4 compensatory safety rules fully protect flight operations; temporary exemption granted for 45 days under Article 71 of Regulation (EU) 2018/1139.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Rules to Reality Wrap-Up Prompt -->
+    <div class="card card-tint-amber" style="padding: 5px 8px; margin-bottom: 8px;">
+      <h3 style="color: #92400e; font-size: 8pt; margin-bottom: 2px;">⚡ Rules to Reality: 60-Second Pair Spoken Wrap-Up</h3>
+      <p style="font-size: 7.5pt; color: #78350f; margin-bottom: 0; line-height: 1.35;">
+        In pairs, deliver an unscripted 60-second summary to an incoming safety inspector: <strong>1) Why is Article 71 needed?</strong> <strong>2) How does displacing the threshold protect aircraft?</strong> <strong>3) What happens if the weather deteriorates?</strong>
+      </p>
+    </div>
+
+    <!-- Part 6: Operational Notes & Action Plan -->
+    <h2><span class="badge badge-slate">Part 6</span> Activity 6: Operational Notes &amp; Runway Works Decision</h2>
+
+    <div class="card card-tint-blue" style="padding: 6px 8px; margin-bottom: 0;">
+      <div style="margin-bottom: 6px;">
+        <h3 style="color: #1e3a8a; font-size: 8pt; margin-bottom: 1px;">1. Flight Operations &amp; Airline Briefing Talking Points:</h3>
+        <p style="font-size: 7pt; color: #64748b; margin-bottom: 3px;">Record key speaking points: declared distances (LDA 2,820m, TORA 3,000m), NOTAM publication, and pilot communication:</p>
+        <div class="writing-line"></div>
+        <div class="writing-line"></div>
+      </div>
+
+      <div>
+        <h3 style="color: #1e3a8a; font-size: 8pt; margin-bottom: 1px;">2. Article 71 Exemption &amp; Compensatory Measures Decision:</h3>
+        <p style="font-size: 7pt; color: #64748b; margin-bottom: 3px;">Record the 4 agreed compensatory safeguards and airport monitoring actions:</p>
+        <div class="writing-line"></div>
+        <div class="writing-line"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

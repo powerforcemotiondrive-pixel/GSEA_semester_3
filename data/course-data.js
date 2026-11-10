@@ -2746,6 +2746,7 @@
       },
       "3": {
         "session": 3,
+        "title": "Special Requests & Runway Safety Cases",
         "overview": {
           "intro": "Welcome to Session 3 of Technical English! In this lesson, we explore an authentic EASA runway safety case and temporary exemption request. You will practice using linking words (provided that, in lieu of) to explain safety solutions, review temporary runway works, and give a short spoken safety briefing to airline pilots.",
           "whyItMatters": "Unplanned structural defects beneath active runways—such as stormwater culvert subsidence—cannot be repaired without altering certified runway dimensions. Completely shutting down an international runway disrupts global flight networks and costs millions of euros. Instead, airside managers use Article 71 exemptions to maintain safe flight operations by establishing temporary displaced thresholds, reduced Runway End Safety Areas (RESA), and strict weather limits (dry-runway only, 15-knot crosswind caps). Delivering precise, unambiguous verbal briefings ensures airline chief pilots and flight crews trust and accept modified runway operations.",
@@ -2817,15 +2818,15 @@
               "Ensure both partners actively speak and explain practical solutions without reading verbatim."
             ],
             "statements": {
-              "group1": "Group 1 Statement (Physical Geometry & Declared Distances): How does displacing Threshold 26 forward by 320m alter the declared distances (TORA, TODA, ASDA, LDA), and how does a 120m temporary RESA guarantee overrun protection?",
+              "group1": "Group 1 Statement (Physical Geometry & Declared Distances): How does displacing Threshold 26 forward by 180m alter the declared distances (TORA, TODA, ASDA, LDA), and how does a 55m temporary RESA with strict speed and weather limits guarantee overrun protection?",
               "group2": "Group 2 Statement (Compensatory Measures & ELOS): Why are dry-runway limitations, a 15-knot crosswind cap, and dedicated RFFS rapid intervention standby essential to achieve an Equivalent Level of Safety under Article 71?",
               "group3": "Group 3 Statement (Airline Briefing & Linguistic Connectors): Deliver a 2-minute verbal briefing to airline flight operations managers using conditional connecting words ('provided that', 'subject to', 'in lieu of') to reassure them that modified operations are safe."
             },
             "usefulPhrases": [
               "Under Article 71 of Regulation (EU) 2018/1139, our airport is implementing a temporary exemption for...",
-              "To protect the excavation site, Threshold 26 is displaced by 320 metres, resulting in an LDA of 2,680 metres...",
+              "To protect the excavation site, Threshold 26 is displaced by 180 metres in order to guarantee full stopping distance...",
               "Operations are strictly authorized provided that the runway surface condition remains completely dry...",
-              "A temporary 120-metre RESA has been established in lieu of the standard 240-metre recommended buffer...",
+              "A temporary 55-metre RESA has been established in lieu of the standard 90-metre required buffer...",
               "We have issued AIP SUP 014/24 and trigger NOTAMs in order to ensure seamless flight planning for your dispatchers..."
             ]
           },
@@ -2880,7 +2881,7 @@
           ]
         },
         "lessonPlan": {
-          "title": "Session 3 Lesson Plan (2 Hours)",
+          "title": "Session 3 Lesson Plan - Special Requests & Runway Safety Cases (2 Hours)",
           "summary": "A 2-hour communicative spoken English session on temporary aerodrome works, Article 71 exemptions, connecting words for explaining rules, an airline operational briefing simulation, and a simple Safety Check.",
           "items": [
             {
@@ -3209,6 +3210,24 @@
               "Second, landings are strictly prohibited when the runway is wet; flights will divert to Runway 14/32.",
               "Third, crosswinds are capped at 15 knots, and fourth, a dedicated fire truck is on 60-second standby.",
               "Are there any questions regarding our operational plan?"
+            ],
+            "peerChecklist": [
+              {
+                "id": 1,
+                "label": "Did Student A explain the 4 safety rules clearly (displaced threshold 180m, dry runway only, 15 kt crosswind, RFFS standby)?"
+              },
+              {
+                "id": 2,
+                "label": "Did both speakers use condition words correctly (provided that, due to, in lieu of, unless, in order to)?"
+              },
+              {
+                "id": 3,
+                "label": "Was the spoken briefing concise, reassuring, and delivered within the 3-minute limit?"
+              },
+              {
+                "id": 4,
+                "label": "Did Student A answer the airline pilot's safety questions with confidence and calm authority?"
+              }
             ]
           },
           "safetyCheck": {
@@ -12880,6 +12899,7 @@
         },
         "3": {
           "session": 3,
+          "title": "Special Requests & Runway Safety Cases",
           "overview": {
             "intro": "Welcome to Session 3 of Technical English! In this lesson, we explore an authentic EASA runway safety case and temporary exemption request. You will practice using linking words (provided that, in lieu of) to explain safety solutions, review temporary runway works, and give a short spoken safety briefing to airline pilots.",
             "whyItMatters": "Unplanned structural defects beneath active runways—such as stormwater culvert subsidence—cannot be repaired without altering certified runway dimensions. Completely shutting down an international runway disrupts global flight networks and costs millions of euros. Instead, airside managers use Article 71 exemptions to maintain safe flight operations by establishing temporary displaced thresholds, reduced Runway End Safety Areas (RESA), and strict weather limits (dry-runway only, 15-knot crosswind caps). Delivering precise, unambiguous verbal briefings ensures airline chief pilots and flight crews trust and accept modified runway operations.",
@@ -12951,15 +12971,15 @@
                 "Ensure both partners actively speak and explain practical solutions without reading verbatim."
               ],
               "statements": {
-                "group1": "Group 1 Statement (Physical Geometry & Declared Distances): How does displacing Threshold 26 forward by 320m alter the declared distances (TORA, TODA, ASDA, LDA), and how does a 120m temporary RESA guarantee overrun protection?",
+                "group1": "Group 1 Statement (Physical Geometry & Declared Distances): How does displacing Threshold 26 forward by 180m alter the declared distances (TORA, TODA, ASDA, LDA), and how does a 55m temporary RESA with strict speed and weather limits guarantee overrun protection?",
                 "group2": "Group 2 Statement (Compensatory Measures & ELOS): Why are dry-runway limitations, a 15-knot crosswind cap, and dedicated RFFS rapid intervention standby essential to achieve an Equivalent Level of Safety under Article 71?",
                 "group3": "Group 3 Statement (Airline Briefing & Linguistic Connectors): Deliver a 2-minute verbal briefing to airline flight operations managers using conditional connecting words ('provided that', 'subject to', 'in lieu of') to reassure them that modified operations are safe."
               },
               "usefulPhrases": [
                 "Under Article 71 of Regulation (EU) 2018/1139, our airport is implementing a temporary exemption for...",
-                "To protect the excavation site, Threshold 26 is displaced by 320 metres, resulting in an LDA of 2,680 metres...",
+                "To protect the excavation site, Threshold 26 is displaced by 180 metres in order to guarantee full stopping distance...",
                 "Operations are strictly authorized provided that the runway surface condition remains completely dry...",
-                "A temporary 120-metre RESA has been established in lieu of the standard 240-metre recommended buffer...",
+                "A temporary 55-metre RESA has been established in lieu of the standard 90-metre required buffer...",
                 "We have issued AIP SUP 014/24 and trigger NOTAMs in order to ensure seamless flight planning for your dispatchers..."
               ]
             },
@@ -13014,7 +13034,7 @@
             ]
           },
           "lessonPlan": {
-            "title": "Session 3 Lesson Plan (2 Hours)",
+            "title": "Session 3 Lesson Plan - Special Requests & Runway Safety Cases (2 Hours)",
             "summary": "A 2-hour communicative spoken English session on temporary aerodrome works, Article 71 exemptions, connecting words for explaining rules, an airline operational briefing simulation, and a simple Safety Check.",
             "items": [
               {
@@ -13343,6 +13363,24 @@
                 "Second, landings are strictly prohibited when the runway is wet; flights will divert to Runway 14/32.",
                 "Third, crosswinds are capped at 15 knots, and fourth, a dedicated fire truck is on 60-second standby.",
                 "Are there any questions regarding our operational plan?"
+              ],
+              "peerChecklist": [
+                {
+                  "id": 1,
+                  "label": "Did Student A explain the 4 safety rules clearly (displaced threshold 180m, dry runway only, 15 kt crosswind, RFFS standby)?"
+                },
+                {
+                  "id": 2,
+                  "label": "Did both speakers use condition words correctly (provided that, due to, in lieu of, unless, in order to)?"
+                },
+                {
+                  "id": 3,
+                  "label": "Was the spoken briefing concise, reassuring, and delivered within the 3-minute limit?"
+                },
+                {
+                  "id": 4,
+                  "label": "Did Student A answer the airline pilot's safety questions with confidence and calm authority?"
+                }
               ]
             },
             "safetyCheck": {
