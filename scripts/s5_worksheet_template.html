@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Session 5 Lesson Worksheet - Multi-Source Incident Investigation & Root Cause Analysis</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 10mm 12mm 12mm 12mm;
+      @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 8pt;
+        color: #64748b;
+        font-weight: 700;
+      }
+      @bottom-left {
+        content: "ENAC • GSEA Semester 3 Technical English (AT • LV125E) • Phil PARRIS";
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 7.5pt;
+        color: #94a3b8;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 9pt;
+      line-height: 1.4;
+      color: #1e293b;
+      background: #ffffff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      page-break-after: always;
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+    }
+
+    /* Running Header */
+    .doc-header {
+      border-bottom: 2px solid #1e3a8a;
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .doc-header .agency {
+      font-size: 7.5pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #1e3a8a;
+    }
+
+    .doc-header .ref {
+      font-size: 7pt;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-weight: 700;
+      color: #64748b;
+      background: #f1f5f9;
+      padding: 1.5px 5px;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Titles */
+    h1 {
+      font-size: 15pt;
+      font-weight: 900;
+      color: #0f172a;
+      letter-spacing: -0.4px;
+      line-height: 1.15;
+      margin-bottom: 3px;
+    }
+
+    h2 {
+      font-size: 10.5pt;
+      font-weight: 800;
+      color: #1e3a8a;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    h3 {
+      font-size: 8.5pt;
+      font-weight: 750;
+      color: #0f172a;
+      margin-bottom: 3px;
+    }
+
+    p {
+      margin-bottom: 6px;
+      color: #334155;
+    }
+
+    /* Cards & Containers */
+    .card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 8px 10px;
+      margin-bottom: 8px;
+      page-break-inside: avoid;
+    }
+
+    .card-tint-blue {
+      background: #f8fafc;
+      border-color: #cbd5e1;
+    }
+
+    .card-tint-amber {
+      background: #fffbeb;
+      border-color: #fde68a;
+    }
+
+    .card-tint-purple {
+      background: #faf5ff;
+      border-color: #e9d5ff;
+    }
+
+    .card-tint-emerald {
+      background: #f0fdf4;
+      border-color: #bbf7d0;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 7pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 2px 6px;
+      border-radius: 3px;
+      vertical-align: middle;
+    }
+
+    .badge-primary {
+      background: #1e3a8a;
+      color: #ffffff;
+    }
+
+    .badge-amber {
+      background: #d97706;
+      color: #ffffff;
+    }
+
+    .badge-emerald {
+      background: #059669;
+      color: #ffffff;
+    }
+
+    .badge-purple {
+      background: #7e22ce;
+      color: #ffffff;
+    }
+
+    .badge-rose {
+      background: #e11d48;
+      color: #ffffff;
+    }
+
+    .badge-slate {
+      background: #e2e8f0;
+      color: #334155;
+    }
+
+    /* Tables */
+    .index-table, .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 8pt;
+      margin-top: 4px;
+    }
+
+    .index-table th, .data-table th {
+      background: #f1f5f9;
+      color: #0f172a;
+      font-weight: 800;
+      text-align: left;
+      padding: 5px 7px;
+      border: 1px solid #cbd5e1;
+    }
+
+    .index-table td, .data-table td {
+      padding: 4.5px 7px;
+      border: 1px solid #e2e8f0;
+      vertical-align: top;
+    }
+
+    .index-table tr:nth-child(even), .data-table tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    /* Instruction Box */
+    .instruction-box {
+      background: #f8fafc;
+      border-left: 3px solid #2563eb;
+      padding: 6px 9px;
+      margin-bottom: 8px;
+      border-radius: 0 5px 5px 0;
+      font-size: 8pt;
+    }
+
+    .instruction-box ol, .instruction-box ul {
+      padding-left: 14px;
+      margin-top: 3px;
+    }
+
+    .instruction-box li {
+      margin-bottom: 1.5px;
+      color: #334155;
+    }
+
+    /* Grid Layouts */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 5px;
+      margin-bottom: 8px;
+    }
+
+    .code-box {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 7.2pt;
+      background: #0f172a;
+      color: #f1f5f9;
+      padding: 8px 10px;
+      border-radius: 5px;
+      line-height: 1.35;
+      white-space: pre-wrap;
+      margin-bottom: 8px;
+    }
+
+    .checklist-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 5px;
+      padding: 4px 6px;
+      background: #ffffff;
+      border: 1px solid #fde68a;
+      border-radius: 4px;
+      margin-bottom: 3px;
+      font-size: 8pt;
+    }
+
+    .checkbox {
+      width: 11px;
+      height: 11px;
+      border: 1.5px solid #d97706;
+      border-radius: 2px;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .writing-line {
+      border-bottom: 1px dashed #cbd5e1;
+      height: 19px;
+      margin-bottom: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 1: COVER, SUMMARY, OBJECTIVES & INDEX                          -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">SESSION 5 WORKSHEET • OCCURRENCE DOSSIER BEA/EASA-2024-089</span>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%); color: #ffffff; padding: 12px 14px; border-radius: 8px; margin-bottom: 10px;">
+      <span class="badge" style="background: #38bdf8; color: #082f49; margin-bottom: 4px;">Technical English • Module 1 • Session 5</span>
+      <h1 style="color: #ffffff; font-size: 15pt; margin-top: 2px;">Multi-Source Incident Investigation &amp; Root Cause Analysis</h1>
+      <p style="color: #bae6fd; font-size: 8pt; margin-bottom: 0;">Occurrence Dossier BEA/EASA-2024-089 • Synthesizing Fragmented Records &amp; Applying the Swiss Cheese Model</p>
+    </div>
+
+    <!-- Summary Box -->
+    <div class="card card-tint-blue" style="border-left: 3.5px solid #1e3a8a; padding: 7px 10px; margin-bottom: 8px;">
+      <h3 style="color: #1e3a8a; font-size: 8.5pt; margin-bottom: 3px;">📌 Lesson Summary &amp; Operational Context</h3>
+      <p style="font-size: 7.8pt; margin-bottom: 3px; line-height: 1.35;">
+        Aviation accidents and serious airside incidents almost never stem from an isolated failure. Instead, they represent the culmination of an interrelated causal chain where latent organizational conditions—such as commercial turnaround pressure, deferred maintenance items under the Minimum Equipment List (MEL), and deteriorating storm weather—align with an active frontline slip. When an airliner suffers a pushback shear pin separation or an uncontrollable runway excursion on contaminated asphalt, technical investigators must piece together fragmented, contradictory records without jumping to premature conclusions. In this communicative simulation, GSEA students cross-reference four authentic data sources from Occurrence 2024-089 at Toulouse-Blagnac LFBO, master cause-and-effect connectors (<em>stemming from</em>, <em>triggered by</em>, <em>resulting in</em>, <em>attributable to</em>, <em>consequently</em>), apply James Reason's Swiss Cheese Model to isolate systemic weaknesses from active errors, and deliver a structured 2-minute oral debriefing to an executive Safety Directorate.
+      </p>
+      <div style="font-size: 7.2pt; color: #475569; display: flex; gap: 12px; margin-top: 3px;">
+        <span><strong>Target Level:</strong> CEFR B1–B2</span>
+        <span>•</span>
+        <span><strong>Track:</strong> Technical English (AT • LV125E)</span>
+        <span>•</span>
+        <span><strong>Time:</strong> 2 Hours (Teacher-Paced)</span>
+      </div>
+    </div>
+
+    <!-- 5 Core Objectives -->
+    <div class="card" style="padding: 7px 10px; margin-bottom: 8px;">
+      <h3 style="color: #0f172a; font-size: 8.5pt; margin-bottom: 4px;">🎯 5 Core Learning Objectives for Session 5</h3>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; font-size: 7.5pt;">
+        <div>
+          <p style="margin-bottom: 3px;"><strong>1. Cross-Reference Fragmented Records:</strong> Reconstruct a timeline by synchronizing ATC logs, METAR storm decodes, MEL tech logs, and Mandatory Occurrence Reports (EU 376/2014).</p>
+          <p style="margin-bottom: 3px;"><strong>2. Inspect Physical Incident Evidence:</strong> Analyze high-resolution airside occurrence photos of pushback shear pin fracture, contaminated runway excursion, and GSE nacelle strikes.</p>
+          <p style="margin-bottom: 0;"><strong>3. Master Causal Connectors:</strong> Employ targeted connectors (<em>stemming from</em>, <em>triggered by</em>, <em>resulting in</em>, <em>attributable to</em>, <em>consequently</em>) with precision.</p>
+        </div>
+        <div>
+          <p style="margin-bottom: 3px;"><strong>4. Apply the Swiss Cheese Model:</strong> Categorize findings across 4 layers: latent organizational failures, local working conditions, active human slips, and defensive barriers.</p>
+          <p style="margin-bottom: 0;"><strong>5. Deliver Executive Debrief &amp; CAP:</strong> Present a concise 2-minute oral debriefing to the Airport Safety Directorate and issue concrete safety recommendations.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Table of Contents / Index -->
+    <div class="card card-tint-blue" style="padding: 6px 10px; margin-bottom: 0;">
+      <h3 style="color: #1e3a8a; font-size: 8.5pt; margin-bottom: 3px;">📑 Worksheet Contents &amp; Activity Index</h3>
+      <table class="index-table">
+        <thead>
+          <tr>
+            <th style="width: 14%;">Part / Stage</th>
+            <th style="width: 33%;">Activity Title</th>
+            <th style="width: 43%;">Focus &amp; Interactive Learning Output</th>
+            <th style="width: 10%; text-align: center;">Page</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 1</td>
+            <td>Field Evidence &amp; Opening Diagnostic</td>
+            <td>Investigation entry spot-check (4 questions) &amp; pair discussion prompts.</td>
+            <td style="text-align: center; font-weight: 700;">Page 2</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 2</td>
+            <td>Multi-Source Incident Dossier BEA/EASA-2024-089</td>
+            <td>Synthesizing 4 records: ATC logs, METAR storm decode, MEL tech log, MOR statements.</td>
+            <td style="text-align: center; font-weight: 700;">Page 3</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 3</td>
+            <td>Language Clinic: Cause-and-Effect Connectors</td>
+            <td>5 technical causal markers, reference formula table &amp; 5 gap-fill practice drills.</td>
+            <td style="text-align: center; font-weight: 700;">Page 4</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 4</td>
+            <td>Visual Evidence Challenge: 3 Photo Exhibits</td>
+            <td>4-step picture description method across shear pin, runway excursion &amp; nacelle strike.</td>
+            <td style="text-align: center; font-weight: 700;">Page 5</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 4 (cont)</td>
+            <td>Swiss Cheese Matrix &amp; Executive Debrief</td>
+            <td>4-layer causal mapping, 2-minute oral debrief, Student B peer checklist &amp; coaching.</td>
+            <td style="text-align: center; font-weight: 700;">Page 6</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 5 &amp; 6</td>
+            <td>Safety Check Table, Rules to Reality &amp; Notes</td>
+            <td>4-step decision table, 60-second pair wrap-up &amp; handwritten action notes.</td>
+            <td style="text-align: center; font-weight: 700;">Page 7</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 2: PART 1 — FIELD EVIDENCE & OPENING DIAGNOSTIC               -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 1: FIELD EVIDENCE &amp; ENTRY DIAGNOSTIC</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 1</span> Activity 1: From Fragmented Field Evidence to Systematic Safety Findings</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions &amp; Action Steps:</strong>
+      <ol>
+        <li><strong>Step 1: Read the Investigation Scenario:</strong> Review the operational briefing below regarding Occurrence BEA/EASA-2024-089.</li>
+        <li><strong>Step 2: Complete the Diagnostic Spot-Check:</strong> Answer the 4 essential regulatory questions with your partner.</li>
+        <li><strong>Step 3: Pair Discussion:</strong> Discuss what makes multi-source technical aviation investigations challenging in spoken English.</li>
+      </ol>
+    </div>
+
+    <div class="card card-tint-blue" style="padding: 7px 10px; margin-bottom: 8px;">
+      <h3 style="color: #1e3a8a; font-size: 8.5pt; margin-bottom: 3px;">📋 Operational Briefing: Occurrence Dossier BEA/EASA-2024-089</h3>
+      <p style="font-size: 7.8pt; line-height: 1.35; margin-bottom: 0;">
+        On 14 October at Toulouse-Blagnac (LFBO), Air France flight AFR 182 (Airbus A320-200) experienced a pushback towbar shear pin fracture on Stand 14 under tight turnaround delays. After visual inspection, the flight departed and returned for landing during a severe convective thunderstorm with low-level windshear and 4 mm standing water on Runway 14L. Upon touchdown, the aircraft developed an uncontrollable right yaw and veered into soft turf. Maintenance records revealed the right main landing gear anti-skid valve was inoperative and deferred under the MEL, and tire tread was marginal at 2.1 mm. As safety investigators, you must uncover how latent conditions and active slips combined.
+      </p>
+    </div>
+
+    <!-- Opening Diagnostic Spot-Check (4 Questions) -->
+    <div class="card" style="padding: 8px 10px; margin-bottom: 8px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+        <h3 style="color: #0f172a; font-size: 8.5pt;">🔍 Opening Diagnostic: Airfield Investigation Principles</h3>
+        <span class="badge badge-primary">Entry Spot-Check</span>
+      </div>
+      <div class="grid-2" style="font-size: 7.5pt; margin-bottom: 0;">
+        <div class="card card-tint-blue" style="padding: 6px 8px; margin-bottom: 4px;">
+          <p style="font-weight: 700; color: #1e3a8a; margin-bottom: 2px;">Question 01: Mandatory Occurrence Reporting (MOR)</p>
+          <p style="margin-bottom: 2px;">Under Regulation (EU) 376/2014, what is the statutory deadline for submitting an MOR?</p>
+          <p style="color: #059669; font-weight: 700; margin-bottom: 0;">&check; Model Answer: Within 72 hours of becoming aware of the occurrence.</p>
+        </div>
+        <div class="card card-tint-blue" style="padding: 6px 8px; margin-bottom: 4px;">
+          <p style="font-weight: 700; color: #1e3a8a; margin-bottom: 2px;">Question 02: Towbar Shear Pin Engineering Function</p>
+          <p style="margin-bottom: 2px;">What is the primary sacrificial safety purpose of an aircraft towbar shear pin?</p>
+          <p style="color: #059669; font-weight: 700; margin-bottom: 0;">&check; Model Answer: To break cleanly under abnormal towing/turning loads, protecting the nose gear strut from structural failure.</p>
+        </div>
+        <div class="card card-tint-blue" style="padding: 6px 8px; margin-bottom: 0;">
+          <p style="font-weight: 700; color: #1e3a8a; margin-bottom: 2px;">Question 03: Contaminated Runway Threshold</p>
+          <p style="margin-bottom: 2px;">At what standing water depth is an asphalt runway classified as contaminated under EASA rules?</p>
+          <p style="color: #059669; font-weight: 700; margin-bottom: 0;">&check; Model Answer: Depth exceeding 3 mm over more than 25% of the assessed runway surface area.</p>
+        </div>
+        <div class="card card-tint-blue" style="padding: 6px 8px; margin-bottom: 0;">
+          <p style="font-weight: 700; color: #1e3a8a; margin-bottom: 2px;">Question 04: Swiss Cheese Model Concepts</p>
+          <p style="margin-bottom: 2px;">In James Reason's model, how does a latent condition differ from an active failure?</p>
+          <p style="color: #059669; font-weight: 700; margin-bottom: 0;">&check; Model Answer: Latent conditions are dormant organizational or policy flaws; active failures are immediate frontline human slips.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pair Discussion Prompts -->
+    <div class="card card-tint-amber" style="padding: 7px 10px; margin-bottom: 0;">
+      <h3 style="color: #92400e; font-size: 8.5pt; margin-bottom: 3px;">🗣️ Pair Discussion: The Psychology of Technical Investigation</h3>
+      <div style="font-size: 7.5pt; color: #78350f; space-y-2;">
+        <p style="margin-bottom: 3px;">
+          <strong>Point A • Just Culture vs Blame:</strong> Why must investigators avoid blaming the pushback driver or flight crew immediately after an incident? (<em>Talking point: A Just Culture encourages transparent reporting under EU 376/2014; scapegoating drives safety reporting underground</em>).
+        </p>
+        <p style="margin-bottom: 0;">
+          <strong>Point B • Fragmented Operational Clues:</strong> What problems occur when ATC radio transcripts, weather reports, and pilot statements contradict each other? (<em>Talking point: Investigators must build an objective chronological matrix to identify where human perception diverged from recorded telemetry</em>).
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 3: PART 2 — MULTI-SOURCE INCIDENT DOSSIER                     -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 2: BEA/EASA INCIDENT DOSSIER 2024-089</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 2</span> Activity 2: Reading the Multi-Source Technical Occurrence Dossier</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions:</strong> Cross-reference the four authentic records below. Identify chronological correlations and operational contradictions between frequencies, meteorological conditions, maintenance deferrals, and frontline statements.
+    </div>
+
+    <!-- 4 Dossier Boxes Grid -->
+    <div class="grid-2" style="gap: 8px; margin-bottom: 8px;">
+      <!-- Exhibit A: ATC Radio Logs -->
+      <div class="card" style="padding: 6px 8px; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+          <h3 style="color: #1e3a8a; font-size: 8pt;">Exhibit A: ATC Radio Transcript</h3>
+          <span class="badge badge-primary" style="font-size: 6.5pt;">GND 121.9 &bull; TWR 118.1</span>
+        </div>
+        <div style="font-family: ui-monospace, monospace; font-size: 6.8pt; line-height: 1.35; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 4px; padding: 5px;">
+          <span style="color: #1e3a8a; font-weight: 700;">14:22:15 [AFR182]:</span> Blagnac Ground, Stand 14, request push and start, Info Echo.<br>
+          <span style="color: #475569;">14:22:20 [GND]:</span> Pushback approved facing west, expect RWY 14L via Taxiway B.<br>
+          <span style="color: #b91c1c; font-weight: 700;">14:24:05 [AFR182]:</span> Ground, hold push! Towbar shear pin just snapped! Towbar disconnected.<br>
+          <span style="color: #475569;">14:24:12 [GND]:</span> Understood, hold position. Standby for apron inspection vehicle.<br>
+          <span style="color: #047857;">14:28:40 [TUG 4]:</span> Pin broke due to standing water and sudden brake application. Nose gear clear.<br>
+          <span style="color: #1e3a8a; font-weight: 700;">14:52:10 [AFR182]:</span> Tower, AFR182, on final approach Runway 14L, established.<br>
+          <span style="color: #475569;">14:52:18 [TWR]:</span> Cleared to land 14L, wind 190 at 22G34KT. Caution standing water on touchdown.<br>
+          <span style="color: #b91c1c; font-weight: 700;">14:53:02 [AFR182]:</span> Tower, we veered off centerline onto the soft strip! Request assistance!
+        </div>
+      </div>
+
+      <!-- Exhibit B: Weather Decode -->
+      <div class="card" style="padding: 6px 8px; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+          <h3 style="color: #b45309; font-size: 8pt;">Exhibit B: Weather Decode (METAR/SPECI)</h3>
+          <span class="badge badge-amber" style="font-size: 6.5pt;">LFBO 141430Z / 1450Z</span>
+        </div>
+        <div style="font-family: ui-monospace, monospace; font-size: 6.8pt; line-height: 1.35; background: #fffbeb; border: 1px solid #fde68a; border-radius: 4px; padding: 5px; color: #78350f;">
+          <strong>METAR LFBO 141430Z 19020G32KT 150V230 4500 +RA FEW008 BKN015 OVC030 14/13 Q1006 TEMPO 2500 +TSRA=</strong><br>
+          <strong>SPECI LFBO 141450Z 20024G36KT 3000 +TSRA BKN006 OVC012CB 13/13 Q1004 WS ALL RWY RWY 14L 4/5/5 100% STANDING WATER 4MM=</strong><br>
+          <div style="margin-top: 3px; font-family: -apple-system, sans-serif; font-size: 6.8pt;">
+            &bull; <strong>Wind:</strong> 200° at 24 kt, gusting 36 kt (crosswind component &gt; 20 kt on 14L).<br>
+            &bull; <strong>Precipitation:</strong> Severe thunderstorm (+TSRA) with cumulonimbus at 1,200 ft.<br>
+            &bull; <strong>Contamination:</strong> 100% surface covered with 4 mm standing water (hydroplaning risk).<br>
+            &bull; <strong>Windshear:</strong> Active low-level windshear warning on all runway thresholds.
+          </div>
+        </div>
+      </div>
+
+      <!-- Exhibit C: Tech Log -->
+      <div class="card" style="padding: 6px 8px; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+          <h3 style="color: #be123c; font-size: 8pt;">Exhibit C: Technical Maintenance Log</h3>
+          <span class="badge badge-rose" style="font-size: 6.5pt;">A320 F-GTAZ Sector Log</span>
+        </div>
+        <div style="font-size: 6.8pt; line-height: 1.35; background: #fff1f2; border: 1px solid #fecdd3; border-radius: 4px; padding: 5px; color: #881337;">
+          <p style="margin-bottom: 2px;"><strong>Item 01 [12 Oct]:</strong> Right MLG Anti-Skid Valve #2 intermittent fault (ECAM BRAKES ANTI-SKID).</p>
+          <p style="margin-bottom: 2px;"><strong>Action:</strong> Part on backorder. Deferred under MEL 32-42-01A (Category C: 10-day window). Dispatch on contaminated runways requires explicit flight crew recalculation (+25% distance).</p>
+          <p style="margin-bottom: 0;"><strong>Item 02 [14 Oct 10:15]:</strong> Tire #3 tread measured at 2.1 mm (minimum certified limit 2.0 mm). Signed off as serviceable. <em>Finding: Marginal tread on 4 mm water reduces water channeling by &gt; 60%.</em></p>
+        </div>
+      </div>
+
+      <!-- Exhibit D: MOR Statements -->
+      <div class="card" style="padding: 6px 8px; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+          <h3 style="color: #6b21a8; font-size: 8pt;">Exhibit D: Occurrence Statements (MOR)</h3>
+          <span class="badge badge-purple" style="font-size: 6.5pt;">EU 376/2014 Filings</span>
+        </div>
+        <div style="font-size: 6.8pt; line-height: 1.35; background: #faf5ff; border: 1px solid #e9d5ff; border-radius: 4px; padding: 5px; color: #581c87;">
+          <p style="margin-bottom: 2px;"><strong>Captain (AFR182):</strong> &ldquo;Touchdown on centerline. Upon selecting reverse, aircraft developed uncontrollable right yaw. Right brake produced zero deceleration. Aircraft drifted into grass shoulder at 35 kt.&rdquo;</p>
+          <p style="margin-bottom: 2px;"><strong>Tug Driver (Stand 14):</strong> &ldquo;Severe 20-min delay pressure. Frequency jammed. Catering truck cut across our path. I braked hard, and the shear pin snapped.&rdquo;</p>
+          <p style="margin-bottom: 0;"><strong>Line Tech:</strong> &ldquo;Anti-skid valve ordered 3 days ago, central logistics delayed. Cleared flight under commercial schedule rush despite forecast.&rdquo;</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Synthesis Questions -->
+    <div class="card card-tint-blue" style="padding: 6px 10px; margin-bottom: 0;">
+      <h3 style="color: #1e3a8a; font-size: 8pt; margin-bottom: 2px;">🔍 Multi-Source Synthesis Questions</h3>
+      <div style="font-size: 7.2pt; color: #334155;">
+        <p style="margin-bottom: 1.5px;"><strong>Q1:</strong> What latent organizational factor explained why AFR182 was operating with an inoperative anti-skid valve?</p>
+        <p style="margin-bottom: 1.5px;"><strong>Q2:</strong> How did 4 mm standing water interact with the deferred anti-skid valve and marginal 2.1 mm tire tread upon landing?</p>
+        <p style="margin-bottom: 0;"><strong>Q3:</strong> Why did the pushback shear pin break on Stand 14? Was the fracture a system failure or a protective defense?</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 4: PART 3 — LANGUAGE CLINIC: CAUSAL CONNECTORS                -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 3: LANGUAGE CLINIC: CAUSAL CONNECTORS</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 3</span> Activity 3: Cause-and-Effect Connectors for Technical Investigation</h2>
+
+    <div class="instruction-box">
+      <strong>Language Focus:</strong> Technical investigators avoid vague words like <em>because</em>. They use precise causal markers to distinguish background origins, immediate sparks, direct physical outcomes, and logical consequences.
+    </div>
+
+    <!-- Reference Table -->
+    <div class="card" style="padding: 6px 8px; margin-bottom: 8px;">
+      <h3 style="color: #1e3a8a; font-size: 8.5pt; margin-bottom: 3px;">📖 5 Essential Cause-and-Effect Connectors</h3>
+      <table class="data-table" style="font-size: 7.2pt;">
+        <thead>
+          <tr>
+            <th style="width: 18%;">Connector</th>
+            <th style="width: 25%;">Investigation Function</th>
+            <th style="width: 37%;">Authentic Airport Example</th>
+            <th style="width: 20%;">Grammar Pattern</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a; font-family: monospace;">stemming from</td>
+            <td>Points backward to systemic background origins or latent conditions</td>
+            <td><em>&ldquo;The directional control failure was a systemic issue stemming from delayed maintenance.&rdquo;</em></td>
+            <td>[Outcome] + stems from + [Latent Root]</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #d97706; font-family: monospace;">triggered by</td>
+            <td>Identifies the immediate active spark or physical frontline catalyst</td>
+            <td><em>&ldquo;The towbar shear pin fracture was triggered by sudden emergency brake application.&rdquo;</em></td>
+            <td>[Failure] + was triggered by + [Event]</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #2563eb; font-family: monospace;">resulting in</td>
+            <td>Connects an event directly to its physical outcome or damage</td>
+            <td><em>&ldquo;Standing water created dynamic hydroplaning, resulting in runway excursion into soft turf.&rdquo;</em></td>
+            <td>[Condition] + resulting in + [Noun/-ing]</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #059669; font-family: monospace;">attributable to</td>
+            <td>Assigns operational responsibility or primary contributing factor</td>
+            <td><em>&ldquo;The apron vehicle crossing was attributable to severe radio frequency congestion.&rdquo;</em></td>
+            <td>[Event] + is attributable to + [Cause]</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #7e22ce; font-family: monospace;">consequently</td>
+            <td>Introduces a logical operational sequence or regulatory decision</td>
+            <td><em>&ldquo;Runway 14L was contaminated; consequently, the director suspended flight operations.&rdquo;</em></td>
+            <td>[Fact]; consequently, [Decision]</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 5 Practice Drills -->
+    <div class="card card-tint-blue" style="padding: 8px 10px; margin-bottom: 8px;">
+      <h3 style="color: #1e3a8a; font-size: 8.5pt; margin-bottom: 4px;">✍️ 5 Practice Drills: Select the Correct Technical Connector</h3>
+      <div style="font-size: 7.5pt; space-y-2;">
+        <div style="padding: 4px 6px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 4px; margin-bottom: 3px;">
+          <p style="margin-bottom: 1px;"><strong>1.</strong> The towbar shear pin fracture was ____________________ the tug driver's sudden application of emergency brakes on the wet apron.</p>
+          <span style="color: #64748b; font-size: 7pt;">Options: [ triggered by | stemming from | consequently ] &bull; <strong>Answer: triggered by</strong> (immediate physical spark)</span>
+        </div>
+        <div style="padding: 4px 6px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 4px; margin-bottom: 3px;">
+          <p style="margin-bottom: 1px;"><strong>2.</strong> Operating with a deferred anti-skid valve was a latent risk ____________________ logistics delays in delivering replacement parts.</p>
+          <span style="color: #64748b; font-size: 7pt;">Options: [ attributable to | resulting in | stemming from ] &bull; <strong>Answer: stemming from</strong> (background root cause)</span>
+        </div>
+        <div style="padding: 4px 6px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 4px; margin-bottom: 3px;">
+          <p style="margin-bottom: 1px;"><strong>3.</strong> The aircraft experienced dynamic hydroplaning at 85 knots, ____________________ an uncontrollable veer onto the unpaved grass shoulder.</p>
+          <span style="color: #64748b; font-size: 7pt;">Options: [ resulting in | triggered by | stemming from ] &bull; <strong>Answer: resulting in</strong> (direct physical outcome)</span>
+        </div>
+        <div style="padding: 4px 6px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 4px; margin-bottom: 3px;">
+          <p style="margin-bottom: 1px;"><strong>4.</strong> The apron vehicle crossing incident was ____________________ severe radio frequency congestion on the ground control channel.</p>
+          <span style="color: #64748b; font-size: 7pt;">Options: [ consequently | attributable to | resulting in ] &bull; <strong>Answer: attributable to</strong> (ascribes causative factor)</span>
+        </div>
+        <div style="padding: 4px 6px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 4px; margin-bottom: 0;">
+          <p style="margin-bottom: 1px;"><strong>5.</strong> The runway standing water depth reached 4 mm; ____________________, the aerodrome operator suspended flight operations on Runway 14L.</p>
+          <span style="color: #64748b; font-size: 7pt;">Options: [ stemming from | consequently | triggered by ] &bull; <strong>Answer: consequently</strong> (logical decision taken)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Active Transformation Clinic -->
+    <div class="card card-tint-purple" style="padding: 6px 10px; margin-bottom: 0;">
+      <h3 style="color: #6b21a8; font-size: 8pt; margin-bottom: 2px;">💡 Clarity Clinic: Converting Stiff Explanations into Direct Spoken Statements</h3>
+      <div style="font-size: 7.2pt; color: #581c87;">
+        <p style="margin-bottom: 1px;"><strong>Heavy Text:</strong> &ldquo;Due to the fact that there was a lack of parts, the valve was deferred.&rdquo;</p>
+        <p style="margin-bottom: 0; font-weight: 700; color: #047857;">&rarr; Direct Technical Phrasing: &ldquo;The anti-skid deferral was a latent condition stemming from central logistics delays.&rdquo;</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 5: PART 4 — 3-PHOTO VISUAL EVIDENCE CHALLENGE                 -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 4: 3-PHOTO VISUAL EVIDENCE CHALLENGE</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 4</span> Activity 4: Spoken Team Challenge: Occurrence Photo Description Challenge</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions:</strong> Work in investigation pairs or trios. Group 1 examines Exhibit 01 (Shear Pin Failure); Group 2 examines Exhibit 02 (Runway Excursion); Group 3 examines Exhibit 03 (Nacelle Strike). Use the 4-step method to structure your spoken technical briefing.
+    </div>
+
+    <!-- 4-Step Picture Description Method -->
+    <div class="card card-tint-emerald" style="padding: 5px 8px; margin-bottom: 8px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+        <h3 style="color: #065f46; font-size: 8pt;">🔍 The 4-Step Picture Description Method for Pairs &amp; Trios</h3>
+        <span class="badge badge-emerald">Investigation Method</span>
+      </div>
+      <div class="grid-2" style="font-size: 7.2pt; color: #065f46; margin-bottom: 0;">
+        <div>
+          <p style="margin-bottom: 1px;"><strong>Step 1: Set the Scene:</strong> State location, stand/runway, weather conditions, aircraft type.</p>
+          <p style="margin-bottom: 0;"><strong>Step 2: Ongoing Actions:</strong> Describe what personnel and vehicles are actively doing.</p>
+        </div>
+        <div>
+          <p style="margin-bottom: 1px;"><strong>Step 3: Spot Physical Damage:</strong> Identify fractured shear pins, tire ruts, composite scratches.</p>
+          <p style="margin-bottom: 0;"><strong>Step 4: Causal Deduction:</strong> Use causal connectors (<em>triggered by</em>, <em>stemming from</em>, <em>resulting in</em>).</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 Photo Description Cards -->
+    <div class="grid-3" style="margin-bottom: 8px;">
+      <!-- Exhibit 01: Shear Pin Failure -->
+      <div class="card" style="border-top: 3px solid #0284c7; padding: 6px 8px; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+          <h3 style="color: #0369a1; font-size: 7.8pt;">Exhibit 01: Shear Pin</h3>
+          <span class="badge badge-primary" style="font-size: 6.5pt;">Stand 14</span>
+        </div>
+        <p style="font-size: 6.8pt; color: #475569; margin-bottom: 3px;">
+          Close-up airside inspection of A320 nose landing gear on wet apron. The towbar shear pin is cleanly fractured, and the tug is stopped at an acute angle.
+        </p>
+        <div style="background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 4px; padding: 4px 6px; font-size: 6.6pt; color: #0369a1;">
+          <strong>Model Causal Description:</strong><br>
+          <em>&ldquo;The sheared towbar pin was triggered by the driver's sudden braking during a sharp turn on wet asphalt, resulting in safe mechanical separation that protected the nose gear from structural damage.&rdquo;</em>
+        </div>
+      </div>
+
+      <!-- Exhibit 02: Runway Excursion -->
+      <div class="card" style="border-top: 3px solid #d97706; padding: 6px 8px; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+          <h3 style="color: #b45309; font-size: 7.8pt;">Exhibit 02: Excursion</h3>
+          <span class="badge badge-amber" style="font-size: 6.5pt;">Runway 14L</span>
+        </div>
+        <p style="font-size: 6.8pt; color: #475569; margin-bottom: 3px;">
+          Wide view of A320 resting with right main gear buried in soft turf 15 m off Runway 14L centerline. Deep tire ruts visible in wet soil; RFFS foam tenders positioned.
+        </p>
+        <div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 4px; padding: 4px 6px; font-size: 6.6pt; color: #b45309;">
+          <strong>Model Causal Description:</strong><br>
+          <em>&ldquo;The runway excursion into the grass shoulder was attributable to dynamic hydroplaning on 4 mm standing water, heavily compounded by an inoperative anti-skid valve deferred under MEL.&rdquo;</em>
+        </div>
+      </div>
+
+      <!-- Exhibit 03: Nacelle Strike -->
+      <div class="card" style="border-top: 3px solid #e11d48; padding: 6px 8px; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+          <h3 style="color: #9f1239; font-size: 7.8pt;">Exhibit 03: Nacelle Strike</h3>
+          <span class="badge badge-rose" style="font-size: 6.5pt;">Stand 12</span>
+        </div>
+        <p style="font-size: 6.8pt; color: #475569; margin-bottom: 3px;">
+          Inspection of CFM56 turbofan composite cowling showing scrape damage and paint transfer where an unchocked mobile belt loader rolled during a 36-knot wind gust.
+        </p>
+        <div style="background: #fff1f2; border: 1px solid #fecdd3; border-radius: 4px; padding: 4px 6px; font-size: 6.6pt; color: #9f1239;">
+          <strong>Model Causal Description:</strong><br>
+          <em>&ldquo;The cowling impact was triggered by an unchocked belt loader blown by wind, stemming from turnaround staffing pressure that caused handlers to omit wheel chocking.&rdquo;</em>
+        </div>
+      </div>
+    </div>
+
+    <!-- Active Partner Checking Prompts -->
+    <div class="card card-tint-amber" style="padding: 6px 8px; margin-bottom: 0;">
+      <h3 style="color: #92400e; font-size: 7.8pt; margin-bottom: 2px;">❓ Partner Checking &amp; Challenge Prompts (Partner B Role)</h3>
+      <div class="grid-2" style="font-size: 7pt; color: #78350f; margin-bottom: 0;">
+        <p style="margin-bottom: 1px;">&bull; <em>&ldquo;What physical proof makes you claim the shear pin fractured as designed?&rdquo;</em></p>
+        <p style="margin-bottom: 1px;">&bull; <em>&ldquo;How did 4 mm water depth interact with the deferred anti-skid valve?&rdquo;</em></p>
+        <p style="margin-bottom: 0;">&bull; <em>&ldquo;Which connector best links the turnaround rush to the unchocked loader?&rdquo;</em></p>
+        <p style="margin-bottom: 0;">&bull; <em>&ldquo;Is this non-conformance a frontline slip or a latent organizational policy flaw?&rdquo;</em></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 6: PART 4 (CONT) — SWISS CHEESE MATRIX & EXECUTIVE DEBRIEF    -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 4 (CONT): SWISS CHEESE MATRIX &amp; DEBRIEF</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 4 (cont)</span> Activity 4: Root Cause Synthesis &amp; Executive Safety Directorate Debrief</h2>
+
+    <div class="instruction-box">
+      <strong>James Reason's Swiss Cheese Model:</strong> Accidents occur when holes across successive defensive barriers momentarily align. Review the 4-layer matrix below, then deliver your 2-minute oral debriefing.
+    </div>
+
+    <!-- 4 Swiss Cheese Layers Grid -->
+    <div class="grid-2" style="gap: 6px; margin-bottom: 8px;">
+      <div class="card card-tint-purple" style="border-left: 3px solid #7e22ce; padding: 5px 8px; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+          <h3 style="color: #6b21a8; font-size: 7.5pt;">Layer 1: Latent Organizational Failures</h3>
+          <span class="badge badge-purple" style="font-size: 6pt;">Policy / Management</span>
+        </div>
+        <ul style="font-size: 6.8pt; color: #581c87; padding-left: 12px; margin-bottom: 0;">
+          <li>Commercial turnaround rush compressing GSE staging and pushback checks.</li>
+          <li>Central logistics delay leaving anti-skid valve deferred for 3 consecutive days.</li>
+          <li>Inadequate crosswind dispatch limits under MEL braking deferrals.</li>
+        </ul>
+      </div>
+
+      <div class="card card-tint-amber" style="border-left: 3px solid #d97706; padding: 5px 8px; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+          <h3 style="color: #b45309; font-size: 7.5pt;">Layer 2: Local Working Conditions</h3>
+          <span class="badge badge-amber" style="font-size: 6pt;">Environmental / Physical</span>
+        </div>
+        <ul style="font-size: 6.8pt; color: #78350f; padding-left: 12px; margin-bottom: 0;">
+          <li>Torrential thunderstorm producing 4 mm standing water on Runway 14L.</li>
+          <li>36-knot crosswind gusts and low-level windshear disrupting rollout steering.</li>
+          <li>Radio frequency congestion on 121.9 causing coordination delays.</li>
+        </ul>
+      </div>
+
+      <div class="card card-tint-blue" style="border-left: 3px solid #2563eb; padding: 5px 8px; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+          <h3 style="color: #1e40af; font-size: 7.5pt;">Layer 3: Active Frontline Slips</h3>
+          <span class="badge badge-primary" style="font-size: 6pt;">Sharp-End Actions</span>
+        </div>
+        <ul style="font-size: 6.8pt; color: #1e3a8a; padding-left: 12px; margin-bottom: 0;">
+          <li>Tug driver applied emergency braking during wet turn without warning crew.</li>
+          <li>Flight crew continued landing approach with inoperative anti-skid on 4 mm water.</li>
+          <li>Ground catering truck crossed active pushback lane without clearance.</li>
+        </ul>
+      </div>
+
+      <div class="card card-tint-emerald" style="border-left: 3px solid #059669; padding: 5px 8px; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+          <h3 style="color: #065f46; font-size: 7.5pt;">Layer 4: Defenses &amp; Mitigations</h3>
+          <span class="badge badge-emerald" style="font-size: 6pt;">Held vs Failed</span>
+        </div>
+        <ul style="font-size: 6.8pt; color: #065f46; padding-left: 12px; margin-bottom: 0;">
+          <li>Towbar shear pin fractured cleanly as designed, protecting nose gear (HELD).</li>
+          <li>Runway grooving drainage overwhelmed by storm rainfall rate (FAILED).</li>
+          <li>Airport Fire Rescue (RFFS) deployed to soft turf in 75 seconds (HELD).</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Student B Peer Checklist -->
+    <div class="card card-tint-amber" style="padding: 7px 10px; margin-bottom: 8px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+        <h3 style="color: #92400e; font-size: 8pt;">📋 Student B: Safety Directorate Peer Evaluator Checklist</h3>
+        <span class="badge badge-amber" style="font-size: 6.5pt;">Peer Evaluation</span>
+      </div>
+      <p style="font-size: 7.2pt; color: #78350f; margin-bottom: 3px;">Evaluate your partner's 2-minute oral presentation against these 4 technical criteria before providing 1 minute of oral coaching:</p>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px; font-size: 7.2pt;">
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span>1. Swiss Cheese Analysis: Clearly distinguished latent conditions from active slips?</span>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span>2. Causal Connectors: Accurately used <em>stemming from</em>, <em>triggered by</em>, <em>resulting in</em>?</span>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span>3. Regulatory Citation: Cited Regulation (EU) 376/2014 &amp; EU 139/2014 ADR standards?</span>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span>4. Concrete Recommendations: Proposed 2 decisive systemic mitigations (not just blame)?</span>
+        </div>
+      </div>
+
+      <!-- 1-Minute Peer Coaching Dialogue -->
+      <div style="margin-top: 4px; padding-top: 4px; border-top: 1px solid #fde68a; font-size: 7pt; color: #78350f;">
+        <p style="margin-bottom: 1.5px;"><strong>Student B (Evaluator):</strong> &ldquo;Your explanation of the shear pin and excursion was very clear. However, make sure to highlight the latent organizational condition regarding the deferred anti-skid valve under MEL, and cite Regulation EU 376/2014 when recommending mandatory dispatch limits.&rdquo;</p>
+        <p style="margin-bottom: 0;"><strong>Student A (Investigator):</strong> &ldquo;Thank you for that feedback. I will link the logistics delay directly to the latent failure layer and reference EU 376/2014 in our final recommendations.&rdquo;</p>
+      </div>
+    </div>
+
+    <!-- Executive Debrief Script Box -->
+    <div class="card card-tint-blue" style="padding: 6px 8px; margin-bottom: 0;">
+      <h3 style="color: #1e3a8a; font-size: 7.8pt; margin-bottom: 2px;">🎙️ Recommended 4-Bullet Debriefing Structure</h3>
+      <div style="font-size: 6.8pt; color: #334155; line-height: 1.35;">
+        &bull; <strong>Bullet 1 (Occurrence Overview):</strong> State date, airfield, aircraft type, and primary sequence (Stand 14 pushback &amp; Runway 14L excursion).<br>
+        &bull; <strong>Bullet 2 (Causal Synthesis):</strong> Use causal connectors to link latent organizational failures with immediate frontline slips.<br>
+        &bull; <strong>Bullet 3 (Defenses &amp; Mitigations):</strong> State which barriers held (shear pin sacrificial break, RFFS) and which failed (anti-skid deferral, drainage).<br>
+        &bull; <strong>Bullet 4 (Safety Recommendations):</strong> Propose 2 decisive preventive measures under Regulation (EU) 376/2014.
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 7: PART 5 & 6 — SAFETY CHECK, RULES TO REALITY & NOTES        -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 5 &amp; 6: SAFETY CHECK &amp; OPERATIONAL NOTES</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 5</span> Activity 5: Safety Check: What is the Systemic Risk?</h2>
+
+    <div class="instruction-box">
+      <strong>Simple Safety Check:</strong> Review the 4-step decision table below to synthesize investigation findings and evaluate executive safety directives.
+    </div>
+
+    <!-- Safety Check Table -->
+    <table class="data-table" style="font-size: 7.2pt; margin-bottom: 8px;">
+      <thead>
+        <tr>
+          <th style="width: 30%;">Simple Safety Question</th>
+          <th style="width: 70%;">Agreed Investigation Board Finding &amp; Decision</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-weight: 700; color: #1e3a8a; background: #f8fafc;">1. What is the systemic problem?</td>
+          <td>Air France 182 suffered a pushback shear pin fracture on Stand 14 and a subsequent runway excursion on Runway 14L during severe rain with 4 mm standing water, compounded by a deferred anti-skid valve and marginal tire tread.</td>
+        </tr>
+        <tr>
+          <td style="font-weight: 700; color: #b45309; background: #fffbeb;">2. What could happen if uncorrected?</td>
+          <td>Operating transport aircraft with deferred braking systems on contaminated runways risks catastrophic high-speed overrun, landing gear collapse, and multi-vehicle apron collisions during congested turnaround rushes.</td>
+        </tr>
+        <tr>
+          <td style="font-weight: 700; color: #059669; background: #f0fdf4;">3. How do we fix it?</td>
+          <td>Enforce strict dispatch limits prohibiting flights with deferred MEL braking items when contaminated runways are forecast, mandate aerodrome water depth friction sweeps, and install GPS apron transponders on all ground vehicles.</td>
+        </tr>
+        <tr>
+          <td style="font-weight: 700; color: #7e22ce; background: #faf5ff;">4. Directorate Decision</td>
+          <td>Issue mandatory safety directives under Regulation (EU) 376/2014: restrict Category C MEL dispatch under adverse weather, require immediate 72-hour MOR filing, and audit ground handler apron driving protocols under EU 139/2014.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Rules to Reality Wrap-Up Prompt -->
+    <div class="card" style="background: #0f172a; color: #ffffff; padding: 6px 10px; margin-bottom: 8px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+        <h3 style="color: #38bdf8; font-size: 7.8pt;">⚡ Rules to Reality: The 60-Second Investigator's Verdict</h3>
+        <span class="badge badge-amber" style="font-size: 6.5pt;">Unscripted Spoken Wrap-Up</span>
+      </div>
+      <p style="color: #cbd5e1; font-size: 7.2pt; margin-bottom: 0;">
+        Without looking at your notes, turn to your partner and explain in 60 seconds: <em>&ldquo;Why did AFR 182 end up on the grass?&rdquo;</em> You must use at least 2 cause-and-effect connectors (<em>stemming from</em>, <em>triggered by</em>, <em>resulting in</em>) and identify at least one latent organizational condition.
+      </p>
+    </div>
+
+    <!-- Activity 6: Operational Notes & Action Plan (Handwritten Dotted Lines) -->
+    <h2><span class="badge badge-primary">Part 6</span> Activity 6: Operational Notes &amp; Safety Recommendations</h2>
+
+    <div class="card card-tint-blue" style="padding: 6px 10px; margin-bottom: 6px;">
+      <h3 style="color: #1e3a8a; font-size: 7.8pt; margin-bottom: 2px;">1. Executive Oral Debriefing Notes:</h3>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+    </div>
+
+    <div class="card card-tint-emerald" style="padding: 6px 10px; margin-bottom: 0;">
+      <h3 style="color: #065f46; font-size: 7.8pt; margin-bottom: 2px;">2. Directorate Safety Recommendations &amp; CAP Enforcement:</h3>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+    </div>
+  </div>
+
+</body>
+</html>

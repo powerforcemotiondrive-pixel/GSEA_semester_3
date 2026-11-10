@@ -4963,7 +4963,33 @@
             "tag": "Technical English • Module 1 • Session 5",
             "heading": "From Fragmented Field Evidence to Systematic Safety Findings",
             "lead": "When an aircraft suffers an airside occurrence—such as a pushback towbar failure, a low-speed runway excursion, or a ground servicing collision—the initial operational reports are almost always fragmented, stressful, and contradictory.",
-            "body": "Air traffic control logs record rapid-fire radio transmissions; weather reports document gusty crosswinds and rain intensity; maintenance logbooks list deferred equipment items under the Minimum Equipment List (MEL); and frontline occurrence reports convey subjective pilot and driver perspectives. As technical officers and safety investigators, your mission is to piece together these disparate clues into an objective causal chain. By applying the Swiss Cheese Model, you will uncover the underlying systemic and organizational factors that allowed multiple safety barriers to fail simultaneously."
+            "body": "Air traffic control logs record rapid-fire radio transmissions; weather reports document gusty crosswinds and rain intensity; maintenance logbooks list deferred equipment items under the Minimum Equipment List (MEL); and frontline occurrence reports convey subjective pilot and driver perspectives. As technical officers and safety investigators, your mission is to piece together these disparate clues into an objective causal chain. By applying the Swiss Cheese Model, you will uncover the underlying systemic and organizational factors that allowed multiple safety barriers to fail simultaneously.",
+            "diagnostic": {
+              "title": "Incident Investigation Entry Spot-Check",
+              "instructions": "Discuss these 4 essential investigation principles with your partner, then reveal the model answers.",
+              "questions": [
+                {
+                  "id": 1,
+                  "q": "Under Regulation (EU) 376/2014, what is the mandatory reporting timeframe for submitting a Mandatory Occurrence Report (MOR)?",
+                  "answer": "Within 72 hours of becoming aware of the occurrence, unless exceptional circumstances prevent it."
+                },
+                {
+                  "id": 2,
+                  "q": "What is the primary sacrificial engineering purpose of a towbar shear pin during pushback operations?",
+                  "answer": "To fracture cleanly under excessive shear or torsional stress, protecting the expensive aircraft nose landing gear structure from severe internal damage."
+                },
+                {
+                  "id": 3,
+                  "q": "At what water depth is an asphalt runway officially classified as 'contaminated' with standing water under EASA CS-ADR-DSN rules?",
+                  "answer": "When standing water exceeds 3 mm in depth over more than 25% of the assessed runway surface area, triggering severe dynamic hydroplaning risk."
+                },
+                {
+                  "id": 4,
+                  "q": "In James Reason's Swiss Cheese Model, how does a latent condition differ from an active frontline failure?",
+                  "answer": "A latent condition is a dormant organizational or scheduling weakness (e.g. spare parts delay, turnaround rush) embedded in the system, whereas an active failure is an unsafe human slip committed directly at the operational sharp end."
+                }
+              ]
+            }
           },
           "photoExhibits": [
             {
@@ -5054,6 +5080,79 @@
               }
             ]
           },
+          "languageClinic": {
+            "title": "Language Clinic: Cause-and-Effect Connectors for Incident Investigation",
+            "summary": "When presenting technical investigation findings, safety engineers use precise causal markers to distinguish background origins, active sparks, direct outcomes, and logical consequences:",
+            "connectorsTable": [
+              {
+                "connector": "stemming from",
+                "function": "Points backward to systemic background origins",
+                "example": "The directional control failure was a systemic issue stemming from delayed maintenance.",
+                "tip": "Use for latent conditions: [Outcome] + stems from + [Latent condition]"
+              },
+              {
+                "connector": "triggered by",
+                "function": "Identifies the immediate active spark or frontline action",
+                "example": "The towbar shear pin fracture was triggered by sudden emergency brake application.",
+                "tip": "Use for the immediate initiator: [Failure] + was triggered by + [Active event]"
+              },
+              {
+                "connector": "resulting in",
+                "function": "Connects directly to the physical outcome or consequence",
+                "example": "Standing water created dynamic hydroplaning, resulting in runway excursion into soft turf.",
+                "tip": "Follow with noun or gerund (-ing): resulting in + damage / loss / excursion"
+              },
+              {
+                "connector": "attributable to",
+                "function": "Assigns operational responsibility or primary contributing factor",
+                "example": "The pushback communication breakdown was attributable to ground frequency congestion.",
+                "tip": "Formal passive structure: [Event] + is attributable to + [Cause]"
+              },
+              {
+                "connector": "consequently",
+                "function": "Introduces a logical operational sequence or enforcement effect",
+                "example": "Runway 14L was contaminated; consequently, landing distance increased by over 25%.",
+                "tip": "Use with semi-colon or at start of sentence: Consequently, ..."
+              }
+            ],
+            "drills": [
+              {
+                "id": 1,
+                "prompt": "1. The towbar shear pin fracture was __________ the tug driver's sudden application of emergency brakes on the wet apron.",
+                "options": ["triggered by", "stemming from", "consequently"],
+                "correct": "triggered by",
+                "rationale": "Emergency braking is the immediate physical catalyst that broke the pin."
+              },
+              {
+                "id": 2,
+                "prompt": "2. Operating with a deferred anti-skid valve was a latent risk __________ logistics delays in delivering replacement parts.",
+                "options": ["attributable to", "resulting in", "stemming from"],
+                "correct": "stemming from",
+                "rationale": "'Stemming from' points back to the dormant root organizational cause (logistics delay)."
+              },
+              {
+                "id": 3,
+                "prompt": "3. The aircraft experienced dynamic hydroplaning at 85 knots, __________ an uncontrollable veer onto the unpaved grass shoulder.",
+                "options": ["resulting in", "triggered by", "stemming from"],
+                "correct": "resulting in",
+                "rationale": "'Resulting in' links the physical loss of friction directly to the ensuing runway excursion."
+              },
+              {
+                "id": 4,
+                "prompt": "4. The apron vehicle crossing incident was __________ severe radio frequency congestion on the ground control channel.",
+                "options": ["consequently", "attributable to", "resulting in"],
+                "correct": "attributable to",
+                "rationale": "'Attributable to' correctly assigns causative responsibility to the congested radio frequency."
+              },
+              {
+                "id": 5,
+                "prompt": "5. The runway standing water depth reached 4 mm; __________, the aerodrome operator suspended flight operations on Runway 14L.",
+                "options": ["stemming from", "consequently", "triggered by"],
+                "correct": "consequently",
+                "rationale": "'Consequently' introduces the logical regulatory safety decision taken as an effect."
+              }
+            ]
+          },
           "swissCheeseMatrix": {
             "title": "The Swiss Cheese Model: Root Cause Synthesis Matrix",
             "layers": [
@@ -5104,7 +5203,55 @@
               "3. Regulatory Compliance: Cite relevant EASA rules (Regulation EU 139/2014 & EU 376/2014).",
               "4. Preventive Safety Recommendations: Propose 2 concrete operational mitigations to prevent recurrence."
             ],
-            "modelDebriefScript": "Good morning members of the Safety Directorate. Our investigation team has completed the multi-source analysis of Occurrence 2024-089 involving Air France 182 at Toulouse-Blagnac. \n\nThe initial towbar shear pin fracture at Stand 14 was triggered by sudden emergency braking during pushback, resulting in temporary departure delay. While the mechanical pin fractured as designed to protect the nose landing gear, this incident was attributable to commercial turnaround pressure and vehicle congestion on the ramp.\n\nSubsequently, during landing rollout on Runway 14L, the aircraft experienced an uncontrollable runway excursion into the soft turf. This loss of directional control stemmed from heavy rain producing 4mm of standing water, which led to dynamic hydroplaning. However, this active event was heavily compounded by a latent organizational condition: the aircraft was operating with a deferred anti-skid valve and marginal tire tread under MEL, despite severe weather warnings. \n\nUnder Regulation (EU) 376/2014, our team submits two formal safety recommendations: first, mandatory cross-checks prohibiting dispatch with deferred braking components when contaminated runways are forecast; and second, enhanced ramp telematics to enforce vehicle separation during pushback operations."
+            "modelDebriefScript": "Good morning members of the Safety Directorate. Our investigation team has completed the multi-source analysis of Occurrence 2024-089 involving Air France 182 at Toulouse-Blagnac. \n\nThe initial towbar shear pin fracture at Stand 14 was triggered by sudden emergency braking during pushback, resulting in temporary departure delay. While the mechanical pin fractured as designed to protect the nose landing gear, this incident was attributable to commercial turnaround pressure and vehicle congestion on the ramp.\n\nSubsequently, during landing rollout on Runway 14L, the aircraft experienced an uncontrollable runway excursion into the soft turf. This loss of directional control stemmed from heavy rain producing 4mm of standing water, which led to dynamic hydroplaning. However, this active event was heavily compounded by a latent organizational condition: the aircraft was operating with a deferred anti-skid valve and marginal tire tread under MEL, despite severe weather warnings. \n\nUnder Regulation (EU) 376/2014, our team submits two formal safety recommendations: first, mandatory cross-checks prohibiting dispatch with deferred braking components when contaminated runways are forecast; and second, enhanced ramp telematics to enforce vehicle separation during pushback operations.",
+            "peerChecklist": [
+              {
+                "id": 1,
+                "label": "Did the speaker clearly distinguish latent organizational conditions from active frontline errors using the Swiss Cheese model?"
+              },
+              {
+                "id": 2,
+                "label": "Were cause-and-effect connectors (stemming from, triggered by, resulting in, attributable to, consequently) used accurately?"
+              },
+              {
+                "id": 3,
+                "label": "Did the debrief cite relevant regulatory standards (Regulation EU 376/2014 and EU 139/2014)?"
+              },
+              {
+                "id": 4,
+                "label": "Did the speaker propose 2 concrete, realistic safety recommendations rather than merely assigning frontline blame?"
+              }
+            ],
+            "peerCoaching": {
+              "evaluator": "Student B (Safety Board Evaluator): 'Your explanation of the shear pin fracture and runway excursion was very clear and well-paced. However, you didn\'t emphasize the latent organizational condition regarding the deferred anti-skid valve under MEL. Remember to cite Regulation EU 376/2014 when presenting mandatory dispatch limits.'",
+              "speaker": "Student A (Lead Investigator): 'Thank you for that feedback. I will make sure to link the logistics delay directly to the latent failure layer and reference EU 376/2014 in our final recommendations.'"
+            }
+          },
+          "safetyCheck": {
+            "title": "Activity 5: Safety Check: What is the Systemic Risk?",
+            "summary": "Review the 4 questions in the Safety Check table to synthesize incident findings and systemic safety decisions.",
+            "rows": [
+              {
+                "question": "1. What is the systemic problem?",
+                "answer": "Air France 182 suffered a pushback shear pin fracture on Stand 14 and a subsequent runway excursion on Runway 14L during severe rain with 4 mm standing water, compounded by a deferred anti-skid valve and marginal tire tread."
+              },
+              {
+                "question": "2. What could happen if uncorrected?",
+                "answer": "Operating transport-category aircraft with deferred braking systems on contaminated runways risks catastrophic high-speed overrun, gear collapse, and multi-vehicle apron collisions during congested turnarounds."
+              },
+              {
+                "question": "3. How do we fix it?",
+                "answer": "Enforce strict dispatch limits prohibiting flights with deferred MEL braking items when contaminated runways are forecast, mandate aerodrome water depth friction sweeps, and install GPS apron transponders on all ground service vehicles."
+              },
+              {
+                "question": "4. Directorate Decision",
+                "answer": "Issue mandatory safety directives under Regulation (EU) 376/2014: restrict Category C MEL dispatch under adverse weather, require immediate 72-hour MOR filing, and audit ground handler apron driving protocols."
+              }
+            ]
+          },
+          "rulesToReality": {
+            "title": "Rules to Reality: The 60-Second Investigator's Verdict",
+            "prompt": "Without looking at your notes, turn to your partner and explain in 60 seconds: 'Why did AF182 end up on the grass?' You must use at least 2 cause-and-effect connectors and mention one latent failure."
           }
         },
         "revision": {
@@ -15157,7 +15304,33 @@
               "tag": "Technical English • Module 1 • Session 5",
               "heading": "From Fragmented Field Evidence to Systematic Safety Findings",
               "lead": "When an aircraft suffers an airside occurrence—such as a pushback towbar failure, a low-speed runway excursion, or a ground servicing collision—the initial operational reports are almost always fragmented, stressful, and contradictory.",
-              "body": "Air traffic control logs record rapid-fire radio transmissions; weather reports document gusty crosswinds and rain intensity; maintenance logbooks list deferred equipment items under the Minimum Equipment List (MEL); and frontline occurrence reports convey subjective pilot and driver perspectives. As technical officers and safety investigators, your mission is to piece together these disparate clues into an objective causal chain. By applying the Swiss Cheese Model, you will uncover the underlying systemic and organizational factors that allowed multiple safety barriers to fail simultaneously."
+              "body": "Air traffic control logs record rapid-fire radio transmissions; weather reports document gusty crosswinds and rain intensity; maintenance logbooks list deferred equipment items under the Minimum Equipment List (MEL); and frontline occurrence reports convey subjective pilot and driver perspectives. As technical officers and safety investigators, your mission is to piece together these disparate clues into an objective causal chain. By applying the Swiss Cheese Model, you will uncover the underlying systemic and organizational factors that allowed multiple safety barriers to fail simultaneously.",
+              "diagnostic": {
+                "title": "Incident Investigation Entry Spot-Check",
+                "instructions": "Discuss these 4 essential investigation principles with your partner, then reveal the model answers.",
+                "questions": [
+                  {
+                    "id": 1,
+                    "q": "Under Regulation (EU) 376/2014, what is the mandatory reporting timeframe for submitting a Mandatory Occurrence Report (MOR)?",
+                    "answer": "Within 72 hours of becoming aware of the occurrence, unless exceptional circumstances prevent it."
+                  },
+                  {
+                    "id": 2,
+                    "q": "What is the primary sacrificial engineering purpose of a towbar shear pin during pushback operations?",
+                    "answer": "To fracture cleanly under excessive shear or torsional stress, protecting the expensive aircraft nose landing gear structure from severe internal damage."
+                  },
+                  {
+                    "id": 3,
+                    "q": "At what water depth is an asphalt runway officially classified as 'contaminated' with standing water under EASA CS-ADR-DSN rules?",
+                    "answer": "When standing water exceeds 3 mm in depth over more than 25% of the assessed runway surface area, triggering severe dynamic hydroplaning risk."
+                  },
+                  {
+                    "id": 4,
+                    "q": "In James Reason's Swiss Cheese Model, how does a latent condition differ from an active frontline failure?",
+                    "answer": "A latent condition is a dormant organizational or scheduling weakness (e.g. spare parts delay, turnaround rush) embedded in the system, whereas an active failure is an unsafe human slip committed directly at the operational sharp end."
+                  }
+                ]
+              }
             },
             "photoExhibits": [
               {
@@ -15248,6 +15421,79 @@
                 }
               ]
             },
+            "languageClinic": {
+              "title": "Language Clinic: Cause-and-Effect Connectors for Incident Investigation",
+              "summary": "When presenting technical investigation findings, safety engineers use precise causal markers to distinguish background origins, active sparks, direct outcomes, and logical consequences:",
+              "connectorsTable": [
+                {
+                  "connector": "stemming from",
+                  "function": "Points backward to systemic background origins",
+                  "example": "The directional control failure was a systemic issue stemming from delayed maintenance.",
+                  "tip": "Use for latent conditions: [Outcome] + stems from + [Latent condition]"
+                },
+                {
+                  "connector": "triggered by",
+                  "function": "Identifies the immediate active spark or frontline action",
+                  "example": "The towbar shear pin fracture was triggered by sudden emergency brake application.",
+                  "tip": "Use for the immediate initiator: [Failure] + was triggered by + [Active event]"
+                },
+                {
+                  "connector": "resulting in",
+                  "function": "Connects directly to the physical outcome or consequence",
+                  "example": "Standing water created dynamic hydroplaning, resulting in runway excursion into soft turf.",
+                  "tip": "Follow with noun or gerund (-ing): resulting in + damage / loss / excursion"
+                },
+                {
+                  "connector": "attributable to",
+                  "function": "Assigns operational responsibility or primary contributing factor",
+                  "example": "The pushback communication breakdown was attributable to ground frequency congestion.",
+                  "tip": "Formal passive structure: [Event] + is attributable to + [Cause]"
+                },
+                {
+                  "connector": "consequently",
+                  "function": "Introduces a logical operational sequence or enforcement effect",
+                  "example": "Runway 14L was contaminated; consequently, landing distance increased by over 25%.",
+                  "tip": "Use with semi-colon or at start of sentence: Consequently, ..."
+                }
+              ],
+              "drills": [
+                {
+                  "id": 1,
+                  "prompt": "1. The towbar shear pin fracture was __________ the tug driver's sudden application of emergency brakes on the wet apron.",
+                  "options": ["triggered by", "stemming from", "consequently"],
+                  "correct": "triggered by",
+                  "rationale": "Emergency braking is the immediate physical catalyst that broke the pin."
+                },
+                {
+                  "id": 2,
+                  "prompt": "2. Operating with a deferred anti-skid valve was a latent risk __________ logistics delays in delivering replacement parts.",
+                  "options": ["attributable to", "resulting in", "stemming from"],
+                  "correct": "stemming from",
+                  "rationale": "'Stemming from' points back to the dormant root organizational cause (logistics delay)."
+                },
+                {
+                  "id": 3,
+                  "prompt": "3. The aircraft experienced dynamic hydroplaning at 85 knots, __________ an uncontrollable veer onto the unpaved grass shoulder.",
+                  "options": ["resulting in", "triggered by", "stemming from"],
+                  "correct": "resulting in",
+                  "rationale": "'Resulting in' links the physical loss of friction directly to the ensuing runway excursion."
+                },
+                {
+                  "id": 4,
+                  "prompt": "4. The apron vehicle crossing incident was __________ severe radio frequency congestion on the ground control channel.",
+                  "options": ["consequently", "attributable to", "resulting in"],
+                  "correct": "attributable to",
+                  "rationale": "'Attributable to' correctly assigns causative responsibility to the congested radio frequency."
+                },
+                {
+                  "id": 5,
+                  "prompt": "5. The runway standing water depth reached 4 mm; __________, the aerodrome operator suspended flight operations on Runway 14L.",
+                  "options": ["stemming from", "consequently", "triggered by"],
+                  "correct": "consequently",
+                  "rationale": "'Consequently' introduces the logical regulatory safety decision taken as an effect."
+                }
+              ]
+            },
             "swissCheeseMatrix": {
               "title": "The Swiss Cheese Model: Root Cause Synthesis Matrix",
               "layers": [
@@ -15298,7 +15544,55 @@
                 "3. Regulatory Compliance: Cite relevant EASA rules (Regulation EU 139/2014 & EU 376/2014).",
                 "4. Preventive Safety Recommendations: Propose 2 concrete operational mitigations to prevent recurrence."
               ],
-              "modelDebriefScript": "Good morning members of the Safety Directorate. Our investigation team has completed the multi-source analysis of Occurrence 2024-089 involving Air France 182 at Toulouse-Blagnac. \n\nThe initial towbar shear pin fracture at Stand 14 was triggered by sudden emergency braking during pushback, resulting in temporary departure delay. While the mechanical pin fractured as designed to protect the nose landing gear, this incident was attributable to commercial turnaround pressure and vehicle congestion on the ramp.\n\nSubsequently, during landing rollout on Runway 14L, the aircraft experienced an uncontrollable runway excursion into the soft turf. This loss of directional control stemmed from heavy rain producing 4mm of standing water, which led to dynamic hydroplaning. However, this active event was heavily compounded by a latent organizational condition: the aircraft was operating with a deferred anti-skid valve and marginal tire tread under MEL, despite severe weather warnings. \n\nUnder Regulation (EU) 376/2014, our team submits two formal safety recommendations: first, mandatory cross-checks prohibiting dispatch with deferred braking components when contaminated runways are forecast; and second, enhanced ramp telematics to enforce vehicle separation during pushback operations."
+              "modelDebriefScript": "Good morning members of the Safety Directorate. Our investigation team has completed the multi-source analysis of Occurrence 2024-089 involving Air France 182 at Toulouse-Blagnac. \n\nThe initial towbar shear pin fracture at Stand 14 was triggered by sudden emergency braking during pushback, resulting in temporary departure delay. While the mechanical pin fractured as designed to protect the nose landing gear, this incident was attributable to commercial turnaround pressure and vehicle congestion on the ramp.\n\nSubsequently, during landing rollout on Runway 14L, the aircraft experienced an uncontrollable runway excursion into the soft turf. This loss of directional control stemmed from heavy rain producing 4mm of standing water, which led to dynamic hydroplaning. However, this active event was heavily compounded by a latent organizational condition: the aircraft was operating with a deferred anti-skid valve and marginal tire tread under MEL, despite severe weather warnings. \n\nUnder Regulation (EU) 376/2014, our team submits two formal safety recommendations: first, mandatory cross-checks prohibiting dispatch with deferred braking components when contaminated runways are forecast; and second, enhanced ramp telematics to enforce vehicle separation during pushback operations.",
+              "peerChecklist": [
+                {
+                  "id": 1,
+                  "label": "Did the speaker clearly distinguish latent organizational conditions from active frontline errors using the Swiss Cheese model?"
+                },
+                {
+                  "id": 2,
+                  "label": "Were cause-and-effect connectors (stemming from, triggered by, resulting in, attributable to, consequently) used accurately?"
+                },
+                {
+                  "id": 3,
+                  "label": "Did the debrief cite relevant regulatory standards (Regulation EU 376/2014 and EU 139/2014)?"
+                },
+                {
+                  "id": 4,
+                  "label": "Did the speaker propose 2 concrete, realistic safety recommendations rather than merely assigning frontline blame?"
+                }
+              ],
+              "peerCoaching": {
+                "evaluator": "Student B (Safety Board Evaluator): 'Your explanation of the shear pin fracture and runway excursion was very clear and well-paced. However, you didn\'t emphasize the latent organizational condition regarding the deferred anti-skid valve under MEL. Remember to cite Regulation EU 376/2014 when presenting mandatory dispatch limits.'",
+                "speaker": "Student A (Lead Investigator): 'Thank you for that feedback. I will make sure to link the logistics delay directly to the latent failure layer and reference EU 376/2014 in our final recommendations.'"
+              }
+            },
+            "safetyCheck": {
+              "title": "Activity 5: Safety Check: What is the Systemic Risk?",
+              "summary": "Review the 4 questions in the Safety Check table to synthesize incident findings and systemic safety decisions.",
+              "rows": [
+                {
+                  "question": "1. What is the systemic problem?",
+                  "answer": "Air France 182 suffered a pushback shear pin fracture on Stand 14 and a subsequent runway excursion on Runway 14L during severe rain with 4 mm standing water, compounded by a deferred anti-skid valve and marginal tire tread."
+                },
+                {
+                  "question": "2. What could happen if uncorrected?",
+                  "answer": "Operating transport-category aircraft with deferred braking systems on contaminated runways risks catastrophic high-speed overrun, gear collapse, and multi-vehicle apron collisions during congested turnarounds."
+                },
+                {
+                  "question": "3. How do we fix it?",
+                  "answer": "Enforce strict dispatch limits prohibiting flights with deferred MEL braking items when contaminated runways are forecast, mandate aerodrome water depth friction sweeps, and install GPS apron transponders on all ground service vehicles."
+                },
+                {
+                  "question": "4. Directorate Decision",
+                  "answer": "Issue mandatory safety directives under Regulation (EU) 376/2014: restrict Category C MEL dispatch under adverse weather, require immediate 72-hour MOR filing, and audit ground handler apron driving protocols."
+                }
+              ]
+            },
+            "rulesToReality": {
+              "title": "Rules to Reality: The 60-Second Investigator's Verdict",
+              "prompt": "Without looking at your notes, turn to your partner and explain in 60 seconds: 'Why did AF182 end up on the grass?' You must use at least 2 cause-and-effect connectors and mention one latent failure."
             }
           },
           "revision": {

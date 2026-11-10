@@ -6104,9 +6104,12 @@ function renderLessonContentTabSession3(sessionData, theme) {
       const hero = content.hero || {};
       const opening = content.openingSession || {};
       const photoExhibits = content.photoExhibits || [];
-      const dossier = content.dossier || {};
+      const dossier = content.dossier || content.incidentDossier || {};
+      const languageClinic = content.languageClinic || {};
       const swissCheese = content.swissCheeseMatrix || {};
       const debrief = content.debriefTask || {};
+      const safety = content.safetyCheck || {};
+      const rulesToReality = content.rulesToReality || {};
 
       bodyEl.innerHTML = `
         <div class="space-y-6 printable-lesson-container">
@@ -6115,14 +6118,15 @@ function renderLessonContentTabSession3(sessionData, theme) {
             <div>
               <div class="flex items-center gap-2">
                 <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">DIGITAL WORKSHEET</span>
-                <span class="text-xs font-bold text-slate-700">AT Module 1 • Session 5</span>
+                <span class="text-xs font-bold text-slate-700">AT Module 1 &bull; Session 5</span>
               </div>
               <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">${hero.title || 'Multi-Source Incident Investigation & Root Cause Analysis'}</h3>
             </div>
-            <button type="button" onclick="window.printLessonContent()" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 shadow-xs transition-all cursor-pointer shrink-0">
-              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
-              <span>Print / Save Lesson PDF</span>
-            </button>
+            <a href="docs/GSEA_S3_M1_S5_Lesson_Worksheet.pdf" target="_blank" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-white bg-blue-700 hover:bg-blue-800 shadow-xs transition-all cursor-pointer shrink-0">
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              <span>Lesson Worksheet (PDF)</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
           </div>
 
           <!-- Hero Banner & Context -->
@@ -6159,12 +6163,45 @@ function renderLessonContentTabSession3(sessionData, theme) {
             <p>Airside occurrences rarely result from a single failure. When an airliner experiences a pushback shear pin fracture or a contaminated runway excursion, safety investigators synthesize fragmented records—ATC voice logs, METAR storm decodes, deferred maintenance logs, and pilot occurrence reports. By applying the Swiss Cheese Model, investigators uncover latent organizational flaws behind active frontline slips.</p>
           </div>
 
+          <!-- Opening Diagnostic Spot-Check -->
+          <div class="p-4 sm:p-5 rounded-xl bg-white border border-slate-200 shadow-xs space-y-3">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-2.5">
+              <div>
+                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Entry Diagnostic</span>
+                <h4 class="text-xs sm:text-sm font-black text-slate-900">${(opening.diagnostic && opening.diagnostic.title) || 'Incident Investigation Entry Spot-Check'}</h4>
+              </div>
+              <span class="text-[10px] font-bold text-blue-700 bg-blue-50 border border-blue-200 px-2.5 py-0.5 rounded-full">4 Quick Questions</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">${(opening.diagnostic && opening.diagnostic.instructions) || 'Discuss these 4 essential investigation principles with your partner, then reveal the model answers.'}</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1">
+              ${((opening.diagnostic && opening.diagnostic.questions) || []).map(q => `
+                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5 flex flex-col justify-between">
+                  <div>
+                    <div class="flex items-center justify-between gap-2">
+                      <span class="text-[10px] font-black uppercase tracking-wider text-slate-500">Question 0${q.id}</span>
+                      <span class="w-2 h-2 rounded-full" style="background-color: ${theme.primary};"></span>
+                    </div>
+                    <p class="text-xs font-bold text-slate-800 mt-1">${q.q}</p>
+                  </div>
+                  <div>
+                    <div id="diagnostic-ans-s5-${q.id}" class="hidden p-2.5 bg-white border border-slate-200 rounded-lg text-[11px] text-slate-700 leading-relaxed shadow-xs mb-2">
+                      <span class="font-bold text-slate-900">Plain English Answer:</span> ${q.answer}
+                    </div>
+                    <button type="button" onclick="const el=document.getElementById('diagnostic-ans-s5-${q.id}'); el.classList.toggle('hidden'); this.querySelector('span').innerText = el.classList.contains('hidden') ? 'Reveal Answer' : 'Hide Answer';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-slate-600 hover:text-slate-900 cursor-pointer">
+                      <span>Reveal Answer</span> &rarr;
+                    </button>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
           <!-- Stage 1: Visual Evidence & Photo Description Challenge -->
           <div class="p-4 sm:p-5 rounded-xl bg-white border border-slate-200 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-100 pb-3">
               <div>
                 <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Part 1: Visual Evidence</span>
-                <h4 class="text-sm sm:text-base font-black text-slate-900">Occurrence Photo Description Challenge • Reconstructing Physical Causal Chains</h4>
+                <h4 class="text-sm sm:text-base font-black text-slate-900">Occurrence Photo Description Challenge &bull; Reconstructing Physical Causal Chains</h4>
               </div>
               <span class="text-xs font-bold text-emerald-800 bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded-full">Interactive Photos</span>
             </div>
@@ -6228,7 +6265,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
             <div class="flex items-center justify-between border-b border-slate-100 pb-3">
               <div>
                 <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Part 2: Evidence Synthesis</span>
-                <h4 class="text-sm sm:text-base font-black text-slate-900">${dossier.title || 'BEA/EASA Technical Incident Dossier • Occurrence Dossier 2024-089'}</h4>
+                <h4 class="text-sm sm:text-base font-black text-slate-900">${dossier.title || 'BEA/EASA Technical Incident Dossier &bull; Occurrence Dossier 2024-089'}</h4>
               </div>
               <span class="text-xs font-bold text-sky-800 bg-sky-50 border border-sky-200 px-2.5 py-1 rounded-full">4-Source Dossier</span>
             </div>
@@ -6247,16 +6284,19 @@ function renderLessonContentTabSession3(sessionData, theme) {
                 `).join('')}
               </div>
 
-              <div class="p-4 sm:p-5" id="dossier-tab-content">
+              <!-- Tab Contents -->
+              <div class="p-4 bg-white" id="dossier-tab-content">
                 ${(dossier.tabs || []).map((t, tIdx) => `
-                  <div id="dossier-pane-${t.id}" class="dossier-pane space-y-3 ${tIdx === 0 ? '' : 'hidden'}">
-                    <div class="flex items-center justify-between">
-                      <span class="text-xs font-bold text-slate-700 uppercase tracking-wider">${t.badge}</span>
-                      <span class="text-[10px] font-bold text-slate-400 bg-white px-2 py-0.5 rounded border border-slate-200">Official Record</span>
+                  <div id="dossier-tab-pane-${t.id}" class="space-y-3 ${tIdx === 0 ? '' : 'hidden'}">
+                    <div class="flex items-center justify-between gap-2 border-b border-slate-100 pb-2">
+                      <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200">${t.badge || 'Record'}</span>
+                      <span class="text-[11px] text-slate-500">Occurrence BEA/EASA-2024-089</span>
                     </div>
-                    <div class="bg-white p-3.5 sm:p-4 rounded-lg border border-slate-200 font-mono text-[11px] sm:text-xs text-slate-800 space-y-1.5 leading-relaxed overflow-x-auto">
+                    <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 font-mono text-xs text-slate-800 space-y-1.5 leading-relaxed select-text">
                       ${t.content.map(line => `
-                        <div class="${line.startsWith('14:') ? 'text-blue-900 font-bold' : (line.startsWith('METAR') || line.startsWith('SPECI') ? 'text-amber-900 font-bold' : (line.startsWith('Statement') ? 'text-purple-900 font-bold mt-2' : ''))}">${line}</div>
+                        <div class="${line.startsWith('14:') ? 'text-blue-900 font-semibold' : (line.startsWith('METAR') || line.startsWith('SPECI') ? 'text-amber-950 font-bold bg-amber-50/80 p-1.5 rounded' : (line.startsWith('Item') ? 'text-rose-950 font-bold' : (line.startsWith('Statement') ? 'text-indigo-950 font-bold border-t border-slate-200 pt-1 mt-1' : 'text-slate-700 pl-2')))}">
+                          ${line}
+                        </div>
                       `).join('')}
                     </div>
                   </div>
@@ -6265,11 +6305,72 @@ function renderLessonContentTabSession3(sessionData, theme) {
             </div>
           </div>
 
-          <!-- Stage 3: The Swiss Cheese Model Root Cause Matrix -->
+          <!-- Part 3: Language Clinic: Cause-and-Effect Connectors -->
           <div class="p-4 sm:p-5 rounded-xl bg-white border border-slate-200 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-100 pb-3">
               <div>
-                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Part 3: Root Cause Mapping</span>
+                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Part 3: Language Clinic</span>
+                <h4 class="text-sm sm:text-base font-black text-slate-900">${languageClinic.title || 'Cause-and-Effect Connectors for Incident Investigation'}</h4>
+              </div>
+              <span class="text-xs font-bold text-indigo-800 bg-indigo-50 border border-indigo-200 px-2.5 py-1 rounded-full">Language Precision</span>
+            </div>
+
+            <p class="text-xs sm:text-[13px] text-slate-600 leading-relaxed">
+              ${languageClinic.summary || 'When presenting technical investigation findings, safety engineers use precise causal markers to distinguish background origins, active sparks, direct outcomes, and logical consequences:'}
+            </p>
+
+            <!-- Table of Connectors -->
+            <div class="overflow-x-auto rounded-xl border border-slate-200 shadow-2xs">
+              <table class="w-full text-xs text-left">
+                <thead class="bg-slate-100 text-slate-800 font-bold border-b border-slate-200">
+                  <tr>
+                    <th class="p-2.5 w-1/5">Connector</th>
+                    <th class="p-2.5 w-1/4">Investigation Function</th>
+                    <th class="p-2.5 w-1/3">Authentic Airport Example</th>
+                    <th class="p-2.5">Pattern Tip</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200 text-slate-700 bg-white">
+                  ${(languageClinic.connectorsTable || []).map(c => `
+                    <tr class="hover:bg-slate-50">
+                      <td class="p-2.5 font-bold text-blue-900 font-mono">${c.connector}</td>
+                      <td class="p-2.5 font-semibold text-slate-800">${c.function}</td>
+                      <td class="p-2.5 italic text-slate-600">&ldquo;${c.example}&rdquo;</td>
+                      <td class="p-2.5 text-[11px] text-slate-500 font-mono">${c.tip}</td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+
+            <!-- 5 Interactive Drills -->
+            <div class="space-y-3 pt-1">
+              <h5 class="text-xs sm:text-sm font-bold text-slate-800">Practice Drills: Choose the correct cause-and-effect connector</h5>
+              <div class="space-y-2.5">
+                ${(languageClinic.drills || []).map(d => `
+                  <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                    <p class="text-xs font-bold text-slate-900">${d.prompt}</p>
+                    <div class="flex flex-wrap items-center justify-between gap-2">
+                      <div class="flex items-center gap-2">
+                        ${d.options.map(opt => `
+                          <button type="button" onclick="const ans=document.getElementById('drill-ans-s5-${d.id}'); ans.classList.remove('hidden');" class="px-2.5 py-1 bg-white hover:bg-blue-50 border border-slate-300 rounded text-xs font-bold text-slate-700 cursor-pointer">${opt}</button>
+                        `).join('')}
+                      </div>
+                      <div id="drill-ans-s5-${d.id}" class="hidden text-xs text-emerald-800 font-bold bg-emerald-50 px-2.5 py-1 rounded border border-emerald-200">
+                        &check; Correct: ${d.correct} (${d.rationale})
+                      </div>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </div>
+
+          <!-- Part 4: The Swiss Cheese Model Synthesis -->
+          <div class="p-4 sm:p-5 rounded-xl bg-white border border-slate-200 shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+              <div>
+                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Part 4: Causal Modeling</span>
                 <h4 class="text-sm sm:text-base font-black text-slate-900">${swissCheese.title || 'The Swiss Cheese Model: Root Cause Synthesis Matrix'}</h4>
               </div>
               <span class="text-xs font-bold text-amber-800 bg-amber-50 border border-amber-200 px-2.5 py-1 rounded-full">Systemic Safety</span>
@@ -6300,7 +6401,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
             </div>
           </div>
 
-          <!-- Stage 4: Oral Technical Debriefing & Notes -->
+          <!-- Stage 4 (cont): Oral Technical Debriefing & Peer Checklist -->
           <div class="p-4 sm:p-5 rounded-xl bg-white border border-slate-200 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-100 pb-3">
               <div>
@@ -6319,16 +6420,39 @@ function renderLessonContentTabSession3(sessionData, theme) {
               ${(debrief.structureSteps || []).map(step => `<div class="text-[11.5px]">&bull; ${step}</div>`).join('')}
             </div>
 
-            <!-- Digital Notes Area -->
-            <div class="space-y-2 pt-2">
-              <div class="flex items-center justify-between">
-                <label for="notes-s5-debrief" class="text-xs font-bold text-slate-800 uppercase tracking-wider">Your Team Debriefing Notes &amp; Recommendations:</label>
-                <span class="text-[10px] text-slate-400 font-medium no-print">Auto-saves locally</span>
+            <!-- Student B Peer Evaluation Checklist -->
+            <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-3">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-amber-200/80 pb-2">
+                <div class="flex items-center gap-2">
+                  <svg width="16" height="16" class="text-amber-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+                  <h5 class="text-xs sm:text-sm font-bold text-amber-950">Student B: Safety Directorate Peer Evaluator Checklist</h5>
+                </div>
+                <span class="text-[10px] font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded border border-amber-200">Interactive Peer Evaluation</span>
               </div>
-              <textarea id="notes-s5-debrief" oninput="window.saveLessonNote('5', 'debrief', this.value); window.updateWordCount && window.updateWordCount(this.value, 'word-count-s5');" rows="5" placeholder="Draft your 2-minute oral debriefing here using cause-and-effect connectors: stemming from, triggered by, resulting in, attributable to, consequently..." class="w-full p-3.5 text-xs sm:text-[13px] bg-slate-50 border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans shadow-inner">${window.getLessonNote ? window.getLessonNote('5', 'debrief') : ''}</textarea>
-              <div class="flex items-center justify-between text-[11px] text-slate-400 no-print">
-                <span id="word-count-s5">Word count: 0 words</span>
-                <span class="italic">Saved to local browser cache</span>
+              <p class="text-xs text-amber-900 leading-relaxed">During the 2-minute oral presentation, Student B evaluates the briefing against these 4 technical criteria before providing 1 minute of oral coaching:</p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                ${((debrief.peerChecklist) || [
+                  { id: 1, label: "Did the speaker clearly distinguish latent organizational conditions from active frontline errors using the Swiss Cheese model?" },
+                  { id: 2, label: "Were cause-and-effect connectors (stemming from, triggered by, resulting in, attributable to, consequently) used accurately?" },
+                  { id: 3, label: "Did the debrief cite relevant regulatory standards (Regulation EU 376/2014 and EU 139/2014)?" },
+                  { id: 4, label: "Did the speaker propose 2 concrete, realistic safety recommendations rather than merely assigning frontline blame?" }
+                ]).map(item => `
+                  <label class="flex items-start gap-2.5 p-2.5 bg-white border border-amber-200 rounded-lg shadow-2xs cursor-pointer hover:bg-amber-50/50 transition-all select-none">
+                    <input type="checkbox" class="mt-0.5 rounded border-amber-300 text-amber-600 focus:ring-amber-500 h-4 w-4 shrink-0">
+                    <span class="text-slate-800 font-medium leading-snug">${item.label}</span>
+                  </label>
+                `).join('')}
+              </div>
+
+              <!-- 1-Minute Peer Coaching Protocol -->
+              <div class="pt-2 border-t border-amber-200/80 space-y-1.5 text-xs">
+                <span class="font-bold text-amber-950 block">1-Minute Peer Coaching Dialogue:</span>
+                <p class="text-slate-800 italic bg-white p-2.5 rounded-lg border border-amber-200 leading-relaxed">
+                  <strong>Student B (Evaluator):</strong> &ldquo;Your explanation of the shear pin fracture and runway excursion was very clear and well-paced. However, remember to emphasize the latent organizational condition regarding the deferred anti-skid valve under MEL, and cite Regulation EU 376/2014 when presenting mandatory dispatch limits.&rdquo;
+                </p>
+                <p class="text-slate-800 italic bg-white p-2.5 rounded-lg border border-amber-200 leading-relaxed">
+                  <strong>Student A (Investigator):</strong> &ldquo;Thank you for that feedback. I will make sure to link the logistics delay directly to the latent failure layer and reference EU 376/2014 in our final recommendations.&rdquo;
+                </p>
               </div>
             </div>
 
@@ -6348,6 +6472,95 @@ function renderLessonContentTabSession3(sessionData, theme) {
                 </div>
               </div>
             </div>
+          </div>
+
+          <!-- Activity 5: Safety Check: What is the Systemic Risk? -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${safety.title || 'Activity 5: Safety Check: What is the Systemic Risk?'}</h4>
+                  <p class="text-[11px] text-slate-500">${safety.summary || 'Review the 4 questions in the Safety Check table to synthesize incident findings and systemic safety decisions.'}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Simple Safety Check</span>
+            </div>
+
+            <!-- Table -->
+            <div class="overflow-x-auto rounded-xl border border-slate-200 shadow-2xs">
+              <table class="w-full text-xs text-left">
+                <thead class="bg-slate-100 text-slate-800 font-bold border-b border-slate-200">
+                  <tr>
+                    <th class="p-3 w-1/3">Simple Safety Question</th>
+                    <th class="p-3 w-2/3">Agreed Class Answer</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200 text-slate-700 bg-white">
+                  ${(safety.rows || [
+                    { question: "1. What is the systemic problem?", answer: "Air France 182 suffered a pushback shear pin fracture on Stand 14 and a subsequent runway excursion on Runway 14L during severe rain with 4 mm standing water, compounded by a deferred anti-skid valve and marginal tire tread." },
+                    { question: "2. What could happen if uncorrected?", answer: "Operating transport-category aircraft with deferred braking systems on contaminated runways risks catastrophic high-speed overrun, gear collapse, and multi-vehicle apron collisions during congested turnarounds." },
+                    { question: "3. How do we fix it?", answer: "Enforce strict dispatch limits prohibiting flights with deferred MEL braking items when contaminated runways are forecast, mandate aerodrome water depth friction sweeps, and install GPS apron transponders on all ground service vehicles." },
+                    { question: "4. Directorate Decision", answer: "Issue mandatory safety directives under Regulation (EU) 376/2014: restrict Category C MEL dispatch under adverse weather, require immediate 72-hour MOR filing, and audit ground handler apron driving protocols." }
+                  ]).map(row => `
+                    <tr class="hover:bg-slate-50">
+                      <td class="p-3 font-bold text-slate-900 bg-slate-50/50">${row.question}</td>
+                      <td class="p-3 text-[11px] leading-relaxed text-slate-800">${row.answer}</td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Activity 6: Operational Notes & Safety Recommendations -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs bg-slate-800">NOTES</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">Activity 6: Operational Notes &amp; Safety Recommendations</h4>
+                  <p class="text-[11px] text-slate-500">Record your team's executive debrief and final safety recommendations. Auto-saved in browser.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 text-[11px]">
+                <span id="notes-status-s5" class="font-bold text-emerald-600 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span>Auto-saved locally</span>
+                </span>
+                <button type="button" onclick="window.clearLessonNotes('5')" class="text-slate-400 hover:text-rose-600 underline cursor-pointer no-print ml-2 font-medium">Clear</button>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div class="notes-textarea-container">
+                <label class="block text-xs font-bold text-slate-800 mb-1 flex items-center justify-between">
+                  <span>1. Executive Oral Debriefing Notes:</span>
+                  <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saves on typing</span>
+                </label>
+                <textarea id="notes-roleplay-s5" oninput="window.saveLessonNote('5', 'roleplay', this.value)" rows="3" placeholder="Draft your team debriefing here: The initial shear pin fracture was triggered by sudden braking, stemming from apron congestion. The runway excursion resulted from 4mm standing water, compounded by deferred anti-skid..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('5', 'roleplay') : ''}</textarea>
+                <div id="print-notes-roleplay-s5" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('5', 'roleplay') : '') || '[No oral debrief recorded]'}</div>
+              </div>
+
+              <div class="notes-textarea-container">
+                <label class="block text-xs font-bold text-slate-800 mb-1 flex items-center justify-between">
+                  <span>2. Directorate Safety Recommendations &amp; CAP Enforcement:</span>
+                  <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saves on typing</span>
+                </label>
+                <textarea id="notes-safety-s5" oninput="window.saveLessonNote('5', 'safety', this.value)" rows="3" placeholder="e.g., Mandatory cross-checks prohibiting dispatch with deferred braking components when contaminated runways are forecast; mandate GPS apron tracking on all ground support vehicles under EU 139/2014..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('5', 'safety') : ''}</textarea>
+                <div id="print-notes-safety-s5" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('5', 'safety') : '') || '[No safety recommendations recorded]'}</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rules to Reality Wrap-Up -->
+          <div class="p-4 rounded-xl bg-slate-900 text-white space-y-2 shadow-xs">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-amber-400 uppercase tracking-wider">60-Second Pair Wrap-Up</span>
+              <span class="text-[10px] font-bold text-slate-400">Rules to Reality</span>
+            </div>
+            <h5 class="text-xs sm:text-sm font-black text-white">${rulesToReality.title || "Rules to Reality: The 60-Second Investigator's Verdict"}</h5>
+            <p class="text-xs text-slate-300 leading-relaxed">${rulesToReality.prompt || "Without looking at your notes, turn to your partner and explain in 60 seconds: 'Why did AF182 end up on the grass?' You must use at least 2 cause-and-effect connectors and mention one latent failure."}</p>
           </div>
         </div>
       `;
