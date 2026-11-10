@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Session 1 Lesson Worksheet - EASA Rules & Modal Precision</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 10mm 12mm 12mm 12mm;
+      @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 8pt;
+        color: #64748b;
+        font-weight: 700;
+      }
+      @bottom-left {
+        content: "ENAC • GSEA Semester 3 Technical English (AT • LV125E) • Phil PARRIS";
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 7.5pt;
+        color: #94a3b8;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 9pt;
+      line-height: 1.4;
+      color: #1e293b;
+      background: #ffffff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      page-break-after: always;
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+    }
+
+    /* Running Header */
+    .doc-header {
+      border-bottom: 2px solid #1e3a8a;
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .doc-header .agency {
+      font-size: 7.5pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #1e3a8a;
+    }
+
+    .doc-header .ref {
+      font-size: 7pt;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-weight: 700;
+      color: #64748b;
+      background: #f1f5f9;
+      padding: 1.5px 5px;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Titles */
+    h1 {
+      font-size: 16pt;
+      font-weight: 900;
+      color: #0f172a;
+      letter-spacing: -0.4px;
+      line-height: 1.15;
+      margin-bottom: 3px;
+    }
+
+    h2 {
+      font-size: 11pt;
+      font-weight: 800;
+      color: #1e3a8a;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    h3 {
+      font-size: 9pt;
+      font-weight: 750;
+      color: #0f172a;
+      margin-bottom: 3px;
+    }
+
+    p {
+      margin-bottom: 6px;
+      color: #334155;
+    }
+
+    /* Cards & Containers */
+    .card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 8px 10px;
+      margin-bottom: 8px;
+      page-break-inside: avoid;
+    }
+
+    .card-tint-blue {
+      background: #f8fafc;
+      border-color: #cbd5e1;
+    }
+
+    .card-tint-amber {
+      background: #fffbeb;
+      border-color: #fde68a;
+    }
+
+    .card-tint-purple {
+      background: #faf5ff;
+      border-color: #e9d5ff;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 7pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 2px 6px;
+      border-radius: 3px;
+      vertical-align: middle;
+    }
+
+    .badge-primary {
+      background: #1e3a8a;
+      color: #ffffff;
+    }
+
+    .badge-amber {
+      background: #d97706;
+      color: #ffffff;
+    }
+
+    .badge-emerald {
+      background: #059669;
+      color: #ffffff;
+    }
+
+    .badge-purple {
+      background: #7e22ce;
+      color: #ffffff;
+    }
+
+    .badge-slate {
+      background: #e2e8f0;
+      color: #334155;
+    }
+
+    /* Tables */
+    .index-table, .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 8pt;
+      margin-top: 4px;
+    }
+
+    .index-table th, .data-table th {
+      background: #f1f5f9;
+      color: #0f172a;
+      font-weight: 800;
+      text-align: left;
+      padding: 5px 7px;
+      border: 1px solid #cbd5e1;
+    }
+
+    .index-table td, .data-table td {
+      padding: 4.5px 7px;
+      border: 1px solid #e2e8f0;
+      vertical-align: top;
+    }
+
+    .index-table tr:nth-child(even), .data-table tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    /* Instruction Box */
+    .instruction-box {
+      background: #f8fafc;
+      border-left: 3px solid #2563eb;
+      padding: 6px 9px;
+      margin-bottom: 8px;
+      border-radius: 0 5px 5px 0;
+      font-size: 8pt;
+    }
+
+    .instruction-box ol, .instruction-box ul {
+      padding-left: 14px;
+      margin-top: 3px;
+    }
+
+    .instruction-box li {
+      margin-bottom: 1.5px;
+      color: #334155;
+    }
+
+    /* Grid Layouts */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .code-box {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 7.5pt;
+      background: #0f172a;
+      color: #f1f5f9;
+      padding: 8px 10px;
+      border-radius: 5px;
+      line-height: 1.35;
+      white-space: pre-wrap;
+      margin-bottom: 8px;
+    }
+
+    .checklist-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 5px;
+      padding: 4px 6px;
+      background: #ffffff;
+      border: 1px solid #fde68a;
+      border-radius: 4px;
+      margin-bottom: 3px;
+      font-size: 8pt;
+    }
+
+    .checkbox {
+      width: 11px;
+      height: 11px;
+      border: 1.5px solid #d97706;
+      border-radius: 2px;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .writing-line {
+      border-bottom: 1px dashed #cbd5e1;
+      height: 20px;
+      margin-bottom: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 1: COVER, SUMMARY, OBJECTIVES & WORKSHEET INDEX               -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">École Nationale de l'Aviation Civile • Département LH/LAN</span>
+      <span class="ref">GSEA S3 • AT LV125E • SESSION 1</span>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #1e3a8a, #0f172a); color: white; padding: 12px 16px; border-radius: 7px; margin-bottom: 10px;">
+      <div style="font-size: 8pt; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px; color: #fde68a; margin-bottom: 3px;">
+        Technical English • Module 1 (EASA Docs, Safety &amp; Audits)
+      </div>
+      <h1 style="color: white; margin-bottom: 2px;">Session 1: EASA Rules &amp; Modal Precision</h1>
+      <p style="color: #cbd5e1; font-size: 8.5pt; line-height: 1.35; margin-bottom: 0;">
+        Navigating Airport Regulations, Modal Authority &amp; Safeguarding in Plain English
+      </p>
+    </div>
+
+    <!-- Lesson Summary -->
+    <div class="card card-tint-blue" style="border-left: 3.5px solid #1e3a8a; padding: 7px 10px; margin-bottom: 8px;">
+      <h3 style="color: #1e3a8a; font-size: 9pt; margin-bottom: 3px;">📌 Lesson Summary &amp; Operational Context</h3>
+      <p style="font-size: 8pt; margin-bottom: 3px; line-height: 1.35;">
+        In this opening session of Technical English, students learn how European aerodrome regulations are organized under <strong>Regulation (EU) No 139/2014</strong> and Certification Specifications (CS-ADR-DSN). We examine how modal verbs define legal obligations: <strong>mandatory hard law (shall/must)</strong>, <strong>prohibitions (shall not)</strong>, <strong>advisory recommendations (should)</strong>, and <strong>permissions (may)</strong>.
+      </p>
+      <p style="font-size: 8pt; margin-bottom: 0; line-height: 1.35;">
+        Students practice reading authentic CS-ADR-DSN Subpart H obstacle limitations, decode dense legal expressions into plain operational English, catch intentional errors in a partner listening game, and role-play a polite, professional negotiation with a construction contractor erecting a 48-metre crane near an active runway.
+      </p>
+    </div>
+
+    <!-- 5 Core Learning Objectives -->
+    <div class="card card-tint-blue" style="border-left: 3.5px solid #059669; padding: 7px 10px; margin-bottom: 8px;">
+      <h3 style="color: #059669; font-size: 9pt; margin-bottom: 4px;">🎯 5 Core Spoken Learning Objectives (B2 Standards)</h3>
+      <table class="data-table" style="font-size: 7.5pt;">
+        <tr>
+          <td style="width: 24px; font-weight: 900; color: #059669; text-align: center;">01</td>
+          <td><strong>Navigating Technical Documents:</strong> Apply scanning techniques to locate safety-critical clauses in official manuals without getting bogged down in dense text.</td>
+        </tr>
+        <tr>
+          <td style="width: 24px; font-weight: 900; color: #059669; text-align: center;">02</td>
+          <td><strong>The Modal Authority Ladder:</strong> Differentiate between hard law obligation (<em>shall/must</em>), prohibitions (<em>shall not</em>), advisory guidance (<em>should</em>), and permissions (<em>may</em>).</td>
+        </tr>
+        <tr>
+          <td style="width: 24px; font-weight: 900; color: #059669; text-align: center;">03</td>
+          <td><strong>Plain English Jargon Busting:</strong> Translate dense bureaucratic boilerplate (e.g. <em>pursuant to, without prejudice to, derogation</em>) into clear, natural operational language.</td>
+        </tr>
+        <tr>
+          <td style="width: 24px; font-weight: 900; color: #059669; text-align: center;">04</td>
+          <td><strong>Active Listening &amp; Auditory Detection:</strong> Listen actively to partner speech and immediately interrupt with checking phrases upon hearing compliance errors.</td>
+        </tr>
+        <tr>
+          <td style="width: 24px; font-weight: 900; color: #059669; text-align: center;">05</td>
+          <td><strong>Diplomatic Negotiation Role-Play:</strong> Balance aviation safety priorities with commercial contractor deadlines, reaching an agreed safety compromise on crane restrictions.</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Worksheet Index -->
+    <div class="card" style="margin-bottom: 0; padding: 7px 10px;">
+      <h3 style="color: #0f172a; font-size: 9pt; margin-bottom: 3px;">📑 Worksheet Index &amp; Table of Contents</h3>
+      <table class="index-table" style="font-size: 7.5pt;">
+        <thead>
+          <tr>
+            <th style="width: 60px;">Part</th>
+            <th>Activity Title &amp; Pedagogical Focus</th>
+            <th style="width: 130px;">Student Mode</th>
+            <th style="width: 40px; text-align: center;">Page</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Part 1</strong></td>
+            <td><strong>Warm-up, Entry Diagnostic &amp; Rules &amp; Meaning Matrix</strong></td>
+            <td>Pairs • Discussion &amp; Diagnostic</td>
+            <td style="text-align: center; font-weight: 700;">2</td>
+          </tr>
+          <tr>
+            <td><strong>Part 2</strong></td>
+            <td><strong>Reading the EASA Crane Rule (CS-ADR-DSN.H.415) &amp; Jargon Buster</strong></td>
+            <td>Individual / Pairs • Reading &amp; Translation</td>
+            <td style="text-align: center; font-weight: 700;">3</td>
+          </tr>
+          <tr>
+            <td><strong>Part 3</strong></td>
+            <td><strong>Language Clinic: Words for Rules &amp; Direct Action Commands</strong></td>
+            <td>Pairs • Grammar Clinic &amp; Speaking</td>
+            <td style="text-align: center; font-weight: 700;">4</td>
+          </tr>
+          <tr>
+            <td><strong>Part 4A</strong></td>
+            <td><strong>Spot the Safety Bug (Partner Listening Barrier Game)</strong></td>
+            <td>Pairs (Reader &amp; Detector) • Spoken Interaction</td>
+            <td style="text-align: center; font-weight: 700;">5</td>
+          </tr>
+          <tr>
+            <td><strong>Part 4B</strong></td>
+            <td><strong>Speaking Role-Play: Talking to the Builder &amp; Peer Checklist</strong></td>
+            <td>Groups of 3 • Negotiation &amp; Peer Evaluation</td>
+            <td style="text-align: center; font-weight: 700;">6</td>
+          </tr>
+          <tr>
+            <td><strong>Part 5 &amp; 6</strong></td>
+            <td><strong>Safety Check Table, Rules to Reality &amp; Operational Notes</strong></td>
+            <td>Class / Pairs • Decision &amp; Written Records</td>
+            <td style="text-align: center; font-weight: 700;">7</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 2: PART 1 — WARM-UP & RULES MATRIX                            -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">Part 1 • Warm-up &amp; The Rules &amp; Meaning Matrix</span>
+      <span class="ref">Page 2</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 1</span> Activity 1: Warm-up &amp; Entry Spot-Check</h2>
+    
+    <div class="instruction-box">
+      <strong>Student Instructions:</strong>
+      <ol>
+        <li>In pairs, discuss the 3 opening questions about reading official technical manuals in English.</li>
+        <li>Answer the 4 Entry Spot-Check diagnostic questions together and check your reasoning.</li>
+        <li>Review the Rules &amp; Meaning Reference Table to master the difference between hard law and guidance.</li>
+      </ol>
+    </div>
+
+    <div class="card card-tint-amber" style="padding: 7px 9px; margin-bottom: 7px;">
+      <h3 style="color: #92400e; font-size: 8.5pt;">💬 Pair Discussion: Opening Questions</h3>
+      <div style="font-size: 7.5pt; margin-top: 3px;">
+        <div style="margin-bottom: 4px;">
+          <strong>1. Why are official aviation manuals often 300 to 500 pages long?</strong><br>
+          <span style="color: #64748b; font-style: italic;">Talking point: Aviation safety leaves zero room for guesswork. Rules cover every weather condition, aircraft type, and accident recommendation.</span>
+        </div>
+        <div style="margin-bottom: 4px;">
+          <strong>2. When you need to find one specific rule in a huge PDF, what is your personal strategy?</strong><br>
+          <span style="color: #64748b; font-style: italic;">Talking point: Using targeted search terms (Ctrl+F) for keywords like "gradient", "28 days", or scanning the Table of Contents by Subpart.</span>
+        </div>
+        <div>
+          <strong>3. Have you ever had to explain a complicated rule to someone who didn't understand it?</strong><br>
+          <span style="color: #64748b; font-style: italic;">Talking point: Explaining the safety reason behind the rule ("protects approaching planes from obstacles") rather than just saying "it's forbidden".</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="padding: 7px 9px; margin-bottom: 7px;">
+      <h3 style="font-size: 8.5pt;">🔍 Airport Rules Entry Spot-Check (Diagnostic)</h3>
+      <table class="data-table" style="font-size: 7.5pt;">
+        <thead>
+          <tr>
+            <th style="width: 22px;">#</th>
+            <th style="width: 44%;">Diagnostic Question</th>
+            <th>Plain English Answer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>01</strong></td>
+            <td>What is the difference between a Law (Regulation) and a Guide (Guidance Material)?</td>
+            <td>A <strong>Law</strong> is 100% mandatory (legal penalties for breach). A <strong>Guide</strong> provides practical advice and examples to help you comply.</td>
+          </tr>
+          <tr>
+            <td><strong>02</strong></td>
+            <td>In European aviation documents, what does the word <strong>"SHALL"</strong> mean?</td>
+            <td><strong>Shall</strong> means a compulsory legal requirement. You have no choice: it is required by law.</td>
+          </tr>
+          <tr>
+            <td><strong>03</strong></td>
+            <td>What is an <strong>Obstacle Limitation Surface (OLS)</strong> in simple words?</td>
+            <td>An invisible safety slope in the sky around runways where tall objects (cranes, trees, masts) are forbidden or restricted.</td>
+          </tr>
+          <tr>
+            <td><strong>04</strong></td>
+            <td>What is a <strong>NOTAM (Notice to Airmen)</strong>?</td>
+            <td>An urgent official alert sent to pilots informing them about temporary hazards (closed runways, crane works, unserviceable lights).</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card card-tint-blue" style="border-left: 3.5px solid #1e3a8a; padding: 7px 9px; margin-bottom: 0;">
+      <h3 style="color: #1e3a8a; font-size: 8.5pt;">📊 Rules &amp; Meaning: From Strict Law to Advice</h3>
+      <table class="data-table" style="font-size: 7.5pt;">
+        <thead>
+          <tr>
+            <th style="width: 20%;">Modal Verb</th>
+            <th style="width: 20%;">Legal Commitment</th>
+            <th>Regulatory Meaning</th>
+            <th style="width: 24%;">Spoken Tone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="badge badge-primary">SHALL / MUST</span></td>
+            <td><strong>100% Mandatory</strong></td>
+            <td>Hard law. Non-compliance constitutes a safety breach or legal violation.</td>
+            <td>Direct order / firm command</td>
+          </tr>
+          <tr>
+            <td><span class="badge" style="background: #dc2626; color: white;">SHALL NOT</span></td>
+            <td><strong>Prohibition</strong></td>
+            <td>Zero tolerance. Strictly forbidden under law and operational directives.</td>
+            <td>Absolute restriction</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-amber">SHOULD</span></td>
+            <td><strong>Strong Advice</strong></td>
+            <td>Advisable best practice under AMC; alternative methods require approval.</td>
+            <td>Professional recommendation</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-emerald">MAY / CAN</span></td>
+            <td><strong>Permitted / Optional</strong></td>
+            <td>Authorized discretion or optional flexibility permitted under conditions.</td>
+            <td>Helpful guidance / option</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 3: PART 2 — READING THE CRANE RULE & JARGON BUSTER            -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">Part 2 • Reading the EASA Crane Rule &amp; Jargon Buster</span>
+      <span class="ref">Page 3</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 2</span> Activity 2: Reading the EASA Crane Rule</h2>
+    
+    <div class="instruction-box">
+      <strong>Student Instructions:</strong>
+      <ol>
+        <li>Scan the authentic EASA CS-ADR-DSN extract below to answer the 4 comprehension checks.</li>
+        <li>Review the Jargon Buster table and practice replacing formal legal expressions with natural plain English.</li>
+      </ol>
+    </div>
+
+    <!-- Official Text Extract -->
+    <div class="code-box"><strong>EASA CS-ADR-DSN • Subpart H — Obstacle Limitation Surfaces (Extract)</strong>
+
+<strong>CS-ADR-DSN.H.405 Applicability</strong>
+The specifications contained in this Subpart are designed to define the airspace around aerodromes to be maintained free from obstacles so as to permit the intended aeroplane operations to be conducted safely and to prevent the aerodromes from becoming unusable by the growth of obstacles.
+
+<strong>CS-ADR-DSN.H.415 Approach Surface Specifications</strong>
+(a) Applicability: An approach surface SHALL be established for each runway direction intended for landing.
+(b) Characteristics: The limits shall comprise:
+    (1) An inner edge located at a distance of 60 m prior to the runway threshold.
+    (2) Two sides diverging uniformly at a rate of 10% (Code 3/4) from the extended runway centre line.
+(d) Slope: The slope of the approach surface SHALL NOT exceed 2.0% (1:50 gradient) for precision runways.
+(e) Prohibition: New objects or extensions of existing objects SHALL NOT be permitted above an approach surface except when shielded by an existing immovable object.
+
+<strong>GM1 CS-ADR-DSN.H.415 Construction Equipment & Mobile Cranes</strong>
+(b) Construction contractors intending to erect any crane exceeding 25 metres above ground level within 4 kilometres of the aerodrome reference point SHALL provide written notification to the aerodrome operator at least 28 calendar days prior to assembly.
+(c) Where a temporary obstacle penetrates an established surface, the aerodrome operator SHALL request a Notice to Airmen (NOTAM), mandate low- or medium-intensity red warning lights, and establish operational restrictions.</div>
+
+    <div class="grid-2" style="margin-bottom: 0;">
+      <div class="card" style="padding: 7px 9px;">
+        <h3 style="font-size: 8.5pt;">🔍 Reading Comprehension Checks</h3>
+        <div style="font-size: 7.5pt;">
+          <p style="margin-bottom: 3px;"><strong>Q1: Where does the Approach Surface start?</strong><br>
+          <span style="color: #047857;">&check; Inner edge located 60m prior to runway threshold (H.415(b)(1)).</span></p>
+          <p style="margin-bottom: 3px;"><strong>Q2: Maximum allowed upward slope?</strong><br>
+          <span style="color: #047857;">&check; Shall not exceed 2.0% (1:50 gradient) for precision runways.</span></p>
+          <p style="margin-bottom: 3px;"><strong>Q3: Are builders allowed to build above this slope?</strong><br>
+          <span style="color: #047857;">&check; No. New objects are forbidden unless shielded by immovable structures.</span></p>
+          <p style="margin-bottom: 0;"><strong>Q4: How many days notice for cranes over 25m?</strong><br>
+          <span style="color: #047857;">&check; Written notice at least 28 calendar days prior to assembly.</span></p>
+        </div>
+      </div>
+
+      <div class="card card-tint-blue" style="padding: 7px 9px;">
+        <h3 style="color: #1e3a8a; font-size: 8.5pt;">🗣️ Jargon Buster (Formal to Plain English)</h3>
+        <table class="data-table" style="font-size: 7pt;">
+          <thead>
+            <tr>
+              <th>Formal Bureaucratic English</th>
+              <th>Plain Operational English</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><em>"Pursuant to Article 4..."</em></td>
+              <td><strong>According to / Following Article 4</strong></td>
+            </tr>
+            <tr>
+              <td><em>"Without prejudice to Subpart C..."</em></td>
+              <td><strong>Without affecting existing rules in Subpart C</strong></td>
+            </tr>
+            <tr>
+              <td><em>"Shall enter into force on..."</em></td>
+              <td><strong>Becomes legally active on [date]</strong></td>
+            </tr>
+            <tr>
+              <td><em>"Competent authority"</em></td>
+              <td><strong>Official oversight body (DGAC/DSAC)</strong></td>
+            </tr>
+            <tr>
+              <td><em>"Derogation from the rule"</em></td>
+              <td><strong>An official authorized exemption</strong></td>
+            </tr>
+            <tr>
+              <td><em>"Repealed with effect from..."</em></td>
+              <td><strong>Officially cancelled &amp; replaced on [date]</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 4: PART 3 — LANGUAGE CLINIC & ACTION PHRASING                 -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">Part 3 • Language Clinic &amp; Direct Action Phrasing</span>
+      <span class="ref">Page 4</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 3</span> Activity 3: Language Clinic: Words for Rules</h2>
+    
+    <div class="instruction-box">
+      <strong>Student Instructions:</strong>
+      <ol>
+        <li>Complete the 5 practice sentences below by choosing the correct modal rule word.</li>
+        <li>In the Speaking Clinic, practice transforming heavy bureaucratic text into direct spoken commands for ground teams.</li>
+      </ol>
+    </div>
+
+    <div class="card" style="padding: 7px 9px; margin-bottom: 7px;">
+      <h3 style="font-size: 8.5pt;">✏️ Modal Precision Drills (Choose: shall, shall not, should, may, must)</h3>
+      <table class="data-table" style="font-size: 7.5pt;">
+        <thead>
+          <tr>
+            <th style="width: 20px;">#</th>
+            <th>Rule Sentence</th>
+            <th style="width: 85px;">Correct Modal</th>
+            <th>Operational Reason</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1</strong></td>
+            <td>Contractors ________ notify the airport operator 28 days before erecting a tall crane.</td>
+            <td><strong style="color: #1e3a8a;">shall</strong></td>
+            <td>Mandatory hard law under GM1 CS-ADR-DSN.H.415(b).</td>
+          </tr>
+          <tr>
+            <td><strong>2</strong></td>
+            <td>Unshielded obstacles ________ be permitted above the approach slope.</td>
+            <td><strong style="color: #dc2626;">shall not</strong></td>
+            <td>Absolute safety prohibition under clause H.415(e).</td>
+          </tr>
+          <tr>
+            <td><strong>3</strong></td>
+            <td>To reduce danger, builders ________ lower the crane boom whenever winds exceed 30 knots.</td>
+            <td><strong style="color: #d97706;">should</strong></td>
+            <td>Recommended precautionary best practice (AMC).</td>
+          </tr>
+          <tr>
+            <td><strong>4</strong></td>
+            <td>The airport operator ________ issue a temporary permit if all safety conditions are met.</td>
+            <td><strong style="color: #059669;">may</strong></td>
+            <td>Authorized permission and discretionary authority.</td>
+          </tr>
+          <tr>
+            <td><strong>5</strong></td>
+            <td>All airside construction workers ________ wear high-visibility vests at all times.</td>
+            <td><strong style="color: #1e3a8a;">must</strong></td>
+            <td>Mandatory basic airside safety requirement.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card card-tint-blue" style="border-left: 3.5px solid #4f46e5; padding: 7px 9px; margin-bottom: 0;">
+      <h3 style="color: #4f46e5; font-size: 8.5pt;">⚡ Speaking Clinic: Turning Heavy Words into Direct Action Commands</h3>
+      <p style="font-size: 7.5pt; color: #4338ca; margin-bottom: 5px;">
+        Written regulations use heavy abstract nouns (<em>implementation, notification, cessation</em>). On the ramp, multinational teams need clear, active verbs. Practice transforming these extracts into direct spoken instructions:
+      </p>
+
+      <div style="font-size: 7.5pt; margin-bottom: 5px; background: white; padding: 5px 7px; border-radius: 5px; border: 1px solid #c7d2fe;">
+        <strong>Case 1 (Heavy Written Regulation):</strong><br>
+        <span style="font-family: monospace; color: #334155;">"Implementation of immediate containment measures shall be conducted by the operator upon the identification of a hydraulic fluid spill exceeding 5 square metres."</span><br>
+        <span style="color: #047857; font-weight: bold;">&rarr; Direct Spoken Ramp Command: "Ground staff must contain hydraulic spills over 5 m² immediately."</span>
+      </div>
+
+      <div style="font-size: 7.5pt; margin-bottom: 5px; background: white; padding: 5px 7px; border-radius: 5px; border: 1px solid #c7d2fe;">
+        <strong>Case 2 (Heavy Written Regulation):</strong><br>
+        <span style="font-family: monospace; color: #334155;">"Notification of the competent authority regarding runway incursions should be executed by the safety manager within a timeframe not exceeding 72 hours."</span><br>
+        <span style="color: #047857; font-weight: bold;">&rarr; Direct Spoken Ramp Command: "The safety manager should notify DSAC of runway incursions within 72 hours."</span>
+      </div>
+
+      <div style="font-size: 7.5pt; margin-bottom: 0; background: white; padding: 5px 7px; border-radius: 5px; border: 1px solid #c7d2fe;">
+        <strong>Case 3 (Heavy Written Regulation):</strong><br>
+        <span style="font-family: monospace; color: #334155;">"Placement of rubber chocks against the main landing gear tyres shall be performed immediately upon the complete cessation of aircraft movement."</span><br>
+        <span style="color: #047857; font-weight: bold;">&rarr; Direct Spoken Ramp Command: "Handlers must chock the main wheels as soon as the plane stops."</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 5: PART 4A — PARTNER LISTENING GAME: SPOT THE SAFETY BUG       -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">Part 4A • Partner Listening Game: Spot the Safety Bug</span>
+      <span class="ref">Page 5</span>
+    </div>
+
+    <h2><span class="badge badge-purple">Part 4A</span> Activity 4A: Spot the Safety Bug (Barrier Game)</h2>
+    
+    <div class="instruction-box">
+      <strong>Student Instructions:</strong>
+      <ol>
+        <li>Work in pairs: <strong>Student A (Reader)</strong> reads their official text aloud at normal speaking pace.</li>
+        <li><strong>Student B (Detector)</strong> follows their bugged copy and must interrupt immediately using checking phrases when they hear an error.</li>
+        <li>Check the revealed bugs box to verify how many discrepancies were caught, then switch roles for Scenario 2.</li>
+      </ol>
+    </div>
+
+    <!-- Interruption Phrases -->
+    <div class="card card-tint-purple" style="padding: 6px 8px; margin-bottom: 6px;">
+      <h3 style="color: #7e22ce; font-size: 8.5pt; margin-bottom: 3px;">🚨 Target Spoken Interruption Phrases (Use as soon as you hear a bug):</h3>
+      <div class="grid-2" style="font-size: 7.5pt; font-weight: 600; color: #581c87; margin-bottom: 0;">
+        <div>&bull; "Hold on a second, did you say SHALL or SHOULD?"</div>
+        <div>&bull; "Wait, let me double-check that number—did you say 25 or 40?"</div>
+        <div>&bull; "Stop there—that sounds optional, but isn't it mandatory?"</div>
+        <div>&bull; "Wait, did you say 24 hours or 72 hours?"</div>
+      </div>
+    </div>
+
+    <!-- Scenario 1: Apron Speeds -->
+    <div class="card" style="padding: 6px 8px; margin-bottom: 6px;">
+      <h3 style="color: #0f172a; font-size: 8.5pt;">Scenario 1: Apron Vehicle Movement &amp; Speed Limits (ADR.OPS.B.028)</h3>
+      <div class="grid-2" style="font-size: 7pt; margin-top: 3px; margin-bottom: 3px;">
+        <div style="background: #f0fdf4; border: 1px solid #bbf7d0; padding: 5px; border-radius: 4px;">
+          <strong style="color: #166534;">Student A • Official Text (Read aloud):</strong><br>
+          "Drivers operating on movement areas SHALL give way to aircraft. Vehicles SHALL NOT be driven inside the aircraft safety envelope. Operators SHOULD establish maximum apron speeds not exceeding 25 km/h on roadways and 10 km/h near stands."
+        </div>
+        <div style="background: #fff1f2; border: 1px solid #fecdd3; padding: 5px; border-radius: 4px;">
+          <strong style="color: #9f1239;">Student B • Bugged Copy (Listen &amp; Catch Bugs):</strong><br>
+          "Drivers operating on movement areas MAY give way to aircraft. Vehicles SHALL be driven inside the aircraft safety envelope. Operators SHOULD establish maximum apron speeds not exceeding 40 km/h on roadways and 10 km/h near stands."
+        </div>
+      </div>
+      <div style="font-size: 7pt; color: #7e22ce; font-weight: 600;">
+        &check; Bugs to catch: 1) "may" instead of "shall"; 2) "shall be driven" instead of "shall not"; 3) "40 km/h" instead of "25 km/h".
+      </div>
+    </div>
+
+    <!-- Scenario 2: Fuelling in Lightning -->
+    <div class="card" style="padding: 6px 8px; margin-bottom: 6px;">
+      <h3 style="color: #0f172a; font-size: 8.5pt;">Scenario 2: Aircraft Refuelling &amp; Lightning (ADR.OPS.B.055)</h3>
+      <div class="grid-2" style="font-size: 7pt; margin-top: 3px; margin-bottom: 3px;">
+        <div style="background: #f0fdf4; border: 1px solid #bbf7d0; padding: 5px; border-radius: 4px;">
+          <strong style="color: #166534;">Student A • Official Text (Read aloud):</strong><br>
+          "Refuelling with passengers on board SHALL only take place when ground staff maintain a clear exit path. All refuelling SHALL cease immediately if lightning is detected within 5 kilometres. Personnel SHOULD verify fire equipment within 30 metres."
+        </div>
+        <div style="background: #fff1f2; border: 1px solid #fecdd3; padding: 5px; border-radius: 4px;">
+          <strong style="color: #9f1239;">Student B • Bugged Copy (Listen &amp; Catch Bugs):</strong><br>
+          "Refuelling with passengers on board SHOULD only take place when ground staff maintain a clear exit path. All refuelling SHALL cease immediately if lightning is detected within 15 kilometres. Personnel MAY verify fire equipment within 30 metres."
+        </div>
+      </div>
+      <div style="font-size: 7pt; color: #7e22ce; font-weight: 600;">
+        &check; Bugs to catch: 1) "should" instead of "shall"; 2) "15 kilometres" instead of "5 km"; 3) "may verify" instead of "should verify".
+      </div>
+    </div>
+
+    <!-- Scenario 3: Occurrence Reporting -->
+    <div class="card" style="padding: 6px 8px; margin-bottom: 0;">
+      <h3 style="color: #0f172a; font-size: 8.5pt;">Scenario 3: Occurrence Reporting Timelines (ADR.OPS.B.080)</h3>
+      <div class="grid-2" style="font-size: 7pt; margin-top: 3px; margin-bottom: 3px;">
+        <div style="background: #f0fdf4; border: 1px solid #bbf7d0; padding: 5px; border-radius: 4px;">
+          <strong style="color: #166534;">Student A • Official Text (Read aloud):</strong><br>
+          "Aerodrome operators SHALL report any runway incursion or aircraft damage to the competent authority within 72 hours of becoming aware of the event. Reports SHALL contain factual environmental and personnel details."
+        </div>
+        <div style="background: #fff1f2; border: 1px solid #fecdd3; padding: 5px; border-radius: 4px;">
+          <strong style="color: #9f1239;">Student B • Bugged Copy (Listen &amp; Catch Bugs):</strong><br>
+          "Aerodrome operators SHALL report any runway incursion or aircraft damage to the competent authority within 24 hours of becoming aware of the event. Reports MAY contain factual environmental and personnel details."
+        </div>
+      </div>
+      <div style="font-size: 7pt; color: #7e22ce; font-weight: 600;">
+        &check; Bugs to catch: 1) "24 hours" instead of "72 hours"; 2) "may contain" instead of "shall contain".
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 6: PART 4B — SPEAKING ROLE-PLAY: TALKING TO THE BUILDER       -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">Part 4B • Speaking Role-Play: Talking to the Builder</span>
+      <span class="ref">Page 6</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 4B</span> Activity 4B: Speaking Role-Play: Talking to the Builder</h2>
+    
+    <div class="instruction-box">
+      <strong>Student Instructions:</strong>
+      <ol>
+        <li>Form groups of 3 students: <strong>Student A (Safety Lead)</strong>, <strong>Student B (Contractor)</strong>, <strong>Student C (Observer / Coach)</strong>.</li>
+        <li>Read the scenario carefully. You have <strong>5 minutes to prepare your arguments</strong>.</li>
+        <li>Conduct the <strong>6-minute spoken role-play</strong> using the Useful Phrases box below.</li>
+        <li>Student C provides <strong>2 minutes of feedback</strong> using the Peer Feedback Checklist, then switch roles.</li>
+      </ol>
+    </div>
+
+    <div class="card card-tint-blue" style="border-left: 3.5px solid #0284c7; padding: 6px 8px; margin-bottom: 6px;">
+      <h3 style="color: #0369a1; font-size: 8.5pt;">🏗️ Operational Scenario: Runway 09 Crane Safeguarding Dispute</h3>
+      <p style="font-size: 8pt; margin-bottom: 0; line-height: 1.35;">
+        A construction company wants to put up a <strong>48-metre mobile crane</strong> 1,200 metres from the Runway 09 threshold to build a new airport hotel. The crane penetrates the approach slope by <strong>6 metres</strong>. The contractor needs to start tomorrow because rented equipment costs €15,000/day, but they only submitted the request yesterday!
+      </p>
+    </div>
+
+    <div class="grid-3" style="font-size: 7.5pt; margin-bottom: 6px;">
+      <div class="card" style="border-top: 3px solid #1e3a8a; padding: 6px 8px;">
+        <strong style="color: #1e3a8a;">Student A: Safety Lead</strong>
+        <ul style="padding-left: 10px; margin-top: 3px;">
+          <li>Explain 28-day notice rule was ignored.</li>
+          <li>Explain 48m crane penetrates approach surface by 6m.</li>
+          <li>Propose safety conditions: lower boom to 38m, night work (23h–05h), red lights, wait for NOTAM.</li>
+        </ul>
+      </div>
+
+      <div class="card" style="border-top: 3px solid #d97706; padding: 6px 8px;">
+        <strong style="color: #d97706;">Student B: Contractor</strong>
+        <ul style="padding-left: 10px; margin-top: 3px;">
+          <li>Explain delays cost €15,000 per day in rented equipment.</li>
+          <li>Argue crane is off to the side, not on the centreline.</li>
+          <li>Push to start immediately, but agree to safety lights &amp; night work if forced.</li>
+        </ul>
+      </div>
+
+      <div class="card" style="border-top: 3px solid #059669; padding: 6px 8px;">
+        <strong style="color: #059669;">Student C: Observer &amp; Coach</strong>
+        <ul style="padding-left: 10px; margin-top: 3px;">
+          <li>Listen to both speakers without interrupting.</li>
+          <li>Check modal rule words: shall, must, should, may.</li>
+          <li>Evaluate diplomatic tone and compromise.</li>
+          <li>Give 2 positive points and 1 improvement.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Useful Phrases Box -->
+    <div class="card card-tint-blue" style="border-left: 3.5px solid #059669; padding: 6px 8px; margin-bottom: 6px;">
+      <strong style="color: #059669; font-size: 8pt;">💬 Useful Conversational Phrases for Diplomatic Negotiation:</strong>
+      <div class="grid-2" style="font-size: 7pt; font-style: italic; color: #065f46; margin-top: 2px; margin-bottom: 0;">
+        <div>&bull; "According to EASA safety rules, we cannot allow..."</div>
+        <div>&bull; "I completely understand your deadline, but flight safety is our priority."</div>
+        <div>&bull; "The issue is that the crane penetrates the approach slope by 6m."</div>
+        <div>&bull; "What we can propose instead is working during night runway closure."</div>
+        <div>&bull; "If you agree to lower the boom to 38m, we can approve a permit."</div>
+        <div>&bull; "Let's record these agreed conditions in writing so both sides are covered."</div>
+      </div>
+    </div>
+
+    <!-- Student C Peer Checklist -->
+    <div class="card card-tint-amber" style="margin-bottom: 0; padding: 6px 8px;">
+      <strong style="color: #92400e; font-size: 8pt;">📋 Student C: Peer Feedback Checklist (Evaluate both partners):</strong>
+      <div class="grid-2" style="margin-top: 3px; margin-bottom: 0;">
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span><strong>1. Modal Accuracy:</strong> Did Student A use mandatory vs advisory words correctly (shall vs should)?</span>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span><strong>2. Commercial Arguments:</strong> Did Student B clearly present deadline and equipment costs?</span>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span><strong>3. Diplomatic Tone:</strong> Was the conversation polite, professional, and non-aggressive?</span>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span><strong>4. Safety Compromise:</strong> Did both sides reach a realistic compromise (night work, lower boom)?</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 7: PART 5 & 6 — SAFETY DECISION & OPERATIONAL NOTES           -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">Part 5 &amp; 6 • Safety Decision &amp; Operational Notes</span>
+      <span class="ref">Page 7</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 5</span> Activity 5: Safety Check: What Could Go Wrong?</h2>
+    
+    <div class="card" style="padding: 6px 8px; margin-bottom: 6px;">
+      <table class="data-table" style="font-size: 7.5pt;">
+        <thead>
+          <tr>
+            <th style="width: 30%;">Simple Safety Question</th>
+            <th>Agreed Class Evaluation &amp; Operational Answer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1. What is the problem?</strong></td>
+            <td>A contractor wants to place a 48m crane near Runway 09 with 24 hours notice, penetrating the approach surface by 6m.</td>
+          </tr>
+          <tr>
+            <td><strong>2. What could happen?</strong></td>
+            <td>An approaching aircraft in low visibility or windshear could collide with the crane, or pilots could get distracted.</td>
+          </tr>
+          <tr>
+            <td><strong>3. How do we fix it?</strong></td>
+            <td>1) Reduce crane height to 38m maximum; 2) Mandate medium-intensity flashing red lights; 3) Restrict works to night runway closure (23h00–05h00); 4) Issue official NOTAM.</td>
+          </tr>
+          <tr>
+            <td><strong>4. Final Decision:</strong></td>
+            <td><strong>APPROVED WITH CONDITIONS:</strong> Contractor may proceed once the 4 protective steps are verified on site.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card card-tint-amber" style="border-left: 3.5px solid #d97706; padding: 6px 8px; margin-bottom: 8px;">
+      <h3 style="color: #92400e; font-size: 8.5pt;">⏱️ Rules to Reality: 60-Second Pair Spoken Wrap-Up</h3>
+      <p style="font-size: 8pt; margin-bottom: 0;">
+        Pick one operational rule from today (crane height, apron speed, refuelling in lightning, or glycol runoff). In pairs, deliver an unscripted 60-second operational summary explaining: 1) What is the exact rule? 2) Why do ground teams sometimes ignore it? 3) What is the real-world safety consequence on the ramp?
+      </p>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 6</span> Activity 6: Operational Notes &amp; Safeguarding Decision</h2>
+    <div class="instruction-box" style="margin-bottom: 6px;">
+      <strong>Student Written Record:</strong> Use the lines below to record your team's role-play conclusions and safeguarding decisions.
+    </div>
+
+    <div class="card" style="margin-bottom: 6px; padding: 6px 8px;">
+      <strong style="font-size: 8pt; color: #1e3a8a;">1. Negotiation Outcome with Building Contractor:</strong>
+      <div style="margin-top: 5px;">
+        <div class="writing-line"></div>
+        <div class="writing-line"></div>
+        <div class="writing-line"></div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom: 0; padding: 6px 8px;">
+      <strong style="font-size: 8pt; color: #1e3a8a;">2. Safeguarding Record &amp; NOTAM Alert Decision:</strong>
+      <div style="margin-top: 5px;">
+        <div class="writing-line"></div>
+        <div class="writing-line"></div>
+        <div class="writing-line"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
