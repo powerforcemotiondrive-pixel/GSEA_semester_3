@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Session 4 Lesson Worksheet - Ground Inspection & Audit Findings</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 10mm 12mm 12mm 12mm;
+      @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 8pt;
+        color: #64748b;
+        font-weight: 700;
+      }
+      @bottom-left {
+        content: "ENAC • GSEA Semester 3 Technical English (AT • LV125E) • Phil PARRIS";
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 7.5pt;
+        color: #94a3b8;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 9pt;
+      line-height: 1.4;
+      color: #1e293b;
+      background: #ffffff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      page-break-after: always;
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+    }
+
+    /* Running Header */
+    .doc-header {
+      border-bottom: 2px solid #1e3a8a;
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .doc-header .agency {
+      font-size: 7.5pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #1e3a8a;
+    }
+
+    .doc-header .ref {
+      font-size: 7pt;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-weight: 700;
+      color: #64748b;
+      background: #f1f5f9;
+      padding: 1.5px 5px;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Titles */
+    h1 {
+      font-size: 16pt;
+      font-weight: 900;
+      color: #0f172a;
+      letter-spacing: -0.4px;
+      line-height: 1.15;
+      margin-bottom: 3px;
+    }
+
+    h2 {
+      font-size: 11pt;
+      font-weight: 800;
+      color: #1e3a8a;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    h3 {
+      font-size: 9pt;
+      font-weight: 750;
+      color: #0f172a;
+      margin-bottom: 3px;
+    }
+
+    p {
+      margin-bottom: 6px;
+      color: #334155;
+    }
+
+    /* Cards & Containers */
+    .card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 8px 10px;
+      margin-bottom: 8px;
+      page-break-inside: avoid;
+    }
+
+    .card-tint-blue {
+      background: #f8fafc;
+      border-color: #cbd5e1;
+    }
+
+    .card-tint-amber {
+      background: #fffbeb;
+      border-color: #fde68a;
+    }
+
+    .card-tint-purple {
+      background: #faf5ff;
+      border-color: #e9d5ff;
+    }
+
+    .card-tint-emerald {
+      background: #f0fdf4;
+      border-color: #bbf7d0;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 7pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 2px 6px;
+      border-radius: 3px;
+      vertical-align: middle;
+    }
+
+    .badge-primary {
+      background: #1e3a8a;
+      color: #ffffff;
+    }
+
+    .badge-amber {
+      background: #d97706;
+      color: #ffffff;
+    }
+
+    .badge-emerald {
+      background: #059669;
+      color: #ffffff;
+    }
+
+    .badge-purple {
+      background: #7e22ce;
+      color: #ffffff;
+    }
+
+    .badge-rose {
+      background: #e11d48;
+      color: #ffffff;
+    }
+
+    .badge-slate {
+      background: #e2e8f0;
+      color: #334155;
+    }
+
+    /* Tables */
+    .index-table, .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 8pt;
+      margin-top: 4px;
+    }
+
+    .index-table th, .data-table th {
+      background: #f1f5f9;
+      color: #0f172a;
+      font-weight: 800;
+      text-align: left;
+      padding: 5px 7px;
+      border: 1px solid #cbd5e1;
+    }
+
+    .index-table td, .data-table td {
+      padding: 4.5px 7px;
+      border: 1px solid #e2e8f0;
+      vertical-align: top;
+    }
+
+    .index-table tr:nth-child(even), .data-table tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    /* Instruction Box */
+    .instruction-box {
+      background: #f8fafc;
+      border-left: 3px solid #2563eb;
+      padding: 6px 9px;
+      margin-bottom: 8px;
+      border-radius: 0 5px 5px 0;
+      font-size: 8pt;
+    }
+
+    .instruction-box ol, .instruction-box ul {
+      padding-left: 14px;
+      margin-top: 3px;
+    }
+
+    .instruction-box li {
+      margin-bottom: 1.5px;
+      color: #334155;
+    }
+
+    /* Grid Layouts */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .code-box {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 7.2pt;
+      background: #0f172a;
+      color: #f1f5f9;
+      padding: 8px 10px;
+      border-radius: 5px;
+      line-height: 1.35;
+      white-space: pre-wrap;
+      margin-bottom: 8px;
+    }
+
+    .checklist-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 5px;
+      padding: 4px 6px;
+      background: #ffffff;
+      border: 1px solid #fde68a;
+      border-radius: 4px;
+      margin-bottom: 3px;
+      font-size: 8pt;
+    }
+
+    .checkbox {
+      width: 11px;
+      height: 11px;
+      border: 1.5px solid #d97706;
+      border-radius: 2px;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .writing-line {
+      border-bottom: 1px dashed #cbd5e1;
+      height: 20px;
+      margin-bottom: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 1: COVER, SUMMARY, OBJECTIVES & WORKSHEET INDEX               -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">École Nationale de l'Aviation Civile • Département LH/LAN</span>
+      <span class="ref">GSEA S3 • AT LV125E • SESSION 4</span>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #1e3a8a, #0f172a); color: white; padding: 12px 16px; border-radius: 7px; margin-bottom: 10px;">
+      <div style="font-size: 8pt; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px; color: #fde68a; margin-bottom: 3px;">
+        Technical English • Module 1 (EASA Docs, Safety &amp; Audits)
+      </div>
+      <h1 style="color: white; margin-bottom: 2px;">Session 4: Ground Inspection &amp; Audit Findings</h1>
+      <p style="color: #cbd5e1; font-size: 8.5pt; line-height: 1.35; margin-bottom: 0;">
+        Translating Airfield Non-Conformities into Spoken Technical Debriefs
+      </p>
+    </div>
+
+    <!-- Lesson Summary -->
+    <div class="card card-tint-blue" style="border-left: 3.5px solid #1e3a8a; padding: 7px 10px; margin-bottom: 8px;">
+      <h3 style="color: #1e3a8a; font-size: 9pt; margin-bottom: 3px;">📌 Lesson Summary &amp; Operational Context</h3>
+      <p style="font-size: 8pt; margin-bottom: 3px; line-height: 1.35;">
+        Airside safety oversight is an active frontline defense against runway incursions, apron fires, and catastrophic engine blade failures. When an aerodrome inspector notices an uncontained fuel puddle flowing toward an apron drain, overgrown wild grass obscuring runway guard lights, or loose metallic lockwire scattered near engine intakes, they must accurately classify the non-conformance under EASA Part-ADR.AR.C.055, reconstruct the causal chain using past modal deductions (must have, could have, should have), and verbally brief the Airport Director with immediate enforcement decisions. In this session, GSEA students examine an authentic airfield audit dossier (EASA/ADR-INSP/2024-012), master the 4-step picture description method across three authentic photo exhibits, and deliver a crisp 2-minute 3-bullet oral notice with structured peer review.
+      </p>
+      <div style="font-size: 7.5pt; color: #475569; display: flex; gap: 12px; margin-top: 4px;">
+        <span><strong>Target Level:</strong> CEFR B1–B2</span>
+        <span><strong>Audience:</strong> GSEA Student Training (TSEEAC Airside Safety &amp; Audit Focus)</span>
+        <span><strong>Total Duration:</strong> 120 Minutes</span>
+      </div>
+    </div>
+
+    <!-- Core Spoken Learning Objectives -->
+    <div class="card" style="padding: 7px 10px; margin-bottom: 8px;">
+      <h3 style="color: #0f172a; font-size: 8.5pt; margin-bottom: 4px;">🎯 Core Spoken Learning Objectives (5 Key Competencies)</h3>
+      <table class="data-table" style="font-size: 7.5pt;">
+        <thead>
+          <tr>
+            <th style="width: 28px;">#</th>
+            <th style="width: 140px;">Learning Objective</th>
+            <th>Operational Spoken Competency</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight: 800; color: #1e3a8a;">1</td>
+            <td style="font-weight: 700;">Audit Finding Classification</td>
+            <td>Distinguish between Level 1 critical non-compliances (immediate stand/taxiway restriction) and Level 2 systemic issues (30-day CAP) under Part-ADR.AR.C.055.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 800; color: #1e3a8a;">2</td>
+            <td style="font-weight: 700;">Technical Evidence Scanning</td>
+            <td>Extract physical facts, cited regulations, and risk factors from authentic inspection reports covering fuel spills, obscured lights, and apron FOD.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 800; color: #1e3a8a;">3</td>
+            <td style="font-weight: 700;">Past Modal Deductions</td>
+            <td>Formulate accurate spoken deductions (must have, could have, should have + past participle) to reconstruct failure causes based on physical clues.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 800; color: #1e3a8a;">4</td>
+            <td style="font-weight: 700;">4-Step Picture Description</td>
+            <td>Describe complex airside photographic scenes fluently in pairs (Scene &rarr; Ongoing Actions &rarr; Hazard &rarr; Past Modals) with checking questions.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 800; color: #1e3a8a;">5</td>
+            <td style="font-weight: 700;">2-Minute Executive Debrief</td>
+            <td>Deliver a structured 3-bullet oral audit notice addressing the Airport Director, defended with immediate operational restrictions and peer review.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Worksheet Index / Table of Contents -->
+    <div class="card card-tint-amber" style="padding: 7px 10px; margin-bottom: 0;">
+      <h3 style="color: #92400e; font-size: 8.5pt; margin-bottom: 3px;">📑 Worksheet Table of Contents &amp; Activity Guide</h3>
+      <table class="index-table" style="font-size: 7.5pt;">
+        <thead>
+          <tr>
+            <th style="width: 60px;">Section</th>
+            <th style="width: 170px;">Activity Title</th>
+            <th>Pedagogical Focus &amp; Student Spoken Deliverable</th>
+            <th style="width: 45px; text-align: center;">Page</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 1</td>
+            <td>Field Observations &amp; Audit Classification</td>
+            <td>Pair discussion on fuel risks, Level 1 vs Level 2 criteria, and diagnostic entry spot-check.</td>
+            <td style="text-align: center; font-weight: 700;">Page 2</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 2</td>
+            <td>Reading Authentic EASA Airfield Audit Dossier</td>
+            <td>Scanning 3 field exhibits (Stand 14 fuel spill, B2 wig-wags, Stand 12 FOD) &amp; checks.</td>
+            <td style="text-align: center; font-weight: 700;">Page 3</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 3</td>
+            <td>Language Clinic: Past Modal Deductions</td>
+            <td>Grammar clinic on must have, could have, should have + V3 with 4 spoken practice drills.</td>
+            <td style="text-align: center; font-weight: 700;">Page 4</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 4</td>
+            <td>Spoken Team Challenge: 3-Photo Ramp Workshop</td>
+            <td>Interactive photo description challenge across 3 scenes using 4-step method and checking.</td>
+            <td style="text-align: center; font-weight: 700;">Page 5</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 4 (cont)</td>
+            <td>Delivering 3-Bullet Notice &amp; Student B Checklist</td>
+            <td>2-minute executive briefing to Airport Director with 4-point peer evaluation checklist.</td>
+            <td style="text-align: center; font-weight: 700;">Page 6</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 5 &amp; 6</td>
+            <td>Safety Check Table &amp; Operational CAP Decisions</td>
+            <td>4-step decision check table, 60-second pair wrap-up, and auto-saving CAP notes.</td>
+            <td style="text-align: center; font-weight: 700;">Page 7</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 2: PART 1 — FIELD OBSERVATIONS & FINDING CLASSIFICATION       -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 1: FIELD OBSERVATIONS &amp; CLASSIFICATION</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 1</span> Activity 1: Field Observations to Formal Audit Reports</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions:</strong>
+      <ol>
+        <li><strong>Step 1: Pair Discussion:</strong> Discuss the 3 real-world inspection questions below with your partner before opening the official EASA oversight dossier.</li>
+        <li><strong>Step 2: Legal Classification:</strong> Consider why European aviation law distinguishes between Level 1 immediate flight hazards and Level 2 systemic administrative defects.</li>
+        <li><strong>Step 3: Diagnostic Check:</strong> Test your baseline knowledge of Part-ADR.AR.C.055, CAP deadlines, vegetation limits, and deadman valves.</li>
+      </ol>
+    </div>
+
+    <!-- Pair Discussion Prompts -->
+    <div class="card card-tint-amber" style="margin-bottom: 8px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+        <h3 style="color: #92400e; font-size: 8.5pt;">💬 Pair Discussion: Operational Questions &amp; Talking Points</h3>
+        <span class="badge badge-amber">Speaking Warm-Up</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px;">
+        <div style="background: white; border: 1px solid #fde68a; border-radius: 5px; padding: 6px 8px;">
+          <p style="font-weight: 700; color: #0f172a; font-size: 8pt; margin-bottom: 2px;">
+            01. What is the very first thing an airside inspector should do upon discovering a 40 m² fuel puddle near an active storm drain?
+          </p>
+          <p style="font-size: 7.5pt; color: #475569; margin-bottom: 0; font-style: italic;">
+            💡 <strong>Talking Points:</strong> Safety hierarchy requires immediate containment before paperwork: halt refueling, cut fuel pumps, deploy absorbent booms around drain inlets, alert the RFFS fire department, and stop aircraft boarding.
+          </p>
+        </div>
+        <div style="background: white; border: 1px solid #fde68a; border-radius: 5px; padding: 6px 8px;">
+          <p style="font-weight: 700; color: #0f172a; font-size: 8pt; margin-bottom: 2px;">
+            02. Why does European aviation law distinguish between Level 1 findings (immediate stand closure) and Level 2 findings (30-day corrective deadline)?
+          </p>
+          <p style="font-size: 7.5pt; color: #475569; margin-bottom: 0; font-style: italic;">
+            💡 <strong>Talking Points:</strong> Level 1 findings represent an active, unacceptable danger to life or aircraft (fire, incursion risk, structural collapse) requiring instant restriction. Level 2 findings represent procedural or maintenance flaws that could lower safety if unaddressed, allowing a structured 30-day corrective schedule.
+          </p>
+        </div>
+        <div style="background: white; border: 1px solid #fde68a; border-radius: 5px; padding: 6px 8px;">
+          <p style="font-weight: 700; color: #0f172a; font-size: 8pt; margin-bottom: 2px;">
+            03. How does using past modals help safety engineers conduct fair root-cause analysis without premature personal blame?
+          </p>
+          <p style="font-size: 7.5pt; color: #475569; margin-bottom: 0; font-style: italic;">
+            💡 <strong>Talking Points:</strong> Phrases like <em>'the operator must have misunderstood'</em> or <em>'the lockwire could have scattered during maintenance'</em> focus strictly on physical evidence and systemic vulnerabilities rather than accusing individuals, fostering transparent Just Culture reporting.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Diagnostic Entry Spot-Check -->
+    <div class="card card-tint-blue" style="margin-bottom: 0;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+        <h3 style="color: #1e3a8a; font-size: 8.5pt;">🎯 Airside Inspection Entry Spot-Check (Baseline Verification)</h3>
+        <span class="badge badge-primary">Knowledge Check</span>
+      </div>
+      <div class="grid-2" style="margin-bottom: 0;">
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 8px;">
+          <div style="font-size: 7pt; font-weight: 800; color: #2563eb; text-transform: uppercase;">Question 01</div>
+          <p style="font-weight: 700; font-size: 7.5pt; color: #0f172a; margin: 2px 0;">What defines a Level 1 Finding under EASA Part-ADR.AR.C.055?</p>
+          <p style="font-size: 7.2pt; color: #334155; margin-bottom: 0; background: #f8fafc; padding: 3px 5px; border-radius: 3px; border-left: 2px solid #2563eb;">
+            <strong>Plain English:</strong> A severe non-compliance with aerodrome safety regulations that significantly lowers safety or seriously hazards aircraft operations, requiring immediate operational restrictions (such as closing a stand or taxiway).
+          </p>
+        </div>
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 8px;">
+          <div style="font-size: 7pt; font-weight: 800; color: #2563eb; text-transform: uppercase;">Question 02</div>
+          <p style="font-weight: 700; font-size: 7.5pt; color: #0f172a; margin: 2px 0;">What is the deadline for an aerodrome operator to submit a CAP for a Level 2 finding?</p>
+          <p style="font-size: 7.2pt; color: #334155; margin-bottom: 0; background: #f8fafc; padding: 3px 5px; border-radius: 3px; border-left: 2px solid #2563eb;">
+            <strong>Plain English:</strong> The aerodrome operator must submit a formal Corrective Action Plan (CAP) detailing root cause, corrective measures, and assigned responsibilities within 30 calendar days.
+          </p>
+        </div>
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 8px;">
+          <div style="font-size: 7pt; font-weight: 800; color: #2563eb; text-transform: uppercase;">Question 03</div>
+          <p style="font-weight: 700; font-size: 7.5pt; color: #0f172a; margin: 2px 0;">What is the maximum certified grass height permitted around runway guard lights?</p>
+          <p style="font-size: 7.2pt; color: #334155; margin-bottom: 0; background: #f8fafc; padding: 3px 5px; border-radius: 3px; border-left: 2px solid #2563eb;">
+            <strong>Plain English:</strong> Under CS-ADR-DSN standards, grass bordering holding positions and runway strips must not exceed 200 mm in height to prevent obscuring visual lighting aids.
+          </p>
+        </div>
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 5px; padding: 6px 8px;">
+          <div style="font-size: 7pt; font-weight: 800; color: #2563eb; text-transform: uppercase;">Question 04</div>
+          <p style="font-weight: 700; font-size: 7.5pt; color: #0f172a; margin: 2px 0;">What is a deadman valve mechanism on a fuel hydrant dispenser?</p>
+          <p style="font-size: 7.2pt; color: #334155; margin-bottom: 0; background: #f8fafc; padding: 3px 5px; border-radius: 3px; border-left: 2px solid #2563eb;">
+            <strong>Plain English:</strong> A spring-loaded hand control trigger that must be held continuously by the refueler; if released, it immediately stops the high-pressure fuel flow within 2 seconds.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 3: PART 2 — AUTHENTIC EASA AUDIT DOSSIER & EXHIBITS           -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 2: AUTHENTIC EASA AUDIT DOSSIER</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 2</span> Activity 2: Reading Authentic Airfield Audit Dossier &amp; Inspection Exhibits</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions:</strong>
+      <ol>
+        <li><strong>Step 1: Oversight Record Review:</strong> Review the three field audit exhibits documented during the airside inspection of St. Exupéry International Aerodrome (LFSE).</li>
+        <li><strong>Step 2: Examine Classifications:</strong> Observe why FIND-01 is classified as a Level 1 hazard while FIND-02 and FIND-03 are Level 2 systemic non-compliances.</li>
+        <li><strong>Step 3: Cited Standards:</strong> Note the cited EASA regulations (ADR.OPS.B.010, CS-ADR-DSN.M.710, ADR.OPS.B.016).</li>
+        <li><strong>Step 4: Comprehension Checks:</strong> Answer the 4 reading checks at the bottom of the page.</li>
+      </ol>
+    </div>
+
+    <!-- Authentic Document Box -->
+    <div style="margin-bottom: 8px;">
+      <div style="background: #1e3a8a; color: white; padding: 4px 8px; border-radius: 5px 5px 0 0; font-size: 7.5pt; font-weight: 700; display: flex; justify-content: space-between;">
+        <span>OFFICIAL OVERSIGHT RECORD • EASA PART-ADR.AR.C.055 AUDIT FINDINGS</span>
+        <span style="font-family: monospace;">File Ref: EASA/ADR-INSP/2024-012</span>
+      </div>
+      <div class="code-box" style="border-radius: 0 0 5px 5px; margin-bottom: 0;">EASA AIRFIELD AUDIT &amp; GROUND INSPECTION REPORT: NON-CONFORMANCE FINDINGS
+Aerodrome: St. Exupéry International (LFSE) • Airside Operations Directorate
+Audit Scope: Apron Safety, Visual Aids Maintenance &amp; Foreign Object Debris Oversight
+
+EXHIBIT FIND-01 • LEVEL 1 FINDING • STAND 14 (WIDEBODY RAMP)
+Cited Standard: Point ADR.OPS.B.010 (Operations in Winter / Adverse Conditions) &amp; ADR.OPS.B.025 (Apron Safety)
+Observation: An uncontained 42 m² Jet A-1 kerosene pool was expanding across Stand 14 concrete pavement, within 8.2 metres of an unsealed stormwater drain inlet. The deadman control handle on the hydrant dispenser was mechanically jammed open with wire offcuts. The refueling crew had departed the aircraft stand without deploying absorbent booms.
+Enforcement: Immediate stand closure enacted; aircraft boarding halted until RFFS foam washdown and boom containment confirmed.
+
+EXHIBIT FIND-02 • LEVEL 2 FINDING • TAXIWAY BRAVO 2 (RUNWAY 08L HOLDING POINT)
+Cited Standard: CS-ADR-DSN.M.710 (Runway Guard Lights) &amp; Point ADR.OPS.B.015 (Aerodrome Maintenance)
+Observation: Elevated Configuration A alternating yellow runway guard lights (wig-wags) were obscured by unmaintained wild grasses reaching 650 mm in height (maximum certified limit: 200 mm). Beam visibility was degraded by an estimated 60% during dusk taxiing, creating an unmitigated runway incursion risk.
+Enforcement: Formal 30-day CAP issued; groundskeeping team dispatched for emergency grass cutting within 24 hours.
+
+EXHIBIT FIND-03 • LEVEL 2 FINDING • STAND 12 EQUIPMENT STAGING AREA (ESA)
+Cited Standard: Point ADR.OPS.B.016 (Foreign Object Debris Control) &amp; CS-ADR-DSN.Q.850 (Apron Cleanliness)
+Observation: The mandatory covered magnetic FOD disposal receptacle was absent from the staging bay. Inspectors discovered loose metallic lockwire offcuts, sheared bolt heads, and plastic baggage tags scattered within 12 metres of active aircraft engine intake danger zones.
+Enforcement: Formal 30-day CAP issued; immediate ramp sweep ordered; permanent covered magnetic bin installation required within 7 days.</div>
+    </div>
+
+    <!-- Reading Comprehension Checks Grid -->
+    <div class="card card-tint-blue" style="margin-bottom: 0;">
+      <h3 style="color: #1e3a8a; font-size: 8.5pt; margin-bottom: 4px;">🔍 Reading Comprehension Check (Scan the text above)</h3>
+      <div class="grid-2" style="margin-bottom: 0;">
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 5px; padding: 5px 7px;">
+          <div style="font-size: 7pt; font-weight: 800; color: #2563eb; text-transform: uppercase;">Check 01</div>
+          <p style="font-weight: 700; font-size: 7.5pt; color: #0f172a; margin: 1px 0;">Why was Stand 14 closed immediately upon discovery of the fuel spill?</p>
+          <p style="font-size: 7.2pt; color: #059669; font-weight: 600; margin-bottom: 0;">
+            <strong>Answer:</strong> It was classified as a Level 1 critical hazard due to an active fire threat and imminent risk of 42 m² of fuel entering the municipal storm drain 8.2m away.
+          </p>
+        </div>
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 5px; padding: 5px 7px;">
+          <div style="font-size: 7pt; font-weight: 800; color: #2563eb; text-transform: uppercase;">Check 02</div>
+          <p style="font-weight: 700; font-size: 7.5pt; color: #0f172a; margin: 1px 0;">What was the physical non-conformance recorded at Holding Point Bravo 2?</p>
+          <p style="font-size: 7.2pt; color: #059669; font-weight: 600; margin-bottom: 0;">
+            <strong>Answer:</strong> Runway guard lights were obscured by 650 mm wild grasses (exceeding the 200 mm limit), degrading pilot incursion warning visibility by 60%.
+          </p>
+        </div>
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 5px; padding: 5px 7px;">
+          <div style="font-size: 7pt; font-weight: 800; color: #2563eb; text-transform: uppercase;">Check 03</div>
+          <p style="font-weight: 700; font-size: 7.5pt; color: #0f172a; margin: 1px 0;">What loose items were found in the Stand 12 Equipment Staging Area?</p>
+          <p style="font-size: 7.2pt; color: #059669; font-weight: 600; margin-bottom: 0;">
+            <strong>Answer:</strong> Metallic lockwire offcuts, sheared bolt heads, and baggage tags lying within 12 metres of active aircraft turbofan engine intake ingestion hazard zones.
+          </p>
+        </div>
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 5px; padding: 5px 7px;">
+          <div style="font-size: 7pt; font-weight: 800; color: #2563eb; text-transform: uppercase;">Check 04</div>
+          <p style="font-weight: 700; font-size: 7.5pt; color: #0f172a; margin: 1px 0;">What enforcement action was issued for the missing magnetic FOD bins?</p>
+          <p style="font-size: 7.2pt; color: #059669; font-weight: 600; margin-bottom: 0;">
+            <strong>Answer:</strong> A formal Level 2 30-day Corrective Action Plan, with an immediate ramp sweep and permanent magnetic bin re-installation required within 7 days.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 4: PART 3 — LANGUAGE CLINIC: PAST MODAL DEDUCTIONS            -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 3: LANGUAGE CLINIC &amp; PAST DEDUCTIONS</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 3</span> Activity 3: Language Clinic: Past Modal Deductions for Root Cause Analysis</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions:</strong>
+      <ol>
+        <li><strong>Step 1: Formula Review:</strong> Study the standard past modal deduction formula: <em>Modal + HAVE + Past Participle (V3)</em>.</li>
+        <li><strong>Step 2: Degrees of Certainty:</strong> Note how <em>must have</em> (strong proof), <em>could have</em> (possibility), <em>should have</em> (neglected rule), and <em>can't have</em> (impossibility) express distinct degrees of certainty.</li>
+        <li><strong>Step 3: Practice Items:</strong> Read the 4 physical evidence prompts and formulate clear, spoken root-cause deductions aloud with your partner.</li>
+      </ol>
+    </div>
+
+    <!-- Formula Banner -->
+    <div style="background: #e0e7ff; border: 1.5px solid #6366f1; border-radius: 6px; padding: 6px 10px; margin-bottom: 8px; text-align: center;">
+      <span style="font-size: 7.5pt; font-weight: 800; text-transform: uppercase; color: #3730a3; letter-spacing: 0.5px;">Standard Past Modal Deduction Formula</span>
+      <div style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 9.5pt; font-weight: 900; color: #1e1b4b; margin-top: 1px;">
+        Modal Verb (must / could / should / can't) + HAVE + Past Participle (V3)
+      </div>
+    </div>
+
+    <!-- Modal Rules Table -->
+    <div class="card" style="padding: 6px 8px; margin-bottom: 8px;">
+      <h3 style="color: #0f172a; font-size: 8.5pt; margin-bottom: 3px;">📘 The 4 Core Past Modals in Airfield Root Cause Analysis</h3>
+      <table class="data-table" style="font-size: 7.5pt;">
+        <thead>
+          <tr>
+            <th style="width: 120px;">Past Modal</th>
+            <th style="width: 130px;">Degree of Certainty</th>
+            <th>Real Airport Operational Example</th>
+            <th style="width: 130px;">Root Cause Function</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">must have + V3</td>
+            <td>95% Certainty (Strong Proof)</td>
+            <td>"The bowser crew <strong>must have jammed</strong> the deadman valve with wire to avoid holding it manually."</td>
+            <td>Deducing the most logical cause from physical clues.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">could have + V3</td>
+            <td>Potential Hazard (What if)</td>
+            <td>"The kerosene <strong>could have entered</strong> the municipal storm drain if inspectors arrived 10 mins later."</td>
+            <td>Explaining worst-case scenarios that were narrowly avoided.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">should have + V3</td>
+            <td>Unfulfilled Obligation</td>
+            <td>"The groundskeeping team <strong>should have mowed</strong> the perimeter grass before it reached 200 mm."</td>
+            <td>Highlighting standard operating procedures that were neglected.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">can't have + V3</td>
+            <td>Impossibility (Zero Probability)</td>
+            <td>"The flight crew <strong>can't have seen</strong> the yellow guard lights through the dense 650 mm tall grass."</td>
+            <td>Ruling out impossible actions during an investigation.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Common Trap Callout -->
+    <div class="card card-tint-amber" style="border-left: 3px solid #d97706; padding: 5px 8px; margin-bottom: 8px;">
+      <p style="font-size: 7.5pt; color: #92400e; margin-bottom: 0;">
+        ⚠️ <strong>Pronunciation &amp; Grammar Trap:</strong> Never write or say <em>*must of*</em> or <em>*should of*</em>! In rapid spoken English, <em>'must have'</em> sounds like <em>'must-əv'</em>, but the correct grammar is always <strong>must HAVE</strong> + past participle (<em>must have failed</em>, <em>should have mowed</em>).
+      </p>
+    </div>
+
+    <!-- 4 Practice Items Grid -->
+    <div class="card card-tint-blue" style="padding: 6px 8px; margin-bottom: 0;">
+      <h3 style="color: #1e3a8a; font-size: 8.5pt; margin-bottom: 3px;">✏️ Spoken Practice: Formulating Root Cause Deductions</h3>
+      <div style="display: flex; flex-direction: column; gap: 4px;">
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 6px; font-size: 7.2pt;">
+          <strong>1. Evidence:</strong> 42 m² Jet A-1 pool spreading near storm drain with deadman valve wired open.<br>
+          <span style="color: #059669; font-weight: 700;">Model Deduction:</span> <em>"The refueling crew <strong>must have failed</strong> to monitor the hose coupling, and the spill <strong>could have caused</strong> a major apron fire."</em>
+        </div>
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 6px; font-size: 7.2pt;">
+          <strong>2. Evidence:</strong> 650 mm tall weeds hiding Runway Guard Light fixture at Holding Point Bravo 2.<br>
+          <span style="color: #059669; font-weight: 700;">Model Deduction:</span> <em>"The groundskeeping department <strong>should have inspected</strong> and mowed the unpaved strip before vegetation exceeded 200 mm."</em>
+        </div>
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 6px; font-size: 7.2pt;">
+          <strong>3. Evidence:</strong> Metallic lockwire offcuts and bolts lying 10 m from active turbofan engine intake.<br>
+          <span style="color: #059669; font-weight: 700;">Model Deduction:</span> <em>"A line technician <strong>must have clipped</strong> safety wire without a pouch; an engine <strong>could have ingested</strong> the debris."</em>
+        </div>
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 6px; font-size: 7.2pt;">
+          <strong>4. Evidence:</strong> Fuel hydrant pit left unattended with fuel pumping actively into widebody aircraft.<br>
+          <span style="color: #059669; font-weight: 700;">Model Deduction:</span> <em>"The ground handler <strong>can't have followed</strong> standard aerodrome safety operating procedures."</em>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 5: PART 4 — 3-PHOTO RAMP DESCRIPTION WORKSHOP                 -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 4: 3-PHOTO RAMP DESCRIPTION WORKSHOP</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 4</span> Activity 4: Spoken Team Challenge: The 3-Photo Ramp Description Workshop</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions:</strong>
+      <ol>
+        <li><strong>Step 1: Choose an Exhibit:</strong> Work in pairs or trios. Group 1 describes Exhibit 01 (Fuel Spill); Group 2 describes Exhibit 02 (Ramp GSE Traffic); Group 3 describes Exhibit 03 (FOD Walkdown).</li>
+        <li><strong>Step 2: 4-Step Method:</strong> Structure your spoken picture description using the 4 steps: Set Scene &rarr; Ongoing Actions &rarr; Spot Hazard &rarr; Past Modals.</li>
+        <li><strong>Step 3: Partner Checking:</strong> Partner B challenges the description using the active checking prompts at the bottom of the page.</li>
+      </ol>
+    </div>
+
+    <!-- 4-Step Picture Description Method -->
+    <div class="card card-tint-emerald" style="padding: 5px 8px; margin-bottom: 8px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+        <h3 style="color: #065f46; font-size: 8pt;">🔍 The 4-Step Picture Description Method for Pairs &amp; Trios</h3>
+        <span class="badge badge-emerald">Method Guide</span>
+      </div>
+      <div class="grid-2" style="font-size: 7.2pt; color: #065f46; margin-bottom: 0;">
+        <div>
+          <p style="margin-bottom: 1px;"><strong>Step 1: Set the Scene:</strong> State location, foreground, background, aircraft type, weather.</p>
+          <p style="margin-bottom: 0;"><strong>Step 2: Ongoing Actions:</strong> Use Present Continuous (<em>is spreading, are walking, is driving</em>).</p>
+        </div>
+        <div>
+          <p style="margin-bottom: 1px;"><strong>Step 3: Spot the Hazard:</strong> Identify the physical non-conformance or safety threat.</p>
+          <p style="margin-bottom: 0;"><strong>Step 4: Past Modals:</strong> Formulate 2 past deductions (<em>must have, could have, should have + V3</em>).</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 Photo Description Cards -->
+    <div class="grid-3" style="margin-bottom: 8px;">
+      <!-- Photo 1: Fuel Spill -->
+      <div class="card" style="border-top: 3px solid #e11d48; padding: 6px 8px; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+          <h3 style="color: #9f1239; font-size: 8pt;">Exhibit 01: Fuel Spill</h3>
+          <span class="badge badge-rose" style="font-size: 6.5pt;">Level 1</span>
+        </div>
+        <p style="font-size: 7pt; color: #475569; margin-bottom: 3px;">
+          Two handlers assess an uncontained fuel puddle spreading near a hydrant dispenser and storm drain.
+        </p>
+        <div style="background: #fff1f2; border: 1px solid #fecdd3; border-radius: 4px; padding: 4px 6px; font-size: 6.8pt; color: #881337;">
+          <strong>Model Description:</strong><br>
+          "In the foreground, a dark puddle of kerosene is spreading across the apron. The bowser operator <strong>must have failed to latch</strong> the hose, and the fuel <strong>could have entered</strong> the active storm drain."
+        </div>
+      </div>
+
+      <!-- Photo 2: GSE Congestion -->
+      <div class="card" style="border-top: 3px solid #d97706; padding: 6px 8px; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+          <h3 style="color: #92400e; font-size: 8pt;">Exhibit 02: GSE Traffic</h3>
+          <span class="badge badge-amber" style="font-size: 6.5pt;">Clearance</span>
+        </div>
+        <p style="font-size: 7pt; color: #475569; margin-bottom: 3px;">
+          A baggage tug pulling three carts maneuvers near a belt loader with narrow clearances under an engine cowl.
+        </p>
+        <div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 4px; padding: 4px 6px; font-size: 6.8pt; color: #78350f;">
+          <strong>Model Description:</strong><br>
+          "In the center, a baggage tractor is turning sharply near the engine nacelle. The driver <strong>must have been rushing</strong> under turnaround pressure, and the carts <strong>could have struck</strong> the airframe."
+        </div>
+      </div>
+
+      <!-- Photo 3: FOD Walkdown -->
+      <div class="card" style="border-top: 3px solid #2563eb; padding: 6px 8px; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+          <h3 style="color: #1e3a8a; font-size: 8pt;">Exhibit 03: Ramp FOD</h3>
+          <span class="badge badge-primary" style="font-size: 6.5pt;">Ingestion</span>
+        </div>
+        <p style="font-size: 7pt; color: #475569; margin-bottom: 3px;">
+          An inspector kneels on concrete Stand 12 to collect metallic lockwire offcuts near active aircraft engine intakes.
+        </p>
+        <div style="background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 4px; padding: 4px 6px; font-size: 6.8pt; color: #1e3a8a;">
+          <strong>Model Description:</strong><br>
+          "An inspector is pointing at metallic wire on the apron. A maintenance crew <strong>must have clipped the lockwire</strong> without a bin, and an engine <strong>could have ingested</strong> the loose debris."
+        </div>
+      </div>
+    </div>
+
+    <!-- Partner B Checking Prompts Box -->
+    <div class="card card-tint-blue" style="padding: 5px 8px; margin-bottom: 0;">
+      <h3 style="color: #1e3a8a; font-size: 8pt; margin-bottom: 2px;">💬 Partner B Role: Active Checking &amp; Questioning Prompts</h3>
+      <div class="grid-2" style="font-size: 7pt; color: #1e3a8a; margin-bottom: 0;">
+        <div>
+          <p style="margin-bottom: 1px;">&bull; "Can you point to the exact physical evidence of the hazard in the photograph?"</p>
+          <p style="margin-bottom: 0;">&bull; "Why do you deduce that the operator must have jammed the valve rather than equipment failure?"</p>
+        </div>
+        <div>
+          <p style="margin-bottom: 1px;">&bull; "What worst-case scenario could have occurred if flight operations continued uncorrected?"</p>
+          <p style="margin-bottom: 0;">&bull; "How does your photograph justify classifying this finding as Level 1 rather than Level 2?"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 6: PART 4 (CONT) — DELIVERING 3-BULLET NOTICE & PEER REVIEW    -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 4 (CONT): DELIVERING 3-BULLET NOTICE</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 4 (cont)</span> Activity 4: Delivering the 3-Bullet Notice &amp; Peer Evaluation</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions:</strong>
+      <ol>
+        <li><strong>Step 1: Prepare Briefing:</strong> Synthesize your group's audit finding into a concise 2-minute oral debrief addressing the Airport Director.</li>
+        <li><strong>Step 2: Follow Template:</strong> Use the 3-bullet executive structure: Finding &amp; Location &rarr; Root Cause Deduction &rarr; Immediate Action &amp; CAP.</li>
+        <li><strong>Step 3: Student B Peer Evaluation:</strong> Student B acts as Airport Director, listens critically, checks off the 4 criteria below, and gives 1 minute of oral coaching.</li>
+      </ol>
+    </div>
+
+    <!-- Executive Template & Model Response Box -->
+    <div class="card card-tint-blue" style="padding: 6px 8px; margin-bottom: 8px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+        <h3 style="color: #1e3a8a; font-size: 8pt;">📋 Executive 3-Bullet Spoken Template &amp; Model Response</h3>
+        <span class="badge badge-primary">Executive Notice</span>
+      </div>
+      <div style="font-size: 7.2pt; color: #1e293b; line-height: 1.35;">
+        <p style="margin-bottom: 2px;"><strong>Bullet 1 (Finding &amp; Location):</strong> "Director, our inspection team has recorded a Level 1 non-conformance on Stand 14 under Point ADR.OPS.B.010 and B.025..."</p>
+        <p style="margin-bottom: 2px;"><strong>Bullet 2 (Root Cause Deduction):</strong> "Based on physical evidence, the refueling crew must have jammed the deadman valve with wire and failed to deploy containment booms, which could have polluted the municipal storm drain..."</p>
+        <p style="margin-bottom: 0;"><strong>Bullet 3 (Immediate Action &amp; Deadline):</strong> "We have immediately closed Stand 14 to all aircraft operations, deployed absorbent booms, and require a formal occurrence report and hydrant recertification before the stand may reopen."</p>
+      </div>
+    </div>
+
+    <!-- Student B Peer Checklist -->
+    <div class="card card-tint-amber" style="padding: 8px 10px; margin-bottom: 8px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+        <h3 style="color: #92400e; font-size: 8.5pt;">📋 Student B: Airport Director / Peer Evaluator Checklist</h3>
+        <span class="badge badge-amber">Observer Form</span>
+      </div>
+      <p style="font-size: 7.5pt; color: #78350f; margin-bottom: 6px;">Check off each criterion during the 2-minute oral debrief:</p>
+      
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div>
+          <strong style="color: #0f172a;">1. Finding Level Classification (Part-ADR.AR.C.055):</strong><br>
+          <span style="color: #475569; font-size: 7.2pt;">Did the speaker correctly classify the finding (Level 1 immediate restriction vs Level 2 30-day CAP) citing the relevant EASA regulatory standard?</span>
+        </div>
+      </div>
+
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div>
+          <strong style="color: #0f172a;">2. Past Modal Deductions Formulation:</strong><br>
+          <span style="color: #475569; font-size: 7.2pt;">Were past modal deductions formulated correctly (<em>must have</em>, <em>could have</em>, <em>should have</em> + past participle) to reconstruct root causes from evidence?</span>
+        </div>
+      </div>
+
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div>
+          <strong style="color: #0f172a;">3. Adherence to 3-Bullet Executive Structure:</strong><br>
+          <span style="color: #475569; font-size: 7.2pt;">Did the debrief follow the exact 3-bullet pattern (Finding, Root Cause, Action) concisely within the 2-minute time limit without reading verbatim?</span>
+        </div>
+      </div>
+
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div>
+          <strong style="color: #0f172a;">4. Decisive Enforcement &amp; CAP Deadlines:</strong><br>
+          <span style="color: #475569; font-size: 7.2pt;">Did the speaker announce immediate operational restrictions (stand closure, mowing order) or precise 30-day Corrective Action Plan deadlines clearly?</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1-Minute Peer Coaching Protocol -->
+    <div class="card card-tint-purple" style="padding: 8px 10px; margin-bottom: 8px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+        <h3 style="color: #6b21a8; font-size: 8.5pt;">⏱️ 1-Minute Spoken Peer Coaching Protocol</h3>
+        <span class="badge badge-purple">Feedback Structure</span>
+      </div>
+      <div class="grid-3" style="font-size: 7.2pt; color: #3b0764; margin-bottom: 0;">
+        <div style="background: white; border: 1px solid #e9d5ff; border-radius: 4px; padding: 4px 6px;">
+          <strong style="color: #7e22ce;">Step 1: Praise (15s)</strong><br>
+          "Your 3-bullet debrief was very crisp, and your deduction on the jammed deadman valve sounded authoritative."
+        </div>
+        <div style="background: white; border: 1px solid #e9d5ff; border-radius: 4px; padding: 4px 6px;">
+          <strong style="color: #7e22ce;">Step 2: Growth (25s)</strong><br>
+          "Make sure to state the finding level in your very first sentence so the Airport Director knows if it is Level 1 or 2."
+        </div>
+        <div style="background: white; border: 1px solid #e9d5ff; border-radius: 4px; padding: 4px 6px;">
+          <strong style="color: #7e22ce;">Step 3: Action Tip (20s)</strong><br>
+          "Practice starting: 'Director, this is a Level 1 critical hazard requiring immediate stand closure.'"
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripted Model Dialogue -->
+    <div class="card" style="padding: 6px 8px; margin-bottom: 0;">
+      <h3 style="color: #0f172a; font-size: 8pt; margin-bottom: 2px;">💬 Scripted Model Dialogue: Authentic Peer Feedback</h3>
+      <div style="font-size: 7.2pt; color: #334155; line-height: 1.35;">
+        <p style="margin-bottom: 2px;"><strong>Student B (Airport Director):</strong> "Thank you for the debrief. You stated the immediate stand closure clearly, but why did you deduce that the refueler must have jammed the valve rather than an electrical fault?"</p>
+        <p style="margin-bottom: 2px;"><strong>Student A (Lead Auditor):</strong> "Physical evidence confirmed wire lockwire wrapped around the lever. He must have bypassed the deadman mechanism manually."</p>
+        <p style="margin-bottom: 0;"><strong>Student B (Airport Director):</strong> "Understood. Excellent deduction. I approve the Level 1 stand closure until RFFS washdown is completed."</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 7: PART 5 & 6 — SAFETY CHECK & OPERATIONAL DECISIONS          -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 5 &amp; 6: SAFETY CHECK &amp; OPERATIONAL NOTES</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 5</span> Activity 5: Safety Check: What is the Airfield Risk?</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions:</strong>
+      <ol>
+        <li><strong>Step 1: Evaluate Hazards:</strong> Review the 4 simple questions in the Safety Check table below across the 3 audit exhibits.</li>
+        <li><strong>Step 2: Spoken Defense:</strong> Practice explaining each row aloud in your own words. Why does Level 1 require instant closure while Level 2 uses a 30-day CAP?</li>
+        <li><strong>Step 3: Confirm Enforcement:</strong> Confirm the agreed operational and regulatory decisions as a team.</li>
+      </ol>
+    </div>
+
+    <!-- Safety Check Table -->
+    <div class="card" style="padding: 6px 8px; margin-bottom: 8px;">
+      <h3 style="color: #0f172a; font-size: 8.5pt; margin-bottom: 3px;">🛡️ Decision Check Table: Airfield Hazards &amp; Enforcement Actions</h3>
+      <table class="data-table" style="font-size: 7.5pt;">
+        <thead>
+          <tr>
+            <th style="width: 130px;">Simple Safety Question</th>
+            <th>Agreed Class Operational Answer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a; background: #f8fafc;">1. What is the problem?</td>
+            <td>Stand 14 has an uncontained 42 m² fuel spill near an active drain; Taxiway B2 guard lights are obscured by 650 mm tall wild weeds; Stand 12 has loose lockwire near engine intakes.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a; background: #f8fafc;">2. What could happen?</td>
+            <td>Hydrocarbon runoff risks toxic stormwater pollution and apron fire; obscured guard lights risk a runway incursion; loose lockwire risks turbofan compressor blade ingestion.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a; background: #f8fafc;">3. How do we fix it?</td>
+            <td>Stand 14: Emergency stand closure, absorbent boom deployment, and RFFS washdown. Taxiway B2: Groundskeeping mowing within 24 hours. Stand 12: Immediate ramp sweep and permanent covered magnetic FOD bins.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 800; color: #059669; background: #f0fdf4;">4. Our Decision</td>
+            <td><strong>ENACTED:</strong> Level 1 immediate operational restriction on Stand 14 (closed until hydrant recertified); Level 2 formal 30-day Corrective Action Plans issued for Taxiway B2 and Stand 12 under Point ADR.AR.C.055.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Rules to Reality Wrap-Up Prompt -->
+    <div class="card card-tint-amber" style="padding: 5px 8px; margin-bottom: 8px;">
+      <h3 style="color: #92400e; font-size: 8pt; margin-bottom: 2px;">⚡ Rules to Reality: 60-Second Pair Spoken Wrap-Up</h3>
+      <p style="font-size: 7.5pt; color: #78350f; margin-bottom: 0; line-height: 1.35;">
+        Pick one audit finding from today (fuel spill, obscured guard lights, or ramp FOD). In pairs, deliver an unscripted 60-second summary explaining: <strong>1) What was the physical non-conformance?</strong> <strong>2) Why did it happen (past deduction)?</strong> <strong>3) What immediate operational restriction was required?</strong>
+      </p>
+    </div>
+
+    <!-- Part 6: Operational Notes & Action Plan -->
+    <h2><span class="badge badge-slate">Part 6</span> Activity 6: Operational Notes &amp; Corrective Action Plan (CAP)</h2>
+
+    <div class="card card-tint-blue" style="padding: 6px 8px; margin-bottom: 0;">
+      <div style="margin-bottom: 6px;">
+        <h3 style="color: #1e3a8a; font-size: 8pt; margin-bottom: 1px;">1. Executive 3-Bullet Oral Audit Notice:</h3>
+        <p style="font-size: 7pt; color: #64748b; margin-bottom: 3px;">Record your oral briefing: finding level, location, physical evidence, past modal deductions, and immediate restrictions:</p>
+        <div class="writing-line"></div>
+        <div class="writing-line"></div>
+      </div>
+
+      <div>
+        <h3 style="color: #1e3a8a; font-size: 8pt; margin-bottom: 1px;">2. Level 1 &amp; Level 2 Corrective Action Plan Decisions:</h3>
+        <p style="font-size: 7pt; color: #64748b; margin-bottom: 3px;">Record the agreed corrective measures, designated responsible departments, and compliance deadlines:</p>
+        <div class="writing-line"></div>
+        <div class="writing-line"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

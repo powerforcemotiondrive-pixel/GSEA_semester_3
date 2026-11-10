@@ -5669,10 +5669,11 @@ function renderLessonContentTabSession3(sessionData, theme) {
               </div>
               <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">${hero.title || 'Ground Inspection & Audit Findings'}</h3>
             </div>
-            <button type="button" onclick="window.printLessonContent()" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 shadow-xs transition-all cursor-pointer shrink-0">
-              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
-              <span>Print / Save Lesson PDF</span>
-            </button>
+            <a href="docs/GSEA_S3_M1_S4_Lesson_Worksheet.pdf" target="_blank" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-white bg-blue-700 hover:bg-blue-800 shadow-xs transition-all cursor-pointer shrink-0">
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              <span>Lesson Worksheet (PDF)</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
           </div>
 
           <!-- Hero Banner & Context -->
@@ -5837,7 +5838,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
               </span>
             </div>
 
-            <!-- Method Scaffold for B1/B2 Learners -->
+            <!-- 4-Step Description Method -->
             <div class="p-3.5 bg-white border border-emerald-300 rounded-xl space-y-2">
               <div class="flex items-center gap-2 text-emerald-950 font-bold text-xs uppercase tracking-wider">
                 <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
@@ -5958,11 +5959,11 @@ function renderLessonContentTabSession3(sessionData, theme) {
             </div>
           </div>
 
-          <!-- Activity 4: Operational Safety Check • Delivering the 3-Bullet Notice -->
+          <!-- Activity 4: Operational Debrief • Delivering the 3-Bullet Notice -->
           <div class="p-4 sm:p-5 rounded-xl bg-white border border-slate-200 shadow-xs space-y-4">
             <div class="border-b border-slate-100 pb-3">
-              <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Part 5: Executive Delivery</span>
-              <h4 class="text-sm sm:text-base font-black text-slate-900 mt-0.5">${safety.title || 'Activity 4: Operational Safety Check • Delivering the 3-Bullet Audit Notice'}</h4>
+              <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Part 4: Executive Delivery</span>
+              <h4 class="text-sm sm:text-base font-black text-slate-900 mt-0.5">${safety.title || 'Activity 4: Operational Debrief • Delivering the 3-Bullet Audit Notice'}</h4>
               <p class="text-xs text-slate-500">${safety.instructions || "Synthesize your group's findings and deliver a crisp, 2-minute oral audit debrief addressing the Airport Director. Use this professional 3-bullet template:"}</p>
             </div>
 
@@ -5987,8 +5988,111 @@ function renderLessonContentTabSession3(sessionData, theme) {
                 </p>
               </div>
             ` : ''}
+
+            <!-- Student B Peer Evaluation Checklist -->
+            <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-3">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-amber-200/80 pb-2">
+                <div class="flex items-center gap-2">
+                  <svg width="16" height="16" class="text-amber-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+                  <h5 class="text-xs sm:text-sm font-bold text-amber-950">Student B: Airport Director / Peer Evaluator Checklist</h5>
+                </div>
+                <span class="text-[10px] font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded border border-amber-200">Interactive Peer Evaluation</span>
+              </div>
+              <p class="text-xs text-amber-900 leading-relaxed">During the 2-minute oral debrief, Student B evaluates the presentation on these 4 criteria before giving 1 minute of oral coaching:</p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                ${((safety.peerChecklist) || [
+                  { id: 1, label: "Did the speaker correctly classify the finding level (Level 1 immediate vs Level 2 30-day CAP) citing Point ADR.AR.C.055?" },
+                  { id: 2, label: "Were past modal deductions formulated correctly (must have, could have, should have + past participle)?" },
+                  { id: 3, label: "Was the 3-bullet executive structure maintained concisely within the 2-minute time limit?" },
+                  { id: 4, label: "Did the speaker propose decisive immediate operational restrictions or clear corrective actions?" }
+                ]).map(item => `
+                  <label class="flex items-start gap-2.5 p-2.5 bg-white border border-amber-200 rounded-lg shadow-2xs cursor-pointer hover:bg-amber-50/50 transition-all select-none">
+                    <input type="checkbox" class="mt-0.5 rounded border-amber-300 text-amber-600 focus:ring-amber-500 h-4 w-4 shrink-0">
+                    <span class="text-slate-800 font-medium leading-snug">${item.label}</span>
+                  </label>
+                `).join('')}
+              </div>
+            </div>
           </div>
 
+          <!-- Activity 5: Safety Check: What is the Airfield Risk? -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">Activity 5: Safety Check: What is the Airfield Risk?</h4>
+                  <p class="text-[11px] text-slate-500">Review the 4 questions in the Safety Check table to evaluate audit findings and enforcement decisions.</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Simple Safety Check</span>
+            </div>
+
+            <!-- Table -->
+            <div class="overflow-x-auto rounded-xl border border-slate-200 shadow-2xs">
+              <table class="w-full text-xs text-left">
+                <thead class="bg-slate-100 text-slate-800 font-bold border-b border-slate-200">
+                  <tr>
+                    <th class="p-3 w-1/3">Simple Safety Question</th>
+                    <th class="p-3 w-2/3">Agreed Class Answer</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200 text-slate-700 bg-white">
+                  ${(safety.rows || [
+                    { question: "1. What is the problem?", answer: "Stand 14 has an uncontained 42 m² fuel spill near an active drain; Taxiway B2 guard lights are obscured by 650 mm tall wild weeds; Stand 12 has loose lockwire near engine intakes." },
+                    { question: "2. What could happen?", answer: "Hydrocarbon runoff risks toxic stormwater contamination and apron fire; obscured guard lights risk a runway incursion; loose lockwire risks turbofan compressor blade ingestion." },
+                    { question: "3. How do we fix it?", answer: "Stand 14: Emergency stand closure, absorbent boom deployment, and RFFS washdown. Taxiway B2: Groundskeeping mowing within 24 hours. Stand 12: Immediate ramp sweep and permanent covered magnetic FOD bins." },
+                    { question: "4. Our Decision", answer: "Level 1 immediate operational restriction enacted for Stand 14 (closed until hydrant recertified); Level 2 formal 30-day Corrective Action Plans issued for Taxiway B2 and Stand 12 under Point ADR.AR.C.055." }
+                  ]).map(row => `
+                    <tr class="hover:bg-slate-50">
+                      <td class="p-3 font-bold text-slate-900 bg-slate-50/50">${row.question}</td>
+                      <td class="p-3 text-[11px] leading-relaxed text-slate-800">${row.answer}</td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Activity 6: Operational Notes & Corrective Action Plan (CAP) -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs bg-slate-800">NOTES</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">Activity 6: Operational Notes &amp; Corrective Action Plan (CAP)</h4>
+                  <p class="text-[11px] text-slate-500">Record your team's 3-bullet debrief and CAP enforcement decisions. Auto-saved in browser.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 text-[11px]">
+                <span id="notes-status-s4" class="font-bold text-emerald-600 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span>Auto-saved locally</span>
+                </span>
+                <button type="button" onclick="window.clearLessonNotes('4')" class="text-slate-400 hover:text-rose-600 underline cursor-pointer no-print ml-2 font-medium">Clear</button>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div class="notes-textarea-container">
+                <label class="block text-xs font-bold text-slate-800 mb-1 flex items-center justify-between">
+                  <span>1. Executive 3-Bullet Oral Audit Notice:</span>
+                  <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saves on typing</span>
+                </label>
+                <textarea id="notes-roleplay-s4" oninput="window.saveLessonNote('4', 'roleplay', this.value)" rows="3" placeholder="e.g., Director, our audit team recorded a Level 1 non-conformance on Stand 14. Refueling crew must have jammed the deadman valve, which could have polluted local storm drainage. Stand 14 is closed immediately until hydrant recertification..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('4', 'roleplay') : ''}</textarea>
+                <div id="print-notes-roleplay-s4" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('4', 'roleplay') : '') || '[No executive debrief recorded]'}</div>
+              </div>
+
+              <div class="notes-textarea-container">
+                <label class="block text-xs font-bold text-slate-800 mb-1 flex items-center justify-between">
+                  <span>2. Level 1 &amp; Level 2 Corrective Action Plan Decisions:</span>
+                  <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saves on typing</span>
+                </label>
+                <textarea id="notes-safety-s4" oninput="window.saveLessonNote('4', 'safety', this.value)" rows="3" placeholder="e.g., Stand 14: Immediate operational closure and absorbent boom containment. Taxiway B2: Groundskeeping cutting scheduled within 24 hours. Stand 12: 30-day CAP issued for permanent magnetic FOD stations..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('4', 'safety') : ''}</textarea>
+                <div id="print-notes-safety-s4" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('4', 'safety') : '') || '[No CAP decisions recorded]'}</div>
+              </div>
+            </div>
+          </div>
         </div>
       `;
     }

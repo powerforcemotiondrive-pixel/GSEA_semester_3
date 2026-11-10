@@ -3874,6 +3874,7 @@
       },
       "4": {
         "session": 4,
+        "title": "Ground Inspection & Audit Findings",
         "overview": {
           "intro": "Welcome to Session 4 of Technical English! Today we work with an authentic EASA airfield audit report to practice reporting ground safety non-compliances. You will learn to categorize findings into immediate hazards (Level 1) and minor issues (Level 2), use past deductions (must have, could have) to deduce how problems happened, and deliver a 2-minute spoken briefing to the Airport Director.",
           "whyItMatters": "Airside safety oversight is not just filling out paperwork—it is an active defense against runway incursions, apron fires, and catastrophic engine failures. When an aerodrome inspector notices an uncontained fuel puddle flowing towards an apron drain, overgrown airfield grass hiding runway guard lights, or loose lockwire in a staging area, they must accurately classify the operational risk and explain the root cause clearly in spoken English. Mastering past modal deductions allows technical officers to reconstruct causal chains and communicate urgent safety decisions without ambiguity.",
@@ -3899,9 +3900,9 @@
               "definition": "A formal documented schedule submitted by the aerodrome operator detailing specific actions, responsible persons, and deadlines to resolve an audit finding."
             },
             {
-              "term": "Past Modal Deduction",
-              "ipa": "/pɑːst ˈməʊ.dəl dɪˈdʌk.ʃən/",
-              "definition": "A spoken grammatical construction (must have, could have, should have + past participle) used by inspectors to deduce how an airfield incident or defect occurred."
+              "term": "Past Deductions (Must have / Could have)",
+              "ipa": "/pɑːst dɪˈdʌk.ʃənz/",
+              "definition": "Clear spoken sentences using 'must have', 'could have', and 'should have' to explain how an airfield defect or incident happened based on evidence."
             },
             {
               "term": "Foreign Object Debris (FOD)",
@@ -4158,14 +4159,54 @@
             ]
           },
           "safetyCheck": {
-            "title": "Activity 4: Operational Safety Check • Delivering the 3-Bullet Audit Notice",
+            "title": "Activity 4: Operational Debrief • Delivering the 3-Bullet Audit Notice",
             "instructions": "Synthesize your group's findings and deliver a crisp, 2-minute oral audit debrief addressing the Airport Director. Use this professional 3-bullet template:",
             "template": [
               "Bullet 1 (Finding & Location): 'Director, our audit team has recorded a [Level 1 / Level 2] non-conformance at [Location] under Point [EASA Standard]...'",
               "Bullet 2 (Root Cause Modal Deduction): 'Based on physical evidence, the operator must have... and the condition could have resulted in...'",
               "Bullet 3 (Immediate Action & Deadline): 'We have immediately enacted [closure / restriction], and require a formal CAP submitted within [immediate / 30 calendar days].'"
             ],
-            "modelResponse": "Director, our audit team has recorded a Level 1 non-conformance on Stand 14 under Point ADR.OPS.B.010 and B.025. Based on physical evidence, the refueling crew must have jammed the deadman valve with wire and failed to deploy containment booms, which could have contaminated the local water table through the nearby storm drain. We have immediately closed Stand 14 to all aircraft operations, and require a full occurrence report and hydrant recertification before the stand may reopen."
+            "modelResponse": "Director, our audit team has recorded a Level 1 non-conformance on Stand 14 under Point ADR.OPS.B.010 and B.025. Based on physical evidence, the refueling crew must have jammed the deadman valve with wire and failed to deploy containment booms, which could have contaminated the local water table through the nearby storm drain. We have immediately closed Stand 14 to all aircraft operations, and require a full occurrence report and hydrant recertification before the stand may reopen.",
+            "peerChecklist": [
+              {
+                "id": 1,
+                "label": "Did the speaker correctly classify the finding level (Level 1 immediate vs Level 2 30-day CAP) citing Point ADR.AR.C.055?"
+              },
+              {
+                "id": 2,
+                "label": "Were past modal deductions formulated correctly (must have, could have, should have + past participle)?"
+              },
+              {
+                "id": 3,
+                "label": "Was the 3-bullet executive structure maintained concisely within the 2-minute time limit?"
+              },
+              {
+                "id": 4,
+                "label": "Did the speaker propose decisive immediate operational restrictions or clear corrective actions?"
+              }
+            ],
+            "rows": [
+              {
+                "question": "1. What is the problem?",
+                "answer": "Stand 14 has an uncontained 42 m² fuel spill near an active drain; Taxiway B2 guard lights are obscured by 650 mm tall wild weeds; Stand 12 has loose lockwire near engine intakes."
+              },
+              {
+                "question": "2. What could happen?",
+                "answer": "Hydrocarbon runoff risks toxic stormwater contamination and apron fire; obscured guard lights risk a runway incursion; loose lockwire risks turbofan compressor blade ingestion."
+              },
+              {
+                "question": "3. How do we fix it?",
+                "answer": "Stand 14: Emergency stand closure, absorbent boom deployment, and RFFS washdown. Taxiway B2: Groundskeeping mowing within 24 hours. Stand 12: Immediate ramp sweep and permanent covered magnetic FOD bins."
+              },
+              {
+                "question": "4. Our Decision",
+                "answer": "Level 1 immediate operational restriction enacted for Stand 14 (closed until hydrant recertified); Level 2 formal 30-day Corrective Action Plans issued for Taxiway B2 and Stand 12 under Point ADR.AR.C.055."
+              }
+            ],
+            "rulesToReality": {
+              "title": "Rules to Reality: 60-Second Pair Spoken Wrap-Up",
+              "prompt": "Pick one audit finding from today (fuel spill, obscured guard lights, or ramp FOD). In pairs, deliver an unscripted 60-second summary explaining: 1) What was the physical non-conformance? 2) Why did it happen (past modal deduction)? 3) What immediate operational restriction was required?"
+            }
           }
         },
         "revision": {
@@ -14027,6 +14068,7 @@
         },
         "4": {
           "session": 4,
+          "title": "Ground Inspection & Audit Findings",
           "overview": {
             "intro": "Welcome to Session 4 of Technical English! Today we work with an authentic EASA airfield audit report to practice reporting ground safety non-compliances. You will learn to categorize findings into immediate hazards (Level 1) and minor issues (Level 2), use past deductions (must have, could have) to deduce how problems happened, and deliver a 2-minute spoken briefing to the Airport Director.",
             "whyItMatters": "Airside safety oversight is not just filling out paperwork—it is an active defense against runway incursions, apron fires, and catastrophic engine failures. When an aerodrome inspector notices an uncontained fuel puddle flowing towards an apron drain, overgrown airfield grass hiding runway guard lights, or loose lockwire in a staging area, they must accurately classify the operational risk and explain the root cause clearly in spoken English. Mastering past modal deductions allows technical officers to reconstruct causal chains and communicate urgent safety decisions without ambiguity.",
@@ -14052,9 +14094,9 @@
                 "definition": "A formal documented schedule submitted by the aerodrome operator detailing specific actions, responsible persons, and deadlines to resolve an audit finding."
               },
               {
-                "term": "Past Modal Deduction",
-                "ipa": "/pɑːst ˈməʊ.dəl dɪˈdʌk.ʃən/",
-                "definition": "A spoken grammatical construction (must have, could have, should have + past participle) used by inspectors to deduce how an airfield incident or defect occurred."
+                "term": "Past Deductions (Must have / Could have)",
+                "ipa": "/pɑːst dɪˈdʌk.ʃənz/",
+                "definition": "Clear spoken sentences using 'must have', 'could have', and 'should have' to explain how an airfield defect or incident happened based on evidence."
               },
               {
                 "term": "Foreign Object Debris (FOD)",
@@ -14311,14 +14353,54 @@
               ]
             },
             "safetyCheck": {
-              "title": "Activity 4: Operational Safety Check • Delivering the 3-Bullet Audit Notice",
+              "title": "Activity 4: Operational Debrief • Delivering the 3-Bullet Audit Notice",
               "instructions": "Synthesize your group's findings and deliver a crisp, 2-minute oral audit debrief addressing the Airport Director. Use this professional 3-bullet template:",
               "template": [
                 "Bullet 1 (Finding & Location): 'Director, our audit team has recorded a [Level 1 / Level 2] non-conformance at [Location] under Point [EASA Standard]...'",
                 "Bullet 2 (Root Cause Modal Deduction): 'Based on physical evidence, the operator must have... and the condition could have resulted in...'",
                 "Bullet 3 (Immediate Action & Deadline): 'We have immediately enacted [closure / restriction], and require a formal CAP submitted within [immediate / 30 calendar days].'"
               ],
-              "modelResponse": "Director, our audit team has recorded a Level 1 non-conformance on Stand 14 under Point ADR.OPS.B.010 and B.025. Based on physical evidence, the refueling crew must have jammed the deadman valve with wire and failed to deploy containment booms, which could have contaminated the local water table through the nearby storm drain. We have immediately closed Stand 14 to all aircraft operations, and require a full occurrence report and hydrant recertification before the stand may reopen."
+              "modelResponse": "Director, our audit team has recorded a Level 1 non-conformance on Stand 14 under Point ADR.OPS.B.010 and B.025. Based on physical evidence, the refueling crew must have jammed the deadman valve with wire and failed to deploy containment booms, which could have contaminated the local water table through the nearby storm drain. We have immediately closed Stand 14 to all aircraft operations, and require a full occurrence report and hydrant recertification before the stand may reopen.",
+              "peerChecklist": [
+                {
+                  "id": 1,
+                  "label": "Did the speaker correctly classify the finding level (Level 1 immediate vs Level 2 30-day CAP) citing Point ADR.AR.C.055?"
+                },
+                {
+                  "id": 2,
+                  "label": "Were past modal deductions formulated correctly (must have, could have, should have + past participle)?"
+                },
+                {
+                  "id": 3,
+                  "label": "Was the 3-bullet executive structure maintained concisely within the 2-minute time limit?"
+                },
+                {
+                  "id": 4,
+                  "label": "Did the speaker propose decisive immediate operational restrictions or clear corrective actions?"
+                }
+              ],
+              "rows": [
+                {
+                  "question": "1. What is the problem?",
+                  "answer": "Stand 14 has an uncontained 42 m² fuel spill near an active drain; Taxiway B2 guard lights are obscured by 650 mm tall wild weeds; Stand 12 has loose lockwire near engine intakes."
+                },
+                {
+                  "question": "2. What could happen?",
+                  "answer": "Hydrocarbon runoff risks toxic stormwater contamination and apron fire; obscured guard lights risk a runway incursion; loose lockwire risks turbofan compressor blade ingestion."
+                },
+                {
+                  "question": "3. How do we fix it?",
+                  "answer": "Stand 14: Emergency stand closure, absorbent boom deployment, and RFFS washdown. Taxiway B2: Groundskeeping mowing within 24 hours. Stand 12: Immediate ramp sweep and permanent covered magnetic FOD bins."
+                },
+                {
+                  "question": "4. Our Decision",
+                  "answer": "Level 1 immediate operational restriction enacted for Stand 14 (closed until hydrant recertified); Level 2 formal 30-day Corrective Action Plans issued for Taxiway B2 and Stand 12 under Point ADR.AR.C.055."
+                }
+              ],
+              "rulesToReality": {
+                "title": "Rules to Reality: 60-Second Pair Spoken Wrap-Up",
+                "prompt": "Pick one audit finding from today (fuel spill, obscured guard lights, or ramp FOD). In pairs, deliver an unscripted 60-second summary explaining: 1) What was the physical non-conformance? 2) Why did it happen (past modal deduction)? 3) What immediate operational restriction was required?"
+              }
             }
           },
           "revision": {
