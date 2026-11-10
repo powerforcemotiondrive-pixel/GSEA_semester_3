@@ -1293,7 +1293,7 @@
               "tag": "Investigation Board",
               "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
               "desc": "Official French aviation safety investigation authority reports and safety recommendations.",
-              "url": "https://bea.aero"
+              "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea"
             },
             {
               "tag": "US FAA Standards",
@@ -1331,7 +1331,7 @@
               "tag": "Investigation Board",
               "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
               "desc": "Official French aviation safety investigation authority reports and safety recommendations.",
-              "url": "https://bea.aero"
+              "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea"
             },
             {
               "tag": "US FAA Standards",
@@ -1363,6 +1363,277 @@
           }
         }
       },
+      "7": {
+        "session": 7,
+        "title": "Flipped Classroom Peer-Teaching Evaluation",
+        "overview": {
+                "intro": "Welcome to Session 7 of Technical English! In this Formative Evaluation, student teams of 3 to 4 take the floor as technical instructors to deliver an engaging 30-minute interactive lesson to their classmates. You will practice giving clear spoken activity instructions in plain English, facilitate pair and group work based on Module 1 EASA aerodrome topics, manage classroom discussions, and provide constructive feedback to your peers.",
+                "whyItMatters": "Teaching a technical subject to others is one of the most effective ways to solidify language mastery and professional communicative presence. In airside operations, civil aviation oversight, and flight operations management, future ENAC graduates are regularly required to deliver safety briefings, train frontline ground teams, explain complex EASA regulatory updates, and facilitate collaborative decision-making across international teams. Developing the confidence to give direct spoken instructions, facilitate interactive peer discussions, and think on your feet in English transforms passive technical knowledge into active leadership communication.",
+                "keyTerms": [
+                        {
+                                "term": "Flipped Classroom",
+                                "ipa": "/fl\u026apt \u02c8kl\u0251\u02d0s.ru\u02d0m/",
+                                "pos": "noun phrase",
+                                "def": "A teaching model where students prepare learning materials beforehand and spend classroom time actively delivering, facilitating, and completing collaborative speaking tasks."
+                        },
+                        {
+                                "term": "Peer-Teaching",
+                                "ipa": "/p\u026a\u0259r \u02c8ti\u02d0.t\u0283\u026a\u014b/",
+                                "pos": "noun",
+                                "def": "An instructional practice where students instruct and guide their fellow classmates through structured communicative exercises."
+                        },
+                        {
+                                "term": "Instruction Checking Question (ICQ)",
+                                "ipa": "/\u026an\u02c8str\u028ck.\u0283\u0259n \u02c8t\u0283ek.\u026a\u014b \u02c8kwes.t\u0283\u0259n/",
+                                "pos": "noun phrase",
+                                "def": "A brief, direct spoken question asked by an instructor to verify that learners understand activity instructions before starting."
+                        },
+                        {
+                                "term": "Elicitation",
+                                "ipa": "/\u026a\u02ccl\u026as.\u026a\u02c8te\u026a.\u0283\u0259n/",
+                                "pos": "noun",
+                                "def": "A facilitation technique where the speaker prompts questions to draw ideas, solutions, or technical terms out of classmates rather than lecturing."
+                        },
+                        {
+                                "term": "Timeboxing",
+                                "ipa": "/\u02c8ta\u026am.b\u0252ks.\u026a\u014b/",
+                                "pos": "noun",
+                                "def": "Allocating a fixed, predetermined period of time to an activity step to keep classroom discussions focused and energetic."
+                        },
+                        {
+                                "term": "Constructive Feedback",
+                                "ipa": "/k\u0259n\u02c8str\u028ck.t\u026av \u02c8fi\u02d0d.b\u00e6k/",
+                                "pos": "noun phrase",
+                                "def": "Specific, positive, and actionable observations provided to peers highlighting strong performance and practical areas for growth."
+                        },
+                        {
+                                "term": "Active Listening",
+                                "ipa": "/\u02c8\u00e6k.t\u026av \u02c8l\u026as.\u0259n.\u026a\u014b/",
+                                "pos": "noun phrase",
+                                "def": "Paying full conscious attention to peer contributions, confirming understanding, and building upon what others say during debriefs."
+                        },
+                        {
+                                "term": "Nominated Speaker",
+                                "ipa": "/\u02c8n\u0252m.\u026a.ne\u026a.t\u026ad \u02c8spi\u02d0.k\u0259r/",
+                                "pos": "noun phrase",
+                                "def": "A designated group representative chosen to present a team's collective conclusions during whole-class discussion."
+                        },
+                        {
+                                "term": "Pairwork Facilitation",
+                                "ipa": "/\u02c8pe\u0259.w\u025c\u02d0k f\u0259\u02ccs\u026al.\u026a\u02c8te\u026a.\u0283\u0259n/",
+                                "pos": "noun phrase",
+                                "def": "Circulating among student pairs, monitoring conversational flow, clarifying doubts, and prompting quieter learners to contribute."
+                        },
+                        {
+                                "term": "Plenary Debrief",
+                                "ipa": "/\u02c8pli\u02d0.n\u0259r.i di\u02d0\u02c8bri\u02d0f/",
+                                "pos": "noun phrase",
+                                "def": "A concluding whole-class discussion where student groups share conclusions, synthesize key insights, and evaluate lessons learned."
+                        }
+                ],
+                "task": "Work with your team of 3 or 4 students to deliver an interactive 30-minute peer lesson on your chosen Module 1 EASA aerodrome safety topic. Give clear instructions in plain English, facilitate pair activities, circulate to support classmates, and lead an active whole-class debrief."
+        },
+        "objectives": {
+                "title": "Session 7 Objectives - Flipped Classroom Peer-Teaching Evaluation",
+                "summary": "By the end of this session, you will be able to deliver an engaging 30-minute flipped lesson in small teams, give clear spoken activity instructions in plain B2 English, facilitate dynamic pair and group interactions, deploy specialized Module 1 aerodrome vocabulary in context, and lead a constructive class debrief.",
+                "items": [
+                        {
+                                "num": 1,
+                                "title": "Structure and Deliver an Interactive 30-Minute Aerodrome Safety Lesson",
+                                "description": "Coordinate as a team of 3 to 4 to lead an engaging, well-timed lesson on a core EASA aerodrome operations topic without reading from scripts.",
+                                "part": "Part 1"
+                        },
+                        {
+                                "num": 2,
+                                "title": "Deliver Clear, Actionable Spoken Instructions in Plain B2 English",
+                                "description": "Give step-by-step activity instructions and use Instruction Checking Questions (ICQs) to ensure classmates understand tasks before beginning.",
+                                "part": "Part 2"
+                        },
+                        {
+                                "num": 3,
+                                "title": "Facilitate Small-Group Spoken Interaction & Monitor Classmates",
+                                "description": "Circulate among student pairs, prompt active discussion, provide helpful hints, and maintain an inclusive, English-only communicative atmosphere.",
+                                "part": "Part 2"
+                        },
+                        {
+                                "num": 4,
+                                "title": "Deploy Module 1 EASA Aerodrome Phraseology Accurately in Dialogue",
+                                "description": "Naturally integrate at least 6 to 8 specialized technical terms from Sessions 1\u20136 into lesson explanations, questions, and summaries.",
+                                "part": "Part 3"
+                        },
+                        {
+                                "num": 5,
+                                "title": "Lead a Collaborative Plenary Debrief & Provide Constructive Peer Feedback",
+                                "description": "Synthesize group answers, invite peer questions, conduct honest self-evaluation, and provide actionable spoken feedback to classmates.",
+                                "part": "Part 4"
+                        }
+                ]
+        },
+        "lessonPlan": {
+                "title": "Session 7 Lesson Plan - Flipped Classroom Peer-Teaching Evaluation (2 Hours)",
+                "level": "B2",
+                "duration": "2 Hours",
+                "aims": [
+                        "Assess student teams on their preparation, original communicative ideas, and delivery of an interactive peer lesson.",
+                        "Provide extended spoken practice where students take the role of technical instructors giving clear verbal instructions.",
+                        "Consolidate cumulative Module 1 aerodrome safety regulations, audit finding classifications, and incident investigation methodologies.",
+                        "Promote active listening, collaborative problem solving, and constructive peer evaluation."
+                ],
+                "structure": [
+                        {
+                                "part": "Part 1: Classroom Setup, Evaluation Briefing & Team Pitch",
+                                "focus": "Teacher briefing on 30-minute flipped lesson structure, 20-point assessment rubric, peer observation duties, and team setup.",
+                                "activity": "Teacher outlines rotation sequence. Presenting teams set up visual aids, handouts, or digital props. Student instructors give a 60-second pitch outlining their lesson topic and expected outcomes."
+                        },
+                        {
+                                "part": "Part 2: Student-Led Peer Teaching Lessons \u2014 Round 1",
+                                "focus": "First student team (3\u20134 students) takes the floor to deliver their 30-minute interactive lesson on their chosen Module 1 domain.",
+                                "activity": "Team leads opening context hook, delivers clear spoken activity instructions, facilitates small-group/pair tasks among classmates, circulates to coach peers, and conducts a plenary debrief. Classmates actively participate and complete peer observation logs."
+                        },
+                        {
+                                "part": "Part 3: Student-Led Peer Teaching Lessons \u2014 Round 2",
+                                "focus": "Second student team (3\u20134 students) delivers their 30-minute interactive lesson on their chosen Module 1 domain.",
+                                "activity": "Second team delivers their communicative activity (case study, audit role-play, or CAP negotiation). Classmates engage in pair discussions, answer prompt questions, and present team findings."
+                        },
+                        {
+                                "part": "Part 4: Plenary Feedback, Portfolio Self-Critique & Teacher Scoring",
+                                "focus": "Whole-class collaborative reflection, peer feedback exchange, portfolio review, and teacher evaluation scoring.",
+                                "activity": "Classmates share positive shout-outs and constructive feedback using observation logs. Presenting teams self-critique their delivery. Teacher summarizes key communicative strengths and awards formative assessment marks out of 20."
+                        }
+                ]
+        },
+        "vocabulary": {
+                "title": "Flipped Peer-Teaching & Facilitation Phraseology",
+                "summary": "Essential spoken expressions for giving clear instructions, checking understanding, moderating discussions, and providing constructive feedback.",
+                "categories": [
+                        {
+                                "name": "Starting & Setting the Stage",
+                                "terms": [
+                                        {
+                                                "term": "Today our team is going to explore...",
+                                                "def": "Introducing the lesson topic with clarity and purpose."
+                                        },
+                                        {
+                                                "term": "Imagine you are the aerodrome safety manager...",
+                                                "def": "Hooking peer interest with a real-world operational scenario."
+                                        },
+                                        {
+                                                "term": "Our goal by the end of this 30-minute session is...",
+                                                "def": "Setting an explicit, achievable learning outcome for classmates."
+                                        }
+                                ]
+                        },
+                        {
+                                "name": "Giving Clear Activity Instructions",
+                                "terms": [
+                                        {
+                                                "term": "Please work in pairs with the person next to you.",
+                                                "def": "Direct, polite organization of student interaction."
+                                        },
+                                        {
+                                                "term": "Step one is to examine the diagram, and step two is...",
+                                                "def": "Sequencing instructions logically before starting."
+                                        },
+                                        {
+                                                "term": "Before we begin, who can tell me what step 1 involves?",
+                                                "def": "Instruction Checking Question (ICQ) to verify task comprehension."
+                                        },
+                                        {
+                                                "term": "You have five minutes to complete this stage.",
+                                                "def": "Timeboxing an activity to maintain active communicative energy."
+                                        }
+                                ]
+                        },
+                        {
+                                "name": "Circulating & Facilitating Group Work",
+                                "terms": [
+                                        {
+                                                "term": "How are things going over here? Any questions on the task?",
+                                                "def": "Checking in supportively with working student pairs."
+                                        },
+                                        {
+                                                "term": "What does EASA Part-ADR require for this type of obstacle?",
+                                                "def": "Guiding peers toward technical regulations without giving away the answer."
+                                        },
+                                        {
+                                                "term": "Two minutes remaining, please start wrapping up your notes.",
+                                                "def": "Courteous time warning to keep the lesson on schedule."
+                                        }
+                                ]
+                        },
+                        {
+                                "name": "Debriefing & Eliciting Ideas",
+                                "terms": [
+                                        {
+                                                "term": "Let's hear from Team B. What root cause did you identify?",
+                                                "def": "Nominating a group speaker to share conclusions."
+                                        },
+                                        {
+                                                "term": "Does anyone have a different recommendation for this finding?",
+                                                "def": "Encouraging healthy debate and alternative perspectives."
+                                        },
+                                        {
+                                                "term": "Notice how they used 'provided that' to express conditional safety.",
+                                                "def": "Highlighting effective language and technical vocabulary in context."
+                                        }
+                                ]
+                        },
+                        {
+                                "name": "Constructive Peer Feedback",
+                                "terms": [
+                                        {
+                                                "term": "One thing your team did really well was...",
+                                                "def": "Offering positive, specific recognition for effective delivery."
+                                        },
+                                        {
+                                                "term": "The instructions were very clear and easy to follow.",
+                                                "def": "Validating the team's instructional clarity and organization."
+                                        },
+                                        {
+                                                "term": "Next time, you could give one student per group a specific role.",
+                                                "def": "Offering actionable, constructive suggestions for future growth."
+                                        }
+                                ]
+                        }
+                ]
+        },
+        "materials": {
+                "articles": [
+                        {
+                                "title": "Effective Spoken Briefings: Delivering Complex Technical Aviation Information",
+                                "heading": "Effective Spoken Briefings: Delivering Complex Technical Aviation Information",
+                                "summary": "How aviation professionals translate dense regulatory requirements into clear, engaging spoken instructions and actionable team briefings.",
+                                "url": "https://www.skybrary.aero/",
+                                "author": "SKYbrary Aviation Safety Network",
+                                "date": "2024",
+                                "content": "<p>In airside safety operations and flight dispatch, technical officers must frequently communicate complex EASA rules, audit findings, and temporary operational restrictions to frontline teams under tight turnaround deadlines. Clear spoken instructions and collaborative group exercises build shared situational awareness.</p>"
+                        },
+                        {
+                                "title": "Interactive Peer Training in Aerodrome Safety Management",
+                                "heading": "Interactive Peer Training in Aerodrome Safety Management",
+                                "summary": "Exploring how collaborative case study simulations and peer-led workshops improve compliance and safety reporting culture.",
+                                "url": "https://www.easa.europa.eu/en",
+                                "author": "EASA Safety Information Network",
+                                "date": "2024",
+                                "content": "<p>Modern Safety Management Systems (SMS) recognize that peer-to-peer engagement and communicative workshops foster a much deeper safety culture than top-down lectures. When students teach each other, technical phraseology and operational judgment become second nature.</p>"
+                        }
+                ],
+                "resources": [
+                        {
+                                "title": "EASA Aerodrome Rules & Guidance (Part-ADR)",
+                                "name": "EASA Aerodrome Rules & Guidance (Part-ADR)",
+                                "url": "https://www.easa.europa.eu/en",
+                                "desc": "Official European Union Aviation Safety Agency aerodrome safety regulations and technical guidance materials."
+                        },
+                        {
+                                "title": "SKYbrary Aviation Safety Knowledgebase",
+                                "name": "SKYbrary Aviation Safety Knowledgebase",
+                                "url": "https://www.skybrary.aero/",
+                                "desc": "Global repository of aerodrome safety, air traffic management, and operational occurrence case studies."
+                        }
+                ]
+        }
+},
       "2": {
         "session": 2,
         "overview": {
@@ -2431,7 +2702,7 @@
               "tag": "Investigation Board",
               "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
               "desc": "Official French aviation safety investigation authority reports and safety recommendations.",
-              "url": "https://bea.aero"
+              "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea"
             },
             {
               "tag": "US FAA Standards",
@@ -2469,7 +2740,7 @@
               "tag": "Investigation Board",
               "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
               "desc": "Official French aviation safety investigation authority reports and safety recommendations.",
-              "url": "https://bea.aero"
+              "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea"
             },
             {
               "tag": "US FAA Standards",
@@ -3540,7 +3811,7 @@
               "tag": "Investigation Board",
               "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
               "desc": "Official French aviation safety investigation authority reports and safety recommendations.",
-              "url": "https://bea.aero"
+              "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea"
             },
             {
               "tag": "US FAA Standards",
@@ -3578,7 +3849,7 @@
               "tag": "Investigation Board",
               "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
               "desc": "Official French aviation safety investigation authority reports and safety recommendations.",
-              "url": "https://bea.aero"
+              "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea"
             },
             {
               "tag": "US FAA Standards",
@@ -4425,7 +4696,7 @@
               "tag": "Investigation Board",
               "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
               "desc": "Official French aviation safety investigation authority reports and safety recommendations.",
-              "url": "https://bea.aero"
+              "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea"
             },
             {
               "tag": "US FAA Standards",
@@ -4463,7 +4734,7 @@
               "tag": "Investigation Board",
               "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
               "desc": "Official French aviation safety investigation authority reports and safety recommendations.",
-              "url": "https://bea.aero"
+              "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea"
             },
             {
               "tag": "US FAA Standards",
@@ -5153,7 +5424,7 @@
           },
           "resources": [
             {
-              "url": "https://www.bea.aero/en",
+              "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea",
               "tag": "01 • Accident Investigation Authority",
               "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
               "desc": "Official French civil aviation safety investigation authority publishing comprehensive occurrence reports and safety recommendations.",
@@ -8194,14 +8465,14 @@
               "sourceTag": "BEA France",
               "heading": "The Role of Independent Technical Investigation in Preventing Future Accidents",
               "snippet": "How aviation accident investigators determine facts without seeking blame or liability, focusing strictly on permanent safety recommendations.",
-              "url": "https://www.bea.aero",
+              "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea",
               "readTime": "Estimated read: 5-6 mins",
               "part": "Part 2"
             }
           ],
           "resources": [
             {
-              "url": "https://bea.aero/en",
+              "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea",
               "tag": "01 • Official Reports",
               "name": "BEA (Bureau d'Enquêtes et d'Analyses)",
               "desc": "French civil aviation safety authority publishing authoritative final accident investigation reports.",
@@ -8748,14 +9019,14 @@
               "sourceTag": "BEA France",
               "heading": "The Role of Independent Technical Investigation in Preventing Future Accidents",
               "snippet": "How aviation accident investigators determine facts without seeking blame or liability, focusing strictly on permanent safety recommendations.",
-              "url": "https://www.bea.aero",
+              "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea",
               "readTime": "Estimated read: 5-6 mins",
               "part": "Part 2"
             }
           ],
           "resources": [
             {
-              "url": "https://bea.aero/en",
+              "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea",
               "tag": "01 • Official Reports",
               "name": "BEA (Bureau d'Enquêtes et d'Analyses)",
               "desc": "French civil aviation safety authority publishing authoritative final accident investigation reports.",
@@ -9302,14 +9573,14 @@
               "sourceTag": "BEA France",
               "heading": "The Role of Independent Technical Investigation in Preventing Future Accidents",
               "snippet": "How aviation accident investigators determine facts without seeking blame or liability, focusing strictly on permanent safety recommendations.",
-              "url": "https://www.bea.aero",
+              "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea",
               "readTime": "Estimated read: 5-6 mins",
               "part": "Part 2"
             }
           ],
           "resources": [
             {
-              "url": "https://bea.aero/en",
+              "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea",
               "tag": "01 • Official Reports",
               "name": "BEA (Bureau d'Enquêtes et d'Analyses)",
               "desc": "French civil aviation safety authority publishing authoritative final accident investigation reports.",
@@ -9856,14 +10127,14 @@
               "sourceTag": "BEA France",
               "heading": "The Role of Independent Technical Investigation in Preventing Future Accidents",
               "snippet": "How aviation accident investigators determine facts without seeking blame or liability, focusing strictly on permanent safety recommendations.",
-              "url": "https://www.bea.aero",
+              "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea",
               "readTime": "Estimated read: 5-6 mins",
               "part": "Part 2"
             }
           ],
           "resources": [
             {
-              "url": "https://bea.aero/en",
+              "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea",
               "tag": "01 • Official Reports",
               "name": "BEA (Bureau d'Enquêtes et d'Analyses)",
               "desc": "French civil aviation safety authority publishing authoritative final accident investigation reports.",
@@ -11212,7 +11483,7 @@
                 "tag": "Investigation Board",
                 "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
                 "desc": "Official French aviation safety investigation authority reports and safety recommendations.",
-                "url": "https://bea.aero"
+                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea"
               },
               {
                 "tag": "US FAA Standards",
@@ -11250,7 +11521,7 @@
                 "tag": "Investigation Board",
                 "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
                 "desc": "Official French aviation safety investigation authority reports and safety recommendations.",
-                "url": "https://bea.aero"
+                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea"
               },
               {
                 "tag": "US FAA Standards",
@@ -11282,6 +11553,277 @@
             }
           }
         },
+        "7": {
+          "session": 7,
+          "title": "Flipped Classroom Peer-Teaching Evaluation",
+          "overview": {
+                    "intro": "Welcome to Session 7 of Technical English! In this Formative Evaluation, student teams of 3 to 4 take the floor as technical instructors to deliver an engaging 30-minute interactive lesson to their classmates. You will practice giving clear spoken activity instructions in plain English, facilitate pair and group work based on Module 1 EASA aerodrome topics, manage classroom discussions, and provide constructive feedback to your peers.",
+                    "whyItMatters": "Teaching a technical subject to others is one of the most effective ways to solidify language mastery and professional communicative presence. In airside operations, civil aviation oversight, and flight operations management, future ENAC graduates are regularly required to deliver safety briefings, train frontline ground teams, explain complex EASA regulatory updates, and facilitate collaborative decision-making across international teams. Developing the confidence to give direct spoken instructions, facilitate interactive peer discussions, and think on your feet in English transforms passive technical knowledge into active leadership communication.",
+                    "keyTerms": [
+                              {
+                                        "term": "Flipped Classroom",
+                                        "ipa": "/fl\u026apt \u02c8kl\u0251\u02d0s.ru\u02d0m/",
+                                        "pos": "noun phrase",
+                                        "def": "A teaching model where students prepare learning materials beforehand and spend classroom time actively delivering, facilitating, and completing collaborative speaking tasks."
+                              },
+                              {
+                                        "term": "Peer-Teaching",
+                                        "ipa": "/p\u026a\u0259r \u02c8ti\u02d0.t\u0283\u026a\u014b/",
+                                        "pos": "noun",
+                                        "def": "An instructional practice where students instruct and guide their fellow classmates through structured communicative exercises."
+                              },
+                              {
+                                        "term": "Instruction Checking Question (ICQ)",
+                                        "ipa": "/\u026an\u02c8str\u028ck.\u0283\u0259n \u02c8t\u0283ek.\u026a\u014b \u02c8kwes.t\u0283\u0259n/",
+                                        "pos": "noun phrase",
+                                        "def": "A brief, direct spoken question asked by an instructor to verify that learners understand activity instructions before starting."
+                              },
+                              {
+                                        "term": "Elicitation",
+                                        "ipa": "/\u026a\u02ccl\u026as.\u026a\u02c8te\u026a.\u0283\u0259n/",
+                                        "pos": "noun",
+                                        "def": "A facilitation technique where the speaker prompts questions to draw ideas, solutions, or technical terms out of classmates rather than lecturing."
+                              },
+                              {
+                                        "term": "Timeboxing",
+                                        "ipa": "/\u02c8ta\u026am.b\u0252ks.\u026a\u014b/",
+                                        "pos": "noun",
+                                        "def": "Allocating a fixed, predetermined period of time to an activity step to keep classroom discussions focused and energetic."
+                              },
+                              {
+                                        "term": "Constructive Feedback",
+                                        "ipa": "/k\u0259n\u02c8str\u028ck.t\u026av \u02c8fi\u02d0d.b\u00e6k/",
+                                        "pos": "noun phrase",
+                                        "def": "Specific, positive, and actionable observations provided to peers highlighting strong performance and practical areas for growth."
+                              },
+                              {
+                                        "term": "Active Listening",
+                                        "ipa": "/\u02c8\u00e6k.t\u026av \u02c8l\u026as.\u0259n.\u026a\u014b/",
+                                        "pos": "noun phrase",
+                                        "def": "Paying full conscious attention to peer contributions, confirming understanding, and building upon what others say during debriefs."
+                              },
+                              {
+                                        "term": "Nominated Speaker",
+                                        "ipa": "/\u02c8n\u0252m.\u026a.ne\u026a.t\u026ad \u02c8spi\u02d0.k\u0259r/",
+                                        "pos": "noun phrase",
+                                        "def": "A designated group representative chosen to present a team's collective conclusions during whole-class discussion."
+                              },
+                              {
+                                        "term": "Pairwork Facilitation",
+                                        "ipa": "/\u02c8pe\u0259.w\u025c\u02d0k f\u0259\u02ccs\u026al.\u026a\u02c8te\u026a.\u0283\u0259n/",
+                                        "pos": "noun phrase",
+                                        "def": "Circulating among student pairs, monitoring conversational flow, clarifying doubts, and prompting quieter learners to contribute."
+                              },
+                              {
+                                        "term": "Plenary Debrief",
+                                        "ipa": "/\u02c8pli\u02d0.n\u0259r.i di\u02d0\u02c8bri\u02d0f/",
+                                        "pos": "noun phrase",
+                                        "def": "A concluding whole-class discussion where student groups share conclusions, synthesize key insights, and evaluate lessons learned."
+                              }
+                    ],
+                    "task": "Work with your team of 3 or 4 students to deliver an interactive 30-minute peer lesson on your chosen Module 1 EASA aerodrome safety topic. Give clear instructions in plain English, facilitate pair activities, circulate to support classmates, and lead an active whole-class debrief."
+          },
+          "objectives": {
+                    "title": "Session 7 Objectives - Flipped Classroom Peer-Teaching Evaluation",
+                    "summary": "By the end of this session, you will be able to deliver an engaging 30-minute flipped lesson in small teams, give clear spoken activity instructions in plain B2 English, facilitate dynamic pair and group interactions, deploy specialized Module 1 aerodrome vocabulary in context, and lead a constructive class debrief.",
+                    "items": [
+                              {
+                                        "num": 1,
+                                        "title": "Structure and Deliver an Interactive 30-Minute Aerodrome Safety Lesson",
+                                        "description": "Coordinate as a team of 3 to 4 to lead an engaging, well-timed lesson on a core EASA aerodrome operations topic without reading from scripts.",
+                                        "part": "Part 1"
+                              },
+                              {
+                                        "num": 2,
+                                        "title": "Deliver Clear, Actionable Spoken Instructions in Plain B2 English",
+                                        "description": "Give step-by-step activity instructions and use Instruction Checking Questions (ICQs) to ensure classmates understand tasks before beginning.",
+                                        "part": "Part 2"
+                              },
+                              {
+                                        "num": 3,
+                                        "title": "Facilitate Small-Group Spoken Interaction & Monitor Classmates",
+                                        "description": "Circulate among student pairs, prompt active discussion, provide helpful hints, and maintain an inclusive, English-only communicative atmosphere.",
+                                        "part": "Part 2"
+                              },
+                              {
+                                        "num": 4,
+                                        "title": "Deploy Module 1 EASA Aerodrome Phraseology Accurately in Dialogue",
+                                        "description": "Naturally integrate at least 6 to 8 specialized technical terms from Sessions 1\u20136 into lesson explanations, questions, and summaries.",
+                                        "part": "Part 3"
+                              },
+                              {
+                                        "num": 5,
+                                        "title": "Lead a Collaborative Plenary Debrief & Provide Constructive Peer Feedback",
+                                        "description": "Synthesize group answers, invite peer questions, conduct honest self-evaluation, and provide actionable spoken feedback to classmates.",
+                                        "part": "Part 4"
+                              }
+                    ]
+          },
+          "lessonPlan": {
+                    "title": "Session 7 Lesson Plan - Flipped Classroom Peer-Teaching Evaluation (2 Hours)",
+                    "level": "B2",
+                    "duration": "2 Hours",
+                    "aims": [
+                              "Assess student teams on their preparation, original communicative ideas, and delivery of an interactive peer lesson.",
+                              "Provide extended spoken practice where students take the role of technical instructors giving clear verbal instructions.",
+                              "Consolidate cumulative Module 1 aerodrome safety regulations, audit finding classifications, and incident investigation methodologies.",
+                              "Promote active listening, collaborative problem solving, and constructive peer evaluation."
+                    ],
+                    "structure": [
+                              {
+                                        "part": "Part 1: Classroom Setup, Evaluation Briefing & Team Pitch",
+                                        "focus": "Teacher briefing on 30-minute flipped lesson structure, 20-point assessment rubric, peer observation duties, and team setup.",
+                                        "activity": "Teacher outlines rotation sequence. Presenting teams set up visual aids, handouts, or digital props. Student instructors give a 60-second pitch outlining their lesson topic and expected outcomes."
+                              },
+                              {
+                                        "part": "Part 2: Student-Led Peer Teaching Lessons \u2014 Round 1",
+                                        "focus": "First student team (3\u20134 students) takes the floor to deliver their 30-minute interactive lesson on their chosen Module 1 domain.",
+                                        "activity": "Team leads opening context hook, delivers clear spoken activity instructions, facilitates small-group/pair tasks among classmates, circulates to coach peers, and conducts a plenary debrief. Classmates actively participate and complete peer observation logs."
+                              },
+                              {
+                                        "part": "Part 3: Student-Led Peer Teaching Lessons \u2014 Round 2",
+                                        "focus": "Second student team (3\u20134 students) delivers their 30-minute interactive lesson on their chosen Module 1 domain.",
+                                        "activity": "Second team delivers their communicative activity (case study, audit role-play, or CAP negotiation). Classmates engage in pair discussions, answer prompt questions, and present team findings."
+                              },
+                              {
+                                        "part": "Part 4: Plenary Feedback, Portfolio Self-Critique & Teacher Scoring",
+                                        "focus": "Whole-class collaborative reflection, peer feedback exchange, portfolio review, and teacher evaluation scoring.",
+                                        "activity": "Classmates share positive shout-outs and constructive feedback using observation logs. Presenting teams self-critique their delivery. Teacher summarizes key communicative strengths and awards formative assessment marks out of 20."
+                              }
+                    ]
+          },
+          "vocabulary": {
+                    "title": "Flipped Peer-Teaching & Facilitation Phraseology",
+                    "summary": "Essential spoken expressions for giving clear instructions, checking understanding, moderating discussions, and providing constructive feedback.",
+                    "categories": [
+                              {
+                                        "name": "Starting & Setting the Stage",
+                                        "terms": [
+                                                  {
+                                                            "term": "Today our team is going to explore...",
+                                                            "def": "Introducing the lesson topic with clarity and purpose."
+                                                  },
+                                                  {
+                                                            "term": "Imagine you are the aerodrome safety manager...",
+                                                            "def": "Hooking peer interest with a real-world operational scenario."
+                                                  },
+                                                  {
+                                                            "term": "Our goal by the end of this 30-minute session is...",
+                                                            "def": "Setting an explicit, achievable learning outcome for classmates."
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "name": "Giving Clear Activity Instructions",
+                                        "terms": [
+                                                  {
+                                                            "term": "Please work in pairs with the person next to you.",
+                                                            "def": "Direct, polite organization of student interaction."
+                                                  },
+                                                  {
+                                                            "term": "Step one is to examine the diagram, and step two is...",
+                                                            "def": "Sequencing instructions logically before starting."
+                                                  },
+                                                  {
+                                                            "term": "Before we begin, who can tell me what step 1 involves?",
+                                                            "def": "Instruction Checking Question (ICQ) to verify task comprehension."
+                                                  },
+                                                  {
+                                                            "term": "You have five minutes to complete this stage.",
+                                                            "def": "Timeboxing an activity to maintain active communicative energy."
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "name": "Circulating & Facilitating Group Work",
+                                        "terms": [
+                                                  {
+                                                            "term": "How are things going over here? Any questions on the task?",
+                                                            "def": "Checking in supportively with working student pairs."
+                                                  },
+                                                  {
+                                                            "term": "What does EASA Part-ADR require for this type of obstacle?",
+                                                            "def": "Guiding peers toward technical regulations without giving away the answer."
+                                                  },
+                                                  {
+                                                            "term": "Two minutes remaining, please start wrapping up your notes.",
+                                                            "def": "Courteous time warning to keep the lesson on schedule."
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "name": "Debriefing & Eliciting Ideas",
+                                        "terms": [
+                                                  {
+                                                            "term": "Let's hear from Team B. What root cause did you identify?",
+                                                            "def": "Nominating a group speaker to share conclusions."
+                                                  },
+                                                  {
+                                                            "term": "Does anyone have a different recommendation for this finding?",
+                                                            "def": "Encouraging healthy debate and alternative perspectives."
+                                                  },
+                                                  {
+                                                            "term": "Notice how they used 'provided that' to express conditional safety.",
+                                                            "def": "Highlighting effective language and technical vocabulary in context."
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "name": "Constructive Peer Feedback",
+                                        "terms": [
+                                                  {
+                                                            "term": "One thing your team did really well was...",
+                                                            "def": "Offering positive, specific recognition for effective delivery."
+                                                  },
+                                                  {
+                                                            "term": "The instructions were very clear and easy to follow.",
+                                                            "def": "Validating the team's instructional clarity and organization."
+                                                  },
+                                                  {
+                                                            "term": "Next time, you could give one student per group a specific role.",
+                                                            "def": "Offering actionable, constructive suggestions for future growth."
+                                                  }
+                                        ]
+                              }
+                    ]
+          },
+          "materials": {
+                    "articles": [
+                              {
+                                        "title": "Effective Spoken Briefings: Delivering Complex Technical Aviation Information",
+                                        "heading": "Effective Spoken Briefings: Delivering Complex Technical Aviation Information",
+                                        "summary": "How aviation professionals translate dense regulatory requirements into clear, engaging spoken instructions and actionable team briefings.",
+                                        "url": "https://www.skybrary.aero/",
+                                        "author": "SKYbrary Aviation Safety Network",
+                                        "date": "2024",
+                                        "content": "<p>In airside safety operations and flight dispatch, technical officers must frequently communicate complex EASA rules, audit findings, and temporary operational restrictions to frontline teams under tight turnaround deadlines. Clear spoken instructions and collaborative group exercises build shared situational awareness.</p>"
+                              },
+                              {
+                                        "title": "Interactive Peer Training in Aerodrome Safety Management",
+                                        "heading": "Interactive Peer Training in Aerodrome Safety Management",
+                                        "summary": "Exploring how collaborative case study simulations and peer-led workshops improve compliance and safety reporting culture.",
+                                        "url": "https://www.easa.europa.eu/en",
+                                        "author": "EASA Safety Information Network",
+                                        "date": "2024",
+                                        "content": "<p>Modern Safety Management Systems (SMS) recognize that peer-to-peer engagement and communicative workshops foster a much deeper safety culture than top-down lectures. When students teach each other, technical phraseology and operational judgment become second nature.</p>"
+                              }
+                    ],
+                    "resources": [
+                              {
+                                        "title": "EASA Aerodrome Rules & Guidance (Part-ADR)",
+                                        "name": "EASA Aerodrome Rules & Guidance (Part-ADR)",
+                                        "url": "https://www.easa.europa.eu/en",
+                                        "desc": "Official European Union Aviation Safety Agency aerodrome safety regulations and technical guidance materials."
+                              },
+                              {
+                                        "title": "SKYbrary Aviation Safety Knowledgebase",
+                                        "name": "SKYbrary Aviation Safety Knowledgebase",
+                                        "url": "https://www.skybrary.aero/",
+                                        "desc": "Global repository of aerodrome safety, air traffic management, and operational occurrence case studies."
+                              }
+                    ]
+          }
+},
         "2": {
           "session": 2,
           "overview": {
@@ -12350,7 +12892,7 @@
                 "tag": "Investigation Board",
                 "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
                 "desc": "Official French aviation safety investigation authority reports and safety recommendations.",
-                "url": "https://bea.aero"
+                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea"
               },
               {
                 "tag": "US FAA Standards",
@@ -12388,7 +12930,7 @@
                 "tag": "Investigation Board",
                 "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
                 "desc": "Official French aviation safety investigation authority reports and safety recommendations.",
-                "url": "https://bea.aero"
+                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea"
               },
               {
                 "tag": "US FAA Standards",
@@ -13459,7 +14001,7 @@
                 "tag": "Investigation Board",
                 "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
                 "desc": "Official French aviation safety investigation authority reports and safety recommendations.",
-                "url": "https://bea.aero"
+                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea"
               },
               {
                 "tag": "US FAA Standards",
@@ -13497,7 +14039,7 @@
                 "tag": "Investigation Board",
                 "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
                 "desc": "Official French aviation safety investigation authority reports and safety recommendations.",
-                "url": "https://bea.aero"
+                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea"
               },
               {
                 "tag": "US FAA Standards",
@@ -14344,7 +14886,7 @@
                 "tag": "Investigation Board",
                 "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
                 "desc": "Official French aviation safety investigation authority reports and safety recommendations.",
-                "url": "https://bea.aero"
+                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea"
               },
               {
                 "tag": "US FAA Standards",
@@ -14382,7 +14924,7 @@
                 "tag": "Investigation Board",
                 "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
                 "desc": "Official French aviation safety investigation authority reports and safety recommendations.",
-                "url": "https://bea.aero"
+                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea"
               },
               {
                 "tag": "US FAA Standards",
@@ -15072,7 +15614,7 @@
             },
             "resources": [
               {
-                "url": "https://www.bea.aero/en",
+                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea",
                 "tag": "01 • Accident Investigation Authority",
                 "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
                 "desc": "Official French civil aviation safety investigation authority publishing comprehensive occurrence reports and safety recommendations.",
@@ -18113,14 +18655,14 @@
                 "sourceTag": "BEA France",
                 "heading": "The Role of Independent Technical Investigation in Preventing Future Accidents",
                 "snippet": "How aviation accident investigators determine facts without seeking blame or liability, focusing strictly on permanent safety recommendations.",
-                "url": "https://www.bea.aero",
+                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea",
                 "readTime": "Estimated read: 5-6 mins",
                 "part": "Part 2"
               }
             ],
             "resources": [
               {
-                "url": "https://bea.aero/en",
+                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea",
                 "tag": "01 • Official Reports",
                 "name": "BEA (Bureau d'Enquêtes et d'Analyses)",
                 "desc": "French civil aviation safety authority publishing authoritative final accident investigation reports.",
@@ -18667,14 +19209,14 @@
                 "sourceTag": "BEA France",
                 "heading": "The Role of Independent Technical Investigation in Preventing Future Accidents",
                 "snippet": "How aviation accident investigators determine facts without seeking blame or liability, focusing strictly on permanent safety recommendations.",
-                "url": "https://www.bea.aero",
+                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea",
                 "readTime": "Estimated read: 5-6 mins",
                 "part": "Part 2"
               }
             ],
             "resources": [
               {
-                "url": "https://bea.aero/en",
+                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea",
                 "tag": "01 • Official Reports",
                 "name": "BEA (Bureau d'Enquêtes et d'Analyses)",
                 "desc": "French civil aviation safety authority publishing authoritative final accident investigation reports.",
@@ -19221,14 +19763,14 @@
                 "sourceTag": "BEA France",
                 "heading": "The Role of Independent Technical Investigation in Preventing Future Accidents",
                 "snippet": "How aviation accident investigators determine facts without seeking blame or liability, focusing strictly on permanent safety recommendations.",
-                "url": "https://www.bea.aero",
+                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea",
                 "readTime": "Estimated read: 5-6 mins",
                 "part": "Part 2"
               }
             ],
             "resources": [
               {
-                "url": "https://bea.aero/en",
+                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea",
                 "tag": "01 • Official Reports",
                 "name": "BEA (Bureau d'Enquêtes et d'Analyses)",
                 "desc": "French civil aviation safety authority publishing authoritative final accident investigation reports.",
@@ -19775,14 +20317,14 @@
                 "sourceTag": "BEA France",
                 "heading": "The Role of Independent Technical Investigation in Preventing Future Accidents",
                 "snippet": "How aviation accident investigators determine facts without seeking blame or liability, focusing strictly on permanent safety recommendations.",
-                "url": "https://www.bea.aero",
+                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea",
                 "readTime": "Estimated read: 5-6 mins",
                 "part": "Part 2"
               }
             ],
             "resources": [
               {
-                "url": "https://bea.aero/en",
+                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea",
                 "tag": "01 • Official Reports",
                 "name": "BEA (Bureau d'Enquêtes et d'Analyses)",
                 "desc": "French civil aviation safety authority publishing authoritative final accident investigation reports.",

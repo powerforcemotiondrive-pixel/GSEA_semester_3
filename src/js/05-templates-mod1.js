@@ -2558,3 +2558,238 @@ function renderLessonContentTabSession3(sessionData, theme) {
       `;
     }
 
+
+    function renderLessonContentTabSession7(sessionData, theme) {
+      const bodyEl = document.getElementById('modal-body');
+      const accent = theme.accent || '#2563eb';
+      const primary = theme.primary || '#1e3a8a';
+      const primaryDark = theme.primaryDark || '#0f172a';
+
+      bodyEl.innerHTML = `
+        <div class="space-y-6">
+          <!-- Hero Header Card -->
+          <div class="relative overflow-hidden rounded-2xl border border-slate-200/80 shadow-md bg-slate-900 text-white">
+            <div class="absolute inset-0 z-0">
+              <img src="images/s3_s7_peer_lesson_delivery.jpg" alt="Session 7 Peer Teaching" class="w-full h-full object-cover opacity-25 filter brightness-90">
+              <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-transparent"></div>
+            </div>
+            <div class="relative z-10 p-5 sm:p-7 space-y-3">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider text-amber-300 bg-amber-950/80 border border-amber-600/50">
+                  Formative Evaluation 1 • Technical English (AT • LV125E)
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider text-emerald-300 bg-emerald-950/80 border border-emerald-600/50">
+                  30-Minute Team Lessons
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider text-sky-300 bg-sky-950/80 border border-sky-600/50">
+                  Graded out of 20 Points
+                </span>
+              </div>
+              <div>
+                <h3 class="text-lg sm:text-2xl font-black text-white tracking-tight">Session 7: Flipped Classroom Peer-Teaching Workshop</h3>
+                <p class="text-xs sm:text-sm text-slate-300 max-w-2xl mt-1 leading-relaxed">
+                  Student teams of 3 to 4 take the floor as technical instructors, delivering an engaging 30-minute interactive lesson to classmates based on Module 1 EASA aerodrome operations.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 1: 4-Stage 30-Minute Lesson Architecture -->
+          <div class="rounded-xl border border-slate-200 bg-white p-4 sm:p-5 shadow-xs space-y-3">
+            <div class="flex items-center justify-between pb-2 border-b border-slate-200">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full" style="background-color: ${accent};"></span>
+                <h4 class="text-xs sm:text-sm font-bold text-slate-900 uppercase tracking-wide">
+                  1. The 30-Minute Flipped Lesson Architecture (4 Stages)
+                </h4>
+              </div>
+              <span class="text-[11px] font-semibold text-slate-400">Zero Rigid Minute Timings • Complete Teacher Pacing</span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+              <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1.5">
+                <div class="flex items-center justify-between">
+                  <span class="text-[10px] font-black uppercase text-slate-500">Stage 1</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-bold text-white" style="background-color: ${primary};">Opening Phase</span>
+                </div>
+                <h5 class="text-xs font-bold text-slate-800">Welcome &amp; Context Hook</h5>
+                <p class="text-[11px] text-slate-600 leading-relaxed">Introduce team members and the aerodrome safety challenge. Hook peer interest with a real incident scenario, photo exhibit, or thought-provoking question.</p>
+              </div>
+
+              <div class="p-3.5 bg-amber-50/50 border border-amber-200 rounded-xl space-y-1.5">
+                <div class="flex items-center justify-between">
+                  <span class="text-[10px] font-black uppercase text-amber-700">Stage 2</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-bold text-white" style="background-color: ${accent};">Core Activity</span>
+                </div>
+                <h5 class="text-xs font-bold text-slate-800">Instructions &amp; Spoken Task</h5>
+                <p class="text-[11px] text-slate-600 leading-relaxed">Deliver clear, step-by-step instructions in plain B2 English. Ask ICQs to verify task understanding. Classmates complete pair/group work.</p>
+              </div>
+
+              <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1.5">
+                <div class="flex items-center justify-between">
+                  <span class="text-[10px] font-black uppercase text-slate-500">Stage 3</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-bold text-white" style="background-color: ${primary};">Active Coaching</span>
+                </div>
+                <h5 class="text-xs font-bold text-slate-800">Circulating &amp; Support</h5>
+                <p class="text-[11px] text-slate-600 leading-relaxed">Student instructors circulate among tables, clarify questions, prompt quieter peers, provide hints, and ensure 100% English speaking.</p>
+              </div>
+
+              <div class="p-3.5 bg-emerald-50/50 border border-emerald-200 rounded-xl space-y-1.5">
+                <div class="flex items-center justify-between">
+                  <span class="text-[10px] font-black uppercase text-emerald-700">Stage 4</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-bold text-white bg-emerald-700">Debrief Phase</span>
+                </div>
+                <h5 class="text-xs font-bold text-slate-800">Plenary Review &amp; Debrief</h5>
+                <p class="text-[11px] text-slate-600 leading-relaxed">Elicit solutions from student groups, compare recommendations, review technical vocabulary deployed, and invite peer feedback.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: Spoken Facilitation Toolkit for Student Instructors -->
+          <div class="rounded-xl border border-slate-200 bg-white p-4 sm:p-5 shadow-xs space-y-3">
+            <div class="flex items-center justify-between pb-2 border-b border-slate-200">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full" style="background-color: ${accent};"></span>
+                <h4 class="text-xs sm:text-sm font-bold text-slate-900 uppercase tracking-wide">
+                  2. Spoken Facilitation Toolkit &bull; Phrases for Student Instructors
+                </h4>
+              </div>
+              <span class="text-[11px] font-semibold text-slate-400">Deploy During Delivery</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+              <!-- Box 1: Opening & Setting Tasks -->
+              <div class="p-3.5 rounded-xl border border-blue-200 bg-blue-50/40 space-y-2">
+                <div class="flex items-center gap-1.5 font-bold text-blue-900">
+                  <span>📢</span>
+                  <span class="uppercase tracking-wider text-[11px]">Opening Hook &amp; Giving Instructions</span>
+                </div>
+                <ul class="space-y-1 text-slate-700 leading-relaxed pl-3 list-disc">
+                  <li><strong>Hook:</strong> <em>"Good morning everyone. Today our team is putting you in the shoes of airport safety managers..."</em></li>
+                  <li><strong>Outcome:</strong> <em>"Our objective by the end of this 30-minute session is to agree on..."</em></li>
+                  <li><strong>Pairing:</strong> <em>"Please work in pairs with the person sitting next to you."</em></li>
+                  <li><strong>Step Sequencing:</strong> <em>"Step one is to examine the chart. Step two is to identify the non-compliance."</em></li>
+                </ul>
+              </div>
+
+              <!-- Box 2: Checking Understanding (ICQs) -->
+              <div class="p-3.5 rounded-xl border border-amber-200 bg-amber-50/40 space-y-2">
+                <div class="flex items-center gap-1.5 font-bold text-amber-900">
+                  <span>❓</span>
+                  <span class="uppercase tracking-wider text-[11px]">Instruction Checking Questions (ICQs)</span>
+                </div>
+                <ul class="space-y-1 text-slate-700 leading-relaxed pl-3 list-disc">
+                  <li><strong>Task Check:</strong> <em>"Before we start, who can explain what you need to do in step 1?"</em></li>
+                  <li><strong>Grouping:</strong> <em>"Are you working individually or in pairs?"</em></li>
+                  <li><strong>Output Check:</strong> <em>"What should your team have written down when time is up?"</em></li>
+                  <li><strong>Timebox:</strong> <em>"You have 8 minutes for this phase. Any questions before we start?"</em></li>
+                </ul>
+              </div>
+
+              <!-- Box 3: Table Coaching & Monitoring -->
+              <div class="p-3.5 rounded-xl border border-purple-200 bg-purple-50/40 space-y-2">
+                <div class="flex items-center gap-1.5 font-bold text-purple-900">
+                  <span>👥</span>
+                  <span class="uppercase tracking-wider text-[11px]">Circulating &amp; Coaching Classmates</span>
+                </div>
+                <ul class="space-y-1 text-slate-700 leading-relaxed pl-3 list-disc">
+                  <li><strong>Check-in:</strong> <em>"How are things progressing over here? Any questions on the regulatory rule?"</em></li>
+                  <li><strong>Prompting:</strong> <em>"What does EASA Part-ADR state about temporary obstacle exemptions?"</em></li>
+                  <li><strong>Vocabulary:</strong> <em>"Try using 'provided that' to express the conditional safety measure."</em></li>
+                  <li><strong>Time Warning:</strong> <em>"Two minutes remaining, everyone. Please start wrapping up your notes."</em></li>
+                </ul>
+              </div>
+
+              <!-- Box 4: Debriefing & Peer Feedback -->
+              <div class="p-3.5 rounded-xl border border-emerald-200 bg-emerald-50/40 space-y-2">
+                <div class="flex items-center gap-1.5 font-bold text-emerald-900">
+                  <span>🎯</span>
+                  <span class="uppercase tracking-wider text-[11px]">Plenary Debrief &amp; Eliciting Answers</span>
+                </div>
+                <ul class="space-y-1 text-slate-700 leading-relaxed pl-3 list-disc">
+                  <li><strong>Nominating:</strong> <em>"Let's hear from Team B. What root cause did your group identify?"</em></li>
+                  <li><strong>Comparing:</strong> <em>"Did any other team reach a different conclusion for this audit finding?"</em></li>
+                  <li><strong>Summarizing:</strong> <em>"To recap, the key technical distinction between Level 1 and Level 2 is..."</em></li>
+                  <li><strong>Positive Feedback:</strong> <em>"Great participation everyone. Thank you for your active engagement."</em></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3: Interactive Peer Observation & Feedback Studio -->
+          <div class="rounded-xl border border-slate-200 bg-white p-4 sm:p-5 shadow-xs space-y-3">
+            <div class="flex items-center justify-between pb-2 border-b border-slate-200">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full" style="background-color: ${accent};"></span>
+                <h4 class="text-xs sm:text-sm font-bold text-slate-900 uppercase tracking-wide">
+                  3. Peer Observer Studio &bull; Active Classroom Observation &amp; Feedback
+                </h4>
+              </div>
+              <span class="text-[10px] text-slate-400 no-print">Auto-Saves In Browser</span>
+            </div>
+
+            <p class="text-xs text-slate-600 leading-relaxed">
+              When participating in other teams' lessons, record active observation notes below. Your constructive feedback helps your classmates improve their spoken technical leadership.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <!-- Note 1: Strengths -->
+              <div class="notes-textarea-container space-y-1.5">
+                <label class="block text-xs font-bold text-slate-800 flex items-center justify-between">
+                  <span>1. Key Strengths &amp; Clear Instructions:</span>
+                  <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saved</span>
+                </label>
+                <textarea id="notes-s7_strengths" oninput="window.saveLessonNote('7', 'peer_strengths', this.value)" rows="3" placeholder="e.g., Team 1 gave very clear instructions. The role-play was engaging and kept our pair talking for the entire task..." class="w-full p-2.5 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('7', 'peer_strengths') : ''}</textarea>
+                <div id="print-notes-s7_strengths" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('7', 'peer_strengths') : '') || '[No strengths recorded]'}</div>
+              </div>
+
+              <!-- Note 2: Vocabulary Deployed -->
+              <div class="notes-textarea-container space-y-1.5">
+                <label class="block text-xs font-bold text-slate-800 flex items-center justify-between">
+                  <span>2. Technical Vocabulary Deployed:</span>
+                  <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saved</span>
+                </label>
+                <textarea id="notes-s7_vocab" oninput="window.saveLessonNote('7', 'peer_vocab', this.value)" rows="3" placeholder="e.g., Terms noted: OLS safeguarding, temporary displaced threshold, Level 1 finding, Swiss Cheese latent conditions..." class="w-full p-2.5 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('7', 'peer_vocab') : ''}</textarea>
+                <div id="print-notes-s7_vocab" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('7', 'peer_vocab') : '') || '[No vocabulary recorded]'}</div>
+              </div>
+
+              <!-- Note 3: Actionable Tip -->
+              <div class="notes-textarea-container space-y-1.5">
+                <label class="block text-xs font-bold text-slate-800 flex items-center justify-between">
+                  <span>3. Actionable Tip for Improvement:</span>
+                  <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saved</span>
+                </label>
+                <textarea id="notes-s7_tip" oninput="window.saveLessonNote('7', 'peer_tip', this.value)" rows="3" placeholder="e.g., Next time, walk around the tables a bit more during pairwork to check in with quieter students..." class="w-full p-2.5 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('7', 'peer_tip') : ''}</textarea>
+                <div id="print-notes-s7_tip" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('7', 'peer_tip') : '') || '[No tip recorded]'}</div>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between pt-1">
+              <span class="text-[11px] text-slate-400">Notes remain stored locally in your browser and link directly to your personal portfolio.</span>
+              <button type="button" onclick="window.clearLessonNotes('7')" class="text-slate-400 hover:text-rose-600 underline text-xs font-medium cursor-pointer no-print">Clear Session 7 Notes</button>
+            </div>
+          </div>
+
+          <!-- Section 4: Collaborative Reflection Exhibit -->
+          <div class="rounded-xl border border-slate-200 bg-white p-4 sm:p-5 shadow-xs space-y-3">
+            <div class="flex flex-col sm:flex-row items-center gap-4">
+              <div class="w-full sm:w-1/3 rounded-xl overflow-hidden shadow-xs border border-slate-200 shrink-0">
+                <img src="images/s3_s7_peer_feedback_circle.jpg" alt="Peer Reflection Circle" class="w-full h-40 object-cover">
+              </div>
+              <div class="space-y-2">
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider text-emerald-800 bg-emerald-100">
+                  Continuous Assessment Milestone
+                </span>
+                <h4 class="text-xs sm:text-sm font-bold text-slate-900">
+                  Formative Assessment &amp; Portfolio Integration
+                </h4>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  Congratulations on completing Module 1! Teaching a complex technical topic to your peers develops the communication agility, instruction clarity, and leadership confidence required for international aviation operations. Be sure to log your key reflections, teacher feedback targets, and active vocabulary in your digital portfolio.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      `;
+    }

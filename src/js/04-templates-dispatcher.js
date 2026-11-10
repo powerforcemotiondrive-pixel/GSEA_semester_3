@@ -135,6 +135,8 @@
         renderLessonContentTabSession5(sessionData, theme);
       } else if (modalState.sessionNum === 6) {
         renderLessonContentTabSession6(sessionData, theme);
+      } else if (modalState.sessionNum === 7) {
+        renderLessonContentTabSession7(sessionData, theme);
       } else {
         renderLessonContentTabSession4(sessionData, theme);
       }

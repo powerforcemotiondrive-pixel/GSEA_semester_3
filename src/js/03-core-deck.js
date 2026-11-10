@@ -1006,6 +1006,24 @@
         actionContainer.appendChild(createThemedCTA("Open Resources", "ddrs", ""));
       } else if (page.isFe) {
         actionContainer.appendChild(createThemedCTA("Open Resources", "fe_guidelines", ""));
+
+        // Secondary CTA: Overview & Task Pop-Up for Session 7
+        if (currentIndex === 6 && mod.id === 1) {
+          const overviewBtn = document.createElement('button');
+          overviewBtn.type = 'button';
+          overviewBtn.className = "inline-flex items-center gap-2 text-white px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-lg text-xs font-bold tracking-wide shadow-xs transition-all duration-150 cursor-pointer select-none border border-black/10 hover:shadow-md hover:-translate-y-[1px] active:translate-y-0";
+          const ctaBg = mod.accent || mod.primary;
+          const ctaHover = mod.accentDark || mod.primaryDark;
+          overviewBtn.style.backgroundColor = ctaBg;
+          overviewBtn.onmouseenter = () => overviewBtn.style.backgroundColor = ctaHover;
+          overviewBtn.onmouseleave = () => overviewBtn.style.backgroundColor = ctaBg;
+          overviewBtn.innerHTML = `<span>Overview &amp; Task</span> <span class="font-bold text-sm leading-none" aria-hidden="true">⇥</span>`;
+          overviewBtn.title = "Open Session Overview, 10 Useful Words & Authentic Task";
+          overviewBtn.addEventListener('click', () => {
+            openSessionOverviewModal(mod.id, currentIndex + 1);
+          });
+          actionContainer.appendChild(overviewBtn);
+        }
       } else {
         // Sessions 1 to 6: In-deck modal workspace hub
         actionContainer.appendChild(createThemedCTA("Open Resources", "content", ""));
@@ -1874,6 +1892,18 @@
         if (feGuidelinesTab) feGuidelinesTab.classList.remove('hidden');
         if (feObjectivesTab) feObjectivesTab.classList.remove('hidden');
         if (feCriteriaTab) feCriteriaTab.classList.remove('hidden');
+
+        // For Module 1 Session 7: Unhide Plan, Content, Vocabulary, Materials and Notes
+        if (modalState.sessionNum === 7 && modalState.modNum === 1) {
+          if (tabPlan) tabPlan.classList.remove('hidden');
+          if (tabContent) tabContent.classList.remove('hidden');
+          const tabVocab = document.getElementById('modal-tab-revision');
+          const tabMat = document.getElementById('modal-tab-materials');
+          const tabNotes = document.getElementById('modal-tab-notepad');
+          if (tabVocab) tabVocab.classList.remove('hidden');
+          if (tabMat) tabMat.classList.remove('hidden');
+          if (tabNotes) tabNotes.classList.remove('hidden');
+        }
 
         tagEl.textContent = `${progConfig.code} Module ${modalState.modNum} • Session ${modalState.sessionNum}`;
         titleEl.textContent = `Session ${modalState.sessionNum} - Formative Evaluation`;
