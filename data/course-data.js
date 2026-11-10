@@ -143,7 +143,7 @@
         "session": 1,
         "overview": {
           "intro": "Welcome to Session 1 of Technical English! In this class, we practice reading and explaining official EASA aerodrome rules in clear, professional English. You will learn the difference between mandatory rules and advisory guidance (shall, must, should, may), explore how European regulations protect airport safety zones from tall obstacles, and practice giving clear spoken instructions during an Obstacle Clarification role-play.",
-          "whyItMatters": "In European airport operations, modal verbs define the precise legal obligation of every rule. For TSEEAC airside personnel, safety inspectors, and aerodrome managers, mistaking 'should' (an advisory recommendation) for 'shall' (a mandatory hard law) can result in regulatory breaches, audit non-compliance, or catastrophic runway incidents. Delivering clear, de-nominalized verbal instructions ensures multinational ground crews and construction contractors understand safety responsibilities immediately.",
+          "whyItMatters": "In European airport operations, modal verbs define the precise legal obligation of every rule. For TSEEAC airside personnel, safety inspectors, and aerodrome managers, mistaking 'should' (an advisory recommendation) for 'shall' (a mandatory hard law) can result in regulatory breaches, audit non-compliance, or catastrophic runway incidents. Delivering clear, direct spoken instructions ensures multinational ground crews and construction contractors understand safety responsibilities immediately.",
           "keyTerms": [
             {
               "term": "Obstacle Limitation Surface (OLS)",
@@ -198,7 +198,7 @@
           ],
           "speakingTask": {
             "title": "Authentic EASA Workshop • Obstacle Safeguarding & Aerodrome Works Safety",
-            "instructions": "This extension activity provides authentic regulatory practice using the official EASA Part-ADR.OPS synthesis below. Working in pairs or trios, Student A formulates mandatory safeguarding requirements, temporary obstacle buffer zones, and NOTAM notifications under Point ADR.OPS.B.070, while Student B audits the hand-back criteria, broom-clean inspection protocol, and vehicle lighting under Points ADR.OPS.B.075 & B.080. Conclude with a 2-minute spoken summary.",
+            "instructions": "This extension activity provides authentic spoken regulatory practice using the official EASA Part-ADR.OPS extract below. Working in pairs or trios, Student A acts as the Safeguarding Lead explaining crane restrictions, buffer zones, and NOTAM alerts, while Student B acts as the Airside Inspector auditing vehicle lighting and site clean-up criteria before reopening the area. Conclude with a 2-minute spoken summary.",
             "document": {
               "title": "EASA Part-ADR.OPS Synthesis: Obstacle Safeguarding & Aerodrome Works Safety",
               "subtitle": "Regulation (EU) No 139/2014 Extract • Points ADR.OPS.B.070, B.075 & B.080",
@@ -212,10 +212,10 @@
               "Ensure both partners actively speak during your 2-minute summary or pair debate."
             ],
             "checkingPhrases": [
-              "\"Hold on, does Point ADR.OPS.B.070 classify that as Hard Law (shall) or an AMC (should)?\"",
+              "\"Hold on, does is that a strict mandatory rule (shall) or an advisory guideline (should)?\"",
               "\"Wait, what declared distances are affected: TORA, ASDA, or LDA?\"",
               "\"Stop there—has the pavement been certified broom-clean before hand-back?\"",
-              "\"Let's verify the exact clause in Subpart ADR.OPS.B.075 regarding tower visual lines of sight...\""
+              "\"Let's verify the exact safety requirement regarding tower visual lines of sight...\""
             ],
             "statements": {
               "group1": "Contractor works near an active runway create higher incursion risks than normal flight operations, even when marked with unserviceability lights.",
@@ -695,8 +695,13 @@
               "Let's write down this agreement so both sides are protected."
             ],
             "spotTheBug": {
-              "title": "Interactive Listening Barrier Game: Spot the Compliance Bug",
-              "instructions": "Student A reads the authentic EASA extract aloud clearly at normal operational pace. Student B follows their bugged copy and must interrupt immediately using spoken checking phrases when they hear a contradiction in modal tone, numbers, or deadlines.",
+              "title": "Activity 4A: Spot the Safety Bug (Partner Listening Game)",
+              "instructions": [
+                "Form pairs: Student A (Reader) and Student B (Detector).",
+                "Student A reads their official copy aloud at a normal speaking pace.",
+                "Student B follows their bugged copy and interrupts immediately using checking phrases when they hear an error.",
+                "Click 'Reveal 3 Intentional Bugs' to check your answers, then switch roles."
+              ],
               "checkingPhrases": [
                 "Hold on a second, did you say SHALL or SHOULD?",
                 "Wait, let me double check that number—did you say 5 km or 15 km?",
@@ -747,6 +752,88 @@
                     "Bug 2: 'shall not permit' changed to 'may permit' (Prohibited environmental violation turned into permitted action)",
                     "Bug 3: '500 litres' changed to '50 litres' (Threshold reporting parameter bug)"
                   ]
+                }
+              ],
+              "summary": "Practice catching errors in modal commitment, numbers, and deadlines as your partner reads authentic EASA rules.",
+              "modeBadges": [
+                "Pairs (2 students)",
+                "Listening & Speaking Game"
+              ],
+              "deliverable": "Identified all 3 compliance bugs across the chosen scenario."
+            },
+            "roleplay": {
+              "title": "Activity 4B: Speaking Role-Play: Talking to the Builder",
+              "summary": "Role-play a polite, professional discussion between a GSEA safety officer, a construction contractor, and an observer.",
+              "modeBadges": [
+                "Groups of 3",
+                "Spoken Role-Play"
+              ],
+              "instructions": [
+                "Form groups of 3 students: Student A (GSEA Safety Officer), Student B (Building Contractor), Student C (Observer / Coach).",
+                "Read the scenario carefully. You have 5 minutes to prepare your arguments.",
+                "Conduct the 6-minute spoken role-play using the 'Useful Phrases' box.",
+                "Student C provides 2 minutes of feedback using the interactive Peer Checklist below, then switch roles."
+              ],
+              "deliverable": "Spoken role-play completed by all students with agreed safety compromise.",
+              "teacherNotes": "Ensure students use polite, diplomatic English rather than aggressive confrontation. Useful phrases like 'According to the safety rules...' and 'What we can do is...' help maintain a cooperative atmosphere.",
+              "scenario": "A construction company wants to put up a 48-metre mobile crane 1,200 metres from Runway 09 to build a new airport hotel. The crane will penetrate the approach surface by 6 metres. The contractor needs to start tomorrow, but they only sent the request yesterday!",
+              "roles": [
+                {
+                  "title": "Student A: GSEA Safety Officer",
+                  "badge": "Safety & Compliance",
+                  "bullets": [
+                    "Explain politely that the 28-day notification rule was not respected.",
+                    "Show that the 48m crane penetrates the approach slope by 6m (illegal).",
+                    "Propose a safe solution: lower the crane to 38m, work only at night (23h–05h) during runway closure, install flashing red lights, and wait 5 days for a NOTAM."
+                  ],
+                  "part": "Part 1"
+                },
+                {
+                  "title": "Student B: Construction Manager",
+                  "badge": "Project & Deadlines",
+                  "bullets": [
+                    "Explain that delays cost €15,000 per day in rented equipment.",
+                    "Argue that the crane is off to the side and not directly in front of the runway.",
+                    "Try to negotiate starting earlier, but agree to safety lights and night work if necessary."
+                  ],
+                  "part": "Part 2"
+                },
+                {
+                  "title": "Student C: Observer & Coach",
+                  "badge": "Peer Feedback",
+                  "bullets": [
+                    "Listen carefully to both speakers.",
+                    "Check: Did Student A use correct rule words (shall, must, should)?",
+                    "Check: Was the conversation polite and professional?",
+                    "Give 2 positive points and 1 suggestion for improvement."
+                  ],
+                  "part": "Part 3"
+                }
+              ],
+              "usefulPhrases": [
+                "According to EASA safety rules, we cannot allow...",
+                "I completely understand your deadline, but flight safety is our top priority.",
+                "The problem is that the crane penetrates the approach safety surface by 6 metres.",
+                "What we can propose instead is...",
+                "If you agree to work only at night and install red lights, we can approve it.",
+                "Let's write down this agreement so both sides are protected."
+              ],
+              "peerChecklist": [
+                {
+                  "id": 1,
+                  "label": "Did Student A use correct rule words (shall, must, should, may) without hesitating?"
+                },
+                {
+                  "id": 2,
+                  "label": "Did Student B express the commercial deadlines and equipment costs clearly?"
+                },
+                {
+                  "id": 3,
+                  "label": "Was the conversation polite, professional, and diplomatic throughout?"
+                },
+                {
+                  "id": 4,
+                  "label": "Did both speakers reach a realistic safety compromise (night work, lower boom, red warning lights)?"
                 }
               ]
             }
@@ -1361,7 +1448,8 @@
               "Dedicated apron-only servicing equipment <strong>may</strong> be exempted from flashing beacons under conditions defined in the aerodrome manual."
             ]
           }
-        }
+        },
+        "title": "EASA Rules & Modal Precision"
       },
       "2": {
         "session": 2,
@@ -10169,7 +10257,7 @@
           "session": 1,
           "overview": {
             "intro": "Welcome to Session 1 of Technical English! In this class, we practice reading and explaining official EASA aerodrome rules in clear, professional English. You will learn the difference between mandatory rules and advisory guidance (shall, must, should, may), explore how European regulations protect airport safety zones from tall obstacles, and practice giving clear spoken instructions during an Obstacle Clarification role-play.",
-            "whyItMatters": "In European airport operations, modal verbs define the precise legal obligation of every rule. For TSEEAC airside personnel, safety inspectors, and aerodrome managers, mistaking 'should' (an advisory recommendation) for 'shall' (a mandatory hard law) can result in regulatory breaches, audit non-compliance, or catastrophic runway incidents. Delivering clear, de-nominalized verbal instructions ensures multinational ground crews and construction contractors understand safety responsibilities immediately.",
+            "whyItMatters": "In European airport operations, modal verbs define the precise legal obligation of every rule. For TSEEAC airside personnel, safety inspectors, and aerodrome managers, mistaking 'should' (an advisory recommendation) for 'shall' (a mandatory hard law) can result in regulatory breaches, audit non-compliance, or catastrophic runway incidents. Delivering clear, direct spoken instructions ensures multinational ground crews and construction contractors understand safety responsibilities immediately.",
             "keyTerms": [
               {
                 "term": "Obstacle Limitation Surface (OLS)",
@@ -10224,7 +10312,7 @@
             ],
             "speakingTask": {
               "title": "Authentic EASA Workshop • Obstacle Safeguarding & Aerodrome Works Safety",
-              "instructions": "This extension activity provides authentic regulatory practice using the official EASA Part-ADR.OPS synthesis below. Working in pairs or trios, Student A formulates mandatory safeguarding requirements, temporary obstacle buffer zones, and NOTAM notifications under Point ADR.OPS.B.070, while Student B audits the hand-back criteria, broom-clean inspection protocol, and vehicle lighting under Points ADR.OPS.B.075 & B.080. Conclude with a 2-minute spoken summary.",
+              "instructions": "This extension activity provides authentic spoken regulatory practice using the official EASA Part-ADR.OPS extract below. Working in pairs or trios, Student A acts as the Safeguarding Lead explaining crane restrictions, buffer zones, and NOTAM alerts, while Student B acts as the Airside Inspector auditing vehicle lighting and site clean-up criteria before reopening the area. Conclude with a 2-minute spoken summary.",
               "document": {
                 "title": "EASA Part-ADR.OPS Synthesis: Obstacle Safeguarding & Aerodrome Works Safety",
                 "subtitle": "Regulation (EU) No 139/2014 Extract • Points ADR.OPS.B.070, B.075 & B.080",
@@ -10238,10 +10326,10 @@
                 "Ensure both partners actively speak during your 2-minute summary or pair debate."
               ],
               "checkingPhrases": [
-                "\"Hold on, does Point ADR.OPS.B.070 classify that as Hard Law (shall) or an AMC (should)?\"",
+                "\"Hold on, does is that a strict mandatory rule (shall) or an advisory guideline (should)?\"",
                 "\"Wait, what declared distances are affected: TORA, ASDA, or LDA?\"",
                 "\"Stop there—has the pavement been certified broom-clean before hand-back?\"",
-                "\"Let's verify the exact clause in Subpart ADR.OPS.B.075 regarding tower visual lines of sight...\""
+                "\"Let's verify the exact safety requirement regarding tower visual lines of sight...\""
               ],
               "statements": {
                 "group1": "Contractor works near an active runway create higher incursion risks than normal flight operations, even when marked with unserviceability lights.",
@@ -10721,8 +10809,13 @@
                 "Let's write down this agreement so both sides are protected."
               ],
               "spotTheBug": {
-                "title": "Interactive Listening Barrier Game: Spot the Compliance Bug",
-                "instructions": "Student A reads the authentic EASA extract aloud clearly at normal operational pace. Student B follows their bugged copy and must interrupt immediately using spoken checking phrases when they hear a contradiction in modal tone, numbers, or deadlines.",
+                "title": "Activity 4A: Spot the Safety Bug (Partner Listening Game)",
+                "instructions": [
+                  "Form pairs: Student A (Reader) and Student B (Detector).",
+                  "Student A reads their official copy aloud at a normal speaking pace.",
+                  "Student B follows their bugged copy and interrupts immediately using checking phrases when they hear an error.",
+                  "Click 'Reveal 3 Intentional Bugs' to check your answers, then switch roles."
+                ],
                 "checkingPhrases": [
                   "Hold on a second, did you say SHALL or SHOULD?",
                   "Wait, let me double check that number—did you say 5 km or 15 km?",
@@ -10773,6 +10866,88 @@
                       "Bug 2: 'shall not permit' changed to 'may permit' (Prohibited environmental violation turned into permitted action)",
                       "Bug 3: '500 litres' changed to '50 litres' (Threshold reporting parameter bug)"
                     ]
+                  }
+                ],
+                "summary": "Practice catching errors in modal commitment, numbers, and deadlines as your partner reads authentic EASA rules.",
+                "modeBadges": [
+                  "Pairs (2 students)",
+                  "Listening & Speaking Game"
+                ],
+                "deliverable": "Identified all 3 compliance bugs across the chosen scenario."
+              },
+              "roleplay": {
+                "title": "Activity 4B: Speaking Role-Play: Talking to the Builder",
+                "summary": "Role-play a polite, professional discussion between a GSEA safety officer, a construction contractor, and an observer.",
+                "modeBadges": [
+                  "Groups of 3",
+                  "Spoken Role-Play"
+                ],
+                "instructions": [
+                  "Form groups of 3 students: Student A (GSEA Safety Officer), Student B (Building Contractor), Student C (Observer / Coach).",
+                  "Read the scenario carefully. You have 5 minutes to prepare your arguments.",
+                  "Conduct the 6-minute spoken role-play using the 'Useful Phrases' box.",
+                  "Student C provides 2 minutes of feedback using the interactive Peer Checklist below, then switch roles."
+                ],
+                "deliverable": "Spoken role-play completed by all students with agreed safety compromise.",
+                "teacherNotes": "Ensure students use polite, diplomatic English rather than aggressive confrontation. Useful phrases like 'According to the safety rules...' and 'What we can do is...' help maintain a cooperative atmosphere.",
+                "scenario": "A construction company wants to put up a 48-metre mobile crane 1,200 metres from Runway 09 to build a new airport hotel. The crane will penetrate the approach surface by 6 metres. The contractor needs to start tomorrow, but they only sent the request yesterday!",
+                "roles": [
+                  {
+                    "title": "Student A: GSEA Safety Officer",
+                    "badge": "Safety & Compliance",
+                    "bullets": [
+                      "Explain politely that the 28-day notification rule was not respected.",
+                      "Show that the 48m crane penetrates the approach slope by 6m (illegal).",
+                      "Propose a safe solution: lower the crane to 38m, work only at night (23h–05h) during runway closure, install flashing red lights, and wait 5 days for a NOTAM."
+                    ],
+                    "part": "Part 1"
+                  },
+                  {
+                    "title": "Student B: Construction Manager",
+                    "badge": "Project & Deadlines",
+                    "bullets": [
+                      "Explain that delays cost €15,000 per day in rented equipment.",
+                      "Argue that the crane is off to the side and not directly in front of the runway.",
+                      "Try to negotiate starting earlier, but agree to safety lights and night work if necessary."
+                    ],
+                    "part": "Part 2"
+                  },
+                  {
+                    "title": "Student C: Observer & Coach",
+                    "badge": "Peer Feedback",
+                    "bullets": [
+                      "Listen carefully to both speakers.",
+                      "Check: Did Student A use correct rule words (shall, must, should)?",
+                      "Check: Was the conversation polite and professional?",
+                      "Give 2 positive points and 1 suggestion for improvement."
+                    ],
+                    "part": "Part 3"
+                  }
+                ],
+                "usefulPhrases": [
+                  "According to EASA safety rules, we cannot allow...",
+                  "I completely understand your deadline, but flight safety is our top priority.",
+                  "The problem is that the crane penetrates the approach safety surface by 6 metres.",
+                  "What we can propose instead is...",
+                  "If you agree to work only at night and install red lights, we can approve it.",
+                  "Let's write down this agreement so both sides are protected."
+                ],
+                "peerChecklist": [
+                  {
+                    "id": 1,
+                    "label": "Did Student A use correct rule words (shall, must, should, may) without hesitating?"
+                  },
+                  {
+                    "id": 2,
+                    "label": "Did Student B express the commercial deadlines and equipment costs clearly?"
+                  },
+                  {
+                    "id": 3,
+                    "label": "Was the conversation polite, professional, and diplomatic throughout?"
+                  },
+                  {
+                    "id": 4,
+                    "label": "Did both speakers reach a realistic safety compromise (night work, lower boom, red warning lights)?"
                   }
                 ]
               }
@@ -11387,7 +11562,8 @@
                 "Dedicated apron-only servicing equipment <strong>may</strong> be exempted from flashing beacons under conditions defined in the aerodrome manual."
               ]
             }
-          }
+          },
+          "title": "EASA Rules & Modal Precision"
         },
         "2": {
           "session": 2,
