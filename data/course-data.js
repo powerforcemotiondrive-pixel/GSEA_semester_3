@@ -1453,8 +1453,9 @@
       },
       "2": {
         "session": 2,
+        "title": "Safety Alerts & Ramp Briefings",
         "overview": {
-          "intro": "Welcome to Session 2 of Technical English! Today we examine an official EASA Safety Information Bulletin on ramp collision risks and ground vehicle speed management. You will practice using polite, professional English (passive voice) during ramp inspections, read safety notices, and take part in a 3-person airport safety meeting.",
+          "intro": "Welcome to Session 2 of Technical English! Today we examine an official EASA Safety Information Bulletin on ramp collision risks and ground vehicle speed management. You will practice turning dense safety regulations into direct action commands, master the Executive 3-Bullet Rule, and deliver a punchy 90-second morning ramp briefing with operational challenge questions.",
           "whyItMatters": "On European airport aprons, ground support equipment (GSE) operates in close proximity to multimillion-euro aircraft and ground personnel under tight 30-minute turnaround pressures. High-energy vehicle impacts with aircraft fuselages, radomes, and engine cowlings have repeatedly gone unreported by fearful ground staff, resulting in aircraft departing with undetected structural damage. Mastering non-punitive Just Culture reporting, speed enforcement zones, and clear spoken verbal briefings is vital for TSEEAC airside operations managers and ramp safety inspectors.",
           "keyTerms": [
             {
@@ -1510,7 +1511,7 @@
           ],
           "speakingTask": {
             "title": "Authentic EASA Task • SIB 2024-09 Ramp Collision Mitigation",
-            "instructions": "Working in pairs or trios, open the authentic EASA Safety Information Bulletin (SIB No. 2024-09) below. Each group reviews one operational section, analyzes the practical challenge, and delivers a concise 2-minute spoken briefing explaining their safety solutions using today's technical vocabulary.",
+            "instructions": "Working in pairs, review authentic EASA SIB No. 2024-09 below. Choose one operational area (Speed Regimes, Telematics & Governors, or Just Culture Reporting) and deliver a concise 2-minute spoken briefing explaining your ramp safety solutions using today's technical vocabulary.",
             "document": {
               "title": "EASA SIB No. 2024-09: Mitigation of Ramp Collision Risks & Speed Management",
               "subtitle": "EASA Safety Information Bulletin • Issued 14 October 2024 (4 Pages)",
@@ -1524,9 +1525,9 @@
               "Ensure both partners actively speak and explain practical ramp solutions without reading verbatim."
             ],
             "statements": {
-              "group1": "Group 1 Statement (Infrastructure & Speed Regimes): How do differentiated speed limits (25–30 km/h on roadways vs. 5–10 km/h on stands) and CS-ADR-DSN road markings mitigate high-energy ramp impacts?",
-              "group2": "Group 2 Statement (Telematics & Equipment Control): Why are physical speed governors and GPS geofencing more effective than speed limit signs alone on high-workload turnaround aprons?",
-              "group3": "Group 3 Statement (Driver Authorisation & Just Culture): How can aerodrome operators balance strict Apron Driving Authorisation (ADA) testing with a non-punitive Just Culture so minor scrapes are reported immediately?"
+              "group1": "Area 1 (Infrastructure & Speed Regimes): How do differentiated speed limits (25–30 km/h on roadways vs. 5–10 km/h on stands) and CS-ADR-DSN road markings mitigate high-energy ramp impacts?",
+              "group2": "Area 2 (Telematics & Equipment Control): Why are physical speed governors and GPS geofencing more effective than speed limit signs alone on high-workload turnaround aprons?",
+              "group3": "Area 3 (Driver Authorisation & Just Culture): How can aerodrome operators balance strict Apron Driving Authorisation (ADA) testing with a non-punitive Just Culture so minor scrapes are reported immediately?"
             },
             "usefulPhrases": [
               "According to EASA SIB 2024-09, ground collisions are primarily caused by...",
@@ -1546,30 +1547,30 @@
         },
         "objectives": {
           "title": "Session 2 Objectives - Safety Alerts & Ramp Briefings",
-          "summary": "By the end of this session, GSEA students will be able to distinguish mandatory Safety Directives from advisory Safety Information Bulletins, de-nominalize heavy regulatory text into direct active instructions, synthesize dense safety alerts into the Executive 3-Bullet Rule (maximum 12 words per action), apply text chunking and intonation to eliminate flat delivery, deliver a professional 90-second morning safety briefing to ramp teams, and field spontaneous operational challenge questions with confidence.",
+          "summary": "By the end of this session, GSEA students will be able to distinguish mandatory Safety Directives from advisory Safety Information Bulletins, turn heavy regulatory text into direct spoken action commands, condense dense safety alerts using the Executive 3-Bullet Rule (maximum 12 words per bullet), speak with natural rhythm and keyword stress, deliver a professional 90-second morning ramp safety briefing, and field spontaneous operational challenge questions with confidence.",
           "items": [
             {
               "num": 1,
               "title": "Modal Quick-Fire & Ramp Awareness (Review & Fluency)",
-              "description": "Rapidly categorize operational statements into Hard Law (IR), Acceptable Means of Compliance (AMC), and Guidance Material (GM), and share real-world apron hazards.",
+              "description": "Rapidly identify strict mandatory rules, standard guidelines, and permissions in operational statements, and discuss apron hazard zones.",
               "part": "Part 1"
             },
             {
               "num": 2,
-              "title": "The Simplification Engine: De-Nominalization (Language Accuracy)",
-              "description": "Convert stiff nominalized phrases (the execution of continuous surveillance, prior to the initiation of pushback) into clear active commands (inspect, monitor, check before pushback).",
+              "title": "Turning Heavy Regulations into Action Words (Language Accuracy)",
+              "description": "Convert stiff official phrases (the execution of continuous surveillance, prior to the entry of vehicles) into direct active commands (inspect, monitor, wait before entering).",
               "part": "Part 2"
             },
             {
               "num": 3,
               "title": "The Executive 3-Bullet Rule: SIB Extraction (Synthesis & Precision)",
-              "description": "Condense dense EASA SIB extracts into exactly 3 actionable directives of no more than 12 words each, starting with strong imperative verbs.",
+              "description": "Condense dense EASA SIB extracts into exactly 3 actionable directives of no more than 12 words each, starting with strong active verbs.",
               "part": "Part 3"
             },
             {
               "num": 4,
-              "title": "Pronunciation Clinic: Text Chunking & Intonation (Spoken Rhythm & Delivery)",
-              "description": "Break long technical sentences into cognitive pause chunks (|) and emphasize operative keywords to eliminate monotonous, flat spoken delivery.",
+              "title": "Natural Rhythm & Stress Clinic (Spoken Rhythm & Delivery)",
+              "description": "Use natural speech pauses (|) and stress operative keywords to deliver clear, confident technical instructions on the ramp.",
               "part": "Part 4"
             },
             {
@@ -1580,35 +1581,35 @@
             },
             {
               "num": 6,
-              "title": "Active Listening & Operational Challenge (Interactive Clarification)",
-              "description": "Role-play ramp supervisors and wildlife officers, listening critically to oral briefings and formulating targeted clarifying questions under operational time pressure.",
+              "title": "Active Listening & Operational Challenges (Interactive Clarification)",
+              "description": "Role-play ramp supervisors and safety leads, listening critically to oral briefings and asking targeted operational questions under time pressure.",
               "part": "Part 6"
             }
           ]
         },
         "lessonPlan": {
           "title": "Session 2 Lesson Plan - Safety Alerts & Ramp Briefings (2 Hours)",
-          "summary": "A 2-hour communicative spoken English session covering rapid modal review, EASA Safety Information Bulletins (SIBs), the Simplification Engine (de-nominalization and active voice), the Executive 3-Bullet Rule, text chunking for natural spoken rhythm, and \"The 90-Second Stand-Up\" paired briefing simulations across three real-world airport operational scenarios.",
+          "summary": "A 2-hour communicative spoken English session covering rapid modal review, EASA Safety Information Bulletin SIB 2024-09 (Ramp Collision Risks & Speed Management), turning heavy regulations into spoken action commands, the Executive 3-Bullet Rule, natural spoken rhythm, and 'The 90-Second Stand-Up' paired briefing simulations across three real-world apron scenarios.",
           "items": [
             {
               "part": "Part 1",
               "title": "Part 1: Warm-up: Modal Quick-Fire & Ramp Hazard Scan",
-              "description": "Students complete the 4-item modal quick-fire sprint (Hard Law vs. AMC vs. GM) to reinforce Session 1 foundations, then brainstorm the most hazard-prone areas of the apron in pairs."
+              "description": "Students complete the 4-item modal quick-fire sprint to reinforce Session 1 foundations, then brainstorm the most hazard-prone areas of the apron in pairs."
             },
             {
               "part": "Part 2",
-              "title": "Part 2: Authentic Document Extract: EASA Safety Bulletins",
-              "description": "Students scan authentic EASA SIB extracts (Thermal runaway in lithium batteries & apron vehicle speeding) and complete reading comprehension checks to identify root hazards and immediate reporting triggers."
+              "title": "Part 2: Authentic Document Extract: EASA SIB 2024-09 (Ramp Collisions & Speed)",
+              "description": "Students scan authentic extracts from EASA SIB No. 2024-09 regarding GSE impacts, speed regimes, and telematics geofencing, and complete reading comprehension checks."
             },
             {
               "part": "Part 3",
-              "title": "Part 3: Language Clinic: The Simplification Engine & Text Chunking",
-              "description": "Students practice converting heavy administrative nominalizations into direct active imperatives, master the Executive 3-Bullet Rule (12 words max, action verbs), and complete the Pronunciation Chunking Clinic with choral and paired read-alouds to establish natural rhythm and stress."
+              "title": "Part 3: Language Clinic: From Official Rules to Spoken Action Commands",
+              "description": "Students practice converting heavy administrative text into direct spoken imperatives, master the Executive 3-Bullet Rule (12 words max, action verbs), and practice natural speech pauses and keyword stress."
             },
             {
               "part": "Part 4",
-              "title": "Part 4: Spoken Interaction: \"The 90-Second Stand-Up\" Briefings",
-              "description": "In pairs, students take turns delivering 90-second morning briefings as TSEEAC Airside Safety Officers across 3 scenarios (Lithium Battery Containment, Wildlife & Migratory Flocks, GRF Runway Condition Alerts), while their partner role-plays the Ground Supervisor asking mandatory operational challenge questions."
+              "title": "Part 4: Spoken Interaction: 'The 90-Second Stand-Up' Briefings",
+              "description": "In pairs, students take turns delivering 90-second morning briefings as TSEEAC Airside Safety Officers across 3 ramp scenarios, while their partner role-plays the Ground Supervisor asking mandatory operational challenge questions with peer feedback."
             },
             {
               "part": "Part 5",
@@ -1620,7 +1621,7 @@
         "lessonContent": {
           "hero": {
             "title": "Safety Alerts & Ramp Briefings",
-            "subtitle": "Operational Text Simplification, Chunking & 90-Second Stand-Up Briefings",
+            "subtitle": "EASA SIB 2024-09, Action Commands & 90-Second Stand-Up Briefings",
             "image": "images/s3_m1_session2_audit.jpg",
             "targetLevel": "CEFR B1–B2",
             "roleContext": "GSEA Student Training (TSEEAC Airside Safety & Ground Operations Focus)",
@@ -1646,7 +1647,7 @@
             "instructions": [
               {
                 "step": "Step 1: Modal Quick-Fire Sprint (Individual / Pairs)",
-                "detail": "Read each of the 4 operational statements below and mark whether it represents Hard Law (IR), an Acceptable Means of Compliance (AMC), or Guidance Material / Permission (GM). Check the anchor modal verb."
+                "detail": "Read each of the 4 operational statements below and identify whether it represents a strict mandatory rule, standard best practice, or advisory guidance. Check the anchor modal verb."
               },
               {
                 "step": "Step 2: Ramp Hazard Brainstorming (Pairs)",
@@ -1659,14 +1660,14 @@
             ],
             "deliverable": "Completed modal sprint categorization, 3 agreed ramp danger zones, and entry diagnostic check.",
             "teacherNotes": [
-              "Prompt students to identify modal anchors immediately: 'shall' / 'shall not' (Hard Law), 'should' (AMC), 'may' (GM / Permission).",
+              "Prompt students to identify modal anchors immediately: 'shall' / 'shall not' (Strict mandatory rule), 'should' (Standard guideline), 'may' (Permission / Advice).",
               "Encourage students to articulate WHY handing ground crews a 4-page PDF does not work on the ramp (insufficient turnaround time, cognitive overload)."
             ],
             "reviewSprint": [
               {
                 "id": 1,
                 "statement": "Aerodrome operators shall ensure that vehicles operating on aprons are equipped with high-visibility markings.",
-                "type": "Hard Law (IR)",
+                "type": "Mandatory Rule (Shall)",
                 "anchor": "shall ensure",
                 "badgeColor": "rose",
                 "explanation": "Mandatory implementing rule under European regulation (EASA Part-ADR.OPS.B.025)."
@@ -1674,7 +1675,7 @@
               {
                 "id": 2,
                 "statement": "Ground handling personnel should inspect fuel hydrants every morning before scheduled flight waves.",
-                "type": "AMC (Acceptable Means of Compliance)",
+                "type": "Standard Guideline (Should)",
                 "anchor": "should inspect",
                 "badgeColor": "amber",
                 "explanation": "Standard industry best practice; deviation requires formal risk assessment and alternative safety justification."
@@ -1682,15 +1683,15 @@
               {
                 "id": 3,
                 "statement": "The authority may grant temporary derogations during extraordinary winter weather operations.",
-                "type": "GM / Statutory Permission",
+                "type": "Permission / Discretion (May)",
                 "anchor": "may grant",
                 "badgeColor": "emerald",
-                "explanation": "Discretionary statutory power granted to the competent national authority (DSAC)."
+                "explanation": "Discretionary statutory power granted to the competent national civil aviation authority (DSAC)."
               },
               {
                 "id": 4,
                 "statement": "The de-icing pad drainage containment system shall not discharge directly into surface waters.",
-                "type": "Hard Law (IR)",
+                "type": "Strict Negative Prohibition (Shall Not)",
                 "anchor": "shall not discharge",
                 "badgeColor": "rose",
                 "explanation": "Strict negative legal obligation with zero operational tolerance."
@@ -1703,7 +1704,7 @@
                 "exampleAnswers": [
                   "Baggage tugs, catering trucks, fuelling bowsers, and aircraft move in tight, congested spaces simultaneously.",
                   "High ambient engine noise drowns out vehicle horns, and night or rain drastically reduces driver visibility.",
-                  "Ground personnel work under severe time pressure to meet strict 30-minute turnaround targets."
+                  "Ground personnel work under severe time pressure to meet strict 25- to 30-minute turnaround targets."
                 ]
               },
               {
@@ -1711,8 +1712,8 @@
                 "question": "When a new safety bulletin arrives on your desk at 06h30, why is handing workers a 4-page technical PDF ineffective?",
                 "exampleAnswers": [
                   "Ground crews work on the tarmac in high-noise environments; they don't sit in front of computer monitors.",
-                  "Dense bureaucratic legal text hides the critical action steps under passive nominalizations.",
-                  "A fast, direct 90-second verbal briefing with active imperatives front-loads the vital commands immediately."
+                  "Dense bureaucratic legal text hides the critical action steps under heavy noun phrases.",
+                  "A fast, direct 90-second verbal briefing with strong action verbs front-loads the vital commands immediately."
                 ]
               }
             ],
@@ -1727,8 +1728,8 @@
                 },
                 {
                   "id": 2,
-                  "q": "Why do aviation authorities write bulletins with heavy nominalizations instead of simple active verbs?",
-                  "answer": "Bureaucratic and legal writers prefer formal noun structures (e.g., 'the execution of inspection') to appear neutral, but this slows down operational communication on the tarmac."
+                  "q": "Why do aviation authorities write bulletins with heavy nouns instead of simple active verbs?",
+                  "answer": "Bureaucratic and legal writers prefer formal noun structures (e.g., 'the execution of inspection') to appear neutral, but this slows down operational communication on the tarmac. Front-loading action verbs gives immediate clarity."
                 },
                 {
                   "id": 3,
@@ -1744,8 +1745,8 @@
             }
           },
           "documentExtract": {
-            "title": "Activity 2: Reading Authentic Safety Bulletins (Lithium Battery & Apron Alerts)",
-            "summary": "Scan authentic EASA SIB extracts (SIB No. 2023-08 & SIB No. 2024-11) for immediate hazards and reporting triggers.",
+            "title": "Activity 2: Reading Authentic Safety Bulletins (EASA SIB No. 2024-09)",
+            "summary": "Scan authentic extracts from EASA SIB No. 2024-09 regarding GSE impacts, tiered speed regimes, telematics geofencing, and Just Culture reporting.",
             "modeBadges": [
               {
                 "label": "Authentic Extract",
@@ -1762,50 +1763,50 @@
             ],
             "instructions": [
               {
-                "step": "Step 1: Scan the SIB Extract",
-                "detail": "Read EASA SIB No. 2023-08 below regarding thermal runaway hazards in airside baggage areas. Identify: 1) What causes the hazard, 2) Where to isolate damaged items, 3) Prohibited extinguishing actions, and 4) Mandatory reporting channels."
+                "step": "Step 1: Scan EASA SIB No. 2024-09",
+                "detail": "Read the authentic extract below regarding vehicle speed and ramp collision risks. Identify: 1) What causes high-energy impacts, 2) Tiered speed limits, 3) Telematics and geofencing solutions, and 4) Why Just Culture reporting protects aircraft airworthiness."
               },
               {
                 "step": "Step 2: Complete the 4 Comprehension Checks",
                 "detail": "Answer the 4 comprehension checks to verify factual parameters before translating the text into operational commands."
               }
             ],
-            "deliverable": "Extracted safety actions, containment locations, and notification timelines.",
+            "deliverable": "Extracted speed limits, telematics solutions, and Just Culture reporting guidelines.",
             "teacherNotes": [
-              "Encourage students to highlight content words: 'thermal runaway', 'containment drum', 'unapproved liquid', 'ASOC', '3 minutes'.",
+              "Highlight operative technical terms: 'differentiated speed regimes', 'GSE', 'GPS geofencing', 'Equipment Clearance Area (ECA)', 'Just Culture'.",
               "Remind students that SIBs are advisory but carry high operational weight during safety audits."
             ],
-            "docRef": "EASA SIB No. 2023-08 (Adapted Extract) • Subject: Mitigation of Thermal Runaway Hazards",
-            "docText": "EUROPEAN UNION AVIATION SAFETY AGENCY\nSAFETY INFORMATION BULLETIN\nSIB No.: 2023-08\nIssued: 14 September 2023\nSubject: Mitigation of Thermal Runaway Hazards from Damaged Lithium Batteries in Airside Baggage Handling Areas\n\n1. Operational Background & Hazard Identification:\nOperational occurrences reported under Regulation (EU) No 376/2014 reveal a recurring safety hazard involving personal mobility devices, e-scooters, and spare lithium battery packs undergoing thermal runaway during baggage sortation, transport, and ramp transit. Damaged or counterfeit lithium cells are vulnerable to rapid internal short-circuiting, resulting in toxic gas release, violent thermal escalation, and self-sustaining chemical fires.\n\n2. Containment & Segregation Directives:\nGround service providers should ensure that any battery pack presenting physical deformation, excessive heat output, or smoke emission is segregated immediately into a certified fire-containment drum or non-combustible sand container located at a designated perimeter stand (e.g. Stand 12). \n\n3. Fire Suppression Protocols:\nFurthermore, ramp operatives should under no circumstances apply unapproved liquid extinguishing agents directly to pressurized lithium cells, as violent water-reactive venting and explosive chemical projection may occur. Only certified Class D or dry extinguishing media shall be deployed.\n\n4. Emergency Notification Channels:\nImmediate notification of the Aerodrome Safety Operations Centre (ASOC) via primary VHF radio channel 2 is required within 3 minutes of discovery to enable dedicated emergency response staging and marshaller coordination.",
+            "docRef": "EASA SIB No. 2024-09 (Adapted Extract) • Subject: Mitigation of Ramp Collision Risks & Speed Management",
+            "docText": "EUROPEAN UNION AVIATION SAFETY AGENCY\nSAFETY INFORMATION BULLETIN\nSIB No.: 2024-09\nIssued: 14 October 2024\nSubject: Mitigation of Ramp Collision Risks and Ground Vehicle Speed Management on Aprons\n\n1. Operational Background & Safety Concern:\nRecent occurrence data reported across European aerodromes highlights a persistent trend of ground vehicle collisions and high-energy Ground Support Equipment (GSE) impacts with aircraft during turnaround servicing. High turnaround workload, congested staging areas, and excessive vehicular velocity contribute to incidents where ground equipment strikes aircraft fuselages, engine cowlings, or radomes. In several occurrences, minor structural impacts have gone unreported by personnel due to fear of disciplinary reprisal, resulting in aircraft departing with undetected structural damage.\n\n2. Differentiated Apron Speed Regimes:\nAerodrome operators should enforce tiered speed limits reflecting localized operational risk:\n• Main Apron Roadways: Speed limits should not exceed 25–30 km/h.\n• Aircraft Stands & Vicinity of Aircraft: Speed must be strictly restricted to walking pace (5–10 km/h) upon entering the designated parking stand.\n• Baggage Make-Up Areas & Enclosed Tunnels: A maximum limit of 10–15 km/h should be enforced.\nProminent painted surface road markings and vertical signage must clearly delineate these speed boundaries.\n\n3. Telematics & Equipment Control:\nAerodrome operators and Ground Handling Service Providers (GHSPs) should promote the installation of physical or electronic speed governors on motorized GSE. Furthermore, GPS-enabled geofencing systems that automatically restrict vehicle maximum speed when penetrating aircraft stand boundaries should be progressively deployed across commercial handling fleets.\n\n4. Training, Authorisation & Just Culture:\nAll personnel operating vehicles airside must hold a valid Apron Driving Authorisation (ADA) in compliance with Point ADR.OR.D.017. Crucially, aerodromes must foster a non-punitive Just Culture framework wherein ground personnel are empowered and actively required to report any vehicle-to-aircraft contact immediately, without fear of automatic penalties, ensuring timely engineering inspections prior to flight release.",
             "questions": [
               {
                 "id": 1,
-                "q": "What specific safety phenomenon is recurring during baggage sortation and ramp transit?",
-                "answer": "Thermal runaway in personal mobility devices and spare lithium battery packs, leading to toxic gas release and self-sustaining chemical fires."
+                "q": "What is the primary danger when ground equipment strikes an aircraft at high speed on the apron?",
+                "answer": "Unreported structural damage to the fuselage, engine cowling, or radome, which can lead to an aircraft departing with undetected, dangerous structural compromise."
               },
               {
                 "id": 2,
-                "q": "Where must ground service providers immediately segregate any smoking or deformed battery pack?",
-                "answer": "Into a certified fire-containment drum or non-combustible sand container located at a designated perimeter stand (e.g., Stand 12)."
+                "q": "What are the recommended differentiated speed limits for main apron roadways versus aircraft parking stands?",
+                "answer": "Maximum 25–30 km/h on main apron roadways, and walking pace (5–10 km/h) inside aircraft parking stands."
               },
               {
                 "id": 3,
-                "q": "What extinguishing agent must ramp operatives strictly avoid applying directly to pressurized lithium cells, and why?",
-                "answer": "Unapproved liquid extinguishing agents (water), because violent water-reactive venting and explosive chemical projection may occur."
+                "q": "How does GPS geofencing improve ramp vehicle safety compared to traditional speed limit signs alone?",
+                "answer": "GPS geofencing automatically caps the vehicle's maximum speed electronically as soon as it enters the aircraft parking stand, removing reliance on human compliance under time pressure."
               },
               {
                 "id": 4,
-                "q": "What is the mandatory timeline and communication channel to notify the Aerodrome Safety Operations Centre (ASOC)?",
-                "answer": "Within 3 minutes of discovery via the primary VHF radio channel (Channel 2)."
+                "q": "Why is a non-punitive 'Just Culture' essential for preventing catastrophic ramp incidents?",
+                "answer": "Because ground workers who fear automatic punishment will hide minor scratches or bumps. Just Culture ensures every vehicle-to-aircraft contact is reported immediately so engineers can inspect the aircraft before departure."
               }
             ]
           },
           "rulesPractice": {
-            "title": "Activity 3: The Simplification Engine, 3-Bullet Rule & Chunking Clinic",
-            "summary": "Convert nominalized text into direct action verbs, condense alerts into 3 bullets under 12 words, and practice text chunking.",
+            "title": "Activity 3: Speaking Clinic: Turning Regulations into Action Commands (The 3-Bullet Rule & Natural Rhythm)",
+            "summary": "Convert heavy regulatory text into direct spoken commands, condense SIB 2024-09 into 3 bullets under 12 words, and practice spoken stress and natural rhythm.",
             "modeBadges": [
               {
-                "label": "De-Nominalization",
+                "label": "Action Commands",
                 "color": "indigo"
               },
               {
@@ -1813,35 +1814,35 @@
                 "color": "amber"
               },
               {
-                "label": "Chunking Clinic",
+                "label": "Rhythm & Stress Clinic",
                 "color": "purple"
               }
             ],
             "instructions": [
               {
-                "step": "Step 1: The Simplification Engine (Task A)",
-                "detail": "Examine the 3-step Simplification Engine. Convert 3 dense regulatory formulations into crisp, direct spoken commands by uncovering the hidden action verb and front-loading the agent."
+                "step": "Step 1: Speaking Clinic: From Official Paperwork to Spoken Commands",
+                "detail": "Examine the 3-step Simplification Engine. Convert 3 dense regulatory formulations from SIB 2024-09 into crisp, direct spoken commands by uncovering the hidden action verb and front-loading the agent."
               },
               {
                 "step": "Step 2: The Executive 3-Bullet Challenge",
-                "detail": "Condense EASA SIB No. 2023-08 into exactly 3 bullet points. Respect the constraints: Maximum 12 words per bullet, starting with a strong active imperative verb."
+                "detail": "Condense EASA SIB No. 2024-09 into exactly 3 bullet points. Respect the constraints: Maximum 12 words per bullet, starting with a strong active imperative verb."
               },
               {
-                "step": "Step 3: Pronunciation Chunking Clinic",
-                "detail": "Mark breath/idea pause lines (|) and identify the stressed content words to avoid flat, monotonous delivery when reading long technical sentences."
+                "step": "Step 3: Natural Rhythm & Keyword Stress Clinic",
+                "detail": "Mark breath/idea pause lines (|) and identify the stressed content words to avoid flat, monotonous delivery when delivering technical instructions."
               }
             ],
-            "deliverable": "3 de-nominalized active commands, 3-bullet executive summary, and chunked read-aloud practice.",
+            "deliverable": "3 active ramp commands, 3-bullet executive summary, and chunked read-aloud practice.",
             "teacherNotes": [
-              "In Task A, highlight how nominalizations like 'the execution of continuous surveillance' disguise simple actions like 'monitor continuously'.",
-              "For chunking, demonstrate 'flat French delivery' vs. 'rhythmic English chunking' with vocal pauses at clause boundaries."
+              "In Task A, highlight how official phrases like 'the execution of continuous surveillance' disguise simple actions like 'monitor continuously'.",
+              "For rhythm, demonstrate monotone delivery vs. rhythmic English delivery with vocal pauses at natural phrase boundaries."
             ],
             "simplificationEngine": {
               "steps": [
                 {
                   "num": 1,
-                  "title": "Identify the hidden action verb inside the nominalization",
-                  "example": "\"The execution of an inspection...\" → \"Inspect...\" | \"Prior to the commencement of...\" → \"Before starting...\""
+                  "title": "Find the hidden action verb inside the official text",
+                  "example": "\"The execution of continuous surveillance...\" → \"Inspect / Monitor...\" | \"Prior to the entry of vehicles...\" → \"Before entering...\""
                 },
                 {
                   "num": 2,
@@ -1851,30 +1852,30 @@
                 {
                   "num": 3,
                   "title": "Front-load the critical operational command",
-                  "example": "\"Ground crew must inspect the cargo hold before loading.\""
+                  "example": "\"Drivers must reduce speed to walking pace before entering the stand.\""
                 }
               ],
               "taskA": [
                 {
                   "id": 1,
-                  "sibText": "Immediate isolation of any damaged portable electronic device (PED) exhibiting smoke generation shall be undertaken by cabin or ramp personnel.",
-                  "activeCommand": "Personnel must immediately isolate any damaged device producing smoke.",
-                  "alternative": "Ramp or cabin crew shall immediately isolate smoking portable electronic devices.",
-                  "rationale": "Replaced heavy nouns 'isolation' and 'smoke generation' with active verb 'isolate' and participle 'producing smoke'."
+                  "sibText": "The execution of continuous surveillance of vehicle speeds on apron roadways shall be conducted by aerodrome safety officers.",
+                  "activeCommand": "Ramp safety officers must monitor vehicle speeds on apron roadways continuously.",
+                  "alternative": "Safety officers shall continuously monitor vehicle speeds on apron roads.",
+                  "rationale": "Replaced heavy noun phrase 'execution of continuous surveillance' with the direct active verb 'monitor' and front-loaded the agent 'Ramp safety officers'."
                 },
                 {
                   "id": 2,
-                  "sibText": "The execution of continuous surveillance of perimeter drainage channels is strongly recommended for the prevention of wildlife aggregation near active taxiways.",
-                  "activeCommand": "Operators should continuously monitor perimeter drainage channels to keep wildlife away.",
-                  "alternative": "Staff should inspect drainage channels regularly to prevent wildlife hazards.",
-                  "rationale": "Replaced 'execution of continuous surveillance' and 'wildlife aggregation' with active verb 'monitor' and direct purpose 'to keep wildlife away'."
+                  "sibText": "Prior to the entry of ground support equipment into the Equipment Clearance Area, complete cessation of aircraft movement and engine shutdown must be verified.",
+                  "activeCommand": "Drivers must verify the aircraft has stopped and engines are shut down before entering the stand.",
+                  "alternative": "Ground handlers must wait for complete aircraft shutdown before moving equipment inside the red lines.",
+                  "rationale": "Replaced 'Prior to the entry of GSE' and 'complete cessation' with direct instructions 'verify the aircraft has stopped before entering'."
                 },
                 {
                   "id": 3,
-                  "sibText": "Prior to the initiation of aircraft pushback, direct visual verification of bypass pin insertion must be performed by the headset operator.",
-                  "activeCommand": "The headset operator must visually check bypass pin insertion before pushback.",
-                  "alternative": "Headset operators must verify the bypass pin is inserted before starting pushback.",
-                  "rationale": "Front-loaded active agent 'headset operator', replaced 'initiation of pushback' with 'before pushback', and converted 'verification must be performed' to 'must visually check'."
+                  "sibText": "Immediate mandatory notification of any vehicle contact with aircraft structure shall be submitted by ground personnel pursuant to Just Culture principles.",
+                  "activeCommand": "Ground personnel must report any vehicle contact with an aircraft immediately.",
+                  "alternative": "Handlers must immediately notify flight operations of any aircraft bump under Just Culture.",
+                  "rationale": "Replaced 'Immediate mandatory notification shall be submitted' with direct command 'must report any vehicle contact immediately'."
                 }
               ]
             },
@@ -1882,198 +1883,217 @@
               "constraints": [
                 "Constraint 1: Exactly 3 bullet points.",
                 "Constraint 2: Maximum 12 words per bullet.",
-                "Constraint 3: Every bullet must begin with a strong, active imperative verb (e.g., Isolate, Disconnect, Report, Stop, Notify)."
+                "Constraint 3: Every bullet must begin with a strong, active action verb (e.g., Enforce, Fit, Report, Maintain, Restrict)."
               ],
               "modelAnswers": [
                 {
                   "bullet": 1,
-                  "text": "Isolate damaged or smoking lithium batteries immediately into certified containment drums.",
+                  "text": "Enforce walking pace speed limits inside all aircraft parking stands.",
                   "wordCount": 10,
-                  "verb": "Isolate"
+                  "verb": "Enforce"
                 },
                 {
                   "bullet": 2,
-                  "text": "Do not apply unapproved liquid extinguishing agents to pressurized lithium cells.",
-                  "wordCount": 10,
-                  "verb": "Do not apply"
+                  "text": "Fit motorized ground equipment with electronic speed limiters and GPS geofencing.",
+                  "wordCount": 11,
+                  "verb": "Fit"
                 },
                 {
                   "bullet": 3,
-                  "text": "Notify the Aerodrome Safety Operations Centre by radio within three minutes.",
-                  "wordCount": 10,
-                  "verb": "Notify"
+                  "text": "Report any vehicle contact with aircraft immediately under Just Culture rules.",
+                  "wordCount": 11,
+                  "verb": "Report"
                 }
               ]
             },
             "chunkingClinic": {
-              "title": "Pronunciation Clinic: Text Chunking & Intonation",
-              "explanation": "A common error among French-speaking aviation professionals is 'flat delivery', where every word is pronounced with equal duration and weight. Chunking divides long regulatory sentences into cognitive phrase units separated by natural pause breaks (|), stressing only key operative words.",
+              "title": "Speaking Clinic: Natural Rhythm & Keyword Stress",
+              "explanation": "In fast-paced ramp operations, speaking in a flat monotone causes listeners to tune out. Breaking instructions into natural phrase chunks (|) and putting vocal weight on key action words guides the listener's attention immediately.",
               "example": {
-                "chunked": "In case of thermal runaway | immediately isolate the device | and alert ground operations.",
+                "chunked": "On aircraft stands | reduce speed to walking pace | and watch for wingtip clearance.",
                 "stressed": [
-                  "thermal runaway",
-                  "isolate",
-                  "device",
-                  "alert",
-                  "ground operations"
+                  "aircraft stands",
+                  "reduce speed",
+                  "walking pace",
+                  "wingtip clearance"
                 ]
               },
               "drill": {
-                "raw": "When handling suspected lithium battery fires airside ramp operators should avoid using water and immediately deploy dry fire-containment equipment before informing the safety supervisor.",
-                "chunked": "When handling suspected lithium battery fires airside | ramp operators should avoid using water | and immediately deploy dry fire-containment equipment | before informing the safety supervisor.",
+                "raw": "When driving ground support equipment near parked aircraft drivers must maintain walking pace and immediately report any accidental contact to the safety supervisor.",
+                "chunked": "When driving ground support equipment near parked aircraft | drivers must maintain walking pace | and immediately report any accidental contact | to the safety supervisor.",
                 "stressed": [
-                  "handling",
-                  "suspected",
-                  "battery fires",
-                  "avoid",
-                  "water",
-                  "deploy",
-                  "dry",
-                  "containment",
-                  "supervisor"
+                  "driving",
+                  "ground support equipment",
+                  "parked aircraft",
+                  "walking pace",
+                  "immediately report",
+                  "accidental contact",
+                  "safety supervisor"
                 ]
               }
             }
           },
           "spokenActivity": {
-            "title": "Activity 4: Spoken Briefing Simulation: \"The 90-Second Stand-Up\"",
-            "summary": "Pair simulation delivering a 90-second morning briefing as TSEEAC Airside Safety Officer, with mandatory clarifying questions.",
+            "title": "Activity 4: Spoken Simulation: 'The 90-Second Stand-Up' Briefing",
+            "summary": "Pair simulation delivering a 90-second morning ramp briefing as TSEEAC Airside Safety Officer, fielding 2 operational challenge questions, and receiving peer feedback.",
             "modeBadges": [
               {
-                "label": "Spoken Simulation",
+                "label": "Pairs (2 students)",
                 "color": "blue"
               },
               {
-                "label": "Airside Stand-Up",
+                "label": "90-Second Briefing",
                 "color": "indigo"
               },
               {
-                "label": "Clarifying Questions",
+                "label": "Operational Challenges",
                 "color": "amber"
+              },
+              {
+                "label": "Peer Feedback",
+                "color": "purple"
               }
             ],
             "instructions": [
               {
                 "step": "Step 1: Role Setup & 3-Minute Preparation",
-                "detail": "Work in pairs: Student A is the TSEEAC Airside Safety Inspector (The Speaker); Student B is the Ground / Ramp Lead (The Interlocutor). Student A selects Scenario 1, takes 3 minutes to plan delivery using active voice, chunks, and signposts. Do not read verbatim!"
+                "detail": "Work in pairs: Student A is the TSEEAC Airside Safety Inspector (The Speaker); Student B is the Ground Service Supervisor (The Interlocutor). Student A selects Scenario 1, takes 3 minutes to plan delivery using strong action verbs, natural rhythm, and signposts. Do not read verbatim!"
               },
               {
                 "step": "Step 2: Deliver the 90-Second Stand-Up Briefing",
-                "detail": "Student A delivers a crisp 90-second oral briefing to Student B. Use the target signposts ('Good morning team...', 'The primary takeaway is...', 'Under no circumstances should you...')."
+                "detail": "Student A delivers a crisp 90-second spoken briefing to Student B using the target signposts ('Good morning team...', 'The primary takeaway is...', 'Under no circumstances should you...')."
               },
               {
-                "step": "Step 3: Interlocutor Challenges (Mandatory Questions)",
-                "detail": "Student B listens actively and asks their 2 mandatory operational clarifying questions. Student A must respond immediately using sound safety logic."
+                "step": "Step 3: Interlocutor Challenges & Peer Feedback Checklist",
+                "detail": "Student B listens actively and asks their 2 mandatory operational challenge questions. Student A responds immediately. Student B then reviews the 4-item Peer Feedback Checklist and gives 1 minute of oral feedback before switching roles."
               },
               {
                 "step": "Step 4: Swap Roles for Scenario 2 or 3",
-                "detail": "Swap roles: Student B becomes the Speaker for Scenario 2 (Wildlife Hazard) or Scenario 3 (GRF Runway Conditions)."
+                "detail": "Swap roles: Student B becomes the Speaker for Scenario 2 (Unreported Scrape) or Scenario 3 (Equipment Staging Congestion)."
               }
             ],
-            "deliverable": "Delivered 90-second oral briefing, answered 2 operational challenges, and completed peer role swap.",
+            "deliverable": "Delivered 90-second oral briefing, answered 2 operational challenges, and completed peer checklist evaluation.",
             "teacherNotes": [
               "Enforce strict 90-second pacing with a timer. Stand-up briefings on the ramp are brief, punchy, and direct.",
               "Ensure Student B does NOT read their questions until Student A finishes speaking. Focus on active listening."
             ],
-            "context": "It is 06:45 AM at a busy regional hub airport in France (Toulouse-Blagnac). The morning departure push is beginning. A new EASA Safety Information Bulletin has just landed on the desk of the TSEEAC Duty Officer / Airside Safety Inspector.",
+            "context": "It is 06:45 AM at a busy regional airport hub in France. The morning departure push is starting. Aerodrome safety data from the past month shows 4 vehicle speeding alerts on Taxiway Bravo roadway and 1 unreported belt-loader scrape on an A320 cargo door. As TSEEAC Airside Safety Inspector, you are delivering the mandatory morning stand-up briefing to the ramp handling team.",
             "targetSignposts": [
               "\"Good morning team, I need your full attention for a safety alert...\"",
               "\"The primary takeaway from this bulletin is...\"",
-              "\"Under no circumstances should you...\"",
-              "\"Our top priority on the ground today is...\"",
-              "\"The critical operational trigger is...\"",
+              "\"Under no circumstances should you exceed walking pace near aircraft...\"",
+              "\"Our top priority on the ramp today is...\"",
+              "\"Under Just Culture, remember that reporting is non-punitive...\"",
               "\"Please make sure your teams document...\""
             ],
             "scenarios": [
               {
                 "id": 1,
-                "title": "Scenario 1: Lithium Battery Containment on Stand",
+                "title": "Scenario 1: Apron Speeding & GPS Geofencing Enforcement",
                 "speaker": {
                   "role": "TSEEAC Airside Safety Inspector (The Speaker)",
                   "badge": "Speaker",
-                  "mission": "Deliver a crisp 90-second safety briefing to the Ramp Supervisor before the morning baggage shift starts.",
+                  "mission": "Deliver a crisp 90-second briefing to the Baggage Handling Supervisor on vehicle speed enforcement.",
                   "points": [
-                    "Multiple cases of power banks igniting in baggage sortation areas have occurred across Europe.",
-                    "Any smoking or deformed battery must go straight into the yellow containment drum at Stand 12.",
-                    "Standard water extinguishers must never be used on these batteries (violent explosion risk).",
-                    "The control center (ASOC) must be alerted via VHF Channel 2 within 3 minutes of discovery."
+                    "Telematics data recorded 6 baggage tugs exceeding 35 km/h on main apron roadways during yesterday's evening push.",
+                    "Speed limits are strictly 25–30 km/h on roadways and 5–10 km/h (walking pace) once inside aircraft stands.",
+                    "GPS geofencing will activate next Monday, automatically capping vehicle speed inside all stands.",
+                    "Any driver repeatedly caught speeding faces immediate temporary suspension of their Apron Driving Authorisation (ADA)."
                   ],
                   "targetSignposts": [
                     "\"Good morning team, I need your full attention for a safety alert...\"",
                     "\"The primary takeaway from this bulletin is...\"",
-                    "\"Under no circumstances should you...\""
+                    "\"Under no circumstances should you exceed walking pace near aircraft...\""
                   ]
                 },
                 "interlocutor": {
-                  "role": "Ramp Service Supervisor (The Interlocutor)",
+                  "role": "Baggage Handling Supervisor (The Interlocutor)",
                   "badge": "Interlocutor",
-                  "context": "You run a ground handling crew of 15 baggage handlers under tight 30-minute aircraft turnaround targets.",
+                  "context": "You manage 18 baggage tug drivers under severe 25-minute low-cost turnaround targets.",
                   "mission": "Listen carefully and challenge Student A on real operational details with your 2 mandatory questions.",
                   "mandatoryQuestions": [
-                    "\"What is the exact procedure if the designated containment drum at Stand 12 is blocked or already full?\"",
-                    "\"Can we continue loading baggage onto the flight while isolating a suspicious device?\""
+                    "\"If the GPS geofencing slows our tugs to 5 km/h inside the stand, how do we meet the 25-minute turnaround deadline without taking flight delays?\"",
+                    "\"Who will pay for installing electronic speed limiters on our older diesel tractors?\""
                   ]
                 }
               },
               {
                 "id": 2,
-                "title": "Scenario 2: Wildlife Hazard & Migratory Flock Advisory",
+                "title": "Scenario 2: Unreported GSE Aircraft Scrape & Just Culture Reporting",
                 "speaker": {
                   "role": "TSEEAC Airside Safety Inspector (The Speaker)",
                   "badge": "Speaker",
-                  "mission": "Deliver a crisp 90-second morning briefing to the Airfield Wildlife Operations Team.",
+                  "mission": "Deliver a 90-second briefing to the Aircraft Turnaround Team Lead on reporting accidental contacts.",
                   "points": [
-                    "EASA has issued a regional alert regarding seasonal bird migration (large starling and lapwing flocks crossing the CTR).",
-                    "Pyrotechnic scaring and gas cannons must be activated 15 minutes before peak runway movements.",
-                    "Mowing heights on runway grass strips must be kept below 20 cm to deter insect feeding.",
-                    "Any confirmed bird strike or flock sighting exceeding 50 birds must be logged on the DSAC safety portal within 2 hours."
+                    "Last week, maintenance found a 15-cm dent on an A320 lower cargo door that was never reported by the handling crew.",
+                    "Flying with undetected fuselage or composite skin damage can lead to inflight cabin depressurization.",
+                    "Emphasize our non-punitive Just Culture: accidents and minor bumps reported immediately will not result in disciplinary action.",
+                    "Concealing or failing to report vehicle contact is considered gross misconduct and leads to permanent revocation of airside access."
                   ],
                   "targetSignposts": [
-                    "\"We have received an operational safety update regarding...\"",
-                    "\"Our top priority on the runway margins today is...\"",
-                    "\"Please make sure your teams document...\""
+                    "\"We have received an urgent safety update regarding...\"",
+                    "\"Our top priority on the ramp today is...\"",
+                    "\"Under Just Culture, remember that reporting is strictly non-punitive...\""
                   ]
                 },
                 "interlocutor": {
-                  "role": "Airfield Wildlife Controller (The Interlocutor)",
+                  "role": "Aircraft Turnaround Team Lead (The Interlocutor)",
                   "badge": "Interlocutor",
-                  "context": "You drive the bird hazard response vehicle and patrol runways and taxiways during peak departures.",
-                  "mission": "Listen to the briefing and verify practical coordination with Air Traffic Control (DSNA).",
+                  "context": "You supervise the loading ramp crews who fear losing their jobs or bonuses if an incident is logged.",
+                  "mission": "Listen to the briefing and ensure worker protection under the safety reporting system.",
                   "mandatoryQuestions": [
-                    "\"Do we have standing clearance from the control tower to deploy acoustic scare rounds near Runway 14 Left?\"",
-                    "\"Who is responsible for verifying grass heights along the instrument strip during the morning inspection?\""
+                    "\"My handlers are terrified they will be fired if they report a dent on a brand-new aircraft. Can you guarantee in writing they won't lose their jobs?\"",
+                    "\"If we report a minor scrape, how long does the safety inspection take before the flight is cleared to depart?\""
                   ]
                 }
               },
               {
                 "id": 3,
-                "title": "Scenario 3: Global Reporting Format (GRF) Runway Condition Alerts",
+                "title": "Scenario 3: Equipment Staging Area (ESA) Congestion & Stand Clearance",
                 "speaker": {
                   "role": "TSEEAC Airside Safety Inspector (The Speaker)",
                   "badge": "Speaker",
-                  "mission": "Deliver a 90-second update to the Airport Winter Operations Lead during freezing rain conditions.",
+                  "mission": "Deliver a 90-second briefing to the Catering & Fuelling Dispatcher on keeping stands clear before arrival.",
                   "points": [
-                    "Rapidly changing temperatures are creating variable friction on Taxiways Bravo and Charlie.",
-                    "RWYCC (Runway Condition Code) assessments must be updated whenever surface coverage shifts by more than 10%.",
-                    "Operators must use plain language runway condition reports (RCR) and transmit them directly to the tower.",
-                    "High-speed turnoffs must be treated with certified solid de-icer before commercial turboprop waves arrive."
+                    "Ground vehicles are repeatedly parking inside the Equipment Clearance Area (ECA) before aircraft have completely stopped at the gate.",
+                    "Marshallers and docking guidance systems (VDGS) are being obstructed by pre-positioned baggage carts and high-loaders.",
+                    "All GSE must remain parked inside painted Equipment Staging Areas (ESA) until engines are shut down and anti-collision beacons are off.",
+                    "Safety officers will issue immediate Level 2 non-compliance notices to any handler parking inside the red stand lines prematurely."
                   ],
                   "targetSignposts": [
-                    "\"Due to deteriorating meteorological conditions, we must adapt our procedure...\"",
+                    "\"Due to persistent stand congestion, we are enforcing strict staging rules...\"",
                     "\"The critical operational trigger is...\"",
-                    "\"Ensure that the tower receives...\""
+                    "\"Please make sure your teams document...\""
                   ]
                 },
                 "interlocutor": {
-                  "role": "Winter Operations Team Lead (The Interlocutor)",
+                  "role": "Catering & Fuelling Dispatcher (The Interlocutor)",
                   "badge": "Interlocutor",
-                  "context": "You manage the snowplow and chemical spreader fleet on the apron and movement area.",
-                  "mission": "Listen to the briefing and ensure vehicle safety and operational feasibility.",
+                  "context": "You coordinate 12 high-lift catering trucks and 6 fuel bowsers serving consecutive departure banks.",
+                  "mission": "Listen to the briefing and challenge Student A on space limitations during peak banks.",
                   "mandatoryQuestions": [
-                    "\"How much notice does the control tower need before we shut down Taxiway Bravo for chemical spraying?\"",
-                    "\"If the RWYCC drops to 2 or below, who holds the ultimate authority to suspend operations?\""
+                    "\"The painted staging boxes are too small for our wide-body catering trucks. Where should our drivers wait during peak departure banks?\"",
+                    "\"What should our driver do if the docking guidance system fails and the marshaller gives conflicting hand signals?\""
                   ]
                 }
+              }
+            ],
+            "peerChecklist": [
+              {
+                "id": 1,
+                "label": "Did Student A use strong action verbs without reading word-for-word from notes?"
+              },
+              {
+                "id": 2,
+                "label": "Did Student A respect the 90-second time limit without rushing or trailing off?"
+              },
+              {
+                "id": 3,
+                "label": "Did Student A use professional signposts (\"Good morning team...\", \"The primary takeaway is...\")?"
+              },
+              {
+                "id": 4,
+                "label": "Did Student A give a confident, safety-focused answer to both operational challenge questions?"
               }
             ]
           },
@@ -2097,39 +2117,39 @@
             "instructions": [
               {
                 "step": "Step 1: Complete the 4-Step Safety Evaluation",
-                "detail": "In pairs, analyze the lithium battery and apron hazard chain: Hazard, Operational Risk, Preventative Mitigations, and Agreed Operational Decision."
+                "detail": "In pairs, analyze the vehicle collision and ramp safety chain: Hazard, Operational Risk, Preventative Mitigations, and Agreed Operational Decision."
               },
               {
                 "step": "Step 2: Rules to Reality (60-Second Pair Wrap-Up)",
-                "detail": "Deliver an unscripted 60-second verbal summary explaining why clear stand-up briefings are critical on the ramp."
+                "detail": "Deliver an unscripted 60-second verbal summary explaining why clear stand-up briefings and Just Culture are critical on the ramp."
               }
             ],
             "deliverable": "Completed safety analysis table and 60-second verbal stand-up wrap-up.",
             "teacherNotes": [
               "Prompt students to link the linguistic clarity of the morning briefing to concrete safety outcomes on the tarmac.",
-              "Emphasize that miscommunications during freezing rain or battery thermal runaway can cause catastrophic ramp closures."
+              "Emphasize that unreported vehicle scrapes can cause catastrophic inflight skin failures."
             ],
             "rows": [
               {
-                "question": "1. The Operational Hazard: What is the primary physical hazard identified in EASA SIB No. 2023-08?",
-                "answer": "Damaged or deformed lithium-ion battery packs and personal mobility devices undergoing thermal runaway during baggage sortation and ramp transit."
+                "question": "1. The Operational Hazard: What is the primary physical hazard identified in EASA SIB No. 2024-09?",
+                "answer": "High-energy Ground Support Equipment (GSE) collisions with aircraft and personnel in congested apron areas under tight 30-minute turnaround pressures."
               },
               {
-                "question": "2. The Critical Risk: What catastrophic consequence occurs if ground handlers use standard water extinguishers?",
-                "answer": "Violent water-reactive venting, toxic gas emission, and explosive chemical projection inside the baggage area or aircraft hold."
+                "question": "2. The Critical Risk: What catastrophic consequence occurs if GSE vehicle impacts go unreported?",
+                "answer": "Aircraft depart with undetected structural damage to fuselages, radomes, or engine cowlings, posing severe risks of inflight failure or cabin depressurization."
               },
               {
-                "question": "3. Agreed Mitigations: What immediate physical precautions and notification timelines must be enforced?",
-                "answer": "Immediate segregation into yellow fire-containment drums or sand containers at Stand 12, zero water application, and 3-minute radio alert to ASOC on VHF Channel 2."
+                "question": "3. Agreed Mitigations: What physical and operational measures must aerodrome operators enforce?",
+                "answer": "Tiered speed limits (25–30 km/h on roadways, 5–10 km/h walking pace on stand), speed governors, GPS geofencing, and strict ADA training under ADR.OR.D.017."
               },
               {
-                "question": "4. Final Operational Decision: How does the TSEEAC Safety Officer ensure operational compliance?",
-                "answer": "Delivers mandatory 90-second stand-up briefings to all ground handling shifts, verifies containment equipment access, and confirms standing DSAC reporting channels."
+                "question": "4. Final Operational Decision: How does the TSEEAC Safety Officer maintain a healthy reporting culture?",
+                "answer": "Enforces a non-punitive Just Culture ensuring all accidental contacts are reported immediately without fear of reprisal, backed by regular Ramp Safety Committee reviews."
               }
             ],
             "rulesToReality": {
               "title": "Rules to Reality: 60-Second Stand-Up Spoken Wrap-Up",
-              "prompt": "In pairs, deliver an unscripted 60-second operational summary explaining: 1) What was the core message of your SIB? 2) Why do ground crews sometimes cut corners under tight 30-minute turnarounds? 3) How does an active, chunked 90-second verbal briefing prevent a catastrophic incident on the tarmac?"
+              "prompt": "In pairs, deliver an unscripted 60-second operational summary explaining: 1) What is the core message of SIB 2024-09? 2) Why do ground crews sometimes exceed speed limits or conceal minor scrapes under tight turnarounds? 3) How does an active 90-second morning stand-up briefing prevent a serious aircraft accident?"
             }
           }
         },
@@ -11567,8 +11587,9 @@
         },
         "2": {
           "session": 2,
+          "title": "Safety Alerts & Ramp Briefings",
           "overview": {
-            "intro": "Welcome to Session 2 of Technical English! Today we examine an official EASA Safety Information Bulletin on ramp collision risks and ground vehicle speed management. You will practice using polite, professional English (passive voice) during ramp inspections, read safety notices, and take part in a 3-person airport safety meeting.",
+            "intro": "Welcome to Session 2 of Technical English! Today we examine an official EASA Safety Information Bulletin on ramp collision risks and ground vehicle speed management. You will practice turning dense safety regulations into direct action commands, master the Executive 3-Bullet Rule, and deliver a punchy 90-second morning ramp briefing with operational challenge questions.",
             "whyItMatters": "On European airport aprons, ground support equipment (GSE) operates in close proximity to multimillion-euro aircraft and ground personnel under tight 30-minute turnaround pressures. High-energy vehicle impacts with aircraft fuselages, radomes, and engine cowlings have repeatedly gone unreported by fearful ground staff, resulting in aircraft departing with undetected structural damage. Mastering non-punitive Just Culture reporting, speed enforcement zones, and clear spoken verbal briefings is vital for TSEEAC airside operations managers and ramp safety inspectors.",
             "keyTerms": [
               {
@@ -11624,7 +11645,7 @@
             ],
             "speakingTask": {
               "title": "Authentic EASA Task • SIB 2024-09 Ramp Collision Mitigation",
-              "instructions": "Working in pairs or trios, open the authentic EASA Safety Information Bulletin (SIB No. 2024-09) below. Each group reviews one operational section, analyzes the practical challenge, and delivers a concise 2-minute spoken briefing explaining their safety solutions using today's technical vocabulary.",
+              "instructions": "Working in pairs, review authentic EASA SIB No. 2024-09 below. Choose one operational area (Speed Regimes, Telematics & Governors, or Just Culture Reporting) and deliver a concise 2-minute spoken briefing explaining your ramp safety solutions using today's technical vocabulary.",
               "document": {
                 "title": "EASA SIB No. 2024-09: Mitigation of Ramp Collision Risks & Speed Management",
                 "subtitle": "EASA Safety Information Bulletin • Issued 14 October 2024 (4 Pages)",
@@ -11638,9 +11659,9 @@
                 "Ensure both partners actively speak and explain practical ramp solutions without reading verbatim."
               ],
               "statements": {
-                "group1": "Group 1 Statement (Infrastructure & Speed Regimes): How do differentiated speed limits (25–30 km/h on roadways vs. 5–10 km/h on stands) and CS-ADR-DSN road markings mitigate high-energy ramp impacts?",
-                "group2": "Group 2 Statement (Telematics & Equipment Control): Why are physical speed governors and GPS geofencing more effective than speed limit signs alone on high-workload turnaround aprons?",
-                "group3": "Group 3 Statement (Driver Authorisation & Just Culture): How can aerodrome operators balance strict Apron Driving Authorisation (ADA) testing with a non-punitive Just Culture so minor scrapes are reported immediately?"
+                "group1": "Area 1 (Infrastructure & Speed Regimes): How do differentiated speed limits (25–30 km/h on roadways vs. 5–10 km/h on stands) and CS-ADR-DSN road markings mitigate high-energy ramp impacts?",
+                "group2": "Area 2 (Telematics & Equipment Control): Why are physical speed governors and GPS geofencing more effective than speed limit signs alone on high-workload turnaround aprons?",
+                "group3": "Area 3 (Driver Authorisation & Just Culture): How can aerodrome operators balance strict Apron Driving Authorisation (ADA) testing with a non-punitive Just Culture so minor scrapes are reported immediately?"
               },
               "usefulPhrases": [
                 "According to EASA SIB 2024-09, ground collisions are primarily caused by...",
@@ -11660,30 +11681,30 @@
           },
           "objectives": {
             "title": "Session 2 Objectives - Safety Alerts & Ramp Briefings",
-            "summary": "By the end of this session, GSEA students will be able to distinguish mandatory Safety Directives from advisory Safety Information Bulletins, de-nominalize heavy regulatory text into direct active instructions, synthesize dense safety alerts into the Executive 3-Bullet Rule (maximum 12 words per action), apply text chunking and intonation to eliminate flat delivery, deliver a professional 90-second morning safety briefing to ramp teams, and field spontaneous operational challenge questions with confidence.",
+            "summary": "By the end of this session, GSEA students will be able to distinguish mandatory Safety Directives from advisory Safety Information Bulletins, turn heavy regulatory text into direct spoken action commands, condense dense safety alerts using the Executive 3-Bullet Rule (maximum 12 words per bullet), speak with natural rhythm and keyword stress, deliver a professional 90-second morning ramp safety briefing, and field spontaneous operational challenge questions with confidence.",
             "items": [
               {
                 "num": 1,
                 "title": "Modal Quick-Fire & Ramp Awareness (Review & Fluency)",
-                "description": "Rapidly categorize operational statements into Hard Law (IR), Acceptable Means of Compliance (AMC), and Guidance Material (GM), and share real-world apron hazards.",
+                "description": "Rapidly identify strict mandatory rules, standard guidelines, and permissions in operational statements, and discuss apron hazard zones.",
                 "part": "Part 1"
               },
               {
                 "num": 2,
-                "title": "The Simplification Engine: De-Nominalization (Language Accuracy)",
-                "description": "Convert stiff nominalized phrases (the execution of continuous surveillance, prior to the initiation of pushback) into clear active commands (inspect, monitor, check before pushback).",
+                "title": "Turning Heavy Regulations into Action Words (Language Accuracy)",
+                "description": "Convert stiff official phrases (the execution of continuous surveillance, prior to the entry of vehicles) into direct active commands (inspect, monitor, wait before entering).",
                 "part": "Part 2"
               },
               {
                 "num": 3,
                 "title": "The Executive 3-Bullet Rule: SIB Extraction (Synthesis & Precision)",
-                "description": "Condense dense EASA SIB extracts into exactly 3 actionable directives of no more than 12 words each, starting with strong imperative verbs.",
+                "description": "Condense dense EASA SIB extracts into exactly 3 actionable directives of no more than 12 words each, starting with strong active verbs.",
                 "part": "Part 3"
               },
               {
                 "num": 4,
-                "title": "Pronunciation Clinic: Text Chunking & Intonation (Spoken Rhythm & Delivery)",
-                "description": "Break long technical sentences into cognitive pause chunks (|) and emphasize operative keywords to eliminate monotonous, flat spoken delivery.",
+                "title": "Natural Rhythm & Stress Clinic (Spoken Rhythm & Delivery)",
+                "description": "Use natural speech pauses (|) and stress operative keywords to deliver clear, confident technical instructions on the ramp.",
                 "part": "Part 4"
               },
               {
@@ -11694,35 +11715,35 @@
               },
               {
                 "num": 6,
-                "title": "Active Listening & Operational Challenge (Interactive Clarification)",
-                "description": "Role-play ramp supervisors and wildlife officers, listening critically to oral briefings and formulating targeted clarifying questions under operational time pressure.",
+                "title": "Active Listening & Operational Challenges (Interactive Clarification)",
+                "description": "Role-play ramp supervisors and safety leads, listening critically to oral briefings and asking targeted operational questions under time pressure.",
                 "part": "Part 6"
               }
             ]
           },
           "lessonPlan": {
             "title": "Session 2 Lesson Plan - Safety Alerts & Ramp Briefings (2 Hours)",
-            "summary": "A 2-hour communicative spoken English session covering rapid modal review, EASA Safety Information Bulletins (SIBs), the Simplification Engine (de-nominalization and active voice), the Executive 3-Bullet Rule, text chunking for natural spoken rhythm, and \"The 90-Second Stand-Up\" paired briefing simulations across three real-world airport operational scenarios.",
+            "summary": "A 2-hour communicative spoken English session covering rapid modal review, EASA Safety Information Bulletin SIB 2024-09 (Ramp Collision Risks & Speed Management), turning heavy regulations into spoken action commands, the Executive 3-Bullet Rule, natural spoken rhythm, and 'The 90-Second Stand-Up' paired briefing simulations across three real-world apron scenarios.",
             "items": [
               {
                 "part": "Part 1",
                 "title": "Part 1: Warm-up: Modal Quick-Fire & Ramp Hazard Scan",
-                "description": "Students complete the 4-item modal quick-fire sprint (Hard Law vs. AMC vs. GM) to reinforce Session 1 foundations, then brainstorm the most hazard-prone areas of the apron in pairs."
+                "description": "Students complete the 4-item modal quick-fire sprint to reinforce Session 1 foundations, then brainstorm the most hazard-prone areas of the apron in pairs."
               },
               {
                 "part": "Part 2",
-                "title": "Part 2: Authentic Document Extract: EASA Safety Bulletins",
-                "description": "Students scan authentic EASA SIB extracts (Thermal runaway in lithium batteries & apron vehicle speeding) and complete reading comprehension checks to identify root hazards and immediate reporting triggers."
+                "title": "Part 2: Authentic Document Extract: EASA SIB 2024-09 (Ramp Collisions & Speed)",
+                "description": "Students scan authentic extracts from EASA SIB No. 2024-09 regarding GSE impacts, speed regimes, and telematics geofencing, and complete reading comprehension checks."
               },
               {
                 "part": "Part 3",
-                "title": "Part 3: Language Clinic: The Simplification Engine & Text Chunking",
-                "description": "Students practice converting heavy administrative nominalizations into direct active imperatives, master the Executive 3-Bullet Rule (12 words max, action verbs), and complete the Pronunciation Chunking Clinic with choral and paired read-alouds to establish natural rhythm and stress."
+                "title": "Part 3: Language Clinic: From Official Rules to Spoken Action Commands",
+                "description": "Students practice converting heavy administrative text into direct spoken imperatives, master the Executive 3-Bullet Rule (12 words max, action verbs), and practice natural speech pauses and keyword stress."
               },
               {
                 "part": "Part 4",
-                "title": "Part 4: Spoken Interaction: \"The 90-Second Stand-Up\" Briefings",
-                "description": "In pairs, students take turns delivering 90-second morning briefings as TSEEAC Airside Safety Officers across 3 scenarios (Lithium Battery Containment, Wildlife & Migratory Flocks, GRF Runway Condition Alerts), while their partner role-plays the Ground Supervisor asking mandatory operational challenge questions."
+                "title": "Part 4: Spoken Interaction: 'The 90-Second Stand-Up' Briefings",
+                "description": "In pairs, students take turns delivering 90-second morning briefings as TSEEAC Airside Safety Officers across 3 ramp scenarios, while their partner role-plays the Ground Supervisor asking mandatory operational challenge questions with peer feedback."
               },
               {
                 "part": "Part 5",
@@ -11734,7 +11755,7 @@
           "lessonContent": {
             "hero": {
               "title": "Safety Alerts & Ramp Briefings",
-              "subtitle": "Operational Text Simplification, Chunking & 90-Second Stand-Up Briefings",
+              "subtitle": "EASA SIB 2024-09, Action Commands & 90-Second Stand-Up Briefings",
               "image": "images/s3_m1_session2_audit.jpg",
               "targetLevel": "CEFR B1–B2",
               "roleContext": "GSEA Student Training (TSEEAC Airside Safety & Ground Operations Focus)",
@@ -11760,7 +11781,7 @@
               "instructions": [
                 {
                   "step": "Step 1: Modal Quick-Fire Sprint (Individual / Pairs)",
-                  "detail": "Read each of the 4 operational statements below and mark whether it represents Hard Law (IR), an Acceptable Means of Compliance (AMC), or Guidance Material / Permission (GM). Check the anchor modal verb."
+                  "detail": "Read each of the 4 operational statements below and identify whether it represents a strict mandatory rule, standard best practice, or advisory guidance. Check the anchor modal verb."
                 },
                 {
                   "step": "Step 2: Ramp Hazard Brainstorming (Pairs)",
@@ -11773,14 +11794,14 @@
               ],
               "deliverable": "Completed modal sprint categorization, 3 agreed ramp danger zones, and entry diagnostic check.",
               "teacherNotes": [
-                "Prompt students to identify modal anchors immediately: 'shall' / 'shall not' (Hard Law), 'should' (AMC), 'may' (GM / Permission).",
+                "Prompt students to identify modal anchors immediately: 'shall' / 'shall not' (Strict mandatory rule), 'should' (Standard guideline), 'may' (Permission / Advice).",
                 "Encourage students to articulate WHY handing ground crews a 4-page PDF does not work on the ramp (insufficient turnaround time, cognitive overload)."
               ],
               "reviewSprint": [
                 {
                   "id": 1,
                   "statement": "Aerodrome operators shall ensure that vehicles operating on aprons are equipped with high-visibility markings.",
-                  "type": "Hard Law (IR)",
+                  "type": "Mandatory Rule (Shall)",
                   "anchor": "shall ensure",
                   "badgeColor": "rose",
                   "explanation": "Mandatory implementing rule under European regulation (EASA Part-ADR.OPS.B.025)."
@@ -11788,7 +11809,7 @@
                 {
                   "id": 2,
                   "statement": "Ground handling personnel should inspect fuel hydrants every morning before scheduled flight waves.",
-                  "type": "AMC (Acceptable Means of Compliance)",
+                  "type": "Standard Guideline (Should)",
                   "anchor": "should inspect",
                   "badgeColor": "amber",
                   "explanation": "Standard industry best practice; deviation requires formal risk assessment and alternative safety justification."
@@ -11796,15 +11817,15 @@
                 {
                   "id": 3,
                   "statement": "The authority may grant temporary derogations during extraordinary winter weather operations.",
-                  "type": "GM / Statutory Permission",
+                  "type": "Permission / Discretion (May)",
                   "anchor": "may grant",
                   "badgeColor": "emerald",
-                  "explanation": "Discretionary statutory power granted to the competent national authority (DSAC)."
+                  "explanation": "Discretionary statutory power granted to the competent national civil aviation authority (DSAC)."
                 },
                 {
                   "id": 4,
                   "statement": "The de-icing pad drainage containment system shall not discharge directly into surface waters.",
-                  "type": "Hard Law (IR)",
+                  "type": "Strict Negative Prohibition (Shall Not)",
                   "anchor": "shall not discharge",
                   "badgeColor": "rose",
                   "explanation": "Strict negative legal obligation with zero operational tolerance."
@@ -11817,7 +11838,7 @@
                   "exampleAnswers": [
                     "Baggage tugs, catering trucks, fuelling bowsers, and aircraft move in tight, congested spaces simultaneously.",
                     "High ambient engine noise drowns out vehicle horns, and night or rain drastically reduces driver visibility.",
-                    "Ground personnel work under severe time pressure to meet strict 30-minute turnaround targets."
+                    "Ground personnel work under severe time pressure to meet strict 25- to 30-minute turnaround targets."
                   ]
                 },
                 {
@@ -11825,8 +11846,8 @@
                   "question": "When a new safety bulletin arrives on your desk at 06h30, why is handing workers a 4-page technical PDF ineffective?",
                   "exampleAnswers": [
                     "Ground crews work on the tarmac in high-noise environments; they don't sit in front of computer monitors.",
-                    "Dense bureaucratic legal text hides the critical action steps under passive nominalizations.",
-                    "A fast, direct 90-second verbal briefing with active imperatives front-loads the vital commands immediately."
+                    "Dense bureaucratic legal text hides the critical action steps under heavy noun phrases.",
+                    "A fast, direct 90-second verbal briefing with strong action verbs front-loads the vital commands immediately."
                   ]
                 }
               ],
@@ -11841,8 +11862,8 @@
                   },
                   {
                     "id": 2,
-                    "q": "Why do aviation authorities write bulletins with heavy nominalizations instead of simple active verbs?",
-                    "answer": "Bureaucratic and legal writers prefer formal noun structures (e.g., 'the execution of inspection') to appear neutral, but this slows down operational communication on the tarmac."
+                    "q": "Why do aviation authorities write bulletins with heavy nouns instead of simple active verbs?",
+                    "answer": "Bureaucratic and legal writers prefer formal noun structures (e.g., 'the execution of inspection') to appear neutral, but this slows down operational communication on the tarmac. Front-loading action verbs gives immediate clarity."
                   },
                   {
                     "id": 3,
@@ -11858,8 +11879,8 @@
               }
             },
             "documentExtract": {
-              "title": "Activity 2: Reading Authentic Safety Bulletins (Lithium Battery & Apron Alerts)",
-              "summary": "Scan authentic EASA SIB extracts (SIB No. 2023-08 & SIB No. 2024-11) for immediate hazards and reporting triggers.",
+              "title": "Activity 2: Reading Authentic Safety Bulletins (EASA SIB No. 2024-09)",
+              "summary": "Scan authentic extracts from EASA SIB No. 2024-09 regarding GSE impacts, tiered speed regimes, telematics geofencing, and Just Culture reporting.",
               "modeBadges": [
                 {
                   "label": "Authentic Extract",
@@ -11876,50 +11897,50 @@
               ],
               "instructions": [
                 {
-                  "step": "Step 1: Scan the SIB Extract",
-                  "detail": "Read EASA SIB No. 2023-08 below regarding thermal runaway hazards in airside baggage areas. Identify: 1) What causes the hazard, 2) Where to isolate damaged items, 3) Prohibited extinguishing actions, and 4) Mandatory reporting channels."
+                  "step": "Step 1: Scan EASA SIB No. 2024-09",
+                  "detail": "Read the authentic extract below regarding vehicle speed and ramp collision risks. Identify: 1) What causes high-energy impacts, 2) Tiered speed limits, 3) Telematics and geofencing solutions, and 4) Why Just Culture reporting protects aircraft airworthiness."
                 },
                 {
                   "step": "Step 2: Complete the 4 Comprehension Checks",
                   "detail": "Answer the 4 comprehension checks to verify factual parameters before translating the text into operational commands."
                 }
               ],
-              "deliverable": "Extracted safety actions, containment locations, and notification timelines.",
+              "deliverable": "Extracted speed limits, telematics solutions, and Just Culture reporting guidelines.",
               "teacherNotes": [
-                "Encourage students to highlight content words: 'thermal runaway', 'containment drum', 'unapproved liquid', 'ASOC', '3 minutes'.",
+                "Highlight operative technical terms: 'differentiated speed regimes', 'GSE', 'GPS geofencing', 'Equipment Clearance Area (ECA)', 'Just Culture'.",
                 "Remind students that SIBs are advisory but carry high operational weight during safety audits."
               ],
-              "docRef": "EASA SIB No. 2023-08 (Adapted Extract) • Subject: Mitigation of Thermal Runaway Hazards",
-              "docText": "EUROPEAN UNION AVIATION SAFETY AGENCY\nSAFETY INFORMATION BULLETIN\nSIB No.: 2023-08\nIssued: 14 September 2023\nSubject: Mitigation of Thermal Runaway Hazards from Damaged Lithium Batteries in Airside Baggage Handling Areas\n\n1. Operational Background & Hazard Identification:\nOperational occurrences reported under Regulation (EU) No 376/2014 reveal a recurring safety hazard involving personal mobility devices, e-scooters, and spare lithium battery packs undergoing thermal runaway during baggage sortation, transport, and ramp transit. Damaged or counterfeit lithium cells are vulnerable to rapid internal short-circuiting, resulting in toxic gas release, violent thermal escalation, and self-sustaining chemical fires.\n\n2. Containment & Segregation Directives:\nGround service providers should ensure that any battery pack presenting physical deformation, excessive heat output, or smoke emission is segregated immediately into a certified fire-containment drum or non-combustible sand container located at a designated perimeter stand (e.g. Stand 12). \n\n3. Fire Suppression Protocols:\nFurthermore, ramp operatives should under no circumstances apply unapproved liquid extinguishing agents directly to pressurized lithium cells, as violent water-reactive venting and explosive chemical projection may occur. Only certified Class D or dry extinguishing media shall be deployed.\n\n4. Emergency Notification Channels:\nImmediate notification of the Aerodrome Safety Operations Centre (ASOC) via primary VHF radio channel 2 is required within 3 minutes of discovery to enable dedicated emergency response staging and marshaller coordination.",
+              "docRef": "EASA SIB No. 2024-09 (Adapted Extract) • Subject: Mitigation of Ramp Collision Risks & Speed Management",
+              "docText": "EUROPEAN UNION AVIATION SAFETY AGENCY\nSAFETY INFORMATION BULLETIN\nSIB No.: 2024-09\nIssued: 14 October 2024\nSubject: Mitigation of Ramp Collision Risks and Ground Vehicle Speed Management on Aprons\n\n1. Operational Background & Safety Concern:\nRecent occurrence data reported across European aerodromes highlights a persistent trend of ground vehicle collisions and high-energy Ground Support Equipment (GSE) impacts with aircraft during turnaround servicing. High turnaround workload, congested staging areas, and excessive vehicular velocity contribute to incidents where ground equipment strikes aircraft fuselages, engine cowlings, or radomes. In several occurrences, minor structural impacts have gone unreported by personnel due to fear of disciplinary reprisal, resulting in aircraft departing with undetected structural damage.\n\n2. Differentiated Apron Speed Regimes:\nAerodrome operators should enforce tiered speed limits reflecting localized operational risk:\n• Main Apron Roadways: Speed limits should not exceed 25–30 km/h.\n• Aircraft Stands & Vicinity of Aircraft: Speed must be strictly restricted to walking pace (5–10 km/h) upon entering the designated parking stand.\n• Baggage Make-Up Areas & Enclosed Tunnels: A maximum limit of 10–15 km/h should be enforced.\nProminent painted surface road markings and vertical signage must clearly delineate these speed boundaries.\n\n3. Telematics & Equipment Control:\nAerodrome operators and Ground Handling Service Providers (GHSPs) should promote the installation of physical or electronic speed governors on motorized GSE. Furthermore, GPS-enabled geofencing systems that automatically restrict vehicle maximum speed when penetrating aircraft stand boundaries should be progressively deployed across commercial handling fleets.\n\n4. Training, Authorisation & Just Culture:\nAll personnel operating vehicles airside must hold a valid Apron Driving Authorisation (ADA) in compliance with Point ADR.OR.D.017. Crucially, aerodromes must foster a non-punitive Just Culture framework wherein ground personnel are empowered and actively required to report any vehicle-to-aircraft contact immediately, without fear of automatic penalties, ensuring timely engineering inspections prior to flight release.",
               "questions": [
                 {
                   "id": 1,
-                  "q": "What specific safety phenomenon is recurring during baggage sortation and ramp transit?",
-                  "answer": "Thermal runaway in personal mobility devices and spare lithium battery packs, leading to toxic gas release and self-sustaining chemical fires."
+                  "q": "What is the primary danger when ground equipment strikes an aircraft at high speed on the apron?",
+                  "answer": "Unreported structural damage to the fuselage, engine cowling, or radome, which can lead to an aircraft departing with undetected, dangerous structural compromise."
                 },
                 {
                   "id": 2,
-                  "q": "Where must ground service providers immediately segregate any smoking or deformed battery pack?",
-                  "answer": "Into a certified fire-containment drum or non-combustible sand container located at a designated perimeter stand (e.g., Stand 12)."
+                  "q": "What are the recommended differentiated speed limits for main apron roadways versus aircraft parking stands?",
+                  "answer": "Maximum 25–30 km/h on main apron roadways, and walking pace (5–10 km/h) inside aircraft parking stands."
                 },
                 {
                   "id": 3,
-                  "q": "What extinguishing agent must ramp operatives strictly avoid applying directly to pressurized lithium cells, and why?",
-                  "answer": "Unapproved liquid extinguishing agents (water), because violent water-reactive venting and explosive chemical projection may occur."
+                  "q": "How does GPS geofencing improve ramp vehicle safety compared to traditional speed limit signs alone?",
+                  "answer": "GPS geofencing automatically caps the vehicle's maximum speed electronically as soon as it enters the aircraft parking stand, removing reliance on human compliance under time pressure."
                 },
                 {
                   "id": 4,
-                  "q": "What is the mandatory timeline and communication channel to notify the Aerodrome Safety Operations Centre (ASOC)?",
-                  "answer": "Within 3 minutes of discovery via the primary VHF radio channel (Channel 2)."
+                  "q": "Why is a non-punitive 'Just Culture' essential for preventing catastrophic ramp incidents?",
+                  "answer": "Because ground workers who fear automatic punishment will hide minor scratches or bumps. Just Culture ensures every vehicle-to-aircraft contact is reported immediately so engineers can inspect the aircraft before departure."
                 }
               ]
             },
             "rulesPractice": {
-              "title": "Activity 3: The Simplification Engine, 3-Bullet Rule & Chunking Clinic",
-              "summary": "Convert nominalized text into direct action verbs, condense alerts into 3 bullets under 12 words, and practice text chunking.",
+              "title": "Activity 3: Speaking Clinic: Turning Regulations into Action Commands (The 3-Bullet Rule & Natural Rhythm)",
+              "summary": "Convert heavy regulatory text into direct spoken commands, condense SIB 2024-09 into 3 bullets under 12 words, and practice spoken stress and natural rhythm.",
               "modeBadges": [
                 {
-                  "label": "De-Nominalization",
+                  "label": "Action Commands",
                   "color": "indigo"
                 },
                 {
@@ -11927,35 +11948,35 @@
                   "color": "amber"
                 },
                 {
-                  "label": "Chunking Clinic",
+                  "label": "Rhythm & Stress Clinic",
                   "color": "purple"
                 }
               ],
               "instructions": [
                 {
-                  "step": "Step 1: The Simplification Engine (Task A)",
-                  "detail": "Examine the 3-step Simplification Engine. Convert 3 dense regulatory formulations into crisp, direct spoken commands by uncovering the hidden action verb and front-loading the agent."
+                  "step": "Step 1: Speaking Clinic: From Official Paperwork to Spoken Commands",
+                  "detail": "Examine the 3-step Simplification Engine. Convert 3 dense regulatory formulations from SIB 2024-09 into crisp, direct spoken commands by uncovering the hidden action verb and front-loading the agent."
                 },
                 {
                   "step": "Step 2: The Executive 3-Bullet Challenge",
-                  "detail": "Condense EASA SIB No. 2023-08 into exactly 3 bullet points. Respect the constraints: Maximum 12 words per bullet, starting with a strong active imperative verb."
+                  "detail": "Condense EASA SIB No. 2024-09 into exactly 3 bullet points. Respect the constraints: Maximum 12 words per bullet, starting with a strong active imperative verb."
                 },
                 {
-                  "step": "Step 3: Pronunciation Chunking Clinic",
-                  "detail": "Mark breath/idea pause lines (|) and identify the stressed content words to avoid flat, monotonous delivery when reading long technical sentences."
+                  "step": "Step 3: Natural Rhythm & Keyword Stress Clinic",
+                  "detail": "Mark breath/idea pause lines (|) and identify the stressed content words to avoid flat, monotonous delivery when delivering technical instructions."
                 }
               ],
-              "deliverable": "3 de-nominalized active commands, 3-bullet executive summary, and chunked read-aloud practice.",
+              "deliverable": "3 active ramp commands, 3-bullet executive summary, and chunked read-aloud practice.",
               "teacherNotes": [
-                "In Task A, highlight how nominalizations like 'the execution of continuous surveillance' disguise simple actions like 'monitor continuously'.",
-                "For chunking, demonstrate 'flat French delivery' vs. 'rhythmic English chunking' with vocal pauses at clause boundaries."
+                "In Task A, highlight how official phrases like 'the execution of continuous surveillance' disguise simple actions like 'monitor continuously'.",
+                "For rhythm, demonstrate monotone delivery vs. rhythmic English delivery with vocal pauses at natural phrase boundaries."
               ],
               "simplificationEngine": {
                 "steps": [
                   {
                     "num": 1,
-                    "title": "Identify the hidden action verb inside the nominalization",
-                    "example": "\"The execution of an inspection...\" → \"Inspect...\" | \"Prior to the commencement of...\" → \"Before starting...\""
+                    "title": "Find the hidden action verb inside the official text",
+                    "example": "\"The execution of continuous surveillance...\" → \"Inspect / Monitor...\" | \"Prior to the entry of vehicles...\" → \"Before entering...\""
                   },
                   {
                     "num": 2,
@@ -11965,30 +11986,30 @@
                   {
                     "num": 3,
                     "title": "Front-load the critical operational command",
-                    "example": "\"Ground crew must inspect the cargo hold before loading.\""
+                    "example": "\"Drivers must reduce speed to walking pace before entering the stand.\""
                   }
                 ],
                 "taskA": [
                   {
                     "id": 1,
-                    "sibText": "Immediate isolation of any damaged portable electronic device (PED) exhibiting smoke generation shall be undertaken by cabin or ramp personnel.",
-                    "activeCommand": "Personnel must immediately isolate any damaged device producing smoke.",
-                    "alternative": "Ramp or cabin crew shall immediately isolate smoking portable electronic devices.",
-                    "rationale": "Replaced heavy nouns 'isolation' and 'smoke generation' with active verb 'isolate' and participle 'producing smoke'."
+                    "sibText": "The execution of continuous surveillance of vehicle speeds on apron roadways shall be conducted by aerodrome safety officers.",
+                    "activeCommand": "Ramp safety officers must monitor vehicle speeds on apron roadways continuously.",
+                    "alternative": "Safety officers shall continuously monitor vehicle speeds on apron roads.",
+                    "rationale": "Replaced heavy noun phrase 'execution of continuous surveillance' with the direct active verb 'monitor' and front-loaded the agent 'Ramp safety officers'."
                   },
                   {
                     "id": 2,
-                    "sibText": "The execution of continuous surveillance of perimeter drainage channels is strongly recommended for the prevention of wildlife aggregation near active taxiways.",
-                    "activeCommand": "Operators should continuously monitor perimeter drainage channels to keep wildlife away.",
-                    "alternative": "Staff should inspect drainage channels regularly to prevent wildlife hazards.",
-                    "rationale": "Replaced 'execution of continuous surveillance' and 'wildlife aggregation' with active verb 'monitor' and direct purpose 'to keep wildlife away'."
+                    "sibText": "Prior to the entry of ground support equipment into the Equipment Clearance Area, complete cessation of aircraft movement and engine shutdown must be verified.",
+                    "activeCommand": "Drivers must verify the aircraft has stopped and engines are shut down before entering the stand.",
+                    "alternative": "Ground handlers must wait for complete aircraft shutdown before moving equipment inside the red lines.",
+                    "rationale": "Replaced 'Prior to the entry of GSE' and 'complete cessation' with direct instructions 'verify the aircraft has stopped before entering'."
                   },
                   {
                     "id": 3,
-                    "sibText": "Prior to the initiation of aircraft pushback, direct visual verification of bypass pin insertion must be performed by the headset operator.",
-                    "activeCommand": "The headset operator must visually check bypass pin insertion before pushback.",
-                    "alternative": "Headset operators must verify the bypass pin is inserted before starting pushback.",
-                    "rationale": "Front-loaded active agent 'headset operator', replaced 'initiation of pushback' with 'before pushback', and converted 'verification must be performed' to 'must visually check'."
+                    "sibText": "Immediate mandatory notification of any vehicle contact with aircraft structure shall be submitted by ground personnel pursuant to Just Culture principles.",
+                    "activeCommand": "Ground personnel must report any vehicle contact with an aircraft immediately.",
+                    "alternative": "Handlers must immediately notify flight operations of any aircraft bump under Just Culture.",
+                    "rationale": "Replaced 'Immediate mandatory notification shall be submitted' with direct command 'must report any vehicle contact immediately'."
                   }
                 ]
               },
@@ -11996,198 +12017,217 @@
                 "constraints": [
                   "Constraint 1: Exactly 3 bullet points.",
                   "Constraint 2: Maximum 12 words per bullet.",
-                  "Constraint 3: Every bullet must begin with a strong, active imperative verb (e.g., Isolate, Disconnect, Report, Stop, Notify)."
+                  "Constraint 3: Every bullet must begin with a strong, active action verb (e.g., Enforce, Fit, Report, Maintain, Restrict)."
                 ],
                 "modelAnswers": [
                   {
                     "bullet": 1,
-                    "text": "Isolate damaged or smoking lithium batteries immediately into certified containment drums.",
+                    "text": "Enforce walking pace speed limits inside all aircraft parking stands.",
                     "wordCount": 10,
-                    "verb": "Isolate"
+                    "verb": "Enforce"
                   },
                   {
                     "bullet": 2,
-                    "text": "Do not apply unapproved liquid extinguishing agents to pressurized lithium cells.",
-                    "wordCount": 10,
-                    "verb": "Do not apply"
+                    "text": "Fit motorized ground equipment with electronic speed limiters and GPS geofencing.",
+                    "wordCount": 11,
+                    "verb": "Fit"
                   },
                   {
                     "bullet": 3,
-                    "text": "Notify the Aerodrome Safety Operations Centre by radio within three minutes.",
-                    "wordCount": 10,
-                    "verb": "Notify"
+                    "text": "Report any vehicle contact with aircraft immediately under Just Culture rules.",
+                    "wordCount": 11,
+                    "verb": "Report"
                   }
                 ]
               },
               "chunkingClinic": {
-                "title": "Pronunciation Clinic: Text Chunking & Intonation",
-                "explanation": "A common error among French-speaking aviation professionals is 'flat delivery', where every word is pronounced with equal duration and weight. Chunking divides long regulatory sentences into cognitive phrase units separated by natural pause breaks (|), stressing only key operative words.",
+                "title": "Speaking Clinic: Natural Rhythm & Keyword Stress",
+                "explanation": "In fast-paced ramp operations, speaking in a flat monotone causes listeners to tune out. Breaking instructions into natural phrase chunks (|) and putting vocal weight on key action words guides the listener's attention immediately.",
                 "example": {
-                  "chunked": "In case of thermal runaway | immediately isolate the device | and alert ground operations.",
+                  "chunked": "On aircraft stands | reduce speed to walking pace | and watch for wingtip clearance.",
                   "stressed": [
-                    "thermal runaway",
-                    "isolate",
-                    "device",
-                    "alert",
-                    "ground operations"
+                    "aircraft stands",
+                    "reduce speed",
+                    "walking pace",
+                    "wingtip clearance"
                   ]
                 },
                 "drill": {
-                  "raw": "When handling suspected lithium battery fires airside ramp operators should avoid using water and immediately deploy dry fire-containment equipment before informing the safety supervisor.",
-                  "chunked": "When handling suspected lithium battery fires airside | ramp operators should avoid using water | and immediately deploy dry fire-containment equipment | before informing the safety supervisor.",
+                  "raw": "When driving ground support equipment near parked aircraft drivers must maintain walking pace and immediately report any accidental contact to the safety supervisor.",
+                  "chunked": "When driving ground support equipment near parked aircraft | drivers must maintain walking pace | and immediately report any accidental contact | to the safety supervisor.",
                   "stressed": [
-                    "handling",
-                    "suspected",
-                    "battery fires",
-                    "avoid",
-                    "water",
-                    "deploy",
-                    "dry",
-                    "containment",
-                    "supervisor"
+                    "driving",
+                    "ground support equipment",
+                    "parked aircraft",
+                    "walking pace",
+                    "immediately report",
+                    "accidental contact",
+                    "safety supervisor"
                   ]
                 }
               }
             },
             "spokenActivity": {
-              "title": "Activity 4: Spoken Briefing Simulation: \"The 90-Second Stand-Up\"",
-              "summary": "Pair simulation delivering a 90-second morning briefing as TSEEAC Airside Safety Officer, with mandatory clarifying questions.",
+              "title": "Activity 4: Spoken Simulation: 'The 90-Second Stand-Up' Briefing",
+              "summary": "Pair simulation delivering a 90-second morning ramp briefing as TSEEAC Airside Safety Officer, fielding 2 operational challenge questions, and receiving peer feedback.",
               "modeBadges": [
                 {
-                  "label": "Spoken Simulation",
+                  "label": "Pairs (2 students)",
                   "color": "blue"
                 },
                 {
-                  "label": "Airside Stand-Up",
+                  "label": "90-Second Briefing",
                   "color": "indigo"
                 },
                 {
-                  "label": "Clarifying Questions",
+                  "label": "Operational Challenges",
                   "color": "amber"
+                },
+                {
+                  "label": "Peer Feedback",
+                  "color": "purple"
                 }
               ],
               "instructions": [
                 {
                   "step": "Step 1: Role Setup & 3-Minute Preparation",
-                  "detail": "Work in pairs: Student A is the TSEEAC Airside Safety Inspector (The Speaker); Student B is the Ground / Ramp Lead (The Interlocutor). Student A selects Scenario 1, takes 3 minutes to plan delivery using active voice, chunks, and signposts. Do not read verbatim!"
+                  "detail": "Work in pairs: Student A is the TSEEAC Airside Safety Inspector (The Speaker); Student B is the Ground Service Supervisor (The Interlocutor). Student A selects Scenario 1, takes 3 minutes to plan delivery using strong action verbs, natural rhythm, and signposts. Do not read verbatim!"
                 },
                 {
                   "step": "Step 2: Deliver the 90-Second Stand-Up Briefing",
-                  "detail": "Student A delivers a crisp 90-second oral briefing to Student B. Use the target signposts ('Good morning team...', 'The primary takeaway is...', 'Under no circumstances should you...')."
+                  "detail": "Student A delivers a crisp 90-second spoken briefing to Student B using the target signposts ('Good morning team...', 'The primary takeaway is...', 'Under no circumstances should you...')."
                 },
                 {
-                  "step": "Step 3: Interlocutor Challenges (Mandatory Questions)",
-                  "detail": "Student B listens actively and asks their 2 mandatory operational clarifying questions. Student A must respond immediately using sound safety logic."
+                  "step": "Step 3: Interlocutor Challenges & Peer Feedback Checklist",
+                  "detail": "Student B listens actively and asks their 2 mandatory operational challenge questions. Student A responds immediately. Student B then reviews the 4-item Peer Feedback Checklist and gives 1 minute of oral feedback before switching roles."
                 },
                 {
                   "step": "Step 4: Swap Roles for Scenario 2 or 3",
-                  "detail": "Swap roles: Student B becomes the Speaker for Scenario 2 (Wildlife Hazard) or Scenario 3 (GRF Runway Conditions)."
+                  "detail": "Swap roles: Student B becomes the Speaker for Scenario 2 (Unreported Scrape) or Scenario 3 (Equipment Staging Congestion)."
                 }
               ],
-              "deliverable": "Delivered 90-second oral briefing, answered 2 operational challenges, and completed peer role swap.",
+              "deliverable": "Delivered 90-second oral briefing, answered 2 operational challenges, and completed peer checklist evaluation.",
               "teacherNotes": [
                 "Enforce strict 90-second pacing with a timer. Stand-up briefings on the ramp are brief, punchy, and direct.",
                 "Ensure Student B does NOT read their questions until Student A finishes speaking. Focus on active listening."
               ],
-              "context": "It is 06:45 AM at a busy regional hub airport in France (Toulouse-Blagnac). The morning departure push is beginning. A new EASA Safety Information Bulletin has just landed on the desk of the TSEEAC Duty Officer / Airside Safety Inspector.",
+              "context": "It is 06:45 AM at a busy regional airport hub in France. The morning departure push is starting. Aerodrome safety data from the past month shows 4 vehicle speeding alerts on Taxiway Bravo roadway and 1 unreported belt-loader scrape on an A320 cargo door. As TSEEAC Airside Safety Inspector, you are delivering the mandatory morning stand-up briefing to the ramp handling team.",
               "targetSignposts": [
                 "\"Good morning team, I need your full attention for a safety alert...\"",
                 "\"The primary takeaway from this bulletin is...\"",
-                "\"Under no circumstances should you...\"",
-                "\"Our top priority on the ground today is...\"",
-                "\"The critical operational trigger is...\"",
+                "\"Under no circumstances should you exceed walking pace near aircraft...\"",
+                "\"Our top priority on the ramp today is...\"",
+                "\"Under Just Culture, remember that reporting is non-punitive...\"",
                 "\"Please make sure your teams document...\""
               ],
               "scenarios": [
                 {
                   "id": 1,
-                  "title": "Scenario 1: Lithium Battery Containment on Stand",
+                  "title": "Scenario 1: Apron Speeding & GPS Geofencing Enforcement",
                   "speaker": {
                     "role": "TSEEAC Airside Safety Inspector (The Speaker)",
                     "badge": "Speaker",
-                    "mission": "Deliver a crisp 90-second safety briefing to the Ramp Supervisor before the morning baggage shift starts.",
+                    "mission": "Deliver a crisp 90-second briefing to the Baggage Handling Supervisor on vehicle speed enforcement.",
                     "points": [
-                      "Multiple cases of power banks igniting in baggage sortation areas have occurred across Europe.",
-                      "Any smoking or deformed battery must go straight into the yellow containment drum at Stand 12.",
-                      "Standard water extinguishers must never be used on these batteries (violent explosion risk).",
-                      "The control center (ASOC) must be alerted via VHF Channel 2 within 3 minutes of discovery."
+                      "Telematics data recorded 6 baggage tugs exceeding 35 km/h on main apron roadways during yesterday's evening push.",
+                      "Speed limits are strictly 25–30 km/h on roadways and 5–10 km/h (walking pace) once inside aircraft stands.",
+                      "GPS geofencing will activate next Monday, automatically capping vehicle speed inside all stands.",
+                      "Any driver repeatedly caught speeding faces immediate temporary suspension of their Apron Driving Authorisation (ADA)."
                     ],
                     "targetSignposts": [
                       "\"Good morning team, I need your full attention for a safety alert...\"",
                       "\"The primary takeaway from this bulletin is...\"",
-                      "\"Under no circumstances should you...\""
+                      "\"Under no circumstances should you exceed walking pace near aircraft...\""
                     ]
                   },
                   "interlocutor": {
-                    "role": "Ramp Service Supervisor (The Interlocutor)",
+                    "role": "Baggage Handling Supervisor (The Interlocutor)",
                     "badge": "Interlocutor",
-                    "context": "You run a ground handling crew of 15 baggage handlers under tight 30-minute aircraft turnaround targets.",
+                    "context": "You manage 18 baggage tug drivers under severe 25-minute low-cost turnaround targets.",
                     "mission": "Listen carefully and challenge Student A on real operational details with your 2 mandatory questions.",
                     "mandatoryQuestions": [
-                      "\"What is the exact procedure if the designated containment drum at Stand 12 is blocked or already full?\"",
-                      "\"Can we continue loading baggage onto the flight while isolating a suspicious device?\""
+                      "\"If the GPS geofencing slows our tugs to 5 km/h inside the stand, how do we meet the 25-minute turnaround deadline without taking flight delays?\"",
+                      "\"Who will pay for installing electronic speed limiters on our older diesel tractors?\""
                     ]
                   }
                 },
                 {
                   "id": 2,
-                  "title": "Scenario 2: Wildlife Hazard & Migratory Flock Advisory",
+                  "title": "Scenario 2: Unreported GSE Aircraft Scrape & Just Culture Reporting",
                   "speaker": {
                     "role": "TSEEAC Airside Safety Inspector (The Speaker)",
                     "badge": "Speaker",
-                    "mission": "Deliver a crisp 90-second morning briefing to the Airfield Wildlife Operations Team.",
+                    "mission": "Deliver a 90-second briefing to the Aircraft Turnaround Team Lead on reporting accidental contacts.",
                     "points": [
-                      "EASA has issued a regional alert regarding seasonal bird migration (large starling and lapwing flocks crossing the CTR).",
-                      "Pyrotechnic scaring and gas cannons must be activated 15 minutes before peak runway movements.",
-                      "Mowing heights on runway grass strips must be kept below 20 cm to deter insect feeding.",
-                      "Any confirmed bird strike or flock sighting exceeding 50 birds must be logged on the DSAC safety portal within 2 hours."
+                      "Last week, maintenance found a 15-cm dent on an A320 lower cargo door that was never reported by the handling crew.",
+                      "Flying with undetected fuselage or composite skin damage can lead to inflight cabin depressurization.",
+                      "Emphasize our non-punitive Just Culture: accidents and minor bumps reported immediately will not result in disciplinary action.",
+                      "Concealing or failing to report vehicle contact is considered gross misconduct and leads to permanent revocation of airside access."
                     ],
                     "targetSignposts": [
-                      "\"We have received an operational safety update regarding...\"",
-                      "\"Our top priority on the runway margins today is...\"",
-                      "\"Please make sure your teams document...\""
+                      "\"We have received an urgent safety update regarding...\"",
+                      "\"Our top priority on the ramp today is...\"",
+                      "\"Under Just Culture, remember that reporting is strictly non-punitive...\""
                     ]
                   },
                   "interlocutor": {
-                    "role": "Airfield Wildlife Controller (The Interlocutor)",
+                    "role": "Aircraft Turnaround Team Lead (The Interlocutor)",
                     "badge": "Interlocutor",
-                    "context": "You drive the bird hazard response vehicle and patrol runways and taxiways during peak departures.",
-                    "mission": "Listen to the briefing and verify practical coordination with Air Traffic Control (DSNA).",
+                    "context": "You supervise the loading ramp crews who fear losing their jobs or bonuses if an incident is logged.",
+                    "mission": "Listen to the briefing and ensure worker protection under the safety reporting system.",
                     "mandatoryQuestions": [
-                      "\"Do we have standing clearance from the control tower to deploy acoustic scare rounds near Runway 14 Left?\"",
-                      "\"Who is responsible for verifying grass heights along the instrument strip during the morning inspection?\""
+                      "\"My handlers are terrified they will be fired if they report a dent on a brand-new aircraft. Can you guarantee in writing they won't lose their jobs?\"",
+                      "\"If we report a minor scrape, how long does the safety inspection take before the flight is cleared to depart?\""
                     ]
                   }
                 },
                 {
                   "id": 3,
-                  "title": "Scenario 3: Global Reporting Format (GRF) Runway Condition Alerts",
+                  "title": "Scenario 3: Equipment Staging Area (ESA) Congestion & Stand Clearance",
                   "speaker": {
                     "role": "TSEEAC Airside Safety Inspector (The Speaker)",
                     "badge": "Speaker",
-                    "mission": "Deliver a 90-second update to the Airport Winter Operations Lead during freezing rain conditions.",
+                    "mission": "Deliver a 90-second briefing to the Catering & Fuelling Dispatcher on keeping stands clear before arrival.",
                     "points": [
-                      "Rapidly changing temperatures are creating variable friction on Taxiways Bravo and Charlie.",
-                      "RWYCC (Runway Condition Code) assessments must be updated whenever surface coverage shifts by more than 10%.",
-                      "Operators must use plain language runway condition reports (RCR) and transmit them directly to the tower.",
-                      "High-speed turnoffs must be treated with certified solid de-icer before commercial turboprop waves arrive."
+                      "Ground vehicles are repeatedly parking inside the Equipment Clearance Area (ECA) before aircraft have completely stopped at the gate.",
+                      "Marshallers and docking guidance systems (VDGS) are being obstructed by pre-positioned baggage carts and high-loaders.",
+                      "All GSE must remain parked inside painted Equipment Staging Areas (ESA) until engines are shut down and anti-collision beacons are off.",
+                      "Safety officers will issue immediate Level 2 non-compliance notices to any handler parking inside the red stand lines prematurely."
                     ],
                     "targetSignposts": [
-                      "\"Due to deteriorating meteorological conditions, we must adapt our procedure...\"",
+                      "\"Due to persistent stand congestion, we are enforcing strict staging rules...\"",
                       "\"The critical operational trigger is...\"",
-                      "\"Ensure that the tower receives...\""
+                      "\"Please make sure your teams document...\""
                     ]
                   },
                   "interlocutor": {
-                    "role": "Winter Operations Team Lead (The Interlocutor)",
+                    "role": "Catering & Fuelling Dispatcher (The Interlocutor)",
                     "badge": "Interlocutor",
-                    "context": "You manage the snowplow and chemical spreader fleet on the apron and movement area.",
-                    "mission": "Listen to the briefing and ensure vehicle safety and operational feasibility.",
+                    "context": "You coordinate 12 high-lift catering trucks and 6 fuel bowsers serving consecutive departure banks.",
+                    "mission": "Listen to the briefing and challenge Student A on space limitations during peak banks.",
                     "mandatoryQuestions": [
-                      "\"How much notice does the control tower need before we shut down Taxiway Bravo for chemical spraying?\"",
-                      "\"If the RWYCC drops to 2 or below, who holds the ultimate authority to suspend operations?\""
+                      "\"The painted staging boxes are too small for our wide-body catering trucks. Where should our drivers wait during peak departure banks?\"",
+                      "\"What should our driver do if the docking guidance system fails and the marshaller gives conflicting hand signals?\""
                     ]
                   }
+                }
+              ],
+              "peerChecklist": [
+                {
+                  "id": 1,
+                  "label": "Did Student A use strong action verbs without reading word-for-word from notes?"
+                },
+                {
+                  "id": 2,
+                  "label": "Did Student A respect the 90-second time limit without rushing or trailing off?"
+                },
+                {
+                  "id": 3,
+                  "label": "Did Student A use professional signposts (\"Good morning team...\", \"The primary takeaway is...\")?"
+                },
+                {
+                  "id": 4,
+                  "label": "Did Student A give a confident, safety-focused answer to both operational challenge questions?"
                 }
               ]
             },
@@ -12211,39 +12251,39 @@
               "instructions": [
                 {
                   "step": "Step 1: Complete the 4-Step Safety Evaluation",
-                  "detail": "In pairs, analyze the lithium battery and apron hazard chain: Hazard, Operational Risk, Preventative Mitigations, and Agreed Operational Decision."
+                  "detail": "In pairs, analyze the vehicle collision and ramp safety chain: Hazard, Operational Risk, Preventative Mitigations, and Agreed Operational Decision."
                 },
                 {
                   "step": "Step 2: Rules to Reality (60-Second Pair Wrap-Up)",
-                  "detail": "Deliver an unscripted 60-second verbal summary explaining why clear stand-up briefings are critical on the ramp."
+                  "detail": "Deliver an unscripted 60-second verbal summary explaining why clear stand-up briefings and Just Culture are critical on the ramp."
                 }
               ],
               "deliverable": "Completed safety analysis table and 60-second verbal stand-up wrap-up.",
               "teacherNotes": [
                 "Prompt students to link the linguistic clarity of the morning briefing to concrete safety outcomes on the tarmac.",
-                "Emphasize that miscommunications during freezing rain or battery thermal runaway can cause catastrophic ramp closures."
+                "Emphasize that unreported vehicle scrapes can cause catastrophic inflight skin failures."
               ],
               "rows": [
                 {
-                  "question": "1. The Operational Hazard: What is the primary physical hazard identified in EASA SIB No. 2023-08?",
-                  "answer": "Damaged or deformed lithium-ion battery packs and personal mobility devices undergoing thermal runaway during baggage sortation and ramp transit."
+                  "question": "1. The Operational Hazard: What is the primary physical hazard identified in EASA SIB No. 2024-09?",
+                  "answer": "High-energy Ground Support Equipment (GSE) collisions with aircraft and personnel in congested apron areas under tight 30-minute turnaround pressures."
                 },
                 {
-                  "question": "2. The Critical Risk: What catastrophic consequence occurs if ground handlers use standard water extinguishers?",
-                  "answer": "Violent water-reactive venting, toxic gas emission, and explosive chemical projection inside the baggage area or aircraft hold."
+                  "question": "2. The Critical Risk: What catastrophic consequence occurs if GSE vehicle impacts go unreported?",
+                  "answer": "Aircraft depart with undetected structural damage to fuselages, radomes, or engine cowlings, posing severe risks of inflight failure or cabin depressurization."
                 },
                 {
-                  "question": "3. Agreed Mitigations: What immediate physical precautions and notification timelines must be enforced?",
-                  "answer": "Immediate segregation into yellow fire-containment drums or sand containers at Stand 12, zero water application, and 3-minute radio alert to ASOC on VHF Channel 2."
+                  "question": "3. Agreed Mitigations: What physical and operational measures must aerodrome operators enforce?",
+                  "answer": "Tiered speed limits (25–30 km/h on roadways, 5–10 km/h walking pace on stand), speed governors, GPS geofencing, and strict ADA training under ADR.OR.D.017."
                 },
                 {
-                  "question": "4. Final Operational Decision: How does the TSEEAC Safety Officer ensure operational compliance?",
-                  "answer": "Delivers mandatory 90-second stand-up briefings to all ground handling shifts, verifies containment equipment access, and confirms standing DSAC reporting channels."
+                  "question": "4. Final Operational Decision: How does the TSEEAC Safety Officer maintain a healthy reporting culture?",
+                  "answer": "Enforces a non-punitive Just Culture ensuring all accidental contacts are reported immediately without fear of reprisal, backed by regular Ramp Safety Committee reviews."
                 }
               ],
               "rulesToReality": {
                 "title": "Rules to Reality: 60-Second Stand-Up Spoken Wrap-Up",
-                "prompt": "In pairs, deliver an unscripted 60-second operational summary explaining: 1) What was the core message of your SIB? 2) Why do ground crews sometimes cut corners under tight 30-minute turnarounds? 3) How does an active, chunked 90-second verbal briefing prevent a catastrophic incident on the tarmac?"
+                "prompt": "In pairs, deliver an unscripted 60-second operational summary explaining: 1) What is the core message of SIB 2024-09? 2) Why do ground crews sometimes exceed speed limits or conceal minor scrapes under tight turnarounds? 3) How does an active 90-second morning stand-up briefing prevent a serious aircraft accident?"
               }
             }
           },

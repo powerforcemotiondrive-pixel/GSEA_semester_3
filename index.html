@@ -4668,10 +4668,11 @@ function renderLessonContentTabSession2(sessionData, theme) {
               </div>
               <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">${hero.title || 'Safety Alerts & Ramp Briefings'}</h3>
             </div>
-            <button type="button" onclick="window.printLessonContent()" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 shadow-xs transition-all cursor-pointer shrink-0">
-              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
-              <span>Print / Save Lesson PDF</span>
-            </button>
+            <a href="docs/GSEA_S3_M1_S2_Lesson_Worksheet.pdf" target="_blank" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-white bg-blue-700 hover:bg-blue-800 shadow-xs transition-all cursor-pointer shrink-0">
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              <span>Lesson Worksheet (PDF)</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
           </div>
 
           <!-- Hero Banner & Context -->
@@ -4893,7 +4894,7 @@ function renderLessonContentTabSession2(sessionData, theme) {
               <div class="flex items-center justify-between gap-2 border-b border-indigo-200/80 pb-2">
                 <div class="flex items-center gap-2">
                   <svg width="16" height="16" class="text-indigo-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                  <h5 class="text-xs sm:text-sm font-bold text-indigo-950">The Simplification Engine: De-Nominalization &amp; Voice Reversal</h5>
+                  <h5 class="text-xs sm:text-sm font-bold text-indigo-950">Speaking Clinic: Turning Official Regulations into Clear Action Commands</h5>
                 </div>
                 <span class="text-[10px] font-bold text-indigo-700 uppercase tracking-wider">Methodology</span>
               </div>
@@ -4936,11 +4937,11 @@ function renderLessonContentTabSession2(sessionData, theme) {
               <div class="flex items-center justify-between gap-2 border-b border-amber-200/80 pb-2">
                 <div class="flex items-center gap-2">
                   <span class="text-xs font-black px-2 py-0.5 rounded bg-amber-200 text-amber-900">EXECUTIVE CHALLENGE</span>
-                  <h5 class="text-xs sm:text-sm font-bold text-amber-950">The "Executive 3-Bullet Rule" Challenge (EASA SIB No. 2023-08)</h5>
+                  <h5 class="text-xs sm:text-sm font-bold text-amber-950">The "Executive 3-Bullet Rule" Challenge (EASA SIB No. 2024-09)</h5>
                 </div>
                 <span class="text-[10px] font-bold text-amber-700 uppercase tracking-wider">Actionable Directives</span>
               </div>
-              <p class="text-xs text-amber-900 leading-relaxed">Under operational pressure, ground handlers only remember concise commands. Reduce the dense lithium battery bulletin to 3 bullets under strict constraints:</p>
+              <p class="text-xs text-amber-900 leading-relaxed">Under operational pressure, ground handlers only remember concise commands. Reduce the dense ramp collision bulletin to 3 bullets under strict constraints:</p>
               <div class="p-3 bg-white border border-amber-200 rounded-lg space-y-1.5 text-xs text-slate-800 font-medium">
                 ${((rules.threeBulletRule && rules.threeBulletRule.constraints) || []).map(c => `
                   <div class="flex items-center gap-2">
@@ -4968,16 +4969,16 @@ function renderLessonContentTabSession2(sessionData, theme) {
               </div>
             </div>
 
-            <!-- Pronunciation Clinic: Chunking & Intonation -->
+            <!-- Speaking Clinic: Natural Rhythm & Keyword Stress -->
             <div class="p-4 bg-purple-50/70 border border-purple-200 rounded-xl space-y-3">
               <div class="flex items-center justify-between gap-2 border-b border-purple-200/80 pb-2">
                 <div class="flex items-center gap-2">
                   <svg width="18" height="18" class="text-purple-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
-                  <h5 class="text-xs sm:text-sm font-black text-purple-950">${(rules.chunkingClinic && rules.chunkingClinic.title) || 'Pronunciation Clinic: Text Chunking & Intonation'}</h5>
+                  <h5 class="text-xs sm:text-sm font-black text-purple-950">${(rules.chunkingClinic && rules.chunkingClinic.title) || 'Speaking Clinic: Natural Rhythm & Keyword Stress'}</h5>
                 </div>
-                <span class="text-[10px] font-bold text-purple-800 bg-purple-100 px-2 py-0.5 rounded border border-purple-200">Avoid 'Flat Delivery'</span>
+                <span class="text-[10px] font-bold text-purple-800 bg-purple-100 px-2 py-0.5 rounded border border-purple-200">Natural Rhythm &amp; Stress</span>
               </div>
-              <p class="text-xs text-purple-900 leading-relaxed">${(rules.chunkingClinic && rules.chunkingClinic.explanation) || 'Chunking divides long regulatory sentences into cognitive units separated by breath pauses.'}</p>
+              <p class="text-xs text-purple-900 leading-relaxed">${(rules.chunkingClinic && rules.chunkingClinic.explanation) || 'In fast-paced ramp operations, speaking in a flat monotone causes listeners to tune out. Breaking instructions into natural phrase chunks (|) and putting vocal weight on key action words guides the listener\'s attention immediately.'}</p>
 
               <!-- Example Chunk -->
               <div class="p-3 bg-white border border-purple-200 rounded-lg space-y-1.5 text-xs">
@@ -5113,6 +5114,31 @@ function renderLessonContentTabSession2(sessionData, theme) {
                 </div>
               `).join('')}
             </div>
+
+            <!-- Student B Interactive Peer Feedback Checklist -->
+            <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-3">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-amber-200/80 pb-2">
+                <div class="flex items-center gap-2">
+                  <svg width="16" height="16" class="text-amber-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+                  <h5 class="text-xs sm:text-sm font-bold text-amber-950">Student B: Interlocutor &amp; Peer Feedback Checklist</h5>
+                </div>
+                <span class="text-[10px] font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded border border-amber-200">Interactive Peer Evaluation</span>
+              </div>
+              <p class="text-xs text-amber-900 leading-relaxed">During the 90-second briefing, Student B evaluates Student A and checks off these 4 criteria before asking challenge questions and giving feedback:</p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                ${((spoken.peerChecklist) || [
+                  { id: 1, label: "Did Student A use strong action verbs without reading word-for-word from notes?" },
+                  { id: 2, label: "Did Student A respect the 90-second time limit without rushing or trailing off?" },
+                  { id: 3, label: "Did Student A use professional signposts (\"Good morning team...\", \"The primary takeaway is...\")?" },
+                  { id: 4, label: "Did Student A give a confident, safety-focused answer to both operational challenge questions?" }
+                ]).map(item => `
+                  <label class="flex items-start gap-2.5 p-2.5 bg-white border border-amber-200 rounded-lg shadow-2xs cursor-pointer hover:bg-amber-50/50 transition-all select-none">
+                    <input type="checkbox" class="mt-0.5 rounded border-amber-300 text-amber-600 focus:ring-amber-500 h-4 w-4 shrink-0">
+                    <span class="text-[11px] text-slate-800 leading-snug font-medium">${item.label}</span>
+                  </label>
+                `).join('')}
+              </div>
+            </div>
           </div>
 
           <!-- Activity 5: Safety Check & Reality Wrap-Up -->
@@ -5188,7 +5214,7 @@ function renderLessonContentTabSession2(sessionData, theme) {
                   <span>1. Stand-Up Briefing Takeaways &amp; Operational Solutions:</span>
                   <span class="text-[10px] font-normal text-slate-400 no-print">Auto-saves on typing</span>
                 </label>
-                <textarea id="notes-roleplay-s2" oninput="window.saveLessonNote('2', 'roleplay', this.value)" rows="3" placeholder="e.g., Stand 12 designated for yellow containment drum. Confirmed ramp procedure: zero water on lithium cells, 3-minute radio alert to ASOC via VHF Channel 2. Contingency for full drum: mobilize secondary sand container at Stand 14..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('2', 'roleplay') : ''}</textarea>
+                <textarea id="notes-roleplay-s2" oninput="window.saveLessonNote('2', 'roleplay', this.value)" rows="3" placeholder="e.g., Main apron roadway speed capped at 25–30 km/h; stand speed strictly 5–10 km/h walking pace. Geofencing activates Monday on stands 10–24. Target signposts used: 'Our top priority today is...', 'Reporting minor contacts is strictly non-punitive under Just Culture'..." class="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400 leading-relaxed font-sans">${window.getLessonNote ? window.getLessonNote('2', 'roleplay') : ''}</textarea>
                 <div id="print-notes-roleplay-s2" class="notes-print-display">${(window.getLessonNote ? window.getLessonNote('2', 'roleplay') : '') || '[No briefing notes recorded]'}</div>
               </div>
 

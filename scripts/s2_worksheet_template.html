@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Session 2 Lesson Worksheet - Safety Alerts & Ramp Briefings</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 10mm 12mm 12mm 12mm;
+      @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 8pt;
+        color: #64748b;
+        font-weight: 700;
+      }
+      @bottom-left {
+        content: "ENAC • GSEA Semester 3 Technical English (AT • LV125E) • Phil PARRIS";
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 7.5pt;
+        color: #94a3b8;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 9pt;
+      line-height: 1.4;
+      color: #1e293b;
+      background: #ffffff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      page-break-after: always;
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+    }
+
+    /* Running Header */
+    .doc-header {
+      border-bottom: 2px solid #1e3a8a;
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .doc-header .agency {
+      font-size: 7.5pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #1e3a8a;
+    }
+
+    .doc-header .ref {
+      font-size: 7pt;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-weight: 700;
+      color: #64748b;
+      background: #f1f5f9;
+      padding: 1.5px 5px;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Titles */
+    h1 {
+      font-size: 16pt;
+      font-weight: 900;
+      color: #0f172a;
+      letter-spacing: -0.4px;
+      line-height: 1.15;
+      margin-bottom: 3px;
+    }
+
+    h2 {
+      font-size: 11pt;
+      font-weight: 800;
+      color: #1e3a8a;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    h3 {
+      font-size: 9pt;
+      font-weight: 750;
+      color: #0f172a;
+      margin-bottom: 3px;
+    }
+
+    p {
+      margin-bottom: 6px;
+      color: #334155;
+    }
+
+    /* Cards & Containers */
+    .card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 8px 10px;
+      margin-bottom: 8px;
+      page-break-inside: avoid;
+    }
+
+    .card-tint-blue {
+      background: #f8fafc;
+      border-color: #cbd5e1;
+    }
+
+    .card-tint-amber {
+      background: #fffbeb;
+      border-color: #fde68a;
+    }
+
+    .card-tint-purple {
+      background: #faf5ff;
+      border-color: #e9d5ff;
+    }
+
+    .card-tint-emerald {
+      background: #f0fdf4;
+      border-color: #bbf7d0;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 7pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 2px 6px;
+      border-radius: 3px;
+      vertical-align: middle;
+    }
+
+    .badge-primary {
+      background: #1e3a8a;
+      color: #ffffff;
+    }
+
+    .badge-amber {
+      background: #d97706;
+      color: #ffffff;
+    }
+
+    .badge-emerald {
+      background: #059669;
+      color: #ffffff;
+    }
+
+    .badge-purple {
+      background: #7e22ce;
+      color: #ffffff;
+    }
+
+    .badge-rose {
+      background: #e11d48;
+      color: #ffffff;
+    }
+
+    .badge-slate {
+      background: #e2e8f0;
+      color: #334155;
+    }
+
+    /* Tables */
+    .index-table, .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 8pt;
+      margin-top: 4px;
+    }
+
+    .index-table th, .data-table th {
+      background: #f1f5f9;
+      color: #0f172a;
+      font-weight: 800;
+      text-align: left;
+      padding: 5px 7px;
+      border: 1px solid #cbd5e1;
+    }
+
+    .index-table td, .data-table td {
+      padding: 4.5px 7px;
+      border: 1px solid #e2e8f0;
+      vertical-align: top;
+    }
+
+    .index-table tr:nth-child(even), .data-table tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    /* Instruction Box */
+    .instruction-box {
+      background: #f8fafc;
+      border-left: 3px solid #2563eb;
+      padding: 6px 9px;
+      margin-bottom: 8px;
+      border-radius: 0 5px 5px 0;
+      font-size: 8pt;
+    }
+
+    .instruction-box ol, .instruction-box ul {
+      padding-left: 14px;
+      margin-top: 3px;
+    }
+
+    .instruction-box li {
+      margin-bottom: 1.5px;
+      color: #334155;
+    }
+
+    /* Grid Layouts */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .code-box {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 7.5pt;
+      background: #0f172a;
+      color: #f1f5f9;
+      padding: 8px 10px;
+      border-radius: 5px;
+      line-height: 1.35;
+      white-space: pre-wrap;
+      margin-bottom: 8px;
+    }
+
+    .checklist-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 5px;
+      padding: 4px 6px;
+      background: #ffffff;
+      border: 1px solid #fde68a;
+      border-radius: 4px;
+      margin-bottom: 3px;
+      font-size: 8pt;
+    }
+
+    .checkbox {
+      width: 11px;
+      height: 11px;
+      border: 1.5px solid #d97706;
+      border-radius: 2px;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .writing-line {
+      border-bottom: 1px dashed #cbd5e1;
+      height: 20px;
+      margin-bottom: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 1: COVER, SUMMARY, OBJECTIVES & WORKSHEET INDEX               -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">École Nationale de l'Aviation Civile • Département LH/LAN</span>
+      <span class="ref">GSEA S3 • AT LV125E • SESSION 2</span>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #1e3a8a, #0f172a); color: white; padding: 12px 16px; border-radius: 7px; margin-bottom: 10px;">
+      <div style="font-size: 8pt; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px; color: #fde68a; margin-bottom: 3px;">
+        Technical English • Module 1 (EASA Docs, Safety &amp; Audits)
+      </div>
+      <h1 style="color: white; margin-bottom: 2px;">Session 2: Safety Alerts &amp; Ramp Briefings</h1>
+      <p style="color: #cbd5e1; font-size: 8.5pt; line-height: 1.35; margin-bottom: 0;">
+        EASA SIB 2024-09, Action Commands &amp; 90-Second Stand-Up Briefings
+      </p>
+    </div>
+
+    <!-- Lesson Summary -->
+    <div class="card card-tint-blue" style="border-left: 3.5px solid #1e3a8a; padding: 7px 10px; margin-bottom: 8px;">
+      <h3 style="color: #1e3a8a; font-size: 9pt; margin-bottom: 3px;">📌 Lesson Summary &amp; Operational Context</h3>
+      <p style="font-size: 8pt; margin-bottom: 3px; line-height: 1.35;">
+        On European airport aprons, ground support equipment (GSE) operates in close proximity to multimillion-euro aircraft and personnel under tight 25- to 30-minute turnaround pressures. High-energy vehicle impacts with aircraft fuselages, radomes, and engine cowlings have repeatedly gone unreported by fearful ground staff, resulting in aircraft departing with undetected structural damage. In this session, GSEA students examine authentic EASA Safety Information Bulletin SIB No. 2024-09, practice turning dense regulations into direct spoken action commands, master the Executive 3-Bullet Rule, and deliver a punchy 90-second morning ramp briefing with operational challenge questions and peer feedback under Just Culture principles.
+      </p>
+      <div style="font-size: 7.5pt; color: #475569; display: flex; gap: 12px; margin-top: 4px;">
+        <span><strong>Target Level:</strong> CEFR B1–B2</span>
+        <span><strong>Audience:</strong> GSEA Student Training (TSEEAC Airside Safety &amp; Ground Ops)</span>
+        <span><strong>Total Duration:</strong> 120 Minutes</span>
+      </div>
+    </div>
+
+    <!-- Core Spoken Learning Objectives -->
+    <div class="card" style="padding: 7px 10px; margin-bottom: 8px;">
+      <h3 style="color: #0f172a; font-size: 8.5pt; margin-bottom: 4px;">🎯 Core Spoken Learning Objectives (5 Key Competencies)</h3>
+      <table class="data-table" style="font-size: 7.5pt;">
+        <thead>
+          <tr>
+            <th style="width: 28px;">#</th>
+            <th style="width: 140px;">Learning Objective</th>
+            <th>Operational Spoken Competency</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight: 800; color: #1e3a8a;">1</td>
+            <td style="font-weight: 700;">Rules, Best Practice &amp; Permissions</td>
+            <td>Distinguish mandatory implementing rules (shall), standard best practice (should), and discretionary permissions (may) in apron safety operations.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 800; color: #1e3a8a;">2</td>
+            <td style="font-weight: 700;">Regulations to Action Commands</td>
+            <td>Convert heavy official noun phrases (continuous surveillance, prior to entry) into direct, active spoken commands that ground crews remember.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 800; color: #1e3a8a;">3</td>
+            <td style="font-weight: 700;">The Executive 3-Bullet Rule</td>
+            <td>Condense dense 4-page EASA bulletins into exactly 3 actionable commands under 12 words each, starting with strong active verbs (Enforce, Fit, Report).</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 800; color: #1e3a8a;">4</td>
+            <td style="font-weight: 700;">Natural Rhythm &amp; Keyword Stress</td>
+            <td>Use natural speech pauses (|) and stress operative keywords to deliver confident, easy-to-follow technical safety briefings on the noisy ramp.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 800; color: #1e3a8a;">5</td>
+            <td style="font-weight: 700;">90-Second Stand-Up Simulation</td>
+            <td>Deliver a punchy 90-second morning safety briefing to a ground supervisor, answer 2 operational challenge questions, and conduct structured peer review.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Worksheet Index / Table of Contents -->
+    <div class="card card-tint-amber" style="padding: 7px 10px; margin-bottom: 0;">
+      <h3 style="color: #92400e; font-size: 8.5pt; margin-bottom: 3px;">📑 Worksheet Table of Contents &amp; Activity Guide</h3>
+      <table class="index-table" style="font-size: 7.5pt;">
+        <thead>
+          <tr>
+            <th style="width: 60px;">Section</th>
+            <th style="width: 170px;">Activity Title</th>
+            <th>Pedagogical Focus &amp; Student Spoken Deliverable</th>
+            <th style="width: 45px; text-align: center;">Page</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 1</td>
+            <td>Warm-up: Modal Quick-Fire &amp; Ramp Hazards</td>
+            <td>Rapid retrieval sprint, pair discussion on apron danger zones, and entry diagnostic spot-check.</td>
+            <td style="text-align: center; font-weight: 700;">Page 2</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 2</td>
+            <td>Reading EASA SIB No. 2024-09</td>
+            <td>Scanning authentic SIB extract for speed regimes, telematics geofencing, and Just Culture.</td>
+            <td style="text-align: center; font-weight: 700;">Page 3</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 3</td>
+            <td>Language Clinic: Action Commands &amp; Rhythm</td>
+            <td>Turning heavy rules into active commands, Executive 3-Bullet Rule, and natural rhythm drills.</td>
+            <td style="text-align: center; font-weight: 700;">Page 4</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 4</td>
+            <td>Spoken Simulation: 90-Second Stand-Up</td>
+            <td>Delivering morning briefings as Safety Officer across 3 scenarios (Speeding, Scrapes, Congestion).</td>
+            <td style="text-align: center; font-weight: 700;">Page 5</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 4 (cont)</td>
+            <td>Scenario 3 &amp; Student B Peer Checklist</td>
+            <td>Stand clearance scenario, operational challenges, and 4-point peer feedback evaluation.</td>
+            <td style="text-align: center; font-weight: 700;">Page 6</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 5 &amp; 6</td>
+            <td>Safety Check, Wrap-Up &amp; Operational Notes</td>
+            <td>4-step collision risk analysis table, 60-second pair wrap-up, and written CAP decision.</td>
+            <td style="text-align: center; font-weight: 700;">Page 7</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 2: PART 1 — WARM-UP, RETRIEVAL SPRINT & SPOT-CHECK            -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 1: WARM-UP &amp; RETRIEVAL SPRINT</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 1</span> Activity 1: Warm-up: Modal Quick-Fire &amp; Ramp Hazard Scan</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions:</strong>
+      <ol>
+        <li><strong>Step 1: Modal Quick-Fire:</strong> Read each of the 4 operational statements below. Identify whether it represents a mandatory rule (shall), standard best practice (should), or advisory permission (may). Check the anchor verb.</li>
+        <li><strong>Step 2: Ramp Hazard Brainstorming:</strong> In pairs, discuss why the apron is often called "the most dangerous 500 metres of an airport." Identify the top 3 hazards handlers face during morning departure waves.</li>
+        <li><strong>Step 3: Diagnostic Check:</strong> Test your entry knowledge with the 4 spot-check questions comparing mandatory directives, advisory bulletins, and spoken delivery rhythm.</li>
+      </ol>
+    </div>
+
+    <!-- Modal Quick-Fire Sprint -->
+    <div class="card card-tint-blue">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+        <h3 style="color: #1e3a8a; font-size: 8.5pt;">⚡ Modal Quick-Fire: Identifying Authority on the Ramp</h3>
+        <span class="badge badge-slate">Session 1 Retrieval</span>
+      </div>
+      <table class="data-table" style="font-size: 7.5pt;">
+        <thead>
+          <tr>
+            <th style="width: 25px;">#</th>
+            <th>Operational Statement</th>
+            <th style="width: 100px;">Modal Anchor</th>
+            <th style="width: 120px;">Category &amp; Legal Weight</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight: 800;">01</td>
+            <td>&ldquo;Aerodrome operators <strong>shall ensure</strong> that vehicles operating on aprons are equipped with high-visibility markings.&rdquo;</td>
+            <td><code style="color: #e11d48; font-weight: 700;">shall ensure</code></td>
+            <td><span class="badge badge-rose">Mandatory Rule</span><br><span style="font-size: 6.5pt; color: #64748b;">Hard law (ADR.OPS.B.025)</span></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 800;">02</td>
+            <td>&ldquo;Ground handling personnel <strong>should inspect</strong> fuel hydrants every morning before scheduled flight waves.&rdquo;</td>
+            <td><code style="color: #d97706; font-weight: 700;">should inspect</code></td>
+            <td><span class="badge badge-amber">Standard Guideline</span><br><span style="font-size: 6.5pt; color: #64748b;">Industry best practice (AMC)</span></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 800;">03</td>
+            <td>&ldquo;The authority <strong>may grant</strong> temporary derogations during extraordinary winter weather operations.&rdquo;</td>
+            <td><code style="color: #059669; font-weight: 700;">may grant</code></td>
+            <td><span class="badge badge-emerald">Discretion / Permission</span><br><span style="font-size: 6.5pt; color: #64748b;">Competent authority (DSAC)</span></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 800;">04</td>
+            <td>&ldquo;The de-icing pad drainage containment system <strong>shall not discharge</strong> directly into surface waters.&rdquo;</td>
+            <td><code style="color: #e11d48; font-weight: 700;">shall not discharge</code></td>
+            <td><span class="badge badge-rose">Strict Prohibition</span><br><span style="font-size: 6.5pt; color: #64748b;">Zero tolerance requirement</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Pair Discussion Prompts -->
+    <div class="card card-tint-amber" style="margin-bottom: 8px;">
+      <h3 style="color: #92400e; font-size: 8.5pt; margin-bottom: 3px;">💬 Pair Discussion: Real-World Apron Pressure Points</h3>
+      <div class="grid-2" style="margin-bottom: 0;">
+        <div style="background: white; border: 1px solid #fde68a; border-radius: 4px; padding: 5px 7px;">
+          <strong style="color: #92400e; font-size: 7.5pt;">Question 1: "The Most Dangerous 500 Metres"</strong>
+          <p style="font-size: 7.5pt; margin-bottom: 3px; color: #1e293b;">Why is the airport apron often called the most dangerous 500 metres in aviation?</p>
+          <div style="font-size: 7pt; color: #475569; border-top: 1px dashed #fde68a; padding-top: 2px;">
+            <strong>Talking Points:</strong> Tight 25-minute low-cost turnarounds, high ambient jet noise drowning horns, congested vehicle pathways, and multi-million-euro aircraft moving near heavy tugs.
+          </div>
+        </div>
+        <div style="background: white; border: 1px solid #fde68a; border-radius: 4px; padding: 5px 7px;">
+          <strong style="color: #92400e; font-size: 7.5pt;">Question 2: Why 4-Page PDFs Fail on the Ramp</strong>
+          <p style="font-size: 7.5pt; margin-bottom: 3px; color: #1e293b;">When a safety bulletin arrives at 06:30, why is handing workers a 4-page PDF ineffective?</p>
+          <div style="font-size: 7pt; color: #475569; border-top: 1px dashed #fde68a; padding-top: 2px;">
+            <strong>Talking Points:</strong> Ramp crews work outdoors in high-noise zones; they don't sit at desks. Dense legal text hides urgent action steps. A 90-second spoken briefing delivers immediate commands.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Diagnostic Entry Spot-Check -->
+    <div class="card" style="margin-bottom: 0;">
+      <h3 style="color: #0f172a; font-size: 8.5pt; margin-bottom: 3px;">🔍 Diagnostic Entry Spot-Check (Self-Assessment)</h3>
+      <div class="grid-2">
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 4px; padding: 5px 7px;">
+          <strong style="color: #1e3a8a; font-size: 7.5pt;">Q1: Safety Directive (SD) vs. Safety Information Bulletin (SIB)?</strong>
+          <p style="font-size: 7.5pt; color: #334155; margin-bottom: 0;">
+            <strong>Answer:</strong> An SD is mandatory hard law requiring compulsory action by a set deadline. An SIB is an advisory safety alert recommending best practice to mitigate an emerging hazard.
+          </p>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 4px; padding: 5px 7px;">
+          <strong style="color: #1e3a8a; font-size: 7.5pt;">Q2: Why avoid heavy official nouns in spoken briefings?</strong>
+          <p style="font-size: 7.5pt; color: #334155; margin-bottom: 0;">
+            <strong>Answer:</strong> Noun structures (e.g. "execution of continuous surveillance") slow down comprehension. Direct action verbs (e.g. "monitor vehicle speed continuously") deliver instant clarity.
+          </p>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 4px; padding: 5px 7px;">
+          <strong style="color: #1e3a8a; font-size: 7.5pt;">Q3: What happens if a speaker uses a flat monotone rhythm?</strong>
+          <p style="font-size: 7.5pt; color: #334155; margin-bottom: 0;">
+            <strong>Answer:</strong> Listeners lose focus and miss vital safety limits. Using vocal pauses (|) and stressing keywords directs attention straight to critical instructions.
+          </p>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 4px; padding: 5px 7px;">
+          <strong style="color: #1e3a8a; font-size: 7.5pt;">Q4: Why follow the Executive 3-Bullet Rule (max 12 words)?</strong>
+          <p style="font-size: 7.5pt; color: #334155; margin-bottom: 0;">
+            <strong>Answer:</strong> Working memory under operational stress can only retain 3 core commands. Short sentences starting with action verbs ensure instructions are remembered.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 3: PART 2 — AUTHENTIC DOCUMENT EXTRACT (EASA SIB 2024-09)      -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 2: AUTHENTIC EASA DOCUMENT SCAN</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 2</span> Activity 2: Reading Authentic Safety Bulletins (EASA SIB No. 2024-09)</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions:</strong>
+      <ol>
+        <li><strong>Step 1: Scan SIB No. 2024-09:</strong> Read the official adapted bulletin extract below. Identify: 1) The main safety concern, 2) The 3 differentiated speed zones, 3) Telematics and GPS geofencing controls, and 4) Why a non-punitive Just Culture protects flight safety.</li>
+        <li><strong>Step 2: Comprehension Check:</strong> Answer the 4 technical checks below to verify critical data before drafting your spoken briefing.</li>
+      </ol>
+    </div>
+
+    <!-- Authentic Document Extract Box -->
+    <div class="card" style="background: #0f172a; border-color: #334155; color: #f1f5f9; padding: 8px 10px; margin-bottom: 8px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #334155; padding-bottom: 3px; margin-bottom: 5px;">
+        <span style="font-size: 7.5pt; font-family: ui-monospace, monospace; font-weight: 700; color: #fde68a;">
+          EUROPEAN UNION AVIATION SAFETY AGENCY • SIB No. 2024-09 (14 October 2024)
+        </span>
+        <span class="badge badge-amber" style="font-size: 6.5pt;">Official Safety Publication</span>
+      </div>
+      <div class="code-box" style="margin-bottom: 0; background: transparent; padding: 0; font-size: 7.5pt; color: #e2e8f0;">
+Subject: Mitigation of Ramp Collision Risks and Ground Vehicle Speed Management on Aprons
+
+1. Operational Background &amp; Safety Concern:
+Recent occurrence data reported across European aerodromes highlights a persistent trend of ground vehicle collisions and high-energy Ground Support Equipment (GSE) impacts with aircraft during turnaround servicing. High turnaround workload, congested staging areas, and excessive vehicular velocity contribute to incidents where ground equipment strikes aircraft fuselages, engine cowlings, or radomes. In several occurrences, minor structural impacts have gone unreported by personnel due to fear of disciplinary reprisal, resulting in aircraft departing with undetected structural damage.
+
+2. Differentiated Apron Speed Regimes:
+Aerodrome operators should enforce tiered speed limits reflecting localized operational risk:
+• Main Apron Roadways: Speed limits should not exceed 25–30 km/h.
+• Aircraft Stands &amp; Vicinity of Aircraft: Speed must be strictly restricted to walking pace (5–10 km/h) upon entering the designated parking stand.
+• Baggage Make-Up Areas &amp; Enclosed Tunnels: A maximum limit of 10–15 km/h should be enforced.
+Prominent painted surface road markings and vertical signage must clearly delineate these speed boundaries.
+
+3. Telematics &amp; Equipment Control:
+Aerodrome operators and Ground Handling Service Providers (GHSPs) should promote the installation of physical or electronic speed governors on motorized GSE. Furthermore, GPS-enabled geofencing systems that automatically restrict vehicle maximum speed when penetrating aircraft stand boundaries should be progressively deployed across commercial handling fleets.
+
+4. Training, Authorisation &amp; Just Culture:
+All personnel operating vehicles airside must hold a valid Apron Driving Authorisation (ADA) in compliance with Point ADR.OR.D.017. Crucially, aerodromes must foster a non-punitive Just Culture framework wherein ground personnel are empowered and actively required to report any vehicle-to-aircraft contact immediately, without fear of automatic penalties, ensuring timely engineering inspections prior to flight release.
+      </div>
+    </div>
+
+    <!-- Reading Comprehension Checks -->
+    <div class="card card-tint-blue" style="margin-bottom: 0;">
+      <h3 style="color: #1e3a8a; font-size: 8.5pt; margin-bottom: 4px;">✅ Reading Comprehension Checks (Key Operational Takeaways)</h3>
+      <div class="grid-2">
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 5px 7px;">
+          <strong style="color: #1e3a8a; font-size: 7.5pt;">Check 01: The Danger of High-Speed GSE Impacts</strong>
+          <p style="font-size: 7.5pt; margin-bottom: 2px;">What is the primary danger when ground equipment strikes an aircraft at high speed?</p>
+          <p style="font-size: 7pt; color: #059669; font-weight: 600; margin-bottom: 0;">
+            &check; Unreported structural damage to the fuselage, engine cowling, or radome, allowing aircraft to depart with undetected, dangerous damage.
+          </p>
+        </div>
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 5px 7px;">
+          <strong style="color: #1e3a8a; font-size: 7.5pt;">Check 02: Differentiated Speed Regimes</strong>
+          <p style="font-size: 7.5pt; margin-bottom: 2px;">What are the recommended speed limits for main roadways versus aircraft parking stands?</p>
+          <p style="font-size: 7pt; color: #059669; font-weight: 600; margin-bottom: 0;">
+            &check; Maximum 25–30 km/h on main apron roadways, and walking pace (5–10 km/h) inside aircraft parking stands.
+          </p>
+        </div>
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 5px 7px;">
+          <strong style="color: #1e3a8a; font-size: 7.5pt;">Check 03: Telematics &amp; GPS Geofencing</strong>
+          <p style="font-size: 7.5pt; margin-bottom: 2px;">How does GPS geofencing improve ramp vehicle safety compared to speed limit signs alone?</p>
+          <p style="font-size: 7pt; color: #059669; font-weight: 600; margin-bottom: 0;">
+            &check; It automatically caps maximum vehicle speed electronically upon entering the stand, eliminating reliance on human compliance under time pressure.
+          </p>
+        </div>
+        <div style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 5px 7px;">
+          <strong style="color: #1e3a8a; font-size: 7.5pt;">Check 04: The Role of Non-Punitive Just Culture</strong>
+          <p style="font-size: 7.5pt; margin-bottom: 2px;">Why is a non-punitive Just Culture essential for preventing catastrophic ramp incidents?</p>
+          <p style="font-size: 7pt; color: #059669; font-weight: 600; margin-bottom: 0;">
+            &check; Fear of punishment leads to concealment of scratches or dents. Just Culture guarantees immediate reporting so engineers can inspect damage before flight.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 4: PART 3 — LANGUAGE CLINIC: ACTION COMMANDS & RHYTHM         -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 3: LANGUAGE CLINIC &amp; SPOKEN RHYTHM</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 3</span> Activity 3: Speaking Clinic: Regulations to Action Commands</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions:</strong>
+      <ol>
+        <li><strong>Step 1: Uncover the Action Verb:</strong> Convert 3 dense regulatory formulations from SIB 2024-09 into direct spoken commands by finding the hidden action verb and front-loading the agent.</li>
+        <li><strong>Step 2: The Executive 3-Bullet Rule:</strong> Condense SIB 2024-09 into exactly 3 bullets under 12 words each, starting with strong active verbs.</li>
+        <li><strong>Step 3: Natural Rhythm &amp; Keyword Stress:</strong> Practice reading with speech pauses (|) and vocal stress on operative keywords.</li>
+      </ol>
+    </div>
+
+    <!-- Task A Conversion Drills -->
+    <div class="card card-tint-blue" style="margin-bottom: 6px;">
+      <h3 style="color: #1e3a8a; font-size: 8.5pt; margin-bottom: 3px;">🔄 Task A: Turning Heavy Written Regulations into Direct Action Commands</h3>
+      <table class="data-table" style="font-size: 7.5pt;">
+        <thead>
+          <tr>
+            <th style="width: 25px;">#</th>
+            <th>Dense Written Regulatory Phrasing</th>
+            <th>Clear Spoken Action Command (Direct &amp; Active)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight: 800;">01</td>
+            <td>&ldquo;The execution of continuous surveillance of vehicle speeds on apron roadways shall be conducted by aerodrome safety officers.&rdquo;</td>
+            <td><strong style="color: #059669;">&check; &ldquo;Ramp safety officers must monitor vehicle speeds on apron roadways continuously.&rdquo;</strong><br><span style="font-size: 6.5pt; color: #64748b;">Turned 'execution of continuous surveillance' into active verb 'monitor'.</span></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 800;">02</td>
+            <td>&ldquo;Prior to the entry of ground support equipment into the Equipment Clearance Area, complete cessation of aircraft movement and engine shutdown must be verified.&rdquo;</td>
+            <td><strong style="color: #059669;">&check; &ldquo;Drivers must verify the aircraft has stopped and engines are shut down before entering the stand.&rdquo;</strong><br><span style="font-size: 6.5pt; color: #64748b;">Front-loaded the agent 'Drivers' and replaced 'complete cessation' with 'stopped'.</span></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 800;">03</td>
+            <td>&ldquo;Immediate mandatory notification of any vehicle contact with aircraft structure shall be submitted by ground personnel pursuant to Just Culture principles.&rdquo;</td>
+            <td><strong style="color: #059669;">&check; &ldquo;Ground personnel must report any vehicle contact with an aircraft immediately.&rdquo;</strong><br><span style="font-size: 6.5pt; color: #64748b;">Replaced 'mandatory notification shall be submitted' with direct command 'must report'.</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- The Executive 3-Bullet Challenge -->
+    <div class="card card-tint-amber" style="margin-bottom: 6px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+        <h3 style="color: #92400e; font-size: 8.5pt;">🎯 The Executive 3-Bullet Rule Challenge (EASA SIB No. 2024-09)</h3>
+        <span class="badge badge-amber">Max 12 Words Per Bullet</span>
+      </div>
+      <p style="font-size: 7.5pt; color: #78350f; margin-bottom: 3px;">
+        Under turnaround pressure, ground handlers only retain 3 core commands. Condense SIB 2024-09 using strong action verbs:
+      </p>
+      <div class="grid-3" style="margin-bottom: 0;">
+        <div style="background: white; border: 1px solid #fde68a; border-radius: 4px; padding: 5px 7px;">
+          <strong style="color: #92400e; font-size: 7.5pt;">Bullet 1: Speed Limits (10 words)</strong>
+          <p style="font-size: 7.5pt; font-weight: 700; color: #1e293b; margin-bottom: 0;">
+            &ldquo;<strong>Enforce</strong> walking pace speed limits inside all aircraft parking stands.&rdquo;
+          </p>
+        </div>
+        <div style="background: white; border: 1px solid #fde68a; border-radius: 4px; padding: 5px 7px;">
+          <strong style="color: #92400e; font-size: 7.5pt;">Bullet 2: Telematics (11 words)</strong>
+          <p style="font-size: 7.5pt; font-weight: 700; color: #1e293b; margin-bottom: 0;">
+            &ldquo;<strong>Fit</strong> motorized ground equipment with electronic speed limiters and GPS geofencing.&rdquo;
+          </p>
+        </div>
+        <div style="background: white; border: 1px solid #fde68a; border-radius: 4px; padding: 5px 7px;">
+          <strong style="color: #92400e; font-size: 7.5pt;">Bullet 3: Reporting (11 words)</strong>
+          <p style="font-size: 7.5pt; font-weight: 700; color: #1e293b; margin-bottom: 0;">
+            &ldquo;<strong>Report</strong> any vehicle contact with aircraft immediately under Just Culture rules.&rdquo;
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Speaking Clinic: Natural Rhythm & Keyword Stress -->
+    <div class="card card-tint-purple" style="margin-bottom: 0;">
+      <h3 style="color: #6b21a8; font-size: 8.5pt; margin-bottom: 3px;">🎙️ Speaking Clinic: Natural Rhythm &amp; Keyword Stress</h3>
+      <p style="font-size: 7.5pt; color: #581c87; margin-bottom: 4px;">
+        Speaking in a flat monotone on a noisy ramp causes handlers to tune out. Use natural phrase breaks (<code style="font-weight: 700;">|</code>) and vocal weight on operative keywords to direct attention:
+      </p>
+      <div style="background: white; border: 1px solid #e9d5ff; border-radius: 4px; padding: 5px 8px; margin-bottom: 4px;">
+        <div style="font-size: 7pt; font-weight: 800; text-transform: uppercase; color: #7e22ce; margin-bottom: 2px;">Rhythmic Drill Sentence:</div>
+        <div style="font-family: ui-monospace, monospace; font-size: 8pt; color: #1e1b4b; line-height: 1.35;">
+          &ldquo;When <strong>driving</strong> ground support equipment near <strong>parked aircraft</strong> <span style="color: #7e22ce; font-weight: 800;">|</span> drivers must maintain <strong>walking pace</strong> <span style="color: #7e22ce; font-weight: 800;">|</span> and <strong>immediately report</strong> any accidental contact <span style="color: #7e22ce; font-weight: 800;">|</span> to the <strong>safety supervisor</strong>.&rdquo;
+        </div>
+      </div>
+      <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+        <span class="badge" style="background: #f3e8ff; color: #6b21a8; border: 1px solid #d8b4fe;">driving</span>
+        <span class="badge" style="background: #f3e8ff; color: #6b21a8; border: 1px solid #d8b4fe;">parked aircraft</span>
+        <span class="badge" style="background: #f3e8ff; color: #6b21a8; border: 1px solid #d8b4fe;">walking pace</span>
+        <span class="badge" style="background: #f3e8ff; color: #6b21a8; border: 1px solid #d8b4fe;">immediately report</span>
+        <span class="badge" style="background: #f3e8ff; color: #6b21a8; border: 1px solid #d8b4fe;">safety supervisor</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 5: PART 4 — SPOKEN SIMULATION: THE 90-SECOND STAND-UP         -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 4: 90-SECOND STAND-UP SIMULATION</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 4</span> Activity 4: Spoken Simulation: The 90-Second Stand-Up</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions:</strong>
+      <ol>
+        <li><strong>Role Setup:</strong> In pairs: Student A is the TSEEAC Airside Safety Officer (The Speaker); Student B is the Ground Service Supervisor (The Interlocutor). Select Scenario 1 or 2 below. Take 3 minutes to plan delivery using strong action verbs and signposts. Do not read verbatim!</li>
+        <li><strong>Deliver Briefing:</strong> Student A delivers a crisp 90-second spoken briefing using the target signposts.</li>
+        <li><strong>Field Operational Challenges:</strong> Student B asks their 2 mandatory operational challenge questions. Student A responds immediately with safety logic.</li>
+        <li><strong>Swap Roles:</strong> Switch roles for Scenario 2 or Scenario 3 (on Page 6).</li>
+      </ol>
+    </div>
+
+    <!-- Target Signposts Box -->
+    <div class="card card-tint-emerald" style="padding: 5px 8px; margin-bottom: 6px;">
+      <strong style="color: #065f46; font-size: 7.5pt;">🎯 Target Spoken Signposts (Use these transitions during your 90-second briefing):</strong>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin-top: 3px; font-size: 7.5pt; font-style: italic; color: #064e3b;">
+        <div>&bull; &ldquo;Good morning team, I need your full attention for a safety alert...&rdquo;</div>
+        <div>&bull; &ldquo;Our top priority on the ramp today is...&rdquo;</div>
+        <div>&bull; &ldquo;The primary takeaway from this bulletin is...&rdquo;</div>
+        <div>&bull; &ldquo;Under Just Culture, remember that reporting is strictly non-punitive...&rdquo;</div>
+        <div>&bull; &ldquo;Under no circumstances should you exceed walking pace near aircraft...&rdquo;</div>
+        <div>&bull; &ldquo;Please make sure your teams document...&rdquo;</div>
+      </div>
+    </div>
+
+    <!-- Scenario 1 Card -->
+    <div class="card" style="border-left: 3.5px solid #2563eb; padding: 6px 9px; margin-bottom: 6px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+        <h3 style="color: #1e3a8a; font-size: 8.5pt;">Scenario 1: Apron Speeding &amp; GPS Geofencing Enforcement</h3>
+        <span class="badge badge-primary">Speed Regimes</span>
+      </div>
+      <div class="grid-2" style="margin-bottom: 0;">
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 4px; padding: 5px 7px;">
+          <strong style="color: #1e3a8a; font-size: 7.5pt;">Student A (Airside Safety Officer • Speaker):</strong>
+          <ul style="font-size: 7pt; padding-left: 12px; margin-top: 2px; color: #334155;">
+            <li>Telematics recorded 6 baggage tugs exceeding 35 km/h on roadways yesterday.</li>
+            <li>Speed limits: 25–30 km/h on roadways, 5–10 km/h (walking pace) on stand.</li>
+            <li>GPS geofencing activates next Monday, automatically capping stand speed.</li>
+            <li>Repeated speeding triggers immediate suspension of Apron Driving Authorisation (ADA).</li>
+          </ul>
+        </div>
+        <div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 4px; padding: 5px 7px;">
+          <strong style="color: #92400e; font-size: 7.5pt;">Student B (Baggage Handling Lead • Interlocutor):</strong>
+          <div style="font-size: 7pt; color: #475569; margin-bottom: 3px;">Context: Managing 18 tug drivers under tight 25-minute turnarounds.</div>
+          <strong style="font-size: 7pt; color: #78350f;">Mandatory Challenge Questions to Ask:</strong>
+          <div style="font-size: 7pt; font-style: italic; color: #92400e; margin-top: 1px;">
+            1. &ldquo;If geofencing slows tugs to 5 km/h, how do we hit our 25-minute turnaround target?&rdquo;<br>
+            2. &ldquo;Who pays to fit electronic speed governors on our older diesel equipment?&rdquo;
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scenario 2 Card -->
+    <div class="card" style="border-left: 3.5px solid #d97706; padding: 6px 9px; margin-bottom: 0;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+        <h3 style="color: #92400e; font-size: 8.5pt;">Scenario 2: Unreported GSE Aircraft Scrape &amp; Just Culture Reporting</h3>
+        <span class="badge badge-amber">Just Culture</span>
+      </div>
+      <div class="grid-2" style="margin-bottom: 0;">
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 4px; padding: 5px 7px;">
+          <strong style="color: #1e3a8a; font-size: 7.5pt;">Student A (Airside Safety Officer • Speaker):</strong>
+          <ul style="font-size: 7pt; padding-left: 12px; margin-top: 2px; color: #334155;">
+            <li>Last week, maintenance found a 15-cm dent on an A320 cargo door that was never reported.</li>
+            <li>Undetected fuselage or composite damage risks inflight cabin depressurization.</li>
+            <li>Under Just Culture: minor contacts reported immediately carry zero disciplinary action.</li>
+            <li>Concealing or hiding an aircraft strike leads to immediate permanent revocation of airside access.</li>
+          </ul>
+        </div>
+        <div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 4px; padding: 5px 7px;">
+          <strong style="color: #92400e; font-size: 7.5pt;">Student B (Turnaround Team Lead • Interlocutor):</strong>
+          <div style="font-size: 7pt; color: #475569; margin-bottom: 3px;">Context: Supervise loading crews who fear losing bonuses if an incident is logged.</div>
+          <strong style="font-size: 7pt; color: #78350f;">Mandatory Challenge Questions to Ask:</strong>
+          <div style="font-size: 7pt; font-style: italic; color: #92400e; margin-top: 1px;">
+            1. &ldquo;My handlers fear they will be fired if they report a dent. Can you guarantee they won't lose their jobs?&rdquo;<br>
+            2. &ldquo;If we report a minor scrape, how long does the inspection take before flight release?&rdquo;
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 6: PART 4 (CONT) — SCENARIO 3 & STUDENT B PEER CHECKLIST       -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 4 (CONT): SCENARIO 3 &amp; PEER EVALUATION</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 4</span> Scenario 3 &amp; Student B Peer Feedback Checklist</h2>
+
+    <!-- Scenario 3 Card -->
+    <div class="card" style="border-left: 3.5px solid #7e22ce; padding: 7px 10px; margin-bottom: 10px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+        <h3 style="color: #6b21a8; font-size: 8.5pt;">Scenario 3: Equipment Staging Area (ESA) Congestion &amp; Stand Clearance</h3>
+        <span class="badge badge-purple">Stand Safety</span>
+      </div>
+      <div class="grid-2" style="margin-bottom: 0;">
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 4px; padding: 5px 7px;">
+          <strong style="color: #1e3a8a; font-size: 7.5pt;">Student A (Airside Safety Officer • Speaker):</strong>
+          <ul style="font-size: 7pt; padding-left: 12px; margin-top: 2px; color: #334155;">
+            <li>GSE is repeatedly parking inside the Equipment Clearance Area (ECA) before aircraft stop at gate.</li>
+            <li>Docking guidance systems (VDGS) are being blocked by pre-positioned high-loaders and carts.</li>
+            <li>All vehicles must hold inside painted staging boxes (ESA) until engines and beacons are off.</li>
+            <li>Safety officers will issue Level 2 non-compliance notices for pre-positioning inside red lines.</li>
+          </ul>
+        </div>
+        <div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 4px; padding: 5px 7px;">
+          <strong style="color: #92400e; font-size: 7.5pt;">Student B (Catering Dispatcher • Interlocutor):</strong>
+          <div style="font-size: 7pt; color: #475569; margin-bottom: 3px;">Context: Coordinating 12 high-lift trucks serving back-to-back widebody flights.</div>
+          <strong style="font-size: 7pt; color: #78350f;">Mandatory Challenge Questions to Ask:</strong>
+          <div style="font-size: 7pt; font-style: italic; color: #92400e; margin-top: 1px;">
+            1. &ldquo;The staging boxes are too small for widebody catering trucks. Where should drivers wait during peak waves?&rdquo;<br>
+            2. &ldquo;What should our driver do if VDGS fails and the marshaller gives conflicting hand signals?&rdquo;
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Student B Interactive Peer Feedback Checklist -->
+    <div class="card card-tint-amber" style="padding: 8px 10px; margin-bottom: 10px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #fde68a; padding-bottom: 3px; margin-bottom: 6px;">
+        <h3 style="color: #92400e; font-size: 8.5pt;">📋 Student B: Peer Feedback &amp; Evaluation Checklist</h3>
+        <span class="badge badge-amber">Interactive Peer Evaluation</span>
+      </div>
+      <p style="font-size: 7.5pt; color: #78350f; margin-bottom: 6px;">
+        During the 90-second briefing, Student B evaluates Student A and checks off these 4 criteria before asking challenge questions and giving oral feedback:
+      </p>
+
+      <table class="data-table" style="font-size: 7.5pt; background: white;">
+        <thead>
+          <tr>
+            <th style="width: 25px; text-align: center;">Score</th>
+            <th style="width: 140px;">Evaluation Criterion</th>
+            <th>Observed Evidence &amp; Specific Peer Feedback</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: center;"><div class="checkbox" style="margin: 0 auto;"></div></td>
+            <td><strong>Action Verbs (No Script)</strong></td>
+            <td>Did Student A speak directly using strong action verbs (Enforce, Fit, Report) without reading word-for-word from notes?</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;"><div class="checkbox" style="margin: 0 auto;"></div></td>
+            <td><strong>Pacing &amp; 90-Second Limit</strong></td>
+            <td>Did Student A stay within the 90-second briefing limit without trailing off or rushing speech?</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;"><div class="checkbox" style="margin: 0 auto;"></div></td>
+            <td><strong>Professional Signposting</strong></td>
+            <td>Did Student A use authentic transition signposts (&ldquo;Good morning team...&rdquo;, &ldquo;The primary takeaway is...&rdquo;, &ldquo;Under no circumstances...&rdquo;)?</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;"><div class="checkbox" style="margin: 0 auto;"></div></td>
+            <td><strong>Handling Challenges</strong></td>
+            <td>Did Student A answer both operational questions confidently, politely, and with sound safety logic under Just Culture?</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Oral Feedback Coaching Box -->
+    <div class="card card-tint-blue" style="margin-bottom: 0;">
+      <h3 style="color: #1e3a8a; font-size: 8.5pt; margin-bottom: 3px;">💬 Peer Coaching Dialogue (1-Minute Feedback Protocol)</h3>
+      <p style="font-size: 7.5pt; color: #334155; margin-bottom: 4px;">
+        Use these structured sentence frames when giving spoken feedback to your partner before swapping roles:
+      </p>
+      <div style="font-size: 7.5pt; font-style: italic; color: #1e3a8a; line-height: 1.45;">
+        &bull; &ldquo;Your strongest point was your clear use of action verbs when explaining...&rdquo;<br>
+        &bull; &ldquo;Your pacing was [on target at 85 seconds / a bit too fast / over the 90-second limit].&rdquo;<br>
+        &bull; &ldquo;When I asked the challenge question about turnaround delays, you handled it well by emphasizing...&rdquo;<br>
+        &bull; &ldquo;Next time, try to stress your keywords more firmly to make the speed limit stand out.&rdquo;
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 7: PART 5 & 6 — SAFETY EVALUATION, WRAP-UP & NOTES            -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 5 &amp; 6: SAFETY CHECK &amp; OPERATIONAL NOTES</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 5</span> Activity 5: Safety Check: What Could Go Wrong?</h2>
+
+    <!-- 4-Step Safety Analysis Table -->
+    <div class="card card-tint-emerald" style="padding: 7px 10px; margin-bottom: 8px;">
+      <h3 style="color: #065f46; font-size: 8.5pt; margin-bottom: 3px;">🛡️ 4-Step Ramp Collision Safety Evaluation Table</h3>
+      <table class="data-table" style="font-size: 7.5pt; background: white;">
+        <thead>
+          <tr>
+            <th style="width: 140px;">Safety Dimension</th>
+            <th>Agreed Operational Evaluation &amp; Safety Decision (EASA SIB 2024-09)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight: 700; color: #e11d48;">1. The Operational Hazard</td>
+            <td>High-energy Ground Support Equipment (GSE) collisions with aircraft and ramp staff in congested apron areas under severe 25- to 30-minute turnaround pressures.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #d97706;">2. The Critical Risk</td>
+            <td>Aircraft departing with undetected structural damage to fuselages, radomes, or engine cowlings, posing severe risks of inflight failure or cabin depressurization.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #2563eb;">3. Agreed Mitigations</td>
+            <td>Tiered speed regimes (25–30 km/h roadway, 5–10 km/h walking pace on stand), electronic speed governors, GPS geofencing, and strict ADA driver testing under ADR.OR.D.017.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #059669;">4. Operational Decision</td>
+            <td>Mandatory 90-second morning stand-up briefings, daily telematics speed audits, and a non-punitive Just Culture ensuring 100% of vehicle-to-aircraft contacts are reported immediately.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Rules to Reality Wrap-Up Box -->
+    <div class="card card-tint-amber" style="padding: 7px 10px; margin-bottom: 8px;">
+      <h3 style="color: #92400e; font-size: 8.5pt; margin-bottom: 3px;">🎤 Rules to Reality: 60-Second Stand-Up Spoken Wrap-Up</h3>
+      <p style="font-size: 7.5pt; color: #78350f; margin-bottom: 3px;">
+        In pairs, deliver an unscripted 60-second verbal summary explaining:
+      </p>
+      <div style="font-size: 7.5pt; font-style: italic; color: #92400e;">
+        1) What is the core message of SIB 2024-09? &bull; 2) Why do ground crews sometimes exceed speed limits or conceal minor scrapes under tight turnarounds? &bull; 3) How does an active 90-second morning stand-up briefing prevent a serious aircraft accident on the tarmac?
+      </div>
+    </div>
+
+    <!-- Part 6: Operational Notes & Decision Record -->
+    <h2><span class="badge badge-slate" style="background: #1e293b; color: white;">Part 6</span> Activity 6: Operational Notes &amp; Decision Record</h2>
+
+    <div class="card" style="padding: 7px 10px; margin-bottom: 0;">
+      <div style="margin-bottom: 6px;">
+        <strong style="color: #0f172a; font-size: 7.5pt;">1. Stand-Up Briefing Takeaways &amp; Operational Solutions:</strong>
+        <div class="writing-line"></div>
+        <div class="writing-line"></div>
+        <div class="writing-line" style="margin-bottom: 0;"></div>
+      </div>
+      <div>
+        <strong style="color: #0f172a; font-size: 7.5pt;">2. Corrective Action Plan (CAP) &amp; Ramp Safety Decision:</strong>
+        <div class="writing-line"></div>
+        <div class="writing-line"></div>
+        <div class="writing-line" style="margin-bottom: 0;"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
