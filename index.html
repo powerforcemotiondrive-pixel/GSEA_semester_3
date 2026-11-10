@@ -537,7 +537,7 @@
           </div>
           <div class="flex flex-col justify-center min-h-[40px] max-h-[40px] overflow-hidden">
             <h1 id="deck-main-title" class="text-[13.5px] sm:text-[15px] font-semibold text-white tracking-wide uppercase leading-[19px] truncate">GSEA SEMESTER 3 AT (LV125E)</h1>
-            <p id="deck-subtitle" class="text-[11.5px] sm:text-[12px] font-medium leading-[16px] truncate text-slate-300 mt-0.5">Module 1 - Documents &amp; Maps</p>
+            <p id="deck-subtitle" class="text-[11.5px] sm:text-[12px] font-medium leading-[16px] truncate text-slate-300 mt-0.5">Module 1 - Aerodrome Safety &amp; Operations</p>
           </div>
         </div>
 
@@ -1193,16 +1193,16 @@
 
       const images = moduleImages[modNumber] || moduleImages[1];
 
-      const formativeEvaluationNotice = `All our work this module builds progressively toward your Formative Evaluation in Session ${feSessionNum}. Review the vocabulary from the vocabulary section on this page before your evaluation, along with your personal portfolio and course study materials.`;
+      const formativeEvaluationNotice = `Everything we practice in class helps you prepare for your evaluation in Session ${feSessionNum}. Be sure to review the vocabulary list, your portfolio notes, and the study materials.`;
 
       const aasDescriptions = {
         1: {
-          s1: `Welcome to Technical English Module 1 on Documents & Maps! In this opening session, GSEA students learn simple strategies to navigate dense EASA airport rules without getting lost.<br><br><em>Subject overview:</em> The difference between mandatory laws and advisory guides, everyday words for rules (shall, must, should, may), reading an authentic EASA crane safety rule, and the Obstacle Clarification role-play.<br><br>${formativeEvaluationNotice}`,
-          s2: `Welcome to Session 2! We explore airport ramp safety, occurrence reporting, and safety notices.<br><br><em>Subject overview:</em> The difference between mandatory Safety Orders and advisory Bulletins, using polite sentences (passive voice) during inspections, reading an EASA notice on ramp vehicle speed limits, and a 3-student safety meeting role-play.<br><br>${formativeEvaluationNotice}`,
-          s3: `Welcome to Session 3! We discover how airports handle real-world challenges through special temporary permissions (exemptions).<br><br><em>Subject overview:</em> Explaining safety solutions, using connecting words (provided that, in lieu of), reading a temporary runway works request, and giving a confident 3-minute spoken briefing to airline pilots.<br><br>${formativeEvaluationNotice}`,
-          s4: `Welcome to Session 4! We bridge the gap between physical airfield walkarounds and formal audit reporting under Regulation (EU) No 139/2014 Part-ADR.AR.C.055.<br><br><em>Subject overview:</em> Level 1 vs. Level 2 findings, past modal deductions (must have, could have, should have), photo-audit challenge on ramp non-conformities, and delivering a 2-minute oral audit notice to the Airport Director.<br><br>${formativeEvaluationNotice}`,
-          s5: `Welcome to Session 5! We investigate aircraft ground occurrences by piecing together fragmented operational records across multiple sources.<br><br><em>Subject overview:</em> Synthesizing ATC tower transcripts, METAR storm decodes, aircraft maintenance defect logs, and Mandatory Occurrence Reports (MORs). Applying the Swiss Cheese Model to isolate latent organizational flaws from active triggers, using cause-and-effect connectors (stemming from, triggered by, resulting in), and presenting an oral debriefing to the Airport Safety Directorate.<br><br>${formativeEvaluationNotice}`,
-          s6: `Welcome to Session 6! We bridge aerodrome audit findings and incident investigations into formal Corrective Action Plans under EASA Part-ADR.OR.D.005, while dedicating extended workshop time to prepare for Session 7's flipped peer-teaching lessons.<br><br><em>Subject overview:</em> Level 1 vs. Level 2 non-conformities, root-cause remediation, negotiating milestone timelines with civil aviation inspectors, formulaic commitment language (undertake to, subject to concurrence), and a dedicated 30-minute design studio where teams of 3–4 structure their 30-minute interactive peer lessons for Session 7.<br><br>${formativeEvaluationNotice}`
+          s1: `Welcome to Session 1! In this class, we practice reading and explaining official EASA aerodrome rules in clear English.<br><br><em>Subject overview:</em> Understanding mandatory vs advisory language in EASA documents (shall, must, should, may), discussing airport crane safety, and practicing the Obstacle Clarification role-play.<br><br>${formativeEvaluationNotice}`,
+          s2: `Welcome to Session 2! Today we examine an official EASA Safety Information Bulletin on ramp collision risks and ground vehicle speed limits.<br><br><em>Subject overview:</em> Using polite, professional English during ramp inspections, reading EASA safety notices, and taking part in a 3-person airport safety meeting.<br><br>${formativeEvaluationNotice}`,
+          s3: `Welcome to Session 3! In this lesson, we explore an authentic EASA runway safety case and temporary exemption request.<br><br><em>Subject overview:</em> Using linking words (provided that, in lieu of) to explain EASA safety solutions, reviewing a runway works document, and giving a short spoken safety briefing to airline pilots.<br><br>${formativeEvaluationNotice}`,
+          s4: `Welcome to Session 4! Today we work with an authentic EASA airfield audit report to practice reporting ground safety non-compliances.<br><br><em>Subject overview:</em> Using EASA audit criteria to separate immediate hazards from minor issues, making past deductions (must have, could have), and giving a 2-minute spoken briefing to the Airport Director.<br><br>${formativeEvaluationNotice}`,
+          s5: `Welcome to Session 5! In this class, we act as safety investigators examining an authentic EASA and BEA technical incident dossier.<br><br><em>Subject overview:</em> Cross-referencing EASA occurrence records, air traffic radio transcripts, and pilot statements to find root causes, and delivering a 2-minute team investigation debrief.<br><br>${formativeEvaluationNotice}`,
+          s6: `Welcome to Session 6! Today we work with official EASA Corrective Action Plan (CAP) documentation and dedicate 30 minutes to prepare your Session 7 peer lessons.<br><br><em>Subject overview:</em> Using formal commitment language (we undertake to, subject to approval) to agree on EASA CAP deadlines with inspectors, and working in teams of 3 or 4 to structure your 30-minute lesson for Session 7.<br><br>${formativeEvaluationNotice}`
         },
         2: {
           s1: `Welcome to Module 2 on MTF! In this opening session, we explore the four fundamental forces of flight, aircraft control axes, and wing airflow dynamics while developing spoken fluency and cause-and-effect structures.<br><br><em>Subject overview:</em> Lift, weight, thrust, and drag in equilibrium; pitch, roll, and yaw control surfaces; angle of attack, boundary layer separation, and stall recovery procedures.<br><br>${formativeEvaluationNotice}`,
@@ -1962,19 +1962,19 @@
           divider.className = "pt-1 pb-1 px-1 flex items-center gap-1.5 text-[9px] font-mono font-bold uppercase tracking-widest text-slate-400 select-none";
           divider.innerHTML = `
             <span class="h-px bg-slate-200/90 flex-1"></span>
-            <span>Documents (S1–S3)</span>
+            <span>Regulations &amp; Safety Cases (S1–S3)</span>
             <span class="h-px bg-slate-200/90 flex-1"></span>
           `;
           menuEl.appendChild(divider);
         }
 
-        // Module 1 Section Split: Part 2 - Maps, Charts & FE (Sessions 4-7)
+        // Module 1 Section Split: Part 2 - Airfield Safety, Audits & FE (Sessions 4-7)
         if (isMod1 && idx === 3) {
           const divider = document.createElement('div');
           divider.className = "pt-2.5 pb-1 px-1 flex items-center gap-1.5 text-[9px] font-mono font-bold uppercase tracking-widest text-slate-400 select-none";
           divider.innerHTML = `
             <span class="h-px bg-slate-200/90 flex-1"></span>
-            <span>Maps, Charts &amp; FE (S4–S7)</span>
+            <span>Airfield Safety, Audits &amp; FE (S4–S7)</span>
             <span class="h-px bg-slate-200/90 flex-1"></span>
           `;
           menuEl.appendChild(divider);
@@ -2113,7 +2113,7 @@
       });
     }
 
-    const RESOURCE_GUIDE_TEXT = "In the resources section you will find class plans, class content, formative evaluation details, vocabulary lists and other revision materials to help you with your formative evaluation preparation.";
+    const RESOURCE_GUIDE_TEXT = "Click the tabs below for the lesson plan, classroom activities, vocabulary, and study materials.";
 
     function formatCardDescription(rawDesc, page, cardIdx) {
       if (!rawDesc) return { leadHtml: '', calloutsHtml: '' };
@@ -13121,7 +13121,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
               Weekly Course Calendar, Room Allocations &amp; Evaluation Milestones
             </h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-              Complete ${calSched.totalWeeks}-week progression across <strong>Module 1 (Documents &amp; Maps — 7 Sessions)</strong> and <strong>Module 2 (MTF — 8 Sessions)</strong>. Each module concludes with a Formative Evaluation (FE) tutorial week in 30-minute rotating pair/trio slots.
+              Complete ${calSched.totalWeeks}-week progression across <strong>Module 1 (Aerodrome Regulations &amp; Safety Cases — 7 Sessions)</strong> and <strong>Module 2 (MTF — 8 Sessions)</strong>. Each module concludes with a Formative Evaluation (FE) tutorial week in 30-minute rotating pair/trio slots.
             </p>
           </div>
 

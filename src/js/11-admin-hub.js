@@ -838,7 +838,7 @@
               Weekly Course Calendar, Room Allocations &amp; Evaluation Milestones
             </h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-              Complete ${calSched.totalWeeks}-week progression across <strong>Module 1 (Documents &amp; Maps — 7 Sessions)</strong> and <strong>Module 2 (MTF — 8 Sessions)</strong>. Each module concludes with a Formative Evaluation (FE) tutorial week in 30-minute rotating pair/trio slots.
+              Complete ${calSched.totalWeeks}-week progression across <strong>Module 1 (Aerodrome Regulations &amp; Safety Cases — 7 Sessions)</strong> and <strong>Module 2 (MTF — 8 Sessions)</strong>. Each module concludes with a Formative Evaluation (FE) tutorial week in 30-minute rotating pair/trio slots.
             </p>
           </div>
 
