@@ -85,7 +85,7 @@
       for (let s = 1; s <= teachingSessionsCount; s++) {
         let tagLabel = `Module ${modNumber} • Session ${s}`;
         if (modNumber === 1) {
-          tagLabel = s <= 3 ? `Module 1 • Documents • Session ${s}` : `Module 1 • Operations & Safety • Session ${s}`;
+          tagLabel = s <= 3 ? `Module 1 • EASA Docs • Session ${s}` : `Module 1 • Safety, Audits & FE • Session ${s}`;
         }
         teachingPages.push({
           tag: tagLabel,
@@ -171,8 +171,8 @@
           {
             id: 1,
             name: "Module 1",
-            subtitle: "EASA Regulations & Safety Cases",
-            supertitle: "GSEA AT SEMESTER 3 - MODULE 1: DOCUMENTS & MAPS",
+            subtitle: "EASA Docs, Safety & Audits",
+            supertitle: "GSEA AT SEMESTER 3 - MODULE 1: EASA DOCS, SAFETY & AUDITS",
             ...AAS_MODULE_THEMES[1],
             pages: createModulePages(1, 'aas')
           },

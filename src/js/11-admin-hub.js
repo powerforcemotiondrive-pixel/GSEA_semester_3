@@ -91,7 +91,7 @@
     "modules": [
       {
         "num": 1,
-        "title": "Module 1: EASA Regulations, Aerodrome Audits & Safety Cases (7 Sessions)",
+        "title": "Module 1: EASA Docs, Safety & Audits (7 Sessions)",
         "weeks": "W37 – W43",
         "headerBg": "#1e293b",
         "sessions": [
@@ -838,7 +838,7 @@
               Weekly Course Calendar, Room Allocations &amp; Evaluation Milestones
             </h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-              Complete ${calSched.totalWeeks}-week progression across <strong>Module 1 (Aerodrome Regulations &amp; Safety Cases — 7 Sessions)</strong> and <strong>Module 2 (MTF — 8 Sessions)</strong>. Each module concludes with a Formative Evaluation (FE) tutorial week in 30-minute rotating pair/trio slots.
+              Complete ${calSched.totalWeeks}-week progression across <strong>Module 1 (EASA Docs, Safety &amp; Audits — 7 Sessions)</strong> and <strong>Module 2 (MTF — 8 Sessions)</strong>. Each module concludes with a Formative Evaluation (FE) tutorial week in 30-minute rotating pair/trio slots.
             </p>
           </div>
 

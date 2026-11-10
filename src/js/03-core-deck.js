@@ -625,25 +625,25 @@
       const isMod1 = (currentModuleIndex === 0 || (mod && mod.id === 1));
 
       mod.pages.forEach((page, idx) => {
-        // Module 1 Section Split: Part 1 - Documents (Sessions 1-3)
+        // Module 1 Section Split: Part 1 - EASA Docs (Sessions 1-3)
         if (isMod1 && idx === 0) {
           const divider = document.createElement('div');
           divider.className = "pt-1 pb-1 px-1 flex items-center gap-1.5 text-[9px] font-mono font-bold uppercase tracking-widest text-slate-400 select-none";
           divider.innerHTML = `
             <span class="h-px bg-slate-200/90 flex-1"></span>
-            <span>Regulations &amp; Safety Cases (S1–S3)</span>
+            <span>EASA Docs (S1 - S3)</span>
             <span class="h-px bg-slate-200/90 flex-1"></span>
           `;
           menuEl.appendChild(divider);
         }
 
-        // Module 1 Section Split: Part 2 - Airfield Safety, Audits & FE (Sessions 4-7)
+        // Module 1 Section Split: Part 2 - Safety, Audits & FE (Sessions 4-7)
         if (isMod1 && idx === 3) {
           const divider = document.createElement('div');
           divider.className = "pt-2.5 pb-1 px-1 flex items-center gap-1.5 text-[9px] font-mono font-bold uppercase tracking-widest text-slate-400 select-none";
           divider.innerHTML = `
             <span class="h-px bg-slate-200/90 flex-1"></span>
-            <span>Airfield Safety, Audits &amp; FE (S4–S7)</span>
+            <span>Safety, Audits &amp; FE (S4 - S7)</span>
             <span class="h-px bg-slate-200/90 flex-1"></span>
           `;
           menuEl.appendChild(divider);

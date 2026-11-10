@@ -537,7 +537,7 @@
           </div>
           <div class="flex flex-col justify-center min-h-[40px] max-h-[40px] overflow-hidden">
             <h1 id="deck-main-title" class="text-[13.5px] sm:text-[15px] font-semibold text-white tracking-wide uppercase leading-[19px] truncate">GSEA SEMESTER 3 AT (LV125E)</h1>
-            <p id="deck-subtitle" class="text-[11.5px] sm:text-[12px] font-medium leading-[16px] truncate text-slate-300 mt-0.5">Module 1 - Aerodrome Safety &amp; Operations</p>
+            <p id="deck-subtitle" class="text-[11.5px] sm:text-[12px] font-medium leading-[16px] truncate text-slate-300 mt-0.5">Module 1 - EASA Docs, Safety &amp; Audits</p>
           </div>
         </div>
 
@@ -1222,7 +1222,7 @@
       for (let s = 1; s <= teachingSessionsCount; s++) {
         let tagLabel = `Module ${modNumber} • Session ${s}`;
         if (modNumber === 1) {
-          tagLabel = s <= 3 ? `Module 1 • Documents • Session ${s}` : `Module 1 • Operations & Safety • Session ${s}`;
+          tagLabel = s <= 3 ? `Module 1 • EASA Docs • Session ${s}` : `Module 1 • Safety, Audits & FE • Session ${s}`;
         }
         teachingPages.push({
           tag: tagLabel,
@@ -1308,8 +1308,8 @@
           {
             id: 1,
             name: "Module 1",
-            subtitle: "EASA Regulations & Safety Cases",
-            supertitle: "GSEA AT SEMESTER 3 - MODULE 1: DOCUMENTS & MAPS",
+            subtitle: "EASA Docs, Safety & Audits",
+            supertitle: "GSEA AT SEMESTER 3 - MODULE 1: EASA DOCS, SAFETY & AUDITS",
             ...AAS_MODULE_THEMES[1],
             pages: createModulePages(1, 'aas')
           },
@@ -1956,25 +1956,25 @@
       const isMod1 = (currentModuleIndex === 0 || (mod && mod.id === 1));
 
       mod.pages.forEach((page, idx) => {
-        // Module 1 Section Split: Part 1 - Documents (Sessions 1-3)
+        // Module 1 Section Split: Part 1 - EASA Docs (Sessions 1-3)
         if (isMod1 && idx === 0) {
           const divider = document.createElement('div');
           divider.className = "pt-1 pb-1 px-1 flex items-center gap-1.5 text-[9px] font-mono font-bold uppercase tracking-widest text-slate-400 select-none";
           divider.innerHTML = `
             <span class="h-px bg-slate-200/90 flex-1"></span>
-            <span>Regulations &amp; Safety Cases (S1–S3)</span>
+            <span>EASA Docs (S1 - S3)</span>
             <span class="h-px bg-slate-200/90 flex-1"></span>
           `;
           menuEl.appendChild(divider);
         }
 
-        // Module 1 Section Split: Part 2 - Airfield Safety, Audits & FE (Sessions 4-7)
+        // Module 1 Section Split: Part 2 - Safety, Audits & FE (Sessions 4-7)
         if (isMod1 && idx === 3) {
           const divider = document.createElement('div');
           divider.className = "pt-2.5 pb-1 px-1 flex items-center gap-1.5 text-[9px] font-mono font-bold uppercase tracking-widest text-slate-400 select-none";
           divider.innerHTML = `
             <span class="h-px bg-slate-200/90 flex-1"></span>
-            <span>Airfield Safety, Audits &amp; FE (S4–S7)</span>
+            <span>Safety, Audits &amp; FE (S4 - S7)</span>
             <span class="h-px bg-slate-200/90 flex-1"></span>
           `;
           menuEl.appendChild(divider);
@@ -12374,7 +12374,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
     "modules": [
       {
         "num": 1,
-        "title": "Module 1: EASA Regulations, Aerodrome Audits & Safety Cases (7 Sessions)",
+        "title": "Module 1: EASA Docs, Safety & Audits (7 Sessions)",
         "weeks": "W37 – W43",
         "headerBg": "#1e293b",
         "sessions": [
@@ -13121,7 +13121,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
               Weekly Course Calendar, Room Allocations &amp; Evaluation Milestones
             </h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-              Complete ${calSched.totalWeeks}-week progression across <strong>Module 1 (Aerodrome Regulations &amp; Safety Cases — 7 Sessions)</strong> and <strong>Module 2 (MTF — 8 Sessions)</strong>. Each module concludes with a Formative Evaluation (FE) tutorial week in 30-minute rotating pair/trio slots.
+              Complete ${calSched.totalWeeks}-week progression across <strong>Module 1 (EASA Docs, Safety &amp; Audits — 7 Sessions)</strong> and <strong>Module 2 (MTF — 8 Sessions)</strong>. Each module concludes with a Formative Evaluation (FE) tutorial week in 30-minute rotating pair/trio slots.
             </p>
           </div>
 

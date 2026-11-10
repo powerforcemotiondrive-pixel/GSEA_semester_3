@@ -13,8 +13,8 @@
   return {
   "1": {
     "id": 1,
-    "name": "Aerodrome Regulations, Safety & Operations",
-    "title": "Aerodrome Regulations & Safety Module 1",
+    "name": "EASA Docs, Safety & Audits",
+    "title": "Module 1 - EASA Docs, Safety & Audits",
     "ddrs": {
       "title": "Développement Durable & Responsabilité Sociétale : Tags et Définitions Officielles",
       "summary": "Le Référentiel National DD&RS de l'Enseignement Supérieur et de la Recherche (Label DD&RS) structure les engagements écologiques, sociétaux et éthiques des établissements et des grands projets de transport selon 5 axes stratégiques et leurs domaines transversaux d'application.",
