@@ -4715,7 +4715,7 @@
             "title": "BEA/EASA Technical Incident Dossier: Multi-Source Occurrence Dossier 2024-089",
             "subtitle": "Chronological Cross-Analysis • ATC Logs, METAR Windshear, MEL Defect & MOR Statements",
             "buttonText": "Open Incident Dossier (PDF)",
-              "filename": "GSEA_S3_M1_S5_Incident_Investigation_Dossier.pdf",
+            "filename": "GSEA_S3_M1_S5_Incident_Investigation_Dossier.pdf",
             "path": "docs/GSEA_S3_M1_S5_Incident_Investigation_Dossier.pdf",
             "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
           }
@@ -5237,787 +5237,647 @@
       },
       "6": {
         "session": 6,
+        "overview": {
+          "intro": "Welcome to Session 6 of Technical English on The Corrective Action Plan (CAP) & Lesson 7 Prep! This session serves as the capstone of Module 1, bridging the aerodrome audit findings from Session 4 and the multi-source incident investigation from Session 5 into formal regulatory Corrective Action Plans under Regulation (EU) No 139/2014 Part-ADR.OR.D.005. Furthermore, this session provides dedicated workshop time for student teams of 3 to 4 to design and structure their 30-minute interactive flipped lesson for Session 7.",
+          "whyItMatters": "Closing an audit finding or incident investigation is not merely a box-ticking administrative exercise—it is the legal mechanism that prevents catastrophic repeat occurrences on the airfield. When civil aviation authorities identify safety deficiencies such as runway friction loss or blast fence corrosion, aerodrome operators must formally demonstrate how they will eliminate the underlying root cause. Moreover, developing the confidence to facilitate technical peer discussions prepares future ENAC aviation professionals for high-stakes safety briefings and leadership roles.",
+          "keyTerms": [
+            {
+              "term": "Corrective Action Plan (CAP)",
+              "ipa": "/kəˈrɛktɪv ˈækʃən plæn/",
+              "pos": "noun phrase",
+              "def": "A formal, documented schedule of measures formulated by an aerodrome operator to remediate non-compliances identified during safety audits or incident investigations under EASA Part-ADR.OR.D.005."
+            },
+            {
+              "term": "Level 1 Finding",
+              "ipa": "/ˈlɛvəl wʌn ˈfaɪndɪŋ/",
+              "pos": "noun phrase",
+              "def": "Any significant non-compliance with aerodrome safety requirements which lowers safety or seriously hazards aircraft operations, requiring immediate provisional mitigation within 24 to 48 hours."
+            },
+            {
+              "term": "Level 2 Finding",
+              "ipa": "/ˈlɛvəl tuː ˈfaɪndɪŋ/",
+              "pos": "noun phrase",
+              "def": "Any non-compliance which could lower safety if uncorrected, requiring the aerodrome operator to submit a formal CAP within 30 days and achieve full closure within an agreed timeframe."
+            },
+            {
+              "term": "Root-Cause Remediation",
+              "ipa": "/ruːt kɔːz rɪˌmiːdiˈeɪʃən/",
+              "pos": "noun phrase",
+              "def": "Corrective interventions aimed at eliminating the underlying systemic or organizational defects that generated an operational hazard, rather than merely addressing surface symptoms."
+            },
+            {
+              "term": "Interim Risk Mitigation",
+              "ipa": "/ˈɪntərɪm rɪsk ˌmɪtɪˈɡeɪʃən/",
+              "pos": "noun phrase",
+              "def": "Provisional operational safeguards (such as NOTAM notices, speed restrictions, or weight limitations) enforced to contain safety risks while permanent engineering works are executed."
+            },
+            {
+              "term": "Verification Milestone",
+              "ipa": "/ˌvɛrɪfɪˈkeɪʃən ˈmaɪlstoʊn/",
+              "pos": "noun phrase",
+              "def": "A scheduled, auditable benchmark within a CAP against which the competent authority measures progress toward definitive compliance."
+            },
+            {
+              "term": "Authority Concurrence",
+              "ipa": "/ɔːˈθɒrɪti kənˈkʌrəns/",
+              "pos": "noun phrase",
+              "def": "Formal written acceptance or agreement issued by a national civil aviation authority (e.g., DGAC or EASA) confirming that an aerodrome operator's proposed CAP meets regulatory standards."
+            },
+            {
+              "term": "Hydro-Blasting",
+              "ipa": "/ˈhaɪdroʊ ˈblæstɪŋ/",
+              "pos": "noun",
+              "def": "An industrial runway maintenance technique using ultra-high-pressure water jets (up to 2,500 bar) to remove vulcanized tire rubber deposits and restore asphalt macro-texture without chemical solvents."
+            },
+            {
+              "term": "Jet Blast Deflector",
+              "ipa": "/dʒɛt blɑːst dɪˈflɛktər/",
+              "pos": "noun phrase",
+              "def": "A heavy-duty curved aerodrome barrier engineered to redirect high-velocity aircraft engine exhaust upward and away from adjacent taxiways, service roads, and ground personnel."
+            },
+            {
+              "term": "Flipped Peer-Teaching",
+              "ipa": "/flɪpt pɪər ˈtiːtʃɪŋ/",
+              "pos": "noun phrase",
+              "def": "A collaborative instructional model where students assume the role of technical instructors, designing and delivering interactive learning activities to their peers to build communicative mastery."
+            }
+          ],
+          "speakingTask": {
+            "title": "Authentic EASA Simulation • CAP Negotiation & Session 7 Flipped Lesson Design Studio",
+            "instructions": "Working in teams of 3 or 4, inspect the two official audit finding notices (Runway Friction Decay & Perimeter Blast Fence Detachment) and the three photographic remediation exhibits. Practice negotiating realistic CAP milestones with your partner acting as the Civil Aviation Inspector. Then, transition into the Flipped Lesson Design Studio to plan, structure, and assign teaching roles for your team's 30-minute interactive lesson in Session 7.",
+            "document": {
+              "title": "EASA Part-ADR.OR.D.005 Corrective Action Plan & Session 7 Peer-Teaching Guide",
+              "subtitle": "Statutory Finding Remediation Framework & Flipped Classroom Assessment Specification",
+              "buttonText": "Open EASA Extract (PDF)",
+              "filename": "GSEA_S3_M1_S6_EASA_Corrective_Action_Plan.pdf",
+              "path": "docs/GSEA_S3_M1_S6_EASA_Corrective_Action_Plan.pdf",
+              "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
+            },
+            "teamRoles": {
+              "group1": "Teaching Pod 1 (Runway Surface Condition & Friction Decays): Draft an interactive 30-minute lesson teaching classmates how to interpret CFME friction traces, identify rubber contamination, and calculate landing distances.",
+              "group2": "Teaching Pod 2 (Apron Vehicle Safety & Pushback Coordination): Build a 30-minute workshop on apron telematics speed control, towbar shear mechanics, and interphone communication protocols.",
+              "group3": "Teaching Pod 3 (Wildlife Hazard Management & CS-ADR-DSN): Design an engaging 30-minute seminar covering pyrotechnic laser dispersal, acoustic deterrents, and aerodrome bird strike mitigation.",
+              "group4": "Teaching Pod 4 (Airfield Audit Non-Conformities & CAP Negotiation): Create a dynamic 30-minute roleplay challenge where classmates simulate aerodrome operators defending CAP milestones to state inspectors."
+            },
+            "usefulPhrases": [
+              "We undertake to implement the interim risk mitigation by...",
+              "In the interim, the aerodrome operator shall enforce a mandatory NOTAM stating...",
+              "Subject to authority concurrence, our definitive engineering works will conclude on...",
+              "For our Session 7 flipped lesson, our team will engage classmates through an interactive..."
+            ]
+          },
+          "document": {
+            "title": "EASA Part-ADR.OR.D.005 Corrective Action Plan & Session 7 Peer-Teaching Guide",
+            "subtitle": "Statutory Finding Remediation Framework & Flipped Classroom Assessment Specification",
+            "buttonText": "Open EASA Extract (PDF)",
+            "filename": "GSEA_S3_M1_S6_EASA_Corrective_Action_Plan.pdf",
+            "path": "docs/GSEA_S3_M1_S6_EASA_Corrective_Action_Plan.pdf",
+            "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
+          }
+        },
         "objectives": {
-          "title": "Session 6 Objectives - Approach Plates: Final Corridors & Go-Around Paths",
-          "summary": "By the end of this session, GSEA students will be able to read and explain visual approach plates (IAC / ILS) in plain English, explain vertical descent profiles aloud, play the fast-paced 'Go / No-Go Lightning Challenge', role-play an emergency go-around command, and complete a collaborative Safety Check on unstabilized approach criteria.",
+          "title": "Session 6 Objectives - The Corrective Action Plan (CAP) & Lesson 7 Prep",
+          "summary": "By the end of this session, GSEA students will be able to classify aerodrome audit findings into Level 1 and Level 2 under EASA Part-ADR.OR.D.005, formulate SMART corrective milestones with interim risk mitigations, negotiate binding compliance deadlines with civil aviation inspectors using formulaic commitment language, and collaboratively plan their 30-minute flipped peer-teaching lesson for Session 7.",
           "items": [
             {
               "num": 1,
-              "title": "Read the Side-View Profile Aloud (Profile Briefing Skill)",
-              "description": "Learn and use standard spoken patterns to explain vertical descent profiles, FAF Maltese cross, glide path angles, and decision heights.",
+              "title": "Audit Finding Classification & Root-Cause Remediation (Finding Taxonomy)",
+              "description": "Distinguish Level 1 findings (immediate airside safety hazard, 24-48h suspension/NOTAM) from Level 2 findings (procedural/systemic non-compliance, 30-90 day CAP).",
               "part": "Part 1"
             },
             {
               "num": 2,
-              "title": "Read a Visual Approach Plate (Visual Chart Scanning)",
-              "description": "Scan the visual ILS Runway 14L approach plate to identify plan view fixes (CAPDENAC, BLAGY), FAF at 5.2 DME, 3.0° glide slope, and decision altitude (692 ft).",
+              "title": "EASA Part-ADR.OR.D.005 CAP Drafting & Authority Criteria (Statutory Compliance)",
+              "description": "Formulate SMART corrective actions, establish interim operational mitigations (NOTAMs, aircraft weight limits), and identify authority verification criteria.",
               "part": "Part 2"
             },
             {
               "num": 3,
-              "title": "Vertical Paths & Cockpit Callouts (Language Focus)",
-              "description": "Master vertical flight terminology: on the glide slope, slightly high/low, at the final approach fix, upon reaching minimums, and positive climb, gear up.",
+              "title": "Aerodrome Operator vs Authority Inspector Negotiation (Spoken Simulation)",
+              "description": "Roleplay high-stakes compliance meetings using formulaic spoken commitment phrases (undertake to, subject to concurrence, conditional upon verification).",
               "part": "Part 3"
             },
             {
               "num": 4,
-              "title": "Communicative Game: ⚡ Go / No-Go Lightning Challenge",
-              "description": "Fast-paced rapid-fire round! Take turns reading approach dilemma cards, call out 'CONTINUE!' or 'GO-AROUND!' in 3 seconds, and defend your choice.",
+              "title": "Extended Peer-Teaching Workshop & Lesson 7 Design Studio (Flipped Lesson Prep)",
+              "description": "Work in teams of 3 to 4 with dedicated preparation time to structure an engaging 30-minute flipped lesson for Session 7 across authentic Module 1 aerodrome domains.",
               "part": "Part 4"
-            },
-            {
-              "num": 5,
-              "title": "Speaking Role-Play: Low Visibility Approach & Emergency Go-Around",
-              "description": "Role-play a tense final approach where a vehicle incursion on the runway forces the controller to command an immediate go-around.",
-              "part": "Part 5"
-            },
-            {
-              "num": 6,
-              "title": "Safety Check: Unstabilized Approach & Go-Around Culture (Operational Discussion)",
-              "description": "Collaborate in teams to analyze unstabilized approach risks, overcome hesitation traps, and support a blame-free go-around safety culture.",
-              "part": "Part 6"
             }
           ]
         },
         "lessonPlan": {
-          "title": "Session 6 Lesson Plan (2 Hours)",
-          "summary": "A 2-hour communicative spoken English session covering visual ILS approach plates, profile view briefings, the 'Go / No-Go Lightning Challenge' game, an emergency go-around role-play, and an unstabilized approach safety check.",
-          "items": [
+          "title": "Session 6 Lesson Plan - The Corrective Action Plan (CAP) & Lesson 7 Prep (2 Hours)",
+          "summary": "A high-impact capstone technical English session where students transform audit findings into binding EASA Corrective Action Plans, master spoken regulatory negotiations, and dedicate substantial workshop time to preparing their 30-minute peer-teaching lessons for Session 7.",
+          "structure": [
             {
-              "title": "Part 1: Warm-up: The Final 3 Minutes Before Touchdown",
-              "description": "In pairs, students discuss cockpit workload on final approach, explain stabilized approach gates, and test entry knowledge with 4 spot-check questions.",
-              "part": "Part 1"
+              "part": "Part 1: Audit Finding Classification & Root-Cause Remediation",
+              "focus": "Aerodrome safety taxonomy, Level 1 vs Level 2 statutory definitions, root-cause isolation versus surface defect repair.",
+              "activity": "Examine the two official finding notices (Runway Friction Decay & Jet Blast Fence Failure). In pairs, identify the underlying organizational root causes and state why immediate temporary containment is mandatory."
             },
             {
-              "title": "Part 2: Visual Chart & Profile View Briefing Clinic",
-              "description": "Analyzing the visual ILS Runway 14L plate at LFMT, learning standard phrases to describe the vertical step-down profile, and completing a 60-second approach briefing.",
-              "part": "Part 2"
+              "part": "Part 2: EASA Part-ADR.OR.D.005 CAP Drafting & Authority Criteria",
+              "focus": "SMART remediation milestones, interim operational mitigations, NOTAM drafting, and authority verification benchmarks.",
+              "activity": "Analyze the 4-tab CAP dossier. Review the phased remediation timelines for hydro-blasting rubber removal and structural blast fence reconstruction."
             },
             {
-              "title": "Part 3: Language Clinic: Vertical Paths & Cockpit Callouts",
-              "description": "Oral drills and pair practice using vertical flight terminology (on the glide slope, at the final approach fix, upon reaching minimums, go-around positive climb).",
-              "part": "Part 3"
+              "part": "Part 3: Interactive Aerodrome Operator vs Civil Aviation Inspector Negotiation",
+              "focus": "Formulaic spoken commitment structures, diplomatic compliance pushback, and conditional acceptance language.",
+              "activity": "Simulated authority review meeting: Partner A acts as the Aerodrome Safety Manager defending the proposed timeline; Partner B acts as the DGAC/EASA Inspector enforcing safety margins."
             },
             {
-              "title": "Part 4: Communicative Game: ⚡ Go / No-Go Lightning Challenge",
-              "description": "Rapid-fire partner game: students evaluate 6 high-pressure approach scenarios, make instant 3-second 'Continue' or 'Go-Around' calls, and defend their choice.",
-              "part": "Part 4"
-            },
-            {
-              "title": "Part 5: Speaking Role-Play & Safety Check",
-              "description": "Spoken simulation: Tower Controller commands an immediate go-around due to a vehicle crossing Runway 14L on 2-mile final, followed by a 4-step Safety Check on stabilized criteria.",
-              "part": "Part 5"
+              "part": "Part 4: Extended Peer-Teaching Workshop & Lesson 7 Design Studio",
+              "focus": "Dedicated extended preparation time for Session 7 flipped peer-teaching lessons (30 minutes delivery per pod of 3–4 students).",
+              "activity": "Teams of 3 to 4 select their technical domain (Runway Friction/GRF, Ramp Safety/Telematics, Wildlife Hazard, or CAP Audit Negotiation). Teams design their 3-stage lesson architecture (Hook, Core Activity, Debrief), assign teaching roles, review the 20-point assessment rubric, and record their lesson outline in the on-screen scratchpad."
             }
           ]
         },
         "lessonContent": {
           "hero": {
-            "title": "Approach Plates: Final Corridors & Go-Around Paths",
-            "subtitle": "Visual ILS Plates (Plan & Profile Views), Vertical Flight Callouts & 'Go / No-Go Lightning Challenge' Game",
-            "image": "images/s3_m1_session6_approach.jpg",
-            "targetLevel": "CEFR B1–B2",
-            "roleContext": "GSEA Student Training • Final Approach Operations & Technical English",
-            "duration": "120 Minutes"
+            "title": "The Corrective Action Plan (CAP) & Lesson 7 Prep",
+            "subtitle": "EASA Part-ADR.OR.D.005 Compliance, Authority Negotiation & Flipped Classroom Design Studio",
+            "badge": "EASA Part-ADR.OR.D.005",
+            "summary": "Bridging aerodrome audit non-conformities into legally binding Corrective Action Plans, mastering diplomatic spoken negotiation with state inspectors, and dedicating focused collaborative studio time to prepare 30-minute peer-teaching lessons for Session 7.",
+            "metrics": [
+              {
+                "label": "Regulatory Ref",
+                "val": "ADR.OR.D.005"
+              },
+              {
+                "label": "Finding Levels",
+                "val": "Level 1 & Level 2"
+              },
+              {
+                "label": "CAP Timeline",
+                "val": "30 Days to 3 Months"
+              },
+              {
+                "label": "Session 7 Pod Delivery",
+                "val": "30 Mins / Pod"
+              }
+            ]
           },
           "openingSession": {
-            "title": "Activity 1: Warm-up & Entry Spot-Check",
-            "summary": "Break the ice, discuss the intense workload during the final 3 minutes before touchdown, and test your baseline knowledge of approach plate symbols.",
-            "modeBadges": [
-              "Pairs (2 students)",
-              "Spoken Discussion"
-            ],
-            "instructions": [
-              "In pairs, discuss the 3 opening questions about flying the final approach.",
-              "Read each of the 4 Entry Spot-Check questions below and discuss your answers together.",
-              "Click 'Reveal Answer' to check your reasoning and see the plain English explanation."
-            ],
-            "deliverable": "Shared agreement on what constitutes a safe stabilized approach, and completed 4-question diagnostic.",
-            "teacherNotes": "Encourage spontaneous speaking. Help students understand that a go-around is not a failure, but a normal, professional safety decision.",
-            "newsPrompts": [
-              {
-                "id": 1,
-                "question": "Why do aviation safety experts call the final approach phase the 'most critical three minutes' of flight?",
-                "exampleAnswers": [
-                  "Because the aircraft is close to the ground, flying at relatively slow speed with flaps and landing gear extended, leaving very little margin for error.",
-                  "Also, both pilots must manage radio communications, cross-check flight instruments, watch for visual references, and be ready to execute a go-around at a second's notice."
-                ],
-                "part": "Part 1"
-              },
-              {
-                "id": 2,
-                "question": "What is the crucial difference between a Decision Altitude (DA) and a Minimum Descent Altitude (MDA)?",
-                "exampleAnswers": [
-                  "A Decision Altitude is used on a precision approach (like an ILS); as soon as you reach that exact altitude, you must either see the runway or start climbing immediately.",
-                  "A Minimum Descent Altitude is used on a non-precision approach; you descend to that altitude, level off, and fly flat until you reach the missed approach point."
-                ],
-                "part": "Part 2"
-              },
-              {
-                "id": 3,
-                "question": "Why do some flight crews hesitate to initiate a go-around, even when the approach is unstabilized?",
-                "exampleAnswers": [
-                  "Psychological pressure! Flight crews naturally want to complete the flight on schedule to avoid delays, extra fuel burn, or passenger inconvenience.",
-                  "That is why modern airline safety culture stresses that a go-around is always the correct, blame-free decision whenever any doubt exists."
-                ],
-                "part": "Part 3"
-              }
-            ],
-            "spotCheckQuestions": [
-              {
-                "id": 1,
-                "question": "What does the Maltese Cross symbol represent on an instrument approach plate profile view?",
-                "options": [
-                  "The airport medical center.",
-                  "The Final Approach Fix (FAF) where the final descent begins.",
-                  "The location of the primary control tower.",
-                  "The point where cabin crew must sit down."
-                ],
-                "correct": 1,
-                "explanation": "The Maltese Cross marks the Final Approach Fix (FAF), the critical point on the approach where the aircraft initiates its final glide slope descent toward the runway.",
-                "part": "Part 1"
-              },
-              {
-                "id": 2,
-                "question": "What is the standard glide path angle for an Instrument Landing System (ILS) precision approach?",
-                "options": [
-                  "1.5 degrees.",
-                  "3.0 degrees.",
-                  "6.0 degrees.",
-                  "9.0 degrees."
-                ],
-                "correct": 1,
-                "explanation": "The standard ILS glide path angle is 3.0 degrees, providing a steady descent of approximately 318 feet per nautical mile (around 700–800 fpm at typical jet approach speeds).",
-                "part": "Part 2"
-              },
-              {
-                "id": 3,
-                "question": "What does 'RVR 550m' mean in the landing minimums section of an approach plate?",
-                "options": [
-                  "The runway is 550 metres long.",
-                  "Runway Visual Range: the horizontal distance down the runway that a pilot can see runway lights or markings is at least 550 metres.",
-                  "The cloud base is 550 metres above the runway.",
-                  "The radar antenna is located 550 metres from the tower."
-                ],
-                "correct": 1,
-                "explanation": "RVR stands for Runway Visual Range—the measured horizontal visibility down the runway surface, which must meet or exceed the published minimum (e.g. 550m for CAT I) to attempt a landing.",
-                "part": "Part 3"
-              },
-              {
-                "id": 4,
-                "question": "If visual references are lost or not seen upon reaching Decision Altitude, what must the pilot do?",
-                "options": [
-                  "Descend an extra 100 feet to see under the fog.",
-                  "Immediately execute the published missed approach procedure (go-around).",
-                  "Switch off the autopilot and guess the runway centerline.",
-                  "Circle around the runway at 200 feet."
-                ],
-                "correct": 1,
-                "explanation": "At Decision Altitude, if required visual references (approach lights, threshold markings) are not distinctly visible, the pilot MUST immediately initiate a missed approach without hesitation.",
-                "part": "Part 4"
-              }
-            ]
+            "badge": "Safety Directorate Briefing",
+            "title": "Aerodrome Audit Finding Notice: The Path to Compliance",
+            "desc": "Under Regulation (EU) No 139/2014 Part-ADR.OR.D.005, receiving an audit non-conformity notice initiates a strict statutory process. The aerodrome operator must not merely repair the defect—they must determine the root cause, establish immediate mitigations to protect flight operations, and submit a formal Corrective Action Plan with auditable milestones acceptable to the competent authority.",
+            "callout": "Crucial distinction: Level 1 findings hazard aircraft operations immediately and require action within 24–48 hours; Level 2 findings represent systemic gaps requiring an agreed 30-day CAP submission."
           },
-          "chartExtract": {
-            "title": "Activity 2: Visual Chart & Profile View Briefing Clinic",
-            "summary": "Inspect the visual ILS Runway 14L plate (Plan View + Profile View) and master how to deliver a crisp spoken approach briefing.",
-            "visualChart": "images/charts/chart_s6_approach_lfmt.svg",
-            "badge": "AUTHENTIC SIMULATION • ILS RWY 14L APPROACH PLATE (LFMT)",
-            "callsign": "Blagnac-Montpellier Airport (LFMT / Elev 495 ft) • ILS or LOC Rwy 14L",
-            "profileClinic": {
-              "title": "Speaking Skill: How to Read the Side-View (Profile) Aloud",
-              "summary": "Use these spoken patterns to walk your colleague through the vertical approach profile from the FAF to the runway:",
-              "phrases": [
-                {
-                  "label": "1. Navigation Setup",
-                  "phrase": "This will be the ILS Runway 14L approach, tuned to localizer 109.3 MHz with an inbound track of 142 degrees.",
-                  "part": "Part 1"
-                },
-                {
-                  "label": "2. Intermediate Fix",
-                  "phrase": "We cross BLAGY at 9 DME at an altitude of 4,000 feet, where we begin configuring flaps and gear.",
-                  "part": "Part 2"
-                },
-                {
-                  "label": "3. Final Approach Fix",
-                  "phrase": "The Maltese Cross marks the Final Approach Fix at 5.2 DME at 2,000 feet, where we intercept the 3-degree glide slope.",
-                  "part": "Part 3"
-                },
-                {
-                  "label": "4. Vertical Descent",
-                  "phrase": "Following the 3-degree glide slope downwards, our target descent rate is approximately 750 feet per minute.",
-                  "part": "Part 4"
-                },
-                {
-                  "label": "5. Decision Altitude",
-                  "phrase": "Our CAT I Decision Altitude is 692 feet, which gives us a decision height of exactly 200 feet above the touchdown zone.",
-                  "part": "Part 5"
-                },
-                {
-                  "label": "6. Missed Approach",
-                  "phrase": "In the event of a go-around: climb straight ahead on track 142° to 2,500 feet, then turn left climbing to 4,000 feet direct TOU VOR.",
-                  "part": "Part 6"
-                }
-              ],
-              "challenge": "Partner Challenge: Take turns delivering the full approach briefing to your partner in 60 seconds!"
+          "photoExhibits": [
+            {
+              "id": "exhibit1",
+              "title": "Exhibit A: Fuel Farm Secondary Containment Dyke Retrofit",
+              "image": "images/s3_s6_fuel_dyke_remediation.jpg",
+              "location": "LFBO Fuel Depot • Storage Tank Bund 03",
+              "findingRef": "Finding 2026-ADR-038 (Level 2)",
+              "caption": "Civil engineers inspecting sealant depth and reinforced concrete bund walls following an uncontained drainage joint finding.",
+              "prompt": "Identify why concrete joint degradation represents an environmental and fire hazard, and formulate the immediate interim mitigation.",
+              "modelResponse": "The degradation of the secondary containment sealant risks uncontained kerosene migration into storm drains during severe rainfall. The immediate mitigation is a daily visual inspection protocol and portable spill-boom containment around Tank Bund 03 pending full elastomeric resealing."
             },
-            "sections": [
+            {
+              "id": "exhibit2",
+              "title": "Exhibit B: Touchdown Zone Runway Rubber Hydro-Blasting",
+              "image": "images/s3_s6_runway_rubber_removal.jpg",
+              "location": "Runway 14L Touchdown Zone (0–600m)",
+              "findingRef": "Finding 2026-ADR-041 (Level 1)",
+              "caption": "Ultra-high-pressure hydro-blasting specialized truck removing dense vulcanized rubber build-up to restore macro-texture grooves.",
+              "prompt": "Explain the friction measurement trigger for this Level 1 finding and state the operational restrictions required until hydro-blasting is complete.",
+              "modelResponse": "The continuous friction survey showed friction decaying to mu = 0.31, below the 0.34 minimum safety threshold. Until hydro-blasting restores the grooves to mu >= 0.52, a mandatory NOTAM must restrict wet landings and require airlines to apply factored landing distance margins."
+            },
+            {
+              "id": "exhibit3",
+              "title": "Exhibit C: Jet Blast Deflector & Perimeter FOD Barrier Repair",
+              "image": "images/s3_s6_fod_barrier_installation.jpg",
+              "location": "Holding Point P1 • Taxiway Papa Perimeter",
+              "findingRef": "Finding 2026-ADR-042 (Level 2)",
+              "caption": "Ground maintenance personnel installing replacement curved blast deflector panels and high-tension FOD catch mesh.",
+              "prompt": "Describe the operational danger of blast fence corrosion at an active holding point and outline the phased remediation milestones.",
+              "modelResponse": "Corroded anchors can cause structural fence detachment under 120-knot widebody breakaway thrust, sending metal panels onto the taxiway. Milestone 1 deploys temporary jersey barriers within 48 hours; Milestone 2 bolts marine-grade epoxy anchors and installs nylon FOD catch-netting within 30 days."
+            }
+          ],
+          "capDossier": {
+            "finding41": {
+              "title": "Finding 2026-ADR-041: Runway 14L Touchdown Zone Friction Decay",
+              "severity": "Level 1 Finding • Significant Safety Hazard",
+              "standard": "EASA CS-ADR-DSN.B.015 & Part-ADR.OPS.B.015",
+              "surveyData": "Continuous Friction Measuring Equipment (CFME) recorded average friction coefficient mu = 0.31 at 65 km/h with 1.0mm water film. Transverse grooves are 85% obstructed by dense vulcanized tire deposits.",
+              "interimMitigation": "Permanent NOTAM issued: 'RWY 14L FIRST 600M BRAKING ACTION POOR WHEN WET. TAILWIND LANDINGS PROHIBITED EXCEEDING 5 KT.' Airlines must calculate wet landing distance with +15% dispatch margin.",
+              "definitivePlan": "Four nights of UHP hydro-blasting (2,200 bar) stripping 28,000 m2 of rubber, followed by three calibration CFME survey runs at 65 km/h and 95 km/h.",
+              "targetDate": "Target Verification: 28 October 2024 (Authority on-site test)"
+            },
+            "finding42": {
+              "title": "Finding 2026-ADR-042: Jet Blast Deflector & FOD Barrier Failure",
+              "severity": "Level 2 Finding • Airside Infrastructure Non-Compliance",
+              "standard": "EASA CS-ADR-DSN.D.260 & Part-ADR.OPS.B.070",
+              "defectData": "Holding Point P1 curved blast fence shows severe base bolt electrochemical rust. Three panels are unseated, and top-edge FOD netting is torn over a 40-meter stretch.",
+              "interimMitigation": "Service road checkpoint Delta closed to ground traffic during wide-body departures. ATC instructs all departing aircraft at P1 to maintain idle thrust until fully aligned with centerline.",
+              "definitivePlan": "Installation of hot-dip galvanized Grade 316 stainless anchors rated for 150-knot jet exhaust, replacement curved corrugated panels, and high-tension nylon FOD containment mesh.",
+              "targetDate": "Target Closure: 30 November 2024 (Joint pull-out torque test)"
+            },
+            "matrix": [
               {
-                "heading": "1. Navigation Frequencies & Course Data",
-                "details": [
-                  "Localizer Frequency: I-MT 109.3 MHz • Final Approach Track: 142° magnetic.",
-                  "Initial Approach Fix (IAF): Waypoint CAPDENAC at 5,000 ft QNH.",
-                  "Intermediate Fix (IF): Waypoint BLAGY at 4,000 ft QNH.",
-                  "Final Approach Fix (FAF): Maltese Cross at 5.2 DME I-MT at 2,000 ft QNH."
-                ],
-                "part": "Part 1"
+                "item": "Runway Friction Restoration",
+                "rootCause": "Annual fixed maintenance cycle failed to account for 30% increase in wide-body summer movements.",
+                "immediateAction": "Issue NOTAM; enforce landing performance dispatch buffer.",
+                "permanentFix": "Switch to dynamic condition-based monitoring with bi-monthly CFME surveys; execute UHP hydro-blasting.",
+                "deadline": "28 Oct 2024"
               },
               {
-                "heading": "2. Vertical Profile & Descent Data",
-                "details": [
-                  "Glide Path Angle: 3.00° (318 ft per nautical mile, approx 750 fpm descent at 140 kt groundspeed).",
-                  "Threshold Crossing Height (TCH): 50 ft above runway elevation.",
-                  "Aerodrome Elevation: 495 ft AMSL • Touchdown Zone Elevation (TDZE): 492 ft AMSL."
-                ],
-                "part": "Part 2"
+                "item": "Blast Fence Structural Anchoring",
+                "rootCause": "Original 2012 specification lacked marine-grade epoxy coating against de-icing chemical runoff.",
+                "immediateAction": "Close adjacent service road; enforce idle thrust taxi restrictions.",
+                "permanentFix": "Bolt 45 kN pull-out rated stainless anchors; install continuous FOD barrier mesh.",
+                "deadline": "30 Nov 2024"
               },
               {
-                "heading": "3. Published Landing Minimums",
-                "details": [
-                  "CAT I ILS Precision Minimums: Decision Altitude (DA) 692 ft AMSL (Decision Height 200 ft AGL) • RVR 550m.",
-                  "LOC Only (Non-Precision) Minimums: Minimum Descent Altitude (MDA) 890 ft AMSL (MDH 395 ft AGL) • Visibility 1,500m.",
-                  "Circling Minimums: MDA 1,050 ft AMSL • Visibility 2,400m."
-                ],
-                "part": "Part 3"
-              },
-              {
-                "heading": "4. Published Missed Approach Procedure (Go-Around)",
-                "details": [
-                  "Initial Climb: Climb straight ahead on runway track 142° to 2,500 ft QNH.",
-                  "Turn Instruction: At 2,500 ft, turn left climbing to 4,000 ft direct to TOU VOR/DME.",
-                  "Holding Instruction: Enter published holding pattern at TOU VOR at 4,000 ft, or as directed by ATC."
-                ],
-                "part": "Part 4"
-              }
-            ]
-          },
-          "grammarClinic": {
-            "title": "Activity 3: Language Clinic: Vertical Paths & Cockpit Callouts",
-            "summary": "Master clear spoken terminology for vertical flight path tracking, approach warnings, and go-around execution.",
-            "rules": [
-              {
-                "term": "on the glide slope",
-                "meaning": "Tracking the electronic 3.0-degree descent beam perfectly.",
-                "example": "We are fully established on the localizer and on the glide slope.",
-                "part": "Part 1"
-              },
-              {
-                "term": "above / below the glide path",
-                "meaning": "Displaced vertically from the planned descent path.",
-                "example": "Check your sink rate; we are one dot below the glide path.",
-                "part": "Part 2"
-              },
-              {
-                "term": "at the final approach fix",
-                "meaning": "Passing the Maltese cross where the final descent begins.",
-                "example": "At the final approach fix: 5.2 DME, 2,000 feet verified, gear down.",
-                "part": "Part 3"
-              },
-              {
-                "term": "upon reaching decision altitude",
-                "meaning": "At the exact altitude where the landing or go-around choice must be made.",
-                "example": "Upon reaching decision altitude at 692 feet, call 'runway in sight' or 'go-around'.",
-                "part": "Part 4"
-              },
-              {
-                "term": "level off at",
-                "meaning": "Stopping descent and maintaining level flight.",
-                "example": "For the LOC approach, descend to MDA and level off at 890 feet.",
-                "part": "Part 5"
-              },
-              {
-                "term": "execute missed approach",
-                "meaning": "Initiate the published climb and turn procedure away from the runway.",
-                "example": "Visual reference not acquired at minimums—executing missed approach.",
-                "part": "Part 6"
-              },
-              {
-                "term": "positive climb, gear up",
-                "meaning": "Confirming altimeter and vertical speed show a steady climb before retracting landing gear.",
-                "example": "Go-around, set flaps 15, positive climb confirmed, gear up.",
-                "part": "Part 7"
+                "item": "Fuel Farm Secondary Containment",
+                "rootCause": "Elastomeric joint compound reached end of operational lifespan without scheduled preventative re-caulking.",
+                "immediateAction": "Deploy portable absorbent booms around Tank 03; daily visual checks.",
+                "permanentFix": "Complete hydro-cleaning and application of aviation-grade chemical-resistant polyurethane sealant.",
+                "deadline": "15 Nov 2024"
               }
             ],
-            "drills": [
-              {
-                "id": 1,
-                "prompt": "How does the pilot announce that both beams are captured on final approach?",
-                "targetAnswer": "We are fully established on the localizer and on the glide slope.",
-                "part": "Part 1"
-              },
-              {
-                "id": 2,
-                "prompt": "What altitude check is made at the Final Approach Fix (5.2 DME)?",
-                "targetAnswer": "At the final approach fix: 5.2 DME, altitude 2,000 feet verified, descent continuing.",
-                "part": "Part 2"
-              },
-              {
-                "id": 3,
-                "prompt": "What is the mandatory pilot callout upon reaching Decision Altitude (692 ft) in thick cloud?",
-                "targetAnswer": "Minimums! No visual contact—go-around, flaps 15, positive climb, gear up!",
-                "part": "Part 3"
-              },
-              {
-                "id": 4,
-                "prompt": "What is the initial climb instruction on the published missed approach procedure?",
-                "targetAnswer": "Climb straight ahead on runway track 142° to 2,500 feet, then turn left towards TOU VOR.",
-                "part": "Part 4"
-              },
-              {
-                "id": 5,
-                "prompt": "What does the pilot call when altimeter and VSI confirm ascending flight during a go-around?",
-                "targetAnswer": "Positive climb confirmed—gear up, set climb thrust.",
-                "part": "Part 5"
-              }
-            ]
+            "signOff": {
+              "authority": "Direction Générale de l'Aviation Civile (DGAC) / EASA Aerodrome Oversight",
+              "leadInspector": "Aviation Safety Inspector #FR.DSAC.2024-04",
+              "conditions": "Level 1 closure is conditional upon physical verification of CFME mu >= 0.52 across all three runs. Level 2 closure requires submission of certified pull-out torque test certificates (45 kN/anchor) and photographic proof of completed mesh installation.",
+              "status": "Provisional Concurrence Granted • Verification Pending"
+            }
           },
-          "communicativeGame": {
-            "title": "Activity 4: Communicative Game: ⚡ Go / No-Go Lightning Challenge",
-            "summary": "A high-speed approach dilemma game. Take turns reading the 6 dilemma cards below. You have 3 seconds to shout 'CONTINUE!' or 'GO-AROUND!', and 2 complete sentences to defend your choice!",
-            "instructions": [
-              "Student A reads a Dilemma Card aloud to Student B.",
-              "Student B must shout either 'CONTINUE!' or 'GO-AROUND!' within 3 SECONDS.",
-              "Student B immediately gives 2 complete spoken sentences defending their decision based on stabilized approach rules.",
-              "Student A checks the model defense and awards 2 points for a prompt, correct call + 2 points for fluent justification.",
-              "Switch roles for the next card!"
+          "negotiationRoleplay": {
+            "title": "Interactive Roleplay • Aerodrome Operator vs Civil Aviation Authority Inspector",
+            "operatorRole": {
+              "role": "Aerodrome Safety & Compliance Manager",
+              "goal": "Present the proposed CAP timeline, justify why certain civil engineering works require 30 days due to contractor availability, and convince the inspector that interim NOTAMs and speed restrictions fully contain operational risks.",
+              "phrases": [
+                "We formally undertake to complete the hydro-blasting within 14 calendar days.",
+                "In the interim, the aerodrome operator has published a safety NOTAM prohibiting tailwind landings on Runway 14L.",
+                "Subject to your concurrence, our engineering team will submit weekly progress photos.",
+                "We respectfully submit that closing the entire runway is disproportionate given the effective interim speed restrictions."
+              ]
+            },
+            "inspectorRole": {
+              "role": "Civil Aviation Authority Inspector (DGAC / EASA)",
+              "goal": "Scrutinize the proposed milestones, demand verifiable safety evidence, verify that Level 1 risks are mitigated within 24 hours, and grant conditional concurrence only with auditable progress checks.",
+              "phrases": [
+                "The authority acknowledges receipt of your CAP, but the proposed 30-day timeline for Level 1 friction restoration is excessive.",
+                "We require physical CFME friction traces showing mu at or above 0.52 before the NOTAM can be cancelled.",
+                "Our concurrence remains strictly conditional upon receiving certified torque test reports for all 40 replacement blast fence anchors.",
+                "What specific contingency procedure is in place if the hydro-blasting vehicle experiences mechanical downtime?"
+              ]
+            }
+          },
+          "flippedLessonStudio": {
+            "title": "Flipped Classroom Design Studio • Session 7 Peer-Teaching Workshop",
+            "instructions": "In Session 7, your team of 3 or 4 students will take the stage as technical instructors! Each pod will deliver a 30-minute communicative lesson to their classmates. In this studio workshop, dedicate focused preparation time to select your domain, build your 3-stage lesson architecture, assign team roles, and record your lesson outline.",
+            "duration": "Dedicated Preparation Time: 30+ Minutes in Session 6",
+            "domains": [
+              {
+                "num": "Pod 1",
+                "title": "Runway Surface Condition Reporting & GRF",
+                "topic": "Teaching classmates how to assess runway friction decay, interpret continuous friction survey traces (CFME), and draft accurate Global Reporting Format (GRF) SNOWTAMs.",
+                "suggestedActivity": "Give classmates raw CFME survey traces of a contaminated runway and have them work in pairs to decode the Runway Condition Code (RWYCC) and draft the broadcasted SNOWTAM."
+              },
+              {
+                "num": "Pod 2",
+                "title": "Apron Vehicle Safety & Pushback Telematics",
+                "topic": "Facilitating a practical workshop on GSE speed control, telematics geofencing, pushback towbar shear mechanics, and interphone communication discipline.",
+                "suggestedActivity": "A simulated ground incident investigation where classmates piece together pushback driver statements and telematics GPS speed logs to identify who breached ramp speed limits."
+              },
+              {
+                "num": "Pod 3",
+                "title": "Wildlife Hazard Management & Habitat Auditing",
+                "topic": "Leading an interactive seminar on laser pyrotechnics, acoustic dispersal techniques, and habitat grass height regulation under EASA CS-ADR-DSN.",
+                "suggestedActivity": "A wildlife dispersal simulation where classmates act as bird patrol units prioritizing laser versus pyrotechnic intervention for a flock of lapwings near the runway threshold."
+              },
+              {
+                "num": "Pod 4",
+                "title": "Airfield Audit Non-Conformities & CAP Negotiation",
+                "topic": "Running an interactive roleplay negotiation where classmates simulate aerodrome operators defending corrective milestones to civil aviation inspectors.",
+                "suggestedActivity": "A high-stakes regulatory defense where student pairs represent an airport presenting a Level 1 CAP to a skeptical civil aviation authority inspection panel."
+              }
             ],
-            "cards": [
+            "stages": [
               {
-                "id": 1,
-                "situation": "At 1,000 ft in IMC: airspeed is 170 kt (target approach speed 140 kt), flaps are at position 2 (landing flaps required), and sink rate is 1,300 fpm. Continue or Go-Around?",
-                "verdict": "GO-AROUND!",
-                "defense": "The approach is completely unstabilized! The airspeed is 30 knots high, the landing flaps are not set, and the descent rate exceeds the 1,000 fpm safety limit.",
-                "part": "Part 1"
+                "stage": "Stage 1: Opening Hook & Technical Briefing",
+                "duration": "~5 Minutes",
+                "desc": "Engage the room immediately: present a provocative photo exhibit, short case question, or high-impact operational dilemma in fluent English."
               },
               {
-                "id": 2,
-                "situation": "At Decision Altitude 692 ft (200 ft AGL): thick fog rolls over the threshold. Zero approach lights or runway markings are visible. Continue or Go-Around?",
-                "verdict": "GO-AROUND!",
-                "defense": "Under CAT I ILS rules, visual references are mandatory at Decision Altitude! Without visual contact with the lights or runway, an immediate missed approach must be executed.",
-                "part": "Part 2"
+                "stage": "Stage 2: Core Communicative Activity",
+                "duration": "~18 Minutes",
+                "desc": "Maximize student speaking time! Have your classmates work in pairs or trios on a problem-solving challenge, debate, or simulation while your team circulates and coaches."
               },
               {
-                "id": 3,
-                "situation": "At 500 ft in VMC: aircraft is perfectly aligned on the localizer and glide slope, landing gear down and locked, landing flaps 30 set, speed steady at 142 kt with a 700 fpm descent rate. Continue or Go-Around?",
-                "verdict": "CONTINUE!",
-                "defense": "All stabilized approach criteria are fully satisfied! The aircraft is in final landing configuration, on speed, on flight path, with normal sink rate.",
-                "part": "Part 3"
-              },
-              {
-                "id": 4,
-                "situation": "At 300 ft on short final: the runway and threshold lights are in plain sight, but the Tower Controller suddenly announces: 'Operations vehicle crossing runway at Taxiway Charlie!' Continue or Go-Around?",
-                "verdict": "GO-AROUND!",
-                "defense": "The runway is physically obstructed! Continuing the landing creates a severe risk of a high-speed collision, so we must execute an immediate go-around.",
-                "part": "Part 4"
-              },
-              {
-                "id": 5,
-                "situation": "At 400 ft in VMC: the pilot forgot to set full landing flaps. The First Officer realizes and says: 'Wait, let me select flaps full right now!' Continue or Go-Around?",
-                "verdict": "GO-AROUND!",
-                "defense": "Configuring flaps below the stabilized gate (500 ft in VMC) is strictly forbidden! Trying to configure at 400 ft destabilizes aircraft trim and airspeed close to the ground.",
-                "part": "Part 5"
-              },
-              {
-                "id": 6,
-                "situation": "At 800 ft in light rain: bright approach lighting system is spotted, localizer and glide slope are centered, airspeed is on target, landing clearance received. Continue or Go-Around?",
-                "verdict": "CONTINUE!",
-                "defense": "The approach is stabilized, visual references are acquired well before minimums, and landing clearance has been confirmed by air traffic control.",
-                "part": "Part 6"
+                "stage": "Stage 3: Class Debriefing & Feedback",
+                "duration": "~7 Minutes",
+                "desc": "Call on teams to share solutions, highlight key technical vocabulary used, and deliver constructive spoken English feedback to your peers."
               }
-            ]
-          },
-          "roleplaySimulation": {
-            "title": "Activity 5: Speaking Role-Play: Low Visibility Approach & Emergency Go-Around",
-            "summary": "Simulate a high-stress final approach scenario where an unexpected runway incursion forces an immediate go-around.",
-            "situation": "Flight AFR 884 is on 3-mile final approach for Runway 14L in light drizzle. At 400 ft AGL, the Tower Controller spots an airport maintenance vehicle inadvertently crossing the runway holding point at Taxiway Charlie. The Controller commands an immediate go-around; the pilot executes the missed approach procedure smoothly.",
+            ],
             "roles": [
               {
-                "role": "Role A: Tower Controller",
-                "instructions": "Monitor final approach. Spot the vehicle incursion on Runway 14L at Taxiway Charlie. Transmit immediately with calm authority: 'Air France 884, go around immediately, vehicle on the runway! Climb straight ahead to 2,500 feet, maintain runway heading.' After the pilot reads back, instruct them to contact Departure Radar on 124.35 MHz.",
-                "part": "Part 1"
+                "title": "Lead Facilitator",
+                "role": "Introduces the topic, delivers the opening briefing, sets up the activity instructions, and manages overall classroom energy."
               },
               {
-                "role": "Role B: Airline Pilot (AFR 884)",
-                "instructions": "Fly the final approach, calling out '1,000 ft stabilized'. Receive the controller's emergency go-around instruction. Immediately read back: 'Going around, climb to 2,500 feet on runway heading, Air France 884.' Announce cockpit actions: 'Go-around, flaps 15, maximum thrust, positive climb, gear up.' Then contact Departure Radar as instructed.",
-                "part": "Part 2"
+                "title": "Activity Controller",
+                "role": "Distributes task roles, explains interactive rules, circulates during pairwork, and provides technical operational guidance."
               },
               {
-                "role": "Role C: Peer Observer & Safety Auditor",
-                "instructions": "Use the checklist below to assess your peers. Did the controller speak with calm, decisive authority? Did the pilot read back the go-around instruction without delay? Were cockpit actions announced in proper sequence?",
-                "part": "Part 3"
+                "title": "Language & Vocab Coach",
+                "role": "Monitors spoken English during group work, notes communicative breakthroughs and pronunciation slips, and leads the vocabulary review."
+              },
+              {
+                "title": "Timekeeper & Debriefer",
+                "role": "Ensures strict adherence to the 30-minute delivery schedule, coordinates group sharing, and summarizes key safety takeaways."
               }
             ],
-            "checklist": [
-              "Controller gave clear, decisive go-around instruction with the immediate reason ('vehicle on runway').",
-              "Pilot acknowledged and read back the go-around instruction without hesitation.",
-              "Cockpit go-around sequence was called out cleanly (thrust, flaps, positive climb, gear up).",
-              "Both speakers maintained professional composure and clear pronunciation."
-            ],
-            "phrases": [
-              "Tower, Air France 884, 4-mile final, Runway 14L.",
-              "Air France 884, go around immediately! Vehicle on runway, climb straight ahead 2,500 feet.",
-              "Going around, climb straight ahead 2,500 feet, Air France 884.",
-              "Go-around, set go-around thrust, flaps 15.",
-              "Positive climb verified, gear up. Contact Departure on 124.35, Air France 884."
-            ]
-          },
-          "safetyCheck": {
-            "title": "Activity 6: Safety Check: Unstabilized Approach & Go-Around Culture",
-            "summary": "Work in teams to analyze the risks of unstabilized approaches and agree on how to build a strong go-around safety culture.",
-            "steps": [
+            "rubric": [
               {
-                "step": 1,
-                "title": "Identify the Hazard",
-                "text": "At 1,000 ft AGL in instrument meteorological conditions (IMC), an approaching aircraft is flying 25 knots above target approach speed with a descent rate of 1,200 fpm. The landing gear is down, but flaps are not yet in final landing configuration."
+                "criterion": "1. Preparation & Lesson Structure",
+                "points": "5 Points",
+                "descriptors": "Clear communicative objectives, polished student materials, logical 3-stage progression, and equal contribution across all pod members."
               },
               {
-                "step": 2,
-                "title": "Evaluate the Operational Risk",
-                "text": "Continuing an unstabilized approach below 1,000 ft dramatically increases the risk of hard landings, runway excursions (overrunning the paved runway), tail strikes, or loss of control close to the ground."
+                "criterion": "2. Communicative Activity Design",
+                "points": "5 Points",
+                "descriptors": "High student talking time (STT), authentic technical challenge, creative exercise ideas, and active problem-solving rather than passive lecturing."
               },
               {
-                "step": 3,
-                "title": "Propose Protective Actions",
-                "text": "1. Enforce strict stabilized approach criteria: on flight path, target speed -0/+10 kt, sink rate <= 1,000 fpm, landing flaps set by 1,000 ft in IMC (500 ft in VMC).\n2. Mandate an automatic go-around if any single stabilized approach parameter is exceeded.\n3. Foster a blame-free safety policy: flight crews are commended, never reprimanded or questioned, for executing a safety go-around.\n4. Tower controllers should issue go-around instructions proactively whenever runway separation becomes marginal."
+                "criterion": "3. Spoken English & Technical Vocabulary",
+                "points": "5 Points",
+                "descriptors": "Fluency, accurate use of Module 1 aviation terminology, clear instructional delivery, and confident pronunciation."
               },
               {
-                "step": 4,
-                "title": "Agree on the Team Decision",
-                "text": "Agree with your team on the two most effective safety defenses to prevent runway landing accidents and record your conclusions in the Operational Notes section below."
+                "criterion": "4. Classroom Presence & Facilitation",
+                "points": "5 Points",
+                "descriptors": "Engaging interaction, dynamic question management, active circulating and coaching, and constructive peer debriefing."
               }
             ]
           }
         },
         "revision": {
-          "title": "Session 6 Revision - Approach Plates: Final Corridors & Go-Around Paths",
-          "summary": "30 essential operational and approach navigation vocabulary terms for GSEA students covering ILS plates, glide slopes, decision heights, and missed approach procedures.",
+          "title": "Module 1 Session 6 • Technical Vocabulary Revision",
+          "description": "Master these 12 critical technical terms covering Corrective Action Plans, regulatory oversight, and communicative peer-teaching facilitation.",
           "terms": [
             {
-              "num": "01",
-              "term": "Instrument Approach Chart (IAC)",
-              "definition": "An aeronautical chart showing the established instrument approach procedure to a specific runway.",
-              "part": "Part 1"
+              "term": "Corrective Action Plan",
+              "pos": "noun phrase",
+              "ipa": "/kəˈrɛktɪv ˈækʃən plæn/",
+              "def": "A formal, time-bound schedule of remedial measures submitted by an aerodrome operator to rectify regulatory non-compliances.",
+              "sentence": "The aerodrome operator submitted a comprehensive Corrective Action Plan addressing all Level 1 and Level 2 findings within 30 days.",
+              "example": "EASA Part-ADR.OR.D.005 mandates that every CAP include root-cause remediation and auditable milestones."
             },
             {
-              "num": "02",
-              "term": "Instrument Landing System (ILS)",
-              "definition": "A precision runway approach aid providing both horizontal (localizer) and vertical (glide path) guidance.",
-              "part": "Part 2"
+              "term": "Non-Conformity",
+              "pos": "noun",
+              "ipa": "/ˌnɒnkənˈfɔːmɪti/",
+              "def": "A failure to satisfy a regulatory specification, certification standard, or aerodrome operational requirement.",
+              "sentence": "The audit team identified a non-conformity regarding secondary fuel containment dyke integrity.",
+              "example": "Level 1 non-conformities require immediate operational restrictions to contain flight safety risks."
             },
             {
-              "num": "03",
-              "term": "Localizer (LOC)",
-              "definition": "The component of an ILS providing lateral (left/right) tracking along the runway centerline.",
-              "part": "Part 3"
+              "term": "Root-Cause Analysis",
+              "pos": "noun phrase",
+              "ipa": "/ruːt kɔːz əˈnæləsɪs/",
+              "def": "An investigation methodology aimed at uncovering the fundamental systemic origin of an operational breakdown.",
+              "sentence": "Our root-cause analysis revealed that the friction loss stemmed from uncalibrated cleaning cycles rather than pavement aggregate failure.",
+              "example": "Addressing only the symptom without root-cause analysis guarantees repeat safety occurrences."
             },
             {
-              "num": "04",
-              "term": "Glide Path (Glide Slope)",
-              "definition": "The component of an ILS providing vertical guidance along a specified descent angle (normally 3 degrees).",
-              "part": "Part 4"
+              "term": "Interim Mitigation",
+              "pos": "noun phrase",
+              "ipa": "/ˈɪntərɪm ˌmɪtɪˈɡeɪʃən/",
+              "def": "A temporary operational measure enforced to maintain acceptable safety while permanent engineering works are underway.",
+              "sentence": "A temporary NOTAM restricting wet tailwind landings served as the interim mitigation during runway resurfacing.",
+              "example": "Interim mitigations must be approved by the civil aviation inspector before operations proceed."
             },
             {
-              "num": "05",
-              "term": "Final Approach Fix (FAF)",
-              "definition": "The point in an instrument approach where the final descent segment begins, marked by a Maltese cross.",
-              "part": "Part 5"
+              "term": "Verification Milestone",
+              "pos": "noun phrase",
+              "ipa": "/ˌvɛrɪfɪˈkeɪʃən ˈmaɪlstoʊn/",
+              "def": "A scheduled, measurable checkpoint where the competent authority evaluates progress toward definitive regulatory compliance.",
+              "sentence": "Milestone 2 requires physical pull-out torque testing of all replacement blast deflector anchor bolts.",
+              "example": "Failure to achieve a scheduled milestone can trigger immediate authority operational restrictions."
             },
             {
-              "num": "06",
-              "term": "Initial Approach Fix (IAF)",
-              "definition": "The fix that marks the beginning of the initial approach segment towards the runway.",
-              "part": "Part 6"
+              "term": "Authority Concurrence",
+              "pos": "noun phrase",
+              "ipa": "/ɔːˈθɒrɪti kənˈkʌrəns/",
+              "def": "Formal written approval by the state oversight body confirming that a proposed corrective measure is acceptable.",
+              "sentence": "The proposed 60-day closure timeline was implemented following formal authority concurrence from the DGAC.",
+              "example": "The aerodrome cannot alter an agreed CAP timeline without prior authority concurrence."
             },
             {
-              "num": "07",
-              "term": "Intermediate Fix (IF)",
-              "definition": "The fix marking the end of the initial segment and beginning of the intermediate segment for final configuration.",
-              "part": "Part 7"
+              "term": "Hydro-Blasting",
+              "pos": "noun",
+              "ipa": "/ˈhaɪdroʊ ˈblæstɪŋ/",
+              "def": "Ultra-high-pressure water jetting used to strip rubber deposits and re-open macro-texture grooves on airport runways.",
+              "sentence": "Hydro-blasting at 2,200 bar restored runway surface friction to mu = 0.54 without damaging the asphalt matrix.",
+              "example": "Nightly hydro-blasting cleared 28,000 square meters of runway touchdown zone rubber in four shifts."
             },
             {
-              "num": "08",
-              "term": "Decision Altitude (DA)",
-              "definition": "A specified altitude (mean sea level) in a precision approach where a missed approach must be initiated if no visual reference.",
-              "part": "Part 8"
+              "term": "Continuous Friction Measuring Equipment (CFME)",
+              "pos": "noun phrase",
+              "ipa": "/kənˈtɪnjuəs ˈfrɪkʃən ˈmɛʒərɪŋ ɪˈkwɪpmənt/",
+              "def": "Specialized trailer or vehicle instrumented to continuously assess and record pavement friction coefficients under controlled water film depths.",
+              "sentence": "The CFME test vehicle confirmed that braking action remained below the minimum planning level across the first 600 meters.",
+              "example": "CFME calibration runs are required every 60 days to track seasonal friction degradation."
             },
             {
-              "num": "09",
-              "term": "Decision Height (DH)",
-              "definition": "A specified height (above runway threshold) in a precision approach where a missed approach must be initiated if no visual reference.",
-              "part": "Part 9"
+              "term": "Jet Blast Deflector",
+              "pos": "noun phrase",
+              "ipa": "/dʒɛt blɑːst dɪˈflɛktər/",
+              "def": "Heavy curved barrier designed to redirect aerodynamic jet engine exhaust upward to safeguard adjacent perimeter roadways.",
+              "sentence": "The replacement jet blast deflector is engineered to withstand 150-knot breakaway thrust from wide-body aircraft.",
+              "example": "Jet blast deflectors prevent engine exhaust from blowing foreign object debris onto active taxiways."
             },
             {
-              "num": "10",
-              "term": "Minimum Descent Altitude (MDA)",
-              "definition": "The lowest altitude in a non-precision approach below which descent cannot be made without visual references.",
-              "part": "Part 10"
+              "term": "Undertake to",
+              "pos": "verb phrase",
+              "ipa": "/ˌʌndərˈteɪk tuː/",
+              "def": "A formal, legally binding commitment to execute a specified action within an agreed timeframe.",
+              "sentence": "The aerodrome management undertakes to install certified stainless anchors before the start of winter operations.",
+              "example": "In our formal response, we undertake to submit monthly progress reports to the oversight directorate."
             },
             {
-              "num": "11",
-              "term": "Runway Visual Range (RVR)",
-              "definition": "The distance down the runway that a pilot on the centerline can see runway surface markings or lights.",
-              "part": "Part 11"
+              "term": "Flipped Classroom",
+              "pos": "noun phrase",
+              "ipa": "/flɪpt ˈklɑːsruːm/",
+              "def": "An instructional methodology where students prepare and deliver technical content to their peers, fostering active communication.",
+              "sentence": "In our flipped classroom session, students facilitated interactive technical workshops on runway condition reporting.",
+              "example": "Flipped lessons maximize student speaking time and develop authentic instructional presence."
             },
             {
-              "num": "12",
-              "term": "Missed Approach Procedure (Go-Around)",
-              "definition": "The published flight procedure to follow if an approach cannot be safely completed to a landing.",
-              "part": "Part 12"
-            },
-            {
-              "num": "13",
-              "term": "Missed Approach Point (MAPt)",
-              "definition": "The point in an instrument approach procedure at or before which a missed approach must be initiated.",
-              "part": "Part 13"
-            },
-            {
-              "num": "14",
-              "term": "Touchdown Zone Elevation (TDZE)",
-              "definition": "The highest elevation in the first 3,000 feet of the landing runway surface.",
-              "part": "Part 14"
-            },
-            {
-              "num": "15",
-              "term": "Precision Approach",
-              "definition": "An instrument approach and landing utilizing both precision lateral and vertical guidance (such as CAT I, II, or III ILS).",
-              "part": "Part 15"
-            },
-            {
-              "num": "16",
-              "term": "Non-Precision Approach",
-              "definition": "An instrument approach utilizing lateral navigation guidance without vertical glide path guidance (e.g. VOR, LOC-only).",
-              "part": "Part 16"
-            },
-            {
-              "num": "17",
-              "term": "Visual References",
-              "definition": "Physical ground features (approach lights, threshold markings) required to continue an approach below DA/MDA.",
-              "part": "Part 17"
-            },
-            {
-              "num": "18",
-              "term": "Stabilized Approach",
-              "definition": "An approach where airspeed, descent rate, engine thrust, and landing configuration are within exact limits by a set gate.",
-              "part": "Part 18"
-            },
-            {
-              "num": "19",
-              "term": "Sink Rate",
-              "definition": "The rate of descent of an aircraft toward the ground, which should not exceed 1,000 feet per minute on final approach.",
-              "part": "Part 19"
-            },
-            {
-              "num": "20",
-              "term": "Maltese Cross",
-              "definition": "The chart symbol designating the Final Approach Fix for an approach on an instrument plate profile view.",
-              "part": "Part 20"
-            },
-            {
-              "num": "21",
-              "term": "Glide Path Angle",
-              "definition": "The angle of descent of the electronic glide slope beam, typically calibrated at 3.0 degrees.",
-              "part": "Part 21"
-            },
-            {
-              "num": "22",
-              "term": "Threshold Crossing Height (TCH)",
-              "definition": "The theoretical height in feet above the runway threshold where the aircraft's glide path antenna crosses (normally 50 ft).",
-              "part": "Part 22"
-            },
-            {
-              "num": "23",
-              "term": "Runway Threshold",
-              "definition": "The beginning of that portion of the runway usable for landing.",
-              "part": "Part 23"
-            },
-            {
-              "num": "24",
-              "term": "Approach Lighting System (ALS)",
-              "definition": "A system of high-intensity lights extending outward from the runway threshold to assist visual landing transition.",
-              "part": "Part 24"
-            },
-            {
-              "num": "25",
-              "term": "Visual Descent Point (VDP)",
-              "definition": "A defined point on a non-precision approach from which normal descent from the MDA to the runway may begin.",
-              "part": "Part 25"
-            },
-            {
-              "num": "26",
-              "term": "Balked Landing",
-              "definition": "A discontinued landing attempt initiated after the aircraft has descended below decision height or after touchdown.",
-              "part": "Part 26"
-            },
-            {
-              "num": "27",
-              "term": "Holding on Missed Approach",
-              "definition": "The published holding fix where an aircraft holds after executing a go-around while awaiting a second approach or diversion.",
-              "part": "Part 27"
-            },
-            {
-              "num": "28",
-              "term": "Alternate Aerodrome",
-              "definition": "An aerodrome to which an aircraft can proceed if landing at the destination becomes impossible or inadvisable.",
-              "part": "Part 28"
-            },
-            {
-              "num": "29",
-              "term": "Fuel Diversion",
-              "definition": "Diverting to an alternate aerodrome before fuel reserves drop below the legal minimum final reserve fuel.",
-              "part": "Part 29"
-            },
-            {
-              "num": "30",
-              "term": "Go-Around Mindset",
-              "definition": "The safety philosophy where every approach is planned as a go-around until confirming all landing criteria are met.",
-              "part": "Part 30"
+              "term": "Peer Facilitation",
+              "pos": "noun phrase",
+              "ipa": "/pɪər fəˌsɪlɪˈteɪʃən/",
+              "def": "The act of guiding, structuring, and supporting collaborative learning discussions among classmates in a professional setting.",
+              "sentence": "Effective peer facilitation requires asking open questions and keeping classmates actively engaged in English.",
+              "example": "The teaching pod demonstrated excellent peer facilitation by managing classroom discussions smoothly."
             }
           ]
         },
         "materials": {
-          "videos": [
+          "articles": [
             {
-              "title": "Video 1: Boeing 777 Airport Ground Handling: Start to Finish",
-              "watchUrl": "https://www.youtube.com/watch?v=KSfgLX5j-lQ",
-              "tag": "Ground Operations",
-              "videoId": "KSfgLX5j-lQ",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/KSfgLX5j-lQ",
-              "caption": "Focus: Authentic real-world turnaround coordination: marshaling, chock placement, GPU connection, belt loaders, baggage logistics, and pushback operations.",
-              "part": "Part 1"
+              "title": "EASA Part-ADR.OR.D.005: The Legal and Operational Framework of Corrective Action Plans",
+              "subtitle": "How European aerodrome certificate holders transform authority audit non-conformities into verifiable, risk-based safety enhancements.",
+              "source": "EASA Regulatory Review",
+              "readTime": "Estimated read: 6-8 mins",
+              "url": "https://www.easa.europa.eu/en/domains/aerodromes",
+              "takeaways": [
+                "Level 1 findings demand immediate provisional risk containment within 24–48 hours, whereas Level 2 findings require formal CAP submission within 30 days.",
+                "A legally compliant CAP must isolate underlying systemic root causes rather than merely performing cosmetic repairs on surface defects.",
+                "Authority concurrence is conditional upon measurable verification milestones, transparent progress reporting, and on-site physical re-inspection."
+              ],
+              "vocab": [
+                "Part-ADR.OR.D.005",
+                "Level 1 Finding",
+                "Root-Cause Remediation",
+                "Authority Concurrence"
+              ],
+              "content": "Under Regulation (EU) No 139/2014 Part-ADR.OR.D.005, safety oversight by competent civil aviation authorities (such as the DGAC in France) enforces continuous compliance with aerodrome certification specifications. When an inspection reveals a non-conformity, the aerodrome operator is issued a formal finding notice categorized into Level 1 or Level 2 depending on the immediacy of the operational hazard.\n\nA Level 1 finding represents a significant non-compliance that lowers safety or seriously hazards aircraft operations. Typical examples include runway surface friction decaying below the statutory minimum threshold, uncontained fuel spills adjacent to active stands, or non-functioning runway guard lights. In such instances, the aerodrome operator must implement immediate interim mitigations within 24 to 48 hours—such as issuing a restrictive NOTAM, closing taxiway segments, or enforcing payload limits—to prevent immediate accidents.\n\nFor Level 2 findings, which represent systemic deficiencies that could degrade safety if uncorrected, the aerodrome certificate holder must formulate and submit a Corrective Action Plan (CAP) within 30 days. EASA standards mandate that the plan must be structured using SMART criteria: specific remedial actions, measurable verification milestones, assigned departmental accountability, and realistic completion target dates. Crucially, the plan must demonstrate how the root cause—whether inadequate maintenance budgeting, flawed procurement, or insufficient training—will be permanently rectified.\n\nFormal finding closure is not achieved upon submitting paperwork; it requires authority concurrence followed by rigorous verification. State inspectors conduct on-site physical audits, review certified testing reports, and verify that operational mitigations remained robust throughout the remediation lifecycle. By holding operators accountable to auditable benchmarks, Part-ADR.OR.D.005 ensures that European aerodromes continually elevate their physical safety margins."
             },
             {
-              "title": "Video 2: Inside Air Traffic Control",
-              "watchUrl": "https://www.youtube.com/watch?v=R90mroZyAL4",
-              "tag": "Air Traffic Services",
-              "videoId": "R90mroZyAL4",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/R90mroZyAL4",
-              "caption": "Focus: Tower, approach, and en-route controllers managing active runways, sector handoffs, tactical separation authority, and standard phraseology.",
-              "part": "Part 2"
+              "title": "Restoring Runway Surface Friction: Hydro-Blasting, Micro-Texturing, and CFME Calibration",
+              "subtitle": "The physics of rubber deposit removal, surface drainage restoration, and continuous friction measurement on high-density runways.",
+              "source": "SKYbrary Aviation Safety",
+              "readTime": "Estimated read: 5-7 mins",
+              "url": "https://skybrary.aero",
+              "takeaways": [
+                "Repeated aircraft landings deposit vulcanized rubber in runway touchdown zones, filling asphalt grooves and causing hydrodynamic tire aquaplaning.",
+                "Ultra-high-pressure hydro-blasting (up to 2,500 bar) removes rubber deposits and restores macro-texture without damaging underlying pavement binder.",
+                "Continuous Friction Measuring Equipment (CFME) runs at 65 km/h and 95 km/h are legally required to verify that friction coefficients exceed maintenance planning levels."
+              ],
+              "vocab": [
+                "CFME",
+                "Hydro-Blasting",
+                "Macro-Texture",
+                "Aquaplaning Risk"
+              ],
+              "content": "On international commercial runways, each wide-body touchdown deposits between 1.5 and 3.0 kilograms of vulcanized aircraft tire rubber onto the runway touchdown zone. Under the extreme friction and temperature of spin-up upon contact, molten rubber is forced into the transverse asphalt grooves and microscopic surface pores. Over months of heavy flight schedules, this progressive accretion creates a smooth, glass-like coating that prevents surface water drainage and severely compromises aircraft braking action.\n\nWhen water films exceed 1.0 millimeter during precipitation, an aircraft landing on rubber-contaminated asphalt cannot evacuate water from beneath its tires. The resulting dynamic aquaplaning hydrodynamic pressure lifts the tire completely off the pavement, depriving the flight crew of directional steering and wheel braking. To prevent runway overruns and lateral excursions, EASA CS-ADR-DSN.B.015 establishes strict friction thresholds: the Minimum Friction Level (mu = 0.34) below which operations are restricted, and the Maintenance Planning Level (mu = 0.43) which triggers mandatory corrective remediation.\n\nModern aerodromes utilize specialized ultra-high-pressure (UHP) hydro-blasting technology to de-rubberize runways. Operating during night curfews, specialized vehicles project needle-thin water jets at pressures exceeding 2,200 bar onto the pavement. The kinetic energy of the water shatters the brittle rubber deposits without chemical solvents, immediately vacuuming the residue into on-board waste tanks. This process re-opens the original grooving pattern and restores aggregate micro-texture.\n\nVerification of friction recovery requires rigorous scientific instrumentation. Technicians deploy Continuous Friction Measuring Equipment (CFME)—such as the GripTester, Mu-Meter, or surface friction trailer—conducting test runs at 65 km/h and 95 km/h under an artificial 1.0mm water film. Only when consecutive survey runs confirm that average friction values exceed mu = 0.52 across the entire touchdown zone can the aerodrome operator request formal authority closure of the safety finding."
             },
             {
-              "title": "Video 3: AFIS & Regional Aerodrome Operations",
-              "watchUrl": "https://www.youtube.com/watch?v=2BZbHAJQ70s",
-              "tag": "TSEEAC / AFISO Focus",
-              "videoId": "2BZbHAJQ70s",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/2BZbHAJQ70s",
-              "caption": "Focus: Aerodrome Flight Information Service (AFIS) officers providing flight information, weather reports, and alerting service without air traffic control separation.",
-              "part": "Part 3"
+              "title": "From Audit Finding to Verification: Best Practices in Civil Aviation Authority Oversight",
+              "subtitle": "How safety managers and state inspectors collaborate through transparent communication, verifiable milestones, and closed-loop SMS.",
+              "source": "Eurocontrol Safety Portals",
+              "readTime": "Estimated read: 6-8 mins",
+              "url": "https://www.eurocontrol.int",
+              "takeaways": [
+                "Authority compliance meetings succeed when aerodrome safety managers use precise, formulaic commitment language rather than vague promises.",
+                "Interim risk mitigations must be continually monitored and adapted if civil engineering works experience supply chain delays.",
+                "A closed-loop Safety Management System (SMS) incorporates post-closure monitoring to verify that corrective actions remain effective over time."
+              ],
+              "vocab": [
+                "Safety Oversight",
+                "Verification Benchmark",
+                "Interim Mitigation",
+                "Closed-Loop SMS"
+              ],
+              "content": "The relationship between an aerodrome safety directorate and national civil aviation inspectors (such as DSAC or CAA auditors) is frequently perceived as adversarial. However, modern safety management principles under ICAO Annex 19 and EASA regulations define compliance oversight as a collaborative, risk-based partnership designed to identify organizational weaknesses before they manifest as airside accidents.\n\nWhen non-compliances are identified during scheduled aerodrome audits or incident debriefs, the negotiation of the Corrective Action Plan represents a critical communication juncture. Inspectors assess not only the technical feasibility of proposed repairs, but the operational culture of the operator. Safety managers who present structured root-cause analyses, realistic milestone dates, and clear interim risk containment measures inspire regulatory confidence and secure rapid concurrence.\n\nEffective regulatory dialogue relies on precise, formulaic spoken language. Experienced aerodrome managers avoid ambiguous phrasing such as 'we hope to finish soon,' choosing instead legally defined commitment structures: 'We undertake to install temporary concrete barriers within 48 hours,' 'Pending formal certification, a NOTAM shall restrict wet operations,' and 'We respectfully request authority concurrence for a 14-day extension based on supplier delivery schedules.' This precision allows inspectors to document compliance objectively.\n\nCrucially, EASA oversight models emphasize closed-loop verification. Finding closure is not the end of the safety cycle; it initiates post-implementation monitoring within the airport's Safety Management System (SMS). Twelve months after closure, internal auditors verify whether the corrective measures successfully prevented hazard recurrence. Through auditable tracking and transparent communication, European aerodromes maintain the highest global safety standards."
             }
           ],
-          "grammar": {
-            "title": "Expressing Professional Responsibilities, Duties & Authority",
-            "badge": "B2 Functional Grammar Focus",
-            "patternTitle": "Responsibility & Authority Formulas",
-            "formula": "BE RESPONSIBLE FOR + -ING • BE TASKED WITH + -ING • HAVE AUTHORITY OVER / TO • ENSURE THAT + CLAUSE",
-            "rulesTitle": "Core Formulas & Jurisdictional Prepositions",
-            "rules": [
-              "<strong style=\"color: #1e293b;\">1. BE RESPONSIBLE FOR + Gerund / Noun:</strong> Core ongoing duty or accountability (<span style=\"font-weight: 700; color: #c0684f;\">responsible for coordinating</span>, <span style=\"font-weight: 700; color: #c0684f;\">responsible for flight safety</span>).",
-              "<strong style=\"color: #1e293b;\">2. BE TASKED WITH + Gerund / Noun:</strong> Designated operational mission or assigned mandate (<span style=\"font-weight: 700; color: #c0684f;\">tasked with conducting</span>, <span style=\"font-weight: 700; color: #c0684f;\">tasked with safety audits</span>).",
-              "<strong style=\"color: #1e293b;\">3. HAVE AUTHORITY OVER / TO:</strong> Legal command power (<span style=\"font-weight: 600; color: #334155;\">have authority over active runways</span> [ATCO], <span style=\"font-weight: 600; color: #334155;\">authority to issue clearances</span>).",
-              "<strong style=\"color: #1e293b;\">4. ENSURE THAT + Clause:</strong> Verification and quality assurance (<span style=\"font-weight: 600; color: #334155;\">ensure that cargo doors are latched</span>, <span style=\"font-weight: 600; color: #334155;\">ensure that weight limits are respected</span>).",
-              "<strong style=\"color: #1e293b;\">5. REPORT TO vs. LIAISE WITH:</strong> Upward hierarchy (<span style=\"font-weight: 600; color: #334155;\">reports to the chief pilot</span>) vs. lateral coordination (<span style=\"font-weight: 600; color: #334155;\">liaises with apron controllers</span>)."
-            ],
-            "trap": "<strong>⚠️ Common Preposition & False Friend Trap:</strong> Never say <em>responsible of</em>—always use <strong>responsible for + -ing</strong>. Also, strictly distinguish <em>control</em> (ATCO issuing binding separation orders) from <em>provide information</em> (AFISO advising pilots without executive control clearances).",
-            "examplesTitle": "Operational Responsibility Examples",
-            "examples": [
-              "<em>\"The Turnaround Coordinator is <strong>responsible for ensuring</strong> that all ground support equipment is detached before pushback.\"</em>",
-              "<em>\"Unlike aerodrome controllers, AFISOs are <strong>tasked with providing</strong> traffic information rather than tactical separation clearances.\"</em>"
+          "grammarClinic": {
+            "title": "Language Clinic: Formulaic Spoken Commitments & Diplomatic Negotiations",
+            "desc": "Master professional spoken patterns for regulatory audits: making binding commitments, establishing interim conditions, and requesting formal authority concurrence.",
+            "patterns": [
+              {
+                "title": "1. Making Binding Institutional Commitments",
+                "formula": "We undertake to + [Verb Base] + [Milestone Action] + within / by [Target Date]",
+                "example": "We undertake to complete UHP hydro-blasting across the touchdown zone within 14 calendar days.",
+                "usage": "Use 'undertake to' during authority meetings to signal formal institutional responsibility."
+              },
+              {
+                "title": "2. Establishing Interim Provisional Safeguards",
+                "formula": "Pending + [Permanent Action], an operational restriction shall + [Enforced Safeguard]",
+                "example": "Pending definitive blast fence replacement, an operational restriction shall enforce idle thrust at Holding Point P1.",
+                "usage": "Use 'pending' + 'shall' to demonstrate that risks are fully controlled during civil works."
+              },
+              {
+                "title": "3. Conditional Regulatory Concurrence",
+                "formula": "Subject to authority concurrence, our engineering unit will + [Action]",
+                "example": "Subject to authority concurrence, our engineering unit will transition to bi-monthly CFME survey runs.",
+                "usage": "Diplomatic phrasing acknowledging the state inspector's ultimate statutory approval authority."
+              }
             ]
           },
           "resources": [
             {
-              "url": "https://www.enac.fr/en",
-              "tag": "01 • Civil Aviation Authority",
-              "name": "DGAC Careers & TSEEAC Competitions",
-              "desc": "Official French civil aviation authority portal detailing TSEEAC, IEEAC, and ATCO recruitment competitions and corps duties.",
-              "part": "Part 1"
+              "tag": "EASA Aerodromes Portal",
+              "name": "EASA Aerodrome Rules & Guidance",
+              "desc": "Regulation (EU) No 139/2014, Part-ADR.OR.D.005, and certification specifications.",
+              "url": "https://www.easa.europa.eu/en/domains/aerodromes"
             },
             {
-              "url": "https://www.eurocontrol.int",
-              "tag": "02 • European ATM Network",
-              "name": "Eurocontrol Air Traffic Management",
-              "desc": "Pan-European air navigation services, controller profiles, and ATM network operations.",
-              "part": "Part 2"
+              "tag": "DGAC Safety Oversight",
+              "name": "Direction Générale de l'Aviation Civile",
+              "desc": "French national civil aviation authority safety oversight guidelines and audit protocols.",
+              "url": "https://www.enac.fr/en"
             },
             {
-              "url": "https://www.iata.org/en/programs/ops-infra/ground-operations/",
-              "tag": "03 • Ramp & Apron Standards",
-              "name": "IATA Ground Operations Hub (IGOM)",
-              "desc": "Global airline industry standards for apron safety, aircraft turnaround, and ground support equipment handling.",
-              "part": "Part 3"
-            },
-            {
-              "url": "https://www.ifatca.org",
-              "tag": "04 • Professional Association",
-              "name": "IFATCA Air Traffic Controllers",
-              "desc": "Worldwide federation representing over 50,000 air traffic controllers across 130 countries.",
-              "part": "Part 4"
-            },
-            {
-              "url": "https://skybrary.aero/articles/icao-annex-1",
-              "tag": "05 • Global Standards",
-              "name": "ICAO Personnel Licensing (Annex 1)",
-              "desc": "International civil aviation benchmarks for pilots, flight dispatchers, ATCOs, and aeronautical station operators.",
-              "part": "Part 5"
-            },
-            {
-              "url": "https://www.easa.europa.eu",
-              "tag": "06 • Technical Regulations",
-              "name": "EASA Regulations & Safety Standards",
-              "desc": "Official European aerodrome regulations, certification specifications, and safety directives for civil aviation professionals.",
-              "part": "Part 6"
+              "tag": "SKYbrary Aviation Hub",
+              "name": "SKYbrary Runway Friction Portal",
+              "desc": "Global repository on runway surface friction, hydro-blasting, and contaminant mitigation.",
+              "url": "https://skybrary.aero"
             }
           ],
-          "pageUrl": "session4/admat_aas1.html",
-          "articles": [
+          "quiz": [
             {
-              "topic": "FlightGlobal / Aviation Careers",
-              "sourceTag": "Career Insight",
-              "heading": "Beyond the Flight Deck: The Essential Network of Airport Operations",
-              "snippet": "An in-depth look at the landside, airside, and regulatory roles that keep international aviation flowing seamlessly 24/7.",
-              "readTime": "Estimated read: 5-6 mins",
-              "url": "https://www.flightglobal.com",
-              "part": "Part 1"
+              "question": "Under EASA Part-ADR.OR.D.005, what distinguishes a Level 1 finding from a Level 2 finding?",
+              "options": [
+                "A Level 1 finding seriously hazards flight operations and requires immediate mitigation within 24–48 hours, whereas Level 2 allows an agreed 30-day CAP submission.",
+                "A Level 1 finding involves paperwork errors, while Level 2 involves physical runway pavement cracks.",
+                "Level 1 findings can be ignored if the aerodrome director signs a waiver, whereas Level 2 findings cannot.",
+                "Level 1 findings only apply to commercial airliners, whereas Level 2 findings apply to general aviation."
+              ],
+              "correct": 0,
+              "explanation": "Level 1 findings represent an immediate threat to aviation safety requiring immediate provisional mitigation (max 24–48 hours), whereas Level 2 findings allow 30 days for formal CAP submission."
             },
             {
-              "topic": "DGAC France / ENAC Portal",
-              "sourceTag": "Civil Aviation Careers",
-              "heading": "The Modern Role of TSEEAC: From AFIS to Safety Oversight",
-              "snippet": "How France's Civil Aviation Operations Corps supports regional aerodrome operations, civil aviation safety inspections, and air navigation technical support.",
-              "readTime": "Estimated read: 5-7 mins",
-              "url": "https://www.enac.fr/en",
-              "part": "Part 2"
+              "question": "What is the primary operational hazard of vulcanized tire rubber accumulating on a runway touchdown zone?",
+              "options": [
+                "It makes the runway surface too rough and damages aircraft tires during rotation.",
+                "It fills the transverse asphalt grooves, causing dynamic aquaplaning and severe loss of braking action in wet conditions.",
+                "It attracts migratory birds seeking warm asphalt surfaces.",
+                "It changes the magnetic alignment of the instrument landing system (ILS) localizer."
+              ],
+              "correct": 1,
+              "explanation": "Rubber deposits fill the macro-texture grooves, preventing water drainage and inducing dynamic aquaplaning when surface water films exceed 1.0mm."
             },
             {
-              "topic": "Eurocontrol ATM Careers",
-              "sourceTag": "Operational Profile",
-              "heading": "ATCO vs AFISO: Understanding the Scope of Air Traffic Services",
-              "snippet": "Comparing tactical separation authority in controlled airspace with flight information and advisory services at regional fields.",
-              "readTime": "Estimated read: 6-8 mins",
-              "url": "https://www.eurocontrol.int",
-              "part": "Part 3"
+              "question": "Which spoken formula represents an appropriate formal commitment during an authority audit meeting?",
+              "options": [
+                "'We hope our contractors might fix the fence sometime next month.'",
+                "'We undertake to complete the hydro-blasting within 14 calendar days, subject to authority concurrence.'",
+                "'The inspector should not worry because aerodrome accidents are very rare.'",
+                "'We will only fix the finding if the airlines agree to pay higher landing fees.'"
+              ],
+              "correct": 1,
+              "explanation": "'We undertake to [action] within [timeline], subject to authority concurrence' is the standard, legally robust formula for regulatory meetings."
             },
             {
-              "topic": "IATA Ground Operations Bulletin",
-              "sourceTag": "Safety & Turnaround",
-              "heading": "The Turnaround Coordinator: Heartbeat of On-Time Performance",
-              "snippet": "Why ramp coordinators, loadmasters, and flight dispatchers form the vital link between airline schedules and safety compliance.",
-              "readTime": "Estimated read: 5-6 mins",
-              "url": "https://www.iata.org",
-              "part": "Part 4"
+              "question": "In Session 7's flipped classroom evaluation, how much time does each student teaching pod have to deliver their lesson?",
+              "options": [
+                "10 minutes per student individually.",
+                "30 minutes per team of 3 or 4 students.",
+                "45 minutes per pair of 2 students.",
+                "The entire 2-hour class period."
+              ],
+              "correct": 1,
+              "explanation": "Each student teaching pod of 3 to 4 engineers has exactly 30 minutes to deliver their interactive lesson to their classmates."
+            },
+            {
+              "question": "What is the primary role of the Language & Vocab Coach within a Session 7 teaching pod?",
+              "options": [
+                "To grade classmates with letter grades during the lesson.",
+                "To monitor spoken English, note technical communicative breakthroughs and slips, and lead the vocabulary review.",
+                "To translate everything into French for the class.",
+                "To operate the classroom projector and light switches."
+              ],
+              "correct": 1,
+              "explanation": "The Language & Vocab Coach monitors peer speaking, tracks technical aviation terms, and conducts constructive feedback during the debriefing stage."
             }
-          ],
-          "quizTitle": "Airside Scenario Quiz • Approach Plates: Final Corridors & Go-Around Paths",
-          "quizSubtitle": "Target pace: ~45 seconds per scenario • Mix of Final Approach Dilemmas & Go-Around Spot-Checks"
+          ]
         }
       }
     }
@@ -14753,7 +14613,7 @@
                 "title": "BEA/EASA Technical Incident Dossier: Multi-Source Occurrence Dossier 2024-089",
                 "subtitle": "Chronological Cross-Analysis • ATC Logs, METAR Windshear, MEL Defect & MOR Statements",
                 "buttonText": "Open Incident Dossier (PDF)",
-              "filename": "GSEA_S3_M1_S5_Incident_Investigation_Dossier.pdf",
+                "filename": "GSEA_S3_M1_S5_Incident_Investigation_Dossier.pdf",
                 "path": "docs/GSEA_S3_M1_S5_Incident_Investigation_Dossier.pdf",
                 "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
               },
@@ -15296,787 +15156,647 @@
         },
         "6": {
           "session": 6,
+          "overview": {
+            "intro": "Welcome to Session 6 of Technical English on The Corrective Action Plan (CAP) & Lesson 7 Prep! This session serves as the capstone of Module 1, bridging the aerodrome audit findings from Session 4 and the multi-source incident investigation from Session 5 into formal regulatory Corrective Action Plans under Regulation (EU) No 139/2014 Part-ADR.OR.D.005. Furthermore, this session provides dedicated workshop time for student teams of 3 to 4 to design and structure their 30-minute interactive flipped lesson for Session 7.",
+            "whyItMatters": "Closing an audit finding or incident investigation is not merely a box-ticking administrative exercise—it is the legal mechanism that prevents catastrophic repeat occurrences on the airfield. When civil aviation authorities identify safety deficiencies such as runway friction loss or blast fence corrosion, aerodrome operators must formally demonstrate how they will eliminate the underlying root cause. Moreover, developing the confidence to facilitate technical peer discussions prepares future ENAC aviation professionals for high-stakes safety briefings and leadership roles.",
+            "keyTerms": [
+              {
+                "term": "Corrective Action Plan (CAP)",
+                "ipa": "/kəˈrɛktɪv ˈækʃən plæn/",
+                "pos": "noun phrase",
+                "def": "A formal, documented schedule of measures formulated by an aerodrome operator to remediate non-compliances identified during safety audits or incident investigations under EASA Part-ADR.OR.D.005."
+              },
+              {
+                "term": "Level 1 Finding",
+                "ipa": "/ˈlɛvəl wʌn ˈfaɪndɪŋ/",
+                "pos": "noun phrase",
+                "def": "Any significant non-compliance with aerodrome safety requirements which lowers safety or seriously hazards aircraft operations, requiring immediate provisional mitigation within 24 to 48 hours."
+              },
+              {
+                "term": "Level 2 Finding",
+                "ipa": "/ˈlɛvəl tuː ˈfaɪndɪŋ/",
+                "pos": "noun phrase",
+                "def": "Any non-compliance which could lower safety if uncorrected, requiring the aerodrome operator to submit a formal CAP within 30 days and achieve full closure within an agreed timeframe."
+              },
+              {
+                "term": "Root-Cause Remediation",
+                "ipa": "/ruːt kɔːz rɪˌmiːdiˈeɪʃən/",
+                "pos": "noun phrase",
+                "def": "Corrective interventions aimed at eliminating the underlying systemic or organizational defects that generated an operational hazard, rather than merely addressing surface symptoms."
+              },
+              {
+                "term": "Interim Risk Mitigation",
+                "ipa": "/ˈɪntərɪm rɪsk ˌmɪtɪˈɡeɪʃən/",
+                "pos": "noun phrase",
+                "def": "Provisional operational safeguards (such as NOTAM notices, speed restrictions, or weight limitations) enforced to contain safety risks while permanent engineering works are executed."
+              },
+              {
+                "term": "Verification Milestone",
+                "ipa": "/ˌvɛrɪfɪˈkeɪʃən ˈmaɪlstoʊn/",
+                "pos": "noun phrase",
+                "def": "A scheduled, auditable benchmark within a CAP against which the competent authority measures progress toward definitive compliance."
+              },
+              {
+                "term": "Authority Concurrence",
+                "ipa": "/ɔːˈθɒrɪti kənˈkʌrəns/",
+                "pos": "noun phrase",
+                "def": "Formal written acceptance or agreement issued by a national civil aviation authority (e.g., DGAC or EASA) confirming that an aerodrome operator's proposed CAP meets regulatory standards."
+              },
+              {
+                "term": "Hydro-Blasting",
+                "ipa": "/ˈhaɪdroʊ ˈblæstɪŋ/",
+                "pos": "noun",
+                "def": "An industrial runway maintenance technique using ultra-high-pressure water jets (up to 2,500 bar) to remove vulcanized tire rubber deposits and restore asphalt macro-texture without chemical solvents."
+              },
+              {
+                "term": "Jet Blast Deflector",
+                "ipa": "/dʒɛt blɑːst dɪˈflɛktər/",
+                "pos": "noun phrase",
+                "def": "A heavy-duty curved aerodrome barrier engineered to redirect high-velocity aircraft engine exhaust upward and away from adjacent taxiways, service roads, and ground personnel."
+              },
+              {
+                "term": "Flipped Peer-Teaching",
+                "ipa": "/flɪpt pɪər ˈtiːtʃɪŋ/",
+                "pos": "noun phrase",
+                "def": "A collaborative instructional model where students assume the role of technical instructors, designing and delivering interactive learning activities to their peers to build communicative mastery."
+              }
+            ],
+            "speakingTask": {
+              "title": "Authentic EASA Simulation • CAP Negotiation & Session 7 Flipped Lesson Design Studio",
+              "instructions": "Working in teams of 3 or 4, inspect the two official audit finding notices (Runway Friction Decay & Perimeter Blast Fence Detachment) and the three photographic remediation exhibits. Practice negotiating realistic CAP milestones with your partner acting as the Civil Aviation Inspector. Then, transition into the Flipped Lesson Design Studio to plan, structure, and assign teaching roles for your team's 30-minute interactive lesson in Session 7.",
+              "document": {
+                "title": "EASA Part-ADR.OR.D.005 Corrective Action Plan & Session 7 Peer-Teaching Guide",
+                "subtitle": "Statutory Finding Remediation Framework & Flipped Classroom Assessment Specification",
+                "buttonText": "Open EASA Extract (PDF)",
+                "filename": "GSEA_S3_M1_S6_EASA_Corrective_Action_Plan.pdf",
+                "path": "docs/GSEA_S3_M1_S6_EASA_Corrective_Action_Plan.pdf",
+                "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
+              },
+              "teamRoles": {
+                "group1": "Teaching Pod 1 (Runway Surface Condition & Friction Decays): Draft an interactive 30-minute lesson teaching classmates how to interpret CFME friction traces, identify rubber contamination, and calculate landing distances.",
+                "group2": "Teaching Pod 2 (Apron Vehicle Safety & Pushback Coordination): Build a 30-minute workshop on apron telematics speed control, towbar shear mechanics, and interphone communication protocols.",
+                "group3": "Teaching Pod 3 (Wildlife Hazard Management & CS-ADR-DSN): Design an engaging 30-minute seminar covering pyrotechnic laser dispersal, acoustic deterrents, and aerodrome bird strike mitigation.",
+                "group4": "Teaching Pod 4 (Airfield Audit Non-Conformities & CAP Negotiation): Create a dynamic 30-minute roleplay challenge where classmates simulate aerodrome operators defending CAP milestones to state inspectors."
+              },
+              "usefulPhrases": [
+                "We undertake to implement the interim risk mitigation by...",
+                "In the interim, the aerodrome operator shall enforce a mandatory NOTAM stating...",
+                "Subject to authority concurrence, our definitive engineering works will conclude on...",
+                "For our Session 7 flipped lesson, our team will engage classmates through an interactive..."
+              ]
+            },
+            "document": {
+              "title": "EASA Part-ADR.OR.D.005 Corrective Action Plan & Session 7 Peer-Teaching Guide",
+              "subtitle": "Statutory Finding Remediation Framework & Flipped Classroom Assessment Specification",
+              "buttonText": "Open EASA Extract (PDF)",
+              "filename": "GSEA_S3_M1_S6_EASA_Corrective_Action_Plan.pdf",
+              "path": "docs/GSEA_S3_M1_S6_EASA_Corrective_Action_Plan.pdf",
+              "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
+            }
+          },
           "objectives": {
-            "title": "Session 6 Objectives - Approach Plates: Final Corridors & Go-Around Paths",
-            "summary": "By the end of this session, GSEA students will be able to read and explain visual approach plates (IAC / ILS) in plain English, explain vertical descent profiles aloud, play the fast-paced 'Go / No-Go Lightning Challenge', role-play an emergency go-around command, and complete a collaborative Safety Check on unstabilized approach criteria.",
+            "title": "Session 6 Objectives - The Corrective Action Plan (CAP) & Lesson 7 Prep",
+            "summary": "By the end of this session, GSEA students will be able to classify aerodrome audit findings into Level 1 and Level 2 under EASA Part-ADR.OR.D.005, formulate SMART corrective milestones with interim risk mitigations, negotiate binding compliance deadlines with civil aviation inspectors using formulaic commitment language, and collaboratively plan their 30-minute flipped peer-teaching lesson for Session 7.",
             "items": [
               {
                 "num": 1,
-                "title": "Read the Side-View Profile Aloud (Profile Briefing Skill)",
-                "description": "Learn and use standard spoken patterns to explain vertical descent profiles, FAF Maltese cross, glide path angles, and decision heights.",
+                "title": "Audit Finding Classification & Root-Cause Remediation (Finding Taxonomy)",
+                "description": "Distinguish Level 1 findings (immediate airside safety hazard, 24-48h suspension/NOTAM) from Level 2 findings (procedural/systemic non-compliance, 30-90 day CAP).",
                 "part": "Part 1"
               },
               {
                 "num": 2,
-                "title": "Read a Visual Approach Plate (Visual Chart Scanning)",
-                "description": "Scan the visual ILS Runway 14L approach plate to identify plan view fixes (CAPDENAC, BLAGY), FAF at 5.2 DME, 3.0° glide slope, and decision altitude (692 ft).",
+                "title": "EASA Part-ADR.OR.D.005 CAP Drafting & Authority Criteria (Statutory Compliance)",
+                "description": "Formulate SMART corrective actions, establish interim operational mitigations (NOTAMs, aircraft weight limits), and identify authority verification criteria.",
                 "part": "Part 2"
               },
               {
                 "num": 3,
-                "title": "Vertical Paths & Cockpit Callouts (Language Focus)",
-                "description": "Master vertical flight terminology: on the glide slope, slightly high/low, at the final approach fix, upon reaching minimums, and positive climb, gear up.",
+                "title": "Aerodrome Operator vs Authority Inspector Negotiation (Spoken Simulation)",
+                "description": "Roleplay high-stakes compliance meetings using formulaic spoken commitment phrases (undertake to, subject to concurrence, conditional upon verification).",
                 "part": "Part 3"
               },
               {
                 "num": 4,
-                "title": "Communicative Game: ⚡ Go / No-Go Lightning Challenge",
-                "description": "Fast-paced rapid-fire round! Take turns reading approach dilemma cards, call out 'CONTINUE!' or 'GO-AROUND!' in 3 seconds, and defend your choice.",
+                "title": "Extended Peer-Teaching Workshop & Lesson 7 Design Studio (Flipped Lesson Prep)",
+                "description": "Work in teams of 3 to 4 with dedicated preparation time to structure an engaging 30-minute flipped lesson for Session 7 across authentic Module 1 aerodrome domains.",
                 "part": "Part 4"
-              },
-              {
-                "num": 5,
-                "title": "Speaking Role-Play: Low Visibility Approach & Emergency Go-Around",
-                "description": "Role-play a tense final approach where a vehicle incursion on the runway forces the controller to command an immediate go-around.",
-                "part": "Part 5"
-              },
-              {
-                "num": 6,
-                "title": "Safety Check: Unstabilized Approach & Go-Around Culture (Operational Discussion)",
-                "description": "Collaborate in teams to analyze unstabilized approach risks, overcome hesitation traps, and support a blame-free go-around safety culture.",
-                "part": "Part 6"
               }
             ]
           },
           "lessonPlan": {
-            "title": "Session 6 Lesson Plan (2 Hours)",
-            "summary": "A 2-hour communicative spoken English session covering visual ILS approach plates, profile view briefings, the 'Go / No-Go Lightning Challenge' game, an emergency go-around role-play, and an unstabilized approach safety check.",
-            "items": [
+            "title": "Session 6 Lesson Plan - The Corrective Action Plan (CAP) & Lesson 7 Prep (2 Hours)",
+            "summary": "A high-impact capstone technical English session where students transform audit findings into binding EASA Corrective Action Plans, master spoken regulatory negotiations, and dedicate substantial workshop time to preparing their 30-minute peer-teaching lessons for Session 7.",
+            "structure": [
               {
-                "title": "Part 1: Warm-up: The Final 3 Minutes Before Touchdown",
-                "description": "In pairs, students discuss cockpit workload on final approach, explain stabilized approach gates, and test entry knowledge with 4 spot-check questions.",
-                "part": "Part 1"
+                "part": "Part 1: Audit Finding Classification & Root-Cause Remediation",
+                "focus": "Aerodrome safety taxonomy, Level 1 vs Level 2 statutory definitions, root-cause isolation versus surface defect repair.",
+                "activity": "Examine the two official finding notices (Runway Friction Decay & Jet Blast Fence Failure). In pairs, identify the underlying organizational root causes and state why immediate temporary containment is mandatory."
               },
               {
-                "title": "Part 2: Visual Chart & Profile View Briefing Clinic",
-                "description": "Analyzing the visual ILS Runway 14L plate at LFMT, learning standard phrases to describe the vertical step-down profile, and completing a 60-second approach briefing.",
-                "part": "Part 2"
+                "part": "Part 2: EASA Part-ADR.OR.D.005 CAP Drafting & Authority Criteria",
+                "focus": "SMART remediation milestones, interim operational mitigations, NOTAM drafting, and authority verification benchmarks.",
+                "activity": "Analyze the 4-tab CAP dossier. Review the phased remediation timelines for hydro-blasting rubber removal and structural blast fence reconstruction."
               },
               {
-                "title": "Part 3: Language Clinic: Vertical Paths & Cockpit Callouts",
-                "description": "Oral drills and pair practice using vertical flight terminology (on the glide slope, at the final approach fix, upon reaching minimums, go-around positive climb).",
-                "part": "Part 3"
+                "part": "Part 3: Interactive Aerodrome Operator vs Civil Aviation Inspector Negotiation",
+                "focus": "Formulaic spoken commitment structures, diplomatic compliance pushback, and conditional acceptance language.",
+                "activity": "Simulated authority review meeting: Partner A acts as the Aerodrome Safety Manager defending the proposed timeline; Partner B acts as the DGAC/EASA Inspector enforcing safety margins."
               },
               {
-                "title": "Part 4: Communicative Game: ⚡ Go / No-Go Lightning Challenge",
-                "description": "Rapid-fire partner game: students evaluate 6 high-pressure approach scenarios, make instant 3-second 'Continue' or 'Go-Around' calls, and defend their choice.",
-                "part": "Part 4"
-              },
-              {
-                "title": "Part 5: Speaking Role-Play & Safety Check",
-                "description": "Spoken simulation: Tower Controller commands an immediate go-around due to a vehicle crossing Runway 14L on 2-mile final, followed by a 4-step Safety Check on stabilized criteria.",
-                "part": "Part 5"
+                "part": "Part 4: Extended Peer-Teaching Workshop & Lesson 7 Design Studio",
+                "focus": "Dedicated extended preparation time for Session 7 flipped peer-teaching lessons (30 minutes delivery per pod of 3–4 students).",
+                "activity": "Teams of 3 to 4 select their technical domain (Runway Friction/GRF, Ramp Safety/Telematics, Wildlife Hazard, or CAP Audit Negotiation). Teams design their 3-stage lesson architecture (Hook, Core Activity, Debrief), assign teaching roles, review the 20-point assessment rubric, and record their lesson outline in the on-screen scratchpad."
               }
             ]
           },
           "lessonContent": {
             "hero": {
-              "title": "Approach Plates: Final Corridors & Go-Around Paths",
-              "subtitle": "Visual ILS Plates (Plan & Profile Views), Vertical Flight Callouts & 'Go / No-Go Lightning Challenge' Game",
-              "image": "images/s3_m1_session6_approach.jpg",
-              "targetLevel": "CEFR B1–B2",
-              "roleContext": "GSEA Student Training • Final Approach Operations & Technical English",
-              "duration": "120 Minutes"
+              "title": "The Corrective Action Plan (CAP) & Lesson 7 Prep",
+              "subtitle": "EASA Part-ADR.OR.D.005 Compliance, Authority Negotiation & Flipped Classroom Design Studio",
+              "badge": "EASA Part-ADR.OR.D.005",
+              "summary": "Bridging aerodrome audit non-conformities into legally binding Corrective Action Plans, mastering diplomatic spoken negotiation with state inspectors, and dedicating focused collaborative studio time to prepare 30-minute peer-teaching lessons for Session 7.",
+              "metrics": [
+                {
+                  "label": "Regulatory Ref",
+                  "val": "ADR.OR.D.005"
+                },
+                {
+                  "label": "Finding Levels",
+                  "val": "Level 1 & Level 2"
+                },
+                {
+                  "label": "CAP Timeline",
+                  "val": "30 Days to 3 Months"
+                },
+                {
+                  "label": "Session 7 Pod Delivery",
+                  "val": "30 Mins / Pod"
+                }
+              ]
             },
             "openingSession": {
-              "title": "Activity 1: Warm-up & Entry Spot-Check",
-              "summary": "Break the ice, discuss the intense workload during the final 3 minutes before touchdown, and test your baseline knowledge of approach plate symbols.",
-              "modeBadges": [
-                "Pairs (2 students)",
-                "Spoken Discussion"
-              ],
-              "instructions": [
-                "In pairs, discuss the 3 opening questions about flying the final approach.",
-                "Read each of the 4 Entry Spot-Check questions below and discuss your answers together.",
-                "Click 'Reveal Answer' to check your reasoning and see the plain English explanation."
-              ],
-              "deliverable": "Shared agreement on what constitutes a safe stabilized approach, and completed 4-question diagnostic.",
-              "teacherNotes": "Encourage spontaneous speaking. Help students understand that a go-around is not a failure, but a normal, professional safety decision.",
-              "newsPrompts": [
-                {
-                  "id": 1,
-                  "question": "Why do aviation safety experts call the final approach phase the 'most critical three minutes' of flight?",
-                  "exampleAnswers": [
-                    "Because the aircraft is close to the ground, flying at relatively slow speed with flaps and landing gear extended, leaving very little margin for error.",
-                    "Also, both pilots must manage radio communications, cross-check flight instruments, watch for visual references, and be ready to execute a go-around at a second's notice."
-                  ],
-                  "part": "Part 1"
-                },
-                {
-                  "id": 2,
-                  "question": "What is the crucial difference between a Decision Altitude (DA) and a Minimum Descent Altitude (MDA)?",
-                  "exampleAnswers": [
-                    "A Decision Altitude is used on a precision approach (like an ILS); as soon as you reach that exact altitude, you must either see the runway or start climbing immediately.",
-                    "A Minimum Descent Altitude is used on a non-precision approach; you descend to that altitude, level off, and fly flat until you reach the missed approach point."
-                  ],
-                  "part": "Part 2"
-                },
-                {
-                  "id": 3,
-                  "question": "Why do some flight crews hesitate to initiate a go-around, even when the approach is unstabilized?",
-                  "exampleAnswers": [
-                    "Psychological pressure! Flight crews naturally want to complete the flight on schedule to avoid delays, extra fuel burn, or passenger inconvenience.",
-                    "That is why modern airline safety culture stresses that a go-around is always the correct, blame-free decision whenever any doubt exists."
-                  ],
-                  "part": "Part 3"
-                }
-              ],
-              "spotCheckQuestions": [
-                {
-                  "id": 1,
-                  "question": "What does the Maltese Cross symbol represent on an instrument approach plate profile view?",
-                  "options": [
-                    "The airport medical center.",
-                    "The Final Approach Fix (FAF) where the final descent begins.",
-                    "The location of the primary control tower.",
-                    "The point where cabin crew must sit down."
-                  ],
-                  "correct": 1,
-                  "explanation": "The Maltese Cross marks the Final Approach Fix (FAF), the critical point on the approach where the aircraft initiates its final glide slope descent toward the runway.",
-                  "part": "Part 1"
-                },
-                {
-                  "id": 2,
-                  "question": "What is the standard glide path angle for an Instrument Landing System (ILS) precision approach?",
-                  "options": [
-                    "1.5 degrees.",
-                    "3.0 degrees.",
-                    "6.0 degrees.",
-                    "9.0 degrees."
-                  ],
-                  "correct": 1,
-                  "explanation": "The standard ILS glide path angle is 3.0 degrees, providing a steady descent of approximately 318 feet per nautical mile (around 700–800 fpm at typical jet approach speeds).",
-                  "part": "Part 2"
-                },
-                {
-                  "id": 3,
-                  "question": "What does 'RVR 550m' mean in the landing minimums section of an approach plate?",
-                  "options": [
-                    "The runway is 550 metres long.",
-                    "Runway Visual Range: the horizontal distance down the runway that a pilot can see runway lights or markings is at least 550 metres.",
-                    "The cloud base is 550 metres above the runway.",
-                    "The radar antenna is located 550 metres from the tower."
-                  ],
-                  "correct": 1,
-                  "explanation": "RVR stands for Runway Visual Range—the measured horizontal visibility down the runway surface, which must meet or exceed the published minimum (e.g. 550m for CAT I) to attempt a landing.",
-                  "part": "Part 3"
-                },
-                {
-                  "id": 4,
-                  "question": "If visual references are lost or not seen upon reaching Decision Altitude, what must the pilot do?",
-                  "options": [
-                    "Descend an extra 100 feet to see under the fog.",
-                    "Immediately execute the published missed approach procedure (go-around).",
-                    "Switch off the autopilot and guess the runway centerline.",
-                    "Circle around the runway at 200 feet."
-                  ],
-                  "correct": 1,
-                  "explanation": "At Decision Altitude, if required visual references (approach lights, threshold markings) are not distinctly visible, the pilot MUST immediately initiate a missed approach without hesitation.",
-                  "part": "Part 4"
-                }
-              ]
+              "badge": "Safety Directorate Briefing",
+              "title": "Aerodrome Audit Finding Notice: The Path to Compliance",
+              "desc": "Under Regulation (EU) No 139/2014 Part-ADR.OR.D.005, receiving an audit non-conformity notice initiates a strict statutory process. The aerodrome operator must not merely repair the defect—they must determine the root cause, establish immediate mitigations to protect flight operations, and submit a formal Corrective Action Plan with auditable milestones acceptable to the competent authority.",
+              "callout": "Crucial distinction: Level 1 findings hazard aircraft operations immediately and require action within 24–48 hours; Level 2 findings represent systemic gaps requiring an agreed 30-day CAP submission."
             },
-            "chartExtract": {
-              "title": "Activity 2: Visual Chart & Profile View Briefing Clinic",
-              "summary": "Inspect the visual ILS Runway 14L plate (Plan View + Profile View) and master how to deliver a crisp spoken approach briefing.",
-              "visualChart": "images/charts/chart_s6_approach_lfmt.svg",
-              "badge": "AUTHENTIC SIMULATION • ILS RWY 14L APPROACH PLATE (LFMT)",
-              "callsign": "Blagnac-Montpellier Airport (LFMT / Elev 495 ft) • ILS or LOC Rwy 14L",
-              "profileClinic": {
-                "title": "Speaking Skill: How to Read the Side-View (Profile) Aloud",
-                "summary": "Use these spoken patterns to walk your colleague through the vertical approach profile from the FAF to the runway:",
-                "phrases": [
-                  {
-                    "label": "1. Navigation Setup",
-                    "phrase": "This will be the ILS Runway 14L approach, tuned to localizer 109.3 MHz with an inbound track of 142 degrees.",
-                    "part": "Part 1"
-                  },
-                  {
-                    "label": "2. Intermediate Fix",
-                    "phrase": "We cross BLAGY at 9 DME at an altitude of 4,000 feet, where we begin configuring flaps and gear.",
-                    "part": "Part 2"
-                  },
-                  {
-                    "label": "3. Final Approach Fix",
-                    "phrase": "The Maltese Cross marks the Final Approach Fix at 5.2 DME at 2,000 feet, where we intercept the 3-degree glide slope.",
-                    "part": "Part 3"
-                  },
-                  {
-                    "label": "4. Vertical Descent",
-                    "phrase": "Following the 3-degree glide slope downwards, our target descent rate is approximately 750 feet per minute.",
-                    "part": "Part 4"
-                  },
-                  {
-                    "label": "5. Decision Altitude",
-                    "phrase": "Our CAT I Decision Altitude is 692 feet, which gives us a decision height of exactly 200 feet above the touchdown zone.",
-                    "part": "Part 5"
-                  },
-                  {
-                    "label": "6. Missed Approach",
-                    "phrase": "In the event of a go-around: climb straight ahead on track 142° to 2,500 feet, then turn left climbing to 4,000 feet direct TOU VOR.",
-                    "part": "Part 6"
-                  }
-                ],
-                "challenge": "Partner Challenge: Take turns delivering the full approach briefing to your partner in 60 seconds!"
+            "photoExhibits": [
+              {
+                "id": "exhibit1",
+                "title": "Exhibit A: Fuel Farm Secondary Containment Dyke Retrofit",
+                "image": "images/s3_s6_fuel_dyke_remediation.jpg",
+                "location": "LFBO Fuel Depot • Storage Tank Bund 03",
+                "findingRef": "Finding 2026-ADR-038 (Level 2)",
+                "caption": "Civil engineers inspecting sealant depth and reinforced concrete bund walls following an uncontained drainage joint finding.",
+                "prompt": "Identify why concrete joint degradation represents an environmental and fire hazard, and formulate the immediate interim mitigation.",
+                "modelResponse": "The degradation of the secondary containment sealant risks uncontained kerosene migration into storm drains during severe rainfall. The immediate mitigation is a daily visual inspection protocol and portable spill-boom containment around Tank Bund 03 pending full elastomeric resealing."
               },
-              "sections": [
+              {
+                "id": "exhibit2",
+                "title": "Exhibit B: Touchdown Zone Runway Rubber Hydro-Blasting",
+                "image": "images/s3_s6_runway_rubber_removal.jpg",
+                "location": "Runway 14L Touchdown Zone (0–600m)",
+                "findingRef": "Finding 2026-ADR-041 (Level 1)",
+                "caption": "Ultra-high-pressure hydro-blasting specialized truck removing dense vulcanized rubber build-up to restore macro-texture grooves.",
+                "prompt": "Explain the friction measurement trigger for this Level 1 finding and state the operational restrictions required until hydro-blasting is complete.",
+                "modelResponse": "The continuous friction survey showed friction decaying to mu = 0.31, below the 0.34 minimum safety threshold. Until hydro-blasting restores the grooves to mu >= 0.52, a mandatory NOTAM must restrict wet landings and require airlines to apply factored landing distance margins."
+              },
+              {
+                "id": "exhibit3",
+                "title": "Exhibit C: Jet Blast Deflector & Perimeter FOD Barrier Repair",
+                "image": "images/s3_s6_fod_barrier_installation.jpg",
+                "location": "Holding Point P1 • Taxiway Papa Perimeter",
+                "findingRef": "Finding 2026-ADR-042 (Level 2)",
+                "caption": "Ground maintenance personnel installing replacement curved blast deflector panels and high-tension FOD catch mesh.",
+                "prompt": "Describe the operational danger of blast fence corrosion at an active holding point and outline the phased remediation milestones.",
+                "modelResponse": "Corroded anchors can cause structural fence detachment under 120-knot widebody breakaway thrust, sending metal panels onto the taxiway. Milestone 1 deploys temporary jersey barriers within 48 hours; Milestone 2 bolts marine-grade epoxy anchors and installs nylon FOD catch-netting within 30 days."
+              }
+            ],
+            "capDossier": {
+              "finding41": {
+                "title": "Finding 2026-ADR-041: Runway 14L Touchdown Zone Friction Decay",
+                "severity": "Level 1 Finding • Significant Safety Hazard",
+                "standard": "EASA CS-ADR-DSN.B.015 & Part-ADR.OPS.B.015",
+                "surveyData": "Continuous Friction Measuring Equipment (CFME) recorded average friction coefficient mu = 0.31 at 65 km/h with 1.0mm water film. Transverse grooves are 85% obstructed by dense vulcanized tire deposits.",
+                "interimMitigation": "Permanent NOTAM issued: 'RWY 14L FIRST 600M BRAKING ACTION POOR WHEN WET. TAILWIND LANDINGS PROHIBITED EXCEEDING 5 KT.' Airlines must calculate wet landing distance with +15% dispatch margin.",
+                "definitivePlan": "Four nights of UHP hydro-blasting (2,200 bar) stripping 28,000 m2 of rubber, followed by three calibration CFME survey runs at 65 km/h and 95 km/h.",
+                "targetDate": "Target Verification: 28 October 2024 (Authority on-site test)"
+              },
+              "finding42": {
+                "title": "Finding 2026-ADR-042: Jet Blast Deflector & FOD Barrier Failure",
+                "severity": "Level 2 Finding • Airside Infrastructure Non-Compliance",
+                "standard": "EASA CS-ADR-DSN.D.260 & Part-ADR.OPS.B.070",
+                "defectData": "Holding Point P1 curved blast fence shows severe base bolt electrochemical rust. Three panels are unseated, and top-edge FOD netting is torn over a 40-meter stretch.",
+                "interimMitigation": "Service road checkpoint Delta closed to ground traffic during wide-body departures. ATC instructs all departing aircraft at P1 to maintain idle thrust until fully aligned with centerline.",
+                "definitivePlan": "Installation of hot-dip galvanized Grade 316 stainless anchors rated for 150-knot jet exhaust, replacement curved corrugated panels, and high-tension nylon FOD containment mesh.",
+                "targetDate": "Target Closure: 30 November 2024 (Joint pull-out torque test)"
+              },
+              "matrix": [
                 {
-                  "heading": "1. Navigation Frequencies & Course Data",
-                  "details": [
-                    "Localizer Frequency: I-MT 109.3 MHz • Final Approach Track: 142° magnetic.",
-                    "Initial Approach Fix (IAF): Waypoint CAPDENAC at 5,000 ft QNH.",
-                    "Intermediate Fix (IF): Waypoint BLAGY at 4,000 ft QNH.",
-                    "Final Approach Fix (FAF): Maltese Cross at 5.2 DME I-MT at 2,000 ft QNH."
-                  ],
-                  "part": "Part 1"
+                  "item": "Runway Friction Restoration",
+                  "rootCause": "Annual fixed maintenance cycle failed to account for 30% increase in wide-body summer movements.",
+                  "immediateAction": "Issue NOTAM; enforce landing performance dispatch buffer.",
+                  "permanentFix": "Switch to dynamic condition-based monitoring with bi-monthly CFME surveys; execute UHP hydro-blasting.",
+                  "deadline": "28 Oct 2024"
                 },
                 {
-                  "heading": "2. Vertical Profile & Descent Data",
-                  "details": [
-                    "Glide Path Angle: 3.00° (318 ft per nautical mile, approx 750 fpm descent at 140 kt groundspeed).",
-                    "Threshold Crossing Height (TCH): 50 ft above runway elevation.",
-                    "Aerodrome Elevation: 495 ft AMSL • Touchdown Zone Elevation (TDZE): 492 ft AMSL."
-                  ],
-                  "part": "Part 2"
+                  "item": "Blast Fence Structural Anchoring",
+                  "rootCause": "Original 2012 specification lacked marine-grade epoxy coating against de-icing chemical runoff.",
+                  "immediateAction": "Close adjacent service road; enforce idle thrust taxi restrictions.",
+                  "permanentFix": "Bolt 45 kN pull-out rated stainless anchors; install continuous FOD barrier mesh.",
+                  "deadline": "30 Nov 2024"
                 },
                 {
-                  "heading": "3. Published Landing Minimums",
-                  "details": [
-                    "CAT I ILS Precision Minimums: Decision Altitude (DA) 692 ft AMSL (Decision Height 200 ft AGL) • RVR 550m.",
-                    "LOC Only (Non-Precision) Minimums: Minimum Descent Altitude (MDA) 890 ft AMSL (MDH 395 ft AGL) • Visibility 1,500m.",
-                    "Circling Minimums: MDA 1,050 ft AMSL • Visibility 2,400m."
-                  ],
-                  "part": "Part 3"
-                },
-                {
-                  "heading": "4. Published Missed Approach Procedure (Go-Around)",
-                  "details": [
-                    "Initial Climb: Climb straight ahead on runway track 142° to 2,500 ft QNH.",
-                    "Turn Instruction: At 2,500 ft, turn left climbing to 4,000 ft direct to TOU VOR/DME.",
-                    "Holding Instruction: Enter published holding pattern at TOU VOR at 4,000 ft, or as directed by ATC."
-                  ],
-                  "part": "Part 4"
-                }
-              ]
-            },
-            "grammarClinic": {
-              "title": "Activity 3: Language Clinic: Vertical Paths & Cockpit Callouts",
-              "summary": "Master clear spoken terminology for vertical flight path tracking, approach warnings, and go-around execution.",
-              "rules": [
-                {
-                  "term": "on the glide slope",
-                  "meaning": "Tracking the electronic 3.0-degree descent beam perfectly.",
-                  "example": "We are fully established on the localizer and on the glide slope.",
-                  "part": "Part 1"
-                },
-                {
-                  "term": "above / below the glide path",
-                  "meaning": "Displaced vertically from the planned descent path.",
-                  "example": "Check your sink rate; we are one dot below the glide path.",
-                  "part": "Part 2"
-                },
-                {
-                  "term": "at the final approach fix",
-                  "meaning": "Passing the Maltese cross where the final descent begins.",
-                  "example": "At the final approach fix: 5.2 DME, 2,000 feet verified, gear down.",
-                  "part": "Part 3"
-                },
-                {
-                  "term": "upon reaching decision altitude",
-                  "meaning": "At the exact altitude where the landing or go-around choice must be made.",
-                  "example": "Upon reaching decision altitude at 692 feet, call 'runway in sight' or 'go-around'.",
-                  "part": "Part 4"
-                },
-                {
-                  "term": "level off at",
-                  "meaning": "Stopping descent and maintaining level flight.",
-                  "example": "For the LOC approach, descend to MDA and level off at 890 feet.",
-                  "part": "Part 5"
-                },
-                {
-                  "term": "execute missed approach",
-                  "meaning": "Initiate the published climb and turn procedure away from the runway.",
-                  "example": "Visual reference not acquired at minimums—executing missed approach.",
-                  "part": "Part 6"
-                },
-                {
-                  "term": "positive climb, gear up",
-                  "meaning": "Confirming altimeter and vertical speed show a steady climb before retracting landing gear.",
-                  "example": "Go-around, set flaps 15, positive climb confirmed, gear up.",
-                  "part": "Part 7"
+                  "item": "Fuel Farm Secondary Containment",
+                  "rootCause": "Elastomeric joint compound reached end of operational lifespan without scheduled preventative re-caulking.",
+                  "immediateAction": "Deploy portable absorbent booms around Tank 03; daily visual checks.",
+                  "permanentFix": "Complete hydro-cleaning and application of aviation-grade chemical-resistant polyurethane sealant.",
+                  "deadline": "15 Nov 2024"
                 }
               ],
-              "drills": [
-                {
-                  "id": 1,
-                  "prompt": "How does the pilot announce that both beams are captured on final approach?",
-                  "targetAnswer": "We are fully established on the localizer and on the glide slope.",
-                  "part": "Part 1"
-                },
-                {
-                  "id": 2,
-                  "prompt": "What altitude check is made at the Final Approach Fix (5.2 DME)?",
-                  "targetAnswer": "At the final approach fix: 5.2 DME, altitude 2,000 feet verified, descent continuing.",
-                  "part": "Part 2"
-                },
-                {
-                  "id": 3,
-                  "prompt": "What is the mandatory pilot callout upon reaching Decision Altitude (692 ft) in thick cloud?",
-                  "targetAnswer": "Minimums! No visual contact—go-around, flaps 15, positive climb, gear up!",
-                  "part": "Part 3"
-                },
-                {
-                  "id": 4,
-                  "prompt": "What is the initial climb instruction on the published missed approach procedure?",
-                  "targetAnswer": "Climb straight ahead on runway track 142° to 2,500 feet, then turn left towards TOU VOR.",
-                  "part": "Part 4"
-                },
-                {
-                  "id": 5,
-                  "prompt": "What does the pilot call when altimeter and VSI confirm ascending flight during a go-around?",
-                  "targetAnswer": "Positive climb confirmed—gear up, set climb thrust.",
-                  "part": "Part 5"
-                }
-              ]
+              "signOff": {
+                "authority": "Direction Générale de l'Aviation Civile (DGAC) / EASA Aerodrome Oversight",
+                "leadInspector": "Aviation Safety Inspector #FR.DSAC.2024-04",
+                "conditions": "Level 1 closure is conditional upon physical verification of CFME mu >= 0.52 across all three runs. Level 2 closure requires submission of certified pull-out torque test certificates (45 kN/anchor) and photographic proof of completed mesh installation.",
+                "status": "Provisional Concurrence Granted • Verification Pending"
+              }
             },
-            "communicativeGame": {
-              "title": "Activity 4: Communicative Game: ⚡ Go / No-Go Lightning Challenge",
-              "summary": "A high-speed approach dilemma game. Take turns reading the 6 dilemma cards below. You have 3 seconds to shout 'CONTINUE!' or 'GO-AROUND!', and 2 complete sentences to defend your choice!",
-              "instructions": [
-                "Student A reads a Dilemma Card aloud to Student B.",
-                "Student B must shout either 'CONTINUE!' or 'GO-AROUND!' within 3 SECONDS.",
-                "Student B immediately gives 2 complete spoken sentences defending their decision based on stabilized approach rules.",
-                "Student A checks the model defense and awards 2 points for a prompt, correct call + 2 points for fluent justification.",
-                "Switch roles for the next card!"
+            "negotiationRoleplay": {
+              "title": "Interactive Roleplay • Aerodrome Operator vs Civil Aviation Authority Inspector",
+              "operatorRole": {
+                "role": "Aerodrome Safety & Compliance Manager",
+                "goal": "Present the proposed CAP timeline, justify why certain civil engineering works require 30 days due to contractor availability, and convince the inspector that interim NOTAMs and speed restrictions fully contain operational risks.",
+                "phrases": [
+                  "We formally undertake to complete the hydro-blasting within 14 calendar days.",
+                  "In the interim, the aerodrome operator has published a safety NOTAM prohibiting tailwind landings on Runway 14L.",
+                  "Subject to your concurrence, our engineering team will submit weekly progress photos.",
+                  "We respectfully submit that closing the entire runway is disproportionate given the effective interim speed restrictions."
+                ]
+              },
+              "inspectorRole": {
+                "role": "Civil Aviation Authority Inspector (DGAC / EASA)",
+                "goal": "Scrutinize the proposed milestones, demand verifiable safety evidence, verify that Level 1 risks are mitigated within 24 hours, and grant conditional concurrence only with auditable progress checks.",
+                "phrases": [
+                  "The authority acknowledges receipt of your CAP, but the proposed 30-day timeline for Level 1 friction restoration is excessive.",
+                  "We require physical CFME friction traces showing mu at or above 0.52 before the NOTAM can be cancelled.",
+                  "Our concurrence remains strictly conditional upon receiving certified torque test reports for all 40 replacement blast fence anchors.",
+                  "What specific contingency procedure is in place if the hydro-blasting vehicle experiences mechanical downtime?"
+                ]
+              }
+            },
+            "flippedLessonStudio": {
+              "title": "Flipped Classroom Design Studio • Session 7 Peer-Teaching Workshop",
+              "instructions": "In Session 7, your team of 3 or 4 students will take the stage as technical instructors! Each pod will deliver a 30-minute communicative lesson to their classmates. In this studio workshop, dedicate focused preparation time to select your domain, build your 3-stage lesson architecture, assign team roles, and record your lesson outline.",
+              "duration": "Dedicated Preparation Time: 30+ Minutes in Session 6",
+              "domains": [
+                {
+                  "num": "Pod 1",
+                  "title": "Runway Surface Condition Reporting & GRF",
+                  "topic": "Teaching classmates how to assess runway friction decay, interpret continuous friction survey traces (CFME), and draft accurate Global Reporting Format (GRF) SNOWTAMs.",
+                  "suggestedActivity": "Give classmates raw CFME survey traces of a contaminated runway and have them work in pairs to decode the Runway Condition Code (RWYCC) and draft the broadcasted SNOWTAM."
+                },
+                {
+                  "num": "Pod 2",
+                  "title": "Apron Vehicle Safety & Pushback Telematics",
+                  "topic": "Facilitating a practical workshop on GSE speed control, telematics geofencing, pushback towbar shear mechanics, and interphone communication discipline.",
+                  "suggestedActivity": "A simulated ground incident investigation where classmates piece together pushback driver statements and telematics GPS speed logs to identify who breached ramp speed limits."
+                },
+                {
+                  "num": "Pod 3",
+                  "title": "Wildlife Hazard Management & Habitat Auditing",
+                  "topic": "Leading an interactive seminar on laser pyrotechnics, acoustic dispersal techniques, and habitat grass height regulation under EASA CS-ADR-DSN.",
+                  "suggestedActivity": "A wildlife dispersal simulation where classmates act as bird patrol units prioritizing laser versus pyrotechnic intervention for a flock of lapwings near the runway threshold."
+                },
+                {
+                  "num": "Pod 4",
+                  "title": "Airfield Audit Non-Conformities & CAP Negotiation",
+                  "topic": "Running an interactive roleplay negotiation where classmates simulate aerodrome operators defending corrective milestones to civil aviation inspectors.",
+                  "suggestedActivity": "A high-stakes regulatory defense where student pairs represent an airport presenting a Level 1 CAP to a skeptical civil aviation authority inspection panel."
+                }
               ],
-              "cards": [
+              "stages": [
                 {
-                  "id": 1,
-                  "situation": "At 1,000 ft in IMC: airspeed is 170 kt (target approach speed 140 kt), flaps are at position 2 (landing flaps required), and sink rate is 1,300 fpm. Continue or Go-Around?",
-                  "verdict": "GO-AROUND!",
-                  "defense": "The approach is completely unstabilized! The airspeed is 30 knots high, the landing flaps are not set, and the descent rate exceeds the 1,000 fpm safety limit.",
-                  "part": "Part 1"
+                  "stage": "Stage 1: Opening Hook & Technical Briefing",
+                  "duration": "~5 Minutes",
+                  "desc": "Engage the room immediately: present a provocative photo exhibit, short case question, or high-impact operational dilemma in fluent English."
                 },
                 {
-                  "id": 2,
-                  "situation": "At Decision Altitude 692 ft (200 ft AGL): thick fog rolls over the threshold. Zero approach lights or runway markings are visible. Continue or Go-Around?",
-                  "verdict": "GO-AROUND!",
-                  "defense": "Under CAT I ILS rules, visual references are mandatory at Decision Altitude! Without visual contact with the lights or runway, an immediate missed approach must be executed.",
-                  "part": "Part 2"
+                  "stage": "Stage 2: Core Communicative Activity",
+                  "duration": "~18 Minutes",
+                  "desc": "Maximize student speaking time! Have your classmates work in pairs or trios on a problem-solving challenge, debate, or simulation while your team circulates and coaches."
                 },
                 {
-                  "id": 3,
-                  "situation": "At 500 ft in VMC: aircraft is perfectly aligned on the localizer and glide slope, landing gear down and locked, landing flaps 30 set, speed steady at 142 kt with a 700 fpm descent rate. Continue or Go-Around?",
-                  "verdict": "CONTINUE!",
-                  "defense": "All stabilized approach criteria are fully satisfied! The aircraft is in final landing configuration, on speed, on flight path, with normal sink rate.",
-                  "part": "Part 3"
-                },
-                {
-                  "id": 4,
-                  "situation": "At 300 ft on short final: the runway and threshold lights are in plain sight, but the Tower Controller suddenly announces: 'Operations vehicle crossing runway at Taxiway Charlie!' Continue or Go-Around?",
-                  "verdict": "GO-AROUND!",
-                  "defense": "The runway is physically obstructed! Continuing the landing creates a severe risk of a high-speed collision, so we must execute an immediate go-around.",
-                  "part": "Part 4"
-                },
-                {
-                  "id": 5,
-                  "situation": "At 400 ft in VMC: the pilot forgot to set full landing flaps. The First Officer realizes and says: 'Wait, let me select flaps full right now!' Continue or Go-Around?",
-                  "verdict": "GO-AROUND!",
-                  "defense": "Configuring flaps below the stabilized gate (500 ft in VMC) is strictly forbidden! Trying to configure at 400 ft destabilizes aircraft trim and airspeed close to the ground.",
-                  "part": "Part 5"
-                },
-                {
-                  "id": 6,
-                  "situation": "At 800 ft in light rain: bright approach lighting system is spotted, localizer and glide slope are centered, airspeed is on target, landing clearance received. Continue or Go-Around?",
-                  "verdict": "CONTINUE!",
-                  "defense": "The approach is stabilized, visual references are acquired well before minimums, and landing clearance has been confirmed by air traffic control.",
-                  "part": "Part 6"
+                  "stage": "Stage 3: Class Debriefing & Feedback",
+                  "duration": "~7 Minutes",
+                  "desc": "Call on teams to share solutions, highlight key technical vocabulary used, and deliver constructive spoken English feedback to your peers."
                 }
-              ]
-            },
-            "roleplaySimulation": {
-              "title": "Activity 5: Speaking Role-Play: Low Visibility Approach & Emergency Go-Around",
-              "summary": "Simulate a high-stress final approach scenario where an unexpected runway incursion forces an immediate go-around.",
-              "situation": "Flight AFR 884 is on 3-mile final approach for Runway 14L in light drizzle. At 400 ft AGL, the Tower Controller spots an airport maintenance vehicle inadvertently crossing the runway holding point at Taxiway Charlie. The Controller commands an immediate go-around; the pilot executes the missed approach procedure smoothly.",
+              ],
               "roles": [
                 {
-                  "role": "Role A: Tower Controller",
-                  "instructions": "Monitor final approach. Spot the vehicle incursion on Runway 14L at Taxiway Charlie. Transmit immediately with calm authority: 'Air France 884, go around immediately, vehicle on the runway! Climb straight ahead to 2,500 feet, maintain runway heading.' After the pilot reads back, instruct them to contact Departure Radar on 124.35 MHz.",
-                  "part": "Part 1"
+                  "title": "Lead Facilitator",
+                  "role": "Introduces the topic, delivers the opening briefing, sets up the activity instructions, and manages overall classroom energy."
                 },
                 {
-                  "role": "Role B: Airline Pilot (AFR 884)",
-                  "instructions": "Fly the final approach, calling out '1,000 ft stabilized'. Receive the controller's emergency go-around instruction. Immediately read back: 'Going around, climb to 2,500 feet on runway heading, Air France 884.' Announce cockpit actions: 'Go-around, flaps 15, maximum thrust, positive climb, gear up.' Then contact Departure Radar as instructed.",
-                  "part": "Part 2"
+                  "title": "Activity Controller",
+                  "role": "Distributes task roles, explains interactive rules, circulates during pairwork, and provides technical operational guidance."
                 },
                 {
-                  "role": "Role C: Peer Observer & Safety Auditor",
-                  "instructions": "Use the checklist below to assess your peers. Did the controller speak with calm, decisive authority? Did the pilot read back the go-around instruction without delay? Were cockpit actions announced in proper sequence?",
-                  "part": "Part 3"
+                  "title": "Language & Vocab Coach",
+                  "role": "Monitors spoken English during group work, notes communicative breakthroughs and pronunciation slips, and leads the vocabulary review."
+                },
+                {
+                  "title": "Timekeeper & Debriefer",
+                  "role": "Ensures strict adherence to the 30-minute delivery schedule, coordinates group sharing, and summarizes key safety takeaways."
                 }
               ],
-              "checklist": [
-                "Controller gave clear, decisive go-around instruction with the immediate reason ('vehicle on runway').",
-                "Pilot acknowledged and read back the go-around instruction without hesitation.",
-                "Cockpit go-around sequence was called out cleanly (thrust, flaps, positive climb, gear up).",
-                "Both speakers maintained professional composure and clear pronunciation."
-              ],
-              "phrases": [
-                "Tower, Air France 884, 4-mile final, Runway 14L.",
-                "Air France 884, go around immediately! Vehicle on runway, climb straight ahead 2,500 feet.",
-                "Going around, climb straight ahead 2,500 feet, Air France 884.",
-                "Go-around, set go-around thrust, flaps 15.",
-                "Positive climb verified, gear up. Contact Departure on 124.35, Air France 884."
-              ]
-            },
-            "safetyCheck": {
-              "title": "Activity 6: Safety Check: Unstabilized Approach & Go-Around Culture",
-              "summary": "Work in teams to analyze the risks of unstabilized approaches and agree on how to build a strong go-around safety culture.",
-              "steps": [
+              "rubric": [
                 {
-                  "step": 1,
-                  "title": "Identify the Hazard",
-                  "text": "At 1,000 ft AGL in instrument meteorological conditions (IMC), an approaching aircraft is flying 25 knots above target approach speed with a descent rate of 1,200 fpm. The landing gear is down, but flaps are not yet in final landing configuration."
+                  "criterion": "1. Preparation & Lesson Structure",
+                  "points": "5 Points",
+                  "descriptors": "Clear communicative objectives, polished student materials, logical 3-stage progression, and equal contribution across all pod members."
                 },
                 {
-                  "step": 2,
-                  "title": "Evaluate the Operational Risk",
-                  "text": "Continuing an unstabilized approach below 1,000 ft dramatically increases the risk of hard landings, runway excursions (overrunning the paved runway), tail strikes, or loss of control close to the ground."
+                  "criterion": "2. Communicative Activity Design",
+                  "points": "5 Points",
+                  "descriptors": "High student talking time (STT), authentic technical challenge, creative exercise ideas, and active problem-solving rather than passive lecturing."
                 },
                 {
-                  "step": 3,
-                  "title": "Propose Protective Actions",
-                  "text": "1. Enforce strict stabilized approach criteria: on flight path, target speed -0/+10 kt, sink rate <= 1,000 fpm, landing flaps set by 1,000 ft in IMC (500 ft in VMC).\n2. Mandate an automatic go-around if any single stabilized approach parameter is exceeded.\n3. Foster a blame-free safety policy: flight crews are commended, never reprimanded or questioned, for executing a safety go-around.\n4. Tower controllers should issue go-around instructions proactively whenever runway separation becomes marginal."
+                  "criterion": "3. Spoken English & Technical Vocabulary",
+                  "points": "5 Points",
+                  "descriptors": "Fluency, accurate use of Module 1 aviation terminology, clear instructional delivery, and confident pronunciation."
                 },
                 {
-                  "step": 4,
-                  "title": "Agree on the Team Decision",
-                  "text": "Agree with your team on the two most effective safety defenses to prevent runway landing accidents and record your conclusions in the Operational Notes section below."
+                  "criterion": "4. Classroom Presence & Facilitation",
+                  "points": "5 Points",
+                  "descriptors": "Engaging interaction, dynamic question management, active circulating and coaching, and constructive peer debriefing."
                 }
               ]
             }
           },
           "revision": {
-            "title": "Session 6 Revision - Approach Plates: Final Corridors & Go-Around Paths",
-            "summary": "30 essential operational and approach navigation vocabulary terms for GSEA students covering ILS plates, glide slopes, decision heights, and missed approach procedures.",
+            "title": "Module 1 Session 6 • Technical Vocabulary Revision",
+            "description": "Master these 12 critical technical terms covering Corrective Action Plans, regulatory oversight, and communicative peer-teaching facilitation.",
             "terms": [
               {
-                "num": "01",
-                "term": "Instrument Approach Chart (IAC)",
-                "definition": "An aeronautical chart showing the established instrument approach procedure to a specific runway.",
-                "part": "Part 1"
+                "term": "Corrective Action Plan",
+                "pos": "noun phrase",
+                "ipa": "/kəˈrɛktɪv ˈækʃən plæn/",
+                "def": "A formal, time-bound schedule of remedial measures submitted by an aerodrome operator to rectify regulatory non-compliances.",
+                "sentence": "The aerodrome operator submitted a comprehensive Corrective Action Plan addressing all Level 1 and Level 2 findings within 30 days.",
+                "example": "EASA Part-ADR.OR.D.005 mandates that every CAP include root-cause remediation and auditable milestones."
               },
               {
-                "num": "02",
-                "term": "Instrument Landing System (ILS)",
-                "definition": "A precision runway approach aid providing both horizontal (localizer) and vertical (glide path) guidance.",
-                "part": "Part 2"
+                "term": "Non-Conformity",
+                "pos": "noun",
+                "ipa": "/ˌnɒnkənˈfɔːmɪti/",
+                "def": "A failure to satisfy a regulatory specification, certification standard, or aerodrome operational requirement.",
+                "sentence": "The audit team identified a non-conformity regarding secondary fuel containment dyke integrity.",
+                "example": "Level 1 non-conformities require immediate operational restrictions to contain flight safety risks."
               },
               {
-                "num": "03",
-                "term": "Localizer (LOC)",
-                "definition": "The component of an ILS providing lateral (left/right) tracking along the runway centerline.",
-                "part": "Part 3"
+                "term": "Root-Cause Analysis",
+                "pos": "noun phrase",
+                "ipa": "/ruːt kɔːz əˈnæləsɪs/",
+                "def": "An investigation methodology aimed at uncovering the fundamental systemic origin of an operational breakdown.",
+                "sentence": "Our root-cause analysis revealed that the friction loss stemmed from uncalibrated cleaning cycles rather than pavement aggregate failure.",
+                "example": "Addressing only the symptom without root-cause analysis guarantees repeat safety occurrences."
               },
               {
-                "num": "04",
-                "term": "Glide Path (Glide Slope)",
-                "definition": "The component of an ILS providing vertical guidance along a specified descent angle (normally 3 degrees).",
-                "part": "Part 4"
+                "term": "Interim Mitigation",
+                "pos": "noun phrase",
+                "ipa": "/ˈɪntərɪm ˌmɪtɪˈɡeɪʃən/",
+                "def": "A temporary operational measure enforced to maintain acceptable safety while permanent engineering works are underway.",
+                "sentence": "A temporary NOTAM restricting wet tailwind landings served as the interim mitigation during runway resurfacing.",
+                "example": "Interim mitigations must be approved by the civil aviation inspector before operations proceed."
               },
               {
-                "num": "05",
-                "term": "Final Approach Fix (FAF)",
-                "definition": "The point in an instrument approach where the final descent segment begins, marked by a Maltese cross.",
-                "part": "Part 5"
+                "term": "Verification Milestone",
+                "pos": "noun phrase",
+                "ipa": "/ˌvɛrɪfɪˈkeɪʃən ˈmaɪlstoʊn/",
+                "def": "A scheduled, measurable checkpoint where the competent authority evaluates progress toward definitive regulatory compliance.",
+                "sentence": "Milestone 2 requires physical pull-out torque testing of all replacement blast deflector anchor bolts.",
+                "example": "Failure to achieve a scheduled milestone can trigger immediate authority operational restrictions."
               },
               {
-                "num": "06",
-                "term": "Initial Approach Fix (IAF)",
-                "definition": "The fix that marks the beginning of the initial approach segment towards the runway.",
-                "part": "Part 6"
+                "term": "Authority Concurrence",
+                "pos": "noun phrase",
+                "ipa": "/ɔːˈθɒrɪti kənˈkʌrəns/",
+                "def": "Formal written approval by the state oversight body confirming that a proposed corrective measure is acceptable.",
+                "sentence": "The proposed 60-day closure timeline was implemented following formal authority concurrence from the DGAC.",
+                "example": "The aerodrome cannot alter an agreed CAP timeline without prior authority concurrence."
               },
               {
-                "num": "07",
-                "term": "Intermediate Fix (IF)",
-                "definition": "The fix marking the end of the initial segment and beginning of the intermediate segment for final configuration.",
-                "part": "Part 7"
+                "term": "Hydro-Blasting",
+                "pos": "noun",
+                "ipa": "/ˈhaɪdroʊ ˈblæstɪŋ/",
+                "def": "Ultra-high-pressure water jetting used to strip rubber deposits and re-open macro-texture grooves on airport runways.",
+                "sentence": "Hydro-blasting at 2,200 bar restored runway surface friction to mu = 0.54 without damaging the asphalt matrix.",
+                "example": "Nightly hydro-blasting cleared 28,000 square meters of runway touchdown zone rubber in four shifts."
               },
               {
-                "num": "08",
-                "term": "Decision Altitude (DA)",
-                "definition": "A specified altitude (mean sea level) in a precision approach where a missed approach must be initiated if no visual reference.",
-                "part": "Part 8"
+                "term": "Continuous Friction Measuring Equipment (CFME)",
+                "pos": "noun phrase",
+                "ipa": "/kənˈtɪnjuəs ˈfrɪkʃən ˈmɛʒərɪŋ ɪˈkwɪpmənt/",
+                "def": "Specialized trailer or vehicle instrumented to continuously assess and record pavement friction coefficients under controlled water film depths.",
+                "sentence": "The CFME test vehicle confirmed that braking action remained below the minimum planning level across the first 600 meters.",
+                "example": "CFME calibration runs are required every 60 days to track seasonal friction degradation."
               },
               {
-                "num": "09",
-                "term": "Decision Height (DH)",
-                "definition": "A specified height (above runway threshold) in a precision approach where a missed approach must be initiated if no visual reference.",
-                "part": "Part 9"
+                "term": "Jet Blast Deflector",
+                "pos": "noun phrase",
+                "ipa": "/dʒɛt blɑːst dɪˈflɛktər/",
+                "def": "Heavy curved barrier designed to redirect aerodynamic jet engine exhaust upward to safeguard adjacent perimeter roadways.",
+                "sentence": "The replacement jet blast deflector is engineered to withstand 150-knot breakaway thrust from wide-body aircraft.",
+                "example": "Jet blast deflectors prevent engine exhaust from blowing foreign object debris onto active taxiways."
               },
               {
-                "num": "10",
-                "term": "Minimum Descent Altitude (MDA)",
-                "definition": "The lowest altitude in a non-precision approach below which descent cannot be made without visual references.",
-                "part": "Part 10"
+                "term": "Undertake to",
+                "pos": "verb phrase",
+                "ipa": "/ˌʌndərˈteɪk tuː/",
+                "def": "A formal, legally binding commitment to execute a specified action within an agreed timeframe.",
+                "sentence": "The aerodrome management undertakes to install certified stainless anchors before the start of winter operations.",
+                "example": "In our formal response, we undertake to submit monthly progress reports to the oversight directorate."
               },
               {
-                "num": "11",
-                "term": "Runway Visual Range (RVR)",
-                "definition": "The distance down the runway that a pilot on the centerline can see runway surface markings or lights.",
-                "part": "Part 11"
+                "term": "Flipped Classroom",
+                "pos": "noun phrase",
+                "ipa": "/flɪpt ˈklɑːsruːm/",
+                "def": "An instructional methodology where students prepare and deliver technical content to their peers, fostering active communication.",
+                "sentence": "In our flipped classroom session, students facilitated interactive technical workshops on runway condition reporting.",
+                "example": "Flipped lessons maximize student speaking time and develop authentic instructional presence."
               },
               {
-                "num": "12",
-                "term": "Missed Approach Procedure (Go-Around)",
-                "definition": "The published flight procedure to follow if an approach cannot be safely completed to a landing.",
-                "part": "Part 12"
-              },
-              {
-                "num": "13",
-                "term": "Missed Approach Point (MAPt)",
-                "definition": "The point in an instrument approach procedure at or before which a missed approach must be initiated.",
-                "part": "Part 13"
-              },
-              {
-                "num": "14",
-                "term": "Touchdown Zone Elevation (TDZE)",
-                "definition": "The highest elevation in the first 3,000 feet of the landing runway surface.",
-                "part": "Part 14"
-              },
-              {
-                "num": "15",
-                "term": "Precision Approach",
-                "definition": "An instrument approach and landing utilizing both precision lateral and vertical guidance (such as CAT I, II, or III ILS).",
-                "part": "Part 15"
-              },
-              {
-                "num": "16",
-                "term": "Non-Precision Approach",
-                "definition": "An instrument approach utilizing lateral navigation guidance without vertical glide path guidance (e.g. VOR, LOC-only).",
-                "part": "Part 16"
-              },
-              {
-                "num": "17",
-                "term": "Visual References",
-                "definition": "Physical ground features (approach lights, threshold markings) required to continue an approach below DA/MDA.",
-                "part": "Part 17"
-              },
-              {
-                "num": "18",
-                "term": "Stabilized Approach",
-                "definition": "An approach where airspeed, descent rate, engine thrust, and landing configuration are within exact limits by a set gate.",
-                "part": "Part 18"
-              },
-              {
-                "num": "19",
-                "term": "Sink Rate",
-                "definition": "The rate of descent of an aircraft toward the ground, which should not exceed 1,000 feet per minute on final approach.",
-                "part": "Part 19"
-              },
-              {
-                "num": "20",
-                "term": "Maltese Cross",
-                "definition": "The chart symbol designating the Final Approach Fix for an approach on an instrument plate profile view.",
-                "part": "Part 20"
-              },
-              {
-                "num": "21",
-                "term": "Glide Path Angle",
-                "definition": "The angle of descent of the electronic glide slope beam, typically calibrated at 3.0 degrees.",
-                "part": "Part 21"
-              },
-              {
-                "num": "22",
-                "term": "Threshold Crossing Height (TCH)",
-                "definition": "The theoretical height in feet above the runway threshold where the aircraft's glide path antenna crosses (normally 50 ft).",
-                "part": "Part 22"
-              },
-              {
-                "num": "23",
-                "term": "Runway Threshold",
-                "definition": "The beginning of that portion of the runway usable for landing.",
-                "part": "Part 23"
-              },
-              {
-                "num": "24",
-                "term": "Approach Lighting System (ALS)",
-                "definition": "A system of high-intensity lights extending outward from the runway threshold to assist visual landing transition.",
-                "part": "Part 24"
-              },
-              {
-                "num": "25",
-                "term": "Visual Descent Point (VDP)",
-                "definition": "A defined point on a non-precision approach from which normal descent from the MDA to the runway may begin.",
-                "part": "Part 25"
-              },
-              {
-                "num": "26",
-                "term": "Balked Landing",
-                "definition": "A discontinued landing attempt initiated after the aircraft has descended below decision height or after touchdown.",
-                "part": "Part 26"
-              },
-              {
-                "num": "27",
-                "term": "Holding on Missed Approach",
-                "definition": "The published holding fix where an aircraft holds after executing a go-around while awaiting a second approach or diversion.",
-                "part": "Part 27"
-              },
-              {
-                "num": "28",
-                "term": "Alternate Aerodrome",
-                "definition": "An aerodrome to which an aircraft can proceed if landing at the destination becomes impossible or inadvisable.",
-                "part": "Part 28"
-              },
-              {
-                "num": "29",
-                "term": "Fuel Diversion",
-                "definition": "Diverting to an alternate aerodrome before fuel reserves drop below the legal minimum final reserve fuel.",
-                "part": "Part 29"
-              },
-              {
-                "num": "30",
-                "term": "Go-Around Mindset",
-                "definition": "The safety philosophy where every approach is planned as a go-around until confirming all landing criteria are met.",
-                "part": "Part 30"
+                "term": "Peer Facilitation",
+                "pos": "noun phrase",
+                "ipa": "/pɪər fəˌsɪlɪˈteɪʃən/",
+                "def": "The act of guiding, structuring, and supporting collaborative learning discussions among classmates in a professional setting.",
+                "sentence": "Effective peer facilitation requires asking open questions and keeping classmates actively engaged in English.",
+                "example": "The teaching pod demonstrated excellent peer facilitation by managing classroom discussions smoothly."
               }
             ]
           },
           "materials": {
-            "videos": [
+            "articles": [
               {
-                "title": "Video 1: Boeing 777 Airport Ground Handling: Start to Finish",
-                "watchUrl": "https://www.youtube.com/watch?v=KSfgLX5j-lQ",
-                "tag": "Ground Operations",
-                "videoId": "KSfgLX5j-lQ",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/KSfgLX5j-lQ",
-                "caption": "Focus: Authentic real-world turnaround coordination: marshaling, chock placement, GPU connection, belt loaders, baggage logistics, and pushback operations.",
-                "part": "Part 1"
+                "title": "EASA Part-ADR.OR.D.005: The Legal and Operational Framework of Corrective Action Plans",
+                "subtitle": "How European aerodrome certificate holders transform authority audit non-conformities into verifiable, risk-based safety enhancements.",
+                "source": "EASA Regulatory Review",
+                "readTime": "Estimated read: 6-8 mins",
+                "url": "https://www.easa.europa.eu/en/domains/aerodromes",
+                "takeaways": [
+                  "Level 1 findings demand immediate provisional risk containment within 24–48 hours, whereas Level 2 findings require formal CAP submission within 30 days.",
+                  "A legally compliant CAP must isolate underlying systemic root causes rather than merely performing cosmetic repairs on surface defects.",
+                  "Authority concurrence is conditional upon measurable verification milestones, transparent progress reporting, and on-site physical re-inspection."
+                ],
+                "vocab": [
+                  "Part-ADR.OR.D.005",
+                  "Level 1 Finding",
+                  "Root-Cause Remediation",
+                  "Authority Concurrence"
+                ],
+                "content": "Under Regulation (EU) No 139/2014 Part-ADR.OR.D.005, safety oversight by competent civil aviation authorities (such as the DGAC in France) enforces continuous compliance with aerodrome certification specifications. When an inspection reveals a non-conformity, the aerodrome operator is issued a formal finding notice categorized into Level 1 or Level 2 depending on the immediacy of the operational hazard.\n\nA Level 1 finding represents a significant non-compliance that lowers safety or seriously hazards aircraft operations. Typical examples include runway surface friction decaying below the statutory minimum threshold, uncontained fuel spills adjacent to active stands, or non-functioning runway guard lights. In such instances, the aerodrome operator must implement immediate interim mitigations within 24 to 48 hours—such as issuing a restrictive NOTAM, closing taxiway segments, or enforcing payload limits—to prevent immediate accidents.\n\nFor Level 2 findings, which represent systemic deficiencies that could degrade safety if uncorrected, the aerodrome certificate holder must formulate and submit a Corrective Action Plan (CAP) within 30 days. EASA standards mandate that the plan must be structured using SMART criteria: specific remedial actions, measurable verification milestones, assigned departmental accountability, and realistic completion target dates. Crucially, the plan must demonstrate how the root cause—whether inadequate maintenance budgeting, flawed procurement, or insufficient training—will be permanently rectified.\n\nFormal finding closure is not achieved upon submitting paperwork; it requires authority concurrence followed by rigorous verification. State inspectors conduct on-site physical audits, review certified testing reports, and verify that operational mitigations remained robust throughout the remediation lifecycle. By holding operators accountable to auditable benchmarks, Part-ADR.OR.D.005 ensures that European aerodromes continually elevate their physical safety margins."
               },
               {
-                "title": "Video 2: Inside Air Traffic Control",
-                "watchUrl": "https://www.youtube.com/watch?v=R90mroZyAL4",
-                "tag": "Air Traffic Services",
-                "videoId": "R90mroZyAL4",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/R90mroZyAL4",
-                "caption": "Focus: Tower, approach, and en-route controllers managing active runways, sector handoffs, tactical separation authority, and standard phraseology.",
-                "part": "Part 2"
+                "title": "Restoring Runway Surface Friction: Hydro-Blasting, Micro-Texturing, and CFME Calibration",
+                "subtitle": "The physics of rubber deposit removal, surface drainage restoration, and continuous friction measurement on high-density runways.",
+                "source": "SKYbrary Aviation Safety",
+                "readTime": "Estimated read: 5-7 mins",
+                "url": "https://skybrary.aero",
+                "takeaways": [
+                  "Repeated aircraft landings deposit vulcanized rubber in runway touchdown zones, filling asphalt grooves and causing hydrodynamic tire aquaplaning.",
+                  "Ultra-high-pressure hydro-blasting (up to 2,500 bar) removes rubber deposits and restores macro-texture without damaging underlying pavement binder.",
+                  "Continuous Friction Measuring Equipment (CFME) runs at 65 km/h and 95 km/h are legally required to verify that friction coefficients exceed maintenance planning levels."
+                ],
+                "vocab": [
+                  "CFME",
+                  "Hydro-Blasting",
+                  "Macro-Texture",
+                  "Aquaplaning Risk"
+                ],
+                "content": "On international commercial runways, each wide-body touchdown deposits between 1.5 and 3.0 kilograms of vulcanized aircraft tire rubber onto the runway touchdown zone. Under the extreme friction and temperature of spin-up upon contact, molten rubber is forced into the transverse asphalt grooves and microscopic surface pores. Over months of heavy flight schedules, this progressive accretion creates a smooth, glass-like coating that prevents surface water drainage and severely compromises aircraft braking action.\n\nWhen water films exceed 1.0 millimeter during precipitation, an aircraft landing on rubber-contaminated asphalt cannot evacuate water from beneath its tires. The resulting dynamic aquaplaning hydrodynamic pressure lifts the tire completely off the pavement, depriving the flight crew of directional steering and wheel braking. To prevent runway overruns and lateral excursions, EASA CS-ADR-DSN.B.015 establishes strict friction thresholds: the Minimum Friction Level (mu = 0.34) below which operations are restricted, and the Maintenance Planning Level (mu = 0.43) which triggers mandatory corrective remediation.\n\nModern aerodromes utilize specialized ultra-high-pressure (UHP) hydro-blasting technology to de-rubberize runways. Operating during night curfews, specialized vehicles project needle-thin water jets at pressures exceeding 2,200 bar onto the pavement. The kinetic energy of the water shatters the brittle rubber deposits without chemical solvents, immediately vacuuming the residue into on-board waste tanks. This process re-opens the original grooving pattern and restores aggregate micro-texture.\n\nVerification of friction recovery requires rigorous scientific instrumentation. Technicians deploy Continuous Friction Measuring Equipment (CFME)—such as the GripTester, Mu-Meter, or surface friction trailer—conducting test runs at 65 km/h and 95 km/h under an artificial 1.0mm water film. Only when consecutive survey runs confirm that average friction values exceed mu = 0.52 across the entire touchdown zone can the aerodrome operator request formal authority closure of the safety finding."
               },
               {
-                "title": "Video 3: AFIS & Regional Aerodrome Operations",
-                "watchUrl": "https://www.youtube.com/watch?v=2BZbHAJQ70s",
-                "tag": "TSEEAC / AFISO Focus",
-                "videoId": "2BZbHAJQ70s",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/2BZbHAJQ70s",
-                "caption": "Focus: Aerodrome Flight Information Service (AFIS) officers providing flight information, weather reports, and alerting service without air traffic control separation.",
-                "part": "Part 3"
+                "title": "From Audit Finding to Verification: Best Practices in Civil Aviation Authority Oversight",
+                "subtitle": "How safety managers and state inspectors collaborate through transparent communication, verifiable milestones, and closed-loop SMS.",
+                "source": "Eurocontrol Safety Portals",
+                "readTime": "Estimated read: 6-8 mins",
+                "url": "https://www.eurocontrol.int",
+                "takeaways": [
+                  "Authority compliance meetings succeed when aerodrome safety managers use precise, formulaic commitment language rather than vague promises.",
+                  "Interim risk mitigations must be continually monitored and adapted if civil engineering works experience supply chain delays.",
+                  "A closed-loop Safety Management System (SMS) incorporates post-closure monitoring to verify that corrective actions remain effective over time."
+                ],
+                "vocab": [
+                  "Safety Oversight",
+                  "Verification Benchmark",
+                  "Interim Mitigation",
+                  "Closed-Loop SMS"
+                ],
+                "content": "The relationship between an aerodrome safety directorate and national civil aviation inspectors (such as DSAC or CAA auditors) is frequently perceived as adversarial. However, modern safety management principles under ICAO Annex 19 and EASA regulations define compliance oversight as a collaborative, risk-based partnership designed to identify organizational weaknesses before they manifest as airside accidents.\n\nWhen non-compliances are identified during scheduled aerodrome audits or incident debriefs, the negotiation of the Corrective Action Plan represents a critical communication juncture. Inspectors assess not only the technical feasibility of proposed repairs, but the operational culture of the operator. Safety managers who present structured root-cause analyses, realistic milestone dates, and clear interim risk containment measures inspire regulatory confidence and secure rapid concurrence.\n\nEffective regulatory dialogue relies on precise, formulaic spoken language. Experienced aerodrome managers avoid ambiguous phrasing such as 'we hope to finish soon,' choosing instead legally defined commitment structures: 'We undertake to install temporary concrete barriers within 48 hours,' 'Pending formal certification, a NOTAM shall restrict wet operations,' and 'We respectfully request authority concurrence for a 14-day extension based on supplier delivery schedules.' This precision allows inspectors to document compliance objectively.\n\nCrucially, EASA oversight models emphasize closed-loop verification. Finding closure is not the end of the safety cycle; it initiates post-implementation monitoring within the airport's Safety Management System (SMS). Twelve months after closure, internal auditors verify whether the corrective measures successfully prevented hazard recurrence. Through auditable tracking and transparent communication, European aerodromes maintain the highest global safety standards."
               }
             ],
-            "grammar": {
-              "title": "Expressing Professional Responsibilities, Duties & Authority",
-              "badge": "B2 Functional Grammar Focus",
-              "patternTitle": "Responsibility & Authority Formulas",
-              "formula": "BE RESPONSIBLE FOR + -ING • BE TASKED WITH + -ING • HAVE AUTHORITY OVER / TO • ENSURE THAT + CLAUSE",
-              "rulesTitle": "Core Formulas & Jurisdictional Prepositions",
-              "rules": [
-                "<strong style=\"color: #1e293b;\">1. BE RESPONSIBLE FOR + Gerund / Noun:</strong> Core ongoing duty or accountability (<span style=\"font-weight: 700; color: #c0684f;\">responsible for coordinating</span>, <span style=\"font-weight: 700; color: #c0684f;\">responsible for flight safety</span>).",
-                "<strong style=\"color: #1e293b;\">2. BE TASKED WITH + Gerund / Noun:</strong> Designated operational mission or assigned mandate (<span style=\"font-weight: 700; color: #c0684f;\">tasked with conducting</span>, <span style=\"font-weight: 700; color: #c0684f;\">tasked with safety audits</span>).",
-                "<strong style=\"color: #1e293b;\">3. HAVE AUTHORITY OVER / TO:</strong> Legal command power (<span style=\"font-weight: 600; color: #334155;\">have authority over active runways</span> [ATCO], <span style=\"font-weight: 600; color: #334155;\">authority to issue clearances</span>).",
-                "<strong style=\"color: #1e293b;\">4. ENSURE THAT + Clause:</strong> Verification and quality assurance (<span style=\"font-weight: 600; color: #334155;\">ensure that cargo doors are latched</span>, <span style=\"font-weight: 600; color: #334155;\">ensure that weight limits are respected</span>).",
-                "<strong style=\"color: #1e293b;\">5. REPORT TO vs. LIAISE WITH:</strong> Upward hierarchy (<span style=\"font-weight: 600; color: #334155;\">reports to the chief pilot</span>) vs. lateral coordination (<span style=\"font-weight: 600; color: #334155;\">liaises with apron controllers</span>)."
-              ],
-              "trap": "<strong>⚠️ Common Preposition & False Friend Trap:</strong> Never say <em>responsible of</em>—always use <strong>responsible for + -ing</strong>. Also, strictly distinguish <em>control</em> (ATCO issuing binding separation orders) from <em>provide information</em> (AFISO advising pilots without executive control clearances).",
-              "examplesTitle": "Operational Responsibility Examples",
-              "examples": [
-                "<em>\"The Turnaround Coordinator is <strong>responsible for ensuring</strong> that all ground support equipment is detached before pushback.\"</em>",
-                "<em>\"Unlike aerodrome controllers, AFISOs are <strong>tasked with providing</strong> traffic information rather than tactical separation clearances.\"</em>"
+            "grammarClinic": {
+              "title": "Language Clinic: Formulaic Spoken Commitments & Diplomatic Negotiations",
+              "desc": "Master professional spoken patterns for regulatory audits: making binding commitments, establishing interim conditions, and requesting formal authority concurrence.",
+              "patterns": [
+                {
+                  "title": "1. Making Binding Institutional Commitments",
+                  "formula": "We undertake to + [Verb Base] + [Milestone Action] + within / by [Target Date]",
+                  "example": "We undertake to complete UHP hydro-blasting across the touchdown zone within 14 calendar days.",
+                  "usage": "Use 'undertake to' during authority meetings to signal formal institutional responsibility."
+                },
+                {
+                  "title": "2. Establishing Interim Provisional Safeguards",
+                  "formula": "Pending + [Permanent Action], an operational restriction shall + [Enforced Safeguard]",
+                  "example": "Pending definitive blast fence replacement, an operational restriction shall enforce idle thrust at Holding Point P1.",
+                  "usage": "Use 'pending' + 'shall' to demonstrate that risks are fully controlled during civil works."
+                },
+                {
+                  "title": "3. Conditional Regulatory Concurrence",
+                  "formula": "Subject to authority concurrence, our engineering unit will + [Action]",
+                  "example": "Subject to authority concurrence, our engineering unit will transition to bi-monthly CFME survey runs.",
+                  "usage": "Diplomatic phrasing acknowledging the state inspector's ultimate statutory approval authority."
+                }
               ]
             },
             "resources": [
               {
-                "url": "https://www.enac.fr/en",
-                "tag": "01 • Civil Aviation Authority",
-                "name": "DGAC Careers & TSEEAC Competitions",
-                "desc": "Official French civil aviation authority portal detailing TSEEAC, IEEAC, and ATCO recruitment competitions and corps duties.",
-                "part": "Part 1"
+                "tag": "EASA Aerodromes Portal",
+                "name": "EASA Aerodrome Rules & Guidance",
+                "desc": "Regulation (EU) No 139/2014, Part-ADR.OR.D.005, and certification specifications.",
+                "url": "https://www.easa.europa.eu/en/domains/aerodromes"
               },
               {
-                "url": "https://www.eurocontrol.int",
-                "tag": "02 • European ATM Network",
-                "name": "Eurocontrol Air Traffic Management",
-                "desc": "Pan-European air navigation services, controller profiles, and ATM network operations.",
-                "part": "Part 2"
+                "tag": "DGAC Safety Oversight",
+                "name": "Direction Générale de l'Aviation Civile",
+                "desc": "French national civil aviation authority safety oversight guidelines and audit protocols.",
+                "url": "https://www.enac.fr/en"
               },
               {
-                "url": "https://www.iata.org/en/programs/ops-infra/ground-operations/",
-                "tag": "03 • Ramp & Apron Standards",
-                "name": "IATA Ground Operations Hub (IGOM)",
-                "desc": "Global airline industry standards for apron safety, aircraft turnaround, and ground support equipment handling.",
-                "part": "Part 3"
-              },
-              {
-                "url": "https://www.ifatca.org",
-                "tag": "04 • Professional Association",
-                "name": "IFATCA Air Traffic Controllers",
-                "desc": "Worldwide federation representing over 50,000 air traffic controllers across 130 countries.",
-                "part": "Part 4"
-              },
-              {
-                "url": "https://skybrary.aero/articles/icao-annex-1",
-                "tag": "05 • Global Standards",
-                "name": "ICAO Personnel Licensing (Annex 1)",
-                "desc": "International civil aviation benchmarks for pilots, flight dispatchers, ATCOs, and aeronautical station operators.",
-                "part": "Part 5"
-              },
-              {
-                "url": "https://www.easa.europa.eu",
-                "tag": "06 • Technical Regulations",
-                "name": "EASA Regulations & Safety Standards",
-                "desc": "Official European aerodrome regulations, certification specifications, and safety directives for civil aviation professionals.",
-                "part": "Part 6"
+                "tag": "SKYbrary Aviation Hub",
+                "name": "SKYbrary Runway Friction Portal",
+                "desc": "Global repository on runway surface friction, hydro-blasting, and contaminant mitigation.",
+                "url": "https://skybrary.aero"
               }
             ],
-            "pageUrl": "session4/admat_aas1.html",
-            "articles": [
+            "quiz": [
               {
-                "topic": "FlightGlobal / Aviation Careers",
-                "sourceTag": "Career Insight",
-                "heading": "Beyond the Flight Deck: The Essential Network of Airport Operations",
-                "snippet": "An in-depth look at the landside, airside, and regulatory roles that keep international aviation flowing seamlessly 24/7.",
-                "readTime": "Estimated read: 5-6 mins",
-                "url": "https://www.flightglobal.com",
-                "part": "Part 1"
+                "question": "Under EASA Part-ADR.OR.D.005, what distinguishes a Level 1 finding from a Level 2 finding?",
+                "options": [
+                  "A Level 1 finding seriously hazards flight operations and requires immediate mitigation within 24–48 hours, whereas Level 2 allows an agreed 30-day CAP submission.",
+                  "A Level 1 finding involves paperwork errors, while Level 2 involves physical runway pavement cracks.",
+                  "Level 1 findings can be ignored if the aerodrome director signs a waiver, whereas Level 2 findings cannot.",
+                  "Level 1 findings only apply to commercial airliners, whereas Level 2 findings apply to general aviation."
+                ],
+                "correct": 0,
+                "explanation": "Level 1 findings represent an immediate threat to aviation safety requiring immediate provisional mitigation (max 24–48 hours), whereas Level 2 findings allow 30 days for formal CAP submission."
               },
               {
-                "topic": "DGAC France / ENAC Portal",
-                "sourceTag": "Civil Aviation Careers",
-                "heading": "The Modern Role of TSEEAC: From AFIS to Safety Oversight",
-                "snippet": "How France's Civil Aviation Operations Corps supports regional aerodrome operations, civil aviation safety inspections, and air navigation technical support.",
-                "readTime": "Estimated read: 5-7 mins",
-                "url": "https://www.enac.fr/en",
-                "part": "Part 2"
+                "question": "What is the primary operational hazard of vulcanized tire rubber accumulating on a runway touchdown zone?",
+                "options": [
+                  "It makes the runway surface too rough and damages aircraft tires during rotation.",
+                  "It fills the transverse asphalt grooves, causing dynamic aquaplaning and severe loss of braking action in wet conditions.",
+                  "It attracts migratory birds seeking warm asphalt surfaces.",
+                  "It changes the magnetic alignment of the instrument landing system (ILS) localizer."
+                ],
+                "correct": 1,
+                "explanation": "Rubber deposits fill the macro-texture grooves, preventing water drainage and inducing dynamic aquaplaning when surface water films exceed 1.0mm."
               },
               {
-                "topic": "Eurocontrol ATM Careers",
-                "sourceTag": "Operational Profile",
-                "heading": "ATCO vs AFISO: Understanding the Scope of Air Traffic Services",
-                "snippet": "Comparing tactical separation authority in controlled airspace with flight information and advisory services at regional fields.",
-                "readTime": "Estimated read: 6-8 mins",
-                "url": "https://www.eurocontrol.int",
-                "part": "Part 3"
+                "question": "Which spoken formula represents an appropriate formal commitment during an authority audit meeting?",
+                "options": [
+                  "'We hope our contractors might fix the fence sometime next month.'",
+                  "'We undertake to complete the hydro-blasting within 14 calendar days, subject to authority concurrence.'",
+                  "'The inspector should not worry because aerodrome accidents are very rare.'",
+                  "'We will only fix the finding if the airlines agree to pay higher landing fees.'"
+                ],
+                "correct": 1,
+                "explanation": "'We undertake to [action] within [timeline], subject to authority concurrence' is the standard, legally robust formula for regulatory meetings."
               },
               {
-                "topic": "IATA Ground Operations Bulletin",
-                "sourceTag": "Safety & Turnaround",
-                "heading": "The Turnaround Coordinator: Heartbeat of On-Time Performance",
-                "snippet": "Why ramp coordinators, loadmasters, and flight dispatchers form the vital link between airline schedules and safety compliance.",
-                "readTime": "Estimated read: 5-6 mins",
-                "url": "https://www.iata.org",
-                "part": "Part 4"
+                "question": "In Session 7's flipped classroom evaluation, how much time does each student teaching pod have to deliver their lesson?",
+                "options": [
+                  "10 minutes per student individually.",
+                  "30 minutes per team of 3 or 4 students.",
+                  "45 minutes per pair of 2 students.",
+                  "The entire 2-hour class period."
+                ],
+                "correct": 1,
+                "explanation": "Each student teaching pod of 3 to 4 engineers has exactly 30 minutes to deliver their interactive lesson to their classmates."
+              },
+              {
+                "question": "What is the primary role of the Language & Vocab Coach within a Session 7 teaching pod?",
+                "options": [
+                  "To grade classmates with letter grades during the lesson.",
+                  "To monitor spoken English, note technical communicative breakthroughs and slips, and lead the vocabulary review.",
+                  "To translate everything into French for the class.",
+                  "To operate the classroom projector and light switches."
+                ],
+                "correct": 1,
+                "explanation": "The Language & Vocab Coach monitors peer speaking, tracks technical aviation terms, and conducts constructive feedback during the debriefing stage."
               }
-            ],
-            "quizTitle": "Airside Scenario Quiz • Approach Plates: Final Corridors & Go-Around Paths",
-            "quizSubtitle": "Target pace: ~45 seconds per scenario • Mix of Final Approach Dilemmas & Go-Around Spot-Checks"
+            ]
           }
         }
       }

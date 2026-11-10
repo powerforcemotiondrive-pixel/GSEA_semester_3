@@ -2,17 +2,17 @@
 # ENAC GSEA English Learning Platform — Cryptographic SHA-256 Manifest
 # Author & Pedagogical Architect: Phil PARRIS (Département LH / LAN)
 # © 2026 Phil PARRIS. All Rights Reserved.
-# Generated: 2026-11-09T19:33:35.144Z
+# Generated: 2026-11-10T08:35:13.144Z
 # ============================================================================
 
-cca8cf96f962d09bfb960a1b76fd26ad89da090c569f94a5c3d132cc7a6f1875  imsmanifest.xml
+21818265cfb398f83ae4f4de1423d2cc303fb3e8c0f6b78e4ac71b106d9a1331  imsmanifest.xml
 f082869ed2b914ec5b3044ba485b53e0c66b635dfcaa2a4c9068828165ad0e95  COPYRIGHT.md
-6c336716409d3d674de9dc61b78fa4b3c4dc4626e99bd51e25a4b804761e9ac0  index.html
-3d6dde9d20f94cbf99f77f71c662952d58959a94d9bd3eb4332295af66f4c53b  admin.html
+b56103cf3586b372376f918ce4888b5d8d8a84aea083ac83c48cbabcd0724faa  index.html
+0aa03fadbe540196aa177b60020aa1edcda26ef91eba21bab7b259da76fbe3b8  admin.html
 f27913a6aa60f22a70c7d504ae3b55625b2a481a52f2d998e86c7be437a32715  presentation.html
 2b6b502b6b932bf09d07f6639ae803e78c7786b5f14c26b662c225c84dc31686  portfolio.html
-2053f83d40821f3ee5c51258e93005343908f1208750a85b93c415b0273fa3e9  output.css
-390eec9e7004b8bdd827b20bbceb75bee66463e03233a554b71ea4c3315a36c9  data/course-data.js
+adc20185b2d18b89ee1d9e0e80050d365eaf51574af7610c555c2edd94bd4b4b  output.css
+a13873b5c19e9c9b32dc32dec4e5f667f53f1c96f294a458734d0d55adb54f02  data/course-data.js
 bfac1fbaa7fb337e34eed50c87e7a9a449c5be80112aeed6c2ae0254e0724881  images/aas_m1card1.jpg
 f52e89458efa94b0699a10d97147f8a9b99d46395b563ef0f9210a5f2de99fd3  images/aas_m1card2.jpg
 e0334c57519ecb7b3677770af7648e2b89d60539902763194f701ce3b0de0f1c  images/aas_m1card3.jpg
@@ -43,11 +43,15 @@ d53782018fa1b2d9276a5bd97f1e28a911f203408e2e67136e6393ccfcdc68e7  images/s3_m1_s
 98665762a174871bf132ce80712c5840454969c6bc23156fcac87a19f43f59e0  images/s3_m1_session5_investigation.jpg
 f50d9f679fcc6b19f3ec016b1470246395f03a762c33f177d1e930fb3d78f36f  images/s3_m1_session5_sid_star.jpg
 c67966ac4aad1dff1514ab9f173ae75255163452751dee94933a2b09b2830384  images/s3_m1_session6_approach.jpg
+3d56f345df83d77f32aed997e45b8eec3c18c3fee27bf48c08745ade2cefb8f0  images/s3_m1_session6_cap.jpg
 12890fbdaec7eac31efd9d9b0c7827d4ccae73fcc0b92dd351c8511ab2732e33  images/s3_s4_ramp_fod_inspection.jpg
 4abd34428093ae6b965bdcbac7b94f0a557796fe90d78a74eee3d28b94b71ff7  images/s3_s4_ramp_fuel_spill.jpg
 688b306ff364d26aae1461b4eb247c4733e6206583ca6299f6403382863dd7f3  images/s3_s4_ramp_gse_congestion.jpg
 a29894424de6dc4fa60486533d78e5b8d7a0e13c2bb6e240c46b35a1183c6fdb  images/s3_s5_engine_cowling_strike.jpg
 6cbf2bdcab0680085378e6ea007230ab4fecd8af83fc46daf6bb04537060889f  images/s3_s5_ramp_pushback_shear.jpg
 b9e4e422ace1a120b5b445d55d5a21a0191e9db95b393d99ccc171514cad341d  images/s3_s5_runway_excursion_turf.jpg
+b8a8bce1ff4e8fdb64da9a8b5479a36e90c5bafea27fdc6156cbab7137fcc236  images/s3_s6_fod_barrier_installation.jpg
+4a7cb0e4f0e9f4123b042eb5c2a545778440e30c16554c346b321ea7ca95a829  images/s3_s6_fuel_dyke_remediation.jpg
+ead010b1cdf0fcb5c119986f6aafa8eabac482e74f918d3a6dfda507d86f7ec1  images/s3_s6_runway_rubber_removal.jpg
 0a09399212bd7a24235638e477ea5e8c1441854c268c3edcd1bc45ab194e95d2  images/semester_objectives.jpg
 6970e2b956c8d6557969a7b3484ffc7590642b8b8e4450ef3ea1a35599700568  images/turnaround_apron.jpg

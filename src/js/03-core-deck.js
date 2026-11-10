@@ -2451,6 +2451,28 @@
       document.body.style.overflow = "hidden";
     };
 
+    // Corrective Action Plan (CAP) Tab Switcher (Session 6)
+    window.switchCapTab = function(tabId) {
+      const btns = document.querySelectorAll(".cap-tab-btn");
+      btns.forEach(b => {
+        if (b.getAttribute("data-cap-tab") === tabId) {
+          b.classList.add("border-blue-600", "text-blue-700", "bg-blue-50/50");
+          b.classList.remove("border-transparent", "text-slate-500");
+        } else {
+          b.classList.remove("border-blue-600", "text-blue-700", "bg-blue-50/50");
+          b.classList.add("border-transparent", "text-slate-500");
+        }
+      });
+      const panes = document.querySelectorAll(".cap-pane");
+      panes.forEach(p => {
+        if (p.id === "cap-pane-" + tabId) {
+          p.classList.remove("hidden");
+        } else {
+          p.classList.add("hidden");
+        }
+      });
+    };
+
     // Multi-Source Dossier Tab Switcher (Session 5)
     window.switchDossierTab = function(tabId) {
       const btns = document.querySelectorAll(".dossier-tab-btn");

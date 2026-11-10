@@ -29,7 +29,7 @@
           card3: "images/s3_m1_session3_derogation.jpg",
           card4: "images/s3_m1_session4_aerodrome.jpg",
           card5: "images/s3_m1_session5_investigation.jpg",
-          card6: "images/s3_m1_session6_approach.jpg",
+          card6: "images/s3_m1_session6_cap.jpg",
           fe: "images/fe_progress_check.jpg",
           ddrs: "images/ddrs_aas_mod1.jpg",
           admin: "images/course_admin.jpg"
@@ -65,7 +65,7 @@
           s3: `Welcome to Session 3! We discover how airports handle real-world challenges through special temporary permissions (exemptions).<br><br><em>Subject overview:</em> Explaining safety solutions, using connecting words (provided that, in lieu of), reading a temporary runway works request, and giving a confident 3-minute spoken briefing to airline pilots.<br><br>${formativeEvaluationNotice}`,
           s4: `Welcome to Session 4! We bridge the gap between physical airfield walkarounds and formal audit reporting under Regulation (EU) No 139/2014 Part-ADR.AR.C.055.<br><br><em>Subject overview:</em> Level 1 vs. Level 2 findings, past modal deductions (must have, could have, should have), photo-audit challenge on ramp non-conformities, and delivering a 2-minute oral audit notice to the Airport Director.<br><br>${formativeEvaluationNotice}`,
           s5: `Welcome to Session 5! We investigate aircraft ground occurrences by piecing together fragmented operational records across multiple sources.<br><br><em>Subject overview:</em> Synthesizing ATC tower transcripts, METAR storm decodes, aircraft maintenance defect logs, and Mandatory Occurrence Reports (MORs). Applying the Swiss Cheese Model to isolate latent organizational flaws from active triggers, using cause-and-effect connectors (stemming from, triggered by, resulting in), and presenting an oral debriefing to the Airport Safety Directorate.<br><br>${formativeEvaluationNotice}`,
-          s6: `Welcome to Session 6! We master Instrument Approach Charts (IAC), final descent profiles, and go-around paths.<br><br><em>Subject overview:</em> Glide paths, localizer alignment, decision altitudes, and missed approach procedures. Delivering a structured 3-minute spoken approach briefing and verbally executing contingency go-around routing when an active runway is compromised.<br><br>${formativeEvaluationNotice}`
+          s6: `Welcome to Session 6! We bridge aerodrome audit findings and incident investigations into formal Corrective Action Plans under EASA Part-ADR.OR.D.005, while dedicating extended workshop time to prepare for Session 7's flipped peer-teaching lessons.<br><br><em>Subject overview:</em> Level 1 vs. Level 2 non-conformities, root-cause remediation, negotiating milestone timelines with civil aviation inspectors, formulaic commitment language (undertake to, subject to concurrence), and a dedicated 30-minute design studio where teams of 3–4 structure their 30-minute interactive peer lessons for Session 7.<br><br>${formativeEvaluationNotice}`
         },
         2: {
           s1: `Welcome to Module 2 on MTF! In this opening session, we explore the four fundamental forces of flight, aircraft control axes, and wing airflow dynamics while developing spoken fluency and cause-and-effect structures.<br><br><em>Subject overview:</em> Lift, weight, thrust, and drag in equilibrium; pitch, roll, and yaw control surfaces; angle of attack, boundary layer separation, and stall recovery procedures.<br><br>${formativeEvaluationNotice}`,
@@ -99,9 +99,9 @@
         ...teachingPages,
         {
           tag: modNumber === 1 ? `Module 1 • FE • Session ${feSessionNum}` : `Module ${modNumber} • Session ${feSessionNum}`,
-          title: `Session ${feSessionNum} - Formative Evaluation`,
+          title: `Session ${feSessionNum} - Flipped Classroom Peer-Teaching Evaluation`,
           description: modNumber === 1
-            ? `Welcome to Session ${feSessionNum}! In this Formative Evaluation, you and your partner will present a detailed technical airport profile.<br><br><em>Subject overview:</em> Formative Evaluation 1 — Airports: Technical infrastructure, operational constraints, aerodrome hot spots, and incident/accident analysis.<br><br>All work in this session contributes directly toward your Formative Evaluation.`
+            ? `Welcome to Session ${feSessionNum}! In this flipped classroom evaluation, student teams of 3 to 4 take the floor as technical instructors, delivering an engaging 30-minute interactive lesson to their classmates across authentic aerodrome operations domains.<br><br><em>Subject overview:</em> Formative Evaluation 1 — Flipped Peer-Teaching: Lesson planning, creative communicative activities, technical English facilitation, and classroom peer engagement.<br><br>All work in this session contributes directly toward your Formative Evaluation.`
             : (modNumber === 2
                 ? `Welcome to Session ${feSessionNum}! In this Formative Evaluation, you and your partner will present a comprehensive technical profile of an aircraft or an airline of your choice.<br><br><em>Subject overview:</em> Formative Evaluation 2 — Aircraft / Airlines: Technical specifications, operational metrics, historical milestones, and safety analysis.<br><br>All work in this session contributes directly toward your Formative Evaluation.`
                 : `Welcome to Session ${feSessionNum}!`),

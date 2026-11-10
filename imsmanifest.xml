@@ -117,6 +117,7 @@
       <file href="docs/GSEA_S3_M1_S3_EASA_Runway_Safety_Case.pdf"/>
       <file href="docs/GSEA_S3_M1_S4_EASA_Airfield_Audit_Report.pdf"/>
       <file href="docs/GSEA_S3_M1_S5_Incident_Investigation_Dossier.pdf"/>
+      <file href="docs/GSEA_S3_M1_S6_EASA_Corrective_Action_Plan.pdf"/>
       <file href="images/s3_s4_ramp_fuel_spill.jpg"/>
       <file href="images/s3_s4_ramp_gse_congestion.jpg"/>
       <file href="images/s3_s4_ramp_fod_inspection.jpg"/>
@@ -124,6 +125,10 @@
       <file href="images/s3_s5_ramp_pushback_shear.jpg"/>
       <file href="images/s3_s5_runway_excursion_turf.jpg"/>
       <file href="images/s3_s5_engine_cowling_strike.jpg"/>
+      <file href="images/s3_m1_session6_cap.jpg"/>
+      <file href="images/s3_s6_fuel_dyke_remediation.jpg"/>
+      <file href="images/s3_s6_runway_rubber_removal.jpg"/>
+      <file href="images/s3_s6_fod_barrier_installation.jpg"/>
     </resource>
   </resources>
 </manifest>
