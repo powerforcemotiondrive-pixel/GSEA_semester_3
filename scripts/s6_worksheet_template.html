@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Session 6 Lesson Worksheet - The Corrective Action Plan & CAP Review</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 10mm 12mm 12mm 12mm;
+      @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 8pt;
+        color: #64748b;
+        font-weight: 700;
+      }
+      @bottom-left {
+        content: "ENAC • GSEA Semester 3 Technical English (AT • LV125E) • Phil PARRIS";
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 7.5pt;
+        color: #94a3b8;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 9pt;
+      line-height: 1.4;
+      color: #1e293b;
+      background: #ffffff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      page-break-after: always;
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+    }
+
+    /* Running Header */
+    .doc-header {
+      border-bottom: 2px solid #1e3a8a;
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .doc-header .agency {
+      font-size: 7.5pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #1e3a8a;
+    }
+
+    .doc-header .ref {
+      font-size: 7pt;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-weight: 700;
+      color: #64748b;
+      background: #f1f5f9;
+      padding: 1.5px 5px;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Titles */
+    h1 {
+      font-size: 15pt;
+      font-weight: 900;
+      color: #0f172a;
+      letter-spacing: -0.4px;
+      line-height: 1.15;
+      margin-bottom: 3px;
+    }
+
+    h2 {
+      font-size: 10.5pt;
+      font-weight: 800;
+      color: #1e3a8a;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    h3 {
+      font-size: 8.5pt;
+      font-weight: 750;
+      color: #0f172a;
+      margin-bottom: 3px;
+    }
+
+    p {
+      margin-bottom: 6px;
+      color: #334155;
+    }
+
+    /* Cards & Containers */
+    .card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 8px 10px;
+      margin-bottom: 8px;
+      page-break-inside: avoid;
+    }
+
+    .card-tint-blue {
+      background: #f8fafc;
+      border-color: #cbd5e1;
+    }
+
+    .card-tint-amber {
+      background: #fffbeb;
+      border-color: #fde68a;
+    }
+
+    .card-tint-purple {
+      background: #faf5ff;
+      border-color: #e9d5ff;
+    }
+
+    .card-tint-emerald {
+      background: #f0fdf4;
+      border-color: #bbf7d0;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 7pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 2px 6px;
+      border-radius: 3px;
+      vertical-align: middle;
+    }
+
+    .badge-primary {
+      background: #1e3a8a;
+      color: #ffffff;
+    }
+
+    .badge-amber {
+      background: #d97706;
+      color: #ffffff;
+    }
+
+    .badge-emerald {
+      background: #059669;
+      color: #ffffff;
+    }
+
+    .badge-purple {
+      background: #7e22ce;
+      color: #ffffff;
+    }
+
+    .badge-rose {
+      background: #e11d48;
+      color: #ffffff;
+    }
+
+    .badge-slate {
+      background: #e2e8f0;
+      color: #334155;
+    }
+
+    /* Tables */
+    .index-table, .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 8pt;
+      margin-top: 4px;
+    }
+
+    .index-table th, .data-table th {
+      background: #f1f5f9;
+      color: #0f172a;
+      font-weight: 800;
+      text-align: left;
+      padding: 5px 7px;
+      border: 1px solid #cbd5e1;
+    }
+
+    .index-table td, .data-table td {
+      padding: 4.5px 7px;
+      border: 1px solid #e2e8f0;
+      vertical-align: top;
+    }
+
+    .index-table tr:nth-child(even), .data-table tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    /* Instruction Box */
+    .instruction-box {
+      background: #f8fafc;
+      border-left: 3px solid #2563eb;
+      padding: 6px 9px;
+      margin-bottom: 8px;
+      border-radius: 0 5px 5px 0;
+      font-size: 8pt;
+    }
+
+    .instruction-box ol, .instruction-box ul {
+      padding-left: 14px;
+      margin-top: 3px;
+    }
+
+    .instruction-box li {
+      margin-bottom: 1.5px;
+      color: #334155;
+    }
+
+    /* Grid Layouts */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 5px;
+      margin-bottom: 8px;
+    }
+
+    .code-box {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 7.2pt;
+      background: #0f172a;
+      color: #f1f5f9;
+      padding: 8px 10px;
+      border-radius: 5px;
+      line-height: 1.35;
+      white-space: pre-wrap;
+      margin-bottom: 8px;
+    }
+
+    .checklist-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 5px;
+      padding: 4px 6px;
+      background: #ffffff;
+      border: 1px solid #fde68a;
+      border-radius: 4px;
+      margin-bottom: 3px;
+      font-size: 8pt;
+    }
+
+    .checkbox {
+      width: 11px;
+      height: 11px;
+      border: 1.5px solid #d97706;
+      border-radius: 2px;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .writing-line {
+      border-bottom: 1px dashed #cbd5e1;
+      height: 19px;
+      margin-bottom: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 1: COVER, SUMMARY, OBJECTIVES & INDEX                          -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">SESSION 6 WORKSHEET • EASA PART-ADR.OR.D.005 CAP &amp; PEER TEACHING</span>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%); color: #ffffff; padding: 12px 14px; border-radius: 8px; margin-bottom: 10px;">
+      <span class="badge" style="background: #38bdf8; color: #082f49; margin-bottom: 4px;">Technical English • Module 1 • Session 6</span>
+      <h1 style="color: #ffffff; font-size: 15pt; margin-top: 2px;">The Corrective Action Plan &amp; CAP Review</h1>
+      <p style="color: #bae6fd; font-size: 8pt; margin-bottom: 0;">EASA Part-ADR.OR.D.005 Statutory Framework, Spoken Authority Negotiation &amp; Session 7 Flipped Prep</p>
+    </div>
+
+    <!-- Summary Box -->
+    <div class="card card-tint-blue" style="border-left: 3.5px solid #1e3a8a; padding: 7px 10px; margin-bottom: 8px;">
+      <h3 style="color: #1e3a8a; font-size: 8.5pt; margin-bottom: 3px;">📌 Lesson Summary &amp; Operational Context</h3>
+      <p style="font-size: 7.8pt; margin-bottom: 3px; line-height: 1.35;">
+        Closing an audit finding or incident investigation is not merely an administrative exercise—it is the statutory mechanism that prevents repeat catastrophic safety occurrences on the airfield. Under Regulation (EU) No 139/2014 Part-ADR.OR.D.005, when civil aviation authorities identify safety deficiencies, the aerodrome operator must formally demonstrate root-cause remediation, establish immediate interim risk mitigations (such as NOTAMs or operational restrictions), and agree on auditable verification milestones acceptable to the competent authority. In this capstone session, GSEA students examine an authentic EASA CAP dossier covering runway rubber hydro-blasting and jet blast deflector repairs, master formulaic commitment language (<em>we formally undertake to</em>, <em>subject to authority concurrence</em>, <em>in the interim</em>), simulate high-stakes regulatory negotiations with state inspectors, and dedicate extended workshop time to planning and structuring their 30-minute flipped peer-teaching lessons for Session 7.
+      </p>
+      <div style="font-size: 7.2pt; color: #475569; display: flex; gap: 12px; margin-top: 3px;">
+        <span><strong>Target Level:</strong> CEFR B1–B2</span>
+        <span>•</span>
+        <span><strong>Track:</strong> Technical English (AT • LV125E)</span>
+        <span>•</span>
+        <span><strong>Time:</strong> 2 Hours (Teacher-Paced)</span>
+      </div>
+    </div>
+
+    <!-- 4 Core Objectives -->
+    <div class="card" style="padding: 7px 10px; margin-bottom: 8px;">
+      <h3 style="color: #0f172a; font-size: 8.5pt; margin-bottom: 4px;">🎯 4 Core Learning Objectives for Session 6</h3>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; font-size: 7.5pt;">
+        <div>
+          <p style="margin-bottom: 3px;"><strong>1. Audit Finding Taxonomy &amp; Root Cause:</strong> Distinguish Level 1 findings (immediate airside hazards, 24–48h NOTAM/restrictions) from Level 2 findings (systemic non-compliance, 30-day CAP) citing Part-ADR.OR.D.005.</p>
+          <p style="margin-bottom: 0;"><strong>2. CAP Drafting &amp; Authority Benchmarks:</strong> Formulate SMART corrective actions, establish interim operational mitigations, and identify auditable physical verification criteria.</p>
+        </div>
+        <div>
+          <p style="margin-bottom: 3px;"><strong>3. Spoken Regulatory Negotiation:</strong> Roleplay compliance meetings using formulaic spoken commitment phrases (<em>undertake to</em>, <em>in the interim</em>, <em>subject to concurrence</em>, <em>respectfully submit</em>).</p>
+          <p style="margin-bottom: 0;"><strong>4. Flipped Lesson Design Studio:</strong> Collaborate in pods of 3 to 4 with dedicated studio time to structure a 30-minute interactive peer lesson for Session 7 across authentic aerodrome domains.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Table of Contents / Index -->
+    <div class="card card-tint-blue" style="padding: 6px 10px; margin-bottom: 0;">
+      <h3 style="color: #1e3a8a; font-size: 8.5pt; margin-bottom: 3px;">📑 Worksheet Contents &amp; Activity Index</h3>
+      <table class="index-table">
+        <thead>
+          <tr>
+            <th style="width: 14%;">Part / Stage</th>
+            <th style="width: 33%;">Activity Title</th>
+            <th style="width: 43%;">Focus &amp; Interactive Learning Output</th>
+            <th style="width: 10%; text-align: center;">Page</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 1</td>
+            <td>Audit Finding Taxonomy &amp; Diagnostic</td>
+            <td>Statutory framework, Level 1 vs Level 2 &amp; entry spot-check (4 questions).</td>
+            <td style="text-align: center; font-weight: 700;">Page 2</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 2</td>
+            <td>Physical Remediation Gallery</td>
+            <td>3 photo exhibits: Fuel farm bunding, runway rubber hydro-blasting, blast deflector.</td>
+            <td style="text-align: center; font-weight: 700;">Page 3</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 3</td>
+            <td>EASA Part-ADR.OR.D.005 CAP Dossier</td>
+            <td>Finding 041 Runway Friction, Finding 042 Blast Fence, Root-Cause Matrix &amp; Sign-Off.</td>
+            <td style="text-align: center; font-weight: 700;">Page 4</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 4</td>
+            <td>Language Clinic: Regulatory Commitment</td>
+            <td>5 formulaic negotiation phrases, reference table &amp; 5 gap-fill practice drills.</td>
+            <td style="text-align: center; font-weight: 700;">Page 5</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 5</td>
+            <td>Operator vs Inspector Spoken Negotiation</td>
+            <td>Roleplay simulation, Inspector peer checklist &amp; 1-minute oral coaching protocol.</td>
+            <td style="text-align: center; font-weight: 700;">Page 6</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Part 6 &amp; 7</td>
+            <td>Safety Check, Rules to Reality &amp; Studio</td>
+            <td>4-step decision table, 60-second wrap-up &amp; Session 7 lesson design notes.</td>
+            <td style="text-align: center; font-weight: 700;">Page 7</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 2: PART 1 — FINDING TAXONOMY & OPENING DIAGNOSTIC             -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 1: AUDIT TAXONOMY &amp; ENTRY DIAGNOSTIC</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 1</span> Activity 1: Aerodrome Audit Finding Notice: The Path to Compliance</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions &amp; Action Steps:</strong>
+      <ol>
+        <li><strong>Step 1: Regulatory Briefing:</strong> Read the EASA Part-ADR.OR.D.005 statutory framework below.</li>
+        <li><strong>Step 2: Complete the Diagnostic Spot-Check:</strong> Answer the 4 core regulatory questions in pairs.</li>
+        <li><strong>Step 3: Pair Discussion:</strong> Discuss why civil aviation authorities insist on auditable interim risk mitigations.</li>
+      </ol>
+    </div>
+
+    <div class="card card-tint-blue" style="padding: 7px 10px; margin-bottom: 8px;">
+      <h3 style="color: #1e3a8a; font-size: 8.5pt; margin-bottom: 3px;">📋 Regulatory Briefing: EASA Part-ADR.OR.D.005 Framework</h3>
+      <p style="font-size: 7.8pt; line-height: 1.35; margin-bottom: 0;">
+        Under Regulation (EU) No 139/2014 Part-ADR.OR.D.005, receiving an audit finding notice triggers strict legal deadlines. Aerodrome operators cannot merely repair surface symptoms. They must isolate the underlying organizational root cause, determine whether flight safety is immediately hazarded (requiring provisional mitigations within 24 to 48 hours), and submit a formal Corrective Action Plan (CAP) detailing auditable engineering milestones acceptable to the competent civil aviation authority.
+      </p>
+    </div>
+
+    <!-- Opening Diagnostic Spot-Check (4 Questions) -->
+    <div class="card" style="padding: 8px 10px; margin-bottom: 8px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+        <h3 style="color: #0f172a; font-size: 8.5pt;">🔍 Opening Diagnostic: Audit Finding &amp; CAP Principles</h3>
+        <span class="badge badge-primary">Entry Spot-Check</span>
+      </div>
+      <div class="grid-2" style="font-size: 7.5pt; margin-bottom: 0;">
+        <div class="card card-tint-blue" style="padding: 6px 8px; margin-bottom: 4px;">
+          <p style="font-weight: 700; color: #1e3a8a; margin-bottom: 2px;">Question 01: Level 1 vs Level 2 Audit Findings</p>
+          <p style="margin-bottom: 2px;">Under Part-ADR.OR.D.005, what distinguishes a Level 1 finding from a Level 2 finding?</p>
+          <p style="color: #059669; font-weight: 700; margin-bottom: 0;">&check; Model Answer: Level 1 poses an immediate hazard requiring action in 24–48h; Level 2 is systemic non-compliance requiring a 30-day CAP.</p>
+        </div>
+        <div class="card card-tint-blue" style="padding: 6px 8px; margin-bottom: 4px;">
+          <p style="font-weight: 700; color: #1e3a8a; margin-bottom: 2px;">Question 02: Interim Risk Mitigations</p>
+          <p style="margin-bottom: 2px;">What is an 'interim risk mitigation' and why is it mandatory before permanent works begin?</p>
+          <p style="color: #059669; font-weight: 700; margin-bottom: 0;">&check; Model Answer: A provisional operational safeguard (e.g., NOTAM, speed limits) to contain risk while permanent engineering works are executed.</p>
+        </div>
+        <div class="card card-tint-blue" style="padding: 6px 8px; margin-bottom: 0;">
+          <p style="font-weight: 700; color: #1e3a8a; margin-bottom: 2px;">Question 03: CFME Friction Threshold</p>
+          <p style="margin-bottom: 2px;">What friction coefficient threshold triggers a mandatory Level 1 finding for runway rubber build-up?</p>
+          <p style="color: #059669; font-weight: 700; margin-bottom: 0;">&check; Model Answer: When measured friction decays below the minimum planning level (mu < 0.34 under EASA CS-ADR-DSN.B.015).</p>
+        </div>
+        <div class="card card-tint-blue" style="padding: 6px 8px; margin-bottom: 0;">
+          <p style="font-weight: 700; color: #1e3a8a; margin-bottom: 2px;">Question 04: Authority Concurrence</p>
+          <p style="margin-bottom: 2px;">What does 'authority concurrence' mean in the EASA CAP approval process?</p>
+          <p style="color: #059669; font-weight: 700; margin-bottom: 0;">&check; Model Answer: Formal written acceptance by the national authority (DGAC/EASA) confirming that proposed milestones meet regulatory standards.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pair Discussion Prompts -->
+    <div class="card card-tint-amber" style="padding: 7px 10px; margin-bottom: 0;">
+      <h3 style="color: #92400e; font-size: 8.5pt; margin-bottom: 3px;">🗣️ Pair Discussion: Negotiating with Aviation Regulators</h3>
+      <div style="font-size: 7.5pt; color: #78350f;">
+        <p style="margin-bottom: 3px;">
+          <strong>Point A • Realistic Milestones:</strong> Why do civil aviation inspectors reject CAP submissions with vague deadlines like <em>&ldquo;as soon as possible&rdquo;</em>? (<em>Talking point: EASA standards require auditable target dates tied to physical verification</em>).
+        </p>
+        <p style="margin-bottom: 0;">
+          <strong>Point B • Commercial Realities:</strong> How can an aerodrome manager convince an inspector to grant a 30-day timeline without compromising safety? (<em>Talking point: By demonstrating that interim NOTAMs and speed restrictions fully mitigate operational risk</em>).
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 3: PART 2 — PHYSICAL REMEDIATION GALLERY                      -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 2: PHYSICAL REMEDIATION GALLERY</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 2</span> Activity 2: Physical Remediation Gallery &bull; Audit Finding Evidence</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions:</strong> Inspect the three airside engineering exhibits below. Examine the defect data, identify the operational risk, and formulate the immediate interim mitigation in spoken English.
+    </div>
+
+    <!-- 3 Remediation Photo Cards -->
+    <div class="grid-3" style="gap: 6px; margin-bottom: 8px;">
+      <!-- Exhibit A: Fuel Farm -->
+      <div class="card" style="border-top: 3px solid #059669; padding: 6px 8px; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+          <h3 style="color: #065f46; font-size: 7.8pt;">Exhibit A: Fuel Bund</h3>
+          <span class="badge badge-emerald" style="font-size: 6.5pt;">Level 2</span>
+        </div>
+        <p style="font-size: 6.8pt; color: #475569; margin-bottom: 2px;">
+          <strong>Finding 2026-ADR-038:</strong> LFBO Fuel Depot Tank Bund 03. Civil engineers inspecting sealant depth and concrete bund walls following joint degradation.
+        </p>
+        <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 4px; padding: 4px 6px; font-size: 6.6pt; color: #065f46; margin-bottom: 3px;">
+          <strong>Operational Risk:</strong> Joint sealant degradation risks kerosene migration into stormwater drainage during rainfall.
+        </div>
+        <div style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 6px; font-size: 6.6pt; color: #1e293b;">
+          <strong>Interim Mitigation:</strong> Daily visual inspection protocol and portable absorbent spill-booms deployed around Tank 03 pending elastomeric re-sealing.
+        </div>
+      </div>
+
+      <!-- Exhibit B: Runway Rubber Hydro-Blasting -->
+      <div class="card" style="border-top: 3px solid #e11d48; padding: 6px 8px; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+          <h3 style="color: #9f1239; font-size: 7.8pt;">Exhibit B: Hydro-Blasting</h3>
+          <span class="badge badge-rose" style="font-size: 6.5pt;">Level 1</span>
+        </div>
+        <p style="font-size: 6.8pt; color: #475569; margin-bottom: 2px;">
+          <strong>Finding 2026-ADR-041:</strong> Runway 14L Touchdown Zone (0–600m). Specialized UHP hydro-blasting truck (2,200 bar) stripping vulcanized tire rubber deposits.
+        </p>
+        <div style="background: #fff1f2; border: 1px solid #fecdd3; border-radius: 4px; padding: 4px 6px; font-size: 6.6pt; color: #9f1239; margin-bottom: 3px;">
+          <strong>Operational Risk:</strong> Friction decayed to mu = 0.31 (below 0.34 threshold), creating dynamic hydroplaning risk during wet landings.
+        </div>
+        <div style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 6px; font-size: 6.6pt; color: #1e293b;">
+          <strong>Interim Mitigation:</strong> Permanent NOTAM prohibiting wet tailwind landings; airlines apply +15% landing distance buffer until mu >= 0.52.
+        </div>
+      </div>
+
+      <!-- Exhibit C: Jet Blast Deflector -->
+      <div class="card" style="border-top: 3px solid #d97706; padding: 6px 8px; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+          <h3 style="color: #b45309; font-size: 7.8pt;">Exhibit C: Blast Deflector</h3>
+          <span class="badge badge-amber" style="font-size: 6.5pt;">Level 2</span>
+        </div>
+        <p style="font-size: 6.8pt; color: #475569; margin-bottom: 2px;">
+          <strong>Finding 2026-ADR-042:</strong> Holding Point P1 Perimeter. Maintenance crew replacing corroded curved blast panels and installing high-tension nylon FOD catch mesh.
+        </p>
+        <div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 4px; padding: 4px 6px; font-size: 6.6pt; color: #b45309; margin-bottom: 3px;">
+          <strong>Operational Risk:</strong> Corroded anchor bolts risk structural panel detachment under 120-knot widebody breakaway engine thrust.
+        </div>
+        <div style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 6px; font-size: 6.6pt; color: #1e293b;">
+          <strong>Interim Mitigation:</strong> Adjacent service road checkpoint Delta closed; ATC enforces idle breakaway thrust taxi restrictions at Holding Point P1.
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Method Guide -->
+    <div class="card card-tint-blue" style="padding: 6px 10px; margin-bottom: 0;">
+      <h3 style="color: #1e3a8a; font-size: 8pt; margin-bottom: 2px;">🔍 Formulating SMART Corrective Milestones</h3>
+      <div style="font-size: 7.2pt; color: #334155;">
+        <p style="margin-bottom: 1.5px;">&bull; <strong>Specific:</strong> Define the engineering intervention clearly (<em>ultra-high-pressure hydro-blasting at 2,200 bar</em>, not <em>runway cleaning</em>).</p>
+        <p style="margin-bottom: 1.5px;">&bull; <strong>Measurable:</strong> Link completion to certified criteria (<em>friction traces confirming mu >= 0.52</em>, <em>45 kN pull-out torque</em>).</p>
+        <p style="margin-bottom: 1.5px;">&bull; <strong>Achievable &amp; Realistic:</strong> Schedule realistic nighttime closures without disrupting scheduled commercial traffic.</p>
+        <p style="margin-bottom: 0;">&bull; <strong>Time-Bound:</strong> State the exact target date for on-site authority verification (<em>28 October 2024</em>).</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 4: PART 3 — EASA PART-ADR.OR.D.005 CAP DOSSIER                -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 3: EASA PART-ADR.OR.D.005 CAP DOSSIER</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 3</span> Activity 3: The EASA Corrective Action Plan (CAP) Dossier</h2>
+
+    <div class="instruction-box">
+      <strong>Statutory Framework:</strong> EASA Part-ADR.OR.D.005 mandates that operators submit a detailed CAP isolating the root cause, defining auditable interim mitigations, and securing authority concurrence before closing findings.
+    </div>
+
+    <!-- Finding 041 & Finding 042 Details -->
+    <div class="grid-2" style="gap: 8px; margin-bottom: 8px;">
+      <div class="card card-tint-blue" style="border-left: 3px solid #e11d48; padding: 6px 8px; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+          <h3 style="color: #9f1239; font-size: 7.5pt;">Finding 041: Runway Friction Decay</h3>
+          <span class="badge badge-rose" style="font-size: 6pt;">Level 1 &bull; CS-ADR-DSN.B.015</span>
+        </div>
+        <p style="font-size: 6.8pt; color: #475569; margin-bottom: 2px;">
+          <strong>Survey Data:</strong> Continuous Friction Measuring Equipment (CFME) recorded average mu = 0.31 at 65 km/h with 1.0mm water film across the first 600m. Grooves 85% rubber-filled.
+        </p>
+        <p style="font-size: 6.8pt; color: #78350f; margin-bottom: 2px;">
+          <strong>Interim Mitigation:</strong> NOTAM issued: <em>&ldquo;RWY 14L FIRST 600M BRAKING ACTION POOR WHEN WET. TAILWIND LANDINGS PROHIBITED EXCEEDING 5 KT.&rdquo;</em> Airlines apply +15% dispatch buffer.
+        </p>
+        <p style="font-size: 6.8pt; color: #1e3a8a; margin-bottom: 0;">
+          <strong>Definitive Remediation:</strong> 4 nights of UHP hydro-blasting (2,200 bar) stripping 28,000 m² of rubber; 3 CFME calibration runs at 65 &amp; 95 km/h. <strong>Target: 28 Oct 2024.</strong>
+        </p>
+      </div>
+
+      <div class="card card-tint-amber" style="border-left: 3px solid #d97706; padding: 6px 8px; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+          <h3 style="color: #b45309; font-size: 7.5pt;">Finding 042: Blast Deflector Failure</h3>
+          <span class="badge badge-amber" style="font-size: 6pt;">Level 2 &bull; CS-ADR-DSN.D.260</span>
+        </div>
+        <p style="font-size: 6.8pt; color: #475569; margin-bottom: 2px;">
+          <strong>Defect Data:</strong> Holding Point P1 blast deflector shows severe anchor bolt corrosion. Three corrugated panels unseated; top FOD netting torn over 40-meter stretch.
+        </p>
+        <p style="font-size: 6.8pt; color: #78350f; margin-bottom: 2px;">
+          <strong>Interim Mitigation:</strong> Service road Delta closed during widebody departures; ATC instructs all aircraft at P1 to maintain idle thrust until aligned with centerline.
+        </p>
+        <p style="font-size: 6.8pt; color: #1e3a8a; margin-bottom: 0;">
+          <strong>Definitive Remediation:</strong> Bolting Grade 316 stainless anchors rated for 45 kN pull-out torque, new corrugated curved panels, and high-tension nylon FOD mesh. <strong>Target: 30 Nov 2024.</strong>
+        </p>
+      </div>
+    </div>
+
+    <!-- Root-Cause Matrix Table -->
+    <div class="card" style="padding: 6px 8px; margin-bottom: 8px;">
+      <h3 style="color: #0f172a; font-size: 8pt; margin-bottom: 3px;">📊 Root-Cause Remediation Matrix</h3>
+      <table class="data-table" style="font-size: 6.8pt;">
+        <thead>
+          <tr>
+            <th style="width: 20%;">Non-Conformity</th>
+            <th style="width: 25%;">Identified Root Cause</th>
+            <th style="width: 25%;">Immediate Mitigation</th>
+            <th style="width: 20%;">Permanent Engineering Fix</th>
+            <th style="width: 10%;">Deadline</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Runway Friction Restoration</td>
+            <td>Annual fixed maintenance schedule failed to account for 30% surge in summer widebody traffic.</td>
+            <td style="color: #b45309; font-weight: 600;">Issue NOTAM; enforce landing performance dispatch buffer.</td>
+            <td style="color: #059669;">Switch to dynamic bi-monthly CFME monitoring; execute UHP hydro-blasting.</td>
+            <td style="font-weight: 700; font-family: monospace;">28 Oct 2024</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Blast Fence Anchoring</td>
+            <td>Original 2012 specification lacked marine-grade epoxy protection against de-icing chemical runoff.</td>
+            <td style="color: #b45309; font-weight: 600;">Close adjacent service road; enforce idle thrust taxiing.</td>
+            <td style="color: #059669;">Bolt 45 kN pull-out rated stainless anchors; install continuous FOD mesh.</td>
+            <td style="font-weight: 700; font-family: monospace;">30 Nov 2024</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a;">Fuel Farm Containment</td>
+            <td>Elastomeric joint compound reached end of operational lifespan without scheduled re-caulking.</td>
+            <td style="color: #b45309; font-weight: 600;">Deploy portable absorbent booms around Tank 03; daily visual checks.</td>
+            <td style="color: #059669;">Hydro-cleaning and application of aviation-grade chemical-resistant polyurethane.</td>
+            <td style="font-weight: 700; font-family: monospace;">15 Nov 2024</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Authority Sign-Off Box -->
+    <div class="card card-tint-emerald" style="padding: 6px 8px; margin-bottom: 0;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+        <h3 style="color: #065f46; font-size: 7.8pt;">🏛️ DGAC / EASA Oversight Directorate Sign-Off Statement</h3>
+        <span class="badge badge-emerald" style="font-size: 6.5pt;">Provisional Concurrence</span>
+      </div>
+      <p style="font-size: 6.8pt; color: #065f46; margin-bottom: 0; line-height: 1.35;">
+        <em>&ldquo;Level 1 closure is conditional upon physical verification of CFME mu &gt;= 0.52 across all three runs. Level 2 closure requires submission of certified pull-out torque test certificates (45 kN/anchor) and photographic proof of completed FOD mesh installation. Provisional concurrence granted.&rdquo;</em> &mdash; Lead Aviation Safety Inspector #FR.DSAC.2024-04
+      </p>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 5: PART 4 — LANGUAGE CLINIC: REGULATORY COMMITMENT           -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 4: LANGUAGE CLINIC: REGULATORY COMMITMENT</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 4</span> Activity 4: Commitment Phrases for Regulatory Negotiation</h2>
+
+    <div class="instruction-box">
+      <strong>Language Focus:</strong> When negotiating CAP milestones with civil aviation inspectors, aerodrome managers use precise formulaic commitment markers to balance legal compliance with operational reality.
+    </div>
+
+    <!-- Reference Table -->
+    <div class="card" style="padding: 6px 8px; margin-bottom: 8px;">
+      <h3 style="color: #1e3a8a; font-size: 8.5pt; margin-bottom: 3px;">📖 5 Formulaic Regulatory Commitment Phrases</h3>
+      <table class="data-table" style="font-size: 7.2pt;">
+        <thead>
+          <tr>
+            <th style="width: 22%;">Commitment Phrase</th>
+            <th style="width: 25%;">Negotiation Function</th>
+            <th style="width: 35%;">Authentic Airport Example</th>
+            <th style="width: 18%;">Grammar Pattern</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight: 700; color: #1e3a8a; font-family: monospace;">we formally undertake to</td>
+            <td>Expresses a legally binding operational commitment to complete works</td>
+            <td><em>&ldquo;We formally undertake to complete hydro-blasting within 14 calendar days.&rdquo;</em></td>
+            <td>undertake to + [base verb] within [time]</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #d97706; font-family: monospace;">in the interim, the operator shall</td>
+            <td>Establishes an immediate provisional safeguard active before permanent works</td>
+            <td><em>&ldquo;In the interim, the aerodrome operator shall enforce a mandatory NOTAM.&rdquo;</em></td>
+            <td>In the interim, [subject] shall + [verb]</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #2563eb; font-family: monospace;">subject to authority concurrence</td>
+            <td>Conditions an operational schedule upon formal civil aviation approval</td>
+            <td><em>&ldquo;Subject to your concurrence, our engineering team will submit weekly photos.&rdquo;</em></td>
+            <td>Subject to [party's] concurrence, we will...</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #059669; font-family: monospace;">conditional upon physical verification</td>
+            <td>Specifies that finding closure depends on auditable test proof</td>
+            <td><em>&ldquo;Finding closure is conditional upon physical verification of CFME traces.&rdquo;</em></td>
+            <td>conditional upon [noun/test result]</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: #7e22ce; font-family: monospace;">we respectfully submit that</td>
+            <td>Introduces a polite, diplomatic pushback against excessive restrictions</td>
+            <td><em>&ldquo;We respectfully submit that closing the entire runway is disproportionate.&rdquo;</em></td>
+            <td>We respectfully submit that [clause]</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 5 Practice Drills -->
+    <div class="card card-tint-blue" style="padding: 8px 10px; margin-bottom: 8px;">
+      <h3 style="color: #1e3a8a; font-size: 8.5pt; margin-bottom: 4px;">✍️ 5 Practice Drills: Select the Correct Regulatory Phrase</h3>
+      <div style="font-size: 7.5pt; space-y-2;">
+        <div style="padding: 4px 6px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 4px; margin-bottom: 3px;">
+          <p style="margin-bottom: 1px;"><strong>1.</strong> The aerodrome operator ____________________ complete ultra-high-pressure rubber removal across the first 600 meters within 14 nights.</p>
+          <span style="color: #64748b; font-size: 7pt;">Options: [ formally undertakes to | respectfully submits that | in the interim ] &bull; <strong>Answer: formally undertakes to</strong></span>
+        </div>
+        <div style="padding: 4px 6px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 4px; margin-bottom: 3px;">
+          <p style="margin-bottom: 1px;"><strong>2.</strong> ____________________, air traffic control shall restrict all aircraft at Holding Point P1 to idle breakaway thrust.</p>
+          <span style="color: #64748b; font-size: 7pt;">Options: [ Subject to concurrence | In the interim | Conditional upon ] &bull; <strong>Answer: In the interim</strong></span>
+        </div>
+        <div style="padding: 4px 6px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 4px; margin-bottom: 3px;">
+          <p style="margin-bottom: 1px;"><strong>3.</strong> The revised 45-day blast fence reconstruction schedule is valid only ____________________ from the state oversight directorate.</p>
+          <span style="color: #64748b; font-size: 7pt;">Options: [ subject to authority concurrence | we respectfully submit that | in the interim ] &bull; <strong>Answer: subject to authority concurrence</strong></span>
+        </div>
+        <div style="padding: 4px 6px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 4px; margin-bottom: 3px;">
+          <p style="margin-bottom: 1px;"><strong>4.</strong> Formal Level 1 finding closure remains ____________________ on-site CFME calibration runs confirming mu &gt;= 0.52.</p>
+          <span style="color: #64748b; font-size: 7pt;">Options: [ conditional upon physical verification of | we formally undertake to | in the interim ] &bull; <strong>Answer: conditional upon physical verification of</strong></span>
+        </div>
+        <div style="padding: 4px 6px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 4px; margin-bottom: 0;">
+          <p style="margin-bottom: 1px;"><strong>5.</strong> ____________________ imposing a 30-day runway closure is commercially unviable given our verified nighttime hydro-blasting capacity.</p>
+          <span style="color: #64748b; font-size: 7pt;">Options: [ In the interim | We respectfully submit that | Subject to concurrence ] &bull; <strong>Answer: We respectfully submit that</strong></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Active Diplomacy Tip Box -->
+    <div class="card card-tint-purple" style="padding: 6px 10px; margin-bottom: 0;">
+      <h3 style="color: #6b21a8; font-size: 8pt; margin-bottom: 2px;">💡 Negotiation Tip: Balancing Assertiveness and Regulatory Respect</h3>
+      <div style="font-size: 7.2pt; color: #581c87;">
+        <p style="margin-bottom: 1px;"><strong>Avoid Confrontation:</strong> Never say: <em>&ldquo;Your deadline is impossible and will cost us too much money.&rdquo;</em></p>
+        <p style="margin-bottom: 0; font-weight: 700; color: #047857;">&rarr; Use Professional Diplomacy: <em>&ldquo;We respectfully submit that an immediate full closure is disproportionate given our interim NOTAM buffer, and we formally undertake to complete nightly hydro-blasting within fourteen calendar days.&rdquo;</em></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 6: PART 5 — OPERATOR VS INSPECTOR SPOKEN NEGOTIATION          -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 5: SPOKEN REGULATORY NEGOTIATION SIMULATION</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 5</span> Activity 5: Aerodrome Operator vs Civil Aviation Inspector Negotiation</h2>
+
+    <div class="instruction-box">
+      <strong>Simulation Instructions:</strong> Work in pairs. Partner A acts as the Aerodrome Safety &amp; Compliance Manager defending the proposed CAP schedule; Partner B acts as the Civil Aviation Inspector enforcing safety standards under Part-ADR.OR.D.005.
+    </div>
+
+    <!-- 2 Role Cards Grid -->
+    <div class="grid-2" style="gap: 8px; margin-bottom: 8px;">
+      <div class="card card-tint-blue" style="border-left: 3px solid #2563eb; padding: 6px 8px; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+          <h3 style="color: #1e40af; font-size: 8pt;">Role A: Aerodrome Safety Manager</h3>
+          <span class="badge badge-primary" style="font-size: 6.5pt;">Operator</span>
+        </div>
+        <p style="font-size: 7pt; color: #1e3a8a; margin-bottom: 3px;">
+          <strong>Goal:</strong> Present proposed CAP milestones, justify why blast fence procurement requires 30 days due to specialized alloy delivery, and prove that interim NOTAMs fully contain flight safety risks.
+        </p>
+        <div style="background: #ffffff; border: 1px solid #bfdbfe; border-radius: 4px; padding: 4px 6px; font-size: 6.8pt; color: #1e40af; line-height: 1.35;">
+          <strong>Target Spoken Phrases:</strong><br>
+          &bull; <em>&ldquo;We formally undertake to complete hydro-blasting within 14 calendar days.&rdquo;</em><br>
+          &bull; <em>&ldquo;In the interim, the operator has published a NOTAM prohibiting tailwind landings.&rdquo;</em><br>
+          &bull; <em>&ldquo;Subject to your concurrence, our team will submit weekly progress photos.&rdquo;</em><br>
+          &bull; <em>&ldquo;We respectfully submit that closing the runway is commercially disproportionate.&rdquo;</em>
+        </div>
+      </div>
+
+      <div class="card card-tint-slate" style="border-left: 3px solid #64748b; padding: 6px 8px; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+          <h3 style="color: #0f172a; font-size: 8pt;">Role B: Civil Aviation Inspector</h3>
+          <span class="badge badge-slate" style="font-size: 6.5pt;">DGAC / EASA</span>
+        </div>
+        <p style="font-size: 7pt; color: #334155; margin-bottom: 3px;">
+          <strong>Goal:</strong> Scrutinize the CAP timeline, demand verifiable proof, verify that Level 1 risks are mitigated within 24 hours, and grant conditional concurrence only with auditable progress checks.
+        </p>
+        <div style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 6px; font-size: 6.8pt; color: #0f172a; line-height: 1.35;">
+          <strong>Target Inspector Phrases:</strong><br>
+          &bull; <em>&ldquo;The authority acknowledges receipt, but 30 days for Level 1 friction is excessive.&rdquo;</em><br>
+          &bull; <em>&ldquo;We require physical CFME traces showing mu &gt;= 0.52 before the NOTAM can be cancelled.&rdquo;</em><br>
+          &bull; <em>&ldquo;Our concurrence is conditional upon certified torque pull-out test reports for all 40 bolts.&rdquo;</em><br>
+          &bull; <em>&ldquo;What specific contingency is in place if the hydro-blasting vehicle suffers downtime?&rdquo;</em>
+        </div>
+      </div>
+    </div>
+
+    <!-- Inspector Peer Checklist -->
+    <div class="card card-tint-amber" style="padding: 7px 10px; margin-bottom: 8px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+        <h3 style="color: #92400e; font-size: 8pt;">📋 Civil Aviation Inspector Peer Evaluator Checklist</h3>
+        <span class="badge badge-amber" style="font-size: 6.5pt;">Peer Evaluation</span>
+      </div>
+      <p style="font-size: 7.2pt; color: #78350f; margin-bottom: 3px;">Partner B evaluates Partner A's compliance negotiation against these 4 statutory criteria before giving 1 minute of oral coaching:</p>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px; font-size: 7.2pt;">
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span>1. Finding Classification: Accurately cited Level 1 immediate vs Level 2 30-day CAP?</span>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span>2. Commitment Phrases: Accurately used <em>undertake to</em>, <em>in the interim</em>, <em>subject to</em>?</span>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span>3. Realistic Milestones: Proposed SMART auditable dates &amp; enforceable NOTAM buffers?</span>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span>4. Assertive Diplomacy: Maintained professional composure without aggressive pushback?</span>
+        </div>
+      </div>
+
+      <!-- 1-Minute Peer Coaching Dialogue -->
+      <div style="margin-top: 4px; padding-top: 4px; border-top: 1px solid #fde68a; font-size: 7pt; color: #78350f;">
+        <p style="margin-bottom: 1.5px;"><strong>Inspector (Evaluator):</strong> &ldquo;Your interim NOTAM strategy for Runway 14L was very thorough. However, when proposing the 30-day blast fence timeline, remember to explicitly use formulaic commitment phrases like: <em>we formally undertake to submit weekly progress photos subject to authority concurrence</em>.&rdquo;</p>
+        <p style="margin-bottom: 0;"><strong>Safety Manager (Operator):</strong> &ldquo;Thank you for that observation, Inspector. We formally undertake to provide certified torque pull-out test reports every seven days, conditional upon your on-site verification.&rdquo;</p>
+      </div>
+    </div>
+
+    <!-- Active Checking Box -->
+    <div class="card card-tint-blue" style="padding: 6px 8px; margin-bottom: 0;">
+      <h3 style="color: #1e3a8a; font-size: 7.8pt; margin-bottom: 2px;">🎙️ Structure of a Professional Regulatory Negotiation</h3>
+      <div style="font-size: 6.8pt; color: #334155; line-height: 1.35;">
+        &bull; <strong>Opening Acknowledgment:</strong> Formally acknowledge receipt of the finding reference number and classification.<br>
+        &bull; <strong>Immediate Containment:</strong> State the interim operational restriction already active (NOTAM, speed caps).<br>
+        &bull; <strong>Definitive Engineering Fix:</strong> Explain the root-cause remediation with specialized contractor equipment.<br>
+        &bull; <strong>Binding Commitment:</strong> Conclude with a formulaic deadline commitment subject to authority verification.
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 7: PART 6 & 7 — SAFETY CHECK, RULES TO REALITY & STUDIO       -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 3 • Technical English (AT • LV125E)</span>
+      <span class="ref">PART 6 &amp; 7: SAFETY CHECK &amp; FLIPPED LESSON STUDIO</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 6</span> Activity 5: Safety Check: What is the Airfield Risk?</h2>
+
+    <div class="instruction-box">
+      <strong>Simple Safety Check:</strong> Review the 4-step decision table below to evaluate audit findings, corrective action plans, and regulatory enforcement decisions.
+    </div>
+
+    <!-- Safety Check Table -->
+    <table class="data-table" style="font-size: 7.2pt; margin-bottom: 8px;">
+      <thead>
+        <tr>
+          <th style="width: 30%;">Simple Safety Question</th>
+          <th style="width: 70%;">Agreed Investigation Board Finding &amp; Decision</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-weight: 700; color: #1e3a8a; background: #f8fafc;">1. What is the systemic problem?</td>
+          <td>Runway 14L touchdown zone has decayed to mu = 0.31 (below 0.34 safety threshold) due to rubber build-up; Holding Point P1 blast deflector has corroded base bolts risking fence detachment under 120-knot jet thrust.</td>
+        </tr>
+        <tr>
+          <td style="font-weight: 700; color: #b45309; background: #fffbeb;">2. What could happen if uncorrected?</td>
+          <td>Decayed friction risks hydroplaning runway excursions during wet landings; detached blast fence panels risk launching high-speed metallic FOD across Taxiway Papa and adjacent service roadways.</td>
+        </tr>
+        <tr>
+          <td style="font-weight: 700; color: #059669; background: #f0fdf4;">3. How do we fix it?</td>
+          <td>Enforce immediate NOTAMs (no tailwind landings, idle thrust taxiing); execute 4 nights of UHP hydro-blasting (28,000 m²) and install Grade 316 stainless anchors rated for 45 kN pull-out torque.</td>
+        </tr>
+        <tr>
+          <td style="font-weight: 700; color: #7e22ce; background: #faf5ff;">4. Directorate Decision</td>
+          <td>Grant provisional EASA/DGAC concurrence: Level 1 closure is conditional upon CFME mu &gt;= 0.52 verification; Level 2 closure is conditional upon certified anchor pull-out test certificates.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Rules to Reality Wrap-Up Prompt -->
+    <div class="card" style="background: #0f172a; color: #ffffff; padding: 6px 10px; margin-bottom: 8px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+        <h3 style="color: #38bdf8; font-size: 7.8pt;">⚡ Rules to Reality: The 60-Second Compliance Pitch</h3>
+        <span class="badge badge-amber" style="font-size: 6.5pt;">Unscripted Spoken Wrap-Up</span>
+      </div>
+      <p style="color: #cbd5e1; font-size: 7.2pt; margin-bottom: 0;">
+        Without looking at your notes, turn to your partner and explain in 60 seconds: <em>&ldquo;Why can't an aerodrome operator simply promise to fix a finding next year?&rdquo;</em> You must use at least 2 commitment phrases (<em>undertake to</em>, <em>in the interim</em>, <em>subject to concurrence</em>) and distinguish a Level 1 hazard from a Level 2 non-compliance.
+      </p>
+    </div>
+
+    <!-- Activity 6: Flipped Classroom Design Studio Notes (Handwritten Dotted Lines) -->
+    <h2><span class="badge badge-primary">Part 7</span> Activity 6: Session 7 Flipped Classroom Planning Studio</h2>
+
+    <div class="card card-tint-blue" style="padding: 5px 8px; margin-bottom: 4px;">
+      <h3 style="color: #1e3a8a; font-size: 7.5pt; margin-bottom: 1px;">1. Chosen Domain, Lesson Title &amp; Opening Hook (~5 Mins):</h3>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+    </div>
+
+    <div class="card card-tint-emerald" style="padding: 5px 8px; margin-bottom: 4px;">
+      <h3 style="color: #065f46; font-size: 7.5pt; margin-bottom: 1px;">2. Core Communicative Activity &amp; Step-by-Step Instructions (~18 Mins):</h3>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+    </div>
+
+    <div class="card card-tint-purple" style="padding: 5px 8px; margin-bottom: 0;">
+      <h3 style="color: #6b21a8; font-size: 7.5pt; margin-bottom: 1px;">3. Team Member Role Allocation &amp; Classroom Delivery Strategy:</h3>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+    </div>
+  </div>
+
+</body>
+</html>

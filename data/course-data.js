@@ -5552,6 +5552,7 @@
       },
       "6": {
         "session": 6,
+        "title": "The Corrective Action Plan & CAP Review",
         "overview": {
           "intro": "Welcome to Session 6 of Technical English! Today we work with official EASA Corrective Action Plan (CAP) documentation and dedicate 30 minutes of workshop time to prepare your Session 7 peer lessons. You will practice using formal commitment phrases (we undertake to, subject to approval) to agree on CAP deadlines with inspectors, and work in teams of 3 or 4 to structure your 30-minute interactive lesson for Session 7.",
           "whyItMatters": "Closing an audit finding or incident investigation is not merely a box-ticking administrative exercise—it is the legal mechanism that prevents catastrophic repeat occurrences on the airfield. When civil aviation authorities identify safety deficiencies such as runway friction loss or blast fence corrosion, aerodrome operators must formally demonstrate how they will eliminate the underlying root cause. Moreover, developing the confidence to facilitate technical peer discussions prepares future ENAC aviation professionals for high-stakes safety briefings and leadership roles.",
@@ -5735,7 +5736,33 @@
             "badge": "Safety Directorate Briefing",
             "title": "Aerodrome Audit Finding Notice: The Path to Compliance",
             "desc": "Under Regulation (EU) No 139/2014 Part-ADR.OR.D.005, receiving an audit non-conformity notice initiates a strict statutory process. The aerodrome operator must not merely repair the defect—they must determine the root cause, establish immediate mitigations to protect flight operations, and submit a formal Corrective Action Plan with auditable milestones acceptable to the competent authority.",
-            "callout": "Crucial distinction: Level 1 findings hazard aircraft operations immediately and require action within 24–48 hours; Level 2 findings represent systemic gaps requiring an agreed 30-day CAP submission."
+            "callout": "Crucial distinction: Level 1 findings hazard aircraft operations immediately and require action within 24–48 hours; Level 2 findings represent systemic gaps requiring an agreed 30-day CAP submission.",
+            "diagnostic": {
+              "title": "Audit Finding & CAP Entry Spot-Check",
+              "instructions": "Discuss these 4 essential regulatory questions with your partner, then reveal the model answers.",
+              "questions": [
+                {
+                  "id": 1,
+                  "q": "Under EASA Part-ADR.OR.D.005, what is the critical operational difference between a Level 1 and a Level 2 audit finding?",
+                  "answer": "A Level 1 finding poses an immediate hazard to flight safety requiring operational restrictions within 24–48 hours; a Level 2 finding represents a systemic or procedural gap requiring a formal CAP within 30 days."
+                },
+                {
+                  "id": 2,
+                  "q": "What is an 'interim risk mitigation' and why must an aerodrome operator enforce one before permanent engineering works begin?",
+                  "answer": "A provisional operational safeguard (e.g., NOTAM, landing weight penalty, taxi speed limit) enforced immediately to contain safety risks while long-term permanent repairs are carried out."
+                },
+                {
+                  "id": 3,
+                  "q": "What continuous friction measuring equipment (CFME) coefficient threshold triggers a mandatory safety finding for runway rubber contamination?",
+                  "answer": "When measured friction decays below the minimum certified planning level (mu < 0.34 under EASA CS-ADR-DSN.B.015), hydro-blasting is mandatory to restore macro-texture."
+                },
+                {
+                  "id": 4,
+                  "q": "What does 'authority concurrence' mean in the EASA Corrective Action Plan process?",
+                  "answer": "Formal written acceptance by the state civil aviation authority (e.g., DGAC or EASA) confirming that an aerodrome operator's proposed milestones and mitigations are legally acceptable."
+                }
+              ]
+            }
           },
           "photoExhibits": [
             {
@@ -5818,6 +5845,79 @@
               "status": "Provisional Concurrence Granted • Verification Pending"
             }
           },
+          "languageClinic": {
+            "title": "Language Clinic: Commitment Phrases for Regulatory Negotiation",
+            "summary": "When negotiating corrective action milestones with civil aviation inspectors, aerodrome managers use precise formulaic commitment markers to balance legal compliance with operational reality:",
+            "connectorsTable": [
+              {
+                "phrase": "we formally undertake to",
+                "function": "Expresses a legally binding commitment to complete an action",
+                "example": "We formally undertake to complete the hydro-blasting within 14 calendar days.",
+                "tip": "Follow with base infinitive: undertake to + [verb] within [timeframe]"
+              },
+              {
+                "phrase": "in the interim, the operator shall",
+                "function": "Establishes an immediate temporary safeguard or operational restriction",
+                "example": "In the interim, the aerodrome operator shall enforce a mandatory NOTAM.",
+                "tip": "Use 'shall' for statutory commitment: In the interim, [subject] shall + [verb]"
+              },
+              {
+                "phrase": "subject to authority concurrence",
+                "function": "Conditions an operational timeline upon state regulator approval",
+                "example": "Subject to your concurrence, our engineering team will submit weekly progress photos.",
+                "tip": "Diplomatic conditional marker: Subject to [party's] concurrence, we will..."
+              },
+              {
+                "phrase": "conditional upon physical verification",
+                "function": "Specifies that closure depends on auditable test proof",
+                "example": "Finding closure is conditional upon physical verification of CFME friction traces.",
+                "tip": "Follow with 'of': conditional upon [noun phrase] / [test result]"
+              },
+              {
+                "phrase": "we respectfully submit that",
+                "function": "Introduces a polite, diplomatic pushback against excessive restrictions",
+                "example": "We respectfully submit that closing the entire runway is disproportionate.",
+                "tip": "Professional diplomacy: We respectfully submit that [clause]"
+              }
+            ],
+            "drills": [
+              {
+                "id": 1,
+                "prompt": "1. The aerodrome operator __________ complete ultra-high-pressure rubber removal across the first 600 meters within 14 nights.",
+                "options": ["formally undertakes to", "respectfully submits that", "in the interim"],
+                "correct": "formally undertakes to",
+                "rationale": "'Formally undertakes to' expresses a legally binding commitment to perform an engineering action."
+              },
+              {
+                "id": 2,
+                "prompt": "2. __________, air traffic control shall restrict all aircraft at Holding Point P1 to idle breakaway thrust.",
+                "options": ["Subject to concurrence", "In the interim", "Conditional upon"],
+                "correct": "In the interim",
+                "rationale": "'In the interim' introduces the provisional operational safeguard active before permanent repairs."
+              },
+              {
+                "id": 3,
+                "prompt": "3. The revised 45-day blast fence reconstruction schedule is valid only __________ from the state oversight directorate.",
+                "options": ["subject to authority concurrence", "we respectfully submit that", "in the interim"],
+                "correct": "subject to authority concurrence",
+                "rationale": "'Subject to authority concurrence' correctly conditions timeline validity on formal DGAC/EASA approval."
+              },
+              {
+                "id": 4,
+                "prompt": "4. Formal Level 1 finding closure remains __________ on-site CFME calibration runs confirming mu >= 0.52.",
+                "options": ["conditional upon physical verification of", "we formally undertake to", "in the interim"],
+                "correct": "conditional upon physical verification of",
+                "rationale": "'Conditional upon physical verification of' specifies the mandatory auditable test proof."
+              },
+              {
+                "id": 5,
+                "prompt": "5. __________ imposing a 30-day runway closure is commercially unviable given our verified nighttime hydro-blasting capacity.",
+                "options": ["In the interim", "We respectfully submit that", "Subject to concurrence"],
+                "correct": "We respectfully submit that",
+                "rationale": "'We respectfully submit that' is the diplomatic opening for constructive pushback in regulatory negotiation."
+              }
+            ]
+          },
           "negotiationRoleplay": {
             "title": "Interactive Roleplay • Aerodrome Operator vs Civil Aviation Authority Inspector",
             "operatorRole": {
@@ -5839,6 +5939,28 @@
                 "Our concurrence remains strictly conditional upon receiving certified torque test reports for all 40 replacement blast fence anchors.",
                 "What specific contingency procedure is in place if the hydro-blasting vehicle experiences mechanical downtime?"
               ]
+            },
+            "peerChecklist": [
+              {
+                "id": 1,
+                "label": "Did the operator accurately classify finding levels (Level 1 immediate vs Level 2 30-day CAP) citing Part-ADR.OR.D.005?"
+              },
+              {
+                "id": 2,
+                "label": "Were formal commitment phrases (undertake to, in the interim, subject to concurrence) used with grammatical precision?"
+              },
+              {
+                "id": 3,
+                "label": "Did the operator propose realistic, auditable milestones and enforceable interim risk mitigations (e.g., NOTAMs)?"
+              },
+              {
+                "id": 4,
+                "label": "Was diplomatic, assertive spoken negotiation maintained without defensive or aggressive pushback?"
+              }
+            ],
+            "peerCoaching": {
+              "inspector": "Civil Aviation Inspector: 'Your interim NOTAM strategy for Runway 14L was very thorough. However, when proposing the 30-day blast fence timeline, remember to explicitly use formulaic commitment phrases like: we formally undertake to submit weekly progress photos subject to authority concurrence.'",
+              "operator": "Safety & Compliance Manager: 'Thank you for that observation, Inspector. We formally undertake to provide certified torque pull-out test reports every seven days, conditional upon your on-site verification.'"
             }
           },
           "flippedLessonStudio": {
@@ -5928,6 +6050,32 @@
                 "descriptors": "Engaging interaction, dynamic question management, active circulating and coaching, and constructive peer debriefing."
               }
             ]
+          },
+          "safetyCheck": {
+            "title": "Activity 5: Safety Check: What is the Airfield Risk?",
+            "summary": "Review the 4 questions in the Safety Check table to evaluate audit findings, corrective action plans, and regulatory enforcement decisions.",
+            "rows": [
+              {
+                "question": "1. What is the systemic problem?",
+                "answer": "Runway 14L touchdown zone has decayed to mu = 0.31 (below the 0.34 safety threshold) due to rubber build-up; Holding Point P1 blast deflector has corroded base bolts risking fence detachment under 120-knot jet thrust."
+              },
+              {
+                "question": "2. What could happen if uncorrected?",
+                "answer": "Decayed friction risks hydroplaning runway excursions during wet landings; detached blast fence panels risk launching high-speed metallic FOD across Taxiway Papa and adjacent service roadways."
+              },
+              {
+                "question": "3. How do we fix it?",
+                "answer": "Enforce immediate NOTAMs (no tailwind landings, idle thrust taxiing); execute 4 nights of UHP hydro-blasting (28,000 m2) and install Grade 316 stainless anchors rated for 45 kN pull-out torque."
+              },
+              {
+                "question": "4. Directorate Decision",
+                "answer": "Grant provisional EASA/DGAC concurrence: Level 1 closure is conditional upon CFME mu >= 0.52 verification; Level 2 closure is conditional upon certified anchor pull-out test certificates."
+              }
+            ]
+          },
+          "rulesToReality": {
+            "title": "Rules to Reality: The 60-Second Compliance Pitch",
+            "prompt": "Without looking at your notes, turn to your partner and explain in 60 seconds: 'Why can\'t an aerodrome operator simply promise to fix a finding next year?' You must use at least 2 commitment phrases and distinguish a Level 1 hazard from a Level 2 non-compliance."
           }
         },
         "revision": {
@@ -15893,6 +16041,7 @@
         },
         "6": {
           "session": 6,
+          "title": "The Corrective Action Plan & CAP Review",
           "overview": {
             "intro": "Welcome to Session 6 of Technical English! Today we work with official EASA Corrective Action Plan (CAP) documentation and dedicate 30 minutes of workshop time to prepare your Session 7 peer lessons. You will practice using formal commitment phrases (we undertake to, subject to approval) to agree on CAP deadlines with inspectors, and work in teams of 3 or 4 to structure your 30-minute interactive lesson for Session 7.",
             "whyItMatters": "Closing an audit finding or incident investigation is not merely a box-ticking administrative exercise—it is the legal mechanism that prevents catastrophic repeat occurrences on the airfield. When civil aviation authorities identify safety deficiencies such as runway friction loss or blast fence corrosion, aerodrome operators must formally demonstrate how they will eliminate the underlying root cause. Moreover, developing the confidence to facilitate technical peer discussions prepares future ENAC aviation professionals for high-stakes safety briefings and leadership roles.",
@@ -16076,7 +16225,33 @@
               "badge": "Safety Directorate Briefing",
               "title": "Aerodrome Audit Finding Notice: The Path to Compliance",
               "desc": "Under Regulation (EU) No 139/2014 Part-ADR.OR.D.005, receiving an audit non-conformity notice initiates a strict statutory process. The aerodrome operator must not merely repair the defect—they must determine the root cause, establish immediate mitigations to protect flight operations, and submit a formal Corrective Action Plan with auditable milestones acceptable to the competent authority.",
-              "callout": "Crucial distinction: Level 1 findings hazard aircraft operations immediately and require action within 24–48 hours; Level 2 findings represent systemic gaps requiring an agreed 30-day CAP submission."
+              "callout": "Crucial distinction: Level 1 findings hazard aircraft operations immediately and require action within 24–48 hours; Level 2 findings represent systemic gaps requiring an agreed 30-day CAP submission.",
+              "diagnostic": {
+                "title": "Audit Finding & CAP Entry Spot-Check",
+                "instructions": "Discuss these 4 essential regulatory questions with your partner, then reveal the model answers.",
+                "questions": [
+                  {
+                    "id": 1,
+                    "q": "Under EASA Part-ADR.OR.D.005, what is the critical operational difference between a Level 1 and a Level 2 audit finding?",
+                    "answer": "A Level 1 finding poses an immediate hazard to flight safety requiring operational restrictions within 24–48 hours; a Level 2 finding represents a systemic or procedural gap requiring a formal CAP within 30 days."
+                  },
+                  {
+                    "id": 2,
+                    "q": "What is an 'interim risk mitigation' and why must an aerodrome operator enforce one before permanent engineering works begin?",
+                    "answer": "A provisional operational safeguard (e.g., NOTAM, landing weight penalty, taxi speed limit) enforced immediately to contain safety risks while long-term permanent repairs are carried out."
+                  },
+                  {
+                    "id": 3,
+                    "q": "What continuous friction measuring equipment (CFME) coefficient threshold triggers a mandatory safety finding for runway rubber contamination?",
+                    "answer": "When measured friction decays below the minimum certified planning level (mu < 0.34 under EASA CS-ADR-DSN.B.015), hydro-blasting is mandatory to restore macro-texture."
+                  },
+                  {
+                    "id": 4,
+                    "q": "What does 'authority concurrence' mean in the EASA Corrective Action Plan process?",
+                    "answer": "Formal written acceptance by the state civil aviation authority (e.g., DGAC or EASA) confirming that an aerodrome operator's proposed milestones and mitigations are legally acceptable."
+                  }
+                ]
+              }
             },
             "photoExhibits": [
               {
@@ -16159,6 +16334,79 @@
                 "status": "Provisional Concurrence Granted • Verification Pending"
               }
             },
+            "languageClinic": {
+              "title": "Language Clinic: Commitment Phrases for Regulatory Negotiation",
+              "summary": "When negotiating corrective action milestones with civil aviation inspectors, aerodrome managers use precise formulaic commitment markers to balance legal compliance with operational reality:",
+              "connectorsTable": [
+                {
+                  "phrase": "we formally undertake to",
+                  "function": "Expresses a legally binding commitment to complete an action",
+                  "example": "We formally undertake to complete the hydro-blasting within 14 calendar days.",
+                  "tip": "Follow with base infinitive: undertake to + [verb] within [timeframe]"
+                },
+                {
+                  "phrase": "in the interim, the operator shall",
+                  "function": "Establishes an immediate temporary safeguard or operational restriction",
+                  "example": "In the interim, the aerodrome operator shall enforce a mandatory NOTAM.",
+                  "tip": "Use 'shall' for statutory commitment: In the interim, [subject] shall + [verb]"
+                },
+                {
+                  "phrase": "subject to authority concurrence",
+                  "function": "Conditions an operational timeline upon state regulator approval",
+                  "example": "Subject to your concurrence, our engineering team will submit weekly progress photos.",
+                  "tip": "Diplomatic conditional marker: Subject to [party's] concurrence, we will..."
+                },
+                {
+                  "phrase": "conditional upon physical verification",
+                  "function": "Specifies that closure depends on auditable test proof",
+                  "example": "Finding closure is conditional upon physical verification of CFME friction traces.",
+                  "tip": "Follow with 'of': conditional upon [noun phrase] / [test result]"
+                },
+                {
+                  "phrase": "we respectfully submit that",
+                  "function": "Introduces a polite, diplomatic pushback against excessive restrictions",
+                  "example": "We respectfully submit that closing the entire runway is disproportionate.",
+                  "tip": "Professional diplomacy: We respectfully submit that [clause]"
+                }
+              ],
+              "drills": [
+                {
+                  "id": 1,
+                  "prompt": "1. The aerodrome operator __________ complete ultra-high-pressure rubber removal across the first 600 meters within 14 nights.",
+                  "options": ["formally undertakes to", "respectfully submits that", "in the interim"],
+                  "correct": "formally undertakes to",
+                  "rationale": "'Formally undertakes to' expresses a legally binding commitment to perform an engineering action."
+                },
+                {
+                  "id": 2,
+                  "prompt": "2. __________, air traffic control shall restrict all aircraft at Holding Point P1 to idle breakaway thrust.",
+                  "options": ["Subject to concurrence", "In the interim", "Conditional upon"],
+                  "correct": "In the interim",
+                  "rationale": "'In the interim' introduces the provisional operational safeguard active before permanent repairs."
+                },
+                {
+                  "id": 3,
+                  "prompt": "3. The revised 45-day blast fence reconstruction schedule is valid only __________ from the state oversight directorate.",
+                  "options": ["subject to authority concurrence", "we respectfully submit that", "in the interim"],
+                  "correct": "subject to authority concurrence",
+                  "rationale": "'Subject to authority concurrence' correctly conditions timeline validity on formal DGAC/EASA approval."
+                },
+                {
+                  "id": 4,
+                  "prompt": "4. Formal Level 1 finding closure remains __________ on-site CFME calibration runs confirming mu >= 0.52.",
+                  "options": ["conditional upon physical verification of", "we formally undertake to", "in the interim"],
+                  "correct": "conditional upon physical verification of",
+                  "rationale": "'Conditional upon physical verification of' specifies the mandatory auditable test proof."
+                },
+                {
+                  "id": 5,
+                  "prompt": "5. __________ imposing a 30-day runway closure is commercially unviable given our verified nighttime hydro-blasting capacity.",
+                  "options": ["In the interim", "We respectfully submit that", "Subject to concurrence"],
+                  "correct": "We respectfully submit that",
+                  "rationale": "'We respectfully submit that' is the diplomatic opening for constructive pushback in regulatory negotiation."
+                }
+              ]
+            },
             "negotiationRoleplay": {
               "title": "Interactive Roleplay • Aerodrome Operator vs Civil Aviation Authority Inspector",
               "operatorRole": {
@@ -16180,6 +16428,28 @@
                   "Our concurrence remains strictly conditional upon receiving certified torque test reports for all 40 replacement blast fence anchors.",
                   "What specific contingency procedure is in place if the hydro-blasting vehicle experiences mechanical downtime?"
                 ]
+              },
+              "peerChecklist": [
+                {
+                  "id": 1,
+                  "label": "Did the operator accurately classify finding levels (Level 1 immediate vs Level 2 30-day CAP) citing Part-ADR.OR.D.005?"
+                },
+                {
+                  "id": 2,
+                  "label": "Were formal commitment phrases (undertake to, in the interim, subject to concurrence) used with grammatical precision?"
+                },
+                {
+                  "id": 3,
+                  "label": "Did the operator propose realistic, auditable milestones and enforceable interim risk mitigations (e.g., NOTAMs)?"
+                },
+                {
+                  "id": 4,
+                  "label": "Was diplomatic, assertive spoken negotiation maintained without defensive or aggressive pushback?"
+                }
+              ],
+              "peerCoaching": {
+                "inspector": "Civil Aviation Inspector: 'Your interim NOTAM strategy for Runway 14L was very thorough. However, when proposing the 30-day blast fence timeline, remember to explicitly use formulaic commitment phrases like: we formally undertake to submit weekly progress photos subject to authority concurrence.'",
+                "operator": "Safety & Compliance Manager: 'Thank you for that observation, Inspector. We formally undertake to provide certified torque pull-out test reports every seven days, conditional upon your on-site verification.'"
               }
             },
             "flippedLessonStudio": {
@@ -16269,6 +16539,32 @@
                   "descriptors": "Engaging interaction, dynamic question management, active circulating and coaching, and constructive peer debriefing."
                 }
               ]
+            },
+            "safetyCheck": {
+              "title": "Activity 5: Safety Check: What is the Airfield Risk?",
+              "summary": "Review the 4 questions in the Safety Check table to evaluate audit findings, corrective action plans, and regulatory enforcement decisions.",
+              "rows": [
+                {
+                  "question": "1. What is the systemic problem?",
+                  "answer": "Runway 14L touchdown zone has decayed to mu = 0.31 (below the 0.34 safety threshold) due to rubber build-up; Holding Point P1 blast deflector has corroded base bolts risking fence detachment under 120-knot jet thrust."
+                },
+                {
+                  "question": "2. What could happen if uncorrected?",
+                  "answer": "Decayed friction risks hydroplaning runway excursions during wet landings; detached blast fence panels risk launching high-speed metallic FOD across Taxiway Papa and adjacent service roadways."
+                },
+                {
+                  "question": "3. How do we fix it?",
+                  "answer": "Enforce immediate NOTAMs (no tailwind landings, idle thrust taxiing); execute 4 nights of UHP hydro-blasting (28,000 m2) and install Grade 316 stainless anchors rated for 45 kN pull-out torque."
+                },
+                {
+                  "question": "4. Directorate Decision",
+                  "answer": "Grant provisional EASA/DGAC concurrence: Level 1 closure is conditional upon CFME mu >= 0.52 verification; Level 2 closure is conditional upon certified anchor pull-out test certificates."
+                }
+              ]
+            },
+            "rulesToReality": {
+              "title": "Rules to Reality: The 60-Second Compliance Pitch",
+              "prompt": "Without looking at your notes, turn to your partner and explain in 60 seconds: 'Why can\'t an aerodrome operator simply promise to fix a finding next year?' You must use at least 2 commitment phrases and distinguish a Level 1 hazard from a Level 2 non-compliance."
             }
           },
           "revision": {
