@@ -17,6 +17,7 @@ Type these exact phrases directly in chat with the Antigravity assistant:
 | **`Semester 1 Update`**<br>*(or `Semester 2` / `Semester 3`)* | **Cohort & Roster Reconfiguration**<br>Edits from `PROMO_SETUP.private.md`. | • Updates student rosters & FE oral rotas<br>• Synchronizes `index.html` & `admin.html`<br>• Updates `portfolio.html` student selector<br>• Rebuilds all 4 distribution packages & commits |
 | **`Promo Admin: ...`** | **Inline Cohort Reconfiguration**<br>e.g. `Promo Admin: Promotion GSEA26A, Semester 1, Groups 2, A - 10 B - 9, Teachers AG 2 AT 2` | Same as above, but configured entirely inline in the chat prompt without editing markdown files. |
 | **`Commit`**<br>*(or `Commit changes`)* | **Single-Step Remote Sync** | Atomically runs `git commit` AND `git push origin main` together, updating GitHub and GitHub Pages live. |
+| **`Audit S1/2/3 AT/AG/AP/AAS M1/2/3 Ss 1/2/3`**<br>*(e.g. `Audit S3 AT M1 S5`, `Audit Semester 3 Mod 1 AT Ss 1`)* | **Automated Session Audit &amp; A4 PDF Worksheet Setup** | • 8-point automated audit of session quality<br>• Thematic relevance &amp; subject drift scan<br>• 2-Hour classroom sufficiency gauge<br>• Zero academic jargon &amp; zero timings scan<br>• Verifies &amp; sets up exact 7-page A4 PDF worksheet |
 
 ---
 

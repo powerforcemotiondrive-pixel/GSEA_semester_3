@@ -18,7 +18,8 @@
     "backup2": "node scripts/backup.js semester2",
     "backup3": "node scripts/backup.js semester3",
     "promo:update": "node scripts/update-promo.js && npm run package && npm run package:moodle",
-    "verify:links": "node scripts/verify-links.js"
+    "verify:links": "node scripts/verify-links.js",
+    "audit": "node scripts/audit-session.js"
   },
   "repository": {
     "type": "git",

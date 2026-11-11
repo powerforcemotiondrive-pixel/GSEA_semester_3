@@ -29,3 +29,4 @@ console.log("✓ PDF generated successfully at:", outputPath);
 
 const stats = fs.statSync(outputPath);
 console.log("File size:", stats.size, "bytes (" + (stats.size / 1024).toFixed(1) + " KB)");
+
