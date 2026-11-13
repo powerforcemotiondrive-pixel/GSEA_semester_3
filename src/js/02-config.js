@@ -7,7 +7,7 @@
           s3: "Session 3 - Special Requests & Runway Safety Cases",
           s4: "Session 4 - Ground Inspection & Audit Findings",
           s5: "Session 5 - Multi-Source Incident Investigation & Root Cause Analysis",
-          s6: "Session 6 - The Corrective Action Plan (CAP) & Lesson 7 Prep"
+          s6: "Session 6 - The Corrective Action Plan & CAP Review"
         },
         2: {
           s1: "Session 1 - Aerodynamics & Flight Principles",
@@ -99,9 +99,9 @@
         ...teachingPages,
         {
           tag: modNumber === 1 ? `Module 1 • FE • Session ${feSessionNum}` : `Module ${modNumber} • Session ${feSessionNum}`,
-          title: `Session ${feSessionNum} - Flipped Classroom Peer-Teaching Evaluation`,
+          title: `Session ${feSessionNum} - EASA Regulatory Extract & Class Activity Evaluation`,
           description: modNumber === 1
-            ? `Welcome to Session ${feSessionNum}! In this flipped classroom evaluation, student teams of 3 to 4 take the floor as technical instructors, delivering an engaging 30-minute interactive lesson to their classmates across authentic aerodrome operations domains.<br><br><em>Subject overview:</em> Formative Evaluation 1 — Flipped Peer-Teaching: Lesson planning, creative communicative activities, technical English facilitation, and classroom peer engagement.<br><br>All work in this session contributes directly toward your Formative Evaluation.`
+            ? `Welcome to Session ${feSessionNum}! In this Formative Evaluation, student teams of up to 4 take the floor to deliver an engaging 30-minute interactive session based on an official EASA documentation extract of their choice. Your team will deliver a comprehensive spoken breakdown in plain English, teach 3 to 5 new technical words, and lead creative reading and speaking exercises for classmates.<br><br><em>Subject overview:</em> Formative Evaluation 1 — EASA Regulatory Extract &amp; Class Activity: Regulatory breakdown, technical vocabulary teaching, creative classmate exercises, and final teacher feedback.<br><br>All work in this session contributes directly toward your Formative Evaluation.`
             : (modNumber === 2
                 ? `Welcome to Session ${feSessionNum}! In this Formative Evaluation, you and your partner will present a comprehensive technical profile of an aircraft or an airline of your choice.<br><br><em>Subject overview:</em> Formative Evaluation 2 — Aircraft / Airlines: Technical specifications, operational metrics, historical milestones, and safety analysis.<br><br>All work in this session contributes directly toward your Formative Evaluation.`
                 : `Welcome to Session ${feSessionNum}!`),

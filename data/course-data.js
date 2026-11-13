@@ -5119,35 +5119,55 @@
               {
                 "id": 1,
                 "prompt": "1. The towbar shear pin fracture was __________ the tug driver's sudden application of emergency brakes on the wet apron.",
-                "options": ["triggered by", "stemming from", "consequently"],
+                "options": [
+                  "triggered by",
+                  "stemming from",
+                  "consequently"
+                ],
                 "correct": "triggered by",
                 "rationale": "Emergency braking is the immediate physical catalyst that broke the pin."
               },
               {
                 "id": 2,
                 "prompt": "2. Operating with a deferred anti-skid valve was a latent risk __________ logistics delays in delivering replacement parts.",
-                "options": ["attributable to", "resulting in", "stemming from"],
+                "options": [
+                  "attributable to",
+                  "resulting in",
+                  "stemming from"
+                ],
                 "correct": "stemming from",
                 "rationale": "'Stemming from' points back to the dormant root organizational cause (logistics delay)."
               },
               {
                 "id": 3,
                 "prompt": "3. The aircraft experienced dynamic hydroplaning at 85 knots, __________ an uncontrollable veer onto the unpaved grass shoulder.",
-                "options": ["resulting in", "triggered by", "stemming from"],
+                "options": [
+                  "resulting in",
+                  "triggered by",
+                  "stemming from"
+                ],
                 "correct": "resulting in",
                 "rationale": "'Resulting in' links the physical loss of friction directly to the ensuing runway excursion."
               },
               {
                 "id": 4,
                 "prompt": "4. The apron vehicle crossing incident was __________ severe radio frequency congestion on the ground control channel.",
-                "options": ["consequently", "attributable to", "resulting in"],
+                "options": [
+                  "consequently",
+                  "attributable to",
+                  "resulting in"
+                ],
                 "correct": "attributable to",
                 "rationale": "'Attributable to' correctly assigns causative responsibility to the congested radio frequency."
               },
               {
                 "id": 5,
                 "prompt": "5. The runway standing water depth reached 4 mm; __________, the aerodrome operator suspended flight operations on Runway 14L.",
-                "options": ["stemming from", "consequently", "triggered by"],
+                "options": [
+                  "stemming from",
+                  "consequently",
+                  "triggered by"
+                ],
                 "correct": "consequently",
                 "rationale": "'Consequently' introduces the logical regulatory safety decision taken as an effect."
               }
@@ -5223,7 +5243,7 @@
               }
             ],
             "peerCoaching": {
-              "evaluator": "Student B (Safety Board Evaluator): 'Your explanation of the shear pin fracture and runway excursion was very clear and well-paced. However, you didn\'t emphasize the latent organizational condition regarding the deferred anti-skid valve under MEL. Remember to cite Regulation EU 376/2014 when presenting mandatory dispatch limits.'",
+              "evaluator": "Student B (Safety Board Evaluator): 'Your explanation of the shear pin fracture and runway excursion was very clear and well-paced. However, you didn't emphasize the latent organizational condition regarding the deferred anti-skid valve under MEL. Remember to cite Regulation EU 376/2014 when presenting mandatory dispatch limits.'",
               "speaker": "Student A (Lead Investigator): 'Thank you for that feedback. I will make sure to link the logistics delay directly to the latent failure layer and reference EU 376/2014 in our final recommendations.'"
             }
           },
@@ -5554,7 +5574,7 @@
         "session": 6,
         "title": "The Corrective Action Plan & CAP Review",
         "overview": {
-          "intro": "Welcome to Session 6 of Technical English! Today we work with official EASA Corrective Action Plan (CAP) documentation and dedicate 30 minutes of workshop time to prepare your Session 7 peer lessons. You will practice using formal commitment phrases (we undertake to, subject to approval) to agree on CAP deadlines with inspectors, and work in teams of 3 or 4 to structure your 30-minute interactive lesson for Session 7.",
+          "intro": "Welcome to Session 6 of Technical English! Today we work with official EASA Corrective Action Plan (CAP) documentation and dedicate substantial workshop time to prepare your Session 7 Formative Evaluation presentations. You will practice using formal commitment phrases (we undertake to, subject to approval) to agree on CAP deadlines with inspectors, and work in teams of up to 4 to select your EASA regulatory extract, plan your spoken breakdown, pick 3 to 5 new words to teach, and design creative exercises for your classmates.",
           "whyItMatters": "Closing an audit finding or incident investigation is not merely a box-ticking administrative exercise—it is the legal mechanism that prevents catastrophic repeat occurrences on the airfield. When civil aviation authorities identify safety deficiencies such as runway friction loss or blast fence corrosion, aerodrome operators must formally demonstrate how they will eliminate the underlying root cause. Moreover, developing the confidence to facilitate technical peer discussions prepares future ENAC aviation professionals for high-stakes safety briefings and leadership roles.",
           "keyTerms": [
             {
@@ -5612,15 +5632,15 @@
               "def": "A heavy-duty curved aerodrome barrier engineered to redirect high-velocity aircraft engine exhaust upward and away from adjacent taxiways, service roads, and ground personnel."
             },
             {
-              "term": "Flipped Peer-Teaching",
-              "ipa": "/flɪpt pɪər ˈtiːtʃɪŋ/",
+              "term": "Interactive Peer Presentation",
+              "ipa": "/ˌɪntərˈæktɪv pɪər ˌprɛzənˈteɪʃən/",
               "pos": "noun phrase",
-              "def": "A collaborative instructional model where students assume the role of technical instructors, designing and delivering interactive learning activities to their peers to build communicative mastery."
+              "def": "A collaborative speaking format where a student team presents an official EASA extract, explains its technical meaning in plain English, teaches key terms, and leads interactive exercises for the class."
             }
           ],
           "speakingTask": {
-            "title": "Authentic EASA Simulation • CAP Negotiation & Session 7 Flipped Lesson Design Studio",
-            "instructions": "Working in teams of 3 or 4, inspect the two official audit finding notices (Runway Friction Decay & Perimeter Blast Fence Detachment) and the three photographic remediation exhibits. Practice negotiating realistic CAP milestones with your partner acting as the Civil Aviation Inspector. Then, transition into the Flipped Lesson Design Studio to plan, structure, and assign teaching roles for your team's 30-minute interactive lesson in Session 7.",
+            "title": "Authentic EASA Simulation • CAP Negotiation & Session 7 FE Preparation Studio",
+            "instructions": "Working in teams of up to 4, inspect the two official audit finding notices and the three photographic remediation exhibits. Practice negotiating realistic CAP milestones with your partner acting as the Civil Aviation Inspector. Then, transition into the Session 7 Preparation Studio to select your EASA documentation extract, outline your spoken breakdown, choose 3 to 5 technical words to teach, and design engaging exercises (reading comprehension, quizzes, or speaking prompts) for your 30-minute class presentation.",
             "document": {
               "title": "EASA Part-ADR.OR.D.005 Corrective Action Plan & Session 7 Peer-Teaching Guide",
               "subtitle": "Statutory Finding Remediation Framework & Flipped Classroom Assessment Specification",
@@ -5630,16 +5650,18 @@
               "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
             },
             "teamRoles": {
-              "group1": "Teaching Pod 1 (Runway Surface Condition & Friction Decays): Draft an interactive 30-minute lesson teaching classmates how to interpret CFME friction traces, identify rubber contamination, and calculate landing distances.",
-              "group2": "Teaching Pod 2 (Apron Vehicle Safety & Pushback Coordination): Build a 30-minute workshop on apron telematics speed control, towbar shear mechanics, and interphone communication protocols.",
-              "group3": "Teaching Pod 3 (Wildlife Hazard Management & CS-ADR-DSN): Design an engaging 30-minute seminar covering pyrotechnic laser dispersal, acoustic deterrents, and aerodrome bird strike mitigation.",
-              "group4": "Teaching Pod 4 (Airfield Audit Non-Conformities & CAP Negotiation): Create a dynamic 30-minute roleplay challenge where classmates simulate aerodrome operators defending CAP milestones to state inspectors."
+              "group1": "Team Option 1 (Aerodrome Operations & Obstacle Limitation): Select an extract from EASA Part-ADR.OPS or CS-ADR-DSN (crane permits, OLS safeguarding). Prepare a spoken breakdown, teach key safeguarding terms, and design a reading or error-spotting exercise for your classmates.",
+              "group2": "Team Option 2 (Ramp Safety & Vehicle Operations): Select an extract from EASA SIB 2024-09 (apron speed control, towbar shear mechanics, Just Culture). Break down the safety requirements, teach new apron vocabulary, and create an interactive comprehension quiz.",
+              "group3": "Team Option 3 (Runway Safety & Operational Exemptions): Select an extract from Basic Regulation Article 71 or CS-ADR on runway works, friction decay, or displaced thresholds. Explain the operational rationale, teach 3 to 5 technical terms, and lead a pair discussion task.",
+              "group4": "Team Option 4 (Audit Non-Conformities & Corrective Action Plans): Select an extract from Part-ADR.AR.C.055 or Part-ADR.OR.D.005 on audit findings and CAP milestones. Deliver a clear spoken summary, teach regulatory negotiation terms, and create a mini-audit exercise for your classmates."
             },
             "usefulPhrases": [
               "We undertake to implement the interim risk mitigation by...",
               "In the interim, the aerodrome operator shall enforce a mandatory NOTAM stating...",
-              "Subject to authority concurrence, our definitive engineering works will conclude on...",
-              "For our Session 7 flipped lesson, our team will engage classmates through an interactive..."
+              "Subject to authority concurrence, our definitive technical works will conclude on...",
+              "For our Session 7 activity, our group will present an EASA extract on...",
+              "We will teach our classmates three new technical words, including...",
+              "To engage the class, we have designed a quick reading comprehension exercise where..."
             ]
           },
           "document": {
@@ -5701,9 +5723,9 @@
               "activity": "Simulated authority review meeting: Partner A acts as the Aerodrome Safety Manager defending the proposed timeline; Partner B acts as the DGAC/EASA Inspector enforcing safety margins."
             },
             {
-              "part": "Part 4: Extended Peer-Teaching Workshop & Lesson 7 Design Studio",
-              "focus": "Dedicated extended preparation time for Session 7 flipped peer-teaching lessons (30 minutes delivery per pod of 3–4 students).",
-              "activity": "Teams of 3 to 4 select their technical domain (Runway Friction/GRF, Ramp Safety/Telematics, Wildlife Hazard, or CAP Audit Negotiation). Teams design their 3-stage lesson architecture (Hook, Core Activity, Debrief), assign teaching roles, review the 20-point assessment rubric, and record their lesson outline in the on-screen scratchpad."
+              "part": "Part 4: Extended Workshop Studio & Session 7 FE Preparation",
+              "focus": "Dedicated extended preparation time for Session 7 EASA extract presentations (30 minutes delivery per group of up to 4 students).",
+              "activity": "Teams of up to 4 select an official EASA documentation extract from Module 1 topics (OLS Safeguarding, Ramp Vehicle Safety, Runway Works & Exemptions, Airfield Audits, Incident Investigation, or CAP Remediation). Teams plan their spoken breakdown, select 3 to 5 key technical terms to teach, design their classmate exercises (reading comprehension, mini-quiz, or pair discussion), and record their outline in the on-screen scratchpad."
             }
           ]
         },
@@ -5884,35 +5906,55 @@
               {
                 "id": 1,
                 "prompt": "1. The aerodrome operator __________ complete ultra-high-pressure rubber removal across the first 600 meters within 14 nights.",
-                "options": ["formally undertakes to", "respectfully submits that", "in the interim"],
+                "options": [
+                  "formally undertakes to",
+                  "respectfully submits that",
+                  "in the interim"
+                ],
                 "correct": "formally undertakes to",
                 "rationale": "'Formally undertakes to' expresses a legally binding commitment to perform an engineering action."
               },
               {
                 "id": 2,
                 "prompt": "2. __________, air traffic control shall restrict all aircraft at Holding Point P1 to idle breakaway thrust.",
-                "options": ["Subject to concurrence", "In the interim", "Conditional upon"],
+                "options": [
+                  "Subject to concurrence",
+                  "In the interim",
+                  "Conditional upon"
+                ],
                 "correct": "In the interim",
                 "rationale": "'In the interim' introduces the provisional operational safeguard active before permanent repairs."
               },
               {
                 "id": 3,
                 "prompt": "3. The revised 45-day blast fence reconstruction schedule is valid only __________ from the state oversight directorate.",
-                "options": ["subject to authority concurrence", "we respectfully submit that", "in the interim"],
+                "options": [
+                  "subject to authority concurrence",
+                  "we respectfully submit that",
+                  "in the interim"
+                ],
                 "correct": "subject to authority concurrence",
                 "rationale": "'Subject to authority concurrence' correctly conditions timeline validity on formal DGAC/EASA approval."
               },
               {
                 "id": 4,
                 "prompt": "4. Formal Level 1 finding closure remains __________ on-site CFME calibration runs confirming mu >= 0.52.",
-                "options": ["conditional upon physical verification of", "we formally undertake to", "in the interim"],
+                "options": [
+                  "conditional upon physical verification of",
+                  "we formally undertake to",
+                  "in the interim"
+                ],
                 "correct": "conditional upon physical verification of",
                 "rationale": "'Conditional upon physical verification of' specifies the mandatory auditable test proof."
               },
               {
                 "id": 5,
                 "prompt": "5. __________ imposing a 30-day runway closure is commercially unviable given our verified nighttime hydro-blasting capacity.",
-                "options": ["In the interim", "We respectfully submit that", "Subject to concurrence"],
+                "options": [
+                  "In the interim",
+                  "We respectfully submit that",
+                  "Subject to concurrence"
+                ],
                 "correct": "We respectfully submit that",
                 "rationale": "'We respectfully submit that' is the diplomatic opening for constructive pushback in regulatory negotiation."
               }
@@ -6075,7 +6117,7 @@
           },
           "rulesToReality": {
             "title": "Rules to Reality: The 60-Second Compliance Pitch",
-            "prompt": "Without looking at your notes, turn to your partner and explain in 60 seconds: 'Why can\'t an aerodrome operator simply promise to fix a finding next year?' You must use at least 2 commitment phrases and distinguish a Level 1 hazard from a Level 2 non-compliance."
+            "prompt": "Without looking at your notes, turn to your partner and explain in 60 seconds: 'Why can't an aerodrome operator simply promise to fix a finding next year?' You must use at least 2 commitment phrases and distinguish a Level 1 hazard from a Level 2 non-compliance."
           }
         },
         "revision": {
@@ -6345,73 +6387,60 @@
       },
       "7": {
         "session": 7,
-        "title": "Flipped Classroom Peer-Teaching Evaluation",
+        "title": "EASA Regulatory Extract & Class Activity Evaluation",
         "overview": {
-          "intro": "Welcome to Session 7 of Technical English! In this Formative Evaluation, student teams of 3 to 4 take the floor as technical instructors to deliver an engaging 30-minute interactive lesson to their classmates. You will practice giving clear spoken activity instructions in plain English, facilitate pair and group work based on Module 1 EASA aerodrome topics, manage classroom discussions, and provide constructive feedback to your peers.",
-          "whyItMatters": "Teaching a technical subject to others is one of the most effective ways to solidify language mastery and professional communicative presence. In airside operations, civil aviation oversight, and flight operations management, future ENAC graduates are regularly required to deliver safety briefings, train frontline ground teams, explain complex EASA regulatory updates, and facilitate collaborative decision-making across international teams. Developing the confidence to give direct spoken instructions, facilitate interactive peer discussions, and think on your feet in English transforms passive technical knowledge into active leadership communication.",
+          "intro": "Welcome to Session 7 of Technical English! In this Formative Evaluation, student teams of up to 4 take the floor to deliver an engaging 30-minute interactive session based on an official EASA documentation extract of their choice. Your team will deliver a comprehensive spoken breakdown of what the extract is about in plain English, teach your classmates 3 to 5 new technical words with clear definitions and examples, and lead your classmates through engaging reading comprehension and communicative exercises. At the end of the student presentations, your teacher will spend the final minutes of class providing constructive feedback and offering spoken language corrections.",
+          "whyItMatters": "Reading, explaining, and facilitating discussions around official European regulatory documentation is central to the role of civil aviation technical officers (TSEEAC), aerodrome inspectors, and operations managers. Whether briefing airport staff on a new EASA safety directive, guiding ground crews through ramp speed rules, or explaining audit findings, the ability to translate formal regulatory prose into clear, plain B2 English with accurate technical vocabulary transforms passive knowledge into active communicative leadership.",
           "keyTerms": [
             {
-              "term": "Flipped Classroom",
-              "ipa": "/flɪpt ˈklɑːs.ruːm/",
+              "term": "Regulatory Extract",
+              "ipa": "/ˈrɛɡjʊlətəri ˈɛkstrækt/",
               "pos": "noun phrase",
-              "def": "A teaching model where students prepare learning materials beforehand and spend classroom time actively delivering, facilitating, and completing collaborative speaking tasks."
+              "def": "A selected section from official EASA regulations, safety information bulletins (SIBs), or certification specifications used as the basis for classroom analysis and discussion."
             },
             {
-              "term": "Peer-Teaching",
-              "ipa": "/pɪər ˈtiː.tʃɪŋ/",
-              "pos": "noun",
-              "def": "An instructional practice where students instruct and guide their fellow classmates through structured communicative exercises."
-            },
-            {
-              "term": "Instruction Checking Question (ICQ)",
-              "ipa": "/ɪnˈstrʌk.ʃən ˈtʃek.ɪŋ ˈkwes.tʃən/",
+              "term": "Reading Comprehension",
+              "ipa": "/ˈriːdɪŋ ˌkɒmprɪˈhɛnʃən/",
               "pos": "noun phrase",
-              "def": "A brief, direct spoken question asked by an instructor to verify that learners understand activity instructions before starting."
+              "def": "The ability to read, interpret, and extract essential operational meaning and legal requirements from technical aviation documents."
             },
             {
-              "term": "Elicitation",
-              "ipa": "/ɪˌlɪs.ɪˈteɪ.ʃən/",
-              "pos": "noun",
-              "def": "A facilitation technique where the speaker prompts questions to draw ideas, solutions, or technical terms out of classmates rather than lecturing."
+              "term": "Spoken Breakdown",
+              "ipa": "/ˈspoʊkən ˈbreɪkdaʊn/",
+              "pos": "noun phrase",
+              "def": "A clear, structured oral summary delivered in plain English that explains the core message, scope, and operational consequences of a technical document."
             },
             {
-              "term": "Timeboxing",
-              "ipa": "/ˈtaɪm.bɒks.ɪŋ/",
-              "pos": "noun",
-              "def": "Allocating a fixed, predetermined period of time to an activity step to keep classroom discussions focused and energetic."
+              "term": "Technical Vocabulary",
+              "ipa": "/ˈtɛknɪkəl vəʊˈkæbjʊləri/",
+              "pos": "noun phrase",
+              "def": "Specialized aviation and aerodrome terms (such as displaced threshold, Just Culture, Level 1 non-compliance, or NOTAM) used with precision in context."
+            },
+            {
+              "term": "Interactive Exercise",
+              "ipa": "/ˌɪntərˈæktɪv ˈɛksəsaɪz/",
+              "pos": "noun phrase",
+              "def": "A collaborative classroom activity (such as a quiz, gap-fill, matching task, or speaking scenario) designed to actively engage classmates."
+            },
+            {
+              "term": "Creative Facilitation",
+              "ipa": "/kriˈeɪtɪv fəˌsɪlɪˈteɪʃən/",
+              "pos": "noun phrase",
+              "def": "Engaging, imaginative methods used to spark discussion, maintain classroom energy, and encourage active peer participation."
             },
             {
               "term": "Constructive Feedback",
-              "ipa": "/kənˈstrʌk.tɪv ˈfiːd.bæk/",
+              "ipa": "/kənˈstrʌktɪv ˈfiːdbæk/",
               "pos": "noun phrase",
-              "def": "Specific, positive, and actionable observations provided to peers highlighting strong performance and practical areas for growth."
+              "def": "Positive, actionable comments highlighting communication strengths and specific practical areas for language growth."
             },
             {
-              "term": "Active Listening",
-              "ipa": "/ˈæk.tɪv ˈlɪs.ən.ɪŋ/",
+              "term": "Language Correction",
+              "ipa": "/ˈlæŋɡwɪdʒ kəˈrɛkʃən/",
               "pos": "noun phrase",
-              "def": "Paying full conscious attention to peer contributions, confirming understanding, and building upon what others say during debriefs."
-            },
-            {
-              "term": "Nominated Speaker",
-              "ipa": "/ˈnɒm.ɪ.neɪ.tɪd ˈspiː.kər/",
-              "pos": "noun phrase",
-              "def": "A designated group representative chosen to present a team's collective conclusions during whole-class discussion."
-            },
-            {
-              "term": "Pairwork Facilitation",
-              "ipa": "/ˈpeə.wɜːk fəˌsɪl.ɪˈteɪ.ʃən/",
-              "pos": "noun phrase",
-              "def": "Circulating among student pairs, monitoring conversational flow, clarifying doubts, and prompting quieter learners to contribute."
-            },
-            {
-              "term": "Plenary Debrief",
-              "ipa": "/ˈpliː.nər.i diːˈbriːf/",
-              "pos": "noun phrase",
-              "def": "A concluding whole-class discussion where student groups share conclusions, synthesize key insights, and evaluate lessons learned."
+              "def": "Targeted feedback from the teacher on pronunciation, grammar, and word choice delivered during the final class debrief to build fluency."
             }
-          ],
-          "hideSpeakingTask": true
+          ]
         },
         "objectives": {
           "title": "Session 7 Objectives - Flipped Classroom Peer-Teaching Evaluation",
@@ -6451,272 +6480,298 @@
         },
         "lessonContent": {
           "hero": {
-                    "badge": "Formative Evaluation 1 \u2022 Technical English (AT \u2022 LV125E)",
-                    "title": "Session 7: Flipped Classroom Peer-Teaching Workshop",
-                    "subtitle": "Student teams of 3 to 4 take the floor as technical instructors, delivering an engaging 30-minute interactive lesson to classmates based on Module 1 EASA aerodrome operations.",
-                    "metrics": [
-                              {
-                                        "label": "Format",
-                                        "val": "30-Min Lessons"
-                              },
-                              {
-                                        "label": "Grading",
-                                        "val": "20 Points (FE1)"
-                              },
-                              {
-                                        "label": "Teams",
-                                        "val": "3 to 4 Instructors"
-                              },
-                              {
-                                        "label": "Standard",
-                                        "val": "CEFR B2 Spoken"
-                              }
-                    ]
+            "badge": "Formative Evaluation 1 • Technical English (AT • LV125E)",
+            "title": "Session 7: EASA Regulatory Extract & Interactive Class Activity",
+            "subtitle": "Student groups of up to 4 present an official EASA extract, explain its technical meaning, teach new words, and lead creative reading and speaking exercises for their classmates.",
+            "metrics": [
+              {
+                "label": "Format",
+                "val": "30-Min Sessions"
+              },
+              {
+                "label": "Grading",
+                "val": "20 Points (FE1)"
+              },
+              {
+                "label": "Teams",
+                "val": "Up to 4 Students"
+              },
+              {
+                "label": "Standard",
+                "val": "CEFR B2 Spoken"
+              }
+            ]
           },
           "openingSession": {
-                    "badge": "Part 1: Entry Diagnostic Spot-Check",
-                    "title": "Spoken Technical Facilitation & Instruction Techniques",
-                    "desc": "Before teams take the floor, test your spoken facilitation knowledge with these 4 quick-fire spot-check questions on instruction checking, active monitoring, pacing, and debriefing.",
-                    "diagnostic": [
-                              {
-                                        "num": 1,
-                                        "question": "What is an Instruction Checking Question (ICQ), and why is asking 'Do you understand?' ineffective?",
-                                        "answer": "An ICQ is a targeted question that verifies comprehension of specific task steps (e.g., 'Are you working in pairs or alone?', 'How many root causes must your team list?'). Asking 'Do you understand?' prompts reflexive nods without confirming that students actually know what to do."
-                              },
-                              {
-                                        "num": 2,
-                                        "question": "What should student instructors do while classmates are actively working in pairs or small groups?",
-                                        "answer": "Instructors should actively circulate among tables to monitor communicative flow, clarify ambiguities, prompt quieter students with guiding questions, and ensure conversations remain strictly in professional English, without interrupting unnecessarily."
-                              },
-                              {
-                                        "num": 3,
-                                        "question": "How should a team manage a 30-minute lesson timebox if a group discussion runs longer than planned?",
-                                        "answer": "Give clear spoken time warnings ('Two minutes remaining, please finalize your conclusions'), gently accelerate transition to the plenary debrief, and nominate specific teams to report on key highlights rather than hearing every group in full."
-                              },
-                              {
-                                        "num": 4,
-                                        "question": "What makes a plenary debrief effective in a technical English lesson?",
-                                        "answer": "An effective debrief synthesizes student discoveries, elicits contrasting solutions between teams, highlights accurately deployed technical terminology, and provides immediate positive and constructive feedback rather than just repeating the lesson slides."
-                              }
-                    ]
+            "badge": "Part 1: Activity Guidelines",
+            "title": "EASA Extract Breakdown & Interactive Class Activity Guidelines",
+            "desc": "Review the 4 core steps for leading your 30-minute interactive session with your classmates.",
+            "diagnostic": [
+              {
+                "num": 1,
+                "question": "Step 1: Spoken Breakdown of the EASA Extract",
+                "answer": "Present your chosen EASA extract clearly. Explain what regulatory domain it covers, what the main safety requirement is, and why it matters in real aerodrome operations. Do not read aloud from slides or notes!"
+              },
+              {
+                "num": 2,
+                "question": "Step 2: Teach 3 to 5 New Technical Words",
+                "answer": "Highlight 3 to 5 key specialized terms from your extract. Explain what each word means in plain English and give a clear operational example so your classmates can understand and use it."
+              },
+              {
+                "num": 3,
+                "question": "Step 3: Lead Interactive Classmate Exercises",
+                "answer": "Distribute or project little exercises for your classmates to complete (reading comprehension questions, a quick true/false quiz, definition matching, or pair discussion). Creativity and imagination are strongly encouraged!"
+              },
+              {
+                "num": 4,
+                "question": "Step 4: Classroom Wrap-Up & Final Teacher Feedback",
+                "answer": "Check answers with the class, answer questions, and summarize the key safety takeaway. In the final minutes of class, the teacher delivers constructive feedback and spoken language corrections."
+              }
+            ]
           },
-          "architecture": {
-                    "title": "The 30-Minute Flipped Lesson Architecture (4 Stages)",
-                    "stages": [
-                              {
-                                        "stage": "Stage 1",
-                                        "name": "Opening Phase: Welcome & Context Hook",
-                                        "badge": "Opening Phase",
-                                        "desc": "Introduce team instructors and state the aerodrome safety challenge. Hook peer interest with a real incident photo, scenario, or thought-provoking question."
-                              },
-                              {
-                                        "stage": "Stage 2",
-                                        "name": "Core Activity: Instructions & Spoken Task",
-                                        "badge": "Core Activity",
-                                        "desc": "Deliver clear step-by-step instructions in plain B2 English. Ask ICQs to verify task understanding. Classmates complete pair/group work."
-                              },
-                              {
-                                        "stage": "Stage 3",
-                                        "name": "Active Coaching: Circulating & Support",
-                                        "badge": "Active Coaching",
-                                        "desc": "Student instructors circulate among tables, clarify questions, prompt quieter peers, provide hints, and ensure 100% English speaking."
-                              },
-                              {
-                                        "stage": "Stage 4",
-                                        "name": "Debrief Phase: Plenary Review & Feedback",
-                                        "badge": "Debrief Phase",
-                                        "desc": "Elicit solutions from student groups, compare recommendations, review technical vocabulary deployed, and invite peer feedback."
-                              }
-                    ]
+          "presentationSimulation": {
+            "title": "The 30-Minute Activity Flow (4 Steps)",
+            "stages": [
+              {
+                "stage": "Step 1",
+                "name": "Extract Spoken Breakdown",
+                "badge": "Step 1",
+                "desc": "Introduce your team, present your chosen EASA extract, and explain the core safety issue in plain English."
+              },
+              {
+                "stage": "Step 2",
+                "name": "Vocabulary Spotlight: New Words",
+                "badge": "Step 2",
+                "desc": "Teach 3 to 5 new technical words from the extract with simple explanations and clear operational examples."
+              },
+              {
+                "stage": "Step 3",
+                "name": "Classmate Exercises & Activity",
+                "badge": "Step 3",
+                "desc": "Classmates complete your reading comprehension questions, quiz, or speaking task in pairs or small groups."
+              },
+              {
+                "stage": "Step 4",
+                "name": "Wrap-Up & Solution Check",
+                "badge": "Step 4",
+                "desc": "Review answers together, ask classmates what they learned, and conclude your team presentation."
+              }
+            ]
           },
           "facilitationToolkit": {
-                    "title": "Spoken Facilitation Toolkit \u2022 Phrases for Student Instructors",
-                    "categories": [
-                              {
-                                        "category": "Opening Hook & Giving Instructions",
-                                        "icon": "\ud83d\udce2",
-                                        "phrases": [
-                                                  "Good morning everyone. Today our team is putting you in the shoes of airport safety managers...",
-                                                  "Our objective by the end of this 30-minute session is to agree on...",
-                                                  "Please work in pairs with the person sitting next to you.",
-                                                  "Step one is to examine the chart. Step two is to identify the non-compliance."
-                                        ]
-                              },
-                              {
-                                        "category": "Instruction Checking Questions (ICQs)",
-                                        "icon": "\u2753",
-                                        "phrases": [
-                                                  "Before we start, who can explain what you need to do in step 1?",
-                                                  "Are you working individually or in pairs?",
-                                                  "What should your team have written down when time is up?",
-                                                  "You have 8 minutes for this phase. Any questions before we start?"
-                                        ]
-                              },
-                              {
-                                        "category": "Circulating & Coaching Classmates",
-                                        "icon": "\ud83d\udc65",
-                                        "phrases": [
-                                                  "How are things progressing over here? Any questions on the regulatory rule?",
-                                                  "What does EASA Part-ADR state about temporary obstacle exemptions?",
-                                                  "Try using 'provided that' to express the conditional safety measure.",
-                                                  "Two minutes remaining, everyone. Please start wrapping up your notes."
-                                        ]
-                              },
-                              {
-                                        "category": "Plenary Debrief & Eliciting Answers",
-                                        "icon": "\ud83c\udfaf",
-                                        "phrases": [
-                                                  "Let us hear from Team B. What root cause did your group identify?",
-                                                  "Did any other team reach a different conclusion for this audit finding?",
-                                                  "To recap, the key technical distinction between Level 1 and Level 2 is...",
-                                                  "Great participation everyone. Thank you for your active engagement."
-                                        ]
-                              }
-                    ]
+            "title": "Spoken Presentation Toolkit • Phrases for Student Presenters",
+            "categories": [
+              {
+                "category": "Introducing the Extract & Context",
+                "icon": "📄",
+                "phrases": [
+                  "Good morning everyone. Today our team is looking at an extract from EASA Part-ADR regarding...",
+                  "This regulation specifically applies to aerodrome operators and deals with...",
+                  "The main purpose of this statutory requirement is to ensure that...",
+                  "In practical terms, this means that airfield operations must..."
+                ]
+              },
+              {
+                "category": "Teaching New Technical Words",
+                "icon": "💡",
+                "phrases": [
+                  "The first key term we want to teach you today is...",
+                  "In simple words, this term means...",
+                  "For example, when an aircraft lands on a wet runway, this word describes...",
+                  "Can anyone give another example using this word?"
+                ]
+              },
+              {
+                "category": "Setting Up Classmate Exercises",
+                "icon": "✏️",
+                "phrases": [
+                  "Now we would like you to look at the short reading exercise on the screen / handout.",
+                  "Please work in pairs with the person next to you to answer questions 1 to 3.",
+                  "You will have a few minutes to read the paragraph and find the two safety hazards.",
+                  "Take a look at the quiz questions and decide whether each statement is True or False."
+                ]
+              },
+              {
+                "category": "Reviewing Answers & Class Debrief",
+                "icon": "🎯",
+                "phrases": [
+                  "Let us check the answers together. Table 2, what did you find for Question 1?",
+                  "Does anyone have a different answer or interpretation?",
+                  "That is correct, because under the EASA rule...",
+                  "Thank you everyone for your active participation!"
+                ]
+              }
+            ]
           },
           "languageClinic": {
-                    "title": "Language Clinic: Spoken Facilitation & Instruction Drills",
-                    "desc": "Practice transforming stiff or hesitant teacher talk into natural, confident spoken instructions in plain B2 English.",
-                    "drills": [
-                              {
-                                        "scenario": "You need students to analyze an OLS penetration chart in pairs before discussing solutions.",
-                                        "hesitant": "Maybe you can look at the paper and see what is wrong, do it with someone.",
-                                        "fluent": "Please work in pairs. Step one: examine the obstacle limitation surface on page 3. Step two: circle the antenna penetration. You have four minutes.",
-                                        "focus": "Direct imperatives + numbered step sequencing"
-                              },
-                              {
-                                        "scenario": "You want to check that everyone knows they have 6 minutes and must write 3 root causes.",
-                                        "hesitant": "Do you understand the activity?",
-                                        "fluent": "Before we begin: Sarah, how many root causes does your pair need to write? Exactly, three. And David, how much time do you have? Six minutes.",
-                                        "focus": "Targeted ICQs checking count and timebox"
-                              },
-                              {
-                                        "scenario": "A student pair is silent and stuck on whether a fuel leak is Level 1 or Level 2.",
-                                        "hesitant": "Why are you not talking? You must write the answer.",
-                                        "fluent": "How is it going over here? Look back at EASA Part-ADR.OR.D.005: does this containment failure pose an immediate hazard to flight operations, or can it be managed within 30 days?",
-                                        "focus": "Guiding question linking to regulatory criteria"
-                              },
-                              {
-                                        "scenario": "Classmates are speaking French during group work on the blast fence repair.",
-                                        "hesitant": "No French, English please!",
-                                        "fluent": "Remember everyone, 100% English only. If you need the word for 'brise-souffle', it is 'jet blast deflector'. Keep the discussion in English!",
-                                        "focus": "Supportive vocabulary provision + English immersion reminder"
-                              },
-                              {
-                                        "scenario": "Transitioning from pairwork to whole-class debrief with equal participation.",
-                                        "hesitant": "Okay time is up. Who wants to talk?",
-                                        "fluent": "Time is up, everyone. Let us hear from Team C. Alexandre, what was the primary systemic cause your group agreed on?",
-                                        "focus": "Clear time call + targeted nomination"
-                              }
-                    ]
+            "title": "Language Clinic: Natural Presentation & Instruction Drills",
+            "desc": "Practice transforming stiff or hesitant presentation talk into natural, confident spoken English.",
+            "drills": [
+              {
+                "scenario": "Introducing your chosen EASA extract and why it matters.",
+                "hesitant": "Our paper is about rules for airports. It is a bit boring and long.",
+                "fluent": "Today our team is presenting an extract from EASA SIB 2024-09 on apron safety. This regulation is crucial because ramp vehicle speeding causes over 50 ground collisions every year.",
+                "focus": "Contextual hook + operational importance"
+              },
+              {
+                "scenario": "Explaining a new technical word to classmates.",
+                "hesitant": "The word is 'displaced threshold'. It is in the dictionary.",
+                "fluent": "Our first new term is 'displaced threshold'. That means a runway threshold that is not located at the physical beginning of the runway, usually because of temporary construction work.",
+                "focus": "Clear plain English definition + practical context"
+              },
+              {
+                "scenario": "Giving instructions for a reading comprehension exercise.",
+                "hesitant": "Read this and answer the questions if you want.",
+                "fluent": "Please look at Exhibit A on your sheet. With your partner, read the short incident notice and answer the two comprehension questions. You have four minutes.",
+                "focus": "Numbered steps + clear pair task"
+              },
+              {
+                "scenario": "Checking answers with the class after an activity.",
+                "hesitant": "Does someone have the answer? Anyone?",
+                "fluent": "Let us see what you found. Table 1, what did your pair conclude: is this non-compliance a Level 1 hazard or a Level 2 finding?",
+                "focus": "Direct table nomination + specific question"
+              },
+              {
+                "scenario": "Wrapping up your team's presentation before teacher debrief.",
+                "hesitant": "That is all. We are finished.",
+                "fluent": "To conclude, this EASA rule reminds us that clear reporting prevents repeat incidents. Thank you for your active participation, and we now hand over to our teacher.",
+                "focus": "Polite conclusion + professional handover"
+              }
+            ]
           },
           "evaluationRubric": {
-                    "title": "Official 20-Point Formative Evaluation Marking Rubric",
-                    "criteria": [
-                              {
-                                        "title": "1. Lesson Preparation & Structure",
-                                        "pts": 5,
-                                        "desc": "Well-organized 30-minute lesson structure with clear learning objectives; engaging context hook; smooth sequence of steps; balanced, equal contribution across all 3 to 4 team members. Zero reading from written notes or scripts!"
-                              },
-                              {
-                                        "title": "2. Communicative Activity & Ideas",
-                                        "pts": 5,
-                                        "desc": "Creative, engaging communicative task (role-play, incident debate, audit inspection, or CAP negotiation) that gets classmates actively speaking in pairs/groups; avoids passive lecturing; keeps students invested throughout."
-                              },
-                              {
-                                        "title": "3. Instruction Delivery & Facilitation",
-                                        "pts": 5,
-                                        "desc": "Spoken instructions delivered in clear, plain B2 English without confusion; effective checking of comprehension (ICQs) before starting; active circulating among tables to coach peers; confident moderation of the plenary debrief."
-                              },
-                              {
-                                        "title": "4. Technical English & Pronunciation",
-                                        "pts": 5,
-                                        "desc": "Natural activation of at least 6 to 8 specialized Module 1 aerodrome terms (OLS, SIB, derogation, Level 1 non-compliance, Swiss Cheese, CAP); intelligible pronunciation and correct word stress; solid grammatical control with functional structures."
-                              }
-                    ],
-                    "performanceBands": [
-                              {
-                                        "band": "Exemplary",
-                                        "pts": "18\u201320 pts",
-                                        "desc": "Dynamic student leadership; highly engaging communicative activity; crystal-clear instructions; 100% peer speaking engagement; rich technical vocabulary; equal team contribution."
-                              },
-                              {
-                                        "band": "Solid B2",
-                                        "pts": "14\u201317 pts",
-                                        "desc": "Good lesson structure; classmates actively participate in pairwork; clear spoken instructions with minor slips; good aerodrome terminology; balanced teamwork."
-                              },
-                              {
-                                        "band": "Developing",
-                                        "pts": "10\u201313 pts",
-                                        "desc": "Overly lecture-heavy; limited pair speaking time; instructions unclear requiring teacher intervention; unequal team participation; occasional reliance on written scripts."
-                              },
-                              {
-                                        "band": "Needs Improvement",
-                                        "pts": "<10 pts",
-                                        "desc": "Direct reading aloud from slides or notes; no interactive activity for classmates; severe communication breakdown; silent team members; lack of preparation."
-                              }
-                    ]
+            "title": "Official 20-Point Formative Evaluation Marking Rubric",
+            "criteria": [
+              {
+                "title": "1. EASA Extract Breakdown & Reading Comprehension",
+                "pts": 5,
+                "desc": "Clear, well-structured spoken breakdown explaining the regulatory extract and its practical aerodrome purpose in plain B2 English. Zero reading aloud from slides or notes!"
+              },
+              {
+                "title": "2. Teaching Technical Vocabulary & Definitions",
+                "pts": 5,
+                "desc": "Effective teaching of 3 to 5 new technical words from the extract with accurate plain English definitions and operational examples."
+              },
+              {
+                "title": "3. Classmate Exercises & Creative Engagement",
+                "pts": 5,
+                "desc": "Engaging, creative exercises (reading comprehension questions, quiz, matching, or pair discussion) that get classmates actively thinking and talking."
+              },
+              {
+                "title": "4. Spoken English Fluency, Pronunciation & Team Balance",
+                "pts": 5,
+                "desc": "Confident spoken English, intelligible pronunciation, natural conversational tone, and equal speaking contribution across all group members."
+              }
+            ],
+            "performanceBands": [
+              {
+                "band": "Exemplary",
+                "pts": "18–20 pts",
+                "desc": "Dynamic presentation; crystal-clear breakdown; excellent vocabulary teaching; highly engaging and creative classmate activity; equal team speaking."
+              },
+              {
+                "band": "Solid B2",
+                "pts": "14–17 pts",
+                "desc": "Good explanation of the extract; clear vocabulary definitions; classmates participate actively in the exercise; minor language slips; good teamwork."
+              },
+              {
+                "band": "Developing",
+                "pts": "10–13 pts",
+                "desc": "Overly lecture-based; exercises are rushed or unclear; unequal speaking time among group members; occasional reading from notes."
+              },
+              {
+                "band": "Needs Improvement",
+                "pts": "<10 pts",
+                "desc": "Direct reading aloud from notes or slides; no interactive exercise for classmates; extract not explained clearly; lack of preparation."
+              }
+            ]
           },
           "peerMatrix": {
-                    "title": "Peer Observer Studio \u2022 Active Classroom Observation & Feedback",
-                    "desc": "When participating in other teams lessons, record active observation notes below. Your constructive feedback helps your classmates improve their spoken technical leadership.",
-                    "fields": [
-                              {
-                                        "id": "peer_strengths",
-                                        "label": "1. Key Strengths & Clear Instructions",
-                                        "placeholder": "e.g., Team 1 gave very clear instructions. The role-play was engaging and kept our pair talking for the entire task..."
-                              },
-                              {
-                                        "id": "peer_vocab",
-                                        "label": "2. Technical Vocabulary Deployed",
-                                        "placeholder": "e.g., Terms noted: OLS safeguarding, temporary displaced threshold, Level 1 finding, Swiss Cheese latent conditions..."
-                              },
-                              {
-                                        "id": "peer_tip",
-                                        "label": "3. Actionable Tip for Improvement",
-                                        "placeholder": "e.g., Next time, walk around the tables a bit more during pairwork to check in with quieter students..."
-                              }
-                    ]
+            "title": "Classmate Observation Notes • Active Peer Listening",
+            "desc": "While other groups present, record brief notes on what you learned from their EASA extract and activity.",
+            "fields": [
+              {
+                "id": "peer_extract_summary",
+                "label": "1. What was their EASA extract about?",
+                "placeholder": "e.g., Team 1 explained EASA rules on temporary displaced thresholds during runway resurfacing..."
+              },
+              {
+                "id": "peer_vocab_learned",
+                "label": "2. New Technical Words Learned:",
+                "placeholder": "e.g., Declared distances (TORA, TODA, ASDA, LDA), runway safety area, stopway..."
+              },
+              {
+                "id": "peer_exercise_feedback",
+                "label": "3. What did you enjoy about their exercise?",
+                "placeholder": "e.g., The mini-quiz was fun and made our pair discuss whether the runway was safe to land on..."
+              }
+            ]
           },
           "safetyCheck": {
-                    "title": "Activity 5: Safety Check: Systemic Communication & Briefing Failures",
-                    "summary": "Review the 4 questions in the Safety Check table to analyze how ambiguous spoken instructions, unstandardized terminology, and poor briefings create operational hazards on the airfield.",
-                    "rows": [
-                              {
-                                        "question": "1. What is the systemic communication problem?",
-                                        "answer": "Airfield operations rely heavily on spoken communication during shift handovers, contractor briefings, and ramp coordination. Ambiguous instructions, inconsistent phraseology, or passive listening create immediate latent hazards."
-                              },
-                              {
-                                        "question": "2. What could happen if uncorrected?",
-                                        "answer": "Misunderstood runway closure limits, unclear vehicle routing, or unconfirmed safety exemptions can trigger runway incursions, ground collisions, and unauthorized access to active movement areas."
-                              },
-                              {
-                                        "question": "3. How do we fix it?",
-                                        "answer": "Enforce standardized B2 plain English instruction protocols: require explicit readbacks, ask targeted Instruction Checking Questions (ICQs) before work begins, and verify physical understanding rather than assuming compliance."
-                              },
-                              {
-                                        "question": "4. Directorate Operational Decision",
-                                        "answer": "Mandate that all aerodrome supervisors, team leaders, and safety instructors complete certified spoken briefing assessments under EASA Part-ADR.OR.D.015, enforcing standardized interactive briefing techniques across all airside teams."
-                              }
-                    ]
+            "title": "Activity 5: Simple Safety Check: Clear Communication in Airfield Regulations",
+            "summary": "Review the 4 questions in the table below to reflect on why reading comprehension and clear spoken explanation are essential in civil aviation oversight.",
+            "rows": [
+              {
+                "question": "1. What is the communication challenge?",
+                "answer": "EASA regulations and technical aerodrome specifications use dense legal English that can be difficult for operational teams to interpret quickly."
+              },
+              {
+                "question": "2. What could happen if misunderstood?",
+                "answer": "Misinterpreting safety requirements leads to non-compliant airfield operations, inadequate risk mitigation, and heightened danger of runway or ramp incidents."
+              },
+              {
+                "question": "3. How do we fix it?",
+                "answer": "Civil aviation technical officers must know how to break down complex texts into plain, actionable English, teach key vocabulary, and verify team understanding."
+              },
+              {
+                "question": "4. Operational Takeaway",
+                "answer": "Clear spoken communication and interactive peer engagement turn regulatory rules into everyday safe operational habits."
+              }
+            ]
           },
-          "notesDebrief": {
-                    "title": "Activity 6: Operational Notes & Portfolio Debriefing",
-                    "summary": "Record your team delivery reflections, teacher feedback received, and action points for your semester portfolio. Auto-saved locally in browser.",
-                    "fields": [
-                              {
-                                        "id": "delivery_reflections",
-                                        "label": "1. Team Lesson Delivery & Self-Evaluation",
-                                        "placeholder": "Record your team reflections: What went well during your 30-minute lesson? How did classmates respond to your communicative task? How well did your team manage pacing and circulating?"
-                              },
-                              {
-                                        "id": "portfolio_action_plan",
-                                        "label": "2. Teacher Feedback & Portfolio Action Plan",
-                                        "placeholder": "Record the key feedback points from your teacher: Spoken technical fluency highlights, pronunciation targets, and specific goals for Module 2..."
-                              }
-                    ]
+          "closingDebrief": {
+            "title": "Activity 6: Presentation Reflections & Teacher Feedback",
+            "summary": "Record your team reflections, teacher feedback on language and pronunciation, and action points for your semester portfolio. Auto-saved in browser.",
+            "fields": [
+              {
+                "id": "presentation_reflections",
+                "label": "1. Team Presentation Self-Evaluation",
+                "placeholder": "Record your team thoughts: How clearly did you explain your EASA extract? How well did classmates engage with your exercises? What went best?"
+              },
+              {
+                "id": "teacher_feedback",
+                "label": "2. Teacher Feedback & Language Corrections",
+                "placeholder": "Record the feedback delivered by your teacher at the end of class: Spoken technical fluency highlights, pronunciation corrections, and goals for Module 2..."
+              }
+            ]
           }
-}
+        },
+        "lessonPlan": {
+          "title": "Session 7 Lesson Plan - EASA Extract & Interactive Class Activity (2 Hours)",
+          "summary": "Formative Evaluation 1: Student groups of up to 4 deliver a 30-minute interactive session based on an EASA documentation extract, teach technical terms, and lead classmate exercises. The teacher concludes with constructive feedback and language corrections.",
+          "structure": [
+            {
+              "part": "Part 1: Group 1 Presentation & Class Activity (30 Mins)",
+              "focus": "EASA extract spoken breakdown, vocabulary teaching, classmate reading exercises, and discussion.",
+              "activity": "Group 1 presents their chosen EASA extract, explains its technical meaning in plain English, teaches 3 to 5 new terms, and leads classmates through their interactive exercise."
+            },
+            {
+              "part": "Part 2: Group 2 Presentation & Class Activity (30 Mins)",
+              "focus": "EASA extract spoken breakdown, vocabulary teaching, classmate reading exercises, and discussion.",
+              "activity": "Group 2 presents their chosen EASA extract, explains its technical meaning in plain English, teaches 3 to 5 new terms, and leads classmates through their interactive exercise."
+            },
+            {
+              "part": "Part 3: Group 3 Presentation & Class Activity (30 Mins)",
+              "focus": "EASA extract spoken breakdown, vocabulary teaching, classmate reading exercises, and discussion.",
+              "activity": "Group 3 presents their chosen EASA extract, explains its technical meaning in plain English, teaches 3 to 5 new terms, and leads classmates through their interactive exercise."
+            },
+            {
+              "part": "Part 4: Teacher Feedback & Spoken Language Corrections (Final Class Wrap-Up)",
+              "focus": "Constructive feedback on group delivery, technical terminology deployed, and spoken language corrections.",
+              "activity": "The teacher reviews key highlights across all 3 presentations, commends creative exercises, addresses pronunciation and grammatical points, and gives students actionable goals for their portfolios."
+            }
+          ]
+        }
       }
     }
   },
@@ -15876,35 +15931,55 @@
                 {
                   "id": 1,
                   "prompt": "1. The towbar shear pin fracture was __________ the tug driver's sudden application of emergency brakes on the wet apron.",
-                  "options": ["triggered by", "stemming from", "consequently"],
+                  "options": [
+                    "triggered by",
+                    "stemming from",
+                    "consequently"
+                  ],
                   "correct": "triggered by",
                   "rationale": "Emergency braking is the immediate physical catalyst that broke the pin."
                 },
                 {
                   "id": 2,
                   "prompt": "2. Operating with a deferred anti-skid valve was a latent risk __________ logistics delays in delivering replacement parts.",
-                  "options": ["attributable to", "resulting in", "stemming from"],
+                  "options": [
+                    "attributable to",
+                    "resulting in",
+                    "stemming from"
+                  ],
                   "correct": "stemming from",
                   "rationale": "'Stemming from' points back to the dormant root organizational cause (logistics delay)."
                 },
                 {
                   "id": 3,
                   "prompt": "3. The aircraft experienced dynamic hydroplaning at 85 knots, __________ an uncontrollable veer onto the unpaved grass shoulder.",
-                  "options": ["resulting in", "triggered by", "stemming from"],
+                  "options": [
+                    "resulting in",
+                    "triggered by",
+                    "stemming from"
+                  ],
                   "correct": "resulting in",
                   "rationale": "'Resulting in' links the physical loss of friction directly to the ensuing runway excursion."
                 },
                 {
                   "id": 4,
                   "prompt": "4. The apron vehicle crossing incident was __________ severe radio frequency congestion on the ground control channel.",
-                  "options": ["consequently", "attributable to", "resulting in"],
+                  "options": [
+                    "consequently",
+                    "attributable to",
+                    "resulting in"
+                  ],
                   "correct": "attributable to",
                   "rationale": "'Attributable to' correctly assigns causative responsibility to the congested radio frequency."
                 },
                 {
                   "id": 5,
                   "prompt": "5. The runway standing water depth reached 4 mm; __________, the aerodrome operator suspended flight operations on Runway 14L.",
-                  "options": ["stemming from", "consequently", "triggered by"],
+                  "options": [
+                    "stemming from",
+                    "consequently",
+                    "triggered by"
+                  ],
                   "correct": "consequently",
                   "rationale": "'Consequently' introduces the logical regulatory safety decision taken as an effect."
                 }
@@ -15980,7 +16055,7 @@
                 }
               ],
               "peerCoaching": {
-                "evaluator": "Student B (Safety Board Evaluator): 'Your explanation of the shear pin fracture and runway excursion was very clear and well-paced. However, you didn\'t emphasize the latent organizational condition regarding the deferred anti-skid valve under MEL. Remember to cite Regulation EU 376/2014 when presenting mandatory dispatch limits.'",
+                "evaluator": "Student B (Safety Board Evaluator): 'Your explanation of the shear pin fracture and runway excursion was very clear and well-paced. However, you didn't emphasize the latent organizational condition regarding the deferred anti-skid valve under MEL. Remember to cite Regulation EU 376/2014 when presenting mandatory dispatch limits.'",
                 "speaker": "Student A (Lead Investigator): 'Thank you for that feedback. I will make sure to link the logistics delay directly to the latent failure layer and reference EU 376/2014 in our final recommendations.'"
               }
             },
@@ -16311,7 +16386,7 @@
           "session": 6,
           "title": "The Corrective Action Plan & CAP Review",
           "overview": {
-            "intro": "Welcome to Session 6 of Technical English! Today we work with official EASA Corrective Action Plan (CAP) documentation and dedicate 30 minutes of workshop time to prepare your Session 7 peer lessons. You will practice using formal commitment phrases (we undertake to, subject to approval) to agree on CAP deadlines with inspectors, and work in teams of 3 or 4 to structure your 30-minute interactive lesson for Session 7.",
+            "intro": "Welcome to Session 6 of Technical English! Today we work with official EASA Corrective Action Plan (CAP) documentation and dedicate substantial workshop time to prepare your Session 7 Formative Evaluation presentations. You will practice using formal commitment phrases (we undertake to, subject to approval) to agree on CAP deadlines with inspectors, and work in teams of up to 4 to select your EASA regulatory extract, plan your spoken breakdown, pick 3 to 5 new words to teach, and design creative exercises for your classmates.",
             "whyItMatters": "Closing an audit finding or incident investigation is not merely a box-ticking administrative exercise—it is the legal mechanism that prevents catastrophic repeat occurrences on the airfield. When civil aviation authorities identify safety deficiencies such as runway friction loss or blast fence corrosion, aerodrome operators must formally demonstrate how they will eliminate the underlying root cause. Moreover, developing the confidence to facilitate technical peer discussions prepares future ENAC aviation professionals for high-stakes safety briefings and leadership roles.",
             "keyTerms": [
               {
@@ -16369,15 +16444,15 @@
                 "def": "A heavy-duty curved aerodrome barrier engineered to redirect high-velocity aircraft engine exhaust upward and away from adjacent taxiways, service roads, and ground personnel."
               },
               {
-                "term": "Flipped Peer-Teaching",
-                "ipa": "/flɪpt pɪər ˈtiːtʃɪŋ/",
+                "term": "Interactive Peer Presentation",
+                "ipa": "/ˌɪntərˈæktɪv pɪər ˌprɛzənˈteɪʃən/",
                 "pos": "noun phrase",
-                "def": "A collaborative instructional model where students assume the role of technical instructors, designing and delivering interactive learning activities to their peers to build communicative mastery."
+                "def": "A collaborative speaking format where a student team presents an official EASA extract, explains its technical meaning in plain English, teaches key terms, and leads interactive exercises for the class."
               }
             ],
             "speakingTask": {
-              "title": "Authentic EASA Simulation • CAP Negotiation & Session 7 Flipped Lesson Design Studio",
-              "instructions": "Working in teams of 3 or 4, inspect the two official audit finding notices (Runway Friction Decay & Perimeter Blast Fence Detachment) and the three photographic remediation exhibits. Practice negotiating realistic CAP milestones with your partner acting as the Civil Aviation Inspector. Then, transition into the Flipped Lesson Design Studio to plan, structure, and assign teaching roles for your team's 30-minute interactive lesson in Session 7.",
+              "title": "Authentic EASA Simulation • CAP Negotiation & Session 7 FE Preparation Studio",
+              "instructions": "Working in teams of up to 4, inspect the two official audit finding notices and the three photographic remediation exhibits. Practice negotiating realistic CAP milestones with your partner acting as the Civil Aviation Inspector. Then, transition into the Session 7 Preparation Studio to select your EASA documentation extract, outline your spoken breakdown, choose 3 to 5 technical words to teach, and design engaging exercises (reading comprehension, quizzes, or speaking prompts) for your 30-minute class presentation.",
               "document": {
                 "title": "EASA Part-ADR.OR.D.005 Corrective Action Plan & Session 7 Peer-Teaching Guide",
                 "subtitle": "Statutory Finding Remediation Framework & Flipped Classroom Assessment Specification",
@@ -16387,16 +16462,18 @@
                 "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
               },
               "teamRoles": {
-                "group1": "Teaching Pod 1 (Runway Surface Condition & Friction Decays): Draft an interactive 30-minute lesson teaching classmates how to interpret CFME friction traces, identify rubber contamination, and calculate landing distances.",
-                "group2": "Teaching Pod 2 (Apron Vehicle Safety & Pushback Coordination): Build a 30-minute workshop on apron telematics speed control, towbar shear mechanics, and interphone communication protocols.",
-                "group3": "Teaching Pod 3 (Wildlife Hazard Management & CS-ADR-DSN): Design an engaging 30-minute seminar covering pyrotechnic laser dispersal, acoustic deterrents, and aerodrome bird strike mitigation.",
-                "group4": "Teaching Pod 4 (Airfield Audit Non-Conformities & CAP Negotiation): Create a dynamic 30-minute roleplay challenge where classmates simulate aerodrome operators defending CAP milestones to state inspectors."
+                "group1": "Team Option 1 (Aerodrome Operations & Obstacle Limitation): Select an extract from EASA Part-ADR.OPS or CS-ADR-DSN (crane permits, OLS safeguarding). Prepare a spoken breakdown, teach key safeguarding terms, and design a reading or error-spotting exercise for your classmates.",
+                "group2": "Team Option 2 (Ramp Safety & Vehicle Operations): Select an extract from EASA SIB 2024-09 (apron speed control, towbar shear mechanics, Just Culture). Break down the safety requirements, teach new apron vocabulary, and create an interactive comprehension quiz.",
+                "group3": "Team Option 3 (Runway Safety & Operational Exemptions): Select an extract from Basic Regulation Article 71 or CS-ADR on runway works, friction decay, or displaced thresholds. Explain the operational rationale, teach 3 to 5 technical terms, and lead a pair discussion task.",
+                "group4": "Team Option 4 (Audit Non-Conformities & Corrective Action Plans): Select an extract from Part-ADR.AR.C.055 or Part-ADR.OR.D.005 on audit findings and CAP milestones. Deliver a clear spoken summary, teach regulatory negotiation terms, and create a mini-audit exercise for your classmates."
               },
               "usefulPhrases": [
                 "We undertake to implement the interim risk mitigation by...",
                 "In the interim, the aerodrome operator shall enforce a mandatory NOTAM stating...",
-                "Subject to authority concurrence, our definitive engineering works will conclude on...",
-                "For our Session 7 flipped lesson, our team will engage classmates through an interactive..."
+                "Subject to authority concurrence, our definitive technical works will conclude on...",
+                "For our Session 7 activity, our group will present an EASA extract on...",
+                "We will teach our classmates three new technical words, including...",
+                "To engage the class, we have designed a quick reading comprehension exercise where..."
               ]
             },
             "document": {
@@ -16458,9 +16535,9 @@
                 "activity": "Simulated authority review meeting: Partner A acts as the Aerodrome Safety Manager defending the proposed timeline; Partner B acts as the DGAC/EASA Inspector enforcing safety margins."
               },
               {
-                "part": "Part 4: Extended Peer-Teaching Workshop & Lesson 7 Design Studio",
-                "focus": "Dedicated extended preparation time for Session 7 flipped peer-teaching lessons (30 minutes delivery per pod of 3–4 students).",
-                "activity": "Teams of 3 to 4 select their technical domain (Runway Friction/GRF, Ramp Safety/Telematics, Wildlife Hazard, or CAP Audit Negotiation). Teams design their 3-stage lesson architecture (Hook, Core Activity, Debrief), assign teaching roles, review the 20-point assessment rubric, and record their lesson outline in the on-screen scratchpad."
+                "part": "Part 4: Extended Workshop Studio & Session 7 FE Preparation",
+                "focus": "Dedicated extended preparation time for Session 7 EASA extract presentations (30 minutes delivery per group of up to 4 students).",
+                "activity": "Teams of up to 4 select an official EASA documentation extract from Module 1 topics (OLS Safeguarding, Ramp Vehicle Safety, Runway Works & Exemptions, Airfield Audits, Incident Investigation, or CAP Remediation). Teams plan their spoken breakdown, select 3 to 5 key technical terms to teach, design their classmate exercises (reading comprehension, mini-quiz, or pair discussion), and record their outline in the on-screen scratchpad."
               }
             ]
           },
@@ -16641,35 +16718,55 @@
                 {
                   "id": 1,
                   "prompt": "1. The aerodrome operator __________ complete ultra-high-pressure rubber removal across the first 600 meters within 14 nights.",
-                  "options": ["formally undertakes to", "respectfully submits that", "in the interim"],
+                  "options": [
+                    "formally undertakes to",
+                    "respectfully submits that",
+                    "in the interim"
+                  ],
                   "correct": "formally undertakes to",
                   "rationale": "'Formally undertakes to' expresses a legally binding commitment to perform an engineering action."
                 },
                 {
                   "id": 2,
                   "prompt": "2. __________, air traffic control shall restrict all aircraft at Holding Point P1 to idle breakaway thrust.",
-                  "options": ["Subject to concurrence", "In the interim", "Conditional upon"],
+                  "options": [
+                    "Subject to concurrence",
+                    "In the interim",
+                    "Conditional upon"
+                  ],
                   "correct": "In the interim",
                   "rationale": "'In the interim' introduces the provisional operational safeguard active before permanent repairs."
                 },
                 {
                   "id": 3,
                   "prompt": "3. The revised 45-day blast fence reconstruction schedule is valid only __________ from the state oversight directorate.",
-                  "options": ["subject to authority concurrence", "we respectfully submit that", "in the interim"],
+                  "options": [
+                    "subject to authority concurrence",
+                    "we respectfully submit that",
+                    "in the interim"
+                  ],
                   "correct": "subject to authority concurrence",
                   "rationale": "'Subject to authority concurrence' correctly conditions timeline validity on formal DGAC/EASA approval."
                 },
                 {
                   "id": 4,
                   "prompt": "4. Formal Level 1 finding closure remains __________ on-site CFME calibration runs confirming mu >= 0.52.",
-                  "options": ["conditional upon physical verification of", "we formally undertake to", "in the interim"],
+                  "options": [
+                    "conditional upon physical verification of",
+                    "we formally undertake to",
+                    "in the interim"
+                  ],
                   "correct": "conditional upon physical verification of",
                   "rationale": "'Conditional upon physical verification of' specifies the mandatory auditable test proof."
                 },
                 {
                   "id": 5,
                   "prompt": "5. __________ imposing a 30-day runway closure is commercially unviable given our verified nighttime hydro-blasting capacity.",
-                  "options": ["In the interim", "We respectfully submit that", "Subject to concurrence"],
+                  "options": [
+                    "In the interim",
+                    "We respectfully submit that",
+                    "Subject to concurrence"
+                  ],
                   "correct": "We respectfully submit that",
                   "rationale": "'We respectfully submit that' is the diplomatic opening for constructive pushback in regulatory negotiation."
                 }
@@ -16832,7 +16929,7 @@
             },
             "rulesToReality": {
               "title": "Rules to Reality: The 60-Second Compliance Pitch",
-              "prompt": "Without looking at your notes, turn to your partner and explain in 60 seconds: 'Why can\'t an aerodrome operator simply promise to fix a finding next year?' You must use at least 2 commitment phrases and distinguish a Level 1 hazard from a Level 2 non-compliance."
+              "prompt": "Without looking at your notes, turn to your partner and explain in 60 seconds: 'Why can't an aerodrome operator simply promise to fix a finding next year?' You must use at least 2 commitment phrases and distinguish a Level 1 hazard from a Level 2 non-compliance."
             }
           },
           "revision": {
@@ -17102,73 +17199,60 @@
         },
         "7": {
           "session": 7,
-          "title": "Flipped Classroom Peer-Teaching Evaluation",
+          "title": "EASA Regulatory Extract & Class Activity Evaluation",
           "overview": {
-            "intro": "Welcome to Session 7 of Technical English! In this Formative Evaluation, student teams of 3 to 4 take the floor as technical instructors to deliver an engaging 30-minute interactive lesson to their classmates. You will practice giving clear spoken activity instructions in plain English, facilitate pair and group work based on Module 1 EASA aerodrome topics, manage classroom discussions, and provide constructive feedback to your peers.",
-            "whyItMatters": "Teaching a technical subject to others is one of the most effective ways to solidify language mastery and professional communicative presence. In airside operations, civil aviation oversight, and flight operations management, future ENAC graduates are regularly required to deliver safety briefings, train frontline ground teams, explain complex EASA regulatory updates, and facilitate collaborative decision-making across international teams. Developing the confidence to give direct spoken instructions, facilitate interactive peer discussions, and think on your feet in English transforms passive technical knowledge into active leadership communication.",
+            "intro": "Welcome to Session 7 of Technical English! In this Formative Evaluation, student teams of up to 4 take the floor to deliver an engaging 30-minute interactive session based on an official EASA documentation extract of their choice. Your team will deliver a comprehensive spoken breakdown of what the extract is about in plain English, teach your classmates 3 to 5 new technical words with clear definitions and examples, and lead your classmates through engaging reading comprehension and communicative exercises. At the end of the student presentations, your teacher will spend the final minutes of class providing constructive feedback and offering spoken language corrections.",
+            "whyItMatters": "Reading, explaining, and facilitating discussions around official European regulatory documentation is central to the role of civil aviation technical officers (TSEEAC), aerodrome inspectors, and operations managers. Whether briefing airport staff on a new EASA safety directive, guiding ground crews through ramp speed rules, or explaining audit findings, the ability to translate formal regulatory prose into clear, plain B2 English with accurate technical vocabulary transforms passive knowledge into active communicative leadership.",
             "keyTerms": [
               {
-                "term": "Flipped Classroom",
-                "ipa": "/flɪpt ˈklɑːs.ruːm/",
+                "term": "Regulatory Extract",
+                "ipa": "/ˈrɛɡjʊlətəri ˈɛkstrækt/",
                 "pos": "noun phrase",
-                "def": "A teaching model where students prepare learning materials beforehand and spend classroom time actively delivering, facilitating, and completing collaborative speaking tasks."
+                "def": "A selected section from official EASA regulations, safety information bulletins (SIBs), or certification specifications used as the basis for classroom analysis and discussion."
               },
               {
-                "term": "Peer-Teaching",
-                "ipa": "/pɪər ˈtiː.tʃɪŋ/",
-                "pos": "noun",
-                "def": "An instructional practice where students instruct and guide their fellow classmates through structured communicative exercises."
-              },
-              {
-                "term": "Instruction Checking Question (ICQ)",
-                "ipa": "/ɪnˈstrʌk.ʃən ˈtʃek.ɪŋ ˈkwes.tʃən/",
+                "term": "Reading Comprehension",
+                "ipa": "/ˈriːdɪŋ ˌkɒmprɪˈhɛnʃən/",
                 "pos": "noun phrase",
-                "def": "A brief, direct spoken question asked by an instructor to verify that learners understand activity instructions before starting."
+                "def": "The ability to read, interpret, and extract essential operational meaning and legal requirements from technical aviation documents."
               },
               {
-                "term": "Elicitation",
-                "ipa": "/ɪˌlɪs.ɪˈteɪ.ʃən/",
-                "pos": "noun",
-                "def": "A facilitation technique where the speaker prompts questions to draw ideas, solutions, or technical terms out of classmates rather than lecturing."
+                "term": "Spoken Breakdown",
+                "ipa": "/ˈspoʊkən ˈbreɪkdaʊn/",
+                "pos": "noun phrase",
+                "def": "A clear, structured oral summary delivered in plain English that explains the core message, scope, and operational consequences of a technical document."
               },
               {
-                "term": "Timeboxing",
-                "ipa": "/ˈtaɪm.bɒks.ɪŋ/",
-                "pos": "noun",
-                "def": "Allocating a fixed, predetermined period of time to an activity step to keep classroom discussions focused and energetic."
+                "term": "Technical Vocabulary",
+                "ipa": "/ˈtɛknɪkəl vəʊˈkæbjʊləri/",
+                "pos": "noun phrase",
+                "def": "Specialized aviation and aerodrome terms (such as displaced threshold, Just Culture, Level 1 non-compliance, or NOTAM) used with precision in context."
+              },
+              {
+                "term": "Interactive Exercise",
+                "ipa": "/ˌɪntərˈæktɪv ˈɛksəsaɪz/",
+                "pos": "noun phrase",
+                "def": "A collaborative classroom activity (such as a quiz, gap-fill, matching task, or speaking scenario) designed to actively engage classmates."
+              },
+              {
+                "term": "Creative Facilitation",
+                "ipa": "/kriˈeɪtɪv fəˌsɪlɪˈteɪʃən/",
+                "pos": "noun phrase",
+                "def": "Engaging, imaginative methods used to spark discussion, maintain classroom energy, and encourage active peer participation."
               },
               {
                 "term": "Constructive Feedback",
-                "ipa": "/kənˈstrʌk.tɪv ˈfiːd.bæk/",
+                "ipa": "/kənˈstrʌktɪv ˈfiːdbæk/",
                 "pos": "noun phrase",
-                "def": "Specific, positive, and actionable observations provided to peers highlighting strong performance and practical areas for growth."
+                "def": "Positive, actionable comments highlighting communication strengths and specific practical areas for language growth."
               },
               {
-                "term": "Active Listening",
-                "ipa": "/ˈæk.tɪv ˈlɪs.ən.ɪŋ/",
+                "term": "Language Correction",
+                "ipa": "/ˈlæŋɡwɪdʒ kəˈrɛkʃən/",
                 "pos": "noun phrase",
-                "def": "Paying full conscious attention to peer contributions, confirming understanding, and building upon what others say during debriefs."
-              },
-              {
-                "term": "Nominated Speaker",
-                "ipa": "/ˈnɒm.ɪ.neɪ.tɪd ˈspiː.kər/",
-                "pos": "noun phrase",
-                "def": "A designated group representative chosen to present a team's collective conclusions during whole-class discussion."
-              },
-              {
-                "term": "Pairwork Facilitation",
-                "ipa": "/ˈpeə.wɜːk fəˌsɪl.ɪˈteɪ.ʃən/",
-                "pos": "noun phrase",
-                "def": "Circulating among student pairs, monitoring conversational flow, clarifying doubts, and prompting quieter learners to contribute."
-              },
-              {
-                "term": "Plenary Debrief",
-                "ipa": "/ˈpliː.nər.i diːˈbriːf/",
-                "pos": "noun phrase",
-                "def": "A concluding whole-class discussion where student groups share conclusions, synthesize key insights, and evaluate lessons learned."
+                "def": "Targeted feedback from the teacher on pronunciation, grammar, and word choice delivered during the final class debrief to build fluency."
               }
-            ],
-            "hideSpeakingTask": true
+            ]
           },
           "objectives": {
             "title": "Session 7 Objectives - Flipped Classroom Peer-Teaching Evaluation",
@@ -17206,6420 +17290,300 @@
               }
             ]
           },
-  "lessonContent": {
-            "hero": {
-              "title": "EASA Rules & Modal Precision",
-              "subtitle": "Navigating Airport Regulations, Modal Authority & Safeguarding in Plain English",
-              "image": "images/s3_m1_session1_easa.jpg",
-              "targetLevel": "CEFR B1–B2",
-              "roleContext": "GSEA Student Training (TSEEAC Airside & Safeguarding Focus)",
-              "duration": "120 Minutes"
-            },
-            "openingSession": {
-              "title": "Activity 1: Warm-up & Entry Spot-Check",
-              "summary": "Break the ice, discuss reading challenges in English, and test your baseline knowledge of airport rules.",
-              "modeBadges": [
-                "Pairs (2 students)",
-                "Spoken Discussion"
-              ],
-              "instructions": [
-                "In pairs, discuss the 3 opening questions about reading official manuals in English.",
-                "Read each of the 4 Entry Spot-Check questions below and discuss your answers together.",
-                "Click 'Reveal Answer' to check your reasoning and see the plain English explanation."
-              ],
-              "deliverable": "Shared agreement on 2 quick scanning tricks and completed 4-question diagnostic.",
-              "teacherNotes": "Encourage spontaneous speaking. Don't worry about perfect grammar during warm-up; focus on building confidence and getting students comfortable talking about rules in English.",
-              "newsPrompts": [
-                {
-                  "id": 1,
-                  "question": "Why are official aviation manuals often 300 to 500 pages long?",
-                  "exampleAnswers": [
-                    "In my opinion, it is because aviation safety leaves zero room for guessing. The rules have to cover every possible weather condition, airport layout, aircraft size, and emergency scenario.",
-                    "Also, many rules are written after real accidents. Every time investigators discover a new hazard, a new safety rule is added to make sure it never happens again."
-                  ],
-                  "part": "Part 1"
-                },
-                {
-                  "id": 2,
-                  "question": "When you need to find one specific rule in a huge PDF, what is your personal strategy?",
-                  "exampleAnswers": [
-                    "I always press Ctrl + F (or Cmd + F) and search for very specific keywords—like 'crane', 'gradient', or '28 days'—rather than reading through dozens of pages.",
-                    "My strategy is to check the Table of Contents first to find the right Subpart (like Subpart H for obstacle surfaces), and then scan the section titles."
-                  ],
-                  "part": "Part 2"
-                },
-                {
-                  "id": 3,
-                  "question": "Have you ever had to explain a complicated rule to someone who didn't understand it?",
-                  "exampleAnswers": [
-                    "Yes, during an internship, I had to explain to a delivery driver why he couldn't park near the apron gate. I explained that an aircraft was arriving in 15 minutes and needed the space clear.",
-                    "I think the best trick is to explain the safety reason behind the rule ('It protects landing planes from hitting obstacles') rather than just saying 'No, it's forbidden'."
-                  ],
-                  "part": "Part 3"
-                }
-              ],
-              "diagnostic": {
-                "title": "Airport Rules Entry Spot-Check",
-                "instructions": "Discuss each question with your partner, then click to check your answer.",
-                "questions": [
-                  {
-                    "id": 1,
-                    "q": "What is the simple difference between a Law (Regulation) and a Guide (Guidance Material)?",
-                    "answer": "A Law is mandatory (you must obey it 100% or face legal penalties). A Guide gives practical advice and examples to help you follow the law correctly.",
-                    "part": "Part 1"
-                  },
-                  {
-                    "id": 2,
-                    "q": "In European aviation documents, what does the word 'SHALL' mean?",
-                    "answer": "'Shall' means a mandatory requirement. You have no choice: it is required by law.",
-                    "part": "Part 2"
-                  },
-                  {
-                    "id": 3,
-                    "q": "What is an 'Obstacle Limitation Surface' (OLS) in everyday words?",
-                    "answer": "It is an invisible safety bubble or slope in the sky around the runway where tall cranes, trees, and buildings are strictly forbidden to protect landing planes.",
-                    "part": "Part 3"
-                  },
-                  {
-                    "id": 4,
-                    "q": "What is a NOTAM (Notice to Airmen)?",
-                    "answer": "A quick, urgent official alert sent to all pilots informing them about temporary airport hazards, such as closed taxiways, broken lights, or construction cranes.",
-                    "part": "Part 4"
-                  }
-                ]
-              },
-              "modalSpectrum": [
-                {
-                  "level": "SHALL / MUST",
-                  "commitment": "100% Mandatory",
-                  "desc": "Strict legal obligation. Non-compliance constitutes a safety breach or legal violation.",
-                  "tone": "Firm command / direct order",
-                  "color": "rose"
-                },
-                {
-                  "level": "SHALL NOT",
-                  "commitment": "Prohibition",
-                  "desc": "Zero tolerance. Strictly forbidden under law or operational directives.",
-                  "tone": "Absolute restriction",
-                  "color": "red"
-                },
-                {
-                  "level": "SHOULD",
-                  "commitment": "75% Recommended (AMC)",
-                  "desc": "Acceptable Means of Compliance. Standard best practice; deviations require formal safety approval.",
-                  "tone": "Strong recommendation / best practice",
-                  "color": "amber"
-                },
-                {
-                  "level": "MAY / CAN",
-                  "commitment": "0–50% Discretionary (GM)",
-                  "desc": "Guidance Material. An authorized option, illustrative example, or statutory permission.",
-                  "tone": "Permitted option / practical method",
-                  "color": "emerald"
-                }
-              ]
-            },
-            "documentExtract": {
-              "title": "Activity 2: Reading the EASA Crane Rule",
-              "summary": "Scan an authentic, expanded EASA regulatory extract to locate safety surfaces and crane rules.",
-              "modeBadges": [
-                "Pairs or Small Groups",
-                "Document Scanning"
-              ],
-              "instructions": [
-                "Examine the official EASA extract below (CS-ADR-DSN Subpart H & GM1).",
-                "Notice the layout: Regulation number, title, sub-paragraphs, and Guidance Material.",
-                "Work with your partner to answer the 4 reading questions below.",
-                "Click 'Reveal Answer' to verify your answers."
-              ],
-              "deliverable": "Completed answers to all 4 reading questions with exact clause references.",
-              "teacherNotes": "Point out how European rules use numbering (H.400, H.415) and how GM (Guidance Material) provides practical explanations. Remind students they don't need to read every single word—train them to scan for keywords like 'gradient', '28 days', and 'NOTAM'.",
-              "docRef": "EASA CS-ADR-DSN • Subpart H — Obstacle Limitation Surfaces",
-              "docText": "[EASA CS-ADR-DSN — BOOK 1: CERTIFICATION SPECIFICATIONS FOR AERODROMES DESIGN]\nSUBPART H — OBSTACLE LIMITATION SURFACES (OLS)\n\nCS-ADR-DSN.H.400 Purpose & Applicability\n(a) The purpose of the obstacle limitation surfaces is to define the airspace around aerodromes to be maintained free from obstacles so as to permit the intended aeroplane operations at the aerodromes to be conducted safely and to prevent the aerodromes from becoming unusable by the growth of obstacles around the aerodromes.\n(b) These specifications shall apply to all runways intended for use by commercial air transport aeroplanes.\n\nCS-ADR-DSN.H.415 Approach Surface Specifications\n(a) Applicability: An approach surface shall be established for each runway direction intended to be used for landing.\n(b) Characteristics: The limits of the approach surface shall comprise:\n    (1) An inner edge of specified length, horizontal and perpendicular to the extended runway centre line, located at a distance of 60 m prior to the runway threshold.\n    (2) Two sides originating at the ends of the inner edge and diverging uniformly at a rate of 10% (Code 3/4) from the extended runway centre line.\n    (3) An outer edge parallel to the inner edge located at the specified distance.\n(c) Elevation: The elevation of the inner edge shall be equal to the elevation of the midpoint of the threshold.\n(d) Slope: The slope of the approach surface shall be measured in the vertical plane containing the centre line of the runway and shall not exceed 2.0% (1:50 gradient) for code number 3 and 4 precision instrument runways.\n(e) Prohibition: New objects or extensions of existing objects shall not be permitted above an approach surface within the aerodrome safeguarding boundary except when, in the opinion of the appropriate authority, the new object or extension would be shielded by an existing immovable object.\n\nGM1 CS-ADR-DSN.H.415 Construction Equipment & Mobile Cranes\n(a) Mobile obstacles, including tall building cranes, concrete pump vehicles, and drilling rigs operating in the vicinity of the aerodrome, constitute temporary obstacles and shall be safeguarded in advance.\n(b) Construction contractors intending to erect any crane exceeding 25 metres above ground level within 4 kilometres of the aerodrome reference point shall provide written notification to the aerodrome operator at least 28 calendar days prior to assembly.\n(c) Where a temporary obstacle penetrates an established obstacle limitation surface, the aerodrome operator shall request the competent civil aviation authority to issue a Notice to Airmen (NOTAM), mandate low-intensity or medium-intensity red obstacle warning lights, and establish operational restrictions if safety margins are compromised.",
-              "questions": [
-                {
-                  "id": 1,
-                  "q": "Where does the Approach Surface start in relation to the runway threshold?",
-                  "answer": "Clause H.415(b)(1) states it starts at an inner edge located 60 metres prior to the runway threshold.",
-                  "part": "Part 1"
-                },
-                {
-                  "id": 2,
-                  "q": "What is the maximum allowed upward slope (gradient) for precision runways?",
-                  "answer": "Clause H.415(d) states the slope shall not exceed 2.0% (which means a 1:50 gradient).",
-                  "part": "Part 2"
-                },
-                {
-                  "id": 3,
-                  "q": "Are builders allowed to build new structures above this approach surface?",
-                  "answer": "Clause H.415(e) states new objects shall not be permitted above an approach surface, unless they are shielded by an existing permanent object.",
-                  "part": "Part 3"
-                },
-                {
-                  "id": 4,
-                  "q": "How many days in advance must a construction company tell the airport before putting up a crane over 25m?",
-                  "answer": "Clause GM1 CS-ADR-DSN.H.415(b) requires written notification at least 28 calendar days prior to crane assembly.",
-                  "part": "Part 4"
-                }
-              ],
-              "jargonBuster": [
-                {
-                  "id": 1,
-                  "formal": "Pursuant to Article 4(...)",
-                  "plain": "Following / According to Article 4",
-                  "note": "Direct reference to an active rule"
-                },
-                {
-                  "id": 2,
-                  "formal": "Without prejudice to Subpart C(...)",
-                  "plain": "Without affecting or altering existing rules in Subpart C",
-                  "note": "Protects existing regulations"
-                },
-                {
-                  "id": 3,
-                  "formal": "Shall enter into force on(...)",
-                  "plain": "Becomes legally binding and active on [date]",
-                  "note": "Official starting date"
-                },
-                {
-                  "id": 4,
-                  "formal": "Competent authority",
-                  "plain": "The official oversight body (e.g., DSAC / DGAC in France)",
-                  "note": "Regulatory inspectorate"
-                },
-                {
-                  "id": 5,
-                  "formal": "Derogation from the rule",
-                  "plain": "An authorized exception to the general requirement",
-                  "note": "Official exemption"
-                },
-                {
-                  "id": 6,
-                  "formal": "Consolidated version",
-                  "plain": "Combined updated text containing all previous amendments",
-                  "note": "All-in-one text"
-                },
-                {
-                  "id": 7,
-                  "formal": "Opt-outs notified by Member States",
-                  "plain": "Formal exemptions permitted to Member States",
-                  "note": "National exemptions"
-                },
-                {
-                  "id": 8,
-                  "formal": "Repealed with effect from(...)",
-                  "plain": "Officially cancelled and replaced starting on [date]",
-                  "note": "Outdated rule removed"
-                }
-              ]
-            },
-            "rulesPractice": {
-              "title": "Activity 3: Words for Rules: Must, Shall, Should, May",
-              "summary": "Master the words used in aviation rules to express legal obligations, prohibitions, and advice.",
-              "modeBadges": [
-                "Individual & Pairs",
-                "Language Clinic"
-              ],
-              "instructions": [
-                "Review the plain English explanation table below.",
-                "Complete the 5 practice sentences by choosing the correct rule word.",
-                "Click 'Check Answer' to verify your choice and read the reason."
-              ],
-              "deliverable": "Completed 5-question language clinic with 100% correct rule identification.",
-              "teacherNotes": "Emphasize to students that in French 'doit' can mean both 'shall' and 'should'. In English aviation rules, 'shall' is 100% compulsory law, while 'should' is strong advice. Getting this wrong can cause major legal confusion!",
-              "rulesTable": [
-                {
-                  "word": "Shall / Must",
-                  "meaning": "100% Mandatory Rule",
-                  "example": "The airport shall install red warning lights on the crane.",
-                  "tip": "Use when the rule is required by law with zero choice.",
-                  "part": "Part 1"
-                },
-                {
-                  "word": "Shall not / Must not",
-                  "meaning": "Strictly Forbidden",
-                  "example": "Cranes shall not penetrate the approach surface.",
-                  "tip": "Use when an action is illegal and dangerous.",
-                  "part": "Part 2"
-                },
-                {
-                  "word": "Should",
-                  "meaning": "Strong Recommendation",
-                  "example": "The builder should lower the crane boom at night.",
-                  "tip": "Best practice and advice, but not an absolute legal duty.",
-                  "part": "Part 3"
-                },
-                {
-                  "word": "May",
-                  "meaning": "Allowed / Optional",
-                  "example": "The contractor may apply for a special night permit.",
-                  "tip": "Use when an option or permission is available.",
-                  "part": "Part 4"
-                }
-              ],
-              "drills": [
-                {
-                  "id": 1,
-                  "sentence": "Contractors _______ notify the airport operator 28 days before erecting a tall crane.",
-                  "options": [
-                    "shall",
-                    "should",
-                    "may"
-                  ],
-                  "correct": "shall",
-                  "rationale": "This is a mandatory safety rule required by GM1 CS-ADR-DSN.H.415(b).",
-                  "part": "Part 1"
-                },
-                {
-                  "id": 2,
-                  "sentence": "Unshielded objects _______ be permitted above the approach slope.",
-                  "options": [
-                    "shall not",
-                    "may not",
-                    "should not"
-                  ],
-                  "correct": "shall not",
-                  "rationale": "Clause H.415(e) strictly forbids new obstacles penetrating the approach surface.",
-                  "part": "Part 2"
-                },
-                {
-                  "id": 3,
-                  "sentence": "To reduce danger, builders _______ lower the crane boom whenever winds exceed 30 knots.",
-                  "options": [
-                    "should",
-                    "may",
-                    "shall not"
-                  ],
-                  "correct": "should",
-                  "rationale": "This is a strong recommended safety precaution.",
-                  "part": "Part 3"
-                },
-                {
-                  "id": 4,
-                  "sentence": "The airport operator _______ issue a temporary permit if all safety conditions are met.",
-                  "options": [
-                    "may",
-                    "shall not",
-                    "must not"
-                  ],
-                  "correct": "may",
-                  "rationale": "The operator has the permission and authority to approve it if safe.",
-                  "part": "Part 4"
-                },
-                {
-                  "id": 5,
-                  "sentence": "All airside construction workers _______ wear high-visibility vests at all times.",
-                  "options": [
-                    "must",
-                    "may",
-                    "could"
-                  ],
-                  "correct": "must",
-                  "rationale": "High-visibility gear is an absolute mandatory safety requirement.",
-                  "part": "Part 5"
-                }
-              ],
-              "denominalizationClinic": [
-                {
-                  "id": 1,
-                  "legal": "Implementation of immediate containment measures shall be conducted by the operator upon the identification of a hydraulic fluid spill exceeding 5 square metres.",
-                  "direct": "Ground staff must contain hydraulic spills over 5 m² immediately.",
-                  "explanation": "Convert passive nominalization \"implementation shall be conducted upon identification\" into direct, active imperative speech (\"must contain immediately\")."
-                },
-                {
-                  "id": 2,
-                  "legal": "Notification of the competent authority regarding runway incursions should be executed by the safety manager within a timeframe not exceeding 72 hours.",
-                  "direct": "The safety manager should notify DSAC of runway incursions within 72 hours.",
-                  "explanation": "Convert \"notification should be executed within a timeframe not exceeding\" into clear active verb \"should notify\"."
-                },
-                {
-                  "id": 3,
-                  "legal": "Placement of rubber chocks against the main landing gear tyres shall be performed immediately upon the complete cessation of aircraft movement.",
-                  "direct": "Handlers must chock the main wheels immediately after the aircraft stops.",
-                  "explanation": "Convert \"placement shall be performed upon complete cessation\" into direct spoken command \"must chock after the aircraft stops\"."
-                }
-              ]
-            },
-            "spokenActivity": {
-              "title": "Activity 4: Speaking Role-Play: Talking to the Builder",
-              "summary": "Role-play a polite, professional discussion between a GSEA safety officer and a construction contractor.",
-              "modeBadges": [
-                "Groups of 3",
-                "Spoken Role-Play"
-              ],
-              "instructions": [
-                "Form groups of 3 students: Student A (GSEA Safety Officer), Student B (Building Contractor), Student C (Observer / Coach).",
-                "Read the scenario carefully. You have 5 minutes to prepare your arguments.",
-                "Conduct the 6-minute spoken role-play using the 'Useful Phrases' box.",
-                "Student C provides 2 minutes of feedback using the Peer Checklist, then switch roles."
-              ],
-              "deliverable": "Spoken role-play completed by all students with agreed safety compromise.",
-              "teacherNotes": "Ensure students use polite, diplomatic English rather than aggressive confrontation. Useful phrases like 'According to the safety rules...' and 'What we can do is...' help maintain a cooperative atmosphere.",
-              "scenario": "A construction company wants to put up a 48-metre mobile crane 1,200 metres from Runway 09 to build a new airport hotel. The crane will penetrate the approach surface by 6 metres. The contractor needs to start tomorrow, but they only sent the request yesterday!",
-              "roles": [
-                {
-                  "title": "Student A: GSEA Safety Officer",
-                  "badge": "Safety & Compliance",
-                  "bullets": [
-                    "Explain politely that the 28-day notification rule was not respected.",
-                    "Show that the 48m crane penetrates the approach slope by 6m (illegal).",
-                    "Propose a safe solution: lower the crane to 38m, work only at night (23h–05h) during runway closure, install flashing red lights, and wait 5 days for a NOTAM."
-                  ],
-                  "part": "Part 1"
-                },
-                {
-                  "title": "Student B: Construction Manager",
-                  "badge": "Project & Deadlines",
-                  "bullets": [
-                    "Explain that delays cost €15,000 per day in rented equipment.",
-                    "Argue that the crane is off to the side and not directly in front of the runway.",
-                    "Try to negotiate starting earlier, but agree to safety lights and night work if necessary."
-                  ],
-                  "part": "Part 2"
-                },
-                {
-                  "title": "Student C: Observer & Coach",
-                  "badge": "Peer Feedback",
-                  "bullets": [
-                    "Listen carefully to both speakers.",
-                    "Check: Did Student A use correct rule words (shall, must, should)?",
-                    "Check: Was the conversation polite and professional?",
-                    "Give 2 positive points and 1 suggestion for improvement."
-                  ],
-                  "part": "Part 3"
-                }
-              ],
-              "usefulPhrases": [
-                "According to EASA safety rules, we cannot allow...",
-                "I completely understand your deadline, but flight safety is our top priority.",
-                "The problem is that the crane penetrates the approach safety surface by 6 metres.",
-                "What we can propose instead is...",
-                "If you agree to work only at night and install red lights, we can approve it.",
-                "Let's write down this agreement so both sides are protected."
-              ],
-              "spotTheBug": {
-                "title": "Activity 4A: Spot the Safety Bug (Partner Listening Game)",
-                "instructions": [
-                  "Form pairs: Student A (Reader) and Student B (Detector).",
-                  "Student A reads their official copy aloud at a normal speaking pace.",
-                  "Student B follows their bugged copy and interrupts immediately using checking phrases when they hear an error.",
-                  "Click 'Reveal 3 Intentional Bugs' to check your answers, then switch roles."
-                ],
-                "checkingPhrases": [
-                  "Hold on a second, did you say SHALL or SHOULD?",
-                  "Wait, let me double check that number—did you say 5 km or 15 km?",
-                  "Stop there—that sounds optional, but isn't it mandatory?",
-                  "Wait, did you say 24 hours or 72 hours?"
-                ],
-                "pairs": [
-                  {
-                    "id": 1,
-                    "topic": "Apron Vehicle Movement & Right of Way (ADR.OPS.B.028)",
-                    "studentA": "Drivers operating on the airside movement area SHALL give way to moving aircraft, aircraft under tow, and emergency response vehicles displaying active visual beacons. Except when strictly necessary for aircraft servicing operations, vehicles SHALL NOT be driven within the designated aircraft safety envelope. Aerodrome operators SHOULD establish mandatory maximum apron speed limits not exceeding 25 km/h on standard roadways and 10 km/h in the vicinity of aircraft stands.",
-                    "studentB": "Drivers operating on the airside movement area MAY give way to moving aircraft, aircraft under tow, and emergency response vehicles displaying active visual beacons. Except when strictly necessary for aircraft servicing operations, vehicles SHALL be driven within the designated aircraft safety envelope. Aerodrome operators SHOULD establish mandatory maximum apron speed limits not exceeding 40 km/h on standard roadways and 10 km/h in the vicinity of aircraft stands.",
-                    "bugs": [
-                      "Bug 1: 'shall give way' changed to 'may give way' (Replaced strict legal command with optional courtesy)",
-                      "Bug 2: 'shall not be driven' changed to 'shall be driven' (Prohibited area turned into mandatory command)",
-                      "Bug 3: '25 km/h' changed to '40 km/h' (Factual/numerical parameter alteration)"
-                    ]
-                  },
-                  {
-                    "id": 2,
-                    "topic": "Fuelling Safety & Lightning (ADR.OPS.B.055)",
-                    "studentA": "Aircraft refuelling with passengers embarking, on board, or disembarking SHALL only take place when ground staff maintain a clear evacuation path through at least two cabin exits. All refuelling operations SHALL cease immediately if lightning discharges are detected within a 5-kilometre radius of the aerodrome perimeter. Aerodrome personnel SHOULD verify that fire-fighting suppression equipment is positioned within 30 metres of the fuelling connection point.",
-                    "studentB": "Aircraft refuelling with passengers embarking, on board, or disembarking SHOULD only take place when ground staff maintain a clear evacuation path through at least two cabin exits. All refuelling operations SHALL cease immediately if lightning discharges are detected within a 15-kilometre radius of the aerodrome perimeter. Aerodrome personnel MAY verify that fire-fighting suppression equipment is positioned within 30 metres of the fuelling connection point.",
-                    "bugs": [
-                      "Bug 1: 'shall only take place' changed to 'should only take place' (Demoted hard law to AMC recommendation)",
-                      "Bug 2: '5-kilometre' changed to '15-kilometre' (Factual weather distance bug)",
-                      "Bug 3: 'should verify' changed to 'may verify' (Demoted recommended safety measure to optional discretion)"
-                    ]
-                  },
-                  {
-                    "id": 3,
-                    "topic": "Occurrence Reporting & Timelines (ADR.OPS.B.080)",
-                    "studentA": "Aerodrome operators and ground handling service providers SHALL report any safety-related occurrence involving runway incursions or aircraft damage to the competent authority within 72 hours of becoming aware of the event. Reports SHALL contain all relevant factual details regarding the environmental conditions, personnel qualifications, and equipment involved. When supplementary safety information becomes available after the initial submission, the operator SHOULD provide an updated analysis to the competent authority without undue delay.",
-                    "studentB": "Aerodrome operators and ground handling service providers SHALL report any safety-related occurrence involving runway incursions or aircraft damage to the competent authority within 24 hours of becoming aware of the event. Reports MAY contain all relevant factual details regarding the environmental conditions, personnel qualifications, and equipment involved. When supplementary safety information becomes available after the initial submission, the operator SHALL NOT provide an updated analysis to the competent authority without undue delay.",
-                    "bugs": [
-                      "Bug 1: '72 hours' changed to '24 hours' (Procedural deadline error)",
-                      "Bug 2: 'shall contain' changed to 'may contain' (Diluted mandatory report contents into optional suggestions)",
-                      "Bug 3: 'should provide' changed to 'shall not provide' (Reversed compliance obligation into a prohibition)"
-                    ]
-                  },
-                  {
-                    "id": 4,
-                    "topic": "De-icing Fluid Containment & Runoff (ADR.OPS.B.035)",
-                    "studentA": "De-icing operations SHALL take place exclusively on designated de-icing pads equipped with fluid recovery drainage valves. Aerodrome operators SHALL NOT permit contaminated glycol fluid to drain into unlined perimeter ditches or municipal freshwater channels. In the event of an uncontained chemical release exceeding 500 litres, the aerodrome operator SHALL inform the competent authority within 2 hours.",
-                    "studentB": "De-icing operations SHOULD take place exclusively on designated de-icing pads equipped with fluid recovery drainage valves. Aerodrome operators MAY permit contaminated glycol fluid to drain into unlined perimeter ditches or municipal freshwater channels. In the event of an uncontained chemical release exceeding 50 litres, the aerodrome operator SHALL inform the competent authority within 2 hours.",
-                    "bugs": [
-                      "Bug 1: 'shall take place' changed to 'should take place' (Hard law downgraded to AMC)",
-                      "Bug 2: 'shall not permit' changed to 'may permit' (Prohibited environmental violation turned into permitted action)",
-                      "Bug 3: '500 litres' changed to '50 litres' (Threshold reporting parameter bug)"
-                    ]
-                  }
-                ],
-                "summary": "Practice catching errors in modal commitment, numbers, and deadlines as your partner reads authentic EASA rules.",
-                "modeBadges": [
-                  "Pairs (2 students)",
-                  "Listening & Speaking Game"
-                ],
-                "deliverable": "Identified all 3 compliance bugs across the chosen scenario."
-              },
-              "roleplay": {
-                "title": "Activity 4B: Speaking Role-Play: Talking to the Builder",
-                "summary": "Role-play a polite, professional discussion between a GSEA safety officer, a construction contractor, and an observer.",
-                "modeBadges": [
-                  "Groups of 3",
-                  "Spoken Role-Play"
-                ],
-                "instructions": [
-                  "Form groups of 3 students: Student A (GSEA Safety Officer), Student B (Building Contractor), Student C (Observer / Coach).",
-                  "Read the scenario carefully. You have 5 minutes to prepare your arguments.",
-                  "Conduct the 6-minute spoken role-play using the 'Useful Phrases' box.",
-                  "Student C provides 2 minutes of feedback using the interactive Peer Checklist below, then switch roles."
-                ],
-                "deliverable": "Spoken role-play completed by all students with agreed safety compromise.",
-                "teacherNotes": "Ensure students use polite, diplomatic English rather than aggressive confrontation. Useful phrases like 'According to the safety rules...' and 'What we can do is...' help maintain a cooperative atmosphere.",
-                "scenario": "A construction company wants to put up a 48-metre mobile crane 1,200 metres from Runway 09 to build a new airport hotel. The crane will penetrate the approach surface by 6 metres. The contractor needs to start tomorrow, but they only sent the request yesterday!",
-                "roles": [
-                  {
-                    "title": "Student A: GSEA Safety Officer",
-                    "badge": "Safety & Compliance",
-                    "bullets": [
-                      "Explain politely that the 28-day notification rule was not respected.",
-                      "Show that the 48m crane penetrates the approach slope by 6m (illegal).",
-                      "Propose a safe solution: lower the crane to 38m, work only at night (23h–05h) during runway closure, install flashing red lights, and wait 5 days for a NOTAM."
-                    ],
-                    "part": "Part 1"
-                  },
-                  {
-                    "title": "Student B: Construction Manager",
-                    "badge": "Project & Deadlines",
-                    "bullets": [
-                      "Explain that delays cost €15,000 per day in rented equipment.",
-                      "Argue that the crane is off to the side and not directly in front of the runway.",
-                      "Try to negotiate starting earlier, but agree to safety lights and night work if necessary."
-                    ],
-                    "part": "Part 2"
-                  },
-                  {
-                    "title": "Student C: Observer & Coach",
-                    "badge": "Peer Feedback",
-                    "bullets": [
-                      "Listen carefully to both speakers.",
-                      "Check: Did Student A use correct rule words (shall, must, should)?",
-                      "Check: Was the conversation polite and professional?",
-                      "Give 2 positive points and 1 suggestion for improvement."
-                    ],
-                    "part": "Part 3"
-                  }
-                ],
-                "usefulPhrases": [
-                  "According to EASA safety rules, we cannot allow...",
-                  "I completely understand your deadline, but flight safety is our top priority.",
-                  "The problem is that the crane penetrates the approach safety surface by 6 metres.",
-                  "What we can propose instead is...",
-                  "If you agree to work only at night and install red lights, we can approve it.",
-                  "Let's write down this agreement so both sides are protected."
-                ],
-                "peerChecklist": [
-                  {
-                    "id": 1,
-                    "label": "Did Student A use correct rule words (shall, must, should, may) without hesitating?"
-                  },
-                  {
-                    "id": 2,
-                    "label": "Did Student B express the commercial deadlines and equipment costs clearly?"
-                  },
-                  {
-                    "id": 3,
-                    "label": "Was the conversation polite, professional, and diplomatic throughout?"
-                  },
-                  {
-                    "id": 4,
-                    "label": "Did both speakers reach a realistic safety compromise (night work, lower boom, red warning lights)?"
-                  }
-                ]
-              }
-            },
-            "safetyCheck": {
-              "title": "Activity 5: Safety Check: What Could Go Wrong?",
-              "summary": "Work together to evaluate the crane hazard and confirm the safety decision.",
-              "modeBadges": [
-                "Whole Class / Pairs",
-                "Safety Evaluation"
-              ],
-              "instructions": [
-                "Review the 4 simple questions in the Safety Check table below.",
-                "Ensure you can explain each row in clear, spoken English.",
-                "Confirm the final decision as a team."
-              ],
-              "deliverable": "Completed Safety Check table verified by all students.",
-              "teacherNotes": "This plain-English table replaces complicated technical risk matrices. It trains students to articulate problems, consequences, and solutions clearly.",
-              "rows": [
-                {
-                  "question": "1. What is the problem?",
-                  "answer": "A contractor wants to place a 48m crane near Runway 09 with only 24 hours notice, penetrating the approach surface by 6m.",
-                  "part": "Part 1"
-                },
-                {
-                  "question": "2. What could happen?",
-                  "answer": "An approaching plane in bad weather or low visibility could collide with the crane, or pilots could get distracted.",
-                  "part": "Part 2"
-                },
-                {
-                  "question": "3. How do we fix it?",
-                  "answer": "1) Reduce crane height to 38m maximum.<br>2) Install medium-intensity flashing red obstacle lights.<br>3) Restrict crane operations to night runway closure (23h00–05h00).<br>4) Issue an official NOTAM to all airlines.",
-                  "part": "Part 3"
-                },
-                {
-                  "question": "4. Our Decision",
-                  "answer": "APPROVED WITH CONDITIONS: The contractor may proceed once the 4 protective steps are verified on site.",
-                  "part": "Part 4"
-                }
-              ],
-              "rulesToReality": {
-                "title": "Rules to Reality: 60-Second Pair Spoken Wrap-Up",
-                "prompt": "Pick one operational rule from today (crane height, FOD, apron speed, refuelling in lightning, or glycol runoff). In pairs, deliver an unscripted 60-second operational summary explaining: 1) What is the exact rule? 2) Why do ground teams sometimes ignore it? 3) What is the real-world safety consequence on the ramp?"
-              }
-            }
-          },
-          "presentation": {
-            "title": "Session 1 Class Presentation • EASA Rules & Aerodrome Safeguarding",
-            "subtitle": "Interactive Projection Slide Deck for Point ADR.OPS.B.070, Statutory Modals & OLS Protection",
-            "slides": [
-              {
-                "num": "01",
-                "badge": "01 • Legal Authority & Scope",
-                "title": "EASA Regulation (EU) No 139/2014 • Part-ADR.OPS",
-                "subtitle": "European Aviation Safety Framework for Aerodrome Operations",
-                "takeaway": "Safety in the aerodrome environment is legally defined and regulated at European level, leaving zero tolerance for uncoordinated airside changes.",
-                "cards": [
-                  {
-                    "tag": "Core Mandate",
-                    "heading": "Protecting Aircraft Operations",
-                    "text": "Establishes binding European standards to protect aircraft during approach, landing, taxiing, and departure within the aerodrome safeguarding perimeter."
-                  },
-                  {
-                    "tag": "Key Operational Regulations",
-                    "heading": "Point ADR.OPS.B.070 & B.075",
-                    "text": "Direct statutory duty governing aerodrome works safety, obstacle reporting, and the safeguarding of visual lines of sight and obstacle limitation surfaces."
-                  },
-                  {
-                    "tag": "Obligated Stakeholders",
-                    "heading": "Who Must Comply?",
-                    "text": "Aerodrome operators, air navigation service providers (ANSPs), airside contractors, and maintenance teams operate under unified EASA compliance."
-                  }
-                ],
-                "teacherPrompt": "Ask the class: Why can a national airport not simply invent its own local obstacle rules? What gives EASA regulations superior legal force over individual aerodrome manuals?"
-              },
-              {
-                "num": "02",
-                "badge": "02 • Regulatory Architecture",
-                "title": "Hard Law vs. Soft Law • How EASA Rules Work",
-                "subtitle": "Understanding the Vital Operational Distinction between IR, AMC, and GM",
-                "takeaway": "Implementing Rules tell you WHAT you must achieve by law; AMC gives an approved way HOW to do it; GM explains the technical reasoning.",
-                "cards": [
-                  {
-                    "tag": "Hard Law (Mandatory)",
-                    "heading": "Implementing Rules (IR)",
-                    "text": "European Commission executive regulations. 100% legally binding across all EU Member States. Zero deviation permitted without formal state derogation."
-                  },
-                  {
-                    "tag": "Soft Law (Approved Means)",
-                    "heading": "Acceptable Means of Compliance (AMC)",
-                    "text": "Official technical specifications illustrating approved compliance. Following AMC creates legal presumption of compliance; deviations require formal AltMOC validation."
-                  },
-                  {
-                    "tag": "Advisory Material",
-                    "heading": "Guidance Material (GM)",
-                    "text": "Non-binding explanatory text, real-world examples, and statutory background assisting aerodrome personnel in everyday operational decision-making."
-                  }
-                ],
-                "teacherPrompt": "Concept check: If an airport invents an innovative laser scanning method to monitor runway obstacle clearances instead of the published AMC, can they use it immediately? What is an AltMOC?"
-              },
-              {
-                "num": "03",
-                "badge": "03 • Statutory Modals",
-                "title": "Words for Rules • Shall, Should, May & Shall Not",
-                "subtitle": "Legal Precision & Operational Obligation in European Aviation Law",
-                "takeaway": "In European aviation law, confusing 'shall' and 'should' is a severe regulatory error. One is an inescapable legal obligation; the other is recommended guidance.",
-                "cards": [
-                  {
-                    "tag": "100% Law • Obligation",
-                    "heading": "SHALL / MUST",
-                    "text": "Absolute mandatory statutory duty. Zero choice, zero delay permitted. E.g.: 'The aerodrome operator shall establish procedures for aerodrome works safety.'"
-                  },
-                  {
-                    "tag": "Prohibition • Violation",
-                    "heading": "SHALL NOT / MUST NOT",
-                    "text": "Strict prohibition. Non-compliance results in an immediate safety violation. E.g.: 'Unplanned works shall not take place on active runways.'"
-                  },
-                  {
-                    "tag": "Recommendation • AMC",
-                    "heading": "SHOULD",
-                    "text": "Strongly recommended best practice. Advisable under AMC; alternatives require approved equivalent safety cases. E.g.: 'Equipment should remain outside active strips.'"
-                  },
-                  {
-                    "tag": "Permission • Discretion",
-                    "heading": "MAY / CAN",
-                    "text": "Statutory discretion or optional authorization under defined regulatory conditions. E.g.: 'Low-height apron equipment may be exempted from flashing beacons.'"
-                  }
-                ],
-                "warning": "⚠️ French Spoken Trap: The French verb 'devoir' translates to both 'shall' and 'should'. Always use 'shall/must' for binding obligations and 'should' for advisory guidance.",
-                "teacherPrompt": "Pair exercise: Have students contrast: 'The contractor shall inspect the runway' vs. 'The contractor should inspect the runway.' Who is legally responsible if FOD causes an engine strike?"
-              },
-              {
-                "num": "04",
-                "badge": "04 • Airspace Protection",
-                "title": "Obstacle Limitation Surfaces (OLS) & Safeguarding",
-                "subtitle": "Protecting the 3D Flight Corridors around Active Runways",
-                "takeaway": "The Shielding Principle: a new structure breaching an OLS can only be approved without operational restrictions if completely shielded by an existing permanent obstacle.",
-                "cards": [
-                  {
-                    "tag": "In-Flight Corridors",
-                    "heading": "Approach & Take-Off Climb",
-                    "text": "Inclined 3D planes extending from runway ends to protect aircraft during the critical low-altitude approach, landing flare, and initial climb-out phases."
-                  },
-                  {
-                    "tag": "Lateral Protection",
-                    "heading": "Transitional & Inner Horizontal",
-                    "text": "Sloping lateral surfaces flanking the runway strip and a horizontal ceiling protecting aircraft flying visual circuits and missed-approach maneuvers."
-                  },
-                  {
-                    "tag": "Tower Visual Line of Sight",
-                    "heading": "VCR Line of Sight & Infringement",
-                    "text": "Direct line of sight from the Visual Control Room (Tower cab). Obstacle Infringement occurs whenever a crane or building breaches an established OLS plane."
-                  }
-                ],
-                "teacherPrompt": "Ask the class: A mobile crane is 45m high and located 800m north of Runway 14L. Why must the aerodrome safety team check both OLS breach and Tower visual line of sight?"
-              },
-              {
-                "num": "05",
-                "badge": "05 • Works Safety",
-                "title": "Aerodrome Works Safety & Threshold Displacement",
-                "subtitle": "Point ADR.OPS.B.070 Requirements for Active Airside Maintenance",
-                "takeaway": "No runway may be reopened following night maintenance without formal hand-back inspection and ATC clearance under the broom-clean standard.",
-                "cards": [
-                  {
-                    "tag": "Runway Recalibration",
-                    "heading": "Displaced Threshold & Distances",
-                    "text": "When maintenance affects the runway extremity, the landing threshold is moved forward. Declared distances (TORA, TODA, ASDA, LDA) must be recalculated and published."
-                  },
-                  {
-                    "tag": "Airside Demarcation",
-                    "heading": "Frangible Barriers & Conspicuous Markings",
-                    "text": "Worksite perimeters must feature low-mass frangible barriers, red/white chequered flags, and flashing aviation-yellow beacons visible day and night."
-                  },
-                  {
-                    "tag": "Pavement Hand-Back",
-                    "heading": "Broom-Clean Pavement Standard",
-                    "text": "Before hand-back to flight operations at dawn, the pavement must be inspected, free of loose aggregate or tools, certified 100% FOD-free, and signed off with ATC."
-                  }
-                ],
-                "teacherPrompt": "Discussion: What is the operational difference between TORA (Take-Off Run Available) and LDA (Landing Distance Available) when Runway 09 has a displaced threshold?"
-              },
-              {
-                "num": "06",
-                "badge": "06 • Information Flow",
-                "title": "Operational Notice Flow • NOTAM & AIP Publishing",
-                "subtitle": "How Airside Safeguarding Changes Reach the Cockpit & Dispatchers",
-                "takeaway": "A pilot reads the NOTAM before engine start. Precise coordinates, heights in feet AMSL, and accurate operational times ensure international flight safety.",
-                "cards": [
-                  {
-                    "tag": "Step 1 • Notification",
-                    "heading": "Contractor / Sponsor Application",
-                    "text": "Promoter submits exact GPS coordinates, maximum jib elevation AMSL, and operating schedule to the Aerodrome Operator 30+ days in advance."
-                  },
-                  {
-                    "tag": "Step 2 • Safety Review",
-                    "heading": "Aerodrome Technical Assessment",
-                    "text": "Safety department verifies OLS penetration, Tower line-of-sight clearance, radar interference, and lighting requirements."
-                  },
-                  {
-                    "tag": "Step 3 • State Validation",
-                    "heading": "Civil Aviation Authority (CAA / DGAC)",
-                    "text": "National competent authority validates the safeguarding analysis, conditions the permit, and authorizes aeronautical notification."
-                  },
-                  {
-                    "tag": "Step 4 • Publication",
-                    "heading": "NOTAM & AIP Dissemination",
-                    "text": "AIS transmits temporary international NOTAM telecommunications or updates permanent AIP charts for global flight crew briefing."
-                  }
-                ],
-                "teacherPrompt": "Wrap-up question: An uncoordinated crane arrives at 07:00 next to the taxiway. What immediate action must airside operations take, and what happens to flight operations until resolved?"
-              }
-            ]
-          },
-          "revision": {
-            "title": "Session 1 Vocabulary • EASA Rules & Safeguarding",
-            "summary": "Master the 30 high-frequency regulatory terms, modal indicators, and safeguarding concepts from Regulation (EU) No 139/2014 Part-ADR.OPS.",
-            "terms": [
-              {
-                "num": "01",
-                "term": "EASA",
-                "definition": "European Union Aviation Safety Agency: the civil aviation authority establishing binding safety standards and Easy Access Rules across Europe.",
-                "part": "Part 1"
-              },
-              {
-                "num": "02",
-                "term": "Hard Law (Implementing Rules / IR)",
-                "definition": "Legally binding European Commission regulations that impose inescapable obligations under law across all EU Member States.",
-                "part": "Part 2"
-              },
-              {
-                "num": "03",
-                "term": "Soft Law (AMC & GM)",
-                "definition": "Non-binding technical standards, advisory guidelines, and explanatory materials providing acceptable means of compliance.",
-                "part": "Part 3"
-              },
-              {
-                "num": "04",
-                "term": "Acceptable Means of Compliance (AMC)",
-                "definition": "Official technical specifications illustrating an approved method to meet an Implementing Rule; deviations require formal validation.",
-                "part": "Part 4"
-              },
-              {
-                "num": "05",
-                "term": "Guidance Material (GM)",
-                "definition": "Non-binding explanatory text, illustrative practical examples, or statutory permissions assisting daily operational compliance.",
-                "part": "Part 5"
-              },
-              {
-                "num": "06",
-                "term": "Alternative Means of Compliance (AltMOC)",
-                "definition": "A formal alternative method proposed by an airport operator to satisfy an Implementing Rule instead of the published AMC.",
-                "part": "Part 6"
-              },
-              {
-                "num": "07",
-                "term": "Shall / Shall Not",
-                "definition": "The formal regulatory words designating a strict, mandatory legal obligation (100% commitment) or an absolute prohibition.",
-                "part": "Part 7"
-              },
-              {
-                "num": "08",
-                "term": "Should",
-                "definition": "The standard regulatory word designating an Acceptable Means of Compliance (AMC) recommendation or industry best practice.",
-                "part": "Part 8"
-              },
-              {
-                "num": "09",
-                "term": "May / Can",
-                "definition": "The formal regulatory words designating Guidance Material (GM), discretionary options, or statutory permission.",
-                "part": "Part 9"
-              },
-              {
-                "num": "10",
-                "term": "Derogation",
-                "definition": "An authorized legal exemption or formal waiver from a general regulatory requirement granted by the competent authority.",
-                "part": "Part 10"
-              },
-              {
-                "num": "11",
-                "term": "Pursuant to",
-                "definition": "Formal legal phrasing meaning 'following' or 'in strict accordance with' a specific article or regulatory subpart.",
-                "part": "Part 11"
-              },
-              {
-                "num": "12",
-                "term": "Without prejudice to",
-                "definition": "Formal legal phrasing indicating that a local rule or exception does not alter or invalidate existing regulations elsewhere.",
-                "part": "Part 12"
-              },
-              {
-                "num": "13",
-                "term": "Obstacle Limitation Surface (OLS)",
-                "definition": "Defined airspace planes (approach, transitional, horizontal) kept strictly free from obstructions to protect aircraft operations.",
-                "part": "Part 13"
-              },
-              {
-                "num": "14",
-                "term": "Safeguarding Boundary",
-                "definition": "The legally defined geographic consultation zone around an aerodrome protecting flight paths and line of sight.",
-                "part": "Part 14"
-              },
-              {
-                "num": "15",
-                "term": "Visual Line of Sight (VCR)",
-                "definition": "Unobstructed direct visibility required from the Air Traffic Control Tower Visual Cab Room to all active movement surfaces.",
-                "part": "Part 15"
-              },
-              {
-                "num": "16",
-                "term": "Obstacle Infringement",
-                "definition": "The unsafe condition when a permanent building, mobile crane, or temporary structure breaches or extends above an established OLS.",
-                "part": "Part 16"
-              },
-              {
-                "num": "17",
-                "term": "Shielding Principle",
-                "definition": "The regulatory allowance permitting an obstacle if an existing, permanent, and larger structure already shadows the obstruction.",
-                "part": "Part 17"
-              },
-              {
-                "num": "18",
-                "term": "Competent Authority",
-                "definition": "The designated national aviation safety oversight body (e.g. DSAC/DGAC in France, EASA in Europe) responsible for audits and permits.",
-                "part": "Part 18"
-              },
-              {
-                "num": "19",
-                "term": "Aerodrome Works Safety",
-                "definition": "Procedures under Point ADR.OPS.B.070 ensuring unannounced works are prohibited and aircraft operations remain uncompromised.",
-                "part": "Part 19"
-              },
-              {
-                "num": "20",
-                "term": "Displaced Threshold",
-                "definition": "A runway threshold relocated further down the paved surface to ensure obstacle clearance during resurfacing works.",
-                "part": "Part 20"
-              },
-              {
-                "num": "21",
-                "term": "Declared Distances (TORA / LDA)",
-                "definition": "Officially published operational runway lengths (e.g. Take-Off Run Available, Landing Distance Available) recalculated during maintenance.",
-                "part": "Part 21"
-              },
-              {
-                "num": "22",
-                "term": "Frangible Barrier",
-                "definition": "Lightweight, hazard-marked barriers and unserviceability cones designed to break safely upon impact without damaging aircraft.",
-                "part": "Part 22"
-              },
-              {
-                "num": "23",
-                "term": "Broom-Clean",
-                "definition": "Operational certification certifying that a pavement is completely swept and free of foreign object debris (FOD) before reopening.",
-                "part": "Part 23"
-              },
-              {
-                "num": "24",
-                "term": "Hand-Back Criteria",
-                "definition": "Formal safety conditions and joint physical inspection protocols satisfied before returning a closed runway to live traffic.",
-                "part": "Part 24"
-              },
-              {
-                "num": "25",
-                "term": "Conspicuous Marking",
-                "definition": "High-visibility paint schemes and contrasting geometric symbols required on all airside vehicles and mobile objects.",
-                "part": "Part 25"
-              },
-              {
-                "num": "26",
-                "term": "Flashing Obstacle Beacon",
-                "definition": "Mandatory high-intensity yellow or red service lights displayed on airside vehicles operating on movement areas.",
-                "part": "Part 26"
-              },
-              {
-                "num": "27",
-                "term": "Foreign Object Debris (FOD)",
-                "definition": "Any loose object, gravel, tool, or contaminant on movement areas capable of causing engine or structural damage.",
-                "part": "Part 27"
-              },
-              {
-                "num": "28",
-                "term": "NOTAM (Notice to Airmen)",
-                "definition": "An official telecommunication notice published without delay informing pilots of temporary runway closures, crane hazards, or altered lights.",
-                "part": "Part 28"
-              },
-              {
-                "num": "29",
-                "term": "AIP (Aeronautical Information Publication)",
-                "definition": "The permanent national manual containing authoritative aerodrome data, charts, and operational procedures.",
-                "part": "Part 29"
-              },
-              {
-                "num": "30",
-                "term": "De-Nominalization",
-                "definition": "Converting passive, noun-heavy legal phrasing ('Notification shall be executed') into direct, active spoken operational instructions ('Ground staff must notify').",
-                "part": "Part 30"
-              }
-            ]
-          },
-          "materials": {
-            "quizTitle": "Airside Scenario Quiz • EASA Rules & Obstacle Safeguarding",
-            "quizSubtitle": "Target pace: ~45 seconds per scenario • Mix of Operational Dilemmas & Rule Spot-Checks",
-            "videos": [
-              {
-                "title": "Video 1: Obstacle Limitation Surfaces (OLS) 3D Animation",
-                "channel": "Aviation Safety & Aerodrome Engineering",
-                "duration": "6 mins",
-                "videoId": "oeJcvKZG2w8",
-                "watchUrl": "https://www.youtube.com/watch?v=oeJcvKZG2w8",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/oeJcvKZG2w8",
-                "caption": "Visual 3D fly-through demonstrating how the approach, transitional, and horizontal surfaces protect runways from tall cranes and obstacles.",
-                "part": "Part 1"
-              },
-              {
-                "title": "Video 2: How EASA Makes Aviation Regulations in Europe",
-                "channel": "EASA Official",
-                "duration": "5 mins",
-                "videoId": "XeUxBxDUGCk",
-                "watchUrl": "https://www.youtube.com/watch?v=XeUxBxDUGCk",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/XeUxBxDUGCk",
-                "caption": "An official guide explaining how Basic Regulations, Implementing Rules (IR), Acceptable Means of Compliance (AMC), and Guidance Material (GM) work together.",
-                "part": "Part 2"
-              },
-              {
-                "title": "Video 3: Understanding NOTAMs for Flight Operations",
-                "channel": "FlightInsight",
-                "duration": "7 mins",
-                "videoId": "H701DOaQvDM",
-                "watchUrl": "https://www.youtube.com/watch?v=H701DOaQvDM",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/H701DOaQvDM",
-                "caption": "A practical breakdown of how Notice to Airmen (NOTAM) alerts inform pilots about temporary airport hazards, broken lights, and construction cranes.",
-                "part": "Part 3"
-              }
-            ],
-            "articles": [
-              {
-                "topic": "EASA Certification Specifications",
-                "sourceTag": "Official Regulation • CS-ADR-DSN",
-                "heading": "CS-ADR-DSN Subpart H: Obstacle Limitation Surfaces and Aerodrome Safeguarding",
-                "title": "CS-ADR-DSN Subpart H: Obstacle Limitation Surfaces and Aerodrome Safeguarding",
-                "snippet": "Official European Union Aviation Safety Agency specifications defining the geometry, slopes, and permissible boundaries for approach, take-off, and transitional surfaces around European commercial aerodromes.",
-                "summary": "Official European Union Aviation Safety Agency specifications defining the geometry, slopes, and permissible boundaries for approach, take-off, and transitional surfaces around European commercial aerodromes.",
-                "readTime": "Estimated read: 5 mins",
-                "url": "https://www.easa.europa.eu/en/domains/aerodromes",
-                "content": [
-                  "Obstacle Limitation Surfaces (OLS) are imaginary three-dimensional surfaces that extend outward and upward from an aerodrome runway strip. Their statutory purpose under EASA CS-ADR-DSN Subpart H is to define the airspace boundaries around aerodromes that must be kept free from dangerous obstacles to protect aircraft during takeoff, final approach, and missed approach procedures.",
-                  "The primary surfaces established under European law include the Approach Surface, the Take-off Climb Surface, the Transitional Surface, the Inner Horizontal Surface, and the Conical Surface. Any permanent structure, such as an office tower or wind turbine, or temporary equipment, such as mobile construction cranes, that penetrates these inclined planes constitutes an operational hazard.",
-                  "Under Point ADR.OPS.B.075, aerodrome operators must establish an active aerodrome safeguarding process. This process mandates direct statutory coordination with local municipal planning authorities and construction developers within a 15-kilometer radius of the aerodrome reference point. Developers must submit crane height applications at least 28 calendar days before erecting lifting equipment to ensure rigorous aeronautical obstacle assessments.",
-                  "If an obstacle penetrates an established OLS and cannot be lowered or removed, the aerodrome operator must issue an immediate NOTAM and collaborate with air navigation service providers (ANSPs) to publish revised instrument flight procedures, elevated decision altitudes (DA/H), or displaced runway thresholds to preserve the certified obstacle clearance limit (OCL)."
-                ],
-                "takeaways": [
-                  "OLS establishes statutory airspace boundaries that protect aircraft during low-altitude arrival and departure phases.",
-                  "Crane operators must apply for aerodrome safeguarding approval at least 28 days before erecting temporary lifting equipment.",
-                  "Penetrations that cannot be removed require emergency NOTAM publication and recalculation of instrument approach minima."
-                ],
-                "vocab": [
-                  "Obstacle Limitation Surface (OLS)",
-                  "Aerodrome Safeguarding",
-                  "Transitional Surface",
-                  "Decision Altitude (DA/H)"
-                ]
-              },
-              {
-                "topic": "Safety Encyclopedia",
-                "sourceTag": "SKYbrary Safety Review",
-                "heading": "Obstacle Limitation Surfaces (OLS): Mitigating Construction Hazards Near Airports",
-                "title": "Obstacle Limitation Surfaces (OLS): Mitigating Construction Hazards Near Airports",
-                "snippet": "Comprehensive operational guide explaining the legal procedures for construction crane permits, the 28-day notification rule, obstacle lighting requirements, and temporary NOTAM publications.",
-                "summary": "Comprehensive operational guide explaining the legal procedures for construction crane permits, the 28-day notification rule, obstacle lighting requirements, and temporary NOTAM publications.",
-                "readTime": "Estimated read: 4 mins",
-                "url": "https://skybrary.aero/articles/obstacle-limitation-surfaces-ols",
-                "content": [
-                  "Urban encroachment around international airports has intensified the friction between city developers and aerodrome safety regulators. Tall construction cranes operating on building sites directly beneath final approach corridors represent one of the most volatile risks to commercial flight safety.",
-                  "A mobile jib crane can be extended to over 80 meters within hours, instantly piercing an approach surface that was completely clear the previous morning. For arriving pilots on an instrument ILS approach under low cloud ceilings, an unnotified, unlit crane arm hidden inside fog or twilight is an invisible lethal hazard.",
-                  "To mitigate this risk, European aerodromes enforce a multi-tiered defense: (1) mandatory tall-structure permitting, (2) automated radar and laser obstacle scanning, and (3) compulsory medium-intensity Type B flashing red obstacle lights (2,000 candelas) installed on the highest point of every crane boom.",
-                  "Furthermore, air traffic controllers must receive real-time notifications of approved crane locations. When mobile cranes are active near runway centerlines, ATC controllers must inform inbound flight crews during initial contact and verify that missed approach climb gradients remain completely unobstructed."
-                ],
-                "takeaways": [
-                  "Unnotified construction cranes represent sudden, high-risk penetrations into final approach corridors.",
-                  "Cranes exceeding obstacle limits must be fitted with 2,000-candela flashing red aviation warning lights.",
-                  "ATC controllers must verbally inform approaching flight crews when active cranes operate within runway protection zones."
-                ],
-                "vocab": [
-                  "Urban Encroachment",
-                  "Mobile Jib Crane",
-                  "Obstacle Warning Light",
-                  "Missed Approach Climb Gradient"
-                ]
-              },
-              {
-                "topic": "Aerodrome Works Safety",
-                "sourceTag": "EASA Part-ADR.OPS",
-                "heading": "Managing Runway Safety During Maintenance: Displaced Thresholds & Hand-Back Criteria",
-                "title": "Managing Runway Safety During Maintenance: Displaced Thresholds & Hand-Back Criteria",
-                "snippet": "Operational synthesis detailing Point ADR.OPS.B.070 requirements for declared distance recalculations, buffer zone demarcation, and joint broom-clean inspections before returning runways to live air traffic.",
-                "summary": "Operational synthesis detailing Point ADR.OPS.B.070 requirements for declared distance recalculations, buffer zone demarcation, and joint broom-clean inspections before returning runways to live air traffic.",
-                "readTime": "Estimated read: 4-5 mins",
-                "url": "https://skybrary.aero/articles/aerodrome-works-safety",
-                "content": [
-                  "Major aerodrome maintenance—such as pavement resurfacing, friction re-grooving, or underground drainage repair—frequently takes place on active runways during night curfews or under temporary displaced threshold regimes under Point ADR.OPS.B.070.",
-                  "When heavy civil engineering plant vehicles (asphalt milling machines, dump trucks, and roller compactors) operate on a runway, an uncompromised physical buffer zone must separate the work area from live aircraft movements. Temporary low-profile, frangible red-and-white lighted barricades must delineate the boundary, and illuminated runway closed crosses ('X') must cover obscured markings.",
-                  "The critical operational milestone is the daily 'hand-back' procedure. Before a runway can be returned to operational air traffic at dawn, a joint inspection team uniting the aerodrome safety officer, the civil works contractor, and an air traffic controller must conduct a physical walkdown.",
-                  "The runway must be verified as 100% 'broom-clean', with zero residual gravel or metallic debris that could cause Foreign Object Debris (FOD) ingestion into jet engines. Temporary declared distances (TORA, TODA, ASDA, LDA) must be cross-checked against published AIP Supplements and trigger NOTAMs."
-                ],
-                "takeaways": [
-                  "Work areas on active runways must be separated from live aircraft by frangible lighted barriers.",
-                  "Returning a runway to air traffic requires a mandatory joint 'broom-clean' walkdown inspection.",
-                  "All temporary declared distances must match published NOTAMs and flight dispatch data before opening."
-                ],
-                "vocab": [
-                  "Hand-Back Procedure",
-                  "Broom-Clean Condition",
-                  "Frangible Barricade",
-                  "Declared Distances"
-                ]
-              }
-            ],
-            "resources": [
-              {
-                "tag": "EASA Official",
-                "name": "EASA Aerodrome Regulations & Standards",
-                "desc": "Consolidated European rules for aerodrome certification, safety oversight, and management systems.",
-                "url": "https://www.easa.europa.eu/en/domains/aerodromes"
-              },
-              {
-                "tag": "National Authority",
-                "name": "Direction Générale de l'Aviation Civile (DGAC)",
-                "desc": "French civil aviation authority oversight circulars, aerodrome safety audits, and technical directives.",
-                "url": "https://www.enac.fr/en"
-              },
-              {
-                "tag": "Safety Encyclopedia",
-                "name": "SKYbrary Aviation Safety Knowledgebase",
-                "desc": "International operational safety articles covering apron safety, runway incursions, and human factors.",
-                "url": "https://skybrary.aero"
-              },
-              {
-                "tag": "Eurocontrol Hub",
-                "name": "Eurocontrol Airport Operations & Safety",
-                "desc": "European air traffic management data, apron collision alerts, and operational safety action groups.",
-                "url": "https://www.eurocontrol.int"
-              },
-              {
-                "tag": "Investigation Board",
-                "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
-                "desc": "Official French aviation safety investigation authority reports and safety recommendations.",
-                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea"
-              },
-              {
-                "tag": "US FAA Standards",
-                "name": "FAA Airport Safety & Standards Hub",
-                "desc": "Federal aviation administration advisory circulars, pavement marking standards, and FOD control guides.",
-                "url": "https://www.faa.gov/airports/airport_safety"
-              }
-            ],
-            "portals": [
-              {
-                "tag": "EASA Official",
-                "name": "EASA Aerodrome Regulations & Standards",
-                "desc": "Consolidated European rules for aerodrome certification, safety oversight, and management systems.",
-                "url": "https://www.easa.europa.eu/en/domains/aerodromes"
-              },
-              {
-                "tag": "National Authority",
-                "name": "Direction Générale de l'Aviation Civile (DGAC)",
-                "desc": "French civil aviation authority oversight circulars, aerodrome safety audits, and technical directives.",
-                "url": "https://www.enac.fr/en"
-              },
-              {
-                "tag": "Safety Encyclopedia",
-                "name": "SKYbrary Aviation Safety Knowledgebase",
-                "desc": "International operational safety articles covering apron safety, runway incursions, and human factors.",
-                "url": "https://skybrary.aero"
-              },
-              {
-                "tag": "Eurocontrol Hub",
-                "name": "Eurocontrol Airport Operations & Safety",
-                "desc": "European air traffic management data, apron collision alerts, and operational safety action groups.",
-                "url": "https://www.eurocontrol.int"
-              },
-              {
-                "tag": "Investigation Board",
-                "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
-                "desc": "Official French aviation safety investigation authority reports and safety recommendations.",
-                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea"
-              },
-              {
-                "tag": "US FAA Standards",
-                "name": "FAA Airport Safety & Standards Hub",
-                "desc": "Federal aviation administration advisory circulars, pavement marking standards, and FOD control guides.",
-                "url": "https://www.faa.gov/airports/airport_safety"
-              }
-            ],
-            "grammar": {
-              "title": "Words for Rules: Shall, Must, Should & May",
-              "badge": "CEFR B1–B2 Focus",
-              "patternTitle": "Aviation Regulatory Rule Pattern",
-              "formula": "Subject + SHALL / MUST + Base Verb (100% Law) | Subject + SHOULD + Base Verb (Recommendation)",
-              "rulesTitle": "When to Use Each Rule Word",
-              "rules": [
-                "<strong>SHALL / MUST (Obligation):</strong> Used exclusively when an action is 100% required by aviation law. Zero choice or exception is permitted.",
-                "<strong>SHALL NOT / MUST NOT (Prohibition):</strong> Used when an action is strictly forbidden and creates an immediate safety violation.",
-                "<strong>SHOULD (Recommendation):</strong> Expresses recommended industry best practice or AMC guidance. It is strongly advised, but alternative methods (AltMOC) may be validated.",
-                "<strong>MAY (Permission):</strong> Indicates that an option, discretion, or special statutory authorization is available under defined conditions."
-              ],
-              "trap": "<strong>⚠️ Spoken English Pitfall:</strong> In French, the verb <em>'devoir'</em> (il doit) is often translated as either <em>'shall'</em> or <em>'should'</em>. In European aviation law, confusing these two is a serious legal error! Always use <em>'shall/must'</em> for mandatory laws and <em>'should'</em> for advisory best practice.",
-              "examplesTitle": "Authentic EASA Operational Examples (Point ADR.OPS.B.070 & B.075)",
-              "examples": [
-                "The aerodrome operator <strong>shall</strong> establish procedures ensuring aircraft safety is not compromised by aerodrome works.",
-                "Unplanned works on active runways or taxiways <strong>shall not</strong> be permitted without prior coordination.",
-                "Equipment and temporary scaffolding <strong>should</strong> remain strictly outside the cleared runway strip while active.",
-                "Dedicated apron-only servicing equipment <strong>may</strong> be exempted from flashing beacons under conditions defined in the aerodrome manual."
-              ]
-            }
-          },
-          "title": "EASA Rules & Modal Precision"
-        },
-        "2": {
-          "session": 2,
-          "title": "Safety Alerts & Ramp Briefings",
-          "overview": {
-            "intro": "Welcome to Session 2 of Technical English! Today we examine an official EASA Safety Information Bulletin on ramp collision risks and ground vehicle speed management. You will practice turning dense safety regulations into direct action commands, master the Executive 3-Bullet Rule, and deliver a punchy 90-second morning ramp briefing with operational challenge questions.",
-            "whyItMatters": "On European airport aprons, ground support equipment (GSE) operates in close proximity to multimillion-euro aircraft and ground personnel under tight 30-minute turnaround pressures. High-energy vehicle impacts with aircraft fuselages, radomes, and engine cowlings have repeatedly gone unreported by fearful ground staff, resulting in aircraft departing with undetected structural damage. Mastering non-punitive Just Culture reporting, speed enforcement zones, and clear spoken verbal briefings is vital for TSEEAC airside operations managers and ramp safety inspectors.",
-            "keyTerms": [
-              {
-                "term": "Apron Driving Authorisation (ADA)",
-                "ipa": "/ˈeɪ.prən ˈdraɪ.vɪŋ ˌɔː.θər.aɪˈzeɪ.ʃən/",
-                "definition": "Official aerodrome permit certifying that an airside driver has completed mandatory regulatory safety training and vehicle handling assessments under ADR.OR.D.017."
-              },
-              {
-                "term": "Ground Support Equipment (GSE)",
-                "ipa": "/ɡraʊnd səˈpɔːt ɪˈkwɪp.mənt/",
-                "definition": "Specialized ramp servicing vehicles, including baggage tugs, belt loaders, pushback tractors, catering lifters, and mobile passenger steps."
-              },
-              {
-                "term": "Equipment Clearance Area (ECA)",
-                "ipa": "/ɪˈkwɪp.mənt ˈklɪə.rəns ˈeə.ri.ə/",
-                "definition": "Marked apron pavement surrounding an aircraft parking stand that must remain 100% clear of all vehicles until the aircraft has stopped and engines are shut down."
-              },
-              {
-                "term": "Equipment Staging Area (ESA)",
-                "ipa": "/ɪˈkwɪp.mənt ˈsteɪ.dʒɪŋ ˈeə.ri.ə/",
-                "definition": "Designated painted holding box where ground equipment is parked safely before aircraft arrival and during turnaround servicing."
-              },
-              {
-                "term": "Differentiated Speed Regimes",
-                "ipa": "/ˌdɪf.əˈren.ʃi.eɪ.tɪd spiːd reɪˈʒiːmz/",
-                "definition": "Tiered vehicular speed limits tailored to distinct apron zones: 25–30 km/h on main apron roadways, 5–10 km/h walking pace near aircraft, and 10–15 km/h in baggage tunnels."
-              },
-              {
-                "term": "GPS Geofencing",
-                "ipa": "/ˌdʒiː.piːˈes ˈdʒiː.əʊ.fens.ɪŋ/",
-                "definition": "Satellite-based virtual perimeter that triggers automated telematics controls to physically restrict vehicle top speed upon entering aircraft parking stands."
-              },
-              {
-                "term": "Speed Governor",
-                "ipa": "/spiːd ˈɡʌv.ən.ər/",
-                "definition": "Mechanical or electronic limiting device installed on ground vehicles to physically cap the maximum achievable velocity."
-              },
-              {
-                "term": "Just Culture",
-                "ipa": "/dʒʌst ˈkʌl.tʃər/",
-                "definition": "Operational safety framework where frontline workers are actively encouraged to report occurrences and minor contacts without fear of punitive reprisal, except in cases of gross negligence."
-              },
-              {
-                "term": "Ramp Safety Committee (RSC)",
-                "ipa": "/ræmp ˈseɪf.ti kəˈmɪt.i/",
-                "definition": "Regular collaborative forum uniting aerodrome operators, airlines, and ground handlers to analyze telematics trends, speed audits, and near-miss occurrences."
-              },
-              {
-                "term": "Unreported Structural Impact",
-                "ipa": "/ˌʌn.rɪˈpɔː.tɪd ˈstrʌk.tʃər.əl ˈɪm.pækt/",
-                "definition": "Hazardous condition where a GSE contact or fuselage scrape is concealed or unrecorded, allowing an aircraft to depart with compromised airworthiness."
-              }
-            ],
-            "speakingTask": {
-              "title": "Authentic EASA Task • SIB 2024-09 Ramp Collision Mitigation",
-              "instructions": "Working in pairs, review authentic EASA SIB No. 2024-09 below. Choose one operational area (Speed Regimes, Telematics & Governors, or Just Culture Reporting) and deliver a concise 2-minute spoken briefing explaining your ramp safety solutions using today's technical vocabulary.",
-              "document": {
-                "title": "EASA SIB No. 2024-09: Mitigation of Ramp Collision Risks & Speed Management",
-                "subtitle": "EASA Safety Information Bulletin • Issued 14 October 2024 (4 Pages)",
-                "filename": "GSEA_S3_M1_S2_EASA_SIB_2024_09_Ramp_Safety.pdf",
-                "path": "docs/GSEA_S3_M1_S2_EASA_SIB_2024_09_Ramp_Safety.pdf",
-                "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
-              },
-              "requirements": [
-                "Use at least 4 of today's 10 technical terms from the list above.",
-                "Cite specific operational measures from Section 4 of EASA SIB No. 2024-09.",
-                "Ensure both partners actively speak and explain practical ramp solutions without reading verbatim."
-              ],
-              "statements": {
-                "group1": "Area 1 (Infrastructure & Speed Regimes): How do differentiated speed limits (25–30 km/h on roadways vs. 5–10 km/h on stands) and CS-ADR-DSN road markings mitigate high-energy ramp impacts?",
-                "group2": "Area 2 (Telematics & Equipment Control): Why are physical speed governors and GPS geofencing more effective than speed limit signs alone on high-workload turnaround aprons?",
-                "group3": "Area 3 (Driver Authorisation & Just Culture): How can aerodrome operators balance strict Apron Driving Authorisation (ADA) testing with a non-punitive Just Culture so minor scrapes are reported immediately?"
-              },
-              "usefulPhrases": [
-                "According to EASA SIB 2024-09, ground collisions are primarily caused by...",
-                "Under Point ADR.OPS.B.025, the aerodrome operator must enforce...",
-                "In the vicinity of parked aircraft, speed must be restricted to walking pace...",
-                "A non-punitive Just Culture ensures that ground personnel report...",
-                "To mitigate high-energy vehicle impacts on the ramp, our group recommends..."
-              ]
-            },
-            "document": {
-              "title": "EASA SIB No. 2024-09: Mitigation of Ramp Collision Risks & Speed Management",
-              "subtitle": "EASA Safety Information Bulletin • Issued 14 October 2024 (4 Pages)",
-              "filename": "GSEA_S3_M1_S2_EASA_SIB_2024_09_Ramp_Safety.pdf",
-              "path": "docs/GSEA_S3_M1_S2_EASA_SIB_2024_09_Ramp_Safety.pdf",
-              "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
-            }
-          },
-          "objectives": {
-            "title": "Session 2 Objectives - Safety Alerts & Ramp Briefings",
-            "summary": "By the end of this session, GSEA students will be able to distinguish mandatory Safety Directives from advisory Safety Information Bulletins, turn heavy regulatory text into direct spoken action commands, condense dense safety alerts using the Executive 3-Bullet Rule (maximum 12 words per bullet), speak with natural rhythm and keyword stress, deliver a professional 90-second morning ramp safety briefing, and field spontaneous operational challenge questions with confidence.",
-            "items": [
-              {
-                "num": 1,
-                "title": "Modal Quick-Fire & Ramp Awareness (Review & Fluency)",
-                "description": "Rapidly identify strict mandatory rules, standard guidelines, and permissions in operational statements, and discuss apron hazard zones.",
-                "part": "Part 1"
-              },
-              {
-                "num": 2,
-                "title": "Turning Heavy Regulations into Action Words (Language Accuracy)",
-                "description": "Convert stiff official phrases (the execution of continuous surveillance, prior to the entry of vehicles) into direct active commands (inspect, monitor, wait before entering).",
-                "part": "Part 2"
-              },
-              {
-                "num": 3,
-                "title": "The Executive 3-Bullet Rule: SIB Extraction (Synthesis & Precision)",
-                "description": "Condense dense EASA SIB extracts into exactly 3 actionable directives of no more than 12 words each, starting with strong active verbs.",
-                "part": "Part 3"
-              },
-              {
-                "num": 4,
-                "title": "Natural Rhythm & Stress Clinic (Spoken Rhythm & Delivery)",
-                "description": "Use natural speech pauses (|) and stress operative keywords to deliver clear, confident technical instructions on the ramp.",
-                "part": "Part 4"
-              },
-              {
-                "num": 5,
-                "title": "The 90-Second Stand-Up Briefing (Spoken Interaction & Signposting)",
-                "description": "Structure and deliver a crisp 90-second spoken briefing using authentic transition signposts (\"Good morning team...\", \"The primary takeaway is...\", \"Under no circumstances should you...\").",
-                "part": "Part 5"
-              },
-              {
-                "num": 6,
-                "title": "Active Listening & Operational Challenges (Interactive Clarification)",
-                "description": "Role-play ramp supervisors and safety leads, listening critically to oral briefings and asking targeted operational questions under time pressure.",
-                "part": "Part 6"
-              }
-            ]
-          },
-          "lessonPlan": {
-            "title": "Session 2 Lesson Plan - Safety Alerts & Ramp Briefings (2 Hours)",
-            "summary": "A 2-hour communicative spoken English session covering rapid modal review, EASA Safety Information Bulletin SIB 2024-09 (Ramp Collision Risks & Speed Management), turning heavy regulations into spoken action commands, the Executive 3-Bullet Rule, natural spoken rhythm, and 'The 90-Second Stand-Up' paired briefing simulations across three real-world apron scenarios.",
-            "items": [
-              {
-                "part": "Part 1",
-                "title": "Part 1: Warm-up: Modal Quick-Fire & Ramp Hazard Scan",
-                "description": "Students complete the 4-item modal quick-fire sprint to reinforce Session 1 foundations, then brainstorm the most hazard-prone areas of the apron in pairs."
-              },
-              {
-                "part": "Part 2",
-                "title": "Part 2: Authentic Document Extract: EASA SIB 2024-09 (Ramp Collisions & Speed)",
-                "description": "Students scan authentic extracts from EASA SIB No. 2024-09 regarding GSE impacts, speed regimes, and telematics geofencing, and complete reading comprehension checks."
-              },
-              {
-                "part": "Part 3",
-                "title": "Part 3: Language Clinic: From Official Rules to Spoken Action Commands",
-                "description": "Students practice converting heavy administrative text into direct spoken imperatives, master the Executive 3-Bullet Rule (12 words max, action verbs), and practice natural speech pauses and keyword stress."
-              },
-              {
-                "part": "Part 4",
-                "title": "Part 4: Spoken Interaction: 'The 90-Second Stand-Up' Briefings",
-                "description": "In pairs, students take turns delivering 90-second morning briefings as TSEEAC Airside Safety Officers across 3 ramp scenarios, while their partner role-plays the Ground Supervisor asking mandatory operational challenge questions with peer feedback."
-              },
-              {
-                "part": "Part 5",
-                "title": "Part 5: Safety Check & Stand-Up Reality Wrap-Up",
-                "description": "Students collaborate on the 4-step ramp risk check and deliver an unscripted 60-second pair wrap-up explaining how morning briefings prevent critical breakdowns in communication on the tarmac."
-              }
-            ]
-          },
           "lessonContent": {
             "hero": {
-              "title": "Safety Alerts & Ramp Briefings",
-              "subtitle": "EASA SIB 2024-09, Action Commands & 90-Second Stand-Up Briefings",
-              "image": "images/s3_m1_session2_audit.jpg",
-              "targetLevel": "CEFR B1–B2",
-              "roleContext": "GSEA Student Training (TSEEAC Airside Safety & Ground Operations Focus)",
-              "duration": "120 Minutes"
-            },
-            "openingSession": {
-              "title": "Activity 1: Warm-up: Modal Quick-Fire & Ramp Hazard Scan",
-              "summary": "Rapid retrieval sprint checking modal categories and pair brainstorming on apron danger zones.",
-              "modeBadges": [
-                {
-                  "label": "Retrieval Sprint",
-                  "color": "blue"
-                },
-                {
-                  "label": "Pair Discussion",
-                  "color": "amber"
-                },
-                {
-                  "label": "Spoken Fluency",
-                  "color": "emerald"
-                }
-              ],
-              "instructions": [
-                {
-                  "step": "Step 1: Modal Quick-Fire Sprint (Individual / Pairs)",
-                  "detail": "Read each of the 4 operational statements below and identify whether it represents a strict mandatory rule, standard best practice, or advisory guidance. Check the anchor modal verb."
-                },
-                {
-                  "step": "Step 2: Ramp Hazard Brainstorming (Pairs)",
-                  "detail": "Discuss why the apron is often called 'the most dangerous 500 metres of an airport.' Identify the top 3 hazards handlers face during morning departure waves."
-                },
-                {
-                  "step": "Step 3: Diagnostic Check",
-                  "detail": "Test entry knowledge with the 4 spot-check questions comparing mandatory directives, advisory bulletins, and spoken delivery rhythm."
-                }
-              ],
-              "deliverable": "Completed modal sprint categorization, 3 agreed ramp danger zones, and entry diagnostic check.",
-              "teacherNotes": [
-                "Prompt students to identify modal anchors immediately: 'shall' / 'shall not' (Strict mandatory rule), 'should' (Standard guideline), 'may' (Permission / Advice).",
-                "Encourage students to articulate WHY handing ground crews a 4-page PDF does not work on the ramp (insufficient turnaround time, cognitive overload)."
-              ],
-              "reviewSprint": [
-                {
-                  "id": 1,
-                  "statement": "Aerodrome operators shall ensure that vehicles operating on aprons are equipped with high-visibility markings.",
-                  "type": "Mandatory Rule (Shall)",
-                  "anchor": "shall ensure",
-                  "badgeColor": "rose",
-                  "explanation": "Mandatory implementing rule under European regulation (EASA Part-ADR.OPS.B.025)."
-                },
-                {
-                  "id": 2,
-                  "statement": "Ground handling personnel should inspect fuel hydrants every morning before scheduled flight waves.",
-                  "type": "Standard Guideline (Should)",
-                  "anchor": "should inspect",
-                  "badgeColor": "amber",
-                  "explanation": "Standard industry best practice; deviation requires formal risk assessment and alternative safety justification."
-                },
-                {
-                  "id": 3,
-                  "statement": "The authority may grant temporary derogations during extraordinary winter weather operations.",
-                  "type": "Permission / Discretion (May)",
-                  "anchor": "may grant",
-                  "badgeColor": "emerald",
-                  "explanation": "Discretionary statutory power granted to the competent national civil aviation authority (DSAC)."
-                },
-                {
-                  "id": 4,
-                  "statement": "The de-icing pad drainage containment system shall not discharge directly into surface waters.",
-                  "type": "Strict Negative Prohibition (Shall Not)",
-                  "anchor": "shall not discharge",
-                  "badgeColor": "rose",
-                  "explanation": "Strict negative legal obligation with zero operational tolerance."
-                }
-              ],
-              "newsPrompts": [
-                {
-                  "id": 1,
-                  "question": "Why is the apron often described as 'the most dangerous 500 metres of an airport'?",
-                  "exampleAnswers": [
-                    "Baggage tugs, catering trucks, fuelling bowsers, and aircraft move in tight, congested spaces simultaneously.",
-                    "High ambient engine noise drowns out vehicle horns, and night or rain drastically reduces driver visibility.",
-                    "Ground personnel work under severe time pressure to meet strict 25- to 30-minute turnaround targets."
-                  ]
-                },
-                {
-                  "id": 2,
-                  "question": "When a new safety bulletin arrives on your desk at 06h30, why is handing workers a 4-page technical PDF ineffective?",
-                  "exampleAnswers": [
-                    "Ground crews work on the tarmac in high-noise environments; they don't sit in front of computer monitors.",
-                    "Dense bureaucratic legal text hides the critical action steps under heavy noun phrases.",
-                    "A fast, direct 90-second verbal briefing with strong action verbs front-loads the vital commands immediately."
-                  ]
-                }
-              ],
-              "diagnostic": {
-                "title": "Safety Alerts & Oral Delivery Entry Spot-Check",
-                "instructions": "Test your entry understanding of safety notices and oral delivery before reading the bulletin.",
-                "questions": [
-                  {
-                    "id": 1,
-                    "q": "What is the primary operational difference between a Safety Directive (SD) and a Safety Information Bulletin (SIB)?",
-                    "answer": "A Safety Directive is mandatory hard law requiring compulsory action by a set deadline. An SIB is an advisory safety alert recommending best practices to mitigate an emerging hazard."
-                  },
-                  {
-                    "id": 2,
-                    "q": "Why do aviation authorities write bulletins with heavy nouns instead of simple active verbs?",
-                    "answer": "Bureaucratic and legal writers prefer formal noun structures (e.g., 'the execution of inspection') to appear neutral, but this slows down operational communication on the tarmac. Front-loading action verbs gives immediate clarity."
-                  },
-                  {
-                    "id": 3,
-                    "q": "What happens if a speaker delivers a technical safety briefing in English with a completely 'flat' rhythm?",
-                    "answer": "Listeners lose focus and cannot distinguish critical safety instructions from background context. Vocal pauses and keyword stress guide the listener's attention."
-                  },
-                  {
-                    "id": 4,
-                    "q": "Why should operational briefings follow the 'Executive 3-Bullet Rule' (max 12 words per bullet)?",
-                    "answer": "Working memory under operational stress can only retain 3 core commands. Short imperative sentences front-load the action so teams remember what to do."
-                  }
-                ]
-              }
-            },
-            "documentExtract": {
-              "title": "Activity 2: Reading Authentic Safety Bulletins (EASA SIB No. 2024-09)",
-              "summary": "Scan authentic extracts from EASA SIB No. 2024-09 regarding GSE impacts, tiered speed regimes, telematics geofencing, and Just Culture reporting.",
-              "modeBadges": [
-                {
-                  "label": "Authentic Extract",
-                  "color": "blue"
-                },
-                {
-                  "label": "Scanning Drill",
-                  "color": "indigo"
-                },
-                {
-                  "label": "Reading Check",
-                  "color": "emerald"
-                }
-              ],
-              "instructions": [
-                {
-                  "step": "Step 1: Scan EASA SIB No. 2024-09",
-                  "detail": "Read the authentic extract below regarding vehicle speed and ramp collision risks. Identify: 1) What causes high-energy impacts, 2) Tiered speed limits, 3) Telematics and geofencing solutions, and 4) Why Just Culture reporting protects aircraft airworthiness."
-                },
-                {
-                  "step": "Step 2: Complete the 4 Comprehension Checks",
-                  "detail": "Answer the 4 comprehension checks to verify factual parameters before translating the text into operational commands."
-                }
-              ],
-              "deliverable": "Extracted speed limits, telematics solutions, and Just Culture reporting guidelines.",
-              "teacherNotes": [
-                "Highlight operative technical terms: 'differentiated speed regimes', 'GSE', 'GPS geofencing', 'Equipment Clearance Area (ECA)', 'Just Culture'.",
-                "Remind students that SIBs are advisory but carry high operational weight during safety audits."
-              ],
-              "docRef": "EASA SIB No. 2024-09 (Adapted Extract) • Subject: Mitigation of Ramp Collision Risks & Speed Management",
-              "docText": "EUROPEAN UNION AVIATION SAFETY AGENCY\nSAFETY INFORMATION BULLETIN\nSIB No.: 2024-09\nIssued: 14 October 2024\nSubject: Mitigation of Ramp Collision Risks and Ground Vehicle Speed Management on Aprons\n\n1. Operational Background & Safety Concern:\nRecent occurrence data reported across European aerodromes highlights a persistent trend of ground vehicle collisions and high-energy Ground Support Equipment (GSE) impacts with aircraft during turnaround servicing. High turnaround workload, congested staging areas, and excessive vehicular velocity contribute to incidents where ground equipment strikes aircraft fuselages, engine cowlings, or radomes. In several occurrences, minor structural impacts have gone unreported by personnel due to fear of disciplinary reprisal, resulting in aircraft departing with undetected structural damage.\n\n2. Differentiated Apron Speed Regimes:\nAerodrome operators should enforce tiered speed limits reflecting localized operational risk:\n• Main Apron Roadways: Speed limits should not exceed 25–30 km/h.\n• Aircraft Stands & Vicinity of Aircraft: Speed must be strictly restricted to walking pace (5–10 km/h) upon entering the designated parking stand.\n• Baggage Make-Up Areas & Enclosed Tunnels: A maximum limit of 10–15 km/h should be enforced.\nProminent painted surface road markings and vertical signage must clearly delineate these speed boundaries.\n\n3. Telematics & Equipment Control:\nAerodrome operators and Ground Handling Service Providers (GHSPs) should promote the installation of physical or electronic speed governors on motorized GSE. Furthermore, GPS-enabled geofencing systems that automatically restrict vehicle maximum speed when penetrating aircraft stand boundaries should be progressively deployed across commercial handling fleets.\n\n4. Training, Authorisation & Just Culture:\nAll personnel operating vehicles airside must hold a valid Apron Driving Authorisation (ADA) in compliance with Point ADR.OR.D.017. Crucially, aerodromes must foster a non-punitive Just Culture framework wherein ground personnel are empowered and actively required to report any vehicle-to-aircraft contact immediately, without fear of automatic penalties, ensuring timely engineering inspections prior to flight release.",
-              "questions": [
-                {
-                  "id": 1,
-                  "q": "What is the primary danger when ground equipment strikes an aircraft at high speed on the apron?",
-                  "answer": "Unreported structural damage to the fuselage, engine cowling, or radome, which can lead to an aircraft departing with undetected, dangerous structural compromise."
-                },
-                {
-                  "id": 2,
-                  "q": "What are the recommended differentiated speed limits for main apron roadways versus aircraft parking stands?",
-                  "answer": "Maximum 25–30 km/h on main apron roadways, and walking pace (5–10 km/h) inside aircraft parking stands."
-                },
-                {
-                  "id": 3,
-                  "q": "How does GPS geofencing improve ramp vehicle safety compared to traditional speed limit signs alone?",
-                  "answer": "GPS geofencing automatically caps the vehicle's maximum speed electronically as soon as it enters the aircraft parking stand, removing reliance on human compliance under time pressure."
-                },
-                {
-                  "id": 4,
-                  "q": "Why is a non-punitive 'Just Culture' essential for preventing catastrophic ramp incidents?",
-                  "answer": "Because ground workers who fear automatic punishment will hide minor scratches or bumps. Just Culture ensures every vehicle-to-aircraft contact is reported immediately so engineers can inspect the aircraft before departure."
-                }
-              ]
-            },
-            "rulesPractice": {
-              "title": "Activity 3: Speaking Clinic: Turning Regulations into Action Commands (The 3-Bullet Rule & Natural Rhythm)",
-              "summary": "Convert heavy regulatory text into direct spoken commands, condense SIB 2024-09 into 3 bullets under 12 words, and practice spoken stress and natural rhythm.",
-              "modeBadges": [
-                {
-                  "label": "Action Commands",
-                  "color": "indigo"
-                },
-                {
-                  "label": "Executive 3-Bullet",
-                  "color": "amber"
-                },
-                {
-                  "label": "Rhythm & Stress Clinic",
-                  "color": "purple"
-                }
-              ],
-              "instructions": [
-                {
-                  "step": "Step 1: Speaking Clinic: From Official Paperwork to Spoken Commands",
-                  "detail": "Examine the 3-step Simplification Engine. Convert 3 dense regulatory formulations from SIB 2024-09 into crisp, direct spoken commands by uncovering the hidden action verb and front-loading the agent."
-                },
-                {
-                  "step": "Step 2: The Executive 3-Bullet Challenge",
-                  "detail": "Condense EASA SIB No. 2024-09 into exactly 3 bullet points. Respect the constraints: Maximum 12 words per bullet, starting with a strong active imperative verb."
-                },
-                {
-                  "step": "Step 3: Natural Rhythm & Keyword Stress Clinic",
-                  "detail": "Mark breath/idea pause lines (|) and identify the stressed content words to avoid flat, monotonous delivery when delivering technical instructions."
-                }
-              ],
-              "deliverable": "3 active ramp commands, 3-bullet executive summary, and chunked read-aloud practice.",
-              "teacherNotes": [
-                "In Task A, highlight how official phrases like 'the execution of continuous surveillance' disguise simple actions like 'monitor continuously'.",
-                "For rhythm, demonstrate monotone delivery vs. rhythmic English delivery with vocal pauses at natural phrase boundaries."
-              ],
-              "simplificationEngine": {
-                "steps": [
-                  {
-                    "num": 1,
-                    "title": "Find the hidden action verb inside the official text",
-                    "example": "\"The execution of continuous surveillance...\" → \"Inspect / Monitor...\" | \"Prior to the entry of vehicles...\" → \"Before entering...\""
-                  },
-                  {
-                    "num": 2,
-                    "title": "Identify the active agent (Who must do it?)",
-                    "example": "\"shall be conducted by the handling team\" → \"The handling team must...\""
-                  },
-                  {
-                    "num": 3,
-                    "title": "Front-load the critical operational command",
-                    "example": "\"Drivers must reduce speed to walking pace before entering the stand.\""
-                  }
-                ],
-                "taskA": [
-                  {
-                    "id": 1,
-                    "sibText": "The execution of continuous surveillance of vehicle speeds on apron roadways shall be conducted by aerodrome safety officers.",
-                    "activeCommand": "Ramp safety officers must monitor vehicle speeds on apron roadways continuously.",
-                    "alternative": "Safety officers shall continuously monitor vehicle speeds on apron roads.",
-                    "rationale": "Replaced heavy noun phrase 'execution of continuous surveillance' with the direct active verb 'monitor' and front-loaded the agent 'Ramp safety officers'."
-                  },
-                  {
-                    "id": 2,
-                    "sibText": "Prior to the entry of ground support equipment into the Equipment Clearance Area, complete cessation of aircraft movement and engine shutdown must be verified.",
-                    "activeCommand": "Drivers must verify the aircraft has stopped and engines are shut down before entering the stand.",
-                    "alternative": "Ground handlers must wait for complete aircraft shutdown before moving equipment inside the red lines.",
-                    "rationale": "Replaced 'Prior to the entry of GSE' and 'complete cessation' with direct instructions 'verify the aircraft has stopped before entering'."
-                  },
-                  {
-                    "id": 3,
-                    "sibText": "Immediate mandatory notification of any vehicle contact with aircraft structure shall be submitted by ground personnel pursuant to Just Culture principles.",
-                    "activeCommand": "Ground personnel must report any vehicle contact with an aircraft immediately.",
-                    "alternative": "Handlers must immediately notify flight operations of any aircraft bump under Just Culture.",
-                    "rationale": "Replaced 'Immediate mandatory notification shall be submitted' with direct command 'must report any vehicle contact immediately'."
-                  }
-                ]
-              },
-              "threeBulletRule": {
-                "constraints": [
-                  "Constraint 1: Exactly 3 bullet points.",
-                  "Constraint 2: Maximum 12 words per bullet.",
-                  "Constraint 3: Every bullet must begin with a strong, active action verb (e.g., Enforce, Fit, Report, Maintain, Restrict)."
-                ],
-                "modelAnswers": [
-                  {
-                    "bullet": 1,
-                    "text": "Enforce walking pace speed limits inside all aircraft parking stands.",
-                    "wordCount": 10,
-                    "verb": "Enforce"
-                  },
-                  {
-                    "bullet": 2,
-                    "text": "Fit motorized ground equipment with electronic speed limiters and GPS geofencing.",
-                    "wordCount": 11,
-                    "verb": "Fit"
-                  },
-                  {
-                    "bullet": 3,
-                    "text": "Report any vehicle contact with aircraft immediately under Just Culture rules.",
-                    "wordCount": 11,
-                    "verb": "Report"
-                  }
-                ]
-              },
-              "chunkingClinic": {
-                "title": "Speaking Clinic: Natural Rhythm & Keyword Stress",
-                "explanation": "In fast-paced ramp operations, speaking in a flat monotone causes listeners to tune out. Breaking instructions into natural phrase chunks (|) and putting vocal weight on key action words guides the listener's attention immediately.",
-                "example": {
-                  "chunked": "On aircraft stands | reduce speed to walking pace | and watch for wingtip clearance.",
-                  "stressed": [
-                    "aircraft stands",
-                    "reduce speed",
-                    "walking pace",
-                    "wingtip clearance"
-                  ]
-                },
-                "drill": {
-                  "raw": "When driving ground support equipment near parked aircraft drivers must maintain walking pace and immediately report any accidental contact to the safety supervisor.",
-                  "chunked": "When driving ground support equipment near parked aircraft | drivers must maintain walking pace | and immediately report any accidental contact | to the safety supervisor.",
-                  "stressed": [
-                    "driving",
-                    "ground support equipment",
-                    "parked aircraft",
-                    "walking pace",
-                    "immediately report",
-                    "accidental contact",
-                    "safety supervisor"
-                  ]
-                }
-              }
-            },
-            "spokenActivity": {
-              "title": "Activity 4: Spoken Simulation: 'The 90-Second Stand-Up' Briefing",
-              "summary": "Pair simulation delivering a 90-second morning ramp briefing as TSEEAC Airside Safety Officer, fielding 2 operational challenge questions, and receiving peer feedback.",
-              "modeBadges": [
-                {
-                  "label": "Pairs (2 students)",
-                  "color": "blue"
-                },
-                {
-                  "label": "90-Second Briefing",
-                  "color": "indigo"
-                },
-                {
-                  "label": "Operational Challenges",
-                  "color": "amber"
-                },
-                {
-                  "label": "Peer Feedback",
-                  "color": "purple"
-                }
-              ],
-              "instructions": [
-                {
-                  "step": "Step 1: Role Setup & 3-Minute Preparation",
-                  "detail": "Work in pairs: Student A is the TSEEAC Airside Safety Inspector (The Speaker); Student B is the Ground Service Supervisor (The Interlocutor). Student A selects Scenario 1, takes 3 minutes to plan delivery using strong action verbs, natural rhythm, and signposts. Do not read verbatim!"
-                },
-                {
-                  "step": "Step 2: Deliver the 90-Second Stand-Up Briefing",
-                  "detail": "Student A delivers a crisp 90-second spoken briefing to Student B using the target signposts ('Good morning team...', 'The primary takeaway is...', 'Under no circumstances should you...')."
-                },
-                {
-                  "step": "Step 3: Interlocutor Challenges & Peer Feedback Checklist",
-                  "detail": "Student B listens actively and asks their 2 mandatory operational challenge questions. Student A responds immediately. Student B then reviews the 4-item Peer Feedback Checklist and gives 1 minute of oral feedback before switching roles."
-                },
-                {
-                  "step": "Step 4: Swap Roles for Scenario 2 or 3",
-                  "detail": "Swap roles: Student B becomes the Speaker for Scenario 2 (Unreported Scrape) or Scenario 3 (Equipment Staging Congestion)."
-                }
-              ],
-              "deliverable": "Delivered 90-second oral briefing, answered 2 operational challenges, and completed peer checklist evaluation.",
-              "teacherNotes": [
-                "Enforce strict 90-second pacing with a timer. Stand-up briefings on the ramp are brief, punchy, and direct.",
-                "Ensure Student B does NOT read their questions until Student A finishes speaking. Focus on active listening."
-              ],
-              "context": "It is 06:45 AM at a busy regional airport hub in France. The morning departure push is starting. Aerodrome safety data from the past month shows 4 vehicle speeding alerts on Taxiway Bravo roadway and 1 unreported belt-loader scrape on an A320 cargo door. As TSEEAC Airside Safety Inspector, you are delivering the mandatory morning stand-up briefing to the ramp handling team.",
-              "targetSignposts": [
-                "\"Good morning team, I need your full attention for a safety alert...\"",
-                "\"The primary takeaway from this bulletin is...\"",
-                "\"Under no circumstances should you exceed walking pace near aircraft...\"",
-                "\"Our top priority on the ramp today is...\"",
-                "\"Under Just Culture, remember that reporting is non-punitive...\"",
-                "\"Please make sure your teams document...\""
-              ],
-              "scenarios": [
-                {
-                  "id": 1,
-                  "title": "Scenario 1: Apron Speeding & GPS Geofencing Enforcement",
-                  "speaker": {
-                    "role": "TSEEAC Airside Safety Inspector (The Speaker)",
-                    "badge": "Speaker",
-                    "mission": "Deliver a crisp 90-second briefing to the Baggage Handling Supervisor on vehicle speed enforcement.",
-                    "points": [
-                      "Telematics data recorded 6 baggage tugs exceeding 35 km/h on main apron roadways during yesterday's evening push.",
-                      "Speed limits are strictly 25–30 km/h on roadways and 5–10 km/h (walking pace) once inside aircraft stands.",
-                      "GPS geofencing will activate next Monday, automatically capping vehicle speed inside all stands.",
-                      "Any driver repeatedly caught speeding faces immediate temporary suspension of their Apron Driving Authorisation (ADA)."
-                    ],
-                    "targetSignposts": [
-                      "\"Good morning team, I need your full attention for a safety alert...\"",
-                      "\"The primary takeaway from this bulletin is...\"",
-                      "\"Under no circumstances should you exceed walking pace near aircraft...\""
-                    ]
-                  },
-                  "interlocutor": {
-                    "role": "Baggage Handling Supervisor (The Interlocutor)",
-                    "badge": "Interlocutor",
-                    "context": "You manage 18 baggage tug drivers under severe 25-minute low-cost turnaround targets.",
-                    "mission": "Listen carefully and challenge Student A on real operational details with your 2 mandatory questions.",
-                    "mandatoryQuestions": [
-                      "\"If the GPS geofencing slows our tugs to 5 km/h inside the stand, how do we meet the 25-minute turnaround deadline without taking flight delays?\"",
-                      "\"Who will pay for installing electronic speed limiters on our older diesel tractors?\""
-                    ]
-                  }
-                },
-                {
-                  "id": 2,
-                  "title": "Scenario 2: Unreported GSE Aircraft Scrape & Just Culture Reporting",
-                  "speaker": {
-                    "role": "TSEEAC Airside Safety Inspector (The Speaker)",
-                    "badge": "Speaker",
-                    "mission": "Deliver a 90-second briefing to the Aircraft Turnaround Team Lead on reporting accidental contacts.",
-                    "points": [
-                      "Last week, maintenance found a 15-cm dent on an A320 lower cargo door that was never reported by the handling crew.",
-                      "Flying with undetected fuselage or composite skin damage can lead to inflight cabin depressurization.",
-                      "Emphasize our non-punitive Just Culture: accidents and minor bumps reported immediately will not result in disciplinary action.",
-                      "Concealing or failing to report vehicle contact is considered gross misconduct and leads to permanent revocation of airside access."
-                    ],
-                    "targetSignposts": [
-                      "\"We have received an urgent safety update regarding...\"",
-                      "\"Our top priority on the ramp today is...\"",
-                      "\"Under Just Culture, remember that reporting is strictly non-punitive...\""
-                    ]
-                  },
-                  "interlocutor": {
-                    "role": "Aircraft Turnaround Team Lead (The Interlocutor)",
-                    "badge": "Interlocutor",
-                    "context": "You supervise the loading ramp crews who fear losing their jobs or bonuses if an incident is logged.",
-                    "mission": "Listen to the briefing and ensure worker protection under the safety reporting system.",
-                    "mandatoryQuestions": [
-                      "\"My handlers are terrified they will be fired if they report a dent on a brand-new aircraft. Can you guarantee in writing they won't lose their jobs?\"",
-                      "\"If we report a minor scrape, how long does the safety inspection take before the flight is cleared to depart?\""
-                    ]
-                  }
-                },
-                {
-                  "id": 3,
-                  "title": "Scenario 3: Equipment Staging Area (ESA) Congestion & Stand Clearance",
-                  "speaker": {
-                    "role": "TSEEAC Airside Safety Inspector (The Speaker)",
-                    "badge": "Speaker",
-                    "mission": "Deliver a 90-second briefing to the Catering & Fuelling Dispatcher on keeping stands clear before arrival.",
-                    "points": [
-                      "Ground vehicles are repeatedly parking inside the Equipment Clearance Area (ECA) before aircraft have completely stopped at the gate.",
-                      "Marshallers and docking guidance systems (VDGS) are being obstructed by pre-positioned baggage carts and high-loaders.",
-                      "All GSE must remain parked inside painted Equipment Staging Areas (ESA) until engines are shut down and anti-collision beacons are off.",
-                      "Safety officers will issue immediate Level 2 non-compliance notices to any handler parking inside the red stand lines prematurely."
-                    ],
-                    "targetSignposts": [
-                      "\"Due to persistent stand congestion, we are enforcing strict staging rules...\"",
-                      "\"The critical operational trigger is...\"",
-                      "\"Please make sure your teams document...\""
-                    ]
-                  },
-                  "interlocutor": {
-                    "role": "Catering & Fuelling Dispatcher (The Interlocutor)",
-                    "badge": "Interlocutor",
-                    "context": "You coordinate 12 high-lift catering trucks and 6 fuel bowsers serving consecutive departure banks.",
-                    "mission": "Listen to the briefing and challenge Student A on space limitations during peak banks.",
-                    "mandatoryQuestions": [
-                      "\"The painted staging boxes are too small for our wide-body catering trucks. Where should our drivers wait during peak departure banks?\"",
-                      "\"What should our driver do if the docking guidance system fails and the marshaller gives conflicting hand signals?\""
-                    ]
-                  }
-                }
-              ],
-              "peerChecklist": [
-                {
-                  "id": 1,
-                  "label": "Did Student A use strong action verbs without reading word-for-word from notes?"
-                },
-                {
-                  "id": 2,
-                  "label": "Did Student A respect the 90-second time limit without rushing or trailing off?"
-                },
-                {
-                  "id": 3,
-                  "label": "Did Student A use professional signposts (\"Good morning team...\", \"The primary takeaway is...\")?"
-                },
-                {
-                  "id": 4,
-                  "label": "Did Student A give a confident, safety-focused answer to both operational challenge questions?"
-                }
-              ]
-            },
-            "safetyCheck": {
-              "title": "Activity 5: Safety Check: What Could Go Wrong?",
-              "summary": "Collaborative 4-step ramp safety evaluation and 60-second stand-up reality wrap-up.",
-              "modeBadges": [
-                {
-                  "label": "Collaborative Check",
-                  "color": "emerald"
-                },
-                {
-                  "label": "Risk Mitigation",
-                  "color": "blue"
-                },
-                {
-                  "label": "Spoken Wrap-Up",
-                  "color": "amber"
-                }
-              ],
-              "instructions": [
-                {
-                  "step": "Step 1: Complete the 4-Step Safety Evaluation",
-                  "detail": "In pairs, analyze the vehicle collision and ramp safety chain: Hazard, Operational Risk, Preventative Mitigations, and Agreed Operational Decision."
-                },
-                {
-                  "step": "Step 2: Rules to Reality (60-Second Pair Wrap-Up)",
-                  "detail": "Deliver an unscripted 60-second verbal summary explaining why clear stand-up briefings and Just Culture are critical on the ramp."
-                }
-              ],
-              "deliverable": "Completed safety analysis table and 60-second verbal stand-up wrap-up.",
-              "teacherNotes": [
-                "Prompt students to link the linguistic clarity of the morning briefing to concrete safety outcomes on the tarmac.",
-                "Emphasize that unreported vehicle scrapes can cause catastrophic inflight skin failures."
-              ],
-              "rows": [
-                {
-                  "question": "1. The Operational Hazard: What is the primary physical hazard identified in EASA SIB No. 2024-09?",
-                  "answer": "High-energy Ground Support Equipment (GSE) collisions with aircraft and personnel in congested apron areas under tight 30-minute turnaround pressures."
-                },
-                {
-                  "question": "2. The Critical Risk: What catastrophic consequence occurs if GSE vehicle impacts go unreported?",
-                  "answer": "Aircraft depart with undetected structural damage to fuselages, radomes, or engine cowlings, posing severe risks of inflight failure or cabin depressurization."
-                },
-                {
-                  "question": "3. Agreed Mitigations: What physical and operational measures must aerodrome operators enforce?",
-                  "answer": "Tiered speed limits (25–30 km/h on roadways, 5–10 km/h walking pace on stand), speed governors, GPS geofencing, and strict ADA training under ADR.OR.D.017."
-                },
-                {
-                  "question": "4. Final Operational Decision: How does the TSEEAC Safety Officer maintain a healthy reporting culture?",
-                  "answer": "Enforces a non-punitive Just Culture ensuring all accidental contacts are reported immediately without fear of reprisal, backed by regular Ramp Safety Committee reviews."
-                }
-              ],
-              "rulesToReality": {
-                "title": "Rules to Reality: 60-Second Stand-Up Spoken Wrap-Up",
-                "prompt": "In pairs, deliver an unscripted 60-second operational summary explaining: 1) What is the core message of SIB 2024-09? 2) Why do ground crews sometimes exceed speed limits or conceal minor scrapes under tight turnarounds? 3) How does an active 90-second morning stand-up briefing prevent a serious aircraft accident?"
-              }
-            }
-          },
-          "revision": {
-            "title": "Session 2 Vocabulary • Ramp Safety & Vehicle Speed Management",
-            "summary": "Master the 30 high-frequency regulatory terms, ground equipment concepts, and occurrence reporting principles from EASA SIB No. 2024-09 and Part-ADR.OPS.B.025.",
-            "terms": [
-              {
-                "num": "01",
-                "term": "Safety Information Bulletin (SIB)",
-                "definition": "An advisory, non-mandatory EASA safety publication highlighting recurring operational hazards and recommended risk mitigation strategies.",
-                "part": "Part 1"
-              },
-              {
-                "num": "02",
-                "term": "Safety Directive (SD)",
-                "definition": "A mandatory statutory order issued by a competent authority under ADR.AR.A.040 to address an immediate unsafe aerodrome condition.",
-                "part": "Part 2"
-              },
-              {
-                "num": "03",
-                "term": "European Central Repository (ECR)",
-                "definition": "The centralized EU database collecting and analyzing civil aviation occurrence reports pursuant to Regulation (EU) No 376/2014.",
-                "part": "Part 3"
-              },
-              {
-                "num": "04",
-                "term": "Point ADR.OPS.B.025",
-                "definition": "The EASA implementing rule establishing aerodrome operator obligations for vehicle operation, driver licensing, and movement area speed rules.",
-                "part": "Part 4"
-              },
-              {
-                "num": "05",
-                "term": "National Competent Authority (NCA / DSAC)",
-                "definition": "The national civil aviation administration responsible for safety certification, regulatory oversight, and statutory enforcement at aerodromes.",
-                "part": "Part 5"
-              },
-              {
-                "num": "06",
-                "term": "Ground Handling Service Provider (GHSP)",
-                "definition": "A commercial organization contracted by airlines to perform ramp servicing, baggage handling, pushback, and aircraft turnaround operations.",
-                "part": "Part 6"
-              },
-              {
-                "num": "07",
-                "term": "Apron Roadway",
-                "definition": "A painted, designated vehicular transit route on the apron surface outside aircraft parking positions, typically regulated at 25–30 km/h.",
-                "part": "Part 7"
-              },
-              {
-                "num": "08",
-                "term": "Aircraft Stand / Servicing Zone",
-                "definition": "The designated apron area where an aircraft is parked, where vehicular speeds are strictly capped at walking pace (5–10 km/h).",
-                "part": "Part 8"
-              },
-              {
-                "num": "09",
-                "term": "Baggage Make-up Area",
-                "definition": "An enclosed or semi-enclosed apron sorting facility with heavy tug traffic, capped at 10–15 km/h with mandatory blind-corner mirrors.",
-                "part": "Part 9"
-              },
-              {
-                "num": "10",
-                "term": "Equipment Clearance Area (ECA)",
-                "definition": "A marked perimeter surrounding an aircraft stand kept strictly clear of all vehicles until the aircraft has stopped and engines are shut down.",
-                "part": "Part 10"
-              },
-              {
-                "num": "11",
-                "term": "Equipment Staging Area (ESA)",
-                "definition": "A painted holding bay where ground support equipment waits safely outside the aircraft path prior to turnaround commencement.",
-                "part": "Part 11"
-              },
-              {
-                "num": "12",
-                "term": "Differentiated Speed Limits",
-                "definition": "Tiered vehicular speed boundaries tailored to specific risk levels across roadways, parking stands, and baggage handling facilities.",
-                "part": "Part 12"
-              },
-              {
-                "num": "13",
-                "term": "Ground Support Equipment (GSE)",
-                "definition": "Motorized and towed airside equipment including baggage tractors, belt loaders, pushback tugs, catering vehicles, and de-icing rigs.",
-                "part": "Part 13"
-              },
-              {
-                "num": "14",
-                "term": "Speed Governor",
-                "definition": "A mechanical or electronic device installed on airside vehicles that physically prevents the throttle from exceeding a calibrated speed limit.",
-                "part": "Part 14"
-              },
-              {
-                "num": "15",
-                "term": "GPS Geofencing",
-                "definition": "Satellite navigation technology that automatically throttles a ground vehicle's top speed when crossing into an aircraft parking stand perimeter.",
-                "part": "Part 15"
-              },
-              {
-                "num": "16",
-                "term": "Vehicle Telematics",
-                "definition": "On-board electronic logging systems monitoring vehicle location, speed thresholds, sudden braking, and collision impacts in real time.",
-                "part": "Part 16"
-              },
-              {
-                "num": "17",
-                "term": "Tractor-Trailer Train",
-                "definition": "A motorized baggage tug towing multiple connected baggage carts, requiring extended stopping distances and wide cornering clearances.",
-                "part": "Part 17"
-              },
-              {
-                "num": "18",
-                "term": "Blind-Spot Geometry",
-                "definition": "Areas around widebody aircraft fuselages, engines, and heavy GSE where the driver's direct field of view is completely obstructed.",
-                "part": "Part 18"
-              },
-              {
-                "num": "19",
-                "term": "Apron Driving Authorisation (ADA)",
-                "definition": "The mandatory aerodrome driving permit issued only after passing theoretical regulations and practical vehicle handling tests.",
-                "part": "Part 19"
-              },
-              {
-                "num": "20",
-                "term": "Point ADR.OR.D.017",
-                "definition": "The EASA organization requirement mandating formal training syllabi, driving proficiency tests, and recurrent assessments for airside staff.",
-                "part": "Part 20"
-              },
-              {
-                "num": "21",
-                "term": "Vehicle Roadworthiness",
-                "definition": "The certified mechanical condition of an airside vehicle, verifying operational brakes, steering, lights, horns, and emergency cut-offs.",
-                "part": "Part 21"
-              },
-              {
-                "num": "22",
-                "term": "Mobile Radar Unit",
-                "definition": "Portable speed-detection radar deployed by aerodrome safety inspectors to monitor vehicular compliance on major apron roadways.",
-                "part": "Part 22"
-              },
-              {
-                "num": "23",
-                "term": "CS-ADR-DSN Visual Standards",
-                "definition": "EASA Certification Specifications establishing official visual requirements for movement area road markings, roundels, and stop bars.",
-                "part": "Part 23"
-              },
-              {
-                "num": "24",
-                "term": "Right-of-Way Rule",
-                "definition": "The foundational airside traffic rule giving absolute priority to moving or taxiing aircraft and emergency vehicles over service traffic.",
-                "part": "Part 24"
-              },
-              {
-                "num": "25",
-                "term": "Just Culture",
-                "definition": "An operational safety framework where personnel are encouraged to report mistakes and near-misses without fear of punitive action.",
-                "part": "Part 25"
-              },
-              {
-                "num": "26",
-                "term": "Unreported Aircraft Impact",
-                "definition": "A hazardous situation where low-speed vehicle contact with an airframe is concealed, risking departure with uninspected structural damage.",
-                "part": "Part 26"
-              },
-              {
-                "num": "27",
-                "term": "Near-Miss Occurrence",
-                "definition": "An unplanned event that did not result in injury or structural damage but had significant potential to cause a collision.",
-                "part": "Part 27"
-              },
-              {
-                "num": "28",
-                "term": "Ramp Safety Committee (RSC)",
-                "definition": "A joint multi-agency forum uniting the airport operator, airlines, and ground handlers to review safety data and audit speed compliance.",
-                "part": "Part 28"
-              },
-              {
-                "num": "29",
-                "term": "Joint Safety Audit",
-                "definition": "A formal collaborative inspection conducted by aerodrome inspectors and ground handling managers to verify apron safety practices.",
-                "part": "Part 29"
-              },
-              {
-                "num": "30",
-                "term": "De-Nominalization",
-                "definition": "The communicative language technique of converting heavy passive noun phrases into direct, punchy active spoken commands.",
-                "part": "Part 30"
-              }
-            ]
-          },
-          "materials": {
-            "quizTitle": "Airside Scenario Quiz • Ramp Safety & SIB 2024-09",
-            "quiz": [
-              {
-                "question": "Under EASA SIB No. 2024-09, what is the maximum recommended vehicle speed in the immediate vicinity of a parked aircraft on stand?",
-                "options": [
-                  "25–30 km/h (Standard apron road speed)",
-                  "5–10 km/h (Strict walking pace)",
-                  "15–20 km/h (Baggage tunnel speed)",
-                  "No speed limit applies once the aircraft engines are off"
-                ],
-                "correct": 1,
-                "explanation": "Section 4.A of SIB No. 2024-09 explicitly recommends that vehicle speeds in Aircraft Stand / Servicing Zones be strictly limited to 5–10 km/h (walking pace) in the vicinity of parked aircraft."
-              },
-              {
-                "question": "What is the primary operational purpose of establishing a designated Equipment Clearance Area (ECA)?",
-                "options": [
-                  "To store decommissioned vehicles awaiting maintenance",
-                  "To ensure the stand remains completely clear of GSE until the aircraft has stopped and engines are shutdown",
-                  "To allow baggage tugs to overtake slower catering trucks",
-                  "To park private passenger vehicles near the terminal gate"
-                ],
-                "correct": 1,
-                "explanation": "Equipment Clearance Areas (ECA) ensure an unobstructed safety buffer around the aircraft trajectory during arrival, preventing premature servicing approaches while engines and collision lights are active."
-              },
-              {
-                "question": "If a ground vehicle makes minor contact with an aircraft fuselage causing only a superficial scratch, what must happen under a Just Culture framework?",
-                "options": [
-                  "The driver should wipe the scratch and proceed if departure time is within 10 minutes",
-                  "The driver must immediately report the contact to the safety team without fear of punishment, enabling a mandatory maintenance inspection",
-                  "The handling company must issue an immediate suspension before investigating",
-                  "Only contacts exceeding 20 km/h require mandatory occurrence reporting"
-                ],
-                "correct": 1,
-                "explanation": "Under Section 4.B of SIB 2024-09 and Just Culture principles, even superficial low-speed scrapes must be reported immediately without punitive fear to guarantee certified maintenance release before flight."
-              },
-              {
-                "question": "What is the fundamental legal difference between an EASA Safety Information Bulletin (SIB) and a Safety Directive (SD)?",
-                "options": [
-                  "An SIB is legally binding while an SD is merely advisory",
-                  "An SIB is informative and non-mandatory guidance, whereas an SD is a mandatory European statutory order",
-                  "An SIB is published by national airlines while an SD is issued by ICAO",
-                  "There is no legal difference; both carry immediate regulatory penalties"
-                ],
-                "correct": 1,
-                "explanation": "Section 5 of SIB 2024-09 specifies that an SIB is informative and non-mandatory. A Safety Directive (SD) under ADR.AR.A.040 is a mandatory statutory instrument issued to correct an urgent unsafe condition."
-              }
-            ],
-            "videos": [
-              {
-                "title": "EASA Ground Safety & Ramp Collision Precursor Analysis",
-                "duration": "8 mins",
-                "summary": "Technical briefing analyzing European Central Repository (ECR) safety data, exploring root causes of apron vehicle collisions and near-misses.",
-                "url": "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"
-              },
-              {
-                "title": "Apron Vehicle Operations & Stand Clearance Demarcation",
-                "duration": "10 mins",
-                "summary": "Operational visual walkthrough illustrating Equipment Clearance Areas (ECA), Equipment Staging Areas (ESA), and tractor-trailer blind-spot geometry.",
-                "url": "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"
-              },
-              {
-                "title": "Just Culture in Ground Handling & Non-Punitive Reporting",
-                "duration": "7 mins",
-                "summary": "Industry safety seminar detailing how transparent, non-punitive incident reporting prevents undetected aircraft structural damage.",
-                "url": "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"
-              }
-            ],
-            "articles": [
-              {
-                "topic": "Vehicle Telematics",
-                "sourceTag": "EASA SIB 2024-09",
-                "heading": "Telematics & Geofencing: How Modern Hubs Enforce Apron Speed Regimes",
-                "title": "Telematics & Geofencing: How Modern Hubs Enforce Apron Speed Regimes",
-                "snippet": "How European international aerodromes deploy automated satellite geofencing to physically restrict ground vehicle speed inside aircraft servicing bays.",
-                "summary": "How European international aerodromes deploy automated satellite geofencing to physically restrict ground vehicle speed inside aircraft servicing bays.",
-                "readTime": "Estimated read: 4 mins",
-                "url": "https://ad.easa.europa.eu/ad/2024-09",
-                "content": [
-                  "Modern airport aprons are high-density, multi-stakeholder operational environments where tight turnaround targets collide with strict safety limits. Under Point ADR.OPS.B.025, aerodrome operators must establish enforceable movement rules.",
-                  "Leading European hubs now integrate GPS telematics directly into ground support equipment (GSE). When a baggage tug or belt loader crosses the virtual boundary into an aircraft stand, on-board governors automatically restrict throttle response, capping speed at 10 km/h regardless of driver acceleration.",
-                  "Data gathered from telematics transponders flows in real time to the airport Ramp Safety Committee. Any over-speed occurrence, harsh braking event, or unauthorized stand entry triggers an automated digital safety flag, enabling targeted driver coaching rather than punitive confrontation.",
-                  "By physically eliminating the mechanical possibility of high-energy vehicle impacts near parked aircraft, geofenced speed limiters protect multimillion-euro airframes and ground personnel working in tight turnaround zones."
-                ],
-                "takeaways": [
-                  "GPS geofencing automatically caps ground vehicle top speeds when entering aircraft servicing stands.",
-                  "Telematics data enables constructive safety coaching under non-punitive Just Culture frameworks.",
-                  "Restricting vehicles to walking pace (5-10 km/h) eliminates high-energy airframe collision damage."
-                ],
-                "vocab": [
-                  "GPS Geofencing",
-                  "Speed Governor",
-                  "Apron Driving Authorisation (ADA)",
-                  "Just Culture"
-                ]
-              },
-              {
-                "topic": "Composite Airframe Safety",
-                "sourceTag": "Accident Investigation Digest",
-                "heading": "The Hidden Hazard of Unreported Composite Airframe Ramp Contacts",
-                "title": "The Hidden Hazard of Unreported Composite Airframe Ramp Contacts",
-                "snippet": "Investigating how low-speed ground vehicle scrapes with carbon-fiber fuselages can cause internal composite delamination without visible exterior paint loss.",
-                "summary": "Investigating how low-speed ground vehicle scrapes with carbon-fiber fuselages can cause internal composite delamination without visible exterior paint loss.",
-                "readTime": "Estimated read: 5 mins",
-                "url": "https://skybrary.aero/articles/ground-handling-risk",
-                "content": [
-                  "Unlike conventional aluminum alloy airframes which show visible dents following vehicle impacts, modern carbon-fiber reinforced polymer (CFRP) fuselages (such as on the Airbus A350 and Boeing 787) may absorb a low-speed GSE impact with zero visible surface deformation.",
-                  "However, internal structural plies can suffer severe subsurface delamination. If ground staff fail to report a 5 km/h contact due to fear of disciplinary action, the aircraft may depart with critically degraded structural integrity.",
-                  "During flight at 38,000 feet, internal cabin pressurization places high hoop stress on the fuselage barrel. Subsurface delaminations that went unnoticed on the ramp can propagate under cyclic cabin pressure loads, leading to emergency decompressions.",
-                  "This makes Just Culture reporting vital: aerodromes must foster an operational environment where frontline handlers report even the slightest paint scuff immediately, enabling non-destructive ultrasonic testing before flight release."
-                ],
-                "takeaways": [
-                  "Carbon-fiber composite airframes can suffer internal ply delamination with zero visible exterior denting.",
-                  "Cyclic cabin pressurization loads can cause hidden ramp impact damage to propagate catastrophically in flight.",
-                  "Frontline workers must feel empowered to report all vehicle contacts immediately under non-punitive Just Culture rules."
-                ],
-                "vocab": [
-                  "Carbon-Fiber Composite (CFRP)",
-                  "Subsurface Delamination",
-                  "Cabin Pressurization Stress",
-                  "Non-Destructive Testing (NDT)"
-                ]
-              },
-              {
-                "topic": "Apron Markings & Design",
-                "sourceTag": "EASA Infrastructure Standards • CS-ADR-DSN",
-                "heading": "Designing Apron Visual Road Markings under CS-ADR-DSN",
-                "title": "Designing Apron Visual Road Markings under CS-ADR-DSN",
-                "snippet": "A civil engineering guide to implementing standardized speed roundels, stop bars, yield markings, and convex blind-spot mirrors across complex apron layouts.",
-                "summary": "A civil engineering guide to implementing standardized speed roundels, stop bars, yield markings, and convex blind-spot mirrors across complex apron layouts.",
-                "readTime": "Estimated read: 4 mins",
-                "url": "https://www.easa.europa.eu/en/domains/aerodromes",
-                "content": [
-                  "Under EASA Certification Specifications (CS-ADR-DSN), visual movement area markings must provide unmistakable guidance to ground operators day and night.",
-                  "Apron roadways require retroreflective white or yellow boundary lines, high-contrast speed limit roundels at all major entry junctions, and mandatory stop bars before active taxi lane crossings. In congested baggage tunnels, convex safety mirrors must be positioned at every 90-degree corner to eliminate blind-spot collisions.",
-                  "Furthermore, Equipment Clearance Areas (ECA) surrounding aircraft parking stands must be painted with bold red boundary hatching to signal to vehicle operators that no GSE may enter the box until the arriving aircraft has brought its engines to a full stop and anti-collision beacons are switched off.",
-                  "Standardized paint markings, refreshed semi-annually with high-friction glass beads, ensure that night-shift drivers navigating heavy rain can instantly distinguish between safe driving lanes and prohibited aircraft maneuvering zones."
-                ],
-                "takeaways": [
-                  "Standardized road markings provide high-contrast visual cues preventing vehicle encroachment onto aircraft taxi lanes.",
-                  "Equipment Clearance Areas (ECA) must remain 100% clear until aircraft engines and beacons are off.",
-                  "High-friction glass bead paint guarantees night conspicuity in adverse weather conditions."
-                ],
-                "vocab": [
-                  "Equipment Clearance Area (ECA)",
-                  "Retroreflective Marking",
-                  "Stop Bar Marking",
-                  "Apron Roadway Roundel"
-                ]
-              }
-            ],
-            "grammar": {
-              "title": "De-Nominalization: Turning Stiff Rules into Active Commands",
-              "badge": "CEFR B1–B2 Spoken Precision",
-              "patternTitle": "The Simplification Formula",
-              "formula": "Heavy Stiff Noun Phrase -> Direct Imperative Verb + Clear Operational Object",
-              "rulesTitle": "Why De-Nominalization Matters on the Ramp",
-              "rules": [
-                "<strong>Heavy Written Style (Nominalization):</strong> Bureaucratic aviation texts stack abstract nouns (e.g., <em>'the execution of verification'</em>, <em>'prior to the initiation of pushback'</em>).",
-                "<strong>Active Spoken Style (De-Nominalization):</strong> In real-time ramp briefings, replace abstract nouns with direct action verbs (e.g., <em>'verify immediately'</em>, <em>'before you push back'</em>).",
-                "<strong>Clarity under Pressure:</strong> Ground handlers working with high-noise turbine environments require crisp, unmistakable instructions containing zero grammatical clutter."
-              ],
-              "trap": "<strong>⚠️ Spoken English Pitfall:</strong> French speakers frequently translate noun-heavy structures literally (<em>'procéder à la vérification'</em> -> <em>'proceed to the verification'</em>). In English ramp briefings, this sounds bureaucratic and slows comprehension. Always use the active verb: <strong>'Check the area'</strong> or <strong>'Inspect the stand'</strong>!",
-              "examplesTitle": "Authentic EASA Part-ADR.OPS Simplification Examples",
-              "examples": [
-                "Stiff: <em>'The execution of surveillance of vehicle velocity shall be conducted.'</em> -> Active: <strong>'Monitor vehicle speed continuously.'</strong>",
-                "Stiff: <em>'Prior to the commencement of aircraft pushback operations...'</em> -> Active: <strong>'Before you push back the aircraft...'</strong>",
-                "Stiff: <em>'Effect the immediate notification of structural contacts.'</em> -> Active: <strong>'Report any aircraft contact immediately.'</strong>",
-                "Stiff: <em>'Maintain verification of driver authorization documentation.'</em> -> Active: <strong>'Check driver permits daily.'</strong>"
-              ]
-            },
-            "resources": [
-              {
-                "tag": "EASA Official",
-                "name": "EASA Aerodrome Regulations & Standards",
-                "desc": "Consolidated European rules for aerodrome certification, safety oversight, and management systems.",
-                "url": "https://www.easa.europa.eu/en/domains/aerodromes"
-              },
-              {
-                "tag": "National Authority",
-                "name": "Direction Générale de l'Aviation Civile (DGAC)",
-                "desc": "French civil aviation authority oversight circulars, aerodrome safety audits, and technical directives.",
-                "url": "https://www.enac.fr/en"
-              },
-              {
-                "tag": "Safety Encyclopedia",
-                "name": "SKYbrary Aviation Safety Knowledgebase",
-                "desc": "International operational safety articles covering apron safety, runway incursions, and human factors.",
-                "url": "https://skybrary.aero"
-              },
-              {
-                "tag": "Eurocontrol Hub",
-                "name": "Eurocontrol Airport Operations & Safety",
-                "desc": "European air traffic management data, apron collision alerts, and operational safety action groups.",
-                "url": "https://www.eurocontrol.int"
-              },
-              {
-                "tag": "Investigation Board",
-                "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
-                "desc": "Official French aviation safety investigation authority reports and safety recommendations.",
-                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea"
-              },
-              {
-                "tag": "US FAA Standards",
-                "name": "FAA Airport Safety & Standards Hub",
-                "desc": "Federal aviation administration advisory circulars, pavement marking standards, and FOD control guides.",
-                "url": "https://www.faa.gov/airports/airport_safety"
-              }
-            ],
-            "portals": [
-              {
-                "tag": "EASA Official",
-                "name": "EASA Aerodrome Regulations & Standards",
-                "desc": "Consolidated European rules for aerodrome certification, safety oversight, and management systems.",
-                "url": "https://www.easa.europa.eu/en/domains/aerodromes"
-              },
-              {
-                "tag": "National Authority",
-                "name": "Direction Générale de l'Aviation Civile (DGAC)",
-                "desc": "French civil aviation authority oversight circulars, aerodrome safety audits, and technical directives.",
-                "url": "https://www.enac.fr/en"
-              },
-              {
-                "tag": "Safety Encyclopedia",
-                "name": "SKYbrary Aviation Safety Knowledgebase",
-                "desc": "International operational safety articles covering apron safety, runway incursions, and human factors.",
-                "url": "https://skybrary.aero"
-              },
-              {
-                "tag": "Eurocontrol Hub",
-                "name": "Eurocontrol Airport Operations & Safety",
-                "desc": "European air traffic management data, apron collision alerts, and operational safety action groups.",
-                "url": "https://www.eurocontrol.int"
-              },
-              {
-                "tag": "Investigation Board",
-                "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
-                "desc": "Official French aviation safety investigation authority reports and safety recommendations.",
-                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea"
-              },
-              {
-                "tag": "US FAA Standards",
-                "name": "FAA Airport Safety & Standards Hub",
-                "desc": "Federal aviation administration advisory circulars, pavement marking standards, and FOD control guides.",
-                "url": "https://www.faa.gov/airports/airport_safety"
-              }
-            ]
-          },
-          "presentation": {
-            "title": "Session 2 Class Presentation • Ramp Safety & Apron Speed Management",
-            "subtitle": "Interactive Classroom Slide Deck for EASA SIB No. 2024-09, Point ADR.OPS.B.025 & Just Culture",
-            "slides": [
-              {
-                "num": "01",
-                "badge": "01 • Legal Basis & Scope",
-                "title": "EASA SIB No. 2024-09 • Ramp Collision Risk Mitigation",
-                "subtitle": "Understanding Safety Information Bulletins & Point ADR.OPS.B.025",
-                "takeaway": "An SIB is advisory guidance highlighting recurring European trends, whereas Point ADR.OPS.B.025 imposes mandatory apron vehicle movement rules.",
-                "cards": [
-                  {
-                    "tag": "SIB Legal Status",
-                    "heading": "Advisory vs. Mandatory",
-                    "text": "Safety Information Bulletins are non-mandatory publications. They do not constitute binding regulations but represent urgent safety intelligence."
-                  },
-                  {
-                    "tag": "European Data Source",
-                    "heading": "ECR Trend Analysis",
-                    "text": "Issued following recurring ground collision trends reported to the European Central Repository under Regulation (EU) No 376/2014."
-                  },
-                  {
-                    "tag": "Regulatory Duty",
-                    "heading": "Point ADR.OPS.B.025",
-                    "text": "Mandates that aerodrome operators establish and enforce strict rules governing vehicle movement, speed, driver training, and roadworthiness."
-                  }
-                ],
-                "teacherPrompt": "Ask the class: What is the legal difference between an EASA Safety Information Bulletin and a Safety Directive? Can an airport be fined for ignoring an SIB directly?"
-              },
-              {
-                "num": "02",
-                "badge": "02 • Hazard Assessment",
-                "title": "Primary Ramp Collision Hazards & Operational Precursors",
-                "subtitle": "Why High-Energy Vehicle Impacts Threaten Airworthiness & Personnel",
-                "takeaway": "Excessive speed and blind-spot turns during high-workload turnarounds are the top precursors to catastrophic ramp structural damage.",
-                "cards": [
-                  {
-                    "tag": "Airframe Integrity",
-                    "heading": "Unreported Structural Damage",
-                    "text": "High-speed GSE impacts with fuselages, radomes, and engine cowlings frequently go unreported, allowing aircraft to depart with hidden damage."
-                  },
-                  {
-                    "tag": "Airside Incursions",
-                    "heading": "Taxiway Separation Breaches",
-                    "text": "Vehicles exceeding designated speed thresholds fail to brake before entering active aircraft taxi lanes, creating close-quarter collision hazards."
-                  },
-                  {
-                    "tag": "Workplace Safety",
-                    "heading": "Personnel Hazards in ECA / ESA",
-                    "text": "Speeding inside congested Equipment Clearance Areas directly correlates with ground crew crush injuries during pushback and baggage handling."
-                  }
-                ],
-                "teacherPrompt": "Concept check: Why is low-speed impact with a modern composite aircraft (e.g. A350) potentially more dangerous than impact with an older aluminum airframe?"
-              },
-              {
-                "num": "03",
-                "badge": "03 • Apron Speed Zoning",
-                "title": "Differentiated Speed Regimes • Tailored Safety Limits",
-                "subtitle": "Section 4.A Recommendations for Movement Area Infrastructure",
-                "takeaway": "Speed limits must be strictly tiered by operational risk: 25–30 km/h on open roads, but strictly 5–10 km/h walking pace near aircraft.",
-                "cards": [
-                  {
-                    "tag": "Apron Roadways",
-                    "heading": "25–30 km/h Maximum",
-                    "text": "General apron transit roads outside parking stands. Vehicles must yield right-of-way to all moving aircraft and emergency traffic."
-                  },
-                  {
-                    "tag": "Aircraft Servicing Stands",
-                    "heading": "5–10 km/h (Walking Pace)",
-                    "text": "Immediate servicing perimeter around parked aircraft. Strict walking pace is enforced to prevent high-energy contact with airframe structures."
-                  },
-                  {
-                    "tag": "Baggage Make-up Facilities",
-                    "heading": "10–15 km/h with Mirrors",
-                    "text": "Enclosed or semi-enclosed sorting halls and baggage tunnels. Capped speed and mandatory convex blind-corner mirrors protect foot personnel."
-                  }
-                ],
-                "teacherPrompt": "Discussion: Why does EASA specify 'walking pace' for aircraft stands? How does a driver judge 5 km/h without staring constantly at their speedometer?"
-              },
-              {
-                "num": "04",
-                "badge": "04 • Tech Controls",
-                "title": "Telematics, GPS Geofencing & Mechanical Limiting",
-                "subtitle": "Using Modern Technology to Eliminate Human Error in Speed Control",
-                "takeaway": "Physical speed governors and satellite geofencing enforce compliance automatically, removing reliance on driver judgment alone.",
-                "cards": [
-                  {
-                    "tag": "Hardware Control",
-                    "heading": "Physical & Electronic Governors",
-                    "text": "Factory-calibrated speed limiters permanently fitted to GSE engines, making it mechanically impossible to exceed regulatory speed limits."
-                  },
-                  {
-                    "tag": "Satellite Perimeter",
-                    "heading": "Automated GPS Geofencing",
-                    "text": "Real-time satellite positioning automatically throttles GSE acceleration down to 10 km/h the instant a vehicle enters a painted stand perimeter."
-                  },
-                  {
-                    "tag": "Black-Box Telemetry",
-                    "heading": "Vehicle Telematics Tracking",
-                    "text": "On-board sensors log driving speed, harsh braking, and impact telemetry, providing verifiable data for safety audits and incident reviews."
-                  }
-                ],
-                "teacherPrompt": "Debate: Ground handlers argue that GPS geofencing is too expensive for small contractors. How should an aerodrome operator answer this objection?"
-              },
-              {
-                "num": "05",
-                "badge": "05 • Human Factors",
-                "title": "Driver Licensing Rigour (ADA) & Just Culture",
-                "subtitle": "Balancing Strict Qualification with Transparent Incident Reporting",
-                "takeaway": "A true Just Culture ensures ground staff report every low-speed bump immediately without fear of dismissal, protecting flight safety.",
-                "cards": [
-                  {
-                    "tag": "Licensing Standards",
-                    "heading": "Apron Driving Authorisation (ADA)",
-                    "text": "ADR.OR.D.017 syllabi must include practical tests on stopping distances of heavy tractor-trailer trains and widebody blind spots."
-                  },
-                  {
-                    "tag": "Active Enforcement",
-                    "heading": "Radar Surveillance & Audits",
-                    "text": "Deployment of mobile radar units and fixed speed cameras to detect speeding violations before collisions occur on major apron routes."
-                  },
-                  {
-                    "tag": "Non-Punitive Culture",
-                    "heading": "Transparent 'Just Culture'",
-                    "text": "Frontline personnel report low-speed scrapes without fear of punishment. Safety inspections can then be completed prior to flight release."
-                  }
-                ],
-                "teacherPrompt": "Pair exercise: A baggage driver scratches an aircraft belly panel. Role-play the conversation between the ramp supervisor and the driver under Just Culture principles."
-              },
-              {
-                "num": "06",
-                "badge": "06 • Governance",
-                "title": "Stakeholder Coordination • Ramp Safety Committee (RSC)",
-                "subtitle": "Section 4.C Framework for Multi-Agency Ground Safety Governance",
-                "takeaway": "Ramp safety is a joint responsibility. The Ramp Safety Committee unites airport operators, ground handlers, and airlines into a single safety team.",
-                "cards": [
-                  {
-                    "tag": "Collaborative Forum",
-                    "heading": "Ramp Safety Committee (RSC)",
-                    "text": "Regular monthly meetings reviewing vehicle telematics trends, speed audit violations, and near-miss occurrence reports across all operators."
-                  },
-                  {
-                    "tag": "Joint Inspections",
-                    "heading": "Joint Operational Safety Audits",
-                    "text": "Aerodrome inspectors and ground handling managers conduct joint ramp spot-checks, ensuring third-party compliance with the Aerodrome Manual."
-                  },
-                  {
-                    "tag": "Continuous Improvement",
-                    "heading": "Safety Priority Ground Safety",
-                    "text": "Feeding local ramp occurrence data into the European Plan for Aviation Safety (EPAS) to continually refine airport infrastructure design."
-                  }
-                ],
-                "teacherPrompt": "Wrap-up question: What happens if an airline ground handler refuses to attend the Ramp Safety Committee? What legal power does the Aerodrome Operator possess?"
-              }
-            ]
-          }
-        },
-        "3": {
-          "session": 3,
-          "title": "Special Requests & Runway Safety Cases",
-          "overview": {
-            "intro": "Welcome to Session 3 of Technical English! In this lesson, we explore an authentic EASA runway safety case and temporary exemption request. You will practice using linking words (provided that, in lieu of) to explain safety solutions, review temporary runway works, and give a short spoken safety briefing to airline pilots.",
-            "whyItMatters": "Unplanned structural defects beneath active runways—such as stormwater culvert subsidence—cannot be repaired without altering certified runway dimensions. Completely shutting down an international runway disrupts global flight networks and costs millions of euros. Instead, airside managers use Article 71 exemptions to maintain safe flight operations by establishing temporary displaced thresholds, reduced Runway End Safety Areas (RESA), and strict weather limits (dry-runway only, 15-knot crosswind caps). Delivering precise, unambiguous verbal briefings ensures airline chief pilots and flight crews trust and accept modified runway operations.",
-            "keyTerms": [
-              {
-                "term": "Article 71 Exemption",
-                "ipa": "/ˈɑː.tɪ.kl̩ ˌsev.ən.tiˈwʌn ɪɡˈzemp.ʃən/",
-                "definition": "The formal clause in Regulation (EU) 2018/1139 granting temporary flexibility from aviation standards for urgent operational needs up to 60 days."
-              },
-              {
-                "term": "Derogation",
-                "ipa": "/ˌder.əˈɡeɪ.ʃən/",
-                "definition": "An official statutory relaxation or authorized deviation from an established aerodrome design specification approved by the competent authority."
-              },
-              {
-                "term": "Safety Assessment / Safety Case",
-                "ipa": "/ˈseɪf.ti keɪs/",
-                "definition": "A documented technical justification proving that an operation with non-compliant dimensions achieves an equivalent level of safety through mitigations."
-              },
-              {
-                "term": "Equivalent Level of Safety (ELOS)",
-                "ipa": "/ɪˈkwɪv.əl.ənt ˈlev.l̩ əv ˈseɪf.ti/",
-                "definition": "The statutory standard proving that alternative compensatory measures provide the same high level of protection as standard compliance."
-              },
-              {
-                "term": "Compensatory Measure",
-                "ipa": "/kəmˈpen.sə.tər.i ˈmeʒ.ər/",
-                "definition": "An additional operational rule—such as dry-runway limitations or enhanced fire standby—implemented to balance a temporary reduction in safety buffers."
-              },
-              {
-                "term": "Runway End Safety Area (RESA)",
-                "ipa": "/ˈrʌn.weɪ end ˈseɪf.ti ˈeə.ri.ə/",
-                "definition": "An unobstructed area symmetrical about the extended runway centerline protecting landing aircraft from overrun and undershoot hazards."
-              },
-              {
-                "term": "Declared Distances (TORA / LDA)",
-                "ipa": "/dɪˈkleəd ˈdɪs.təns.ɪz/",
-                "definition": "The certified published runway lengths for flight planning: Take-Off Run Available (TORA) and Landing Distance Available (LDA)."
-              },
-              {
-                "term": "AIP Supplement (SUP)",
-                "ipa": "/ˌeɪ.aɪˈpiː ˈsʌp.lɪ.mənt/",
-                "definition": "A temporary published operational document issued at least 28 days in advance detailing major aerodrome works, revised distances, and chart modifications."
-              },
-              {
-                "term": "Condition Linker (Provided that)",
-                "ipa": "/prəˈvaɪ.dɪd ðæt/",
-                "definition": "A formal connecting phrase meaning 'on the strict condition that', establishing an essential prerequisite for an operational permission."
-              },
-              {
-                "term": "Runway Safety Team (RST)",
-                "ipa": "/ˈrʌn.weɪ ˈseɪf.ti tiːm/",
-                "definition": "A multidisciplinary advisory group uniting aerodrome operators, air traffic controllers, pilots, and technical teams to prevent runway excursions."
-              }
-            ],
-            "speakingTask": {
-              "title": "Authentic EASA Task • Runway Safety Case & Operational Exemption",
-              "instructions": "Working in pairs or trios, open the authentic EASA Exemption File (EASA/ADR-EXEMP/2024-009) below. Each group reviews one operational dimension of the Runway 26 culvert rehabilitation, analyzes the practical constraints, and delivers a concise 2-minute spoken briefing explaining their safety decisions using today's technical vocabulary.",
-              "document": {
-                "title": "EASA Exemption File & Safety Case: Runway 26 Culvert Rehabilitation",
-                "subtitle": "Regulation (EU) 2018/1139 Article 71 Synthesis • Displaced Threshold & Reduced RESA",
-                "filename": "GSEA_S3_M1_S3_EASA_Runway_Safety_Case.pdf",
-                "path": "docs/GSEA_S3_M1_S3_EASA_Runway_Safety_Case.pdf",
-                "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
-              },
-              "requirements": [
-                "Use at least 4 of today's 10 technical terms from the list above.",
-                "Cite specific operational measures from Section 4 and Section 6 of the EASA Exemption File.",
-                "Ensure both partners actively speak and explain practical solutions without reading verbatim."
-              ],
-              "statements": {
-                "group1": "Group 1 Statement (Physical Geometry & Declared Distances): How does displacing Threshold 26 forward by 180m alter the declared distances (TORA, TODA, ASDA, LDA), and how does a 55m temporary RESA with strict speed and weather limits guarantee overrun protection?",
-                "group2": "Group 2 Statement (Compensatory Measures & ELOS): Why are dry-runway limitations, a 15-knot crosswind cap, and dedicated RFFS rapid intervention standby essential to achieve an Equivalent Level of Safety under Article 71?",
-                "group3": "Group 3 Statement (Airline Briefing & Linguistic Connectors): Deliver a 2-minute verbal briefing to airline flight operations managers using conditional connecting words ('provided that', 'subject to', 'in lieu of') to reassure them that modified operations are safe."
-              },
-              "usefulPhrases": [
-                "Under Article 71 of Regulation (EU) 2018/1139, our airport is implementing a temporary exemption for...",
-                "To protect the excavation site, Threshold 26 is displaced by 180 metres in order to guarantee full stopping distance...",
-                "Operations are strictly authorized provided that the runway surface condition remains completely dry...",
-                "A temporary 55-metre RESA has been established in lieu of the standard 90-metre required buffer...",
-                "We have issued AIP SUP 014/24 and trigger NOTAMs in order to ensure seamless flight planning for your dispatchers..."
-              ]
-            },
-            "document": {
-              "title": "EASA Exemption File & Safety Case: Runway 26 Culvert Rehabilitation",
-              "subtitle": "Regulation (EU) 2018/1139 Article 71 Synthesis • Displaced Threshold & Reduced RESA",
-              "filename": "GSEA_S3_M1_S3_EASA_Runway_Safety_Case.pdf",
-              "path": "docs/GSEA_S3_M1_S3_EASA_Runway_Safety_Case.pdf",
-              "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
-            }
-          },
-          "objectives": {
-            "title": "Session 3 Objectives - Special Requests & Runway Safety Cases",
-            "summary": "By the end of this session, GSEA students will be able to explain how airports handle real-world challenges through temporary permissions (exemptions), use connecting words to explain rules and conditions (provided that, due to, in order to, in lieu of), read an authentic runway works exemption file, prepare and deliver a 3-minute spoken briefing to airline pilots, and complete a simple Safety Check.",
-            "items": [
-              {
-                "num": 1,
-                "title": "Discuss Temporary Airport Work (Fluency & Spontaneous Speech)",
-                "description": "Brainstorm real reasons airports need to do heavy runway repairs without closing completely.",
-                "part": "Part 1"
-              },
-              {
-                "num": 2,
-                "title": "Understand Special Permissions (Exemptions & Flexibility)",
-                "description": "Learn how Article 71 permits temporary flexibility when standard rules cannot be met.",
-                "part": "Part 2"
-              },
-              {
-                "num": 3,
-                "title": "Connecting Words for Explaining Rules (Language Focus)",
-                "description": "Practice connecting phrases to give clear reasons: because of, provided that, in order to, as long as, in lieu of.",
-                "part": "Part 3"
-              },
-              {
-                "num": 4,
-                "title": "Read the Runway Work Request (Authentic Document Scanning)",
-                "description": "Scan an authentic temporary exemption file (EASA/ADR-EXEMP/2024-009) for Runway 26 drainage repairs with a reduced safety area (RESA).",
-                "part": "Part 4"
-              },
-              {
-                "num": 5,
-                "title": "Deliver a 3-Minute Airline Briefing (Spoken Presentation)",
-                "description": "Prepare and deliver a spoken operational briefing to airline representatives explaining the 4 safety rules protecting flights.",
-                "part": "Part 5"
-              },
-              {
-                "num": 6,
-                "title": "Complete the Decision Safety Check (Risk Evaluation)",
-                "description": "Evaluate the risks and agree on whether the runway works can be safely approved.",
-                "part": "Part 6"
-              }
-            ]
-          },
-          "lessonPlan": {
-            "title": "Session 3 Lesson Plan - Special Requests & Runway Safety Cases (2 Hours)",
-            "summary": "A 2-hour communicative spoken English session on temporary aerodrome works, Article 71 exemptions, connecting words for explaining rules, an airline operational briefing simulation, and a simple Safety Check.",
-            "items": [
-              {
-                "title": "Part 1: Warm-up: Keeping Airports Open During Repairs",
-                "description": "Pairs discuss how airports maintain operations during runway maintenance and answer 4 spot-check questions.",
-                "part": "Part 1"
-              },
-              {
-                "title": "Part 2: Reading the Runway Work Request",
-                "description": "Scanning authentic exemption file EASA/ADR-EXEMP/2024-009 for reduced RESA and the 4 compensatory safety rules.",
-                "part": "Part 2"
-              },
-              {
-                "title": "Part 3: Connecting Words: Giving Reasons & Explaining Conditions",
-                "description": "Language clinic practicing condition linkers (provided that, as long as) and purpose/cause linkers (in order to, due to) across 5 exercises.",
-                "part": "Part 3"
-              },
-              {
-                "title": "Part 4: Spoken Briefing: Explaining the Plan to Airline Pilots",
-                "description": "GSEA students prepare and deliver a 3-minute spoken presentation to airline representatives explaining the 4 safety rules, followed by Q&A.",
-                "part": "Part 4"
-              },
-              {
-                "title": "Part 5: Safety Check: Is it Safe to Land?",
-                "description": "Structured 4-step safety evaluation of the reduced RESA, overrun risks, compensatory barriers, and granting temporary operational approval.",
-                "part": "Part 5"
-              }
-            ]
-          },
-          "lessonContent": {
-            "hero": {
-              "title": "Special Requests & Runway Safety Cases",
-              "subtitle": "Temporary Works, Connecting Words & Airline Operational Briefings",
-              "image": "images/s3_m1_session3_derogation.jpg",
-              "targetLevel": "CEFR B1–B2",
-              "roleContext": "GSEA Student Training • Aerodrome Safety & Works Planning",
-              "duration": "120 Minutes"
-            },
-            "openingSession": {
-              "title": "Activity 1: Warm-up: Keeping Airports Open During Repairs",
-              "summary": "Explore how airports manage urgent runway construction without shutting down completely.",
-              "modeBadges": [
-                "Pairs (2 students)",
-                "Spoken Brainstorm"
-              ],
-              "instructions": [
-                "In pairs, brainstorm what an airport does when its only runway has damaged drainage pipes.",
-                "Discuss the 4 Entry Check questions below.",
-                "Click 'Reveal Answer' to verify your understanding."
-              ],
-              "deliverable": "Shared list of 3 runway repair challenges and completed 4-question check.",
-              "teacherNotes": "Real airports cannot simply shut down for 6 weeks when runway pipes break. They need flexible solutions (called exemptions or derogations) that maintain 100% safety through compensatory rules.",
-              "newsPrompts": [
-                {
-                  "id": 1,
-                  "question": "What happens if an airport closes its main runway for a month? What is the impact on airlines and passengers?",
-                  "exampleAnswers": [
-                    "Airlines would have to cancel or divert hundreds of flights, costing millions of euros in lost revenue and leaving thousands of passengers stranded.",
-                    "It would also overwhelm regional diversion airports that might not have enough gates or ground equipment to handle the extra traffic."
-                  ],
-                  "part": "Part 1"
-                },
-                {
-                  "id": 2,
-                  "question": "Why is the grass area at the end of a runway (RESA) so important for landing planes?",
-                  "exampleAnswers": [
-                    "If an aircraft touches down too late or suffers a braking problem on a wet runway, the RESA acts as a safety buffer to stop the plane before it crashes into roads or ditches.",
-                    "It gives pilots and emergency crews valuable extra distance and time to prevent an overrun accident."
-                  ],
-                  "part": "Part 2"
-                },
-                {
-                  "id": 3,
-                  "question": "How can an airport prove that an unusual plan is just as safe as following standard rules?",
-                  "exampleAnswers": [
-                    "By adding strict compensatory safety rules—such as moving the landing line forward, banning landings in rain, and stationing a fire engine right next to the runway.",
-                    "They also consult airline chief pilots in advance and publish NOTAMs so every pilot knows exactly what to expect before takeoff."
-                  ],
-                  "part": "Part 3"
-                }
-              ],
-              "diagnostic": {
-                "title": "Runway Works & Exemptions Entry Check",
-                "instructions": "Discuss each question with your partner, then click to reveal the answer.",
-                "questions": [
-                  {
-                    "id": 1,
-                    "q": "What does RESA stand for, and what is its purpose?",
-                    "answer": "Runway End Safety Area: a cleared, level grass or paved safety buffer beyond the runway designed to stop an aeroplane that overruns or undershoots.",
-                    "part": "Part 1"
-                  },
-                  {
-                    "id": 2,
-                    "q": "What is a 'Displaced Threshold'?",
-                    "answer": "A landing line moved down the runway away from the physical end, used during construction or to clear obstacles on approach.",
-                    "part": "Part 2"
-                  },
-                  {
-                    "id": 3,
-                    "q": "In European law, what is an 'Article 71 Exemption'?",
-                    "answer": "A legal clause allowing civil aviation authorities to grant temporary flexibility (up to 8 months) for urgent operational needs, provided equivalent safety is proven.",
-                    "part": "Part 3"
-                  },
-                  {
-                    "id": 4,
-                    "q": "What is an 'Airline Flight Operations Committee'?",
-                    "answer": "A regular operational meeting where airport managers brief airline chief pilots and flight dispatchers on runway changes, weather procedures, and construction.",
-                    "part": "Part 4"
-                  }
-                ]
-              }
-            },
-            "documentExtract": {
-              "title": "Activity 2: Reading the Runway Work Request",
-              "summary": "Scan an authentic temporary exemption file for Runway 26 drainage culvert repairs.",
-              "modeBadges": [
-                "Pairs or Small Groups",
-                "Document Scanning"
-              ],
-              "instructions": [
-                "Read the simulated Exemption File EASA/ADR-EXEMP/2024-009 below.",
-                "Carefully note the 4 Mandatory Safety Rules protecting landing aircraft.",
-                "Work with your partner to answer the 4 comprehension questions.",
-                "Click 'Reveal Answer' to check your answers."
-              ],
-              "deliverable": "Completed comprehension answers identifying the 4 compensatory safety rules.",
-              "teacherNotes": "Help students recognize the logical structure of an exemption file: 1) What is the problem? 2) Why is standard compliance impossible? 3) What extra safety steps are put in place? This forms the basis of their spoken briefing in Activity 4.",
-              "docRef": "European Civil Aviation Authority • Exemption File EASA/ADR-EXEMP/2024-009",
-              "docText": "[EUROPEAN UNION CIVIL AVIATION REGULATORY FRAMEWORK — OPERATIONAL EXEMPTION FILE]\nFile Reference: EASA/ADR-EXEMP/2024-009 • Date: 12 September 2024\nLegal Basis: Regulation (EU) 2018/1139, Article 71 (Urgent Operational Needs & Exceptional Circumstances)\nApplicant: Aerodrome Operations Authority — Toulouse-Blagnac Aerodrome (LFBO)\nSubject: Temporary 45-day Exemption: Runway End Safety Area (RESA) Length Reduction on Runway 26 for Critical Drainage Works\n\n1. Operational Background & Problem Statement\n(a) Heavy rainfall during the previous winter caused significant subsoil subsidence beneath the Runway 26 overrun area, damaging underground concrete stormwater culverts. Failure to replace these culverts threatens runway sub-base structural integrity.\n(b) To allow heavy excavation machinery and concrete pouring within the strip, the available Runway End Safety Area (RESA) beyond the end of the runway strip must be temporarily reduced from the standard 90 metres required by CS-ADR-DSN.A.045 down to 55 metres for a period of 45 consecutive days (15 October to 28 November 2024).\n\n2. Mandatory Compensatory Safety Rules (Flight Protection Barriers)\nPermission for this temporary reduction is granted provided that the aerodrome operator strictly enforces the following four mandatory safety rules:\nRule 1 — Displaced Landing Threshold:\nThe landing threshold for Runway 26 shall be temporarily displaced by 180 metres down the runway. This guarantees that landing aeroplanes have full standard landing distance available (LDA) and touch down well beyond the works zone.\nRule 2 — Wet Runway Ban:\nLandings on Runway 26 shall be strictly prohibited whenever braking action is reported as degraded, or when water depth exceeds 3 millimetres (wet / contaminated runway). Under such meteorological conditions, arriving flights must divert to secondary Runway 14/32 or an alternate aerodrome.\nRule 3 — Crosswind Limitation:\nThe maximum allowable crosswind component for arriving aircraft on Runway 26 is capped at 15 knots (reduced from the standard 25 knots) to prevent directional control loss during landing rollout.\nRule 4 — Dedicated Emergency Standby:\nA dedicated Crash Fire Rescue (RFFS) major foam vehicle shall remain stationary on immediate 60-second standby at Holding Point B2 during all scheduled flight movements.\n\n3. Duration & Notification\nThis operational exemption expires automatically after 45 days. The aerodrome operator shall publish comprehensive NOTAM and AIP Supplements at least 14 days prior to commencing works.",
-              "questions": [
-                {
-                  "id": 1,
-                  "q": "Why does the airport need to reduce the runway safety area (RESA)?",
-                  "answer": "Heavy rain damaged concrete stormwater drainage pipes under the overrun area, requiring 45 days of excavation and repairs.",
-                  "part": "Part 1"
-                },
-                {
-                  "id": 2,
-                  "q": "How many metres is the safety area reduced by?",
-                  "answer": "It is reduced from standard 90 metres down to 55 metres (a reduction of 35 metres).",
-                  "part": "Part 2"
-                },
-                {
-                  "id": 3,
-                  "q": "What four safety rules protect flights while the runway work takes place?",
-                  "answer": "1) 180m displaced threshold, 2) strictly no landings on wet runways, 3) crosswind capped at 15 knots, and 4) fire engine on immediate standby at Holding Point B2.",
-                  "part": "Part 3"
-                },
-                {
-                  "id": 4,
-                  "q": "What must arriving flights do if the runway becomes wet during rain?",
-                  "answer": "Landings on Runway 26 are strictly prohibited in wet weather; flights must land on Runway 14/32 or divert to an alternate airport.",
-                  "part": "Part 4"
-                }
-              ]
-            },
-            "rulesPractice": {
-              "title": "Activity 3: Connecting Words: Giving Reasons & Explaining Conditions",
-              "summary": "Learn how to link ideas in English using words for conditions, causes, purposes, and replacements.",
-              "modeBadges": [
-                "Individual & Pairs",
-                "Language Clinic"
-              ],
-              "instructions": [
-                "Study the Connecting Words table below.",
-                "Notice how phrases like 'provided that', 'due to', and 'in lieu of' make your explanations clear and professional.",
-                "Complete the 5 gap-fill sentences below, then click 'Check Answer' to see the explanation."
-              ],
-              "deliverable": "5 accurately completed sentences using professional connecting words.",
-              "teacherNotes": "In spoken briefings, connecting words are essential. They allow students to explain WHY a decision was made and WHAT CONDITIONS must be met without sounding confused.",
-              "rulesTable": [
-                {
-                  "word": "Provided that / As long as",
-                  "meaning": "On the condition that",
-                  "example": "Aircraft may land provided that the runway surface is dry.",
-                  "tip": "Introduces a strict safety requirement.",
-                  "part": "Part 1"
-                },
-                {
-                  "word": "Due to / Because of",
-                  "meaning": "For the reason that",
-                  "example": "The safety area is reduced due to urgent drainage culvert repairs.",
-                  "tip": "Followed by a noun phrase explaining the cause.",
-                  "part": "Part 2"
-                },
-                {
-                  "word": "In order to",
-                  "meaning": "For the purpose of",
-                  "example": "We displaced the threshold by 180m in order to protect stopping distance.",
-                  "tip": "Followed by an infinitive verb ('in order to protect').",
-                  "part": "Part 3"
-                },
-                {
-                  "word": "In lieu of",
-                  "meaning": "In place of / Instead of",
-                  "example": "We positioned temporary orange markers in lieu of standard white paint.",
-                  "tip": "Useful when one safety measure replaces another.",
-                  "part": "Part 4"
-                },
-                {
-                  "word": "Unless",
-                  "meaning": "Except if",
-                  "example": "No heavy aircraft may land unless the crosswind is under 15 knots.",
-                  "tip": "Sets a clear boundary condition.",
-                  "part": "Part 5"
-                }
-              ],
-              "drills": [
-                {
-                  "id": 1,
-                  "sentence": "Aircraft may land on Runway 26 _______ the runway surface is completely dry.",
-                  "options": [
-                    "provided that",
-                    "in lieu of",
-                    "due to"
-                  ],
-                  "correct": "provided that",
-                  "rationale": "'Provided that' introduces the mandatory safety condition (dry runway).",
-                  "part": "Part 1"
-                },
-                {
-                  "id": 2,
-                  "sentence": "The available safety area was temporarily reduced _______ urgent culvert reconstruction.",
-                  "options": [
-                    "due to",
-                    "in order to",
-                    "unless"
-                  ],
-                  "correct": "due to",
-                  "rationale": "'Due to' is followed by the noun phrase 'urgent culvert reconstruction', explaining the cause.",
-                  "part": "Part 2"
-                },
-                {
-                  "id": 3,
-                  "sentence": "The threshold was displaced by 180 metres _______ give pilots full stopping distance.",
-                  "options": [
-                    "in order to",
-                    "provided that",
-                    "in lieu of"
-                  ],
-                  "correct": "in order to",
-                  "rationale": "'In order to' expresses the purpose and is followed by the base verb 'give'.",
-                  "part": "Part 3"
-                },
-                {
-                  "id": 4,
-                  "sentence": "High-intensity flashing guard lights were installed _______ standard painted markings.",
-                  "options": [
-                    "in lieu of",
-                    "unless",
-                    "due to"
-                  ],
-                  "correct": "in lieu of",
-                  "rationale": "'In lieu of' means 'instead of' or 'replacing'.",
-                  "part": "Part 4"
-                },
-                {
-                  "id": 5,
-                  "sentence": "Approaching aircraft must divert to Runway 14/32 _______ the crosswind component is 15 knots or less.",
-                  "options": [
-                    "unless",
-                    "in order to",
-                    "because of"
-                  ],
-                  "correct": "unless",
-                  "rationale": "'Unless' means 'except if the crosswind is 15 knots or less'.",
-                  "part": "Part 5"
-                }
-              ]
-            },
-            "spokenActivity": {
-              "title": "Activity 4: Spoken Briefing: Explaining the Plan to Airline Pilots",
-              "summary": "Deliver a clear, reassuring 3-minute operational briefing to airline representatives.",
-              "modeBadges": [
-                "Pairs / Small Groups",
-                "Spoken Presentation"
-              ],
-              "instructions": [
-                "Work in pairs or groups of 3: Speaker 1 (GSEA Operations Officer), Speaker 2 (Airline Flight Ops Manager), Speaker 3 (Observer / Chief Pilot).",
-                "You have 6 minutes to prepare your 3-minute spoken briefing using the 4-part structure.",
-                "Deliver your briefing aloud. The airline manager asks 2 realistic questions about weather delays or diversions.",
-                "Switch roles so everyone practices delivering the spoken briefing."
-              ],
-              "deliverable": "3-minute spoken briefing delivered with confident explanation of all 4 safety rules.",
-              "teacherNotes": "This activity builds presentation confidence. Remind students: don't read word-for-word from notes! Speak directly, make eye contact, and use signpost phrases like 'Today I will explain...', 'First...', 'In conclusion...'.",
-              "scenario": "You are the GSEA Aerodrome Operations Officer briefing the Airline Flight Operations Committee two weeks before the Runway 26 culvert repairs begin. The airline managers are worried about flight delays, diversions, and passenger disruption.",
-              "roles": [
-                {
-                  "title": "Role A: GSEA Operations Officer (Presenter)",
-                  "badge": "Spoken Briefing",
-                  "bullets": [
-                    "Welcome the airline representatives and state the purpose of the briefing.",
-                    "Explain why the work is essential (damaged underground drainage culverts).",
-                    "Present the 4 safety rules clearly: displaced threshold, wet ban, crosswind cap, fire engine standby.",
-                    "Reassure airlines that flight safety is 100% protected."
-                  ],
-                  "part": "Part 1"
-                },
-                {
-                  "title": "Role B: Airline Flight Ops Manager",
-                  "badge": "Challenging Q&A",
-                  "bullets": [
-                    "Listen to the briefing and take notes on potential flight impacts.",
-                    "Ask: 'What happens if sudden rain begins while our Airbus A320 is on final approach?'",
-                    "Ask: 'Why is the crosswind limit reduced to 15 knots, and will this cause many diversions?'"
-                  ],
-                  "part": "Part 2"
-                },
-                {
-                  "title": "Role C: Observer / Peer Coach",
-                  "badge": "Feedback",
-                  "bullets": [
-                    "Time the briefing (target: 3 minutes).",
-                    "Check: Did the speaker explain all 4 safety rules clearly?",
-                    "Check: Did the speaker use connecting words (provided that, due to, in order to)?",
-                    "Give 2 positive points and 1 helpful suggestion."
-                  ],
-                  "part": "Part 3"
-                }
-              ],
-              "usefulPhrases": [
-                "Good morning everyone. Today I will brief you on the upcoming Runway 26 works...",
-                "The repairs are necessary due to damaged stormwater drainage culverts.",
-                "To ensure that all flights remain completely safe, we have put in place 4 mandatory safety rules.",
-                "First, the threshold has been displaced by 180 metres in order to give aircraft full landing distance.",
-                "Second, landings are strictly prohibited when the runway is wet; flights will divert to Runway 14/32.",
-                "Third, crosswinds are capped at 15 knots, and fourth, a dedicated fire truck is on 60-second standby.",
-                "Are there any questions regarding our operational plan?"
-              ],
-              "peerChecklist": [
-                {
-                  "id": 1,
-                  "label": "Did Student A explain the 4 safety rules clearly (displaced threshold 180m, dry runway only, 15 kt crosswind, RFFS standby)?"
-                },
-                {
-                  "id": 2,
-                  "label": "Did both speakers use condition words correctly (provided that, due to, in lieu of, unless, in order to)?"
-                },
-                {
-                  "id": 3,
-                  "label": "Was the spoken briefing concise, reassuring, and delivered within the 3-minute limit?"
-                },
-                {
-                  "id": 4,
-                  "label": "Did Student A answer the airline pilot's safety questions with confidence and calm authority?"
-                }
-              ]
-            },
-            "safetyCheck": {
-              "title": "Activity 5: Safety Check: Is it Safe to Land?",
-              "summary": "Complete the decision check table evaluating the reduced safety area and safety rules.",
-              "modeBadges": [
-                "Whole Class / Pairs",
-                "Safety Evaluation"
-              ],
-              "instructions": [
-                "Review the 4 questions in the Safety Check table below.",
-                "Check that you can explain each answer clearly in your own words.",
-                "Agree on the final operational decision."
-              ],
-              "deliverable": "Completed Safety Check table verified by all students.",
-              "teacherNotes": "Emphasize the concept of 'Compensatory Safety Steps' in plain English: when one standard margin is temporarily reduced, we add other safety rules so total safety never drops.",
-              "rows": [
-                {
-                  "question": "1. What is the problem?",
-                  "answer": "The Runway End Safety Area (RESA) on Runway 26 is reduced from 90m to 55m for 45 days during drainage works.",
-                  "part": "Part 1"
-                },
-                {
-                  "question": "2. What could happen?",
-                  "answer": "If an aircraft lands too long or suffers a braking problem, it could overrun the runway into the excavation ditch.",
-                  "part": "Part 2"
-                },
-                {
-                  "question": "3. Why is it safe anyway?",
-                  "answer": "Four strict safety rules protect flights:<br>1) 180m displaced threshold gives full stopping distance.<br>2) Landings banned on wet runways.<br>3) Crosswind limit capped at 15 knots.<br>4) Fire rescue engine on 60-second standby at Holding Point B2.",
-                  "part": "Part 3"
-                },
-                {
-                  "question": "4. Our Decision",
-                  "answer": "APPROVED: The 4 safety rules protect flights; temporary permission is granted for 45 days.",
-                  "part": "Part 4"
-                }
-              ]
-            }
-          },
-          "revision": {
-            "title": "Session 3 Vocabulary • Operational Exemptions & Runway Safety Cases",
-            "summary": "Master the 30 essential regulatory terms, declared distance formulas, compensatory measures, and connecting linkers from Regulation (EU) 2018/1139 Article 71 and Point ADR.OR.B.040.",
-            "terms": [
-              {
-                "num": "01",
-                "term": "Article 71 Exemption",
-                "definition": "The formal clause in Regulation (EU) 2018/1139 permitting temporary flexibility from standard technical requirements for urgent operational needs up to 60 days.",
-                "part": "Part 1"
-              },
-              {
-                "num": "02",
-                "term": "Derogation",
-                "definition": "An official statutory relaxation or authorized deviation from an established aerodrome design specification approved by the competent authority.",
-                "part": "Part 2"
-              },
-              {
-                "num": "03",
-                "term": "Safety Assessment / Safety Case",
-                "definition": "A documented technical justification proving that an operation with non-compliant dimensions achieves an equivalent level of safety through mitigations.",
-                "part": "Part 3"
-              },
-              {
-                "num": "04",
-                "term": "Equivalent Level of Safety (ELOS)",
-                "definition": "The statutory standard proving that alternative compensatory measures provide the same high level of protection as standard compliance.",
-                "part": "Part 4"
-              },
-              {
-                "num": "05",
-                "term": "Compensatory Measure",
-                "definition": "An additional operational rule—such as dry-runway limitations or enhanced fire standby—implemented to balance a temporary reduction in safety buffers.",
-                "part": "Part 5"
-              },
-              {
-                "num": "06",
-                "term": "Aeronautical Study",
-                "definition": "A formal engineering analysis evaluating the flight safety impact of non-standard aerodrome physical conditions on aircraft performance.",
-                "part": "Part 6"
-              },
-              {
-                "num": "07",
-                "term": "Runway End Safety Area (RESA)",
-                "definition": "An unobstructed area symmetrical about the extended runway centerline protecting landing aircraft from overrun and undershoot hazards.",
-                "part": "Part 7"
-              },
-              {
-                "num": "08",
-                "term": "Displaced Threshold",
-                "definition": "A runway threshold located at a point other than the physical extremity of the pavement, permanently or temporarily shortening landing distance.",
-                "part": "Part 8"
-              },
-              {
-                "num": "09",
-                "term": "Declared Distances",
-                "definition": "The four certified operational distances published for a runway: TORA, TODA, ASDA, and LDA, used by airlines for aircraft performance calculations.",
-                "part": "Part 9"
-              },
-              {
-                "num": "10",
-                "term": "TORA (Take-Off Run Available)",
-                "definition": "The length of runway declared available and suitable for the ground run of an aircraft taking off.",
-                "part": "Part 10"
-              },
-              {
-                "num": "11",
-                "term": "ASDA (Accelerate-Stop Distance Available)",
-                "definition": "The length of the take-off run available plus the length of any stopway declared available for an abandoned take-off.",
-                "part": "Part 11"
-              },
-              {
-                "num": "12",
-                "term": "LDA (Landing Distance Available)",
-                "definition": "The length of runway declared available and suitable for the ground run of an aircraft landing.",
-                "part": "Part 12"
-              },
-              {
-                "num": "13",
-                "term": "Overrun",
-                "definition": "An operational event where an aircraft fails to stop before the end of the declared runway surface during landing or rejected take-off.",
-                "part": "Part 13"
-              },
-              {
-                "num": "14",
-                "term": "Undershoot",
-                "definition": "An operational event where an arriving aircraft touches down short of the declared landing threshold.",
-                "part": "Part 14"
-              },
-              {
-                "num": "15",
-                "term": "Contaminated Runway",
-                "definition": "A runway where more than 25% of the surface area is covered by standing water, slush, or ice, significantly degrading braking friction.",
-                "part": "Part 15"
-              },
-              {
-                "num": "16",
-                "term": "Braking Action Friction",
-                "definition": "The measured or reported friction coefficient available between aircraft tyres and the pavement to decelerate safely.",
-                "part": "Part 16"
-              },
-              {
-                "num": "17",
-                "term": "Crosswind Component",
-                "definition": "The vector component of wind blowing perpendicular to the runway centerline, challenging directional control during landing rollout.",
-                "part": "Part 17"
-              },
-              {
-                "num": "18",
-                "term": "Temporary Operational Restriction",
-                "definition": "A short-term mandatory limitation placed on flight weights, weather minima, or aircraft types during aerodrome maintenance.",
-                "part": "Part 18"
-              },
-              {
-                "num": "19",
-                "term": "RFFS (Rescue and Fire Fighting Services)",
-                "definition": "The specialized aerodrome emergency service categorized by response times, water/foam discharge capacity, and vehicle fleets.",
-                "part": "Part 19"
-              },
-              {
-                "num": "20",
-                "term": "Standby Status",
-                "definition": "The positioning of emergency rescue vehicles at intermediate holding points to ensure rapid response times under 60 seconds.",
-                "part": "Part 20"
-              },
-              {
-                "num": "21",
-                "term": "Holding Point",
-                "definition": "A marked and lit position on a taxiway where aircraft and vehicles hold until explicitly cleared onto the active runway by ATC.",
-                "part": "Part 21"
-              },
-              {
-                "num": "22",
-                "term": "Inter-Service Consultation",
-                "definition": "Formal coordination between aerodrome safety managers, air traffic controllers, and airline flight operations before altering procedures.",
-                "part": "Part 22"
-              },
-              {
-                "num": "23",
-                "term": "Runway Safety Team (RST)",
-                "definition": "A multidisciplinary advisory committee uniting airport operators, controllers, pilots, and technical teams to prevent runway excursions.",
-                "part": "Part 23"
-              },
-              {
-                "num": "24",
-                "term": "Flight Operations Briefing",
-                "definition": "A concise operational briefing delivered to airline flight dispatchers detailing altered declared distances and worksite precautions.",
-                "part": "Part 24"
-              },
-              {
-                "num": "25",
-                "term": "AIP Supplement (SUP)",
-                "definition": "A temporary published operational circular issued 28 days in advance detailing major aerodrome works, revised distances, and chart changes.",
-                "part": "Part 25"
-              },
-              {
-                "num": "26",
-                "term": "NOTAM Trigger",
-                "definition": "An operational condition or threshold change that legally mandates the immediate transmission of a Notice to Airmen via AFTN.",
-                "part": "Part 26"
-              },
-              {
-                "num": "27",
-                "term": "Condition Linker (Provided that)",
-                "definition": "A formal connecting phrase meaning 'on the strict condition that', introducing an essential prerequisite for a regulatory permission.",
-                "part": "Part 27"
-              },
-              {
-                "num": "28",
-                "term": "Condition Linker (Subject to)",
-                "definition": "A formal connecting phrase subordinating an operational permission to continuous regulatory verification or external approval.",
-                "part": "Part 28"
-              },
-              {
-                "num": "29",
-                "term": "Substitution Linker (In lieu of)",
-                "definition": "A formal connecting phrase meaning 'in place of' or 'substituting for', identifying an approved alternative compliance measure.",
-                "part": "Part 29"
-              },
-              {
-                "num": "30",
-                "term": "Concession Linker (Notwithstanding)",
-                "definition": "A formal legal connector meaning 'despite' or 'without being restricted by', authorizing an exceptional action despite a general rule.",
-                "part": "Part 30"
-              }
-            ]
-          },
-          "materials": {
-            "quizTitle": "Airside Scenario Quiz • Operational Exemptions & Safety Cases",
-            "quiz": [
-              {
-                "question": "Under Basic Regulation (EU) 2018/1139 Article 71, what is the maximum duration an aerodrome operator may benefit from an urgent operational exemption without formal Commission review?",
-                "options": [
-                  "14 calendar days",
-                  "Two months (60 calendar days)",
-                  "Six months",
-                  "One full calendar year"
-                ],
-                "correct": 1,
-                "explanation": "Article 71(1) stipulates that Member States and aerodrome operators may grant temporary exemptions for urgent unforeseen operational needs up to a statutory ceiling of two months (60 calendar days)."
-              },
-              {
-                "question": "When Runway 26 has its landing threshold displaced forward by 320 metres, which declared distance is directly reduced for arriving aircraft?",
-                "options": [
-                  "TORA (Take-Off Run Available)",
-                  "TODA (Take-Off Distance Available)",
-                  "LDA (Landing Distance Available)",
-                  "ASDA on the opposite runway"
-                ],
-                "correct": 2,
-                "explanation": "Displacing the landing threshold forward reduces the Landing Distance Available (LDA) for Runway 26 by exactly 320m, because aircraft cannot land short of the displaced threshold."
-              },
-              {
-                "question": "What is the primary operational function of an Equivalent Level of Safety (ELOS) assessment in a runway safety case?",
-                "options": [
-                  "To eliminate all aircraft landing weight restrictions",
-                  "To demonstrate that alternative compensatory measures provide the same high level of safety as standard CS-ADR-DSN compliance",
-                  "To bypass National Competent Authority safety audits",
-                  "To authorize operations without publishing a NOTAM"
-                ],
-                "correct": 1,
-                "explanation": "An ELOS assessment proves scientifically that mandated compensatory measures (e.g. dry runway limits, PAPI realignment, RFFS standby) fully offset non-standard runway dimensions, keeping overall risk at a low, acceptable level."
-              },
-              {
-                "question": "In formal aviation safety briefings, what is the legal meaning of the connecting phrase 'provided that'?",
-                "options": [
-                  "It introduces an optional recommendation that pilots may ignore",
-                  "It indicates an absolute prerequisite condition without which the operational permission is immediately invalid",
-                  "It expresses a past historical event",
-                  "It serves as a synonym for 'notwithstanding'"
-                ],
-                "correct": 1,
-                "explanation": "'Provided that' establishes a binding conditional requirement. If the stated condition (e.g., dry surface) is breached, the authorization to land terminates immediately."
-              }
-            ],
-            "videos": [
-              {
-                "title": "Video 1: Runway End Safety Areas (RESA) & Overrun Accidents",
-                "channel": "ICAO Safety / NLR Research",
-                "duration": "7 mins",
-                "videoId": "7KkBE0HgNJQ",
-                "watchUrl": "https://www.youtube.com/watch?v=7KkBE0HgNJQ",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/7KkBE0HgNJQ",
-                "caption": "Explains why 90m and 240m safety buffers are required beyond runway ends, how overruns occur in wet weather, and how engineered arresting beds work.",
-                "part": "Part 1"
-              },
-              {
-                "title": "Video 2: Displaced Thresholds & Declared Distances Explained",
-                "channel": "Boldmethod Pilot Training",
-                "duration": "6 mins",
-                "videoId": "udS812jbAiE",
-                "watchUrl": "https://www.youtube.com/watch?v=udS812jbAiE",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/udS812jbAiE",
-                "caption": "Flight pilot perspective on how landing distances (LDA) change when thresholds are moved forward for runway construction or obstacle clearance.",
-                "part": "Part 2"
-              },
-              {
-                "title": "Video 3: How Major Airports Resurface Runways Without Closing",
-                "channel": "Megaprojects / Airport Engineering",
-                "duration": "8 mins",
-                "videoId": "EiKeGmkX6fY",
-                "watchUrl": "https://www.youtube.com/watch?v=EiKeGmkX6fY",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/EiKeGmkX6fY",
-                "caption": "Engineering documentary showing how major airports conduct night runway culvert repairs and resurfacing while maintaining commercial operations by day.",
-                "part": "Part 3"
-              }
-            ],
-            "articles": [
-              {
-                "topic": "Operational Flexibility",
-                "sourceTag": "Regulation (EU) 2018/1139 • Article 71",
-                "heading": "The Engineering of Article 71: How European Airports Secure Urgent Operational Exemptions",
-                "title": "The Engineering of Article 71: How European Airports Secure Urgent Operational Exemptions",
-                "snippet": "An in-depth analysis of the legal mechanisms, safety cases, and EASA notification timelines required to obtain temporary exemptions under Regulation (EU) 2018/1139.",
-                "summary": "An in-depth analysis of the legal mechanisms, safety cases, and EASA notification timelines required to obtain temporary exemptions under Regulation (EU) 2018/1139.",
-                "readTime": "Estimated read: 5 mins",
-                "url": "https://www.easa.europa.eu/en/document-library/regulations",
-                "content": [
-                  "Article 71(1) of the Basic Regulation is European civil aviation's primary statutory safety valve for unforeseen operational crises. When subterranean sinkholes, culvert collapses, or severe frost heave compromise an active runway, aerodromes cannot wait six months for standard regulatory amendments.",
-                  "By compiling an urgent safety case detailing exact hazard mitigations, certified declared distance recalculations, and daily audit regimes, airports obtain up to 60 calendar days of temporary statutory relief while repairs proceed.",
-                  "The statutory burden of proof rests entirely on the aerodrome operator: they must demonstrate that the proposed temporary dimensions achieve an Equivalent Level of Safety (ELOS). This requires mathematical risk modeling of landing rollouts, obstacle clearance surfaces, and fire-rescue response times.",
-                  "Once approved by the National Competent Authority (such as the French DSAC), formal notification must be delivered to EASA and the European Commission, ensuring transparent regulatory oversight across the European aviation network."
-                ],
-                "takeaways": [
-                  "Article 71 provides up to 60 days of temporary statutory relief for urgent aerodrome operational emergencies.",
-                  "The aerodrome operator must prove an Equivalent Level of Safety (ELOS) through compensatory risk mitigations.",
-                  "National authorities must formally notify EASA and the European Commission of granted exemptions."
-                ],
-                "vocab": [
-                  "Article 71 Exemption",
-                  "Equivalent Level of Safety (ELOS)",
-                  "National Competent Authority",
-                  "Compensatory Mitigation"
-                ]
-              },
-              {
-                "topic": "Runway Safety Buffers",
-                "sourceTag": "CS-ADR-DSN.B.200 • Aerodrome Design",
-                "heading": "Overrun Dynamics & RESA Compromises: Mitigating Risk with Engineered Arresting Systems",
-                "title": "Overrun Dynamics & RESA Compromises: Mitigating Risk with Engineered Arresting Systems",
-                "snippet": "How aerodrome operators balance shortened Runway End Safety Areas with dry-runway rules, crosswind caps, and arresting technologies during major works.",
-                "summary": "How aerodrome operators balance shortened Runway End Safety Areas with dry-runway rules, crosswind caps, and arresting technologies during major works.",
-                "readTime": "Estimated read: 4 mins",
-                "url": "https://skybrary.aero/articles/runway-end-safety-area-resa",
-                "content": [
-                  "Standard EASA Certification Specifications recommend a 240-meter Runway End Safety Area (RESA) beyond the runway strip end to safely arrest overrunning jets.",
-                  "When culvert excavation or resurfacing works force a temporary reduction to 120 meters, compensatory measures must eliminate the root causes of landing overruns. By mandating that flights only land on dry pavement, capping allowable crosswinds at 15 knots, and moving the PAPI aim point, the probability of an aircraft reaching the safety buffer drops dramatically.",
-                  "In constrained physical environments where standard RESA length cannot be provided, operators increasingly install Engineered Material Arresting Systems (EMAS). These cellular concrete blocks crush reliably under aircraft landing gear, safely decelerating a 100-ton airliner from 70 knots to a complete halt within 90 meters.",
-                  "Combining physical arresting systems with strict meteorological limits guarantees that passengers and airframes remain fully protected even when standard safety buffers are temporarily curtailed."
-                ],
-                "takeaways": [
-                  "Standard EASA design recommends 240m RESA buffers to safely absorb landing overruns and undershoots.",
-                  "Temporary RESA reductions mandate strict compensatory mitigations: dry pavement only and 15-knot crosswind caps.",
-                  "Engineered Material Arresting Systems (EMAS) crush predictably to stop overrunning jets in compact spaces."
-                ],
-                "vocab": [
-                  "Runway End Safety Area (RESA)",
-                  "Compensatory Operating Rules",
-                  "Engineered Material Arresting System (EMAS)",
-                  "Overrun Deceleration"
-                ]
-              },
-              {
-                "topic": "Aeronautical Information",
-                "sourceTag": "Point ADR.OPS.B.070 • AIS & Flight Ops",
-                "heading": "Translating Recalculated Declared Distances into Cockpit Flight Management Systems (FMS)",
-                "title": "Translating Recalculated Declared Distances into Cockpit Flight Management Systems (FMS)",
-                "snippet": "The critical operational coordination between aerodrome civil engineers, AIS cartographers, and airline dispatchers during displaced threshold reconfigurations.",
-                "summary": "The critical operational coordination between aerodrome civil engineers, AIS cartographers, and airline dispatchers during displaced threshold reconfigurations.",
-                "readTime": "Estimated read: 4 mins",
-                "url": "https://skybrary.aero/articles/declared-distances",
-                "content": [
-                  "Recalculating declared distances on paper is meaningless unless the data flows accurately into the cockpit Flight Management System (FMS) before takeoff.",
-                  "Through AIP Supplements published at least 28 days in advance and Class 1 trigger NOTAMs, revised Take-Off Run Available (TORA) and Landing Distance Available (LDA) coordinates are ingested into global airline flight planning software.",
-                  "Before pushback, airline dispatchers verify that takeoff and landing performance calculations account for the displaced threshold. Flight crews cross-check their electronic flight bags (EFB) against ATIS broadcast letters to ensure aircraft gross takeoff weight does not exceed the temporary runway length.",
-                  "Close coordination between aerodrome reporting officers and aeronautical information service (AIS) providers prevents flight crews from attempting full-length takeoffs on shortened runways."
-                ],
-                "takeaways": [
-                  "Revised runway declared distances must be published via AIP Supplements 28 days prior to works.",
-                  "Flight dispatchers and pilots cross-check electronic flight bags (EFB) against live ATIS broadcasts.",
-                  "Trigger NOTAMs ensure that global navigation databases update temporary runway threshold coordinates."
-                ],
-                "vocab": [
-                  "Declared Distances (TORA/LDA)",
-                  "AIP Supplement",
-                  "Trigger NOTAM",
-                  "Electronic Flight Bag (EFB)"
-                ]
-              }
-            ],
-            "grammar": {
-              "title": "Connecting Words for Explaining Rules & Conditions",
-              "badge": "CEFR B1–B2 Focus",
-              "patternTitle": "The Conditional Regulatory Pattern",
-              "formula": "Main Safety Rule + CONNECTING WORD (Provided that / Subject to / In lieu of) + Condition Clause",
-              "rulesTitle": "How to Use Each Connecting Word in Aviation Operations",
-              "rules": [
-                "<strong>PROVIDED THAT (Essential Condition):</strong> Means 'on the strict condition that'. Used when a permission depends 100% on a specific safety rule being satisfied.",
-                "<strong>SUBJECT TO (Regulatory Oversight):</strong> Means 'dependent on formal approval or continuous monitoring'. Subordinates an action to ongoing supervision.",
-                "<strong>IN LIEU OF (Substitution):</strong> Means 'in place of' or 'instead of'. Used when an approved alternative measure replaces a standard specification.",
-                "<strong>NOTWITHSTANDING (Exceptional Override):</strong> Means 'in spite of' or 'despite'. Authorizes an exceptional action despite a general restriction."
-              ],
-              "trap": "<strong>⚠️ Spoken English Pitfall:</strong> French speakers frequently confuse 'provided that' with 'in case of' (<em>'en cas de'</em>). In aviation briefings, 'in case of' introduces an emergency contingency (<em>'in case of fire, evacuate'</em>), whereas 'provided that' introduces a mandatory condition for permission (<em>'landings are permitted provided that the runway is dry'</em>). Never mix them up!",
-              "examplesTitle": "Authentic EASA Part-ADR.OPS Operational Examples",
-              "examples": [
-                "Operations on Runway 26 are authorized <strong>provided that</strong> the pavement condition is certified as dry.",
-                "The temporary exemption is granted <strong>subject to</strong> daily joint safety audits between ATC and airport operations.",
-                "A temporary 120-metre RESA has been established <strong>in lieu of</strong> the standard 240-metre buffer zone.",
-                "<strong>Notwithstanding</strong> normal airside speed limits, emergency fire vehicles may exceed 30 km/h during standby deployment."
-              ]
-            },
-            "resources": [
-              {
-                "tag": "EASA Official",
-                "name": "EASA Aerodrome Regulations & Standards",
-                "desc": "Consolidated European rules for aerodrome certification, safety oversight, and management systems.",
-                "url": "https://www.easa.europa.eu/en/domains/aerodromes"
-              },
-              {
-                "tag": "National Authority",
-                "name": "Direction Générale de l'Aviation Civile (DGAC)",
-                "desc": "French civil aviation authority oversight circulars, aerodrome safety audits, and technical directives.",
-                "url": "https://www.enac.fr/en"
-              },
-              {
-                "tag": "Safety Encyclopedia",
-                "name": "SKYbrary Aviation Safety Knowledgebase",
-                "desc": "International operational safety articles covering apron safety, runway incursions, and human factors.",
-                "url": "https://skybrary.aero"
-              },
-              {
-                "tag": "Eurocontrol Hub",
-                "name": "Eurocontrol Airport Operations & Safety",
-                "desc": "European air traffic management data, apron collision alerts, and operational safety action groups.",
-                "url": "https://www.eurocontrol.int"
-              },
-              {
-                "tag": "Investigation Board",
-                "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
-                "desc": "Official French aviation safety investigation authority reports and safety recommendations.",
-                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea"
-              },
-              {
-                "tag": "US FAA Standards",
-                "name": "FAA Airport Safety & Standards Hub",
-                "desc": "Federal aviation administration advisory circulars, pavement marking standards, and FOD control guides.",
-                "url": "https://www.faa.gov/airports/airport_safety"
-              }
-            ],
-            "portals": [
-              {
-                "tag": "EASA Official",
-                "name": "EASA Aerodrome Regulations & Standards",
-                "desc": "Consolidated European rules for aerodrome certification, safety oversight, and management systems.",
-                "url": "https://www.easa.europa.eu/en/domains/aerodromes"
-              },
-              {
-                "tag": "National Authority",
-                "name": "Direction Générale de l'Aviation Civile (DGAC)",
-                "desc": "French civil aviation authority oversight circulars, aerodrome safety audits, and technical directives.",
-                "url": "https://www.enac.fr/en"
-              },
-              {
-                "tag": "Safety Encyclopedia",
-                "name": "SKYbrary Aviation Safety Knowledgebase",
-                "desc": "International operational safety articles covering apron safety, runway incursions, and human factors.",
-                "url": "https://skybrary.aero"
-              },
-              {
-                "tag": "Eurocontrol Hub",
-                "name": "Eurocontrol Airport Operations & Safety",
-                "desc": "European air traffic management data, apron collision alerts, and operational safety action groups.",
-                "url": "https://www.eurocontrol.int"
-              },
-              {
-                "tag": "Investigation Board",
-                "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
-                "desc": "Official French aviation safety investigation authority reports and safety recommendations.",
-                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea"
-              },
-              {
-                "tag": "US FAA Standards",
-                "name": "FAA Airport Safety & Standards Hub",
-                "desc": "Federal aviation administration advisory circulars, pavement marking standards, and FOD control guides.",
-                "url": "https://www.faa.gov/airports/airport_safety"
-              }
-            ]
-          },
-          "presentation": {
-            "title": "Session 3 Class Presentation • Operational Exemptions & Runway Safety Cases",
-            "subtitle": "Interactive Classroom Slide Deck for Regulation (EU) 2018/1139 Article 71, ELOS & Declared Distances",
-            "slides": [
-              {
-                "num": "01",
-                "badge": "01 • Statutory Framework",
-                "title": "Article 71 Exemptions • Flexibility in European Law",
-                "subtitle": "Regulation (EU) 2018/1139 & Point ADR.OR.B.040 Legal Architecture",
-                "takeaway": "Article 71 allows up to 60 days of temporary statutory relief for urgent operational needs, provided an Equivalent Level of Safety is proven.",
-                "cards": [
-                  {
-                    "tag": "Statutory Jurisdiction",
-                    "heading": "Article 71(1) Flexibility",
-                    "text": "Empowers Member States and aerodrome operators to grant temporary exemptions from technical standards in urgent operational circumstances."
-                  },
-                  {
-                    "tag": "Statutory Time Limit",
-                    "heading": "60-Day Maximum Ceiling",
-                    "text": "Exemptions cannot exceed two months (60 calendar days) without formal European Commission notification and safety review."
-                  },
-                  {
-                    "tag": "Regulatory Duty",
-                    "heading": "Point ADR.OR.B.040",
-                    "text": "Mandates prior approval from the National Competent Authority (DSAC) before altering runway physical characteristics or declared distances."
-                  }
-                ],
-                "teacherPrompt": "Ask the class: Why does European law provide Article 71 flexibility rather than forcing an airport to shut down completely when a runway defect occurs?"
-              },
-              {
-                "num": "02",
-                "badge": "02 • Safety Methodology",
-                "title": "The Safety Case & Equivalent Level of Safety (ELOS)",
-                "subtitle": "Proving that Alternative Mitigations Match Standard Safety Buffers",
-                "takeaway": "An ELOS assessment scientifically demonstrates that operational restrictions compensate fully for reduced physical runway buffers.",
-                "cards": [
-                  {
-                    "tag": "Core Concept",
-                    "heading": "Equivalent Level of Safety (ELOS)",
-                    "text": "Demonstrates that alternative operational rules provide the same level of risk protection as standard CS-ADR-DSN compliance."
-                  },
-                  {
-                    "tag": "Risk Assessment",
-                    "heading": "Hazard Identification (HIRA)",
-                    "text": "Evaluates landing overrun, undershoot, and foreign object debris (FOD) probabilities under modified physical dimensions."
-                  },
-                  {
-                    "tag": "Residual Risk",
-                    "heading": "Tolerable Risk Matrix",
-                    "text": "Initial high-risk ratings (e.g., 4A overrun risk) must be mitigated down to Low (1B) before operational approval is granted."
-                  }
-                ],
-                "teacherPrompt": "Concept check: What is the difference between a Derogation (relaxation of a rule) and an ELOS (proof that safety remains 100% equivalent)?"
-              },
-              {
-                "num": "03",
-                "badge": "03 • Physical Geometry",
-                "title": "Declared Distances & Threshold Displacement Geometry",
-                "subtitle": "How Moving the Threshold by 320m Alters Runway Performance",
-                "takeaway": "Displacing Threshold 26 forward reduces landing distance (LDA) but preserves full take-off run (TORA) on the opposite runway direction.",
-                "cards": [
-                  {
-                    "tag": "Landing Distance",
-                    "heading": "LDA Reduced to 2,680m",
-                    "text": "Landing threshold displaced forward by 320m to clear the excavation zone. Aircraft must touch down beyond the worksite."
-                  },
-                  {
-                    "tag": "Overrun Protection",
-                    "heading": "Temporary 120m RESA",
-                    "text": "A certified 120m by 90m Runway End Safety Area is established in lieu of the standard 240m buffer, exceeding Code 4 minimums."
-                  },
-                  {
-                    "tag": "Opposite Direction",
-                    "heading": "RWY 08 Overrun ASDA",
-                    "text": "Full 3,000m TORA is available on Runway 08 for take-off, but ASDA is capped at 2,680m to protect the western excavation site."
-                  }
-                ],
-                "teacherPrompt": "Discussion: Why can an aircraft take off over a displaced threshold, but cannot land on it? Contrast TORA and LDA."
-              },
-              {
-                "num": "04",
-                "badge": "04 • Operational Controls",
-                "title": "Mandatory Compensatory Safety Measures in Action",
-                "subtitle": "Strict Weather & Emergency Conditions Governing Modified Operations",
-                "takeaway": "Compensatory measures are non-negotiable: dry runway only, 15-knot crosswind caps, and dedicated fire service standby.",
-                "cards": [
-                  {
-                    "tag": "Surface Condition",
-                    "heading": "Dry Runway Operation Only",
-                    "text": "Nil standing water, slush, or ice. If rain reduces braking action below 'Good', commercial landings on Runway 26 are suspended."
-                  },
-                  {
-                    "tag": "Wind Limitations",
-                    "heading": "15-Knot Crosswind Cap",
-                    "text": "Maximum allowable crosswind component is capped at 15 knots to prevent lateral landing deviation on the shortened pavement."
-                  },
-                  {
-                    "tag": "Emergency Standby",
-                    "heading": "RFFS Category 7 on Standby",
-                    "text": "Heavy Rapid Intervention Vehicle stationed at Holding Point Bravo, maintaining emergency response times under 60 seconds."
-                  }
-                ],
-                "teacherPrompt": "Ask students: What happens at 14:00 if a sudden heavy rainstorm wets the runway? Who makes the call to suspend operations?"
-              },
-              {
-                "num": "05",
-                "badge": "05 • Precision Language",
-                "title": "Conditional Connecting Language • Words for Rules",
-                "subtitle": "Mastering 'Provided that', 'Subject to', 'In lieu of' & 'Notwithstanding'",
-                "takeaway": "In European aviation safety cases, connecting words establish inescapable legal prerequisites and statutory boundaries.",
-                "cards": [
-                  {
-                    "tag": "Prerequisite Condition",
-                    "heading": "Provided that",
-                    "text": "Establishes a mandatory condition: 'Operations are permitted provided that the friction coefficient exceeds 0.50.'"
-                  },
-                  {
-                    "tag": "Supervisory Condition",
-                    "heading": "Subject to",
-                    "text": "Subordinates an authorization to oversight: 'Approval is subject to daily joint safety audits between ATC and airport staff.'"
-                  },
-                  {
-                    "tag": "Approved Substitution",
-                    "heading": "In lieu of",
-                    "text": "Replaces standard compliance: 'A 120m RESA is established in lieu of the standard 240m recommended buffer.'"
-                  }
-                ],
-                "teacherPrompt": "Pair exercise: Have students practice constructing operational directives using 'provided that' and 'in lieu of' without looking at notes."
-              },
-              {
-                "num": "06",
-                "badge": "06 • Dissemination",
-                "title": "Aeronautical Dissemination & Flight Ops Briefings",
-                "subtitle": "How Operational Changes Reach Airline Dispatchers & Cockpits",
-                "takeaway": "AIP Supplements and trigger NOTAMs ensure airline dispatchers calculate accurate landing performance before flight release.",
-                "cards": [
-                  {
-                    "tag": "Advance Publication",
-                    "heading": "AIP Supplement (SUP 014/24)",
-                    "text": "Published 28 days in advance to update airline flight management computers (FMC) and navigation chart databases."
-                  },
-                  {
-                    "tag": "Instant Notice",
-                    "heading": "Class 1 Trigger NOTAM",
-                    "text": "Promulgated globally via AFTN, detailing the 320m displaced threshold, recalculated distances, and dry-runway rules."
-                  },
-                  {
-                    "tag": "Crew Coordination",
-                    "heading": "Flight Ops Briefing Package",
-                    "text": "Airline dispatchers brief flight crews on modified performance calculations, ensuring full operational awareness."
-                  }
-                ],
-                "teacherPrompt": "Wrap-up question: An international flight is inbound from London Heathrow. Where and when does the pilot learn about the displaced threshold?"
-              }
-            ]
-          }
-        },
-        "4": {
-          "session": 4,
-          "title": "Ground Inspection & Audit Findings",
-          "overview": {
-            "intro": "Welcome to Session 4 of Technical English! Today we work with an authentic EASA airfield audit report to practice reporting ground safety non-compliances. You will learn to categorize findings into immediate hazards (Level 1) and minor issues (Level 2), use past deductions (must have, could have) to deduce how problems happened, and deliver a 2-minute spoken briefing to the Airport Director.",
-            "whyItMatters": "Airside safety oversight is not just filling out paperwork—it is an active defense against runway incursions, apron fires, and catastrophic engine failures. When an aerodrome inspector notices an uncontained fuel puddle flowing towards an apron drain, overgrown airfield grass hiding runway guard lights, or loose lockwire in a staging area, they must accurately classify the operational risk and explain the root cause clearly in spoken English. Mastering past modal deductions allows technical officers to reconstruct causal chains and communicate urgent safety decisions without ambiguity.",
-            "keyTerms": [
-              {
-                "term": "Level 1 Finding",
-                "ipa": "/ˈlev.l̩ wʌn ˈfaɪn.dɪŋ/",
-                "definition": "A critical non-compliance with aerodrome safety standards that lowers safety or seriously hazards aircraft operations, requiring immediate operational restriction."
-              },
-              {
-                "term": "Level 2 Finding",
-                "ipa": "/ˈlev.l̩ tuː ˈfaɪn.dɪŋ/",
-                "definition": "A non-compliance with aerodrome specifications or procedures that could lower safety if uncorrected, requiring a formal 30-day Corrective Action Plan."
-              },
-              {
-                "term": "Non-Conformance",
-                "ipa": "/ˌnɒn.kənˈfɔː.məns/",
-                "definition": "A documented failure to meet a specific technical specification, statutory regulation, or certified aerodrome manual procedure."
-              },
-              {
-                "term": "Corrective Action Plan (CAP)",
-                "ipa": "/kəˈrek.tɪv ˈæk.ʃən plæn/",
-                "definition": "A formal documented schedule submitted by the aerodrome operator detailing specific actions, responsible persons, and deadlines to resolve an audit finding."
-              },
-              {
-                "term": "Past Deductions (Must have / Could have)",
-                "ipa": "/pɑːst dɪˈdʌk.ʃənz/",
-                "definition": "Clear spoken sentences using 'must have', 'could have', and 'should have' to explain how an airfield defect or incident happened based on evidence."
-              },
-              {
-                "term": "Foreign Object Debris (FOD)",
-                "ipa": "/ˈfɒr.ən ˈɒb.dʒɪkt ˈdeb.riː/",
-                "definition": "Any loose item, metal lockwire, baggage tag, or gravel on an apron or taxiway capable of damaging aircraft tires or being ingested into jet engines."
-              },
-              {
-                "term": "Runway Guard Lights (RGL)",
-                "ipa": "/ˈrʌn.weɪ ɡɑːd laɪts/",
-                "definition": "Elevated or in-pavement yellow alternating flasher fixtures (wig-wags) positioned at taxiway holding positions to warn flight crews before entering an active runway."
-              },
-              {
-                "term": "Containment Boom",
-                "ipa": "/kənˈteɪn.mənt buːm/",
-                "definition": "A portable floating or weighted barrier deployed on apron pavement to block fuel spills from reaching stormwater drains or unsealed soil."
-              },
-              {
-                "term": "Unpaved Runway Strip",
-                "ipa": "/ʌnˈpeɪvd ˈrʌn.weɪ strɪp/",
-                "definition": "The prepared grassy ground area bordering runways and taxiways which must be kept mowed (maximum 200 mm height) to prevent obscuring optical lighting."
-              },
-              {
-                "term": "Audit Observation",
-                "ipa": "/ˈɔː.dɪt ˌɒb.zəˈveɪ.ʃən/",
-                "definition": "A factual statement of operational reality recorded by an airside safety inspector during an audit walkaround, supported by photographic or measured evidence."
-              }
-            ],
-            "speakingTask": {
-              "title": "Authentic EASA Task • Photo-Audit Challenge & 3-Bullet Debrief",
-              "instructions": "Working in pairs or trios, open the authentic EASA Airfield Audit Report (EASA/ADR-INSP/2024-012) below. Each group reviews one physical non-conformance exhibit, uses past modal deductions (must have, could have, should have) to determine how the failure occurred, and delivers a concise 2-minute oral audit debrief to the Airport Director.",
-              "document": {
-                "title": "EASA Airfield Audit & Ground Inspection Report: Non-Conformance Findings",
-                "subtitle": "Point ADR.AR.C.055 Audit Observations • Fuel Spills, RGL Obscuration & FOD Control",
-                "filename": "GSEA_S3_M1_S4_EASA_Airfield_Audit_Report.pdf",
-                "path": "docs/GSEA_S3_M1_S4_EASA_Airfield_Audit_Report.pdf",
-                "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
-              },
-              "requirements": [
-                "Use at least 4 of today's 10 technical terms from the list above.",
-                "Formulate at least two clear past modal deductions (must have / could have / should have + past participle).",
-                "Deliver a structured 3-bullet formal oral debrief (Finding & Location, Root Cause Deduction, Immediate Action & Deadline)."
-              ],
-              "statements": {
-                "group1": "Group 1 Statement (Exhibit 01 • Stand 14 Fuel Hydrant Spill): Explain why an uncontained 42 m² fuel spill flowing toward a storm drain is classified as a Level 1 Finding, and deduce how the deadman valve was jammed.",
-                "group2": "Group 2 Statement (Exhibit 02 • Holding Point B2 Obscured Guard Lights): Explain why 650 mm tall overgrown grass obscuring runway guard lights degrades incursion protection, and deduce why maintenance missed this location.",
-                "group3": "Group 3 Statement (Exhibit 03 • Stand 12 Missing FOD Stations): Explain how missing magnetic FOD bins and scattered lockwire threaten operating jet engines, and deduce why ground crews left debris on the ramp."
-              },
-              "usefulPhrases": [
-                "Based on the physical evidence on Stand 14, the refueling crew must have failed to...",
-                "The fuel spill could have entered the water table if...",
-                "Under Point ADR.AR.C.055, this non-compliance is classified as a Level 1 finding because...",
-                "The airfield maintenance team should have mowed the grass around Taxiway Bravo 2...",
-                "To eliminate this immediate hazard, our inspection team has ordered..."
-              ]
-            },
-            "document": {
-              "title": "EASA Airfield Audit & Ground Inspection Report: Non-Conformance Findings",
-              "subtitle": "Point ADR.AR.C.055 Audit Observations • Fuel Spills, RGL Obscuration & FOD Control",
-              "filename": "GSEA_S3_M1_S4_EASA_Airfield_Audit_Report.pdf",
-              "path": "docs/GSEA_S3_M1_S4_EASA_Airfield_Audit_Report.pdf",
-              "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
-            }
-          },
-          "objectives": {
-            "title": "Session 4 Objectives - Ground Inspection & Audit Findings",
-            "summary": "By the end of this session, GSEA students will be able to distinguish between Level 1 and Level 2 EASA non-conformances, use past modal deductions (must have, could have, should have) to explain how airfield deficiencies occurred, analyze authentic inspection schematics and photos, and deliver a structured 3-bullet oral audit debrief to an airport director.",
-            "items": [
-              {
-                "num": 1,
-                "title": "Categorize Audit Observations (EASA Part-ADR.AR.C.055)",
-                "description": "Distinguish between Level 1 immediate hazards (stand/taxiway restriction) and Level 2 systemic non-compliances (30-day corrective action deadline).",
-                "part": "Part 1"
-              },
-              {
-                "num": 2,
-                "title": "Inspect Real Airfield Exhibits (Schematic & Photo Scanning)",
-                "description": "Scan technical CAD drawings and inspection evidence covering fuel hydrant leaks, obscured runway guard lights, and uncontained ramp FOD.",
-                "part": "Part 2"
-              },
-              {
-                "num": 3,
-                "title": "Past Modal Deductions for Root Cause Analysis (Language Focus)",
-                "description": "Master past modals (must have, could have, should have, can't have + past participle) to reconstruct failure sequences during technical debriefs.",
-                "part": "Part 3"
-              },
-              {
-                "num": 4,
-                "title": "The Photo-Audit Speaking Challenge (Collaborative Simulation)",
-                "description": "Working in pairs or trios, inspect an authentic non-conformance exhibit, formulate spoken deductions, and challenge partner conclusions.",
-                "part": "Part 4"
-              },
-              {
-                "num": 5,
-                "title": "Deliver the 3-Bullet Oral Audit Notice (Operational Debrief)",
-                "description": "Synthesize findings and deliver a professional 2-minute oral briefing addressing the Airport Director with immediate enforcement decisions.",
-                "part": "Part 5"
-              }
-            ]
-          },
-          "lessonPlan": {
-            "title": "Session 4 Lesson Plan - Ground Inspection & Audit Findings (2 Hours)",
-            "summary": "A communicative 4-part lesson guiding students from field photo observations to formal audit debriefs using past modal deductions.",
-            "parts": [
-              {
-                "num": "Part 1",
-                "title": "Ramp Observation Warm-Up & Finding Classification",
-                "description": "Activate background knowledge on airside safety walkarounds; establish the statutory distinction between Level 1 critical hazards and Level 2 systemic findings under Part-ADR.AR.C.055."
-              },
-              {
-                "num": "Part 2",
-                "title": "Analyzing Field Inspection Exhibits & Technical CAD Schematics",
-                "description": "Students inspect three real-world inspection exhibits (Stand 14 fuel spill, Taxiway B2 obscured guard lights, Stand 12 missing FOD bins), identifying cited rules and physical evidence."
-              },
-              {
-                "num": "Part 3",
-                "title": "Grammar Clinic • Past Modal Deductions for Root Cause Analysis",
-                "description": "Focus on expressing deduction and certainty about past events using must have, could have, should have, and can't have + past participle."
-              },
-              {
-                "num": "Part 4",
-                "title": "Photo-Audit Spoken Debrief Challenge & 3-Bullet Executive Notice",
-                "description": "Teams synthesize their assigned finding, deduce root causes, agree on immediate mitigations, and deliver a formal 2-minute spoken briefing to the Airport Director."
-              }
-            ]
-          },
-          "lessonContent": {
-            "hero": {
-              "title": "Ground Inspection & Audit Findings (Field to Report)",
-              "subtitle": "Translating Airfield Non-Conformities into Spoken Technical Debriefs",
-              "context": "Airside operations inspectors conduct daily walkarounds of aprons, taxiways, and holding positions. When physical defects or unsafe handling behaviors are discovered, inspectors must accurately classify the finding under EASA Part-ADR.AR.C.055, deduce how the failure occurred using past modals, and verbally brief airport leadership on immediate corrective actions.",
-              "image": "images/s3_m1_session4_banner.jpg",
-              "targetLevel": "CEFR B1–B2",
-              "roleContext": "Airside Safety Inspector / Aerodrome Auditor"
-            },
-            "openingSession": {
-              "title": "Opening Warm-Up • Field Observations to Formal Reports",
-              "instructions": "Discuss these three real-world inspection questions with your partner before opening the official EASA report:",
-              "questions": [
-                {
-                  "num": "01",
-                  "q": "What is the very first thing an airside inspector should do upon discovering a 40-square-meter fuel puddle near an active storm drain?",
-                  "hint": "Think about containment vs. reporting hierarchy (stop flow, deploy booms, alert RFFS)."
-                },
-                {
-                  "num": "02",
-                  "q": "Why does European aviation law distinguish between Level 1 findings (immediate stand closure) and Level 2 findings (30-day corrective deadline)?",
-                  "hint": "Consider the difference between an immediate flight hazard and an administrative/maintenance flaw."
-                },
-                {
-                  "num": "03",
-                  "q": "How does using past modals ('The driver must have forgotten...', 'The fuel could have reached...') help safety engineers conduct fair root-cause analysis without premature blame?",
-                  "hint": "Notice how modals express logical deduction based on physical clues rather than personal accusations."
-                }
-              ],
-              "teacherPrompt": "Encourage students to speak freely using everyday words. Ask: Have you ever seen a fuel spill or overgrown grass at an airport? What was the immediate risk?"
-            },
-            "documentExtract": {
-              "title": "Activity 1: EASA Field Audit Dossier & Inspection Exhibits",
-              "badge": "Official Oversight Record • EASA/ADR-INSP/2024-012",
-              "summary": "Review the three field audit exhibits documented during the comprehensive airside inspection of St. Exupéry International Aerodrome (LFSE):",
-              "exhibits": [
-                {
-                  "id": "FIND-01",
-                  "level": "Level 1 Finding",
-                  "levelClass": "text-red-700 bg-red-50 border-red-200",
-                  "location": "Stand 14 (Widebody Ramp)",
-                  "rule": "Point ADR.OPS.B.010 & ADR.OPS.B.025",
-                  "title": "Jet A-1 Fuel Hydrant Servicing Spill near Storm Drain",
-                  "facts": "A 42 m² uncontained kerosene pool was expanding across Stand 14 concrete pavement, within 8.2 meters of an unsealed stormwater drain inlet. The deadman handle was mechanically jammed with wire, and refueling crew had departed without deploying absorbent booms.",
-                  "enforcement": "Immediate stand closure enacted; aircraft boarding halted until RFFS washdown and boom containment confirmed."
-                },
-                {
-                  "id": "FIND-02",
-                  "level": "Level 2 Finding",
-                  "levelClass": "text-amber-800 bg-amber-50 border-amber-200",
-                  "location": "Taxiway Bravo 2 (Runway 08L Holding Point)",
-                  "rule": "CS-ADR-DSN.M.710 & Point ADR.OPS.B.015",
-                  "title": "Obscured Runway Guard Lights (Wig-Wags)",
-                  "facts": "Elevated Configuration A flashing yellow guard lights were obscured by unmaintained wild grasses reaching 650 mm in height (maximum certified limit is 200 mm). Beam visibility was degraded by an estimated 60% during dusk taxiing.",
-                  "enforcement": "30-day Corrective Action Plan issued; groundskeeping team dispatched for emergency grass cutting within 24 hours."
-                },
-                {
-                  "id": "FIND-03",
-                  "level": "Level 2 Finding",
-                  "levelClass": "text-amber-800 bg-amber-50 border-amber-200",
-                  "location": "Stand 12 Equipment Staging Area (ESA)",
-                  "rule": "Point ADR.OPS.B.016 & CS-ADR-DSN.Q.850",
-                  "title": "Missing Covered Magnetic FOD Receptacles",
-                  "facts": "The mandatory covered magnetic FOD bin was absent from a high-traffic GSE parking staging zone. Inspectors discovered loose metallic lockwire offcuts, sheared bolt heads, and baggage tags scattered within 12 meters of active aircraft engine intake danger zones.",
-                  "enforcement": "30-day CAP issued; immediate ground sweep completed; permanent magnetic bin re-installation required within 7 days."
-                }
-              ]
-            },
-            "rulesPractice": {
-              "title": "Activity 2: Grammar Clinic • Past Modal Deductions for Root Cause Analysis",
-              "summary": "When investigating how an airfield deficiency occurred, safety engineers use past modals to deduce causes based on physical evidence:",
-              "formula": "Modal Verb (must / could / should / can't) + HAVE + Past Participle (V3)",
-              "rules": [
-                {
-                  "modal": "must have + V3",
-                  "meaning": "95% certainty: Logical deduction based on strong physical proof.",
-                  "example": "The bowser driver <strong>must have jammed</strong> the deadman valve with wire to avoid holding it manually."
-                },
-                {
-                  "modal": "could have + V3",
-                  "meaning": "Possibility / Alternative outcome that did not happen.",
-                  "example": "The fuel spill <strong>could have entered</strong> the municipal drainage system if the inspector had arrived 10 minutes later."
-                },
-                {
-                  "modal": "should have + V3",
-                  "meaning": "Unfulfilled obligation / Best practice that was neglected.",
-                  "example": "The groundskeeping crew <strong>should have mowed</strong> the grass around Taxiway Bravo 2 during their bi-weekly cycle."
-                },
-                {
-                  "modal": "can't have + V3",
-                  "meaning": "Impossibility: Logical deduction that an event was impossible.",
-                  "example": "The flight crew <strong>can't have seen</strong> the yellow flasher beam through the dense 650 mm tall vegetation."
-                }
-              ],
-              "trap": "Common Trap: Do NOT use 'must of' or 'should of'. Always use 'must HAVE' + past participle (*must have failed*, *should have cleaned*).",
-              "practiceItems": [
-                {
-                  "prompt": "1. Evidence: Puddle of Jet A-1 is 42 m² wide and flowing towards drain. Deduce what the refueling handler failed to do.",
-                  "model": "The handler <strong>must have failed to monitor</strong> the hose coupling during the fuel upload."
-                },
-                {
-                  "prompt": "2. Evidence: 650 mm tall weeds around Runway Guard Light fixture. Deduce what the groundskeeping team neglected.",
-                  "model": "The maintenance team <strong>should have inspected</strong> and mowed the unpaved taxiway strip before grass exceeded 200 mm."
-                },
-                {
-                  "prompt": "3. Evidence: Metallic lockwire lying on apron pavement 10 m from engine intake. Deduce the potential hazard.",
-                  "model": "An operating turbofan engine <strong>could have ingested</strong> the loose wire and suffered severe compressor blade damage."
-                },
-                {
-                  "prompt": "4. Evidence: Fuel hydrant pit was unattended while active pumping was underway.",
-                  "model": "The technician <strong>can't have followed</strong> standard apron safety operating procedures."
-                }
-              ]
-            },
-            "spokenActivity": {
-              "title": "Activity 3: Spoken Team Challenge • The Photo-Audit Field Briefing",
-              "instructions": "Divide into pairs or trios. Each group takes one finding exhibit (Group 1: Stand 14 Fuel Spill; Group 2: Holding Point B2 Guard Lights; Group 3: Stand 12 Missing FOD Bins). Complete these steps in English:",
-              "steps": [
-                "Step 1: Inspect the CAD schematic and physical evidence in the PDF report.",
-                "Step 2: Formulate at least 3 past modal deductions explaining how the condition developed.",
-                "Step 3: Agree on whether the non-compliance is Level 1 or Level 2, citing EASA Part-ADR.AR.C.055.",
-                "Step 4: Role-play partner: Partner A presents the findings; Partner B acts as the Safety Manager, challenging deductions and asking clarifying questions."
-              ],
-              "checkingPrompts": [
-                "How can you be certain that the driver must have jammed the deadman valve?",
-                "What makes you classify this as a Level 1 rather than a Level 2 finding?",
-                "Could the fuel spill have been prevented with automated shut-off sensors?",
-                "What immediate operational restrictions are you enacting on this aircraft stand?"
-              ]
-            },
-            "safetyCheck": {
-              "title": "Activity 4: Operational Debrief • Delivering the 3-Bullet Audit Notice",
-              "instructions": "Synthesize your group's findings and deliver a crisp, 2-minute oral audit debrief addressing the Airport Director. Use this professional 3-bullet template:",
-              "template": [
-                "Bullet 1 (Finding & Location): 'Director, our audit team has recorded a [Level 1 / Level 2] non-conformance at [Location] under Point [EASA Standard]...'",
-                "Bullet 2 (Root Cause Modal Deduction): 'Based on physical evidence, the operator must have... and the condition could have resulted in...'",
-                "Bullet 3 (Immediate Action & Deadline): 'We have immediately enacted [closure / restriction], and require a formal CAP submitted within [immediate / 30 calendar days].'"
-              ],
-              "modelResponse": "Director, our audit team has recorded a Level 1 non-conformance on Stand 14 under Point ADR.OPS.B.010 and B.025. Based on physical evidence, the refueling crew must have jammed the deadman valve with wire and failed to deploy containment booms, which could have contaminated the local water table through the nearby storm drain. We have immediately closed Stand 14 to all aircraft operations, and require a full occurrence report and hydrant recertification before the stand may reopen.",
-              "peerChecklist": [
-                {
-                  "id": 1,
-                  "label": "Did the speaker correctly classify the finding level (Level 1 immediate vs Level 2 30-day CAP) citing Point ADR.AR.C.055?"
-                },
-                {
-                  "id": 2,
-                  "label": "Were past modal deductions formulated correctly (must have, could have, should have + past participle)?"
-                },
-                {
-                  "id": 3,
-                  "label": "Was the 3-bullet executive structure maintained concisely within the 2-minute time limit?"
-                },
-                {
-                  "id": 4,
-                  "label": "Did the speaker propose decisive immediate operational restrictions or clear corrective actions?"
-                }
-              ],
-              "rows": [
-                {
-                  "question": "1. What is the problem?",
-                  "answer": "Stand 14 has an uncontained 42 m² fuel spill near an active drain; Taxiway B2 guard lights are obscured by 650 mm tall wild weeds; Stand 12 has loose lockwire near engine intakes."
-                },
-                {
-                  "question": "2. What could happen?",
-                  "answer": "Hydrocarbon runoff risks toxic stormwater contamination and apron fire; obscured guard lights risk a runway incursion; loose lockwire risks turbofan compressor blade ingestion."
-                },
-                {
-                  "question": "3. How do we fix it?",
-                  "answer": "Stand 14: Emergency stand closure, absorbent boom deployment, and RFFS washdown. Taxiway B2: Groundskeeping mowing within 24 hours. Stand 12: Immediate ramp sweep and permanent covered magnetic FOD bins."
-                },
-                {
-                  "question": "4. Our Decision",
-                  "answer": "Level 1 immediate operational restriction enacted for Stand 14 (closed until hydrant recertified); Level 2 formal 30-day Corrective Action Plans issued for Taxiway B2 and Stand 12 under Point ADR.AR.C.055."
-                }
-              ],
-              "rulesToReality": {
-                "title": "Rules to Reality: 60-Second Pair Spoken Wrap-Up",
-                "prompt": "Pick one audit finding from today (fuel spill, obscured guard lights, or ramp FOD). In pairs, deliver an unscripted 60-second summary explaining: 1) What was the physical non-conformance? 2) Why did it happen (past modal deduction)? 3) What immediate operational restriction was required?"
-              }
-            }
-          },
-          "revision": {
-            "title": "Session 4 Vocabulary • Ground Inspection & Audit Findings",
-            "summary": "30 essential technical terms for GSEA students covering EASA audit findings, apron fuel safety, lighting maintenance, FOD control, and past modal deduction language.",
-            "terms": [
-              {
-                "num": "01",
-                "term": "Level 1 Finding",
-                "definition": "A critical non-compliance that lowers safety or seriously hazards aircraft operations, requiring immediate operational restriction.",
-                "part": "Part 1"
-              },
-              {
-                "num": "02",
-                "term": "Level 2 Finding",
-                "definition": "A systemic non-compliance that could lower safety if uncorrected, requiring a formal 30-day Corrective Action Plan.",
-                "part": "Part 2"
-              },
-              {
-                "num": "03",
-                "term": "Non-Conformance",
-                "definition": "A documented failure of an aerodrome facility or procedure to comply with statutory standards or the certified manual.",
-                "part": "Part 3"
-              },
-              {
-                "num": "04",
-                "term": "Corrective Action Plan (CAP)",
-                "definition": "A formal action schedule submitted by the aerodrome operator detailing solutions, responsibilities, and deadlines to close an audit finding.",
-                "part": "Part 4"
-              },
-              {
-                "num": "05",
-                "term": "Immediate Operational Restriction",
-                "definition": "A mandatory statutory order temporarily closing or restricting an aircraft stand, taxiway, or runway due to a Level 1 hazard.",
-                "part": "Part 5"
-              },
-              {
-                "num": "06",
-                "term": "Point ADR.AR.C.055",
-                "definition": "The European statutory standard governing findings, non-conformances, and enforcement actions by the competent authority.",
-                "part": "Part 6"
-              },
-              {
-                "num": "07",
-                "term": "Fuel Hydrant Pit",
-                "definition": "An underground airside refueling connection point on an apron stand where pressurized aviation kerosene is transferred to aircraft.",
-                "part": "Part 7"
-              },
-              {
-                "num": "08",
-                "term": "Deadman Control Mechanism",
-                "definition": "A mandatory hand-held safety trigger on refueling equipment that immediately cuts off fuel flow if released by the operator.",
-                "part": "Part 8"
-              },
-              {
-                "num": "09",
-                "term": "Containment Boom",
-                "definition": "A flexible, weighted floating or pavement barrier deployed around fuel leaks to prevent hazardous hydrocarbons from spreading.",
-                "part": "Part 9"
-              },
-              {
-                "num": "10",
-                "term": "Stormwater Drain Inlet",
-                "definition": "A surface grating on an apron pavement designed to drain rainwater, which must be protected during fuel servicing.",
-                "part": "Part 10"
-              },
-              {
-                "num": "11",
-                "term": "Absorbent Granules",
-                "definition": "Granular airside spill response material spread over hydrocarbon leaks to soak up kerosene and neutralize ignition hazards.",
-                "part": "Part 11"
-              },
-              {
-                "num": "12",
-                "term": "Hydrocarbon Contamination",
-                "definition": "The dangerous pollution of airport groundwater, storm drainage, or soil caused by uncontained jet fuel or motor oil spills.",
-                "part": "Part 12"
-              },
-              {
-                "num": "13",
-                "term": "Runway Guard Lights (RGL)",
-                "definition": "A pair of alternating flashing yellow optical units installed beside a taxiway holding position to prevent inadvertent runway incursions.",
-                "part": "Part 13"
-              },
-              {
-                "num": "14",
-                "term": "Configuration A Guard Light",
-                "definition": "The elevated pairs of yellow flashing lights positioned on both sides of a taxiway at the runway holding position line.",
-                "part": "Part 14"
-              },
-              {
-                "num": "15",
-                "term": "CS-ADR-DSN.M.710",
-                "definition": "The European aerodrome design specification setting physical elevation, color, and beam intensity standards for runway guard lights.",
-                "part": "Part 15"
-              },
-              {
-                "num": "16",
-                "term": "Overgrown Airfield Vegetation",
-                "definition": "Tall wild grasses or weeds exceeding 200 mm in height that obstruct pilot sightlines or hide visual airfield ground aids.",
-                "part": "Part 16"
-              },
-              {
-                "num": "17",
-                "term": "Luminous Beam Obscuration",
-                "definition": "The reduction in optical light intensity reaching a pilot cockpit caused by dirt, damaged lenses, or blocking vegetation.",
-                "part": "Part 17"
-              },
-              {
-                "num": "18",
-                "term": "Inadvertent Runway Incursion",
-                "definition": "The unauthorized entry of an aircraft, vehicle, or pedestrian onto an active runway surface, creating a severe collision hazard.",
-                "part": "Part 18"
-              },
-              {
-                "num": "19",
-                "term": "Foreign Object Debris (FOD)",
-                "definition": "Any loose item on an apron or taxiway capable of damaging aircraft structures, puncturing tires, or destroying jet engines.",
-                "part": "Part 19"
-              },
-              {
-                "num": "20",
-                "term": "Engine Ingestion Danger Zone",
-                "definition": "The 15-meter critical safety perimeter in front of operating turbofan engines where loose debris can be sucked inside.",
-                "part": "Part 20"
-              },
-              {
-                "num": "21",
-                "term": "Magnetic FOD Receptacle",
-                "definition": "A specialized heavy-duty airside disposal bin equipped with magnetic bars to securely collect metallic lockwire and bolts.",
-                "part": "Part 21"
-              },
-              {
-                "num": "22",
-                "term": "Metallic Lockwire Offcuts",
-                "definition": "Sharp stainless-steel wire pieces clipped during airframe or brake servicing that pose a critical tire puncture and ingestion threat.",
-                "part": "Part 22"
-              },
-              {
-                "num": "23",
-                "term": "GSE Staging Area",
-                "definition": "A designated painted zone where ground support vehicles park safely before aircraft arrival and during turnaround.",
-                "part": "Part 23"
-              },
-              {
-                "num": "24",
-                "term": "Daily Airside Walkaround",
-                "definition": "The routine visual inspection conducted by airport operations staff on foot or in vehicles to detect pavement defects and hazards.",
-                "part": "Part 24"
-              },
-              {
-                "num": "25",
-                "term": "Deduction Modal (Must have + V3)",
-                "definition": "A spoken grammatical structure expressing near-certainty that an action happened in the past based on physical proof.",
-                "part": "Part 25"
-              },
-              {
-                "num": "26",
-                "term": "Possibility Modal (Could have + V3)",
-                "definition": "A spoken structure expressing an alternative past outcome or risk that was possible but did not materialize.",
-                "part": "Part 26"
-              },
-              {
-                "num": "27",
-                "term": "Obligation Modal (Should have + V3)",
-                "definition": "A spoken structure identifying an unfulfilled duty or standard procedure that was neglected by operational personnel.",
-                "part": "Part 27"
-              },
-              {
-                "num": "28",
-                "term": "Impossibility Modal (Can't have + V3)",
-                "definition": "A spoken structure expressing that an event was logically impossible in the past based on available facts.",
-                "part": "Part 28"
-              },
-              {
-                "num": "29",
-                "term": "Root Cause Analysis (RCA)",
-                "definition": "A structured investigation methodology that uncovers the underlying systemic failures behind an operational non-conformance.",
-                "part": "Part 29"
-              },
-              {
-                "num": "30",
-                "term": "Oral Audit Debrief",
-                "definition": "A concise, structured spoken presentation delivered by airside inspectors to airport executives summarizing findings and mitigations.",
-                "part": "Part 30"
-              }
-            ]
-          },
-          "materials": {
-            "quizTitle": "Airfield Audit & Past Modal Scenarios Quiz",
-            "quiz": [
-              {
-                "q": "An airside inspector discovers an uncontained 42 m² Jet A-1 kerosene spill expanding toward an active storm drain on Stand 14. Under Point ADR.AR.C.055, how is this finding classified?",
-                "options": [
-                  "Level 1 Finding: It creates an immediate fire and environmental hazard that lowers safety, requiring immediate stand closure.",
-                  "Level 2 Finding: The operator is granted a standard 30-day period to mop up the fuel and submit paperwork.",
-                  "Observation Notice: Fuel spills on aprons are considered normal industrial wear and require no action.",
-                  "Administrative Note: The airline is billed for fuel loss but the stand remains fully operational."
-                ],
-                "correct": 0,
-                "explanation": "Under Point ADR.AR.C.055, any non-compliance that lowers safety or seriously hazards aircraft operations or environmental safety must be classified as a Level 1 Finding, triggering immediate operational restriction."
-              },
-              {
-                "q": "Which sentence correctly uses past modal deduction to explain why a groundskeeping team missed tall weeds around a runway guard light?",
-                "options": [
-                  "The maintenance crew must have skipped Taxiway Bravo 2 during their scheduled mowing cycle.",
-                  "The maintenance crew must of skip Taxiway Bravo 2 during their mowing cycle.",
-                  "The maintenance crew should to have skipped Taxiway Bravo 2 during their cycle.",
-                  "The maintenance crew could having skipped Taxiway Bravo 2 during their mowing."
-                ],
-                "correct": 0,
-                "explanation": "Past modal deduction uses the formula: modal + have + past participle (must have skipped). Never use 'must of'."
-              },
-              {
-                "q": "Why is unmaintained grass exceeding 650 mm in height around Runway Guard Lights dangerous to airside operations?",
-                "options": [
-                  "It obscures the yellow alternating flasher beams, preventing taxiing pilots from seeing the active runway holding line at night.",
-                  "It attracts birds to nest inside the electrical light fixture housing.",
-                  "It increases fuel consumption for aircraft waiting at the holding point.",
-                  "It interferes with VHF aeronautical radio communications between the tower and pilots."
-                ],
-                "correct": 0,
-                "explanation": "Runway guard lights provide critical visual warning to prevent runway incursions. Obscuring the beam by 60% leaves flight crews without high-intensity visual warnings before crossing active runways."
-              },
-              {
-                "q": "What is the primary danger of metallic lockwire offcuts and sheared bolts scattered in an Equipment Staging Area near Stand 12?",
-                "options": [
-                  "They can puncture aircraft tires or be ingested into high-bypass turbofan engines during ground taxi, destroying compressor blades.",
-                  "They cause radio signal interference with apron GPS geofencing equipment.",
-                  "They violate municipal noise abatement regulations during night turnarounds.",
-                  "They reduce the braking friction coefficient of painted stand lead-in lines."
-                ],
-                "correct": 0,
-                "explanation": "Metallic Foreign Object Debris (FOD) within the 15-meter engine hazard zone can be ingested by jet engines, causing catastrophic blade damage costing millions of euros."
-              }
-            ],
-            "videos": [
-              {
-                "title": "Video 1: EASA Aerodrome Oversight & Airside Audit Walkarounds",
-                "duration": "8:45",
-                "summary": "Follow European civil aviation inspectors during a live airside compliance audit evaluating apron stands, fuel hydrant safety, and non-conformance logging."
-              },
-              {
-                "title": "Video 2: Ramp Fuel Servicing Emergencies & Spill Containment",
-                "duration": "6:20",
-                "summary": "Technical briefing on deadman control valves, high-pressure hydrant pits, pneumatic drain plugs, and immediate absorbent boom deployment."
-              },
-              {
-                "title": "Video 3: Runway Incursion Prevention & Guard Light Maintenance",
-                "duration": "7:15",
-                "summary": "Aviation safety documentary examining how visual airfield ground aids and unobstructed sightlines prevent inadvertent runway incursions."
-              }
-            ],
-            "articles": [
-              {
-                "topic": "EASA Oversight & Compliance",
-                "sourceTag": "Part-ADR.AR.C.055 • Inspectorate Guide",
-                "heading": "From Inspection to Enforcement: Understanding EASA Level 1 vs. Level 2 Findings",
-                "title": "From Inspection to Enforcement: Understanding EASA Level 1 vs. Level 2 Findings",
-                "snippet": "A practical operational guide for airside engineers detailing when an inspector must order an immediate stand shutdown versus when a 30-day Corrective Action Plan applies.",
-                "summary": "A practical operational guide for airside engineers detailing when an inspector must order an immediate stand shutdown versus when a 30-day Corrective Action Plan applies.",
-                "readTime": "Estimated read: 6 mins",
-                "url": "https://www.easa.europa.eu/en/domains/aerodromes",
-                "content": [
-                  "Under European Commission Regulation (EU) No 139/2014 Part-ADR.AR.C.055, aerodrome safety oversight relies on clear, evidence-based categorization of audit observations into Level 1 and Level 2 findings.",
-                  "A Level 1 Finding is any significant non-compliance with the aerodrome certification basis, essential requirements, or operational procedures that lowers safety or seriously hazards aircraft operations. When an inspector discovers a Level 1 condition—such as a large uncontained fuel spill spreading toward an unprotected drain, an unserviceable fire rescue vehicle, or an unlighted crane in an approach corridor—the authority must act immediately.",
-                  "The inspector orders immediate restriction, suspension, or total closure of the affected stand, taxiway, or runway until corrective mitigations eliminate the immediate operational danger. No grace period is permitted under European law.",
-                  "In contrast, a Level 2 Finding represents a non-compliance that could lower safety or hazard aircraft operations if uncorrected over time. Examples include unmaintained runway strip grass obscuring guard lights, missing magnetic FOD bins, or minor documentation gaps. The operator is issued a formal 30-calendar-day deadline to submit a Corrective Action Plan (CAP). If the operator fails to remediate the defect within the approved timeline, the finding is automatically escalated to Level 1."
-                ],
-                "takeaways": [
-                  "Level 1 findings represent immediate operational threats and require instant stand or runway closure.",
-                  "Level 2 findings represent systemic issues requiring a formal 30-day Corrective Action Plan (CAP).",
-                  "Failure to remediate a Level 2 finding within the approved deadline triggers automatic escalation to Level 1."
-                ],
-                "vocab": [
-                  "Level 1 Finding",
-                  "Level 2 Finding",
-                  "Immediate Operational Restriction",
-                  "Corrective Action Plan (CAP)"
-                ]
-              },
-              {
-                "topic": "Apron Hydrant Safety",
-                "sourceTag": "Point ADR.OPS.B.025 • Spill Prevention",
-                "heading": "Preventing Environmental Infiltration: Fuel Hydrant Safety & Drain Traps",
-                "title": "Preventing Environmental Infiltration: Fuel Hydrant Safety & Drain Traps",
-                "snippet": "Analysis of apron pavement drainage systems, oil-water interceptors, and mandatory ground handler response times during Jet A-1 servicing spills.",
-                "summary": "Analysis of apron pavement drainage systems, oil-water interceptors, and mandatory ground handler response times during Jet A-1 servicing spills.",
-                "readTime": "Estimated read: 5 mins",
-                "url": "https://skybrary.aero/articles/refuelling-safety-procedures",
-                "content": [
-                  "Aviation kerosene (Jet A-1) is both an extreme fire hazard on hot apron tarmac and a severe environmental toxin if allowed to reach groundwater or municipal drainage networks.",
-                  "Under Point ADR.OPS.B.025, aerodromes must engineer multiple containment barriers into apron design. Apron pavement is graded with subtle 1% slopes directing runoff toward flame traps and oil-water interceptors capable of separating hundreds of liters of fuel from rainwater before discharge.",
-                  "However, human procedures remain the first line of defense. The spring-loaded deadman handle on refueling bowsers and hydrant dispensers is engineered to snap shut in under two seconds if the operator loses consciousness or releases their grip. Jamming or wedging the deadman valve with wire—often done by careless operators seeking to avoid hand fatigue—is a criminal breach of safety rules.",
-                  "When a spill occurs, handlers must immediately enact the 'Stop, Block, and Notify' sequence: stop fuel flow, deploy weighted absorbent booms around drains, and notify airport fire services (RFFS) via direct airside radio."
-                ],
-                "takeaways": [
-                  "Apron pavement is engineered with slopes and oil-water interceptors to capture accidental hydrocarbon spills.",
-                  "Wedging open deadman control handles defeats safety systems and represents a critical safety violation.",
-                  "Frontline personnel must follow the 'Stop, Block, and Notify' protocol when fuel leaks are detected."
-                ],
-                "vocab": [
-                  "Deadman Control Handle",
-                  "Oil-Water Interceptor",
-                  "Absorbent Boom",
-                  "Hydrocarbon Contamination"
-                ]
-              },
-              {
-                "topic": "Visual Aids Maintenance",
-                "sourceTag": "CS-ADR-DSN.M.710 • Visual Aids",
-                "heading": "The Invisible Threat: Managing Airfield Vegetation to Protect Optical Lighting Systems",
-                "title": "The Invisible Threat: Managing Airfield Vegetation to Protect Optical Lighting Systems",
-                "snippet": "Case studies demonstrating how unmaintained grass strips degrade runway guard light and stop bar conspicuity, contributing to runway confusion incidents.",
-                "summary": "Case studies demonstrating how unmaintained grass strips degrade runway guard light and stop bar conspicuity, contributing to runway confusion incidents.",
-                "readTime": "Estimated read: 5 mins",
-                "url": "https://skybrary.aero/articles/runway-guard-lights-rgl",
-                "content": [
-                  "Airfield lighting fixtures rely on precise optical beam angles to project high-intensity warning signals into approaching aircraft cockpits. Under CS-ADR-DSN.M.710, elevated Runway Guard Lights (Configuration A flasher units) must remain fully conspicuous day and night.",
-                  "During spring and summer growing seasons, airfield soil strips bordering taxiways experience rapid grass growth. If groundskeeping mowing cycles are delayed by just two weeks, wild weeds can reach 600 mm in height, completely eclipsing elevated light fixtures positioned at 450 mm above ground level.",
-                  "Cockpit simulator tests conducted by accident investigation boards reveal that obscuring guard light flasher beams by 60% increases pilot runway confusion incidents by more than 40% during night operations in rain. Deprived of the flashing yellow visual cue, flight crews mistakenly cross holding position lines onto active runways.",
-                  "For this reason, certified aerodrome manuals mandate that vegetation within 15 meters of any visual lighting aid must never exceed 200 mm in height, supported by daily optical inspections at dawn and dusk."
-                ],
-                "takeaways": [
-                  "Runway Guard Lights project critical visual cues warning flight crews before crossing active runways.",
-                  "Overgrown grass exceeding 200 mm obscures yellow flasher beams and sharply increases runway incursion risks.",
-                  "Daily dawn and dusk optical inspections ensure visual aids maintain certified luminous conspicuity."
-                ],
-                "vocab": [
-                  "Runway Guard Lights (RGL)",
-                  "Optical Conspicuity",
-                  "Unpaved Runway Strip",
-                  "Inadvertent Runway Incursion"
-                ]
-              }
-            ],
-            "grammar": {
-              "title": "Grammar Clinic • Past Modal Deductions for Root Cause Analysis",
-              "badge": "Language for Technical Reasoning",
-              "patternTitle": "Expressing Degrees of Certainty About Past Operational Failures",
-              "formula": "Modal Verb (must / could / should / can't) + HAVE + Past Participle (V3)",
-              "rulesTitle": "Core Operational Meanings in Accident & Audit Analysis",
-              "rules": [
-                "<strong>must have + V3:</strong> Expresses strong deduction based on physical evidence (<em>'The driver must have jammed the deadman valve with wire.'</em>).",
-                "<strong>could have + V3:</strong> Expresses past capability or potential risk that was avoided (<em>'The fuel could have reached the river without emergency booms.'</em>).",
-                "<strong>should have + V3:</strong> Identifies an unperformed safety duty or procedure (<em>'The supervisor should have inspected the hose coupling before pumping.'</em>).",
-                "<strong>can't have + V3:</strong> Expresses logical impossibility in the past (<em>'The pilot can't have seen the yellow flasher through the 650 mm tall weeds.'</em>)."
-              ],
-              "trap": "Pronunciation & Writing Trap: Never write 'must of' or 'could of'. In rapid spoken English, 'must have' sounds like /ˈmʌs.təv/, but is always spelled 'must have'.",
-              "examplesTitle": "Authentic Spoken Audit Comparisons",
-              "examples": [
-                "The handler <strong>must have failed to latch</strong> the hydrant coupler properly.",
-                "The spill <strong>could have ignited</strong> if an auxiliary power unit (APU) was started nearby.",
-                "The aerodrome operator <strong>should have mowed</strong> Taxiway Bravo 2 before grass exceeded 200 mm.",
-                "The technician <strong>can't have performed</strong> the mandatory pre-fueling walkaround."
-              ]
-            },
-            "resources": [
-              {
-                "tag": "EASA Official",
-                "name": "EASA Aerodrome Regulations & Standards",
-                "desc": "Consolidated European rules for aerodrome certification, safety oversight, and management systems.",
-                "url": "https://www.easa.europa.eu/en/domains/aerodromes"
-              },
-              {
-                "tag": "National Authority",
-                "name": "Direction Générale de l'Aviation Civile (DGAC)",
-                "desc": "French civil aviation authority oversight circulars, aerodrome safety audits, and technical directives.",
-                "url": "https://www.enac.fr/en"
-              },
-              {
-                "tag": "Safety Encyclopedia",
-                "name": "SKYbrary Aviation Safety Knowledgebase",
-                "desc": "International operational safety articles covering apron safety, runway incursions, and human factors.",
-                "url": "https://skybrary.aero"
-              },
-              {
-                "tag": "Eurocontrol Hub",
-                "name": "Eurocontrol Airport Operations & Safety",
-                "desc": "European air traffic management data, apron collision alerts, and operational safety action groups.",
-                "url": "https://www.eurocontrol.int"
-              },
-              {
-                "tag": "Investigation Board",
-                "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
-                "desc": "Official French aviation safety investigation authority reports and safety recommendations.",
-                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea"
-              },
-              {
-                "tag": "US FAA Standards",
-                "name": "FAA Airport Safety & Standards Hub",
-                "desc": "Federal aviation administration advisory circulars, pavement marking standards, and FOD control guides.",
-                "url": "https://www.faa.gov/airports/airport_safety"
-              }
-            ],
-            "portals": [
-              {
-                "tag": "EASA Official",
-                "name": "EASA Aerodrome Regulations & Standards",
-                "desc": "Consolidated European rules for aerodrome certification, safety oversight, and management systems.",
-                "url": "https://www.easa.europa.eu/en/domains/aerodromes"
-              },
-              {
-                "tag": "National Authority",
-                "name": "Direction Générale de l'Aviation Civile (DGAC)",
-                "desc": "French civil aviation authority oversight circulars, aerodrome safety audits, and technical directives.",
-                "url": "https://www.enac.fr/en"
-              },
-              {
-                "tag": "Safety Encyclopedia",
-                "name": "SKYbrary Aviation Safety Knowledgebase",
-                "desc": "International operational safety articles covering apron safety, runway incursions, and human factors.",
-                "url": "https://skybrary.aero"
-              },
-              {
-                "tag": "Eurocontrol Hub",
-                "name": "Eurocontrol Airport Operations & Safety",
-                "desc": "European air traffic management data, apron collision alerts, and operational safety action groups.",
-                "url": "https://www.eurocontrol.int"
-              },
-              {
-                "tag": "Investigation Board",
-                "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
-                "desc": "Official French aviation safety investigation authority reports and safety recommendations.",
-                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea"
-              },
-              {
-                "tag": "US FAA Standards",
-                "name": "FAA Airport Safety & Standards Hub",
-                "desc": "Federal aviation administration advisory circulars, pavement marking standards, and FOD control guides.",
-                "url": "https://www.faa.gov/airports/airport_safety"
-              }
-            ]
-          },
-          "presentation": {
-            "title": "Session 4 Class Presentation • Ground Inspection & Audit Findings",
-            "slides": [
-              {
-                "num": "01",
-                "badge": "01 • Statutory Architecture",
-                "title": "Airfield Ground Inspections • The Legal Framework",
-                "subtitle": "Regulation (EU) No 139/2014 & Point ADR.AR.C.055 Oversight",
-                "takeaway": "Airside audits verify that aerodrome physical facilities and management systems comply continuously with certified safety standards.",
-                "cards": [
-                  {
-                    "tag": "Statutory Authority",
-                    "heading": "Competent Authority Role",
-                    "text": "EASA and national authorities (DSAC) conduct periodic inspections to identify physical defects, procedural gaps, and apron safety risks."
-                  },
-                  {
-                    "tag": "Operator Duty",
-                    "heading": "Point ADR.OPS.B.010",
-                    "text": "Aerodrome operators must inspect paved surfaces, lighting aids, and ground servicing equipment daily to ensure uncompromised safety."
-                  },
-                  {
-                    "tag": "Evidence Standard",
-                    "heading": "Objective Observations",
-                    "text": "Every audit finding must be backed by documented evidence: physical measurements, photographic exhibits, or recorded operational logs."
-                  }
-                ],
-                "teacherPrompt": "Ask the class: What is the difference between a routine maintenance check by the airport and a formal regulatory audit by the authority?"
-              },
-              {
-                "num": "02",
-                "badge": "02 • Non-Conformance Classification",
-                "title": "Level 1 vs. Level 2 Findings • Enforcing Safety",
-                "subtitle": "Point ADR.AR.C.055 Statutory Classification & Action Timelines",
-                "takeaway": "Level 1 findings trigger immediate stand or taxiway closure; Level 2 findings require a 30-day Corrective Action Plan (CAP).",
-                "cards": [
-                  {
-                    "tag": "Critical Hazard",
-                    "heading": "Level 1 Finding",
-                    "text": "Any significant non-compliance that lowers safety or seriously hazards aircraft operations. Results in immediate operational restriction or closure."
-                  },
-                  {
-                    "tag": "Systemic Flaw",
-                    "heading": "Level 2 Finding",
-                    "text": "Any non-compliance that could lower safety if uncorrected. The operator receives a formal 30-calendar-day deadline to submit a CAP."
-                  },
-                  {
-                    "tag": "Escalation Risk",
-                    "heading": "Failure to Remediate",
-                    "text": "If a Level 2 finding is not resolved within the approved CAP timeframe, the authority automatically escalates it to a Level 1 restriction."
-                  }
-                ],
-                "teacherPrompt": "Present a quick scenario: A taxiway centerline light is burned out. Is this Level 1 or Level 2? What if ALL centerline lights are out during low visibility?"
-              },
-              {
-                "num": "03",
-                "badge": "03 • Field Exhibit 01",
-                "title": "Stand 14 Fuel Hydrant Spill • Fire & Environmental Hazard",
-                "subtitle": "Uncontained Jet A-1 Servicing Spill & Inactive Safety Controls",
-                "takeaway": "Fuel spills spreading toward unsealed drains represent an immediate hazard requiring stand shutdown and boom containment.",
-                "cards": [
-                  {
-                    "tag": "Physical Hazard",
-                    "heading": "42 m² Spill Perimeter",
-                    "text": "Uncontained Jet A-1 kerosene was actively spreading across Stand 14 within 8.2 meters of an unsealed stormwater drain inlet."
-                  },
-                  {
-                    "tag": "Defective Control",
-                    "heading": "Jammed Deadman Valve",
-                    "text": "Inspectors discovered the spring-loaded deadman handle wedged open with wire, defeating the automatic emergency fuel cut-off mechanism."
-                  },
-                  {
-                    "tag": "Regulatory Finding",
-                    "heading": "Level 1 Enacted",
-                    "text": "Immediate stand shutdown ordered. RFFS foam/water washdown and pneumatic drain seals required before aircraft operations may resume."
-                  }
-                ],
-                "teacherPrompt": "Ask: Use 'must have' to explain why the deadman was wedged. (e.g. 'The worker must have wanted to rest his hand during the 40-minute fuel uplift.')"
-              },
-              {
-                "num": "04",
-                "badge": "04 • Field Exhibit 02",
-                "title": "Taxiway B2 Obscured Guard Lights • Incursion Risk",
-                "subtitle": "Overgrown Grass Degrading Optical Conspicuity at Runway 08L",
-                "takeaway": "Runway guard lights must remain fully conspicuous; overgrown vegetation creates dangerous incursion hot spots.",
-                "cards": [
-                  {
-                    "tag": "Observed Defect",
-                    "heading": "650 mm Grass Height",
-                    "text": "Wild grasses exceeded the 200 mm certified limit by more than 300%, obscuring the yellow alternating flasher fixtures on Taxiway Bravo 2."
-                  },
-                  {
-                    "tag": "Safety Consequence",
-                    "heading": "60% Optical Loss",
-                    "text": "Flight crews taxiing at dusk or under night operations are deprived of the high-intensity visual cue warning of an active runway crossing."
-                  },
-                  {
-                    "tag": "Regulatory Finding",
-                    "heading": "Level 2 with 24h Action",
-                    "text": "CS-ADR-DSN.M.710 non-compliance logged; 30-day CAP required with emergency groundskeeping mowers dispatched within 24 hours."
-                  }
-                ],
-                "teacherPrompt": "Prompt students: Use 'could have' to explain what might have happened if an aircraft taxied past Holding Point B2."
-              },
-              {
-                "num": "05",
-                "badge": "05 • Field Exhibit 03",
-                "title": "Stand 12 GSE Staging • Foreign Object Debris (FOD)",
-                "subtitle": "Missing Magnetic Receptacles & Engine Ingestion Danger",
-                "takeaway": "Loose metallic debris in staging areas threatens aircraft tires and engine fan blades during turnaround taxiing.",
-                "cards": [
-                  {
-                    "tag": "Observed Defect",
-                    "heading": "Missing Magnetic Bin",
-                    "text": "The mandatory covered magnetic FOD receptacle was absent from the Equipment Staging Area serving high-workload Stand 12."
-                  },
-                  {
-                    "tag": "Debris Hazard",
-                    "heading": "Lockwire & Bolts",
-                    "text": "Sharp stainless lockwire offcuts and plastic film were scattered within 12 meters of operating turbofan engine ingestion danger zones."
-                  },
-                  {
-                    "tag": "Regulatory Finding",
-                    "heading": "Level 2 Non-Conformance",
-                    "text": "Point ADR.OPS.B.016 non-compliance logged. Immediate ramp sweep completed and permanent bin installation ordered within 7 calendar days."
-                  }
-                ],
-                "teacherPrompt": "Ask: Why are magnetic bins mandatory on aprons rather than standard open trash cans?"
-              },
-              {
-                "num": "06",
-                "badge": "06 • Spoken Language Clinic",
-                "title": "Past Modal Deductions & The 3-Bullet Debrief",
-                "subtitle": "Grammar for Technical Reasoning & Executive Spoken Briefings",
-                "takeaway": "Structure oral debriefs into 3 concise bullets: Finding & Location, Root Cause Deduction, Immediate Action & Deadline.",
-                "cards": [
-                  {
-                    "tag": "Certainty",
-                    "heading": "Must have + V3",
-                    "text": "'The ground crew must have abandoned the bowser without checking the hose coupling latch.'"
-                  },
-                  {
-                    "tag": "Alternative Risk",
-                    "heading": "Could have + V3",
-                    "text": "'The metallic lockwire could have punctured the nosewheel tire during taxiing.'"
-                  },
-                  {
-                    "tag": "Unmet Duty",
-                    "heading": "Should have + V3",
-                    "text": "'The maintenance supervisor should have mowed Taxiway B2 during the morning sweep.'"
-                  }
-                ],
-                "teacherPrompt": "Have two students volunteer to role-play the 3-bullet debrief to the Airport Director right now!"
-              }
-            ]
-          }
-        },
-        "5": {
-          "session": 5,
-          "title": "Multi-Source Incident Investigation & Root Cause Analysis",
-          "overview": {
-            "intro": "Welcome to Session 5 of Technical English! In this class, we act as safety investigators examining an authentic EASA and BEA technical incident dossier. You will cross-reference air traffic radio logs, weather reports, and pilot statements to find root causes, use cause-and-effect language (caused by, resulting in), and deliver a 2-minute team investigation debrief.",
-            "whyItMatters": "Aviation accidents and serious incidents almost never stem from a single isolated failure. Instead, they are the culmination of a chain of latent conditions—such as production scheduling pressure, deferred equipment maintenance, and challenging local weather—that align with an active human slip. When an incident occurs, such as a ramp pushback collision or runway excursion, investigators must piece together contradictory, time-critical documents without jumping to premature conclusions. Mastering technical investigation phraseology ensures that safety recommendations address the root systemic causes rather than unfairly scapegoating frontline personnel.",
-            "keyTerms": [
-              {
-                "term": "Root Cause Analysis (RCA)",
-                "ipa": "/ruːt kɔːz əˈnæl.ə.sɪs/",
-                "definition": "A systematic investigation method used to identify the fundamental, systemic factors that resulted in an operational failure or incident."
-              },
-              {
-                "term": "Swiss Cheese Model",
-                "ipa": "/swɪs tʃiːz ˈmɒd.l̩/",
-                "definition": "James Reason's accident causation model showing how accidents occur when holes (weaknesses) in successive defensive barriers momentarily align."
-              },
-              {
-                "term": "Latent Failure",
-                "ipa": "/ˈleɪ.tənt ˈfeɪl.jər/",
-                "definition": "An organizational, design, or scheduling decision whose adverse consequences remain dormant within the system until triggered by operational events."
-              },
-              {
-                "term": "Active Error",
-                "ipa": "/ˈæk.tɪv ˈer.ər/",
-                "definition": "An unsafe action, slip, or omission committed by frontline personnel (e.g. pilot, controller, technician) whose impact is felt almost immediately."
-              },
-              {
-                "term": "Mandatory Occurrence Report (MOR)",
-                "ipa": "/ˈmæn.də.tər.i əˈkʌr.əns rɪˈpɔːt/",
-                "definition": "A formal confidential report submitted under Regulation (EU) 376/2014 detailing an operational event that endangered or could have endangered flight safety."
-              },
-              {
-                "term": "Causal Chain",
-                "ipa": "/ˈkɔː.zəl tʃeɪn/",
-                "definition": "The chronological sequence of interlinked events and conditions where each occurrence triggers or amplifies the subsequent failure."
-              },
-              {
-                "term": "Shear Pin",
-                "ipa": "/ʃɪər pɪn/",
-                "definition": "A calibrated mechanical safety pin in an aircraft towbar engineered to break under excessive stress to protect the nose landing gear from structural failure."
-              },
-              {
-                "term": "Dynamic Hydroplaning",
-                "ipa": "/daɪˈnæm.ɪk ˌhaɪ.drəˈpleɪ.nɪŋ/",
-                "definition": "A high-speed condition where aircraft tires ride entirely on a sheet of standing water, resulting in zero friction and complete loss of directional steering."
-              },
-              {
-                "term": "Contaminated Runway",
-                "ipa": "/kənˈtæm.ɪ.neɪ.tɪd ˈrʌn.weɪ/",
-                "definition": "A runway where more than 25% of the surface area is covered by standing water, slush, snow, or ice over a depth exceeding 3 mm."
-              },
-              {
-                "term": "Just Culture",
-                "ipa": "/dʒʌst ˈkʌl.tʃər/",
-                "definition": "A safety culture environment where frontline operators are encouraged to report errors transparently without fear of blame, while gross negligence remains accountable."
-              }
-            ],
-            "speakingTask": {
-              "title": "Authentic BEA / EASA Simulation • Multi-Source Occurrence Debriefing",
-              "instructions": "Working in investigation teams of two or three, inspect the three incident photo exhibits and the 4-part multi-source dossier (Occurrence Dossier BEA/EASA-2024-089: Toulouse-Blagnac Ramp Pushback & Runway Excursion). Cross-reference the ATC transcript, METAR, defect log, and pilot statement. Complete the Swiss Cheese Root Cause Matrix, and present a 2-minute oral debrief to the Airport Safety Directorate using targeted cause-and-effect connectors.",
-              "document": {
-                "title": "BEA/EASA Technical Incident Dossier: Multi-Source Occurrence Dossier 2024-089",
-                "subtitle": "Chronological Cross-Analysis • ATC Logs, METAR Windshear, MEL Defect & MOR Statements",
-                "buttonText": "Open Incident Dossier (PDF)",
-                "filename": "GSEA_S3_M1_S5_Incident_Investigation_Dossier.pdf",
-                "path": "docs/GSEA_S3_M1_S5_Incident_Investigation_Dossier.pdf",
-                "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
-              },
-              "teamRoles": {
-                "group1": "Team 1 (Exhibit 01 • Towbar Shear Pin Separation): Analyze why the pushback tug shear pin failed during ramp movement, cross-referencing ATC pushback clearance timing with driver steering inputs.",
-                "group2": "Team 2 (Exhibit 02 • Contaminated Runway Excursion): Evaluate why the aircraft drifted off the centerline into soft turf during rollout, correlating runway standing water with the deferred anti-skid log entry.",
-                "group3": "Team 3 (Exhibit 03 • Engine Cowling Ground Equipment Strike): Investigate how an unchocked belt loader impacted the composite nacelle, linking apron wind gusts with ground handler staffing pressure."
-              },
-              "usefulPhrases": [
-                "Based on the chronological cross-analysis, the initial towbar shear pin failure was triggered by...",
-                "The loss of directional control on Runway 14L was directly attributable to standing water, resulting in...",
-                "The maintenance record reveals a latent organizational failure, stemming from delayed component replacement...",
-                "While the flight crew executed the immediate go-around, the adverse weather subsequently caused...",
-                "To prevent recurrence of this incident, our investigation team recommends establishing..."
-              ]
-            },
-            "document": {
-              "title": "BEA/EASA Technical Incident Dossier: Multi-Source Occurrence Dossier 2024-089",
-              "subtitle": "Chronological Cross-Analysis • ATC Logs, METAR Windshear, MEL Defect & MOR Statements",
-              "buttonText": "Open Incident Dossier (PDF)",
-              "filename": "GSEA_S3_M1_S5_Incident_Investigation_Dossier.pdf",
-              "path": "docs/GSEA_S3_M1_S5_Incident_Investigation_Dossier.pdf",
-              "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
-            }
-          },
-          "objectives": {
-            "title": "Session 5 Objectives - Multi-Source Incident Investigation & Root Cause Analysis",
-            "summary": "By the end of this session, GSEA students will be able to synthesize fragmented operational records from four distinct aviation sources, apply James Reason's Swiss Cheese Model to isolate latent failures from active triggers, use cause-and-effect connectors with technical precision, analyze high-resolution occurrence photographs, and deliver a structured oral investigation debrief to an executive safety board.",
-            "items": [
-              {
-                "num": 1,
-                "title": "Cross-Reference Multi-Source Incident Dossiers",
-                "description": "Reconstruct an unbroken operational timeline by aligning ATC radio recordings, METAR/SPECI weather data, tech log MEL items, and Mandatory Occurrence Reports.",
-                "part": "Part 1"
-              },
-              {
-                "num": 2,
-                "title": "Inspect Physical Incident Evidence (Photo Analysis Challenge)",
-                "description": "Examine high-resolution airside occurrence photos covering pushback shear pin failure, contaminated runway excursion, and ground equipment nacelle strikes.",
-                "part": "Part 2"
-              },
-              {
-                "num": 3,
-                "title": "Master Cause-and-Effect Connectors (Language Focus)",
-                "description": "Employ targeted causal markers (stemming from, triggered by, resulting in, attributable to, consequently) to explain complex failure sequences without ambiguity.",
-                "part": "Part 3"
-              },
-              {
-                "num": 4,
-                "title": "Apply the Swiss Cheese Model for Root Cause Mapping",
-                "description": "Categorize investigation findings into latent organizational conditions, local working environment, active frontline slips, and defensive barriers.",
-                "part": "Part 4"
-              },
-              {
-                "num": 5,
-                "title": "Deliver the Executive Investigation Debrief",
-                "description": "Present a concise, structured 2-minute oral debriefing to the Airport Safety Directorate summarizing findings, root causes, and safety recommendations.",
-                "part": "Part 5"
-              }
-            ]
-          },
-          "lessonPlan": {
-            "title": "Session 5 Lesson Plan - Multi-Source Incident Investigation & Root Cause Analysis (2 Hours)",
-            "summary": "A 4-part communicative investigation simulation guiding students from physical photographic evidence to multi-source document synthesis and executive safety debriefs.",
-            "parts": [
-              {
-                "num": "Part 1",
-                "title": "Visual Evidence & Occurrence Inspection (Photo Description Challenge)",
-                "description": "Inspect 3 realistic airside occurrence photos (pushback shear pin failure, runway excursion into turf, engine cowling strike); students formulate initial spoken causal deductions in pairs."
-              },
-              {
-                "num": "Part 2",
-                "title": "Analyzing the Multi-Source Incident Dossier (Fragmented Evidence)",
-                "description": "Students inspect four authentic data tabs: ATC transcript timestamps, METAR/SPECI weather decode, aircraft technical log MEL items, and pilot/ground occurrence statements."
-              },
-              {
-                "num": "Part 3",
-                "title": "The Swiss Cheese Model Synthesis (Root Cause Analysis Matrix)",
-                "description": "Collaborative analysis isolating latent organizational decisions (scheduling, training), local working conditions (weather, lighting), and active human errors."
-              },
-              {
-                "num": "Part 4",
-                "title": "Oral Technical Debriefing & Executive Findings Presentation",
-                "description": "Student pairs present a formal 2-minute oral briefing to the Airport Safety Directorate using cause-and-effect connectors, supported by interactive auto-saving notes."
-              }
-            ]
-          },
-          "lessonContent": {
-            "hero": {
-              "title": "Multi-Source Incident Investigation & Root Cause Analysis",
-              "subtitle": "Synthesizing ATC Transcripts, METAR Decodes, Maintenance Logs & Occurrence Reports • The Swiss Cheese Model",
-              "image": "images/s3_m1_session5_investigation.jpg",
-              "targetLevel": "CEFR B1–B2",
-              "roleContext": "GSEA Aviation Safety & Airside Operations",
-              "duration": "120 Minutes (2 Hours)"
-            },
-            "openingSession": {
-              "tag": "Technical English • Module 1 • Session 5",
-              "heading": "From Fragmented Field Evidence to Systematic Safety Findings",
-              "lead": "When an aircraft suffers an airside occurrence—such as a pushback towbar failure, a low-speed runway excursion, or a ground servicing collision—the initial operational reports are almost always fragmented, stressful, and contradictory.",
-              "body": "Air traffic control logs record rapid-fire radio transmissions; weather reports document gusty crosswinds and rain intensity; maintenance logbooks list deferred equipment items under the Minimum Equipment List (MEL); and frontline occurrence reports convey subjective pilot and driver perspectives. As technical officers and safety investigators, your mission is to piece together these disparate clues into an objective causal chain. By applying the Swiss Cheese Model, you will uncover the underlying systemic and organizational factors that allowed multiple safety barriers to fail simultaneously.",
-              "diagnostic": {
-                "title": "Incident Investigation Entry Spot-Check",
-                "instructions": "Discuss these 4 essential investigation principles with your partner, then reveal the model answers.",
-                "questions": [
-                  {
-                    "id": 1,
-                    "q": "Under Regulation (EU) 376/2014, what is the mandatory reporting timeframe for submitting a Mandatory Occurrence Report (MOR)?",
-                    "answer": "Within 72 hours of becoming aware of the occurrence, unless exceptional circumstances prevent it."
-                  },
-                  {
-                    "id": 2,
-                    "q": "What is the primary sacrificial engineering purpose of a towbar shear pin during pushback operations?",
-                    "answer": "To fracture cleanly under excessive shear or torsional stress, protecting the expensive aircraft nose landing gear structure from severe internal damage."
-                  },
-                  {
-                    "id": 3,
-                    "q": "At what water depth is an asphalt runway officially classified as 'contaminated' with standing water under EASA CS-ADR-DSN rules?",
-                    "answer": "When standing water exceeds 3 mm in depth over more than 25% of the assessed runway surface area, triggering severe dynamic hydroplaning risk."
-                  },
-                  {
-                    "id": 4,
-                    "q": "In James Reason's Swiss Cheese Model, how does a latent condition differ from an active frontline failure?",
-                    "answer": "A latent condition is a dormant organizational or scheduling weakness (e.g. spare parts delay, turnaround rush) embedded in the system, whereas an active failure is an unsafe human slip committed directly at the operational sharp end."
-                  }
-                ]
-              }
-            },
-            "photoExhibits": [
-              {
-                "id": "exhibit1",
-                "title": "Exhibit 01 • Ramp Pushback Shear Pin Failure",
-                "image": "images/s3_s5_ramp_pushback_shear.jpg",
-                "badge": "Ramp Movement • Stand 14",
-                "caption": "Close-up airside inspection of an airliner nose landing gear on a wet apron, showing a snapped towbar shear pin and the disconnected pushback tug stopped abruptly.",
-                "details": "During pushback in torrential rain, the tug driver executed an aggressive steering angle while applying heavy braking. The calibrated shear pin broke as designed, but the sudden jolt caused the towbar head to graze the nose gear torque link.",
-                "modelSpoken": "In the foreground, the broken towbar shear pin is lying on the wet concrete. The failure was triggered by an abrupt tug steering correction, resulting in immediate towbar separation. This mechanical failure stemmed from excessive torque, but the emergency disconnect prevented severe structural damage to the nose landing gear assembly."
-              },
-              {
-                "id": "exhibit2",
-                "title": "Exhibit 02 • Contaminated Runway Excursion into Turf",
-                "image": "images/s3_s5_runway_excursion_turf.jpg",
-                "badge": "Runway 14L • Rollout Phase",
-                "caption": "Commercial airliner right main landing gear bogged down in soft grass beside the runway shoulder following rollout braking loss in heavy rain.",
-                "details": "During landing rollout on Runway 14L with 4mm of standing water, the flight crew encountered sudden directional veering. The right main gear departed the paved runway shoulder, coming to rest in soft waterlogged turf.",
-                "modelSpoken": "In this exhibit, the airliner right main gear is bogged down in the grass shoulder. The runway excursion was attributable to standing water on the asphalt, leading to dynamic hydroplaning and asymmetric braking. This active event was amplified by a deferred anti-skid defect noted in the technical logbook."
-              },
-              {
-                "id": "exhibit3",
-                "title": "Exhibit 03 • Engine Nacelle Strike by Ground Equipment",
-                "image": "images/s3_s5_engine_cowling_strike.jpg",
-                "badge": "Stand 22 • Servicing Bay",
-                "caption": "Two airside safety technicians measure a 40cm composite nacelle scrape on a turbofan engine caused by an unchocked mobile belt loader.",
-                "details": "While parked at Stand 22 during turnaround servicing, a mobile belt loader rolled forward during 35-knot wind gusts because the operator failed to set wheel chocks before walking away to collect baggage carts.",
-                "modelSpoken": "Here we see two technicians using calipers to inspect deep gouge marks on the carbon-fiber engine nacelle. The impact stemmed from severe wind gusts acting on an unchocked belt loader, which caused the vehicle to roll forward into the engine. This active slip was driven by turnaround time pressure."
-              }
-            ],
-            "dossier": {
-              "title": "BEA/EASA Incident Dossier: Occurrence Dossier BEA/EASA-2024-089",
-              "incident": "Toulouse-Blagnac Airfield Occurrence • Pushback Failure & Runway Excursion Causal Synthesis",
-              "tabs": [
-                {
-                  "id": "atc",
-                  "title": "Exhibit A: ATC Radio Transcript",
-                  "badge": "Ground & Tower Frequency (121.9 / 118.1)",
-                  "content": [
-                    "14:22:15 [AFR182] - Blagnac Ground, Air France 182, Stand 14, request push and start, Information Echo.",
-                    "14:22:20 [GND] - Air France 182, Blagnac Ground, pushback approved facing west, expect Runway 14L via Taxiway Bravo.",
-                    "14:24:05 [AFR182] - Ground, Air France 182, hold push! The towbar shear pin just snapped. Towbar is disconnected.",
-                    "14:24:12 [GND] - Air France 182, understood, hold position. Standby for airport operations inspection vehicle.",
-                    "14:28:40 [TUG-LEAD] - Apron Operations, Tug 4, shear pin broke due to standing water slickness and sudden brake application. Aircraft nose gear visually clear.",
-                    "14:52:10 [AFR182] - Blagnac Tower, Air France 182, on final approach Runway 14L, fully established.",
-                    "14:52:18 [TWR] - Air France 182, cleared to land Runway 14L, wind 190 at 22 knots, gusting 34. Caution standing water on touchdown zone.",
-                    "14:53:02 [AFR182] - Tower, Air France 182, we have veered right off the centerline onto the soft strip! Request immediate emergency assistance!"
-                  ]
-                },
-                {
-                  "id": "metar",
-                  "title": "Exhibit B: Weather Decode (METAR/SPECI)",
-                  "badge": "LFBO Weather Observation (14:30Z & 14:50Z)",
-                  "content": [
-                    "METAR LFBO 141430Z 19020G32KT 150V230 4500 +RA FEW008 BKN015 OVC030 14/13 Q1006 TEMPO 2500 +TSRA=",
-                    "SPECI LFBO 141450Z 20024G36KT 3000 +TSRA BKN006 OVC012CB 13/13 Q1004 WS ALL RWY RWY 14L 4/5/5 100% STANDING WATER 4MM=",
-                    "Operational Weather Decode:",
-                    "• Wind: 200 degrees at 24 knots, gusting to 36 knots (crosswind component exceeds 20 knots on Runway 14L).",
-                    "• Precipitation: Heavy thunderstorm (+TSRA) with active cumulonimbus clouds at 1,200 feet.",
-                    "• Runway Condition: Runway 14L contaminated with 100% standing water depth averaging 4 mm (critical hydroplaning threshold).",
-                    "• Windshear Alert: Low-level windshear warning active on all runway approach paths."
-                  ]
-                },
-                {
-                  "id": "techlog",
-                  "title": "Exhibit C: Technical Maintenance Log",
-                  "badge": "A320-200 F-GTAZ • Sector Defect Log Extract",
-                  "content": [
-                    "Item 01 [Date: 12 Oct]: Right Main Landing Gear Anti-Skid Valve #2 intermittent fault message (ECAM BRAKES ANTI-SKID).",
-                    "Maintenance Action [12 Oct 22:30]: Troubleshooting performed. Part on backorder. Deferred under MEL Item 32-42-01A (Category C: 10-day rectification window).",
-                    "Operational Constraint: Dispatch permitted under dry runway conditions with calculated stopping distance penalty +25%. Dispatch on contaminated runways requires explicit flight crew recalculation.",
-                    "Item 02 [Date: 14 Oct 10:15]: Tire #3 (Right Outboard) tread depth measured at 2.1 mm (minimum certified limit is 2.0 mm). Signed off as serviceable for next sector.",
-                    "Inspector Finding: Operating with marginal tire tread on a waterlogged runway reduces water channeling capacity by over 60%, drastically lowering the dynamic hydroplaning speed threshold."
-                  ]
-                },
-                {
-                  "id": "mor",
-                  "title": "Exhibit D: Occurrence Statements (MOR)",
-                  "badge": "Mandatory Occurrence Report Submissions",
-                  "content": [
-                    "Statement 1 • Captain (Air France 182):",
-                    "'Touchdown was firm and on centerline. Upon selecting reverse thrust, the aircraft developed an uncontrollable right yaw. Brake pedal application produced zero deceleration response on the right side. The aircraft drifted sideways off the asphalt onto the grass shoulder at approximately 35 knots. Flight crew performed emergency engine shutdown.'",
-                    "Statement 2 • Pushback Driver (Stand 14):",
-                    "'We were operating under severe 20-minute turnaround delay pressure because the inbound flight was late. Ground frequency was jammed with traffic calls. As I began the turn on the wet taxiway, another catering truck crossed directly in front of our path. I applied emergency brakes, and the towbar shear pin snapped immediately.'",
-                    "Statement 3 • Lead Line Technician:",
-                    "'The replacement anti-skid valve was requested three days ago, but central logistics delayed the shipment. Under commercial scheduling pressure, the aircraft was cleared for flight despite the deteriorating weather forecast.'"
-                  ]
-                }
-              ]
-            },
-            "languageClinic": {
-              "title": "Language Clinic: Cause-and-Effect Connectors for Incident Investigation",
-              "summary": "When presenting technical investigation findings, safety engineers use precise causal markers to distinguish background origins, active sparks, direct outcomes, and logical consequences:",
-              "connectorsTable": [
-                {
-                  "connector": "stemming from",
-                  "function": "Points backward to systemic background origins",
-                  "example": "The directional control failure was a systemic issue stemming from delayed maintenance.",
-                  "tip": "Use for latent conditions: [Outcome] + stems from + [Latent condition]"
-                },
-                {
-                  "connector": "triggered by",
-                  "function": "Identifies the immediate active spark or frontline action",
-                  "example": "The towbar shear pin fracture was triggered by sudden emergency brake application.",
-                  "tip": "Use for the immediate initiator: [Failure] + was triggered by + [Active event]"
-                },
-                {
-                  "connector": "resulting in",
-                  "function": "Connects directly to the physical outcome or consequence",
-                  "example": "Standing water created dynamic hydroplaning, resulting in runway excursion into soft turf.",
-                  "tip": "Follow with noun or gerund (-ing): resulting in + damage / loss / excursion"
-                },
-                {
-                  "connector": "attributable to",
-                  "function": "Assigns operational responsibility or primary contributing factor",
-                  "example": "The pushback communication breakdown was attributable to ground frequency congestion.",
-                  "tip": "Formal passive structure: [Event] + is attributable to + [Cause]"
-                },
-                {
-                  "connector": "consequently",
-                  "function": "Introduces a logical operational sequence or enforcement effect",
-                  "example": "Runway 14L was contaminated; consequently, landing distance increased by over 25%.",
-                  "tip": "Use with semi-colon or at start of sentence: Consequently, ..."
-                }
-              ],
-              "drills": [
-                {
-                  "id": 1,
-                  "prompt": "1. The towbar shear pin fracture was __________ the tug driver's sudden application of emergency brakes on the wet apron.",
-                  "options": ["triggered by", "stemming from", "consequently"],
-                  "correct": "triggered by",
-                  "rationale": "Emergency braking is the immediate physical catalyst that broke the pin."
-                },
-                {
-                  "id": 2,
-                  "prompt": "2. Operating with a deferred anti-skid valve was a latent risk __________ logistics delays in delivering replacement parts.",
-                  "options": ["attributable to", "resulting in", "stemming from"],
-                  "correct": "stemming from",
-                  "rationale": "'Stemming from' points back to the dormant root organizational cause (logistics delay)."
-                },
-                {
-                  "id": 3,
-                  "prompt": "3. The aircraft experienced dynamic hydroplaning at 85 knots, __________ an uncontrollable veer onto the unpaved grass shoulder.",
-                  "options": ["resulting in", "triggered by", "stemming from"],
-                  "correct": "resulting in",
-                  "rationale": "'Resulting in' links the physical loss of friction directly to the ensuing runway excursion."
-                },
-                {
-                  "id": 4,
-                  "prompt": "4. The apron vehicle crossing incident was __________ severe radio frequency congestion on the ground control channel.",
-                  "options": ["consequently", "attributable to", "resulting in"],
-                  "correct": "attributable to",
-                  "rationale": "'Attributable to' correctly assigns causative responsibility to the congested radio frequency."
-                },
-                {
-                  "id": 5,
-                  "prompt": "5. The runway standing water depth reached 4 mm; __________, the aerodrome operator suspended flight operations on Runway 14L.",
-                  "options": ["stemming from", "consequently", "triggered by"],
-                  "correct": "consequently",
-                  "rationale": "'Consequently' introduces the logical regulatory safety decision taken as an effect."
-                }
-              ]
-            },
-            "swissCheeseMatrix": {
-              "title": "The Swiss Cheese Model: Root Cause Synthesis Matrix",
-              "layers": [
-                {
-                  "category": "Layer 1 • Latent Organizational Failures",
-                  "badge": "Management & Policy Decisions",
-                  "items": [
-                    "Turnaround time compression policy creating unsafe operational rush on ramp teams.",
-                    "Central parts logistics delay leaving the anti-skid valve deferred for three consecutive days.",
-                    "Inadequate cross-wind dispatch thresholds for aircraft carrying deferred braking systems under MEL."
-                  ]
-                },
-                {
-                  "category": "Layer 2 • Local Working Conditions",
-                  "badge": "Environmental & Physical Workspace",
-                  "items": [
-                    "Torrential rainfall producing 4mm of standing water across the touchdown zone of Runway 14L.",
-                    "36-knot crosswind gusts and low-level windshear disrupting rollout directional control.",
-                    "Radio frequency congestion on ground control causing coordination delays during apron maneuvers."
-                  ]
-                },
-                {
-                  "category": "Layer 3 • Active Failures & Unsafe Acts",
-                  "badge": "Frontline Human Errors",
-                  "items": [
-                    "Pushback driver applied sudden emergency braking during a wet turn without warning flight crew.",
-                    "Flight crew continued landing approach despite runway standing water exceeding MEL limitations.",
-                    "Ground handling vehicle crossed active pushback lane without situational clearance."
-                  ]
-                },
-                {
-                  "category": "Layer 4 • Defenses & Mitigations",
-                  "badge": "Barriers That Held or Failed",
-                  "items": [
-                    "Towbar shear pin fractured cleanly as designed, preventing catastrophic landing gear tear-off (Held).",
-                    "Pavement grooving and friction drainage overwhelmed by extreme rainfall rate (Failed).",
-                    "Airport Fire Rescue (RFFS) deployed to grass shoulder in 75 seconds without injuries (Held)."
-                  ]
-                }
-              ]
-            },
-            "debriefTask": {
-              "title": "Executive Debriefing to the Airport Safety Directorate",
-              "leadPrompt": "Deliver a concise 2-minute oral presentation summarizing the findings of your investigation team.",
-              "structureSteps": [
-                "1. Occurrence Overview: State the date, location, aircraft, and the primary sequence of events.",
-                "2. Causal Analysis: Use cause-and-effect connectors to link latent failures with active triggers.",
-                "3. Regulatory Compliance: Cite relevant EASA rules (Regulation EU 139/2014 & EU 376/2014).",
-                "4. Preventive Safety Recommendations: Propose 2 concrete operational mitigations to prevent recurrence."
-              ],
-              "modelDebriefScript": "Good morning members of the Safety Directorate. Our investigation team has completed the multi-source analysis of Occurrence 2024-089 involving Air France 182 at Toulouse-Blagnac. \n\nThe initial towbar shear pin fracture at Stand 14 was triggered by sudden emergency braking during pushback, resulting in temporary departure delay. While the mechanical pin fractured as designed to protect the nose landing gear, this incident was attributable to commercial turnaround pressure and vehicle congestion on the ramp.\n\nSubsequently, during landing rollout on Runway 14L, the aircraft experienced an uncontrollable runway excursion into the soft turf. This loss of directional control stemmed from heavy rain producing 4mm of standing water, which led to dynamic hydroplaning. However, this active event was heavily compounded by a latent organizational condition: the aircraft was operating with a deferred anti-skid valve and marginal tire tread under MEL, despite severe weather warnings. \n\nUnder Regulation (EU) 376/2014, our team submits two formal safety recommendations: first, mandatory cross-checks prohibiting dispatch with deferred braking components when contaminated runways are forecast; and second, enhanced ramp telematics to enforce vehicle separation during pushback operations.",
-              "peerChecklist": [
-                {
-                  "id": 1,
-                  "label": "Did the speaker clearly distinguish latent organizational conditions from active frontline errors using the Swiss Cheese model?"
-                },
-                {
-                  "id": 2,
-                  "label": "Were cause-and-effect connectors (stemming from, triggered by, resulting in, attributable to, consequently) used accurately?"
-                },
-                {
-                  "id": 3,
-                  "label": "Did the debrief cite relevant regulatory standards (Regulation EU 376/2014 and EU 139/2014)?"
-                },
-                {
-                  "id": 4,
-                  "label": "Did the speaker propose 2 concrete, realistic safety recommendations rather than merely assigning frontline blame?"
-                }
-              ],
-              "peerCoaching": {
-                "evaluator": "Student B (Safety Board Evaluator): 'Your explanation of the shear pin fracture and runway excursion was very clear and well-paced. However, you didn\'t emphasize the latent organizational condition regarding the deferred anti-skid valve under MEL. Remember to cite Regulation EU 376/2014 when presenting mandatory dispatch limits.'",
-                "speaker": "Student A (Lead Investigator): 'Thank you for that feedback. I will make sure to link the logistics delay directly to the latent failure layer and reference EU 376/2014 in our final recommendations.'"
-              }
-            },
-            "safetyCheck": {
-              "title": "Activity 5: Safety Check: What is the Systemic Risk?",
-              "summary": "Review the 4 questions in the Safety Check table to synthesize incident findings and systemic safety decisions.",
-              "rows": [
-                {
-                  "question": "1. What is the systemic problem?",
-                  "answer": "Air France 182 suffered a pushback shear pin fracture on Stand 14 and a subsequent runway excursion on Runway 14L during severe rain with 4 mm standing water, compounded by a deferred anti-skid valve and marginal tire tread."
-                },
-                {
-                  "question": "2. What could happen if uncorrected?",
-                  "answer": "Operating transport-category aircraft with deferred braking systems on contaminated runways risks catastrophic high-speed overrun, gear collapse, and multi-vehicle apron collisions during congested turnarounds."
-                },
-                {
-                  "question": "3. How do we fix it?",
-                  "answer": "Enforce strict dispatch limits prohibiting flights with deferred MEL braking items when contaminated runways are forecast, mandate aerodrome water depth friction sweeps, and install GPS apron transponders on all ground service vehicles."
-                },
-                {
-                  "question": "4. Directorate Decision",
-                  "answer": "Issue mandatory safety directives under Regulation (EU) 376/2014: restrict Category C MEL dispatch under adverse weather, require immediate 72-hour MOR filing, and audit ground handler apron driving protocols."
-                }
-              ]
-            },
-            "rulesToReality": {
-              "title": "Rules to Reality: The 60-Second Investigator's Verdict",
-              "prompt": "Without looking at your notes, turn to your partner and explain in 60 seconds: 'Why did AF182 end up on the grass?' You must use at least 2 cause-and-effect connectors and mention one latent failure."
-            }
-          },
-          "revision": {
-            "title": "Technical Vocabulary Revision • Incident Investigation & Root Cause Analysis",
-            "summary": "Master 12 core spoken terms for reconstructing causal chains, evaluating evidence dossiers, and applying the Swiss Cheese Model.",
-            "terms": [
-              {
-                "term": "Root Cause Analysis (RCA)",
-                "ipa": "/ruːt kɔːz əˈnæl.ə.sɪs/",
-                "definition": "The formal method of identifying fundamental systemic causes rather than merely treating superficial symptoms.",
-                "example": "Our team conducted a comprehensive root cause analysis to determine why the towbar pin failed."
-              },
-              {
-                "term": "Swiss Cheese Model",
-                "ipa": "/swɪs tʃiːz ˈmɒd.l̩/",
-                "definition": "A systemic accident causation model showing how failures align through successive defensive layers.",
-                "example": "Applying the Swiss Cheese Model revealed that organizational delays aligned with severe weather."
-              },
-              {
-                "term": "Latent Failure",
-                "ipa": "/ˈleɪ.tənt ˈfeɪl.jər/",
-                "definition": "A hidden organizational or design weakness that lies dormant until triggered by an operational circumstance.",
-                "example": "The deferred anti-skid valve was a latent failure waiting for a contaminated runway to trigger it."
-              },
-              {
-                "term": "Active Error",
-                "ipa": "/ˈæk.tɪv ˈer.ər/",
-                "definition": "An unsafe human action or omission committed immediately prior to an operational incident.",
-                "example": "The tug driver's sudden braking was the active error that broke the towbar shear pin."
-              },
-              {
-                "term": "Mandatory Occurrence Report (MOR)",
-                "ipa": "/ˈmæn.də.tər.i əˈkʌr.əns rɪˈpɔːt/",
-                "definition": "A statutory report filed by aviation professionals detailing a safety-related incident under EU law.",
-                "example": "The captain filed a Mandatory Occurrence Report within twenty-four hours of the runway excursion."
-              },
-              {
-                "term": "Causal Chain",
-                "ipa": "/ˈkɔː.zəl tʃeɪn/",
-                "definition": "The logical sequence of interrelated events leading up to an accident or ground incident.",
-                "example": "Investigators reconstructed the causal chain by synchronizing ATC radio transcripts with METAR data."
-              },
-              {
-                "term": "Shear Pin",
-                "ipa": "/ʃɪər pɪn/",
-                "definition": "A sacrificial safety pin designed to fracture under abnormal loads to protect aircraft structure.",
-                "example": "The shear pin sheared cleanly, preventing severe twisting damage to the nose gear strut."
-              },
-              {
-                "term": "Dynamic Hydroplaning",
-                "ipa": "/daɪˈnæm.ɪk ˌhaɪ.drəˈpleɪ.nɪŋ/",
-                "definition": "The complete separation of aircraft tires from pavement caused by a water layer at high speed.",
-                "example": "At 90 knots, standing water caused dynamic hydroplaning, rendering the rudder ineffective."
-              },
-              {
-                "term": "Contaminated Runway",
-                "ipa": "/kənˈtæm.ɪ.neɪ.tɪd ˈrʌn.weɪ/",
-                "definition": "A runway covered with standing water, snow, or slush exceeding certified regulatory depths.",
-                "example": "The runway was declared contaminated after standing water reached a depth of 4 millimeters."
-              },
-              {
-                "term": "Minimum Equipment List (MEL)",
-                "ipa": "/ˈmɪn.ɪ.məm ɪˈkwɪp.mənt lɪst/",
-                "definition": "The certified document defining which aircraft instruments or components can be inoperative at dispatch.",
-                "example": "Dispatching the airliner under the MEL required an additional 25% landing distance allowance."
-              },
-              {
-                "term": "Just Culture",
-                "ipa": "/dʒʌst ˈkʌl.tʃər/",
-                "definition": "An atmosphere of trust where people are encouraged to provide essential safety-related information.",
-                "example": "A robust just culture guarantees that honest reporting is welcomed without fear of punishment."
-              },
-              {
-                "term": "Safety Recommendation",
-                "ipa": "/ˈseɪf.ti ˌrek.ə.menˈdeɪ.ʃən/",
-                "definition": "A formal proposal made by an investigation body to improve safety and prevent future occurrences.",
-                "example": "The final report issued three safety recommendations regarding wet-runway dispatch procedures."
-              }
-            ]
-          },
-          "materials": {
-            "videos": [
-              {
-                "title": "Video 1: The Swiss Cheese Model of Accident Causation",
-                "watchUrl": "https://www.youtube.com/watch?v=F0RFvB4tI8c",
-                "tag": "Safety Theory",
-                "videoId": "F0RFvB4tI8c",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/F0RFvB4tI8c",
-                "caption": "Focus: James Reason's foundational systemic safety model: how organizational weaknesses, unsafe working conditions, and active frontline errors align to cause accidents.",
-                "part": "Part 1"
-              },
-              {
-                "title": "Video 2: Aircraft Hydroplaning & Contaminated Runway Operations",
-                "watchUrl": "https://www.youtube.com/watch?v=xT1N3nUo090",
-                "tag": "Flight Physics",
-                "videoId": "xT1N3nUo090",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/xT1N3nUo090",
-                "caption": "Focus: Pavement water depth, dynamic hydroplaning speed formulas, tire tread channeling, and braking friction coefficient degradation on wet runways.",
-                "part": "Part 2"
-              },
-              {
-                "title": "Video 3: Pushback Towbar Shear Pin Protection & Tug Operations",
-                "watchUrl": "https://www.youtube.com/watch?v=W5T9J31qYyM",
-                "tag": "Ramp Mechanics",
-                "videoId": "W5T9J31qYyM",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/W5T9J31qYyM",
-                "caption": "Focus: Ramp engineering: how calibrated shear pins protect nose gear assemblies from high-torque twisting during pushback maneuvering in slick conditions.",
-                "part": "Part 3"
-              }
-            ],
-            "articles": [
-              {
-                "topic": "Systemic Accident Investigation",
-                "sourceTag": "Skybrary • Safety Analysis",
-                "heading": "Deconstructing the Swiss Cheese Model: Latent Failures vs. Active Errors in Airside Incidents",
-                "title": "Deconstructing the Swiss Cheese Model: Latent Failures vs. Active Errors in Airside Incidents",
-                "snippet": "Examining how organizational pressures, deferred maintenance decisions, and environmental triggers align to penetrate airside safety defenses.",
-                "summary": "Examining how organizational pressures, deferred maintenance decisions, and environmental triggers align to penetrate airside safety defenses.",
-                "readTime": "5 min read",
-                "url": "https://skybrary.aero/articles/swiss-cheese-model",
-                "content": [
-                  "In modern technical aviation investigation, searching for a single person to blame following an incident is recognized as an obsolete and counterproductive approach. Pioneered by British psychologist James Reason, the Swiss Cheese Model illustrates that commercial aviation systems are protected by multiple defensive layers: engineered physical barriers, automated computer warnings, regulatory procedures, and certified human training.",
-                  "Each defensive layer is represented as a slice of Swiss cheese. The holes in each slice represent flaws or weaknesses. Under normal conditions, these holes do not align, and a hazard is successfully blocked by one of the remaining solid slices. An accident occurs only when the holes across every defensive barrier momentarily align in an unbroken trajectory, allowing a hazard to pass directly to an adverse outcome.",
-                  "Crucially, the model distinguishes between active errors and latent failures. Active errors are unsafe acts—such as a pilot misreading an airspeed tape or a pushback driver applying abrupt brakes—committed by frontline personnel whose consequences are felt almost instantly. In contrast, latent failures are managerial or organizational decisions—such as trimming maintenance budgets, delaying parts supply, or establishing unrealistic turnaround schedules—that lie dormant within the system for weeks or months until triggered by operational stress.",
-                  "Modern safety investigators focus their deepest scrutiny on latent conditions. By identifying and patching the organizational weaknesses that permitted the frontline error to occur, civil aviation authorities engineer robust systemic defenses that prevent future recurrence across global airline fleets."
-                ],
-                "takeaways": [
-                  "Aviation occurrences result from the alignment of multiple systemic weaknesses across defensive layers.",
-                  "Active errors represent immediate frontline slips, while latent failures represent dormant organizational decisions.",
-                  "Effective investigation focuses on repairing latent organizational flaws rather than assigning individual blame."
-                ],
-                "vocab": [
-                  "Swiss Cheese Model",
-                  "Defensive Barrier",
-                  "Latent Failure",
-                  "Active Error",
-                  "Systemic Vulnerability"
-                ]
-              },
-              {
-                "topic": "European Aviation Safety Law",
-                "sourceTag": "EASA Regulation (EU) 376/2014",
-                "heading": "Mandatory Occurrence Reporting (Regulation EU 376/2014): Cultivating a Just Safety Culture",
-                "title": "Mandatory Occurrence Reporting (Regulation EU 376/2014): Cultivating a Just Safety Culture",
-                "snippet": "How European occurrence reporting frameworks protect aviation professionals from prosecution while creating transparent safety data sharing across member states.",
-                "summary": "How European occurrence reporting frameworks protect aviation professionals from prosecution while creating transparent safety data sharing across member states.",
-                "readTime": "5 min read",
-                "url": "https://www.easa.europa.eu/en/domains/aerodromes",
-                "content": [
-                  "Aviation safety relies fundamentally on the open, transparent reporting of minor operational discrepancies, near-misses, and technical anomalies before they escalate into catastrophic accidents. Under European Commission Regulation (EU) No 376/2014, all licensed aviation professionals—including pilots, air traffic controllers, ground handlers, and maintenance technicians—are legally obligated to report safety occurrences.",
-                  "To ensure that professionals report incidents without fear of disciplinary retaliation or criminal prosecution, European law codifies the principles of 'Just Culture.' Under a Just Culture framework, frontline personnel who report an honest mistake or operational slip are guaranteed legal protection and anonymity. Disciplinary or judicial action is strictly reserved for cases of deliberate sabotage, willful misconduct, or gross negligence.",
-                  "Reports submitted under the Mandatory Occurrence Reporting (MOR) system are funneled into the European Coordination Centre for Accident and Incident Reporting Systems (ECCAIRS). This central database pools millions of de-identified occurrence records across all EU member states, allowing safety analysts to detect subtle fleet-wide trends—such as a specific valve failure rate or a localized runway surface degradation—long before an accident occurs."
-                ],
-                "takeaways": [
-                  "Regulation (EU) 376/2014 establishes mandatory reporting of safety-related aviation occurrences.",
-                  "A Just Culture framework protects honest reporters from disciplinary action and criminal prosecution.",
-                  "De-identified occurrence data is pooled across Europe in ECCAIRS to detect emerging safety trends."
-                ],
-                "vocab": [
-                  "Occurrence Reporting (MOR)",
-                  "Just Culture",
-                  "Gross Negligence",
-                  "De-Identified Data",
-                  "Safety Trend Analysis"
-                ]
-              },
-              {
-                "topic": "Aerodrome Operations & Physics",
-                "sourceTag": "FAA & EASA Pavement Friction Digest",
-                "heading": "The Physics of Runway Surface Friction: Hydroplaning Dynamics and Contaminated Pavements",
-                "title": "The Physics of Runway Surface Friction: Hydroplaning Dynamics and Contaminated Pavements",
-                "snippet": "Analyzing dynamic hydroplaning speed equations, pavement microtexture drainage, and mandatory stopping distance penalties during heavy rainfall.",
-                "summary": "Analyzing dynamic hydroplaning speed equations, pavement microtexture drainage, and mandatory stopping distance penalties during heavy rainfall.",
-                "readTime": "5 min read",
-                "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation",
-                "content": [
-                  "When an airliner touches down at 140 knots on a rain-slicked runway, safe deceleration depends entirely on friction between tire rubber and asphalt pavement. When rainfall exceeds the drainage capacity of pavement grooves, water builds up into a continuous sheet, introducing the severe danger of dynamic hydroplaning.",
-                  "Dynamic hydroplaning occurs when high water pressure builds up in front of a rolling tire, lifting the tire completely off the asphalt surface. Riding on a fluid layer of standing water, friction drops to virtually zero. Under NASA hydrodynamic formulas, the minimum speed at which dynamic hydroplaning begins equals nine times the square root of tire pressure in pounds per square inch (PSI). For a commercial airliner with 200 PSI tire pressure, hydroplaning can occur at speeds as low as 127 knots.",
-                  "Once hydroplaning occurs, conventional wheel braking and nosewheel steering become completely ineffective. If an aircraft experiences an asymmetric reverse thrust burst or sudden crosswind gust, it can rapidly yaw and drift sideways off the runway. Aerodrome regulations mandate that whenever standing water exceeds 3 mm over 25% of the runway, flight crews must apply substantial stopping distance penalties and verify certified crosswind limits before committing to land."
-                ],
-                "takeaways": [
-                  "Dynamic hydroplaning occurs when water pressure lifts aircraft tires entirely off the runway surface.",
-                  "Hydroplaning speed is directly proportional to tire inflation pressure and water layer depth.",
-                  "Contaminated runways exceeding 3mm water depth require mandatory landing distance recalculations."
-                ],
-                "vocab": [
-                  "Dynamic Hydroplaning",
-                  "Pavement Microtexture",
-                  "Contaminated Runway",
-                  "Stopping Distance Penalty",
-                  "Friction Coefficient"
-                ]
-              }
-            ],
-            "grammar": {
-              "title": "Cause, Effect & Chronological Staging Formulas",
-              "badge": "B2 Functional Technical Grammar Focus",
-              "patternTitle": "Expressing Causal Chains & Chronological Sequence",
-              "formula": "STEM FROM [LATENT CAUSE] • BE TRIGGERED BY [ACTIVE ERROR] • RESULT IN [CONSEQUENCE] • BE ATTRIBUTABLE TO [UNDERLYING FACTOR]",
-              "rulesTitle": "Core Causal Prepositions & Sequence Markers",
-              "rules": [
-                "<strong style=\"color: #1e293b;\">1. STEM FROM + Noun / Gerund:</strong> Indicates the deep or original background cause (<span style=\"font-weight: 700; color: #c0684f;\">stemmed from maintenance delay</span>, <span style=\"font-weight: 700; color: #c0684f;\">stems from poor scheduling</span>).",
-                "<strong style=\"color: #1e293b;\">2. BE TRIGGERED BY + Noun:</strong> Pinpoints the immediate catalyst or active spark (<span style=\"font-weight: 700; color: #c0684f;\">was triggered by sudden braking</span>, <span style=\"font-weight: 700; color: #c0684f;\">triggered by an abrupt turn</span>).",
-                "<strong style=\"color: #1e293b;\">3. RESULT IN + Noun / Gerund:</strong> Connects a cause to its direct physical outcome (<span style=\"font-weight: 600; color: #334155;\">resulted in shear pin failure</span>, <span style=\"font-weight: 600; color: #334155;\">resulting in runway excursion</span>).",
-                "<strong style=\"color: #1e293b;\">4. BE ATTRIBUTABLE TO + Noun:</strong> Formally assigns operational responsibility (<span style=\"font-weight: 600; color: #334155;\">is attributable to standing water</span>, <span style=\"font-weight: 600; color: #334155;\">attributable to cognitive fatigue</span>).",
-                "<strong style=\"color: #1e293b;\">5. CHRONOLOGICAL CONNECTORS:</strong> Staging sequence clearly (<span style=\"font-weight: 600; color: #334155;\">Prior to pushback</span>, <span style=\"font-weight: 600; color: #334155;\">Simultaneously</span>, <span style=\"font-weight: 600; color: #334155;\">Subsequently</span>, <span style=\"font-weight: 600; color: #334155;\">In the final sequence</span>)."
-              ],
-              "trap": "<strong>⚠️ Preposition & Directionality Trap:</strong> Never say <em>result of</em> when using a verb—always say <strong>resulted in</strong> (cause → effect) or <strong>resulted from</strong> (effect ← cause). Also, remember that <em>stem from</em> points backward to an origin, whereas <em>lead to</em> points forward to a consequence.",
-              "examplesTitle": "Authentic Occurrence Debrief Examples",
-              "examples": [
-                "<em>\"The initial towbar failure was <strong>triggered by</strong> an abrupt steering correction, <strong>resulting in</strong> a 30-minute departure delay.\"</em>",
-                "<em>\"The runway excursion <strong>stemmed from</strong> a latent organizational decision to dispatch with a deferred anti-skid valve in waterlogged conditions.\"</em>"
-              ]
-            },
-            "resources": [
-              {
-                "url": "https://www.skybrary.aero/organisations/bureau-denquetes-et-danalyses-pour-la-securite-de-laviation-civile-bea",
-                "tag": "01 • Accident Investigation Authority",
-                "name": "Bureau d'Enquêtes et d'Analyses (BEA)",
-                "desc": "Official French civil aviation safety investigation authority publishing comprehensive occurrence reports and safety recommendations.",
-                "part": "Part 1"
-              },
-              {
-                "url": "https://www.eurocontrol.int",
-                "tag": "02 • European Safety Improvement Hub",
-                "name": "Eurocontrol Safety Improvement Initiatives",
-                "desc": "European air navigation safety portal detailing runway safety, incident reporting benchmarks, and operational risk mitigation.",
-                "part": "Part 2"
-              },
-              {
-                "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation",
-                "tag": "03 • Airside Safety & Standards",
-                "name": "FAA Airport Safety & Standards Hub",
-                "desc": "Technical directives, runway friction benchmarks, and airport operations safety management system guidelines.",
-                "part": "Part 3"
-              }
-            ],
-            "quizTitle": "Incident Investigation & Root Cause Analysis Scenario Quiz",
-            "quizSubtitle": "5 Operational Scenarios • Causal Reasoning, Swiss Cheese Layers & Regulatory Decision-Making",
-            "quizQuestions": [
-              {
-                "question": "Under the Swiss Cheese Model, how is a delayed replacement of a critical component in central logistics classified?",
-                "options": [
-                  "A Latent Failure within organizational planning",
-                  "An Active Error committed by the pilot",
-                  "An unpreventable Act of God",
-                  "A secondary physical defense barrier"
-                ],
-                "correct": 0,
-                "explanation": "Decisions regarding parts storage, scheduling, and staffing made well in advance of flight operations represent Latent Failures that lie dormant until triggered."
-              },
-              {
-                "question": "Which causal phrase correctly links an operational cause to its physical outcome in formal investigation reporting?",
-                "options": [
-                  "The sudden braking resulted in shear pin failure.",
-                  "The sudden braking resulted of shear pin failure.",
-                  "The sudden braking stemmed to shear pin failure.",
-                  "The sudden braking was triggered to shear pin failure."
-                ],
-                "correct": 0,
-                "explanation": "The correct grammatical formula is 'result in + consequence' (cause → consequence). 'Result of' is a noun phrase, not a verb construction."
-              },
-              {
-                "question": "What is the primary operational purpose of a calibrated towbar shear pin?",
-                "options": [
-                  "To break cleanly under abnormal torque to protect the nose landing gear from structural failure",
-                  "To lock the tug wheels permanently in position during heavy rain",
-                  "To increase ground vehicle speed during tight turnarounds",
-                  "To measure runway friction during pushback operations"
-                ],
-                "correct": 0,
-                "explanation": "A shear pin is an engineered sacrificial safety barrier designed to fail under excessive stress, preventing catastrophic structural tearing of the aircraft nose gear."
-              },
-              {
-                "question": "Under Regulation (EU) 376/2014 Just Culture principles, which condition is NOT protected from prosecution?",
-                "options": [
-                  "Deliberate sabotage or gross negligence",
-                  "An honest human slip reported within 72 hours",
-                  "An unintentional miscommunication between controller and flight crew",
-                  "An inadvertent taxiway navigation error reported voluntarily"
-                ],
-                "correct": 0,
-                "explanation": "Just Culture guarantees protection for honest reporting and unintentional human errors, but strictly excludes willful violations, sabotage, or gross negligence."
-              },
-              {
-                "question": "When is an aerodrome runway officially classified as 'contaminated' by standing water?",
-                "options": [
-                  "When over 25% of the surface area is covered by standing water over 3 mm deep",
-                  "When light rain is falling regardless of water depth",
-                  "Only when runway lighting fixtures are completely submerged",
-                  "Whenever crosswind velocity exceeds 15 knots"
-                ],
-                "correct": 0,
-                "explanation": "Under international aerodrome standards, a runway is contaminated when more than 25% of its surface is covered by standing water, slush, or snow exceeding 3 mm depth."
-              }
-            ]
-          }
-        },
-        "6": {
-          "session": 6,
-          "title": "The Corrective Action Plan & CAP Review",
-          "overview": {
-            "intro": "Welcome to Session 6 of Technical English! Today we work with official EASA Corrective Action Plan (CAP) documentation and dedicate 30 minutes of workshop time to prepare your Session 7 peer lessons. You will practice using formal commitment phrases (we undertake to, subject to approval) to agree on CAP deadlines with inspectors, and work in teams of 3 or 4 to structure your 30-minute interactive lesson for Session 7.",
-            "whyItMatters": "Closing an audit finding or incident investigation is not merely a box-ticking administrative exercise—it is the legal mechanism that prevents catastrophic repeat occurrences on the airfield. When civil aviation authorities identify safety deficiencies such as runway friction loss or blast fence corrosion, aerodrome operators must formally demonstrate how they will eliminate the underlying root cause. Moreover, developing the confidence to facilitate technical peer discussions prepares future ENAC aviation professionals for high-stakes safety briefings and leadership roles.",
-            "keyTerms": [
-              {
-                "term": "Corrective Action Plan (CAP)",
-                "ipa": "/kəˈrɛktɪv ˈækʃən plæn/",
-                "pos": "noun phrase",
-                "def": "A formal, documented schedule of measures formulated by an aerodrome operator to remediate non-compliances identified during safety audits or incident investigations under EASA Part-ADR.OR.D.005."
-              },
-              {
-                "term": "Level 1 Finding",
-                "ipa": "/ˈlɛvəl wʌn ˈfaɪndɪŋ/",
-                "pos": "noun phrase",
-                "def": "Any significant non-compliance with aerodrome safety requirements which lowers safety or seriously hazards aircraft operations, requiring immediate provisional mitigation within 24 to 48 hours."
-              },
-              {
-                "term": "Level 2 Finding",
-                "ipa": "/ˈlɛvəl tuː ˈfaɪndɪŋ/",
-                "pos": "noun phrase",
-                "def": "Any non-compliance which could lower safety if uncorrected, requiring the aerodrome operator to submit a formal CAP within 30 days and achieve full closure within an agreed timeframe."
-              },
-              {
-                "term": "Root-Cause Remediation",
-                "ipa": "/ruːt kɔːz rɪˌmiːdiˈeɪʃən/",
-                "pos": "noun phrase",
-                "def": "Corrective interventions aimed at eliminating the underlying systemic or organizational defects that generated an operational hazard, rather than merely addressing surface symptoms."
-              },
-              {
-                "term": "Interim Risk Mitigation",
-                "ipa": "/ˈɪntərɪm rɪsk ˌmɪtɪˈɡeɪʃən/",
-                "pos": "noun phrase",
-                "def": "Provisional operational safeguards (such as NOTAM notices, speed restrictions, or weight limitations) enforced to contain safety risks while permanent engineering works are executed."
-              },
-              {
-                "term": "Verification Milestone",
-                "ipa": "/ˌvɛrɪfɪˈkeɪʃən ˈmaɪlstoʊn/",
-                "pos": "noun phrase",
-                "def": "A scheduled, auditable benchmark within a CAP against which the competent authority measures progress toward definitive compliance."
-              },
-              {
-                "term": "Authority Concurrence",
-                "ipa": "/ɔːˈθɒrɪti kənˈkʌrəns/",
-                "pos": "noun phrase",
-                "def": "Formal written acceptance or agreement issued by a national civil aviation authority (e.g., DGAC or EASA) confirming that an aerodrome operator's proposed CAP meets regulatory standards."
-              },
-              {
-                "term": "Hydro-Blasting",
-                "ipa": "/ˈhaɪdroʊ ˈblæstɪŋ/",
-                "pos": "noun",
-                "def": "An industrial runway maintenance technique using ultra-high-pressure water jets (up to 2,500 bar) to remove vulcanized tire rubber deposits and restore asphalt macro-texture without chemical solvents."
-              },
-              {
-                "term": "Jet Blast Deflector",
-                "ipa": "/dʒɛt blɑːst dɪˈflɛktər/",
-                "pos": "noun phrase",
-                "def": "A heavy-duty curved aerodrome barrier engineered to redirect high-velocity aircraft engine exhaust upward and away from adjacent taxiways, service roads, and ground personnel."
-              },
-              {
-                "term": "Flipped Peer-Teaching",
-                "ipa": "/flɪpt pɪər ˈtiːtʃɪŋ/",
-                "pos": "noun phrase",
-                "def": "A collaborative instructional model where students assume the role of technical instructors, designing and delivering interactive learning activities to their peers to build communicative mastery."
-              }
-            ],
-            "speakingTask": {
-              "title": "Authentic EASA Simulation • CAP Negotiation & Session 7 Flipped Lesson Design Studio",
-              "instructions": "Working in teams of 3 or 4, inspect the two official audit finding notices (Runway Friction Decay & Perimeter Blast Fence Detachment) and the three photographic remediation exhibits. Practice negotiating realistic CAP milestones with your partner acting as the Civil Aviation Inspector. Then, transition into the Flipped Lesson Design Studio to plan, structure, and assign teaching roles for your team's 30-minute interactive lesson in Session 7.",
-              "document": {
-                "title": "EASA Part-ADR.OR.D.005 Corrective Action Plan & Session 7 Peer-Teaching Guide",
-                "subtitle": "Statutory Finding Remediation Framework & Flipped Classroom Assessment Specification",
-                "buttonText": "Open EASA Extract (PDF)",
-                "filename": "GSEA_S3_M1_S6_EASA_Corrective_Action_Plan.pdf",
-                "path": "docs/GSEA_S3_M1_S6_EASA_Corrective_Action_Plan.pdf",
-                "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
-              },
-              "teamRoles": {
-                "group1": "Teaching Pod 1 (Runway Surface Condition & Friction Decays): Draft an interactive 30-minute lesson teaching classmates how to interpret CFME friction traces, identify rubber contamination, and calculate landing distances.",
-                "group2": "Teaching Pod 2 (Apron Vehicle Safety & Pushback Coordination): Build a 30-minute workshop on apron telematics speed control, towbar shear mechanics, and interphone communication protocols.",
-                "group3": "Teaching Pod 3 (Wildlife Hazard Management & CS-ADR-DSN): Design an engaging 30-minute seminar covering pyrotechnic laser dispersal, acoustic deterrents, and aerodrome bird strike mitigation.",
-                "group4": "Teaching Pod 4 (Airfield Audit Non-Conformities & CAP Negotiation): Create a dynamic 30-minute roleplay challenge where classmates simulate aerodrome operators defending CAP milestones to state inspectors."
-              },
-              "usefulPhrases": [
-                "We undertake to implement the interim risk mitigation by...",
-                "In the interim, the aerodrome operator shall enforce a mandatory NOTAM stating...",
-                "Subject to authority concurrence, our definitive engineering works will conclude on...",
-                "For our Session 7 flipped lesson, our team will engage classmates through an interactive..."
-              ]
-            },
-            "document": {
-              "title": "EASA Part-ADR.OR.D.005 Corrective Action Plan & Session 7 Peer-Teaching Guide",
-              "subtitle": "Statutory Finding Remediation Framework & Flipped Classroom Assessment Specification",
-              "buttonText": "Open EASA Extract (PDF)",
-              "filename": "GSEA_S3_M1_S6_EASA_Corrective_Action_Plan.pdf",
-              "path": "docs/GSEA_S3_M1_S6_EASA_Corrective_Action_Plan.pdf",
-              "moodleNote": "Also available in your ENAC Moodle course space under Regulatory Documentation"
-            }
-          },
-          "objectives": {
-            "title": "Session 6 Objectives - The Corrective Action Plan (CAP) & Lesson 7 Prep",
-            "summary": "By the end of this session, GSEA students will be able to classify aerodrome audit findings into Level 1 and Level 2 under EASA Part-ADR.OR.D.005, formulate SMART corrective milestones with interim risk mitigations, negotiate binding compliance deadlines with civil aviation inspectors using formulaic commitment language, and collaboratively plan their 30-minute flipped peer-teaching lesson for Session 7.",
-            "items": [
-              {
-                "num": 1,
-                "title": "Audit Finding Classification & Root-Cause Remediation (Finding Taxonomy)",
-                "description": "Distinguish Level 1 findings (immediate airside safety hazard, 24-48h suspension/NOTAM) from Level 2 findings (procedural/systemic non-compliance, 30-90 day CAP).",
-                "part": "Part 1"
-              },
-              {
-                "num": 2,
-                "title": "EASA Part-ADR.OR.D.005 CAP Drafting & Authority Criteria (Statutory Compliance)",
-                "description": "Formulate SMART corrective actions, establish interim operational mitigations (NOTAMs, aircraft weight limits), and identify authority verification criteria.",
-                "part": "Part 2"
-              },
-              {
-                "num": 3,
-                "title": "Aerodrome Operator vs Authority Inspector Negotiation (Spoken Simulation)",
-                "description": "Roleplay high-stakes compliance meetings using formulaic spoken commitment phrases (undertake to, subject to concurrence, conditional upon verification).",
-                "part": "Part 3"
-              },
-              {
-                "num": 4,
-                "title": "Extended Peer-Teaching Workshop & Lesson 7 Design Studio (Flipped Lesson Prep)",
-                "description": "Work in teams of 3 to 4 with dedicated preparation time to structure an engaging 30-minute flipped lesson for Session 7 across authentic Module 1 aerodrome domains.",
-                "part": "Part 4"
-              }
-            ]
-          },
-          "lessonPlan": {
-            "title": "Session 6 Lesson Plan - The Corrective Action Plan (CAP) & Lesson 7 Prep (2 Hours)",
-            "summary": "A high-impact capstone technical English session where students transform audit findings into binding EASA Corrective Action Plans, master spoken regulatory negotiations, and dedicate substantial workshop time to preparing their 30-minute peer-teaching lessons for Session 7.",
-            "structure": [
-              {
-                "part": "Part 1: Audit Finding Classification & Root-Cause Remediation",
-                "focus": "Aerodrome safety taxonomy, Level 1 vs Level 2 statutory definitions, root-cause isolation versus surface defect repair.",
-                "activity": "Examine the two official finding notices (Runway Friction Decay & Jet Blast Fence Failure). In pairs, identify the underlying organizational root causes and state why immediate temporary containment is mandatory."
-              },
-              {
-                "part": "Part 2: EASA Part-ADR.OR.D.005 CAP Drafting & Authority Criteria",
-                "focus": "SMART remediation milestones, interim operational mitigations, NOTAM drafting, and authority verification benchmarks.",
-                "activity": "Analyze the 4-tab CAP dossier. Review the phased remediation timelines for hydro-blasting rubber removal and structural blast fence reconstruction."
-              },
-              {
-                "part": "Part 3: Interactive Aerodrome Operator vs Civil Aviation Inspector Negotiation",
-                "focus": "Formulaic spoken commitment structures, diplomatic compliance pushback, and conditional acceptance language.",
-                "activity": "Simulated authority review meeting: Partner A acts as the Aerodrome Safety Manager defending the proposed timeline; Partner B acts as the DGAC/EASA Inspector enforcing safety margins."
-              },
-              {
-                "part": "Part 4: Extended Peer-Teaching Workshop & Lesson 7 Design Studio",
-                "focus": "Dedicated extended preparation time for Session 7 flipped peer-teaching lessons (30 minutes delivery per pod of 3–4 students).",
-                "activity": "Teams of 3 to 4 select their technical domain (Runway Friction/GRF, Ramp Safety/Telematics, Wildlife Hazard, or CAP Audit Negotiation). Teams design their 3-stage lesson architecture (Hook, Core Activity, Debrief), assign teaching roles, review the 20-point assessment rubric, and record their lesson outline in the on-screen scratchpad."
-              }
-            ]
-          },
-          "lessonContent": {
-            "hero": {
-              "title": "The Corrective Action Plan (CAP) & Lesson 7 Prep",
-              "subtitle": "EASA Part-ADR.OR.D.005 Compliance, Authority Negotiation & Flipped Classroom Design Studio",
-              "badge": "EASA Part-ADR.OR.D.005",
-              "summary": "Bridging aerodrome audit non-conformities into legally binding Corrective Action Plans, mastering diplomatic spoken negotiation with state inspectors, and dedicating focused collaborative studio time to prepare 30-minute peer-teaching lessons for Session 7.",
+              "badge": "Formative Evaluation 1 • Technical English (AT • LV125E)",
+              "title": "Session 7: EASA Regulatory Extract & Interactive Class Activity",
+              "subtitle": "Student groups of up to 4 present an official EASA extract, explain its technical meaning, teach new words, and lead creative reading and speaking exercises for their classmates.",
               "metrics": [
                 {
-                  "label": "Regulatory Ref",
-                  "val": "ADR.OR.D.005"
+                  "label": "Format",
+                  "val": "30-Min Sessions"
                 },
                 {
-                  "label": "Finding Levels",
-                  "val": "Level 1 & Level 2"
+                  "label": "Grading",
+                  "val": "20 Points (FE1)"
                 },
                 {
-                  "label": "CAP Timeline",
-                  "val": "30 Days to 3 Months"
+                  "label": "Teams",
+                  "val": "Up to 4 Students"
                 },
                 {
-                  "label": "Session 7 Pod Delivery",
-                  "val": "30 Mins / Pod"
+                  "label": "Standard",
+                  "val": "CEFR B2 Spoken"
                 }
               ]
             },
             "openingSession": {
-              "badge": "Safety Directorate Briefing",
-              "title": "Aerodrome Audit Finding Notice: The Path to Compliance",
-              "desc": "Under Regulation (EU) No 139/2014 Part-ADR.OR.D.005, receiving an audit non-conformity notice initiates a strict statutory process. The aerodrome operator must not merely repair the defect—they must determine the root cause, establish immediate mitigations to protect flight operations, and submit a formal Corrective Action Plan with auditable milestones acceptable to the competent authority.",
-              "callout": "Crucial distinction: Level 1 findings hazard aircraft operations immediately and require action within 24–48 hours; Level 2 findings represent systemic gaps requiring an agreed 30-day CAP submission.",
-              "diagnostic": {
-                "title": "Audit Finding & CAP Entry Spot-Check",
-                "instructions": "Discuss these 4 essential regulatory questions with your partner, then reveal the model answers.",
-                "questions": [
-                  {
-                    "id": 1,
-                    "q": "Under EASA Part-ADR.OR.D.005, what is the critical operational difference between a Level 1 and a Level 2 audit finding?",
-                    "answer": "A Level 1 finding poses an immediate hazard to flight safety requiring operational restrictions within 24–48 hours; a Level 2 finding represents a systemic or procedural gap requiring a formal CAP within 30 days."
-                  },
-                  {
-                    "id": 2,
-                    "q": "What is an 'interim risk mitigation' and why must an aerodrome operator enforce one before permanent engineering works begin?",
-                    "answer": "A provisional operational safeguard (e.g., NOTAM, landing weight penalty, taxi speed limit) enforced immediately to contain safety risks while long-term permanent repairs are carried out."
-                  },
-                  {
-                    "id": 3,
-                    "q": "What continuous friction measuring equipment (CFME) coefficient threshold triggers a mandatory safety finding for runway rubber contamination?",
-                    "answer": "When measured friction decays below the minimum certified planning level (mu < 0.34 under EASA CS-ADR-DSN.B.015), hydro-blasting is mandatory to restore macro-texture."
-                  },
-                  {
-                    "id": 4,
-                    "q": "What does 'authority concurrence' mean in the EASA Corrective Action Plan process?",
-                    "answer": "Formal written acceptance by the state civil aviation authority (e.g., DGAC or EASA) confirming that an aerodrome operator's proposed milestones and mitigations are legally acceptable."
-                  }
-                ]
-              }
-            },
-            "photoExhibits": [
-              {
-                "id": "exhibit1",
-                "title": "Exhibit A: Fuel Farm Secondary Containment Dyke Retrofit",
-                "image": "images/s3_s6_fuel_dyke_remediation.jpg",
-                "location": "LFBO Fuel Depot • Storage Tank Bund 03",
-                "findingRef": "Finding 2026-ADR-038 (Level 2)",
-                "caption": "Civil engineers inspecting sealant depth and reinforced concrete bund walls following an uncontained drainage joint finding.",
-                "prompt": "Identify why concrete joint degradation represents an environmental and fire hazard, and formulate the immediate interim mitigation.",
-                "modelResponse": "The degradation of the secondary containment sealant risks uncontained kerosene migration into storm drains during severe rainfall. The immediate mitigation is a daily visual inspection protocol and portable spill-boom containment around Tank Bund 03 pending full elastomeric resealing."
-              },
-              {
-                "id": "exhibit2",
-                "title": "Exhibit B: Touchdown Zone Runway Rubber Hydro-Blasting",
-                "image": "images/s3_s6_runway_rubber_removal.jpg",
-                "location": "Runway 14L Touchdown Zone (0–600m)",
-                "findingRef": "Finding 2026-ADR-041 (Level 1)",
-                "caption": "Ultra-high-pressure hydro-blasting specialized truck removing dense vulcanized rubber build-up to restore macro-texture grooves.",
-                "prompt": "Explain the friction measurement trigger for this Level 1 finding and state the operational restrictions required until hydro-blasting is complete.",
-                "modelResponse": "The continuous friction survey showed friction decaying to mu = 0.31, below the 0.34 minimum safety threshold. Until hydro-blasting restores the grooves to mu >= 0.52, a mandatory NOTAM must restrict wet landings and require airlines to apply factored landing distance margins."
-              },
-              {
-                "id": "exhibit3",
-                "title": "Exhibit C: Jet Blast Deflector & Perimeter FOD Barrier Repair",
-                "image": "images/s3_s6_fod_barrier_installation.jpg",
-                "location": "Holding Point P1 • Taxiway Papa Perimeter",
-                "findingRef": "Finding 2026-ADR-042 (Level 2)",
-                "caption": "Ground maintenance personnel installing replacement curved blast deflector panels and high-tension FOD catch mesh.",
-                "prompt": "Describe the operational danger of blast fence corrosion at an active holding point and outline the phased remediation milestones.",
-                "modelResponse": "Corroded anchors can cause structural fence detachment under 120-knot widebody breakaway thrust, sending metal panels onto the taxiway. Milestone 1 deploys temporary jersey barriers within 48 hours; Milestone 2 bolts marine-grade epoxy anchors and installs nylon FOD catch-netting within 30 days."
-              }
-            ],
-            "capDossier": {
-              "finding41": {
-                "title": "Finding 2026-ADR-041: Runway 14L Touchdown Zone Friction Decay",
-                "severity": "Level 1 Finding • Significant Safety Hazard",
-                "standard": "EASA CS-ADR-DSN.B.015 & Part-ADR.OPS.B.015",
-                "surveyData": "Continuous Friction Measuring Equipment (CFME) recorded average friction coefficient mu = 0.31 at 65 km/h with 1.0mm water film. Transverse grooves are 85% obstructed by dense vulcanized tire deposits.",
-                "interimMitigation": "Permanent NOTAM issued: 'RWY 14L FIRST 600M BRAKING ACTION POOR WHEN WET. TAILWIND LANDINGS PROHIBITED EXCEEDING 5 KT.' Airlines must calculate wet landing distance with +15% dispatch margin.",
-                "definitivePlan": "Four nights of UHP hydro-blasting (2,200 bar) stripping 28,000 m2 of rubber, followed by three calibration CFME survey runs at 65 km/h and 95 km/h.",
-                "targetDate": "Target Verification: 28 October 2024 (Authority on-site test)"
-              },
-              "finding42": {
-                "title": "Finding 2026-ADR-042: Jet Blast Deflector & FOD Barrier Failure",
-                "severity": "Level 2 Finding • Airside Infrastructure Non-Compliance",
-                "standard": "EASA CS-ADR-DSN.D.260 & Part-ADR.OPS.B.070",
-                "defectData": "Holding Point P1 curved blast fence shows severe base bolt electrochemical rust. Three panels are unseated, and top-edge FOD netting is torn over a 40-meter stretch.",
-                "interimMitigation": "Service road checkpoint Delta closed to ground traffic during wide-body departures. ATC instructs all departing aircraft at P1 to maintain idle thrust until fully aligned with centerline.",
-                "definitivePlan": "Installation of hot-dip galvanized Grade 316 stainless anchors rated for 150-knot jet exhaust, replacement curved corrugated panels, and high-tension nylon FOD containment mesh.",
-                "targetDate": "Target Closure: 30 November 2024 (Joint pull-out torque test)"
-              },
-              "matrix": [
+              "badge": "Part 1: Activity Guidelines",
+              "title": "EASA Extract Breakdown & Interactive Class Activity Guidelines",
+              "desc": "Review the 4 core steps for leading your 30-minute interactive session with your classmates.",
+              "diagnostic": [
                 {
-                  "item": "Runway Friction Restoration",
-                  "rootCause": "Annual fixed maintenance cycle failed to account for 30% increase in wide-body summer movements.",
-                  "immediateAction": "Issue NOTAM; enforce landing performance dispatch buffer.",
-                  "permanentFix": "Switch to dynamic condition-based monitoring with bi-monthly CFME surveys; execute UHP hydro-blasting.",
-                  "deadline": "28 Oct 2024"
+                  "num": 1,
+                  "question": "Step 1: Spoken Breakdown of the EASA Extract",
+                  "answer": "Present your chosen EASA extract clearly. Explain what regulatory domain it covers, what the main safety requirement is, and why it matters in real aerodrome operations. Do not read aloud from slides or notes!"
                 },
                 {
-                  "item": "Blast Fence Structural Anchoring",
-                  "rootCause": "Original 2012 specification lacked marine-grade epoxy coating against de-icing chemical runoff.",
-                  "immediateAction": "Close adjacent service road; enforce idle thrust taxi restrictions.",
-                  "permanentFix": "Bolt 45 kN pull-out rated stainless anchors; install continuous FOD barrier mesh.",
-                  "deadline": "30 Nov 2024"
+                  "num": 2,
+                  "question": "Step 2: Teach 3 to 5 New Technical Words",
+                  "answer": "Highlight 3 to 5 key specialized terms from your extract. Explain what each word means in plain English and give a clear operational example so your classmates can understand and use it."
                 },
                 {
-                  "item": "Fuel Farm Secondary Containment",
-                  "rootCause": "Elastomeric joint compound reached end of operational lifespan without scheduled preventative re-caulking.",
-                  "immediateAction": "Deploy portable absorbent booms around Tank 03; daily visual checks.",
-                  "permanentFix": "Complete hydro-cleaning and application of aviation-grade chemical-resistant polyurethane sealant.",
-                  "deadline": "15 Nov 2024"
-                }
-              ],
-              "signOff": {
-                "authority": "Direction Générale de l'Aviation Civile (DGAC) / EASA Aerodrome Oversight",
-                "leadInspector": "Aviation Safety Inspector #FR.DSAC.2024-04",
-                "conditions": "Level 1 closure is conditional upon physical verification of CFME mu >= 0.52 across all three runs. Level 2 closure requires submission of certified pull-out torque test certificates (45 kN/anchor) and photographic proof of completed mesh installation.",
-                "status": "Provisional Concurrence Granted • Verification Pending"
-              }
-            },
-            "languageClinic": {
-              "title": "Language Clinic: Commitment Phrases for Regulatory Negotiation",
-              "summary": "When negotiating corrective action milestones with civil aviation inspectors, aerodrome managers use precise formulaic commitment markers to balance legal compliance with operational reality:",
-              "connectorsTable": [
-                {
-                  "phrase": "we formally undertake to",
-                  "function": "Expresses a legally binding commitment to complete an action",
-                  "example": "We formally undertake to complete the hydro-blasting within 14 calendar days.",
-                  "tip": "Follow with base infinitive: undertake to + [verb] within [timeframe]"
+                  "num": 3,
+                  "question": "Step 3: Lead Interactive Classmate Exercises",
+                  "answer": "Distribute or project little exercises for your classmates to complete (reading comprehension questions, a quick true/false quiz, definition matching, or pair discussion). Creativity and imagination are strongly encouraged!"
                 },
                 {
-                  "phrase": "in the interim, the operator shall",
-                  "function": "Establishes an immediate temporary safeguard or operational restriction",
-                  "example": "In the interim, the aerodrome operator shall enforce a mandatory NOTAM.",
-                  "tip": "Use 'shall' for statutory commitment: In the interim, [subject] shall + [verb]"
-                },
-                {
-                  "phrase": "subject to authority concurrence",
-                  "function": "Conditions an operational timeline upon state regulator approval",
-                  "example": "Subject to your concurrence, our engineering team will submit weekly progress photos.",
-                  "tip": "Diplomatic conditional marker: Subject to [party's] concurrence, we will..."
-                },
-                {
-                  "phrase": "conditional upon physical verification",
-                  "function": "Specifies that closure depends on auditable test proof",
-                  "example": "Finding closure is conditional upon physical verification of CFME friction traces.",
-                  "tip": "Follow with 'of': conditional upon [noun phrase] / [test result]"
-                },
-                {
-                  "phrase": "we respectfully submit that",
-                  "function": "Introduces a polite, diplomatic pushback against excessive restrictions",
-                  "example": "We respectfully submit that closing the entire runway is disproportionate.",
-                  "tip": "Professional diplomacy: We respectfully submit that [clause]"
-                }
-              ],
-              "drills": [
-                {
-                  "id": 1,
-                  "prompt": "1. The aerodrome operator __________ complete ultra-high-pressure rubber removal across the first 600 meters within 14 nights.",
-                  "options": ["formally undertakes to", "respectfully submits that", "in the interim"],
-                  "correct": "formally undertakes to",
-                  "rationale": "'Formally undertakes to' expresses a legally binding commitment to perform an engineering action."
-                },
-                {
-                  "id": 2,
-                  "prompt": "2. __________, air traffic control shall restrict all aircraft at Holding Point P1 to idle breakaway thrust.",
-                  "options": ["Subject to concurrence", "In the interim", "Conditional upon"],
-                  "correct": "In the interim",
-                  "rationale": "'In the interim' introduces the provisional operational safeguard active before permanent repairs."
-                },
-                {
-                  "id": 3,
-                  "prompt": "3. The revised 45-day blast fence reconstruction schedule is valid only __________ from the state oversight directorate.",
-                  "options": ["subject to authority concurrence", "we respectfully submit that", "in the interim"],
-                  "correct": "subject to authority concurrence",
-                  "rationale": "'Subject to authority concurrence' correctly conditions timeline validity on formal DGAC/EASA approval."
-                },
-                {
-                  "id": 4,
-                  "prompt": "4. Formal Level 1 finding closure remains __________ on-site CFME calibration runs confirming mu >= 0.52.",
-                  "options": ["conditional upon physical verification of", "we formally undertake to", "in the interim"],
-                  "correct": "conditional upon physical verification of",
-                  "rationale": "'Conditional upon physical verification of' specifies the mandatory auditable test proof."
-                },
-                {
-                  "id": 5,
-                  "prompt": "5. __________ imposing a 30-day runway closure is commercially unviable given our verified nighttime hydro-blasting capacity.",
-                  "options": ["In the interim", "We respectfully submit that", "Subject to concurrence"],
-                  "correct": "We respectfully submit that",
-                  "rationale": "'We respectfully submit that' is the diplomatic opening for constructive pushback in regulatory negotiation."
+                  "num": 4,
+                  "question": "Step 4: Classroom Wrap-Up & Final Teacher Feedback",
+                  "answer": "Check answers with the class, answer questions, and summarize the key safety takeaway. In the final minutes of class, the teacher delivers constructive feedback and spoken language corrections."
                 }
               ]
             },
-            "negotiationRoleplay": {
-              "title": "Interactive Roleplay • Aerodrome Operator vs Civil Aviation Authority Inspector",
-              "operatorRole": {
-                "role": "Aerodrome Safety & Compliance Manager",
-                "goal": "Present the proposed CAP timeline, justify why certain civil engineering works require 30 days due to contractor availability, and convince the inspector that interim NOTAMs and speed restrictions fully contain operational risks.",
-                "phrases": [
-                  "We formally undertake to complete the hydro-blasting within 14 calendar days.",
-                  "In the interim, the aerodrome operator has published a safety NOTAM prohibiting tailwind landings on Runway 14L.",
-                  "Subject to your concurrence, our engineering team will submit weekly progress photos.",
-                  "We respectfully submit that closing the entire runway is disproportionate given the effective interim speed restrictions."
-                ]
-              },
-              "inspectorRole": {
-                "role": "Civil Aviation Authority Inspector (DGAC / EASA)",
-                "goal": "Scrutinize the proposed milestones, demand verifiable safety evidence, verify that Level 1 risks are mitigated within 24 hours, and grant conditional concurrence only with auditable progress checks.",
-                "phrases": [
-                  "The authority acknowledges receipt of your CAP, but the proposed 30-day timeline for Level 1 friction restoration is excessive.",
-                  "We require physical CFME friction traces showing mu at or above 0.52 before the NOTAM can be cancelled.",
-                  "Our concurrence remains strictly conditional upon receiving certified torque test reports for all 40 replacement blast fence anchors.",
-                  "What specific contingency procedure is in place if the hydro-blasting vehicle experiences mechanical downtime?"
-                ]
-              },
-              "peerChecklist": [
-                {
-                  "id": 1,
-                  "label": "Did the operator accurately classify finding levels (Level 1 immediate vs Level 2 30-day CAP) citing Part-ADR.OR.D.005?"
-                },
-                {
-                  "id": 2,
-                  "label": "Were formal commitment phrases (undertake to, in the interim, subject to concurrence) used with grammatical precision?"
-                },
-                {
-                  "id": 3,
-                  "label": "Did the operator propose realistic, auditable milestones and enforceable interim risk mitigations (e.g., NOTAMs)?"
-                },
-                {
-                  "id": 4,
-                  "label": "Was diplomatic, assertive spoken negotiation maintained without defensive or aggressive pushback?"
-                }
-              ],
-              "peerCoaching": {
-                "inspector": "Civil Aviation Inspector: 'Your interim NOTAM strategy for Runway 14L was very thorough. However, when proposing the 30-day blast fence timeline, remember to explicitly use formulaic commitment phrases like: we formally undertake to submit weekly progress photos subject to authority concurrence.'",
-                "operator": "Safety & Compliance Manager: 'Thank you for that observation, Inspector. We formally undertake to provide certified torque pull-out test reports every seven days, conditional upon your on-site verification.'"
-              }
-            },
-            "flippedLessonStudio": {
-              "title": "Flipped Classroom Design Studio • Session 7 Peer-Teaching Workshop",
-              "instructions": "In Session 7, your team of 3 or 4 students will take the stage as technical instructors! Each pod will deliver a 30-minute communicative lesson to their classmates. In this studio workshop, dedicate focused preparation time to select your domain, build your 3-stage lesson architecture, assign team roles, and record your lesson outline.",
-              "duration": "Dedicated Preparation Time: 30+ Minutes in Session 6",
-              "domains": [
-                {
-                  "num": "Pod 1",
-                  "title": "Runway Surface Condition Reporting & GRF",
-                  "topic": "Teaching classmates how to assess runway friction decay, interpret continuous friction survey traces (CFME), and draft accurate Global Reporting Format (GRF) SNOWTAMs.",
-                  "suggestedActivity": "Give classmates raw CFME survey traces of a contaminated runway and have them work in pairs to decode the Runway Condition Code (RWYCC) and draft the broadcasted SNOWTAM."
-                },
-                {
-                  "num": "Pod 2",
-                  "title": "Apron Vehicle Safety & Pushback Telematics",
-                  "topic": "Facilitating a practical workshop on GSE speed control, telematics geofencing, pushback towbar shear mechanics, and interphone communication discipline.",
-                  "suggestedActivity": "A simulated ground incident investigation where classmates piece together pushback driver statements and telematics GPS speed logs to identify who breached ramp speed limits."
-                },
-                {
-                  "num": "Pod 3",
-                  "title": "Wildlife Hazard Management & Habitat Auditing",
-                  "topic": "Leading an interactive seminar on laser pyrotechnics, acoustic dispersal techniques, and habitat grass height regulation under EASA CS-ADR-DSN.",
-                  "suggestedActivity": "A wildlife dispersal simulation where classmates act as bird patrol units prioritizing laser versus pyrotechnic intervention for a flock of lapwings near the runway threshold."
-                },
-                {
-                  "num": "Pod 4",
-                  "title": "Airfield Audit Non-Conformities & CAP Negotiation",
-                  "topic": "Running an interactive roleplay negotiation where classmates simulate aerodrome operators defending corrective milestones to civil aviation inspectors.",
-                  "suggestedActivity": "A high-stakes regulatory defense where student pairs represent an airport presenting a Level 1 CAP to a skeptical civil aviation authority inspection panel."
-                }
-              ],
+            "presentationSimulation": {
+              "title": "The 30-Minute Activity Flow (4 Steps)",
               "stages": [
                 {
-                  "stage": "Stage 1: Opening Hook & Technical Briefing",
-                  "duration": "~5 Minutes",
-                  "desc": "Engage the room immediately: present a provocative photo exhibit, short case question, or high-impact operational dilemma in fluent English."
+                  "stage": "Step 1",
+                  "name": "Extract Spoken Breakdown",
+                  "badge": "Step 1",
+                  "desc": "Introduce your team, present your chosen EASA extract, and explain the core safety issue in plain English."
                 },
                 {
-                  "stage": "Stage 2: Core Communicative Activity",
-                  "duration": "~18 Minutes",
-                  "desc": "Maximize student speaking time! Have your classmates work in pairs or trios on a problem-solving challenge, debate, or simulation while your team circulates and coaches."
+                  "stage": "Step 2",
+                  "name": "Vocabulary Spotlight: New Words",
+                  "badge": "Step 2",
+                  "desc": "Teach 3 to 5 new technical words from the extract with simple explanations and clear operational examples."
                 },
                 {
-                  "stage": "Stage 3: Class Debriefing & Feedback",
-                  "duration": "~7 Minutes",
-                  "desc": "Call on teams to share solutions, highlight key technical vocabulary used, and deliver constructive spoken English feedback to your peers."
-                }
-              ],
-              "roles": [
-                {
-                  "title": "Lead Facilitator",
-                  "role": "Introduces the topic, delivers the opening briefing, sets up the activity instructions, and manages overall classroom energy."
+                  "stage": "Step 3",
+                  "name": "Classmate Exercises & Activity",
+                  "badge": "Step 3",
+                  "desc": "Classmates complete your reading comprehension questions, quiz, or speaking task in pairs or small groups."
                 },
                 {
-                  "title": "Activity Controller",
-                  "role": "Distributes task roles, explains interactive rules, circulates during pairwork, and provides technical operational guidance."
-                },
-                {
-                  "title": "Language & Vocab Coach",
-                  "role": "Monitors spoken English during group work, notes communicative breakthroughs and pronunciation slips, and leads the vocabulary review."
-                },
-                {
-                  "title": "Timekeeper & Debriefer",
-                  "role": "Ensures strict adherence to the 30-minute delivery schedule, coordinates group sharing, and summarizes key safety takeaways."
-                }
-              ],
-              "rubric": [
-                {
-                  "criterion": "1. Preparation & Lesson Structure",
-                  "points": "5 Points",
-                  "descriptors": "Clear communicative objectives, polished student materials, logical 3-stage progression, and equal contribution across all pod members."
-                },
-                {
-                  "criterion": "2. Communicative Activity Design",
-                  "points": "5 Points",
-                  "descriptors": "High student talking time (STT), authentic technical challenge, creative exercise ideas, and active problem-solving rather than passive lecturing."
-                },
-                {
-                  "criterion": "3. Spoken English & Technical Vocabulary",
-                  "points": "5 Points",
-                  "descriptors": "Fluency, accurate use of Module 1 aviation terminology, clear instructional delivery, and confident pronunciation."
-                },
-                {
-                  "criterion": "4. Classroom Presence & Facilitation",
-                  "points": "5 Points",
-                  "descriptors": "Engaging interaction, dynamic question management, active circulating and coaching, and constructive peer debriefing."
+                  "stage": "Step 4",
+                  "name": "Wrap-Up & Solution Check",
+                  "badge": "Step 4",
+                  "desc": "Review answers together, ask classmates what they learned, and conclude your team presentation."
                 }
               ]
-            },
-            "safetyCheck": {
-              "title": "Activity 5: Safety Check: What is the Airfield Risk?",
-              "summary": "Review the 4 questions in the Safety Check table to evaluate audit findings, corrective action plans, and regulatory enforcement decisions.",
-              "rows": [
-                {
-                  "question": "1. What is the systemic problem?",
-                  "answer": "Runway 14L touchdown zone has decayed to mu = 0.31 (below the 0.34 safety threshold) due to rubber build-up; Holding Point P1 blast deflector has corroded base bolts risking fence detachment under 120-knot jet thrust."
-                },
-                {
-                  "question": "2. What could happen if uncorrected?",
-                  "answer": "Decayed friction risks hydroplaning runway excursions during wet landings; detached blast fence panels risk launching high-speed metallic FOD across Taxiway Papa and adjacent service roadways."
-                },
-                {
-                  "question": "3. How do we fix it?",
-                  "answer": "Enforce immediate NOTAMs (no tailwind landings, idle thrust taxiing); execute 4 nights of UHP hydro-blasting (28,000 m2) and install Grade 316 stainless anchors rated for 45 kN pull-out torque."
-                },
-                {
-                  "question": "4. Directorate Decision",
-                  "answer": "Grant provisional EASA/DGAC concurrence: Level 1 closure is conditional upon CFME mu >= 0.52 verification; Level 2 closure is conditional upon certified anchor pull-out test certificates."
-                }
-              ]
-            },
-            "rulesToReality": {
-              "title": "Rules to Reality: The 60-Second Compliance Pitch",
-              "prompt": "Without looking at your notes, turn to your partner and explain in 60 seconds: 'Why can\'t an aerodrome operator simply promise to fix a finding next year?' You must use at least 2 commitment phrases and distinguish a Level 1 hazard from a Level 2 non-compliance."
-            }
-          },
-          "revision": {
-            "title": "Module 1 Session 6 • Technical Vocabulary Revision",
-            "description": "Master these 12 critical technical terms covering Corrective Action Plans, regulatory oversight, and communicative peer-teaching facilitation.",
-            "terms": [
-              {
-                "term": "Corrective Action Plan",
-                "pos": "noun phrase",
-                "ipa": "/kəˈrɛktɪv ˈækʃən plæn/",
-                "def": "A formal, time-bound schedule of remedial measures submitted by an aerodrome operator to rectify regulatory non-compliances.",
-                "sentence": "The aerodrome operator submitted a comprehensive Corrective Action Plan addressing all Level 1 and Level 2 findings within 30 days.",
-                "example": "EASA Part-ADR.OR.D.005 mandates that every CAP include root-cause remediation and auditable milestones."
-              },
-              {
-                "term": "Non-Conformity",
-                "pos": "noun",
-                "ipa": "/ˌnɒnkənˈfɔːmɪti/",
-                "def": "A failure to satisfy a regulatory specification, certification standard, or aerodrome operational requirement.",
-                "sentence": "The audit team identified a non-conformity regarding secondary fuel containment dyke integrity.",
-                "example": "Level 1 non-conformities require immediate operational restrictions to contain flight safety risks."
-              },
-              {
-                "term": "Root-Cause Analysis",
-                "pos": "noun phrase",
-                "ipa": "/ruːt kɔːz əˈnæləsɪs/",
-                "def": "An investigation methodology aimed at uncovering the fundamental systemic origin of an operational breakdown.",
-                "sentence": "Our root-cause analysis revealed that the friction loss stemmed from uncalibrated cleaning cycles rather than pavement aggregate failure.",
-                "example": "Addressing only the symptom without root-cause analysis guarantees repeat safety occurrences."
-              },
-              {
-                "term": "Interim Mitigation",
-                "pos": "noun phrase",
-                "ipa": "/ˈɪntərɪm ˌmɪtɪˈɡeɪʃən/",
-                "def": "A temporary operational measure enforced to maintain acceptable safety while permanent engineering works are underway.",
-                "sentence": "A temporary NOTAM restricting wet tailwind landings served as the interim mitigation during runway resurfacing.",
-                "example": "Interim mitigations must be approved by the civil aviation inspector before operations proceed."
-              },
-              {
-                "term": "Verification Milestone",
-                "pos": "noun phrase",
-                "ipa": "/ˌvɛrɪfɪˈkeɪʃən ˈmaɪlstoʊn/",
-                "def": "A scheduled, measurable checkpoint where the competent authority evaluates progress toward definitive regulatory compliance.",
-                "sentence": "Milestone 2 requires physical pull-out torque testing of all replacement blast deflector anchor bolts.",
-                "example": "Failure to achieve a scheduled milestone can trigger immediate authority operational restrictions."
-              },
-              {
-                "term": "Authority Concurrence",
-                "pos": "noun phrase",
-                "ipa": "/ɔːˈθɒrɪti kənˈkʌrəns/",
-                "def": "Formal written approval by the state oversight body confirming that a proposed corrective measure is acceptable.",
-                "sentence": "The proposed 60-day closure timeline was implemented following formal authority concurrence from the DGAC.",
-                "example": "The aerodrome cannot alter an agreed CAP timeline without prior authority concurrence."
-              },
-              {
-                "term": "Hydro-Blasting",
-                "pos": "noun",
-                "ipa": "/ˈhaɪdroʊ ˈblæstɪŋ/",
-                "def": "Ultra-high-pressure water jetting used to strip rubber deposits and re-open macro-texture grooves on airport runways.",
-                "sentence": "Hydro-blasting at 2,200 bar restored runway surface friction to mu = 0.54 without damaging the asphalt matrix.",
-                "example": "Nightly hydro-blasting cleared 28,000 square meters of runway touchdown zone rubber in four shifts."
-              },
-              {
-                "term": "Continuous Friction Measuring Equipment (CFME)",
-                "pos": "noun phrase",
-                "ipa": "/kənˈtɪnjuəs ˈfrɪkʃən ˈmɛʒərɪŋ ɪˈkwɪpmənt/",
-                "def": "Specialized trailer or vehicle instrumented to continuously assess and record pavement friction coefficients under controlled water film depths.",
-                "sentence": "The CFME test vehicle confirmed that braking action remained below the minimum planning level across the first 600 meters.",
-                "example": "CFME calibration runs are required every 60 days to track seasonal friction degradation."
-              },
-              {
-                "term": "Jet Blast Deflector",
-                "pos": "noun phrase",
-                "ipa": "/dʒɛt blɑːst dɪˈflɛktər/",
-                "def": "Heavy curved barrier designed to redirect aerodynamic jet engine exhaust upward to safeguard adjacent perimeter roadways.",
-                "sentence": "The replacement jet blast deflector is engineered to withstand 150-knot breakaway thrust from wide-body aircraft.",
-                "example": "Jet blast deflectors prevent engine exhaust from blowing foreign object debris onto active taxiways."
-              },
-              {
-                "term": "Undertake to",
-                "pos": "verb phrase",
-                "ipa": "/ˌʌndərˈteɪk tuː/",
-                "def": "A formal, legally binding commitment to execute a specified action within an agreed timeframe.",
-                "sentence": "The aerodrome management undertakes to install certified stainless anchors before the start of winter operations.",
-                "example": "In our formal response, we undertake to submit monthly progress reports to the oversight directorate."
-              },
-              {
-                "term": "Flipped Classroom",
-                "pos": "noun phrase",
-                "ipa": "/flɪpt ˈklɑːsruːm/",
-                "def": "An instructional methodology where students prepare and deliver technical content to their peers, fostering active communication.",
-                "sentence": "In our flipped classroom session, students facilitated interactive technical workshops on runway condition reporting.",
-                "example": "Flipped lessons maximize student speaking time and develop authentic instructional presence."
-              },
-              {
-                "term": "Peer Facilitation",
-                "pos": "noun phrase",
-                "ipa": "/pɪər fəˌsɪlɪˈteɪʃən/",
-                "def": "The act of guiding, structuring, and supporting collaborative learning discussions among classmates in a professional setting.",
-                "sentence": "Effective peer facilitation requires asking open questions and keeping classmates actively engaged in English.",
-                "example": "The teaching pod demonstrated excellent peer facilitation by managing classroom discussions smoothly."
-              }
-            ]
-          },
-          "materials": {
-            "articles": [
-              {
-                "title": "EASA Part-ADR.OR.D.005: The Legal and Operational Framework of Corrective Action Plans",
-                "subtitle": "How European aerodrome certificate holders transform authority audit non-conformities into verifiable, risk-based safety enhancements.",
-                "source": "EASA Regulatory Review",
-                "readTime": "Estimated read: 6-8 mins",
-                "url": "https://www.easa.europa.eu/en/domains/aerodromes",
-                "takeaways": [
-                  "Level 1 findings demand immediate provisional risk containment within 24–48 hours, whereas Level 2 findings require formal CAP submission within 30 days.",
-                  "A legally compliant CAP must isolate underlying systemic root causes rather than merely performing cosmetic repairs on surface defects.",
-                  "Authority concurrence is conditional upon measurable verification milestones, transparent progress reporting, and on-site physical re-inspection."
-                ],
-                "vocab": [
-                  "Part-ADR.OR.D.005",
-                  "Level 1 Finding",
-                  "Root-Cause Remediation",
-                  "Authority Concurrence"
-                ],
-                "content": "Under Regulation (EU) No 139/2014 Part-ADR.OR.D.005, safety oversight by competent civil aviation authorities (such as the DGAC in France) enforces continuous compliance with aerodrome certification specifications. When an inspection reveals a non-conformity, the aerodrome operator is issued a formal finding notice categorized into Level 1 or Level 2 depending on the immediacy of the operational hazard.\n\nA Level 1 finding represents a significant non-compliance that lowers safety or seriously hazards aircraft operations. Typical examples include runway surface friction decaying below the statutory minimum threshold, uncontained fuel spills adjacent to active stands, or non-functioning runway guard lights. In such instances, the aerodrome operator must implement immediate interim mitigations within 24 to 48 hours—such as issuing a restrictive NOTAM, closing taxiway segments, or enforcing payload limits—to prevent immediate accidents.\n\nFor Level 2 findings, which represent systemic deficiencies that could degrade safety if uncorrected, the aerodrome certificate holder must formulate and submit a Corrective Action Plan (CAP) within 30 days. EASA standards mandate that the plan must be structured using SMART criteria: specific remedial actions, measurable verification milestones, assigned departmental accountability, and realistic completion target dates. Crucially, the plan must demonstrate how the root cause—whether inadequate maintenance budgeting, flawed procurement, or insufficient training—will be permanently rectified.\n\nFormal finding closure is not achieved upon submitting paperwork; it requires authority concurrence followed by rigorous verification. State inspectors conduct on-site physical audits, review certified testing reports, and verify that operational mitigations remained robust throughout the remediation lifecycle. By holding operators accountable to auditable benchmarks, Part-ADR.OR.D.005 ensures that European aerodromes continually elevate their physical safety margins."
-              },
-              {
-                "title": "Restoring Runway Surface Friction: Hydro-Blasting, Micro-Texturing, and CFME Calibration",
-                "subtitle": "The physics of rubber deposit removal, surface drainage restoration, and continuous friction measurement on high-density runways.",
-                "source": "SKYbrary Aviation Safety",
-                "readTime": "Estimated read: 5-7 mins",
-                "url": "https://skybrary.aero",
-                "takeaways": [
-                  "Repeated aircraft landings deposit vulcanized rubber in runway touchdown zones, filling asphalt grooves and causing hydrodynamic tire aquaplaning.",
-                  "Ultra-high-pressure hydro-blasting (up to 2,500 bar) removes rubber deposits and restores macro-texture without damaging underlying pavement binder.",
-                  "Continuous Friction Measuring Equipment (CFME) runs at 65 km/h and 95 km/h are legally required to verify that friction coefficients exceed maintenance planning levels."
-                ],
-                "vocab": [
-                  "CFME",
-                  "Hydro-Blasting",
-                  "Macro-Texture",
-                  "Aquaplaning Risk"
-                ],
-                "content": "On international commercial runways, each wide-body touchdown deposits between 1.5 and 3.0 kilograms of vulcanized aircraft tire rubber onto the runway touchdown zone. Under the extreme friction and temperature of spin-up upon contact, molten rubber is forced into the transverse asphalt grooves and microscopic surface pores. Over months of heavy flight schedules, this progressive accretion creates a smooth, glass-like coating that prevents surface water drainage and severely compromises aircraft braking action.\n\nWhen water films exceed 1.0 millimeter during precipitation, an aircraft landing on rubber-contaminated asphalt cannot evacuate water from beneath its tires. The resulting dynamic aquaplaning hydrodynamic pressure lifts the tire completely off the pavement, depriving the flight crew of directional steering and wheel braking. To prevent runway overruns and lateral excursions, EASA CS-ADR-DSN.B.015 establishes strict friction thresholds: the Minimum Friction Level (mu = 0.34) below which operations are restricted, and the Maintenance Planning Level (mu = 0.43) which triggers mandatory corrective remediation.\n\nModern aerodromes utilize specialized ultra-high-pressure (UHP) hydro-blasting technology to de-rubberize runways. Operating during night curfews, specialized vehicles project needle-thin water jets at pressures exceeding 2,200 bar onto the pavement. The kinetic energy of the water shatters the brittle rubber deposits without chemical solvents, immediately vacuuming the residue into on-board waste tanks. This process re-opens the original grooving pattern and restores aggregate micro-texture.\n\nVerification of friction recovery requires rigorous scientific instrumentation. Technicians deploy Continuous Friction Measuring Equipment (CFME)—such as the GripTester, Mu-Meter, or surface friction trailer—conducting test runs at 65 km/h and 95 km/h under an artificial 1.0mm water film. Only when consecutive survey runs confirm that average friction values exceed mu = 0.52 across the entire touchdown zone can the aerodrome operator request formal authority closure of the safety finding."
-              },
-              {
-                "title": "From Audit Finding to Verification: Best Practices in Civil Aviation Authority Oversight",
-                "subtitle": "How safety managers and state inspectors collaborate through transparent communication, verifiable milestones, and closed-loop SMS.",
-                "source": "Eurocontrol Safety Portals",
-                "readTime": "Estimated read: 6-8 mins",
-                "url": "https://www.eurocontrol.int",
-                "takeaways": [
-                  "Authority compliance meetings succeed when aerodrome safety managers use precise, formulaic commitment language rather than vague promises.",
-                  "Interim risk mitigations must be continually monitored and adapted if civil engineering works experience supply chain delays.",
-                  "A closed-loop Safety Management System (SMS) incorporates post-closure monitoring to verify that corrective actions remain effective over time."
-                ],
-                "vocab": [
-                  "Safety Oversight",
-                  "Verification Benchmark",
-                  "Interim Mitigation",
-                  "Closed-Loop SMS"
-                ],
-                "content": "The relationship between an aerodrome safety directorate and national civil aviation inspectors (such as DSAC or CAA auditors) is frequently perceived as adversarial. However, modern safety management principles under ICAO Annex 19 and EASA regulations define compliance oversight as a collaborative, risk-based partnership designed to identify organizational weaknesses before they manifest as airside accidents.\n\nWhen non-compliances are identified during scheduled aerodrome audits or incident debriefs, the negotiation of the Corrective Action Plan represents a critical communication juncture. Inspectors assess not only the technical feasibility of proposed repairs, but the operational culture of the operator. Safety managers who present structured root-cause analyses, realistic milestone dates, and clear interim risk containment measures inspire regulatory confidence and secure rapid concurrence.\n\nEffective regulatory dialogue relies on precise, formulaic spoken language. Experienced aerodrome managers avoid ambiguous phrasing such as 'we hope to finish soon,' choosing instead legally defined commitment structures: 'We undertake to install temporary concrete barriers within 48 hours,' 'Pending formal certification, a NOTAM shall restrict wet operations,' and 'We respectfully request authority concurrence for a 14-day extension based on supplier delivery schedules.' This precision allows inspectors to document compliance objectively.\n\nCrucially, EASA oversight models emphasize closed-loop verification. Finding closure is not the end of the safety cycle; it initiates post-implementation monitoring within the airport's Safety Management System (SMS). Twelve months after closure, internal auditors verify whether the corrective measures successfully prevented hazard recurrence. Through auditable tracking and transparent communication, European aerodromes maintain the highest global safety standards."
-              }
-            ],
-            "grammarClinic": {
-              "title": "Language Clinic: Formulaic Spoken Commitments & Diplomatic Negotiations",
-              "desc": "Master professional spoken patterns for regulatory audits: making binding commitments, establishing interim conditions, and requesting formal authority concurrence.",
-              "patterns": [
-                {
-                  "title": "1. Making Binding Institutional Commitments",
-                  "formula": "We undertake to + [Verb Base] + [Milestone Action] + within / by [Target Date]",
-                  "example": "We undertake to complete UHP hydro-blasting across the touchdown zone within 14 calendar days.",
-                  "usage": "Use 'undertake to' during authority meetings to signal formal institutional responsibility."
-                },
-                {
-                  "title": "2. Establishing Interim Provisional Safeguards",
-                  "formula": "Pending + [Permanent Action], an operational restriction shall + [Enforced Safeguard]",
-                  "example": "Pending definitive blast fence replacement, an operational restriction shall enforce idle thrust at Holding Point P1.",
-                  "usage": "Use 'pending' + 'shall' to demonstrate that risks are fully controlled during civil works."
-                },
-                {
-                  "title": "3. Conditional Regulatory Concurrence",
-                  "formula": "Subject to authority concurrence, our engineering unit will + [Action]",
-                  "example": "Subject to authority concurrence, our engineering unit will transition to bi-monthly CFME survey runs.",
-                  "usage": "Diplomatic phrasing acknowledging the state inspector's ultimate statutory approval authority."
-                }
-              ]
-            },
-            "resources": [
-              {
-                "tag": "EASA Aerodromes Portal",
-                "name": "EASA Aerodrome Rules & Guidance",
-                "desc": "Regulation (EU) No 139/2014, Part-ADR.OR.D.005, and certification specifications.",
-                "url": "https://www.easa.europa.eu/en/domains/aerodromes"
-              },
-              {
-                "tag": "DGAC Safety Oversight",
-                "name": "Direction Générale de l'Aviation Civile",
-                "desc": "French national civil aviation authority safety oversight guidelines and audit protocols.",
-                "url": "https://www.enac.fr/en"
-              },
-              {
-                "tag": "SKYbrary Aviation Hub",
-                "name": "SKYbrary Runway Friction Portal",
-                "desc": "Global repository on runway surface friction, hydro-blasting, and contaminant mitigation.",
-                "url": "https://skybrary.aero"
-              }
-            ],
-            "quiz": [
-              {
-                "question": "Under EASA Part-ADR.OR.D.005, what distinguishes a Level 1 finding from a Level 2 finding?",
-                "options": [
-                  "A Level 1 finding seriously hazards flight operations and requires immediate mitigation within 24–48 hours, whereas Level 2 allows an agreed 30-day CAP submission.",
-                  "A Level 1 finding involves paperwork errors, while Level 2 involves physical runway pavement cracks.",
-                  "Level 1 findings can be ignored if the aerodrome director signs a waiver, whereas Level 2 findings cannot.",
-                  "Level 1 findings only apply to commercial airliners, whereas Level 2 findings apply to general aviation."
-                ],
-                "correct": 0,
-                "explanation": "Level 1 findings represent an immediate threat to aviation safety requiring immediate provisional mitigation (max 24–48 hours), whereas Level 2 findings allow 30 days for formal CAP submission."
-              },
-              {
-                "question": "What is the primary operational hazard of vulcanized tire rubber accumulating on a runway touchdown zone?",
-                "options": [
-                  "It makes the runway surface too rough and damages aircraft tires during rotation.",
-                  "It fills the transverse asphalt grooves, causing dynamic aquaplaning and severe loss of braking action in wet conditions.",
-                  "It attracts migratory birds seeking warm asphalt surfaces.",
-                  "It changes the magnetic alignment of the instrument landing system (ILS) localizer."
-                ],
-                "correct": 1,
-                "explanation": "Rubber deposits fill the macro-texture grooves, preventing water drainage and inducing dynamic aquaplaning when surface water films exceed 1.0mm."
-              },
-              {
-                "question": "Which spoken formula represents an appropriate formal commitment during an authority audit meeting?",
-                "options": [
-                  "'We hope our contractors might fix the fence sometime next month.'",
-                  "'We undertake to complete the hydro-blasting within 14 calendar days, subject to authority concurrence.'",
-                  "'The inspector should not worry because aerodrome accidents are very rare.'",
-                  "'We will only fix the finding if the airlines agree to pay higher landing fees.'"
-                ],
-                "correct": 1,
-                "explanation": "'We undertake to [action] within [timeline], subject to authority concurrence' is the standard, legally robust formula for regulatory meetings."
-              },
-              {
-                "question": "In Session 7's flipped classroom evaluation, how much time does each student teaching pod have to deliver their lesson?",
-                "options": [
-                  "10 minutes per student individually.",
-                  "30 minutes per team of 3 or 4 students.",
-                  "45 minutes per pair of 2 students.",
-                  "The entire 2-hour class period."
-                ],
-                "correct": 1,
-                "explanation": "Each student teaching pod of 3 to 4 engineers has exactly 30 minutes to deliver their interactive lesson to their classmates."
-              },
-              {
-                "question": "What is the primary role of the Language & Vocab Coach within a Session 7 teaching pod?",
-                "options": [
-                  "To grade classmates with letter grades during the lesson.",
-                  "To monitor spoken English, note technical communicative breakthroughs and slips, and lead the vocabulary review.",
-                  "To translate everything into French for the class.",
-                  "To operate the classroom projector and light switches."
-                ],
-                "correct": 1,
-                "explanation": "The Language & Vocab Coach monitors peer speaking, tracks technical aviation terms, and conducts constructive feedback during the debriefing stage."
-              }
-            ]
-          }
-        },
-        "7": {
-          "session": 7,
-          "title": "Flipped Classroom Peer-Teaching Evaluation",
-          "overview": {
-            "intro": "Welcome to Session 7 of Technical English! In this Formative Evaluation, student teams of 3 to 4 take the floor as technical instructors to deliver an engaging 30-minute interactive lesson to their classmates. You will practice giving clear spoken activity instructions in plain English, facilitate pair and group work based on Module 1 EASA aerodrome topics, manage classroom discussions, and provide constructive feedback to your peers.",
-            "whyItMatters": "Teaching a technical subject to others is one of the most effective ways to solidify language mastery and professional communicative presence. In airside operations, civil aviation oversight, and flight operations management, future ENAC graduates are regularly required to deliver safety briefings, train frontline ground teams, explain complex EASA regulatory updates, and facilitate collaborative decision-making across international teams. Developing the confidence to give direct spoken instructions, facilitate interactive peer discussions, and think on your feet in English transforms passive technical knowledge into active leadership communication.",
-            "keyTerms": [
-              {
-                "term": "Flipped Classroom",
-                "ipa": "/flɪpt ˈklɑːs.ruːm/",
-                "pos": "noun phrase",
-                "def": "A teaching model where students prepare learning materials beforehand and spend classroom time actively delivering, facilitating, and completing collaborative speaking tasks."
-              },
-              {
-                "term": "Peer-Teaching",
-                "ipa": "/pɪər ˈtiː.tʃɪŋ/",
-                "pos": "noun",
-                "def": "An instructional practice where students instruct and guide their fellow classmates through structured communicative exercises."
-              },
-              {
-                "term": "Instruction Checking Question (ICQ)",
-                "ipa": "/ɪnˈstrʌk.ʃən ˈtʃek.ɪŋ ˈkwes.tʃən/",
-                "pos": "noun phrase",
-                "def": "A brief, direct spoken question asked by an instructor to verify that learners understand activity instructions before starting."
-              },
-              {
-                "term": "Elicitation",
-                "ipa": "/ɪˌlɪs.ɪˈteɪ.ʃən/",
-                "pos": "noun",
-                "def": "A facilitation technique where the speaker prompts questions to draw ideas, solutions, or technical terms out of classmates rather than lecturing."
-              },
-              {
-                "term": "Timeboxing",
-                "ipa": "/ˈtaɪm.bɒks.ɪŋ/",
-                "pos": "noun",
-                "def": "Allocating a fixed, predetermined period of time to an activity step to keep classroom discussions focused and energetic."
-              },
-              {
-                "term": "Constructive Feedback",
-                "ipa": "/kənˈstrʌk.tɪv ˈfiːd.bæk/",
-                "pos": "noun phrase",
-                "def": "Specific, positive, and actionable observations provided to peers highlighting strong performance and practical areas for growth."
-              },
-              {
-                "term": "Active Listening",
-                "ipa": "/ˈæk.tɪv ˈlɪs.ən.ɪŋ/",
-                "pos": "noun phrase",
-                "def": "Paying full conscious attention to peer contributions, confirming understanding, and building upon what others say during debriefs."
-              },
-              {
-                "term": "Nominated Speaker",
-                "ipa": "/ˈnɒm.ɪ.neɪ.tɪd ˈspiː.kər/",
-                "pos": "noun phrase",
-                "def": "A designated group representative chosen to present a team's collective conclusions during whole-class discussion."
-              },
-              {
-                "term": "Pairwork Facilitation",
-                "ipa": "/ˈpeə.wɜːk fəˌsɪl.ɪˈteɪ.ʃən/",
-                "pos": "noun phrase",
-                "def": "Circulating among student pairs, monitoring conversational flow, clarifying doubts, and prompting quieter learners to contribute."
-              },
-              {
-                "term": "Plenary Debrief",
-                "ipa": "/ˈpliː.nər.i diːˈbriːf/",
-                "pos": "noun phrase",
-                "def": "A concluding whole-class discussion where student groups share conclusions, synthesize key insights, and evaluate lessons learned."
-              }
-            ],
-            "hideSpeakingTask": true
-          },
-          "objectives": {
-            "title": "Session 7 Objectives - Flipped Classroom Peer-Teaching Evaluation",
-            "summary": "By the end of this session, you will be able to deliver an engaging 30-minute flipped lesson in small teams, give clear spoken activity instructions in plain B2 English, facilitate dynamic pair and group interactions, deploy specialized Module 1 aerodrome vocabulary in context, and lead a constructive class debrief.",
-            "items": [
-              {
-                "num": 1,
-                "title": "Structure and Deliver an Interactive 30-Minute Aerodrome Safety Lesson",
-                "description": "Coordinate as a team of 3 to 4 to lead an engaging, well-timed lesson on a core EASA aerodrome operations topic without reading from scripts.",
-                "part": "Part 1"
-              },
-              {
-                "num": 2,
-                "title": "Deliver Clear, Actionable Spoken Instructions in Plain B2 English",
-                "description": "Give step-by-step activity instructions and use Instruction Checking Questions (ICQs) to ensure classmates understand tasks before beginning.",
-                "part": "Part 2"
-              },
-              {
-                "num": 3,
-                "title": "Facilitate Small-Group Spoken Interaction & Monitor Classmates",
-                "description": "Circulate among student pairs, prompt active discussion, provide helpful hints, and maintain an inclusive, English-only communicative atmosphere.",
-                "part": "Part 2"
-              },
-              {
-                "num": 4,
-                "title": "Deploy Module 1 EASA Aerodrome Phraseology Accurately in Dialogue",
-                "description": "Naturally integrate at least 6 to 8 specialized technical terms from Sessions 1–6 into lesson explanations, questions, and summaries.",
-                "part": "Part 3"
-              },
-              {
-                "num": 5,
-                "title": "Lead a Collaborative Plenary Debrief & Provide Constructive Peer Feedback",
-                "description": "Synthesize group answers, invite peer questions, conduct honest self-evaluation, and provide actionable spoken feedback to classmates.",
-                "part": "Part 4"
-              }
-            ]
-          },
-          "lessonContent": {
-            "hero": {
-                      "badge": "Formative Evaluation 1 \u2022 Technical English (AT \u2022 LV125E)",
-                      "title": "Session 7: Flipped Classroom Peer-Teaching Workshop",
-                      "subtitle": "Student teams of 3 to 4 take the floor as technical instructors, delivering an engaging 30-minute interactive lesson to classmates based on Module 1 EASA aerodrome operations.",
-                      "metrics": [
-                                {
-                                          "label": "Format",
-                                          "val": "30-Min Lessons"
-                                },
-                                {
-                                          "label": "Grading",
-                                          "val": "20 Points (FE1)"
-                                },
-                                {
-                                          "label": "Teams",
-                                          "val": "3 to 4 Instructors"
-                                },
-                                {
-                                          "label": "Standard",
-                                          "val": "CEFR B2 Spoken"
-                                }
-                      ]
-            },
-            "openingSession": {
-                      "badge": "Part 1: Entry Diagnostic Spot-Check",
-                      "title": "Spoken Technical Facilitation & Instruction Techniques",
-                      "desc": "Before teams take the floor, test your spoken facilitation knowledge with these 4 quick-fire spot-check questions on instruction checking, active monitoring, pacing, and debriefing.",
-                      "diagnostic": [
-                                {
-                                          "num": 1,
-                                          "question": "What is an Instruction Checking Question (ICQ), and why is asking 'Do you understand?' ineffective?",
-                                          "answer": "An ICQ is a targeted question that verifies comprehension of specific task steps (e.g., 'Are you working in pairs or alone?', 'How many root causes must your team list?'). Asking 'Do you understand?' prompts reflexive nods without confirming that students actually know what to do."
-                                },
-                                {
-                                          "num": 2,
-                                          "question": "What should student instructors do while classmates are actively working in pairs or small groups?",
-                                          "answer": "Instructors should actively circulate among tables to monitor communicative flow, clarify ambiguities, prompt quieter students with guiding questions, and ensure conversations remain strictly in professional English, without interrupting unnecessarily."
-                                },
-                                {
-                                          "num": 3,
-                                          "question": "How should a team manage a 30-minute lesson timebox if a group discussion runs longer than planned?",
-                                          "answer": "Give clear spoken time warnings ('Two minutes remaining, please finalize your conclusions'), gently accelerate transition to the plenary debrief, and nominate specific teams to report on key highlights rather than hearing every group in full."
-                                },
-                                {
-                                          "num": 4,
-                                          "question": "What makes a plenary debrief effective in a technical English lesson?",
-                                          "answer": "An effective debrief synthesizes student discoveries, elicits contrasting solutions between teams, highlights accurately deployed technical terminology, and provides immediate positive and constructive feedback rather than just repeating the lesson slides."
-                                }
-                      ]
-            },
-            "architecture": {
-                      "title": "The 30-Minute Flipped Lesson Architecture (4 Stages)",
-                      "stages": [
-                                {
-                                          "stage": "Stage 1",
-                                          "name": "Opening Phase: Welcome & Context Hook",
-                                          "badge": "Opening Phase",
-                                          "desc": "Introduce team instructors and state the aerodrome safety challenge. Hook peer interest with a real incident photo, scenario, or thought-provoking question."
-                                },
-                                {
-                                          "stage": "Stage 2",
-                                          "name": "Core Activity: Instructions & Spoken Task",
-                                          "badge": "Core Activity",
-                                          "desc": "Deliver clear step-by-step instructions in plain B2 English. Ask ICQs to verify task understanding. Classmates complete pair/group work."
-                                },
-                                {
-                                          "stage": "Stage 3",
-                                          "name": "Active Coaching: Circulating & Support",
-                                          "badge": "Active Coaching",
-                                          "desc": "Student instructors circulate among tables, clarify questions, prompt quieter peers, provide hints, and ensure 100% English speaking."
-                                },
-                                {
-                                          "stage": "Stage 4",
-                                          "name": "Debrief Phase: Plenary Review & Feedback",
-                                          "badge": "Debrief Phase",
-                                          "desc": "Elicit solutions from student groups, compare recommendations, review technical vocabulary deployed, and invite peer feedback."
-                                }
-                      ]
             },
             "facilitationToolkit": {
-                      "title": "Spoken Facilitation Toolkit \u2022 Phrases for Student Instructors",
-                      "categories": [
-                                {
-                                          "category": "Opening Hook & Giving Instructions",
-                                          "icon": "\ud83d\udce2",
-                                          "phrases": [
-                                                    "Good morning everyone. Today our team is putting you in the shoes of airport safety managers...",
-                                                    "Our objective by the end of this 30-minute session is to agree on...",
-                                                    "Please work in pairs with the person sitting next to you.",
-                                                    "Step one is to examine the chart. Step two is to identify the non-compliance."
-                                          ]
-                                },
-                                {
-                                          "category": "Instruction Checking Questions (ICQs)",
-                                          "icon": "\u2753",
-                                          "phrases": [
-                                                    "Before we start, who can explain what you need to do in step 1?",
-                                                    "Are you working individually or in pairs?",
-                                                    "What should your team have written down when time is up?",
-                                                    "You have 8 minutes for this phase. Any questions before we start?"
-                                          ]
-                                },
-                                {
-                                          "category": "Circulating & Coaching Classmates",
-                                          "icon": "\ud83d\udc65",
-                                          "phrases": [
-                                                    "How are things progressing over here? Any questions on the regulatory rule?",
-                                                    "What does EASA Part-ADR state about temporary obstacle exemptions?",
-                                                    "Try using 'provided that' to express the conditional safety measure.",
-                                                    "Two minutes remaining, everyone. Please start wrapping up your notes."
-                                          ]
-                                },
-                                {
-                                          "category": "Plenary Debrief & Eliciting Answers",
-                                          "icon": "\ud83c\udfaf",
-                                          "phrases": [
-                                                    "Let us hear from Team B. What root cause did your group identify?",
-                                                    "Did any other team reach a different conclusion for this audit finding?",
-                                                    "To recap, the key technical distinction between Level 1 and Level 2 is...",
-                                                    "Great participation everyone. Thank you for your active engagement."
-                                          ]
-                                }
-                      ]
+              "title": "Spoken Presentation Toolkit • Phrases for Student Presenters",
+              "categories": [
+                {
+                  "category": "Introducing the Extract & Context",
+                  "icon": "📄",
+                  "phrases": [
+                    "Good morning everyone. Today our team is looking at an extract from EASA Part-ADR regarding...",
+                    "This regulation specifically applies to aerodrome operators and deals with...",
+                    "The main purpose of this statutory requirement is to ensure that...",
+                    "In practical terms, this means that airfield operations must..."
+                  ]
+                },
+                {
+                  "category": "Teaching New Technical Words",
+                  "icon": "💡",
+                  "phrases": [
+                    "The first key term we want to teach you today is...",
+                    "In simple words, this term means...",
+                    "For example, when an aircraft lands on a wet runway, this word describes...",
+                    "Can anyone give another example using this word?"
+                  ]
+                },
+                {
+                  "category": "Setting Up Classmate Exercises",
+                  "icon": "✏️",
+                  "phrases": [
+                    "Now we would like you to look at the short reading exercise on the screen / handout.",
+                    "Please work in pairs with the person next to you to answer questions 1 to 3.",
+                    "You will have a few minutes to read the paragraph and find the two safety hazards.",
+                    "Take a look at the quiz questions and decide whether each statement is True or False."
+                  ]
+                },
+                {
+                  "category": "Reviewing Answers & Class Debrief",
+                  "icon": "🎯",
+                  "phrases": [
+                    "Let us check the answers together. Table 2, what did you find for Question 1?",
+                    "Does anyone have a different answer or interpretation?",
+                    "That is correct, because under the EASA rule...",
+                    "Thank you everyone for your active participation!"
+                  ]
+                }
+              ]
             },
             "languageClinic": {
-                      "title": "Language Clinic: Spoken Facilitation & Instruction Drills",
-                      "desc": "Practice transforming stiff or hesitant teacher talk into natural, confident spoken instructions in plain B2 English.",
-                      "drills": [
-                                {
-                                          "scenario": "You need students to analyze an OLS penetration chart in pairs before discussing solutions.",
-                                          "hesitant": "Maybe you can look at the paper and see what is wrong, do it with someone.",
-                                          "fluent": "Please work in pairs. Step one: examine the obstacle limitation surface on page 3. Step two: circle the antenna penetration. You have four minutes.",
-                                          "focus": "Direct imperatives + numbered step sequencing"
-                                },
-                                {
-                                          "scenario": "You want to check that everyone knows they have 6 minutes and must write 3 root causes.",
-                                          "hesitant": "Do you understand the activity?",
-                                          "fluent": "Before we begin: Sarah, how many root causes does your pair need to write? Exactly, three. And David, how much time do you have? Six minutes.",
-                                          "focus": "Targeted ICQs checking count and timebox"
-                                },
-                                {
-                                          "scenario": "A student pair is silent and stuck on whether a fuel leak is Level 1 or Level 2.",
-                                          "hesitant": "Why are you not talking? You must write the answer.",
-                                          "fluent": "How is it going over here? Look back at EASA Part-ADR.OR.D.005: does this containment failure pose an immediate hazard to flight operations, or can it be managed within 30 days?",
-                                          "focus": "Guiding question linking to regulatory criteria"
-                                },
-                                {
-                                          "scenario": "Classmates are speaking French during group work on the blast fence repair.",
-                                          "hesitant": "No French, English please!",
-                                          "fluent": "Remember everyone, 100% English only. If you need the word for 'brise-souffle', it is 'jet blast deflector'. Keep the discussion in English!",
-                                          "focus": "Supportive vocabulary provision + English immersion reminder"
-                                },
-                                {
-                                          "scenario": "Transitioning from pairwork to whole-class debrief with equal participation.",
-                                          "hesitant": "Okay time is up. Who wants to talk?",
-                                          "fluent": "Time is up, everyone. Let us hear from Team C. Alexandre, what was the primary systemic cause your group agreed on?",
-                                          "focus": "Clear time call + targeted nomination"
-                                }
-                      ]
+              "title": "Language Clinic: Natural Presentation & Instruction Drills",
+              "desc": "Practice transforming stiff or hesitant presentation talk into natural, confident spoken English.",
+              "drills": [
+                {
+                  "scenario": "Introducing your chosen EASA extract and why it matters.",
+                  "hesitant": "Our paper is about rules for airports. It is a bit boring and long.",
+                  "fluent": "Today our team is presenting an extract from EASA SIB 2024-09 on apron safety. This regulation is crucial because ramp vehicle speeding causes over 50 ground collisions every year.",
+                  "focus": "Contextual hook + operational importance"
+                },
+                {
+                  "scenario": "Explaining a new technical word to classmates.",
+                  "hesitant": "The word is 'displaced threshold'. It is in the dictionary.",
+                  "fluent": "Our first new term is 'displaced threshold'. That means a runway threshold that is not located at the physical beginning of the runway, usually because of temporary construction work.",
+                  "focus": "Clear plain English definition + practical context"
+                },
+                {
+                  "scenario": "Giving instructions for a reading comprehension exercise.",
+                  "hesitant": "Read this and answer the questions if you want.",
+                  "fluent": "Please look at Exhibit A on your sheet. With your partner, read the short incident notice and answer the two comprehension questions. You have four minutes.",
+                  "focus": "Numbered steps + clear pair task"
+                },
+                {
+                  "scenario": "Checking answers with the class after an activity.",
+                  "hesitant": "Does someone have the answer? Anyone?",
+                  "fluent": "Let us see what you found. Table 1, what did your pair conclude: is this non-compliance a Level 1 hazard or a Level 2 finding?",
+                  "focus": "Direct table nomination + specific question"
+                },
+                {
+                  "scenario": "Wrapping up your team's presentation before teacher debrief.",
+                  "hesitant": "That is all. We are finished.",
+                  "fluent": "To conclude, this EASA rule reminds us that clear reporting prevents repeat incidents. Thank you for your active participation, and we now hand over to our teacher.",
+                  "focus": "Polite conclusion + professional handover"
+                }
+              ]
             },
             "evaluationRubric": {
-                      "title": "Official 20-Point Formative Evaluation Marking Rubric",
-                      "criteria": [
-                                {
-                                          "title": "1. Lesson Preparation & Structure",
-                                          "pts": 5,
-                                          "desc": "Well-organized 30-minute lesson structure with clear learning objectives; engaging context hook; smooth sequence of steps; balanced, equal contribution across all 3 to 4 team members. Zero reading from written notes or scripts!"
-                                },
-                                {
-                                          "title": "2. Communicative Activity & Ideas",
-                                          "pts": 5,
-                                          "desc": "Creative, engaging communicative task (role-play, incident debate, audit inspection, or CAP negotiation) that gets classmates actively speaking in pairs/groups; avoids passive lecturing; keeps students invested throughout."
-                                },
-                                {
-                                          "title": "3. Instruction Delivery & Facilitation",
-                                          "pts": 5,
-                                          "desc": "Spoken instructions delivered in clear, plain B2 English without confusion; effective checking of comprehension (ICQs) before starting; active circulating among tables to coach peers; confident moderation of the plenary debrief."
-                                },
-                                {
-                                          "title": "4. Technical English & Pronunciation",
-                                          "pts": 5,
-                                          "desc": "Natural activation of at least 6 to 8 specialized Module 1 aerodrome terms (OLS, SIB, derogation, Level 1 non-compliance, Swiss Cheese, CAP); intelligible pronunciation and correct word stress; solid grammatical control with functional structures."
-                                }
-                      ],
-                      "performanceBands": [
-                                {
-                                          "band": "Exemplary",
-                                          "pts": "18\u201320 pts",
-                                          "desc": "Dynamic student leadership; highly engaging communicative activity; crystal-clear instructions; 100% peer speaking engagement; rich technical vocabulary; equal team contribution."
-                                },
-                                {
-                                          "band": "Solid B2",
-                                          "pts": "14\u201317 pts",
-                                          "desc": "Good lesson structure; classmates actively participate in pairwork; clear spoken instructions with minor slips; good aerodrome terminology; balanced teamwork."
-                                },
-                                {
-                                          "band": "Developing",
-                                          "pts": "10\u201313 pts",
-                                          "desc": "Overly lecture-heavy; limited pair speaking time; instructions unclear requiring teacher intervention; unequal team participation; occasional reliance on written scripts."
-                                },
-                                {
-                                          "band": "Needs Improvement",
-                                          "pts": "<10 pts",
-                                          "desc": "Direct reading aloud from slides or notes; no interactive activity for classmates; severe communication breakdown; silent team members; lack of preparation."
-                                }
-                      ]
+              "title": "Official 20-Point Formative Evaluation Marking Rubric",
+              "criteria": [
+                {
+                  "title": "1. EASA Extract Breakdown & Reading Comprehension",
+                  "pts": 5,
+                  "desc": "Clear, well-structured spoken breakdown explaining the regulatory extract and its practical aerodrome purpose in plain B2 English. Zero reading aloud from slides or notes!"
+                },
+                {
+                  "title": "2. Teaching Technical Vocabulary & Definitions",
+                  "pts": 5,
+                  "desc": "Effective teaching of 3 to 5 new technical words from the extract with accurate plain English definitions and operational examples."
+                },
+                {
+                  "title": "3. Classmate Exercises & Creative Engagement",
+                  "pts": 5,
+                  "desc": "Engaging, creative exercises (reading comprehension questions, quiz, matching, or pair discussion) that get classmates actively thinking and talking."
+                },
+                {
+                  "title": "4. Spoken English Fluency, Pronunciation & Team Balance",
+                  "pts": 5,
+                  "desc": "Confident spoken English, intelligible pronunciation, natural conversational tone, and equal speaking contribution across all group members."
+                }
+              ],
+              "performanceBands": [
+                {
+                  "band": "Exemplary",
+                  "pts": "18–20 pts",
+                  "desc": "Dynamic presentation; crystal-clear breakdown; excellent vocabulary teaching; highly engaging and creative classmate activity; equal team speaking."
+                },
+                {
+                  "band": "Solid B2",
+                  "pts": "14–17 pts",
+                  "desc": "Good explanation of the extract; clear vocabulary definitions; classmates participate actively in the exercise; minor language slips; good teamwork."
+                },
+                {
+                  "band": "Developing",
+                  "pts": "10–13 pts",
+                  "desc": "Overly lecture-based; exercises are rushed or unclear; unequal speaking time among group members; occasional reading from notes."
+                },
+                {
+                  "band": "Needs Improvement",
+                  "pts": "<10 pts",
+                  "desc": "Direct reading aloud from notes or slides; no interactive exercise for classmates; extract not explained clearly; lack of preparation."
+                }
+              ]
             },
             "peerMatrix": {
-                      "title": "Peer Observer Studio \u2022 Active Classroom Observation & Feedback",
-                      "desc": "When participating in other teams lessons, record active observation notes below. Your constructive feedback helps your classmates improve their spoken technical leadership.",
-                      "fields": [
-                                {
-                                          "id": "peer_strengths",
-                                          "label": "1. Key Strengths & Clear Instructions",
-                                          "placeholder": "e.g., Team 1 gave very clear instructions. The role-play was engaging and kept our pair talking for the entire task..."
-                                },
-                                {
-                                          "id": "peer_vocab",
-                                          "label": "2. Technical Vocabulary Deployed",
-                                          "placeholder": "e.g., Terms noted: OLS safeguarding, temporary displaced threshold, Level 1 finding, Swiss Cheese latent conditions..."
-                                },
-                                {
-                                          "id": "peer_tip",
-                                          "label": "3. Actionable Tip for Improvement",
-                                          "placeholder": "e.g., Next time, walk around the tables a bit more during pairwork to check in with quieter students..."
-                                }
-                      ]
+              "title": "Classmate Observation Notes • Active Peer Listening",
+              "desc": "While other groups present, record brief notes on what you learned from their EASA extract and activity.",
+              "fields": [
+                {
+                  "id": "peer_extract_summary",
+                  "label": "1. What was their EASA extract about?",
+                  "placeholder": "e.g., Team 1 explained EASA rules on temporary displaced thresholds during runway resurfacing..."
+                },
+                {
+                  "id": "peer_vocab_learned",
+                  "label": "2. New Technical Words Learned:",
+                  "placeholder": "e.g., Declared distances (TORA, TODA, ASDA, LDA), runway safety area, stopway..."
+                },
+                {
+                  "id": "peer_exercise_feedback",
+                  "label": "3. What did you enjoy about their exercise?",
+                  "placeholder": "e.g., The mini-quiz was fun and made our pair discuss whether the runway was safe to land on..."
+                }
+              ]
             },
             "safetyCheck": {
-                      "title": "Activity 5: Safety Check: Systemic Communication & Briefing Failures",
-                      "summary": "Review the 4 questions in the Safety Check table to analyze how ambiguous spoken instructions, unstandardized terminology, and poor briefings create operational hazards on the airfield.",
-                      "rows": [
-                                {
-                                          "question": "1. What is the systemic communication problem?",
-                                          "answer": "Airfield operations rely heavily on spoken communication during shift handovers, contractor briefings, and ramp coordination. Ambiguous instructions, inconsistent phraseology, or passive listening create immediate latent hazards."
-                                },
-                                {
-                                          "question": "2. What could happen if uncorrected?",
-                                          "answer": "Misunderstood runway closure limits, unclear vehicle routing, or unconfirmed safety exemptions can trigger runway incursions, ground collisions, and unauthorized access to active movement areas."
-                                },
-                                {
-                                          "question": "3. How do we fix it?",
-                                          "answer": "Enforce standardized B2 plain English instruction protocols: require explicit readbacks, ask targeted Instruction Checking Questions (ICQs) before work begins, and verify physical understanding rather than assuming compliance."
-                                },
-                                {
-                                          "question": "4. Directorate Operational Decision",
-                                          "answer": "Mandate that all aerodrome supervisors, team leaders, and safety instructors complete certified spoken briefing assessments under EASA Part-ADR.OR.D.015, enforcing standardized interactive briefing techniques across all airside teams."
-                                }
-                      ]
+              "title": "Activity 5: Simple Safety Check: Clear Communication in Airfield Regulations",
+              "summary": "Review the 4 questions in the table below to reflect on why reading comprehension and clear spoken explanation are essential in civil aviation oversight.",
+              "rows": [
+                {
+                  "question": "1. What is the communication challenge?",
+                  "answer": "EASA regulations and technical aerodrome specifications use dense legal English that can be difficult for operational teams to interpret quickly."
+                },
+                {
+                  "question": "2. What could happen if misunderstood?",
+                  "answer": "Misinterpreting safety requirements leads to non-compliant airfield operations, inadequate risk mitigation, and heightened danger of runway or ramp incidents."
+                },
+                {
+                  "question": "3. How do we fix it?",
+                  "answer": "Civil aviation technical officers must know how to break down complex texts into plain, actionable English, teach key vocabulary, and verify team understanding."
+                },
+                {
+                  "question": "4. Operational Takeaway",
+                  "answer": "Clear spoken communication and interactive peer engagement turn regulatory rules into everyday safe operational habits."
+                }
+              ]
             },
-            "notesDebrief": {
-                      "title": "Activity 6: Operational Notes & Portfolio Debriefing",
-                      "summary": "Record your team delivery reflections, teacher feedback received, and action points for your semester portfolio. Auto-saved locally in browser.",
-                      "fields": [
-                                {
-                                          "id": "delivery_reflections",
-                                          "label": "1. Team Lesson Delivery & Self-Evaluation",
-                                          "placeholder": "Record your team reflections: What went well during your 30-minute lesson? How did classmates respond to your communicative task? How well did your team manage pacing and circulating?"
-                                },
-                                {
-                                          "id": "portfolio_action_plan",
-                                          "label": "2. Teacher Feedback & Portfolio Action Plan",
-                                          "placeholder": "Record the key feedback points from your teacher: Spoken technical fluency highlights, pronunciation targets, and specific goals for Module 2..."
-                                }
-                      ]
+            "closingDebrief": {
+              "title": "Activity 6: Presentation Reflections & Teacher Feedback",
+              "summary": "Record your team reflections, teacher feedback on language and pronunciation, and action points for your semester portfolio. Auto-saved in browser.",
+              "fields": [
+                {
+                  "id": "presentation_reflections",
+                  "label": "1. Team Presentation Self-Evaluation",
+                  "placeholder": "Record your team thoughts: How clearly did you explain your EASA extract? How well did classmates engage with your exercises? What went best?"
+                },
+                {
+                  "id": "teacher_feedback",
+                  "label": "2. Teacher Feedback & Language Corrections",
+                  "placeholder": "Record the feedback delivered by your teacher at the end of class: Spoken technical fluency highlights, pronunciation corrections, and goals for Module 2..."
+                }
+              ]
             }
-  }
+          },
+          "lessonPlan": {
+            "title": "Session 7 Lesson Plan - EASA Extract & Interactive Class Activity (2 Hours)",
+            "summary": "Formative Evaluation 1: Student groups of up to 4 deliver a 30-minute interactive session based on an EASA documentation extract, teach technical terms, and lead classmate exercises. The teacher concludes with constructive feedback and language corrections.",
+            "structure": [
+              {
+                "part": "Part 1: Group 1 Presentation & Class Activity (30 Mins)",
+                "focus": "EASA extract spoken breakdown, vocabulary teaching, classmate reading exercises, and discussion.",
+                "activity": "Group 1 presents their chosen EASA extract, explains its technical meaning in plain English, teaches 3 to 5 new terms, and leads classmates through their interactive exercise."
+              },
+              {
+                "part": "Part 2: Group 2 Presentation & Class Activity (30 Mins)",
+                "focus": "EASA extract spoken breakdown, vocabulary teaching, classmate reading exercises, and discussion.",
+                "activity": "Group 2 presents their chosen EASA extract, explains its technical meaning in plain English, teaches 3 to 5 new terms, and leads classmates through their interactive exercise."
+              },
+              {
+                "part": "Part 3: Group 3 Presentation & Class Activity (30 Mins)",
+                "focus": "EASA extract spoken breakdown, vocabulary teaching, classmate reading exercises, and discussion.",
+                "activity": "Group 3 presents their chosen EASA extract, explains its technical meaning in plain English, teaches 3 to 5 new terms, and leads classmates through their interactive exercise."
+              },
+              {
+                "part": "Part 4: Teacher Feedback & Spoken Language Corrections (Final Class Wrap-Up)",
+                "focus": "Constructive feedback on group delivery, technical terminology deployed, and spoken language corrections.",
+                "activity": "The teacher reviews key highlights across all 3 presentations, commends creative exercises, addresses pronunciation and grammatical points, and gives students actionable goals for their portfolios."
+              }
+            ]
+          }
         }
       }
     },
@@ -27671,5 +21635,5 @@
       }
     }
   }
-};
+  };
 });

@@ -2,17 +2,17 @@
 # ENAC GSEA English Learning Platform — Cryptographic SHA-256 Manifest
 # Author & Pedagogical Architect: Phil PARRIS (Département LH / LAN)
 # © 2026 Phil PARRIS. All Rights Reserved.
-# Generated: 2026-11-10T21:39:34.136Z
+# Generated: 2026-11-13T10:54:10.031Z
 # ============================================================================
 
 d7030f16a0cfa3ae74d3d71282fa1e843b25a8f5f1ab6196f8274e30b165e565  imsmanifest.xml
 f082869ed2b914ec5b3044ba485b53e0c66b635dfcaa2a4c9068828165ad0e95  COPYRIGHT.md
-416be48ea0586c8c158ed86eec2576408f4ae46e620dd4722c6770f9ad8844f2  index.html
-da39961d7f9935f0db163cc430fdaa5d2b6618815cd7cf8235c11fdc53070e6d  admin.html
+b343fdd2f1c50a614fbb15003dfa7252c9f40b74d2f895fb146fc822d158c07e  index.html
+3f3bb5bb5fa4503fcbd05253e2c74e3d2ab330aed4ee3b11310847cebde17526  admin.html
 f27913a6aa60f22a70c7d504ae3b55625b2a481a52f2d998e86c7be437a32715  presentation.html
 2b6b502b6b932bf09d07f6639ae803e78c7786b5f14c26b662c225c84dc31686  portfolio.html
-f92337c3702438d1c929173c050069b92f8ad1ac35ad252fa2bd2ae1fc6a3b83  output.css
-610e6d2fde311b76b45f7a12757ad545f3378abbcd1fbbe38f63e6c473c1b57a  data/course-data.js
+16712f3e0c8c754b65ddc76bcd5f50e72d9d8e9476df3b9a7edfd19311cb63f0  output.css
+3762901306ee0193c5f8cb2da2d355cd61fe0606c1ea7333d6e2d12790a3eadb  data/course-data.js
 bfac1fbaa7fb337e34eed50c87e7a9a449c5be80112aeed6c2ae0254e0724881  images/aas_m1card1.jpg
 f52e89458efa94b0699a10d97147f8a9b99d46395b563ef0f9210a5f2de99fd3  images/aas_m1card2.jpg
 e0334c57519ecb7b3677770af7648e2b89d60539902763194f701ce3b0de0f1c  images/aas_m1card3.jpg
@@ -57,3 +57,16 @@ f4f208452e2ff8dfc993a9788290f0c9074d342a2bbcecc83858597348697e03  images/s3_s7_p
 68488977b52c6db564522eabe9c4775f189ace81c3a91ad090395cba74f6e9db  images/s3_s7_peer_lesson_delivery.jpg
 0a09399212bd7a24235638e477ea5e8c1441854c268c3edcd1bc45ab194e95d2  images/semester_objectives.jpg
 6970e2b956c8d6557969a7b3484ffc7590642b8b8e4450ef3ea1a35599700568  images/turnaround_apron.jpg
+39f959438e6cddadfc7dfa8263f4352c0ffddc62462a53d40ec5abfd832d9e10  docs/GSEA_S3_M1_S1_EASA_Part_ADR_OPS_Synthesis.pdf
+1f6eb49f81ab0f1d8bab6bf1f82585b4f7a6ec5b9b63d2817f1b0ae7e1f0e6c0  docs/GSEA_S3_M1_S1_Lesson_Worksheet.pdf
+f26a2b44dce35597852068f1d3ddc4be1342ce091c96c684f8d62b83203c7425  docs/GSEA_S3_M1_S2_EASA_SIB_2024_09_Ramp_Safety.pdf
+87fa4515ba12ff291b3d805ddea6923ed37c2377abd70298d2d198517a3c3ba9  docs/GSEA_S3_M1_S2_Lesson_Worksheet.pdf
+16cd3313cbc4744c55a01609455601af475d1c1cede658f1cd1c86d8452cdd4d  docs/GSEA_S3_M1_S3_EASA_Runway_Safety_Case.pdf
+47b797ae39a6edac1995541c29d5661b56ac82bcedd5cc1cc4819b3201f601d7  docs/GSEA_S3_M1_S3_Lesson_Worksheet.pdf
+b355f279c6e06605a3407dc88480389c5bb5a7c89236cffa1df5b8db619fab80  docs/GSEA_S3_M1_S4_EASA_Airfield_Audit_Report.pdf
+7d56a4a39c62fee7dc69ede646e378c46ebecf019d31e2b23d7380c75f45e1dd  docs/GSEA_S3_M1_S4_Lesson_Worksheet.pdf
+f679d830965c5eb755dc86254af1acd40d0b07b78f7c89ad033c30fec4eb8a5a  docs/GSEA_S3_M1_S5_Incident_Investigation_Dossier.pdf
+5a35e19d90f1e1eafeb0cad330bd4c534c774eebb37a786a05fe356e0e17ded2  docs/GSEA_S3_M1_S5_Lesson_Worksheet.pdf
+e829d2223e784602826654d4443c2891f942cfdf3cec2334fc6126bc4ea2d7ec  docs/GSEA_S3_M1_S6_EASA_Corrective_Action_Plan.pdf
+78816a113b264fed369eb1eb330a635d28e149b228512e860c0ffcb5250fc3a4  docs/GSEA_S3_M1_S6_Lesson_Worksheet.pdf
+c4c33f2b172f5de1edd4a925a94148d00b5231a5356496eda2b31b4b64a96c9a  docs/GSEA_S3_M1_S7_Lesson_Worksheet.pdf

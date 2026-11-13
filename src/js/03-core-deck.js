@@ -1295,7 +1295,7 @@
         category: 'Autonomous Learning • Formative Dossier',
         icon: `<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>`,
         definition: 'Your personal digital dossier of coursework, reflections, vocabulary revision logs, and formative evaluation grades across the entire semester.',
-        aviation: 'Professional aeronautical careers demand lifelong continuous learning and documentation. Your portfolio cultivates autonomous self-audit habits essential for engineers and air traffic managers.',
+        aviation: 'Professional aeronautical careers demand lifelong continuous learning and documentation. Your portfolio cultivates autonomous self-audit habits essential for civil aviation specialists and operational managers.',
         operational: 'Systematically reviewing and recording mastered technical vocabulary and regulatory notes in your portfolio directly boosts retention for MTF oral proficiency.',
         strategy: 'Use your portfolio to set concrete weekly goals: <em>"For this week\'s simulation, my personal objective is to deploy three new modal structures in the team debrief."</em>'
       }
@@ -1343,7 +1343,7 @@
           <div class="p-3.5 rounded-xl bg-sky-50/70 border border-sky-100 shadow-2xs">
             <div class="flex items-center gap-2 mb-1.5 text-sky-950 font-bold text-xs uppercase tracking-wider">
               <svg class="w-3.5 h-3.5 text-sky-600 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
-              <span>Why It Matters in Aviation &amp; Engineering</span>
+              <span>Why It Matters in Aviation Operations &amp; Safety</span>
             </div>
             <p class="text-xs sm:text-[13px] leading-relaxed text-slate-700">${data.aviation}</p>
           </div>
@@ -1493,7 +1493,7 @@
                     "This session focuses on practical spoken communication, essential workplace vocabulary, and interactive discussions in Technical English.";
 
       const whyItMatters = (overview && overview.whyItMatters) ||
-                           "Developing accurate spoken communication and clear technical terminology is essential for international collaboration in modern aviation and engineering.";
+                           "Developing accurate spoken communication and clear technical terminology is essential for international collaboration in modern civil aviation operations.";
 
       // 10 Useful Words
       let terms = (overview && overview.keyTerms) || [];
