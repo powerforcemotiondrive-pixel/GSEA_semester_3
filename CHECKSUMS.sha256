@@ -2,7 +2,7 @@
 # ENAC GSEA English Learning Platform — Cryptographic SHA-256 Manifest
 # Author & Pedagogical Architect: Phil PARRIS (Département LH / LAN)
 # © 2026 Phil PARRIS. All Rights Reserved.
-# Generated: 2026-11-13T11:12:31.731Z
+# Generated: 2026-11-13T13:24:45.589Z
 # ============================================================================
 
 d7030f16a0cfa3ae74d3d71282fa1e843b25a8f5f1ab6196f8274e30b165e565  imsmanifest.xml
@@ -57,9 +57,9 @@ f4f208452e2ff8dfc993a9788290f0c9074d342a2bbcecc83858597348697e03  images/s3_s7_p
 68488977b52c6db564522eabe9c4775f189ace81c3a91ad090395cba74f6e9db  images/s3_s7_peer_lesson_delivery.jpg
 0a09399212bd7a24235638e477ea5e8c1441854c268c3edcd1bc45ab194e95d2  images/semester_objectives.jpg
 6970e2b956c8d6557969a7b3484ffc7590642b8b8e4450ef3ea1a35599700568  images/turnaround_apron.jpg
-39f959438e6cddadfc7dfa8263f4352c0ffddc62462a53d40ec5abfd832d9e10  docs/GSEA_S3_M1_S1_EASA_Part_ADR_OPS_Synthesis.pdf
+ef880959e77679d6ef199397f4d3d6eb5834312c5658e82add5008105069eb80  docs/GSEA_S3_M1_S1_EASA_Part_ADR_OPS_Synthesis.pdf
 1f6eb49f81ab0f1d8bab6bf1f82585b4f7a6ec5b9b63d2817f1b0ae7e1f0e6c0  docs/GSEA_S3_M1_S1_Lesson_Worksheet.pdf
-f26a2b44dce35597852068f1d3ddc4be1342ce091c96c684f8d62b83203c7425  docs/GSEA_S3_M1_S2_EASA_SIB_2024_09_Ramp_Safety.pdf
+f6b448fff97e4c907b5db0309fbe9334dee857111b55d0f564868be78195369a  docs/GSEA_S3_M1_S2_EASA_SIB_2024_09_Ramp_Safety.pdf
 87fa4515ba12ff291b3d805ddea6923ed37c2377abd70298d2d198517a3c3ba9  docs/GSEA_S3_M1_S2_Lesson_Worksheet.pdf
 16cd3313cbc4744c55a01609455601af475d1c1cede658f1cd1c86d8452cdd4d  docs/GSEA_S3_M1_S3_EASA_Runway_Safety_Case.pdf
 47b797ae39a6edac1995541c29d5661b56ac82bcedd5cc1cc4819b3201f601d7  docs/GSEA_S3_M1_S3_Lesson_Worksheet.pdf
