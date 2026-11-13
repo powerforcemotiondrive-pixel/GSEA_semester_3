@@ -1471,18 +1471,21 @@
 
       // 1. Note to Students & Teachers (Permanent Instruction)
       const noteHTML = `
-        <div class="p-3.5 sm:p-4 rounded-xl bg-amber-50/90 border border-amber-200 text-amber-950 text-xs sm:text-[13px] leading-relaxed shadow-2xs space-y-2">
+        <div class="p-3.5 sm:p-4 rounded-xl bg-amber-50/90 border border-amber-200 text-amber-950 text-xs sm:text-[13px] leading-relaxed shadow-2xs space-y-2.5">
           <div class="flex items-center gap-2 font-bold text-amber-900 uppercase tracking-wider text-[11px]">
             <svg class="w-4 h-4 text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
             </svg>
             <span>Important Note for Students &amp; Teachers</span>
           </div>
-          <p class="font-semibold text-amber-950 leading-relaxed">
-            These classes are designed to be conversational sessions in which active discussion and debate are strongly encouraged. You are encouraged to speak, share your ideas, and ask questions in order to help your language development.
+          <p class="font-bold text-amber-950 leading-relaxed">
+            Welcome to Technical English! Real aviation documents from EASA, ICAO, or civil aviation authorities are often long, dense, and full of complex vocabulary. Our goal in this module is simple: to give you practical confidence to read technical documents, find the essential safety information, and explain it clearly in spoken English.
           </p>
-          <p class="text-amber-900/90 leading-relaxed">
-            The class content in these sessions is here to assist you with your English development. You will find natural repetition across exercises, and your teacher may choose to omit some parts of the lesson and develop other parts more deeply. You are not expected to learn everything in all of these sessions. The material is here to guide your language progress and help you produce your Formative Evaluation (FE) for the end of the module. We are here at all times to assist you, and if you feel that you need help with any aspect of your English, please feel free to contact us at any time: <a href="mailto:philip.parris@enac.fr" class="font-bold underline text-amber-950 hover:text-amber-800">philip.parris@enac.fr</a>.
+          <p class="text-amber-900/95 leading-relaxed">
+            <strong>Active speaking comes first:</strong> These classes are conversational workshops where active discussion and sharing ideas are strongly encouraged. <strong>Teacher flexibility:</strong> You do not need to learn or complete every single word in these sessions! Your teacher will adapt the material to your group's pace, omitting some parts and developing others more deeply. The material is here to guide your progress and prepare you for your Formative Evaluation in Session 7.
+          </p>
+          <p class="text-amber-900/95 leading-relaxed">
+            We are here at all times to assist you. If you need help with any aspect of your English or course materials, please feel free to contact us at any time: <a href="mailto:philip.parris@enac.fr" class="font-bold underline text-amber-950 hover:text-amber-800">philip.parris@enac.fr</a>.
           </p>
         </div>
       `;

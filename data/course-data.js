@@ -142,8 +142,8 @@
       "1": {
         "session": 1,
         "overview": {
-          "intro": "Welcome to Session 1 of Technical English! In this class, we practice reading and explaining official EASA aerodrome rules in clear, professional English. You will learn the difference between mandatory rules and advisory guidance (shall, must, should, may), explore how European regulations protect airport safety zones from tall obstacles, and practice giving clear spoken instructions during an Obstacle Clarification role-play.",
-          "whyItMatters": "In European airport operations, modal verbs define the precise legal obligation of every rule. For TSEEAC airside personnel, safety inspectors, and aerodrome managers, mistaking 'should' (an advisory recommendation) for 'shall' (a mandatory hard law) can result in regulatory breaches, audit non-compliance, or catastrophic runway incidents. Delivering clear, direct spoken instructions ensures multinational ground crews and construction contractors understand safety responsibilities immediately.",
+          "intro": "Welcome to Session 1! In this lesson, we learn how to read official European airport regulations without getting lost in legal text. You will discover the most important rule of reading technical documents: how to spot the difference between mandatory rules (shall, must) and advisory advice (should, may). You will also practice giving clear spoken explanations during a short airport crane safety activity.",
+          "whyItMatters": "In civil aviation, one small word can change everything. If an aerodrome rule says 'shall', it is the law and you must follow it immediately. If it says 'should', it is recommended advice. Understanding this difference helps you read regulations quickly and explain safety rules clearly to contractors and colleagues on the airfield.",
           "keyTerms": [
             {
               "term": "Obstacle Limitation Surface (OLS)",
@@ -1455,8 +1455,8 @@
         "session": 2,
         "title": "Safety Alerts & Ramp Briefings",
         "overview": {
-          "intro": "Welcome to Session 2 of Technical English! Today we examine an official EASA Safety Information Bulletin on ramp collision risks and ground vehicle speed management. You will practice turning dense safety regulations into direct action commands, master the Executive 3-Bullet Rule, and deliver a punchy 90-second morning ramp briefing with operational challenge questions.",
-          "whyItMatters": "On European airport aprons, ground support equipment (GSE) operates in close proximity to multimillion-euro aircraft and ground personnel under tight 30-minute turnaround pressures. High-energy vehicle impacts with aircraft fuselages, radomes, and engine cowlings have repeatedly gone unreported by fearful ground staff, resulting in aircraft departing with undetected structural damage. Mastering non-punitive Just Culture reporting, speed enforcement zones, and clear spoken verbal briefings is vital for TSEEAC airside operations managers and ramp safety inspectors.",
+          "intro": "Welcome to Session 2 of Technical English! Today we look at an authentic EASA Safety Information Bulletin (SIB) on ramp safety and vehicle speed limits. In real life, operational staff on the ramp do not have time to read long 5-page reports. You will learn how to scan a technical bulletin quickly, find the core danger, and turn it into a short, punchy 90-second spoken safety briefing.",
+          "whyItMatters": "Airport ramps are noisy, busy, and dangerous areas where luggage vehicles, fuel tankers, and aircraft operate close together. Being able to read an official safety alert and explain it in simple, plain English helps keep ground teams safe and prevents costly damage to aircraft.",
           "keyTerms": [
             {
               "term": "Apron Driving Authorisation (ADA)",
@@ -2748,8 +2748,8 @@
         "session": 3,
         "title": "Special Requests & Runway Safety Cases",
         "overview": {
-          "intro": "Welcome to Session 3 of Technical English! In this lesson, we explore an authentic EASA runway safety case and temporary exemption request. You will practice using linking words (provided that, in lieu of) to explain safety solutions, review temporary runway works, and give a short spoken safety briefing to airline pilots.",
-          "whyItMatters": "Unplanned structural defects beneath active runways—such as stormwater culvert subsidence—cannot be repaired without altering certified runway dimensions. Completely shutting down an international runway disrupts global flight networks and costs millions of euros. Instead, airside managers use Article 71 exemptions to maintain safe flight operations by establishing temporary displaced thresholds, reduced Runway End Safety Areas (RESA), and strict weather limits (dry-runway only, 15-knot crosswind caps). Delivering precise, unambiguous verbal briefings ensures airline chief pilots and flight crews trust and accept modified runway operations.",
+          "intro": "Welcome to Session 3 of Technical English! In this class, we look at what happens when an airport needs to do emergency runway repairs while keeping flights landing safely. You will read an authentic EASA exemption case and learn how to understand conditional phrases like 'provided that' (only if) and 'in lieu of' (instead of). You will then give a short spoken update to airline pilots.",
+          "whyItMatters": "You cannot close an international runway for weeks without causing chaos. Aviation authorities use temporary exemptions to allow safe operations under strict conditions (like clear weather and shorter landing distances). Learning how to read and explain these conditions in English ensures flight crews know exactly how to operate safely.",
           "keyTerms": [
             {
               "term": "Article 71 Exemption",
@@ -3876,8 +3876,8 @@
         "session": 4,
         "title": "Ground Inspection & Audit Findings",
         "overview": {
-          "intro": "Welcome to Session 4 of Technical English! Today we work with an authentic EASA airfield audit report to practice reporting ground safety non-compliances. You will learn to categorize findings into immediate hazards (Level 1) and minor issues (Level 2), use past deductions (must have, could have) to deduce how problems happened, and deliver a 2-minute spoken briefing to the Airport Director.",
-          "whyItMatters": "Airside safety oversight is not just filling out paperwork—it is an active defense against runway incursions, apron fires, and catastrophic engine failures. When an aerodrome inspector notices an uncontained fuel puddle flowing towards an apron drain, overgrown airfield grass hiding runway guard lights, or loose lockwire in a staging area, they must accurately classify the operational risk and explain the root cause clearly in spoken English. Mastering past modal deductions allows technical officers to reconstruct causal chains and communicate urgent safety decisions without ambiguity.",
+          "intro": "Welcome to Session 4 of Technical English! Today we work with an authentic aerodrome audit report. When safety inspectors visit an airport, they look for safety issues (called non-compliances). You will learn how to sort findings into two simple categories: immediate safety hazards (Level 1) and minor issues (Level 2). You will also practice using past deduction phrases (must have, could have) to explain to your director what probably happened.",
+          "whyItMatters": "Safety inspectors do not just find problems; they have to prioritize them. If fuel is leaking near a passenger gate, that needs immediate action today. If a sign has faded paint, it can wait until next week. Knowing how to explain these differences clearly in English gives decision-makers confidence in your safety advice.",
           "keyTerms": [
             {
               "term": "Level 1 Finding",
@@ -4801,8 +4801,8 @@
         "session": 5,
         "title": "Multi-Source Incident Investigation & Root Cause Analysis",
         "overview": {
-          "intro": "Welcome to Session 5 of Technical English! In this class, we act as safety investigators examining an authentic EASA and BEA technical incident dossier. You will cross-reference air traffic radio logs, weather reports, and pilot statements to find root causes, use cause-and-effect language (caused by, resulting in), and deliver a 2-minute team investigation debrief.",
-          "whyItMatters": "Aviation accidents and serious incidents almost never stem from a single isolated failure. Instead, they are the culmination of a chain of latent conditions—such as production scheduling pressure, deferred equipment maintenance, and challenging local weather—that align with an active human slip. When an incident occurs, such as a ramp pushback collision or runway excursion, investigators must piece together contradictory, time-critical documents without jumping to premature conclusions. Mastering technical investigation phraseology ensures that safety recommendations address the root systemic causes rather than unfairly scapegoating frontline personnel.",
+          "intro": "Welcome to Session 5 of Technical English! In this session, you step into the shoes of safety investigators examining a real ground incident. Real incidents are rarely explained in a single clean document. Instead, you have to read three different pieces of evidence: an air traffic radio transcript, a weather report (METAR), and a driver statement. You will practice cross-referencing these short texts to discover what really caused the incident.",
+          "whyItMatters": "Aviation accidents are almost never caused by just one mistake; they happen when several small problems happen at the same time (bad weather, rushed schedules, and unclear radio messages). Learning to compare different technical documents helps you find the true root cause and prevent the same incident from happening again.",
           "keyTerms": [
             {
               "term": "Root Cause Analysis (RCA)",
@@ -5574,8 +5574,8 @@
         "session": 6,
         "title": "The Corrective Action Plan & CAP Review",
         "overview": {
-          "intro": "Welcome to Session 6 of Technical English! Today we work with official EASA Corrective Action Plan (CAP) documentation and dedicate substantial workshop time to prepare your Session 7 Formative Evaluation presentations. You will practice using formal commitment phrases (we undertake to, subject to approval) to agree on CAP deadlines with inspectors, and work in teams of up to 4 to select your EASA regulatory extract, plan your spoken breakdown, pick 3 to 5 new words to teach, and design creative exercises for your classmates.",
-          "whyItMatters": "Closing an audit finding or incident investigation is not merely a box-ticking administrative exercise—it is the legal mechanism that prevents catastrophic repeat occurrences on the airfield. When civil aviation authorities identify safety deficiencies such as runway friction loss or blast fence corrosion, aerodrome operators must formally demonstrate how they will eliminate the underlying root cause. Moreover, developing the confidence to facilitate technical peer discussions prepares future ENAC aviation professionals for high-stakes safety briefings and leadership roles.",
+          "intro": "Welcome to Session 6 of Technical English! Today we explore how airports fix safety problems using a Corrective Action Plan (CAP). You will practice reading audit findings and using formal commitment language (we undertake to...) to agree on realistic deadlines with inspectors. We also dedicate substantial workshop time to help your team prepare for your Session 7 Formative Evaluation activity.",
+          "whyItMatters": "Finding a safety hazard is only half the job; the most important step is fixing it permanently. Knowing how to write and agree on a clear action plan in English ensures that technical teams, contractors, and international authorities are all aligned on what must be done and when.",
           "keyTerms": [
             {
               "term": "Corrective Action Plan (CAP)",
@@ -6389,8 +6389,8 @@
         "session": 7,
         "title": "EASA Regulatory Extract & Class Activity Evaluation",
         "overview": {
-          "intro": "Welcome to Session 7 of Technical English! In this Formative Evaluation, student teams of up to 4 take the floor to deliver an engaging 30-minute interactive session based on an official EASA documentation extract of their choice. Your team will deliver a comprehensive spoken breakdown of what the extract is about in plain English, teach your classmates 3 to 5 new technical words with clear definitions and examples, and lead your classmates through engaging reading comprehension and communicative exercises. At the end of the student presentations, your teacher will spend the final minutes of class providing constructive feedback and offering spoken language corrections.",
-          "whyItMatters": "Reading, explaining, and facilitating discussions around official European regulatory documentation is central to the role of civil aviation technical officers (TSEEAC), aerodrome inspectors, and operations managers. Whether briefing airport staff on a new EASA safety directive, guiding ground crews through ramp speed rules, or explaining audit findings, the ability to translate formal regulatory prose into clear, plain B2 English with accurate technical vocabulary transforms passive knowledge into active communicative leadership.",
+          "intro": "Welcome to Session 7 of Technical English! In this evaluation session, you and your group (up to 4 students) take the floor for 30 minutes to lead an interactive activity for your classmates based on an authentic EASA extract of your choice. You will explain what your extract means in plain English, teach your classmates 3 to 5 useful technical words, and guide them through a fun reading quiz, questions, or pair discussion. In the final minutes of class, your teacher will provide encouraging feedback and helpful spoken corrections.",
+          "whyItMatters": "This session brings together everything you have practiced in Module 1: looking at a real regulatory text, understanding its main safety purpose, and explaining it clearly to others. Being able to explain technical rules in plain, friendly English is one of the most valuable professional skills you will ever use in civil aviation.",
           "keyTerms": [
             {
               "term": "Regulatory Extract",
@@ -10954,8 +10954,8 @@
         "1": {
           "session": 1,
           "overview": {
-            "intro": "Welcome to Session 1 of Technical English! In this class, we practice reading and explaining official EASA aerodrome rules in clear, professional English. You will learn the difference between mandatory rules and advisory guidance (shall, must, should, may), explore how European regulations protect airport safety zones from tall obstacles, and practice giving clear spoken instructions during an Obstacle Clarification role-play.",
-            "whyItMatters": "In European airport operations, modal verbs define the precise legal obligation of every rule. For TSEEAC airside personnel, safety inspectors, and aerodrome managers, mistaking 'should' (an advisory recommendation) for 'shall' (a mandatory hard law) can result in regulatory breaches, audit non-compliance, or catastrophic runway incidents. Delivering clear, direct spoken instructions ensures multinational ground crews and construction contractors understand safety responsibilities immediately.",
+            "intro": "Welcome to Session 1! In this lesson, we learn how to read official European airport regulations without getting lost in legal text. You will discover the most important rule of reading technical documents: how to spot the difference between mandatory rules (shall, must) and advisory advice (should, may). You will also practice giving clear spoken explanations during a short airport crane safety activity.",
+            "whyItMatters": "In civil aviation, one small word can change everything. If an aerodrome rule says 'shall', it is the law and you must follow it immediately. If it says 'should', it is recommended advice. Understanding this difference helps you read regulations quickly and explain safety rules clearly to contractors and colleagues on the airfield.",
             "keyTerms": [
               {
                 "term": "Obstacle Limitation Surface (OLS)",
@@ -12267,8 +12267,8 @@
           "session": 2,
           "title": "Safety Alerts & Ramp Briefings",
           "overview": {
-            "intro": "Welcome to Session 2 of Technical English! Today we examine an official EASA Safety Information Bulletin on ramp collision risks and ground vehicle speed management. You will practice turning dense safety regulations into direct action commands, master the Executive 3-Bullet Rule, and deliver a punchy 90-second morning ramp briefing with operational challenge questions.",
-            "whyItMatters": "On European airport aprons, ground support equipment (GSE) operates in close proximity to multimillion-euro aircraft and ground personnel under tight 30-minute turnaround pressures. High-energy vehicle impacts with aircraft fuselages, radomes, and engine cowlings have repeatedly gone unreported by fearful ground staff, resulting in aircraft departing with undetected structural damage. Mastering non-punitive Just Culture reporting, speed enforcement zones, and clear spoken verbal briefings is vital for TSEEAC airside operations managers and ramp safety inspectors.",
+            "intro": "Welcome to Session 2 of Technical English! Today we look at an authentic EASA Safety Information Bulletin (SIB) on ramp safety and vehicle speed limits. In real life, operational staff on the ramp do not have time to read long 5-page reports. You will learn how to scan a technical bulletin quickly, find the core danger, and turn it into a short, punchy 90-second spoken safety briefing.",
+            "whyItMatters": "Airport ramps are noisy, busy, and dangerous areas where luggage vehicles, fuel tankers, and aircraft operate close together. Being able to read an official safety alert and explain it in simple, plain English helps keep ground teams safe and prevents costly damage to aircraft.",
             "keyTerms": [
               {
                 "term": "Apron Driving Authorisation (ADA)",
@@ -13560,8 +13560,8 @@
           "session": 3,
           "title": "Special Requests & Runway Safety Cases",
           "overview": {
-            "intro": "Welcome to Session 3 of Technical English! In this lesson, we explore an authentic EASA runway safety case and temporary exemption request. You will practice using linking words (provided that, in lieu of) to explain safety solutions, review temporary runway works, and give a short spoken safety briefing to airline pilots.",
-            "whyItMatters": "Unplanned structural defects beneath active runways—such as stormwater culvert subsidence—cannot be repaired without altering certified runway dimensions. Completely shutting down an international runway disrupts global flight networks and costs millions of euros. Instead, airside managers use Article 71 exemptions to maintain safe flight operations by establishing temporary displaced thresholds, reduced Runway End Safety Areas (RESA), and strict weather limits (dry-runway only, 15-knot crosswind caps). Delivering precise, unambiguous verbal briefings ensures airline chief pilots and flight crews trust and accept modified runway operations.",
+            "intro": "Welcome to Session 3 of Technical English! In this class, we look at what happens when an airport needs to do emergency runway repairs while keeping flights landing safely. You will read an authentic EASA exemption case and learn how to understand conditional phrases like 'provided that' (only if) and 'in lieu of' (instead of). You will then give a short spoken update to airline pilots.",
+            "whyItMatters": "You cannot close an international runway for weeks without causing chaos. Aviation authorities use temporary exemptions to allow safe operations under strict conditions (like clear weather and shorter landing distances). Learning how to read and explain these conditions in English ensures flight crews know exactly how to operate safely.",
             "keyTerms": [
               {
                 "term": "Article 71 Exemption",
@@ -14688,8 +14688,8 @@
           "session": 4,
           "title": "Ground Inspection & Audit Findings",
           "overview": {
-            "intro": "Welcome to Session 4 of Technical English! Today we work with an authentic EASA airfield audit report to practice reporting ground safety non-compliances. You will learn to categorize findings into immediate hazards (Level 1) and minor issues (Level 2), use past deductions (must have, could have) to deduce how problems happened, and deliver a 2-minute spoken briefing to the Airport Director.",
-            "whyItMatters": "Airside safety oversight is not just filling out paperwork—it is an active defense against runway incursions, apron fires, and catastrophic engine failures. When an aerodrome inspector notices an uncontained fuel puddle flowing towards an apron drain, overgrown airfield grass hiding runway guard lights, or loose lockwire in a staging area, they must accurately classify the operational risk and explain the root cause clearly in spoken English. Mastering past modal deductions allows technical officers to reconstruct causal chains and communicate urgent safety decisions without ambiguity.",
+            "intro": "Welcome to Session 4 of Technical English! Today we work with an authentic aerodrome audit report. When safety inspectors visit an airport, they look for safety issues (called non-compliances). You will learn how to sort findings into two simple categories: immediate safety hazards (Level 1) and minor issues (Level 2). You will also practice using past deduction phrases (must have, could have) to explain to your director what probably happened.",
+            "whyItMatters": "Safety inspectors do not just find problems; they have to prioritize them. If fuel is leaking near a passenger gate, that needs immediate action today. If a sign has faded paint, it can wait until next week. Knowing how to explain these differences clearly in English gives decision-makers confidence in your safety advice.",
             "keyTerms": [
               {
                 "term": "Level 1 Finding",
@@ -15613,8 +15613,8 @@
           "session": 5,
           "title": "Multi-Source Incident Investigation & Root Cause Analysis",
           "overview": {
-            "intro": "Welcome to Session 5 of Technical English! In this class, we act as safety investigators examining an authentic EASA and BEA technical incident dossier. You will cross-reference air traffic radio logs, weather reports, and pilot statements to find root causes, use cause-and-effect language (caused by, resulting in), and deliver a 2-minute team investigation debrief.",
-            "whyItMatters": "Aviation accidents and serious incidents almost never stem from a single isolated failure. Instead, they are the culmination of a chain of latent conditions—such as production scheduling pressure, deferred equipment maintenance, and challenging local weather—that align with an active human slip. When an incident occurs, such as a ramp pushback collision or runway excursion, investigators must piece together contradictory, time-critical documents without jumping to premature conclusions. Mastering technical investigation phraseology ensures that safety recommendations address the root systemic causes rather than unfairly scapegoating frontline personnel.",
+            "intro": "Welcome to Session 5 of Technical English! In this session, you step into the shoes of safety investigators examining a real ground incident. Real incidents are rarely explained in a single clean document. Instead, you have to read three different pieces of evidence: an air traffic radio transcript, a weather report (METAR), and a driver statement. You will practice cross-referencing these short texts to discover what really caused the incident.",
+            "whyItMatters": "Aviation accidents are almost never caused by just one mistake; they happen when several small problems happen at the same time (bad weather, rushed schedules, and unclear radio messages). Learning to compare different technical documents helps you find the true root cause and prevent the same incident from happening again.",
             "keyTerms": [
               {
                 "term": "Root Cause Analysis (RCA)",
@@ -16386,8 +16386,8 @@
           "session": 6,
           "title": "The Corrective Action Plan & CAP Review",
           "overview": {
-            "intro": "Welcome to Session 6 of Technical English! Today we work with official EASA Corrective Action Plan (CAP) documentation and dedicate substantial workshop time to prepare your Session 7 Formative Evaluation presentations. You will practice using formal commitment phrases (we undertake to, subject to approval) to agree on CAP deadlines with inspectors, and work in teams of up to 4 to select your EASA regulatory extract, plan your spoken breakdown, pick 3 to 5 new words to teach, and design creative exercises for your classmates.",
-            "whyItMatters": "Closing an audit finding or incident investigation is not merely a box-ticking administrative exercise—it is the legal mechanism that prevents catastrophic repeat occurrences on the airfield. When civil aviation authorities identify safety deficiencies such as runway friction loss or blast fence corrosion, aerodrome operators must formally demonstrate how they will eliminate the underlying root cause. Moreover, developing the confidence to facilitate technical peer discussions prepares future ENAC aviation professionals for high-stakes safety briefings and leadership roles.",
+            "intro": "Welcome to Session 6 of Technical English! Today we explore how airports fix safety problems using a Corrective Action Plan (CAP). You will practice reading audit findings and using formal commitment language (we undertake to...) to agree on realistic deadlines with inspectors. We also dedicate substantial workshop time to help your team prepare for your Session 7 Formative Evaluation activity.",
+            "whyItMatters": "Finding a safety hazard is only half the job; the most important step is fixing it permanently. Knowing how to write and agree on a clear action plan in English ensures that technical teams, contractors, and international authorities are all aligned on what must be done and when.",
             "keyTerms": [
               {
                 "term": "Corrective Action Plan (CAP)",
@@ -17201,8 +17201,8 @@
           "session": 7,
           "title": "EASA Regulatory Extract & Class Activity Evaluation",
           "overview": {
-            "intro": "Welcome to Session 7 of Technical English! In this Formative Evaluation, student teams of up to 4 take the floor to deliver an engaging 30-minute interactive session based on an official EASA documentation extract of their choice. Your team will deliver a comprehensive spoken breakdown of what the extract is about in plain English, teach your classmates 3 to 5 new technical words with clear definitions and examples, and lead your classmates through engaging reading comprehension and communicative exercises. At the end of the student presentations, your teacher will spend the final minutes of class providing constructive feedback and offering spoken language corrections.",
-            "whyItMatters": "Reading, explaining, and facilitating discussions around official European regulatory documentation is central to the role of civil aviation technical officers (TSEEAC), aerodrome inspectors, and operations managers. Whether briefing airport staff on a new EASA safety directive, guiding ground crews through ramp speed rules, or explaining audit findings, the ability to translate formal regulatory prose into clear, plain B2 English with accurate technical vocabulary transforms passive knowledge into active communicative leadership.",
+            "intro": "Welcome to Session 7 of Technical English! In this evaluation session, you and your group (up to 4 students) take the floor for 30 minutes to lead an interactive activity for your classmates based on an authentic EASA extract of your choice. You will explain what your extract means in plain English, teach your classmates 3 to 5 useful technical words, and guide them through a fun reading quiz, questions, or pair discussion. In the final minutes of class, your teacher will provide encouraging feedback and helpful spoken corrections.",
+            "whyItMatters": "This session brings together everything you have practiced in Module 1: looking at a real regulatory text, understanding its main safety purpose, and explaining it clearly to others. Being able to explain technical rules in plain, friendly English is one of the most valuable professional skills you will ever use in civil aviation.",
             "keyTerms": [
               {
                 "term": "Regulatory Extract",

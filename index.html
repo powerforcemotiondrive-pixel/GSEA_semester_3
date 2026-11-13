@@ -1193,16 +1193,16 @@
 
       const images = moduleImages[modNumber] || moduleImages[1];
 
-      const formativeEvaluationNotice = `Everything we practice in class helps you prepare for your evaluation in Session ${feSessionNum}. Be sure to review the vocabulary list, your portfolio notes, and the study materials.`;
+      const formativeEvaluationNotice = `Everything we practice in class helps you build practical confidence for your evaluation in Session ${feSessionNum}. Remember that your teacher will adapt the pace and omit parts as needed—active speaking comes first. If you need help with your English at any time, contact: <a href="mailto:philip.parris@enac.fr" class="underline font-bold text-amber-950">philip.parris@enac.fr</a>.`;
 
       const aasDescriptions = {
         1: {
-          s1: `Welcome to Session 1! In this class, we practice reading and explaining official EASA aerodrome rules in clear English.<br><br><em>Subject overview:</em> Understanding mandatory vs advisory language in EASA documents (shall, must, should, may), discussing airport crane safety, and practicing the Obstacle Clarification role-play.<br><br>${formativeEvaluationNotice}`,
-          s2: `Welcome to Session 2! Today we examine an official EASA Safety Information Bulletin on ramp collision risks and ground vehicle speed limits.<br><br><em>Subject overview:</em> Using polite, professional English during ramp inspections, reading EASA safety notices, and taking part in a 3-person airport safety meeting.<br><br>${formativeEvaluationNotice}`,
-          s3: `Welcome to Session 3! In this lesson, we explore an authentic EASA runway safety case and temporary exemption request.<br><br><em>Subject overview:</em> Using linking words (provided that, in lieu of) to explain EASA safety solutions, reviewing a runway works document, and giving a short spoken safety briefing to airline pilots.<br><br>${formativeEvaluationNotice}`,
-          s4: `Welcome to Session 4! Today we work with an authentic EASA airfield audit report to practice reporting ground safety non-compliances.<br><br><em>Subject overview:</em> Using EASA audit criteria to separate immediate hazards from minor issues, making past deductions (must have, could have), and giving a 2-minute spoken briefing to the Airport Director.<br><br>${formativeEvaluationNotice}`,
-          s5: `Welcome to Session 5! In this class, we act as safety investigators examining an authentic EASA and BEA technical incident dossier.<br><br><em>Subject overview:</em> Cross-referencing EASA occurrence records, air traffic radio transcripts, and pilot statements to find root causes, and delivering a 2-minute team investigation debrief.<br><br>${formativeEvaluationNotice}`,
-          s6: `Welcome to Session 6! Today we work with official EASA Corrective Action Plan (CAP) documentation and dedicate 30 minutes to prepare your Session 7 peer lessons.<br><br><em>Subject overview:</em> Using formal commitment language (we undertake to, subject to approval) to agree on EASA CAP deadlines with inspectors, and working in teams of 3 or 4 to structure your 30-minute lesson for Session 7.<br><br>${formativeEvaluationNotice}`
+          s1: `Welcome to Session 1! In this class, we learn how to read official European airport regulations without getting lost in legal text.<br><br><em>Document skill:</em> Spotting mandatory rules (shall, must) vs. advisory guidance (should, may), discussing airport crane safety, and practicing the Obstacle Clarification role-play.<br><br>${formativeEvaluationNotice}`,
+          s2: `Welcome to Session 2! Today we examine an official EASA Safety Information Bulletin on ramp collision risks and vehicle speed limits.<br><br><em>Document skill:</em> Scanning a dense safety bulletin quickly, finding the core danger, and delivering a punchy 90-second spoken ramp briefing.<br><br>${formativeEvaluationNotice}`,
+          s3: `Welcome to Session 3! In this lesson, we explore an authentic EASA runway safety case and temporary exemption request.<br><br><em>Document skill:</em> Understanding conditional phrases (provided that, in lieu of) to explain safety solutions, reviewing temporary runway works, and giving a spoken briefing to airline pilots.<br><br>${formativeEvaluationNotice}`,
+          s4: `Welcome to Session 4! Today we work with an authentic EASA airfield audit report to practice reporting ground safety non-compliances.<br><br><em>Document skill:</em> Sorting findings into immediate hazards (Level 1) vs. minor issues (Level 2), making past deductions (must have, could have), and giving a 2-minute briefing to the Airport Director.<br><br>${formativeEvaluationNotice}`,
+          s5: `Welcome to Session 5! In this class, we act as safety investigators examining an authentic EASA and BEA technical incident dossier.<br><br><em>Document skill:</em> Cross-referencing three different evidence sources (air traffic radio transcripts, weather reports, and driver statements) to discover root causes, and delivering a 2-minute team debrief.<br><br>${formativeEvaluationNotice}`,
+          s6: `Welcome to Session 6! Today we work with official EASA Corrective Action Plan (CAP) documentation and prepare for Session 7.<br><br><em>Document skill:</em> Using formal commitment language (we undertake to, subject to approval) to agree on CAP deadlines, and collaborating in teams of up to 4 to design your Session 7 peer activity.<br><br>${formativeEvaluationNotice}`
         },
         2: {
           s1: `Welcome to Module 2 on MTF! In this opening session, we explore the four fundamental forces of flight, aircraft control axes, and wing airflow dynamics while developing spoken fluency and cause-and-effect structures.<br><br><em>Subject overview:</em> Lift, weight, thrust, and drag in equilibrium; pitch, roll, and yaw control surfaces; angle of attack, boundary layer separation, and stall recovery procedures.<br><br>${formativeEvaluationNotice}`,
@@ -2802,18 +2802,21 @@
 
       // 1. Note to Students & Teachers (Permanent Instruction)
       const noteHTML = `
-        <div class="p-3.5 sm:p-4 rounded-xl bg-amber-50/90 border border-amber-200 text-amber-950 text-xs sm:text-[13px] leading-relaxed shadow-2xs space-y-2">
+        <div class="p-3.5 sm:p-4 rounded-xl bg-amber-50/90 border border-amber-200 text-amber-950 text-xs sm:text-[13px] leading-relaxed shadow-2xs space-y-2.5">
           <div class="flex items-center gap-2 font-bold text-amber-900 uppercase tracking-wider text-[11px]">
             <svg class="w-4 h-4 text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
             </svg>
             <span>Important Note for Students &amp; Teachers</span>
           </div>
-          <p class="font-semibold text-amber-950 leading-relaxed">
-            These classes are designed to be conversational sessions in which active discussion and debate are strongly encouraged. You are encouraged to speak, share your ideas, and ask questions in order to help your language development.
+          <p class="font-bold text-amber-950 leading-relaxed">
+            Welcome to Technical English! Real aviation documents from EASA, ICAO, or civil aviation authorities are often long, dense, and full of complex vocabulary. Our goal in this module is simple: to give you practical confidence to read technical documents, find the essential safety information, and explain it clearly in spoken English.
           </p>
-          <p class="text-amber-900/90 leading-relaxed">
-            The class content in these sessions is here to assist you with your English development. You will find natural repetition across exercises, and your teacher may choose to omit some parts of the lesson and develop other parts more deeply. You are not expected to learn everything in all of these sessions. The material is here to guide your language progress and help you produce your Formative Evaluation (FE) for the end of the module. We are here at all times to assist you, and if you feel that you need help with any aspect of your English, please feel free to contact us at any time: <a href="mailto:philip.parris@enac.fr" class="font-bold underline text-amber-950 hover:text-amber-800">philip.parris@enac.fr</a>.
+          <p class="text-amber-900/95 leading-relaxed">
+            <strong>Active speaking comes first:</strong> These classes are conversational workshops where active discussion and sharing ideas are strongly encouraged. <strong>Teacher flexibility:</strong> You do not need to learn or complete every single word in these sessions! Your teacher will adapt the material to your group's pace, omitting some parts and developing others more deeply. The material is here to guide your progress and prepare you for your Formative Evaluation in Session 7.
+          </p>
+          <p class="text-amber-900/95 leading-relaxed">
+            We are here at all times to assist you. If you need help with any aspect of your English or course materials, please feel free to contact us at any time: <a href="mailto:philip.parris@enac.fr" class="font-bold underline text-amber-950 hover:text-amber-800">philip.parris@enac.fr</a>.
           </p>
         </div>
       `;
