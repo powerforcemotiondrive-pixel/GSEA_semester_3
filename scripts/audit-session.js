@@ -4,10 +4,10 @@
  * Author: Phil PARRIS (Pedagogical Architect & Author)
  * 
  * Usage:
- *   node scripts/audit-session.js "Audit S1 AG M1 Ss 3"
- *   node scripts/audit-session.js --semester=1 --track=ag --module=1 --session=3
- *   node scripts/audit-session.js 1 ag 1 3
- *   npm run audit -- S1 AG M1 S3
+ *   node scripts/audit-session.js "Audit S3 Mod 1 Session 1"
+ *   node scripts/audit-session.js --semester=3 --track=at --module=1 --session=1
+ *   node scripts/audit-session.js 3 at 1 1
+ *   npm run audit -- S3 AT M1 S1
  */
 
 const fs = require('fs');
@@ -18,13 +18,13 @@ const { execSync } = require('child_process');
 function parseArgs() {
   const rawArgs = process.argv.slice(2).join(' ');
   
-  let semester = 1;
-  let track = 'ag';
+  let semester = 3;
+  let track = 'at';
   let moduleNum = 1;
   let sessionNum = 1;
 
   if (!rawArgs.trim()) {
-    return { semester: 1, track: 'ag', moduleNum: 1, sessionNum: 3 };
+    return { semester: 3, track: 'at', moduleNum: 1, sessionNum: 1 };
   }
 
   // Check explicit flags: --semester=1 --track=ag --module=1 --session=3
@@ -56,7 +56,7 @@ function parseArgs() {
                 rawArgs.match(/\b(\d+)\b$/);
   if (mSess && !flagSess) sessionNum = parseInt(mSess[1], 10);
 
-  // Positional numeric fallback: e.g. "1 ag 1 3"
+  // Positional numeric fallback: e.g. "3 at 1 1"
   const tokens = rawArgs.trim().split(/\s+/);
   if (tokens.length >= 4 && /^\d+$/.test(tokens[0]) && /^[a-z]+$/i.test(tokens[1]) && /^\d+$/.test(tokens[2]) && /^\d+$/.test(tokens[3])) {
     semester = parseInt(tokens[0], 10);
@@ -276,7 +276,7 @@ const keyTermsList = (sessionObj.overview && sessionObj.overview.keyTerms ? sess
 const topicKeywords = [
   ...sessionTitle.toLowerCase().split(/[\s,&-]+/).filter(w => w.length > 3),
   ...keyTermsList.flatMap(t => t.split(/[\s,&-]+/)).filter(w => w.length > 3),
-  'tourism', 'tourist', 'visitor', 'municipal', 'carrying', 'capacity'
+  'runway', 'taxiway', 'apron', 'easa', 'airport', 'aerodrome', 'safety', 'incident'
 ];
 const uniqueKeywords = [...new Set(topicKeywords)];
 let driftWarnings = [];
@@ -392,8 +392,94 @@ if (!findings.pdfStatus.exists) {
 if (fs.existsSync(manifestPath)) {
   const mText = fs.readFileSync(manifestPath, 'utf8');
   if (!mText.includes(expectedPdfName)) {
+    findings.pdfStatus.pass = false;
     findings.pdfStatus.details.push(`PDF is not registered in imsmanifest.xml.`);
   }
+}
+
+// Check Checksums Manifest
+const checksumPath = path.join(baseDir, 'CHECKSUMS.sha256');
+if (fs.existsSync(checksumPath)) {
+  const cText = fs.readFileSync(checksumPath, 'utf8');
+  if (!cText.includes(`docs/${expectedPdfName}`)) {
+    findings.pdfStatus.pass = false;
+    findings.pdfStatus.details.push(`PDF is missing from CHECKSUMS.sha256 cryptographic manifest. Run 'npm run package'.`);
+  }
+}
+
+// Check Packaging Scripts includeList for 'docs'
+const pkgScripts = ['package-scorm.js', 'package-moodle.js', 'package-iso.js'];
+pkgScripts.forEach(scriptName => {
+  const scriptPath = path.join(baseDir, 'scripts', scriptName);
+  if (fs.existsSync(scriptPath)) {
+    const sText = fs.readFileSync(scriptPath, 'utf8');
+    if (!sText.includes("'docs'") && !sText.includes('"docs"')) {
+      findings.pdfStatus.pass = false;
+      findings.pdfStatus.details.push(`'docs' directory missing from includeList in scripts/${scriptName}. Offline ISO and SCORM packages will not contain PDFs!`);
+    }
+  }
+});
+
+// Check Physical Presence in Built Distribution Packages (dist/)
+const distDir = path.join(baseDir, 'dist');
+if (fs.existsSync(distDir)) {
+  const scormZip = path.join(distDir, `GSEA_Semester_${target.semester}_SCORM.zip`);
+  if (fs.existsSync(scormZip)) {
+    try {
+      const zipList = execSync(`unzip -l "${scormZip}"`, { encoding: 'utf8' });
+      if (!zipList.includes(`docs/${expectedPdfName}`)) {
+        findings.pdfStatus.pass = false;
+        findings.pdfStatus.details.push(`PDF is MISSING inside built distribution package dist/GSEA_Semester_${target.semester}_SCORM.zip! Run 'npm run package'.`);
+      } else {
+        findings.pdfStatus.details.push(`Verified physical presence inside dist/GSEA_Semester_${target.semester}_SCORM.zip.`);
+      }
+    } catch (e) {
+      // Ignore unzip errors if unzip not available
+    }
+  }
+  const moodleZip = path.join(distDir, `GSEA_Semester_${target.semester}_SCORM_MOODLE.zip`);
+  if (fs.existsSync(moodleZip)) {
+    try {
+      const zipList = execSync(`unzip -l "${moodleZip}"`, { encoding: 'utf8' });
+      if (!zipList.includes(`docs/${expectedPdfName}`)) {
+        findings.pdfStatus.pass = false;
+        findings.pdfStatus.details.push(`PDF is MISSING inside built Moodle package dist/GSEA_Semester_${target.semester}_SCORM_MOODLE.zip! Run 'npm run package:moodle'.`);
+      } else {
+        findings.pdfStatus.details.push(`Verified physical presence inside dist/GSEA_Semester_${target.semester}_SCORM_MOODLE.zip.`);
+      }
+    } catch (e) {
+      // Ignore
+    }
+  }
+}
+
+// Check Template Link Syntax (Must target=_blank and NOT contain download attribute)
+let templateLinkFound = false;
+const templateFilesToCheck = getTemplateFileNames(target.semester, target.track, target.moduleNum);
+templateFilesToCheck.forEach(fileRel => {
+  const fullPath = path.join(baseDir, 'src', 'js', fileRel);
+  if (fs.existsSync(fullPath)) {
+    const text = fs.readFileSync(fullPath, 'utf8');
+    if (text.includes(expectedPdfName)) {
+      templateLinkFound = true;
+      const regex = new RegExp(`<a[^>]*href=["'][^"']*${expectedPdfName}["'][^>]*>`, 'i');
+      const match = text.match(regex);
+      if (match) {
+        if (!match[0].includes('target="_blank"')) {
+          findings.pdfStatus.pass = false;
+          findings.pdfStatus.details.push(`PDF link in ${fileRel} is missing target="_blank" (must open in new tab).`);
+        }
+        if (match[0].includes('download')) {
+          findings.pdfStatus.pass = false;
+          findings.pdfStatus.details.push(`PDF link in ${fileRel} contains 'download' attribute which blocks browser tab preview.`);
+        }
+      }
+    }
+  }
+});
+if (!templateLinkFound) {
+  findings.pdfStatus.pass = false;
+  findings.pdfStatus.details.push(`No HTML link referencing ${expectedPdfName} found in template source files.`);
 }
 
 // 4. Output Formatted Report
@@ -459,6 +545,7 @@ if (findings.interactiveCode.pass && findings.actionBar.pass) {
 console.log(`\n8. 📄 7-PAGE A4 PDF LESSON WORKSHEET STATUS`);
 if (findings.pdfStatus.pass && findings.pdfStatus.exists) {
   console.log(`   ✅ PASS: PDF exists (docs/${expectedPdfName}) and verified at exactly 7/7 pages.`);
+  findings.pdfStatus.details.forEach(d => console.log(`      • ${d}`));
 } else {
   console.log(`   ❌ SETUP REQUIRED: docs/${expectedPdfName}`);
   findings.pdfStatus.details.forEach(d => console.log(`      • ${d}`));
