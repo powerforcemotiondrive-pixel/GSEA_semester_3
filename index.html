@@ -14301,14 +14301,13 @@ function renderLessonContentTabSession3(sessionData, theme) {
                       <tr class="bg-slate-50 text-slate-500 border-b border-slate-200 text-[11px]">
                         <th class="py-2 px-3 w-10 font-bold">#</th>
                         <th class="py-2 px-3 font-bold">Student Identifier</th>
-                        <th class="py-2 px-3 font-bold text-right">FE Rota</th>
                       </tr>
                     </thead>
                     <tbody class="divide-y divide-slate-100 text-slate-700">
                       ${g.students.map((sId, idx) => {
                         const anonId = `GRP${g.letter}${String(idx + 1).padStart(3, "0")}`;
                         const displayLabel = (sId !== anonId) ? `${sId} (${anonId})` : sId;
-                        return `<tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">${String(idx + 1).padStart(2, "0")}</td><td class="py-2 px-3 font-mono font-bold text-slate-800">${displayLabel}</td><td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Rotates per FE</span></td></tr>`;
+                        return `<tr class="hover:bg-slate-50/60"><td class="py-2 px-3 font-mono text-slate-400">${String(idx + 1).padStart(2, "0")}</td><td class="py-2 px-3 font-mono font-bold text-slate-800">${displayLabel}</td></tr>`;
                       }).join("")}
                     </tbody>
                   </table>
