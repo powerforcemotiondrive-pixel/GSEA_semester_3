@@ -191,6 +191,8 @@
             name: "Module 2",
             subtitle: "MTF",
             supertitle: "GSEA AT SEMESTER 3 - MODULE 2: MTF",
+            disabled: true,
+            isMuted: true,
             ...AAS_MODULE_THEMES[2],
             pages: createModulePages(2, 'aas')
           }

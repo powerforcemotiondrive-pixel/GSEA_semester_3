@@ -1333,6 +1333,8 @@
             name: "Module 2",
             subtitle: "MTF",
             supertitle: "GSEA AT SEMESTER 3 - MODULE 2: MTF",
+            disabled: true,
+            isMuted: true,
             ...AAS_MODULE_THEMES[2],
             pages: createModulePages(2, 'aas')
           }
@@ -1521,13 +1523,16 @@
           const delta = Math.abs(e.deltaY) > Math.abs(e.deltaX) ? e.deltaY : e.deltaX;
           if (Math.abs(delta) > 10) {
             isWheelThrottled = true;
-            const activeCount = 2; // Semester 3 has 2 active modules (MOD 1 & MOD 2)
-            if (delta > 0) {
-              const nextMod = (currentModuleIndex + 1) % activeCount;
-              switchModule(nextMod, 0);
-            } else {
-              const prevMod = (currentModuleIndex - 1 + activeCount) % activeCount;
-              switchModule(prevMod, 0);
+            const enabledMods = (modulesData || []).filter(m => !m.disabled && !m.isMuted);
+            if (enabledMods.length > 1) {
+              const activeCount = enabledMods.length;
+              if (delta > 0) {
+                const nextMod = (currentModuleIndex + 1) % activeCount;
+                switchModule(nextMod, 0);
+              } else {
+                const prevMod = (currentModuleIndex - 1 + activeCount) % activeCount;
+                switchModule(prevMod, 0);
+              }
             }
             setTimeout(() => { isWheelThrottled = false; }, 320);
           }
@@ -1581,6 +1586,10 @@
       const initialSelection = getInitialSelection();
       currentProgram = 'aas';
       modulesData = PROGRAMS_CONFIG[currentProgram].modules;
+      if (modulesData[initialSelection.mod] && (modulesData[initialSelection.mod].disabled || modulesData[initialSelection.mod].isMuted)) {
+        initialSelection.mod = 0;
+        initialSelection.card = 0;
+      }
       updateHeaderIconAndFooter();
       switchModule(initialSelection.mod, initialSelection.card);
 
@@ -1588,6 +1597,7 @@
       window.addEventListener('hashchange', () => {
         try {
           const target = getInitialSelection();
+          if (modulesData[target.mod] && (modulesData[target.mod].disabled || modulesData[target.mod].isMuted)) return;
           if (target.mod !== currentModuleIndex || target.card !== currentIndex) {
             switchModule(target.mod, target.card);
           }
@@ -1741,7 +1751,7 @@
       const currentTheme = modulesData[currentModuleIndex];
 
       modulesData.forEach((mod, idx) => {
-        const isDisabled = !!(mod.disabled || idx >= 2);
+        const isDisabled = !!(mod.disabled || mod.isMuted || idx >= 2);
         const isSelected = !isDisabled && idx === currentModuleIndex;
         const btn = document.createElement('button');
         btn.type = 'button';
@@ -1750,13 +1760,14 @@
           btn.disabled = true;
           btn.setAttribute('aria-disabled', 'true');
           btn.setAttribute('aria-pressed', 'false');
-          btn.setAttribute('aria-label', `Module 0${idx + 1} (Not scheduled in Semester 3)`);
-          btn.setAttribute('title', `Semester 3 comprises 2 Modules (MOD 1 & MOD 2)`);
+          const mutedTitle = (mod.disabled || mod.isMuted) ? `Module 0${idx + 1} (Muted / Coming Soon)` : `Module 0${idx + 1} (Not scheduled in Semester 3)`;
+          btn.setAttribute('aria-label', mutedTitle);
+          btn.setAttribute('title', mutedTitle);
           btn.style.backgroundColor = 'transparent';
           btn.style.borderColor = 'transparent';
           btn.style.color = 'rgba(255, 255, 255, 0.3)';
           btn.style.boxShadow = 'none';
-          btn.className = "flex items-center justify-center px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md text-[11px] sm:text-xs font-semibold tracking-wide transition-all border border-transparent cursor-not-allowed select-none opacity-40";
+          btn.className = "flex items-center justify-center px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md text-[11px] sm:text-xs font-semibold tracking-wide transition-all border border-transparent cursor-not-allowed select-none opacity-35";
         } else if (isSelected) {
           btn.setAttribute('aria-pressed', 'true');
           btn.setAttribute('aria-label', `Module 0${idx + 1}: ${mod.subtitle || mod.name}`);
@@ -1806,7 +1817,7 @@
     }
 
     function switchModule(modIdx, cardIdx = 0) {
-      if (modIdx < 0 || modIdx >= 2 || (modulesData[modIdx] && modulesData[modIdx].disabled)) return;
+      if (modIdx < 0 || modIdx >= modulesData.length || (modulesData[modIdx] && (modulesData[modIdx].disabled || modulesData[modIdx].isMuted))) return;
       currentModuleIndex = modIdx;
       currentIndex = cardIdx;
 
