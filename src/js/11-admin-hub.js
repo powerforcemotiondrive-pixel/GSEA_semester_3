@@ -209,7 +209,7 @@
         "num": 2,
         "title": "Module 2: MTF ICAO Level 4 Test Preparation (8 Sessions)",
         "weeks": "W03 – W11",
-        "headerBg": "#1b382b",
+        "headerBg": "#182b42",
         "sessions": [
           {
             "courseWeek": "W08",
