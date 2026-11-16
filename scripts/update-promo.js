@@ -575,7 +575,7 @@ function run() {
         },
         {
           num: 2,
-          title: 'Module 2: MTF ICAO Level 4 Test Preparation ICAO Level 4 Test Preparation (8 Sessions)',
+          title: 'Module 2: MTF ICAO Level 4 Test Preparation (8 Sessions)',
           weeks: getWeeksRangeLabel(mod2Weeks),
           headerBg: '#1b382b',
           sessions: mod2Weeks

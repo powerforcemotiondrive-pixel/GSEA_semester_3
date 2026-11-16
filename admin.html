@@ -917,7 +917,7 @@
       },
       {
         "num": 2,
-        "title": "Module 2: MTF ICAO Level 4 Test Preparation ICAO Level 4 Test Preparation (8 Sessions)",
+        "title": "Module 2: MTF ICAO Level 4 Test Preparation (8 Sessions)",
         "weeks": "W03 – W11",
         "headerBg": "#1b382b",
         "sessions": [
@@ -1481,8 +1481,15 @@
     if (matrixContainer) {
       matrixContainer.innerHTML = `
         <div class="space-y-6">
+          <!-- Segmented Filter Bar -->
+          <div class="flex items-center gap-1.5 p-1 bg-slate-100 rounded-lg border border-slate-200 text-xs font-bold w-fit">
+            <button type="button" onclick="window.filterAdminRota('all')" id="btn-rota-filter-all" class="px-3 py-1 rounded-md bg-white text-slate-800 shadow-2xs transition-all">All Timetables</button>
+            <button type="button" onclick="window.filterAdminRota('fe1')" id="btn-rota-filter-fe1" class="px-3 py-1 rounded-md text-slate-500 hover:text-slate-800 transition-all">FE1 Rota (Fri 15 Jan)</button>
+            <button type="button" onclick="window.filterAdminRota('mtf')" id="btn-rota-filter-mtf" class="px-3 py-1 rounded-md text-slate-500 hover:text-slate-800 transition-all">MTF Mock Test (Weeks 8 &amp; 9)</button>
+          </div>
+
           <!-- Table 1: FE1 -->
-          <div class="border border-slate-200 rounded-lg overflow-hidden bg-white">
+          <div id="admin-rota-section-fe1" class="border border-slate-200 rounded-lg overflow-hidden bg-white shadow-2xs">
             <div class="p-3 bg-slate-800 text-white flex items-center justify-between">
               <span class="font-bold text-xs uppercase tracking-wider">Module 1 — ${fe1.title} (${fe1.dateStr})</span>
               <span class="text-[10px] font-mono bg-emerald-600 text-white px-2 py-0.5 rounded font-bold">FE1 (${fe1.week})</span>
@@ -1515,7 +1522,10 @@
                             <span class="font-semibold block ${slotObj.type === "feedback" ? "text-emerald-800 font-bold" : "text-amber-900 font-bold"}">
                               ${renderStandaloneSlotStudents(slotObj.students)}
                             </span>
-                            <span class="text-[10px] ${slotObj.type === "feedback" ? "text-emerald-600 font-bold" : "text-slate-400 font-mono"}>${slotObj.type.toUpperCase()} (${slotObj.time})</span>
+                            <span class="text-[10px] font-mono px-1.5 py-0.5 rounded ${slotObj.type === "feedback" ? "bg-emerald-100 text-emerald-800 font-bold" : "bg-amber-100 text-amber-800 font-bold"}">
+                              ${slotObj.type.toUpperCase()}
+                            </span>
+                            <span class="text-[10px] font-mono text-slate-400">(${slotObj.time})</span>
                           </td>
                         </tr>
                       `;
@@ -1526,8 +1536,9 @@
             </table>
           </div>
 
+          <div id="admin-rota-section-mtf" class="space-y-6">
           <!-- Table 2: MTF Practice Test (Primary 24 Slots) -->
-          <div class="border border-slate-200 rounded-lg overflow-hidden bg-white">
+          <div class="border border-slate-200 rounded-lg overflow-hidden bg-white shadow-2xs">
             <div class="p-3 bg-slate-900 text-white flex items-center justify-between">
               <span class="font-bold text-xs uppercase tracking-wider">Module 2 — ${mtf.title} (${mtf.dates})</span>
               <span class="text-[10px] font-mono bg-sky-600 text-white px-2 py-0.5 rounded font-bold">24 Primary Slots across 2 Weeks</span>
@@ -1535,10 +1546,9 @@
             <table class="w-full text-left text-xs border-collapse">
               <thead>
                 <tr class="bg-slate-50 text-slate-600 border-b border-slate-200 text-[11px]">
-                  <th class="py-2.5 px-3 font-bold w-44">Group &amp; Teacher</th>
-                  <th class="py-2.5 px-3 font-bold w-28">Slot &amp; Time</th>
-                  <th class="py-2.5 px-3 font-bold">Week 8 (Fri 26 Feb) — Session 5</th>
-                  <th class="py-2.5 px-3 font-bold">Week 9 (Fri 05 Mar) — Session 6</th>
+                  <th class="py-2.5 px-3 font-bold w-36">Slot &amp; Time</th>
+                  <th class="py-2.5 px-3 font-bold">Week 8 Candidate (Fri 26 Feb • 30 min)</th>
+                  <th class="py-2.5 px-3 font-bold">Week 9 Candidate (Fri 05 Mar • 30 min)</th>
                 </tr>
               </thead>
               <tbody class="divide-y divide-slate-100 text-slate-700">
@@ -1546,7 +1556,7 @@
                   const grp = mtf.primary[letter];
                   return `
                     <tr class="bg-slate-50/80 font-bold text-slate-800 text-[11px]">
-                      <td colspan="4" class="py-2 px-3 tracking-wide uppercase bg-slate-100">
+                      <td colspan="3" class="py-2 px-3 tracking-wide uppercase bg-slate-100">
                         ${grp.groupName} (${grp.slotSummary} • Assigned Examiner: ${grp.teacher}${grp.room ? ` • Room: ${grp.room}` : ''})
                       </td>
                     </tr>
@@ -1556,19 +1566,14 @@
                       const sW9 = grp.week9[slotIdx] || "-";
                       return `
                         <tr class="hover:bg-slate-50/70">
-                          <td class="py-2.5 px-3 font-medium text-slate-500 font-mono">
-                            ${grp.teacher.split(" (")[0]}
-                          </td>
                           <td class="py-2.5 px-3 font-bold font-mono text-slate-800 whitespace-nowrap">
                             Slot ${slotIdx + 1} (${time.split(" – ")[0]})
                           </td>
                           <td class="py-2.5 px-3">
-                            <span class="font-bold text-sky-950 block">${sW8}</span>
-                            <span class="text-[10px] text-sky-600 font-mono font-medium">INDIVIDUAL (30 min • ${time})</span>
+                            <span class="font-bold text-sky-950 font-mono block">${sW8}</span>
                           </td>
                           <td class="py-2.5 px-3">
-                            <span class="font-bold text-sky-950 block">${sW9}</span>
-                            <span class="text-[10px] text-sky-600 font-mono font-medium">INDIVIDUAL (30 min • ${time})</span>
+                            <span class="font-bold text-sky-950 font-mono block">${sW9}</span>
                           </td>
                         </tr>
                       `;
@@ -1641,10 +1646,47 @@
               </div>
             </div>
           </div>
+          </div>
         </div>
       `;
     }
   }
+
+  window.filterAdminRota = function(filter) {
+    const secFe1 = document.getElementById('admin-rota-section-fe1');
+    const secMtf = document.getElementById('admin-rota-section-mtf');
+    const btnAll = document.getElementById('btn-rota-filter-all');
+    const btnFe1 = document.getElementById('btn-rota-filter-fe1');
+    const btnMtf = document.getElementById('btn-rota-filter-mtf');
+    if (!secFe1 || !secMtf) return;
+
+    const activeClasses = ['bg-white', 'text-slate-800', 'shadow-2xs'];
+    const inactiveClasses = ['text-slate-500', 'hover:text-slate-800'];
+
+    [btnAll, btnFe1, btnMtf].forEach(btn => {
+      if (btn) {
+        btn.classList.remove(...activeClasses);
+        btn.classList.add(...inactiveClasses);
+      }
+    });
+
+    if (filter === 'fe1') {
+      secFe1.style.display = 'block';
+      secMtf.style.display = 'none';
+      btnFe1?.classList.add(...activeClasses);
+      btnFe1?.classList.remove(...inactiveClasses);
+    } else if (filter === 'mtf') {
+      secFe1.style.display = 'none';
+      secMtf.style.display = 'block';
+      btnMtf?.classList.add(...activeClasses);
+      btnMtf?.classList.remove(...inactiveClasses);
+    } else {
+      secFe1.style.display = 'block';
+      secMtf.style.display = 'block';
+      btnAll?.classList.add(...activeClasses);
+      btnAll?.classList.remove(...inactiveClasses);
+    }
+  };
 
   function switchAdminTab(tabKey) {
     if (tabKey === "presentation") return;
