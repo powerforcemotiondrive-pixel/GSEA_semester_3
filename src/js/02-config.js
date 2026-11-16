@@ -119,7 +119,7 @@
         {
           tag: "Technical English • Course Guidance",
           title: "Student Guide & Objectives",
-          description: "Essential student guidance on how to succeed in English this semester, formative evaluation preparation, portfolio requirements, and the official ENAC course syllabus (English & French).",
+          description: "Essential student guidance for Semester 3 Module 1 (EASA Docs, Safety &amp; Audits): how to navigate European aerodrome regulations, continuous speaking progress, formative evaluation (FE1 flipped lesson), portfolio logging, and official ENAC course objectives (English &amp; French).",
           isObjectives: true,
           imageUrl: "images/semester_objectives.jpg"
         }

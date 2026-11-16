@@ -1155,12 +1155,12 @@
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70 space-y-1">
                 <div class="flex items-center gap-2 text-xs font-bold text-slate-800">
                   <span>🗣️</span>
-                  <span>${isFr ? 'Évaluations Formatives' : 'Formative Evaluations'}</span>
+                  <span>${isFr ? 'Évaluation Formative 1' : 'Formative Evaluation 1'}</span>
                 </div>
                 <p class="text-[11.5px] text-slate-600 leading-relaxed">
                   ${isFr 
-                    ? 'Des oraux réguliers en binôme ou trinôme à la fin de chaque module pour mesurer vos progrès oraux et recevoir des conseils personnalisés.'
-                    : 'Regular oral tutorials in pairs or trios at the end of each module to monitor speaking and receive individual guidance.'}
+                    ? 'Séance 7 : animation en classe inversée par équipe de 3 à 4 étudiants autour d\'un texte EASA, suivie d\'un débriefing complet de l\'enseignant.'
+                    : 'Session 7: 30-min interactive peer lesson in teams of 3–4 based on an authentic EASA extract, followed by teacher feedback.'}
                 </p>
               </div>
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70 space-y-1">
@@ -1256,34 +1256,34 @@
           <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-3">
             <div class="flex items-center gap-2">
               <span class="w-6 h-6 rounded-md bg-slate-900 text-white flex items-center justify-center font-bold text-xs">3</span>
-              <h4 class="font-bold text-slate-900 text-sm">${isFr ? 'Déroulement des Évaluations Formatives (EF)' : 'Formative Evaluations (FE) — How They Work'}</h4>
+              <h4 class="font-bold text-slate-900 text-sm">${isFr ? 'Déroulement de l\'Évaluation Formative 1 (EF1 • Séance 7)' : 'Formative Evaluation 1 (FE1 • Session 7) — Flipped Lesson'}</h4>
             </div>
             <div class="space-y-2.5 text-xs text-slate-700">
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
                 <span class="text-base shrink-0">👥</span>
                 <div>
-                  <strong class="text-slate-900 block font-bold mb-0.5">${isFr ? 'EF 1, EF 2 et EF 3 — Préparées en dehors des cours' : 'FE 1, FE 2, and FE 3 — Prepared Outside of Class'}</strong>
+                  <strong class="text-slate-900 block font-bold mb-0.5">${isFr ? 'Séance 7 : Animation en Classe Inversée (Équipes de 3 à 4 étudiants)' : 'Session 7: 30-Minute Interactive Peer Lesson (Teams of 3–4)'}</strong>
                   <p class="text-[11.5px] text-slate-600 leading-relaxed">
                     ${isFr 
-                      ? 'Ces oraux de 30 minutes ont lieu à la fin de chaque module. Vous préparez votre sujet et votre support de manière autonome en binôme ou trinôme. Arrivez à l\'heure, participez activement et montrez ce que vous avez appris !'
-                      : 'These 30-minute tutorials take place at the end of each module. You prepare your presentation and topics outside of class with your assigned partner or trio. Arrive on time, speak actively, and show what you have learned!'}
+                      ? 'Lors de la séance 7, chaque équipe dispose de 30 minutes maximum pour animer la classe autour d\'un extrait réglementaire officiel de l\'EASA de son choix. Vous expliquez le texte en anglais clair, enseignez 3 à 5 mots techniques essentiels et faites pratiquer vos camarades avec des exercices de compréhension et de prise de parole.'
+                      : 'In Session 7, each team takes the floor for up to 30 minutes to deliver an interactive lesson based on an authentic EASA regulatory extract of their choice. Your team explains the text in plain English, teaches 3 to 5 key technical terms, and leads classmates through engaging reading and speaking exercises.'}
                   </p>
                 </div>
               </div>
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
                 <span class="text-base shrink-0">🎓</span>
                 <div>
-                  <strong class="text-slate-900 block font-bold mb-0.5">${isFr ? 'EF Finale (Séance 17) — Séance de révision dédiée en classe' : 'Final FE (Class 17) — Revision Session in Class'}</strong>
+                  <strong class="text-slate-900 block font-bold mb-0.5">${isFr ? '30 Dernières Minutes : Bilan Collectif &amp; Conseils Personnalisés' : 'Final 30 Minutes: Whole-Class Feedback &amp; Teacher Debrief'}</strong>
                   <p class="text-[11.5px] text-slate-600 leading-relaxed">
                     ${isFr 
-                      ? 'La dernière évaluation formative du semestre est préparée ensemble en classe lors d\'une séance de révision. Vous saurez exactement à quoi vous attendre — aucune mauvaise surprise !'
-                      : 'The final formative evaluation at the end of the semester is prepared together in class during a dedicated revision session leading up to it. All students know exactly what to expect — no surprises!'}
+                      ? 'Les 30 dernières minutes de la séance sont consacrées au retour d\'expérience de l\'enseignant : correction des erreurs récurrentes de prononciation et de grammaire, conseils méthodologiques et validation des acquis de chaque étudiant.'
+                      : 'The final 30 minutes of class are dedicated to whole-class feedback: your teacher provides constructive comments on communication, highlights common pronunciation and grammar traps, and debriefs key takeaways.'}
                   </p>
                 </div>
               </div>
             </div>
             <p class="text-[11px] text-slate-500 italic pl-1">
-              ${isFr ? '* Ce cadre s\'applique aussi bien à l\'anglais général (AG) qu\'à l\'anglais technique (AT/AAS).' : '* This framework applies to both General English (AG) and Technical English (AT/AAS).'}
+              ${isFr ? '* Préparé en équipe lors de la séance 6 (Plan d\'Action Correctif &amp; Préparation EF1).' : '* Prepared in teams during Session 6 (Corrective Action Plan &amp; Prep FE1).'}
             </p>
           </div>
 
@@ -1376,103 +1376,103 @@
       const aasObjectivesEn = [
         {
           num: "01",
-          badge: "Aeronautical Vocabulary",
-          title: "Aeronautical Technical Terminology",
-          desc: "Accurately recognize, define, and employ standardized aviation vocabulary across aerodromes, runway designators, ground handling turnaround workflows, airframe anatomy, flight control axes, aerodynamics, meteorology, and safety/security systems.",
-          indicators: "Precise naming of aircraft components, apron ground equipment, runway markings, and weather phenomena."
+          badge: "EASA Regulations",
+          title: "EASA Regulatory Navigation & Scanning Skills",
+          desc: "Skim and scan official European Union Aviation Safety Agency (EASA) regulatory documents, Certification Specifications (CS-ADR-DSN), and Guidance Material (GM) to rapidly locate operational rules, dimensional constraints, and aerodrome compliance standards.",
+          indicators: "Rapid scanning of EASA clauses, extracting notice periods, obstacle height limits, and threshold distances."
         },
         {
           num: "02",
-          badge: "Continuous Assessment",
-          title: "Continuous Assessment & Formative Evaluations",
-          desc: "Demonstrate steady linguistic and technical progression through weekly operational case study analyses and three 30-minute oral formative evaluations (FE1 Airports, FE2 Aircraft/Airlines, FE3 Aviation Current Events Press Briefings).",
-          indicators: "Collaborative pair presentations, adherence to evaluation rubrics, active engagement in Q&A rounds."
+          badge: "Legal Decoding",
+          title: "Modal Verb Precision & Legal Decoding",
+          desc: "Accurately decode and vocally differentiate between mandatory legal requirements (shall, must), recommended safety guidance (should), and discretionary options (may), explaining operational consequences to stakeholders in plain B2 English.",
+          indicators: "Accurate verbal distinction between strict law vs. best practice recommendations during aerodrome operational discussions."
         },
         {
           num: "03",
-          badge: "Aviation Culture",
-          title: "General Aviation Culture & Operational Awareness",
-          desc: "Demonstrate a broad understanding of the commercial aviation ecosystem, describing the roles of key stakeholders (airports, airlines, ground operations, and air traffic services), the main stages of commercial flight operations, and the fundamental importance of safety culture and environmental challenges in modern aviation.",
-          indicators: "Accurate overview of airport and airline operations, clear description of the passenger and flight journey, active discussion of contemporary aviation challenges."
+          badge: "Safety Alerts",
+          title: "Safety Alerts & Spoken Ramp Briefings",
+          desc: "Digest dense EASA Safety Information Bulletins (SIBs) and aerodrome safety notices to extract critical hazards (apron vehicle congestion, speed limits, wingtip clearance, FOD) and deliver structured, punchy 90-second spoken briefings to ground personnel.",
+          indicators: "Concise spoken delivery, clear prioritization of immediate hazards, professional tone without reading from notes."
         },
         {
           num: "04",
-          badge: "Technical Fluency",
-          title: "Spoken Fluency & Technical Briefings",
-          desc: "Deliver structured technical briefings, exterior pre-flight walkaround defect reports, and incident analyses smoothly and concisely, using accurate cause-and-effect connectors and technical linking words.",
-          indicators: "Clear chronological sequencing, precise technical explanations, confident delivery without reading scripts."
+          badge: "Aerodrome Audits",
+          title: "Aerodrome Audits & Non-Compliance Reporting",
+          desc: "Review authentic aerodrome safety audit reports, classify safety findings into Level 1 (immediate safety hazard) and Level 2 (non-immediate compliance defect), and justify severity levels using past deduction structures (must have, could have).",
+          indicators: "Accurate categorization of audit findings, confident 2-minute verbal briefing to the Airport Director."
         },
         {
           num: "05",
-          badge: "Operational Confidence",
-          title: "Communicative Confidence & Operational Problem-Solving",
-          desc: "Communicate with increased composure and confidence in both routine and unexpected operational aviation situations. Students will develop the ability to explain delays, describe technical anomalies or operational disruptions, ask clarifying questions, check instructions, and resolve communication breakdowns smoothly.",
-          indicators: "Proactive requests for clarification or confirmation, calm and clear reporting of unexpected situations or delays, effective interaction during group problem-solving exercises."
+          badge: "Incident Dossiers",
+          title: "Incident Investigation & Multi-Source Synthesis",
+          desc: "Cross-reference multiple disparate technical evidence sources (ATC radio transcripts, METAR observations, driver and pilot statements) to identify contributing human and organizational root causes and deliver a structured spoken debrief.",
+          indicators: "Logical chronological synthesis, accurate cause-and-effect connectors, balanced presentation of multi-source findings."
         },
         {
           num: "06",
-          badge: "ICAO Standards",
-          title: "ICAO Language Proficiency Dimensions (Level 4/5)",
-          desc: "Consolidate communicative competencies directly aligned with the six ICAO rating dimensions: Pronunciation (readily intelligible), Structure (controlled basic and complex patterns), Vocabulary (varied and idiomatic), Fluency (natural tempo), Comprehension (accurate across all topics), and Interactions (immediate and appropriate responses).",
-          indicators: "Operational intelligibility, prompt resolution of ambiguities, compliance with ICAO Doc 9835 criteria."
+          badge: "Peer Teaching (FE1)",
+          title: "Corrective Action Plans & Peer Teaching Synthesis",
+          desc: "Formulate clear, time-bound Corrective Action Plans (CAP) using formal commitment language (we undertake to, subject to approval), and collaborate in teams of 3–4 to deliver an interactive 30-minute flipped lesson teaching an EASA extract to peers.",
+          indicators: "Structured 30-min interactive session, teaching 3–5 technical words, leading communicative exercises, and integrating teacher feedback."
         }
       ];
 
       const aasObjectivesFr = [
         {
           num: "01",
-          badge: "Lexique Aéronautique",
-          title: "Terminologie technique aéronautique",
-          desc: "Comprendre, définir et réutiliser avec rigueur le vocabulaire aéronautique standard relatif aux aérodromes, aux pistes, à l'assistance en escale, aux systèmes cellule, aux gouvernes de vol, à l'aérodynamique, à la météo et aux dispositifs de sécurité et de sûreté.",
-          indicators: "Désignation exacte des éléments d'aéronef, des équipements de piste, du balisage et des aléas météo."
+          badge: "Textes EASA",
+          title: "Repérage et navigation dans les textes EASA",
+          desc: "Parcourir et analyser rapidement la documentation officielle de l'EASA (CS-ADR-DSN, GM, AMC) pour identifier les règles opérationnelles, les contraintes dimensionnelles et les exigences de conformité aéroportuaire.",
+          indicators: "Repérage rapide des clauses réglementaires, extraction des préavis, des hauteurs d'obstacles et des distances de seuil."
         },
         {
           num: "02",
-          badge: "Contrôle Continu",
-          title: "Contrôle continu et évaluations formatives",
-          desc: "Valider une progression linguistique et technique régulière grâce aux études de cas hebdomadaires et à trois évaluations formatives orales de 30 minutes (EF1 Aéroports, EF2 Aéronefs/Compagnies, EF3 Conférence de presse d'actualité aéronautique).",
-          indicators: "Présentations orales en binôme, respect des critères d'évaluation, participation active aux phases de questions."
+          badge: "Modaux Juridiques",
+          title: "Précision des modaux et décodage juridique",
+          desc: "Identifier et expliciter oralement la distinction entre obligations strictes (shall, must), recommandations de sécurité (should) et marges d'appréciation (may), en expliquant leurs conséquences opérationnelles en anglais B2 clair et assertif.",
+          indicators: "Distinction verbale rigoureuse entre contrainte légale et bonne pratique lors des échanges opérationnels."
         },
         {
           num: "03",
-          badge: "Culture Aéronautique",
-          title: "Culture aéronautique générale et environnement opérationnel",
-          desc: "Comprendre et expliquer le fonctionnement global du secteur aéronautique : les rôles des principaux acteurs (aéroports, compagnies aériennes, assistance en escale, services de la navigation aérienne), les grandes étapes d'un vol commercial, ainsi que les principes fondamentaux de la culture de sécurité et des enjeux environnementaux de l'aviation moderne.",
-          indicators: "Présentation claire des acteurs de l'écosystème aérien, description fluide du parcours passager et des opérations de vol, participation active aux débats sur les enjeux aéronautiques contemporains."
+          badge: "Briefings Piste",
+          title: "Bulletins de sécurité et briefings de piste",
+          desc: "Synthétiser les bulletins d'information de sécurité (SIB EASA) et avis de sécurité d'aérodrome pour extraire les dangers critiques (circulation sur les aires de trafic, limitations de vitesse, FOD) et délivrer un briefing oral percutant de 90 secondes aux équipes au sol.",
+          indicators: "Restitution orale structurée et concise, hiérarchisation des risques immédiats, posture professionnelle sans lecture de notes."
         },
         {
           num: "04",
-          badge: "Fluidité Technique",
-          title: "Aisance orale et synthèses techniques",
-          desc: "Concevoir et présenter des exposés techniques, des signalements d'anomalies lors de la visite pré-vol et des retours d'expérience avec fluidité et concision, en maîtrisant les relations logiques de cause à effet et les connecteurs techniques.",
-          indicators: "Chronologie claire des événements, explications techniques précises, restitution orale sans lecture de notes."
+          badge: "Audits d'Aérodrome",
+          title: "Audits d'aérodrome et signalement des écarts",
+          desc: "Examiner des rapports d'audit de sécurité d'aérodrome, catégoriser les constats en Niveau 1 (danger immédiat) et Niveau 2 (écart mineur), et argumenter leur gravité en utilisant les structures de déduction au passé (must have, could have).",
+          indicators: "Classification exacte des constats d'audit, briefing oral convaincant de 2 minutes destiné à la direction d'aérodrome."
         },
         {
           num: "05",
-          badge: "Confiance Opérationnelle",
-          title: "Confiance en communication et résolution d'imprévus",
-          desc: "Communiquer avec aisance et assurance lors d'échanges techniques et de situations opérationnelles courantes ou imprévues. Développer la capacité à décrire une anomalie, expliquer un retard, demander des éclaircissements, vérifier une information et surmonter les blocages linguistiques avec calme et clarté.",
-          indicators: "Initiative pour demander des clarifications ou reformuler, explication sereine d'aléas ou de retards, collaboration efficace lors des résolutions de cas en groupe."
+          badge: "Enquêtes Incidents",
+          title: "Enquêtes incidents et synthèse multi-sources",
+          desc: "Croiser plusieurs sources techniques hétérogènes (transcriptions radio ATC, observations METAR, déclarations de conducteurs/pilotes) pour identifier les causes racines humaines et organisationnelles et délivrer une synthèse orale structurée.",
+          indicators: "Synthèse chronologique logique, emploi précis des connecteurs de cause à effet, analyse équilibrée des données multi-sources."
         },
         {
           num: "06",
-          badge: "Standards OACI",
-          title: "Critères de compétence linguistique OACI (Niveau 4/5)",
-          desc: "Développer et consolider les compétences linguistiques opérationnelles selon les six critères de l'OACI : Prononciation (parfaitement intelligible), Structure (maîtrise des formes simples et complexes), Vocabulaire (étendu et approprié), Aisance (débit naturel), Compréhension (précise sur tous les sujets) et Interactions (réponses immédiates et pertinentes).",
-          indicators: "Intelligibilité internationale, clarification immédiate des doutes, conformité aux exigences du Doc 9835 OACI."
+          badge: "Classe Inversée (EF1)",
+          title: "Plans d'actions correctives et animation de la séance EF1",
+          desc: "Rédiger et négocier des plans d'actions correctives (CAP) mesurables avec des engagements formels (we undertake to, subject to approval), et animer en équipe de 3 à 4 étudiants une séance interactive de 30 minutes (classe inversée) autour d'un extrait réglementaire EASA.",
+          indicators: "Animation interactive de 30 min, enseignement de 3 à 5 termes techniques, conduite d'exercices pour la classe et prise en compte des retours enseignants."
         }
       ];
 
       const objectives = isFr ? aasObjectivesFr : aasObjectivesEn;
 
       const leadSentence = isFr 
-        ? "À la fin du semestre 3, les étudiants seront capables de :"
-        : "By the end of Semester 3, students will be able to:";
+        ? "À l'issue du Module 1 (Semestre 3), les étudiants seront capables de :"
+        : "By the end of Semester 3 Module 1, students will be able to:";
 
-      const courseCode = "LV125E • Technical English (AT)";
-      const targetBenchmark = isAas 
-        ? (isFr ? "Niveau B2 CECRL • Standard Opérationnel OACI Niveau 4/5" : "CEFR B2 Level • ICAO Operational Level 4/5 Benchmark")
-        : (isFr ? "Niveau B2 CECRL • Utilisateur Indépendant Opérationnel" : "CEFR B2 Level • Independent Operational Proficiency");
+      const courseCode = "LV125E • Technical English (AT) • Module 1";
+      const targetBenchmark = isFr 
+        ? "Niveau B2 CECRL • Réglementation EASA, Audits &amp; Sécurité d'Aérodrome"
+        : "CEFR B2 Level • EASA Regulations, Audits &amp; Aerodrome Safety";
 
       const switchBtnGuide = `<button type="button" onclick="switchModalTab('student_guide')" class="px-3 py-1 rounded-md text-xs font-bold transition-all cursor-pointer text-slate-600 hover:text-slate-900">📘 Student Guide</button>`;
       const switchBtnEn = `<button type="button" onclick="switchModalTab('sem_obj_en')" class="px-3 py-1 rounded-md text-xs font-bold transition-all cursor-pointer ${!isFr ? 'bg-white shadow-xs text-slate-900 border border-slate-300' : 'text-slate-500 hover:text-slate-800'}">🇬🇧 English</button>`;
@@ -1510,8 +1510,8 @@
               <h4 class="text-xs sm:text-sm font-extrabold text-blue-950">${leadSentence}</h4>
               <p class="text-[11.5px] sm:text-xs text-blue-900/90 leading-relaxed mt-1">
                 ${isFr 
-                  ? "Ces objectifs constituent le socle de compétences évalué en contrôle continu (50%) et lors des évaluations formatives (50%). Ils sont conçus pour garantir une compréhension transparente tant par les étudiants que par l'équipe pédagogique."
-                  : "These core competencies define the learning trajectory evaluated through continuous assessment (50%) and formative evaluations (50%). They ensure complete transparent alignment between students, tutors, and external benchmarks."}
+                  ? "Ces objectifs constituent le socle de compétences évalué en contrôle continu (50%) et lors de l'évaluation formative 1 (50%). Ils sont conçus pour garantir une compréhension transparente tant par les étudiants que par l'équipe pédagogique."
+                  : "These core competencies define the learning trajectory evaluated through continuous assessment (50%) and formative evaluation 1 (50%). They ensure complete transparent alignment between students, tutors, and external benchmarks."}
               </p>
             </div>
           </div>
@@ -1542,7 +1542,7 @@
           <div class="p-4 rounded-xl bg-slate-100 border border-slate-300/80 shadow-2xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-slate-600">
             <div class="space-y-1">
               <strong class="text-slate-900 block font-bold">${isFr ? 'Structure d\'Évaluation & Pondération' : 'Evaluation Weighting & Grade Architecture'}</strong>
-              <p class="text-[11px] text-slate-500">${isFr ? 'Contrôle Continu (50%) : Participation, portfolio formatif, implication hebdomadaire • Évaluations Formatives (50%) : EF1, EF2, EF3.' : 'Continuous Assessment (50%): Weekly oral tasks, formative portfolio, active engagement • Formative Evaluations (50%): FE1, FE2, FE3 oral rotas.'}</p>
+              <p class="text-[11px] text-slate-500">${isFr ? 'Contrôle Continu (50%) : Participation active, portfolio formatif hebdomadaire • Évaluation Formative 1 (50%) : Séance 7 classe inversée en équipe de 3 à 4 étudiants (/20).' : 'Continuous Assessment (50%): Weekly oral tasks, active participation, formative portfolio • Formative Evaluation 1 (50%): Session 7 interactive flipped lesson in teams of 3–4 (/20).'}</p>
             </div>
             <span class="font-mono text-[10px] font-bold px-2.5 py-1 rounded-md bg-white border border-slate-300 text-slate-700 shrink-0">B2 Benchmark</span>
           </div>
