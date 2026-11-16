@@ -207,15 +207,15 @@
       },
       {
         "num": 2,
-        "title": "Module 2: MTF (8 Sessions)",
-        "weeks": "W03 – W10",
+        "title": "Module 2: MTF ICAO Level 4 Test Preparation ICAO Level 4 Test Preparation (8 Sessions)",
+        "weeks": "W03 – W11",
         "headerBg": "#1b382b",
         "sessions": [
           {
             "courseWeek": "W08",
             "week": "W03",
             "date": "Fri 22 Jan",
-            "title": "Session 1 — Aerodynamics & Flight Principles",
+            "title": "Session 1 — Introduction to the MTF ICAO Level Test",
             "subtitle": "",
             "tag": "Teaching Session",
             "isFe": false,
@@ -230,7 +230,7 @@
             "courseWeek": "W09",
             "week": "W04",
             "date": "Fri 29 Jan",
-            "title": "Session 2 — Aircraft Anatomy: Structure & Systems",
+            "title": "Session 2 — The MTF Picture Exercise & Spoken Description Practice",
             "subtitle": "",
             "tag": "Teaching Session",
             "isFe": false,
@@ -245,7 +245,7 @@
             "courseWeek": "W10",
             "week": "W05",
             "date": "Fri 05 Feb",
-            "title": "Session 3 — Commercial Aircraft & Airlines",
+            "title": "Session 3 — The MTF Listening Section & Audio Comprehension Practice",
             "subtitle": "",
             "tag": "Teaching Session",
             "isFe": false,
@@ -257,10 +257,14 @@
             }
           },
           {
+            "isHoliday": true,
+            "text": "❄️ Week 06 — Mid-Semester Break (No Classes)"
+          },
+          {
             "courseWeek": "W11",
-            "week": "W06",
-            "date": "Fri 12 Feb",
-            "title": "Session 4 — Significant Aviation Accidents & Aircraft Types",
+            "week": "W07",
+            "date": "Fri 19 Feb",
+            "title": "Session 4 — The MTF Text Exercise & Technical Summary Practice",
             "subtitle": "",
             "tag": "Teaching Session",
             "isFe": false,
@@ -273,11 +277,11 @@
           },
           {
             "courseWeek": "W12",
-            "week": "W07",
-            "date": "Fri 19 Feb",
-            "title": "Session 5 — Significant Aviation Accidents & Aircraft Types",
-            "subtitle": "",
-            "tag": "Teaching Session",
+            "week": "W08",
+            "date": "Fri 26 Feb",
+            "title": "Session 5 — MTF Practice Test (Part 1 - Individual 30-Min Oral Trials)",
+            "subtitle": "Fri 26 Feb • Individual 30-min oral test slots (Week 1 of 2)",
+            "tag": "Mock Exam • 30-min Oral",
             "isFe": false,
             "rooms": {
               "A": "",
@@ -288,11 +292,11 @@
           },
           {
             "courseWeek": "W13",
-            "week": "W08",
-            "date": "Fri 26 Feb",
-            "title": "Session 6 — Significant Aviation Accidents & Aircraft Types",
-            "subtitle": "",
-            "tag": "Teaching Session",
+            "week": "W09",
+            "date": "Fri 05 Mar",
+            "title": "Session 6 — MTF Practice Test (Part 2 - Individual 30-Min Oral Trials)",
+            "subtitle": "Fri 05 Mar • Individual 30-min oral test slots (Week 2 of 2)",
+            "tag": "Mock Exam • 30-min Oral",
             "isFe": false,
             "rooms": {
               "A": "",
@@ -303,11 +307,11 @@
           },
           {
             "courseWeek": "W14",
-            "week": "W09",
-            "date": "Fri 05 Mar",
-            "title": "Session 7 — Significant Aviation Accidents & Aircraft Types",
+            "week": "W10",
+            "date": "Fri 12 Mar",
+            "title": "Session 7 — MTF Comprehensive Revision & Error Analysis",
             "subtitle": "",
-            "tag": "Teaching Session • Prep FE2",
+            "tag": "MTF Revision",
             "isFe": false,
             "rooms": {
               "A": "",
@@ -318,12 +322,12 @@
           },
           {
             "courseWeek": "W15",
-            "week": "W10",
-            "date": "Fri 12 Mar",
-            "title": "Session 8 — FORMATIVE EVALUATION 2 (FE2) — Oral Tutorials",
-            "subtitle": "Fri 12 Mar • 30-min evaluation slots (Teacher A (TBC) / Teacher B (TBC) / Teacher C (TBC))",
-            "tag": "Grade /20",
-            "isFe": true,
+            "week": "W11",
+            "date": "Fri 19 Mar",
+            "title": "Session 8 — MTF Final Revision & Test Readiness",
+            "subtitle": "Fri 19 Mar • Official DSAC MTF Examination also administered in Week 11",
+            "tag": "MTF Revision",
+            "isFe": false,
             "rooms": {
               "A": "",
               "B": "",
@@ -342,8 +346,7 @@
     "name": "Technical English (AT)",
     "dayTime": "Friday 13h15 – 15h15",
     "feKeys": [
-      1,
-      2
+      1
     ],
     "fes": {
       "1": {
@@ -490,147 +493,139 @@
             ]
           }
         }
+      }
+    },
+    "mtfPractice": {
+      "title": "MTF Practice Test — 30-min Individual Oral Mock Trials",
+      "weeks": "W08 & W09",
+      "dates": "Fri 26 Feb & Fri 05 Mar",
+      "timeSummary": "Friday 13h15 – 15h15 (4 slots of 30 min)",
+      "slotTimes": [
+        "13h15 – 13h45",
+        "13h45 – 14h15",
+        "14h15 – 14h45",
+        "14h45 – 15h15"
+      ],
+      "primary": {
+        "A": {
+          "teacher": "Teacher A (TBC)",
+          "groupName": "Group A",
+          "slotSummary": "Friday 13h15 - 15h15",
+          "room": "",
+          "week8": [
+            "GRPA001",
+            "GRPA002",
+            "GRPA003",
+            "GRPA004"
+          ],
+          "week9": [
+            "GRPA005",
+            "GRPA006",
+            "GRPA007",
+            "GRPA008"
+          ]
+        },
+        "B": {
+          "teacher": "Teacher B (TBC)",
+          "groupName": "Group B",
+          "slotSummary": "Friday 13h15 - 15h15",
+          "room": "",
+          "week8": [
+            "GRPB001",
+            "GRPB002",
+            "GRPB003",
+            "GRPB004"
+          ],
+          "week9": [
+            "GRPB005",
+            "GRPB006",
+            "GRPB007",
+            "GRPB008"
+          ]
+        },
+        "C": {
+          "teacher": "Teacher C (TBC)",
+          "groupName": "Group C",
+          "slotSummary": "Friday 13h15 - 15h15",
+          "room": "",
+          "week8": [
+            "GRPC001",
+            "GRPC002",
+            "GRPC003",
+            "GRPC004"
+          ],
+          "week9": [
+            "GRPC005",
+            "GRPC006",
+            "GRPC007",
+            "GRPC008"
+          ]
+        }
       },
-      "2": {
-        "num": 2,
-        "title": "FE2 — Module 2 Oral Evaluation",
-        "week": "W10",
-        "dateStr": "Fri 12 Mar",
-        "groups": {
-          "A": {
-            "teacher": "Teacher A (TBC)",
-            "slotSummary": "Friday 13h15 - 15h15",
-            "room": "",
-            "slots": [
-              {
-                "num": 1,
-                "time": "13h15 – 13h45",
-                "type": "trio",
-                "students": [
-                  "GRPA007",
-                  "GRPA011",
-                  "GRPA004"
-                ]
-              },
-              {
-                "num": 2,
-                "time": "13h45 – 14h15",
-                "type": "trio",
-                "students": [
-                  "GRPA008",
-                  "GRPA009",
-                  "GRPA001"
-                ]
-              },
-              {
-                "num": 3,
-                "time": "14h15 – 14h45",
-                "type": "pair",
-                "students": [
-                  "GRPA005",
-                  "GRPA010"
-                ]
-              },
-              {
-                "num": 4,
-                "time": "14h45 – 15h15",
-                "type": "trio",
-                "students": [
-                  "GRPA002",
-                  "GRPA003",
-                  "GRPA006"
-                ]
-              }
-            ]
-          },
-          "B": {
-            "teacher": "Teacher B (TBC)",
-            "slotSummary": "Friday 13h15 - 15h15",
-            "room": "",
-            "slots": [
-              {
-                "num": 1,
-                "time": "13h15 – 13h45",
-                "type": "pair",
-                "students": [
-                  "GRPB001",
-                  "GRPB004"
-                ]
-              },
-              {
-                "num": 2,
-                "time": "13h45 – 14h15",
-                "type": "pair",
-                "students": [
-                  "GRPB002",
-                  "GRPB006"
-                ]
-              },
-              {
-                "num": 3,
-                "time": "14h15 – 14h45",
-                "type": "pair",
-                "students": [
-                  "GRPB003",
-                  "GRPB007"
-                ]
-              },
-              {
-                "num": 4,
-                "time": "14h45 – 15h15",
-                "type": "trio",
-                "students": [
-                  "GRPB005",
-                  "GRPB008",
-                  "GRPB009"
-                ]
-              }
-            ]
-          },
-          "C": {
-            "teacher": "Teacher C (TBC)",
-            "slotSummary": "Friday 13h15 - 15h15",
-            "room": "",
-            "slots": [
-              {
-                "num": 1,
-                "time": "13h15 – 13h45",
-                "type": "pair",
-                "students": [
-                  "GRPC008",
-                  "GRPC002"
-                ]
-              },
-              {
-                "num": 2,
-                "time": "13h45 – 14h15",
-                "type": "trio",
-                "students": [
-                  "GRPC009",
-                  "GRPC003",
-                  "GRPC001"
-                ]
-              },
-              {
-                "num": 3,
-                "time": "14h15 – 14h45",
-                "type": "pair",
-                "students": [
-                  "GRPC005",
-                  "GRPC007"
-                ]
-              },
-              {
-                "num": 4,
-                "time": "14h45 – 15h15",
-                "type": "pair",
-                "students": [
-                  "GRPC004",
-                  "GRPC006"
-                ]
-              }
-            ]
-          }
+      "overflow": {
+        "teacher4": {
+          "teacher": "Teacher 4 (TBC)",
+          "panel": "Overflow Panel 1",
+          "week": "Week 8 (Fri 26 Feb)",
+          "room": "",
+          "slots": [
+            {
+              "num": 1,
+              "time": "13h15 – 13h45",
+              "student": "GRPA009",
+              "group": "Group A"
+            },
+            {
+              "num": 2,
+              "time": "13h45 – 14h15",
+              "student": "GRPA010",
+              "group": "Group A"
+            },
+            {
+              "num": 3,
+              "time": "14h15 – 14h45",
+              "student": "GRPA011",
+              "group": "Group A"
+            },
+            {
+              "num": 4,
+              "time": "14h45 – 15h15",
+              "student": "Buffer / Debrief",
+              "group": "—"
+            }
+          ]
+        },
+        "teacher5": {
+          "teacher": "Teacher 5 (TBC)",
+          "panel": "Overflow Panel 2",
+          "week": "Week 9 (Fri 05 Mar)",
+          "room": "",
+          "slots": [
+            {
+              "num": 1,
+              "time": "13h15 – 13h45",
+              "student": "GRPB009",
+              "group": "Group B"
+            },
+            {
+              "num": 2,
+              "time": "13h45 – 14h15",
+              "student": "GRPC009",
+              "group": "Group C"
+            },
+            {
+              "num": 3,
+              "time": "14h15 – 14h45",
+              "student": "Buffer / Debrief",
+              "group": "—"
+            },
+            {
+              "num": 4,
+              "time": "14h45 – 15h15",
+              "student": "Buffer / Debrief",
+              "group": "—"
+            }
+          ]
         }
       }
     }
@@ -951,7 +946,8 @@
       const bodyEl = document.getElementById("modal-body");
       const promo = ADMIN_PROMO_CONFIG;
       const courseSched = ADMIN_ROTA_SCHEDULES.aas;
-      const feKeys = courseSched.feKeys || [1, 2];
+      const fe1 = courseSched.fes[1];
+      const mtf = courseSched.mtfPractice;
 
       const renderSlotStudents = (students) => {
         if (!students || students.length === 0) return "-";
@@ -960,8 +956,6 @@
         return `${students.slice(0, -1).join(", ")} &amp; ${students[students.length - 1]}`;
       };
 
-      const feHeaderPills = feKeys.map(k => `FE${k} (${courseSched.fes[k].week})`).join(" • ");
-
       bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Overview Card -->
@@ -969,21 +963,21 @@
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide text-white" style="background-color: ${theme.primary};">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                Official Formative Evaluation Rota • ${promo.promotion}
+                Official Evaluation &amp; MTF Mock Rotas • ${promo.promotion}
               </span>
               <span class="text-xs font-bold px-2.5 py-0.5 rounded-md border" style="color: ${theme.accent}; background-color: ${theme.highlight || "#fff7ed"}; border-color: ${theme.accent}30;">
                 Dynamic Rotations • 4 Slots of 30 min (2 Hours)
               </span>
             </div>
             <h3 class="text-base sm:text-lg font-bold text-slate-800">
-              30-Minute Oral Tutorial Timetables
+              30-Minute Oral Tutorial &amp; MTF Mock Test Timetables
             </h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-              Every student group has an exact <strong>30-minute appointment slot</strong> with their assigned teacher. To guarantee fairness, pairings and trios rotate across each Formative Evaluation, alternating early and late slots across all ${promo.numGroups} groups (${promo.totalStudents} students total).
+              Every student has an exact <strong>30-minute appointment slot</strong> with their assigned teacher. In <strong>Module 1</strong>, student teams deliver their 30-minute EASA Regulatory Extract presentations (FE1). In <strong>Module 2</strong>, each student attends an <strong>individual 30-minute MTF Mock Test trial</strong> across Weeks 8 &amp; 9.
             </p>
           </div>
 
-          <!-- Complete Semester Rotation Matrix Table -->
+          <!-- Section 1: Module 1 FE1 Rota Table -->
           <div class="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-2xs">
             <div class="p-3.5 bg-slate-800 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
               <div class="flex items-center gap-2.5">
@@ -992,16 +986,16 @@
                 </span>
                 <div>
                   <h4 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-white">
-                    ${courseSched.name} — Complete Semester Evaluation Schedule
+                    Module 1 — ${fe1.title}
                   </h4>
                   <p class="text-[11px] text-slate-300 font-medium">
-                    ${courseSched.dayTime} • 30-min evaluation slots
+                    ${fe1.dateStr} (${fe1.week}) • ${courseSched.dayTime} • 30-min team presentation slots
                   </p>
                 </div>
               </div>
               <div class="flex items-center gap-2">
-                <span class="text-[10px] sm:text-[11px] font-mono text-slate-300 font-bold bg-slate-700/80 px-2.5 py-1 rounded border border-slate-600/50">
-                  ${feHeaderPills}
+                <span class="text-[10px] sm:text-[11px] font-mono text-emerald-300 font-bold bg-slate-700/80 px-2.5 py-1 rounded border border-slate-600/50">
+                  FE1 (${fe1.week} • ${fe1.dateStr})
                 </span>
               </div>
             </div>
@@ -1009,42 +1003,36 @@
               <table class="w-full text-left text-xs border-collapse">
                 <thead>
                   <tr class="bg-slate-50 text-slate-600 border-b border-slate-200 text-[11px]">
-                    <th class="py-2.5 px-3 font-bold w-28">Group &amp; Slot</th>
-                    ${feKeys.map(k => `<th class="py-2.5 px-3 font-bold">FE${k} (${courseSched.fes[k].week} • ${courseSched.fes[k].dateStr})</th>`).join("")}
+                    <th class="py-2.5 px-3 font-bold w-32">Group &amp; Slot</th>
+                    <th class="py-2.5 px-3 font-bold">FE1 Student Teams &amp; Activity Focus (${fe1.dateStr})</th>
                   </tr>
                 </thead>
                 <tbody class="divide-y divide-slate-100 text-slate-700">
                   ${promo.groups.map(g => {
-                    const firstFeGrp = courseSched.fes[feKeys[0]].groups[g.letter];
-                    const roomInfoParts = feKeys.map(k => {
-                      const r = courseSched.fes[k].groups[g.letter].room;
-                      return r ? `FE${k} Room: ${r}` : "";
-                    }).filter(Boolean);
-                    const roomSuffix = roomInfoParts.length > 0 ? ` • ${roomInfoParts.join(" / ")}` : "";
+                    const grpFe = fe1.groups[g.letter];
+                    const roomSuffix = grpFe.room ? ` • Room: ${grpFe.room}` : "";
                     return `
                       <tr class="bg-slate-50/80 font-bold text-slate-800 text-[11px]">
-                        <td colspan="${feKeys.length + 1}" class="py-2 px-3 tracking-wide uppercase bg-slate-100">
-                          Group ${g.letter} (${firstFeGrp.slotSummary} • ${firstFeGrp.teacher}${roomSuffix})
+                        <td colspan="2" class="py-2 px-3 tracking-wide uppercase bg-slate-100">
+                          Group ${g.letter} (${grpFe.slotSummary} • ${grpFe.teacher}${roomSuffix})
                         </td>
                       </tr>
-                      ${[0, 1, 2, 3].map(idx => `
-                        <tr class="hover:bg-slate-50/70">
-                          <td class="py-2.5 px-3 font-bold font-mono text-slate-800 whitespace-nowrap">
-                            Slot ${idx + 1} (${firstFeGrp.slots[idx].time.split(" – ")[0]})
-                          </td>
-                          ${feKeys.map(k => {
-                            const slotObj = courseSched.fes[k].groups[g.letter].slots[idx];
-                            return `
-                              <td class="py-2.5 px-3">
-                                <span class="font-semibold block ${slotObj.type === "feedback" ? "text-emerald-800 font-bold" : (slotObj.type === "trio" || slotObj.type === "team" ? "text-amber-900 font-bold" : "text-slate-800")}">
-                                  ${renderSlotStudents(slotObj.students)}
-                                </span>
-                                <span class="text-[10px] ${slotObj.type === "feedback" ? "text-emerald-600 font-bold" : "text-slate-400 font-mono"}">${slotObj.type.toUpperCase()} (${slotObj.time})</span>
-                              </td>
-                            `;
-                          }).join("")}
-                        </tr>
-                      `).join("")}
+                      ${[0, 1, 2, 3].map(idx => {
+                        const slotObj = grpFe.slots[idx];
+                        return `
+                          <tr class="hover:bg-slate-50/70">
+                            <td class="py-2.5 px-3 font-bold font-mono text-slate-800 whitespace-nowrap">
+                              Slot ${idx + 1} (${slotObj.time.split(" – ")[0]})
+                            </td>
+                            <td class="py-2.5 px-3">
+                              <span class="font-semibold block ${slotObj.type === "feedback" ? "text-emerald-800 font-bold" : "text-amber-900 font-bold"}">
+                                ${renderSlotStudents(slotObj.students)}
+                              </span>
+                              <span class="text-[10px] ${slotObj.type === "feedback" ? "text-emerald-600 font-bold" : "text-slate-400 font-mono"}>${slotObj.type.toUpperCase()} (${slotObj.time})</span>
+                            </td>
+                          </tr>
+                        `;
+                      }).join("")}
                     `;
                   }).join("")}
                 </tbody>
@@ -1052,28 +1040,178 @@
             </div>
           </div>
 
+          <!-- Section 2: Module 2 MTF Practice Test Oral Mock Trials Table -->
+          <div class="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-2xs">
+            <div class="p-3.5 bg-slate-900 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+              <div class="flex items-center gap-2.5">
+                <span class="px-2.5 py-1 rounded font-mono font-black text-white text-[11px] shadow-2xs bg-sky-600">
+                  MTF ORAL
+                </span>
+                <div>
+                  <h4 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-white">
+                    Module 2 — ${mtf.title}
+                  </h4>
+                  <p class="text-[11px] text-slate-300 font-medium">
+                    ${mtf.dates} (${mtf.weeks}) • ${mtf.timeSummary} • Individual 30-min oral trials
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-[10px] sm:text-[11px] font-mono text-sky-300 font-bold bg-slate-800 px-2.5 py-1 rounded border border-slate-700">
+                  24 Primary Slots across 2 Weeks
+                </span>
+              </div>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-xs border-collapse">
+                <thead>
+                  <tr class="bg-slate-50 text-slate-600 border-b border-slate-200 text-[11px]">
+                    <th class="py-2.5 px-3 font-bold w-44">Group &amp; Teacher</th>
+                    <th class="py-2.5 px-3 font-bold w-28">Slot &amp; Time</th>
+                    <th class="py-2.5 px-3 font-bold">Week 8 (Fri 26 Feb) — Session 5</th>
+                    <th class="py-2.5 px-3 font-bold">Week 9 (Fri 05 Mar) — Session 6</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100 text-slate-700">
+                  ${['A', 'B', 'C'].filter(l => mtf.primary[l]).map(letter => {
+                    const grp = mtf.primary[letter];
+                    return `
+                      <tr class="bg-slate-50/80 font-bold text-slate-800 text-[11px]">
+                        <td colspan="4" class="py-2 px-3 tracking-wide uppercase bg-slate-100">
+                          ${grp.groupName} (${grp.slotSummary} • Assigned Examiner: ${grp.teacher}${grp.room ? ` • Room: ${grp.room}` : ''})
+                        </td>
+                      </tr>
+                      ${[0, 1, 2, 3].map(slotIdx => {
+                        const time = mtf.slotTimes[slotIdx];
+                        const sW8 = grp.week8[slotIdx] || "-";
+                        const sW9 = grp.week9[slotIdx] || "-";
+                        return `
+                          <tr class="hover:bg-slate-50/70">
+                            <td class="py-2.5 px-3 font-medium text-slate-500 font-mono">
+                              ${grp.teacher.split(" (")[0]}
+                            </td>
+                            <td class="py-2.5 px-3 font-bold font-mono text-slate-800 whitespace-nowrap">
+                              Slot ${slotIdx + 1} (${time.split(" – ")[0]})
+                            </td>
+                            <td class="py-2.5 px-3">
+                              <span class="font-bold text-sky-950 block">${sW8}</span>
+                              <span class="text-[10px] text-sky-600 font-mono font-medium">INDIVIDUAL (30 min • ${time})</span>
+                            </td>
+                            <td class="py-2.5 px-3">
+                              <span class="font-bold text-sky-950 block">${sW9}</span>
+                              <span class="text-[10px] text-sky-600 font-mono font-medium">INDIVIDUAL (30 min • ${time})</span>
+                            </td>
+                          </tr>
+                        `;
+                      }).join("")}
+                    `;
+                  }).join("")}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Section 3: Overflow Examination Panels (Teacher 4 & Teacher 5) -->
+          <div class="border border-amber-300 rounded-xl overflow-hidden bg-amber-50/40 shadow-2xs">
+            <div class="p-3.5 bg-amber-900 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+              <div class="flex items-center gap-2.5">
+                <span class="px-2.5 py-1 rounded font-mono font-black text-amber-900 text-[11px] shadow-2xs bg-amber-300">
+                  OVERFLOW
+                </span>
+                <div>
+                  <h4 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-white">
+                    MTF Overflow Examination Panels — 5 Candidates (Teacher 4 &amp; Teacher 5)
+                  </h4>
+                  <p class="text-[11px] text-amber-200 font-medium">
+                    Friday 13h15 – 15h15 • 30-min individual appointments for remaining candidates
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-[10px] sm:text-[11px] font-mono text-amber-100 font-bold bg-amber-800 px-2.5 py-1 rounded border border-amber-700">
+                  5 Overflow Candidates Accommodated
+                </span>
+              </div>
+            </div>
+            <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+              <!-- Panel 1: Teacher 4 -->
+              <div class="border border-slate-200 rounded-lg p-3.5 bg-white shadow-2xs space-y-2">
+                <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+                  <div>
+                    <h5 class="text-xs font-bold text-slate-800 uppercase tracking-wide">
+                      ${mtf.overflow.teacher4.panel}: ${mtf.overflow.teacher4.teacher}
+                    </h5>
+                    <p class="text-[11px] text-slate-500 font-medium">
+                      ${mtf.overflow.teacher4.week} • Room: ${mtf.overflow.teacher4.room || "TBC"}
+                    </p>
+                  </div>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-200">
+                    Group A Overflow
+                  </span>
+                </div>
+                <div class="divide-y divide-slate-100 text-xs">
+                  ${mtf.overflow.teacher4.slots.map(s => `
+                    <div class="py-1.5 flex items-center justify-between">
+                      <span class="font-mono text-slate-500 text-[11px]">Slot ${s.num} (${s.time})</span>
+                      <span class="font-bold ${s.student.includes("Buffer") ? "text-slate-400 italic" : "text-slate-900"}">
+                        ${s.student} ${s.group !== "—" ? `<span class="text-[10px] font-normal text-slate-500">(${s.group})</span>` : ""}
+                      </span>
+                    </div>
+                  `).join("")}
+                </div>
+              </div>
+
+              <!-- Panel 2: Teacher 5 -->
+              <div class="border border-slate-200 rounded-lg p-3.5 bg-white shadow-2xs space-y-2">
+                <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+                  <div>
+                    <h5 class="text-xs font-bold text-slate-800 uppercase tracking-wide">
+                      ${mtf.overflow.teacher5.panel}: ${mtf.overflow.teacher5.teacher}
+                    </h5>
+                    <p class="text-[11px] text-slate-500 font-medium">
+                      ${mtf.overflow.teacher5.week} • Room: ${mtf.overflow.teacher5.room || "TBC"}
+                    </p>
+                  </div>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-800 border border-amber-200">
+                    Groups B &amp; C Overflow
+                  </span>
+                </div>
+                <div class="divide-y divide-slate-100 text-xs">
+                  ${mtf.overflow.teacher5.slots.map(s => `
+                    <div class="py-1.5 flex items-center justify-between">
+                      <span class="font-mono text-slate-500 text-[11px]">Slot ${s.num} (${s.time})</span>
+                      <span class="font-bold ${s.student.includes("Buffer") ? "text-slate-400 italic" : "text-slate-900"}">
+                        ${s.student} ${s.group !== "—" ? `<span class="text-[10px] font-normal text-slate-500">(${s.group})</span>` : ""}
+                      </span>
+                    </div>
+                  `).join("")}
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Tutorial Day Preparation Rules -->
           <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
             <h5 class="text-xs font-bold text-slate-800 uppercase tracking-wide flex items-center gap-2">
               <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-              Essential Checklist for Formative Evaluation Day
+              Essential Checklist for Evaluation &amp; MTF Mock Test Days
             </h5>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 text-xs">
               <div class="p-3 bg-white border border-slate-200 rounded-lg">
-                <strong class="text-slate-800 block font-bold mb-1">1. Arrive Early</strong>
-                <p class="text-slate-600">Be outside the examination room 5 minutes before your scheduled start time.</p>
+                <strong class="text-slate-800 block font-bold mb-1">1. Arrive 5 Min Early</strong>
+                <p class="text-slate-600">Be outside your assigned examination room 5 minutes before your scheduled start time.</p>
               </div>
               <div class="p-3 bg-white border border-slate-200 rounded-lg">
-                <strong class="text-slate-800 block font-bold mb-1">2. Visual Supports</strong>
-                <p class="text-slate-600">Have your slides or handouts ready to display immediately. Do not read from notes!</p>
+                <strong class="text-slate-800 block font-bold mb-1">2. Valid Identification</strong>
+                <p class="text-slate-600">Bring your student ID card or national ID card required for DSAC test candidate verification.</p>
               </div>
               <div class="p-3 bg-white border border-slate-200 rounded-lg">
-                <strong class="text-slate-800 block font-bold mb-1">3. Technical Vocabulary &amp; Portfolio</strong>
-                <p class="text-slate-600">Have your technical vocabulary logs and portfolio reflection entries open and ready for inspection.</p>
+                <strong class="text-slate-800 block font-bold mb-1">3. Vocabulary &amp; Notes</strong>
+                <p class="text-slate-600">Have your learning portfolio reflection logs ready for inspection following your test slot.</p>
               </div>
               <div class="p-3 bg-white border border-slate-200 rounded-lg">
-                <strong class="text-slate-800 block font-bold mb-1">4. Self-Critique Ready</strong>
-                <p class="text-slate-600">Arrive with your personal strong points and weak points clearly thought through to discuss.</p>
+                <strong class="text-slate-800 block font-bold mb-1">4. Spoken Confidence</strong>
+                <p class="text-slate-600">Speak clearly, avoid long silent pauses, and actively self-correct without fear of making mistakes.</p>
               </div>
             </div>
           </div>

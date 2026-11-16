@@ -168,10 +168,20 @@ function parsePromoForm(rawText) {
             const rawDeckTitle = modTitles[`s${sNum}`] || `Session ${sNum}`;
             title = rawDeckTitle.replace(/\s-\s/, ' — ');
             // Last teaching session before FE gets Prep FE tag
-            const maxTeach = modNum === 1 ? 6 : 7;
-            if (sNum === maxTeach) {
-              typeUpper = 'PREP_FE';
-              tag = `Teaching Session • Prep FE${modNum}`;
+            if (modNum === 2) {
+              if (sNum === 5 || sNum === 6) {
+                typeUpper = 'MTF_MOCK';
+                tag = 'Mock Exam • 30-min Oral';
+              } else if (sNum === 7 || sNum === 8) {
+                typeUpper = 'TEACHING';
+                tag = 'MTF Revision';
+              }
+            } else {
+              const maxTeach = 6;
+              if (sNum === maxTeach) {
+                typeUpper = 'PREP_FE';
+                tag = `Teaching Session • Prep FE${modNum}`;
+              }
             }
           }
         } else {
@@ -518,12 +528,22 @@ function run() {
     if (w.isFe) {
       feWeeksList.push(w);
     }
+    let sessSub = w.isFe ? `${w.date} • 30-min evaluation slots (${groupsConfig.map(g => g.teacherPlaceholder).join(' / ')})` : '';
+    if (w.modNum === 2) {
+      if (w.courseWeek === 'W12') {
+        sessSub = `${w.date} • Individual 30-min oral test slots (Week 1 of 2)`;
+      } else if (w.courseWeek === 'W13') {
+        sessSub = `${w.date} • Individual 30-min oral test slots (Week 2 of 2)`;
+      } else if (w.courseWeek === 'W15') {
+        sessSub = `${w.date} • Official DSAC MTF Examination also administered in Week 11`;
+      }
+    }
     const sessionItem = {
       courseWeek: w.courseWeek,
       week: w.week,
       date: w.date,
       title: w.title,
-      subtitle: w.isFe ? `${w.date} • 30-min evaluation slots (${groupsConfig.map(g => g.teacherPlaceholder).join(' / ')})` : '',
+      subtitle: sessSub,
       tag: w.tag,
       isFe: w.isFe,
       rooms: w.rooms
@@ -555,7 +575,7 @@ function run() {
         },
         {
           num: 2,
-          title: 'Module 2: MTF (8 Sessions)',
+          title: 'Module 2: MTF ICAO Level 4 Test Preparation ICAO Level 4 Test Preparation (8 Sessions)',
           weeks: getWeeksRangeLabel(mod2Weeks),
           headerBg: '#1b382b',
           sessions: mod2Weeks
@@ -564,43 +584,100 @@ function run() {
     }
   };
 
-  // Build FE Rotas (FE1 for Module 1, FE2 for Module 2)
-  const feCount = Math.max(2, feWeeksList.length);
-  const fesObj = {};
-  for (let feIdx = 1; feIdx <= feCount; feIdx++) {
-    const feWeekInfo = feWeeksList[feIdx - 1] || {
-      week: feIdx === 1 ? 'W43' : 'W02',
-      date: feIdx === 1 ? 'Wed 21 Oct' : 'Wed 13 Jan',
-      rooms: { A: '', B: '', C: '', D: '' }
+  // Build FE1 Rota for Module 1 (Session 7 in Week 02)
+  const fe1WeekInfo = feWeeksList[0] || {
+    week: 'W02',
+    date: 'Fri 15 Jan',
+    rooms: { A: '', B: '', C: '', D: '' }
+  };
+  const fe1Entry = {
+    num: 1,
+    title: 'FE1 — EASA Regulatory Extract & Class Activity Evaluation',
+    week: fe1WeekInfo.week,
+    dateStr: fe1WeekInfo.date,
+    groups: {}
+  };
+  groupsConfig.forEach((g, gIdx) => {
+    const slotTimes = computeFour30MinSlots(g.slot);
+    fe1Entry.groups[g.letter] = {
+      teacher: g.teacherPlaceholder,
+      slotSummary: g.slot,
+      room: (fe1WeekInfo.rooms && fe1WeekInfo.rooms[g.letter]) || '',
+      slots: generateGroupFeSlots(g.students, slotTimes, 1, gIdx + 1)
     };
-    const feEntry = {
-      num: feIdx,
-      title: feIdx === 1
-        ? 'FE1 — EASA Regulatory Extract & Class Activity Evaluation'
-        : `FE${feIdx} — Module ${feIdx} Oral Evaluation`,
-      week: feWeekInfo.week,
-      dateStr: feWeekInfo.date,
-      groups: {}
-    };
-    groupsConfig.forEach((g, gIdx) => {
-      const slotTimes = computeFour30MinSlots(g.slot);
-      feEntry.groups[g.letter] = {
-        teacher: g.teacherPlaceholder,
-        slotSummary: g.slot,
-        room: (feWeekInfo.rooms && feWeekInfo.rooms[g.letter]) || '',
-        slots: generateGroupFeSlots(g.students, slotTimes, feIdx, gIdx + 1)
-      };
-    });
-    fesObj[feIdx] = feEntry;
-  }
+  });
+
+  const fesObj = { 1: fe1Entry };
+
+  // Build Module 2 MTF Practice Test Oral Mock Trials (Weeks 8 & 9)
+  const mtfPracticeObj = {
+    title: 'MTF Practice Test — 30-min Individual Oral Mock Trials',
+    weeks: 'W08 & W09',
+    dates: 'Fri 26 Feb & Fri 05 Mar',
+    timeSummary: 'Friday 13h15 – 15h15 (4 slots of 30 min)',
+    slotTimes: ['13h15 – 13h45', '13h45 – 14h15', '14h15 – 14h45', '14h45 – 15h15'],
+    primary: {
+      A: {
+        teacher: groupsConfig[0] ? groupsConfig[0].teacherPlaceholder : 'Teacher A (TBC)',
+        groupName: 'Group A',
+        slotSummary: groupsConfig[0] ? groupsConfig[0].slot : 'Friday 13h15 - 15h15',
+        room: '',
+        week8: [groupStudentIds.A[0], groupStudentIds.A[1], groupStudentIds.A[2], groupStudentIds.A[3]],
+        week9: [groupStudentIds.A[4], groupStudentIds.A[5], groupStudentIds.A[6], groupStudentIds.A[7]]
+      },
+      B: {
+        teacher: groupsConfig[1] ? groupsConfig[1].teacherPlaceholder : 'Teacher B (TBC)',
+        groupName: 'Group B',
+        slotSummary: groupsConfig[1] ? groupsConfig[1].slot : 'Friday 13h15 - 15h15',
+        room: '',
+        week8: [groupStudentIds.B[0], groupStudentIds.B[1], groupStudentIds.B[2], groupStudentIds.B[3]],
+        week9: [groupStudentIds.B[4], groupStudentIds.B[5], groupStudentIds.B[6], groupStudentIds.B[7]]
+      },
+      C: {
+        teacher: groupsConfig[2] ? groupsConfig[2].teacherPlaceholder : 'Teacher C (TBC)',
+        groupName: 'Group C',
+        slotSummary: groupsConfig[2] ? groupsConfig[2].slot : 'Friday 13h15 - 15h15',
+        room: '',
+        week8: [groupStudentIds.C[0], groupStudentIds.C[1], groupStudentIds.C[2], groupStudentIds.C[3]],
+        week9: [groupStudentIds.C[4], groupStudentIds.C[5], groupStudentIds.C[6], groupStudentIds.C[7]]
+      }
+    },
+    overflow: {
+      teacher4: {
+        teacher: 'Teacher 4 (TBC)',
+        panel: 'Overflow Panel 1',
+        week: 'Week 8 (Fri 26 Feb)',
+        room: '',
+        slots: [
+          { num: 1, time: '13h15 – 13h45', student: groupStudentIds.A[8] || 'GRPA009', group: 'Group A' },
+          { num: 2, time: '13h45 – 14h15', student: groupStudentIds.A[9] || 'GRPA010', group: 'Group A' },
+          { num: 3, time: '14h15 – 14h45', student: groupStudentIds.A[10] || 'GRPA011', group: 'Group A' },
+          { num: 4, time: '14h45 – 15h15', student: 'Buffer / Debrief', group: '—' }
+        ]
+      },
+      teacher5: {
+        teacher: 'Teacher 5 (TBC)',
+        panel: 'Overflow Panel 2',
+        week: 'Week 9 (Fri 05 Mar)',
+        room: '',
+        slots: [
+          { num: 1, time: '13h15 – 13h45', student: groupStudentIds.B[8] || 'GRPB009', group: 'Group B' },
+          { num: 2, time: '13h45 – 14h15', student: groupStudentIds.C[8] || 'GRPC009', group: 'Group C' },
+          { num: 3, time: '14h15 – 14h45', student: 'Buffer / Debrief', group: '—' },
+          { num: 4, time: '14h45 – 15h15', student: 'Buffer / Debrief', group: '—' }
+        ]
+      }
+    }
+  };
 
   const rotaSchedules = {
     aas: {
       code: cfg.tracks.AT.code,
       name: cfg.tracks.AT.name,
       dayTime: cfg.tracks.AT.scheduleSummary,
-      feKeys: Object.keys(fesObj).map(Number),
-      fes: fesObj
+      feKeys: [1],
+      fes: fesObj,
+      mtfPractice: mtfPracticeObj
     }
   };
 

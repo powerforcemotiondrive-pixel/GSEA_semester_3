@@ -10,13 +10,14 @@
           s6: "Session 6 - The Corrective Action Plan & CAP Review"
         },
         2: {
-          s1: "Session 1 - Aerodynamics & Flight Principles",
-          s2: "Session 2 - Aircraft Anatomy: Structure & Systems",
-          s3: "Session 3 - Commercial Aircraft & Airlines",
-          s4: "Session 4 - Significant Aviation Accidents & Aircraft Types",
-          s5: "Session 5 - Significant Aviation Accidents & Aircraft Types",
-          s6: "Session 6 - Significant Aviation Accidents & Aircraft Types",
-          s7: "Session 7 - Significant Aviation Accidents & Aircraft Types"
+          s1: "Session 1 - Introduction to the MTF ICAO Level Test",
+          s2: "Session 2 - The MTF Picture Exercise & Spoken Description Practice",
+          s3: "Session 3 - The MTF Listening Section & Audio Comprehension Practice",
+          s4: "Session 4 - The MTF Text Exercise & Technical Summary Practice",
+          s5: "Session 5 - MTF Practice Test (Part 1 - Individual 30-Min Oral Trials)",
+          s6: "Session 6 - MTF Practice Test (Part 2 - Individual 30-Min Oral Trials)",
+          s7: "Session 7 - MTF Comprehensive Revision & Error Analysis",
+          s8: "Session 8 - MTF Final Revision & Test Readiness"
         }
       };
 
@@ -68,24 +69,34 @@
           s6: `Welcome to Session 6! Today we work with official EASA Corrective Action Plan (CAP) documentation and prepare for Session 7.<br><br><em>Document skill:</em> Using formal commitment language (we undertake to, subject to approval) to agree on CAP deadlines, and collaborating in teams of up to 4 to design your Session 7 peer activity.<br><br>${formativeEvaluationNotice}`
         },
         2: {
-          s1: `Welcome to Module 2 on MTF! In this opening session, we explore the four fundamental forces of flight, aircraft control axes, and wing airflow dynamics while developing spoken fluency and cause-and-effect structures.<br><br><em>Subject overview:</em> Lift, weight, thrust, and drag in equilibrium; pitch, roll, and yaw control surfaces; angle of attack, boundary layer separation, and stall recovery procedures.<br><br>${formativeEvaluationNotice}`,
-          s2: `Welcome to Session 2! We examine the external airframe and internal layout of modern commercial aircraft, practicing accurate spatial descriptions, functional explanations, and exterior pre-flight walkaround defect reporting.<br><br><em>Subject overview:</em> Fuselage, empennage, leading-edge slats, trailing-edge flaps, spoilers, landing gear, radome, pitot-static probes, flight deck controls, cabin amenities, and walkaround inspection dialogues.<br><br>${formativeEvaluationNotice}`,
-          s3: `Welcome to Session 3! In this class, we analyze commercial aircraft classifications, fleet economics, global aerospace manufacturers, and airline business models.<br><br><em>Subject overview:</em> Regional turboprops, single-aisle narrowbodies, twin-aisle widebodies, freighters, Airbus vs. Boeing duopoly competition, airline fleet planning, and operational route cost comparisons.<br><br>${formativeEvaluationNotice}`,
-          s4: `Welcome to Session 4! We investigate landmark aviation accidents throughout history, analyzing the aircraft types involved, mechanical versus human contributing factors, and permanent safety evolutions.<br><br><em>Subject overview:</em> Accident investigation methodology (CVR/FDR, BEA, NTSB), past narrative tenses, and an in-class 15-minute quick-fire group research sprint analyzing landmark case studies followed by spoken safety presentations.<br><br>${formativeEvaluationNotice}`,
-          s5: `Welcome to Session 5! We investigate landmark aviation accidents throughout history, analyzing the aircraft types involved, mechanical versus human contributing factors, and permanent safety evolutions.<br><br><em>Subject overview:</em> Accident investigation methodology (CVR/FDR, BEA, NTSB), past narrative tenses, and an in-class 15-minute quick-fire group research sprint analyzing landmark case studies followed by spoken safety presentations.<br><br>${formativeEvaluationNotice}`,
-          s6: `Welcome to Session 6! We investigate landmark aviation accidents throughout history, analyzing the aircraft types involved, mechanical versus human contributing factors, and permanent safety evolutions.<br><br><em>Subject overview:</em> Accident investigation methodology (CVR/FDR, BEA, NTSB), past narrative tenses, and an in-class 15-minute quick-fire group research sprint analyzing landmark case studies followed by spoken safety presentations.<br><br>${formativeEvaluationNotice}`,
-          s7: `Welcome to Session 7! We investigate landmark aviation accidents throughout history, analyzing the aircraft types involved, mechanical versus human contributing factors, and permanent safety evolutions.<br><br><em>Subject overview:</em> Accident investigation methodology (CVR/FDR, BEA, NTSB), past narrative tenses, and an in-class 15-minute quick-fire group research sprint analyzing landmark case studies followed by spoken safety presentations.<br><br>${formativeEvaluationNotice}`
+          s1: `Welcome to Module 2! In this opening session, we introduce the official MTF ICAO English examination approved by the DSAC. We break down the test structure, examine the six ICAO Level 4 language criteria (pronunciation, grammatical structures, vocabulary, fluency, comprehension, and interactions), and practice self-introductions and initial spoken questions.<br><br><em>Subject overview:</em> MTF test structure overview, ICAO rating scale benchmarks, pronunciation clarity, and speaking confidence strategies.<br><br>${formativeEvaluationNotice}`,
+          s2: `Welcome to Session 2! Today we focus on the MTF Picture Exercise. We develop practical spoken methods for describing complex aviation scenes, positioning elements clearly in space, identifying hazards, and explaining cause and effect under timed test conditions.<br><br><em>Subject overview:</em> Spatial description vocabulary, operational hazard identification, chronological sequence language, and individual timed speaking simulations.<br><br>${formativeEvaluationNotice}`,
+          s3: `Welcome to Session 3! In this class, we practice the MTF Listening Section. We listen to authentic air-ground communications, emergency transmissions, and non-routine radio calls, practicing note-taking and delivering immediate spoken summaries.<br><br><em>Subject overview:</em> Telemetry audio comprehension, standard phraseology vs. plain English in non-routine events, repetition strategies, and timed spoken question responses.<br><br>${formativeEvaluationNotice}`,
+          s4: `Welcome to Session 4! Today we tackle the MTF Text Exercise. We practice scanning technical aviation safety bulletins and reports under strict time limits, isolating essential facts, and delivering a clear 2-minute spoken summary.<br><br><em>Subject overview:</em> Technical text analysis, rapid paraphrasing, structured oral synthesis, and answering examiner follow-up questions.<br><br>${formativeEvaluationNotice}`,
+          s5: `Welcome to Session 5! Today is Part 1 of the MTF Individual Practice Test. Each student takes part in an individual 30-minute oral mock trial with their teacher under realistic exam conditions, covering picture description, audio comprehension, and technical text explanation.<br><br><em>Subject overview:</em> Individual 30-minute oral mock test trials (Week 1 of 2) with immediate examiner feedback, individual scoring against ICAO Level 4 descriptors, and personal action points.<br><br>${formativeEvaluationNotice}`,
+          s6: `Welcome to Session 6! Today is Part 2 of the MTF Individual Practice Test. We complete individual 30-minute oral mock trials for remaining candidates under authentic test conditions with targeted feedback from your teacher.<br><br><em>Subject overview:</em> Individual 30-minute oral mock test trials (Week 2 of 2) with immediate examiner feedback, individual scoring against ICAO Level 4 descriptors, and personal action points.<br><br>${formativeEvaluationNotice}`,
+          s7: `Welcome to Session 7! In this comprehensive revision session, we review common errors from the practice tests, tackle high-frequency pronunciation and grammar pitfalls, and strengthen conversational strategies.<br><br><em>Subject overview:</em> Practice test debrief and error analysis, fluency repair strategies, technical vocabulary consolidation, and peer speaking clinics.<br><br>${formativeEvaluationNotice}`,
+          s8: `Welcome to Session 8! Today is our final MTF revision and test readiness session before the official exam. We conduct final speed-speaking drills, review exam-day best practices, and answer any remaining questions.<br><br><em>Subject overview:</em> Final MTF exam readiness, timed speaking warm-ups, confidence-building drills, and examination guidelines.<br><br><strong>Note: The official DSAC ICAO MTF Examination is also scheduled during Week 11.</strong>`
         }
       };
 
       const desc = aasDescriptions[modNumber] || aasDescriptions[1];
 
-      const teachingSessionsCount = feSessionNum - 1;
+      const sessionCount = modNumber === 1 ? 6 : 8;
       const teachingPages = [];
-      for (let s = 1; s <= teachingSessionsCount; s++) {
+      for (let s = 1; s <= sessionCount; s++) {
         let tagLabel = `Module ${modNumber} • Session ${s}`;
         if (modNumber === 1) {
           tagLabel = s <= 3 ? `Module 1 • EASA Docs • Session ${s}` : `Module 1 • Safety, Audits & FE • Session ${s}`;
+        } else if (modNumber === 2) {
+          if (s === 1) tagLabel = "Module 2 • MTF Intro • Session 1";
+          else if (s === 2) tagLabel = "Module 2 • Picture Test • Session 2";
+          else if (s === 3) tagLabel = "Module 2 • Listening Test • Session 3";
+          else if (s === 4) tagLabel = "Module 2 • Text Exercise • Session 4";
+          else if (s === 5) tagLabel = "Module 2 • Mock Test Part 1 • Session 5";
+          else if (s === 6) tagLabel = "Module 2 • Mock Test Part 2 • Session 6";
+          else if (s === 7) tagLabel = "Module 2 • Revision & Errors • Session 7";
+          else if (s === 8) tagLabel = "Module 2 • Final Revision • Session 8";
         }
         teachingPages.push({
           tag: tagLabel,
@@ -96,34 +107,35 @@
       }
 
       const pages = [
-        ...teachingPages,
-        {
-          tag: modNumber === 1 ? `Module 1 • FE • Session ${feSessionNum}` : `Module ${modNumber} • Session ${feSessionNum}`,
-          title: `Session ${feSessionNum} - EASA Regulatory Extract & Class Activity Evaluation`,
-          description: modNumber === 1
-            ? `Welcome to Session ${feSessionNum}! In this Formative Evaluation, student teams of up to 4 take the floor to deliver an engaging 30-minute interactive session based on an official EASA documentation extract of their choice. Your team will deliver a comprehensive spoken breakdown in plain English, teach 3 to 5 new technical words, and lead creative reading and speaking exercises for classmates.<br><br><em>Subject overview:</em> Formative Evaluation 1 — EASA Regulatory Extract &amp; Class Activity: Regulatory breakdown, technical vocabulary teaching, creative classmate exercises, and final teacher feedback.<br><br>All work in this session contributes directly toward your Formative Evaluation.`
-            : (modNumber === 2
-                ? `Welcome to Session ${feSessionNum}! In this Formative Evaluation, you and your partner will present a comprehensive technical profile of an aircraft or an airline of your choice.<br><br><em>Subject overview:</em> Formative Evaluation 2 — Aircraft / Airlines: Technical specifications, operational metrics, historical milestones, and safety analysis.<br><br>All work in this session contributes directly toward your Formative Evaluation.`
-                : `Welcome to Session ${feSessionNum}!`),
+        ...teachingPages
+      ];
+
+      if (modNumber === 1) {
+        pages.push({
+          tag: `Module 1 • FE • Session 7`,
+          title: `Session 7 - EASA Regulatory Extract & Class Activity Evaluation`,
+          description: `Welcome to Session 7! In this Formative Evaluation, student teams of up to 4 take the floor to deliver an engaging 30-minute interactive session based on an official EASA documentation extract of their choice. Your team will deliver a comprehensive spoken breakdown in plain English, teach 3 to 5 new technical words, and lead creative reading and speaking exercises for classmates.<br><br><em>Subject overview:</em> Formative Evaluation 1 — EASA Regulatory Extract &amp; Class Activity: Regulatory breakdown, technical vocabulary teaching, creative classmate exercises, and final teacher feedback.<br><br>All work in this session contributes directly toward your Formative Evaluation.`,
           isFe: true,
           imageUrl: images.fe
-        },
-        {
-          tag: "GSEA 25A • Course Admin",
-          title: "Course Admin",
-          description: "Welcome to the GSEA 25A Course Administration Hub. Access your official class groups (Group A, Group B & Group C), teacher assignments, weekly schedules, and dynamic 30-minute Formative Evaluation tutorial rotas.<br><br><em>Subject overview:</em> Weekly classes for Technical English (AT • LV125E).<br><br>Consult your designated FE timeslots and arrive 5 minutes before your slot with your presentation supports and updated learning portfolio ready.",
-          isAdmin: true,
-          adminUrl: "admin.html",
-          imageUrl: images.admin
-        },
-        {
-          tag: "Technical English • Course Guidance",
-          title: "Student Guide & Objectives",
-          description: "Essential student guidance for Semester 3 Module 1 (EASA Docs, Safety &amp; Audits): how to navigate European aerodrome regulations, continuous speaking progress, formative evaluation (FE1 flipped lesson), portfolio logging, and official ENAC course objectives (English &amp; French).",
-          isObjectives: true,
-          imageUrl: "images/semester_objectives.jpg"
-        }
-      ];
+        });
+      }
+
+      pages.push({
+        tag: "GSEA 25A • Course Admin",
+        title: "Course Admin",
+        description: "Welcome to the GSEA 25A Course Administration Hub. Access your official class groups (Group A, Group B & Group C), teacher assignments, weekly schedules, and dynamic 30-minute evaluation rotas.<br><br><em>Subject overview:</em> Weekly classes for Technical English (AT • LV125E).<br><br>Consult your designated timeslots and arrive 5 minutes before your slot with your presentation supports and updated learning portfolio ready.",
+        isAdmin: true,
+        adminUrl: "admin.html",
+        imageUrl: images.admin
+      });
+
+      pages.push({
+        tag: "Technical English • Course Guidance",
+        title: "Student Guide & Objectives",
+        description: "Essential student guidance for Semester 3: how to navigate European aerodrome regulations, MTF exam preparation, continuous speaking progress, evaluation guidelines, portfolio logging, and official ENAC course objectives (English &amp; French).",
+        isObjectives: true,
+        imageUrl: "images/semester_objectives.jpg"
+      });
 
       if (modNumber === 1) {
         pages.push({
@@ -189,8 +201,8 @@
           {
             id: 2,
             name: "Module 2",
-            subtitle: "MTF",
-            supertitle: "GSEA AT SEMESTER 3 - MODULE 2: MTF",
+            subtitle: "MTF ICAO Level 4 Test Preparation",
+            supertitle: "GSEA AT SEMESTER 3 - MODULE 2: MTF ICAO LEVEL 4 TEST PREPARATION",
             disabled: true,
             isMuted: true,
             ...AAS_MODULE_THEMES[2],
