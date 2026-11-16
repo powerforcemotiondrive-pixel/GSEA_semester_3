@@ -159,7 +159,9 @@ function parsePromoForm(rawText) {
             feIndex = parseInt(deckMatch[4], 10) || modNum;
             typeUpper = `FE${feIndex}`;
             tag = 'Grade /20';
-            title = `FORMATIVE EVALUATION ${feIndex} (FE${feIndex}) — Oral Tutorials`;
+            title = feIndex === 1
+              ? 'Session 7 — FORMATIVE EVALUATION 1 (FE1): EASA Regulatory Extract & Class Activity Evaluation'
+              : `Session 8 — FORMATIVE EVALUATION 2 (FE2) — Oral Tutorials`;
           } else {
             const sNum = parseInt(deckMatch[3], 10) || 1;
             const modTitles = deckTitles[modNum] || {};
@@ -234,13 +236,13 @@ function computeFour30MinSlots(slotStr) {
 // 3. Compute Pair/Trio description badge for a group of size N across 4 slots
 function getPairTrioSummary(count) {
   if (count <= 0) return '0 Students';
+  if (count === 9) return '3 Teams of 3';
+  if (count === 11) return '2 Teams of 4 + 1 Team of 3';
+  if (count === 10) return '1 Team of 4 + 2 Teams of 3';
+  if (count === 12) return '3 Teams of 4';
   if (count === 6) return '3 Pairs';
   if (count === 7) return '2 Pairs + 1 Trio';
   if (count === 8) return '4 Pairs';
-  if (count === 9) return '3 Pairs + 1 Trio';
-  if (count === 10) return '2 Pairs + 2 Trios';
-  if (count === 11) return '1 Pair + 3 Trios';
-  if (count === 12) return '4 Trios';
   const trios = Math.max(0, Math.min(4, count - 8));
   const pairs = Math.max(0, 4 - trios);
   if (pairs > 0 && trios > 0) {
@@ -256,6 +258,68 @@ function getPairTrioSummary(count) {
 function generateGroupFeSlots(studentIds, fourTimeStrings, feNumber, groupIndex) {
   const n = studentIds.length;
   if (n === 0) return [];
+
+  // FE1 Flipped Lesson: 3 student teams (3 to 4 students per team) + Slot 4 Whole-Class Feedback
+  if (feNumber === 1) {
+    let team1 = [];
+    let team2 = [];
+    let team3 = [];
+
+    if (n === 11) {
+      // Group A (11): Team 1 (4), Team 2 (4), Team 3 (3)
+      team1 = [studentIds[0], studentIds[1], studentIds[2], studentIds[3]];
+      team2 = [studentIds[4], studentIds[5], studentIds[6], studentIds[7]];
+      team3 = [studentIds[8], studentIds[9], studentIds[10]];
+    } else if (n === 9) {
+      // Groups B & C (9): 3 Teams of 3
+      team1 = [studentIds[0], studentIds[1], studentIds[2]];
+      team2 = [studentIds[3], studentIds[4], studentIds[5]];
+      team3 = [studentIds[6], studentIds[7], studentIds[8]];
+    } else if (n === 10) {
+      team1 = [studentIds[0], studentIds[1], studentIds[2], studentIds[3]];
+      team2 = [studentIds[4], studentIds[5], studentIds[6]];
+      team3 = [studentIds[7], studentIds[8], studentIds[9]];
+    } else if (n === 12) {
+      team1 = [studentIds[0], studentIds[1], studentIds[2], studentIds[3]];
+      team2 = [studentIds[4], studentIds[5], studentIds[6], studentIds[7]];
+      team3 = [studentIds[8], studentIds[9], studentIds[10], studentIds[11]];
+    } else {
+      const q = Math.floor(n / 3);
+      const rem = n % 3;
+      const s1 = q + (rem > 0 ? 1 : 0);
+      const s2 = q + (rem > 1 ? 1 : 0);
+      team1 = studentIds.slice(0, s1);
+      team2 = studentIds.slice(s1, s1 + s2);
+      team3 = studentIds.slice(s1 + s2);
+    }
+
+    return [
+      {
+        num: 1,
+        time: fourTimeStrings[0],
+        type: team1.length >= 4 ? 'team' : 'trio',
+        students: team1
+      },
+      {
+        num: 2,
+        time: fourTimeStrings[1],
+        type: team2.length >= 4 ? 'team' : 'trio',
+        students: team2
+      },
+      {
+        num: 3,
+        time: fourTimeStrings[2],
+        type: team3.length >= 4 ? 'team' : 'trio',
+        students: team3
+      },
+      {
+        num: 4,
+        time: fourTimeStrings[3],
+        type: 'feedback',
+        students: ['Whole-Class Feedback & Teacher Debrief']
+      }
+    ];
+  }
 
   // Pre-verified fair rotation permutations for 6, 7, 8, 9, 10, 11, 12 students
   // Guarantees 100% unique students per FE, diverse peer pairings across FE1/FE2/FE3,
@@ -484,7 +548,7 @@ function run() {
       modules: [
         {
           num: 1,
-          title: 'Module 1: Documents & Maps (7 Sessions)',
+          title: 'Module 1: EASA Docs, Safety & Audits (7 Sessions)',
           weeks: getWeeksRangeLabel(mod1Weeks),
           headerBg: '#1e293b',
           sessions: mod1Weeks
@@ -511,7 +575,9 @@ function run() {
     };
     const feEntry = {
       num: feIdx,
-      title: `FE${feIdx} — Module ${feIdx} Oral Evaluation`,
+      title: feIdx === 1
+        ? 'FE1 — EASA Regulatory Extract & Class Activity Evaluation'
+        : `FE${feIdx} — Module ${feIdx} Oral Evaluation`,
       week: feWeekInfo.week,
       dateStr: feWeekInfo.date,
       groups: {}
@@ -637,12 +703,12 @@ function buildStaticAdminGroupsHtml(promo) {
           </p>
         </div>
 
-        <!-- Faculty Grid -->
+        <!-- Teachers Grid -->
         <div class="space-y-3">
           <div class="flex items-center gap-2">
             <span class="w-2.5 h-2.5 rounded-full bg-orange-600"></span>
             <h3 class="text-xs sm:text-sm font-bold text-slate-800 uppercase tracking-wide">
-              Teaching Faculty &amp; Weekly Schedules
+              Teachers &amp; Weekly Schedules
             </h3>
           </div>
 

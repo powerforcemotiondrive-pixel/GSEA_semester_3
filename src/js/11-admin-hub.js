@@ -3,7 +3,7 @@
   "promotion": "GSEA 25A",
   "semester": 3,
   "academicYear": "2026-2027",
-  "totalStudents": 30,
+  "totalStudents": 29,
   "numGroups": 3,
   "trackCode": "LV125E",
   "trackName": "Technical English (AT)",
@@ -14,8 +14,8 @@
       "key": "groupA",
       "letter": "A",
       "name": "Group A",
-      "count": 10,
-      "pairTrioBadge": "2 Pairs + 2 Trios",
+      "count": 11,
+      "pairTrioBadge": "2 Teams of 4 + 1 Team of 3",
       "teacherPlaceholder": "Teacher A (TBC)",
       "slot": "Friday 13h15 - 15h15",
       "headerBg": "#1e293b",
@@ -30,15 +30,16 @@
         "GRPA007",
         "GRPA008",
         "GRPA009",
-        "GRPA010"
+        "GRPA010",
+        "GRPA011"
       ]
     },
     {
       "key": "groupB",
       "letter": "B",
       "name": "Group B",
-      "count": 10,
-      "pairTrioBadge": "2 Pairs + 2 Trios",
+      "count": 9,
+      "pairTrioBadge": "3 Teams of 3",
       "teacherPlaceholder": "Teacher B (TBC)",
       "slot": "Friday 13h15 - 15h15",
       "headerBg": "#c2410c",
@@ -52,16 +53,15 @@
         "GRPB006",
         "GRPB007",
         "GRPB008",
-        "GRPB009",
-        "GRPB010"
+        "GRPB009"
       ]
     },
     {
       "key": "groupC",
       "letter": "C",
       "name": "Group C",
-      "count": 10,
-      "pairTrioBadge": "2 Pairs + 2 Trios",
+      "count": 9,
+      "pairTrioBadge": "3 Teams of 3",
       "teacherPlaceholder": "Teacher C (TBC)",
       "slot": "Friday 13h15 - 15h15",
       "headerBg": "#334155",
@@ -75,8 +75,7 @@
         "GRPC006",
         "GRPC007",
         "GRPC008",
-        "GRPC009",
-        "GRPC010"
+        "GRPC009"
       ]
     }
   ]
@@ -92,13 +91,13 @@
       {
         "num": 1,
         "title": "Module 1: EASA Docs, Safety & Audits (7 Sessions)",
-        "weeks": "W37 – W43",
+        "weeks": "W47 – W02",
         "headerBg": "#1e293b",
         "sessions": [
           {
             "courseWeek": "W01",
-            "week": "W37",
-            "date": "Wed 09 Sep",
+            "week": "W47",
+            "date": "Fri 20 Nov",
             "title": "Session 1 — EASA Rules & Modal Precision",
             "subtitle": "",
             "tag": "Teaching Session",
@@ -112,8 +111,8 @@
           },
           {
             "courseWeek": "W02",
-            "week": "W38",
-            "date": "Wed 16 Sep",
+            "week": "W48",
+            "date": "Fri 27 Nov",
             "title": "Session 2 — Safety Alerts & Ramp Briefings",
             "subtitle": "",
             "tag": "Teaching Session",
@@ -127,8 +126,8 @@
           },
           {
             "courseWeek": "W03",
-            "week": "W39",
-            "date": "Wed 23 Sep",
+            "week": "W49",
+            "date": "Fri 04 Dec",
             "title": "Session 3 — Special Requests & Runway Safety Cases",
             "subtitle": "",
             "tag": "Teaching Session",
@@ -142,8 +141,8 @@
           },
           {
             "courseWeek": "W04",
-            "week": "W40",
-            "date": "Wed 30 Sep",
+            "week": "W50",
+            "date": "Fri 11 Dec",
             "title": "Session 4 — Ground Inspection & Audit Findings",
             "subtitle": "",
             "tag": "Teaching Session",
@@ -157,8 +156,8 @@
           },
           {
             "courseWeek": "W05",
-            "week": "W41",
-            "date": "Wed 07 Oct",
+            "week": "W51",
+            "date": "Fri 18 Dec",
             "title": "Session 5 — Multi-Source Incident Investigation & Root Cause Analysis",
             "subtitle": "",
             "tag": "Teaching Session",
@@ -171,9 +170,13 @@
             }
           },
           {
+            "isHoliday": true,
+            "text": "🎄 Weeks 52 & 53 — Christmas & Winter Vacation (No Classes)"
+          },
+          {
             "courseWeek": "W06",
-            "week": "W42",
-            "date": "Wed 14 Oct",
+            "week": "W01",
+            "date": "Fri 08 Jan",
             "title": "Session 6 — The Corrective Action Plan & CAP Review",
             "subtitle": "",
             "tag": "Teaching Session • Prep FE1",
@@ -187,10 +190,10 @@
           },
           {
             "courseWeek": "W07",
-            "week": "W43",
-            "date": "Wed 21 Oct",
+            "week": "W02",
+            "date": "Fri 15 Jan",
             "title": "Session 7 — FORMATIVE EVALUATION 1 (FE1): EASA Regulatory Extract & Class Activity Evaluation",
-            "subtitle": "Wed 21 Oct • 30-min student presentation slots (Teacher A (TBC) / Teacher B (TBC) / Teacher C (TBC))",
+            "subtitle": "Fri 15 Jan • 30-min evaluation slots (Teacher A (TBC) / Teacher B (TBC) / Teacher C (TBC))",
             "tag": "Grade /20",
             "isFe": true,
             "rooms": {
@@ -205,17 +208,13 @@
       {
         "num": 2,
         "title": "Module 2: MTF (8 Sessions)",
-        "weeks": "W45 – W02",
+        "weeks": "W03 – W10",
         "headerBg": "#1b382b",
         "sessions": [
           {
-            "isHoliday": true,
-            "text": "🍂 Week 44 — Autumn Academic Break (No Classes)"
-          },
-          {
             "courseWeek": "W08",
-            "week": "W45",
-            "date": "Wed 04 Nov",
+            "week": "W03",
+            "date": "Fri 22 Jan",
             "title": "Session 1 — Aerodynamics & Flight Principles",
             "subtitle": "",
             "tag": "Teaching Session",
@@ -229,8 +228,8 @@
           },
           {
             "courseWeek": "W09",
-            "week": "W46",
-            "date": "Wed 11 Nov",
+            "week": "W04",
+            "date": "Fri 29 Jan",
             "title": "Session 2 — Aircraft Anatomy: Structure & Systems",
             "subtitle": "",
             "tag": "Teaching Session",
@@ -244,8 +243,8 @@
           },
           {
             "courseWeek": "W10",
-            "week": "W47",
-            "date": "Wed 18 Nov",
+            "week": "W05",
+            "date": "Fri 05 Feb",
             "title": "Session 3 — Commercial Aircraft & Airlines",
             "subtitle": "",
             "tag": "Teaching Session",
@@ -259,8 +258,8 @@
           },
           {
             "courseWeek": "W11",
-            "week": "W48",
-            "date": "Wed 25 Nov",
+            "week": "W06",
+            "date": "Fri 12 Feb",
             "title": "Session 4 — Significant Aviation Accidents & Aircraft Types",
             "subtitle": "",
             "tag": "Teaching Session",
@@ -274,8 +273,8 @@
           },
           {
             "courseWeek": "W12",
-            "week": "W49",
-            "date": "Wed 02 Dec",
+            "week": "W07",
+            "date": "Fri 19 Feb",
             "title": "Session 5 — Significant Aviation Accidents & Aircraft Types",
             "subtitle": "",
             "tag": "Teaching Session",
@@ -289,8 +288,8 @@
           },
           {
             "courseWeek": "W13",
-            "week": "W50",
-            "date": "Wed 09 Dec",
+            "week": "W08",
+            "date": "Fri 26 Feb",
             "title": "Session 6 — Significant Aviation Accidents & Aircraft Types",
             "subtitle": "",
             "tag": "Teaching Session",
@@ -303,13 +302,9 @@
             }
           },
           {
-            "isHoliday": true,
-            "text": "🎄 Weeks 51 & 52 — Christmas & Winter Vacation (No Classes)"
-          },
-          {
             "courseWeek": "W14",
-            "week": "W01",
-            "date": "Wed 06 Jan",
+            "week": "W09",
+            "date": "Fri 05 Mar",
             "title": "Session 7 — Significant Aviation Accidents & Aircraft Types",
             "subtitle": "",
             "tag": "Teaching Session • Prep FE2",
@@ -323,10 +318,10 @@
           },
           {
             "courseWeek": "W15",
-            "week": "W02",
-            "date": "Wed 13 Jan",
-            "title": "FORMATIVE EVALUATION 2 (FE2) — Oral Tutorials",
-            "subtitle": "Wed 13 Jan • 30-min evaluation slots (Teacher A (TBC) / Teacher B (TBC) / Teacher C (TBC))",
+            "week": "W10",
+            "date": "Fri 12 Mar",
+            "title": "Session 8 — FORMATIVE EVALUATION 2 (FE2) — Oral Tutorials",
+            "subtitle": "Fri 12 Mar • 30-min evaluation slots (Teacher A (TBC) / Teacher B (TBC) / Teacher C (TBC))",
             "tag": "Grade /20",
             "isFe": true,
             "rooms": {
@@ -353,9 +348,9 @@
     "fes": {
       "1": {
         "num": 1,
-        "title": "FE1 — Module 1 Oral Evaluation",
-        "week": "W43",
-        "dateStr": "Wed 21 Oct",
+        "title": "FE1 — EASA Regulatory Extract & Class Activity Evaluation",
+        "week": "W02",
+        "dateStr": "Fri 15 Jan",
         "groups": {
           "A": {
             "teacher": "Teacher A (TBC)",
@@ -365,20 +360,23 @@
               {
                 "num": 1,
                 "time": "13h15 – 13h45",
-                "type": "trio",
+                "type": "team",
                 "students": [
-                  "GRPA009",
+                  "GRPA001",
                   "GRPA002",
-                  "GRPA006"
+                  "GRPA003",
+                  "GRPA004"
                 ]
               },
               {
                 "num": 2,
                 "time": "13h45 – 14h15",
-                "type": "pair",
+                "type": "team",
                 "students": [
-                  "GRPA010",
-                  "GRPA004"
+                  "GRPA005",
+                  "GRPA006",
+                  "GRPA007",
+                  "GRPA008"
                 ]
               },
               {
@@ -386,18 +384,17 @@
                 "time": "14h15 – 14h45",
                 "type": "trio",
                 "students": [
-                  "GRPA007",
-                  "GRPA003",
-                  "GRPA005"
+                  "GRPA009",
+                  "GRPA010",
+                  "GRPA011"
                 ]
               },
               {
                 "num": 4,
                 "time": "14h45 – 15h15",
-                "type": "pair",
+                "type": "feedback",
                 "students": [
-                  "GRPA001",
-                  "GRPA008"
+                  "Whole-Class Feedback & Teacher Debrief"
                 ]
               }
             ]
@@ -410,10 +407,11 @@
               {
                 "num": 1,
                 "time": "13h15 – 13h45",
-                "type": "pair",
+                "type": "trio",
                 "students": [
-                  "GRPB008",
-                  "GRPB006"
+                  "GRPB001",
+                  "GRPB002",
+                  "GRPB003"
                 ]
               },
               {
@@ -421,28 +419,27 @@
                 "time": "13h45 – 14h15",
                 "type": "trio",
                 "students": [
-                  "GRPB001",
-                  "GRPB010",
-                  "GRPB007"
+                  "GRPB004",
+                  "GRPB005",
+                  "GRPB006"
                 ]
               },
               {
                 "num": 3,
                 "time": "14h15 – 14h45",
-                "type": "pair",
+                "type": "trio",
                 "students": [
-                  "GRPB002",
+                  "GRPB007",
+                  "GRPB008",
                   "GRPB009"
                 ]
               },
               {
                 "num": 4,
                 "time": "14h45 – 15h15",
-                "type": "trio",
+                "type": "feedback",
                 "students": [
-                  "GRPB003",
-                  "GRPB004",
-                  "GRPB005"
+                  "Whole-Class Feedback & Teacher Debrief"
                 ]
               }
             ]
@@ -455,9 +452,10 @@
               {
                 "num": 1,
                 "time": "13h15 – 13h45",
-                "type": "pair",
+                "type": "trio",
                 "students": [
                   "GRPC001",
+                  "GRPC002",
                   "GRPC003"
                 ]
               },
@@ -466,28 +464,27 @@
                 "time": "13h45 – 14h15",
                 "type": "trio",
                 "students": [
-                  "GRPC002",
+                  "GRPC004",
                   "GRPC005",
-                  "GRPC008"
+                  "GRPC006"
                 ]
               },
               {
                 "num": 3,
                 "time": "14h15 – 14h45",
-                "type": "pair",
+                "type": "trio",
                 "students": [
-                  "GRPC004",
-                  "GRPC006"
+                  "GRPC007",
+                  "GRPC008",
+                  "GRPC009"
                 ]
               },
               {
                 "num": 4,
                 "time": "14h45 – 15h15",
-                "type": "trio",
+                "type": "feedback",
                 "students": [
-                  "GRPC007",
-                  "GRPC009",
-                  "GRPC010"
+                  "Whole-Class Feedback & Teacher Debrief"
                 ]
               }
             ]
@@ -497,8 +494,8 @@
       "2": {
         "num": 2,
         "title": "FE2 — Module 2 Oral Evaluation",
-        "week": "W02",
-        "dateStr": "Wed 13 Jan",
+        "week": "W10",
+        "dateStr": "Fri 12 Mar",
         "groups": {
           "A": {
             "teacher": "Teacher A (TBC)",
@@ -508,10 +505,11 @@
               {
                 "num": 1,
                 "time": "13h15 – 13h45",
-                "type": "pair",
+                "type": "trio",
                 "students": [
-                  "GRPA008",
-                  "GRPA006"
+                  "GRPA007",
+                  "GRPA011",
+                  "GRPA004"
                 ]
               },
               {
@@ -519,9 +517,9 @@
                 "time": "13h45 – 14h15",
                 "type": "trio",
                 "students": [
-                  "GRPA001",
-                  "GRPA010",
-                  "GRPA007"
+                  "GRPA008",
+                  "GRPA009",
+                  "GRPA001"
                 ]
               },
               {
@@ -529,8 +527,8 @@
                 "time": "14h15 – 14h45",
                 "type": "pair",
                 "students": [
-                  "GRPA002",
-                  "GRPA009"
+                  "GRPA005",
+                  "GRPA010"
                 ]
               },
               {
@@ -538,9 +536,9 @@
                 "time": "14h45 – 15h15",
                 "type": "trio",
                 "students": [
+                  "GRPA002",
                   "GRPA003",
-                  "GRPA004",
-                  "GRPA005"
+                  "GRPA006"
                 ]
               }
             ]
@@ -556,17 +554,16 @@
                 "type": "pair",
                 "students": [
                   "GRPB001",
-                  "GRPB003"
+                  "GRPB004"
                 ]
               },
               {
                 "num": 2,
                 "time": "13h45 – 14h15",
-                "type": "trio",
+                "type": "pair",
                 "students": [
                   "GRPB002",
-                  "GRPB005",
-                  "GRPB008"
+                  "GRPB006"
                 ]
               },
               {
@@ -574,8 +571,8 @@
                 "time": "14h15 – 14h45",
                 "type": "pair",
                 "students": [
-                  "GRPB004",
-                  "GRPB006"
+                  "GRPB003",
+                  "GRPB007"
                 ]
               },
               {
@@ -583,9 +580,9 @@
                 "time": "14h45 – 15h15",
                 "type": "trio",
                 "students": [
-                  "GRPB007",
-                  "GRPB009",
-                  "GRPB010"
+                  "GRPB005",
+                  "GRPB008",
+                  "GRPB009"
                 ]
               }
             ]
@@ -598,30 +595,29 @@
               {
                 "num": 1,
                 "time": "13h15 – 13h45",
-                "type": "trio",
+                "type": "pair",
                 "students": [
-                  "GRPC009",
-                  "GRPC002",
-                  "GRPC006"
+                  "GRPC008",
+                  "GRPC002"
                 ]
               },
               {
                 "num": 2,
                 "time": "13h45 – 14h15",
-                "type": "pair",
+                "type": "trio",
                 "students": [
-                  "GRPC010",
-                  "GRPC004"
+                  "GRPC009",
+                  "GRPC003",
+                  "GRPC001"
                 ]
               },
               {
                 "num": 3,
                 "time": "14h15 – 14h45",
-                "type": "trio",
+                "type": "pair",
                 "students": [
-                  "GRPC007",
-                  "GRPC003",
-                  "GRPC005"
+                  "GRPC005",
+                  "GRPC007"
                 ]
               },
               {
@@ -629,8 +625,8 @@
                 "time": "14h45 – 15h15",
                 "type": "pair",
                 "students": [
-                  "GRPC001",
-                  "GRPC008"
+                  "GRPC004",
+                  "GRPC006"
                 ]
               }
             ]
@@ -1041,10 +1037,10 @@
                             const slotObj = courseSched.fes[k].groups[g.letter].slots[idx];
                             return `
                               <td class="py-2.5 px-3">
-                                <span class="font-semibold block ${slotObj.type === "trio" ? "text-amber-900 font-bold" : "text-slate-800"}">
+                                <span class="font-semibold block ${slotObj.type === "feedback" ? "text-emerald-800 font-bold" : (slotObj.type === "trio" || slotObj.type === "team" ? "text-amber-900 font-bold" : "text-slate-800")}">
                                   ${renderSlotStudents(slotObj.students)}
                                 </span>
-                                <span class="text-[10px] text-slate-400 font-mono">${slotObj.type.toUpperCase()} (${slotObj.time})</span>
+                                <span class="text-[10px] ${slotObj.type === "feedback" ? "text-emerald-600 font-bold" : "text-slate-400 font-mono"}">${slotObj.type.toUpperCase()} (${slotObj.time})</span>
                               </td>
                             `;
                           }).join("")}
