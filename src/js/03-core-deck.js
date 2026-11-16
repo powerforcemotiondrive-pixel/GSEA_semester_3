@@ -705,7 +705,7 @@
         if (page && page.isMuted) return;
 
         const isActive = idx === activeIdx;
-        const isCoreUnit = page && !page.isAdmin && !page.isObjectives && !page.isImmersion;
+        const isCoreUnit = page && !page.isAdmin && !page.isObjectives && !page.isImmersion && !page.isDocsHub;
         const badge = item.querySelector('.flight-strip-badge');
         const title = item.querySelector('.flight-strip-title');
         const chevron = item.querySelector('.flight-strip-chevron');
@@ -861,7 +861,7 @@
         }
 
         if (milestoneText) {
-          const badgeText = (page && page.isFe) ? 'FE Target' : ((page && page.isAdmin) ? 'Admin Action' : (page && page.isImmersion ? 'Homestay' : (page && page.isObjectives ? 'Syllabus' : 'FE Tip')));
+          const badgeText = (page && page.isFe) ? 'FE Target' : ((page && page.isAdmin) ? 'Admin Action' : (page && page.isImmersion ? 'Homestay' : (page && page.isObjectives ? 'Syllabus' : (page && page.isDocsHub ? 'Course Docs' : 'FE Tip'))));
           calloutsHtml += `
             <div class="p-3.5 bg-amber-50/60 border border-amber-200/80 rounded-xl flex items-start gap-2.5 shadow-2xs h-full">
               <span class="inline-flex items-center text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-200/80 text-amber-900 shrink-0 mt-0.5">${badgeText}</span>
@@ -914,7 +914,7 @@
       // Update card tag pill (Option A Balanced Horizontal Grid)
       const tagPill = document.getElementById('card-tag-pill');
       if (tagPill) {
-        let tagText = page.tag || (page.isAdmin ? "Administration" : (page.isFe ? "Formative Evaluation" : (page.isObjectives ? "Curriculum" : (page.isImmersion ? "Immersion" : `Session ${String(currentIndex + 1).padStart(2, '0')}`))));
+        let tagText = page.tag || (page.isAdmin ? "Administration" : (page.isFe ? "Formative Evaluation" : (page.isObjectives ? "Curriculum" : (page.isDocsHub ? "Documentation Hub" : (page.isImmersion ? "Immersion" : `Session ${String(currentIndex + 1).padStart(2, '0')}`)))));
         tagPill.textContent = tagText;
         const pillAccent = mod.accent || mod.primary;
         const pillText = mod.accentDark || mod.primary;
@@ -967,6 +967,8 @@
       if (dockTitle) {
         if (page.isImmersion || (page.tag && page.tag.includes("Immersion"))) {
           dockTitle.textContent = "English Immersion & Destinations";
+        } else if (page.isDocsHub || page.title.includes("Document Library") || page.title.includes("Student Book")) {
+          dockTitle.textContent = "Module 1 Document Library";
         } else if (page.isObjectives || page.title === "Semester Objectives" || page.title === "Student Guide & Objectives") {
           dockTitle.textContent = "Semester 3 Objectives";
         } else if (page.isAdmin) {
@@ -998,6 +1000,15 @@
 
       if (page.isImmersion) {
         actionContainer.appendChild(createThemedCTA("Open Immersion Guide", "immersion_overview", "immersion.html"));
+      } else if (page.isDocsHub || page.title.includes("Document Library") || page.title.includes("Student Book")) {
+        actionContainer.appendChild(createThemedCTA("Open Document Library", "docs_hub", ""));
+        const directBookBtn = document.createElement('a');
+        directBookBtn.href = "docs/GSEA_S3_M1_Full_Student_Book.pdf";
+        directBookBtn.target = "_blank";
+        directBookBtn.rel = "noopener noreferrer";
+        directBookBtn.className = "inline-flex items-center gap-1.5 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-lg text-xs font-bold tracking-wide shadow-xs transition-all duration-150 cursor-pointer select-none border border-slate-300 bg-white hover:bg-slate-50 text-slate-800 hover:shadow-md hover:-translate-y-[1px]";
+        directBookBtn.innerHTML = `<svg class="w-3.5 h-3.5 text-red-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"/></svg><span>Download Full Book (PDF)</span>`;
+        actionContainer.appendChild(directBookBtn);
       } else if (page.isObjectives || page.title === "Semester Objectives" || page.title === "Student Guide & Objectives") {
         actionContainer.appendChild(createThemedCTA("Open Student Guide", "student_guide", ""));
       } else if (page.isAdmin) {
@@ -1796,12 +1807,14 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
       const progConfig = PROGRAMS_CONFIG[modalState.program] || PROGRAMS_CONFIG.ag;
       const activeModForModal = modulesData[modalState.modNum - 1];
       const activePageForModal = activeModForModal && activeModForModal.pages && activeModForModal.pages[modalState.sessionNum - 1];
-      const isObjectivesSession = tabKey === 'student_guide' || tabKey.startsWith('sem_obj_') || modalState.tab === 'student_guide' || modalState.tab.startsWith('sem_obj_');
-      const isImmersionSession = !isObjectivesSession && (tabKey === 'immersion' || tabKey.startsWith('immersion_'));
-      const isAdminSession = !isObjectivesSession && !isImmersionSession && tabKey.startsWith('admin_');
-      const isFeSession = !isObjectivesSession && !isImmersionSession && !isAdminSession && (Boolean(activePageForModal && activePageForModal.isFe) || tabKey.startsWith('fe_'));
-      const isDdrsSession = !isObjectivesSession && !isImmersionSession && !isAdminSession && tabKey === 'ddrs';
+      const isDocsHubSession = tabKey === 'docs_hub' || modalState.tab === 'docs_hub' || Boolean(activePageForModal && activePageForModal.isDocsHub);
+      const isObjectivesSession = !isDocsHubSession && (tabKey === 'student_guide' || tabKey.startsWith('sem_obj_') || modalState.tab === 'student_guide' || modalState.tab.startsWith('sem_obj_'));
+      const isImmersionSession = !isDocsHubSession && !isObjectivesSession && (tabKey === 'immersion' || tabKey.startsWith('immersion_'));
+      const isAdminSession = !isDocsHubSession && !isObjectivesSession && !isImmersionSession && tabKey.startsWith('admin_');
+      const isFeSession = !isDocsHubSession && !isObjectivesSession && !isImmersionSession && !isAdminSession && (Boolean(activePageForModal && activePageForModal.isFe) || tabKey.startsWith('fe_'));
+      const isDdrsSession = !isDocsHubSession && !isObjectivesSession && !isImmersionSession && !isAdminSession && tabKey === 'ddrs';
 
+      const docsHubTab = document.getElementById('modal-tab-docs-hub');
       const studentGuideTab = document.getElementById('modal-tab-student-guide');
       const semObjEnTab = document.getElementById('modal-tab-sem-obj-en');
       const semObjFrTab = document.getElementById('modal-tab-sem-obj-fr');
@@ -1825,7 +1838,29 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
       if (tabContent) tabContent.classList.add('hidden');
       if (tabSlides) tabSlides.classList.add('hidden');
 
-      if (isObjectivesSession) {
+      if (isDocsHubSession) {
+        if (immersionOverviewTab) immersionOverviewTab.classList.add('hidden');
+        if (immersionCitiesTab) immersionCitiesTab.classList.add('hidden');
+        if (adminGroupsTab) adminGroupsTab.classList.add('hidden');
+        if (adminCalendarTab) adminCalendarTab.classList.add('hidden');
+        if (adminRotaTab) adminRotaTab.classList.add('hidden');
+        if (adminPresentationTab) adminPresentationTab.classList.add('hidden');
+        if (ddrsTabBtn) ddrsTabBtn.classList.add('hidden');
+        if (feGuidelinesTab) feGuidelinesTab.classList.add('hidden');
+        if (feObjectivesTab) feObjectivesTab.classList.add('hidden');
+        if (feCriteriaTab) feCriteriaTab.classList.add('hidden');
+        if (studentGuideTab) studentGuideTab.classList.add('hidden');
+        if (semObjEnTab) semObjEnTab.classList.add('hidden');
+        if (semObjFrTab) semObjFrTab.classList.add('hidden');
+        standardTabs.forEach(t => t.classList.add('hidden'));
+
+        if (docsHubTab) docsHubTab.classList.remove('hidden');
+
+        modalState.tab = 'docs_hub';
+        tagEl.textContent = "LV125E • Technical English";
+        titleEl.textContent = "Module 1 Student Book & Document Library";
+      } else if (isObjectivesSession) {
+        if (docsHubTab) docsHubTab.classList.add('hidden');
         if (immersionOverviewTab) immersionOverviewTab.classList.add('hidden');
         if (immersionCitiesTab) immersionCitiesTab.classList.add('hidden');
         if (adminGroupsTab) adminGroupsTab.classList.add('hidden');
@@ -1845,6 +1880,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         tagEl.textContent = "LV125E • Technical English";
         titleEl.textContent = "Student Guide & Objectives";
       } else if (isImmersionSession) {
+        if (docsHubTab) docsHubTab.classList.add('hidden');
         if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
         if (semObjFrTab) semObjFrTab.classList.add('hidden');
@@ -1864,6 +1900,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         tagEl.textContent = "General English • S2 Milestone";
         titleEl.textContent = "English Immersion & Destination Guides (End of S2)";
       } else if (isAdminSession) {
+        if (docsHubTab) docsHubTab.classList.add('hidden');
         if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
         if (semObjFrTab) semObjFrTab.classList.add('hidden');
@@ -1883,6 +1920,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         tagEl.textContent = "GSEA 25A • Course Admin";
         titleEl.textContent = "Course Admin — Class Groups, Teachers, Weekly Calendar & FE Rotas";
       } else if (isFeSession) {
+        if (docsHubTab) docsHubTab.classList.add('hidden');
         if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
         if (semObjFrTab) semObjFrTab.classList.add('hidden');
@@ -1920,6 +1958,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         tagEl.textContent = `${progConfig.code} Module ${modalState.modNum} • Session ${modalState.sessionNum}`;
         titleEl.textContent = `Session ${modalState.sessionNum} - Formative Evaluation`;
       } else if (isDdrsSession) {
+        if (docsHubTab) docsHubTab.classList.add('hidden');
         if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
         if (semObjFrTab) semObjFrTab.classList.add('hidden');
@@ -1938,6 +1977,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         tagEl.textContent = `${progConfig.code} Module ${modalState.modNum} • Focus`;
         titleEl.textContent = "DDRS Regulatory Framework";
       } else {
+        if (docsHubTab) docsHubTab.classList.add('hidden');
         if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
         if (semObjFrTab) semObjFrTab.classList.add('hidden');
@@ -2186,7 +2226,9 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
       const modCourse = getActiveModalCourseData();
       const sessionData = (modCourse.sessions && modCourse.sessions[modalState.sessionNum]) || {};
 
-      if (modalState.tab === 'student_guide') {
+      if (modalState.tab === 'docs_hub') {
+        renderDocumentationHubTab(theme);
+      } else if (modalState.tab === 'student_guide') {
         renderStudentGuideTab(theme);
       } else if (modalState.tab === 'sem_obj_en') {
         renderSemesterObjectivesTab('en', theme);

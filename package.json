@@ -19,7 +19,8 @@
     "backup3": "node scripts/backup.js semester3",
     "promo:update": "node scripts/update-promo.js && npm run package && npm run package:moodle",
     "verify:links": "node scripts/verify-links.js",
-    "audit": "node scripts/audit-session.js"
+    "audit": "node scripts/audit-session.js",
+    "build:book": "node scripts/generate-module1-book.js"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
   "type": "commonjs",
   "dependencies": {
     "@tailwindcss/cli": "^4.3.3",
+    "pdf-lib": "^1.17.1",
     "tailwindcss": "^4.3.3"
   }
 }

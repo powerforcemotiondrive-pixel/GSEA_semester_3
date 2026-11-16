@@ -125,6 +125,16 @@
         }
       ];
 
+      if (modNumber === 1) {
+        pages.push({
+          tag: "Technical English • Documentation Hub",
+          title: "Module 1 Student Book & Document Library",
+          description: "Welcome to the Module 1 Documentation Hub. Access the complete, all-in-one Module 1 Student Book or directly download individual session PDF worksheets and authentic EASA technical dossiers.<br><br><em>Subject overview:</em> Comprehensive 79-page student course book (complete with syllabus objectives, study guide, 7 session worksheets, authentic EASA regulation dossiers, and FE1 flipped lesson guidelines) plus 1-click downloads for every session file.<br><br>Download the full Student Book for offline study on tablet or laptop, or consult individual dossiers during classroom discussions.",
+          isDocsHub: true,
+          imageUrl: "images/ddrs_aas_mod1.jpg"
+        });
+      }
+
       return pages;
     };
 

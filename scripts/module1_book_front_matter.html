@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GSEA Semester 3 Module 1 Student Handbook - EASA Docs, Safety &amp; Audits</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 10mm 12mm 12mm 12mm;
+      @bottom-right {
+        content: "Page " counter(page);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 8pt;
+        color: #64748b;
+        font-weight: 700;
+      }
+      @bottom-left {
+        content: "ENAC • GSEA Semester 3 Technical English (AT • LV125E) • Phil PARRIS";
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 7.5pt;
+        color: #94a3b8;
+      }
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 8.5pt;
+      line-height: 1.35;
+      color: #1e293b;
+      background: #ffffff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      page-break-after: always;
+      position: relative;
+      height: 100%;
+      min-height: 270mm;
+      max-height: 270mm;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+    }
+
+    /* Running Header */
+    .doc-header {
+      border-bottom: 2px solid #d97706;
+      padding-bottom: 4px;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .doc-header .agency {
+      font-size: 8pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #152438;
+    }
+
+    .doc-header .ref {
+      font-size: 7pt;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-weight: 700;
+      color: #64748b;
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+    }
+
+    h1 {
+      font-size: 15pt;
+      font-weight: 900;
+      color: #0f172a;
+      letter-spacing: -0.4px;
+      line-height: 1.15;
+      margin-bottom: 3px;
+    }
+
+    h2 {
+      font-size: 10pt;
+      font-weight: 800;
+      color: #152438;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 9px 11px;
+      margin-bottom: 7px;
+    }
+
+    .card-highlight {
+      background: #fffbeb;
+      border-color: #fde68a;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 7pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 1.5px 5px;
+      border-radius: 4px;
+      background: #152438;
+      color: #ffffff;
+    }
+
+    .badge-amber {
+      background: #d97706;
+      color: #ffffff;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 7px;
+    }
+
+    /* Cover Page Specific Styling */
+    .cover-container {
+      height: 100%;
+      min-height: 270mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 15mm 10mm;
+      background: linear-gradient(135deg, #152438 0%, #0d1724 100%);
+      color: #ffffff;
+      border-radius: 12px;
+      border: 2px solid #d97706;
+      box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================================================================== -->
+  <!-- PAGE 1: FRONT COVER                                                 -->
+  <!-- ==================================================================== -->
+  <div class="page">
+    <div class="cover-container">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid rgba(217, 119, 6, 0.4); padding-bottom: 12px; margin-bottom: 25px;">
+          <div style="font-size: 11pt; font-weight: 800; letter-spacing: 1.5px; color: #f59e0b; text-transform: uppercase;">
+            ÉCOLE NATIONALE DE L'AVIATION CIVILE
+          </div>
+          <div style="font-family: ui-monospace, Menlo, monospace; font-size: 9pt; font-weight: 700; color: #cbd5e1; background: rgba(255, 255, 255, 0.1); padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(255, 255, 255, 0.2);">
+            LV125E • SEMESTER 3
+          </div>
+        </div>
+
+        <div style="margin-top: 25px;">
+          <div style="display: inline-block; background: #d97706; color: #ffffff; font-size: 8.5pt; font-weight: 900; text-transform: uppercase; letter-spacing: 1.2px; padding: 4px 10px; border-radius: 4px; margin-bottom: 12px;">
+            TECHNICAL ENGLISH (AT) • OFFICIAL COURSE BOOK
+          </div>
+          <h1 style="font-size: 26pt; font-weight: 900; line-height: 1.1; color: #ffffff; margin-bottom: 8px; letter-spacing: -0.5px;">
+            Module 1 Student Handbook
+          </h1>
+          <div style="font-size: 16pt; font-weight: 700; color: #f59e0b; margin-bottom: 20px;">
+            EASA Docs, Safety Alerts, Audits &amp; Formative Evaluation
+          </div>
+          <p style="font-size: 9.5pt; line-height: 1.5; color: #cbd5e1; max-width: 90%;">
+            A comprehensive, all-in-one communicative handbook for GSEA technical officers (TSEEAC). Covers European aerodrome regulations, regulatory modal precision, ramp collision hazard briefings, airfield safety audits, multi-source accident investigations, Corrective Action Plans (CAP), and the Session 7 interactive flipped lesson evaluation.
+          </p>
+        </div>
+
+        <div style="margin-top: 35px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+          <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); padding: 12px 14px; border-radius: 8px;">
+            <div style="font-size: 8pt; font-weight: 800; text-transform: uppercase; color: #f59e0b; margin-bottom: 4px;">🎯 Core Learning Targets</div>
+            <div style="font-size: 8.5pt; color: #e2e8f0; line-height: 1.4;">
+              • EASA CS-ADR &amp; SIB document scanning<br>
+              • Modal precision: <em>shall</em> vs. <em>should</em> vs. <em>may</em><br>
+              • 90-second spoken ramp safety briefings<br>
+              • Airfield audit non-compliance reporting<br>
+              • Multi-source incident root cause analysis<br>
+              • 30-min FE1 peer teaching flipped lesson
+            </div>
+          </div>
+          <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); padding: 12px 14px; border-radius: 8px;">
+            <div style="font-size: 8pt; font-weight: 800; text-transform: uppercase; color: #f59e0b; margin-bottom: 4px;">📊 Assessment Architecture</div>
+            <div style="font-size: 8.5pt; color: #e2e8f0; line-height: 1.4;">
+              • <strong>50% Continuous Assessment</strong>: Weekly oral participation &amp; detailed learning portfolio entries.<br>
+              • <strong>50% Formative Evaluation 1 (FE1)</strong>: Session 7 interactive flipped lesson in teams of 3–4.<br>
+              • <strong>Zero Written Exam Stress</strong>: Focus on real-world spoken fluency and confidence.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="border-top: 1px solid rgba(255, 255, 255, 0.2); padding-top: 15px; display: flex; justify-content: space-between; align-items: flex-end;">
+        <div>
+          <div style="font-size: 9pt; font-weight: 800; color: #ffffff;">Phil PARRIS</div>
+          <div style="font-size: 8pt; color: #94a3b8;">Pedagogical Architect &amp; Author • Département LH / LAN</div>
+          <div style="font-size: 7.5pt; color: #64748b; margin-top: 2px;">ENAC — École Nationale de l'Aviation Civile</div>
+        </div>
+        <div style="text-align: right;">
+          <div style="font-size: 8.5pt; font-weight: 700; color: #f59e0b;">PROMOTION GSEA 25A</div>
+          <div style="font-size: 8pt; color: #94a3b8;">Academic Year 2026–2027 • Semester 3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================================================================== -->
+  <!-- PAGE 2: TABLE OF CONTENTS & MODULE MAP                              -->
+  <!-- ==================================================================== -->
+  <div class="page">
+    <div>
+      <div class="doc-header">
+        <div class="agency">ENAC • GSEA SEMESTER 3 TECHNICAL ENGLISH (AT • LV125E)</div>
+        <div class="ref">HANDBOOK INDEX &amp; SYLLABUS MAP</div>
+      </div>
+
+      <h1>Module 1 Table of Contents</h1>
+      <p style="font-size: 8.5pt; color: #475569; margin-bottom: 10px;">
+        Complete overview of Module 1 (7 Weeks). Each session integrates communicative speaking drills, authentic EASA documents, and formative evaluation preparation.
+      </p>
+
+      <div class="card card-highlight" style="margin-bottom: 10px;">
+        <h2 style="font-size: 9.5pt; color: #92400e;">📘 Part 1: Programme Guidance &amp; Course Syllabus</h2>
+        <div style="font-size: 8pt; color: #78350f; line-height: 1.45;">
+          <strong>• Student Guide: How to Succeed in English</strong> (Spoken confidence, continuous progress, portfolio reflection rules)<br>
+          <strong>• Official ENAC Course Objectives</strong> (Bilingual English &amp; French B2 competencies)<br>
+          <strong>• Formative Evaluation 1 (FE1) Guidelines</strong> (Session 7 flipped lesson architecture, 4 core targets, activity ideas)
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom: 8px;">
+        <h2><span class="badge">Session 1</span> EASA Rules &amp; Modal Precision</h2>
+        <p style="font-size: 8pt; color: #475569;">
+          <strong>Documents:</strong> CS-ADR-DSN.H.415 Obstacle Limitation Surfaces (OLS) &amp; Part-ADR.OPS Technical Synthesis.<br>
+          <strong>Spoken Skills:</strong> Skimming legal texts, decoding <em>shall</em> vs. <em>should</em> vs. <em>may</em>, Crane Height Clarification role-play.
+        </p>
+      </div>
+
+      <div class="card" style="margin-bottom: 8px;">
+        <h2><span class="badge">Session 2</span> Safety Alerts &amp; Ramp Briefings</h2>
+        <p style="font-size: 8pt; color: #475569;">
+          <strong>Documents:</strong> EASA Safety Information Bulletin (SIB 2024-09) on Apron Collision Risks &amp; Vehicle Speed Limits.<br>
+          <strong>Spoken Skills:</strong> Rapid danger scanning, prioritizing critical hazards, delivering a punchy 90-second spoken ramp briefing.
+        </p>
+      </div>
+
+      <div class="card" style="margin-bottom: 8px;">
+        <h2><span class="badge">Session 3</span> Special Requests &amp; Runway Safety Cases</h2>
+        <p style="font-size: 8pt; color: #475569;">
+          <strong>Documents:</strong> Authentic EASA Runway Safety Case, Derogation Dossier &amp; Displaced Threshold Works.<br>
+          <strong>Spoken Skills:</strong> Conditional structures (<em>provided that</em>, <em>in lieu of</em>), negotiating safety compromises, briefing airline pilots.
+        </p>
+      </div>
+
+      <div class="card" style="margin-bottom: 8px;">
+        <h2><span class="badge">Session 4</span> Ground Inspection &amp; Audit Findings</h2>
+        <p style="font-size: 8pt; color: #475569;">
+          <strong>Documents:</strong> Authentic EASA Airfield Audit Report (FOD, lighting non-compliances, paint degradation).<br>
+          <strong>Spoken Skills:</strong> Categorizing Level 1 vs. Level 2 findings, past deduction grammar (<em>must have</em>, <em>could have</em>), Director debrief.
+        </p>
+      </div>
+
+      <div class="card" style="margin-bottom: 8px;">
+        <h2><span class="badge">Session 5</span> Multi-Source Incident Investigation</h2>
+        <p style="font-size: 8pt; color: #475569;">
+          <strong>Documents:</strong> Authentic BEA and EASA Technical Dossier (radio transcripts, METAR weather, driver statements).<br>
+          <strong>Spoken Skills:</strong> Cross-referencing disparate sources, establishing chronological timelines, root cause analysis debrief.
+        </p>
+      </div>
+
+      <div class="card" style="margin-bottom: 8px;">
+        <h2><span class="badge">Session 6</span> The Corrective Action Plan &amp; CAP Review</h2>
+        <p style="font-size: 8pt; color: #475569;">
+          <strong>Documents:</strong> Official EASA Corrective Action Plan (CAP) forms &amp; Root Cause Remediation matrices.<br>
+          <strong>Spoken Skills:</strong> Formal commitment phrasing (<em>we undertake to</em>, <em>subject to approval</em>), FE1 team lesson planning.
+        </p>
+      </div>
+
+      <div class="card card-highlight">
+        <h2 style="color: #b45309;"><span class="badge badge-amber">Session 7</span> FORMATIVE EVALUATION 1 (FE1) — Flipped Lesson</h2>
+        <p style="font-size: 8pt; color: #78350f;">
+          <strong>Format:</strong> 30-min interactive peer-teaching session in teams of 3–4 based on an EASA regulatory extract.<br>
+          <strong>Final 30 mins:</strong> Whole-class teacher feedback, spoken language corrections, and individual debrief.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================================================================== -->
+  <!-- PAGE 3: STUDENT GUIDE — HOW TO SUCCEED IN ENGLISH                    -->
+  <!-- ==================================================================== -->
+  <div class="page">
+    <div>
+      <div class="doc-header">
+        <div class="agency">ENAC • STUDENT SUCCESS GUIDE</div>
+        <div class="ref">PEDAGOGICAL CODE &amp; MINDSET</div>
+      </div>
+
+      <h1>How to Succeed in English This Semester</h1>
+      <p style="font-size: 8.5pt; color: #475569; margin-bottom: 8px;">
+        Essential guidelines for continuous progress, formative evaluations, and successful semester validation.
+      </p>
+
+      <div class="card card-highlight" style="margin-bottom: 8px;">
+        <h2 style="color: #92400e;">🎯 Our Priority: Steady &amp; Continuous Spoken Improvement</h2>
+        <p style="font-size: 8pt; color: #78350f; line-height: 1.4;">
+          This communicative programme is specifically designed to build your spoken confidence, technical vocabulary, and professional communication skills as future civil aviation technical officers. <strong>There is no high-stress written exam.</strong> Your success depends on active weekly peer interaction, continuous effort, and steady spoken progress.
+        </p>
+      </div>
+
+      <div class="grid-3" style="margin-bottom: 8px;">
+        <div class="card">
+          <div style="font-weight: 800; font-size: 8pt; color: #152438; margin-bottom: 2px;">📈 1. Continuous Progress</div>
+          <p style="font-size: 7.5pt; color: #64748b; line-height: 1.35;">
+            Building gradually on the English competencies you already have, with regular practice in pairs and trios every week.
+          </p>
+        </div>
+        <div class="card">
+          <div style="font-weight: 800; font-size: 8pt; color: #152438; margin-bottom: 2px;">🗣️ 2. Formative Evaluation</div>
+          <p style="font-size: 7.5pt; color: #64748b; line-height: 1.35;">
+            Session 7 flipped lesson in teams of 3–4: teach an authentic EASA extract to peers and receive personalized feedback.
+          </p>
+        </div>
+        <div class="card">
+          <div style="font-weight: 800; font-size: 8pt; color: #152438; margin-bottom: 2px;">📊 3. Active Portfolio</div>
+          <p style="font-size: 7.5pt; color: #64748b; line-height: 1.35;">
+            Logging your reflections in the digital Learning Portfolio so you and your teachers can track your growth.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" style="border-left: 4px solid #ef4444; margin-bottom: 8px;">
+        <h2 style="color: #991b1b;">⚠️ Mandatory Portfolio Rule: Detailed Notes (Never One-Word Answers!)</h2>
+        <p style="font-size: 8pt; color: #475569; margin-bottom: 5px; line-height: 1.4;">
+          Your digital Learning Portfolio is inspected and verified regularly by the <strong>Course Coordinator (Phil PARRIS)</strong>. Entries must be substantive and reflective:
+        </p>
+        <div class="grid-2">
+          <div style="background: #fef2f2; border: 1px solid #fecaca; padding: 6px 8px; border-radius: 6px; font-size: 7.5pt;">
+            <strong style="color: #b91c1c;">❌ Banned: One-word answers</strong><br>
+            Never write vague words like <em>"good"</em>, <em>"fine"</em>, <em>"ok"</em>, <em>"nothing"</em>, or <em>"ras"</em>. These give your teachers zero information to assist you.
+          </div>
+          <div style="background: #f0fdf4; border: 1px solid #bbf7d0; padding: 6px 8px; border-radius: 6px; font-size: 7.5pt;">
+            <strong style="color: #15803d;">✅ Required: Detailed reflections</strong><br>
+            Explain what went well, which technical terms were challenging, and what action you will take before next session to improve.
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom: 8px;">
+        <h2>The 6 Core Spoken Competencies (ICAO / MTF Standard)</h2>
+        <div class="grid-3" style="font-size: 7.5pt; color: #334155; line-height: 1.35;">
+          <div><strong>1. Spoken Fluency:</strong> Natural tempo without long hesitations.</div>
+          <div><strong>2. Interaction:</strong> Turn-taking, asking questions, active listening.</div>
+          <div><strong>3. Vocabulary:</strong> Exact aerodrome &amp; technical terms.</div>
+          <div><strong>4. Grammar Control:</strong> Modal precision &amp; cause-effect linking.</div>
+          <div><strong>5. Pronunciation:</strong> Intelligible sounds &amp; natural rhythm.</div>
+          <div><strong>6. Comprehension:</strong> Understanding briefings &amp; instructions.</div>
+        </div>
+      </div>
+
+      <div class="card card-highlight">
+        <h2 style="color: #92400e;">💡 Teacher Autonomy &amp; Class Pacing</h2>
+        <p style="font-size: 8pt; color: #78350f; line-height: 1.4;">
+          <strong>You do NOT need to finish every written exercise in class!</strong> The worksheets are rich and comprehensive so you never run out of speaking material. Your teacher determines the pace and discussion depth based on spoken interaction.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================================================================== -->
+  <!-- PAGE 4: OFFICIAL COURSE OBJECTIVES (EN & FR)                        -->
+  <!-- ==================================================================== -->
+  <div class="page">
+    <div>
+      <div class="doc-header">
+        <div class="agency">ENAC • OFFICIAL SYLLABUS OBJECTIVES</div>
+        <div class="ref">CEFR B2 • ICAO OPERATIONAL STANDARD</div>
+      </div>
+
+      <h1>Module 1 Core Competencies (AT • LV125E)</h1>
+      <p style="font-size: 8.5pt; color: #475569; margin-bottom: 8px;">
+        By the end of Semester 3 Module 1, GSEA technical officers will be able to demonstrate the following 6 operational capabilities:
+      </p>
+
+      <div class="card" style="margin-bottom: 6px;">
+        <h2><span class="badge">01</span> EASA Regulatory Navigation &amp; Scanning Skills</h2>
+        <p style="font-size: 8pt; color: #334155; line-height: 1.35;">
+          <strong>Competency:</strong> Skim and scan official European Union Aviation Safety Agency (EASA) regulatory documents, Certification Specifications (CS-ADR-DSN), and Guidance Material (GM) to rapidly locate operational rules, dimensional constraints, and aerodrome compliance standards.<br>
+          <em style="color: #64748b;">Evidence: Rapid scanning of EASA clauses, extracting notice periods, obstacle height limits, and threshold distances.</em>
+        </p>
+      </div>
+
+      <div class="card" style="margin-bottom: 6px;">
+        <h2><span class="badge">02</span> Modal Verb Precision &amp; Legal Decoding</h2>
+        <p style="font-size: 8pt; color: #334155; line-height: 1.35;">
+          <strong>Competency:</strong> Accurately decode and vocally differentiate between mandatory legal requirements (<em>shall, must</em>), recommended safety guidance (<em>should</em>), and discretionary options (<em>may</em>), explaining operational consequences to aerodrome stakeholders in plain B2 English.<br>
+          <em style="color: #64748b;">Evidence: Clear verbal distinction between strict law vs. best practice recommendations during aerodrome operational discussions.</em>
+        </p>
+      </div>
+
+      <div class="card" style="margin-bottom: 6px;">
+        <h2><span class="badge">03</span> Safety Alerts &amp; Spoken Ramp Briefings</h2>
+        <p style="font-size: 8pt; color: #334155; line-height: 1.35;">
+          <strong>Competency:</strong> Digest dense EASA Safety Information Bulletins (SIBs) and aerodrome safety notices to extract critical hazards (apron vehicle congestion, speed limits, wingtip clearance, FOD) and deliver structured, punchy 90-second spoken briefings to ground personnel.<br>
+          <em style="color: #64748b;">Evidence: Concise spoken delivery, clear prioritization of immediate hazards, professional tone without reading from notes.</em>
+        </p>
+      </div>
+
+      <div class="card" style="margin-bottom: 6px;">
+        <h2><span class="badge">04</span> Aerodrome Audits &amp; Non-Compliance Reporting</h2>
+        <p style="font-size: 8pt; color: #334155; line-height: 1.35;">
+          <strong>Competency:</strong> Review authentic aerodrome safety audit reports, classify safety findings into Level 1 (immediate safety hazard) and Level 2 (non-immediate compliance defect), and justify severity levels using past deduction structures (<em>must have</em>, <em>could have</em>).<br>
+          <em style="color: #64748b;">Evidence: Accurate categorization of audit findings, confident 2-minute verbal briefing to the Airport Director.</em>
+        </p>
+      </div>
+
+      <div class="card" style="margin-bottom: 6px;">
+        <h2><span class="badge">05</span> Incident Investigation &amp; Multi-Source Synthesis</h2>
+        <p style="font-size: 8pt; color: #334155; line-height: 1.35;">
+          <strong>Competency:</strong> Cross-reference multiple disparate technical evidence sources (ATC radio transcripts, METAR observations, driver/pilot statements) to identify contributing human and organizational root causes and deliver a structured spoken debrief.<br>
+          <em style="color: #64748b;">Evidence: Logical chronological synthesis, accurate cause-and-effect connectors, balanced presentation of multi-source findings.</em>
+        </p>
+      </div>
+
+      <div class="card" style="margin-bottom: 6px;">
+        <h2><span class="badge">06</span> Corrective Action Plans &amp; Peer Teaching Synthesis (FE1)</h2>
+        <p style="font-size: 8pt; color: #334155; line-height: 1.35;">
+          <strong>Competency:</strong> Formulate clear, time-bound Corrective Action Plans (CAP) using formal commitment language (<em>we undertake to</em>, <em>subject to approval</em>), and collaborate in teams of 3–4 to deliver an interactive 30-minute flipped lesson teaching an EASA extract to peers.<br>
+          <em style="color: #64748b;">Evidence: Structured 30-min interactive session, teaching 3–5 technical words, leading communicative exercises, and integrating teacher feedback.</em>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================================================================== -->
+  <!-- PAGE 5: FORMATIVE EVALUATION 1 (FE1) FLIPPED LESSON GUIDELINES     -->
+  <!-- ==================================================================== -->
+  <div class="page">
+    <div>
+      <div class="doc-header">
+        <div class="agency">ENAC • FORMATIVE EVALUATION 1 GUIDELINES</div>
+        <div class="ref">SESSION 7 • FLIPPED LESSON SPECIFICATION</div>
+      </div>
+
+      <h1>Formative Evaluation 1: Guidelines &amp; Criteria</h1>
+      <p style="font-size: 8.5pt; color: #475569; margin-bottom: 8px;">
+        Detailed instructions on how to prepare and lead your 30-minute peer lesson in Session 7.
+      </p>
+
+      <div class="card card-highlight" style="margin-bottom: 8px;">
+        <h2 style="color: #92400e;">👥 Session Format: 30-Minute Team Presentation (Teams of 3–4)</h2>
+        <p style="font-size: 8pt; color: #78350f; line-height: 1.4;">
+          Your team takes the floor to deliver an engaging, interactive peer lesson based on an official EASA documentation extract of your choice. You act as the facilitators: teaching the regulation, introducing specialized technical words, and leading your classmates through communicative exercises. The final 30 minutes of class are dedicated to whole-class feedback and teacher debrief.
+        </p>
+      </div>
+
+      <div class="grid-2" style="margin-bottom: 8px;">
+        <div class="card">
+          <div style="font-weight: 800; font-size: 8pt; color: #152438; margin-bottom: 2px;">🎯 Target 1: Plain English Regulatory Breakdown</div>
+          <p style="font-size: 7.5pt; color: #64748b; line-height: 1.35;">
+            Explain what the EASA regulation is about in clear, natural B2 English. Avoid reading long text directly from slides. Summarize the operational purpose and safety impact.
+          </p>
+        </div>
+        <div class="card">
+          <div style="font-weight: 800; font-size: 8pt; color: #152438; margin-bottom: 2px;">🔤 Target 2: Teach 3 to 5 New Technical Terms</div>
+          <p style="font-size: 7.5pt; color: #64748b; line-height: 1.35;">
+            Select key technical terms from your extract. Provide plain definitions, correct pronunciation, word stress, and practical aerodrome usage examples for your classmates.
+          </p>
+        </div>
+        <div class="card">
+          <div style="font-weight: 800; font-size: 8pt; color: #152438; margin-bottom: 2px;">💡 Target 3: Lead Creative Classmate Exercises</div>
+          <p style="font-size: 7.5pt; color: #64748b; line-height: 1.35;">
+            Engage the room! Create reading comprehension questions, a mini-quiz, a matching drill, or a pair speaking role-play. Keep classmates actively participating.
+          </p>
+        </div>
+        <div class="card">
+          <div style="font-weight: 800; font-size: 8pt; color: #152438; margin-bottom: 2px;">🤝 Target 4: Balanced Participation &amp; Debrief</div>
+          <p style="font-size: 7.5pt; color: #64748b; line-height: 1.35;">
+            Ensure equal speaking time across all team members. Listen actively to classmates' answers and engage with your teacher's feedback during the class debrief.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Recommended 30-Minute Lesson Timeline</h2>
+        <div class="grid-3" style="font-size: 7.5pt; color: #334155; line-height: 1.4;">
+          <div style="background: #f8fafc; padding: 6px; border-radius: 6px; border: 1px solid #e2e8f0;">
+            <strong style="color: #152438;">00–08 min: Introduction</strong><br>
+            Context, safety hazard, and plain English summary of the EASA extract.
+          </div>
+          <div style="background: #f8fafc; padding: 6px; border-radius: 6px; border: 1px solid #e2e8f0;">
+            <strong style="color: #152438;">08–16 min: Vocabulary Focus</strong><br>
+            Teach 3–5 specialized terms with definitions, pronunciation, and examples.
+          </div>
+          <div style="background: #f8fafc; padding: 6px; border-radius: 6px; border: 1px solid #e2e8f0;">
+            <strong style="color: #152438;">16–30 min: Interactive Practice</strong><br>
+            Classroom reading check, mini-quiz, pair role-play &amp; student answers.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================================================================== -->
+  <!-- PAGE 6: TECHNICAL VOCABULARY DIGEST & PRACTICE DRILLS               -->
+  <!-- ==================================================================== -->
+  <div class="page">
+    <div>
+      <div class="doc-header">
+        <div class="agency">ENAC • MODULE 1 LANGUAGE DIGEST</div>
+        <div class="ref">VOCABULARY &amp; SPOKEN DRILLS</div>
+      </div>
+
+      <h1>Module 1 Essential Vocabulary &amp; Connecting Words</h1>
+      <p style="font-size: 8.5pt; color: #475569; margin-bottom: 8px;">
+        Core linguistic toolkits for aerodrome compliance discussions, modal precision, and technical briefings.
+      </p>
+
+      <div class="grid-2" style="margin-bottom: 8px;">
+        <div class="card">
+          <h2>1. EASA Legal Modals</h2>
+          <div style="font-size: 7.5pt; color: #334155; line-height: 1.4;">
+            <strong>• Shall / Must:</strong> Mandatory legal requirement.<br>
+            <em>"The aerodrome operator shall establish a safety management system."</em><br>
+            <strong>• Should:</strong> Recommended best practice.<br>
+            <em>"Vehicle drivers should undergo annual refresher training."</em><br>
+            <strong>• May:</strong> Discretionary authorization.<br>
+            <em>"The competent authority may grant temporary exemptions."</em>
+          </div>
+        </div>
+        <div class="card">
+          <h2>2. Past Deduction Structures</h2>
+          <div style="font-size: 7.5pt; color: #334155; line-height: 1.4;">
+            <strong>• Must have + V3:</strong> Almost certain logical conclusion.<br>
+            <em>"The driver must have overlooked the stop bar marking."</em><br>
+            <strong>• Could have + V3:</strong> Possible alternative explanation.<br>
+            <em>"The towbar pin could have failed under excessive torque."</em><br>
+            <strong>• Cannot have + V3:</strong> Logically impossible event.<br>
+            <em>"The tug cannot have entered the runway with red stop lights on."</em>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-2" style="margin-bottom: 8px;">
+        <div class="card">
+          <h2>3. Conditional &amp; Exemption Linkers</h2>
+          <div style="font-size: 7.5pt; color: #334155; line-height: 1.4;">
+            <strong>• Provided that:</strong> Strict condition attached.<br>
+            <em>"Works may proceed provided that wingtip clearance is maintained."</em><br>
+            <strong>• In lieu of:</strong> Authorized substitute measure.<br>
+            <em>"Visual marshals were used in lieu of unserviceable taxiway lights."</em><br>
+            <strong>• Subject to approval:</strong> Conditional upon authority sign-off.<br>
+            <em>"The safety case remains valid subject to regular audit review."</em>
+          </div>
+        </div>
+        <div class="card">
+          <h2>4. CAP Formal Commitments</h2>
+          <div style="font-size: 7.5pt; color: #334155; line-height: 1.4;">
+            <strong>• We undertake to:</strong> Formal corporate commitment.<br>
+            <em>"We undertake to repaint all runway holding positions by Dec 15."</em><br>
+            <strong>• Has been commissioned:</strong> Formal implementation.<br>
+            <em>"An external audit has been commissioned to review FOD sweeping."</em><br>
+            <strong>• Pending verification:</strong> Awaiting compliance check.<br>
+            <em>"The stand remains restricted pending friction testing."</em>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-highlight">
+        <h2 style="color: #92400e;">💡 Additional Speaking Practice Prompt</h2>
+        <p style="font-size: 8pt; color: #78350f; line-height: 1.4;">
+          <strong>Quick-Fire Pair Challenge:</strong> Choose one finding from Session 4 (e.g. deteriorated paint markings or vehicle speeding on Apron 2). Take 1 minute to explain: <em>(1)</em> what happened using a past deduction (<em>must have...</em>), <em>(2)</em> what the EASA rule requires (<em>shall...</em>), and <em>(3)</em> what corrective action your team undertakes to implement by next Friday.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

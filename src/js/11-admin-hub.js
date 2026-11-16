@@ -1836,5 +1836,371 @@
       try { localStorage.setItem('gsea_presentation_lang', lang); } catch (e) {}
     };
 
+    function renderDocumentationHubTab(theme) {
+      const bodyEl = document.getElementById('modal-body');
+      if (!bodyEl) return;
+
+      const worksheets = [
+        {
+          session: 1,
+          num: "01",
+          title: "Session 1 - EASA Rules & Modal Precision",
+          topic: "Regulatory obligations under Part-ADR.OPS & obstacle management (crane limits under GM1 CS-ADR-DSN.H.415).",
+          file: "docs/GSEA_S3_M1_S1_Lesson_Worksheet.pdf",
+          pages: "10 pages",
+          size: "930 KB"
+        },
+        {
+          session: 2,
+          num: "02",
+          title: "Session 2 - Safety Alerts & Ramp Briefings",
+          topic: "Operational safety briefings, turnaround hazard communication, and ground handling incident analysis.",
+          file: "docs/GSEA_S3_M1_S2_Lesson_Worksheet.pdf",
+          pages: "12 pages",
+          size: "935 KB"
+        },
+        {
+          session: 3,
+          num: "03",
+          title: "Session 3 - Special Requests & Runway Safety Cases",
+          topic: "Evaluating airline exemption requests, non-standard ground procedures, and aerodrome hot spots.",
+          file: "docs/GSEA_S3_M1_S3_Lesson_Worksheet.pdf",
+          pages: "10 pages",
+          size: "1.0 MB"
+        },
+        {
+          session: 4,
+          num: "04",
+          title: "Session 4 - Ground Inspection & Audit Findings",
+          topic: "On-site airfield inspections, non-conformance classification (Level 1 vs Level 2), and audit report writing.",
+          file: "docs/GSEA_S3_M1_S4_Lesson_Worksheet.pdf",
+          pages: "12 pages",
+          size: "1.1 MB"
+        },
+        {
+          session: 5,
+          num: "05",
+          title: "Session 5 - Multi-Source Incident Investigation",
+          topic: "Cross-referencing radar telemetry, flight recorder data, METAR reports, and ground incident logs.",
+          file: "docs/GSEA_S3_M1_S5_Lesson_Worksheet.pdf",
+          pages: "14 pages",
+          size: "1.2 MB"
+        },
+        {
+          session: 6,
+          num: "06",
+          title: "Session 6 - The Corrective Action Plan & CAP Review",
+          topic: "Formulating root-cause remediations, immediate containment, and long-term preventative action plans.",
+          file: "docs/GSEA_S3_M1_S6_Lesson_Worksheet.pdf",
+          pages: "12 pages",
+          size: "1.3 MB"
+        },
+        {
+          session: 7,
+          num: "07",
+          title: "Session 7 - Formative Evaluation 1 (FE1) Delivery",
+          topic: "Flipped lesson delivery pack: 30-minute team presentation, regulatory clause instruction, and class exercises.",
+          file: "docs/GSEA_S3_M1_S7_Lesson_Worksheet.pdf",
+          pages: "3 pages",
+          size: "935 KB"
+        }
+      ];
+
+      const dossiers = [
+        {
+          session: 1,
+          ref: "Part-ADR.OPS.B.010",
+          title: "EASA Part-ADR.OPS Regulatory Synthesis",
+          scope: "Official European aerodrome operations rulebook extract: aerodrome manual obligations, safety reporting, and obstacle limitation surfaces.",
+          file: "docs/GSEA_S3_M1_S1_EASA_Part_ADR_OPS_Synthesis.pdf",
+          size: "400 KB"
+        },
+        {
+          session: 2,
+          ref: "EASA SIB 2024-09",
+          title: "Safety Information Bulletin: Ground Handling & Turnaround",
+          scope: "Official EASA safety bulletin covering pushback incidents, jet blast hazards, fueling safety zones, and mandatory ramp communications.",
+          file: "docs/GSEA_S3_M1_S2_EASA_SIB_2024_09_Ramp_Safety.pdf",
+          size: "356 KB"
+        },
+        {
+          session: 3,
+          ref: "CS-ADR-DSN.B.035",
+          title: "EASA Runway Safety Case: Hot Spots & Incursions",
+          scope: "Authentic aerodrome safety dossier analyzing taxiway geometry, runway holding positions, line-of-sight constraints, and mitigation strategies.",
+          file: "docs/GSEA_S3_M1_S3_EASA_Runway_Safety_Case.pdf",
+          size: "347 KB"
+        },
+        {
+          session: 4,
+          ref: "ADR.OR.C.005",
+          title: "EASA Airfield Audit Report & Non-Conformance Log",
+          scope: "Standardized European aerodrome audit report detailing formal audit findings, regulatory non-compliances, and grading criteria.",
+          file: "docs/GSEA_S3_M1_S4_EASA_Airfield_Audit_Report.pdf",
+          size: "706 KB"
+        },
+        {
+          session: 5,
+          ref: "Multi-Source Dossier",
+          title: "Runway Excursion & Ramp Incident Investigation Dossier",
+          scope: "Comprehensive investigative file compiling synchronized radar traces, FDR readouts, aerodrome weather observations (METAR/SPECI), and witness logs.",
+          file: "docs/GSEA_S3_M1_S5_Incident_Investigation_Dossier.pdf",
+          size: "756 KB"
+        },
+        {
+          session: 6,
+          ref: "Part-ADR.OR.D.005",
+          title: "EASA Corrective Action Plan (CAP) Framework",
+          scope: "Formal post-audit remediation dossier featuring root cause analysis templates (5 Whys), risk mitigation matrices, and compliance sign-off logs.",
+          file: "docs/GSEA_S3_M1_S6_EASA_Corrective_Action_Plan.pdf",
+          size: "522 KB"
+        }
+      ];
+
+      bodyEl.innerHTML = `
+        <div class="space-y-6 pb-6">
+          <!-- Overview Header Banner -->
+          <div class="p-4 sm:p-5 bg-white border border-slate-200/90 rounded-2xl shadow-xs">
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-bold text-white uppercase tracking-wider shadow-xs" style="background-color: ${theme.primary};">
+                Documentation Library • LV125E
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-mono font-bold bg-slate-100 text-slate-700 border border-slate-200">
+                100% Offline Ready • 14 Documents
+              </span>
+            </div>
+            <h3 class="text-base sm:text-lg font-black text-slate-900">Module 1 Course Documentation &amp; Reference Library</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-1">
+              Access and download the complete Module 1 Student Book or consult individual communicative session worksheets and authentic European Union Aviation Safety Agency (EASA) regulatory dossiers. All files are fully self-contained on disk for fast offline study.
+            </p>
+          </div>
+
+          <!-- Master Hero Card: Module 1 Student Book -->
+          <div class="p-5 sm:p-6 rounded-2xl border border-amber-500/40 shadow-sm relative overflow-hidden" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);">
+            <div class="absolute -right-8 -bottom-8 w-48 h-48 rounded-full bg-amber-500/10 blur-2xl pointer-events-none"></div>
+
+            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 relative z-10">
+              <div class="space-y-3 max-w-2xl">
+                <div class="flex flex-wrap items-center gap-2">
+                  <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-black uppercase tracking-wider bg-amber-400 text-amber-950 shadow-xs">
+                    ★ Comprehensive Course Book
+                  </span>
+                  <span class="text-[11px] font-mono text-amber-200/80">
+                    79 Pages • 8.3 MB PDF
+                  </span>
+                </div>
+
+                <div>
+                  <h2 class="text-lg sm:text-xl font-black text-white tracking-tight">
+                    GSEA Semester 3 Module 1: Complete Student Book
+                  </h2>
+                  <p class="text-xs sm:text-sm text-amber-200/90 font-medium mt-0.5">
+                    EASA Docs, Safety Investigations &amp; Aerodrome Audits (Sessions 1–7)
+                  </p>
+                </div>
+
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  The complete all-in-one printed and digital course handbook created for ENAC TSEEAC student air operations officers. Unites the front matter, official syllabus objectives (EN/FR), student success guide, FE1 flipped lesson guidelines and scoring rubrics, all 7 spoken communicative worksheets, all 6 authentic EASA technical dossiers, and a spoken technical vocabulary digest.
+                </p>
+
+                <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-[11px] text-slate-400 font-mono">
+                  <span>Author: Phil PARRIS (LH/LAN)</span>
+                  <span>•</span>
+                  <span>Version 1.0.0</span>
+                  <span>•</span>
+                  <span>Offline SCORM Indexed</span>
+                </div>
+              </div>
+
+              <!-- Action Buttons & Quick Preview -->
+              <div class="flex flex-col sm:flex-row lg:flex-col gap-2.5 shrink-0">
+                <a href="docs/GSEA_S3_M1_Full_Student_Book.pdf" download="GSEA_S3_M1_Full_Student_Book.pdf" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-slate-900 bg-amber-400 hover:bg-amber-300 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 cursor-pointer">
+                  <svg class="w-4 h-4 text-slate-950" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                  <span>Download Full Book (8.3 MB)</span>
+                </a>
+
+                <a href="docs/GSEA_S3_M1_Full_Student_Book.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-white bg-white/10 hover:bg-white/20 border border-white/20 transition-all cursor-pointer">
+                  <svg class="w-4 h-4 opacity-80" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                  <span>Open in PDF Viewer ↗</span>
+                </a>
+
+                <button type="button" onclick="window.toggleTocSection()" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-amber-200 hover:text-white bg-slate-800/80 hover:bg-slate-800 border border-amber-500/20 transition-all cursor-pointer">
+                  <span id="toc-toggle-label">View Table of Contents</span>
+                  <svg id="toc-toggle-icon" class="w-3.5 h-3.5 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Expandable Table of Contents Breakdown -->
+            <div id="student-book-toc-details" class="hidden mt-5 pt-5 border-t border-slate-700/80 text-xs text-slate-300 space-y-3">
+              <h4 class="text-xs font-mono font-bold uppercase tracking-wider text-amber-300">Detailed 79-Page Table of Contents</h4>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-[11.5px]">
+                <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700/50 space-y-1.5">
+                  <div class="font-bold text-white flex items-center justify-between">
+                    <span>Part I • Front Matter &amp; Course Foundations</span>
+                    <span class="font-mono text-[10px] text-amber-400">pp. 1–6</span>
+                  </div>
+                  <ul class="space-y-0.5 text-slate-300 pl-2">
+                    <li>• Page 1: Official Front Cover (Flight-Deck Precision)</li>
+                    <li>• Page 2: Table of Contents &amp; Modular Overview</li>
+                    <li>• Page 3: Student Success &amp; Learning Portfolio Guide</li>
+                    <li>• Page 4: Official ENAC Course Objectives (EN &amp; FR)</li>
+                    <li>• Page 5: Formative Evaluation 1 (FE1) Flipped Lesson Guide</li>
+                    <li>• Page 6: Module 1 Technical Spoken Vocabulary Digest</li>
+                  </ul>
+                </div>
+
+                <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700/50 space-y-1.5">
+                  <div class="font-bold text-white flex items-center justify-between">
+                    <span>Part II • EASA Rules &amp; Aerodrome Operations</span>
+                    <span class="font-mono text-[10px] text-amber-400">pp. 7–38</span>
+                  </div>
+                  <ul class="space-y-0.5 text-slate-300 pl-2">
+                    <li>• pp. 7–16: Session 1 Worksheet + Part-ADR.OPS Regulatory Synthesis</li>
+                    <li>• pp. 17–28: Session 2 Worksheet + EASA SIB 2024-09 Ramp Safety Bulletin</li>
+                    <li>• pp. 29–38: Session 3 Worksheet + EASA Runway Safety Case Dossier</li>
+                  </ul>
+                </div>
+
+                <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700/50 space-y-1.5">
+                  <div class="font-bold text-white flex items-center justify-between">
+                    <span>Part III • Audits, Incident Investigation &amp; CAP</span>
+                    <span class="font-mono text-[10px] text-amber-400">pp. 39–76</span>
+                  </div>
+                  <ul class="space-y-0.5 text-slate-300 pl-2">
+                    <li>• pp. 39–50: Session 4 Worksheet + Airfield Audit Non-Conformance Log</li>
+                    <li>• pp. 51–64: Session 5 Worksheet + Multi-Source Investigation Dossier</li>
+                    <li>• pp. 65–76: Session 6 Worksheet + Corrective Action Plan (CAP) Framework</li>
+                  </ul>
+                </div>
+
+                <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700/50 space-y-1.5">
+                  <div class="font-bold text-white flex items-center justify-between">
+                    <span>Part IV • Formative Evaluation 1 Delivery</span>
+                    <span class="font-mono text-[10px] text-amber-400">pp. 77–79</span>
+                  </div>
+                  <ul class="space-y-0.5 text-slate-300 pl-2">
+                    <li>• pp. 77–79: Session 7 Formative Evaluation 1 Worksheet</li>
+                    <li>• Interactive team presentation delivery prompts</li>
+                    <li>• Class peer-interaction activities &amp; vocabulary teaching</li>
+                    <li>• Scoring criteria breakdown &amp; teacher feedback protocol</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 1: Spoken Communication Worksheets -->
+          <div class="space-y-3">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+              <div class="flex items-center gap-2">
+                <span class="text-base font-black text-slate-900">1. Spoken Communication Worksheets</span>
+                <span class="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-slate-200 text-slate-700">7 PDF Worksheets</span>
+              </div>
+              <span class="text-xs text-slate-500">Sessions 1 through 7</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              ${worksheets.map(w => `
+                <div class="p-4 bg-white border border-slate-200/90 rounded-xl shadow-xs hover:border-slate-300 transition-all flex flex-col justify-between">
+                  <div class="space-y-2">
+                    <div class="flex items-center justify-between gap-2">
+                      <span class="text-[10px] font-mono font-bold px-2 py-0.5 rounded text-white shadow-2xs" style="background-color: ${theme.primary};">
+                        SESSION ${w.num}
+                      </span>
+                      <span class="text-[10px] font-mono font-semibold text-slate-500 bg-slate-100 px-2 py-0.5 rounded border border-slate-200">
+                        ${w.pages} • ${w.size}
+                      </span>
+                    </div>
+                    <h4 class="text-xs sm:text-sm font-bold text-slate-800 leading-snug">${w.title}</h4>
+                    <p class="text-[11px] text-slate-600 leading-relaxed">${w.topic}</p>
+                  </div>
+                  <div class="pt-3 mt-2 border-t border-slate-100">
+                    <a href="${w.file}" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 hover:text-amber-800 hover:underline cursor-pointer">
+                      <span>Download Worksheet (PDF)</span>
+                      <span aria-hidden="true">&rarr;</span>
+                    </a>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- Section 2: Authentic EASA Regulatory & Technical Dossiers -->
+          <div class="space-y-3">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+              <div class="flex items-center gap-2">
+                <span class="text-base font-black text-slate-900">2. Authentic EASA Regulatory &amp; Technical Dossiers</span>
+                <span class="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-amber-100 text-amber-900 border border-amber-300">6 Official Dossiers</span>
+              </div>
+              <span class="text-xs text-slate-500">Sessions 1 through 6</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              ${dossiers.map(d => `
+                <div class="p-4 bg-white border border-slate-200/90 rounded-xl shadow-xs hover:border-amber-300/80 transition-all flex flex-col justify-between">
+                  <div class="space-y-2">
+                    <div class="flex items-center justify-between gap-2">
+                      <span class="text-[10px] font-mono font-black px-2 py-0.5 rounded bg-slate-900 text-amber-400 shadow-2xs">
+                        ${d.ref}
+                      </span>
+                      <span class="text-[10px] font-mono font-semibold text-slate-500 bg-slate-100 px-2 py-0.5 rounded border border-slate-200">
+                        ${d.size}
+                      </span>
+                    </div>
+                    <h4 class="text-xs sm:text-sm font-bold text-slate-800 leading-snug">${d.title}</h4>
+                    <p class="text-[11px] text-slate-600 leading-relaxed">${d.scope}</p>
+                  </div>
+                  <div class="pt-3 mt-2 border-t border-slate-100">
+                    <a href="${d.file}" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-900 hover:text-amber-700 hover:underline cursor-pointer">
+                      <span>Open EASA Dossier (PDF)</span>
+                      <span aria-hidden="true">&rarr;</span>
+                    </a>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- Section 3: Formative Evaluation 1 (FE1) Guidelines & Flipped Lesson Pack -->
+          <div class="p-4 sm:p-5 bg-amber-50/70 border border-amber-200/90 rounded-2xl shadow-xs space-y-3">
+            <div class="flex items-center justify-between gap-3">
+              <div class="flex items-center gap-2">
+                <span class="text-[10px] font-mono font-black uppercase tracking-wider px-2.5 py-0.5 rounded bg-amber-200 text-amber-900">
+                  FE1 Preparation Pack
+                </span>
+                <h4 class="text-xs sm:text-sm font-bold text-amber-950">Formative Evaluation 1 — Flipped Lesson Guidelines</h4>
+              </div>
+              <button onclick="switchModalTab('fe_guidelines')" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-bold text-white shadow-xs hover:shadow-md transition-all cursor-pointer" style="background-color: ${theme.primary};">
+                <span>View Guidelines in Drawer &rarr;</span>
+              </button>
+            </div>
+            <p class="text-xs sm:text-sm text-amber-950 leading-relaxed">
+              In Session 7, student teams of up to 4 take the floor to deliver an engaging 30-minute interactive session based on an official EASA regulatory clause. The presentation must teach the requirement in plain B2 English, introduce 3 to 5 new technical words, and lead communicative exercises for classmates. The final 30 minutes of the session is dedicated to teacher feedback and grading against the 4 official criteria.
+            </p>
+          </div>
+        </div>
+      `;
+    }
+
+    window.toggleTocSection = function() {
+      const details = document.getElementById('student-book-toc-details');
+      const label = document.getElementById('toc-toggle-label');
+      const icon = document.getElementById('toc-toggle-icon');
+      if (!details) return;
+      const isHidden = details.classList.contains('hidden');
+      if (isHidden) {
+        details.classList.remove('hidden');
+        if (label) label.textContent = 'Hide Table of Contents';
+        if (icon) icon.style.transform = 'rotate(180deg)';
+      } else {
+        details.classList.add('hidden');
+        if (label) label.textContent = 'View Table of Contents';
+        if (icon) icon.style.transform = 'none';
+      }
+    };
+
+    window.renderDocumentationHubTab = renderDocumentationHubTab;
+
 
 
