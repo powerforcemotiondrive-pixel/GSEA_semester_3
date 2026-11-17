@@ -866,7 +866,6 @@ function buildStaticAdminGroupsHtml(promo) {
                   <span class="w-2 h-2 rounded-full ${g.dotClass}"></span>
                   <h4 class="text-xs font-bold uppercase tracking-wider">Group ${g.letter} (${g.count} Students)</h4>
                 </div>
-                <span class="text-[10px] bg-white/20 px-2 py-0.5 rounded font-mono font-bold">${g.pairTrioBadge}</span>
               </div>
               <div class="overflow-x-auto">
                 <table class="w-full text-left text-xs border-collapse">
