@@ -18,7 +18,7 @@ Conformément au Code de la propriété intellectuelle français (CPI) et aux co
    - L'auteur, **Phil PARRIS**, conserve l'intégralité de son droit moral perpétuel, inaliénable et imprescriptible sur l'ensemble de ses créations pédagogiques, dossiers techniques et architectures logicielles originales.
    - **Droit à la Paternité (*Droit à la paternité*)** : Toute utilisation, diffusion, déploiement, archivage ou présentation de ces ressources, sous quelque forme que ce soit, doit mentionner clairement et visiblement la paternité de l'auteur :  
      `Conception & Architecture Pédagogique : Phil PARRIS (ENAC – LH/LAN)`.
-   - **Droit au Respect de l'Œuvre (*Droit au respect de l'œuvre*)** : La structure pédagogique originale, les scénarios d'évaluation, les grilles critériées et l'architecture logicielle ne peuvent être dénaturés, mutilés ni réattribués à un tiers.
+     - **Droit au Respect de l'Œuvre (*Droit au respect de l'œuvre*)** : La structure pédagogique originale, les scénarios d'évaluation, les grilles critériées et l'architecture logicielle ne peuvent être dénaturés, mutilés ni réattribués à un tiers.
 
 2. **Périmètre des Créations Protégées** :
    La présente protection s'applique à l'ensemble des créations originales conçues par l'auteur pour les enseignements de la filière GSEA (LV125E), incluant :
@@ -81,7 +81,7 @@ In accordance with the French Intellectual Property Code (*Code de la propriét�
    - The author, **Phil PARRIS**, holds perpetual, inalienable, and non-waivable moral rights over all original pedagogical creations, technical dossiers, and software architectures.
    - **Right of Paternity (*Droit à la paternité*)**: Any use, distribution, deployment, archival, or presentation of these resources, in any form, must prominently display clear author attribution:  
      `Conception & Architecture Pédagogique : Phil PARRIS (ENAC – LH/LAN)`.
-   - **Right of Integrity (*Droit au respect de l'œuvre*)**: The original pedagogical design, evaluation frameworks, criterion rubrics, and software architecture may not be distorted, truncated, or re-attributed to third parties.
+     - **Right of Integrity (*Droit au respect de l'œuvre*)**: The original pedagogical design, evaluation frameworks, criterion rubrics, and software architecture may not be distorted, truncated, or re-attributed to third parties.
 
 2. **Scope of Protected Creations**:
    This protection applies to all original materials created by the author for the GSEA curriculum (LV125E), including:
