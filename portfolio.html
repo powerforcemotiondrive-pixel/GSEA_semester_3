@@ -749,20 +749,19 @@
     // 2. Google Form Submission URL (Zero write-lock buffer)
     const GOOGLE_FORM_ACTION_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdrEhrGu-D8ZEg-vxXtt_08ncUiTzLVdUzvtYkXxEbBXjqxcw/formResponse";
 
-    // 3. Google Form Field Mapping (Verified Entry IDs)
+    // 3. Google Form Field Mapping (Verified Entry IDs from Published Form)
     const GOOGLE_FORM_ENTRIES = {
       student: "entry.1638941970",        // Student Name
       pin: "entry.564526738",            // 4-Digit Security code
-      track: "entry.567321149",          // Curriculum Track (AT)
-      module: "entry.754685570",         // Module
-      session: "entry.1711641500",       // Session Number
-      vocab: "entry.1507717316",         // Key vocabulary & phrases
-      contentReview: "entry.1000004041", // Lesson content review
-      workOn: "entry.1315090876",        // Target areas following session
-      evalHelp: null,                    // Combined into workOn / preserved for direct backend
+      module: "entry.567321149",         // Module
+      session: "entry.754685570",        // Session Number
+      vocab: "entry.1711641500",         // Key technical vocabulary & spoken phrases
+      contentReview: "entry.1507717316", // Technical content review
+      workOn: "entry.1000004041",        // What I need to work on following this session
+      evalHelp: "entry.1315090876",      // How will this help me with my formative evaluation?
       evalRating: "entry.503478048",     // Formative evaluation preparedness rating (1-10)
       toeicPrep: "entry.2040486820",     // Live Traffic self-study exercises & audio vocabulary
-      toeicRating: "entry.1308272374"    // Live Traffic progress rating (0-10)
+      toeicRating: "entry.1308272374"    // Live Traffic listening progress rating (Rate 0-10)
     };
 
     // ============================================================================
@@ -1147,6 +1146,7 @@
           document.getElementById("toeicRating").value = draft.toeicRating;
           syncRating("toeicRating", draft.toeicRating);
         }
+        updateSessionAvailability();
       } catch (e) {}
     }
 
@@ -1203,10 +1203,37 @@
           // Deduplicate logs by (track, moduleKey, sessionNum) — keeping the latest revision
           const rawLogs = data.logs || [];
           const logMap = new Map();
-          rawLogs.forEach(entry => {
-            const tr = (entry.track || currentTrack).toUpperCase();
-            const mk = getModuleKey(entry.module);
-            const sn = formatSessionNum(entry.session);
+          rawLogs.forEach(rawEntry => {
+            const entry = { ...rawEntry };
+
+            // Self-healing: automatically repair shifted rows from cloud script
+            const rawMod = String(entry.module || "").trim().toUpperCase();
+            const rawSes = String(entry.session || "").trim().toLowerCase();
+            const rawVoc = String(entry.vocab || "").trim().toLowerCase();
+
+            // Self-healing: automatically repair legacy shifted rows if track was inserted into module column
+            if (rawMod === "AAS" || rawMod === "AT" || rawSes.includes("aviation") || rawVoc.includes("session")) {
+              entry.track = "AT";
+              if (rawSes.includes("aviation") || rawSes.includes("document") || rawSes.includes("module")) {
+                entry.module = entry.session;
+              }
+              if (rawVoc.includes("session") || rawVoc.includes("formative") || /^\d+$/.test(rawVoc)) {
+                entry.session = entry.vocab;
+                entry.vocab = entry.contentReview || "";
+                entry.contentReview = entry.workOn || "";
+                entry.workOn = entry.evalHelp || "";
+                entry.evalHelp = (typeof entry.evalRating === "string" && isNaN(entry.evalRating)) ? entry.evalRating : "";
+                entry.evalRating = (typeof entry.toeicPrep === "string" && !isNaN(entry.toeicPrep)) ? entry.toeicPrep : (isNaN(entry.evalRating) ? "7" : entry.evalRating);
+                entry.toeicPrep = (typeof entry.toeicRating === "string" && isNaN(entry.toeicRating)) ? entry.toeicRating : "";
+                entry.toeicRating = isNaN(entry.toeicRating) ? "7" : entry.toeicRating;
+              }
+            } else {
+              entry.track = "AT";
+            }
+
+            const tr = "AT";
+            const mk = getModuleKey(entry.module) || "Module 1";
+            const sn = formatSessionNum(entry.session) || "1";
             const key = `${tr}_${mk}_${sn}`;
             logMap.set(key, entry);
           });
@@ -1353,39 +1380,17 @@
 
       let success = false;
 
-      // ROUTE 1: Direct Google Apps Script Database Submission (Primary Reliable Route)
-      try {
-        const res = await fetch(SCRIPT_URL, {
-          method: "POST",
-          headers: { "Content-Type": "text/plain;charset=utf-8" },
-          body: JSON.stringify({ action: "submit", ...payload })
-        });
-        const resData = await res.json();
-        if (resData && resData.success) {
-          success = true;
-        }
-      } catch (scriptErr) {
-        console.warn("Apps Script primary write failed, attempting Google Form mirror:", scriptErr);
-      }
-
-      // ROUTE 2: Google Forms Secondary Mirror
+      // ROUTE 1: Google Forms Direct High-Throughput (Zero-Lock, same as Semester 1)
       try {
         const formBody = new URLSearchParams();
-        const formWorkOn = (payload.evalHelp && !GOOGLE_FORM_ENTRIES.evalHelp)
-          ? `${payload.workOn}\n\n[FE1 Relevance & Strategy]: ${payload.evalHelp}`
-          : payload.workOn;
-
         formBody.append(GOOGLE_FORM_ENTRIES.student, payload.student);
         formBody.append(GOOGLE_FORM_ENTRIES.pin, payload.pin);
-        formBody.append(GOOGLE_FORM_ENTRIES.track, payload.track);
         formBody.append(GOOGLE_FORM_ENTRIES.module, payload.module);
         formBody.append(GOOGLE_FORM_ENTRIES.session, getFormSessionValue(payload.session));
         formBody.append(GOOGLE_FORM_ENTRIES.vocab, payload.vocab);
         formBody.append(GOOGLE_FORM_ENTRIES.contentReview, payload.contentReview);
-        formBody.append(GOOGLE_FORM_ENTRIES.workOn, formWorkOn);
-        if (GOOGLE_FORM_ENTRIES.evalHelp) {
-          formBody.append(GOOGLE_FORM_ENTRIES.evalHelp, payload.evalHelp);
-        }
+        formBody.append(GOOGLE_FORM_ENTRIES.workOn, payload.workOn);
+        formBody.append(GOOGLE_FORM_ENTRIES.evalHelp, payload.evalHelp);
         formBody.append(GOOGLE_FORM_ENTRIES.evalRating, payload.evalRating);
         formBody.append(GOOGLE_FORM_ENTRIES.toeicPrep, payload.toeicPrep);
         formBody.append(GOOGLE_FORM_ENTRIES.toeicRating, payload.toeicRating);
@@ -1399,7 +1404,36 @@
 
         success = true;
       } catch (formErr) {
-        console.warn("Google Form mirror submission attempt:", formErr);
+        console.warn("Google Form primary route failed, attempting Route 2 fallback:", formErr);
+      }
+
+      // ROUTE 2: Google Apps Script Web App Direct Write (GET submission with full CORS redirect support)
+      if (!success) {
+        try {
+          const qs = new URLSearchParams({
+            action: "submit",
+            student: payload.student,
+            pin: payload.pin,
+            track: "AT",
+            module: payload.module,
+            session: payload.session,
+            vocab: payload.vocab,
+            contentReview: payload.contentReview,
+            workOn: payload.workOn,
+            evalHelp: payload.evalHelp,
+            evalRating: payload.evalRating,
+            toeicPrep: payload.toeicPrep,
+            toeicRating: payload.toeicRating,
+            _t: Date.now()
+          });
+          const res = await fetch(`${SCRIPT_URL}?${qs.toString()}`);
+          const resData = await res.json();
+          if (resData && resData.success) {
+            success = true;
+          }
+        } catch (scriptErr) {
+          console.warn("Apps Script secondary route failed:", scriptErr);
+        }
       }
 
       if (success) {
@@ -1420,11 +1454,12 @@
         if (isEdit) {
           const targetModKey = getModuleKey(payload.module);
           const targetSesNum = formatSessionNum(payload.session);
-          const existIdx = currentLoadedLogs.findIndex(l =>
-            (l.track || currentTrack).toUpperCase() === currentTrack.toUpperCase() &&
-            getModuleKey(l.module) === targetModKey &&
-            formatSessionNum(l.session) === targetSesNum
-          );
+          const existIdx = currentLoadedLogs.findIndex(l => {
+            const tr = (l.track || "AT").toUpperCase();
+            return (tr === "AT" || tr === "AAS") &&
+              getModuleKey(l.module) === targetModKey &&
+              formatSessionNum(l.session) === targetSesNum;
+          });
           if (existIdx !== -1) {
             currentLoadedLogs[existIdx] = newEntry;
           } else {
@@ -1631,7 +1666,8 @@
       }
 
       // If the currently selected option is disabled, auto-advance to the first open session
-      if (sesSelect.selectedOptions[0] && sesSelect.selectedOptions[0].disabled) {
+      const selectedOpt = sesSelect.options[sesSelect.selectedIndex] || (sesSelect.selectedOptions && sesSelect.selectedOptions[0]);
+      if (selectedOpt && selectedOpt.disabled) {
         if (firstAvailableValue) {
           sesSelect.value = firstAvailableValue;
         }
