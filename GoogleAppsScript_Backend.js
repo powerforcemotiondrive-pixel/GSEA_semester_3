@@ -226,16 +226,17 @@ function handleLogin(studentName, studentPin, requestedTrack) {
 
     var cTs  = findCol(rawHeaders, ["time", "date", "horodateur"], 0);
     var cSt  = findCol(rawHeaders, ["student", "nom", "name", "élève", "eleve"], 1);
-    var cTrk = findTrackCol(rawHeaders, hasPinCol ? 3 : -1);
-    var cMod = findModuleCol(rawHeaders, hasPinCol ? 4 : 2);
-    var cSes = findCol(rawHeaders, ["session", "séance", "seance", "cours", "lesson"], hasPinCol ? 5 : 3);
-    var cVoc = findCol(rawHeaders, ["vocab", "word", "lexique", "term", "phrase"], hasPinCol ? 6 : 4);
-    var cRev = findCol(rawHeaders, ["review", "learnt", "learned", "content", "bilan"], hasPinCol ? 7 : 5);
-    var cWrk = findCol(rawHeaders, ["work", "travail", "improve", "target", "following"], hasPinCol ? 8 : 6);
+    var cTrk = findTrackCol(rawHeaders, -1);
+    var hasTrackCol = (cTrk !== -1);
+    var cMod = findModuleCol(rawHeaders, hasPinCol ? (hasTrackCol ? 4 : 3) : 2);
+    var cSes = findCol(rawHeaders, ["session", "séance", "seance", "cours", "lesson"], hasPinCol ? (hasTrackCol ? 5 : 4) : 3);
+    var cVoc = findCol(rawHeaders, ["vocab", "word", "lexique", "term", "phrase"], hasPinCol ? (hasTrackCol ? 6 : 5) : 4);
+    var cRev = findCol(rawHeaders, ["review", "learnt", "learned", "content", "bilan"], hasPinCol ? (hasTrackCol ? 7 : 6) : 5);
+    var cWrk = findCol(rawHeaders, ["work", "travail", "improve", "target", "following"], hasPinCol ? (hasTrackCol ? 8 : 7) : 6);
     var cEvH = findEvalHelpCol(rawHeaders, -1);
-    var cEvR = findEvalRatingCol(rawHeaders, (cEvH !== -1) ? 10 : (hasPinCol ? 9 : 8));
-    var cToP = findToeicPrepCol(rawHeaders, (cEvH !== -1) ? 11 : (hasPinCol ? 10 : 9));
-    var cToR = findToeicRatingCol(rawHeaders, (cEvH !== -1) ? 12 : (hasPinCol ? 11 : 10));
+    var cEvR = findEvalRatingCol(rawHeaders, (cEvH !== -1) ? (hasTrackCol ? 10 : 9) : (hasTrackCol ? 9 : 8));
+    var cToP = findToeicPrepCol(rawHeaders, (cEvH !== -1) ? (hasTrackCol ? 11 : 10) : (hasTrackCol ? 10 : 9));
+    var cToR = findToeicRatingCol(rawHeaders, (cEvH !== -1) ? (hasTrackCol ? 12 : 11) : (hasTrackCol ? 11 : 10));
 
     for (var r = 1; r < data.length; r++) {
       var row = data[r];
@@ -249,15 +250,11 @@ function handleLogin(studentName, studentPin, requestedTrack) {
 
         var modVal = String(row[cMod] || "").trim();
         var sesVal = String(row[cSes] || "").trim();
-        var trkVal = (cTrk !== -1 && row[cTrk] != null) ? String(row[cTrk]).trim() : "";
+        var trkVal = (hasTrackCol && row[cTrk] != null) ? String(row[cTrk]).trim() : "AT";
 
-        // Fallback inference: if track column was empty or not found, deduce from module name
-        if (!trkVal) {
-          if (/travel|weather|tech|decarbon/i.test(modVal)) {
-            trkVal = "AG";
-          } else if (/airline|airframe|flight|meteorology|safety|security|crisis/i.test(modVal)) {
-            trkVal = "AAS";
-          }
+        // Fallback inference: if track column was empty or not found, default to AT in Semester 3
+        if (!trkVal || trkVal.toUpperCase() === "AAS") {
+          trkVal = "AT";
         }
 
         // Self-healing: if modVal captured a PIN and sesVal contains "Module", fix column offset
@@ -361,49 +358,43 @@ function handleSubmit(d) {
       ]);
     }
 
+    var hasTrackCol = false;
     var hasSeparateEvalHelp = false;
     if (sheet.getLastRow() > 0) {
       var headerRow = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0].map(function(h) { return String(h || "").toLowerCase(); });
+      hasTrackCol = (findTrackCol(headerRow, -1) !== -1);
       hasSeparateEvalHelp = (findEvalHelpCol(headerRow, -1) !== -1);
     }
 
-    var row;
+    var row = [
+      new Date(),
+      d.student || "",
+      d.pin || ""
+    ];
+
+    if (hasTrackCol) {
+      row.push(String(d.track || "AT").trim().toUpperCase());
+    }
+
+    row.push(String(d.module || "").trim());
+    row.push(String(d.session || "").trim());
+    row.push(String(d.vocab || "").trim());
+    row.push(String(d.contentReview || "").trim());
+
     if (hasSeparateEvalHelp) {
-      row = [
-        new Date(),
-        d.student || "",
-        d.pin || "",
-        d.track || "AT",
-        d.module || "",
-        d.session || "",
-        d.vocab || "",
-        d.contentReview || "",
-        d.workOn || "",
-        d.evalHelp || "",
-        d.evalRating || d.formativeRating || "",
-        d.toeicPrep || "",
-        d.toeicRating || d.toeicPrepRating || ""
-      ];
+      row.push(String(d.workOn || "").trim());
+      row.push(String(d.evalHelp || "").trim());
     } else {
       var workOnCombined = String(d.workOn || "").trim();
       if (d.evalHelp && workOnCombined.indexOf(d.evalHelp) === -1) {
         workOnCombined = (workOnCombined ? (workOnCombined + "\n\n") : "") + "[FE1 Relevance & Strategy]: " + d.evalHelp;
       }
-      row = [
-        new Date(),
-        d.student || "",
-        d.pin || "",
-        d.track || "AT",
-        d.module || "",
-        d.session || "",
-        d.vocab || "",
-        d.contentReview || "",
-        workOnCombined,
-        d.evalRating || d.formativeRating || "",
-        d.toeicPrep || "",
-        d.toeicRating || d.toeicPrepRating || ""
-      ];
+      row.push(workOnCombined);
     }
+
+    row.push(String(d.evalRating || d.formativeRating || "").trim());
+    row.push(String(d.toeicPrep || "").trim());
+    row.push(String(d.toeicRating || d.toeicPrepRating || "").trim());
 
     sheet.appendRow(row);
 
