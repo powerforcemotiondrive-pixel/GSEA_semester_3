@@ -1,9 +1,9 @@
 # COPYRIGHT & INTELLECTUAL PROPERTY NOTICE
 
-**ENAC GSEA English Learning Platform & SCORM System — Semester 1 (LV101E & LV121E)**  
+**ENAC GSEA English Learning Platform & SCORM System — Semester 3 Technical English (LV125E)**  
 **Author & Pedagogical Architect**: Phil PARRIS  
 **Affiliation**: École Nationale de l'Aviation Civile (ENAC), Département Langues et Sciences Humaines (LH / LAN)  
-**Promotion**: GSEA26A (and succeeding cohorts)  
+**Promotion**: GSEA 25A (and succeeding cohorts)  
 **Academic Year**: 2026–2027  
 **Copyright**: © 2026 Phil PARRIS. All Rights Reserved.
 
@@ -22,7 +22,7 @@ In accordance with international copyright treaties (the Berne Convention for th
    This copyright extends to all original elements developed for this courseware, including but not limited to:
    - The modular 12-Card interactive SCORM platform and single-file offline runtime.
    - The continuous formative assessment system, 30-minute oral evaluation rotas, and rubrics.
-   - The technical aviation syllabus (LV121E) and general English DDRS curriculum (LV101E).
+   - The technical aviation and aerodrome operations curriculum (LV125E), including EASA regulatory documentation, aerodrome safety procedures, oral tutorial evaluations (FE1), and MTF ICAO Level 4 test preparation.
    - The bilingual (English/French) presentation engine and administrative portal.
    - The digital student portfolio architecture and 1-click export modules.
 
