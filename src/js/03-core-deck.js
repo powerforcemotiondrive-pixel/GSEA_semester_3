@@ -211,22 +211,27 @@
             mod = 0;
           }
 
-          // Check if card index is directly in hash (e.g. #aas-module1-card3 or #card-3)
-          const cardMatch = hash.match(/card-?(\d+)/);
-          if (cardMatch) {
-            card = Math.max(0, parseInt(cardMatch[1], 10) - 1);
+          // Noticeboard explicit hash check
+          if (hash.includes('home') || hash.includes('noticeboard') || hash.includes('card-0') || hash.includes('card0')) {
+            card = 0;
           } else {
-            // Restore card memory from sessionStorage
-            const savedMod = sessionStorage.getItem(`gsea_${prog}_last_mod`) || sessionStorage.getItem('gsea_last_mod');
-            const savedCard = sessionStorage.getItem(`gsea_${prog}_last_card`) || sessionStorage.getItem('gsea_last_card');
-            if (savedMod !== null) {
-              const parsedMod = parseInt(savedMod, 10);
-              if (parsedMod === 0 || parsedMod === 1) {
-                if (!hash.includes('mod1') && !hash.includes('module1') && !hash.includes('module-1') && !hash.includes('mod2') && !hash.includes('module2') && !hash.includes('module-2')) {
-                  mod = parsedMod;
-                }
-                if (parsedMod === mod && savedCard !== null) {
-                  card = parseInt(savedCard, 10);
+            // Check if card index is directly in hash (e.g. #aas-module1-card3 or #card-3)
+            const cardMatch = hash.match(/card-?(\d+)/);
+            if (cardMatch) {
+              card = parseInt(cardMatch[1], 10);
+            } else {
+              // Restore card memory from sessionStorage
+              const savedMod = sessionStorage.getItem(`gsea_${prog}_last_mod`) || sessionStorage.getItem('gsea_last_mod');
+              const savedCard = sessionStorage.getItem(`gsea_${prog}_last_card`) || sessionStorage.getItem('gsea_last_card');
+              if (savedMod !== null) {
+                const parsedMod = parseInt(savedMod, 10);
+                if (parsedMod === 0 || parsedMod === 1) {
+                  if (!hash.includes('mod1') && !hash.includes('module1') && !hash.includes('module-1') && !hash.includes('mod2') && !hash.includes('module2') && !hash.includes('module-2')) {
+                    mod = parsedMod;
+                  }
+                  if (parsedMod === mod && savedCard !== null) {
+                    card = parseInt(savedCard, 10);
+                  }
                 }
               }
             }
@@ -487,7 +492,12 @@
         sessionStorage.setItem('gsea_last_mod', String(modIdx));
         sessionStorage.setItem('gsea_last_card', String(cardIdx));
         if (window.history && typeof window.history.replaceState === 'function') {
-          window.history.replaceState(null, '', `#${currentProgram}-module${modIdx + 1}-card${cardIdx + 1}`);
+          const targetPage = modulesData[modIdx] && modulesData[modIdx].pages && modulesData[modIdx].pages[cardIdx];
+          if (targetPage && targetPage.isNoticeboard) {
+            window.history.replaceState(null, '', `#${currentProgram}-module${modIdx + 1}-noticeboard`);
+          } else {
+            window.history.replaceState(null, '', `#${currentProgram}-module${modIdx + 1}-card${cardIdx}`);
+          }
         }
       } catch (err) {
         // Silently swallow SecurityError if embedded in a restricted or cross-origin Moodle iframe
@@ -635,9 +645,9 @@
 
       mod.pages.forEach((page, idx) => {
         // Module 1 Section Split: Part 1 - EASA Docs (Sessions 1-3)
-        if (isMod1 && idx === 0) {
+        if (isMod1 && page.sessionNum === 1) {
           const divider = document.createElement('div');
-          divider.className = "pt-1 pb-1 px-1 flex items-center gap-1.5 text-[9px] font-mono font-bold uppercase tracking-widest text-slate-400 select-none";
+          divider.className = "pt-2 pb-1 px-1 flex items-center gap-1.5 text-[9px] font-mono font-bold uppercase tracking-widest text-slate-400 select-none";
           divider.innerHTML = `
             <span class="h-px bg-slate-200/90 flex-1"></span>
             <span>EASA Docs (S1 - S3)</span>
@@ -647,12 +657,24 @@
         }
 
         // Module 1 Section Split: Part 2 - Safety, Audits & FE (Sessions 4-7)
-        if (isMod1 && idx === 3) {
+        if (isMod1 && page.sessionNum === 4) {
           const divider = document.createElement('div');
           divider.className = "pt-2.5 pb-1 px-1 flex items-center gap-1.5 text-[9px] font-mono font-bold uppercase tracking-widest text-slate-400 select-none";
           divider.innerHTML = `
             <span class="h-px bg-slate-200/90 flex-1"></span>
             <span>Safety, Audits &amp; FE (S4 - S7)</span>
+            <span class="h-px bg-slate-200/90 flex-1"></span>
+          `;
+          menuEl.appendChild(divider);
+        }
+
+        // Module 2 Section Split: MTF Prep (Sessions 1-8)
+        if (!isMod1 && page.sessionNum === 1) {
+          const divider = document.createElement('div');
+          divider.className = "pt-2 pb-1 px-1 flex items-center gap-1.5 text-[9px] font-mono font-bold uppercase tracking-widest text-slate-400 select-none";
+          divider.innerHTML = `
+            <span class="h-px bg-slate-200/90 flex-1"></span>
+            <span>MTF ICAO Prep (S1 - S8)</span>
             <span class="h-px bg-slate-200/90 flex-1"></span>
           `;
           menuEl.appendChild(divider);
@@ -672,7 +694,7 @@
         const item = document.createElement('button');
         item.type = 'button';
         item.setAttribute('data-card-idx', idx);
-        const badgeNum = String(idx + 1).padStart(2, '0');
+        const badgeNum = page.isNoticeboard ? '00' : (page.sessionNum < 10 ? `0${page.sessionNum}` : `${page.sessionNum}`);
 
         if (page.isMuted) {
           item.setAttribute('aria-label', `${page.title} (Muted)`);
@@ -688,10 +710,14 @@
         } else {
           item.setAttribute('aria-label', `Navigate to ${page.title}`);
           const rightHtml = `<svg class="flight-strip-chevron w-3.5 h-3.5 shrink-0 opacity-40 transition-all pointer-events-none" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>`;
+          const leftIcon = page.isNoticeboard
+            ? `<svg width="12" height="12" class="w-3 h-3 text-amber-500 shrink-0 mr-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>`
+            : '';
 
           item.innerHTML = `
             <div class="flex items-center gap-2 min-w-0 pr-1 pointer-events-none">
               <span class="flight-strip-badge font-mono text-[10px] font-bold px-1.5 py-0.5 rounded transition-all">${badgeNum}</span>
+              ${leftIcon}
               <span class="flight-strip-title truncate text-xs transition-all pointer-events-none">${page.title}</span>
             </div>
             ${rightHtml}
@@ -714,7 +740,7 @@
         if (page && page.isMuted) return;
 
         const isActive = idx === activeIdx;
-        const isCoreUnit = page && !page.isAdmin && !page.isObjectives && !page.isImmersion && !page.isDocsHub;
+        const isCoreUnit = page && (page.isNoticeboard || (!page.isAdmin && !page.isObjectives && !page.isImmersion && !page.isDocsHub));
         const badge = item.querySelector('.flight-strip-badge');
         const title = item.querySelector('.flight-strip-title');
         const chevron = item.querySelector('.flight-strip-chevron');
@@ -912,12 +938,26 @@
       currentIndex = idx;
       const page = pages[currentIndex];
 
-      // Subtle opacity crossfade transition (Option 1)
+      const noticeboardView = document.getElementById('deck-noticeboard-view');
       const cardView = document.getElementById('deck-card-view');
-      if (cardView) {
-        cardView.classList.remove('deck-card-fade');
-        void cardView.offsetWidth; // Force reflow to re-trigger CSS keyframe
-        cardView.classList.add('deck-card-fade');
+
+      if (page.isNoticeboard) {
+        if (cardView) cardView.classList.add('hidden');
+        if (noticeboardView) {
+          noticeboardView.classList.remove('hidden');
+          noticeboardView.classList.remove('deck-card-fade');
+          void noticeboardView.offsetWidth;
+          noticeboardView.classList.add('deck-card-fade');
+          renderNoticeboardContent(mod);
+        }
+      } else {
+        if (noticeboardView) noticeboardView.classList.add('hidden');
+        if (cardView) {
+          cardView.classList.remove('hidden');
+          cardView.classList.remove('deck-card-fade');
+          void cardView.offsetWidth;
+          cardView.classList.add('deck-card-fade');
+        }
       }
 
       // Update card tag pill (Option A Balanced Horizontal Grid)
@@ -1068,12 +1108,13 @@
       const accessiblePages = pages.filter(p => !p.isMuted);
       const isNextDisabled = (currentIndex === pages.length - 1) || (pages[currentIndex + 1] && pages[currentIndex + 1].isMuted);
 
-      document.getElementById('counter-badge').textContent = `${currentIndex + 1} of ${accessiblePages.length}`;
-      const deckTitleEl = document.getElementById('deck-title');
-      if (deckTitleEl) {
-        deckTitleEl.textContent = page.title;
+      if (page.isNoticeboard) {
+        document.getElementById('counter-badge').textContent = `Noticeboard`;
+        document.getElementById('footer-status').textContent = `Active: Student Noticeboard • GSEA 25A`;
+      } else {
+        document.getElementById('counter-badge').textContent = `${currentIndex + 1} of ${accessiblePages.length}`;
+        document.getElementById('footer-status').textContent = `Active: ${mod.name} - ${page.title}`;
       }
-      document.getElementById('footer-status').textContent = `Active: ${mod.name} - ${page.title}`;
 
       document.getElementById('prev-btn').disabled = (currentIndex === 0);
       document.getElementById('next-btn').disabled = isNextDisabled;
@@ -1086,10 +1127,18 @@
         sessionStorage.setItem('gsea_last_mod', String(currentModuleIndex));
         sessionStorage.setItem('gsea_last_card', String(currentIndex));
         if (window.history && typeof window.history.replaceState === 'function') {
-          window.history.replaceState(null, '', `#${currentProgram}-module${currentModuleIndex + 1}-card${currentIndex + 1}`);
+          if (page.isNoticeboard) {
+            window.history.replaceState(null, '', `#${currentProgram}-module${currentModuleIndex + 1}-noticeboard`);
+          } else {
+            window.history.replaceState(null, '', `#${currentProgram}-module${currentModuleIndex + 1}-card${currentIndex}`);
+          }
         }
       } catch (e) {}
-      ScormAPI.setProgress(`${currentProgram}-mod${currentModuleIndex + 1}-card${currentIndex}`, true);
+      if (page.isNoticeboard) {
+        ScormAPI.setProgress(`${currentProgram}-mod${currentModuleIndex + 1}-noticeboard`, true);
+      } else {
+        ScormAPI.setProgress(`${currentProgram}-mod${currentModuleIndex + 1}-card${currentIndex}`, true);
+      }
     }
 
     function stepDeck(direction) {
@@ -2087,6 +2136,11 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
       }
     }
     window.toggleDeckFullScreen = toggleDeckFullScreen;
+    window.renderCard = renderCard;
+    window.switchModule = switchModule;
+    window.openModalDrawer = openModalDrawer;
+    window.closeModalDrawer = closeModalDrawer;
+    window.switchModalTab = switchModalTab;
 
     window.syncPortfolioDrawerHeader = function() {
       const iconBox = document.getElementById('portfolio-drawer-icon');
@@ -2587,4 +2641,434 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         }
       });
     };
+
+    // --- Active Session & Calendar Synchronizer (Semester 3 Noticeboard) ---
+    function getActiveNoticeboardSession() {
+      const now = new Date();
+      const sessionSchedule = [
+        {
+          modIdx: 0,
+          cardIdx: 1,
+          sessionNum: 1,
+          week: 47,
+          start: new Date('2026-11-16T00:00:00'),
+          title: "Session 1 — EASA Rules & Modal Precision",
+          desc: "European aerodrome regulatory framework (EASA CS-ADR-DSN), distinguishing mandatory rules from guidance, and the Obstacle Clarification role-play."
+        },
+        {
+          modIdx: 0,
+          cardIdx: 2,
+          sessionNum: 2,
+          week: 48,
+          start: new Date('2026-11-23T00:00:00'),
+          title: "Session 2 — Safety Alerts & Ramp Briefings",
+          desc: "EASA Safety Information Bulletin (SIB 2024-09) on ramp collisions, speed limits, vehicle telematics, and 90-second spoken ramp briefings."
+        },
+        {
+          modIdx: 0,
+          cardIdx: 3,
+          sessionNum: 3,
+          week: 49,
+          start: new Date('2026-11-30T00:00:00'),
+          title: "Session 3 — Special Requests & Runway Safety Cases",
+          desc: "Authentic runway safety cases, Article 71 urgent exemptions, conditional phrasing ('provided that', 'in lieu of'), and pilot runway briefings."
+        },
+        {
+          modIdx: 0,
+          cardIdx: 4,
+          sessionNum: 4,
+          week: 50,
+          start: new Date('2026-12-07T00:00:00'),
+          title: "Session 4 — Ground Inspection & Audit Findings",
+          desc: "Aerodrome ground safety audits, classifying Level 1 vs Level 2 non-compliances (Point ADR.AR.C.055), past deductions, and executive briefings."
+        },
+        {
+          modIdx: 0,
+          cardIdx: 5,
+          sessionNum: 5,
+          week: 51,
+          start: new Date('2026-12-14T00:00:00'),
+          title: "Session 5 — Multi-Source Incident Investigation & Root Cause Analysis",
+          desc: "Investigating aerodrome safety occurrences, cross-referencing ASRs, ATC transcripts, and METAR data, and presenting causal chains."
+        },
+        {
+          modIdx: 0,
+          cardIdx: 6,
+          sessionNum: 6,
+          week: 1,
+          start: new Date('2027-01-04T00:00:00'),
+          title: "Session 6 — The Corrective Action Plan & CAP Review",
+          desc: "Drafting Part-ADR.OR.D.005 Corrective Action Plans, distinguishing containment from root-cause mitigations, and preparing for FE1."
+        },
+        {
+          modIdx: 0,
+          cardIdx: 7,
+          sessionNum: 7,
+          week: 2,
+          start: new Date('2027-01-11T00:00:00'),
+          title: "Session 7 — FORMATIVE EVALUATION 1 (FE1): EASA Regulatory Extract & Class Activity Evaluation",
+          desc: "Student teams deliver 30-minute interactive technical workshops based on authentic EASA documentation extracts.",
+          isFe: true
+        },
+        {
+          modIdx: 1,
+          cardIdx: 1,
+          sessionNum: 1,
+          week: 3,
+          start: new Date('2027-01-18T00:00:00'),
+          title: "Session 1 — Introduction to the MTF ICAO Level Test",
+          desc: "Overview of the MTF test format, scoring criteria against ICAO holistic descriptors, and diagnostic evaluation."
+        },
+        {
+          modIdx: 1,
+          cardIdx: 2,
+          sessionNum: 2,
+          week: 4,
+          start: new Date('2027-01-25T00:00:00'),
+          title: "Session 2 — The MTF Picture Exercise & Spoken Description Practice",
+          desc: "Aviation imagery analysis, structured 2-minute spoken descriptions, spatial prepositions, and operational deduction."
+        },
+        {
+          modIdx: 1,
+          cardIdx: 3,
+          sessionNum: 3,
+          week: 5,
+          start: new Date('2027-02-01T00:00:00'),
+          title: "Session 3 — The MTF Listening Section & Audio Comprehension Practice",
+          desc: "Authentic radiotelephony & non-routine airside transmissions, note-taking strategies, and comprehension drills."
+        },
+        {
+          modIdx: 1,
+          cardIdx: 4,
+          sessionNum: 4,
+          week: 7,
+          start: new Date('2027-02-15T00:00:00'),
+          title: "Session 4 — The MTF Text Exercise & Technical Summary Practice",
+          desc: "Rapid extraction of technical aeronautical articles, concise oral summarization, and examiner follow-up Q&A."
+        },
+        {
+          modIdx: 1,
+          cardIdx: 5,
+          sessionNum: 5,
+          week: 8,
+          start: new Date('2027-02-22T00:00:00'),
+          title: "Session 5 — MTF Practice Test (Part 1 - Individual 30-Min Oral Trials)",
+          desc: "Individual 30-minute mock trials under authentic test conditions with targeted feedback from your teacher (Week 1 of 2)."
+        },
+        {
+          modIdx: 1,
+          cardIdx: 6,
+          sessionNum: 6,
+          week: 9,
+          start: new Date('2027-03-01T00:00:00'),
+          title: "Session 6 — MTF Practice Test (Part 2 - Individual 30-Min Oral Trials)",
+          desc: "Individual 30-minute mock trials under authentic test conditions with targeted feedback from your teacher (Week 2 of 2)."
+        },
+        {
+          modIdx: 1,
+          cardIdx: 7,
+          sessionNum: 7,
+          week: 10,
+          start: new Date('2027-03-08T00:00:00'),
+          title: "Session 7 — MTF Comprehensive Revision & Error Analysis",
+          desc: "Systematic review of mock test error trends, fluency repair strategies, and technical vocabulary consolidation."
+        },
+        {
+          modIdx: 1,
+          cardIdx: 8,
+          sessionNum: 8,
+          week: 11,
+          start: new Date('2027-03-15T00:00:00'),
+          title: "Session 8 — MTF Final Revision & Test Readiness",
+          desc: "Final speed-speaking warm-ups, confidence drills, exam-day logistics, and preparation for the official DSAC examination."
+        }
+      ];
+
+      let current = sessionSchedule[2]; // Default to Session 3 (W49)
+      for (let i = 0; i < sessionSchedule.length; i++) {
+        const item = sessionSchedule[i];
+        const next = sessionSchedule[i + 1];
+        if (now >= item.start && (!next || now < next.start)) {
+          current = item;
+          break;
+        }
+      }
+      if (now < sessionSchedule[0].start) {
+        current = sessionSchedule[0];
+      }
+
+      return {
+        modIdx: current.modIdx,
+        cardIdx: current.cardIdx,
+        sessionNum: current.sessionNum,
+        weekNum: current.week,
+        sessionName: current.title,
+        sessionDesc: current.desc,
+        isFe: !!current.isFe,
+        feWeek: 2
+      };
+    }
+
+    // --- Student Noticeboard Engine (Card 00) ---
+    function renderNoticeboardContent(theme) {
+      const noticeboardEl = document.getElementById('deck-noticeboard-view');
+      if (!noticeboardEl) return;
+
+      // Calendar Date Sync: Automatically determines active session and week
+      const activeInfo = getActiveNoticeboardSession();
+      const activeModIdx = activeInfo.modIdx;
+      const activeCardIdx = activeInfo.cardIdx;
+      const activeSessionName = activeInfo.sessionName;
+
+      // Dynamic teacher placeholders
+      let teacherA = "Teacher A (TBC)";
+      let teacherB = "Teacher B (TBC)";
+      let teacherC = "Teacher C (TBC)";
+      try {
+        if (typeof ADMIN_PROMO_CONFIG !== 'undefined' && ADMIN_PROMO_CONFIG.groups) {
+          teacherA = ADMIN_PROMO_CONFIG.groups[0]?.teacherPlaceholder || teacherA;
+          teacherB = ADMIN_PROMO_CONFIG.groups[1]?.teacherPlaceholder || teacherB;
+          teacherC = ADMIN_PROMO_CONFIG.groups[2]?.teacherPlaceholder || teacherC;
+        }
+      } catch (e) {}
+
+      // Hero banner image, badge, and subtitle
+      const heroImage = "images/s3_m1_session4_aerodrome.jpg";
+      const heroBadge = "✈️ TECHNICAL ENGLISH (LV125E) • SEMESTER 3 NOTICEBOARD";
+      const heroSubtitle = "Welcome to Semester 3 Technical English! Here is your home bulletin for weekly lessons, EASA regulations, MTF ICAO Level 4 exam preparation, study resources, and course announcements.";
+
+      noticeboardEl.innerHTML = `
+        <!-- 1. Arrival Banner (Cinematic Technical Airfield Hero Banner) -->
+        <div class="relative overflow-hidden rounded-2xl border border-slate-200/90 bg-slate-900 shadow-sm">
+          <div class="relative w-full h-48 sm:h-60 md:h-64">
+            <img src="${heroImage}" alt="Semester 3 Noticeboard" class="w-full h-full object-cover object-center select-none" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent flex flex-col justify-end p-4 sm:p-6 space-y-1 sm:space-y-1.5">
+              <span class="text-[10.5px] sm:text-[11px] font-mono font-bold text-sky-400 uppercase tracking-wider">
+                ${heroBadge}
+              </span>
+              <h2 class="text-xl sm:text-2xl md:text-3xl font-black text-white leading-tight tracking-tight">
+                Student Noticeboard
+              </h2>
+              <p class="text-xs sm:text-sm text-slate-200 font-normal leading-relaxed max-w-2xl">
+                ${heroSubtitle}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Mobile-First Quick Launchers Bar -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-between px-1">
+            <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">🚀 Quick Launchers</span>
+            <span class="text-[10px] font-mono text-slate-400 hidden sm:inline">1-Click Fast Navigation</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3">
+            <!-- Button 1: Jump to Active Lesson -->
+            <button type="button" onclick="switchModule(${activeModIdx}, ${activeCardIdx})" class="group flex flex-col justify-between p-3.5 sm:p-4 rounded-xl bg-gradient-to-br from-white via-white to-sky-50/50 border-sky-300/80 hover:border-sky-400 text-slate-900 shadow-2xs hover:shadow-xs transition-all duration-150 cursor-pointer text-left border min-h-[52px]">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider bg-sky-100 text-sky-800 border-sky-200 border px-2 py-0.5 rounded">Active Class • Week ${activeInfo.weekNum}</span>
+                <span class="text-base group-hover:translate-x-1 transition-transform text-sky-600">➔</span>
+              </div>
+              <div class="mt-2">
+                <div class="text-xs sm:text-sm font-black leading-snug text-slate-900">▶ Jump to Today's Lesson</div>
+                <div class="text-[11px] text-slate-600 truncate font-medium mt-0.5">${activeSessionName}</div>
+              </div>
+            </button>
+
+            <!-- Button 2: Weekly Calendar -->
+            <button type="button" onclick="openModalDrawer('admin_calendar', 1, 8)" class="group flex flex-col justify-between p-3.5 sm:p-4 rounded-xl bg-white hover:bg-slate-50 text-slate-900 shadow-2xs hover:shadow-xs transition-all duration-150 cursor-pointer text-left border border-slate-200/90 min-h-[52px]">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider bg-sky-50 text-sky-800 px-2 py-0.5 rounded border border-sky-200">Course Schedule</span>
+                <span class="text-base group-hover:translate-x-1 transition-transform text-slate-400">➔</span>
+              </div>
+              <div class="mt-2">
+                <div class="text-xs sm:text-sm font-black leading-snug text-slate-900">📅 Weekly Calendar</div>
+                <div class="text-[11px] text-slate-500 font-medium mt-0.5">Session dates, rooms &amp; FE rotas</div>
+              </div>
+            </button>
+
+            <!-- Button 3: Portfolio Summary -->
+            <button type="button" onclick="openModalDrawer('portfolio_summary', 1, 8)" class="group flex flex-col justify-between p-3.5 sm:p-4 rounded-xl bg-white hover:bg-slate-50 text-slate-900 shadow-2xs hover:shadow-xs transition-all duration-150 cursor-pointer text-left border border-slate-200/90 min-h-[52px]">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider bg-emerald-50 text-emerald-800 border border-emerald-200 px-2 py-0.5 rounded">Cohort Insights</span>
+                <span class="text-base group-hover:translate-x-1 transition-transform text-slate-400">➔</span>
+              </div>
+              <div class="mt-2">
+                <div class="text-xs sm:text-sm font-black leading-snug text-slate-900">📊 Portfolio Summary</div>
+                <div class="text-[11px] text-slate-500 font-medium mt-0.5">Top buzzwords, grammar traps &amp; reflections</div>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- 3. Weekly Announcements & Course Focus -->
+        <div class="space-y-2.5">
+          <div class="flex items-center justify-between px-1">
+            <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">📢 This Week's Course Focus</span>
+            <span class="text-[10px] font-mono text-slate-400 hidden sm:inline">Week ${activeInfo.weekNum} • Module ${activeInfo.modIdx + 1}</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <!-- Announcement 1: Active Class Overview -->
+            <div class="p-4 rounded-xl border border-sky-200/90 bg-sky-50/50 shadow-2xs space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-sky-200/80 text-sky-900">✈️ Friday • Technical English</span>
+                <span class="text-[10.5px] font-mono text-sky-700 font-medium">13:15 – 15:15</span>
+              </div>
+              <h3 class="text-xs sm:text-sm font-bold text-sky-950">
+                ${activeInfo.sessionName}
+              </h3>
+              <p class="text-[11.5px] sm:text-xs text-sky-900 leading-relaxed font-normal">
+                ${activeInfo.sessionDesc}
+              </p>
+            </div>
+
+            <!-- Announcement 2: Assessment Focus -->
+            <div class="p-4 rounded-xl border border-purple-200/90 bg-purple-50/50 shadow-2xs space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-purple-200/80 text-purple-900">🎯 ${activeInfo.isFe ? "This Week's Evaluation" : "Assessment Milestones"}</span>
+                <span class="text-[10.5px] font-mono text-purple-700 font-medium">Week ${activeInfo.feWeek} &amp; Week 12</span>
+              </div>
+              <h3 class="text-xs sm:text-sm font-bold text-purple-950">
+                ${activeInfo.isFe ? "Formative Evaluation 1 (FE1) in Progress" : "Formative Evaluation 1 (FE1) &amp; MTF Exam"}
+              </h3>
+              <p class="text-[11.5px] sm:text-xs text-purple-900 leading-relaxed font-normal">
+                ${activeInfo.isFe ? "Oral team teaching sessions are active this week. Consult your designated 30-minute timeslot in the Weekly Calendar tab and arrive 5 minutes early." : "In Session 7 (Fri 15 Jan), student teams deliver a 30-minute interactive workshop on an EASA regulatory extract. In Week 12, all students sit the official DSAC MTF examination."}
+              </p>
+            </div>
+
+            <!-- Announcement 3: Portfolio Habit -->
+            <div class="p-4 rounded-xl border border-emerald-200/90 bg-emerald-50/50 shadow-2xs space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-emerald-200/80 text-emerald-900">💡 Habit</span>
+                <span class="text-[10.5px] font-mono text-emerald-700 font-medium">Continuous Practice</span>
+              </div>
+              <h3 class="text-xs sm:text-sm font-bold text-emerald-950">
+                Update Your Spoken Portfolio
+              </h3>
+              <p class="text-[11.5px] sm:text-xs text-emerald-900 leading-relaxed font-normal">
+                Add at least 3 new technical words and 1 reflection sentence to your portfolio after each session. Regular updates build confidence for your oral evaluations.
+              </p>
+            </div>
+
+            <!-- Announcement 4: Regulatory Precision -->
+            <div class="p-4 rounded-xl border border-amber-200/90 bg-amber-50/50 shadow-2xs space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-amber-200/80 text-amber-900">📋 Technical Method</span>
+                <span class="text-[10.5px] font-mono text-amber-700 font-medium">EASA Standards</span>
+              </div>
+              <h3 class="text-xs sm:text-sm font-bold text-amber-950">
+                Modal Precision &amp; Active Phrasing
+              </h3>
+              <p class="text-[11.5px] sm:text-xs text-amber-900 leading-relaxed font-normal">
+                Distinguish mandatory requirements (shall, must) from advisory guidance (should, may). Practice converting passive regulatory prose into direct, active spoken instructions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Weekly Study & Case Studies (Reading & Technical Practice) -->
+        <div class="space-y-2.5">
+          <div class="flex items-center justify-between px-1">
+            <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">📰 Weekly Study &amp; Technical Reading</span>
+            <span class="text-[10px] font-mono text-slate-400 hidden sm:inline">Authentic EASA Case Studies</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <!-- Card 1: Ground Safety Audit -->
+            <div class="p-4 rounded-xl border border-slate-200/90 bg-white shadow-2xs flex flex-col justify-between space-y-3">
+              <div class="space-y-2">
+                <div class="flex items-center justify-between">
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-sky-100 text-sky-800 border border-sky-200">✈️ EASA Regulatory Audit</span>
+                  <span class="text-[10px] font-mono text-slate-400 font-semibold">Part-ADR.AR.C.055 • 4 min</span>
+                </div>
+                <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
+                  "Ground Safety Non-Compliances &amp; Level 1 / Level 2 Classifications"
+                </h4>
+                <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed font-normal">
+                  How airside safety inspectors identify, document, and categorize aerodrome non-conformities—from Jet A-1 fuel spill containment to runway rubber removal.
+                </p>
+              </div>
+              <button type="button" onclick="window.openArticleReader(4, 0)" class="w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded-lg bg-sky-600 hover:bg-sky-700 text-white font-bold text-xs shadow-2xs transition-all cursor-pointer">
+                <span>Read Technical Article</span>
+                <span class="font-bold text-sm leading-none">⇥</span>
+              </button>
+            </div>
+
+            <!-- Card 2: Corrective Action Plan (CAP) -->
+            <div class="p-4 rounded-xl border border-slate-200/90 bg-white shadow-2xs flex flex-col justify-between space-y-3">
+              <div class="space-y-2">
+                <div class="flex items-center justify-between">
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-800 border border-amber-200">✈️ Safety Management</span>
+                  <span class="text-[10px] font-mono text-slate-400 font-semibold">Part-ADR.OR.D.005 • 5 min</span>
+                </div>
+                <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
+                  "The Legal and Operational Framework of Corrective Action Plans"
+                </h4>
+                <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed font-normal">
+                  How aerodrome operators formulate root-cause analyses, prevent hazard recurrence, and present verifiable safety enhancements to authority auditors.
+                </p>
+              </div>
+              <button type="button" onclick="window.openArticleReader(6, 0)" class="w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded-lg bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs shadow-2xs transition-all cursor-pointer">
+                <span>Read Technical Article</span>
+                <span class="font-bold text-sm leading-none">⇥</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Course Administration & Teaching Team Directory -->
+        <div class="p-4 sm:p-5 rounded-xl border border-slate-200/80 bg-white shadow-2xs space-y-3 text-xs text-slate-700">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200/80 pb-2.5">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <span class="font-bold text-slate-900 uppercase tracking-wide text-[11px]">✉️ Teaching Team &amp; Course Administration</span>
+            </div>
+            <span class="text-[10.5px] font-mono text-slate-500">ENAC Département LH/LAN</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-[11.5px] sm:text-xs">
+            <!-- Box 1: Course Coordinator -->
+            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200/70 space-y-1">
+              <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-500">Course Coordinator</div>
+              <div class="font-bold text-slate-900 text-sm">Phil PARRIS</div>
+              <div class="text-slate-600 font-mono text-[11px]">philip.parris@enac.fr</div>
+              <div class="text-slate-500 text-[10.5px] pt-0.5">Office: LH/LAN</div>
+            </div>
+
+            <!-- Box 2: Technical English Teachers -->
+            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200/70 space-y-1">
+              <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-sky-700">✈️ Technical English (LV125E)</div>
+              <div class="text-slate-900 font-semibold text-xs pt-0.5">
+                <div><span class="font-mono text-slate-500 text-[10.5px]">Group A:</span> ${teacherA}</div>
+                <div class="mt-0.5"><span class="font-mono text-slate-500 text-[10.5px]">Group B:</span> ${teacherB}</div>
+                <div class="mt-0.5"><span class="font-mono text-slate-500 text-[10.5px]">Group C:</span> ${teacherC}</div>
+              </div>
+              <div class="text-slate-500 text-[10.5px] pt-1">Fridays 13:15 – 15:15</div>
+            </div>
+
+            <!-- Box 3: Key Assessment Milestones -->
+            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200/70 space-y-1">
+              <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-purple-700">🎯 Key Milestones</div>
+              <div class="text-slate-900 font-semibold text-xs pt-0.5">
+                <div><span class="font-mono text-slate-500 text-[10.5px]">Session 7:</span> FE1 Team Workshop</div>
+                <div class="mt-0.5"><span class="font-mono text-slate-500 text-[10.5px]">Week 12:</span> Official DSAC MTF Exam</div>
+              </div>
+              <div class="text-slate-500 text-[10.5px] pt-1">Rooms: Consult Weekly Calendar</div>
+            </div>
+          </div>
+
+          <!-- Contact Note -->
+          <div class="flex flex-wrap items-center justify-between gap-2 pt-1 border-t border-slate-100 text-[11px] text-slate-500">
+            <div>
+              Have a question about your group or oral evaluation? Speak to your teacher at the end of class or contact the coordinator.
+            </div>
+            <div class="font-mono text-[10.5px] text-slate-400">
+              ENAC Département LH/LAN
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
 

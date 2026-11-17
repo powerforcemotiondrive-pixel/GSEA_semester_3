@@ -102,11 +102,22 @@
           tag: tagLabel,
           title: titles[`s${s}`] || titles.s4,
           description: desc[`s${s}`] || desc.s4,
+          sessionNum: s,
           imageUrl: images[`card${s}`] || images.card4
         });
       }
 
+      const noticeboardPage = {
+        tag: "Semester 3 • Noticeboard",
+        title: "Student Noticeboard",
+        description: "Welcome to Semester 3 Technical English (LV125E)! Here is your home bulletin for weekly lessons, EASA regulations, MTF ICAO Level 4 exam preparation, study resources, and course announcements.",
+        isNoticeboard: true,
+        sessionNum: 0,
+        imageUrl: "images/semester_objectives.jpg"
+      };
+
       const pages = [
+        noticeboardPage,
         ...teachingPages
       ];
 
@@ -115,6 +126,7 @@
           tag: `Module 1 • FE • Session 7`,
           title: `Session 7 - EASA Regulatory Extract & Class Activity Evaluation`,
           description: `Welcome to Session 7! In this Formative Evaluation, student teams of up to 4 take the floor to deliver an engaging 30-minute interactive session based on an official EASA documentation extract of their choice. Your team will deliver a comprehensive spoken breakdown in plain English, teach 3 to 5 new technical words, and lead creative reading and speaking exercises for classmates.<br><br><em>Subject overview:</em> Formative Evaluation 1 — EASA Regulatory Extract &amp; Class Activity: Regulatory breakdown, technical vocabulary teaching, creative classmate exercises, and final teacher feedback.<br><br>All work in this session contributes directly toward your Formative Evaluation.`,
+          sessionNum: 7,
           isFe: true,
           imageUrl: images.fe
         });
@@ -124,6 +136,7 @@
         tag: "GSEA 25A • Course Admin",
         title: "Course Admin",
         description: "Welcome to the GSEA 25A Course Administration Hub. Access your official class groups (Group A, Group B & Group C), teacher assignments, weekly schedules, and dynamic 30-minute evaluation rotas.<br><br><em>Subject overview:</em> Weekly classes for Technical English (AT • LV125E).<br><br>Consult your designated timeslots and arrive 5 minutes before your slot with your presentation supports and updated learning portfolio ready.",
+        sessionNum: modNumber === 1 ? 8 : 9,
         isAdmin: true,
         adminUrl: "admin.html",
         imageUrl: images.admin
@@ -133,6 +146,7 @@
         tag: "Technical English • Course Guidance",
         title: "Student Guide & Objectives",
         description: "Essential student guidance for Semester 3: how to navigate European aerodrome regulations, MTF exam preparation, continuous speaking progress, evaluation guidelines, portfolio logging, and official ENAC course objectives (English &amp; French).",
+        sessionNum: modNumber === 1 ? 9 : 10,
         isObjectives: true,
         imageUrl: "images/semester_objectives.jpg"
       });
@@ -142,6 +156,7 @@
           tag: "Technical English • Documentation Hub",
           title: "Module 1 Student Book & Document Library",
           description: "Welcome to the Module 1 Documentation Hub. Access the complete, all-in-one Module 1 Student Book or directly download individual session PDF worksheets and authentic EASA technical dossiers.<br><br><em>Subject overview:</em> Comprehensive 79-page student course book (complete with syllabus objectives, study guide, 7 session worksheets, authentic EASA regulation dossiers, and FE1 flipped lesson guidelines) plus 1-click downloads for every session file.<br><br>Download the full Student Book for offline study on tablet or laptop, or consult individual dossiers during classroom discussions.",
+          sessionNum: 10,
           isDocsHub: true,
           imageUrl: "images/ddrs_aas_mod1.jpg"
         });
