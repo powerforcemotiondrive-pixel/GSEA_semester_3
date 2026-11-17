@@ -744,25 +744,25 @@
     // ============================================================================
 
     // 1. Google Apps Script Web App URL (Read-only PIN verification & history log fetching)
-    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwBZE-YeWJB-XduqqjAodoOqbplXaBSA7G0WPAdx4QiMt7dqgrwbQ0SPmpawMsGfYuETg/exec";
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyyzdxL5qK53dE0zQTN1lHKH7dZtHeZ3PxpSiJSbX6aBw14ikAHXYe3DtRQNLDX2Wuj/exec";
 
     // 2. Google Form Submission URL (Zero write-lock buffer)
-    const GOOGLE_FORM_ACTION_URL = "https://docs.google.com/forms/d/e/1FAIpQLScHBn586nhdjwnDf_gHqIksIi6ZjOppX3IW6N1VIjnefX1K6A/formResponse";
+    const GOOGLE_FORM_ACTION_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdrEhrGu-D8ZEg-vxXtt_08ncUiTzLVdUzvtYkXxEbBXjqxcw/formResponse";
 
     // 3. Google Form Field Mapping (Verified Entry IDs)
     const GOOGLE_FORM_ENTRIES = {
-      student: "entry.497833618",        // Student Name
-      pin: "entry.706546231",            // 4-Digit Security code
-      track: "entry.2129214365",         // Curriculum Track (AG / AAS)
-      module: "entry.1908919593",        // Module
-      session: "entry.1322270621",       // Session Number
-      vocab: "entry.1343452059",         // Key vocabulary
-      contentReview: "entry.10291943",   // Lesson content review (What I learnt in this session)
-      workOn: "entry.1758827933",        // Target areas following session
-      evalHelp: "entry.2087914325",      // Formative evaluation relevance
-      evalRating: "entry.995017051",     // Formative evaluation preparedness rating (1-10)
-      toeicPrep: "entry.1836642914",     // Weekly TOEIC prep
-      toeicRating: "entry.1244476891"    // TOEIC test preparedness rating (1-10)
+      student: "entry.1638941970",        // Student Name
+      pin: "entry.564526738",            // 4-Digit Security code
+      track: "entry.567321149",          // Curriculum Track (AT)
+      module: "entry.754685570",         // Module
+      session: "entry.1711641500",       // Session Number
+      vocab: "entry.1507717316",         // Key vocabulary & phrases
+      contentReview: "entry.1000004041", // Lesson content review
+      workOn: "entry.1315090876",        // Target areas following session
+      evalHelp: null,                    // Combined into workOn / preserved for direct backend
+      evalRating: "entry.503478048",     // Formative evaluation preparedness rating (1-10)
+      toeicPrep: "entry.2040486820",     // Live Traffic self-study exercises & audio vocabulary
+      toeicRating: "entry.1308272374"    // Live Traffic progress rating (0-10)
     };
 
     // ============================================================================
@@ -1325,6 +1325,10 @@
       // ROUTE 1: Google Forms Direct High-Throughput (Zero-Lock)
       try {
         const formBody = new URLSearchParams();
+        const formWorkOn = (payload.evalHelp && !GOOGLE_FORM_ENTRIES.evalHelp)
+          ? `${payload.workOn}\n\n[FE1 Relevance & Strategy]: ${payload.evalHelp}`
+          : payload.workOn;
+
         formBody.append(GOOGLE_FORM_ENTRIES.student, payload.student);
         formBody.append(GOOGLE_FORM_ENTRIES.pin, payload.pin);
         formBody.append(GOOGLE_FORM_ENTRIES.track, payload.track);
@@ -1332,8 +1336,10 @@
         formBody.append(GOOGLE_FORM_ENTRIES.session, getFormSessionValue(payload.session));
         formBody.append(GOOGLE_FORM_ENTRIES.vocab, payload.vocab);
         formBody.append(GOOGLE_FORM_ENTRIES.contentReview, payload.contentReview);
-        formBody.append(GOOGLE_FORM_ENTRIES.workOn, payload.workOn);
-        formBody.append(GOOGLE_FORM_ENTRIES.evalHelp, payload.evalHelp);
+        formBody.append(GOOGLE_FORM_ENTRIES.workOn, formWorkOn);
+        if (GOOGLE_FORM_ENTRIES.evalHelp) {
+          formBody.append(GOOGLE_FORM_ENTRIES.evalHelp, payload.evalHelp);
+        }
         formBody.append(GOOGLE_FORM_ENTRIES.evalRating, payload.evalRating);
         formBody.append(GOOGLE_FORM_ENTRIES.toeicPrep, payload.toeicPrep);
         formBody.append(GOOGLE_FORM_ENTRIES.toeicRating, payload.toeicRating);

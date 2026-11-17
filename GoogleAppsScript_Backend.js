@@ -232,7 +232,7 @@ function handleLogin(studentName, studentPin, requestedTrack) {
     var cVoc = findCol(rawHeaders, ["vocab", "word", "lexique"], hasPinCol ? 5 : 4);
     var cRev = findCol(rawHeaders, ["review", "learnt", "lesson content", "content"], hasPinCol ? 6 : 5);
     var cWrk = findCol(rawHeaders, ["work on", "need to work", "following this session", "work"], hasPinCol ? 7 : 6);
-    var cEvH = findEvalHelpCol(rawHeaders, hasPinCol ? 8 : 7);
+    var cEvH = findEvalHelpCol(rawHeaders, -1);
     var cEvR = findEvalRatingCol(rawHeaders, hasPinCol ? 9 : 8);
     var cToP = findToeicPrepCol(rawHeaders, hasPinCol ? 10 : 9);
     var cToR = findToeicRatingCol(rawHeaders, hasPinCol ? 11 : 10);
@@ -274,7 +274,7 @@ function handleLogin(studentName, studentPin, requestedTrack) {
           vocab: String(row[cVoc] || ""),
           contentReview: String(row[cRev] || ""),
           workOn: String(row[cWrk] || ""),
-          evalHelp: String(row[cEvH] || ""),
+          evalHelp: (cEvH !== -1 && row[cEvH] != null) ? String(row[cEvH]) : "",
           evalRating: String(row[cEvR] || ""),
           toeicPrep: String(row[cToP] || ""),
           toeicRating: String(row[cToR] || "")
@@ -532,7 +532,11 @@ function findEvalHelpCol(headers, fallback) {
   for (var i = 0; i < headers.length; i++) {
     var h = headers[i];
     if ((h.indexOf("eval") !== -1 || h.indexOf("formative") !== -1) &&
-        (h.indexOf("help") !== -1 || h.indexOf("aide") !== -1)) {
+        (h.indexOf("help") !== -1 || h.indexOf("aide") !== -1 || h.indexOf("relevance") !== -1 || h.indexOf("strategy") !== -1) &&
+        h.indexOf("rate") === -1 &&
+        h.indexOf("rating") === -1 &&
+        h.indexOf("10") === -1 &&
+        h.indexOf("scale") === -1) {
       return i;
     }
   }
