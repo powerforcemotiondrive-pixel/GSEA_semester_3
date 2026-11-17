@@ -323,7 +323,7 @@
             </h1>
           </div>
           <p id="header-subtitle" class="text-xs text-slate-300 font-medium mt-0.5">
-            Technical English (LV125E) • Formative Learning Portfolio &amp; Technical Operations Log
+            Technical English (LV125E) • Formative Learning Portfolio: Classroom Operations &amp; Live Traffic Self-Study
           </p>
         </div>
       </div>
@@ -486,143 +486,176 @@
         </div>
       </div>
 
-      <!-- Module Completed Banner (Only displayed when all 5 sessions in module are completed) -->
+      <!-- Module Completed Banner (Only displayed when all 7 sessions in Module 1 are completed) -->
       <div id="moduleCompletedBanner" class="hidden text-xs p-3.5 rounded-xl border border-blue-500/30 bg-blue-50/80 text-blue-900 flex items-center gap-2.5">
       </div>
 
-      <!-- Questions 1-5: Active for Module 1 (Documents & Maps), Muted for Module 2 (MTF) -->
-      <div id="mod1QuestionsSection" class="space-y-5">
-        <!-- Question 1: Key Vocabulary -->
-        <div>
-          <label id="lbl-vocab" for="vocab" class="field-label">
-            1. Key Technical Vocabulary Learnt
-          </label>
-          <p id="instr-vocab" class="field-instruction">
-            List the terms and technical vocabulary covered in this session. <strong>Please give a detailed explanation of their meaning and standard usage in aviation context.</strong>
-          </p>
-          <textarea id="vocab" rows="2" required class="form-input"></textarea>
+      <!-- ====================================================================== -->
+      <!-- ASPECT 1: Classroom Operations & Technical Documentation (Questions 1–5) -->
+      <!-- ====================================================================== -->
+      <div class="pt-2 border-t border-[var(--box-border)]">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="px-2.5 py-1 rounded-md text-[11px] font-black font-mono text-white bg-blue-600 shadow-xs tracking-wider">
+            ASPECT 1
+          </span>
+          <div>
+            <h3 class="text-xs sm:text-sm font-black text-slate-900 uppercase tracking-wider">
+              Classroom Operations &amp; Aviation Documentation
+            </h3>
+            <p class="text-[11px] text-slate-500">Document your active technical vocabulary, lesson topics, communicative targets, and FE1 oral strategy.</p>
+          </div>
         </div>
 
-        <!-- Question 2: Lesson Content Review -->
-        <div>
-          <label id="lbl-content" for="contentReview" class="field-label">
-            2. Technical Content Review (What I Learnt in This Session)
-          </label>
-          <p id="instr-content" class="field-instruction">
-            Summarize the topics, scenarios, and aviation procedures studied today. <strong>Please give a detailed explanation of the subjects covered.</strong>
-          </p>
-          <textarea id="contentReview" rows="3" required class="form-input"></textarea>
-        </div>
+        <div id="mod1QuestionsSection" class="space-y-5">
+          <!-- Question 1: Key Vocabulary -->
+          <div>
+            <label id="lbl-vocab" for="vocab" class="field-label">
+              1. Key Technical Vocabulary &amp; Spoken Phrases Learnt
+            </label>
+            <p id="instr-vocab" class="field-instruction">
+              List the specialized aviation terms, operational acronyms, and professional phrases covered in class today. <strong>Please provide a detailed explanation of their meaning and standard usage in aviation and aerodrome contexts.</strong>
+            </p>
+            <textarea id="vocab" rows="2" required class="form-input"></textarea>
+          </div>
 
-        <!-- Question 3: Target Improvement Areas -->
-        <div>
-          <label id="lbl-workon" for="workOn" class="field-label">
-            3. Areas to Work On Following This Session
-          </label>
-          <p id="instr-workon" class="field-instruction">
-            Identify your communication challenges (pronunciation, grammar, fluency) and language gaps. <strong>Please give a detailed explanation of what specific technical terms, vocabulary, grammar, or pronunciation issues you need to consolidate.</strong>
-          </p>
-          <textarea id="workOn" rows="2" required class="form-input"></textarea>
-        </div>
+          <!-- Question 2: Lesson Content Review -->
+          <div>
+            <label id="lbl-content" for="contentReview" class="field-label">
+              2. Technical Content Review (What I Learnt in This Session)
+            </label>
+            <p id="instr-content" class="field-instruction">
+              Summarize the operational documents, regulatory guidelines, aerodrome safety procedures, or case studies studied today. <strong>Please give a detailed explanation of the technical subjects and scenarios covered.</strong>
+            </p>
+            <textarea id="contentReview" rows="3" required class="form-input"></textarea>
+          </div>
 
-        <!-- Question 4: Formative Evaluation Relevance -->
-        <div>
-          <label id="lbl-evalhelp" for="evalHelp" class="field-label">
-            4. Technical English Formative Evaluation Relevance &amp; Strategy
-          </label>
-          <p id="instr-evalhelp" class="field-instruction">
-            Connect today's learning to your upcoming 30-minute Technical English oral evaluation tutorial. <strong>Please give a detailed explanation of how this operational knowledge, technical precision, and communication clarity will help you succeed in your AT formative evaluation.</strong>
-          </p>
-          <textarea id="evalHelp" rows="2" required class="form-input"></textarea>
-        </div>
+          <!-- Question 3: Target Improvement Areas -->
+          <div>
+            <label id="lbl-workon" for="workOn" class="field-label">
+              3. Areas to Work On Following This Session
+            </label>
+            <p id="instr-workon" class="field-instruction">
+              Identify your communication challenges (pronunciation, word stress, technical fluency, sentence structure) and knowledge gaps. <strong>Please give a detailed explanation of what specific technical terms, pronunciation issues, or grammar patterns you need to consolidate.</strong>
+            </p>
+            <textarea id="workOn" rows="2" required class="form-input"></textarea>
+          </div>
 
-        <!-- Question 5: Formative Evaluation Preparedness (Scale 1-10) -->
-        <div class="p-4 rounded-xl bg-slate-50/80 border border-slate-200 space-y-3">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5">
-            <div>
-              <label id="lbl-evalrating" for="evalRating" class="field-label mb-0 text-slate-800">
-                5. Technical English Formative Evaluation Preparedness
-              </label>
-              <p id="instr-evalrating" class="field-instruction mb-0">
-                Rate your current confidence and readiness for the upcoming 30-minute Technical English (AT) Formative Evaluation tutorial on a scale of 1 to 10.
-              </p>
+          <!-- Question 4: Formative Evaluation Relevance -->
+          <div>
+            <label id="lbl-evalhelp" for="evalHelp" class="field-label">
+              4. Technical English Formative Evaluation (FE1) Relevance &amp; Strategy
+            </label>
+            <p id="instr-evalhelp" class="field-instruction">
+              Connect today's learning to your upcoming 30-minute Technical English oral evaluation tutorial. <strong>Please give a detailed explanation of how this operational documentation knowledge and communication clarity will help you succeed in your FE1 team presentation and Q&amp;A.</strong>
+            </p>
+            <textarea id="evalHelp" rows="2" required class="form-input"></textarea>
+          </div>
+
+          <!-- Question 5: Formative Evaluation Preparedness (Scale 1-10) -->
+          <div class="p-4 rounded-xl bg-slate-50/80 border border-slate-200 space-y-3">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5">
+              <div>
+                <label id="lbl-evalrating" for="evalRating" class="field-label mb-0 text-slate-800">
+                  5. Technical English Formative Evaluation (FE1) Preparedness
+                </label>
+                <p id="instr-evalrating" class="field-instruction mb-0">
+                  Rate your current confidence and readiness for the upcoming 30-minute Technical English (AT) Formative Evaluation tutorial on a scale of 1 to 10.
+                </p>
+              </div>
+              <span id="evalRatingBadge" class="theme-badge font-bold font-mono text-xs px-2.5 py-0.5 rounded-full shrink-0 self-start sm:self-auto">
+                7 / 10
+              </span>
             </div>
-            <span id="evalRatingBadge" class="theme-badge font-bold font-mono text-xs px-2.5 py-0.5 rounded-full shrink-0 self-start sm:self-auto">
-              7 / 10
-            </span>
-          </div>
-          
-          <input type="range" id="evalRating" min="1" max="10" value="7" step="1" 
-                 oninput="syncRating('evalRating', this.value)" 
-                 class="w-full h-2 rounded-lg appearance-none cursor-pointer bg-slate-200" style="accent-color: var(--theme-accent);">
-          
-          <div class="grid grid-cols-10 gap-1 sm:gap-1.5" id="evalRatingPills">
-            <button type="button" onclick="setRating('evalRating', 1)" class="rating-btn" data-val="1">1</button>
-            <button type="button" onclick="setRating('evalRating', 2)" class="rating-btn" data-val="2">2</button>
-            <button type="button" onclick="setRating('evalRating', 3)" class="rating-btn" data-val="3">3</button>
-            <button type="button" onclick="setRating('evalRating', 4)" class="rating-btn" data-val="4">4</button>
-            <button type="button" onclick="setRating('evalRating', 5)" class="rating-btn" data-val="5">5</button>
-            <button type="button" onclick="setRating('evalRating', 6)" class="rating-btn" data-val="6">6</button>
-            <button type="button" onclick="setRating('evalRating', 7)" class="rating-btn active" data-val="7">7</button>
-            <button type="button" onclick="setRating('evalRating', 8)" class="rating-btn" data-val="8">8</button>
-            <button type="button" onclick="setRating('evalRating', 9)" class="rating-btn" data-val="9">9</button>
-            <button type="button" onclick="setRating('evalRating', 10)" class="rating-btn" data-val="10">10</button>
-          </div>
-          <div class="flex justify-between text-[11px] text-slate-500 px-0.5">
-            <span>1 = Not prepared at all</span>
-            <span>5 = Moderate progress</span>
-            <span>10 = Fully prepared &amp; confident</span>
+            
+            <input type="range" id="evalRating" min="1" max="10" value="7" step="1" 
+                   oninput="syncRating('evalRating', this.value)" 
+                   class="w-full h-2 rounded-lg appearance-none cursor-pointer bg-slate-200" style="accent-color: var(--theme-accent);">
+            
+            <div class="grid grid-cols-10 gap-1 sm:gap-1.5" id="evalRatingPills">
+              <button type="button" onclick="setRating('evalRating', 1)" class="rating-btn" data-val="1">1</button>
+              <button type="button" onclick="setRating('evalRating', 2)" class="rating-btn" data-val="2">2</button>
+              <button type="button" onclick="setRating('evalRating', 3)" class="rating-btn" data-val="3">3</button>
+              <button type="button" onclick="setRating('evalRating', 4)" class="rating-btn" data-val="4">4</button>
+              <button type="button" onclick="setRating('evalRating', 5)" class="rating-btn" data-val="5">5</button>
+              <button type="button" onclick="setRating('evalRating', 6)" class="rating-btn" data-val="6">6</button>
+              <button type="button" onclick="setRating('evalRating', 7)" class="rating-btn active" data-val="7">7</button>
+              <button type="button" onclick="setRating('evalRating', 8)" class="rating-btn" data-val="8">8</button>
+              <button type="button" onclick="setRating('evalRating', 9)" class="rating-btn" data-val="9">9</button>
+              <button type="button" onclick="setRating('evalRating', 10)" class="rating-btn" data-val="10">10</button>
+            </div>
+            <div class="flex justify-between text-[11px] text-slate-500 px-0.5">
+              <span>1 = Not prepared at all</span>
+              <span>5 = Moderate progress</span>
+              <span>10 = Fully prepared &amp; confident</span>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Questions 6 & 7: MTF Preparation & Preparedness (Muted for Module 1, ACTIVE for Module 2) -->
-      <div id="toeicSection" class="space-y-4">
-        <div>
-          <label id="lbl-toeicprep" for="toeicPrep" class="field-label">
-            6. Weekly MTF Preparation
-          </label>
-          <p id="instr-toeicprep" class="field-instruction">
-            Detail your independent preparation for the MTF test this week. <strong>Please give a detailed explanation with concrete examples of the work that you have carried out to help you with the 6 MTF skills: Vocabulary, fluency, interaction, PSI, grammar and listening comprehension.</strong>
-          </p>
-          <textarea id="toeicPrep" rows="3" class="form-input"></textarea>
+      <!-- ====================================================================== -->
+      <!-- ASPECT 2: Independent Self-Study (Live Traffic on eCampus) (Questions 6–7) -->
+      <!-- ====================================================================== -->
+      <div class="pt-4 border-t border-[var(--box-border)]">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="px-2.5 py-1 rounded-md text-[11px] font-black font-mono text-white bg-emerald-600 shadow-xs tracking-wider">
+            ASPECT 2
+          </span>
+          <div>
+            <h3 class="text-xs sm:text-sm font-black text-slate-900 uppercase tracking-wider">
+              Independent Self-Study — Live Traffic Listening (eCampus)
+            </h3>
+            <p class="text-[11px] text-slate-500">Record your weekly eCampus Live Traffic listening tasks, RTF standard phraseology, and comprehension progress.</p>
+          </div>
         </div>
 
-        <div class="p-4 rounded-xl bg-slate-50/80 border border-slate-200 space-y-3">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5">
-            <div>
-              <label id="lbl-toeicrating" for="toeicRating" class="field-label mb-0 text-slate-800">
-                7. MTF Test Preparedness Rating
-              </label>
-              <p id="instr-toeicrating" class="field-instruction mb-0">
-                Rate your current confidence and readiness for your upcoming MTF test on a scale of 1 to 10.
-              </p>
+        <div id="toeicSection" class="space-y-4">
+          <div>
+            <label id="lbl-toeicprep" for="toeicPrep" class="field-label">
+              6. Live Traffic Self-Study Exercises Covered &amp; Audio Vocabulary
+            </label>
+            <p id="instr-toeicprep" class="field-instruction">
+              Detail your independent Live Traffic listening work completed on eCampus this week. <strong>State the exact names of the Live Traffic exercises/recordings covered (e.g. clearance delivery, taxi instructions, tower take-off/landing, radar approach vectors, emergency handovers) and list all new radiotelephony (RTF) phraseology, standard callsigns, and readback expressions you practiced.</strong>
+            </p>
+            <textarea id="toeicPrep" rows="3" required class="form-input"></textarea>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-50/80 border border-slate-200 space-y-3">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5">
+              <div>
+                <label id="lbl-toeicrating" for="toeicRating" class="field-label mb-0 text-slate-800">
+                  7. Live Traffic Self-Study Progress &amp; Listening Comprehension Rating
+                </label>
+                <p id="instr-toeicrating" class="field-instruction mb-0">
+                  Rate your current self-study progress and listening comprehension of authentic ATC radiotelephony transmissions on a scale of 0 to 10.
+                </p>
+              </div>
+              <span id="toeicRatingBadge" class="theme-badge font-bold font-mono text-xs px-2.5 py-0.5 rounded-full shrink-0 self-start sm:self-auto">
+                5 / 10
+              </span>
             </div>
-            <span id="toeicRatingBadge" class="theme-badge font-bold font-mono text-xs px-2.5 py-0.5 rounded-full shrink-0 self-start sm:self-auto">
-              7 / 10
-            </span>
-          </div>
-          
-          <input type="range" id="toeicRating" min="1" max="10" value="7" step="1" 
-                 oninput="syncRating('toeicRating', this.value)" 
-                 class="w-full h-2 rounded-lg appearance-none cursor-pointer bg-slate-200" style="accent-color: var(--theme-accent);">
-          
-          <div class="grid grid-cols-10 gap-1 sm:gap-1.5" id="toeicRatingPills">
-            <button type="button" onclick="setRating('toeicRating', 1)" class="rating-btn" data-val="1">1</button>
-            <button type="button" onclick="setRating('toeicRating', 2)" class="rating-btn" data-val="2">2</button>
-            <button type="button" onclick="setRating('toeicRating', 3)" class="rating-btn" data-val="3">3</button>
-            <button type="button" onclick="setRating('toeicRating', 4)" class="rating-btn" data-val="4">4</button>
-            <button type="button" onclick="setRating('toeicRating', 5)" class="rating-btn" data-val="5">5</button>
-            <button type="button" onclick="setRating('toeicRating', 6)" class="rating-btn" data-val="6">6</button>
-            <button type="button" onclick="setRating('toeicRating', 7)" class="rating-btn active" data-val="7">7</button>
-            <button type="button" onclick="setRating('toeicRating', 8)" class="rating-btn" data-val="8">8</button>
-            <button type="button" onclick="setRating('toeicRating', 9)" class="rating-btn" data-val="9">9</button>
-            <button type="button" onclick="setRating('toeicRating', 10)" class="rating-btn" data-val="10">10</button>
-          </div>
-          <div class="flex justify-between text-[11px] text-slate-500 px-0.5">
-            <span>1 = Not prepared at all</span>
-            <span>5 = Moderate confidence</span>
-            <span>10 = Fully prepared for target score</span>
+            
+            <input type="range" id="toeicRating" min="0" max="10" value="5" step="1" 
+                   oninput="syncRating('toeicRating', this.value)" 
+                   class="w-full h-2 rounded-lg appearance-none cursor-pointer bg-slate-200" style="accent-color: var(--theme-accent);">
+            
+            <div class="grid grid-cols-6 sm:grid-cols-11 gap-1 sm:gap-1.5" id="toeicRatingPills">
+              <button type="button" onclick="setRating('toeicRating', 0)" class="rating-btn" data-val="0">0</button>
+              <button type="button" onclick="setRating('toeicRating', 1)" class="rating-btn" data-val="1">1</button>
+              <button type="button" onclick="setRating('toeicRating', 2)" class="rating-btn" data-val="2">2</button>
+              <button type="button" onclick="setRating('toeicRating', 3)" class="rating-btn" data-val="3">3</button>
+              <button type="button" onclick="setRating('toeicRating', 4)" class="rating-btn" data-val="4">4</button>
+              <button type="button" onclick="setRating('toeicRating', 5)" class="rating-btn active" data-val="5">5</button>
+              <button type="button" onclick="setRating('toeicRating', 6)" class="rating-btn" data-val="6">6</button>
+              <button type="button" onclick="setRating('toeicRating', 7)" class="rating-btn" data-val="7">7</button>
+              <button type="button" onclick="setRating('toeicRating', 8)" class="rating-btn" data-val="8">8</button>
+              <button type="button" onclick="setRating('toeicRating', 9)" class="rating-btn" data-val="9">9</button>
+              <button type="button" onclick="setRating('toeicRating', 10)" class="rating-btn" data-val="10">10</button>
+            </div>
+            <div class="flex justify-between text-[11px] text-slate-500 px-0.5">
+              <span>0 = No self-study completed yet</span>
+              <span>5 = Moderate listening comprehension</span>
+              <span>10 = Fully fluent comprehension of rapid live traffic</span>
+            </div>
           </div>
         </div>
       </div>
@@ -643,15 +676,15 @@
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[var(--box-border)] pb-3">
         <div>
           <h2 class="section-title">3. Portfolio Completion Checklist</h2>
-          <p id="checklistSubtitle" class="text-xs text-slate-500 mt-0.5">Track your 15 required session logs across Module 1 (7 sessions) and Module 2 (8 sessions).</p>
+          <p id="checklistSubtitle" class="text-xs text-slate-500 mt-0.5">Track your 7 required session logs for Module 1 (Sessions 1–6 + Formative Evaluation 1).</p>
         </div>
         <span id="checklistStatusPill" class="text-xs font-mono font-bold px-3 py-1 rounded-full theme-badge">
-          0 / 15 completed
+          0 / 7 completed
         </span>
       </div>
 
       <!-- Dynamic Checklist Grid -->
-      <div id="checklistGrid" class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      <div id="checklistGrid" class="grid grid-cols-1 gap-3">
         <!-- Rendered dynamically by renderChecklist() -->
       </div>
     </div>
@@ -661,15 +694,14 @@
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[var(--box-border)] pb-3">
         <div>
           <h2 class="section-title">4. Logged Portfolio History</h2>
-          <p id="historySubtitle" class="text-xs text-slate-500 mt-0.5">Review and export your previously logged session reflections.</p>
+          <p id="historySubtitle" class="text-xs text-slate-500 mt-0.5">Official record of classroom operations learning and weekly Live Traffic self-study reflections.</p>
         </div>
 
         <div class="flex items-center gap-2 no-print">
           <!-- Filter Buttons -->
           <div class="inline-flex rounded-lg border border-slate-200 bg-slate-50 p-0.5 text-xs font-semibold">
             <button type="button" onclick="setModuleFilter('all')" id="filter-btn-all" class="px-2.5 py-1 rounded-md transition text-slate-700 bg-white shadow-2xs font-bold">All</button>
-            <button type="button" onclick="setModuleFilter('Module 1')" id="filter-btn-m1" class="px-2.5 py-1 rounded-md transition text-slate-600 hover:text-slate-900">M1</button>
-            <button type="button" onclick="setModuleFilter('Module 2')" id="filter-btn-m2" class="px-2.5 py-1 rounded-md transition text-slate-600 hover:text-slate-900">M2</button>
+            <button type="button" onclick="setModuleFilter('Module 1')" id="filter-btn-m1" class="px-2.5 py-1 rounded-md transition text-slate-600 hover:text-slate-900">Module 1</button>
           </div>
 
           <!-- Print / PDF Export Button -->
@@ -741,31 +773,31 @@
       aas: {
         code: "AT",
         title: "GSEA SEMESTER 3 AT",
-        subtitle: "Technical English (LV125E) • Formative Learning Portfolio & Technical Operations Log",
+        subtitle: "Technical English (LV125E) • Formative Learning Portfolio: Classroom Operations & Live Traffic Self-Study",
         themeClass: "theme-aas",
         modules: [
-          { key: "Module 1", title: "Module 1: Documents & Maps (7 Sessions)", formValue: "Documents & Maps", teachingSessions: 6 },
-          { key: "Module 2", title: "Module 2: MTF (8 Sessions)", formValue: "MTF", teachingSessions: 7 }
+          { key: "Module 1", title: "Module 1: Aviation Documents & Operations (7 Sessions)", formValue: "Aviation Documents", teachingSessions: 6 }
         ],
         questions: {
-          vocabLabel: "1. Key Technical Vocabulary Learnt",
-          vocabInstruction: "List the terms and technical vocabulary covered in this session. <strong>Please give a detailed explanation of their meaning and standard usage in aviation context.</strong>",
-          vocabPlaceholder: "",
+          vocabLabel: "1. Key Technical Vocabulary & Spoken Phrases Learnt",
+          vocabInstruction: "List the specialized aviation terms, operational acronyms, and professional phrases covered in class today. <strong>Please provide a detailed explanation of their meaning and standard usage in aviation and aerodrome contexts.</strong>",
+          vocabPlaceholder: "e.g., AIP (Aeronautical Information Publication), NOTAM (Notice to Airmen), AIC (Aeronautical Information Circular), obstacle limitation surfaces (OLS), safety management system (SMS), level 1 non-compliance, derogation, runway incursion prevention...",
           contentLabel: "2. Technical Content Review (What I Learnt in This Session)",
-          contentInstruction: "Summarize the topics, scenarios, and aviation procedures studied today. <strong>Please give a detailed explanation of the subjects covered.</strong>",
-          contentPlaceholder: "",
+          contentInstruction: "Summarize the operational documents, regulatory guidelines, aerodrome safety procedures, or case studies studied today. <strong>Please give a detailed explanation of the technical subjects and scenarios covered.</strong>",
+          contentPlaceholder: "e.g., Examined the structure and update cycles of the AIP, analyzed active NOTAM series for aerodrome works, reviewed EASA aerodrome certification requirements, and discussed how safety management processes identify latent organizational hazards...",
           workOnLabel: "3. Areas to Work On Following This Session",
-          workOnInstruction: "Identify your communication challenges (pronunciation, grammar, fluency) and language gaps. <strong>Please give a detailed explanation of what specific technical terms, vocabulary, grammar, or pronunciation issues you need to consolidate.</strong>",
-          workOnPlaceholder: "",
-          evalHelpLabel: "4. Technical English Formative Evaluation Relevance & Strategy",
-          evalHelpInstruction: "Connect today's learning to your upcoming 30-minute Technical English oral evaluation tutorial. <strong>Please give a detailed explanation of how this operational knowledge, technical precision, and communication clarity will help you succeed in your AT formative evaluation.</strong>",
-          evalHelpPlaceholder: "",
-          evalRatingLabel: "5. Technical English Formative Evaluation Preparedness",
+          workOnInstruction: "Identify your communication challenges (pronunciation, word stress, technical fluency, sentence structure) and knowledge gaps. <strong>Please give a detailed explanation of what specific technical terms, pronunciation issues, or grammar patterns you need to consolidate.</strong>",
+          workOnPlaceholder: "e.g., Practice correct word stress on regulatory terms (au-THO-ri-ty, cer-ti-fi-CA-tion, al-LO-cate), avoid French syntax structures when explaining root-cause analysis, and build confidence when asking spontaneous clarification questions...",
+          evalHelpLabel: "4. Technical English Formative Evaluation (FE1) Relevance & Strategy",
+          evalHelpInstruction: "Connect today's learning to your upcoming 30-minute Technical English oral evaluation tutorial. <strong>Please give a detailed explanation of how this operational documentation knowledge and communication clarity will help you succeed in your FE1 team presentation and Q&amp;A.</strong>",
+          evalHelpPlaceholder: "e.g., This regulatory knowledge enables my team to present our EASA extract with technical accuracy, explain unfamiliar vocabulary clearly to peers, and respond fluently to spontaneous instructor questions during the FE1 tutorial...",
+          evalRatingLabel: "5. Technical English Formative Evaluation (FE1) Preparedness",
           evalRatingInstruction: "Rate your current confidence and readiness for the upcoming 30-minute Technical English (AT) Formative Evaluation tutorial on a scale of 1 to 10.",
-          mtfPrepLabel: "6. Weekly MTF Preparation",
-          mtfPrepInstruction: "Detail your independent preparation for the MTF test this week. <strong>Please give a detailed explanation with concrete examples of the work that you have carried out to help you with the 6 MTF skills: Vocabulary, fluency, interaction, PSI, grammar and listening comprehension.</strong>",
-          mtfRatingLabel: "7. MTF Test Preparedness Rating",
-          mtfRatingInstruction: "Rate your current confidence and readiness for your upcoming MTF test on a scale of 1 to 10."
+          mtfPrepLabel: "6. Live Traffic Self-Study Exercises Covered & Audio Vocabulary",
+          mtfPrepInstruction: "Detail your independent Live Traffic listening work completed on eCampus this week. <strong>State the exact names of the Live Traffic exercises/recordings covered (e.g. clearance delivery, taxi instructions, tower take-off/landing, radar approach vectors, emergency handovers) and list all new radiotelephony (RTF) phraseology, standard callsigns, and readback expressions you practiced.</strong>",
+          mtfPrepPlaceholder: "e.g., Completed eCampus Live Traffic Exercise 1 ('JFK Ground & Clearance Delivery') and Exercise 2 ('Heathrow Radar Arrival Vectors'). Practiced readback of transponder squawk codes, departure runway assignments, wind checks, and standard expressions ('hold short', 'line up and wait', 'cleared for immediate take-off')...",
+          mtfRatingLabel: "7. Live Traffic Self-Study Progress & Listening Comprehension Rating",
+          mtfRatingInstruction: "Rate your current self-study progress and listening comprehension of authentic ATC radiotelephony transmissions on a scale of 0 to 10."
         },
         hasToeic: false // Muted per instructions
       }
@@ -856,7 +888,14 @@
       document.getElementById("lbl-evalrating").innerText = config.questions.evalRatingLabel;
       document.getElementById("instr-evalrating").innerText = config.questions.evalRatingInstruction;
 
-      // 5. Handle Module-Based Question Visibility (Module 1: Q1-Q5, Module 2: Q6-Q7)
+      if (document.getElementById("lbl-toeicprep")) document.getElementById("lbl-toeicprep").innerText = config.questions.mtfPrepLabel;
+      if (document.getElementById("instr-toeicprep")) document.getElementById("instr-toeicprep").innerHTML = config.questions.mtfPrepInstruction;
+      if (document.getElementById("toeicPrep")) document.getElementById("toeicPrep").placeholder = config.questions.mtfPrepPlaceholder;
+
+      if (document.getElementById("lbl-toeicrating")) document.getElementById("lbl-toeicrating").innerText = config.questions.mtfRatingLabel;
+      if (document.getElementById("instr-toeicrating")) document.getElementById("instr-toeicrating").innerText = config.questions.mtfRatingInstruction;
+
+      // 5. Handle Module-Based Question Visibility (Module 1: Both Aspect 1 & Aspect 2 Active)
       updateQuestionVisibilityByModule(modSelect.value);
 
       // 6. Update URL parameter without reload
@@ -1249,25 +1288,22 @@
 
       btn.innerText = isEdit ? "Updating Reflection..." : "Encrypting & Submitting...";
 
-      const isMod2 = (modKey === "Module 2");
       const rawVocab = document.getElementById("vocab").value.trim();
       const rawContentReview = document.getElementById("contentReview").value.trim();
       const rawWorkOn = document.getElementById("workOn").value.trim();
       const rawEvalHelp = document.getElementById("evalHelp").value.trim();
       const rawEvalRating = document.getElementById("evalRating").value;
       const rawToeicPrep = document.getElementById("toeicPrep") ? document.getElementById("toeicPrep").value.trim() : "";
-      const rawToeicRating = document.getElementById("toeicRating") ? document.getElementById("toeicRating").value : "7";
+      const rawToeicRating = document.getElementById("toeicRating") ? document.getElementById("toeicRating").value : "5";
 
-      // Module 1 (Documents & Maps): Questions 1-5 active, Questions 6-7 muted
-      // Module 2 (MTF): Questions 1-5 muted, Questions 6-7 active
-      const vocab = isMod2 ? "N/A (Module 2 - MTF)" : rawVocab;
-      const contentReview = isMod2 ? "N/A (Module 2 - MTF)" : rawContentReview;
-      const workOn = isMod2 ? "N/A (Module 2 - MTF)" : rawWorkOn;
-      const evalHelp = isMod2 ? "N/A (Module 2 - MTF)" : rawEvalHelp;
-      const evalRating = isMod2 ? "10" : rawEvalRating;
-
-      const toeicPrep = isMod2 ? rawToeicPrep : "N/A (Module 1 - Documents & Maps)";
-      const toeicRating = isMod2 ? rawToeicRating : "10";
+      // Semester 3 Module 1: Both Aspect 1 (Classroom Documents) and Aspect 2 (Live Traffic Self-Study) are fully active
+      const vocab = rawVocab;
+      const contentReview = rawContentReview;
+      const workOn = rawWorkOn;
+      const evalHelp = rawEvalHelp;
+      const evalRating = rawEvalRating;
+      const toeicPrep = rawToeicPrep;
+      const toeicRating = rawToeicRating;
 
       const payload = {
         student,
@@ -1405,9 +1441,7 @@
     }
 
     function updateQuestionVisibilityByModule(modStr) {
-      const mk = getModuleKey(modStr);
-      const isMod2 = (mk === "Module 2");
-
+      // Semester 3 Module 1: BOTH Aspect 1 (Classroom Documents) and Aspect 2 (Live Traffic Self-Study) are fully active
       const mod1Sec = document.getElementById("mod1QuestionsSection");
       const mod2Sec = document.getElementById("toeicSection");
 
@@ -1417,25 +1451,14 @@
       const evalHelpEl = document.getElementById("evalHelp");
       const mtfPrepEl = document.getElementById("toeicPrep");
 
-      if (isMod2) {
-        // Module 2 (MTF): Hide Questions 1-5, Show Questions 6-7
-        if (mod1Sec) mod1Sec.classList.add("hidden");
-        if (mod2Sec) mod2Sec.classList.remove("hidden");
-        if (vocabEl) vocabEl.required = false;
-        if (contentEl) contentEl.required = false;
-        if (workOnEl) workOnEl.required = false;
-        if (evalHelpEl) evalHelpEl.required = false;
-        if (mtfPrepEl) mtfPrepEl.required = true;
-      } else {
-        // Module 1 (Documents & Maps): Show Questions 1-5, Hide Questions 6-7
-        if (mod1Sec) mod1Sec.classList.remove("hidden");
-        if (mod2Sec) mod2Sec.classList.add("hidden");
-        if (vocabEl) vocabEl.required = true;
-        if (contentEl) contentEl.required = true;
-        if (workOnEl) workOnEl.required = true;
-        if (evalHelpEl) evalHelpEl.required = true;
-        if (mtfPrepEl) mtfPrepEl.required = false;
-      }
+      if (mod1Sec) mod1Sec.classList.remove("hidden");
+      if (mod2Sec) mod2Sec.classList.remove("hidden");
+
+      if (vocabEl) vocabEl.required = true;
+      if (contentEl) contentEl.required = true;
+      if (workOnEl) workOnEl.required = true;
+      if (evalHelpEl) evalHelpEl.required = true;
+      if (mtfPrepEl) mtfPrepEl.required = true;
     }
 
     function handleModuleSelectChange() {
@@ -1510,7 +1533,8 @@
 
       const statusPill = document.getElementById("checklistStatusPill");
       if (statusPill) {
-        statusPill.innerText = `${totalCompleted} / 15 completed`;
+        const totalReq = config.modules.reduce((sum, m) => sum + (m.teachingSessions || 6) + 1, 0);
+        statusPill.innerText = `${totalCompleted} / ${totalReq} completed`;
       }
     }
 
@@ -1634,21 +1658,19 @@
         }
       }
 
-      // 5. Populate form input fields with existing reflection text
-      const isMod2Entry = (targetModKey === "Module 2");
-      if (isMod2Entry) {
-        if (document.getElementById("toeicPrep")) {
-          document.getElementById("toeicPrep").value = (entry.toeicPrep && !entry.toeicPrep.startsWith("N/A")) ? entry.toeicPrep : "";
-        }
-        if (document.getElementById("toeicRating")) {
-          setRating("toeicRating", parseInt(entry.toeicRating, 10) || 7);
-        }
-      } else {
-        document.getElementById("vocab").value = (entry.vocab && !entry.vocab.startsWith("N/A")) ? entry.vocab : "";
-        document.getElementById("contentReview").value = (entry.contentReview && !entry.contentReview.startsWith("N/A")) ? entry.contentReview : "";
-        document.getElementById("workOn").value = (entry.workOn && !entry.workOn.startsWith("N/A")) ? entry.workOn : "";
-        document.getElementById("evalHelp").value = (entry.evalHelp && !entry.evalHelp.startsWith("N/A")) ? entry.evalHelp : "";
-        setRating("evalRating", parseInt(entry.evalRating, 10) || 7);
+      // 5. Populate form input fields with existing reflection text (Aspect 1 & Aspect 2)
+      document.getElementById("vocab").value = (entry.vocab && !entry.vocab.startsWith("N/A")) ? entry.vocab : "";
+      document.getElementById("contentReview").value = (entry.contentReview && !entry.contentReview.startsWith("N/A")) ? entry.contentReview : "";
+      document.getElementById("workOn").value = (entry.workOn && !entry.workOn.startsWith("N/A")) ? entry.workOn : "";
+      document.getElementById("evalHelp").value = (entry.evalHelp && !entry.evalHelp.startsWith("N/A")) ? entry.evalHelp : "";
+      setRating("evalRating", parseInt(entry.evalRating, 10) || 7);
+
+      if (document.getElementById("toeicPrep")) {
+        document.getElementById("toeicPrep").value = (entry.toeicPrep && !entry.toeicPrep.startsWith("N/A")) ? entry.toeicPrep : "";
+      }
+      if (document.getElementById("toeicRating")) {
+        const trVal = parseInt(entry.toeicRating, 10);
+        setRating("toeicRating", isNaN(trVal) ? 5 : trVal);
       }
 
       // 6. Show Edit Mode Banner & update buttons
@@ -1762,47 +1784,56 @@
               </div>
             </div>
 
-            ${isMod2Entry ? `
-              <!-- Module 2 (MTF): Questions 6 & 7 -->
-              <div>
-                <h4 class="text-xs font-bold text-slate-700">6. Weekly MTF Preparation</h4>
-                <p class="text-xs text-slate-800 mt-0.5 whitespace-pre-wrap leading-relaxed">${escapeHtml(entry.toeicPrep || "—")}</p>
+            <!-- Aspect 1: Classroom Operations & Documents -->
+            <div class="space-y-3">
+              <div class="flex items-center gap-2">
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold font-mono text-white bg-blue-600">ASPECT 1</span>
+                <h4 class="text-xs font-black text-slate-900 uppercase tracking-wider">Classroom Operations &amp; Aviation Documents</h4>
               </div>
-              <div class="flex flex-wrap items-center gap-2 pt-1 border-t border-slate-100">
-                <div class="text-[11px] font-semibold text-slate-600 flex items-center gap-1.5">
-                  <span>7. MTF Test Preparedness Rating:</span>
-                  <span class="theme-badge font-mono font-bold px-2 py-0.5 rounded-full">${escapeHtml(String(entry.toeicRating || "—"))} / 10</span>
-                </div>
-              </div>
-            ` : `
-              <!-- Module 1 (Documents & Maps): Questions 1 to 5 -->
+
               <div>
-                <h4 class="text-xs font-bold text-slate-700">1. Key Technical Vocabulary Learnt</h4>
+                <h5 class="text-xs font-bold text-slate-700">1. Key Technical Vocabulary &amp; Spoken Phrases Learnt</h5>
                 <p class="text-xs text-slate-800 mt-0.5 whitespace-pre-wrap leading-relaxed">${escapeHtml(entry.vocab || "—")}</p>
               </div>
 
               <div>
-                <h4 class="text-xs font-bold text-slate-700">2. Technical Content Review (What I Learnt in This Session)</h4>
+                <h5 class="text-xs font-bold text-slate-700">2. Technical Content Review (What I Learnt in This Session)</h5>
                 <p class="text-xs text-slate-800 mt-0.5 whitespace-pre-wrap leading-relaxed">${escapeHtml(entry.contentReview || "—")}</p>
               </div>
 
               <div>
-                <h4 class="text-xs font-bold text-slate-700">3. Areas to Work On Following This Session</h4>
+                <h5 class="text-xs font-bold text-slate-700">3. Areas to Work On Following This Session</h5>
                 <p class="text-xs text-slate-800 mt-0.5 whitespace-pre-wrap leading-relaxed">${escapeHtml(entry.workOn || "—")}</p>
               </div>
 
               <div>
-                <h4 class="text-xs font-bold text-slate-700">4. Technical English Formative Evaluation Relevance &amp; Strategy</h4>
+                <h5 class="text-xs font-bold text-slate-700">4. Technical English Formative Evaluation (FE1) Relevance &amp; Strategy</h5>
                 <p class="text-xs text-slate-800 mt-0.5 whitespace-pre-wrap leading-relaxed">${escapeHtml(entry.evalHelp || "—")}</p>
               </div>
 
-              <div class="flex flex-wrap items-center gap-2 pt-1 border-t border-slate-100">
-                <div class="text-[11px] font-semibold text-slate-600 flex items-center gap-1.5">
-                  <span>5. Technical English Formative Evaluation Preparedness:</span>
-                  <span class="theme-badge font-mono font-bold px-2 py-0.5 rounded-full">${escapeHtml(String(entry.evalRating || "—"))} / 10</span>
-                </div>
+              <div class="flex items-center gap-2 pt-1">
+                <span class="text-[11px] font-semibold text-slate-600">5. Technical English FE1 Preparedness:</span>
+                <span class="theme-badge font-mono font-bold px-2 py-0.5 rounded-full">${escapeHtml(String(entry.evalRating || "—"))} / 10</span>
               </div>
-            `}
+            </div>
+
+            <!-- Aspect 2: Live Traffic Self-Study (eCampus) -->
+            <div class="space-y-3 pt-3 border-t border-slate-100">
+              <div class="flex items-center gap-2">
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold font-mono text-white bg-emerald-600">ASPECT 2</span>
+                <h4 class="text-xs font-black text-slate-900 uppercase tracking-wider">Live Traffic Self-Study (eCampus)</h4>
+              </div>
+
+              <div>
+                <h5 class="text-xs font-bold text-slate-700">6. Live Traffic Self-Study Exercises Covered &amp; Audio Vocabulary</h5>
+                <p class="text-xs text-slate-800 mt-0.5 whitespace-pre-wrap leading-relaxed">${escapeHtml(entry.toeicPrep || "—")}</p>
+              </div>
+
+              <div class="flex items-center gap-2 pt-1">
+                <span class="text-[11px] font-semibold text-slate-600">7. Live Traffic Self-Study Progress:</span>
+                <span class="theme-badge font-mono font-bold px-2 py-0.5 rounded-full">${escapeHtml(String(entry.toeicRating || "—"))} / 10</span>
+              </div>
+            </div>
           </div>
         `;
       }).join("");
@@ -1814,16 +1845,14 @@
 
     function getModuleKey(str) {
       const s = String(str || "").toLowerCase();
-      if (s.includes("1") || s.includes("documents") || s.includes("maps") || s.includes("travel") || s.includes("aerodrome")) return "Module 1";
-      if (s.includes("2") || s.includes("mtf") || s.includes("weather") || s.includes("aircraft") || s.includes("aerodynamics")) return "Module 2";
-      if (s.includes("3") || s.includes("technology") || s.includes("tech") || s.includes("safety") || s.includes("security")) return "Module 3";
+      if (s.includes("1") || s.includes("documents") || s.includes("operations") || s.includes("easa") || s.includes("aerodrome")) return "Module 1";
+      if (s.includes("2") || s.includes("mtf")) return "Module 2";
       return str;
     }
 
     function formatSessionNum(str) {
       const s = String(str || "").toLowerCase();
-      if (s.includes("formative") || s === "fe" || s.includes("fe1") || s.includes("fe2")) return "FE";
-      if (s.includes("7")) return "7";
+      if (s.includes("formative") || s === "fe" || s.includes("fe1") || s.includes("session 7") || s === "7") return "FE";
       if (s.includes("6")) return "6";
       if (s.includes("5")) return "5";
       if (s.includes("4")) return "4";
@@ -1835,7 +1864,7 @@
 
     function getFormModuleValue(mod) {
       const m = String(mod || "").toLowerCase();
-      if (m.includes("1") || m.includes("documents") || m.includes("maps")) return "Documents & Maps";
+      if (m.includes("1") || m.includes("documents") || m.includes("operations") || m.includes("easa")) return "Aviation Documents";
       if (m.includes("2") || m.includes("mtf")) return "MTF";
       return mod;
     }

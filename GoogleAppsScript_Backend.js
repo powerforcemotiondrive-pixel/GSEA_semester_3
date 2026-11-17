@@ -347,13 +347,13 @@ function handleSubmit(d) {
         "Curriculum Track",
         "Module",
         "Session",
-        "Key vocabulary learnt",
-        "Lesson content review (What I learnt in this session)",
-        "What I need to work on following this session",
-        "How will this help me with my formative evaluation?",
-        "How well prepared do you think you currently are for your module 1 formative evaluation? (Rate out of 10)",
-        "What have you done in terms of TOEIC preparation this week? Please give examples from Global Exam.",
-        "How well prepared do you think you currently are for your TOEIC test? (Rate out of 10)"
+        "Key technical vocabulary & spoken phrases learnt",
+        "Technical content review (What I learnt in this session)",
+        "Areas to work on following this session",
+        "Technical English Formative Evaluation (FE1) relevance & strategy",
+        "Technical English Formative Evaluation (FE1) preparedness (Scale 1-10)",
+        "Live Traffic self-study exercises covered & audio vocabulary",
+        "Live Traffic self-study progress & listening comprehension rating (Scale 0-10)"
       ]);
     }
 
@@ -361,7 +361,7 @@ function handleSubmit(d) {
       new Date(),
       d.student || "",
       d.pin || "",
-      d.track || "AG",
+      d.track || "AT",
       d.module || "",
       d.session || "",
       d.vocab || "",
@@ -549,8 +549,8 @@ function findEvalRatingCol(headers, fallback) {
 function findToeicPrepCol(headers, fallback) {
   for (var i = 0; i < headers.length; i++) {
     var h = headers[i];
-    if (h.indexOf("toeic") !== -1 &&
-        (h.indexOf("prep") !== -1 || h.indexOf("global") !== -1 || h.indexOf("week") !== -1 || h.indexOf("done") !== -1) &&
+    if ((h.indexOf("toeic") !== -1 || h.indexOf("traffic") !== -1 || h.indexOf("live") !== -1 || h.indexOf("mtf") !== -1 || h.indexOf("self-study") !== -1 || h.indexOf("audio") !== -1) &&
+        (h.indexOf("prep") !== -1 || h.indexOf("exercise") !== -1 || h.indexOf("global") !== -1 || h.indexOf("week") !== -1 || h.indexOf("done") !== -1 || h.indexOf("vocab") !== -1 || h.indexOf("covered") !== -1) &&
         h.indexOf("rate") === -1 &&
         h.indexOf("rating") === -1 &&
         h.indexOf("10") === -1) {
@@ -563,8 +563,8 @@ function findToeicPrepCol(headers, fallback) {
 function findToeicRatingCol(headers, fallback) {
   for (var i = 0; i < headers.length; i++) {
     var h = headers[i];
-    if (h.indexOf("toeic") !== -1 &&
-        (h.indexOf("rate") !== -1 || h.indexOf("rating") !== -1 || h.indexOf("prepared") !== -1 || h.indexOf("10") !== -1)) {
+    if ((h.indexOf("toeic") !== -1 || h.indexOf("traffic") !== -1 || h.indexOf("live") !== -1 || h.indexOf("mtf") !== -1 || h.indexOf("self-study") !== -1) &&
+        (h.indexOf("rate") !== -1 || h.indexOf("rating") !== -1 || h.indexOf("progress") !== -1 || h.indexOf("prepared") !== -1 || h.indexOf("10") !== -1 || h.indexOf("scale") !== -1)) {
       return i;
     }
   }

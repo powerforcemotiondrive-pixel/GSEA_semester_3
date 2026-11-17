@@ -2105,7 +2105,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
       if (iconAg) iconAg.classList.add("hidden");
       if (iconAas) iconAas.classList.remove("hidden");
       if (titleEl) titleEl.innerText = "GSEA SEMESTER 3 AT";
-      if (subtitleEl) subtitleEl.innerText = "Technical English (LV125E) • Formative Learning Portfolio & Technical Operations Log";
+      if (subtitleEl) subtitleEl.innerText = "Technical English (LV125E) • Formative Learning Portfolio: Classroom Operations & Live Traffic Self-Study";
       if (drawerBtnAg) {
         drawerBtnAg.disabled = true;
         drawerBtnAg.setAttribute('aria-disabled', 'true');
