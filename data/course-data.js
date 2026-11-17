@@ -4033,7 +4033,7 @@
             "title": "Ground Inspection & Audit Findings (Field to Report)",
             "subtitle": "Translating Airfield Non-Conformities into Spoken Technical Debriefs",
             "context": "Airside operations inspectors conduct daily walkarounds of aprons, taxiways, and holding positions. When physical defects or unsafe handling behaviors are discovered, inspectors must accurately classify the finding under EASA Part-ADR.AR.C.055, deduce how the failure occurred using past modals, and verbally brief airport leadership on immediate corrective actions.",
-            "image": "images/s3_m1_session4_banner.jpg",
+            "image": "images/s3_m1_session4_aerodrome.jpg",
             "targetLevel": "CEFR B1–B2",
             "roleContext": "Airside Safety Inspector / Aerodrome Auditor"
           },
@@ -11408,7 +11408,7 @@
               "title": "Ground Inspection & Audit Findings (Field to Report)",
               "subtitle": "Translating Airfield Non-Conformities into Spoken Technical Debriefs",
               "context": "Airside operations inspectors conduct daily walkarounds of aprons, taxiways, and holding positions. When physical defects or unsafe handling behaviors are discovered, inspectors must accurately classify the finding under EASA Part-ADR.AR.C.055, deduce how the failure occurred using past modals, and verbally brief airport leadership on immediate corrective actions.",
-              "image": "images/s3_m1_session4_banner.jpg",
+              "image": "images/s3_m1_session4_aerodrome.jpg",
               "targetLevel": "CEFR B1–B2",
               "roleContext": "Airside Safety Inspector / Aerodrome Auditor"
             },
