@@ -14460,6 +14460,15 @@ function renderLessonContentTabSession3(sessionData, theme) {
                     `;
                   }).join("")}
                 </div>
+                ${mod.num === 2 ? `
+                <div class="p-3.5 bg-amber-50/90 border-t border-amber-200 text-amber-950 flex flex-wrap items-center justify-between gap-2 text-xs">
+                  <div class="flex items-center gap-2.5">
+                    <span class="px-2 py-0.5 rounded font-mono text-[10px] font-black text-white bg-amber-600">Week 12</span>
+                    <span><strong>MTF TEST:</strong> Friday PM (13h15 – 17h30) for full promo Week 12</span>
+                  </div>
+                  <span class="px-2.5 py-0.5 rounded text-[10px] font-bold bg-amber-200 text-amber-900 border border-amber-300">Official Exam</span>
+                </div>
+                ` : ''}
               </div>
             `).join("")}
           </div>
