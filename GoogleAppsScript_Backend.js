@@ -225,17 +225,17 @@ function handleLogin(studentName, studentPin, requestedTrack) {
     }
 
     var cTs  = findCol(rawHeaders, ["time", "date", "horodateur"], 0);
-    var cSt  = findCol(rawHeaders, ["student", "nom", "name"], 1);
-    var cTrk = findTrackCol(rawHeaders, -1);
-    var cMod = findModuleCol(rawHeaders, hasPinCol ? 3 : 2);
-    var cSes = findCol(rawHeaders, ["session"], hasPinCol ? 4 : 3);
-    var cVoc = findCol(rawHeaders, ["vocab", "word", "lexique"], hasPinCol ? 5 : 4);
-    var cRev = findCol(rawHeaders, ["review", "learnt", "lesson content", "content"], hasPinCol ? 6 : 5);
-    var cWrk = findCol(rawHeaders, ["work on", "need to work", "following this session", "work"], hasPinCol ? 7 : 6);
+    var cSt  = findCol(rawHeaders, ["student", "nom", "name", "élève", "eleve"], 1);
+    var cTrk = findTrackCol(rawHeaders, hasPinCol ? 3 : -1);
+    var cMod = findModuleCol(rawHeaders, hasPinCol ? 4 : 2);
+    var cSes = findCol(rawHeaders, ["session", "séance", "seance", "cours", "lesson"], hasPinCol ? 5 : 3);
+    var cVoc = findCol(rawHeaders, ["vocab", "word", "lexique", "term", "phrase"], hasPinCol ? 6 : 4);
+    var cRev = findCol(rawHeaders, ["review", "learnt", "learned", "content", "bilan"], hasPinCol ? 7 : 5);
+    var cWrk = findCol(rawHeaders, ["work", "travail", "improve", "target", "following"], hasPinCol ? 8 : 6);
     var cEvH = findEvalHelpCol(rawHeaders, -1);
-    var cEvR = findEvalRatingCol(rawHeaders, hasPinCol ? 9 : 8);
-    var cToP = findToeicPrepCol(rawHeaders, hasPinCol ? 10 : 9);
-    var cToR = findToeicRatingCol(rawHeaders, hasPinCol ? 11 : 10);
+    var cEvR = findEvalRatingCol(rawHeaders, (cEvH !== -1) ? 10 : (hasPinCol ? 9 : 8));
+    var cToP = findToeicPrepCol(rawHeaders, (cEvH !== -1) ? 11 : (hasPinCol ? 10 : 9));
+    var cToR = findToeicRatingCol(rawHeaders, (cEvH !== -1) ? 12 : (hasPinCol ? 11 : 10));
 
     for (var r = 1; r < data.length; r++) {
       var row = data[r];
@@ -361,21 +361,51 @@ function handleSubmit(d) {
       ]);
     }
 
-    sheet.appendRow([
-      new Date(),
-      d.student || "",
-      d.pin || "",
-      d.track || "AT",
-      d.module || "",
-      d.session || "",
-      d.vocab || "",
-      d.contentReview || "",
-      d.workOn || "",
-      d.evalHelp || "",
-      d.evalRating || d.formativeRating || "",
-      d.toeicPrep || "",
-      d.toeicRating || d.toeicPrepRating || ""
-    ]);
+    var hasSeparateEvalHelp = false;
+    if (sheet.getLastRow() > 0) {
+      var headerRow = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0].map(function(h) { return String(h || "").toLowerCase(); });
+      hasSeparateEvalHelp = (findEvalHelpCol(headerRow, -1) !== -1);
+    }
+
+    var row;
+    if (hasSeparateEvalHelp) {
+      row = [
+        new Date(),
+        d.student || "",
+        d.pin || "",
+        d.track || "AT",
+        d.module || "",
+        d.session || "",
+        d.vocab || "",
+        d.contentReview || "",
+        d.workOn || "",
+        d.evalHelp || "",
+        d.evalRating || d.formativeRating || "",
+        d.toeicPrep || "",
+        d.toeicRating || d.toeicPrepRating || ""
+      ];
+    } else {
+      var workOnCombined = String(d.workOn || "").trim();
+      if (d.evalHelp && workOnCombined.indexOf(d.evalHelp) === -1) {
+        workOnCombined = (workOnCombined ? (workOnCombined + "\n\n") : "") + "[FE1 Relevance & Strategy]: " + d.evalHelp;
+      }
+      row = [
+        new Date(),
+        d.student || "",
+        d.pin || "",
+        d.track || "AT",
+        d.module || "",
+        d.session || "",
+        d.vocab || "",
+        d.contentReview || "",
+        workOnCombined,
+        d.evalRating || d.formativeRating || "",
+        d.toeicPrep || "",
+        d.toeicRating || d.toeicPrepRating || ""
+      ];
+    }
+
+    sheet.appendRow(row);
 
     SpreadsheetApp.flush();
 

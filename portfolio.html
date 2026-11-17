@@ -1322,7 +1322,22 @@
 
       let success = false;
 
-      // ROUTE 1: Google Forms Direct High-Throughput (Zero-Lock)
+      // ROUTE 1: Direct Google Apps Script Database Submission (Primary Reliable Route)
+      try {
+        const res = await fetch(SCRIPT_URL, {
+          method: "POST",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify({ action: "submit", ...payload })
+        });
+        const resData = await res.json();
+        if (resData && resData.success) {
+          success = true;
+        }
+      } catch (scriptErr) {
+        console.warn("Apps Script primary write failed, attempting Google Form mirror:", scriptErr);
+      }
+
+      // ROUTE 2: Google Forms Secondary Mirror
       try {
         const formBody = new URLSearchParams();
         const formWorkOn = (payload.evalHelp && !GOOGLE_FORM_ENTRIES.evalHelp)
@@ -1353,22 +1368,7 @@
 
         success = true;
       } catch (formErr) {
-        console.warn("Google Form route failed, attempting Route 2 fallback:", formErr);
-      }
-
-      // ROUTE 2: Fallback to Apps Script Direct Write
-      if (!success) {
-        try {
-          const res = await fetch(SCRIPT_URL, {
-            method: "POST",
-            headers: { "Content-Type": "text/plain;charset=utf-8" },
-            body: JSON.stringify({ action: "submit", ...payload })
-          });
-          const resData = await res.json();
-          if (resData.success) success = true;
-        } catch (scriptErr) {
-          console.error("Both submission routes failed:", scriptErr);
-        }
+        console.warn("Google Form mirror submission attempt:", formErr);
       }
 
       if (success) {
