@@ -2643,10 +2643,19 @@
       }
     };
 
-    window.clearLessonNotes = function(sessionNum) {
-      if (!confirm('Clear your saved notes for this session?')) return;
-      ['roleplay', 'safety'].forEach(noteKey => {
-        window.saveLessonNote(sessionNum, noteKey, '');
+    window.clearLessonNotes = function(target) {
+      if (!confirm('Clear your saved notes?')) return;
+      if (Array.isArray(target)) {
+        target.forEach(fieldId => {
+          const el = document.getElementById(`notes-${fieldId}`);
+          if (el) el.value = '';
+          try { localStorage.removeItem(`gsea_note_${fieldId}`); } catch (e) {}
+        });
+        return;
+      }
+      const sessionNum = target;
+      ['roleplay', 'safety', 'warmup', 'reflection', 'activity', 'roles', 'flipped_hook', 'flipped_activity', 'flipped_roles'].forEach(noteKey => {
+        if (window.saveLessonNote) window.saveLessonNote(sessionNum, noteKey, '');
         const textarea = document.getElementById(`notes-${noteKey}-s${sessionNum}`);
         if (textarea) textarea.value = '';
         const printEl = document.getElementById(`print-notes-${noteKey}-s${sessionNum}`);
@@ -4008,6 +4017,28 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
       });
     };
 
+    // Field Inspection Exhibits Tab Switcher (Session 4)
+    window.switchExhibitTab = function(tabId) {
+      const btns = document.querySelectorAll(".exhibit-tab-btn");
+      btns.forEach(b => {
+        if (b.getAttribute("data-exhibit-tab") === tabId) {
+          b.classList.add("border-blue-600", "text-blue-700", "bg-blue-50/50");
+          b.classList.remove("border-transparent", "text-slate-500");
+        } else {
+          b.classList.remove("border-blue-600", "text-blue-700", "bg-blue-50/50");
+          b.classList.add("border-transparent", "text-slate-500");
+        }
+      });
+      const panes = document.querySelectorAll(".exhibit-pane");
+      panes.forEach(p => {
+        if (tabId === "all" || p.id === "exhibit-pane-" + tabId) {
+          p.classList.remove("hidden");
+        } else {
+          p.classList.add("hidden");
+        }
+      });
+    };
+
     // Multi-Source Dossier Tab Switcher (Session 5)
     window.switchDossierTab = function(tabId) {
       const btns = document.querySelectorAll(".dossier-tab-btn");
@@ -4020,14 +4051,33 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
           b.classList.add("border-transparent", "text-slate-500");
         }
       });
-      const panes = document.querySelectorAll(".dossier-pane");
+      const panes = document.querySelectorAll(".dossier-pane, [id^='dossier-tab-pane-'], [id^='dossier-pane-']");
       panes.forEach(p => {
-        if (p.id === "dossier-pane-" + tabId) {
+        if (p.id === "dossier-pane-" + tabId || p.id === "dossier-tab-pane-" + tabId) {
           p.classList.remove("hidden");
         } else {
           p.classList.add("hidden");
         }
       });
+    };
+
+    // Global Print and Diagnostic Utility Handlers
+    window.printLessonContent = function() {
+      window.print();
+    };
+
+    window.toggleDiagnosticAnswer = function(id) {
+      const el = document.getElementById(`diagnostic-ans-${id}`);
+      const btn = document.getElementById(`diagnostic-btn-${id}`);
+      if (!el || !btn) return;
+      const isHidden = el.classList.contains('hidden');
+      if (isHidden) {
+        el.classList.remove('hidden');
+        btn.innerHTML = '<span>Hide Answer</span> &larr;';
+      } else {
+        el.classList.add('hidden');
+        btn.innerHTML = '<span>Reveal Answer</span> &rarr;';
+      }
     };
 
     // --- Active Session & Calendar Synchronizer (Semester 3 Noticeboard) ---
@@ -6677,23 +6727,39 @@ function renderLessonContentTabSession3(sessionData, theme) {
 
             <p class="text-xs text-slate-600">${doc.summary || 'Review the three field audit exhibits documented during the comprehensive airside inspection of St. Exupéry International Aerodrome (LFSE):'}</p>
 
-            <div class="space-y-3">
-              ${(doc.exhibits || []).map(ex => `
-                <div class="p-4 rounded-xl border border-slate-200 bg-slate-50/60 hover:bg-slate-50 transition-colors space-y-2">
-                  <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200/80 pb-2">
-                    <div class="flex items-center gap-2">
-                      <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider ${ex.levelClass}">${ex.level}</span>
-                      <strong class="text-xs font-bold text-slate-900">${ex.id} • ${ex.location}</strong>
+            <!-- Exhibits Tab Switcher -->
+            <div class="border border-slate-200 rounded-xl overflow-hidden bg-slate-50">
+              <div class="flex flex-wrap border-b border-slate-200 bg-white" id="exhibit-tab-header">
+                ${(doc.exhibits || []).map((ex, exIdx) => `
+                  <button type="button" onclick="window.switchExhibitTab('${ex.id}')" data-exhibit-tab="${ex.id}" class="exhibit-tab-btn px-3 sm:px-4 py-2.5 text-xs font-bold border-b-2 transition-all cursor-pointer flex items-center gap-1.5 ${exIdx === 0 ? 'border-blue-600 text-blue-700 bg-blue-50/50' : 'border-transparent text-slate-500 hover:text-slate-800'}">
+                    <span>${ex.id}: ${ex.title.split(' ')[0]}</span>
+                    <span class="text-[10px] font-mono px-1 py-0.2 rounded ${ex.level.includes('Level 1') ? 'bg-red-100 text-red-800' : (ex.level.includes('Level 2') ? 'bg-amber-100 text-amber-800' : 'bg-slate-200 text-slate-700')}">${ex.level.includes('Level 1') ? 'L1' : (ex.level.includes('Level 2') ? 'L2' : 'Obs')}</span>
+                  </button>
+                `).join('')}
+                <button type="button" onclick="window.switchExhibitTab('all')" data-exhibit-tab="all" class="exhibit-tab-btn px-3 sm:px-4 py-2.5 text-xs font-bold border-b-2 border-transparent text-slate-500 hover:text-slate-800 transition-all cursor-pointer flex items-center gap-1.5">
+                  <span>View All 3</span>
+                </button>
+              </div>
+
+              <!-- Exhibit Panes -->
+              <div class="p-4 bg-white space-y-3" id="exhibit-tab-content">
+                ${(doc.exhibits || []).map((ex, exIdx) => `
+                  <div id="exhibit-pane-${ex.id}" class="exhibit-pane p-4 rounded-xl border border-slate-200 bg-slate-50/60 hover:bg-slate-50 transition-colors space-y-2.5 ${exIdx === 0 ? '' : 'hidden'}">
+                    <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200/80 pb-2">
+                      <div class="flex items-center gap-2">
+                        <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider ${ex.levelClass}">${ex.level}</span>
+                        <strong class="text-xs font-bold text-slate-900">${ex.id} &bull; ${ex.location}</strong>
+                      </div>
+                      <span class="text-[11px] font-mono text-slate-500">${ex.rule}</span>
                     </div>
-                    <span class="text-[11px] font-mono text-slate-500">${ex.rule}</span>
+                    <h5 class="text-xs font-black text-slate-800">${ex.title}</h5>
+                    <p class="text-xs text-slate-700 leading-relaxed">${ex.facts}</p>
+                    <div class="p-2.5 rounded-lg bg-white border border-slate-200 text-[11px] text-slate-800 font-medium">
+                      <strong class="text-slate-900">Enforcement Action:</strong> ${ex.enforcement}
+                    </div>
                   </div>
-                  <h5 class="text-xs font-black text-slate-800">${ex.title}</h5>
-                  <p class="text-xs text-slate-700 leading-relaxed">${ex.facts}</p>
-                  <div class="p-2.5 rounded-lg bg-white border border-slate-200 text-[11px] text-slate-800 font-medium">
-                    <strong class="text-slate-900">Enforcement Action:</strong> ${ex.enforcement}
-                  </div>
-                </div>
-              `).join('')}
+                `).join('')}
+              </div>
             </div>
           </div>
 
@@ -7075,12 +7141,16 @@ function renderLessonContentTabSession3(sessionData, theme) {
           </div>
 
           <!-- Context Alert Box -->
-          <div class="p-4 rounded-xl bg-blue-50/80 border border-blue-200 text-blue-950 text-xs sm:text-[13px] leading-relaxed shadow-2xs space-y-1.5">
+          <div class="p-4 rounded-xl bg-blue-50/80 border border-blue-200 text-blue-950 text-xs sm:text-[13px] leading-relaxed shadow-2xs space-y-2">
             <div class="flex items-center gap-2 font-bold text-blue-900 uppercase tracking-wider text-[11px]">
               <svg class="w-4 h-4 text-blue-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/></svg>
               <span>Operational Investigation Context: Occurrence Dossier BEA/EASA-2024-089</span>
             </div>
             <p>Airside occurrences rarely result from a single failure. When an airliner experiences a pushback shear pin fracture or a contaminated runway excursion, safety investigators synthesize fragmented records—ATC voice logs, METAR storm decodes, deferred maintenance logs, and pilot occurrence reports. By applying the Swiss Cheese Model, investigators uncover latent organizational flaws behind active frontline slips.</p>
+            <div class="p-3 bg-white/80 rounded-lg border border-blue-200 text-xs text-blue-950 space-y-1">
+              <strong class="text-blue-900 block text-[11px] uppercase tracking-wider">Key Operational Baseline:</strong>
+              <p>Under Regulation (EU) 376/2014, all mandatory occurrence reports (MORs) <strong>must be submitted within 72 hours</strong>. On the ramp, towbar shear pins are intentional sacrificial devices designed to fracture cleanly under abnormal towing loads in order to protect the nose landing gear from severe structural failure. On the runway, standing water <strong>exceeding 3 mm over more than 25% of the assessed surface area</strong> officially classifies the runway as <em>contaminated</em> under EASA rules. In James Reason's Swiss Cheese Model, dormant organizational defects (like turnaround pressure or deferred repairs) are <strong>latent conditions</strong>, whereas human mistakes at the operational sharp end are <strong>active failures</strong>.</p>
+            </div>
           </div>
 
           <!-- Opening Diagnostic Spot-Check -->
@@ -7207,7 +7277,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
               <!-- Tab Contents -->
               <div class="p-4 bg-white" id="dossier-tab-content">
                 ${(dossier.tabs || []).map((t, tIdx) => `
-                  <div id="dossier-tab-pane-${t.id}" class="space-y-3 ${tIdx === 0 ? '' : 'hidden'}">
+                  <div id="dossier-pane-${t.id}" class="dossier-pane space-y-3 ${tIdx === 0 ? '' : 'hidden'}">
                     <div class="flex items-center justify-between gap-2 border-b border-slate-100 pb-2">
                       <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200">${t.badge || 'Record'}</span>
                       <span class="text-[11px] text-slate-500">Occurrence BEA/EASA-2024-089</span>

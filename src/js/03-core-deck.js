@@ -1263,10 +1263,19 @@
       }
     };
 
-    window.clearLessonNotes = function(sessionNum) {
-      if (!confirm('Clear your saved notes for this session?')) return;
-      ['roleplay', 'safety'].forEach(noteKey => {
-        window.saveLessonNote(sessionNum, noteKey, '');
+    window.clearLessonNotes = function(target) {
+      if (!confirm('Clear your saved notes?')) return;
+      if (Array.isArray(target)) {
+        target.forEach(fieldId => {
+          const el = document.getElementById(`notes-${fieldId}`);
+          if (el) el.value = '';
+          try { localStorage.removeItem(`gsea_note_${fieldId}`); } catch (e) {}
+        });
+        return;
+      }
+      const sessionNum = target;
+      ['roleplay', 'safety', 'warmup', 'reflection', 'activity', 'roles', 'flipped_hook', 'flipped_activity', 'flipped_roles'].forEach(noteKey => {
+        if (window.saveLessonNote) window.saveLessonNote(sessionNum, noteKey, '');
         const textarea = document.getElementById(`notes-${noteKey}-s${sessionNum}`);
         if (textarea) textarea.value = '';
         const printEl = document.getElementById(`print-notes-${noteKey}-s${sessionNum}`);
@@ -2628,6 +2637,28 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
       });
     };
 
+    // Field Inspection Exhibits Tab Switcher (Session 4)
+    window.switchExhibitTab = function(tabId) {
+      const btns = document.querySelectorAll(".exhibit-tab-btn");
+      btns.forEach(b => {
+        if (b.getAttribute("data-exhibit-tab") === tabId) {
+          b.classList.add("border-blue-600", "text-blue-700", "bg-blue-50/50");
+          b.classList.remove("border-transparent", "text-slate-500");
+        } else {
+          b.classList.remove("border-blue-600", "text-blue-700", "bg-blue-50/50");
+          b.classList.add("border-transparent", "text-slate-500");
+        }
+      });
+      const panes = document.querySelectorAll(".exhibit-pane");
+      panes.forEach(p => {
+        if (tabId === "all" || p.id === "exhibit-pane-" + tabId) {
+          p.classList.remove("hidden");
+        } else {
+          p.classList.add("hidden");
+        }
+      });
+    };
+
     // Multi-Source Dossier Tab Switcher (Session 5)
     window.switchDossierTab = function(tabId) {
       const btns = document.querySelectorAll(".dossier-tab-btn");
@@ -2640,14 +2671,33 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
           b.classList.add("border-transparent", "text-slate-500");
         }
       });
-      const panes = document.querySelectorAll(".dossier-pane");
+      const panes = document.querySelectorAll(".dossier-pane, [id^='dossier-tab-pane-'], [id^='dossier-pane-']");
       panes.forEach(p => {
-        if (p.id === "dossier-pane-" + tabId) {
+        if (p.id === "dossier-pane-" + tabId || p.id === "dossier-tab-pane-" + tabId) {
           p.classList.remove("hidden");
         } else {
           p.classList.add("hidden");
         }
       });
+    };
+
+    // Global Print and Diagnostic Utility Handlers
+    window.printLessonContent = function() {
+      window.print();
+    };
+
+    window.toggleDiagnosticAnswer = function(id) {
+      const el = document.getElementById(`diagnostic-ans-${id}`);
+      const btn = document.getElementById(`diagnostic-btn-${id}`);
+      if (!el || !btn) return;
+      const isHidden = el.classList.contains('hidden');
+      if (isHidden) {
+        el.classList.remove('hidden');
+        btn.innerHTML = '<span>Hide Answer</span> &larr;';
+      } else {
+        el.classList.add('hidden');
+        btn.innerHTML = '<span>Reveal Answer</span> &rarr;';
+      }
     };
 
     // --- Active Session & Calendar Synchronizer (Semester 3 Noticeboard) ---

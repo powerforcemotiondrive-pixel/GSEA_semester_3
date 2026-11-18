@@ -4963,30 +4963,30 @@
             "tag": "Technical English • Module 1 • Session 5",
             "heading": "From Fragmented Field Evidence to Systematic Safety Findings",
             "lead": "When an aircraft suffers an airside occurrence—such as a pushback towbar failure, a low-speed runway excursion, or a ground servicing collision—the initial operational reports are almost always fragmented, stressful, and contradictory.",
-            "body": "Air traffic control logs record rapid-fire radio transmissions; weather reports document gusty crosswinds and rain intensity; maintenance logbooks list deferred equipment items under the Minimum Equipment List (MEL); and frontline occurrence reports convey subjective pilot and driver perspectives. As technical officers and safety investigators, your mission is to piece together these disparate clues into an objective causal chain. By applying the Swiss Cheese Model, you will uncover the underlying systemic and organizational factors that allowed multiple safety barriers to fail simultaneously.",
+            "body": "Air traffic control logs record rapid-fire radio transmissions; weather reports document gusty crosswinds and rain intensity; maintenance logbooks list deferred equipment items under the Minimum Equipment List (MEL); and frontline occurrence reports convey subjective pilot and driver perspectives. As technical officers and safety investigators, your mission is to piece together these disparate clues into an objective causal chain.\n\nKey Operational Baseline: Under European regulation (EU 376/2014), all mandatory occurrence reports (MORs) must be submitted within 72 hours of becoming aware of the event. On the ramp, towbar shear pins act as sacrificial safety devices: under excessive towing loads, the pin fractures cleanly to protect the aircraft nose gear strut from structural failure. On the runway, standing water exceeding 3 mm over more than 25% of the surface area officially classifies the asphalt as 'contaminated' under EASA CS-ADR-DSN rules. Finally, James Reason's Swiss Cheese Model separates dormant organizational flaws ('latent conditions', like maintenance deferrals or turnaround rush) from immediate human mistakes ('active failures', like delayed reverse thrust).",
             "diagnostic": {
               "title": "Incident Investigation Entry Spot-Check",
-              "instructions": "Discuss these 4 essential investigation principles with your partner, then reveal the model answers.",
+              "instructions": "Discuss these 4 essential investigation principles with your partner using the target sentence stems, then reveal the model answers.",
               "questions": [
                 {
                   "id": 1,
-                  "q": "Under Regulation (EU) 376/2014, what is the mandatory reporting timeframe for submitting a Mandatory Occurrence Report (MOR)?",
-                  "answer": "Within 72 hours of becoming aware of the occurrence, unless exceptional circumstances prevent it."
+                  "q": "Using 'must be submitted within...', what is the statutory deadline under Regulation (EU) 376/2014 for filing an MOR?",
+                  "answer": "Under Regulation (EU) 376/2014, an MOR must be submitted within 72 hours of becoming aware of the occurrence."
                 },
                 {
                   "id": 2,
-                  "q": "What is the primary sacrificial engineering purpose of a towbar shear pin during pushback operations?",
-                  "answer": "To fracture cleanly under excessive shear or torsional stress, protecting the expensive aircraft nose landing gear structure from severe internal damage."
+                  "q": "Using 'designed to break in order to protect...', explain the sacrificial safety purpose of a towbar shear pin.",
+                  "answer": "The shear pin is designed to break cleanly under abnormal towing loads in order to protect the nose gear strut from severe structural failure."
                 },
                 {
                   "id": 3,
-                  "q": "At what water depth is an asphalt runway officially classified as 'contaminated' with standing water under EASA CS-ADR-DSN rules?",
-                  "answer": "When standing water exceeds 3 mm in depth over more than 25% of the assessed runway surface area, triggering severe dynamic hydroplaning risk."
+                  "q": "Using 'exceeds' and 'classified as contaminated', state the EASA standing water threshold for asphalt runways.",
+                  "answer": "When standing water depth exceeds 3 mm over more than 25% of the assessed surface, the runway is classified as contaminated."
                 },
                 {
                   "id": 4,
-                  "q": "In James Reason's Swiss Cheese Model, how does a latent condition differ from an active frontline failure?",
-                  "answer": "A latent condition is a dormant organizational or scheduling weakness (e.g. spare parts delay, turnaround rush) embedded in the system, whereas an active failure is an unsafe human slip committed directly at the operational sharp end."
+                  "q": "Using 'whereas' or 'on the other hand', contrast a dormant latent condition with an active failure in James Reason's model.",
+                  "answer": "A latent condition is a dormant organizational or scheduling defect, whereas an active failure is an immediate frontline human slip."
                 }
               ]
             }
@@ -12338,30 +12338,30 @@
               "tag": "Technical English • Module 1 • Session 5",
               "heading": "From Fragmented Field Evidence to Systematic Safety Findings",
               "lead": "When an aircraft suffers an airside occurrence—such as a pushback towbar failure, a low-speed runway excursion, or a ground servicing collision—the initial operational reports are almost always fragmented, stressful, and contradictory.",
-              "body": "Air traffic control logs record rapid-fire radio transmissions; weather reports document gusty crosswinds and rain intensity; maintenance logbooks list deferred equipment items under the Minimum Equipment List (MEL); and frontline occurrence reports convey subjective pilot and driver perspectives. As technical officers and safety investigators, your mission is to piece together these disparate clues into an objective causal chain. By applying the Swiss Cheese Model, you will uncover the underlying systemic and organizational factors that allowed multiple safety barriers to fail simultaneously.",
+              "body": "Air traffic control logs record rapid-fire radio transmissions; weather reports document gusty crosswinds and rain intensity; maintenance logbooks list deferred equipment items under the Minimum Equipment List (MEL); and frontline occurrence reports convey subjective pilot and driver perspectives. As technical officers and safety investigators, your mission is to piece together these disparate clues into an objective causal chain.\n\nKey Operational Baseline: Under European regulation (EU 376/2014), all mandatory occurrence reports (MORs) must be submitted within 72 hours of becoming aware of the event. On the ramp, towbar shear pins act as sacrificial safety devices: under excessive towing loads, the pin fractures cleanly to protect the aircraft nose gear strut from structural failure. On the runway, standing water exceeding 3 mm over more than 25% of the surface area officially classifies the asphalt as 'contaminated' under EASA CS-ADR-DSN rules. Finally, James Reason's Swiss Cheese Model separates dormant organizational flaws ('latent conditions', like maintenance deferrals or turnaround rush) from immediate human mistakes ('active failures', like delayed reverse thrust).",
               "diagnostic": {
                 "title": "Incident Investigation Entry Spot-Check",
-                "instructions": "Discuss these 4 essential investigation principles with your partner, then reveal the model answers.",
+                "instructions": "Discuss these 4 essential investigation principles with your partner using the target sentence stems, then reveal the model answers.",
                 "questions": [
                   {
                     "id": 1,
-                    "q": "Under Regulation (EU) 376/2014, what is the mandatory reporting timeframe for submitting a Mandatory Occurrence Report (MOR)?",
-                    "answer": "Within 72 hours of becoming aware of the occurrence, unless exceptional circumstances prevent it."
+                    "q": "Using 'must be submitted within...', what is the statutory deadline under Regulation (EU) 376/2014 for filing an MOR?",
+                    "answer": "Under Regulation (EU) 376/2014, an MOR must be submitted within 72 hours of becoming aware of the occurrence."
                   },
                   {
                     "id": 2,
-                    "q": "What is the primary sacrificial engineering purpose of a towbar shear pin during pushback operations?",
-                    "answer": "To fracture cleanly under excessive shear or torsional stress, protecting the expensive aircraft nose landing gear structure from severe internal damage."
+                    "q": "Using 'designed to break in order to protect...', explain the sacrificial safety purpose of a towbar shear pin.",
+                    "answer": "The shear pin is designed to break cleanly under abnormal towing loads in order to protect the nose gear strut from severe structural failure."
                   },
                   {
                     "id": 3,
-                    "q": "At what water depth is an asphalt runway officially classified as 'contaminated' with standing water under EASA CS-ADR-DSN rules?",
-                    "answer": "When standing water exceeds 3 mm in depth over more than 25% of the assessed runway surface area, triggering severe dynamic hydroplaning risk."
+                    "q": "Using 'exceeds' and 'classified as contaminated', state the EASA standing water threshold for asphalt runways.",
+                    "answer": "When standing water depth exceeds 3 mm over more than 25% of the assessed surface, the runway is classified as contaminated."
                   },
                   {
                     "id": 4,
-                    "q": "In James Reason's Swiss Cheese Model, how does a latent condition differ from an active frontline failure?",
-                    "answer": "A latent condition is a dormant organizational or scheduling weakness (e.g. spare parts delay, turnaround rush) embedded in the system, whereas an active failure is an unsafe human slip committed directly at the operational sharp end."
+                    "q": "Using 'whereas' or 'on the other hand', contrast a dormant latent condition with an active failure in James Reason's model.",
+                    "answer": "A latent condition is a dormant organizational or scheduling defect, whereas an active failure is an immediate frontline human slip."
                   }
                 ]
               }

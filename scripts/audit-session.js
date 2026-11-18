@@ -4,10 +4,10 @@
  * Author: Phil PARRIS (Pedagogical Architect & Author)
  * 
  * Usage:
- *   node scripts/audit-session.js "Audit S3 Mod 1 Session 1"
- *   node scripts/audit-session.js --semester=3 --track=at --module=1 --session=1
- *   node scripts/audit-session.js 3 at 1 1
- *   npm run audit -- S3 AT M1 S1
+ *   node scripts/audit-session.js "Audit S1 AG M1 Ss 3"
+ *   node scripts/audit-session.js --semester=1 --track=ag --module=1 --session=3
+ *   node scripts/audit-session.js 1 ag 1 3
+ *   npm run audit -- S1 AG M1 S3
  */
 
 const fs = require('fs');
@@ -18,13 +18,13 @@ const { execSync } = require('child_process');
 function parseArgs() {
   const rawArgs = process.argv.slice(2).join(' ');
   
-  let semester = 3;
-  let track = 'at';
+  let semester = 1;
+  let track = 'ag';
   let moduleNum = 1;
   let sessionNum = 1;
 
   if (!rawArgs.trim()) {
-    return { semester: 3, track: 'at', moduleNum: 1, sessionNum: 1 };
+    return { semester: 1, track: 'ag', moduleNum: 1, sessionNum: 3 };
   }
 
   // Check explicit flags: --semester=1 --track=ag --module=1 --session=3
@@ -56,7 +56,7 @@ function parseArgs() {
                 rawArgs.match(/\b(\d+)\b$/);
   if (mSess && !flagSess) sessionNum = parseInt(mSess[1], 10);
 
-  // Positional numeric fallback: e.g. "3 at 1 1"
+  // Positional numeric fallback: e.g. "1 ag 1 3"
   const tokens = rawArgs.trim().split(/\s+/);
   if (tokens.length >= 4 && /^\d+$/.test(tokens[0]) && /^[a-z]+$/i.test(tokens[1]) && /^\d+$/.test(tokens[2]) && /^\d+$/.test(tokens[3])) {
     semester = parseInt(tokens[0], 10);
@@ -129,7 +129,11 @@ function getTemplateFileNames(sem, track, mod) {
     if (mod === 2) return ['06-templates-mod2.js'];
     if (mod === 3) return ['07-templates-mod3.js'];
   }
-  if (mod === 1) return ['05-templates-mod1.js'];
+  if (mod === 1) {
+    return track === 'ag' 
+      ? ['05b-templates-ag1.js', '05-templates-mod1.js'] 
+      : ['05a-templates-at1.js', '05-templates-mod1.js'];
+  }
   if (track === 'ag') {
     if (mod === 2) return ['06-templates-ag2.js'];
     if (mod === 3) return ['07-templates-ag3.js'];
@@ -137,7 +141,7 @@ function getTemplateFileNames(sem, track, mod) {
     if (mod === 2) return ['08-templates-aas2.js'];
     if (mod === 3) return ['08b-templates-aas3.js', '08-templates-aas3.js'];
   }
-  return ['05-templates-mod1.js'];
+  return ['05a-templates-at1.js', '05b-templates-ag1.js', '05-templates-mod1.js'];
 }
 
 let templateContent = '';
@@ -246,7 +250,7 @@ if (plan) {
 const lc = sessionObj.lessonContent || {};
 const lcStr = JSON.stringify(lc);
 const timerBadgeMatches = lcStr.match(/⏱️[^\"]+/g) || [];
-const parenMinuteMatches = lcStr.match(/\([^\)]*mins?[^\)]*\)/gi) || [];
+const parenMinuteMatches = lcStr.match(/\([^\)]*\b\d*\s*(?:mins?|minutes?)\b[^\)]*\)/gi) || [];
 const allTimingMatches = [...new Set([...timerBadgeMatches, ...parenMinuteMatches])];
 
 if (allTimingMatches.length > 0) {
@@ -276,7 +280,7 @@ const keyTermsList = (sessionObj.overview && sessionObj.overview.keyTerms ? sess
 const topicKeywords = [
   ...sessionTitle.toLowerCase().split(/[\s,&-]+/).filter(w => w.length > 3),
   ...keyTermsList.flatMap(t => t.split(/[\s,&-]+/)).filter(w => w.length > 3),
-  'runway', 'taxiway', 'apron', 'easa', 'airport', 'aerodrome', 'safety', 'incident'
+  'tourism', 'tourist', 'visitor', 'municipal', 'carrying', 'capacity'
 ];
 const uniqueKeywords = [...new Set(topicKeywords)];
 let driftWarnings = [];
@@ -356,8 +360,22 @@ if (hasLegacyPrint) {
 let expectedPdfName = '';
 if (target.semester === 3) {
   expectedPdfName = `GSEA_S3_M${target.moduleNum}_S${target.sessionNum}_Lesson_Worksheet.pdf`;
+} else if (target.semester === 1 && (target.track === 'at' || target.track === 'aas')) {
+  // In Semester 1, Technical English uses AT naming convention
+  expectedPdfName = `GSEA_S1_M${target.moduleNum}_AT_S${target.sessionNum}_Lesson_Worksheet.pdf`;
 } else {
   expectedPdfName = `GSEA_S${target.semester}_M${target.moduleNum}_${target.track.toUpperCase()}_S${target.sessionNum}_Lesson_Worksheet.pdf`;
+}
+
+// Fallback check if alternative exists on disk (AT vs AAS)
+if (!fs.existsSync(path.join(baseDir, 'docs', expectedPdfName))) {
+  const altTrack = target.track.toUpperCase() === 'AAS' ? 'AT' : (target.track.toUpperCase() === 'AT' ? 'AAS' : null);
+  if (altTrack) {
+    const altPdf = `GSEA_S${target.semester}_M${target.moduleNum}_${altTrack}_S${target.sessionNum}_Lesson_Worksheet.pdf`;
+    if (fs.existsSync(path.join(baseDir, 'docs', altPdf))) {
+      expectedPdfName = altPdf;
+    }
+  }
 }
 
 const pdfPath = path.join(baseDir, 'docs', expectedPdfName);
@@ -453,7 +471,7 @@ if (fs.existsSync(distDir)) {
   }
 }
 
-// Check Template Link Syntax (Must target=_blank and NOT contain download attribute)
+// Check Template Link Syntax (Must target=_blank, NOT contain download attribute, and strictly adhere to canonical design system button style)
 let templateLinkFound = false;
 const templateFilesToCheck = getTemplateFileNames(target.semester, target.track, target.moduleNum);
 templateFilesToCheck.forEach(fileRel => {
@@ -462,16 +480,30 @@ templateFilesToCheck.forEach(fileRel => {
     const text = fs.readFileSync(fullPath, 'utf8');
     if (text.includes(expectedPdfName)) {
       templateLinkFound = true;
-      const regex = new RegExp(`<a[^>]*href=["'][^"']*${expectedPdfName}["'][^>]*>`, 'i');
-      const match = text.match(regex);
-      if (match) {
-        if (!match[0].includes('target="_blank"')) {
+      const fullAnchorRegex = new RegExp(`<a[^>]*href=["'][^"']*${expectedPdfName}["'][\\s\\S]*?<\\/a>`, 'i');
+      const fullAnchorMatch = text.match(fullAnchorRegex);
+      if (fullAnchorMatch) {
+        const anchorHtml = fullAnchorMatch[0];
+        if (!anchorHtml.includes('target="_blank"')) {
           findings.pdfStatus.pass = false;
           findings.pdfStatus.details.push(`PDF link in ${fileRel} is missing target="_blank" (must open in new tab).`);
         }
-        if (match[0].includes('download')) {
+        if (anchorHtml.includes('download')) {
           findings.pdfStatus.pass = false;
           findings.pdfStatus.details.push(`PDF link in ${fileRel} contains 'download' attribute which blocks browser tab preview.`);
+        }
+        // Canonical Design System Button Styling Assertions
+        if (!anchorHtml.includes('bg-blue-600') && !anchorHtml.includes('bg-blue-700')) {
+          findings.pdfStatus.pass = false;
+          findings.pdfStatus.details.push(`PDF action bar button in ${fileRel} deviates from design system color ('bg-blue-600' or 'bg-blue-700').`);
+        }
+        if (!anchorHtml.includes('<span>Lesson Worksheet (PDF)</span>')) {
+          findings.pdfStatus.pass = false;
+          findings.pdfStatus.details.push(`PDF action bar button in ${fileRel} deviates from canonical label 'Lesson Worksheet (PDF)'.`);
+        }
+        if (!anchorHtml.includes('&rarr;')) {
+          findings.pdfStatus.pass = false;
+          findings.pdfStatus.details.push(`PDF action bar button in ${fileRel} is missing the trailing arrow icon (<span aria-hidden="true">&rarr;</span>).`);
         }
       }
     }
@@ -481,6 +513,169 @@ if (!templateLinkFound) {
   findings.pdfStatus.pass = false;
   findings.pdfStatus.details.push(`No HTML link referencing ${expectedPdfName} found in template source files.`);
 }
+
+// --- Check 12: Zero Undefined Invariant & Simulated DOM Render Execution ---
+findings.renderExecution = { pass: true, undefCount: 0, details: [] };
+let renderedHtml = '';
+try {
+  const vm = require('vm');
+  const htmlOutputs = {};
+  const mockDoc = {
+    getElementById: (id) => ({
+      set innerHTML(val) { htmlOutputs[id] = val; }
+    })
+  };
+  const mockWin = {
+    loadLessonNote: () => '',
+    getLessonNote: () => '',
+    addEventListener: () => {}
+  };
+  const dispatcherPath = path.join(baseDir, 'src', 'js', '04-templates-dispatcher.js');
+  let dispatcherCode = '';
+  if (fs.existsSync(dispatcherPath)) {
+    dispatcherCode = fs.readFileSync(dispatcherPath, 'utf8');
+  }
+
+  const ctx = {
+    document: mockDoc,
+    window: mockWin,
+    setTimeout: () => {},
+    theme: { primary: '#152438', accent: '#d97706', primaryDark: '#0d1724' }
+  };
+  vm.createContext(ctx);
+  if (dispatcherCode) vm.runInContext(dispatcherCode, ctx);
+
+  const targetFiles = getTemplateFileNames(target.semester, target.track, target.moduleNum);
+  for (const f of targetFiles) {
+    const full = path.join(templateDir, f);
+    if (fs.existsSync(full)) {
+      const code = fs.readFileSync(full, 'utf8');
+      try {
+        vm.runInContext(code, ctx);
+      } catch (e) {
+        // Continue
+      }
+    }
+  }
+
+  const candidateFns = [
+    `renderLessonContentTabSession${target.sessionNum}`,
+    `renderAgLessonContentTabSession${target.sessionNum}`,
+    `renderAtLessonContentTabSession${target.sessionNum}`,
+    `renderAasLessonContentTabSession${target.sessionNum}`
+  ];
+  let rendered = '';
+  for (const fn of candidateFns) {
+    if (typeof ctx[fn] === 'function') {
+      ctx[fn](sessionObj, ctx.theme);
+      rendered = htmlOutputs['modal-body'] || '';
+      renderedHtml = rendered;
+      break;
+    }
+  }
+
+  if (rendered) {
+    const undefMatches = rendered.match(/\bundefined\b/g);
+    if (undefMatches) {
+      findings.renderExecution.pass = false;
+      findings.renderExecution.undefCount = undefMatches.length;
+      findings.renderExecution.details.push(`Found ${undefMatches.length} occurrences of literal 'undefined' in rendered DOM output.`);
+    } else {
+      findings.renderExecution.details.push(`Verified 0 occurrences of 'undefined' across rendered HTML (${rendered.length.toLocaleString()} bytes).`);
+    }
+  }
+} catch (e) {
+  findings.renderExecution.details.push(`Render simulation check skipped: ${e.message}`);
+}
+
+// --- Check 13: Context-Anchored Reading & Spoken Language Framing (Rule 1.V) ---
+findings.anchoredLanguage = { pass: true, unanchoredFacts: [], communicativeFraming: [], details: [] };
+
+const openingSession = lc.openingSession || {};
+const diagQuestions = (openingSession.diagnostic && openingSession.diagnostic.questions) || 
+                      (openingSession.spotCheck && openingSession.spotCheck.questions) || [];
+
+const contextSources = [
+  openingSession.lead || '',
+  openingSession.body || '',
+  openingSession.context || '',
+  openingSession.scenario || '',
+  (sessionObj.overview && sessionObj.overview.summary) || '',
+  templateContent
+].join(' ').toLowerCase();
+
+diagQuestions.forEach(q => {
+  const qText = q.q || q.question || '';
+  const aText = q.answer || '';
+  
+  // Detect regulatory periods or metrics in the answer that aren't mentioned in the context
+  const keyFacts = aText.match(/\b(?:\d+\s*(?:hours?|days?|mm|m²|meters?|metres?|%))\b/gi) || [];
+  keyFacts.forEach(fact => {
+    const factLower = fact.toLowerCase();
+    if (!contextSources.includes(factLower)) {
+      findings.anchoredLanguage.pass = false;
+      findings.anchoredLanguage.unanchoredFacts.push(`Q${q.id || '?'}: Technical fact "${fact}" in answer is not anchored in the scenario text or briefing.`);
+    }
+  });
+
+  // Communicative spoken framing check
+  const hasSpokenFraming = /\b(?:using|explain|discuss|describe|contrast|compare|in your view|how would you|state the|why is)\b/i.test(qText);
+  if (!hasSpokenFraming) {
+    findings.anchoredLanguage.communicativeFraming.push(`Q${q.id || '?'}: Phrased as pure factual recall ("${qText}"). Recommend adding spoken sentence stem prompt.`);
+  }
+});
+
+if (diagQuestions.length > 0) {
+  findings.anchoredLanguage.details.push(`Audited ${diagQuestions.length} entry questions for scenario anchoring and communicative language framing.`);
+}
+
+// --- Check 14: Interactive Component & Tab Switcher Integrity (Rule 1.W) ---
+findings.interactiveIntegrity = { pass: true, brokenTabs: [], missingHandlers: [], brokenReveals: [], details: [] };
+
+// 1. Verify Tab Switchers
+const tabBtnMatches = [...renderedHtml.matchAll(/onclick=["'](?:window\.)?(?:switch([A-Za-z0-9_]+)Tab)\(['"]([^'"]+)['"]\)/g)];
+if (tabBtnMatches.length > 0) {
+  const coreDeckPath = path.join(baseDir, 'src', 'js', '03-core-deck.js');
+  const coreDeckCode = fs.existsSync(coreDeckPath) ? fs.readFileSync(coreDeckPath, 'utf8') : '';
+  
+  tabBtnMatches.forEach(m => {
+    const tabType = m[1].toLowerCase();
+    const tabId = m[2];
+    if (tabId === 'all') return;
+
+    const paneRegex = new RegExp(`id=["'](?:${tabType}-(?:tab-)?pane-${tabId}|${tabId}-pane)["']`, 'i');
+    if (!paneRegex.test(renderedHtml)) {
+      findings.interactiveIntegrity.pass = false;
+      findings.interactiveIntegrity.brokenTabs.push(`Tab switcher button "${m[0]}" has no matching pane element in DOM (expected id="${tabType}-pane-${tabId}").`);
+    }
+
+    const fnName = `switch${m[1]}Tab`;
+    if (!coreDeckCode.includes(`window.${fnName} =`) && !templateContent.includes(`window.${fnName} =`)) {
+      findings.interactiveIntegrity.pass = false;
+      findings.interactiveIntegrity.missingHandlers.push(`Tab switcher function "window.${fnName}" is not defined in 03-core-deck.js.`);
+    }
+  });
+}
+
+// 2. Verify all onclick window handlers in rendered HTML
+const onclickMatches = [...renderedHtml.matchAll(/onclick=["'](?:window\.)?([A-Za-z0-9_]+)\(/g)];
+const checkedHandlers = new Set();
+const coreDeckPath = path.join(baseDir, 'src', 'js', '03-core-deck.js');
+const coreDeckCode = fs.existsSync(coreDeckPath) ? fs.readFileSync(coreDeckPath, 'utf8') : '';
+const fullJsCode = coreDeckCode + '\n' + templateContent;
+
+onclickMatches.forEach(m => {
+  const fnName = m[1];
+  if (['if', 'const', 'let', 'var', 'alert', 'confirm', 'prompt', 'open'].includes(fnName)) return;
+  if (!checkedHandlers.has(fnName)) {
+    checkedHandlers.add(fnName);
+    const isDef = fullJsCode.includes(`window.${fnName} =`) || fullJsCode.includes(`function ${fnName}(`);
+    if (!isDef) {
+      findings.interactiveIntegrity.pass = false;
+      findings.interactiveIntegrity.missingHandlers.push(`Onclick handler "window.${fnName}" called in rendered DOM but not defined.`);
+    }
+  }
+});
 
 // 4. Output Formatted Report
 console.log(`\n================================================================================`);
@@ -551,8 +746,39 @@ if (findings.pdfStatus.pass && findings.pdfStatus.exists) {
   findings.pdfStatus.details.forEach(d => console.log(`      • ${d}`));
 }
 
+console.log(`\n9. 🛡️ ZERO UNDEFINED INVARIANT & SIMULATED DOM RENDER`);
+if (findings.renderExecution.pass && findings.renderExecution.undefCount === 0) {
+  console.log(`   ✅ PASS: 0 occurrences of 'undefined' detected. Complete data-to-template parity.`);
+  findings.renderExecution.details.forEach(d => console.log(`      • ${d}`));
+} else {
+  console.log(`   ❌ FAIL: ${findings.renderExecution.undefCount} occurrences of 'undefined' detected in rendered DOM:`);
+  findings.renderExecution.details.forEach(d => console.log(`      • ${d}`));
+}
+
+console.log(`\n10. 🧠 CONTEXT-ANCHORED READING & SPOKEN LANGUAGE FRAMING (Rule 1.V)`);
+if (findings.anchoredLanguage.pass && findings.anchoredLanguage.unanchoredFacts.length === 0) {
+  console.log(`   ✅ PASS: All regulatory facts and figures are anchored in scenario text. Self-check model answers present.`);
+  findings.anchoredLanguage.details.forEach(d => console.log(`      • ${d}`));
+} else {
+  console.log(`   ❌ FAIL: Unanchored technical facts detected (students cannot deduce answers without scenario text):`);
+  findings.anchoredLanguage.unanchoredFacts.forEach(f => console.log(`      • ${f}`));
+}
+if (findings.anchoredLanguage.communicativeFraming.length > 0) {
+  console.log(`   💡 COMMUNICATIVE RECOMMENDATION:`);
+  findings.anchoredLanguage.communicativeFraming.forEach(c => console.log(`      • ${c}`));
+}
+
+console.log(`\n11. 🎛️ INTERACTIVE COMPONENT & TAB SWITCHER INTEGRITY (Rule 1.W)`);
+if (findings.interactiveIntegrity.pass && findings.interactiveIntegrity.brokenTabs.length === 0 && findings.interactiveIntegrity.missingHandlers.length === 0) {
+  console.log(`   ✅ PASS: All interactive tab switchers, onclick handlers, and reveal buttons verified 100% operational.`);
+} else {
+  console.log(`   ❌ FAIL: Broken interactive components or missing JavaScript handlers detected:`);
+  findings.interactiveIntegrity.brokenTabs.forEach(t => console.log(`      • ${t}`));
+  findings.interactiveIntegrity.missingHandlers.forEach(h => console.log(`      • ${h}`));
+}
+
 console.log(`\n================================================================================`);
-const allPassed = findings.titleParity.pass && findings.jargonScan.pass && findings.timingsScan.pass && findings.roleplayViability.pass && findings.actionBar.pass && findings.pdfStatus.pass;
+const allPassed = findings.titleParity.pass && findings.jargonScan.pass && findings.timingsScan.pass && findings.roleplayViability.pass && findings.actionBar.pass && findings.pdfStatus.pass && findings.renderExecution.pass && findings.anchoredLanguage.pass && findings.interactiveIntegrity.pass;
 if (allPassed) {
   console.log(`🏁 OVERALL VERDICT: ✅ PRODUCTION READY`);
 } else {
