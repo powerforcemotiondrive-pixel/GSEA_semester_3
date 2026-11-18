@@ -2848,8 +2848,8 @@ function renderLessonContentTabSession3(sessionData, theme) {
               ${photoExhibits.map((ex, i) => `
                 <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
                   <div>
-                    <div class="relative group cursor-pointer overflow-hidden" onclick="window.openImageLightbox('${ex.image}', '${ex.title}')">
-                      <img src="${ex.image}" alt="${ex.title}" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="relative group cursor-pointer overflow-hidden bg-slate-900" onclick="window.openImageLightbox('${ex.image}', '${ex.title}')">
+                      <img src="${ex.image}" alt="${ex.title}" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='images/s3_m1_session6_cap.jpg'">
                       <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white text-xs font-bold">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
                         <span>Click to Enlarge</span>
