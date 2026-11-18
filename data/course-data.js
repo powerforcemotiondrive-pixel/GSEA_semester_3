@@ -4043,21 +4043,21 @@
             "questions": [
               {
                 "num": "01",
-                "q": "What is the very first thing an airside inspector should do upon discovering a 40-square-meter fuel puddle near an active storm drain?",
-                "hint": "Think about containment vs. reporting hierarchy (stop flow, deploy booms, alert RFFS)."
+                "q": "Look at Exhibit 1 (the fuel spill). In pairs, describe the immediate physical hazards you see for nearby aircraft and the ramp. What would you say over the radio to alert ground teams?",
+                "hint": "Spoken stem: 'The primary danger is that kerosene could... so we need to stop the flow and alert...' (Stop flow, deploy absorbent booms, notify RFFS)."
               },
               {
                 "num": "02",
-                "q": "Why does European aviation law distinguish between Level 1 findings (immediate stand closure) and Level 2 findings (30-day corrective deadline)?",
-                "hint": "Consider the difference between an immediate flight hazard and an administrative/maintenance flaw."
+                "q": "In plain words, what is the practical difference between an immediate flight hazard (Level 1) and a 30-day maintenance fix (Level 2)? Give a simple everyday airport example of each.",
+                "hint": "Spoken stem: 'A Level 1 finding poses an immediate safety hazard, such as... whereas a Level 2 finding allows 30 days to fix...'"
               },
               {
                 "num": "03",
-                "q": "How does using past modals ('The driver must have forgotten...', 'The fuel could have reached...') help safety engineers conduct fair root-cause analysis without premature blame?",
-                "hint": "Notice how modals express logical deduction based on physical clues rather than personal accusations."
+                "q": "In an official safety debrief, why is saying 'The driver must have been rushed' more professional and constructive than saying 'The driver was careless'? How do past modals help us explain causes politely?",
+                "hint": "Spoken stem: 'Using past modals like \"must have\" allows safety specialists to deduce root causes objectively from clues rather than blaming individuals.'"
               }
             ],
-            "teacherPrompt": "Encourage students to speak freely using everyday words. Ask: Have you ever seen a fuel spill or overgrown grass at an airport? What was the immediate risk?"
+            "teacherPrompt": "Teacher facilitation tip: Encourage students to speak in complete sentences using the spoken stems. Emphasize that Level 1 = immediate safety hazard / stand closure (red), while Level 2 = 30-day corrective action plan (amber). Focus on spoken fluency and deductive reasoning."
           },
           "documentExtract": {
             "title": "Activity 1: EASA Field Audit Dossier & Inspection Exhibits",
@@ -4098,7 +4098,7 @@
           },
           "rulesPractice": {
             "title": "Activity 2: Grammar Clinic • Past Modal Deductions for Root Cause Analysis",
-            "summary": "When investigating how an airfield deficiency occurred, safety engineers use past modals to deduce causes based on physical evidence:",
+            "summary": "When investigating how an airfield deficiency occurred, aviation safety specialists use past modals to deduce causes based on physical evidence:",
             "formula": "Modal Verb (must / could / should / can't) + HAVE + Past Participle (V3)",
             "rules": [
               {
@@ -5082,7 +5082,7 @@
           },
           "languageClinic": {
             "title": "Language Clinic: Cause-and-Effect Connectors for Incident Investigation",
-            "summary": "When presenting technical investigation findings, safety engineers use precise causal markers to distinguish background origins, active sparks, direct outcomes, and logical consequences:",
+            "summary": "When presenting technical investigation findings, aviation safety specialists use precise causal markers to distinguish background origins, active sparks, direct outcomes, and logical consequences:",
             "connectorsTable": [
               {
                 "connector": "stemming from",
@@ -11418,21 +11418,21 @@
               "questions": [
                 {
                   "num": "01",
-                  "q": "What is the very first thing an airside inspector should do upon discovering a 40-square-meter fuel puddle near an active storm drain?",
-                  "hint": "Think about containment vs. reporting hierarchy (stop flow, deploy booms, alert RFFS)."
+                  "q": "Look at Exhibit 1 (the fuel spill). In pairs, describe the immediate physical hazards you see for nearby aircraft and the ramp. What would you say over the radio to alert ground teams?",
+                  "hint": "Spoken stem: 'The primary danger is that kerosene could... so we need to stop the flow and alert...' (Stop flow, deploy absorbent booms, notify RFFS)."
                 },
                 {
                   "num": "02",
-                  "q": "Why does European aviation law distinguish between Level 1 findings (immediate stand closure) and Level 2 findings (30-day corrective deadline)?",
-                  "hint": "Consider the difference between an immediate flight hazard and an administrative/maintenance flaw."
+                  "q": "In plain words, what is the practical difference between an immediate flight hazard (Level 1) and a 30-day maintenance fix (Level 2)? Give a simple everyday airport example of each.",
+                  "hint": "Spoken stem: 'A Level 1 finding poses an immediate safety hazard, such as... whereas a Level 2 finding allows 30 days to fix...'"
                 },
                 {
                   "num": "03",
-                  "q": "How does using past modals ('The driver must have forgotten...', 'The fuel could have reached...') help safety engineers conduct fair root-cause analysis without premature blame?",
-                  "hint": "Notice how modals express logical deduction based on physical clues rather than personal accusations."
+                  "q": "In an official safety debrief, why is saying 'The driver must have been rushed' more professional and constructive than saying 'The driver was careless'? How do past modals help us explain causes politely?",
+                  "hint": "Spoken stem: 'Using past modals like \"must have\" allows safety specialists to deduce root causes objectively from clues rather than blaming individuals.'"
                 }
               ],
-              "teacherPrompt": "Encourage students to speak freely using everyday words. Ask: Have you ever seen a fuel spill or overgrown grass at an airport? What was the immediate risk?"
+              "teacherPrompt": "Teacher facilitation tip: Encourage students to speak in complete sentences using the spoken stems. Emphasize that Level 1 = immediate safety hazard / stand closure (red), while Level 2 = 30-day corrective action plan (amber). Focus on spoken fluency and deductive reasoning."
             },
             "documentExtract": {
               "title": "Activity 1: EASA Field Audit Dossier & Inspection Exhibits",
@@ -11473,7 +11473,7 @@
             },
             "rulesPractice": {
               "title": "Activity 2: Grammar Clinic • Past Modal Deductions for Root Cause Analysis",
-              "summary": "When investigating how an airfield deficiency occurred, safety engineers use past modals to deduce causes based on physical evidence:",
+              "summary": "When investigating how an airfield deficiency occurred, aviation safety specialists use past modals to deduce causes based on physical evidence:",
               "formula": "Modal Verb (must / could / should / can't) + HAVE + Past Participle (V3)",
               "rules": [
                 {
@@ -12457,7 +12457,7 @@
             },
             "languageClinic": {
               "title": "Language Clinic: Cause-and-Effect Connectors for Incident Investigation",
-              "summary": "When presenting technical investigation findings, safety engineers use precise causal markers to distinguish background origins, active sparks, direct outcomes, and logical consequences:",
+              "summary": "When presenting technical investigation findings, aviation safety specialists use precise causal markers to distinguish background origins, active sparks, direct outcomes, and logical consequences:",
               "connectorsTable": [
                 {
                   "connector": "stemming from",
