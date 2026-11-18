@@ -3013,56 +3013,64 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
           </div>
         </div>
 
-        <!-- 2. Mobile-First Quick Launchers Bar -->
+        <!-- 2. Mobile-First Quick Launchers Bar (Streamlined Action Buttons) -->
         <div class="space-y-2">
           <div class="flex items-center justify-between px-1">
             <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">🚀 Quick Launchers</span>
             <span class="text-[10px] font-mono text-slate-400 hidden sm:inline">1-Click Fast Navigation</span>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3">
-            <!-- Button 1: Jump to Active Lesson -->
-            <button type="button" onclick="switchModule(${activeModIdx}, ${activeCardIdx})" class="group flex flex-col justify-between p-3.5 sm:p-4 rounded-xl bg-gradient-to-br from-white via-white to-sky-50/50 border-sky-300/80 hover:border-sky-400 text-slate-900 shadow-2xs hover:shadow-xs transition-all duration-150 cursor-pointer text-left border min-h-[52px]">
-              <div class="flex items-center justify-between">
-                <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider bg-sky-100 text-sky-800 border-sky-200 border px-2 py-0.5 rounded">Active Class • Week ${activeInfo.weekNum}</span>
-                <span class="text-base group-hover:translate-x-1 transition-transform text-sky-600">➔</span>
+            <!-- Button 1: Jump to Active Lesson (Pill Style) -->
+            <button type="button" onclick="switchModule(${activeModIdx}, ${activeCardIdx})" class="group flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-gradient-to-r from-sky-50 to-sky-100/60 hover:from-sky-100 hover:to-sky-200/70 border border-sky-300 text-sky-950 shadow-2xs hover:shadow-xs transition-all duration-150 cursor-pointer text-left">
+              <div class="flex items-center gap-2.5 min-w-0">
+                <span class="w-7 h-7 rounded-lg bg-sky-600 text-white flex items-center justify-center text-xs font-black shrink-0 shadow-2xs">▶</span>
+                <div class="min-w-0">
+                  <div class="text-xs sm:text-[13px] font-black text-sky-950 truncate leading-snug">Jump to Today's Lesson</div>
+                  <div class="text-[10.5px] font-mono text-sky-700 font-bold truncate">Week ${activeInfo.weekNum} • ${activeSessionName}</div>
+                </div>
               </div>
-              <div class="mt-2">
-                <div class="text-xs sm:text-sm font-black leading-snug text-slate-900">▶ Jump to Today's Lesson</div>
-                <div class="text-[11px] text-slate-600 truncate font-medium mt-0.5">${activeSessionName}</div>
-              </div>
+              <span class="text-sky-600 group-hover:translate-x-1 transition-transform font-bold text-sm ml-2 shrink-0">➔</span>
             </button>
 
-            <!-- Button 2: Weekly Calendar -->
-            <button type="button" onclick="openModalDrawer('admin_calendar', 1, 8)" class="group flex flex-col justify-between p-3.5 sm:p-4 rounded-xl bg-white hover:bg-slate-50 text-slate-900 shadow-2xs hover:shadow-xs transition-all duration-150 cursor-pointer text-left border border-slate-200/90 min-h-[52px]">
-              <div class="flex items-center justify-between">
-                <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider bg-sky-50 text-sky-800 px-2 py-0.5 rounded border border-sky-200">Course Schedule</span>
-                <span class="text-base group-hover:translate-x-1 transition-transform text-slate-400">➔</span>
+            <!-- Button 2: Weekly Calendar (Pill Style) -->
+            <button type="button" onclick="openModalDrawer('admin_calendar', 1, 8)" class="group flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-slate-50 hover:bg-slate-100/80 border border-slate-200/90 text-slate-900 shadow-2xs hover:shadow-xs transition-all duration-150 cursor-pointer text-left">
+              <div class="flex items-center gap-2.5 min-w-0">
+                <span class="w-7 h-7 rounded-lg bg-slate-800 text-white flex items-center justify-center text-xs shrink-0 shadow-2xs">📅</span>
+                <div class="min-w-0">
+                  <div class="text-xs sm:text-[13px] font-black text-slate-900 truncate leading-snug">Weekly Calendar</div>
+                  <div class="text-[10.5px] font-mono text-slate-500 font-medium truncate">Dates, room numbers &amp; FE rotas</div>
+                </div>
               </div>
-              <div class="mt-2">
-                <div class="text-xs sm:text-sm font-black leading-snug text-slate-900">📅 Weekly Calendar</div>
-                <div class="text-[11px] text-slate-500 font-medium mt-0.5">Session dates, rooms &amp; FE rotas</div>
-              </div>
+              <span class="text-slate-400 group-hover:translate-x-1 transition-transform font-bold text-sm ml-2 shrink-0">➔</span>
             </button>
 
-            <!-- Button 3: Portfolio Summary -->
-            <button type="button" onclick="openModalDrawer('portfolio_summary', 1, 8)" class="group flex flex-col justify-between p-3.5 sm:p-4 rounded-xl bg-white hover:bg-slate-50 text-slate-900 shadow-2xs hover:shadow-xs transition-all duration-150 cursor-pointer text-left border border-slate-200/90 min-h-[52px]">
-              <div class="flex items-center justify-between">
-                <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider bg-emerald-50 text-emerald-800 border border-emerald-200 px-2 py-0.5 rounded">Cohort Insights</span>
-                <span class="text-base group-hover:translate-x-1 transition-transform text-slate-400">➔</span>
+            <!-- Button 3: Portfolio Summary (Pill Style) -->
+            <button type="button" onclick="openModalDrawer('portfolio_summary', 1, 8)" class="group flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-slate-50 hover:bg-slate-100/80 border border-slate-200/90 text-slate-900 shadow-2xs hover:shadow-xs transition-all duration-150 cursor-pointer text-left">
+              <div class="flex items-center gap-2.5 min-w-0">
+                <span class="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-xs shrink-0 shadow-2xs">📊</span>
+                <div class="min-w-0">
+                  <div class="text-xs sm:text-[13px] font-black text-slate-900 truncate leading-snug">Portfolio Summary</div>
+                  <div class="text-[10.5px] font-mono text-slate-500 font-medium truncate">Buzzwords, grammar traps &amp; reflections</div>
+                </div>
               </div>
-              <div class="mt-2">
-                <div class="text-xs sm:text-sm font-black leading-snug text-slate-900">📊 Portfolio Summary</div>
-                <div class="text-[11px] text-slate-500 font-medium mt-0.5">Top buzzwords, grammar traps &amp; reflections</div>
-              </div>
+              <span class="text-slate-400 group-hover:translate-x-1 transition-transform font-bold text-sm ml-2 shrink-0">➔</span>
             </button>
           </div>
+        </div>
+
+        <!-- Section Divider: Clean Horizontal Separation -->
+        <div class="pt-2 pb-1">
+          <div class="h-px bg-slate-200/90"></div>
         </div>
 
         <!-- 3. Weekly Announcements & Course Focus -->
         <div class="space-y-2.5">
           <div class="flex items-center justify-between px-1">
-            <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">📢 This Week's Course Focus</span>
-            <span class="text-[10px] font-mono text-slate-400 hidden sm:inline">Week ${activeInfo.weekNum} • Module ${activeInfo.modIdx + 1}</span>
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-sky-500"></span>
+              <span class="text-xs font-black uppercase tracking-wider text-slate-800 font-mono">This Week's Course Focus</span>
+            </div>
+            <span class="text-[10.5px] font-mono font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded border border-slate-200/60">Week ${activeInfo.weekNum} • Module ${activeInfo.modIdx + 1}</span>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
