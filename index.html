@@ -4251,6 +4251,41 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
       };
     }
 
+    // --- Weekly Recommended Listening & e-Campus Homework Data (Semester 3 Noticeboard) ---
+    const S3_WEEKLY_LISTENING_CONFIG = {
+      week: 48,
+      title: "NATION-WIDE GROUND STOP Across The U.S. | Outage Nationally?",
+      channel: "VASAviation",
+      duration: "12 min",
+      videoId: "UMjXqEvhifQ",
+      startTime: 6,
+      watchUrl: "https://www.youtube.com/watch?v=UMjXqEvhifQ&t=6s",
+      embedUrl: "https://www.youtube-nocookie.com/embed/UMjXqEvhifQ?start=6",
+      summary: "Authentic air traffic control recordings and ground communications during national airspace disruption. Practice listening to controller instructions, ground delays, and pilot readbacks under high-workload conditions.",
+      currentHomework: "PLT 1 & PLT 2",
+      moodleUrl: "https://e-campus.enac.fr/moodle/course/view.php?id=175"
+    };
+
+    const S3_HOMEWORK_SCHEDULE = [
+      { series: "PLT", week: "Week 48", date: "Fri 27 Nov", tasks: "PLT 1 & PLT 2", topic: "Ramp Safety & Telematics Rules", isCurrent: true },
+      { series: "PLT", week: "Week 49", date: "Fri 04 Dec", tasks: "PLT 3 & PLT 4", topic: "Special Requests & Runway Safety Cases", isCurrent: false },
+      { series: "PLT", week: "Week 50", date: "Fri 11 Dec", tasks: "PLT 5 & PLT 6", topic: "Ground Inspections & Audit Findings", isCurrent: false },
+      { series: "PLT", week: "Week 51", date: "Fri 18 Dec", tasks: "PLT 7 & PLT 8", topic: "Incident Investigation & Root Causes", isCurrent: false },
+      { isHoliday: true, text: "🎄 Weeks 52 & 53 — Christmas & Winter Vacation (No Assignments)" },
+      { series: "TLT", week: "Week 01", date: "Fri 08 Jan", tasks: "TLT 1 & TLT 2", topic: "Corrective Action Plans & CAP Review", isCurrent: false },
+      { series: "TLT", week: "Week 02", date: "Fri 15 Jan", tasks: "TLT 3 & TLT 4", topic: "FE1 Oral Team Teaching Preparation", isCurrent: false },
+      { series: "TLT", week: "Week 03", date: "Fri 22 Jan", tasks: "TLT 5 & TLT 6", topic: "Introduction to MTF ICAO Level Test", isCurrent: false },
+      { series: "ELT", week: "Week 04", date: "Fri 29 Jan", tasks: "ELT 1 & ELT 2", topic: "MTF Picture Exercise & Description", isCurrent: false },
+      { series: "ELT", week: "Week 05", date: "Fri 05 Feb", tasks: "ELT 3 & ELT 4", topic: "MTF Audio Comprehension Practice", isCurrent: false },
+      { isHoliday: true, text: "❄️ Week 06 — Mid-Semester Break (No Assignments)" },
+      { series: "ELT", week: "Week 07", date: "Fri 19 Feb", tasks: "ELT 5 & ELT 6", topic: "MTF Text Exercise & Technical Summary", isCurrent: false },
+      { series: "ELT", week: "Week 08", date: "Fri 26 Feb", tasks: "ELT 7 & ELT 8", topic: "MTF Practice Test (Part 1 - Mock Trials)", isCurrent: false },
+      { series: "ALT", week: "Week 09", date: "Fri 05 Mar", tasks: "ALT 1 & ALT 2", topic: "MTF Practice Test (Part 2 - Mock Trials)", isCurrent: false },
+      { series: "ALT", week: "Week 10", date: "Fri 12 Mar", tasks: "ALT 3 & ALT 4", topic: "MTF Comprehensive Revision & Errors", isCurrent: false },
+      { series: "ALT", week: "Week 11", date: "Fri 19 Mar", tasks: "ALT 5 & ALT 6", topic: "MTF Final Revision & Exam Preparation", isCurrent: false },
+      { series: "ALT", week: "Week 12", date: "Fri 26 Mar", tasks: "ALT 7 & ALT 8", topic: "Post-Exam Consolidation & Self-Study Wrap-up", isCurrent: false }
+    ];
+
     // --- Student Noticeboard Engine (Card 00) ---
     function renderNoticeboardContent(theme) {
       const noticeboardEl = document.getElementById('deck-noticeboard-view');
@@ -4263,6 +4298,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
       const activeSessionName = activeInfo.sessionName;
 
       // Dynamic teacher placeholders
+      const weeklyMedia = S3_WEEKLY_LISTENING_CONFIG;
       let teacherA = "Teacher A (TBC)";
       let teacherB = "Teacher B (TBC)";
       let teacherC = "Teacher C (TBC)";
@@ -4518,7 +4554,99 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
           </div>
         </div>
 
-        <!-- 5. Course Administration & Teaching Team Directory -->
+        <!-- 5. Weekly Recommended Listening & e-Campus Homework -->
+        <div class="space-y-2.5">
+          <div class="flex items-center justify-between px-1">
+            <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">🎧 Weekly Media &amp; 📚 Homework</span>
+            <span class="text-[10px] font-mono text-slate-400 hidden sm:inline">Week ${weeklyMedia.week} Recommended Practice</span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-3.5">
+            <!-- Left Card: Weekly Recommended Listening (YouTube Video Player) -->
+            <div class="p-4 rounded-xl border border-slate-200/90 bg-white shadow-2xs flex flex-col justify-between space-y-3">
+              <div class="space-y-2">
+                <div class="flex items-center justify-between gap-1 pb-1 border-b border-slate-100">
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-rose-50 text-rose-800 border border-rose-200">🎧 Recommended Listening • Week ${weeklyMedia.week}</span>
+                  <a href="${weeklyMedia.watchUrl}" target="_blank" rel="noopener noreferrer" class="text-[10px] font-bold text-rose-700 bg-rose-50 border border-rose-200 hover:bg-rose-100 px-2 py-0.5 rounded-full shrink-0 no-underline transition-all">Watch on YouTube ↗</a>
+                </div>
+                <div>
+                  <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug line-clamp-1" title="${weeklyMedia.title}">
+                    ${weeklyMedia.title}
+                  </h4>
+                  <div class="text-[10.5px] font-mono text-slate-400 mt-0.5">${weeklyMedia.channel} • ${weeklyMedia.duration}</div>
+                </div>
+
+                <!-- 16:9 YouTube Player -->
+                <div class="aspect-video w-full my-2 bg-slate-950 rounded-lg overflow-hidden border border-slate-200 shadow-inner">
+                  <iframe class="w-full h-full" src="${weeklyMedia.embedUrl}" title="${weeklyMedia.title}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed font-normal">
+                  ${weeklyMedia.summary}
+                </p>
+              </div>
+
+              <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500 font-mono">
+                <span>Listening practice for authentic RT &amp; MTF</span>
+                <a href="${weeklyMedia.watchUrl}" target="_blank" rel="noopener noreferrer" class="text-rose-600 hover:text-rose-800 font-bold underline">Open YouTube ↗</a>
+              </div>
+            </div>
+
+            <!-- Right Card: e-Campus Homework Schedule -->
+            <div class="p-4 rounded-xl border border-sky-200/90 bg-gradient-to-br from-white via-sky-50/20 to-sky-50/50 shadow-2xs flex flex-col justify-between space-y-3">
+              <div class="space-y-3">
+                <div class="flex items-center justify-between gap-1 pb-1 border-b border-sky-100">
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-sky-100 text-sky-900 border border-sky-200">📚 Weekly Homework</span>
+                  <span class="text-[10px] font-mono text-sky-700 font-bold">e-Campus Course ID 175</span>
+                </div>
+
+                <div>
+                  <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
+                    e-Campus Online Self-Study &amp; Listening Practice
+                  </h4>
+                  <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed font-normal mt-1">
+                    Complete 2 targeted listening exercises each week on the ENAC e-Campus platform to build fluency, technical vocabulary, and prepare for the MTF examination.
+                  </p>
+                </div>
+
+                <!-- Active Week Homework Focus Box -->
+                <div class="p-3.5 rounded-lg bg-sky-100/70 border border-sky-200 space-y-1.5">
+                  <div class="flex items-center justify-between">
+                    <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-sky-900">Current Assigned Tasks</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase tracking-wider bg-sky-600 text-white shadow-2xs">Week ${weeklyMedia.week} Active</span>
+                  </div>
+                  <div class="text-sm font-extrabold text-sky-950 flex items-center gap-1.5">
+                    <span>🎯 Complete:</span>
+                    <span class="underline decoration-sky-400 font-mono">${weeklyMedia.currentHomework}</span>
+                  </div>
+                  <p class="text-[11px] text-sky-900 leading-snug">
+                    Log in to ENAC e-Campus to complete your 2 weekly tasks before the next technical session.
+                  </p>
+                </div>
+
+                <!-- Quick links -->
+                <div class="space-y-1.5 pt-1">
+                  <a href="${weeklyMedia.moodleUrl}" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 px-3 py-2.5 rounded-lg bg-sky-600 hover:bg-sky-700 text-white font-bold text-xs shadow-2xs transition-all no-underline cursor-pointer">
+                    <span>🌐 Open e-Campus Moodle Portal (Course 175)</span>
+                    <span class="font-bold text-sm leading-none">↗</span>
+                  </a>
+
+                  <button type="button" onclick="window.openHomeworkScheduleModal()" class="w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded-lg bg-white hover:bg-slate-50 text-slate-800 font-bold text-xs border border-slate-300 shadow-2xs transition-all cursor-pointer">
+                    <span>📋 View Full 15-Week Homework Schedule</span>
+                    <span class="text-xs text-slate-400">➔</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-[10.5px] text-slate-500 font-mono">
+                <span>Pacing: 2 exercises / week</span>
+                <span>PLT • TLT • ELT • ALT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Course Administration & Teaching Team Directory -->
         <div class="p-4 sm:p-5 rounded-xl border border-slate-200/80 bg-white shadow-2xs space-y-3 text-xs text-slate-700">
           <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200/80 pb-2.5">
             <div class="flex items-center gap-2">
@@ -4837,7 +4965,214 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
       }
     };
 
+    // --- Semester 3 Homework & Self-Study Schedule Modal Controller ---
+    window.openHomeworkScheduleModal = function() {
+      let modal = document.getElementById('s3-homework-schedule-modal');
+      if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 's3-homework-schedule-modal';
+        modal.className = 'fixed inset-0 z-[95] bg-slate-950/80 backdrop-blur-xs flex items-center justify-center p-3 sm:p-6 overflow-y-auto hidden';
+        modal.setAttribute('role', 'dialog');
+        modal.setAttribute('aria-modal', 'true');
+        modal.setAttribute('aria-labelledby', 's3-homework-modal-title');
+        modal.onclick = function(e) {
+          if (e.target === modal) window.closeHomeworkScheduleModal();
+        };
 
+        const sched = S3_HOMEWORK_SCHEDULE;
+        const moodleUrl = S3_WEEKLY_LISTENING_CONFIG.moodleUrl;
+
+        modal.innerHTML = `
+          <div class="relative w-full max-w-4xl bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden flex flex-col max-h-[90vh] my-auto">
+            <!-- Header -->
+            <div class="bg-gradient-to-r from-slate-900 via-sky-950 to-slate-900 text-white p-4 sm:p-6 border-b border-sky-900/60 flex items-start justify-between gap-4 shrink-0">
+              <div>
+                <div class="inline-flex items-center gap-1.5 font-mono text-[10.5px] font-bold tracking-wider uppercase text-sky-400 bg-sky-950/90 border border-sky-800/80 px-2.5 py-0.5 rounded-full">
+                  <span>✈️ ENAC E-CAMPUS (COURSE ID 175) • HOMEWORK &amp; SELF-STUDY</span>
+                </div>
+                <h2 id="s3-homework-modal-title" class="text-lg sm:text-2xl font-black text-white mt-1.5 leading-tight">
+                  Semester 3 Weekly Homework Schedule
+                </h2>
+                <p class="text-xs sm:text-sm text-slate-300 font-normal mt-1 leading-relaxed max-w-2xl">
+                  Please complete the following exercises during the upcoming weeks (matched to the Semester 3 program). Each week includes 2 designated exercises.
+                </p>
+              </div>
+              <button type="button" onclick="window.closeHomeworkScheduleModal()" class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/10 hover:bg-white/20 active:bg-white/30 text-white flex items-center justify-center transition-colors cursor-pointer shrink-0 text-base sm:text-lg font-bold" aria-label="Close modal">
+                ✕
+              </button>
+            </div>
+
+            <!-- Scrollable Body -->
+            <div class="p-4 sm:p-6 overflow-y-auto space-y-5 text-slate-800 text-xs sm:text-sm leading-relaxed">
+              
+              <!-- Top Banner with Moodle Action -->
+              <div class="p-4 rounded-xl bg-gradient-to-r from-sky-50 via-sky-50/60 to-indigo-50/60 border border-sky-200/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-2xs">
+                <div class="space-y-1">
+                  <div class="flex items-center gap-2">
+                    <span class="text-base leading-none">🌐</span>
+                    <span class="font-bold text-sky-950 text-xs sm:text-sm">ENAC e-Campus Portal • English S3 (Course 175)</span>
+                  </div>
+                  <p class="text-[11.5px] sm:text-xs text-sky-900 leading-relaxed font-normal">
+                    Log in with your ENAC credentials to access listening audio tracks, interactive quizzes, and automated scoring.
+                  </p>
+                </div>
+                <a href="${moodleUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl bg-sky-600 hover:bg-sky-700 text-white text-xs font-bold shadow-xs hover:shadow transition-all shrink-0 no-underline cursor-pointer">
+                  <span>Launch e-Campus (Course 175)</span>
+                  <span class="text-xs">↗</span>
+                </a>
+              </div>
+
+              <!-- Exercise Series Progression Overview -->
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 text-[11px]">
+                <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-900 flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-sky-500"></span>
+                    <span>PLT 1 – 8</span>
+                  </div>
+                  <div class="text-[10.5px] text-slate-500">Weeks 48–51 • 4 Weeks</div>
+                </div>
+                <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-900 flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
+                    <span>TLT 1 – 6</span>
+                  </div>
+                  <div class="text-[10.5px] text-slate-500">Weeks 01–03 • 3 Weeks</div>
+                </div>
+                <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-900 flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-purple-500"></span>
+                    <span>ELT 1 – 8</span>
+                  </div>
+                  <div class="text-[10.5px] text-slate-500">Weeks 04–08 • 4 Weeks</div>
+                </div>
+                <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-900 flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    <span>ALT 1 – 8</span>
+                  </div>
+                  <div class="text-[10.5px] text-slate-500">Weeks 09–12 • 4 Weeks</div>
+                </div>
+              </div>
+
+              <!-- Detailed Weekly Schedule Table -->
+              <div class="space-y-2">
+                <div class="flex items-center justify-between px-1">
+                  <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">📅 Weekly Exercise Schedule</span>
+                  <span class="text-[10.5px] font-mono text-slate-400">Total: 30 Exercises • 2 per week</span>
+                </div>
+
+                <div class="border border-slate-200 rounded-xl overflow-hidden shadow-2xs">
+                  <div class="overflow-x-auto">
+                    <table class="w-full text-left text-xs border-collapse">
+                      <thead>
+                        <tr class="bg-slate-100 text-slate-700 font-bold border-b border-slate-200 text-[11px] font-mono uppercase tracking-wider">
+                          <th class="py-2.5 px-3">Week</th>
+                          <th class="py-2.5 px-3">Date</th>
+                          <th class="py-2.5 px-3">Series</th>
+                          <th class="py-2.5 px-3">Assigned Tasks</th>
+                          <th class="py-2.5 px-3">Aligned Session Topic</th>
+                          <th class="py-2.5 px-3 text-right">Status</th>
+                        </tr>
+                      </thead>
+                      <tbody class="divide-y divide-slate-100">
+                        ${sched.map(item => {
+                          if (item.isHoliday) {
+                            return `
+                              <tr class="bg-slate-50/70 text-slate-500 italic text-[11.5px]">
+                                <td colspan="6" class="py-2 px-3 text-center">
+                                  ${item.text}
+                                </td>
+                              </tr>
+                            `;
+                          }
+                          const isCurrent = item.isCurrent;
+                          const seriesColor = item.series === 'PLT' ? 'bg-sky-100 text-sky-800 border-sky-200' :
+                                              item.series === 'TLT' ? 'bg-indigo-100 text-indigo-800 border-indigo-200' :
+                                              item.series === 'ELT' ? 'bg-purple-100 text-purple-800 border-purple-200' :
+                                              'bg-emerald-100 text-emerald-800 border-emerald-200';
+                          return `
+                            <tr class="${isCurrent ? 'bg-sky-50/80 font-semibold' : 'hover:bg-slate-50/60'} transition-colors">
+                              <td class="py-2.5 px-3 font-mono text-[11px] font-bold ${isCurrent ? 'text-sky-900' : 'text-slate-700'}">
+                                ${item.week}
+                              </td>
+                              <td class="py-2.5 px-3 text-slate-500 font-mono text-[11px]">
+                                ${item.date}
+                              </td>
+                              <td class="py-2.5 px-3">
+                                <span class="inline-block px-1.5 py-0.5 rounded text-[10px] font-bold font-mono border ${seriesColor}">
+                                  ${item.series}
+                                </span>
+                              </td>
+                              <td class="py-2.5 px-3 font-mono font-bold ${isCurrent ? 'text-sky-950' : 'text-slate-900'}">
+                                ${item.tasks}
+                              </td>
+                              <td class="py-2.5 px-3 text-slate-600">
+                                ${item.topic}
+                              </td>
+                              <td class="py-2.5 px-3 text-right">
+                                ${isCurrent ? `
+                                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-sky-600 text-white shadow-2xs">
+                                    ● Current Week
+                                  </span>
+                                ` : `
+                                  <span class="text-[10.5px] font-mono text-slate-400">Scheduled</span>
+                                `}
+                              </td>
+                            </tr>
+                          `;
+                        }).join('')}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Study Tips Box -->
+              <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5 text-[11.5px] text-slate-600">
+                <div class="font-bold text-slate-900 flex items-center gap-1.5 text-xs">
+                  <span>💡</span>
+                  <span>How to Approach Your Weekly Homework</span>
+                </div>
+                <ul class="space-y-1 list-disc list-inside text-slate-600">
+                  <li><strong>Regular Weekly Rhythm:</strong> Dedicate 45 to 60 minutes each week to complete your 2 designated tasks on e-Campus.</li>
+                  <li><strong>Active Listening:</strong> Listen without looking at the transcript on your first attempt, then read along to verify missed technical terms.</li>
+                  <li><strong>Portfolio Connection:</strong> Add any new technical words or challenging RT phrases directly into your digital portfolio.</li>
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- Footer -->
+            <div class="p-4 sm:p-5 bg-slate-50 border-t border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shrink-0">
+              <div class="text-[11px] sm:text-xs text-slate-500">
+                <span>Access your online tasks directly on </span>
+                <a href="${moodleUrl}" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:text-sky-800 font-bold underline">ENAC e-Campus (Course 175) ↗</a>.
+              </div>
+              <button type="button" onclick="window.closeHomeworkScheduleModal()" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 active:bg-slate-950 text-white font-bold text-xs transition-colors cursor-pointer shadow-xs text-center">
+                Close Schedule
+              </button>
+            </div>
+          </div>
+        `;
+        document.body.appendChild(modal);
+      }
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    };
+
+    window.closeHomeworkScheduleModal = function() {
+      const modal = document.getElementById('s3-homework-schedule-modal');
+      if (modal) {
+        modal.classList.add('hidden');
+      }
+      const resModal = document.getElementById('deck-resource-modal');
+      const isResOpen = resModal && !resModal.classList.contains('hidden');
+      const s3GuideModal = document.getElementById('s3-overview-guide-modal');
+      const isS3GuideOpen = s3GuideModal && !s3GuideModal.classList.contains('hidden');
+      if (!isResOpen && !isS3GuideOpen) {
+        document.body.style.overflow = '';
+      }
+    };
 
     function renderActivityInstructions(act, theme) {
       if (!act) return "";
