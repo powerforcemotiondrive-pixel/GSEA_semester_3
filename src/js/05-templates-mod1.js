@@ -161,8 +161,8 @@ function renderLessonContentTabSession1(sessionData, theme) {
 
           <!-- Hero Banner & Context -->
           <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
-            <div class="relative">
-              <img src="${hero.image || 'images/s3_m1_session1_easa.jpg'}" alt="${hero.title || 'EASA Rules'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/aas_m1card1.jpg'">
+            <div class="relative bg-slate-900">
+              <img src="${hero.image || 'images/s3_m1_session1_easa.jpg'}" alt="${hero.title || 'EASA Rules'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.onerror=null;this.src='images/s3_m1_session1_easa.jpg'">
               <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4 sm:p-5">
                 <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">Technical English • Module 1</span>
                 <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'EASA Rules & Modal Precision'}</h3>
@@ -800,8 +800,8 @@ function renderLessonContentTabSession2(sessionData, theme) {
 
           <!-- Hero Banner & Context -->
           <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
-            <div class="relative">
-              <img src="${hero.image || 'images/s3_m1_session2_audit.jpg'}" alt="${hero.title || 'Safety Alerts'}" class="w-full h-48 sm:h-64 object-cover object-top" style="object-position: center 12%;" onerror="this.src='images/aas_m1card2.jpg'">
+            <div class="relative bg-slate-900">
+              <img src="${hero.image || 'images/s3_m1_session2_audit.jpg'}" alt="${hero.title || 'Safety Alerts'}" class="w-full h-48 sm:h-64 object-cover object-top" style="object-position: center 12%;" onerror="this.onerror=null;this.src='images/s3_m1_session2_audit.jpg'">
               <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4 sm:p-5">
                 <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">Technical English • Module 1</span>
                 <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'Safety Alerts & Ramp Briefings'}</h3>
@@ -1388,8 +1388,8 @@ function renderLessonContentTabSession3(sessionData, theme) {
 
           <!-- Hero Banner & Context -->
           <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
-            <div class="relative">
-              <img src="${hero.image || 'images/s3_m1_session3_derogation.jpg'}" alt="${hero.title || 'Special Requests'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/aas_m1card3.jpg'">
+            <div class="relative bg-slate-900">
+              <img src="${hero.image || 'images/s3_m1_session3_derogation.jpg'}" alt="${hero.title || 'Special Requests'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.onerror=null;this.src='images/s3_m1_session3_derogation.jpg'">
               <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4 sm:p-5">
                 <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">Technical English • Module 1</span>
                 <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'Special Requests & Runway Safety Cases'}</h3>
@@ -1805,8 +1805,8 @@ function renderLessonContentTabSession3(sessionData, theme) {
 
           <!-- Hero Banner & Context -->
           <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
-            <div class="relative">
-              <img src="${hero.image || 'images/s3_m1_session4_aerodrome.jpg'}" alt="${hero.title || 'Ground Inspection & Audit Findings'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/s3_m1_session4_aerodrome.jpg'">
+            <div class="relative bg-slate-900">
+              <img src="${hero.image || 'images/s3_m1_session4_aerodrome.jpg'}" alt="${hero.title || 'Ground Inspection & Audit Findings'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.onerror=null;this.src='images/s3_m1_session4_aerodrome.jpg'">
               <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4 sm:p-5">
                 <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">Technical English • Module 1</span>
                 <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'Ground Inspection & Audit Findings (Field to Report)'}</h3>
@@ -2276,8 +2276,8 @@ function renderLessonContentTabSession3(sessionData, theme) {
 
           <!-- Hero Banner & Context -->
           <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
-            <div class="relative">
-              <img src="${hero.image || 'images/s3_m1_session5_investigation.jpg'}" alt="${hero.title || 'Multi-Source Incident Investigation'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/aas_m1card5.jpg'">
+            <div class="relative bg-slate-900">
+              <img src="${hero.image || 'images/s3_m1_session5_investigation.jpg'}" alt="${hero.title || 'Multi-Source Incident Investigation'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.onerror=null;this.src='images/s3_m1_session5_investigation.jpg'">
               <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4 sm:p-5">
                 <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">Technical English • Module 1</span>
                 <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'Multi-Source Incident Investigation & Root Cause Analysis'}</h3>
@@ -2759,8 +2759,8 @@ function renderLessonContentTabSession3(sessionData, theme) {
 
           <!-- Hero Banner & Context -->
           <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
-            <div class="relative">
-              <img src="images/s3_m1_session6_cap.jpg" alt="EASA Corrective Action Plan Meeting" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/aas_m1card6.jpg'">
+            <div class="relative bg-slate-900">
+              <img src="images/s3_m1_session6_cap.jpg" alt="EASA Corrective Action Plan Meeting" class="w-full h-48 sm:h-64 object-cover" onerror="this.onerror=null;this.src='images/s3_m1_session6_cap.jpg'">
               <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent flex flex-col justify-end p-4 sm:p-5">
                 <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">${hero.badge || 'EASA Part-ADR.OR.D.005'}</span>
                 <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'The Corrective Action Plan (CAP) &amp; Lesson 7 Prep'}</h3>
