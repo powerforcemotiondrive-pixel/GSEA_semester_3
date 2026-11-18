@@ -3194,7 +3194,7 @@
                 "title": "Role C: Observer / Peer Coach",
                 "badge": "Feedback",
                 "bullets": [
-                  "Time the briefing (target: 3 minutes).",
+                  "Check the briefing pace (ensure the explanation is clear and unhurried).",
                   "Check: Did the speaker explain all 4 safety rules clearly?",
                   "Check: Did the speaker use connecting words (provided that, due to, in order to)?",
                   "Give 2 positive points and 1 helpful suggestion."
@@ -10569,7 +10569,7 @@
                   "title": "Role C: Observer / Peer Coach",
                   "badge": "Feedback",
                   "bullets": [
-                    "Time the briefing (target: 3 minutes).",
+                    "Check the briefing pace (ensure the explanation is clear and unhurried).",
                     "Check: Did the speaker explain all 4 safety rules clearly?",
                     "Check: Did the speaker use connecting words (provided that, due to, in order to)?",
                     "Give 2 positive points and 1 helpful suggestion."
