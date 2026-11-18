@@ -1441,6 +1441,14 @@
           return;
         }
 
+        const s3OverviewEl = document.getElementById('s3-overview-guide-modal');
+        const isS3OverviewOpen = s3OverviewEl && !s3OverviewEl.classList.contains('hidden');
+
+        if (e.key === 'Escape' && isS3OverviewOpen) {
+          if (window.closeSemester3OverviewModal) window.closeSemester3OverviewModal();
+          return;
+        }
+
         const modalEl = document.getElementById('deck-resource-modal');
         const isModalOpen = modalEl && !modalEl.classList.contains('hidden');
 
@@ -4236,6 +4244,65 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
           </div>
         </div>
 
+        <!-- 1b. Semester 3 Overview & Student Success Strategy -->
+        <div class="rounded-2xl border border-sky-200/90 bg-gradient-to-br from-sky-50/80 via-white to-indigo-50/40 p-4 sm:p-5 shadow-2xs space-y-3.5">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-sky-100">
+            <div class="flex items-start sm:items-center gap-3">
+              <div class="w-9 h-9 rounded-xl bg-sky-600 text-white flex items-center justify-center text-lg shadow-xs font-bold shrink-0">
+                📘
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider text-sky-700 bg-sky-100/80 border border-sky-200 px-2 py-0.5 rounded">Course Roadmap</span>
+                  <span class="text-[11px] font-mono text-slate-400 hidden sm:inline">LV125E Technical English</span>
+                </div>
+                <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-tight mt-0.5">
+                  Semester 3 Technical English: What to Expect &amp; How to Succeed
+                </h3>
+              </div>
+            </div>
+            <button type="button" onclick="window.openSemester3OverviewModal()" class="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl bg-sky-600 hover:bg-sky-700 active:bg-sky-800 text-white text-xs font-bold shadow-xs hover:shadow transition-all cursor-pointer self-start sm:self-auto shrink-0">
+              <span>📖 Open Full Guide &amp; Tips</span>
+              <span class="text-xs">➔</span>
+            </button>
+          </div>
+
+          <p class="text-xs sm:text-[13px] text-slate-700 leading-relaxed font-normal">
+            Semester 3 develops your professional command of technical aviation documentation and spoken operational synthesis. You will learn to read and dissect complex EASA and ICAO safety rules, extract critical compliance requirements, and deliver clear, authoritative spoken briefings for your future engineering and aerodrome operations career.
+          </p>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-0.5 text-[11px]">
+            <div class="p-2.5 rounded-xl bg-white/90 border border-sky-100 shadow-2xs flex items-start gap-2">
+              <span class="text-base leading-none">📑</span>
+              <div>
+                <div class="font-bold text-slate-900 leading-tight">Document Literacy</div>
+                <div class="text-[10.5px] text-slate-500 mt-0.5">EASA Part-ADR &amp; ICAO rules</div>
+              </div>
+            </div>
+            <div class="p-2.5 rounded-xl bg-white/90 border border-sky-100 shadow-2xs flex items-start gap-2">
+              <span class="text-base leading-none">🎙️</span>
+              <div>
+                <div class="font-bold text-slate-900 leading-tight">Spoken Synthesis</div>
+                <div class="text-[10.5px] text-slate-500 mt-0.5">Briefings &amp; Session 7 FE1</div>
+              </div>
+            </div>
+            <div class="p-2.5 rounded-xl bg-white/90 border border-sky-100 shadow-2xs flex items-start gap-2">
+              <span class="text-base leading-none">🎧</span>
+              <div>
+                <div class="font-bold text-slate-900 leading-tight">Weekly Self-Study</div>
+                <div class="text-[10.5px] text-slate-500 mt-0.5">Live Traffic (1h/wk eCampus)</div>
+              </div>
+            </div>
+            <div class="p-2.5 rounded-xl bg-white/90 border border-sky-100 shadow-2xs flex items-start gap-2">
+              <span class="text-base leading-none">🎯</span>
+              <div>
+                <div class="font-bold text-slate-900 leading-tight">MTF Exam Target</div>
+                <div class="text-[10.5px] text-slate-500 mt-0.5">Week 12 • ICAO Level 4+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- 2. Mobile-First Quick Launchers Bar -->
         <div class="space-y-2">
           <div class="flex items-center justify-between px-1">
@@ -4450,6 +4517,272 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         </div>
       `;
     }
+
+    // --- Semester 3 Overview & Student Success Strategy Modal Controller ---
+    window.openSemester3OverviewModal = function() {
+      let modal = document.getElementById('s3-overview-guide-modal');
+      if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 's3-overview-guide-modal';
+        modal.className = 'fixed inset-0 z-[95] bg-slate-950/80 backdrop-blur-xs flex items-center justify-center p-3 sm:p-6 overflow-y-auto hidden';
+        modal.setAttribute('role', 'dialog');
+        modal.setAttribute('aria-modal', 'true');
+        modal.setAttribute('aria-labelledby', 's3-modal-title');
+        modal.onclick = function(e) {
+          if (e.target === modal) window.closeSemester3OverviewModal();
+        };
+
+        modal.innerHTML = `
+          <div class="relative w-full max-w-4xl bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden flex flex-col max-h-[90vh] my-auto">
+            <!-- Header -->
+            <div class="bg-gradient-to-r from-slate-900 via-sky-950 to-slate-900 text-white p-4 sm:p-6 border-b border-sky-900/60 flex items-start justify-between gap-4 shrink-0">
+              <div>
+                <div class="inline-flex items-center gap-1.5 font-mono text-[10.5px] font-bold tracking-wider uppercase text-sky-400 bg-sky-950/90 border border-sky-800/80 px-2.5 py-0.5 rounded-full">
+                  <span>✈️ GSEA SEMESTER 3 • TECHNICAL ENGLISH (LV125E)</span>
+                </div>
+                <h2 id="s3-modal-title" class="text-lg sm:text-2xl font-black text-white mt-1.5 leading-tight">
+                  Semester 3 Overview &amp; Student Success Guide
+                </h2>
+                <p class="text-xs sm:text-sm text-slate-300 font-normal mt-1 leading-relaxed max-w-2xl">
+                  What to expect, key competencies, weekly self-study requirements, and strategies for success.
+                </p>
+              </div>
+              <button type="button" onclick="window.closeSemester3OverviewModal()" class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/10 hover:bg-white/20 active:bg-white/30 text-white flex items-center justify-center transition-colors cursor-pointer shrink-0 text-base sm:text-lg font-bold" aria-label="Close modal">
+                ✕
+              </button>
+            </div>
+
+            <!-- Scrollable Body -->
+            <div class="p-4 sm:p-6 overflow-y-auto space-y-6 text-slate-800 text-xs sm:text-sm leading-relaxed">
+              
+              <!-- Section 1: What Will You Do This Semester? (The Dual-Core Focus) -->
+              <div class="space-y-3">
+                <div class="flex items-center gap-2">
+                  <span class="text-base">🎯</span>
+                  <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide">
+                    1. What Will You Do This Semester? The Dual-Core Approach
+                  </h3>
+                </div>
+                <p class="text-slate-600 leading-relaxed">
+                  Semester 3 Technical English (LV125E) is specifically designed around two complementary skill sets required for modern aviation safety and engineering management:
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
+                  <!-- Core 1: Reading Complex Technical Documents -->
+                  <div class="p-4 rounded-xl bg-sky-50/60 border border-sky-200/80 space-y-2">
+                    <div class="flex items-center gap-2 text-sky-900 font-bold text-xs sm:text-sm">
+                      <span class="p-1 rounded bg-sky-200/70 text-sky-800 text-xs">📑</span>
+                      <span>A. Reading Complex Technical Documents</span>
+                    </div>
+                    <p class="text-[12px] sm:text-[12.5px] text-slate-700 leading-relaxed">
+                      Module 1 is not just about conversation—it trains you to read, analyze, and dissect authentic international regulations:
+                    </p>
+                    <ul class="text-[11.5px] sm:text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+                      <li><strong class="text-slate-800">EASA &amp; ICAO Regulations:</strong> Easy Access Rules (Part-ADR), CS-ADR-DSN specifications, and ICAO Annex 14 aerodrome design standards.</li>
+                      <li><strong class="text-slate-800">Regulatory Precision:</strong> Recognizing the vital legal distinction between mandatory rules (<code class="bg-sky-100 text-sky-900 px-1 py-0.5 rounded font-mono text-[10.5px]">shall / must</code>), recommended compliance (<code class="bg-sky-100 text-sky-900 px-1 py-0.5 rounded font-mono text-[10.5px]">should</code>), and optional permissions (<code class="bg-sky-100 text-sky-900 px-1 py-0.5 rounded font-mono text-[10.5px]">may</code>).</li>
+                      <li><strong class="text-slate-800">Incident Reports:</strong> Reviewing official BEA and AAIB accident investigation reports to extract safety findings quickly.</li>
+                    </ul>
+                  </div>
+
+                  <!-- Core 2: Spoken Operational Synthesis -->
+                  <div class="p-4 rounded-xl bg-indigo-50/60 border border-indigo-200/80 space-y-2">
+                    <div class="flex items-center gap-2 text-indigo-900 font-bold text-xs sm:text-sm">
+                      <span class="p-1 rounded bg-indigo-200/70 text-indigo-800 text-xs">🎙️</span>
+                      <span>B. Spoken Operational Synthesis</span>
+                    </div>
+                    <p class="text-[12px] sm:text-[12.5px] text-slate-700 leading-relaxed">
+                      Reading is only half the battle. You will turn complex written rules into concise, spoken operational briefings:
+                    </p>
+                    <ul class="text-[11.5px] sm:text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+                      <li><strong class="text-slate-800">30-Second Operational Briefings:</strong> Summarizing multi-page technical directives into clear, actionable spoken messages for operations teams.</li>
+                      <li><strong class="text-slate-800">Session 7 Team Teaching Workshop:</strong> Collaborating in peer trios to facilitate a 20-minute technical lesson (Formative Evaluation 1).</li>
+                      <li><strong class="text-slate-800">Professional Speaking Composure:</strong> Asking sharp clarifying questions, defending safety recommendations, and explaining technical choices with confidence.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Section 2: Why Are You Doing These Lessons? (Future Career Value) -->
+              <div class="space-y-3 pt-2 border-t border-slate-100">
+                <div class="flex items-center gap-2">
+                  <span class="text-base">🚀</span>
+                  <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide">
+                    2. Why Are You Doing These Lessons? Your Future Career Advantage
+                  </h3>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2.5">
+                  <p class="text-slate-700 leading-relaxed">
+                    As future graduates in aerodrome engineering, operations, and air transport safety management, English is not just an academic subject—it is the universal operating language of civil aviation.
+                  </p>
+                  <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs pt-1">
+                    <div class="p-3 rounded-lg bg-white border border-slate-200 shadow-2xs space-y-1">
+                      <div class="font-bold text-slate-900">🌍 International Airfield Teams</div>
+                      <p class="text-[11.5px] text-slate-500 leading-relaxed">You will coordinate with multinational airlines, foreign civil aviation inspectors, and global equipment manufacturers.</p>
+                    </div>
+                    <div class="p-3 rounded-lg bg-white border border-slate-200 shadow-2xs space-y-1">
+                      <div class="font-bold text-slate-900">⚡ Zero Ambiguity in Safety</div>
+                      <p class="text-[11.5px] text-slate-500 leading-relaxed">Safety depends on precision. A misunderstanding of an EASA directive or NOTAM can lead to runway closures or safety incidents.</p>
+                    </div>
+                    <div class="p-3 rounded-lg bg-white border border-slate-200 shadow-2xs space-y-1">
+                      <div class="font-bold text-slate-900">💼 Executive Career Mobility</div>
+                      <p class="text-[11.5px] text-slate-500 leading-relaxed">Engineers who can summarize complex regulations clearly to executives and operational staff advance rapidly into leadership roles.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Section 3: Weekly Self-Study: Live Traffic on eCampus (1 Hour per Week) -->
+              <div class="space-y-3 pt-2 border-t border-slate-100">
+                <div class="flex items-center gap-2">
+                  <span class="text-base">🎧</span>
+                  <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide">
+                    3. Weekly Self-Study: "Live Traffic" on eCampus (1 Hour / Week)
+                  </h3>
+                </div>
+                <div class="p-4 rounded-xl bg-gradient-to-r from-amber-50/60 via-white to-sky-50/50 border border-amber-200/80 space-y-3">
+                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <div class="flex items-center gap-2">
+                      <span class="font-bold text-xs sm:text-sm text-amber-900">📻 Mandatory Weekly Self-Study Programme</span>
+                      <span class="text-[10px] font-mono font-extrabold uppercase bg-amber-100 text-amber-800 border border-amber-300 px-2 py-0.5 rounded">1 Hour / Week</span>
+                    </div>
+                    <span class="text-[11px] font-mono text-slate-500">Available on ENAC eCampus</span>
+                  </div>
+                  <p class="text-slate-700 leading-relaxed">
+                    In addition to your 2-hour classroom sessions, you have an official self-study course on <strong class="text-slate-900">ENAC eCampus</strong> called <strong class="text-slate-900">"Live Traffic"</strong>. This programme provides authentic listening practice and technical reading comprehension.
+                  </p>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
+                    <div class="p-3 rounded-lg bg-white/90 border border-amber-200/60 shadow-2xs space-y-1">
+                      <div class="font-bold text-amber-900">🎧 What does Live Traffic include?</div>
+                      <p class="text-[11.5px] text-slate-600 leading-relaxed">
+                        Real-world ATC tower and ground communications, cockpit voice recordings, pilot debriefings, and authentic technical aviation audio from around the world.
+                      </p>
+                    </div>
+                    <div class="p-3 rounded-lg bg-white/90 border border-amber-200/60 shadow-2xs space-y-1">
+                      <div class="font-bold text-sky-900">🎯 How does it prepare you for the MTF Exam?</div>
+                      <p class="text-[11.5px] text-slate-600 leading-relaxed">
+                        The Week 12 MTF Exam tests your technical listening comprehension under pressure. Doing 1 hour per week trains your ear to decode international accents and noisy radio transmissions with ease.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Section 4: 4 Practical Tips on How to Succeed -->
+              <div class="space-y-3 pt-2 border-t border-slate-100">
+                <div class="flex items-center gap-2">
+                  <span class="text-base">💡</span>
+                  <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide">
+                    4. Four Golden Rules to Succeed in Semester 3
+                  </h3>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                  <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-2xs space-y-1.5">
+                    <div class="flex items-center gap-2 font-bold text-xs sm:text-sm text-slate-900">
+                      <span class="w-6 h-6 rounded-full bg-sky-100 text-sky-800 text-xs flex items-center justify-center font-black shrink-0">1</span>
+                      <span>Skim Technical Texts Before Class</span>
+                    </div>
+                    <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed">
+                      Open the session materials on your deck before class. Identify unfamiliar acronyms and keywords ahead of time so your 2 hours in class are spent speaking and debating, not reading in silence.
+                    </p>
+                  </div>
+
+                  <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-2xs space-y-1.5">
+                    <div class="flex items-center gap-2 font-bold text-xs sm:text-sm text-slate-900">
+                      <span class="w-6 h-6 rounded-full bg-sky-100 text-sky-800 text-xs flex items-center justify-center font-black shrink-0">2</span>
+                      <span>Speak Out Loud Early &amp; Often</span>
+                    </div>
+                    <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed">
+                      Aim for clarity rather than perfection. Classroom speaking is a laboratory to experiment with new technical phrasing, test explanations, and receive immediate coaching from your teacher.
+                    </p>
+                  </div>
+
+                  <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-2xs space-y-1.5">
+                    <div class="flex items-center gap-2 font-bold text-xs sm:text-sm text-slate-900">
+                      <span class="w-6 h-6 rounded-full bg-sky-100 text-sky-800 text-xs flex items-center justify-center font-black shrink-0">3</span>
+                      <span>Update Your Portfolio Every Week</span>
+                    </div>
+                    <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed">
+                      Immediately after each session, spend 5 minutes updating your digital portfolio. Record your self-reflection, top technical words, and areas where you want to improve next week.
+                    </p>
+                  </div>
+
+                  <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-2xs space-y-1.5">
+                    <div class="flex items-center gap-2 font-bold text-xs sm:text-sm text-slate-900">
+                      <span class="w-6 h-6 rounded-full bg-sky-100 text-sky-800 text-xs flex items-center justify-center font-black shrink-0">4</span>
+                      <span>Schedule Your 1-Hour Live Traffic Slot</span>
+                    </div>
+                    <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed">
+                      Treat your 1-hour weekly eCampus Live Traffic self-study as a fixed appointment in your schedule. Regular weekly practice builds long-term listening endurance for the MTF Exam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Section 5: Key Assessment Milestones -->
+              <div class="space-y-3 pt-2 border-t border-slate-100">
+                <div class="flex items-center gap-2">
+                  <span class="text-base">📅</span>
+                  <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide">
+                    5. Key Assessment Milestones
+                  </h3>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs pt-1">
+                  <div class="p-3.5 rounded-xl bg-purple-50/70 border border-purple-200/80 space-y-1">
+                    <div class="flex items-center justify-between">
+                      <span class="font-bold text-purple-950">Session 7: FE1 Team Teaching Workshop</span>
+                      <span class="text-[10px] font-mono font-bold bg-purple-200 text-purple-900 px-1.5 py-0.5 rounded">Formative Eval</span>
+                    </div>
+                    <p class="text-[11.5px] text-slate-600 leading-relaxed">
+                      You will collaborate in small peer groups to co-teach a 20-minute technical lesson on an assigned aerodrome safety topic, demonstrating clear spoken instruction and student interaction.
+                    </p>
+                  </div>
+
+                  <div class="p-3.5 rounded-xl bg-sky-50/70 border border-sky-200/80 space-y-1">
+                    <div class="flex items-center justify-between">
+                      <span class="font-bold text-sky-950">Week 12: MTF Exam</span>
+                      <span class="text-[10px] font-mono font-bold bg-sky-200 text-sky-900 px-1.5 py-0.5 rounded">Final Assessment</span>
+                    </div>
+                    <p class="text-[11.5px] text-slate-600 leading-relaxed">
+                      Comprehensive written and listening evaluation assessing your technical comprehension of aviation operations, regulations, and authentic radio transmissions at ICAO Level 4 standard.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Footer -->
+            <div class="p-4 sm:p-5 bg-slate-50 border-t border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shrink-0">
+              <div class="text-[11px] sm:text-xs text-slate-500">
+                <span>Have questions about the semester? Ask your teacher during class or consult the </span>
+                <button type="button" onclick="window.closeSemester3OverviewModal(); openModalDrawer('admin_calendar', 1, 8);" class="text-sky-600 hover:text-sky-800 font-bold underline cursor-pointer">Weekly Calendar</button>.
+              </div>
+              <button type="button" onclick="window.closeSemester3OverviewModal()" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 active:bg-slate-950 text-white font-bold text-xs transition-colors cursor-pointer shadow-xs text-center">
+                Got it • Close Guide
+              </button>
+            </div>
+          </div>
+        `;
+        document.body.appendChild(modal);
+      }
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    };
+
+    window.closeSemester3OverviewModal = function() {
+      const modal = document.getElementById('s3-overview-guide-modal');
+      if (modal) {
+        modal.classList.add('hidden');
+      }
+      const resModal = document.getElementById('deck-resource-modal');
+      const isResOpen = resModal && !resModal.classList.contains('hidden');
+      const projModal = document.getElementById('gsea-projector-theatre-modal');
+      const isProjOpen = projModal && !projModal.classList.contains('hidden');
+      if (!isResOpen && !isProjOpen) {
+        document.body.style.overflow = '';
+      }
+    };
+
 
 
     function renderActivityInstructions(act, theme) {
