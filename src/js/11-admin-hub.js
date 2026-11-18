@@ -325,7 +325,7 @@
             "week": "W11",
             "date": "Fri 19 Mar",
             "title": "Session 8 — MTF Final Revision & Test Readiness",
-            "subtitle": "Fri 19 Mar • Official DSAC MTF Examination also administered in Week 11",
+            "subtitle": "Fri 19 Mar • MTF Examination also administered in Week 11",
             "tag": "MTF Revision",
             "isFe": false,
             "rooms": {

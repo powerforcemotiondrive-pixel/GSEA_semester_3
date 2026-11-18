@@ -535,7 +535,7 @@ function run() {
       } else if (w.courseWeek === 'W13') {
         sessSub = `${w.date} • Individual 30-min oral test slots (Week 2 of 2)`;
       } else if (w.courseWeek === 'W15') {
-        sessSub = `${w.date} • Official DSAC MTF Examination also administered in Week 11`;
+        sessSub = `${w.date} • MTF Examination also administered in Week 11`;
       }
     }
     const sessionItem = {
