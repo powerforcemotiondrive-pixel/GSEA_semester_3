@@ -18,6 +18,7 @@ Type these exact phrases directly in chat with the Antigravity assistant:
 | **`Promo Admin: ...`** | **Inline Cohort Reconfiguration**<br>e.g. `Promo Admin: Promotion GSEA26A, Semester 1, Groups 2, A - 10 B - 9, Teachers AG 2 AT 2` | Same as above, but configured entirely inline in the chat prompt without editing markdown files. |
 | **`Commit`**<br>*(or `Commit changes`)* | **Single-Step Remote Sync** | Atomically runs `git commit` AND `git push origin main` together, updating GitHub and GitHub Pages live. |
 | **`Audit S1/2/3 AT/AG/AP/AAS M1/2/3 Ss 1/2/3`**<br>*(e.g. `Audit S3 AT M1 S5`, `Audit Semester 3 Mod 1 AT Ss 1`)* | **Automated Session Audit &amp; A4 PDF Worksheet Setup** | • 8-point automated audit of session quality<br>• Thematic relevance &amp; subject drift scan<br>• 2-Hour classroom sufficiency gauge<br>• Zero academic jargon &amp; zero timings scan<br>• Verifies &amp; sets up exact 7-page A4 PDF worksheet |
+| **`P Audit Semester 3 M1 AT Session 5`**<br>*(or `P Audit S3 M1 Session 1` / `P Audit Session X`)* | **Pedagogical & Classroom Reality Audit** | • Evaluates core English language learning target<br>• Flags technical cognitive overload & engineering clutter<br>• Enforces 70/30 active speaking vs. passive reading ratio<br>• Verifies authentic B1/B2 spoken accessibility & spontaneity<br>• Generates concrete de-cluttering & simplification proposals |
 | **`Bug Check 1`** / **`Bug Check 2`** / **`Bug Check 3`**<br>*(or `Bug Check`)* | **Global Code Bug & Invariant Hunter** | • Comprehensive 8-point automated code audit<br>• AST syntax validation of all JS source files<br>• Zero undefined, NaN, or unreplaced tags in DOM<br>• Validates all inline onclick handlers &amp; element IDs<br>• Verifies SCORM assets on disk vs imsmanifest.xml<br>• Tests SCORM 1.2 4,096-char suspend_data boundary<br>• Dual-admin character parity &amp; title parity check<br>• Prohibited academic jargon &amp; faculty scan (Rule 1.I)<br>• Classroom timings (Rule 1.Q) &amp; student privacy (Rule 1.H)<br>• Verifies localStorage auto-saving notes handlers |
 
 ---
@@ -70,6 +71,23 @@ Type these exact phrases directly in chat with the Antigravity assistant:
    - `portfolio.html` (Student dropdown selector)
    - All 4 packages rebuilt (`SCORM.zip`, `SCORM_MOODLE.zip`, `.iso`, `.dmg`)
    - Auto-committed and pushed to GitHub.
+
+---
+
+### C. Pedagogical & Classroom Reality Audit (`P Audit ...`)
+**When to use**: Before teaching a session or during course reviews to check whether the lesson actually works in the classroom—ensuring it is not too technical, doesn't overwhelm students with engineering trivia, has a clear language focus, and maximizes student speaking time.
+
+1. In chat, send:
+   ```text
+   P Audit Semester 3 M1 AT Session 5
+   ```
+   *(or `P Audit S3 M1 Session 1`, `P Audit S3 M2 Session 3`)*
+2. **What the assistant evaluates**:
+   - **Target Language Point**: Identifies the core English grammar/functional phrase takeaway.
+   - **Cognitive Load Rating**: `🟢 Balanced` • `🟡 Heavy` • `🔴 Overloaded (Too Technical)`.
+   - **70/30 Speaking Rule**: Checks whether students spend 70% of the session actively speaking.
+   - **B1/B2 Accessibility**: Tests whether students can speak spontaneously without reading scripts.
+   - **Simplification Recommendations**: Proposes line-by-line cuts to technical jargon to make the lesson friendlier, communicative, and engaging.
 
 ---
 
