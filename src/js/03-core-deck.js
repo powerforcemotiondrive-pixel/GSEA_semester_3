@@ -3196,9 +3196,36 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
                   <div class="text-[10.5px] font-mono text-slate-400 mt-0.5">${weeklyMedia.channel} • ${weeklyMedia.duration}</div>
                 </div>
 
-                <!-- 16:9 YouTube Player -->
-                <div class="aspect-video w-full my-2 bg-slate-950 rounded-lg overflow-hidden border border-slate-200 shadow-inner">
-                  <iframe class="w-full h-full" src="${weeklyMedia.embedUrl}" title="${weeklyMedia.title}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <!-- Dual-Mode Player (Live Iframe on Web Server / LMS, Interactive Video Poster on Local file://) -->
+                <div class="aspect-video w-full my-2 bg-slate-950 rounded-lg overflow-hidden border border-slate-200 shadow-inner relative group">
+                  ${(typeof window !== 'undefined' && window.location && window.location.protocol === 'file:') ? `
+                    <!-- Local / Offline Poster Card (Prevents YouTube Error 153 on file://) -->
+                    <a href="${weeklyMedia.watchUrl}" target="_blank" rel="noopener noreferrer" class="relative w-full h-full block bg-slate-900 overflow-hidden no-underline group/thumb cursor-pointer">
+                      <img src="https://img.youtube.com/vi/${weeklyMedia.videoId}/hqdefault.jpg" alt="${weeklyMedia.title}" class="w-full h-full object-cover opacity-70 group-hover/thumb:opacity-90 group-hover/thumb:scale-105 transition-all duration-300" onerror="this.style.display='none'" />
+                      <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/20 flex flex-col justify-between p-3">
+                        <div class="flex items-center justify-between">
+                          <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded text-[10px] font-bold font-mono bg-rose-600/90 text-white shadow-xs">
+                            <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                            <span>YouTube</span>
+                          </span>
+                          <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-black/70 text-slate-200">${weeklyMedia.duration}</span>
+                        </div>
+                        <div class="flex flex-col items-center justify-center my-auto">
+                          <div class="w-12 h-12 rounded-full bg-rose-600 hover:bg-rose-500 text-white flex items-center justify-center shadow-lg group-hover/thumb:scale-110 transition-transform">
+                            <svg class="w-6 h-6 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                          </div>
+                          <span class="text-white text-xs font-bold mt-2 drop-shadow-sm">Watch Video on YouTube</span>
+                          <span class="text-slate-300 text-[10.5px] mt-0.5">Click to play in new tab ↗</span>
+                        </div>
+                        <div class="text-[10px] text-slate-400 font-mono text-center">
+                          Local / Offline Mode • YouTube requires external browser
+                        </div>
+                      </div>
+                    </a>
+                  ` : `
+                    <!-- Live Embedded YouTube Player (Active on ENAC eCampus & Web Servers) -->
+                    <iframe class="w-full h-full" src="${weeklyMedia.embedUrl}" title="${weeklyMedia.title}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  `}
                 </div>
 
                 <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed font-normal">
