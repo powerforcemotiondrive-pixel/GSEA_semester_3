@@ -4983,6 +4983,198 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
       }
     }
 
+/**
+ * Renders the introductory Session Briefing & Pedagogical Roadmap banner
+ * placed under the hero image banner across Sessions 1 to 6.
+ * Complies with Rule 1.I (Zero jargon, no faculty) and Rule 1.Q (Zero timings, teacher pacing autonomy).
+ */
+function renderSessionBriefingBanner(sessionNum, theme) {
+  const briefings = {
+    1: {
+      tag: "Session Briefing • Operational Context",
+      title: "European Aerodrome Rules, Modal Obligations & Runway Obstacles",
+      context: "In this opening session of Technical English, we examine how European aerodrome regulations are structured under Regulation (EU) No 139/2014 and Certification Specifications (CS-ADR-DSN). We explore how modal verbs establish legal requirements: mandatory hard law (shall/must), prohibitions (shall not), advisory guidance (should), and permissions (may). Students decode dense official regulations into plain operational English, detect safety non-conformities in a partner listening game, and negotiate airside crane height restrictions near an active runway.",
+      objectives: [
+        { label: "Navigating Technical Rules", desc: "Scan official CS-ADR-DSN obstacle limitation clauses quickly without getting bogged down in legal text." },
+        { label: "The Modal Authority Ladder", desc: "Differentiate clearly between mandatory hard law (shall/must), prohibitions (shall not), advisory guidance (should), and permissions (may)." },
+        { label: "Plain English Jargon Busting", desc: "Translate dense regulatory phrases (pursuant to, without prejudice to, derogation) into natural operational English." },
+        { label: "Spoken Negotiation & Listening", desc: "Catch intentional safety errors in a partner listening check and negotiate a safe crane compromise with an airside contractor." }
+      ],
+      parts: [
+        { part: "Part 1", title: "Warm-Up & Modal Meaning Matrix", mode: "Pairs • Discussion" },
+        { part: "Part 2", title: "Reading CS-ADR-DSN.H.415 & Jargon Buster", mode: "Pairs • Reading" },
+        { part: "Part 3", title: "Language Clinic: Words for Rules", mode: "Pairs • Spoken Clinic" },
+        { part: "Part 4A", title: "Spot the Safety Bug (Barrier Game)", mode: "Pairs • Active Listening" },
+        { part: "Part 4B", title: "Builder Negotiation Role-Play", mode: "Groups of 3 • Negotiation" },
+        { part: "Part 5", title: "Safety Decision Table & Operational Notes", mode: "Whole Class • Decision" }
+      ]
+    },
+    2: {
+      tag: "Session Briefing • Operational Context",
+      title: "Apron Safety Alerts, GSE Hazards & Stand-Up Ramp Briefings",
+      context: "On European airport aprons, ground support equipment (GSE) operates in close proximity to aircraft and personnel under tight 25- to 30-minute turnaround pressures. High-energy vehicle impacts with aircraft fuselages, radomes, and cowlings have repeatedly gone unreported by ground staff, risking undetected structural damage. In this session, students analyze authentic EASA Safety Information Bulletin SIB 2024-09, convert dense safety alerts into punchy spoken action commands, and deliver a 90-second morning ramp briefing under Just Culture principles.",
+      objectives: [
+        { label: "Rules vs Recommendations", desc: "Distinguish mandatory requirements (shall) from advisory best practice (should) across apron ground operations." },
+        { label: "From Rules to Action Commands", desc: "Convert heavy official noun phrases into direct, memorable spoken instructions for ramp crews." },
+        { label: "The Executive 3-Bullet Rule", desc: "Condense long safety bulletins into 3 concise spoken action points starting with imperative action verbs." },
+        { label: "90-Second Stand-Up Briefing", desc: "Deliver a crisp, professional morning safety briefing and handle operational challenge questions from peers." }
+      ],
+      parts: [
+        { part: "Part 1", title: "Warm-Up: Ramp Hazards & Entry Diagnostic", mode: "Pairs • Diagnostic" },
+        { part: "Part 2", title: "Reading EASA SIB 2024-09 (Apron Collisions)", mode: "Pairs • Text Scan" },
+        { part: "Part 3", title: "The Simplification Engine & 3-Bullet Rule", mode: "Pairs • Language Clinic" },
+        { part: "Part 4", title: "Spoken Simulation: 90-Second Stand-Up", mode: "Pairs • Oral Briefing" },
+        { part: "Part 5", title: "Safety Check: What Could Go Wrong?", mode: "Whole Class • Decision" }
+      ]
+    },
+    3: {
+      tag: "Session Briefing • Operational Context",
+      title: "Runway Urgent Works, Article 71 Exemptions & Airline Briefings",
+      context: "Unplanned structural defects beneath active runways—such as stormwater culvert subsidence—cannot be repaired without altering certified runway dimensions. Completely shutting down an international runway disrupts flight schedules and costs millions of euros. Instead, airside operations must request an urgent Article 71 exemption under Regulation (EU) 2018/1139, establish displaced thresholds with temporary lighting, and conduct detailed operational briefings with airline dispatchers to maintain absolute safety.",
+      objectives: [
+        { label: "Exemption Dossier Analysis", desc: "Extract operational constraints, displaced threshold coordinates, and compensatory mitigations from an official Article 71 request." },
+        { label: "Connecting Words & Conditions", desc: "Master spoken condition markers (provided that, in lieu of, subject to) to state technical boundaries with precision." },
+        { label: "Spoken Airline Briefing", desc: "Deliver a structured operational briefing to airline representatives, explaining available runway lengths (TORA/LDA) and weather minimums." },
+        { label: "Safety Critical Evaluation", desc: "Debate the safety boundary between commercial pressures and operational margins using the 4-step safety decision check." }
+      ],
+      parts: [
+        { part: "Part 1", title: "Warm-Up: Runway Repairs & Entry Diagnostic", mode: "Pairs • Diagnostic" },
+        { part: "Part 2", title: "Reading the Runway Work Request (Article 71)", mode: "Pairs • Technical Reading" },
+        { part: "Part 3", title: "Connecting Words: Conditions & Reasons", mode: "Pairs • Language Clinic" },
+        { part: "Part 4", title: "Spoken Briefing: Explaining the Plan to Airlines", mode: "Pairs • Oral Briefing" },
+        { part: "Part 5", title: "Safety Check: Is It Safe to Land?", mode: "Whole Class • Decision" }
+      ]
+    },
+    4: {
+      tag: "Session Briefing • Operational Context",
+      title: "Airfield Inspections, Non-Conformity Findings & Manager Debriefs",
+      context: "Airside safety oversight is an active frontline defense against runway incursions, apron fires, and foreign object debris (FOD). When an aerodrome inspector spots an uncontained fuel spill, overgrown grass obscuring runway guard lights, or loose lockwire on a taxiway, they must accurately categorize the non-conformity under EASA rules, gather photo evidence, and present a crisp spoken technical debrief to airport operations management.",
+      objectives: [
+        { label: "Audit Finding Classification", desc: "Distinguish Level 1 findings (immediate airside hazards) from Level 2 findings (systemic procedural non-compliances)." },
+        { label: "Photo Evidence Description", desc: "Apply a 4-step photo debrief method to describe complex airside defects clearly, accurately, and objectively." },
+        { label: "Past Modal Deductions", desc: "Use past modals (must have, could have, should have) to formulate sound technical deductions about defect causes." },
+        { label: "Spoken Technical Debrief", desc: "Present a structured 2-minute oral debriefing to an aerodrome director with immediate operational containment actions." }
+      ],
+      parts: [
+        { part: "Part 1", title: "Field Evidence & Entry Diagnostic", mode: "Pairs • Diagnostic" },
+        { part: "Part 2", title: "Airfield Audit Dossier & Photo Analysis", mode: "Pairs • Evidence Scan" },
+        { part: "Part 3", title: "Language Clinic: Severity & Past Deductions", mode: "Pairs • Spoken Clinic" },
+        { part: "Part 4", title: "3-Photo Challenge & Manager Spoken Debrief", mode: "Pairs • Spoken Simulation" },
+        { part: "Part 5", title: "Safety Check Table & Operational Decisions", mode: "Whole Class • Decision" }
+      ]
+    },
+    5: {
+      tag: "Session Briefing • Operational Context",
+      title: "Multi-Source Incident Investigation & Root Cause Analysis",
+      context: "Aviation incidents rarely stem from an isolated failure; they represent an interrelated chain of events where organizational conditions, equipment status, weather, and human actions intersect. Students synthesize evidence across four authentic technical records (ATC audio logs, METAR storm reports, aircraft technical logs, and occurrence statements), map root causes using James Reason\x27s Swiss Cheese model, and deliver a high-level spoken investigation briefing.",
+      objectives: [
+        { label: "Synthesizing Complex Records", desc: "Correlate disparate technical records to construct an accurate chronological sequence of an airside incident." },
+        { label: "Cause-and-Effect Precision", desc: "Use technical causal markers (stemming from, triggered by, resulting in, attributable to) to explain failure chains." },
+        { label: "Applying the Swiss Cheese Model", desc: "Categorize findings across organizational influences, local working conditions, active human slips, and failed barriers." },
+        { label: "Executive Safety Debrief", desc: "Deliver a concise spoken debrief to the Airport Safety Directorate with actionable safety recommendations." }
+      ],
+      parts: [
+        { part: "Part 1", title: "Field Evidence & Incident Entry Diagnostic", mode: "Pairs • Diagnostic" },
+        { part: "Part 2", title: "Multi-Source Dossier (BEA/EASA-2024-089)", mode: "Pairs • Document Synthesis" },
+        { part: "Part 3", title: "Language Clinic: Cause-and-Effect Markers", mode: "Pairs • Language Clinic" },
+        { part: "Part 4", title: "Swiss Cheese Matrix & Executive Spoken Debrief", mode: "Pairs • Spoken Debrief" },
+        { part: "Part 5", title: "Safety Check: What is the Systemic Risk?", mode: "Whole Class • Decision" }
+      ]
+    },
+    6: {
+      tag: "Session Briefing • Operational Context",
+      title: "The Corrective Action Plan (CAP) & Formative Evaluation Studio",
+      context: "Closing an audit finding or incident investigation is the statutory mechanism that prevents repeat safety occurrences on the airfield. Under Regulation (EU) No 139/2014 Part-ADR.OR.D.005, aerodrome operators must formally demonstrate root-cause remediation, establish immediate interim mitigations, and agree on auditable verification milestones with the authority. Students examine an authentic CAP dossier, practice spoken authority negotiations, and collaborate in peer studios to design their Session 7 evaluation presentations.",
+      objectives: [
+        { label: "Audit Finding Taxonomy & Remediation", desc: "Distinguish Level 1 findings (immediate hazard) from Level 2 findings (systemic non-compliance) and audit CAP milestones." },
+        { label: "Regulatory Negotiation Language", desc: "Master spoken commitment phrases (undertake to, in the interim, subject to authority concurrence) in compliance meetings." },
+        { label: "Authority Negotiation Role-Play", desc: "Simulate a high-stakes meeting between an aerodrome operator and a civil aviation inspector." },
+        { label: "Session 7 FE Preparation Studio", desc: "Collaborate in groups of up to 4 with dedicated studio time to select an EASA regulatory extract and prepare your peer teaching session." }
+      ],
+      parts: [
+        { part: "Part 1", title: "Finding Taxonomy & Diagnostic Spot-Check", mode: "Pairs • Diagnostic" },
+        { part: "Part 2", title: "Physical Remediation Photo Gallery", mode: "Pairs • Visual Review" },
+        { part: "Part 3", title: "EASA Part-ADR.OR.D.005 CAP Dossier", mode: "Pairs • Technical Reading" },
+        { part: "Part 4", title: "Language Clinic: Regulatory Commitment", mode: "Pairs • Spoken Clinic" },
+        { part: "Part 5", title: "Operator vs Inspector Spoken Negotiation", mode: "Pairs • Spoken Simulation" },
+        { part: "Part 6", title: "Formative Evaluation Design Studio (Session 7 Prep)", mode: "Teams of 4 • Collaborative Studio" }
+      ]
+    }
+  };
+
+  const b = briefings[sessionNum];
+  if (!b) return "";
+
+  return `
+          <!-- Session Briefing & Pedagogical Roadmap -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
+            <!-- Left Card: What This Session Is About (Operational Context & Spoken Goals) -->
+            <div class="lg:col-span-7 bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs flex flex-col justify-between space-y-4">
+              <div class="space-y-2">
+                <div class="flex items-center gap-2">
+                  <span class="text-xs">📌</span>
+                  <span class="text-[11px] font-black uppercase tracking-wider text-slate-500">${b.tag}</span>
+                </div>
+                <h4 class="text-sm sm:text-base font-black text-slate-900">${b.title}</h4>
+                <p class="text-xs sm:text-[13px] text-slate-600 leading-relaxed">${b.context}</p>
+              </div>
+
+              <div class="pt-3 border-t border-slate-100 space-y-2">
+                <div class="flex items-center gap-2">
+                  <span class="text-xs">🎯</span>
+                  <span class="text-[10.5px] font-black uppercase tracking-wider text-slate-700">Core Spoken Objectives (B2 Standards)</span>
+                </div>
+                <ul class="space-y-1.5 text-xs text-slate-700">
+                  ${b.objectives.map(obj => `
+                    <li class="flex items-start gap-2">
+                      <span class="text-blue-600 font-bold mt-0.5">•</span>
+                      <span><strong class="text-slate-900">${obj.label}:</strong> ${obj.desc}</span>
+                    </li>
+                  `).join("")}
+                </ul>
+              </div>
+            </div>
+
+            <!-- Right Card: How This Session Works (Student & Teacher Roadmap) -->
+            <div class="lg:col-span-5 bg-slate-50 border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs flex flex-col justify-between space-y-4">
+              <div class="space-y-2.5">
+                <div class="flex items-center gap-2">
+                  <span class="text-xs">🧭</span>
+                  <span class="text-[11px] font-black uppercase tracking-wider text-slate-500">How This Session Works</span>
+                </div>
+                
+                <div class="p-3 bg-blue-50/70 border border-blue-200/70 rounded-lg text-xs text-blue-950 space-y-1.5">
+                  <div class="flex items-center gap-1.5 font-bold text-blue-900">
+                    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                    <span>Spoken Focus &amp; Teacher Pacing</span>
+                  </div>
+                  <p class="text-[11.5px] text-blue-900 leading-relaxed">
+                    Spoken communication and confidence come first. Classroom teachers adapt pacing, depth, and may omit sections to match student discussion flow.
+                  </p>
+                </div>
+              </div>
+
+              <div class="space-y-2">
+                <div class="flex items-center justify-between">
+                  <span class="text-[10px] font-black uppercase tracking-wider text-slate-500">Session Stage Progression</span>
+                  <span class="text-[10px] font-semibold text-slate-400">${b.parts.length} Stages</span>
+                </div>
+                <div class="space-y-1.5">
+                  ${b.parts.map(p => `
+                    <div class="flex items-center justify-between text-[11px] p-2 bg-white border border-slate-200/90 rounded-lg shadow-2xs">
+                      <div class="flex items-center gap-2 min-w-0">
+                        <span class="text-[9.5px] font-black px-1.5 py-0.5 rounded text-white shrink-0" style="background-color: ${theme.primary};">${p.part}</span>
+                        <span class="font-bold text-slate-800 truncate">${p.title}</span>
+                      </div>
+                      <span class="text-[10px] font-medium text-slate-500 shrink-0 ml-2">${p.mode}</span>
+                    </div>
+                  `).join("")}
+                </div>
+              </div>
+            </div>
+          </div>`;
+}
+
         function renderLessonContentTabSession1(sessionData, theme) {
       const bodyEl = document.getElementById('modal-body');
       if (!bodyEl) return;
@@ -5036,6 +5228,8 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
               </div>
             </div>
           </div>
+
+          ${renderSessionBriefingBanner(1, theme)}
 
           <!-- Activity 1: Warm-up & The Modal Spectrum -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
@@ -5674,6 +5868,8 @@ function renderLessonContentTabSession2(sessionData, theme) {
             </div>
           </div>
 
+          ${renderSessionBriefingBanner(2, theme)}
+
           <!-- Activity 1: Warm-up: Modal Quick-Fire & Ramp Hazard Scan -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
@@ -6260,6 +6456,8 @@ function renderLessonContentTabSession3(sessionData, theme) {
             </div>
           </div>
 
+          ${renderSessionBriefingBanner(3, theme)}
+
           <!-- Activity 1: Keeping Airports Open During Repairs -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
@@ -6674,6 +6872,8 @@ function renderLessonContentTabSession3(sessionData, theme) {
               </div>
             </div>
           </div>
+
+          ${renderSessionBriefingBanner(4, theme)}
 
           <!-- Context Alert Box -->
           <div class="p-4 rounded-xl bg-blue-50/80 border border-blue-200 text-blue-950 text-xs sm:text-[13px] leading-relaxed shadow-2xs space-y-1.5">
@@ -7143,6 +7343,8 @@ function renderLessonContentTabSession3(sessionData, theme) {
               </div>
             </div>
           </div>
+
+          ${renderSessionBriefingBanner(5, theme)}
 
           <!-- Context Alert Box -->
           <div class="p-4 rounded-xl bg-blue-50/80 border border-blue-200 text-blue-950 text-xs sm:text-[13px] leading-relaxed shadow-2xs space-y-2">
@@ -7621,6 +7823,8 @@ function renderLessonContentTabSession3(sessionData, theme) {
               </div>
             </div>
           </div>
+
+          ${renderSessionBriefingBanner(6, theme)}
 
           <!-- Context Briefing -->
           <div class="p-5 bg-gradient-to-br from-blue-900 via-indigo-900 to-slate-900 rounded-xl shadow-xs text-white space-y-3">
