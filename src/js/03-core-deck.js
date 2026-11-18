@@ -971,7 +971,7 @@
       // Update card tag pill (Option A Balanced Horizontal Grid)
       const tagPill = document.getElementById('card-tag-pill');
       if (tagPill) {
-        let tagText = page.tag || (page.isAdmin ? "Administration" : (page.isFe ? "Formative Evaluation" : (page.isObjectives ? "Curriculum" : (page.isDocsHub ? "Documentation Hub" : (page.isImmersion ? "Immersion" : `Session ${String(currentIndex + 1).padStart(2, '0')}`)))));
+        let tagText = page.tag || (page.isAdmin ? "Administration" : (page.isFe ? "Formative Evaluation" : (page.isObjectives ? "Curriculum" : (page.isDocsHub ? "Documentation Hub" : (page.isImmersion ? "Immersion" : `Session ${String(page.sessionNum || (currentIndex + 1)).padStart(2, '0')}`)))));
         tagPill.textContent = tagText;
         const pillAccent = mod.accent || mod.primary;
         const pillText = mod.accentDark || mod.primary;
@@ -1033,11 +1033,13 @@
         } else if (page.detailsUrl) {
           dockTitle.textContent = "DDRS Sustainability Guide";
         } else if (page.isFe) {
-          dockTitle.textContent = `Session ${String(currentIndex + 1).padStart(2, '0')} Evaluation Center`;
+          dockTitle.textContent = `Session ${String((typeof page.sessionNum !== 'undefined') ? page.sessionNum : (currentIndex + 1)).padStart(2, '0')} Evaluation Center`;
         } else {
-          dockTitle.textContent = `Session ${String(currentIndex + 1).padStart(2, '0')} Study Resources`;
+          dockTitle.textContent = `Session ${String((typeof page.sessionNum !== 'undefined') ? page.sessionNum : (currentIndex + 1)).padStart(2, '0')} Study Resources`;
         }
       }
+
+      const sNumber = (page.sessionNum !== undefined && page.sessionNum !== null) ? page.sessionNum : (currentIndex + 1);
 
       const createThemedCTA = (label, tabKey, fallbackHref) => {
         const btn = document.createElement('button');
@@ -1050,7 +1052,7 @@
         btn.onmouseleave = () => btn.style.backgroundColor = ctaBg;
         btn.innerHTML = `<span>${label}</span> <span class="font-bold text-sm leading-none" aria-hidden="true">⇥</span>`;
         btn.addEventListener('click', () => {
-          openModalDrawer(tabKey, mod.id, currentIndex + 1, fallbackHref);
+          openModalDrawer(tabKey, mod.id, sNumber, fallbackHref);
         });
         return btn;
       };
@@ -1076,7 +1078,7 @@
         actionContainer.appendChild(createThemedCTA("Open Resources", "fe_guidelines", ""));
 
         // Secondary CTA: Overview & Task Pop-Up for Session 7
-        if (currentIndex === 6 && mod.id === 1) {
+        if (page.isFe && mod.id === 1) {
           const overviewBtn = document.createElement('button');
           overviewBtn.type = 'button';
           overviewBtn.className = "inline-flex items-center gap-2 text-white px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-lg text-xs font-bold tracking-wide shadow-xs transition-all duration-150 cursor-pointer select-none border border-black/10 hover:shadow-md hover:-translate-y-[1px] active:translate-y-0";
@@ -1088,7 +1090,7 @@
           overviewBtn.innerHTML = `<span>Session Overview</span> <span class="font-bold text-sm leading-none" aria-hidden="true">⇥</span>`;
           overviewBtn.title = "Open Session Overview & 10 Useful Words";
           overviewBtn.addEventListener('click', () => {
-            openSessionOverviewModal(mod.id, currentIndex + 1);
+            openSessionOverviewModal(mod.id, sNumber);
           });
           actionContainer.appendChild(overviewBtn);
         }
@@ -1108,7 +1110,7 @@
         overviewBtn.innerHTML = `<span>Overview &amp; Task</span> <span class="font-bold text-sm leading-none" aria-hidden="true">⇥</span>`;
         overviewBtn.title = "Open Session Overview, 10 Useful Words & Authentic EASA Task";
         overviewBtn.addEventListener('click', () => {
-          openSessionOverviewModal(mod.id, currentIndex + 1);
+          openSessionOverviewModal(mod.id, sNumber);
         });
         actionContainer.appendChild(overviewBtn);
       }
@@ -1514,7 +1516,8 @@
         headerEl.style.backgroundColor = modTheme.primaryDark || '#172554';
       }
 
-      const sessionTitle = (modTheme.pages && modTheme.pages[sessionNum - 1] && modTheme.pages[sessionNum - 1].title) ||
+      const targetPageForOverview = modTheme.pages && (modTheme.pages.find(p => p.sessionNum === sessionNum) || modTheme.pages[sessionNum - 1]);
+      const sessionTitle = (targetPageForOverview && targetPageForOverview.title) ||
                            (sessionData.objectives && sessionData.objectives.title) ||
                            `Session ${sessionNum}`;
       if (titleEl) {
@@ -1881,7 +1884,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
 
       const progConfig = PROGRAMS_CONFIG[modalState.program] || PROGRAMS_CONFIG.ag;
       const activeModForModal = modulesData[modalState.modNum - 1];
-      const activePageForModal = activeModForModal && activeModForModal.pages && activeModForModal.pages[modalState.sessionNum - 1];
+      const activePageForModal = activeModForModal && activeModForModal.pages && (activeModForModal.pages.find(p => p.sessionNum === modalState.sessionNum) || activeModForModal.pages[modalState.sessionNum - 1]);
       const isDocsHubSession = tabKey === 'docs_hub' || modalState.tab === 'docs_hub' || Boolean(activePageForModal && activePageForModal.isDocsHub);
       const isObjectivesSession = !isDocsHubSession && (tabKey === 'student_guide' || tabKey.startsWith('sem_obj_') || modalState.tab === 'student_guide' || modalState.tab.startsWith('sem_obj_'));
       const isImmersionSession = !isDocsHubSession && !isObjectivesSession && (tabKey === 'immersion' || tabKey.startsWith('immersion_'));
@@ -2107,7 +2110,8 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
 
         tagEl.textContent = `${progConfig.code} Module ${modalState.modNum} • Session ${modalState.sessionNum}`;
         const activeMod = modulesData[modalState.modNum - 1];
-        titleEl.textContent = (activeMod && activeMod.pages && activeMod.pages[modalState.sessionNum - 1] && activeMod.pages[modalState.sessionNum - 1].title) || `Session ${modalState.sessionNum}`;
+        const activeTargetPage = activeMod && activeMod.pages && (activeMod.pages.find(p => p.sessionNum === modalState.sessionNum) || activeMod.pages[modalState.sessionNum - 1]);
+        titleEl.textContent = (activeTargetPage && activeTargetPage.title) || `Session ${modalState.sessionNum}`;
       }
 
       modalEl.classList.remove('hidden');
