@@ -2370,8 +2370,8 @@ function renderLessonContentTabSession3(sessionData, theme) {
                       <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-sky-100 text-sky-900 border border-sky-200">${photo.badge || `Exhibit 0${pIdx + 1}`}</span>
                       <span class="text-[10px] font-bold text-slate-400">Physical Evidence</span>
                     </div>
-                    <div class="relative rounded-lg overflow-hidden border border-slate-200 group cursor-pointer" onclick="window.openImageLightbox('${photo.image}', '${photo.title}')">
-                      <img src="${photo.image}" alt="${photo.title}" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="relative rounded-lg overflow-hidden border border-slate-200 group cursor-pointer bg-slate-900" onclick="window.openImageLightbox('${photo.image}', '${photo.title}')">
+                      <img src="${photo.image}" alt="${photo.title}" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='images/s3_m1_session5_investigation.jpg'">
                       <div class="absolute bottom-1.5 right-1.5 bg-black/75 text-white text-[9px] font-bold px-1.5 py-0.5 rounded flex items-center gap-1 backdrop-blur-xs">
                         <span>🔍 Enlarge</span>
                       </div>
