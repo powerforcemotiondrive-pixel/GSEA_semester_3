@@ -20,7 +20,11 @@
     "promo:update": "node scripts/update-promo.js && npm run package && npm run package:moodle",
     "verify:links": "node scripts/verify-links.js",
     "audit": "node scripts/audit-session.js",
-    "build:book": "node scripts/generate-module1-book.js"
+    "build:book": "node scripts/generate-module1-book.js",
+    "bug:check": "node scripts/bug-check.js",
+    "bug1": "node scripts/bug-check.js 1",
+    "bug2": "node scripts/bug-check.js 2",
+    "bug3": "node scripts/bug-check.js 3"
   },
   "repository": {
     "type": "git",
