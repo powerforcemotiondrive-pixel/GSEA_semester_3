@@ -5106,6 +5106,49 @@ function renderSessionBriefingBanner(sessionNum, theme) {
   if (!b) return "";
 
   return `
+          <!-- Important Note to Students: How to Use This Platform -->
+          <div class="bg-gradient-to-r from-slate-900 via-indigo-950 to-blue-950 rounded-xl p-4 sm:p-5 text-white shadow-xs space-y-3 border border-indigo-800/40">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="text-sm">💡</span>
+                <span class="text-[11px] font-black uppercase tracking-wider text-amber-300">Important Note to Students • How to Use This Platform</span>
+              </div>
+              <span class="text-[10px] font-semibold text-slate-300 bg-white/10 px-2 py-0.5 rounded-full border border-white/10">Student Guide</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 pt-1 text-xs">
+              <!-- Pillar 1: Digital Worksheet -->
+              <div class="bg-white/10 border border-white/10 rounded-lg p-3 space-y-1">
+                <div class="flex items-center gap-1.5 font-bold text-blue-300">
+                  <span>💻 1. Live Digital Worksheet</span>
+                </div>
+                <p class="text-[11.5px] text-slate-200 leading-relaxed">
+                  Use this screen in class with your partner. Discuss questions, tap <strong>Reveal Answer</strong> to check technical points, and your notes auto-save automatically.
+                </p>
+              </div>
+
+              <!-- Pillar 2: Printable PDF -->
+              <div class="bg-white/10 border border-white/10 rounded-lg p-3 space-y-1">
+                <div class="flex items-center gap-1.5 font-bold text-indigo-300">
+                  <span>📄 2. Printable 7-Page PDF</span>
+                </div>
+                <p class="text-[11.5px] text-slate-200 leading-relaxed">
+                  Prefer writing by hand without screens? Tap the blue <strong>Lesson Worksheet (PDF)</strong> button at the top right to download or print the full workbook.
+                </p>
+              </div>
+
+              <!-- Pillar 3: Self-Study Tabs -->
+              <div class="bg-white/10 border border-white/10 rounded-lg p-3 space-y-1">
+                <div class="flex items-center gap-1.5 font-bold text-amber-300">
+                  <span>📚 3. Deep-Dive Self-Study</span>
+                </div>
+                <p class="text-[11.5px] text-slate-200 leading-relaxed">
+                  After class, switch to the <strong>Vocabulary</strong> and <strong>Additional Materials</strong> tabs above for phrase flashcards, subtitled videos, and full-text articles.
+                </p>
+              </div>
+            </div>
+          </div>
+
           <!-- Session Briefing & Pedagogical Roadmap -->
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
             <!-- Left Card: What This Session Is About (Operational Context & Spoken Goals) -->
