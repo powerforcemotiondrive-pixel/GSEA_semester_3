@@ -1903,7 +1903,6 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
       const adminCalendarTab = document.getElementById('modal-tab-admin-calendar');
       const adminRotaTab = document.getElementById('modal-tab-admin-rota');
       const adminPresentationTab = document.getElementById('modal-tab-admin-presentation');
-      const adminStudentIntroTab = document.getElementById('modal-tab-admin-student-intro');
       const immersionOverviewTab = document.getElementById('modal-tab-immersion-overview');
       const immersionCitiesTab = document.getElementById('modal-tab-immersion-cities');
       const tabPlanObj = document.getElementById('modal-tab-plan-obj');
@@ -1924,7 +1923,6 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         if (adminCalendarTab) adminCalendarTab.classList.add('hidden');
         if (adminRotaTab) adminRotaTab.classList.add('hidden');
         if (adminPresentationTab) adminPresentationTab.classList.add('hidden');
-        if (adminStudentIntroTab) adminStudentIntroTab.classList.add('hidden');
         if (ddrsTabBtn) ddrsTabBtn.classList.add('hidden');
         if (feGuidelinesTab) feGuidelinesTab.classList.add('hidden');
         if (feObjectivesTab) feObjectivesTab.classList.add('hidden');
@@ -1947,7 +1945,6 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         if (adminCalendarTab) adminCalendarTab.classList.add('hidden');
         if (adminRotaTab) adminRotaTab.classList.add('hidden');
         if (adminPresentationTab) adminPresentationTab.classList.add('hidden');
-        if (adminStudentIntroTab) adminStudentIntroTab.classList.add('hidden');
         if (ddrsTabBtn) ddrsTabBtn.classList.add('hidden');
         if (feGuidelinesTab) feGuidelinesTab.classList.add('hidden');
         if (feObjectivesTab) feObjectivesTab.classList.add('hidden');
@@ -1973,7 +1970,6 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         if (adminCalendarTab) adminCalendarTab.classList.add('hidden');
         if (adminRotaTab) adminRotaTab.classList.add('hidden');
         if (adminPresentationTab) adminPresentationTab.classList.add('hidden');
-        if (adminStudentIntroTab) adminStudentIntroTab.classList.add('hidden');
         standardTabs.forEach(t => t.classList.add('hidden'));
 
         if (immersionOverviewTab) immersionOverviewTab.classList.remove('hidden');
@@ -1998,7 +1994,6 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         if (adminCalendarTab) adminCalendarTab.classList.remove('hidden');
         if (adminRotaTab) adminRotaTab.classList.remove('hidden');
         if (adminPresentationTab) adminPresentationTab.classList.remove('hidden');
-        if (adminStudentIntroTab) adminStudentIntroTab.classList.remove('hidden');
 
         tagEl.textContent = "GSEA 25A • Course Admin";
         titleEl.textContent = "Course Admin — Class Groups, Teachers, Weekly Calendar & FE Rotas";
@@ -2013,7 +2008,6 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         if (adminCalendarTab) adminCalendarTab.classList.add('hidden');
         if (adminRotaTab) adminRotaTab.classList.add('hidden');
         if (adminPresentationTab) adminPresentationTab.classList.add('hidden');
-        if (adminStudentIntroTab) adminStudentIntroTab.classList.add('hidden');
         if (ddrsTabBtn) ddrsTabBtn.classList.add('hidden');
         standardTabs.forEach(t => t.classList.add('hidden'));
         if (feGuidelinesTab) feGuidelinesTab.classList.remove('hidden');
@@ -2052,7 +2046,6 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         if (adminCalendarTab) adminCalendarTab.classList.add('hidden');
         if (adminRotaTab) adminRotaTab.classList.add('hidden');
         if (adminPresentationTab) adminPresentationTab.classList.add('hidden');
-        if (adminStudentIntroTab) adminStudentIntroTab.classList.add('hidden');
         if (ddrsTabBtn) ddrsTabBtn.classList.remove('hidden');
         standardTabs.forEach(t => t.classList.add('hidden'));
         if (feGuidelinesTab) feGuidelinesTab.classList.add('hidden');
@@ -2072,7 +2065,6 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         if (adminCalendarTab) adminCalendarTab.classList.add('hidden');
         if (adminRotaTab) adminRotaTab.classList.add('hidden');
         if (adminPresentationTab) adminPresentationTab.classList.add('hidden');
-        if (adminStudentIntroTab) adminStudentIntroTab.classList.add('hidden');
         if (ddrsTabBtn) ddrsTabBtn.classList.add('hidden');
         if (feGuidelinesTab) feGuidelinesTab.classList.add('hidden');
         if (feObjectivesTab) feObjectivesTab.classList.add('hidden');
@@ -2334,8 +2326,6 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         renderAdminRotaTab(theme);
       } else if (modalState.tab === 'admin_presentation') {
         renderAdminPresentationTab(theme);
-      } else if (modalState.tab === 'admin_student_intro') {
-        renderStudentIntroPresentationTab(theme);
       } else if (modalState.tab === 'fe_guidelines') {
         renderFeGuidelinesTab(modalState.modNum, theme);
       } else if (modalState.tab === 'fe_objectives') {
