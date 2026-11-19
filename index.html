@@ -771,6 +771,10 @@
             <button data-tab="admin_calendar" id="modal-tab-admin-calendar" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">Weekly Calendar</button>
             <button data-tab="admin_rota" id="modal-tab-admin-rota" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">FE Tutorial Rotas</button>
             <button data-tab="admin_presentation" id="modal-tab-admin-presentation" disabled aria-disabled="true" title="Project Presentation disabled in Semester 3" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/30 opacity-40 cursor-not-allowed select-none transition-all hidden">Project Presentation</button>
+            <button data-tab="admin_student_intro" id="modal-tab-admin-student-intro" class="modal-tab-btn flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">
+              <svg class="w-3.5 h-3.5 text-amber-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"/></svg>
+              <span>Semester 3 Introduction</span>
+            </button>
             <!-- Student Guide & Semester Objectives Tabs -->
             <button data-tab="student_guide" id="modal-tab-student-guide" class="modal-tab-btn flex items-center gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 whitespace-nowrap shrink-0 transition-all cursor-pointer hidden">📘 Student Guide</button>
             <button data-tab="sem_obj_en" id="modal-tab-sem-obj-en" class="modal-tab-btn flex items-center gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 whitespace-nowrap shrink-0 transition-all cursor-pointer hidden">
@@ -3283,6 +3287,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
       const adminCalendarTab = document.getElementById('modal-tab-admin-calendar');
       const adminRotaTab = document.getElementById('modal-tab-admin-rota');
       const adminPresentationTab = document.getElementById('modal-tab-admin-presentation');
+      const adminStudentIntroTab = document.getElementById('modal-tab-admin-student-intro');
       const immersionOverviewTab = document.getElementById('modal-tab-immersion-overview');
       const immersionCitiesTab = document.getElementById('modal-tab-immersion-cities');
       const tabPlanObj = document.getElementById('modal-tab-plan-obj');
@@ -3303,6 +3308,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         if (adminCalendarTab) adminCalendarTab.classList.add('hidden');
         if (adminRotaTab) adminRotaTab.classList.add('hidden');
         if (adminPresentationTab) adminPresentationTab.classList.add('hidden');
+        if (adminStudentIntroTab) adminStudentIntroTab.classList.add('hidden');
         if (ddrsTabBtn) ddrsTabBtn.classList.add('hidden');
         if (feGuidelinesTab) feGuidelinesTab.classList.add('hidden');
         if (feObjectivesTab) feObjectivesTab.classList.add('hidden');
@@ -3325,6 +3331,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         if (adminCalendarTab) adminCalendarTab.classList.add('hidden');
         if (adminRotaTab) adminRotaTab.classList.add('hidden');
         if (adminPresentationTab) adminPresentationTab.classList.add('hidden');
+        if (adminStudentIntroTab) adminStudentIntroTab.classList.add('hidden');
         if (ddrsTabBtn) ddrsTabBtn.classList.add('hidden');
         if (feGuidelinesTab) feGuidelinesTab.classList.add('hidden');
         if (feObjectivesTab) feObjectivesTab.classList.add('hidden');
@@ -3350,6 +3357,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         if (adminCalendarTab) adminCalendarTab.classList.add('hidden');
         if (adminRotaTab) adminRotaTab.classList.add('hidden');
         if (adminPresentationTab) adminPresentationTab.classList.add('hidden');
+        if (adminStudentIntroTab) adminStudentIntroTab.classList.add('hidden');
         standardTabs.forEach(t => t.classList.add('hidden'));
 
         if (immersionOverviewTab) immersionOverviewTab.classList.remove('hidden');
@@ -3374,6 +3382,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         if (adminCalendarTab) adminCalendarTab.classList.remove('hidden');
         if (adminRotaTab) adminRotaTab.classList.remove('hidden');
         if (adminPresentationTab) adminPresentationTab.classList.remove('hidden');
+        if (adminStudentIntroTab) adminStudentIntroTab.classList.remove('hidden');
 
         tagEl.textContent = "GSEA 25A • Course Admin";
         titleEl.textContent = "Course Admin — Class Groups, Teachers, Weekly Calendar & FE Rotas";
@@ -3388,6 +3397,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         if (adminCalendarTab) adminCalendarTab.classList.add('hidden');
         if (adminRotaTab) adminRotaTab.classList.add('hidden');
         if (adminPresentationTab) adminPresentationTab.classList.add('hidden');
+        if (adminStudentIntroTab) adminStudentIntroTab.classList.add('hidden');
         if (ddrsTabBtn) ddrsTabBtn.classList.add('hidden');
         standardTabs.forEach(t => t.classList.add('hidden'));
         if (feGuidelinesTab) feGuidelinesTab.classList.remove('hidden');
@@ -3426,6 +3436,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         if (adminCalendarTab) adminCalendarTab.classList.add('hidden');
         if (adminRotaTab) adminRotaTab.classList.add('hidden');
         if (adminPresentationTab) adminPresentationTab.classList.add('hidden');
+        if (adminStudentIntroTab) adminStudentIntroTab.classList.add('hidden');
         if (ddrsTabBtn) ddrsTabBtn.classList.remove('hidden');
         standardTabs.forEach(t => t.classList.add('hidden'));
         if (feGuidelinesTab) feGuidelinesTab.classList.add('hidden');
@@ -3445,6 +3456,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         if (adminCalendarTab) adminCalendarTab.classList.add('hidden');
         if (adminRotaTab) adminRotaTab.classList.add('hidden');
         if (adminPresentationTab) adminPresentationTab.classList.add('hidden');
+        if (adminStudentIntroTab) adminStudentIntroTab.classList.add('hidden');
         if (ddrsTabBtn) ddrsTabBtn.classList.add('hidden');
         if (feGuidelinesTab) feGuidelinesTab.classList.add('hidden');
         if (feObjectivesTab) feObjectivesTab.classList.add('hidden');
@@ -3706,6 +3718,8 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         renderAdminRotaTab(theme);
       } else if (modalState.tab === 'admin_presentation') {
         renderAdminPresentationTab(theme);
+      } else if (modalState.tab === 'admin_student_intro') {
+        renderStudentIntroPresentationTab(theme);
       } else if (modalState.tab === 'fe_guidelines') {
         renderFeGuidelinesTab(modalState.modNum, theme);
       } else if (modalState.tab === 'fe_objectives') {
@@ -16704,6 +16718,585 @@ function renderLessonContentTabSession3(sessionData, theme) {
           </div>
         </div>
       `;
+    }
+
+    
+    // =========================================================================
+    // SEMESTER 3 STUDENT ORIENTATION PRESENTATION (LIGHT, PROFESSIONAL & SLEEK)
+    // =========================================================================
+    function renderStudentIntroPresentationTab(theme) {
+      const bodyEl = document.getElementById("modal-body");
+      if (!bodyEl) return;
+
+      bodyEl.innerHTML = `
+        <div id="s3-intro-deck-container" class="space-y-4 max-w-5xl mx-auto select-text">
+          <style>
+            #s3-intro-deck-container:fullscreen,
+            #s3-intro-standalone-container:fullscreen {
+              width: 100vw !important;
+              height: 100vh !important;
+              max-width: 100vw !important;
+              margin: 0 !important;
+              padding: 1rem 1.5rem !important;
+              background: #090d16 !important;
+              display: flex !important;
+              flex-direction: column !important;
+              justify-content: space-between !important;
+              box-sizing: border-box !important;
+              overflow: hidden !important;
+            }
+            @media (min-width: 640px) {
+              #s3-intro-deck-container:fullscreen,
+              #s3-intro-standalone-container:fullscreen {
+                padding: 1.25rem 2.5rem !important;
+              }
+            }
+            #s3-intro-deck-container:fullscreen .s3-intro-header,
+            #s3-intro-standalone-container:fullscreen .s3-intro-header {
+              flex-shrink: 0 !important;
+              margin-bottom: 0.75rem !important;
+            }
+            #s3-intro-deck-container:fullscreen .s3-intro-canvas,
+            #s3-intro-standalone-container:fullscreen .s3-intro-canvas {
+              flex: 1 1 auto !important;
+              min-height: 0 !important;
+              height: calc(100vh - 140px) !important;
+              max-height: calc(100vh - 140px) !important;
+              padding: 2rem 3rem !important;
+              display: flex !important;
+              flex-direction: column !important;
+              justify-content: space-between !important;
+              overflow-y: auto !important;
+              border-radius: 1rem !important;
+            }
+            #s3-intro-deck-container:fullscreen .s3-intro-slide:not(.hidden),
+            #s3-intro-standalone-container:fullscreen .s3-intro-slide:not(.hidden) {
+              flex: 1 1 auto !important;
+              display: flex !important;
+              flex-direction: column !important;
+              justify-content: space-evenly !important;
+            }
+            #s3-intro-deck-container:fullscreen .s3-intro-nav,
+            #s3-intro-standalone-container:fullscreen .s3-intro-nav {
+              flex-shrink: 0 !important;
+              padding-top: 0.75rem !important;
+            }
+          </style>
+          <!-- Top Sleek Header Ribbon with ENAC Logo, Slide Counter & Fullscreen Toggle -->
+          <div class="s3-intro-header bg-slate-900 text-white px-4 sm:px-5 py-3 rounded-xl border border-slate-800 flex flex-wrap items-center justify-between gap-3 shadow-sm">
+            <div class="flex items-center gap-3">
+              <a href="https://www.enac.fr" target="_blank" rel="noopener noreferrer" title="Official ENAC Portal" class="flex items-center shrink-0">
+                <img src="images/enac_logo_white.png" alt="ENAC" class="h-6 w-auto object-contain opacity-95 hover:opacity-100 transition-opacity">
+              </a>
+              <span class="w-px h-5 bg-slate-700 hidden sm:block"></span>
+              <div>
+                <h4 class="text-xs sm:text-sm font-black tracking-tight text-white flex items-center gap-2">
+                  <span>Semester 3 Technical English</span>
+                  <span class="text-[10px] font-mono font-bold text-amber-300 bg-amber-500/20 px-1.5 py-0.5 rounded border border-amber-400/30">LV125E</span>
+                </h4>
+                <p class="text-[10px] sm:text-[11px] text-slate-400">Student Course Introduction &bull; Both Modules &bull; Phil PARRIS (LH/LAN)</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <span class="text-[11px] font-mono font-bold text-slate-300 bg-slate-800 px-2.5 py-1 rounded-md border border-slate-700">
+                Slide <span class="s3-intro-slide-num text-amber-300 font-black">1</span> of 7
+              </span>
+              <button type="button" onclick="window.toggleS3IntroFullscreen()" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-bold text-white bg-slate-800 hover:bg-slate-700 border border-slate-600 transition-all cursor-pointer shadow-2xs">
+                <svg class="w-3.5 h-3.5 text-amber-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+                <span class="s3-intro-fs-label">Fullscreen</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Main Slide Canvas (Light, Professional & Sleek Design) -->
+          <div class="s3-intro-canvas bg-white border border-slate-200/90 rounded-2xl shadow-xs p-5 sm:p-8 min-h-[440px] sm:min-h-[480px] flex flex-col justify-between transition-all">
+            <!-- Slide 1: Welcome & Course Philosophy -->
+            <div class="s3-intro-slide space-y-5" data-slide="1">
+              <div class="space-y-1.5">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase tracking-wider bg-orange-50 text-orange-700 border border-orange-200">
+                  <span class="w-1.5 h-1.5 rounded-full bg-orange-600"></span>
+                  Welcome &bull; TSEEAC Formation
+                </span>
+                <h3 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                  Welcome to Semester 3 Technical English
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-3xl">
+                  Practical spoken fluency, aerodrome ground safety, and systematic preparation for the French Civil Aviation MTF ICAO Level Test.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-2">
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5">
+                  <div class="w-8 h-8 rounded-lg bg-orange-100 text-orange-700 flex items-center justify-center font-bold text-sm">🗣️</div>
+                  <h4 class="text-xs sm:text-sm font-bold text-slate-900">100% Spoken Focus</h4>
+                  <p class="text-[11px] text-slate-600 leading-relaxed">No passive theoretical grammar lectures. Every class builds practical fluency through paired simulations, safety briefings, and barrier games.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5">
+                  <div class="w-8 h-8 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-sm">🛫</div>
+                  <h4 class="text-xs sm:text-sm font-bold text-slate-900">Two Specialized Modules</h4>
+                  <p class="text-[11px] text-slate-600 leading-relaxed">Module 1 explores Aerodrome Operations &amp; EASA Safety (Weeks 1–7); Module 2 provides targeted preparation for the MTF ICAO Test (Weeks 8–15).</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5">
+                  <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-sm">🎯</div>
+                  <h4 class="text-xs sm:text-sm font-bold text-slate-900">Continuous Assessment</h4>
+                  <p class="text-[11px] text-slate-600 leading-relaxed">Active participation in class, weekly digital portfolio reflection logs, Session 7 flipped teaching, and 1-on-1 MTF oral trials.</p>
+                </div>
+              </div>
+
+              <div class="p-3.5 rounded-xl bg-gradient-to-r from-slate-50 to-orange-50/50 border border-orange-100 flex items-center gap-3 text-xs text-slate-700">
+                <span class="text-base shrink-0">💡</span>
+                <span><strong>Core Mission:</strong> To ensure you speak with natural operational confidence, accurate technical vocabulary, and professional poise in international aeronautical contexts.</span>
+              </div>
+            </div>
+
+            <!-- Slide 2: Course Architecture (Both Modules) -->
+            <div class="s3-intro-slide space-y-5 hidden" data-slide="2">
+              <div class="space-y-1.5">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase tracking-wider bg-sky-50 text-sky-700 border border-sky-200">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-600"></span>
+                  Curriculum Architecture &bull; 15 Weeks
+                </span>
+                <h3 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                  Course Architecture: The Two Core Modules
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-3xl">
+                  Semester 3 is structured into two complementary phases designed to build operational knowledge and examination mastery.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
+                <!-- Module 1 Card -->
+                <div class="p-5 rounded-xl bg-gradient-to-b from-white to-slate-50/70 border border-slate-200 shadow-2xs space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="text-xs font-mono font-bold px-2 py-0.5 rounded bg-sky-100 text-sky-800 border border-sky-200">Weeks 1 to 7</span>
+                    <span class="text-xs font-bold text-slate-500">Module 1</span>
+                  </div>
+                  <h4 class="text-base font-bold text-slate-900">Aerodrome Operations &amp; Regulatory Compliance</h4>
+                  <ul class="text-xs text-slate-600 space-y-1.5 leading-relaxed">
+                    <li>&bull; <strong>EASA Certification:</strong> Part-ADR.OR &amp; CS-ADR-DSN modal precision (<code class="text-orange-700">shall</code> vs <code class="text-orange-700">should</code>).</li>
+                    <li>&bull; <strong>Airfield Safety:</strong> Foreign object debris (FOD), jet blast hazards, and ramp safety alerts.</li>
+                    <li>&bull; <strong>Statutory Oversight:</strong> Runway exemption safety cases, ground audits, and incident investigations.</li>
+                    <li>&bull; <strong>Corrective Action Plans:</strong> Operator vs. authority inspector negotiations.</li>
+                    <li>&bull; <strong class="text-slate-900">Capstone (Session 7):</strong> Formative Evaluation 1 &mdash; 30-min peer-teaching lesson in student pods.</li>
+                  </ul>
+                </div>
+
+                <!-- Module 2 Card -->
+                <div class="p-5 rounded-xl bg-gradient-to-b from-white to-slate-50/70 border border-slate-200 shadow-2xs space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="text-xs font-mono font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 border border-emerald-200">Weeks 8 to 15</span>
+                    <span class="text-xs font-bold text-slate-500">Module 2</span>
+                  </div>
+                  <h4 class="text-base font-bold text-slate-900">MTF ICAO Level Test Preparation</h4>
+                  <ul class="text-xs text-slate-600 space-y-1.5 leading-relaxed">
+                    <li>&bull; <strong>Picture Exercise:</strong> 4-step oral structure (Overview &rarr; Key Elements &rarr; Causes &rarr; Consequences).</li>
+                    <li>&bull; <strong>Listening Section:</strong> Decoding authentic ATC radio communications and emergency transmissions.</li>
+                    <li>&bull; <strong>Text Exercise:</strong> Rapid analysis of aviation reports and concise spoken synthesis.</li>
+                    <li>&bull; <strong>6 ICAO Rating Scales:</strong> Pronunciation, Structure, Vocabulary, Fluency, Comprehension, Interaction.</li>
+                    <li>&bull; <strong class="text-slate-900">Capstone (Weeks 12&ndash;13):</strong> Formative Evaluation 2 &mdash; Individual 30-min 1-on-1 mock trials.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3: Module 1 Deep Dive -->
+            <div class="s3-intro-slide space-y-5 hidden" data-slide="3">
+              <div class="space-y-1.5">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase tracking-wider bg-orange-50 text-orange-700 border border-orange-200">
+                  <span class="w-1.5 h-1.5 rounded-full bg-orange-600"></span>
+                  Module 1 Deep Dive &bull; Aerodrome Safety
+                </span>
+                <h3 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                  Module 1: Practical Aerodrome Problem-Solving
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-3xl">
+                  Transforming European aerodrome regulations (EASA Part-ADR) into active technical discussions and negotiation scenarios.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-1">
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2">
+                  <span class="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-white border border-slate-300 text-slate-700">Sessions 1&ndash;3</span>
+                  <h4 class="text-xs sm:text-sm font-bold text-slate-900">Rules &amp; Runway Safety Cases</h4>
+                  <p class="text-[11px] text-slate-600 leading-relaxed">Master modal precision (<code class="text-orange-700">shall</code> vs <code class="text-orange-700">should</code>), deliver 90-second safety briefings using the Executive 3-Bullet Rule, and negotiate runway construction derogations with conditional linkers (<code class="text-orange-700">provided that</code>, <code class="text-orange-700">in lieu of</code>).</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2">
+                  <span class="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-white border border-slate-300 text-slate-700">Sessions 4&ndash;6</span>
+                  <h4 class="text-xs sm:text-sm font-bold text-slate-900">Audits, Investigations &amp; CAP</h4>
+                  <p class="text-[11px] text-slate-600 leading-relaxed">Perform airside audit inspections with past modal deductions (<code class="text-orange-700">must have</code>, <code class="text-orange-700">could have</code>), analyze multi-source incident dossiers using the Swiss cheese model, and negotiate binding Corrective Action Plans with state inspectors.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-orange-50/70 border border-orange-200 space-y-2">
+                  <span class="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-orange-600 text-white shadow-2xs">Session 7 (FE1)</span>
+                  <h4 class="text-xs sm:text-sm font-bold text-orange-950">Flipped Classroom Workshop</h4>
+                  <p class="text-[11px] text-orange-900/80 leading-relaxed">In teams of 3 to 4, you take the floor as technical instructors! Deliver an engaging 30-minute lesson teaching an official EASA clause, introduce technical vocabulary, and lead classmate exercises.</p>
+                </div>
+              </div>
+
+              <div class="p-3 rounded-lg bg-slate-100 border border-slate-200 text-[11px] text-slate-600 flex items-center justify-between">
+                <span><strong>Assessment Milestone:</strong> Session 7 Formative Evaluation (FE1) is evaluated out of 20 against 4 transparent criteria.</span>
+                <span class="font-mono text-[10px] font-bold px-2 py-0.5 rounded bg-white border text-slate-700">FE1 Weighting: 25%</span>
+              </div>
+            </div>
+
+            <!-- Slide 4: Module 2 Deep Dive -->
+            <div class="s3-intro-slide space-y-5 hidden" data-slide="4">
+              <div class="space-y-1.5">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase tracking-wider bg-emerald-50 text-emerald-700 border border-emerald-200">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+                  Module 2 Deep Dive &bull; MTF ICAO Test
+                </span>
+                <h3 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                  Module 2: The MTF ICAO Level Test Preparation
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-3xl">
+                  Intensive, systematic preparation for the official French Civil Aviation language test across all three oral exercise types.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-1">
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2">
+                  <div class="flex items-center gap-2">
+                    <span class="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xs">1</span>
+                    <h4 class="text-xs sm:text-sm font-bold text-slate-900">Picture Description</h4>
+                  </div>
+                  <p class="text-[11px] text-slate-600 leading-relaxed">Master the 4-step structure: 1. Overview &bull; 2. Technical details &bull; 3. Probable root causes &bull; 4. Operational consequences. Practice describing runway incursions, wildlife strikes, and technical airside emergencies.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2">
+                  <div class="flex items-center gap-2">
+                    <span class="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xs">2</span>
+                    <h4 class="text-xs sm:text-sm font-bold text-slate-900">Audio Comprehension</h4>
+                  </div>
+                  <p class="text-[11px] text-slate-600 leading-relaxed">Decode authentic ATC radio communications, ground frequency clearances, and pilot distress calls (<code class="text-emerald-700">MAYDAY</code> / <code class="text-emerald-700">PAN PAN</code>). Identify readback errors and non-routine phraseology.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2">
+                  <div class="flex items-center gap-2">
+                    <span class="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xs">3</span>
+                    <h4 class="text-xs sm:text-sm font-bold text-slate-900">Text Synthesis</h4>
+                  </div>
+                  <p class="text-[11px] text-slate-600 leading-relaxed">Rapidly read official aviation occurrence reports and deliver a concise 2-minute oral summary to the examiner without reading from notes, highlighting chronology, root causes, and recommendations.</p>
+                </div>
+              </div>
+
+              <div class="p-3.5 rounded-xl bg-emerald-50/70 border border-emerald-200 flex items-center justify-between text-xs text-emerald-950">
+                <div class="space-y-0.5">
+                  <strong>Individual Oral Trials (Weeks 12 &amp; 13):</strong>
+                  <p class="text-[11px] text-emerald-900/80">Every student attends an individual 30-minute simulation with their assigned teacher, receiving immediate spoken feedback against the 6 ICAO rating scales.</p>
+                </div>
+                <span class="font-mono text-[10px] font-bold px-2 py-1 rounded bg-white border border-emerald-300 text-emerald-800 shrink-0">FE2 &bull; 25%</span>
+              </div>
+            </div>
+
+            <!-- Slide 5: How We Learn -->
+            <div class="s3-intro-slide space-y-5 hidden" data-slide="5">
+              <div class="space-y-1.5">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase tracking-wider bg-purple-50 text-purple-700 border border-purple-200">
+                  <span class="w-1.5 h-1.5 rounded-full bg-purple-600"></span>
+                  Classroom Reality &bull; Methodology
+                </span>
+                <h3 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                  How We Learn: Spoken Confidence Over Theory
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-3xl">
+                  Our classroom philosophy is communicative, collaborative, and grounded in professional aviation reality.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5">
+                  <div class="flex items-center gap-2">
+                    <span class="w-7 h-7 rounded-lg bg-orange-100 text-orange-700 flex items-center justify-center font-bold text-xs">70%</span>
+                    <h4 class="text-xs sm:text-sm font-bold text-slate-900">The 70/30 Communicative Rule</h4>
+                  </div>
+                  <p class="text-[11px] text-slate-600 leading-relaxed">At least 70% of every lesson is dedicated to student speaking time. You will work actively in pairs, trios, and small teams while the teacher coaches and guides.</p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5">
+                  <div class="flex items-center gap-2">
+                    <span class="w-7 h-7 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-xs">🚫</span>
+                    <h4 class="text-xs sm:text-sm font-bold text-slate-900">Zero Passive Lecturing</h4>
+                  </div>
+                  <p class="text-[11px] text-slate-600 leading-relaxed">You will not sit quietly listening to monologues. Every session involves roleplay negotiations, emergency briefings, spot-the-bug barrier games, or technical debates.</p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5">
+                  <div class="flex items-center gap-2">
+                    <span class="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xs">📑</span>
+                    <h4 class="text-xs sm:text-sm font-bold text-slate-900">Authentic Aviation Scenarios</h4>
+                  </div>
+                  <p class="text-[11px] text-slate-600 leading-relaxed">All materials come from genuine aerospace documents: official EASA specifications, BEA accident investigation reports, airport NOTAMs, and safety bulletins.</p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5">
+                  <div class="flex items-center gap-2">
+                    <span class="w-7 h-7 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center font-bold text-xs">⏱️</span>
+                    <h4 class="text-xs sm:text-sm font-bold text-slate-900">Teacher Pacing Autonomy</h4>
+                  </div>
+                  <p class="text-[11px] text-slate-600 leading-relaxed">Teachers adjust pacing and omit activities as needed to match classroom flow. Speaking fluency, discussion depth, and communicative flow always come first.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 6: Assessment & Portfolio -->
+            <div class="s3-intro-slide space-y-5 hidden" data-slide="6">
+              <div class="space-y-1.5">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase tracking-wider bg-blue-50 text-blue-700 border border-blue-200">
+                  <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                  Assessment &bull; Continuous Progress
+                </span>
+                <h3 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                  Assessment Framework &amp; Your Learning Portfolio
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-3xl">
+                  A transparent evaluation system designed to reward active participation, teamwork, and personal speaking development.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
+                <!-- Evaluation Weighting -->
+                <div class="p-5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-3">
+                  <h4 class="text-xs sm:text-sm font-bold text-slate-900 flex items-center justify-between">
+                    <span>Grade Architecture</span>
+                    <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white border text-slate-700">Official /20</span>
+                  </h4>
+                  <div class="space-y-2 text-xs">
+                    <div class="p-2.5 rounded-lg bg-white border border-slate-200 flex items-center justify-between">
+                      <div>
+                        <strong class="text-slate-900 block">Contrôle Continu (Continuous Assessment)</strong>
+                        <span class="text-[11px] text-slate-500">Weekly active speaking, paired tasks, and portfolio logs</span>
+                      </div>
+                      <span class="font-mono font-bold text-slate-800 bg-slate-100 px-2 py-1 rounded">50%</span>
+                    </div>
+                    <div class="p-2.5 rounded-lg bg-white border border-slate-200 flex items-center justify-between">
+                      <div>
+                        <strong class="text-slate-900 block">Formative Evaluation 1 (FE1)</strong>
+                        <span class="text-[11px] text-slate-500">Session 7 peer-teaching lesson in teams of 3&ndash;4</span>
+                      </div>
+                      <span class="font-mono font-bold text-orange-700 bg-orange-50 px-2 py-1 rounded border border-orange-200">25%</span>
+                    </div>
+                    <div class="p-2.5 rounded-lg bg-white border border-slate-200 flex items-center justify-between">
+                      <div>
+                        <strong class="text-slate-900 block">Formative Evaluation 2 (FE2)</strong>
+                        <span class="text-[11px] text-slate-500">Module 2 individual 30-min MTF oral trial</span>
+                      </div>
+                      <span class="font-mono font-bold text-emerald-700 bg-emerald-50 px-2 py-1 rounded border border-emerald-200">25%</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Digital Portfolio -->
+                <div class="p-5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-3">
+                  <h4 class="text-xs sm:text-sm font-bold text-slate-900 flex items-center justify-between">
+                    <span>Your Digital Learning Portfolio</span>
+                    <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-100 text-amber-800 border border-amber-200">Weekly Habit</span>
+                  </h4>
+                  <p class="text-xs text-slate-600 leading-relaxed">
+                    Embedded directly inside your learning deck via the <strong>Learning Portfolio</strong> card! After each class, take 5 minutes to:
+                  </p>
+                  <ul class="text-xs text-slate-600 space-y-1.5 leading-relaxed">
+                    <li>&bull; Record <strong>3 to 5 new technical vocabulary terms</strong> in operational context.</li>
+                    <li>&bull; Note one <strong>grammar trap or pronunciation pitfall</strong> you overcame.</li>
+                    <li>&bull; Reflect honestly on your <strong>speaking fluency and confidence</strong>.</li>
+                  </ul>
+                  <div class="p-2.5 rounded-lg bg-amber-50/70 border border-amber-200 text-[11px] text-amber-900">
+                    Your teachers read your weekly portfolio entries to provide personalized coaching and track your semester progress.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 7: 4 Keys to Success -->
+            <div class="s3-intro-slide space-y-5 hidden" data-slide="7">
+              <div class="space-y-1.5">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase tracking-wider bg-emerald-50 text-emerald-700 border border-emerald-200">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+                  Action Plan &bull; Student Advice
+                </span>
+                <h3 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                  Your 4 Keys to Success in Semester 3
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-3xl">
+                  Practical guidelines to help you maximize your spoken confidence, enjoy your classes, and excel in your evaluations.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-1">
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5">
+                  <div class="flex items-center gap-2">
+                    <span class="w-6 h-6 rounded-md bg-orange-100 text-orange-700 flex items-center justify-center font-bold text-xs">1</span>
+                    <h4 class="text-xs sm:text-sm font-bold text-slate-900">Speak Up Without Fear</h4>
+                  </div>
+                  <p class="text-[11px] text-slate-600 leading-relaxed">Fluency, clarity, and communicative intent matter far more than theoretical perfection. Mistakes are natural and valuable learning opportunities&mdash;speak up proudly!</p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5">
+                  <div class="flex items-center gap-2">
+                    <span class="w-6 h-6 rounded-md bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-xs">2</span>
+                    <h4 class="text-xs sm:text-sm font-bold text-slate-900">Use Spoken Sentence Stems</h4>
+                  </div>
+                  <p class="text-[11px] text-slate-600 leading-relaxed">Every session provides formulaic Language Clinic phrases (<code class="text-sky-700">we formally undertake to</code>, <code class="text-sky-700">provided that</code>, <code class="text-sky-700">in the interim</code>). Use them actively in your speaking tasks.</p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5">
+                  <div class="flex items-center gap-2">
+                    <span class="w-6 h-6 rounded-md bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xs">3</span>
+                    <h4 class="text-xs sm:text-sm font-bold text-slate-900">Collaborate Early for Session 7</h4>
+                  </div>
+                  <p class="text-[11px] text-slate-600 leading-relaxed">Coordinate with your pod teammates during the Session 6 studio. Distribute roles clearly (lead presenter, technical explainer, activity leader) to deliver a polished lesson.</p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5">
+                  <div class="flex items-center gap-2">
+                    <span class="w-6 h-6 rounded-md bg-purple-100 text-purple-700 flex items-center justify-center font-bold text-xs">4</span>
+                    <h4 class="text-xs sm:text-sm font-bold text-slate-900">Reach Out for Support</h4>
+                  </div>
+                  <p class="text-[11px] text-slate-600 leading-relaxed">Your teaching team is here to support you at every step. If you ever feel stuck or want extra pronunciation coaching, speak to your teacher or contact: <a href="mailto:philip.parris@enac.fr" class="underline font-bold text-slate-900 hover:text-orange-600">philip.parris@enac.fr</a>.</p>
+                </div>
+              </div>
+
+              <!-- Footer attribution banner -->
+              <div class="p-3 rounded-xl bg-slate-900 text-slate-300 border border-slate-800 flex flex-wrap items-center justify-between gap-2 text-[11px]">
+                <div class="flex items-center gap-2">
+                  <img src="images/enac_logo_white.png" alt="ENAC" class="h-4 w-auto object-contain">
+                  <span>&bull; &Eacute;cole Nationale de l\x27Aviation Civile &bull; D&eacute;partement LH / LAN</span>
+                </div>
+                <span class="font-bold text-orange-400">Have a fantastic and successful Semester 3!</span>
+              </div>
+            </div>
+
+            <!-- Bottom Navigation Bar & Dot Indicators -->
+            <div class="s3-intro-nav pt-6 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3 select-none">
+              <button type="button" id="s3-intro-prev-btn" onclick="window.changeS3IntroSlide(-1)" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-200 transition-all cursor-pointer opacity-40 pointer-events-none">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+                <span>Previous</span>
+              </button>
+
+              <div class="flex items-center gap-1.5">
+                <button type="button" onclick="window.goToS3IntroSlide(1)" class="s3-intro-dot w-2.5 h-2.5 rounded-full bg-orange-600 transition-all cursor-pointer" title="Slide 1: Welcome"></button>
+                <button type="button" onclick="window.goToS3IntroSlide(2)" class="s3-intro-dot w-2.5 h-2.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all cursor-pointer" title="Slide 2: Course Architecture"></button>
+                <button type="button" onclick="window.goToS3IntroSlide(3)" class="s3-intro-dot w-2.5 h-2.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all cursor-pointer" title="Slide 3: Module 1 Deep Dive"></button>
+                <button type="button" onclick="window.goToS3IntroSlide(4)" class="s3-intro-dot w-2.5 h-2.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all cursor-pointer" title="Slide 4: Module 2 Deep Dive"></button>
+                <button type="button" onclick="window.goToS3IntroSlide(5)" class="s3-intro-dot w-2.5 h-2.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all cursor-pointer" title="Slide 5: How We Learn"></button>
+                <button type="button" onclick="window.goToS3IntroSlide(6)" class="s3-intro-dot w-2.5 h-2.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all cursor-pointer" title="Slide 6: Assessment &amp; Portfolio"></button>
+                <button type="button" onclick="window.goToS3IntroSlide(7)" class="s3-intro-dot w-2.5 h-2.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all cursor-pointer" title="Slide 7: 4 Keys to Success"></button>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <span class="text-[10px] text-slate-400 hidden sm:inline">&larr; &rarr; keys</span>
+                <button type="button" id="s3-intro-next-btn" onclick="window.changeS3IntroSlide(1)" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold text-white bg-orange-600 hover:bg-orange-700 shadow-2xs transition-all cursor-pointer">
+                  <span>Next</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+
+      // Set initial slide state
+      window.currentS3IntroSlide = 1;
+      window.updateS3IntroSlideDisplay();
+    }
+
+    // Slide navigation state controllers
+    window.currentS3IntroSlide = 1;
+    window.changeS3IntroSlide = function(delta) {
+      window.goToS3IntroSlide((window.currentS3IntroSlide || 1) + delta);
+    };
+
+    window.goToS3IntroSlide = function(target) {
+      if (target < 1) target = 1;
+      if (target > 7) target = 7;
+      window.currentS3IntroSlide = target;
+      window.updateS3IntroSlideDisplay();
+    };
+
+    window.updateS3IntroSlideDisplay = function() {
+      const current = window.currentS3IntroSlide || 1;
+      // Update slide elements
+      const slides = document.querySelectorAll(".s3-intro-slide");
+      slides.forEach(s => {
+        const slideNum = parseInt(s.getAttribute("data-slide"), 10);
+        if (slideNum === current) {
+          s.classList.remove("hidden");
+        } else {
+          s.classList.add("hidden");
+        }
+      });
+
+      // Update slide number labels
+      document.querySelectorAll(".s3-intro-slide-num").forEach(el => {
+        el.textContent = current;
+      });
+
+      // Update dot indicators
+      const dots = document.querySelectorAll(".s3-intro-dot");
+      dots.forEach((dot, idx) => {
+        if (idx + 1 === current) {
+          dot.className = "s3-intro-dot w-3 h-3 rounded-full bg-orange-600 ring-2 ring-orange-200 transition-all cursor-pointer";
+        } else {
+          dot.className = "s3-intro-dot w-2.5 h-2.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all cursor-pointer";
+        }
+      });
+
+      // Update Prev / Next buttons
+      const prevBtns = document.querySelectorAll("#s3-intro-prev-btn, .s3-intro-prev-btn");
+      prevBtns.forEach(btn => {
+        if (current === 1) {
+          btn.classList.add("opacity-40", "pointer-events-none");
+        } else {
+          btn.classList.remove("opacity-40", "pointer-events-none");
+        }
+      });
+
+      const nextBtns = document.querySelectorAll("#s3-intro-next-btn, .s3-intro-next-btn");
+      nextBtns.forEach(btn => {
+        if (current === 7) {
+          btn.classList.add("opacity-40", "pointer-events-none");
+        } else {
+          btn.classList.remove("opacity-40", "pointer-events-none");
+        }
+      });
+    };
+
+    window.toggleS3IntroFullscreen = function() {
+      const container = document.getElementById("s3-intro-deck-container") || document.getElementById("s3-intro-standalone-container");
+      if (!container) return;
+      if (!document.fullscreenElement) {
+        if (container.requestFullscreen) {
+          container.requestFullscreen().catch(err => console.warn("Fullscreen request error:", err));
+        } else if (container.webkitRequestFullscreen) {
+          container.webkitRequestFullscreen();
+        }
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        }
+      }
+    };
+
+    // Listen to fullscreen changes to update label
+    if (!window.__s3IntroFsListenerBound) {
+      window.__s3IntroFsListenerBound = true;
+      document.addEventListener("fullscreenchange", function() {
+        const isFs = Boolean(document.fullscreenElement);
+        document.querySelectorAll(".s3-intro-fs-label").forEach(el => {
+          el.textContent = isFs ? "Exit" : "Fullscreen";
+        });
+      });
+    }
+
+    // Global keyboard listener for slide navigation
+    if (!window.__s3IntroKeyboardBound) {
+      window.__s3IntroKeyboardBound = true;
+      document.addEventListener("keydown", function(e) {
+        const deck = document.getElementById("s3-intro-deck-container") || document.getElementById("s3-intro-standalone-container");
+        if (!deck || deck.offsetParent === null) return;
+        if (e.key === "ArrowRight" || e.key === "PageDown") {
+          window.changeS3IntroSlide(1);
+        } else if (e.key === "ArrowLeft" || e.key === "PageUp") {
+          window.changeS3IntroSlide(-1);
+        }
+      });
     }
 
     function renderAdminPresentationTab(theme) {
