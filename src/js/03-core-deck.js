@@ -2275,7 +2275,6 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
     };
 
     function switchModalTab(tabKey) {
-      if (tabKey === 'admin_presentation') return;
       modalState.tab = tabKey;
       const tabBtns = document.querySelectorAll('.modal-tab-btn');
       tabBtns.forEach(btn => {
