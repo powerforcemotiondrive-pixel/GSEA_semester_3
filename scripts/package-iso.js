@@ -94,8 +94,8 @@ const keys = Object.keys(studentMap).filter(k => !k.startsWith('_'));
 if (keys.length > 0) {
   console.log('🔄 Injecting real student names into offline ISO package...');
 
-  // Inject into index.html and admin.html
-  for (const file of ['index.html', 'admin.html']) {
+  // Inject into index.html, admin.html, and presentation.html
+  for (const file of ['index.html', 'admin.html', 'presentation.html']) {
     const stagedFile = path.join(stagingDir, file);
     if (fs.existsSync(stagedFile)) {
       let content = fs.readFileSync(stagedFile, 'utf8');
