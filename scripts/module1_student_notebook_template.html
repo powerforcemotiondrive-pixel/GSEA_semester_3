@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GSEA Semester 3 Module 1 Student Course Notebook - Technical English (AT)</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 10mm 12mm 12mm 12mm;
+      @bottom-right {
+        content: "Page " counter(page) " of 10";
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        font-size: 8pt;
+        color: #64748b;
+        font-weight: 700;
+      }
+      @bottom-left {
+        content: "ENAC • GSEA Semester 3 Technical English (AT • LV125E) • Phil PARRIS";
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        font-size: 7.5pt;
+        color: #94a3b8;
+      }
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 8.5pt;
+      line-height: 1.35;
+      color: #0f172a;
+      background: #ffffff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      page-break-after: always;
+      position: relative;
+      height: 270mm;
+      max-height: 270mm;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+    }
+
+    /* Clean ink-saving utility classes */
+    .header-rule {
+      border-bottom: 1.5pt solid #0f172a;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+
+    .meta-tag {
+      font-size: 7.5pt;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #475569;
+    }
+
+    .box {
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      padding: 8px 10px;
+      background: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .box-title {
+      font-size: 8pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #1e293b;
+      margin-bottom: 4px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 2px;
+    }
+
+    /* Ruled writing lines (22px spacing) */
+    .ruled-lines {
+      background-image: repeating-linear-gradient(
+        transparent,
+        transparent 21px,
+        #cbd5e1 21px,
+        #cbd5e1 22px
+      );
+      line-height: 22px;
+    }
+
+    /* Dot grid for diagrams (5mm spacing) */
+    .dot-grid {
+      background-image: radial-gradient(#94a3b8 1px, transparent 1px);
+      background-size: 5mm 5mm;
+      border: 1px dashed #cbd5e1;
+      border-radius: 4px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 8pt;
+    }
+
+    th, td {
+      border: 1px solid #cbd5e1;
+      padding: 5px 6px;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    th {
+      background: #f8fafc;
+      font-weight: 700;
+      color: #1e293b;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ======================================================================= -->
+  <!-- PAGE 1: COVER & MODULE 1 ROADMAP -->
+  <!-- ======================================================================= -->
+  <div class="page">
+    <div>
+      <div class="header-rule" style="display: flex; justify-content: space-between; align-items: flex-end;">
+        <div>
+          <span class="meta-tag">ÉCOLE NATIONALE DE L'AVIATION CIVILE • GSEA SEMESTER 3</span>
+          <h1 style="font-size: 16pt; font-weight: 800; color: #0f172a; margin-top: 2px;">
+            Technical English Student Notebook
+          </h1>
+          <div style="font-size: 9.5pt; font-weight: 600; color: #334155;">
+            Module 1: EASA Docs, Safety &amp; Audits (Sessions 1 – 7)
+          </div>
+        </div>
+        <div style="text-align: right;">
+          <span class="meta-tag" style="border: 1px solid #0f172a; padding: 2px 6px; border-radius: 3px;">LV125E • AT</span>
+        </div>
+      </div>
+
+      <!-- Student Credentials Fill-in Box -->
+      <div class="box" style="margin-bottom: 12px; border: 1.5pt solid #0f172a;">
+        <div class="box-title" style="border-bottom: 1px solid #0f172a;">
+          <span>Student Identification &amp; Group Allocation</span>
+          <span class="meta-tag">Academic Year 2026–2027</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 6px; font-size: 9pt;">
+          <div>
+            <p style="margin-bottom: 8px;"><strong>Student Name:</strong> ___________________________________________</p>
+            <p><strong>Callsign / ID:</strong> ___________________________________________</p>
+          </div>
+          <div>
+            <p style="margin-bottom: 8px;">
+              <strong>Class Group:</strong> &nbsp;
+              [ &nbsp; ] Group A &nbsp;&nbsp;&nbsp; [ &nbsp; ] Group B &nbsp;&nbsp;&nbsp; [ &nbsp; ] Group C
+            </p>
+            <p><strong>Teacher:</strong> ___________________________________________</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Module 1 7-Session Checklist Table -->
+      <div class="box" style="margin-bottom: 12px;">
+        <div class="box-title">
+          <span>Module 1 Course Progress &amp; Attendance Checklist</span>
+          <span class="meta-tag">Friday 13h15 – 15h15</span>
+        </div>
+        <table style="margin-top: 4px;">
+          <thead>
+            <tr>
+              <th style="width: 28px; text-align: center;">Done</th>
+              <th style="width: 55px;">Week</th>
+              <th style="width: 140px;">Session Topic</th>
+              <th>Core Operational Focus</th>
+              <th style="width: 85px;">Evaluation / Tag</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="text-align: center;">[ &nbsp; ]</td>
+              <td style="font-family: monospace; font-weight: 700;">W47 • Nov 20</td>
+              <td><strong>Session 1: EASA Rules</strong></td>
+              <td>Part-ADR.OPS obligations, obstacle limitation &amp; modal precision.</td>
+              <td>Teaching Session</td>
+            </tr>
+            <tr>
+              <td style="text-align: center;">[ &nbsp; ]</td>
+              <td style="font-family: monospace; font-weight: 700;">W48 • Nov 27</td>
+              <td><strong>Session 2: Ramp Briefings</strong></td>
+              <td>Safety alerts, turnaround hazards &amp; apron communications.</td>
+              <td>Teaching Session</td>
+            </tr>
+            <tr>
+              <td style="text-align: center;">[ &nbsp; ]</td>
+              <td style="font-family: monospace; font-weight: 700;">W49 • Dec 04</td>
+              <td><strong>Session 3: Safety Cases</strong></td>
+              <td>Exemption requests, taxiway hot spots &amp; runway incursion defense.</td>
+              <td>Teaching Session</td>
+            </tr>
+            <tr>
+              <td style="text-align: center;">[ &nbsp; ]</td>
+              <td style="font-family: monospace; font-weight: 700;">W50 • Dec 11</td>
+              <td><strong>Session 4: Ground Audits</strong></td>
+              <td>Airfield inspection findings, Level 1/2 classifications &amp; report drafting.</td>
+              <td>Teaching Session</td>
+            </tr>
+            <tr>
+              <td style="text-align: center;">[ &nbsp; ]</td>
+              <td style="font-family: monospace; font-weight: 700;">W51 • Dec 18</td>
+              <td><strong>Session 5: Investigations</strong></td>
+              <td>Multi-source telemetry, FDR data, METAR cross-referencing &amp; root causes.</td>
+              <td>Teaching Session</td>
+            </tr>
+            <tr>
+              <td style="text-align: center;">[ &nbsp; ]</td>
+              <td style="font-family: monospace; font-weight: 700;">W01 • Jan 08</td>
+              <td><strong>Session 6: CAP Review</strong></td>
+              <td>Corrective Action Plans, immediate containment vs. preventative actions.</td>
+              <td>Teaching Session</td>
+            </tr>
+            <tr style="background: #f8fafc; font-weight: 700;">
+              <td style="text-align: center;">[ &nbsp; ]</td>
+              <td style="font-family: monospace;">W02 • Jan 15</td>
+              <td><strong>Session 7: FE1 Milestone</strong></td>
+              <td>Formative Evaluation 1 (FE1) Team Presentation &amp; Flipped Workshop.</td>
+              <td>Grade /20</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Spoken English Ground Rules -->
+      <div class="box" style="margin-bottom: 12px; background: #f8fafc;">
+        <div class="box-title">
+          <span>Spoken Technical English Principles (The 70/30 Rule)</span>
+          <span class="meta-tag">Classroom Contract</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 8pt; margin-top: 4px;">
+          <div>
+            <p><strong>1. Active Talk-Time:</strong> Spend &ge;70% of each 2-hour session in active speaking (pairs, simulations, debates), not passive reading.</p>
+            <p style="margin-top: 4px;"><strong>2. Modal Precision:</strong> Never confuse <em>shall</em> (mandatory) with <em>should</em> (recommendation) in regulatory speech.</p>
+          </div>
+          <div>
+            <p><strong>3. Spontaneous Delivery:</strong> Deliver all presentations from bulleted slide prompts. Strictly zero reading from pre-written scripts!</p>
+            <p style="margin-top: 4px;"><strong>4. Active Listening:</strong> Challenge peer findings constructively during Q&amp;A using professional, evidence-backed arguments.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- General Course Notes Ruled Area -->
+      <div class="box" style="flex: 1; display: flex; flex-direction: column;">
+        <div class="box-title">
+          <span>General Course Notes &amp; Term Objectives</span>
+          <span class="meta-tag">Personal Notes</span>
+        </div>
+        <div class="ruled-lines" style="height: 100%; min-height: 130px;"></div>
+      </div>
+    </div>
+    <div style="font-size: 7.5pt; color: #64748b; text-align: center; border-top: 0.5pt solid #cbd5e1; padding-top: 4px;">
+      GSEA Semester 3 AT • Module 1 Student Notebook • Keep this document in your course binder for weekly class activities.
+    </div>
+  </div>
+
+  <!-- ======================================================================= -->
+  <!-- PAGE 2: SESSION 1 — EASA RULES & MODAL PRECISION -->
+  <!-- ======================================================================= -->
+  <div class="page">
+    <div>
+      <div class="header-rule" style="display: flex; justify-content: space-between; align-items: flex-end;">
+        <div>
+          <span class="meta-tag">MODULE 1 • SESSION 1</span>
+          <h2 style="font-size: 13pt; font-weight: 800; color: #0f172a;">EASA Rules &amp; Modal Precision</h2>
+          <div style="font-size: 8.5pt; color: #475569;">Part-ADR.OPS Compliance, Aerodrome Manuals &amp; Crane Obstacle Limits (GM1 CS-ADR-DSN.H.415)</div>
+        </div>
+        <div style="text-align: right;"><span class="meta-tag">Week 47</span></div>
+      </div>
+
+      <!-- Modal Verbs Quick Reference -->
+      <div class="box" style="background: #f8fafc; padding: 6px 10px;">
+        <div class="box-title" style="margin-bottom: 2px;"><span>EASA Regulatory Language Rules</span><span class="meta-tag">Modal Hierarchy</span></div>
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; font-size: 8pt; text-align: center;">
+          <div style="border: 1px solid #cbd5e1; padding: 4px; border-radius: 3px; background: #fff;"><strong>SHALL</strong><br><span style="font-size: 7pt; color: #475569;">Mandatory obligation</span></div>
+          <div style="border: 1px solid #cbd5e1; padding: 4px; border-radius: 3px; background: #fff;"><strong>SHOULD</strong><br><span style="font-size: 7pt; color: #475569;">Recommended practice</span></div>
+          <div style="border: 1px solid #cbd5e1; padding: 4px; border-radius: 3px; background: #fff;"><strong>MAY</strong><br><span style="font-size: 7pt; color: #475569;">Permissible option</span></div>
+          <div style="border: 1px solid #cbd5e1; padding: 4px; border-radius: 3px; background: #fff;"><strong>MUST NOT</strong><br><span style="font-size: 7pt; color: #475569;">Strict prohibition</span></div>
+        </div>
+      </div>
+
+      <!-- Case Notes Ruled Section -->
+      <div class="box" style="margin-bottom: 10px;">
+        <div class="box-title">
+          <span>Part 1 &amp; 2: Aerodrome Case Notes &amp; Crane Obstacle Assessment</span>
+          <span class="meta-tag">Scenario Analysis</span>
+        </div>
+        <div style="font-size: 7.5pt; color: #64748b; margin-bottom: 4px;">
+          Note down crane coordinates, height above ground level (AGL), OLS penetration, and required NOTAM mitigations:
+        </div>
+        <div class="ruled-lines" style="height: 286px;"></div>
+      </div>
+
+      <!-- Vocabulary & Spoken Phrase Log -->
+      <div class="box">
+        <div class="box-title">
+          <span>Technical Vocabulary &amp; Spoken Debate Stems</span>
+          <span class="meta-tag">Spoken Phrasing</span>
+        </div>
+        <div style="font-size: 7.5pt; color: #64748b; margin-bottom: 4px;">
+          Useful stems: <em>"Under Part-ADR.OPS.B.010, the operator shall..."</em> • <em>"This structure penetrates the transitional surface by..."</em>
+        </div>
+        <div class="ruled-lines" style="height: 286px;"></div>
+      </div>
+    </div>
+    <div style="font-size: 7.5pt; color: #64748b; text-align: center; border-top: 0.5pt solid #cbd5e1; padding-top: 4px;">
+      GSEA Semester 3 AT • Module 1 Student Notebook • Session 1: EASA Rules &amp; Modal Precision
+    </div>
+  </div>
+
+  <!-- ======================================================================= -->
+  <!-- PAGE 3: SESSION 2 — SAFETY ALERTS & RAMP BRIEFINGS -->
+  <!-- ======================================================================= -->
+  <div class="page">
+    <div>
+      <div class="header-rule" style="display: flex; justify-content: space-between; align-items: flex-end;">
+        <div>
+          <span class="meta-tag">MODULE 1 • SESSION 2</span>
+          <h2 style="font-size: 13pt; font-weight: 800; color: #0f172a;">Safety Alerts &amp; Ramp Briefings</h2>
+          <div style="font-size: 8.5pt; color: #475569;">Turnaround Operations, EASA SIB Hazard Communication &amp; Ground Safety Protocols</div>
+        </div>
+        <div style="text-align: right;"><span class="meta-tag">Week 48</span></div>
+      </div>
+
+      <!-- Turnaround Safety Cues -->
+      <div class="box" style="background: #f8fafc; padding: 6px 10px;">
+        <div class="box-title" style="margin-bottom: 2px;"><span>Turnaround Safety Focus Areas</span><span class="meta-tag">EASA SIB 2024-09</span></div>
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; font-size: 7.5pt; text-align: center;">
+          <div style="border: 1px solid #cbd5e1; padding: 4px; border-radius: 3px; background: #fff;"><strong>Pushback Tug</strong><br>Shear pin / towbar disconnect</div>
+          <div style="border: 1px solid #cbd5e1; padding: 4px; border-radius: 3px; background: #fff;"><strong>Jet Blast Zone</strong><br>Idle / breakaway thrust hazard</div>
+          <div style="border: 1px solid #cbd5e1; padding: 4px; border-radius: 3px; background: #fff;"><strong>Fueling Safety</strong><br>Bonding cable &amp; venting zones</div>
+          <div style="border: 1px solid #cbd5e1; padding: 4px; border-radius: 3px; background: #fff;"><strong>FOD Prevention</strong><br>Foreign Object Debris sweeps</div>
+        </div>
+      </div>
+
+      <!-- Ramp Briefing Notes Section -->
+      <div class="box" style="margin-bottom: 10px;">
+        <div class="box-title">
+          <span>Part 1 &amp; 2: Ramp Briefing Structure &amp; Hazard Incident Log</span>
+          <span class="meta-tag">Operational Notes</span>
+        </div>
+        <div style="font-size: 7.5pt; color: #64748b; margin-bottom: 4px;">
+          Record key points from the ramp safety briefing: root hazards, affected apron stands, and mandatory corrective actions:
+        </div>
+        <div class="ruled-lines" style="height: 286px;"></div>
+      </div>
+
+      <!-- Spoken Phrases for Ramp Safety Briefings -->
+      <div class="box">
+        <div class="box-title">
+          <span>Spoken Reporting &amp; Safety Alert Phrases</span>
+          <span class="meta-tag">Verbal Briefing Stems</span>
+        </div>
+        <div style="font-size: 7.5pt; color: #64748b; margin-bottom: 4px;">
+          Stems: <em>"Be advised that Stand 14 is restricted due to..."</em> • <em>"All ground handlers shall maintain clearance until..."</em>
+        </div>
+        <div class="ruled-lines" style="height: 286px;"></div>
+      </div>
+    </div>
+    <div style="font-size: 7.5pt; color: #64748b; text-align: center; border-top: 0.5pt solid #cbd5e1; padding-top: 4px;">
+      GSEA Semester 3 AT • Module 1 Student Notebook • Session 2: Safety Alerts &amp; Ramp Briefings
+    </div>
+  </div>
+
+  <!-- ======================================================================= -->
+  <!-- PAGE 4: SESSION 3 — SPECIAL REQUESTS & RUNWAY SAFETY CASES -->
+  <!-- ======================================================================= -->
+  <div class="page">
+    <div>
+      <div class="header-rule" style="display: flex; justify-content: space-between; align-items: flex-end;">
+        <div>
+          <span class="meta-tag">MODULE 1 • SESSION 3</span>
+          <h2 style="font-size: 13pt; font-weight: 800; color: #0f172a;">Special Requests &amp; Runway Safety Cases</h2>
+          <div style="font-size: 8.5pt; color: #475569;">Runway Incursions, Line-of-Sight Hot Spots (CS-ADR-DSN.B.035) &amp; Airline Exemption Defense</div>
+        </div>
+        <div style="text-align: right;"><span class="meta-tag">Week 49</span></div>
+      </div>
+
+      <!-- Exemption Analysis Notes -->
+      <div class="box" style="margin-bottom: 8px;">
+        <div class="box-title">
+          <span>Part 1: Airline Special Request Evaluation &amp; Trade-Offs</span>
+          <span class="meta-tag">Risk Assessment</span>
+        </div>
+        <div style="font-size: 7.5pt; color: #64748b; margin-bottom: 4px;">
+          Assess non-standard requests (heavy widebody diversion, runway threshold displacement, non-compliant turn radiuses):
+        </div>
+        <div class="ruled-lines" style="height: 198px;"></div>
+      </div>
+
+      <!-- Aerodrome Hot Spot Sketch Grid -->
+      <div class="box" style="margin-bottom: 8px;">
+        <div class="box-title">
+          <span>Part 2: Aerodrome Taxiway &amp; Hot Spot Geometry Sketch</span>
+          <span class="meta-tag">Spatial Diagram</span>
+        </div>
+        <div style="font-size: 7.5pt; color: #64748b; margin-bottom: 4px;">
+          Sketch runway holding positions, line-of-sight blind spots, stop bars, and runway-taxiway intersection geometry:
+        </div>
+        <div class="dot-grid" style="height: 165px; width: 100%;"></div>
+      </div>
+
+      <!-- Spoken Defense Points -->
+      <div class="box">
+        <div class="box-title">
+          <span>Part 3: Spoken Justification &amp; Risk Defense Stems</span>
+          <span class="meta-tag">Oral Argumentation</span>
+        </div>
+        <div style="font-size: 7.5pt; color: #64748b; margin-bottom: 4px;">
+          Stems: <em>"Granting this exemption introduces an unmitigated risk of..."</em> • <em>"We recommend approving subject to mandatory follow-me escort..."</em>
+        </div>
+        <div class="ruled-lines" style="height: 110px;"></div>
+      </div>
+    </div>
+    <div style="font-size: 7.5pt; color: #64748b; text-align: center; border-top: 0.5pt solid #cbd5e1; padding-top: 4px;">
+      GSEA Semester 3 AT • Module 1 Student Notebook • Session 3: Special Requests &amp; Runway Safety Cases
+    </div>
+  </div>
+
+  <!-- ======================================================================= -->
+  <!-- PAGE 5: SESSION 4 — GROUND INSPECTION & AUDIT FINDINGS -->
+  <!-- ======================================================================= -->
+  <div class="page">
+    <div>
+      <div class="header-rule" style="display: flex; justify-content: space-between; align-items: flex-end;">
+        <div>
+          <span class="meta-tag">MODULE 1 • SESSION 4</span>
+          <h2 style="font-size: 13pt; font-weight: 800; color: #0f172a;">Ground Inspection &amp; Audit Findings</h2>
+          <div style="font-size: 8.5pt; color: #475569;">Airfield Inspections, Non-Conformance Levels (Part-ADR.OR.GEN.305) &amp; Formal Audit Writing</div>
+        </div>
+        <div style="text-align: right;"><span class="meta-tag">Week 50</span></div>
+      </div>
+
+      <!-- 4-Part Finding Structure Box -->
+      <div class="box" style="background: #f8fafc; padding: 6px 10px;">
+        <div class="box-title" style="margin-bottom: 2px;"><span>Standard 4-Part Audit Finding Anatomy</span><span class="meta-tag">EASA Audit Standard</span></div>
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; font-size: 7.5pt;">
+          <div style="border: 1px solid #cbd5e1; padding: 4px; border-radius: 3px; background: #fff;"><strong>1. Condition</strong><br>Objective factual observation on the ground.</div>
+          <div style="border: 1px solid #cbd5e1; padding: 4px; border-radius: 3px; background: #fff;"><strong>2. Criterion</strong><br>Exact rule or standard violated (CS / ADR).</div>
+          <div style="border: 1px solid #cbd5e1; padding: 4px; border-radius: 3px; background: #fff;"><strong>3. Cause</strong><br>Underlying breakdown in system or process.</div>
+          <div style="border: 1px solid #cbd5e1; padding: 4px; border-radius: 3px; background: #fff;"><strong>4. Consequence</strong><br>Potential safety risk or operational impact.</div>
+        </div>
+      </div>
+
+      <!-- Inspection Observations Ruled Area -->
+      <div class="box" style="margin-bottom: 10px;">
+        <div class="box-title">
+          <span>Part 1: Airfield Inspection Observations &amp; Non-Conformance Classification</span>
+          <span class="meta-tag">Level 1 vs Level 2</span>
+        </div>
+        <div style="font-size: 7.5pt; color: #64748b; margin-bottom: 4px;">
+          Note observed defects (pavement spalling, faded runway markings, unlit taxiway signs, FOD accumulation):
+        </div>
+        <div class="ruled-lines" style="height: 286px;"></div>
+      </div>
+
+      <!-- Formal Finding Formulation -->
+      <div class="box">
+        <div class="box-title">
+          <span>Part 2: Formal Audit Finding Draft &amp; Spoken Debrief Stems</span>
+          <span class="meta-tag">Audit Wording</span>
+        </div>
+        <div style="font-size: 7.5pt; color: #64748b; margin-bottom: 4px;">
+          Stems: <em>"A Level 1 non-conformance was identified regarding..."</em> • <em>"The operator failed to demonstrate that..."</em>
+        </div>
+        <div class="ruled-lines" style="height: 286px;"></div>
+      </div>
+    </div>
+    <div style="font-size: 7.5pt; color: #64748b; text-align: center; border-top: 0.5pt solid #cbd5e1; padding-top: 4px;">
+      GSEA Semester 3 AT • Module 1 Student Notebook • Session 4: Ground Inspection &amp; Audit Findings
+    </div>
+  </div>
+
+  <!-- ======================================================================= -->
+  <!-- PAGE 6: SESSION 5 — MULTI-SOURCE INCIDENT INVESTIGATION -->
+  <!-- ======================================================================= -->
+  <div class="page">
+    <div>
+      <div class="header-rule" style="display: flex; justify-content: space-between; align-items: flex-end;">
+        <div>
+          <span class="meta-tag">MODULE 1 • SESSION 5</span>
+          <h2 style="font-size: 13pt; font-weight: 800; color: #0f172a;">Multi-Source Incident Investigation</h2>
+          <div style="font-size: 8.5pt; color: #475569;">Radar Telemetry, Flight Data Recorder (FDR), METAR Logs &amp; Root-Cause Analysis</div>
+        </div>
+        <div style="text-align: right;"><span class="meta-tag">Week 51</span></div>
+      </div>
+
+      <!-- Investigation Sources Strip -->
+      <div class="box" style="background: #f8fafc; padding: 6px 10px;">
+        <div class="box-title" style="margin-bottom: 2px;"><span>Multi-Source Evidence Triangulation</span><span class="meta-tag">Data Integration</span></div>
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; font-size: 7.5pt; text-align: center;">
+          <div style="border: 1px solid #cbd5e1; padding: 4px; border-radius: 3px; background: #fff;"><strong>Telemetry / Radar</strong><br>Ground speed &amp; track</div>
+          <div style="border: 1px solid #cbd5e1; padding: 4px; border-radius: 3px; background: #fff;"><strong>METAR / SPECI</strong><br>Wind gusts, RVR &amp; braking</div>
+          <div style="border: 1px solid #cbd5e1; padding: 4px; border-radius: 3px; background: #fff;"><strong>ATC Audio Transcript</strong><br>Readback / hearback errors</div>
+          <div style="border: 1px solid #cbd5e1; padding: 4px; border-radius: 3px; background: #fff;"><strong>Ground Witness Logs</strong><br>Marshaller &amp; driver reports</div>
+        </div>
+      </div>
+
+      <!-- Chronology & Evidence Cross-Reference -->
+      <div class="box" style="margin-bottom: 10px;">
+        <div class="box-title">
+          <span>Part 1: Chronology of Events &amp; Cross-Referenced Evidence</span>
+          <span class="meta-tag">Timeline Reconstruction</span>
+        </div>
+        <div style="font-size: 7.5pt; color: #64748b; margin-bottom: 4px;">
+          Map out the exact timeline (T-00 to T+15 mins). Identify points of contradiction between witness statements and radar data:
+        </div>
+        <div class="ruled-lines" style="height: 286px;"></div>
+      </div>
+
+      <!-- Root Cause Analysis Notes -->
+      <div class="box">
+        <div class="box-title">
+          <span>Part 2: Root Cause Analysis &amp; Investigative Findings</span>
+          <span class="meta-tag">Contributory Factors</span>
+        </div>
+        <div style="font-size: 7.5pt; color: #64748b; margin-bottom: 4px;">
+          Stems: <em>"The primary causal factor was determined to be..."</em> • <em>"Contributing human factors included high workload and..."</em>
+        </div>
+        <div class="ruled-lines" style="height: 286px;"></div>
+      </div>
+    </div>
+    <div style="font-size: 7.5pt; color: #64748b; text-align: center; border-top: 0.5pt solid #cbd5e1; padding-top: 4px;">
+      GSEA Semester 3 AT • Module 1 Student Notebook • Session 5: Multi-Source Incident Investigation
+    </div>
+  </div>
+
+  <!-- ======================================================================= -->
+  <!-- PAGE 7: SESSION 6 — THE CORRECTIVE ACTION PLAN (CAP) REVIEW -->
+  <!-- ======================================================================= -->
+  <div class="page">
+    <div>
+      <div class="header-rule" style="display: flex; justify-content: space-between; align-items: flex-end;">
+        <div>
+          <span class="meta-tag">MODULE 1 • SESSION 6</span>
+          <h2 style="font-size: 13pt; font-weight: 800; color: #0f172a;">The Corrective Action Plan &amp; CAP Review</h2>
+          <div style="font-size: 8.5pt; color: #475569;">Immediate Containment vs. Long-Term Preventative Actions &amp; Stakeholder Negotiation</div>
+        </div>
+        <div style="text-align: right;"><span class="meta-tag">Week 01</span></div>
+      </div>
+
+      <!-- SMART CAP Reference Strip -->
+      <div class="box" style="background: #f8fafc; padding: 6px 10px;">
+        <div class="box-title" style="margin-bottom: 2px;"><span>EASA CAP Validation Criteria</span><span class="meta-tag">Containment vs Preventative</span></div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 7.5pt;">
+          <div><strong>Immediate Containment (Within 24–48 hours):</strong> Stops the hazard immediately (e.g., temporary NOTAM, stand closure, extra spotters).</div>
+          <div><strong>Long-Term Preventative Action (30–90 days):</strong> Fixes the root cause (e.g., software patch, procedure revision, physical redesign).</div>
+        </div>
+      </div>
+
+      <!-- Action Plan Drafting Table -->
+      <div class="box" style="margin-bottom: 10px;">
+        <div class="box-title">
+          <span>Part 1: Draft Corrective Action Plan (CAP) Matrix</span>
+          <span class="meta-tag">SMART Actions</span>
+        </div>
+        <table style="margin-top: 4px;">
+          <thead>
+            <tr>
+              <th style="width: 25%;">Finding Ref &amp; Root Cause</th>
+              <th style="width: 35%;">Action Description (Containment / Preventative)</th>
+              <th style="width: 20%;">Owner / Dept</th>
+              <th style="width: 20%;">Target Deadline</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="height: 55px;"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr style="height: 55px;"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr style="height: 55px;"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- CAP Negotiation & Defense Notes -->
+      <div class="box">
+        <div class="box-title">
+          <span>Part 2: Authority Negotiation &amp; CAP Defense Points</span>
+          <span class="meta-tag">Spoken Justification</span>
+        </div>
+        <div style="font-size: 7.5pt; color: #64748b; margin-bottom: 4px;">
+          Stems: <em>"To eliminate recurrence, we have mandated..."</em> • <em>"Effectiveness will be measured through weekly safety metrics..."</em>
+        </div>
+        <div class="ruled-lines" style="height: 286px;"></div>
+      </div>
+    </div>
+    <div style="font-size: 7.5pt; color: #64748b; text-align: center; border-top: 0.5pt solid #cbd5e1; padding-top: 4px;">
+      GSEA Semester 3 AT • Module 1 Student Notebook • Session 6: The Corrective Action Plan &amp; CAP Review
+    </div>
+  </div>
+
+  <!-- ======================================================================= -->
+  <!-- PAGE 8: SESSION 7 — FE1 TEAM PRESENTATION & WORKSHOP PLANNER -->
+  <!-- ======================================================================= -->
+  <div class="page">
+    <div>
+      <div class="header-rule" style="display: flex; justify-content: space-between; align-items: flex-end;">
+        <div>
+          <span class="meta-tag">MODULE 1 • SESSION 7</span>
+          <h2 style="font-size: 13pt; font-weight: 800; color: #0f172a;">Formative Evaluation 1 (FE1) Delivery Planner</h2>
+          <div style="font-size: 8.5pt; color: #475569;">Flipped Regulatory Workshop: Team Presentation, Class Activity &amp; Teacher Q&amp;A Defense</div>
+        </div>
+        <div style="text-align: right;"><span class="meta-tag">Week 02</span></div>
+      </div>
+
+      <!-- Team Speaker Allocation Table -->
+      <div class="box" style="margin-bottom: 10px;">
+        <div class="box-title">
+          <span>Team Role &amp; Speaking Slot Allocation (Equal 25% Distribution)</span>
+          <span class="meta-tag">30-Min Presentation</span>
+        </div>
+        <table style="margin-top: 4px;">
+          <thead>
+            <tr>
+              <th style="width: 20%;">Speaker</th>
+              <th style="width: 30%;">Assigned Section &amp; Topic</th>
+              <th style="width: 30%;">Key Regulatory Stems to Use</th>
+              <th style="width: 20%;">Visual Slide Prompt</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="height: 38px;"><td><strong>Speaker 1:</strong></td><td>Introduction &amp; Rule Context</td><td><em>"Our mandate under Part-ADR is..."</em></td><td>Slide 1–2</td></tr>
+            <tr style="height: 38px;"><td><strong>Speaker 2:</strong></td><td>Technical Analysis &amp; Hazards</td><td><em>"Operational telemetry indicates..."</em></td><td>Slide 3–4</td></tr>
+            <tr style="height: 38px;"><td><strong>Speaker 3:</strong></td><td>Class Activity Delivery</td><td><em>"In pairs, analyze this scenario..."</em></td><td>Slide 5–6 (Interactive)</td></tr>
+            <tr style="height: 38px;"><td><strong>Speaker 4:</strong></td><td>CAP &amp; Regulatory Conclusion</td><td><em>"To achieve compliance, we propose..."</em></td><td>Slide 7–8</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Slide-by-Slide Preparation Notes -->
+      <div class="box" style="margin-bottom: 10px;">
+        <div class="box-title">
+          <span>Slide-by-Slide Outline &amp; Spoken Transitions</span>
+          <span class="meta-tag">Zero Scripting</span>
+        </div>
+        <div style="font-size: 7.5pt; color: #64748b; margin-bottom: 4px;">
+          Write 3 bullet cues per slide. Do not write full paragraphs:
+        </div>
+        <div class="ruled-lines" style="height: 242px;"></div>
+      </div>
+
+      <!-- Anticipated Teacher Q&A Defense -->
+      <div class="box">
+        <div class="box-title">
+          <span>Anticipated Teacher Q&amp;A &amp; Defense Rebuttals</span>
+          <span class="meta-tag">Spontaneous Defense</span>
+        </div>
+        <div class="ruled-lines" style="height: 154px;"></div>
+      </div>
+    </div>
+    <div style="font-size: 7.5pt; color: #64748b; text-align: center; border-top: 0.5pt solid #cbd5e1; padding-top: 4px;">
+      GSEA Semester 3 AT • Module 1 Student Notebook • Session 7: Formative Evaluation 1 Delivery Planner
+    </div>
+  </div>
+
+  <!-- ======================================================================= -->
+  <!-- PAGE 9: CONSOLIDATED MODULE 1 VOCABULARY & PHRASE BANK -->
+  <!-- ======================================================================= -->
+  <div class="page">
+    <div>
+      <div class="header-rule" style="display: flex; justify-content: space-between; align-items: flex-end;">
+        <div>
+          <span class="meta-tag">MODULE 1 • SYNTHESIS</span>
+          <h2 style="font-size: 13pt; font-weight: 800; color: #0f172a;">Master Technical Vocabulary &amp; Phrase Bank</h2>
+          <div style="font-size: 8.5pt; color: #475569;">Consolidated Lexicon across EASA Regulations, Aerodromes, Audits &amp; Investigations</div>
+        </div>
+        <div style="text-align: right;"><span class="meta-tag">Sessions 1 – 7</span></div>
+      </div>
+
+      <!-- Vocabulary Log Table -->
+      <div class="box" style="margin-bottom: 10px;">
+        <div class="box-title">
+          <span>Key Operational &amp; Regulatory Vocabulary</span>
+          <span class="meta-tag">Personal Glossary</span>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 30%;">Technical Term / Acronym</th>
+              <th style="width: 45%;">Operational Meaning &amp; Context</th>
+              <th style="width: 25%;">Pronunciation / Pitfall</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${Array.from({ length: 15 }, (_, i) => `
+              <tr style="height: 28px;">
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Spoken Formulaic Expressions -->
+      <div class="box">
+        <div class="box-title">
+          <span>High-Yield Spoken Interaction Phrases</span>
+          <span class="meta-tag">Spoken Fluency</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 7.5pt; margin-top: 4px;">
+          <div>
+            <p><strong>Citing Rules:</strong> <em>"In accordance with Part-ADR.OPS.B.010..."</em></p>
+            <p style="margin-top: 4px;"><strong>Justifying Decisions:</strong> <em>"This measure was taken on the grounds that..."</em></p>
+            <p style="margin-top: 4px;"><strong>Weighing Risks:</strong> <em>"While acknowledging the delay, we must prioritize..."</em></p>
+          </div>
+          <div>
+            <p><strong>Formulating Findings:</strong> <em>"This constitutes a non-conformance under..."</em></p>
+            <p style="margin-top: 4px;"><strong>Challenging Proprosals:</strong> <em>"What mitigation exists in the event of...?"</em></p>
+            <p style="margin-top: 4px;"><strong>Proposing Actions:</strong> <em>"We recommend immediate containment followed by..."</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="font-size: 7.5pt; color: #64748b; text-align: center; border-top: 0.5pt solid #cbd5e1; padding-top: 4px;">
+      GSEA Semester 3 AT • Module 1 Student Notebook • Master Vocabulary &amp; Phrase Bank
+    </div>
+  </div>
+
+  <!-- ======================================================================= -->
+  <!-- PAGE 10: FE1 SELF-EVALUATION & TEACHER FEEDBACK RECORD -->
+  <!-- ======================================================================= -->
+  <div class="page">
+    <div>
+      <div class="header-rule" style="display: flex; justify-content: space-between; align-items: flex-end;">
+        <div>
+          <span class="meta-tag">MODULE 1 • EVALUATION</span>
+          <h2 style="font-size: 13pt; font-weight: 800; color: #0f172a;">FE1 Performance Record &amp; Teacher Feedback</h2>
+          <div style="font-size: 8.5pt; color: #475569;">Official Assessment Rubric, Student Self-Critique &amp; Corrective Action Plan</div>
+        </div>
+        <div style="text-align: right;"><span class="meta-tag">Official Assessment</span></div>
+      </div>
+
+      <!-- FE1 Evaluation Rubric Summary Table -->
+      <div class="box" style="margin-bottom: 10px;">
+        <div class="box-title">
+          <span>Formative Evaluation 1 (FE1) Assessment Criteria</span>
+          <span class="meta-tag">Mark out of 20</span>
+        </div>
+        <table style="margin-top: 4px;">
+          <thead>
+            <tr>
+              <th style="width: 25%;">Criterion</th>
+              <th style="width: 50%;">Expected B2 Communicative Standard</th>
+              <th style="width: 12%; text-align: center;">Self-Score</th>
+              <th style="width: 13%; text-align: center;">Teacher Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. Spoken Fluency &amp; Delivery</strong></td>
+              <td>Spontaneous delivery without reading from notes; natural rhythm and thought groups.</td>
+              <td style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/5</td>
+              <td style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/5</td>
+            </tr>
+            <tr>
+              <td><strong>2. Modal Precision &amp; Rules</strong></td>
+              <td>Accurate regulatory phrasing; correct use of shall, should, may, and must not.</td>
+              <td style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/5</td>
+              <td style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/5</td>
+            </tr>
+            <tr>
+              <td><strong>3. Technical Accuracy &amp; Depth</strong></td>
+              <td>Precise aerodrome engineering terminology; structured 4-part finding formulations.</td>
+              <td style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/5</td>
+              <td style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/5</td>
+            </tr>
+            <tr>
+              <td><strong>4. Q&amp;A Defense &amp; Interaction</strong></td>
+              <td>Professional spontaneous response to teacher inquiries; convincing justification.</td>
+              <td style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/5</td>
+              <td style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/5</td>
+            </tr>
+            <tr style="background: #f8fafc; font-weight: 700;">
+              <td colspan="2" style="text-align: right; text-transform: uppercase;">Total Score:</td>
+              <td style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/20</td>
+              <td style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/20</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Student Self-Critique -->
+      <div class="box" style="margin-bottom: 10px;">
+        <div class="box-title">
+          <span>Student Honest Self-Critique &amp; Reflection</span>
+          <span class="meta-tag">Self-Evaluation</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 4px;">
+          <div>
+            <p style="font-size: 7.5pt; font-weight: 700; color: #166534; margin-bottom: 2px;">✅ Top 2 Communicative Strengths in FE1:</p>
+            <div class="ruled-lines" style="height: 110px;"></div>
+          </div>
+          <div>
+            <p style="font-size: 7.5pt; font-weight: 700; color: #991b1b; margin-bottom: 2px;">🎯 Top 2 Targets for Module 2:</p>
+            <div class="ruled-lines" style="height: 110px;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Teacher Feedback Box -->
+      <div class="box" style="flex: 1; border: 1.5pt solid #0f172a; display: flex; flex-direction: column;">
+        <div class="box-title" style="border-bottom: 1px solid #0f172a;">
+          <span>Official Teacher Assessment &amp; Corrective Action Plan</span>
+          <span class="meta-tag">Teacher Feedback</span>
+        </div>
+        <div class="ruled-lines" style="flex: 1; min-height: 130px; margin-top: 4px;"></div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-top: 8px; padding-top: 6px; border-top: 1px solid #cbd5e1; font-size: 8.5pt;">
+          <div>
+            <strong>Teacher Signature:</strong> ______________________________________
+          </div>
+          <div style="font-weight: 700;">
+            Module 1 Validation: &nbsp;&nbsp; [ &nbsp; ] GO (Validated) &nbsp;&nbsp;&nbsp;&nbsp; [ &nbsp; ] NO-GO (Needs Review)
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="font-size: 7.5pt; color: #64748b; text-align: center; border-top: 0.5pt solid #cbd5e1; padding-top: 4px;">
+      GSEA Semester 3 AT • Module 1 Student Notebook • Official Performance Record &amp; Teacher Feedback
+    </div>
+  </div>
+
+</body>
+</html>

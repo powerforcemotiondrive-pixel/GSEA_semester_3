@@ -2153,7 +2153,7 @@
                 Documentation Library • LV125E
               </span>
               <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-mono font-bold bg-slate-100 text-slate-700 border border-slate-200">
-                100% Offline Ready • 14 Documents
+                100% Offline Ready • 15 Documents
               </span>
             </div>
             <h3 class="text-base sm:text-lg font-black text-slate-900">Module 1 Course Documentation &amp; Reference Library</h3>
@@ -2273,6 +2273,46 @@
                     <li>• Scoring criteria breakdown &amp; teacher feedback protocol</li>
                   </ul>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Student Printable Notebook Card (Ink-Saving Edition) -->
+          <div class="p-5 sm:p-6 rounded-2xl border border-slate-300 bg-white shadow-xs relative overflow-hidden">
+            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 relative z-10">
+              <div class="space-y-2.5 max-w-2xl">
+                <div class="flex flex-wrap items-center gap-2">
+                  <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-black uppercase tracking-wider bg-emerald-100 text-emerald-900 border border-emerald-300 shadow-2xs">
+                    📓 Student Course Notebook • Ink-Saving Edition
+                  </span>
+                  <span class="text-[11px] font-mono text-slate-500 font-bold">
+                    Exactly 10 Pages A4 • 710 KB PDF
+                  </span>
+                </div>
+                <div>
+                  <h3 class="text-base sm:text-lg font-black text-slate-900 tracking-tight">
+                    Module 1 Student Course Notebook (Sessions 1–7)
+                  </h3>
+                  <p class="text-xs sm:text-[13px] text-slate-600 font-medium mt-0.5">
+                    Lightweight, clean printable workbook for handwritten class notes, case analysis, and FE1 preparation.
+                  </p>
+                </div>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  Specially created for distribution to students. Features zero heavy blocks of colour or dark backgrounds to save printer ink. Contains a 7-session attendance tracker, structured ruled note areas for each lesson, runway hot-spot sketch grids, EASA audit finding formulation blocks, and the official FE1 teacher feedback rubric.
+                </p>
+                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-slate-500 font-mono">
+                  <span>Author: Phil PARRIS</span> • <span>Print: Duplex (5 Sheets of Paper)</span> • <span>Offline SCORM Indexed</span>
+                </div>
+              </div>
+              <div class="flex flex-col sm:flex-row lg:flex-col gap-2.5 shrink-0">
+                <a href="docs/GSEA_S3_M1_Student_Notebook.pdf" download="GSEA_S3_M1_Student_Notebook.pdf" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-slate-900 hover:bg-slate-800 transition-all shadow-xs cursor-pointer">
+                  <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                  <span>Download Notebook (710 KB)</span>
+                </a>
+                <a href="docs/GSEA_S3_M1_Student_Notebook.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 transition-all cursor-pointer">
+                  <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                  <span>Open in PDF Viewer ↗</span>
+                </a>
               </div>
             </div>
           </div>
