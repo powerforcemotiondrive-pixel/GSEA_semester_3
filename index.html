@@ -775,26 +775,9 @@
               <span>Course Presentation</span>
             </button>
             <!-- Student Guide & Semester Objectives Tabs -->
-            <button data-tab="student_guide" id="modal-tab-student-guide" class="modal-tab-btn flex items-center gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 whitespace-nowrap shrink-0 transition-all cursor-pointer hidden">📘 Student Guide</button>
-            <button data-tab="sem_obj_en" id="modal-tab-sem-obj-en" class="modal-tab-btn flex items-center gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 whitespace-nowrap shrink-0 transition-all cursor-pointer hidden">
-              <svg class="w-3.5 h-2.5 rounded-[1px] shrink-0 shadow-2xs" viewBox="0 0 60 30" aria-hidden="true">
-                <clipPath id="uk-flag-clip"><path d="M0,0 v30 h60 v-30 z"/></clipPath>
-                <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
-                <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/>
-                <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#uk-flag-clip)" stroke="#C8102E" stroke-width="4"/>
-                <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/>
-                <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
-              </svg>
-              <span>Objectives (EN)</span>
-            </button>
-            <button data-tab="sem_obj_fr" id="modal-tab-sem-obj-fr" class="modal-tab-btn flex items-center gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 whitespace-nowrap shrink-0 transition-all cursor-pointer hidden">
-              <svg class="w-3.5 h-2.5 rounded-[1px] shrink-0 shadow-2xs" viewBox="0 0 3 2" aria-hidden="true">
-                <rect width="1" height="2" fill="#002654"/>
-                <rect width="1" height="2" x="1" fill="#FFFFFF"/>
-                <rect width="1" height="2" x="2" fill="#CE1126"/>
-              </svg>
-              <span>Objectives (FR)</span>
-            </button>
+            <button data-tab="student_guide" id="modal-tab-student-guide" class="modal-tab-btn flex items-center gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 whitespace-nowrap shrink-0 transition-all cursor-pointer hidden">Student Guide</button>
+            <button data-tab="sem_obj_en" id="modal-tab-sem-obj-en" class="modal-tab-btn flex items-center px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 whitespace-nowrap shrink-0 transition-all cursor-pointer hidden">Objectives (EN)</button>
+            <button data-tab="sem_obj_fr" id="modal-tab-sem-obj-fr" class="modal-tab-btn flex items-center px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 whitespace-nowrap shrink-0 transition-all cursor-pointer hidden">Objectives (FR)</button>
             <!-- Documentation Hub Tab -->
             <button data-tab="docs_hub" id="modal-tab-docs-hub" class="modal-tab-btn flex items-center gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 whitespace-nowrap shrink-0 transition-all cursor-pointer hidden">
               <svg class="w-3.5 h-3.5 opacity-80" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
@@ -8702,8 +8685,6 @@ function renderLessonContentTabSession3(sessionData, theme) {
 
       bodyEl.innerHTML = `
         <div class="space-y-6 printable-lesson-container">
-          ${renderSessionBriefingBanner(sessionData, theme)}
-
           <!-- Printable Action Bar -->
           <div class="no-print flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 bg-white border border-slate-200 rounded-xl shadow-xs">
             <div>
@@ -16627,7 +16608,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
         ? "Niveau B2 CECRL • Réglementation EASA, Audits &amp; Sécurité d'Aérodrome"
         : "CEFR B2 Level • EASA Regulations, Audits &amp; Aerodrome Safety";
 
-      const switchBtnGuide = `<button type="button" onclick="switchModalTab('student_guide')" class="px-3 py-1 rounded-md text-xs font-bold transition-all cursor-pointer text-slate-600 hover:text-slate-900">📘 Student Guide</button>`;
+      const switchBtnGuide = `<button type="button" onclick="switchModalTab('student_guide')" class="px-3 py-1 rounded-md text-xs font-bold transition-all cursor-pointer text-slate-600 hover:text-slate-900">Student Guide</button>`;
       const switchBtnEn = `<button type="button" onclick="switchModalTab('sem_obj_en')" class="px-3 py-1 rounded-md text-xs font-bold transition-all cursor-pointer ${!isFr ? 'bg-white shadow-xs text-slate-900 border border-slate-300' : 'text-slate-500 hover:text-slate-800'}">🇬🇧 English</button>`;
       const switchBtnFr = `<button type="button" onclick="switchModalTab('sem_obj_fr')" class="px-3 py-1 rounded-md text-xs font-bold transition-all cursor-pointer ${isFr ? 'bg-white shadow-xs text-slate-900 border border-slate-300' : 'text-slate-500 hover:text-slate-800'}">🇫🇷 Français</button>`;
 

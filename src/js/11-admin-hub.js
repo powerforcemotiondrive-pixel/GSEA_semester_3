@@ -1661,7 +1661,7 @@
         ? "Niveau B2 CECRL • Réglementation EASA, Audits &amp; Sécurité d'Aérodrome"
         : "CEFR B2 Level • EASA Regulations, Audits &amp; Aerodrome Safety";
 
-      const switchBtnGuide = `<button type="button" onclick="switchModalTab('student_guide')" class="px-3 py-1 rounded-md text-xs font-bold transition-all cursor-pointer text-slate-600 hover:text-slate-900">📘 Student Guide</button>`;
+      const switchBtnGuide = `<button type="button" onclick="switchModalTab('student_guide')" class="px-3 py-1 rounded-md text-xs font-bold transition-all cursor-pointer text-slate-600 hover:text-slate-900">Student Guide</button>`;
       const switchBtnEn = `<button type="button" onclick="switchModalTab('sem_obj_en')" class="px-3 py-1 rounded-md text-xs font-bold transition-all cursor-pointer ${!isFr ? 'bg-white shadow-xs text-slate-900 border border-slate-300' : 'text-slate-500 hover:text-slate-800'}">🇬🇧 English</button>`;
       const switchBtnFr = `<button type="button" onclick="switchModalTab('sem_obj_fr')" class="px-3 py-1 rounded-md text-xs font-bold transition-all cursor-pointer ${isFr ? 'bg-white shadow-xs text-slate-900 border border-slate-300' : 'text-slate-500 hover:text-slate-800'}">🇫🇷 Français</button>`;
 
