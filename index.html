@@ -4375,47 +4375,41 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
           </div>
         </div>
 
-        <!-- 2. Mobile-First Quick Launchers Bar (Streamlined Action Buttons) -->
+        <!-- 2. Mobile-First Quick Launchers Bar (Cockpit Action Cards) -->
         <div class="space-y-2">
           <div class="flex items-center justify-between px-1">
-            <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">🚀 Quick Launchers</span>
-            <span class="text-[10px] font-mono text-slate-400 hidden sm:inline">1-Click Fast Navigation</span>
+            <span class="text-[10.5px] font-mono font-bold uppercase tracking-wider text-slate-500">QUICK NAVIGATION</span>
+            <span class="text-[10px] font-mono text-slate-400 hidden sm:inline">1-Click Direct Access</span>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3">
-            <!-- Button 1: Jump to Active Lesson (Pill Style) -->
-            <button type="button" onclick="switchModule(${activeModIdx}, ${activeCardIdx})" class="group flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-gradient-to-r from-sky-50 to-sky-100/60 hover:from-sky-100 hover:to-sky-200/70 border border-sky-300 text-sky-950 shadow-2xs hover:shadow-xs transition-all duration-150 cursor-pointer text-left">
-              <div class="flex items-center gap-2.5 min-w-0">
-                <span class="w-7 h-7 rounded-lg bg-sky-600 text-white flex items-center justify-center text-xs font-black shrink-0 shadow-2xs">▶</span>
-                <div class="min-w-0">
-                  <div class="text-xs sm:text-[13px] font-black text-sky-950 truncate leading-snug">Jump to Today's Lesson</div>
-                  <div class="text-[10.5px] font-mono text-sky-700 font-bold truncate">Week ${activeInfo.weekNum} • ${activeSessionName}</div>
-                </div>
+            <!-- Button 1: Jump to Active Lesson -->
+            <button type="button" onclick="switchModule(${activeModIdx}, ${activeCardIdx})" class="group flex items-center justify-between px-3.5 py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 border-l-4 border-l-amber-400 shadow-2xs hover:shadow-xs transition-all cursor-pointer text-left">
+              <div class="min-w-0">
+                <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-amber-700">ACTIVE LESSON</div>
+                <div class="text-xs sm:text-[13px] font-bold text-slate-900 truncate mt-0.5">Jump to Today's Lesson</div>
+                <div class="text-[10.5px] font-mono text-slate-500 truncate mt-0.5">Week ${activeInfo.weekNum} &bull; ${activeSessionName}</div>
               </div>
-              <span class="text-sky-600 group-hover:translate-x-1 transition-transform font-bold text-sm ml-2 shrink-0">➔</span>
+              <span class="text-amber-500 group-hover:translate-x-1 transition-transform font-bold text-sm ml-2 shrink-0">&rarr;</span>
             </button>
 
-            <!-- Button 2: Weekly Calendar (Pill Style) -->
-            <button type="button" onclick="openModalDrawer('admin_calendar', 1, 8)" class="group flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-slate-50 hover:bg-slate-100/80 border border-slate-200/90 text-slate-900 shadow-2xs hover:shadow-xs transition-all duration-150 cursor-pointer text-left">
-              <div class="flex items-center gap-2.5 min-w-0">
-                <span class="w-7 h-7 rounded-lg bg-slate-800 text-white flex items-center justify-center text-xs shrink-0 shadow-2xs">📅</span>
-                <div class="min-w-0">
-                  <div class="text-xs sm:text-[13px] font-black text-slate-900 truncate leading-snug">Weekly Calendar</div>
-                  <div class="text-[10.5px] font-mono text-slate-500 font-medium truncate">Dates, room numbers &amp; FE rotas</div>
-                </div>
+            <!-- Button 2: Weekly Calendar -->
+            <button type="button" onclick="openModalDrawer('admin_calendar', 1, 8)" class="group flex items-center justify-between px-3.5 py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 border-l-4 border-l-slate-400 shadow-2xs hover:shadow-xs transition-all cursor-pointer text-left">
+              <div class="min-w-0">
+                <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-500">SCHEDULE</div>
+                <div class="text-xs sm:text-[13px] font-bold text-slate-900 truncate mt-0.5">Weekly Calendar</div>
+                <div class="text-[10.5px] font-mono text-slate-500 truncate mt-0.5">Dates, rooms &amp; rotas</div>
               </div>
-              <span class="text-slate-400 group-hover:translate-x-1 transition-transform font-bold text-sm ml-2 shrink-0">➔</span>
+              <span class="text-slate-400 group-hover:translate-x-1 transition-transform font-bold text-sm ml-2 shrink-0">&rarr;</span>
             </button>
 
-            <!-- Button 3: Portfolio Summary (Pill Style) -->
-            <button type="button" onclick="openModalDrawer('portfolio_summary', 1, 8)" class="group flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-slate-50 hover:bg-slate-100/80 border border-slate-200/90 text-slate-900 shadow-2xs hover:shadow-xs transition-all duration-150 cursor-pointer text-left">
-              <div class="flex items-center gap-2.5 min-w-0">
-                <span class="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-xs shrink-0 shadow-2xs">📊</span>
-                <div class="min-w-0">
-                  <div class="text-xs sm:text-[13px] font-black text-slate-900 truncate leading-snug">Portfolio Summary</div>
-                  <div class="text-[10.5px] font-mono text-slate-500 font-medium truncate">Buzzwords, grammar traps &amp; reflections</div>
-                </div>
+            <!-- Button 3: Portfolio Summary -->
+            <button type="button" onclick="openModalDrawer('portfolio_summary', 1, 8)" class="group flex items-center justify-between px-3.5 py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 border-l-4 border-l-slate-400 shadow-2xs hover:shadow-xs transition-all cursor-pointer text-left">
+              <div class="min-w-0">
+                <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-500">COHORT INSIGHTS</div>
+                <div class="text-xs sm:text-[13px] font-bold text-slate-900 truncate mt-0.5">Portfolio Summary</div>
+                <div class="text-[10.5px] font-mono text-slate-500 truncate mt-0.5">Buzzwords &amp; grammar traps</div>
               </div>
-              <span class="text-slate-400 group-hover:translate-x-1 transition-transform font-bold text-sm ml-2 shrink-0">➔</span>
+              <span class="text-slate-400 group-hover:translate-x-1 transition-transform font-bold text-sm ml-2 shrink-0">&rarr;</span>
             </button>
           </div>
         </div>
@@ -4437,35 +4431,35 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
             <!-- Announcement 1: Active Class Overview -->
-            <div class="p-4 rounded-xl border border-sky-200/90 bg-sky-50/50 shadow-2xs space-y-1.5">
+            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-slate-300 bg-white shadow-2xs space-y-1.5">
               <div class="flex items-center justify-between">
-                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-sky-200/80 text-sky-900">✈️ Friday • Technical English</span>
-                <span class="text-[10.5px] font-mono text-sky-700 font-medium">13:15 – 15:15</span>
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">FRIDAY &bull; TECHNICAL ENGLISH</span>
+                <span class="text-[10.5px] font-mono text-slate-500 font-medium">13:15 – 15:15</span>
               </div>
-              <h3 class="text-xs sm:text-sm font-bold text-sky-950">
+              <h3 class="text-xs sm:text-sm font-bold text-slate-900">
                 ${activeInfo.sessionName}
               </h3>
-              <p class="text-[11.5px] sm:text-xs text-sky-900 leading-relaxed font-normal">
+              <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed font-normal">
                 ${activeInfo.sessionDesc}
               </p>
             </div>
 
             <!-- Announcement 2: Assessment Focus -->
-            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-amber-400 bg-white shadow-2xs space-y-1.5">
+            <div class="p-4 rounded-xl border border-slate-200 border-l-4 ${activeInfo.isFe ? "border-l-amber-400" : "border-l-slate-300"} bg-white shadow-2xs space-y-1.5">
               <div class="flex items-center justify-between">
-                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200">${activeInfo.isFe ? "This Week's Evaluation" : "Assessment Milestones"}</span>
-                <span class="text-[10.5px] font-mono text-purple-700 font-medium">Week ${activeInfo.feWeek} &amp; Week 12</span>
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">${activeInfo.isFe ? "ACTIVE EVALUATION" : "ASSESSMENT MILESTONES"}</span>
+                <span class="text-[10.5px] font-mono text-slate-500 font-medium">Week ${activeInfo.feWeek} &amp; Week 12</span>
               </div>
-              <h3 class="text-xs sm:text-sm font-bold text-purple-950">
+              <h3 class="text-xs sm:text-sm font-bold text-slate-900">
                 ${activeInfo.isFe ? "Formative Evaluation 1 (FE1) in Progress" : "Formative Evaluation 1 (FE1) &amp; MTF Exam"}
               </h3>
-              <p class="text-[11.5px] sm:text-xs text-purple-900 leading-relaxed font-normal">
+              <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed font-normal">
                 ${activeInfo.isFe ? "Oral team teaching sessions are active this week. Consult your designated 30-minute timeslot in the Weekly Calendar tab and arrive 5 minutes early." : "In Session 7 (Fri 15 Jan), student teams deliver a 30-minute interactive workshop on an EASA regulatory extract. In Week 12, all students sit the MTF examination."}
               </p>
             </div>
 
             <!-- Announcement 3: Portfolio Habit -->
-            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-amber-400 bg-white shadow-2xs space-y-1.5">
+            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-slate-300 bg-white shadow-2xs space-y-1.5">
               <div class="flex items-center justify-between">
                 <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">PORTFOLIO HABIT</span>
                 <span class="text-[10.5px] font-mono text-emerald-700 font-medium">Continuous Practice</span>
@@ -4473,13 +4467,13 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
               <h3 class="text-xs sm:text-sm font-bold text-emerald-950">
                 Update Your Portfolio
               </h3>
-              <p class="text-[11.5px] sm:text-xs text-emerald-900 leading-relaxed font-normal">
+              <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed font-normal">
                 Add at least 3 new technical words and 1 reflection sentence to your portfolio after each session. Regular updates build confidence for your oral evaluations.
               </p>
             </div>
 
             <!-- Announcement 4: Regulatory Precision -->
-            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-amber-400 bg-white shadow-2xs space-y-1.5">
+            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-slate-300 bg-white shadow-2xs space-y-1.5">
               <div class="flex items-center justify-between">
                 <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">TECHNICAL METHOD</span>
                 <span class="text-[10.5px] font-mono text-amber-700 font-medium">EASA Standards</span>
@@ -4487,7 +4481,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
               <h3 class="text-xs sm:text-sm font-bold text-amber-950">
                 Modal Precision &amp; Active Phrasing
               </h3>
-              <p class="text-[11.5px] sm:text-xs text-amber-900 leading-relaxed font-normal">
+              <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed font-normal">
                 Distinguish mandatory requirements (shall, must) from advisory guidance (should, may). Practice converting passive regulatory prose into direct, active spoken instructions.
               </p>
             </div>
@@ -4506,7 +4500,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
             <div class="p-4 rounded-xl border border-slate-200/90 bg-white shadow-2xs flex flex-col justify-between space-y-3">
               <div class="space-y-2">
                 <div class="flex items-center justify-between">
-                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-sky-100 text-sky-800 border border-sky-200">✈️ EASA Regulatory Audit</span>
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">EASA REGULATORY AUDIT</span>
                   <span class="text-[10px] font-mono text-slate-400 font-semibold">Part-ADR.AR.C.055 • 4 min</span>
                 </div>
                 <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
@@ -5028,7 +5022,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
                     <span class="text-base leading-none">🌐</span>
                     <span class="font-bold text-sky-950 text-xs sm:text-sm">ENAC e-Campus Portal • English S3 (Course 175)</span>
                   </div>
-                  <p class="text-[11.5px] sm:text-xs text-sky-900 leading-relaxed font-normal">
+                  <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed font-normal">
                     Log in with your ENAC credentials to access listening audio tracks, interactive quizzes, and automated scoring.
                   </p>
                 </div>
