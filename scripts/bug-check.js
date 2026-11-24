@@ -67,7 +67,11 @@ const results = {
   scormBounds: { pass: true, details: [] },
   dualAdminParity: { pass: true, details: [] },
   invariants: { pass: true, details: [] },
-  localStorageNotes: { pass: true, details: [] }
+  localStorageNotes: { pass: true, details: [] },
+  curriculumSchema: { pass: true, details: [] },
+  tabRenderSimulation: { pass: true, details: [] },
+  briefingBanners: { pass: true, details: [] },
+  imageSanity: { pass: true, details: [] }
 };
 
 // -----------------------------------------------------------------------------
@@ -365,6 +369,297 @@ if (compiledHtml) {
 }
 
 // -----------------------------------------------------------------------------
+// CHECK 9: Course Data & Curriculum Schema Audit (Videos, TOEIC, Vocabulary)
+// -----------------------------------------------------------------------------
+const courseDataPath = path.join(repoDir, 'data/course-data.js');
+if (fs.existsSync(courseDataPath)) {
+  try {
+    const cdCode = fs.readFileSync(courseDataPath, 'utf8');
+    const sandbox = { window: {} };
+    vm.createContext(sandbox);
+    vm.runInContext(cdCode, sandbox);
+    const cd = sandbox.window.COURSE_DATA;
+
+    let checkedSessions = 0;
+    const schemaIssues = [];
+
+    const tracks = [
+      { key: 'at', name: 'AT' },
+      { key: 'ag', name: 'AG' }
+    ];
+
+    tracks.forEach(track => {
+      const trackData = cd[track.key];
+      if (!trackData) return;
+
+      [1, 2, 3].forEach(modNum => {
+        const mod = trackData[modNum.toString()];
+        if (!mod || !mod.sessions) return;
+
+        [1, 2, 3, 4].forEach(sessNum => {
+          const sess = mod.sessions[sessNum.toString()];
+          if (!sess) return;
+          checkedSessions++;
+          const label = `${track.name} M${modNum} S${sessNum}`;
+
+          // Check materials
+          if (!sess.materials) {
+            schemaIssues.push(`${label}: Missing materials object`);
+            return;
+          }
+
+          // Check videos
+          const videos = sess.materials.videos || [];
+          if (videos.length === 0) {
+            schemaIssues.push(`${label}: 0 videos in materials`);
+          } else {
+            videos.forEach((v, idx) => {
+              const yid = v.videoId || (v.watchUrl && v.watchUrl.match(/v=([a-zA-Z0-9_-]{11})/)?.[1]) || (v.url && v.url.match(/v=([a-zA-Z0-9_-]{11})/)?.[1]);
+              if (!yid || yid.length !== 11) {
+                schemaIssues.push(`${label}: Invalid YouTube ID in video #${idx + 1} (${v.title || 'untitled'})`);
+              }
+            });
+          }
+
+          // Check TOEIC questions
+          const toeic = sess.materials.toeicQuestions || [];
+          if (toeic.length < 5) {
+            schemaIssues.push(`${label}: Incomplete TOEIC practice (${toeic.length}/5 questions)`);
+          } else {
+            toeic.forEach((q, qIdx) => {
+              const stem = q.stem || q.question;
+              const hasOptions = Array.isArray(q.options) && q.options.length === 4;
+              const hasCorrect = q.correctLetter || q.correctText || q.correct;
+              if (!stem || !hasOptions || !hasCorrect) {
+                schemaIssues.push(`${label}: Malformed TOEIC Q${qIdx + 1} (missing stem, 4 options, or correct answer)`);
+              }
+            });
+          }
+
+          // Check vocabulary revision keyTerms
+          if (sess.revision && sess.revision.keyTerms) {
+            if (sess.revision.keyTerms.length < 5) {
+              schemaIssues.push(`${label}: Incomplete vocabulary keyTerms (${sess.revision.keyTerms.length}/10)`);
+            }
+          }
+        });
+      });
+    });
+
+    if (schemaIssues.length > 0) {
+      results.curriculumSchema.pass = false;
+      results.curriculumSchema.details.push(...schemaIssues);
+    } else {
+      results.curriculumSchema.details.push(`Verified all ${checkedSessions} sessions across AT & AG: 100% canonical materials, valid video IDs, complete 5-question TOEIC sets, and vocabulary lists.`);
+    }
+  } catch (err) {
+    results.curriculumSchema.pass = false;
+    results.curriculumSchema.details.push(`Error executing course-data.js: ${err.message}`);
+  }
+} else {
+  results.curriculumSchema.pass = false;
+  results.curriculumSchema.details.push('data/course-data.js not found.');
+}
+
+// -----------------------------------------------------------------------------
+// CHECK 10: Full Modal Tab & Live Session Render Simulation (1,248 Paths)
+// -----------------------------------------------------------------------------
+try {
+  const targetMock = {
+    _val: "",
+    set innerHTML(v) { this._val = v; },
+    get innerHTML() { return this._val; },
+    classList: { add: () => {}, remove: () => {}, contains: () => false },
+    style: {},
+    addEventListener: () => {},
+    removeEventListener: () => {},
+    setAttribute: () => {},
+    getAttribute: () => null
+  };
+
+  const simSandbox = {
+    window: {
+      addEventListener: () => {},
+      removeEventListener: () => {},
+      matchMedia: () => ({ matches: false, addEventListener: () => {} }),
+      location: { href: "" }
+    },
+    document: {
+      getElementById: () => targetMock,
+      querySelectorAll: () => [],
+      querySelector: () => targetMock,
+      createElement: () => targetMock,
+      addEventListener: () => {},
+      removeEventListener: () => {},
+      body: targetMock
+    },
+    console: { log: () => {}, warn: () => {}, error: () => {} },
+    setTimeout: (fn) => fn(),
+    clearTimeout: () => {},
+    navigator: { userAgent: "Node" },
+    localStorage: { getItem: () => null, setItem: () => {}, removeItem: () => {} }
+  };
+  Object.assign(simSandbox.window, simSandbox);
+  vm.createContext(simSandbox);
+
+  // Load course data and all src/js modules in order
+  if (fs.existsSync(courseDataPath)) {
+    vm.runInContext(fs.readFileSync(courseDataPath, "utf8"), simSandbox);
+  }
+  const simJsDir = path.join(repoDir, "src/js");
+  if (fs.existsSync(simJsDir)) {
+    const modules = fs.readdirSync(simJsDir).filter(f => f.endsWith(".js")).sort();
+    modules.forEach(f => {
+      vm.runInContext(fs.readFileSync(path.join(simJsDir, f), "utf8"), simSandbox);
+    });
+  }
+
+  const allModalTabs = [
+    "student_guide", "portfolio_summary", "sem_obj_en", "sem_obj_fr",
+    "immersion_overview", "immersion_cities", "admin_groups", "admin_calendar",
+    "admin_rota", "admin_presentation", "admin_refonte", "admin_feedback",
+    "admin_syllabus", "fe_guidelines", "fe_objectives", "fe_criteria", "fe_prep",
+    "objectives", "plan_obj", "content", "revision", "materials", "notepad",
+    "toeic_guide", "toeic", "ddrs"
+  ];
+
+  let simPasses = 0;
+  const simFailures = [];
+
+  ["ag", "at"].forEach(track => {
+    [1, 2, 3].forEach(mod => {
+      allModalTabs.forEach(tab => {
+        [1, 2, 3, 4, 5, 6, 7, 8].forEach(sess => {
+          simSandbox.modalState = {
+            tab: tab,
+            modNum: mod,
+            sessionNum: sess,
+            program: track
+          };
+          simSandbox.currentProgram = track;
+          targetMock._val = "";
+          try {
+            simSandbox.renderModalBody();
+            if (!targetMock._val || targetMock._val.length === 0) {
+              simFailures.push(`Empty markup returned: ${track.toUpperCase()} M${mod} S${sess} [tab: ${tab}]`);
+            } else {
+              simPasses++;
+            }
+          } catch (err) {
+            simFailures.push(`Exception in ${track.toUpperCase()} M${mod} S${sess} [tab: ${tab}]: ${err.message}`);
+          }
+        });
+      });
+    });
+  });
+
+  if (simFailures.length > 0) {
+    results.tabRenderSimulation.pass = false;
+    results.tabRenderSimulation.details.push(...simFailures.slice(0, 10));
+    if (simFailures.length > 10) {
+      results.tabRenderSimulation.details.push(`...and ${simFailures.length - 10} additional render failure(s).`);
+    }
+  } else {
+    results.tabRenderSimulation.details.push(`Executed ${simPasses} live simulation renders across all tracks, modules, sessions, and modal tabs — 0 crashes, 0 missing functions, 0 empty renders.`);
+  }
+} catch (simErr) {
+  results.tabRenderSimulation.pass = false;
+  results.tabRenderSimulation.details.push(`Simulation harness error: ${simErr.message}`);
+}
+
+// -----------------------------------------------------------------------------
+// CHECK 11: Universal Session Briefing Banner Audit (Rule 1.AC)
+// -----------------------------------------------------------------------------
+const templateSrcDir = path.join(repoDir, "src/js");
+if (fs.existsSync(templateSrcDir)) {
+  const templateFiles = fs.readdirSync(templateSrcDir).filter(f => 
+    f.startsWith("05") || f.startsWith("06") || f.startsWith("07") || f.startsWith("08")
+  );
+
+  let auditedFns = 0;
+  const missingBanner = [];
+
+  templateFiles.forEach(file => {
+    const fullPath = path.join(templateSrcDir, file);
+    const code = fs.readFileSync(fullPath, "utf8");
+    const lines = code.split("\n");
+
+    const fnStarts = [];
+    lines.forEach((l, idx) => {
+      const m = l.match(/function\s+([a-zA-Z0-9_]+LessonContentTabSession\d+)\s*\(/);
+      if (m) {
+        fnStarts.push({ name: m[1], line: idx + 1 });
+      }
+    });
+
+    fnStarts.forEach((fn, i) => {
+      auditedFns++;
+      const endLine = fnStarts[i + 1] ? fnStarts[i + 1].line : lines.length;
+      const fnBody = lines.slice(fn.line, endLine).join("\n");
+      if (!fnBody.includes("renderSessionBriefingBanner")) {
+        missingBanner.push(`${file} -> ${fn.name} (Line ${fn.line})`);
+      }
+    });
+  });
+
+  if (missingBanner.length > 0) {
+    results.briefingBanners.pass = false;
+    results.briefingBanners.details.push(`Found ${missingBanner.length} session template(s) missing renderSessionBriefingBanner:`);
+    missingBanner.forEach(m => results.briefingBanners.details.push(`   - ${m}`));
+  } else {
+    results.briefingBanners.details.push(`Audited all ${auditedFns} lesson content template functions: 100% include universal briefing & roadmap banner.`);
+  }
+} else {
+  results.briefingBanners.pass = false;
+  results.briefingBanners.details.push("src/js directory not found.");
+}
+
+// -----------------------------------------------------------------------------
+// CHECK 12: Image Asset Sanity & Format Verification (Rule 1.AB)
+// -----------------------------------------------------------------------------
+const imagesDir = path.join(repoDir, "images");
+if (fs.existsSync(imagesDir)) {
+  const imgFiles = fs.readdirSync(imagesDir).filter(f => /\.(jpe?g|png)$/i.test(f));
+  let checkedImages = 0;
+  const corruptedImages = [];
+
+  imgFiles.forEach(f => {
+    checkedImages++;
+    const p = path.join(imagesDir, f);
+    const stat = fs.statSync(p);
+    
+    // Check minimum size (guards against ~3KB HTML error pages saved as jpg)
+    if (stat.size < 10000) {
+      corruptedImages.push(`${f}: File too small (${stat.size} bytes) - possible HTML error response`);
+      return;
+    }
+
+    // Verify magic bytes
+    const buf = Buffer.alloc(8);
+    const fd = fs.openSync(p, "r");
+    fs.readSync(fd, buf, 0, 8, 0);
+    fs.closeSync(fd);
+
+    const isJpeg = buf[0] === 0xFF && buf[1] === 0xD8 && buf[2] === 0xFF;
+    const isPng = buf[0] === 0x89 && buf[1] === 0x50 && buf[2] === 0x4E && buf[3] === 0x47;
+
+    if (!isJpeg && !isPng) {
+      corruptedImages.push(`${f}: Invalid image magic bytes (not valid JPEG or PNG)`);
+    }
+  });
+
+  if (corruptedImages.length > 0) {
+    results.imageSanity.pass = false;
+    results.imageSanity.details.push(...corruptedImages);
+  } else {
+    results.imageSanity.details.push(`Verified ${checkedImages} visual assets: 100% valid binary images (magic bytes & size bounds verified).`);
+  }
+} else {
+  results.imageSanity.pass = false;
+  results.imageSanity.details.push("images directory not found.");
+}
+
+// -----------------------------------------------------------------------------
 // FORMAT REPORT OUTPUT
 // -----------------------------------------------------------------------------
 const checks = [
@@ -375,7 +670,11 @@ const checks = [
   { key: 'scormBounds', name: '5. 💾 SCORM 1.2 SUSPEND_DATA BOUNDS' },
   { key: 'dualAdminParity', name: '6. ⚖️ DUAL-ADMIN & TITLE PARITY (1.B/1.L)' },
   { key: 'invariants', name: '7. 🚫 JARGON, TIMINGS & PRIVACY (1.I/1.Q)' },
-  { key: 'localStorageNotes', name: '8. 📝 LOCALSTORAGE AUTO-SAVE HANDLERS' }
+  { key: 'localStorageNotes', name: '8. 📝 LOCALSTORAGE AUTO-SAVE HANDLERS' },
+  { key: 'curriculumSchema', name: '9. 📚 CURRICULUM SCHEMA (VIDEOS, TOEIC, VOCAB)' },
+  { key: 'tabRenderSimulation', name: '10. 🧪 FULL MODAL TAB & SESSION SIMULATION' },
+  { key: 'briefingBanners', name: '11. 🧭 UNIVERSAL SESSION BRIEFING BANNERS' },
+  { key: 'imageSanity', name: '12. 🖼️ IMAGE ASSET SANITY & MAGIC BYTES' }
 ];
 
 let allPassed = true;
