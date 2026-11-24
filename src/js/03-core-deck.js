@@ -3012,7 +3012,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         <!-- 2. Mobile-First Quick Launchers Bar (Streamlined Action Buttons) -->
         <div class="space-y-2">
           <div class="flex items-center justify-between px-1">
-            <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">🚀 Quick Launchers</span>
+            <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">QUICK NAVIGATION</span>
             <span class="text-[10px] font-mono text-slate-400 hidden sm:inline">1-Click Fast Navigation</span>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3">
