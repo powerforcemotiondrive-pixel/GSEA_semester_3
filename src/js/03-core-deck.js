@@ -2956,10 +2956,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         <!-- 1b. Semester 3 Overview & Student Success Strategy -->
         <div class="rounded-2xl border border-sky-200/90 bg-gradient-to-br from-sky-50/80 via-white to-indigo-50/40 p-4 sm:p-5 shadow-2xs space-y-3.5">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-sky-100">
-            <div class="flex items-start sm:items-center gap-3">
-              <div class="w-9 h-9 rounded-xl bg-sky-600 text-white flex items-center justify-center text-lg shadow-xs font-bold shrink-0">
-                📘
-              </div>
+            <div class="flex items-start sm:items-center">
               <div>
                 <div class="flex items-center gap-2">
                   <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider text-sky-700 bg-sky-100/80 border border-sky-200 px-2 py-0.5 rounded">Course Roadmap</span>
