@@ -6,7 +6,7 @@
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Executive Overview Card -->
-          <div class="bg-gradient-to-r from-slate-50 to-amber-50/40 border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide text-white" style="background-color: ${theme.primary};">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -33,7 +33,7 @@
                   4 Core Communicative Objectives (B2 Standard)
                 </h4>
               </div>
-              <span class="text-[11px] font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-200">Spoken Fluency Focus</span>
+              <span class="text-[11px] font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 font-mono">Spoken Fluency Focus</span>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
@@ -88,13 +88,13 @@
               <div class="border border-slate-200 rounded-xl p-4 bg-white shadow-xs space-y-2.5 hover:border-blue-300 transition-all">
                 <div class="flex items-center justify-between">
                   <span class="px-2.5 py-0.5 rounded-full text-white text-[10px] font-bold uppercase tracking-wider bg-blue-700">Idea 1 • Reading</span>
-                  <span class="text-[10px] font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-200">Comprehension Questions</span>
+                  <span class="text-[10px] font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 font-mono">Comprehension Questions</span>
                 </div>
                 <h5 class="text-xs sm:text-sm font-bold text-slate-800">&ldquo;The 3-Question Incident Breakdown&rdquo;</h5>
                 <p class="text-[11px] text-slate-600 leading-relaxed">
                   Provide classmates with a short 6-line extract from an EASA safety bulletin. Give pairs 4 minutes to read the extract and answer 3 targeted comprehension questions about the operational hazard.
                 </p>
-                <div class="p-2.5 rounded-lg bg-blue-50/60 border border-blue-100 text-[11px] text-blue-950 space-y-1">
+                <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-[11px] text-slate-800 space-y-1">
                   <div class="font-bold text-blue-900">Example Questions to Ask:</div>
                   <div class="italic text-[10.5px]">&ldquo;What is the main safety risk described in paragraph 2?&rdquo; • &ldquo;Which aerodrome department is responsible for this check?&rdquo;</div>
                 </div>
@@ -110,7 +110,7 @@
                 <p class="text-[11px] text-slate-600 leading-relaxed">
                   Project 4 quick scenarios or regulatory statements on the screen. Tables have 60 seconds to consult, vote on whether each statement complies with the EASA rule, and defend their choice in English.
                 </p>
-                <div class="p-2.5 rounded-lg bg-amber-50/60 border border-amber-100 text-[11px] text-amber-950 space-y-1">
+                <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-[11px] text-slate-800 space-y-1">
                   <div class="font-bold text-amber-900">Target Discussion Prompts:</div>
                   <div class="italic text-[10.5px]">&ldquo;Table 2, why did your group vote False?&rdquo; • &ldquo;Under Part-ADR, what is the mandatory mitigation?&rdquo;</div>
                 </div>
@@ -120,13 +120,13 @@
               <div class="border border-slate-200 rounded-xl p-4 bg-white shadow-xs space-y-2.5 hover:border-indigo-300 transition-all">
                 <div class="flex items-center justify-between">
                   <span class="px-2.5 py-0.5 rounded-full text-white text-[10px] font-bold uppercase tracking-wider bg-indigo-700">Idea 3 • Speaking</span>
-                  <span class="text-[10px] font-bold text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded border border-indigo-200">Pair Discussion</span>
+                  <span class="text-[10px] font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 font-mono">Pair Discussion</span>
                 </div>
                 <h5 class="text-xs sm:text-sm font-bold text-slate-800">&ldquo;The 90-Second Operational Pitch&rdquo;</h5>
                 <p class="text-[11px] text-slate-600 leading-relaxed">
                   Pairs take the roles of aerodrome duty managers. Based on your extract, they have 3 minutes to agree on 2 immediate safety actions and 90 seconds to pitch their solution to the class.
                 </p>
-                <div class="p-2.5 rounded-lg bg-indigo-50/60 border border-indigo-100 text-[11px] text-indigo-950 space-y-1">
+                <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-[11px] text-slate-800 space-y-1">
                   <div class="font-bold text-indigo-900">Target Language:</div>
                   <div class="italic text-[10.5px]">&ldquo;In our view, the primary risk is...&rdquo; • &ldquo;We should immediately enforce a NOTAM stating...&rdquo;</div>
                 </div>
@@ -142,7 +142,7 @@
                 <p class="text-[11px] text-slate-600 leading-relaxed">
                   Provide classmates with 4 technical terms and definitions, but with 2 deliberate operational errors hidden. Classmates race in pairs to find the errors and correct them in spoken English.
                 </p>
-                <div class="p-2.5 rounded-lg bg-emerald-50/60 border border-emerald-100 text-[11px] text-emerald-950 space-y-1">
+                <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-[11px] text-slate-800 space-y-1">
                   <div class="font-bold text-emerald-900">Target Language:</div>
                   <div class="italic text-[10.5px]">&ldquo;Statement 2 is incorrect because hydro-blasting uses water, not chemicals.&rdquo;</div>
                 </div>
@@ -246,19 +246,19 @@
               </div>
 
               <div class="p-3 bg-white rounded-xl border border-slate-200 shadow-2xs">
-                <span class="text-[10px] font-black uppercase text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-200">Topic 4 (S4)</span>
+                <span class="text-[10px] font-black uppercase text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 font-mono">Topic 4 (S4)</span>
                 <h5 class="font-bold text-slate-800 mt-1">Airfield Audits &amp; Non-Compliance</h5>
                 <p class="text-slate-600 text-[11px] mt-0.5 leading-relaxed">Part-ADR.AR.C.055 findings, Level 1 immediate hazards vs Level 2, past modal deductions (must/could have).</p>
               </div>
 
               <div class="p-3 bg-white rounded-xl border border-slate-200 shadow-2xs">
-                <span class="text-[10px] font-black uppercase text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-200">Topic 5 (S5)</span>
+                <span class="text-[10px] font-black uppercase text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 font-mono">Topic 5 (S5)</span>
                 <h5 class="font-bold text-slate-800 mt-1">Multi-Source Incident Analysis</h5>
                 <p class="text-slate-600 text-[11px] mt-0.5 leading-relaxed">Swiss Cheese model, cross-referencing ATC radio transcripts, METAR storm decodes, aircraft defect logs.</p>
               </div>
 
               <div class="p-3 bg-white rounded-xl border border-slate-200 shadow-2xs">
-                <span class="text-[10px] font-black uppercase text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-200">Topic 6 (S6)</span>
+                <span class="text-[10px] font-black uppercase text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 font-mono">Topic 6 (S6)</span>
                 <h5 class="font-bold text-slate-800 mt-1">Corrective Action Plans (CAP)</h5>
                 <p class="text-slate-600 text-[11px] mt-0.5 leading-relaxed">Part-ADR.OR.D.005 CAP drafting, negotiating remediation deadlines, formal commitment formulas (undertake to).</p>
               </div>
@@ -292,7 +292,7 @@
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Executive Overview Card -->
-          <div class="bg-gradient-to-r from-slate-50 to-amber-50/40 border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide text-white" style="background-color: ${theme.primary};">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -437,7 +437,7 @@
               <div class="border border-slate-200 rounded-xl p-4 bg-white shadow-xs">
                 <div class="flex items-center justify-between mb-2">
                   <span class="px-2.5 py-0.5 rounded-full text-white text-[10px] font-bold tracking-wide" style="background-color: ${theme.primary};">DIMENSION 3</span>
-                  <span class="text-[10px] font-bold text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded border border-indigo-200">History</span>
+                  <span class="text-[10px] font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 font-mono">History</span>
                 </div>
                 <h5 class="text-sm font-bold text-slate-800">Historical Moments &amp; Milestones</h5>
                 <ul class="text-xs text-slate-600 space-y-1 mt-2 list-disc pl-4">
@@ -515,7 +515,7 @@
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Executive Overview Card -->
-          <div class="bg-gradient-to-r from-slate-50 to-teal-50/40 border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide text-white" style="background-color: ${theme.primary};">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -659,7 +659,7 @@
               <div class="border border-slate-200 rounded-xl p-4 bg-white shadow-xs">
                 <div class="flex items-center justify-between mb-2">
                   <span class="px-2.5 py-0.5 rounded-full text-white text-[10px] font-bold tracking-wide" style="background-color: ${theme.primary};">DIMENSION 1</span>
-                  <span class="text-[10px] font-bold text-teal-700 bg-teal-50 px-2 py-0.5 rounded border border-teal-200">Situation Overview</span>
+                  <span class="text-[10px] font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 font-mono">Situation Overview</span>
                 </div>
                 <h5 class="text-sm font-bold text-slate-800">Initial Incident Facts &amp; Context</h5>
                 <ul class="text-xs text-slate-600 space-y-1 mt-2 list-disc pl-4">
@@ -672,7 +672,7 @@
               <div class="border border-slate-200 rounded-xl p-4 bg-white shadow-xs">
                 <div class="flex items-center justify-between mb-2">
                   <span class="px-2.5 py-0.5 rounded-full text-white text-[10px] font-bold tracking-wide" style="background-color: ${theme.primary};">DIMENSION 2</span>
-                  <span class="text-[10px] font-bold text-teal-700 bg-teal-50 px-2 py-0.5 rounded border border-teal-200">Causal Analysis</span>
+                  <span class="text-[10px] font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 font-mono">Causal Analysis</span>
                 </div>
                 <h5 class="text-sm font-bold text-slate-800">Technical &amp; Human Factors Root Causes</h5>
                 <ul class="text-xs text-slate-600 space-y-1 mt-2 list-disc pl-4">
@@ -685,7 +685,7 @@
               <div class="border border-slate-200 rounded-xl p-4 bg-white shadow-xs">
                 <div class="flex items-center justify-between mb-2">
                   <span class="px-2.5 py-0.5 rounded-full text-white text-[10px] font-bold tracking-wide" style="background-color: ${theme.primary};">DIMENSION 3</span>
-                  <span class="text-[10px] font-bold text-teal-700 bg-teal-50 px-2 py-0.5 rounded border border-teal-200">Immediate Response</span>
+                  <span class="text-[10px] font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 font-mono">Immediate Response</span>
                 </div>
                 <h5 class="text-sm font-bold text-slate-800">Operational &amp; Crisis Management Execution</h5>
                 <ul class="text-xs text-slate-600 space-y-1 mt-2 list-disc pl-4">
@@ -698,7 +698,7 @@
               <div class="border border-slate-200 rounded-xl p-4 bg-white shadow-xs">
                 <div class="flex items-center justify-between mb-2">
                   <span class="px-2.5 py-0.5 rounded-full text-white text-[10px] font-bold tracking-wide" style="background-color: ${theme.primary};">DIMENSION 4</span>
-                  <span class="text-[10px] font-bold text-teal-700 bg-teal-50 px-2 py-0.5 rounded border border-teal-200">Corrective Measures</span>
+                  <span class="text-[10px] font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 font-mono">Corrective Measures</span>
                 </div>
                 <h5 class="text-sm font-bold text-slate-800">Long-term Corrective Actions &amp; Regulation</h5>
                 <ul class="text-xs text-slate-600 space-y-1 mt-2 list-disc pl-4">
@@ -744,7 +744,7 @@
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Overview Card -->
-          <div class="bg-gradient-to-r from-slate-50 to-amber-50/40 border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
             <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Target Competencies • B2 CEFR Level</span>
             <h3 class="text-base sm:text-lg font-bold text-slate-800 mt-1">Formative Evaluation 1 Objectives — EASA Regulatory Extract & Class Activity</h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
@@ -822,7 +822,7 @@
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Overview Card -->
-          <div class="bg-gradient-to-r from-slate-50 to-amber-50/40 border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
             <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Target Competencies • B2 CEFR Level</span>
             <h3 class="text-base sm:text-lg font-bold text-slate-800 mt-1">Formative Evaluation 2 Objectives (Aircraft / Airlines)</h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
@@ -900,7 +900,7 @@
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Overview Card -->
-          <div class="bg-gradient-to-r from-slate-50 to-teal-50/40 border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
             <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Target Competencies • B2/C1 CEFR Level</span>
             <h3 class="text-base sm:text-lg font-bold text-slate-800 mt-1">Formative Evaluation 3 Objectives (Aviation Current Events)</h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
@@ -983,7 +983,7 @@
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Overview Card -->
-          <div class="bg-gradient-to-r from-slate-50 to-amber-50/40 border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Official Rubric • Technical English (AT • LV125E)</span>
               <span class="text-xs font-bold px-2.5 py-0.5 rounded-md text-white font-mono shadow-xs" style="background-color: ${theme.primary};">
@@ -1081,7 +1081,7 @@
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Overview Card -->
-          <div class="bg-gradient-to-r from-slate-50 to-amber-50/40 border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Official Rubric • Technical English (AT)</span>
               <span class="text-xs font-bold px-2.5 py-0.5 rounded-md text-white font-mono shadow-xs" style="background-color: ${theme.primary};">
@@ -1174,7 +1174,7 @@
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Overview Card -->
-          <div class="bg-gradient-to-r from-slate-50 to-teal-50/40 border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Official Rubric • Technical English (AT)</span>
               <span class="text-xs font-bold px-2.5 py-0.5 rounded-md text-white font-mono shadow-xs" style="background-color: ${theme.primary};">

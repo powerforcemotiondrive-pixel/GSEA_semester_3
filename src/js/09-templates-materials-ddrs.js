@@ -385,7 +385,7 @@
 
               <!-- Crucial TOEIC Trap Alert -->
               ${grammar.trap ? `
-                <div class="p-3.5 bg-amber-50/90 border border-amber-200 rounded-xl text-xs text-amber-900 leading-relaxed shadow-xs">
+                <div class="p-3.5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl text-xs text-slate-700 leading-relaxed shadow-xs">
                   ${grammar.trap}
                 </div>
               ` : ''}
@@ -563,8 +563,8 @@
                 <strong>${(sessionData.materials && sessionData.materials.quizTitle) ? 'Operational Analysis & Safety Rule:' : 'Grammar Rationale:'}</strong> ${currentQ.analysis}
               </p>
               ${currentQ.strategy ? `
-                <div class="p-3 bg-amber-50 border border-amber-200 rounded-lg text-xs text-amber-900 leading-relaxed">
-                  <strong>📌 ${(sessionData.materials && sessionData.materials.quizTitle) ? 'Operational Rule & Recommendation:' : 'TOEIC Strategy Rule:'}</strong> ${currentQ.strategy}
+                <div class="p-3 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-lg text-xs text-slate-700 leading-relaxed shadow-2xs">
+                  <strong>${(sessionData.materials && sessionData.materials.quizTitle) ? 'Operational Rule & Recommendation:' : 'TOEIC Strategy Rule:'}</strong> ${currentQ.strategy}
                 </div>
               ` : ''}
             </div>
@@ -632,12 +632,12 @@
                 <div class="text-base font-black text-slate-900">2 Hours • 200 Questions</div>
                 <p class="text-[11px] text-slate-600 leading-snug">Paper &amp; pencil multiple choice test with bubble answer sheet. Maximum score: <strong>990 points</strong>.</p>
               </div>
-              <div class="p-3.5 bg-blue-50/80 border border-blue-200 rounded-xl space-y-1">
+              <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
                 <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-blue-700">Listening Section</span>
                 <div class="text-base font-black text-blue-950">45 Mins • 100 Questions</div>
                 <p class="text-[11px] text-blue-900 leading-snug">Parts 1 to 4 • <strong>495 points max</strong>. Fast paced audio recorded by native speakers (US, UK, Canadian, Australian).</p>
               </div>
-              <div class="p-3.5 bg-amber-50/80 border border-amber-200 rounded-xl space-y-1">
+              <div class="p-3.5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-1 shadow-2xs">
                 <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-amber-700">Reading Section</span>
                 <div class="text-base font-black text-amber-950">75 Mins • 100 Questions</div>
                 <p class="text-[11px] text-amber-900 leading-snug">Parts 5 to 7 • <strong>495 points max</strong>. Autonomous time management: speed through P5/P6 to preserve time for P7.</p>
@@ -1267,8 +1267,8 @@
             </div>
 
             <!-- Compact Storage Notice Callout (Mobile-optimized) -->
-            <div class="p-2.5 sm:p-3.5 bg-amber-50 border border-amber-200/90 rounded-xl text-amber-950 text-[11px] sm:text-xs leading-relaxed flex items-start gap-2.5">
-              <span class="text-sm sm:text-base shrink-0 mt-0.5">⚠️</span>
+            <div class="p-2.5 sm:p-3.5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl text-slate-800 text-[11px] sm:text-xs leading-relaxed flex items-start gap-2.5 shadow-2xs">
+              
               <div class="space-y-0.5 sm:space-y-1">
                 <div class="flex items-center justify-between gap-1">
                   <span class="font-bold uppercase tracking-wider text-[10px] sm:text-[11px] text-amber-800">Local Browser Storage Notice</span>
@@ -1503,14 +1503,14 @@
             <!-- Optional Warning Banner -->
             ${slide.warning ? `
               <div class="p-3.5 bg-amber-950/70 border border-amber-600/70 text-amber-200 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 shadow-xs">
-                <span class="text-base">⚠️</span>
+                
                 <span>${slide.warning}</span>
               </div>
             ` : ""}
 
             <!-- Bottom Takeaway Banner -->
             <div class="p-4 bg-sky-950/80 border border-sky-600/60 text-sky-100 rounded-2xl text-xs sm:text-sm font-semibold flex items-start gap-3 shadow-md">
-              <span class="text-lg shrink-0 mt-0.5">💡</span>
+              
               <div>
                 <strong class="font-black text-sky-300 uppercase tracking-wide mr-1.5">Key Operational Takeaway:</strong>
                 <span>${slide.takeaway}</span>
@@ -1662,14 +1662,14 @@
             <!-- Optional Warning Banner -->
             ${slide.warning ? `
               <div class="p-3 bg-amber-50 border border-amber-200 rounded-xl text-amber-900 text-xs font-semibold flex items-center gap-2">
-                <span class="text-base shrink-0">⚠️</span>
+                
                 <span>${slide.warning}</span>
               </div>
             ` : ""}
 
             <!-- Bottom Takeaway Banner -->
             <div class="p-3 bg-slate-900 text-white rounded-xl text-xs font-medium flex items-start gap-2.5 shadow-xs">
-              <span class="text-base shrink-0 mt-0.5">💡</span>
+              
               <div class="leading-relaxed">
                 <strong class="font-bold text-sky-300 uppercase tracking-wider mr-1">Key Operational Takeaway:</strong>
                 <span>${slide.takeaway}</span>

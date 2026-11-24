@@ -726,11 +726,11 @@
           </div>
 
           <!-- Dynamic Rotation Callout Banner -->
-          <div class="p-3.5 bg-amber-50/80 border border-amber-200 rounded-xl flex items-start gap-3 text-xs text-amber-950 shadow-2xs">
+          <div class="p-3.5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl flex items-start gap-3 text-xs text-slate-800 shadow-2xs">
             <svg class="w-4 h-4 text-amber-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
             <div class="space-y-1">
               <span class="font-bold block">Dynamic Formative Evaluation (FE) Rotations:</span>
-              <p class="text-[11px] text-amber-900 leading-relaxed">
+              <p class="text-[11px] text-slate-600 leading-relaxed">
                 To ensure variety in group work and timeslot fairness, groups do <strong>not</strong> have fixed pairs or trios. Each group rotates across 4 slots of 30 minutes (2 hours total). Every student experiences different peers and rotates between early and late slots across each Formative Evaluation. Switch to the <strong>FE Tutorial Rotas</strong> tab to view your complete evaluation schedule.
               </p>
             </div>
@@ -890,7 +890,7 @@
                     const roomBadgesHtml = renderWeekRoomBadges(s.rooms, promo.groups);
                     if (s.isFe) {
                       return `
-                        <div class="p-3.5 flex flex-wrap items-center justify-between gap-2 bg-amber-50/70 border-l-4 border-amber-500">
+                        <div class="p-3.5 flex flex-wrap items-center justify-between gap-2 bg-white border-b border-slate-200 border-l-4 border-l-amber-400">
                           <div class="flex items-center gap-3">
                             <span class="px-2 py-1 rounded font-mono text-[10px] font-black text-white bg-amber-600">${s.week}</span>
                             <div>
@@ -917,7 +917,7 @@
                   }).join("")}
                 </div>
                 ${mod.num === 2 ? `
-                <div class="p-3.5 bg-amber-50/90 border-t border-amber-200 text-amber-950 flex flex-wrap items-center justify-between gap-2 text-xs">
+                <div class="p-3.5 bg-white border-t border-slate-200 text-slate-800 border-l-4 border-l-amber-400 flex flex-wrap items-center justify-between gap-2 text-xs">
                   <div class="flex items-center gap-2.5">
                     <span class="px-2 py-0.5 rounded font-mono text-[10px] font-black text-white bg-amber-600">Week 12</span>
                     <span><strong>MTF TEST:</strong> Friday PM (13h15 – 17h30) for full promo Week 12</span>
@@ -1125,7 +1125,7 @@
           </div>
 
           <!-- Section 3: Overflow Examination Panels (Teacher 4 & Teacher 5) -->
-          <div class="border border-amber-300 rounded-xl overflow-hidden bg-amber-50/40 shadow-2xs">
+          <div class="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-2xs">
             <div class="p-3.5 bg-amber-900 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
               <div class="flex items-center gap-2.5">
                 <span class="px-2.5 py-1 rounded font-mono font-black text-amber-900 text-[11px] shadow-2xs bg-amber-300">
@@ -1309,7 +1309,7 @@
           </div>
 
           <!-- Key Mindset Alert Box -->
-          <div class="p-4 rounded-xl border border-blue-200/80 bg-blue-50/70 shadow-2xs flex items-start gap-3">
+          <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-amber-400 bg-white shadow-2xs flex items-start gap-3">
             <span class="text-xl shrink-0 mt-0.5">🎯</span>
             <div class="text-xs text-blue-900 space-y-1">
               <h4 class="font-extrabold text-blue-950 text-sm">${isFr ? 'Notre Priorité : Progression Continue &amp; Régulière' : 'Our Focus: Gradual &amp; Steady Improvement'}</h4>
@@ -1365,9 +1365,9 @@
           </div>
 
           <!-- Section 2: CRITICAL PORTFOLIO ALERT -->
-          <div class="p-5 rounded-2xl bg-amber-50/80 border-2 border-amber-300 shadow-xs space-y-3">
+          <div class="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200 border-l-4 border-l-amber-400 shadow-xs space-y-3">
             <div class="flex items-center gap-2 text-amber-950">
-              <span class="text-xl">⚠️</span>
+              <span class="px-2 py-0.5 rounded font-mono text-[10px] font-bold uppercase tracking-wider bg-slate-900 text-amber-300 border border-slate-800">MANDATORY</span>
               <h4 class="font-black text-sm uppercase tracking-wide">${isFr ? 'Règle Obligatoire : Rédigez des remarques détaillées (Jamais de réponses en un seul mot !)' : 'Mandatory Rule: Detailed Portfolio Reflections (No One-Word Answers!)'}</h4>
             </div>
             <p class="text-xs sm:text-[12.5px] text-amber-900 leading-relaxed">
@@ -1691,8 +1691,8 @@
           </div>
 
           <!-- Lead Statement Box -->
-          <div class="p-4 rounded-xl border border-blue-200/80 bg-blue-50/70 shadow-2xs flex items-start gap-3">
-            <span class="text-xl shrink-0 mt-0.5">📌</span>
+          <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-amber-400 bg-white shadow-2xs flex items-start gap-3">
+            
             <div>
               <h4 class="text-xs sm:text-sm font-extrabold text-blue-950">${leadSentence}</h4>
               <p class="text-[11.5px] sm:text-xs text-blue-900/90 leading-relaxed mt-1">
@@ -2221,7 +2221,7 @@
           </div>
 
           <!-- Section 3: Formative Evaluation 1 (FE1) Guidelines & Flipped Lesson Pack -->
-          <div class="p-4 sm:p-5 bg-amber-50/70 border border-amber-200/90 rounded-2xl shadow-xs space-y-3">
+          <div class="p-4 sm:p-5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-2xl shadow-xs space-y-3">
             <div class="flex items-center justify-between gap-3">
               <div class="flex items-center gap-2">
                 <span class="text-[10px] font-mono font-black uppercase tracking-wider px-2.5 py-0.5 rounded bg-amber-200 text-amber-900">

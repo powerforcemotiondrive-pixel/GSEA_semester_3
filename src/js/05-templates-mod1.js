@@ -30,8 +30,7 @@ function renderSessionBriefingBanner(sessionInput, theme) {
         <div class="bg-slate-900 text-white rounded-xl p-3 sm:p-3.5 shadow-xs border border-slate-800">
           <div class="flex flex-col md:flex-row md:items-center justify-between gap-2.5">
             <div class="flex items-center gap-2 shrink-0">
-              <span class="text-xs">💡</span>
-              <span class="text-[10.5px] font-black uppercase tracking-wider text-amber-300">How to Use This Platform:</span>
+              <span class="text-[10.5px] font-bold font-mono uppercase tracking-wider text-amber-300">PLATFORM NAVIGATION &amp; WORKFLOW:</span>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3 text-[11px] text-slate-300 w-full md:w-auto">
               <div class="flex items-center gap-1.5">
@@ -56,8 +55,7 @@ function renderSessionBriefingBanner(sessionInput, theme) {
           <div class="lg:col-span-7 bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs flex flex-col justify-between space-y-3.5">
             <div class="space-y-1.5">
               <div class="flex items-center gap-2">
-                <span class="text-xs">📌</span>
-                <span class="text-[10.5px] font-black uppercase tracking-wider text-slate-500">Session Briefing • Operational Context</span>
+                <span class="text-[10.5px] font-bold font-mono uppercase tracking-wider text-slate-500">SESSION BRIEFING • OPERATIONAL CONTEXT</span>
               </div>
               <h4 class="text-sm sm:text-base font-black text-slate-900">${heroTitle}</h4>
               ${intro ? `<p class="text-xs sm:text-[12.5px] text-slate-600 leading-relaxed">${intro}</p>` : ''}
@@ -224,7 +222,7 @@ function renderLessonContentTabSession1(sessionData, theme) {
                       ${answers.length > 0 ? `
                         <div class="pt-1">
                           <button type="button" onclick="const box=document.getElementById('disc-ans-s1-${pId}'); box.classList.toggle('hidden'); this.querySelector('span').innerText = box.classList.contains('hidden') ? '💡 View Example Ideas &amp; Answers' : 'Hide Example Ideas';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-amber-700 hover:text-amber-900 cursor-pointer">
-                            <span>💡 View Example Ideas &amp; Answers</span> &rarr;
+                            <span>View Example Ideas &amp; Answers</span> &rarr;
                           </button>
                           <div id="disc-ans-s1-${pId}" class="hidden mt-2 p-2.5 bg-amber-50/90 border border-amber-200 rounded-md text-[11px] text-slate-700 space-y-1.5">
                             <span class="text-[10px] font-bold uppercase tracking-wider text-amber-900 block mb-1">Example Student Answers &amp; Talking Points:</span>
@@ -899,7 +897,7 @@ function renderLessonContentTabSession2(sessionData, theme) {
                       ${answers.length > 0 ? `
                         <div class="pt-1">
                           <button type="button" onclick="const box=document.getElementById('disc-ans-s2-${pId}'); box.classList.toggle('hidden'); this.querySelector('span').innerText = box.classList.contains('hidden') ? '💡 View Example Ideas &amp; Answers' : 'Hide Example Ideas';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-amber-700 hover:text-amber-900 cursor-pointer">
-                            <span>💡 View Example Ideas &amp; Answers</span> &rarr;
+                            <span>View Example Ideas &amp; Answers</span> &rarr;
                           </button>
                           <div id="disc-ans-s2-${pId}" class="hidden mt-2 p-2.5 bg-amber-50/90 border border-amber-200 rounded-md text-[11px] text-slate-700 space-y-1.5">
                             <span class="text-[10px] font-bold uppercase tracking-wider text-amber-900 block mb-1">Example Student Answers &amp; Talking Points:</span>
@@ -1451,7 +1449,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                       ${answers.length > 0 ? `
                         <div class="pt-1">
                           <button type="button" onclick="const box=document.getElementById('disc-ans-s3-${pId}'); box.classList.toggle('hidden'); this.querySelector('span').innerText = box.classList.contains('hidden') ? '💡 View Example Ideas &amp; Answers' : 'Hide Example Ideas';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-amber-700 hover:text-amber-900 cursor-pointer">
-                            <span>💡 View Example Ideas &amp; Answers</span> &rarr;
+                            <span>View Example Ideas &amp; Answers</span> &rarr;
                           </button>
                           <div id="disc-ans-s3-${pId}" class="hidden mt-2 p-2.5 bg-amber-50/90 border border-amber-200 rounded-md text-[11px] text-slate-700 space-y-1.5">
                             <span class="text-[10px] font-bold uppercase tracking-wider text-amber-900 block mb-1">Example Student Answers &amp; Talking Points:</span>
@@ -1857,7 +1855,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                     <span class="inline-block px-1.5 py-0.5 rounded text-[10px] font-bold bg-slate-200 text-slate-700 mb-1">Question ${q.num}</span>
                     <p class="text-xs font-semibold text-slate-900 leading-snug">${q.q}</p>
                   </div>
-                  <p class="text-[11px] text-slate-500 italic border-t border-slate-200/60 pt-2">💡 ${q.hint}</p>
+                  <p class="text-[11px] text-slate-500 italic border-t border-slate-200/60 pt-2"><span class="font-bold text-amber-600 font-mono text-[10px]">HINT:</span> ${q.hint}</p>
                 </div>
               `).join('')}
             </div>
@@ -1949,7 +1947,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
 
             ${rules.trap ? `
               <div class="p-3 rounded-lg bg-amber-50 border border-amber-200 text-amber-950 text-xs flex items-center gap-2">
-                <span class="text-base shrink-0">⚠️</span>
+                <span class="px-1.5 py-0.5 rounded text-[9.5px] font-mono font-bold bg-slate-900 text-amber-300">CAUTION</span>
                 <span>${rules.trap}</span>
               </div>
             ` : ''}
@@ -2610,7 +2608,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
             <!-- Revealable Model Debriefing Script -->
             <div class="pt-2">
               <button type="button" onclick="const p = document.getElementById('model-s5-script'); p.classList.toggle('hidden');" class="inline-flex items-center gap-1.5 text-xs font-bold text-sky-700 hover:text-sky-900 bg-sky-50 hover:bg-sky-100 border border-sky-200 px-3.5 py-2 rounded-lg transition-colors cursor-pointer">
-                <span>💡 Reveal Model Executive Briefing Script</span>
+                <span>Reveal Model Executive Briefing Script</span>
                 <span>&darr;</span>
               </button>
               <div id="model-s5-script" class="hidden mt-3 p-4 bg-slate-900 text-white rounded-xl space-y-2 border border-slate-800 text-xs sm:text-[12.5px] leading-relaxed shadow-lg">
@@ -3522,7 +3520,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                 },
                 {
                   category: "Teaching New Technical Words",
-                  icon: "💡",
+                  icon: "",
                   phrases: [
                     "The first key term we want to teach you today is...",
                     "In simple words, this term means...",

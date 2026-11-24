@@ -906,8 +906,8 @@
         if (milestoneText) {
           const badgeText = (page && page.isFe) ? 'FE Target' : ((page && page.isAdmin) ? 'Admin Action' : (page && page.isImmersion ? 'Homestay' : (page && page.isObjectives ? 'Syllabus' : (page && page.isDocsHub ? 'Course Docs' : 'FE Tip'))));
           calloutsHtml += `
-            <div class="p-3.5 bg-amber-50/60 border border-amber-200/80 rounded-xl flex items-start gap-2.5 shadow-2xs h-full">
-              <span class="inline-flex items-center text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-200/80 text-amber-900 shrink-0 mt-0.5">${badgeText}</span>
+            <div class="p-3.5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl flex items-start gap-2.5 shadow-2xs h-full">
+              <span class="inline-flex items-center text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-slate-900 text-amber-300 shrink-0 mt-0.5">${badgeText}</span>
               <p class="text-xs sm:text-sm text-amber-950 leading-relaxed font-normal">
                 ${milestoneText}
               </p>
@@ -1437,7 +1437,7 @@
           </div>
 
           <!-- Section 3: Operational Benchmark & Assessment Strategy -->
-          <div class="p-3.5 rounded-xl bg-amber-50/70 border border-amber-100 shadow-2xs">
+          <div class="p-3.5 rounded-xl bg-white border border-slate-200 border-l-4 border-l-amber-400 shadow-2xs">
             <div class="flex items-center gap-2 mb-1.5 text-amber-950 font-bold text-xs uppercase tracking-wider">
               <svg class="w-3.5 h-3.5 text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
               <span>Operational Benchmark &amp; Assessment Strategy</span>
@@ -1560,7 +1560,7 @@
 
       // 1. Note to Students & Teachers (Permanent Instruction)
       const noteHTML = `
-        <div class="p-3.5 sm:p-4 rounded-xl bg-amber-50/90 border border-amber-200 text-amber-950 text-xs sm:text-[13px] leading-relaxed shadow-2xs space-y-2.5">
+        <div class="p-3.5 sm:p-4 rounded-xl bg-white border border-slate-200 border-l-4 border-l-amber-400 text-slate-800 text-xs sm:text-[13px] leading-relaxed shadow-2xs space-y-2.5">
           <div class="flex items-center gap-2 font-bold text-amber-900 uppercase tracking-wider text-[11px]">
             <svg class="w-4 h-4 text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
@@ -2549,7 +2549,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
       if (a.takeaways && a.takeaways.length > 0) {
         takeawaysHTML = `
           <div class="p-3.5 bg-slate-900 text-white rounded-xl space-y-1.5 my-4">
-            <span class="text-[10px] font-bold uppercase tracking-wider text-sky-400">💡 Key Operational Takeaways</span>
+            <span class="text-[10px] font-bold font-mono uppercase tracking-wider text-sky-400">KEY OPERATIONAL TAKEAWAYS</span>
             <ul class="space-y-1 text-xs text-slate-200">
               ${a.takeaways.map(t => `<li class="flex items-start gap-1.5"><span class="text-sky-400 font-bold">&bull;</span><span>${t}</span></li>`).join("")}
             </ul>
@@ -3088,9 +3088,9 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
             </div>
 
             <!-- Announcement 2: Assessment Focus -->
-            <div class="p-4 rounded-xl border border-purple-200/90 bg-purple-50/50 shadow-2xs space-y-1.5">
+            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-amber-400 bg-white shadow-2xs space-y-1.5">
               <div class="flex items-center justify-between">
-                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-purple-200/80 text-purple-900">🎯 ${activeInfo.isFe ? "This Week's Evaluation" : "Assessment Milestones"}</span>
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200">${activeInfo.isFe ? "This Week's Evaluation" : "Assessment Milestones"}</span>
                 <span class="text-[10.5px] font-mono text-purple-700 font-medium">Week ${activeInfo.feWeek} &amp; Week 12</span>
               </div>
               <h3 class="text-xs sm:text-sm font-bold text-purple-950">
@@ -3102,9 +3102,9 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
             </div>
 
             <!-- Announcement 3: Portfolio Habit -->
-            <div class="p-4 rounded-xl border border-emerald-200/90 bg-emerald-50/50 shadow-2xs space-y-1.5">
+            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-amber-400 bg-white shadow-2xs space-y-1.5">
               <div class="flex items-center justify-between">
-                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-emerald-200/80 text-emerald-900">💡 Habit</span>
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">PORTFOLIO HABIT</span>
                 <span class="text-[10.5px] font-mono text-emerald-700 font-medium">Continuous Practice</span>
               </div>
               <h3 class="text-xs sm:text-sm font-bold text-emerald-950">
@@ -3116,9 +3116,9 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
             </div>
 
             <!-- Announcement 4: Regulatory Precision -->
-            <div class="p-4 rounded-xl border border-amber-200/90 bg-amber-50/50 shadow-2xs space-y-1.5">
+            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-amber-400 bg-white shadow-2xs space-y-1.5">
               <div class="flex items-center justify-between">
-                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-amber-200/80 text-amber-900">📋 Technical Method</span>
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">TECHNICAL METHOD</span>
                 <span class="text-[10.5px] font-mono text-amber-700 font-medium">EASA Standards</span>
               </div>
               <h3 class="text-xs sm:text-sm font-bold text-amber-950">
@@ -3506,9 +3506,8 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
               <!-- Section 4: 4 Practical Tips on How to Succeed -->
               <div class="space-y-3 pt-2 border-t border-slate-100">
                 <div class="flex items-center gap-2">
-                  <span class="text-base">💡</span>
-                  <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide">
-                    4. Four Golden Rules to Succeed in Semester 3
+                  <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide font-mono">
+                    4. FOUR GOLDEN RULES TO SUCCEED IN SEMESTER 3
                   </h3>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
@@ -3563,10 +3562,10 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
                   </h3>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs pt-1">
-                  <div class="p-3.5 rounded-xl bg-purple-50/70 border border-purple-200/80 space-y-1">
+                  <div class="p-3.5 rounded-xl bg-white border border-slate-200 border-l-4 border-l-amber-400 space-y-1 shadow-2xs">
                     <div class="flex items-center justify-between">
                       <span class="font-bold text-purple-950">Session 7: FE1 Team Teaching Workshop</span>
-                      <span class="text-[10px] font-mono font-bold bg-purple-200 text-purple-900 px-1.5 py-0.5 rounded">Formative Eval</span>
+                      <span class="text-[10px] font-mono font-bold bg-slate-900 text-amber-300 font-mono px-1.5 py-0.5 rounded">FORMATIVE EVAL</span>
                     </div>
                     <p class="text-[11.5px] text-slate-600 leading-relaxed">
                       You will collaborate in small peer groups to co-teach a 20-minute technical lesson on an assigned aerodrome safety topic, demonstrating clear spoken instruction and student interaction.
@@ -3784,8 +3783,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
               <!-- Study Tips Box -->
               <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5 text-[11.5px] text-slate-600">
                 <div class="font-bold text-slate-900 flex items-center gap-1.5 text-xs">
-                  <span>💡</span>
-                  <span>How to Approach Your Weekly Homework</span>
+                  <span class="font-mono uppercase tracking-wider text-slate-900">HOW TO APPROACH YOUR WEEKLY HOMEWORK</span>
                 </div>
                 <ul class="space-y-1 list-disc list-inside text-slate-600">
                   <li><strong>Regular Weekly Rhythm:</strong> Dedicate 45 to 60 minutes each week to complete your 2 designated tasks on e-Campus.</li>
