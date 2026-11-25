@@ -906,7 +906,7 @@
         if (milestoneText) {
           const badgeText = (page && page.isFe) ? 'FE Target' : ((page && page.isAdmin) ? 'Admin Action' : (page && page.isImmersion ? 'Homestay' : (page && page.isObjectives ? 'Syllabus' : (page && page.isDocsHub ? 'Course Docs' : 'FE Tip'))));
           calloutsHtml += `
-            <div class="p-3.5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl flex items-start gap-2.5 shadow-2xs h-full">
+            <div class="p-3.5 bg-white border border-slate-200/90 rounded-xl flex items-start gap-2.5 shadow-2xs h-full">
               <span class="inline-flex items-center text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-slate-900 text-amber-300 shrink-0 mt-0.5">${badgeText}</span>
               <p class="text-xs sm:text-sm text-amber-950 leading-relaxed font-normal">
                 ${milestoneText}
@@ -1651,12 +1651,11 @@
           <div class="p-3.5 bg-white border border-emerald-300 rounded-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-2xs">
             <div class="flex items-center gap-3 min-w-0">
               <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-lg shrink-0 shadow-2xs">
-                📄
-              </div>
+                </div>
               <div class="min-w-0">
                 <div class="text-xs font-bold text-slate-900 truncate">${docTitle}</div>
                 <div class="text-[11px] text-slate-500 truncate">${docSubtitle}</div>
-                <div class="text-[10.5px] text-emerald-700 font-semibold mt-0.5">🔗 ${docNote}</div>
+                <div class="text-[10.5px] text-emerald-700 font-semibold mt-0.5">${docNote}</div>
               </div>
             </div>
             <a href="${docPath}" target="_blank" class="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-bold text-white bg-emerald-700 hover:bg-emerald-800 shadow-xs transition-all cursor-pointer shrink-0 w-full sm:w-auto">
@@ -2597,7 +2596,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
             <h2 class="text-base sm:text-xl font-black text-slate-900 leading-snug">${heading}</h2>
             
             ${snippet ? `
-              <div class="p-3 rounded-xl bg-slate-50 border-l-4 border-sky-600 text-slate-600 text-xs sm:text-[13px] italic leading-relaxed">
+              <div class="p-3 rounded-xl bg-slate-50 text-slate-600 text-xs sm:text-[13px] italic leading-relaxed">
                 ${snippet}
               </div>
             ` : ""}
@@ -2899,13 +2898,13 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
       { series: "PLT", week: "Week 49", date: "Fri 04 Dec", tasks: "PLT 3 & PLT 4", topic: "Special Requests & Runway Safety Cases", isCurrent: false },
       { series: "PLT", week: "Week 50", date: "Fri 11 Dec", tasks: "PLT 5 & PLT 6", topic: "Ground Inspections & Audit Findings", isCurrent: false },
       { series: "PLT", week: "Week 51", date: "Fri 18 Dec", tasks: "PLT 7 & PLT 8", topic: "Incident Investigation & Root Causes", isCurrent: false },
-      { isHoliday: true, text: "🎄 Weeks 52 & 53 — Christmas & Winter Vacation (No Assignments)" },
+      { isHoliday: true, text: "Weeks 52 & 53 — Christmas & Winter Vacation (No Assignments)" },
       { series: "TLT", week: "Week 01", date: "Fri 08 Jan", tasks: "TLT 1 & TLT 2", topic: "Corrective Action Plans & CAP Review", isCurrent: false },
       { series: "TLT", week: "Week 02", date: "Fri 15 Jan", tasks: "TLT 3 & TLT 4", topic: "FE1 Oral Team Teaching Preparation", isCurrent: false },
       { series: "TLT", week: "Week 03", date: "Fri 22 Jan", tasks: "TLT 5 & TLT 6", topic: "Introduction to MTF ICAO Level Test", isCurrent: false },
       { series: "ELT", week: "Week 04", date: "Fri 29 Jan", tasks: "ELT 1 & ELT 2", topic: "MTF Picture Exercise & Description", isCurrent: false },
       { series: "ELT", week: "Week 05", date: "Fri 05 Feb", tasks: "ELT 3 & ELT 4", topic: "MTF Audio Comprehension Practice", isCurrent: false },
-      { isHoliday: true, text: "❄️ Week 06 — Mid-Semester Break (No Assignments)" },
+      { isHoliday: true, text: "Week 06 — Mid-Semester Break (No Assignments)" },
       { series: "ELT", week: "Week 07", date: "Fri 19 Feb", tasks: "ELT 5 & ELT 6", topic: "MTF Text Exercise & Technical Summary", isCurrent: false },
       { series: "ELT", week: "Week 08", date: "Fri 26 Feb", tasks: "ELT 7 & ELT 8", topic: "MTF Practice Test (Part 1 - Mock Trials)", isCurrent: false },
       { series: "ALT", week: "Week 09", date: "Fri 05 Mar", tasks: "ALT 1 & ALT 2", topic: "MTF Practice Test (Part 2 - Mock Trials)", isCurrent: false },
@@ -2940,7 +2939,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
 
       // Hero banner image, badge, and subtitle
       const heroImage = "images/s3_m1_session4_aerodrome.jpg";
-      const heroBadge = "✈️ TECHNICAL ENGLISH (LV125E) • SEMESTER 3 NOTICEBOARD";
+      const heroBadge = "TECHNICAL ENGLISH (LV125E) • SEMESTER 3 NOTICEBOARD";
       const heroSubtitle = "Welcome to Semester 3 Technical English! Here is your home bulletin for weekly lessons, EASA regulations, MTF ICAO Level 4 exam preparation, study resources, and course announcements.";
 
       noticeboardEl.innerHTML = `
@@ -2977,7 +2976,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
               </div>
             </div>
             <button type="button" onclick="window.openSemester3OverviewModal()" class="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl bg-sky-600 hover:bg-sky-700 active:bg-sky-800 text-white text-xs font-bold shadow-xs hover:shadow transition-all cursor-pointer self-start sm:self-auto shrink-0">
-              <span>📖 Open Full Guide &amp; Tips</span>
+              <span>Open Full Guide &amp; Tips</span>
               <span class="text-xs">➔</span>
             </button>
           </div>
@@ -2988,28 +2987,28 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
 
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-0.5 text-[11px]">
             <div class="p-2.5 rounded-xl bg-white/90 border border-sky-100 shadow-2xs flex items-start gap-2">
-              <span class="text-base leading-none">📑</span>
+              <span class="text-base leading-none"></span>
               <div>
                 <div class="font-bold text-slate-900 leading-tight">Document Literacy</div>
                 <div class="text-[10.5px] text-slate-500 mt-0.5">EASA Part-ADR &amp; ICAO rules</div>
               </div>
             </div>
             <div class="p-2.5 rounded-xl bg-white/90 border border-sky-100 shadow-2xs flex items-start gap-2">
-              <span class="text-base leading-none">🎙️</span>
+              <span class="text-base leading-none"></span>
               <div>
                 <div class="font-bold text-slate-900 leading-tight">Spoken Synthesis</div>
                 <div class="text-[10.5px] text-slate-500 mt-0.5">Briefings &amp; Session 7 FE1</div>
               </div>
             </div>
             <div class="p-2.5 rounded-xl bg-white/90 border border-sky-100 shadow-2xs flex items-start gap-2">
-              <span class="text-base leading-none">🎧</span>
+              <span class="text-base leading-none"></span>
               <div>
                 <div class="font-bold text-slate-900 leading-tight">Weekly Self-Study</div>
                 <div class="text-[10.5px] text-slate-500 mt-0.5">Live Traffic (1h/wk eCampus)</div>
               </div>
             </div>
             <div class="p-2.5 rounded-xl bg-white/90 border border-sky-100 shadow-2xs flex items-start gap-2">
-              <span class="text-base leading-none">🎯</span>
+              <span class="text-base leading-none"></span>
               <div>
                 <div class="font-bold text-slate-900 leading-tight">MTF Exam Target</div>
                 <div class="text-[10.5px] text-slate-500 mt-0.5">Week 12 • ICAO Level 4+</div>
@@ -3134,7 +3133,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         <!-- 4. Weekly Study & Case Studies (Reading & Technical Practice) -->
         <div class="space-y-2.5">
           <div class="flex items-center justify-between px-1">
-            <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">📰 Weekly Study &amp; Technical Reading</span>
+            <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">Weekly Study &amp; Technical Reading</span>
             <span class="text-[10px] font-mono text-slate-400 hidden sm:inline">Authentic EASA Case Studies</span>
           </div>
 
@@ -3163,7 +3162,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
             <div class="p-4 rounded-xl border border-slate-200/90 bg-white shadow-2xs flex flex-col justify-between space-y-3">
               <div class="space-y-2">
                 <div class="flex items-center justify-between">
-                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-800 border border-amber-200">✈️ Safety Management</span>
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-800 border border-amber-200">Safety Management</span>
                   <span class="text-[10px] font-mono text-slate-400 font-semibold">Part-ADR.OR.D.005 • 5 min</span>
                 </div>
                 <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
@@ -3184,7 +3183,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         <!-- 5. Weekly Recommended Listening & e-Campus Homework -->
         <div class="space-y-2.5">
           <div class="flex items-center justify-between px-1">
-            <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">🎧 Weekly Media &amp; 📚 Homework</span>
+            <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">Weekly Media &amp; Homework</span>
             <span class="text-[10px] font-mono text-slate-400 hidden sm:inline">Week ${weeklyMedia.week} Recommended Practice</span>
           </div>
 
@@ -3193,7 +3192,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
             <div class="p-4 rounded-xl border border-slate-200/90 bg-white shadow-2xs flex flex-col justify-between space-y-3">
               <div class="space-y-2">
                 <div class="flex items-center justify-between gap-1 pb-1 border-b border-slate-100">
-                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-rose-50 text-rose-800 border border-rose-200">🎧 Recommended Listening • Week ${weeklyMedia.week}</span>
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-rose-50 text-rose-800 border border-rose-200">Recommended Listening • Week ${weeklyMedia.week}</span>
                   <a href="${weeklyMedia.watchUrl}" target="_blank" rel="noopener noreferrer" class="text-[10px] font-bold text-rose-700 bg-rose-50 border border-rose-200 hover:bg-rose-100 px-2 py-0.5 rounded-full shrink-0 no-underline transition-all">Watch on YouTube ↗</a>
                 </div>
                 <div>
@@ -3250,7 +3249,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
             <div class="p-4 rounded-xl border border-sky-200/90 bg-gradient-to-br from-white via-sky-50/20 to-sky-50/50 shadow-2xs flex flex-col justify-between space-y-3">
               <div class="space-y-3">
                 <div class="flex items-center justify-between gap-1 pb-1 border-b border-sky-100">
-                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-sky-100 text-sky-900 border border-sky-200">📚 Weekly Homework</span>
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-sky-100 text-sky-900 border border-sky-200">Weekly Homework</span>
                   <span class="text-[10px] font-mono text-sky-700 font-bold">e-Campus Course ID 175</span>
                 </div>
 
@@ -3270,7 +3269,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
                     <span class="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase tracking-wider bg-sky-600 text-white shadow-2xs">Week ${weeklyMedia.week} Active</span>
                   </div>
                   <div class="text-sm font-extrabold text-sky-950 flex items-center gap-1.5">
-                    <span>🎯 Complete:</span>
+                    <span>Complete:</span>
                     <span class="underline decoration-sky-400 font-mono">${weeklyMedia.currentHomework}</span>
                   </div>
                   <p class="text-[11px] text-sky-900 leading-snug">
@@ -3281,12 +3280,12 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
                 <!-- Quick links -->
                 <div class="space-y-1.5 pt-1">
                   <a href="${weeklyMedia.moodleUrl}" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 px-3 py-2.5 rounded-lg bg-sky-600 hover:bg-sky-700 text-white font-bold text-xs shadow-2xs transition-all no-underline cursor-pointer">
-                    <span>🌐 Open e-Campus Moodle Portal (Course 175)</span>
+                    <span>Open e-Campus Moodle Portal (Course 175)</span>
                     <span class="font-bold text-sm leading-none">↗</span>
                   </a>
 
                   <button type="button" onclick="window.openHomeworkScheduleModal()" class="w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded-lg bg-white hover:bg-slate-50 text-slate-800 font-bold text-xs border border-slate-300 shadow-2xs transition-all cursor-pointer">
-                    <span>📋 View Full 15-Week Homework Schedule</span>
+                    <span>View Full 15-Week Homework Schedule</span>
                     <span class="text-xs text-slate-400">➔</span>
                   </button>
                 </div>
@@ -3305,7 +3304,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
           <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200/80 pb-2.5">
             <div class="flex items-center gap-2">
               <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-              <span class="font-bold text-slate-900 uppercase tracking-wide text-[11px]">✉️ Teaching Team &amp; Course Administration</span>
+              <span class="font-bold text-slate-900 uppercase tracking-wide text-[11px]">Teaching Team &amp; Course Administration</span>
             </div>
             <span class="text-[10.5px] font-mono text-slate-500">ENAC Département LH/LAN</span>
           </div>
@@ -3321,7 +3320,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
 
             <!-- Box 2: Technical English Teachers -->
             <div class="p-3 rounded-lg bg-slate-50 border border-slate-200/70 space-y-1">
-              <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-sky-700">✈️ Technical English (LV125E)</div>
+              <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-sky-700">Technical English (LV125E)</div>
               <div class="text-slate-900 font-semibold text-xs pt-0.5">
                 <div><span class="font-mono text-slate-500 text-[10.5px]">Group A:</span> ${teacherA}</div>
                 <div class="mt-0.5"><span class="font-mono text-slate-500 text-[10.5px]">Group B:</span> ${teacherB}</div>
@@ -3332,7 +3331,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
 
             <!-- Box 3: Key Assessment Milestones -->
             <div class="p-3 rounded-lg bg-slate-50 border border-slate-200/70 space-y-1">
-              <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-purple-700">🎯 Key Milestones</div>
+              <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-purple-700">Key Milestones</div>
               <div class="text-slate-900 font-semibold text-xs pt-0.5">
                 <div><span class="font-mono text-slate-500 text-[10.5px]">Session 7:</span> FE1 Team Workshop</div>
                 <div class="mt-0.5"><span class="font-mono text-slate-500 text-[10.5px]">Week 12:</span> MTF Exam</div>
@@ -3374,7 +3373,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
             <div class="bg-gradient-to-r from-slate-900 via-sky-950 to-slate-900 text-white p-4 sm:p-6 border-b border-sky-900/60 flex items-start justify-between gap-4 shrink-0">
               <div>
                 <div class="inline-flex items-center gap-1.5 font-mono text-[10.5px] font-bold tracking-wider uppercase text-sky-400 bg-sky-950/90 border border-sky-800/80 px-2.5 py-0.5 rounded-full">
-                  <span>✈️ GSEA SEMESTER 3 • TECHNICAL ENGLISH (LV125E)</span>
+                  <span>GSEA SEMESTER 3 • TECHNICAL ENGLISH (LV125E)</span>
                 </div>
                 <h2 id="s3-modal-title" class="text-lg sm:text-2xl font-black text-white mt-1.5 leading-tight">
                   Semester 3 Overview &amp; Student Success Guide
@@ -3394,7 +3393,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
               <!-- Section 1: What Will You Do This Semester? (The Dual-Core Focus) -->
               <div class="space-y-3">
                 <div class="flex items-center gap-2">
-                  <span class="text-base">🎯</span>
+                  <span class="text-base"></span>
                   <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide">
                     1. What Will You Do This Semester? The Dual-Core Approach
                   </h3>
@@ -3407,7 +3406,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
                   <!-- Core 1: Reading Complex Technical Documents -->
                   <div class="p-4 rounded-xl bg-sky-50/60 border border-sky-200/80 space-y-2">
                     <div class="flex items-center gap-2 text-sky-900 font-bold text-xs sm:text-sm">
-                      <span class="p-1 rounded bg-sky-200/70 text-sky-800 text-xs">📑</span>
+                      <span class="p-1 rounded bg-sky-200/70 text-sky-800 text-xs"></span>
                       <span>A. Reading Complex Technical Documents</span>
                     </div>
                     <p class="text-[12px] sm:text-[12.5px] text-slate-700 leading-relaxed">
@@ -3423,7 +3422,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
                   <!-- Core 2: Spoken Operational Synthesis -->
                   <div class="p-4 rounded-xl bg-indigo-50/60 border border-indigo-200/80 space-y-2">
                     <div class="flex items-center gap-2 text-indigo-900 font-bold text-xs sm:text-sm">
-                      <span class="p-1 rounded bg-indigo-200/70 text-indigo-800 text-xs">🎙️</span>
+                      <span class="p-1 rounded bg-indigo-200/70 text-indigo-800 text-xs"></span>
                       <span>B. Spoken Operational Synthesis</span>
                     </div>
                     <p class="text-[12px] sm:text-[12.5px] text-slate-700 leading-relaxed">
@@ -3441,7 +3440,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
               <!-- Section 2: Why Are You Doing These Lessons? (Future Career Value) -->
               <div class="space-y-3 pt-2 border-t border-slate-100">
                 <div class="flex items-center gap-2">
-                  <span class="text-base">🚀</span>
+                  <span class="text-base"></span>
                   <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide">
                     2. Why Are You Doing These Lessons? Your Future Career Advantage
                   </h3>
@@ -3452,15 +3451,15 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
                   </p>
                   <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs pt-1">
                     <div class="p-3 rounded-lg bg-white border border-slate-200 shadow-2xs space-y-1">
-                      <div class="font-bold text-slate-900">🌍 International Airfield Teams</div>
+                      <div class="font-bold text-slate-900">International Airfield Teams</div>
                       <p class="text-[11.5px] text-slate-500 leading-relaxed">You will coordinate with multinational airlines, foreign civil aviation inspectors, and global equipment manufacturers.</p>
                     </div>
                     <div class="p-3 rounded-lg bg-white border border-slate-200 shadow-2xs space-y-1">
-                      <div class="font-bold text-slate-900">⚡ Zero Ambiguity in Safety</div>
+                      <div class="font-bold text-slate-900">Zero Ambiguity in Safety</div>
                       <p class="text-[11.5px] text-slate-500 leading-relaxed">Safety depends on precision. A misunderstanding of an EASA directive or NOTAM can lead to runway closures or safety incidents.</p>
                     </div>
                     <div class="p-3 rounded-lg bg-white border border-slate-200 shadow-2xs space-y-1">
-                      <div class="font-bold text-slate-900">💼 Executive Career Mobility</div>
+                      <div class="font-bold text-slate-900">Executive Career Mobility</div>
                       <p class="text-[11.5px] text-slate-500 leading-relaxed">GSEA and TSEEAC professionals who can summarize complex regulations clearly to management and operational teams advance rapidly into key technical leadership roles.</p>
                     </div>
                   </div>
@@ -3470,7 +3469,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
               <!-- Section 3: Weekly Self-Study: Live Traffic on eCampus (1 Hour per Week) -->
               <div class="space-y-3 pt-2 border-t border-slate-100">
                 <div class="flex items-center gap-2">
-                  <span class="text-base">🎧</span>
+                  <span class="text-base"></span>
                   <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide">
                     3. Weekly Self-Study: "Live Traffic" on eCampus (1 Hour / Week)
                   </h3>
@@ -3478,7 +3477,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
                 <div class="p-4 rounded-xl bg-gradient-to-r from-amber-50/60 via-white to-sky-50/50 border border-amber-200/80 space-y-3">
                   <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                     <div class="flex items-center gap-2">
-                      <span class="font-bold text-xs sm:text-sm text-amber-900">📻 Mandatory Weekly Self-Study Programme</span>
+                      <span class="font-bold text-xs sm:text-sm text-amber-900">Mandatory Weekly Self-Study Programme</span>
                       <span class="text-[10px] font-mono font-extrabold uppercase bg-amber-100 text-amber-800 border border-amber-300 px-2 py-0.5 rounded">1 Hour / Week</span>
                     </div>
                     <span class="text-[11px] font-mono text-slate-500">Available on ENAC eCampus</span>
@@ -3488,13 +3487,13 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
                   </p>
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
                     <div class="p-3 rounded-lg bg-white/90 border border-amber-200/60 shadow-2xs space-y-1">
-                      <div class="font-bold text-amber-900">🎧 What does Live Traffic include?</div>
+                      <div class="font-bold text-amber-900">What does Live Traffic include?</div>
                       <p class="text-[11.5px] text-slate-600 leading-relaxed">
                         Real-world ATC tower and ground communications, cockpit voice recordings, pilot debriefings, and authentic technical aviation audio from around the world.
                       </p>
                     </div>
                     <div class="p-3 rounded-lg bg-white/90 border border-amber-200/60 shadow-2xs space-y-1">
-                      <div class="font-bold text-sky-900">🎯 How does it prepare you for the MTF Exam?</div>
+                      <div class="font-bold text-sky-900">How does it prepare you for the MTF Exam?</div>
                       <p class="text-[11.5px] text-slate-600 leading-relaxed">
                         The Week 12 MTF Exam tests your technical listening comprehension under pressure. Doing 1 hour per week trains your ear to decode international accents and noisy radio transmissions with ease.
                       </p>
@@ -3556,7 +3555,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
               <!-- Section 5: Key Assessment Milestones -->
               <div class="space-y-3 pt-2 border-t border-slate-100">
                 <div class="flex items-center gap-2">
-                  <span class="text-base">📅</span>
+                  <span class="text-base"></span>
                   <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide">
                     5. Key Assessment Milestones
                   </h3>
@@ -3641,7 +3640,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
             <div class="bg-gradient-to-r from-slate-900 via-sky-950 to-slate-900 text-white p-4 sm:p-6 border-b border-sky-900/60 flex items-start justify-between gap-4 shrink-0">
               <div>
                 <div class="inline-flex items-center gap-1.5 font-mono text-[10.5px] font-bold tracking-wider uppercase text-sky-400 bg-sky-950/90 border border-sky-800/80 px-2.5 py-0.5 rounded-full">
-                  <span>✈️ ENAC E-CAMPUS (COURSE ID 175) • HOMEWORK &amp; SELF-STUDY</span>
+                  <span>ENAC E-CAMPUS (COURSE ID 175) • HOMEWORK &amp; SELF-STUDY</span>
                 </div>
                 <h2 id="s3-homework-modal-title" class="text-lg sm:text-2xl font-black text-white mt-1.5 leading-tight">
                   Semester 3 Weekly Homework Schedule
@@ -3662,7 +3661,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
               <div class="p-4 rounded-xl bg-gradient-to-r from-sky-50 via-sky-50/60 to-indigo-50/60 border border-sky-200/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-2xs">
                 <div class="space-y-1">
                   <div class="flex items-center gap-2">
-                    <span class="text-base leading-none">🌐</span>
+                    <span class="text-base leading-none"></span>
                     <span class="font-bold text-sky-950 text-xs sm:text-sm">ENAC e-Campus Portal • English S3 (Course 175)</span>
                   </div>
                   <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed font-normal">
@@ -3710,7 +3709,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
               <!-- Detailed Weekly Schedule Table -->
               <div class="space-y-2">
                 <div class="flex items-center justify-between px-1">
-                  <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">📅 Weekly Exercise Schedule</span>
+                  <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">Weekly Exercise Schedule</span>
                   <span class="text-[10.5px] font-mono text-slate-400">Total: 30 Exercises • 2 per week</span>
                 </div>
 

@@ -34,15 +34,15 @@ function renderSessionBriefingBanner(sessionInput, theme) {
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3 text-[11px] text-slate-300 w-full md:w-auto">
               <div class="flex items-center gap-1.5">
-                <span class="text-blue-400 font-bold">💻 In-Class:</span>
+                <span class="text-blue-400 font-bold">In-Class:</span>
                 <span>Live digital worksheet &amp; pair speaking</span>
               </div>
               <div class="flex items-center gap-1.5">
-                <span class="text-indigo-400 font-bold">📄 Offline / Paper:</span>
+                <span class="text-indigo-400 font-bold">Offline / Paper:</span>
                 <span>Downloadable 7-page PDF (top right)</span>
               </div>
               <div class="flex items-center gap-1.5">
-                <span class="text-amber-400 font-bold">📚 Self-Study:</span>
+                <span class="text-amber-400 font-bold">Self-Study:</span>
                 <span>Vocabulary &amp; Additional Materials tabs</span>
               </div>
             </div>
@@ -64,7 +64,7 @@ function renderSessionBriefingBanner(sessionInput, theme) {
             ${objs.length > 0 ? `
               <div class="pt-2.5 border-t border-slate-100 space-y-1.5">
                 <div class="flex items-center gap-2">
-                  <span class="text-xs">🎯</span>
+                  <span class="text-xs"></span>
                   <span class="text-[10px] font-black uppercase tracking-wider text-slate-700">Core Spoken Objectives (B2 Standards)</span>
                 </div>
                 <ul class="space-y-1 text-xs text-slate-700">
@@ -83,7 +83,7 @@ function renderSessionBriefingBanner(sessionInput, theme) {
           <div class="lg:col-span-5 bg-slate-50 border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs flex flex-col justify-between space-y-3">
             <div class="space-y-2">
               <div class="flex items-center gap-2">
-                <span class="text-xs">🧭</span>
+                <span class="text-xs"></span>
                 <span class="text-[10.5px] font-black uppercase tracking-wider text-slate-500">How This Session Works</span>
               </div>
               <div class="p-2.5 bg-blue-50/70 border border-blue-200/70 rounded-lg text-xs text-blue-950 space-y-1">
@@ -221,7 +221,7 @@ function renderLessonContentTabSession1(sessionData, theme) {
                       </div>
                       ${answers.length > 0 ? `
                         <div class="pt-1">
-                          <button type="button" onclick="const box=document.getElementById('disc-ans-s1-${pId}'); box.classList.toggle('hidden'); this.querySelector('span').innerText = box.classList.contains('hidden') ? '💡 View Example Ideas &amp; Answers' : 'Hide Example Ideas';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-amber-700 hover:text-amber-900 cursor-pointer">
+                          <button type="button" onclick="const box=document.getElementById('disc-ans-s1-${pId}'); box.classList.toggle('hidden'); this.querySelector('span').innerText = box.classList.contains('hidden') ? 'View Example Ideas &amp; Answers' : 'Hide Example Ideas';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-amber-700 hover:text-amber-900 cursor-pointer">
                             <span>View Example Ideas &amp; Answers</span> &rarr;
                           </button>
                           <div id="disc-ans-s1-${pId}" class="hidden mt-2 p-2.5 bg-amber-50/90 border border-amber-200 rounded-md text-[11px] text-slate-700 space-y-1.5">
@@ -896,7 +896,7 @@ function renderLessonContentTabSession2(sessionData, theme) {
                       </div>
                       ${answers.length > 0 ? `
                         <div class="pt-1">
-                          <button type="button" onclick="const box=document.getElementById('disc-ans-s2-${pId}'); box.classList.toggle('hidden'); this.querySelector('span').innerText = box.classList.contains('hidden') ? '💡 View Example Ideas &amp; Answers' : 'Hide Example Ideas';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-amber-700 hover:text-amber-900 cursor-pointer">
+                          <button type="button" onclick="const box=document.getElementById('disc-ans-s2-${pId}'); box.classList.toggle('hidden'); this.querySelector('span').innerText = box.classList.contains('hidden') ? 'View Example Ideas &amp; Answers' : 'Hide Example Ideas';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-amber-700 hover:text-amber-900 cursor-pointer">
                             <span>View Example Ideas &amp; Answers</span> &rarr;
                           </button>
                           <div id="disc-ans-s2-${pId}" class="hidden mt-2 p-2.5 bg-amber-50/90 border border-amber-200 rounded-md text-[11px] text-slate-700 space-y-1.5">
@@ -1448,7 +1448,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                       </div>
                       ${answers.length > 0 ? `
                         <div class="pt-1">
-                          <button type="button" onclick="const box=document.getElementById('disc-ans-s3-${pId}'); box.classList.toggle('hidden'); this.querySelector('span').innerText = box.classList.contains('hidden') ? '💡 View Example Ideas &amp; Answers' : 'Hide Example Ideas';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-amber-700 hover:text-amber-900 cursor-pointer">
+                          <button type="button" onclick="const box=document.getElementById('disc-ans-s3-${pId}'); box.classList.toggle('hidden'); this.querySelector('span').innerText = box.classList.contains('hidden') ? 'View Example Ideas &amp; Answers' : 'Hide Example Ideas';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-amber-700 hover:text-amber-900 cursor-pointer">
                             <span>View Example Ideas &amp; Answers</span> &rarr;
                           </button>
                           <div id="disc-ans-s3-${pId}" class="hidden mt-2 p-2.5 bg-amber-50/90 border border-amber-200 rounded-md text-[11px] text-slate-700 space-y-1.5">
@@ -2020,7 +2020,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                   <div class="relative rounded-lg overflow-hidden border border-slate-200 group cursor-pointer" onclick="window.openImageLightbox('images/s3_s4_ramp_fuel_spill.jpg', 'Exhibit 01 • Ramp Fuel Servicing & Spillage Incident')">
                     <img src="images/s3_s4_ramp_fuel_spill.jpg" alt="Ramp Fuel Servicing Spill" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300">
                     <div class="absolute bottom-1.5 right-1.5 bg-black/75 text-white text-[9px] font-bold px-1.5 py-0.5 rounded flex items-center gap-1 backdrop-blur-xs">
-                      <span>🔍 Enlarge</span>
+                      <span>Enlarge</span>
                     </div>
                   </div>
                   <h5 class="text-xs font-black text-slate-900">Exhibit 01: Fuel Hydrant Spill & Drain Hazard</h5>
@@ -2042,7 +2042,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                   <div class="relative rounded-lg overflow-hidden border border-slate-200 group cursor-pointer" onclick="window.openImageLightbox('images/s3_s4_ramp_gse_congestion.jpg', 'Exhibit 02 • Airside Traffic & GSE Congestion')">
                     <img src="images/s3_s4_ramp_gse_congestion.jpg" alt="Airside Traffic & GSE Congestion" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300">
                     <div class="absolute bottom-1.5 right-1.5 bg-black/75 text-white text-[9px] font-bold px-1.5 py-0.5 rounded flex items-center gap-1 backdrop-blur-xs">
-                      <span>🔍 Enlarge</span>
+                      <span>Enlarge</span>
                     </div>
                   </div>
                   <h5 class="text-xs font-black text-slate-900">Exhibit 02: High-Density GSE Turnaround Traffic</h5>
@@ -2064,7 +2064,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                   <div class="relative rounded-lg overflow-hidden border border-slate-200 group cursor-pointer" onclick="window.openImageLightbox('images/s3_s4_ramp_fod_inspection.jpg', 'Exhibit 03 • Ramp FOD Walkdown & Debris Scatter')">
                     <img src="images/s3_s4_ramp_fod_inspection.jpg" alt="Ramp FOD Walkdown" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300">
                     <div class="absolute bottom-1.5 right-1.5 bg-black/75 text-white text-[9px] font-bold px-1.5 py-0.5 rounded flex items-center gap-1 backdrop-blur-xs">
-                      <span>🔍 Enlarge</span>
+                      <span>Enlarge</span>
                     </div>
                   </div>
                   <h5 class="text-xs font-black text-slate-900">Exhibit 03: Ramp Walkdown & Lockwire Scatter</h5>
@@ -2371,7 +2371,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                     <div class="relative rounded-lg overflow-hidden border border-slate-200 group cursor-pointer bg-slate-900" onclick="window.openImageLightbox('${photo.image}', '${photo.title}')">
                       <img src="${photo.image}" alt="${photo.title}" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='images/s3_m1_session5_investigation.jpg'">
                       <div class="absolute bottom-1.5 right-1.5 bg-black/75 text-white text-[9px] font-bold px-1.5 py-0.5 rounded flex items-center gap-1 backdrop-blur-xs">
-                        <span>🔍 Enlarge</span>
+                        <span>Enlarge</span>
                       </div>
                     </div>
                     <h5 class="text-xs font-black text-slate-900">${photo.title}</h5>
@@ -2614,7 +2614,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
               <div id="model-s5-script" class="hidden mt-3 p-4 bg-slate-900 text-white rounded-xl space-y-2 border border-slate-800 text-xs sm:text-[12.5px] leading-relaxed shadow-lg">
                 <div class="flex items-center justify-between text-sky-400 border-b border-slate-800 pb-2">
                   <span class="font-bold uppercase tracking-wider text-[10px]">Model Spoken Briefing (Audio Transcript)</span>
-                  <button type="button" onclick="if(window.speakText) window.speakText(document.getElementById('s5-model-text').innerText)" class="px-2.5 py-1 bg-sky-600 hover:bg-sky-500 text-white rounded text-[10px] font-bold cursor-pointer">🔊 Read Aloud</button>
+                  <button type="button" onclick="if(window.speakText) window.speakText(document.getElementById('s5-model-text').innerText)" class="px-2.5 py-1 bg-sky-600 hover:bg-sky-500 text-white rounded text-[10px] font-bold cursor-pointer">Read Aloud</button>
                 </div>
                 <div id="s5-model-text" class="text-slate-200 whitespace-pre-line pt-1">
                   ${debrief.modelDebriefScript || ''}
@@ -3510,7 +3510,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
               ${(categories.length ? categories : [
                 {
                   category: "Introducing the Extract & Context",
-                  icon: "📄",
+                  icon: "",
                   phrases: [
                     "Good morning everyone. Today our team is looking at an extract from EASA Part-ADR regarding...",
                     "This regulation specifically applies to aerodrome operators and deals with...",
@@ -3530,7 +3530,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                 },
                 {
                   category: "Setting Up Classmate Exercises",
-                  icon: "✏️",
+                  icon: "",
                   phrases: [
                     "Now we would like you to look at the short reading exercise on the screen / handout.",
                     "Please work in pairs with the person next to you to answer questions 1 to 3.",
@@ -3540,7 +3540,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                 },
                 {
                   category: "Reviewing Answers & Class Debrief",
-                  icon: "🎯",
+                  icon: "",
                   phrases: [
                     "Let us check the answers together. Table 2, what did you find for Question 1?",
                     "Does anyone have a different answer or interpretation?",

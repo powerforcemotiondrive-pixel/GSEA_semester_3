@@ -6,7 +6,7 @@
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Executive Overview Card -->
-          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200/90 rounded-xl p-4 sm:p-5 shadow-xs">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide text-white" style="background-color: ${theme.primary};">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -268,7 +268,7 @@
           <!-- Presenter Checklist & Golden Rules -->
           <div class="p-4 rounded-xl border space-y-2.5" style="background-color: ${theme.highlight || '#fef3c7'}; border-color: ${theme.accent}40;">
             <div class="flex items-center gap-1.5 font-bold text-xs" style="color: ${theme.accent};">
-              <span>💡</span>
+              
               <span class="uppercase tracking-wide">Session 7 Golden Rules (FE1)</span>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs text-slate-700">
@@ -292,7 +292,7 @@
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Executive Overview Card -->
-          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200/90 rounded-xl p-4 sm:p-5 shadow-xs">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide text-white" style="background-color: ${theme.primary};">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -515,7 +515,7 @@
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Executive Overview Card -->
-          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200/90 rounded-xl p-4 sm:p-5 shadow-xs">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide text-white" style="background-color: ${theme.primary};">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -744,7 +744,7 @@
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Overview Card -->
-          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200/90 rounded-xl p-4 sm:p-5 shadow-xs">
             <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Target Competencies • B2 CEFR Level</span>
             <h3 class="text-base sm:text-lg font-bold text-slate-800 mt-1">Formative Evaluation 1 Objectives — EASA Regulatory Extract & Class Activity</h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
@@ -822,7 +822,7 @@
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Overview Card -->
-          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200/90 rounded-xl p-4 sm:p-5 shadow-xs">
             <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Target Competencies • B2 CEFR Level</span>
             <h3 class="text-base sm:text-lg font-bold text-slate-800 mt-1">Formative Evaluation 2 Objectives (Aircraft / Airlines)</h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
@@ -900,7 +900,7 @@
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Overview Card -->
-          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200/90 rounded-xl p-4 sm:p-5 shadow-xs">
             <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Target Competencies • B2/C1 CEFR Level</span>
             <h3 class="text-base sm:text-lg font-bold text-slate-800 mt-1">Formative Evaluation 3 Objectives (Aviation Current Events)</h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
@@ -983,7 +983,7 @@
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Overview Card -->
-          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200/90 rounded-xl p-4 sm:p-5 shadow-xs">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Official Rubric • Technical English (AT • LV125E)</span>
               <span class="text-xs font-bold px-2.5 py-0.5 rounded-md text-white font-mono shadow-xs" style="background-color: ${theme.primary};">
@@ -1081,7 +1081,7 @@
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Overview Card -->
-          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200/90 rounded-xl p-4 sm:p-5 shadow-xs">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Official Rubric • Technical English (AT)</span>
               <span class="text-xs font-bold px-2.5 py-0.5 rounded-md text-white font-mono shadow-xs" style="background-color: ${theme.primary};">
@@ -1174,7 +1174,7 @@
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Overview Card -->
-          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200/90 rounded-xl p-4 sm:p-5 shadow-xs">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Official Rubric • Technical English (AT)</span>
               <span class="text-xs font-bold px-2.5 py-0.5 rounded-md text-white font-mono shadow-xs" style="background-color: ${theme.primary};">

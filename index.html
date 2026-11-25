@@ -781,7 +781,7 @@
             <!-- Documentation Hub Tab -->
             <button data-tab="docs_hub" id="modal-tab-docs-hub" class="modal-tab-btn flex items-center gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 whitespace-nowrap shrink-0 transition-all cursor-pointer hidden">
               <svg class="w-3.5 h-3.5 opacity-80" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
-              <span>📚 Document Library</span>
+              <span>Document Library</span>
             </button>
           </nav>
         </header>
@@ -2272,7 +2272,7 @@
         if (milestoneText) {
           const badgeText = (page && page.isFe) ? 'FE Target' : ((page && page.isAdmin) ? 'Admin Action' : (page && page.isImmersion ? 'Homestay' : (page && page.isObjectives ? 'Syllabus' : (page && page.isDocsHub ? 'Course Docs' : 'FE Tip'))));
           calloutsHtml += `
-            <div class="p-3.5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl flex items-start gap-2.5 shadow-2xs h-full">
+            <div class="p-3.5 bg-white border border-slate-200/90 rounded-xl flex items-start gap-2.5 shadow-2xs h-full">
               <span class="inline-flex items-center text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-slate-900 text-amber-300 shrink-0 mt-0.5">${badgeText}</span>
               <p class="text-xs sm:text-sm text-amber-950 leading-relaxed font-normal">
                 ${milestoneText}
@@ -3017,12 +3017,11 @@
           <div class="p-3.5 bg-white border border-emerald-300 rounded-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-2xs">
             <div class="flex items-center gap-3 min-w-0">
               <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-lg shrink-0 shadow-2xs">
-                📄
-              </div>
+                </div>
               <div class="min-w-0">
                 <div class="text-xs font-bold text-slate-900 truncate">${docTitle}</div>
                 <div class="text-[11px] text-slate-500 truncate">${docSubtitle}</div>
-                <div class="text-[10.5px] text-emerald-700 font-semibold mt-0.5">🔗 ${docNote}</div>
+                <div class="text-[10.5px] text-emerald-700 font-semibold mt-0.5">${docNote}</div>
               </div>
             </div>
             <a href="${docPath}" target="_blank" class="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-bold text-white bg-emerald-700 hover:bg-emerald-800 shadow-xs transition-all cursor-pointer shrink-0 w-full sm:w-auto">
@@ -3963,7 +3962,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
             <h2 class="text-base sm:text-xl font-black text-slate-900 leading-snug">${heading}</h2>
             
             ${snippet ? `
-              <div class="p-3 rounded-xl bg-slate-50 border-l-4 border-sky-600 text-slate-600 text-xs sm:text-[13px] italic leading-relaxed">
+              <div class="p-3 rounded-xl bg-slate-50 text-slate-600 text-xs sm:text-[13px] italic leading-relaxed">
                 ${snippet}
               </div>
             ` : ""}
@@ -4265,13 +4264,13 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
       { series: "PLT", week: "Week 49", date: "Fri 04 Dec", tasks: "PLT 3 & PLT 4", topic: "Special Requests & Runway Safety Cases", isCurrent: false },
       { series: "PLT", week: "Week 50", date: "Fri 11 Dec", tasks: "PLT 5 & PLT 6", topic: "Ground Inspections & Audit Findings", isCurrent: false },
       { series: "PLT", week: "Week 51", date: "Fri 18 Dec", tasks: "PLT 7 & PLT 8", topic: "Incident Investigation & Root Causes", isCurrent: false },
-      { isHoliday: true, text: "🎄 Weeks 52 & 53 — Christmas & Winter Vacation (No Assignments)" },
+      { isHoliday: true, text: "Weeks 52 & 53 — Christmas & Winter Vacation (No Assignments)" },
       { series: "TLT", week: "Week 01", date: "Fri 08 Jan", tasks: "TLT 1 & TLT 2", topic: "Corrective Action Plans & CAP Review", isCurrent: false },
       { series: "TLT", week: "Week 02", date: "Fri 15 Jan", tasks: "TLT 3 & TLT 4", topic: "FE1 Oral Team Teaching Preparation", isCurrent: false },
       { series: "TLT", week: "Week 03", date: "Fri 22 Jan", tasks: "TLT 5 & TLT 6", topic: "Introduction to MTF ICAO Level Test", isCurrent: false },
       { series: "ELT", week: "Week 04", date: "Fri 29 Jan", tasks: "ELT 1 & ELT 2", topic: "MTF Picture Exercise & Description", isCurrent: false },
       { series: "ELT", week: "Week 05", date: "Fri 05 Feb", tasks: "ELT 3 & ELT 4", topic: "MTF Audio Comprehension Practice", isCurrent: false },
-      { isHoliday: true, text: "❄️ Week 06 — Mid-Semester Break (No Assignments)" },
+      { isHoliday: true, text: "Week 06 — Mid-Semester Break (No Assignments)" },
       { series: "ELT", week: "Week 07", date: "Fri 19 Feb", tasks: "ELT 5 & ELT 6", topic: "MTF Text Exercise & Technical Summary", isCurrent: false },
       { series: "ELT", week: "Week 08", date: "Fri 26 Feb", tasks: "ELT 7 & ELT 8", topic: "MTF Practice Test (Part 1 - Mock Trials)", isCurrent: false },
       { series: "ALT", week: "Week 09", date: "Fri 05 Mar", tasks: "ALT 1 & ALT 2", topic: "MTF Practice Test (Part 2 - Mock Trials)", isCurrent: false },
@@ -4306,7 +4305,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
 
       // Hero banner image, badge, and subtitle
       const heroImage = "images/s3_m1_session4_aerodrome.jpg";
-      const heroBadge = "✈️ TECHNICAL ENGLISH (LV125E) • SEMESTER 3 NOTICEBOARD";
+      const heroBadge = "TECHNICAL ENGLISH (LV125E) • SEMESTER 3 NOTICEBOARD";
       const heroSubtitle = "Welcome to Semester 3 Technical English! Here is your home bulletin for weekly lessons, EASA regulations, MTF ICAO Level 4 exam preparation, study resources, and course announcements.";
 
       noticeboardEl.innerHTML = `
@@ -4343,7 +4342,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
               </div>
             </div>
             <button type="button" onclick="window.openSemester3OverviewModal()" class="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl bg-sky-600 hover:bg-sky-700 active:bg-sky-800 text-white text-xs font-bold shadow-xs hover:shadow transition-all cursor-pointer self-start sm:self-auto shrink-0">
-              <span>📖 Open Full Guide &amp; Tips</span>
+              <span>Open Full Guide &amp; Tips</span>
               <span class="text-xs">➔</span>
             </button>
           </div>
@@ -4354,28 +4353,28 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
 
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-0.5 text-[11px]">
             <div class="p-2.5 rounded-xl bg-white/90 border border-sky-100 shadow-2xs flex items-start gap-2">
-              <span class="text-base leading-none">📑</span>
+              <span class="text-base leading-none"></span>
               <div>
                 <div class="font-bold text-slate-900 leading-tight">Document Literacy</div>
                 <div class="text-[10.5px] text-slate-500 mt-0.5">EASA Part-ADR &amp; ICAO rules</div>
               </div>
             </div>
             <div class="p-2.5 rounded-xl bg-white/90 border border-sky-100 shadow-2xs flex items-start gap-2">
-              <span class="text-base leading-none">🎙️</span>
+              <span class="text-base leading-none"></span>
               <div>
                 <div class="font-bold text-slate-900 leading-tight">Spoken Synthesis</div>
                 <div class="text-[10.5px] text-slate-500 mt-0.5">Briefings &amp; Session 7 FE1</div>
               </div>
             </div>
             <div class="p-2.5 rounded-xl bg-white/90 border border-sky-100 shadow-2xs flex items-start gap-2">
-              <span class="text-base leading-none">🎧</span>
+              <span class="text-base leading-none"></span>
               <div>
                 <div class="font-bold text-slate-900 leading-tight">Weekly Self-Study</div>
                 <div class="text-[10.5px] text-slate-500 mt-0.5">Live Traffic (1h/wk eCampus)</div>
               </div>
             </div>
             <div class="p-2.5 rounded-xl bg-white/90 border border-sky-100 shadow-2xs flex items-start gap-2">
-              <span class="text-base leading-none">🎯</span>
+              <span class="text-base leading-none"></span>
               <div>
                 <div class="font-bold text-slate-900 leading-tight">MTF Exam Target</div>
                 <div class="text-[10.5px] text-slate-500 mt-0.5">Week 12 • ICAO Level 4+</div>
@@ -4500,7 +4499,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         <!-- 4. Weekly Study & Case Studies (Reading & Technical Practice) -->
         <div class="space-y-2.5">
           <div class="flex items-center justify-between px-1">
-            <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">📰 Weekly Study &amp; Technical Reading</span>
+            <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">Weekly Study &amp; Technical Reading</span>
             <span class="text-[10px] font-mono text-slate-400 hidden sm:inline">Authentic EASA Case Studies</span>
           </div>
 
@@ -4529,7 +4528,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
             <div class="p-4 rounded-xl border border-slate-200/90 bg-white shadow-2xs flex flex-col justify-between space-y-3">
               <div class="space-y-2">
                 <div class="flex items-center justify-between">
-                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-800 border border-amber-200">✈️ Safety Management</span>
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-800 border border-amber-200">Safety Management</span>
                   <span class="text-[10px] font-mono text-slate-400 font-semibold">Part-ADR.OR.D.005 • 5 min</span>
                 </div>
                 <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
@@ -4550,7 +4549,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         <!-- 5. Weekly Recommended Listening & e-Campus Homework -->
         <div class="space-y-2.5">
           <div class="flex items-center justify-between px-1">
-            <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">🎧 Weekly Media &amp; 📚 Homework</span>
+            <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">Weekly Media &amp; Homework</span>
             <span class="text-[10px] font-mono text-slate-400 hidden sm:inline">Week ${weeklyMedia.week} Recommended Practice</span>
           </div>
 
@@ -4559,7 +4558,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
             <div class="p-4 rounded-xl border border-slate-200/90 bg-white shadow-2xs flex flex-col justify-between space-y-3">
               <div class="space-y-2">
                 <div class="flex items-center justify-between gap-1 pb-1 border-b border-slate-100">
-                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-rose-50 text-rose-800 border border-rose-200">🎧 Recommended Listening • Week ${weeklyMedia.week}</span>
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-rose-50 text-rose-800 border border-rose-200">Recommended Listening • Week ${weeklyMedia.week}</span>
                   <a href="${weeklyMedia.watchUrl}" target="_blank" rel="noopener noreferrer" class="text-[10px] font-bold text-rose-700 bg-rose-50 border border-rose-200 hover:bg-rose-100 px-2 py-0.5 rounded-full shrink-0 no-underline transition-all">Watch on YouTube ↗</a>
                 </div>
                 <div>
@@ -4616,7 +4615,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
             <div class="p-4 rounded-xl border border-sky-200/90 bg-gradient-to-br from-white via-sky-50/20 to-sky-50/50 shadow-2xs flex flex-col justify-between space-y-3">
               <div class="space-y-3">
                 <div class="flex items-center justify-between gap-1 pb-1 border-b border-sky-100">
-                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-sky-100 text-sky-900 border border-sky-200">📚 Weekly Homework</span>
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-sky-100 text-sky-900 border border-sky-200">Weekly Homework</span>
                   <span class="text-[10px] font-mono text-sky-700 font-bold">e-Campus Course ID 175</span>
                 </div>
 
@@ -4636,7 +4635,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
                     <span class="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase tracking-wider bg-sky-600 text-white shadow-2xs">Week ${weeklyMedia.week} Active</span>
                   </div>
                   <div class="text-sm font-extrabold text-sky-950 flex items-center gap-1.5">
-                    <span>🎯 Complete:</span>
+                    <span>Complete:</span>
                     <span class="underline decoration-sky-400 font-mono">${weeklyMedia.currentHomework}</span>
                   </div>
                   <p class="text-[11px] text-sky-900 leading-snug">
@@ -4647,12 +4646,12 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
                 <!-- Quick links -->
                 <div class="space-y-1.5 pt-1">
                   <a href="${weeklyMedia.moodleUrl}" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 px-3 py-2.5 rounded-lg bg-sky-600 hover:bg-sky-700 text-white font-bold text-xs shadow-2xs transition-all no-underline cursor-pointer">
-                    <span>🌐 Open e-Campus Moodle Portal (Course 175)</span>
+                    <span>Open e-Campus Moodle Portal (Course 175)</span>
                     <span class="font-bold text-sm leading-none">↗</span>
                   </a>
 
                   <button type="button" onclick="window.openHomeworkScheduleModal()" class="w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded-lg bg-white hover:bg-slate-50 text-slate-800 font-bold text-xs border border-slate-300 shadow-2xs transition-all cursor-pointer">
-                    <span>📋 View Full 15-Week Homework Schedule</span>
+                    <span>View Full 15-Week Homework Schedule</span>
                     <span class="text-xs text-slate-400">➔</span>
                   </button>
                 </div>
@@ -4671,7 +4670,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
           <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200/80 pb-2.5">
             <div class="flex items-center gap-2">
               <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-              <span class="font-bold text-slate-900 uppercase tracking-wide text-[11px]">✉️ Teaching Team &amp; Course Administration</span>
+              <span class="font-bold text-slate-900 uppercase tracking-wide text-[11px]">Teaching Team &amp; Course Administration</span>
             </div>
             <span class="text-[10.5px] font-mono text-slate-500">ENAC Département LH/LAN</span>
           </div>
@@ -4687,7 +4686,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
 
             <!-- Box 2: Technical English Teachers -->
             <div class="p-3 rounded-lg bg-slate-50 border border-slate-200/70 space-y-1">
-              <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-sky-700">✈️ Technical English (LV125E)</div>
+              <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-sky-700">Technical English (LV125E)</div>
               <div class="text-slate-900 font-semibold text-xs pt-0.5">
                 <div><span class="font-mono text-slate-500 text-[10.5px]">Group A:</span> ${teacherA}</div>
                 <div class="mt-0.5"><span class="font-mono text-slate-500 text-[10.5px]">Group B:</span> ${teacherB}</div>
@@ -4698,7 +4697,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
 
             <!-- Box 3: Key Assessment Milestones -->
             <div class="p-3 rounded-lg bg-slate-50 border border-slate-200/70 space-y-1">
-              <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-purple-700">🎯 Key Milestones</div>
+              <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-purple-700">Key Milestones</div>
               <div class="text-slate-900 font-semibold text-xs pt-0.5">
                 <div><span class="font-mono text-slate-500 text-[10.5px]">Session 7:</span> FE1 Team Workshop</div>
                 <div class="mt-0.5"><span class="font-mono text-slate-500 text-[10.5px]">Week 12:</span> MTF Exam</div>
@@ -4740,7 +4739,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
             <div class="bg-gradient-to-r from-slate-900 via-sky-950 to-slate-900 text-white p-4 sm:p-6 border-b border-sky-900/60 flex items-start justify-between gap-4 shrink-0">
               <div>
                 <div class="inline-flex items-center gap-1.5 font-mono text-[10.5px] font-bold tracking-wider uppercase text-sky-400 bg-sky-950/90 border border-sky-800/80 px-2.5 py-0.5 rounded-full">
-                  <span>✈️ GSEA SEMESTER 3 • TECHNICAL ENGLISH (LV125E)</span>
+                  <span>GSEA SEMESTER 3 • TECHNICAL ENGLISH (LV125E)</span>
                 </div>
                 <h2 id="s3-modal-title" class="text-lg sm:text-2xl font-black text-white mt-1.5 leading-tight">
                   Semester 3 Overview &amp; Student Success Guide
@@ -4760,7 +4759,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
               <!-- Section 1: What Will You Do This Semester? (The Dual-Core Focus) -->
               <div class="space-y-3">
                 <div class="flex items-center gap-2">
-                  <span class="text-base">🎯</span>
+                  <span class="text-base"></span>
                   <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide">
                     1. What Will You Do This Semester? The Dual-Core Approach
                   </h3>
@@ -4773,7 +4772,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
                   <!-- Core 1: Reading Complex Technical Documents -->
                   <div class="p-4 rounded-xl bg-sky-50/60 border border-sky-200/80 space-y-2">
                     <div class="flex items-center gap-2 text-sky-900 font-bold text-xs sm:text-sm">
-                      <span class="p-1 rounded bg-sky-200/70 text-sky-800 text-xs">📑</span>
+                      <span class="p-1 rounded bg-sky-200/70 text-sky-800 text-xs"></span>
                       <span>A. Reading Complex Technical Documents</span>
                     </div>
                     <p class="text-[12px] sm:text-[12.5px] text-slate-700 leading-relaxed">
@@ -4789,7 +4788,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
                   <!-- Core 2: Spoken Operational Synthesis -->
                   <div class="p-4 rounded-xl bg-indigo-50/60 border border-indigo-200/80 space-y-2">
                     <div class="flex items-center gap-2 text-indigo-900 font-bold text-xs sm:text-sm">
-                      <span class="p-1 rounded bg-indigo-200/70 text-indigo-800 text-xs">🎙️</span>
+                      <span class="p-1 rounded bg-indigo-200/70 text-indigo-800 text-xs"></span>
                       <span>B. Spoken Operational Synthesis</span>
                     </div>
                     <p class="text-[12px] sm:text-[12.5px] text-slate-700 leading-relaxed">
@@ -4807,7 +4806,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
               <!-- Section 2: Why Are You Doing These Lessons? (Future Career Value) -->
               <div class="space-y-3 pt-2 border-t border-slate-100">
                 <div class="flex items-center gap-2">
-                  <span class="text-base">🚀</span>
+                  <span class="text-base"></span>
                   <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide">
                     2. Why Are You Doing These Lessons? Your Future Career Advantage
                   </h3>
@@ -4818,15 +4817,15 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
                   </p>
                   <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs pt-1">
                     <div class="p-3 rounded-lg bg-white border border-slate-200 shadow-2xs space-y-1">
-                      <div class="font-bold text-slate-900">🌍 International Airfield Teams</div>
+                      <div class="font-bold text-slate-900">International Airfield Teams</div>
                       <p class="text-[11.5px] text-slate-500 leading-relaxed">You will coordinate with multinational airlines, foreign civil aviation inspectors, and global equipment manufacturers.</p>
                     </div>
                     <div class="p-3 rounded-lg bg-white border border-slate-200 shadow-2xs space-y-1">
-                      <div class="font-bold text-slate-900">⚡ Zero Ambiguity in Safety</div>
+                      <div class="font-bold text-slate-900">Zero Ambiguity in Safety</div>
                       <p class="text-[11.5px] text-slate-500 leading-relaxed">Safety depends on precision. A misunderstanding of an EASA directive or NOTAM can lead to runway closures or safety incidents.</p>
                     </div>
                     <div class="p-3 rounded-lg bg-white border border-slate-200 shadow-2xs space-y-1">
-                      <div class="font-bold text-slate-900">💼 Executive Career Mobility</div>
+                      <div class="font-bold text-slate-900">Executive Career Mobility</div>
                       <p class="text-[11.5px] text-slate-500 leading-relaxed">GSEA and TSEEAC professionals who can summarize complex regulations clearly to management and operational teams advance rapidly into key technical leadership roles.</p>
                     </div>
                   </div>
@@ -4836,7 +4835,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
               <!-- Section 3: Weekly Self-Study: Live Traffic on eCampus (1 Hour per Week) -->
               <div class="space-y-3 pt-2 border-t border-slate-100">
                 <div class="flex items-center gap-2">
-                  <span class="text-base">🎧</span>
+                  <span class="text-base"></span>
                   <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide">
                     3. Weekly Self-Study: "Live Traffic" on eCampus (1 Hour / Week)
                   </h3>
@@ -4844,7 +4843,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
                 <div class="p-4 rounded-xl bg-gradient-to-r from-amber-50/60 via-white to-sky-50/50 border border-amber-200/80 space-y-3">
                   <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                     <div class="flex items-center gap-2">
-                      <span class="font-bold text-xs sm:text-sm text-amber-900">📻 Mandatory Weekly Self-Study Programme</span>
+                      <span class="font-bold text-xs sm:text-sm text-amber-900">Mandatory Weekly Self-Study Programme</span>
                       <span class="text-[10px] font-mono font-extrabold uppercase bg-amber-100 text-amber-800 border border-amber-300 px-2 py-0.5 rounded">1 Hour / Week</span>
                     </div>
                     <span class="text-[11px] font-mono text-slate-500">Available on ENAC eCampus</span>
@@ -4854,13 +4853,13 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
                   </p>
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
                     <div class="p-3 rounded-lg bg-white/90 border border-amber-200/60 shadow-2xs space-y-1">
-                      <div class="font-bold text-amber-900">🎧 What does Live Traffic include?</div>
+                      <div class="font-bold text-amber-900">What does Live Traffic include?</div>
                       <p class="text-[11.5px] text-slate-600 leading-relaxed">
                         Real-world ATC tower and ground communications, cockpit voice recordings, pilot debriefings, and authentic technical aviation audio from around the world.
                       </p>
                     </div>
                     <div class="p-3 rounded-lg bg-white/90 border border-amber-200/60 shadow-2xs space-y-1">
-                      <div class="font-bold text-sky-900">🎯 How does it prepare you for the MTF Exam?</div>
+                      <div class="font-bold text-sky-900">How does it prepare you for the MTF Exam?</div>
                       <p class="text-[11.5px] text-slate-600 leading-relaxed">
                         The Week 12 MTF Exam tests your technical listening comprehension under pressure. Doing 1 hour per week trains your ear to decode international accents and noisy radio transmissions with ease.
                       </p>
@@ -4922,7 +4921,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
               <!-- Section 5: Key Assessment Milestones -->
               <div class="space-y-3 pt-2 border-t border-slate-100">
                 <div class="flex items-center gap-2">
-                  <span class="text-base">📅</span>
+                  <span class="text-base"></span>
                   <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide">
                     5. Key Assessment Milestones
                   </h3>
@@ -5007,7 +5006,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
             <div class="bg-gradient-to-r from-slate-900 via-sky-950 to-slate-900 text-white p-4 sm:p-6 border-b border-sky-900/60 flex items-start justify-between gap-4 shrink-0">
               <div>
                 <div class="inline-flex items-center gap-1.5 font-mono text-[10.5px] font-bold tracking-wider uppercase text-sky-400 bg-sky-950/90 border border-sky-800/80 px-2.5 py-0.5 rounded-full">
-                  <span>✈️ ENAC E-CAMPUS (COURSE ID 175) • HOMEWORK &amp; SELF-STUDY</span>
+                  <span>ENAC E-CAMPUS (COURSE ID 175) • HOMEWORK &amp; SELF-STUDY</span>
                 </div>
                 <h2 id="s3-homework-modal-title" class="text-lg sm:text-2xl font-black text-white mt-1.5 leading-tight">
                   Semester 3 Weekly Homework Schedule
@@ -5028,7 +5027,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
               <div class="p-4 rounded-xl bg-gradient-to-r from-sky-50 via-sky-50/60 to-indigo-50/60 border border-sky-200/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-2xs">
                 <div class="space-y-1">
                   <div class="flex items-center gap-2">
-                    <span class="text-base leading-none">🌐</span>
+                    <span class="text-base leading-none"></span>
                     <span class="font-bold text-sky-950 text-xs sm:text-sm">ENAC e-Campus Portal • English S3 (Course 175)</span>
                   </div>
                   <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed font-normal">
@@ -5076,7 +5075,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
               <!-- Detailed Weekly Schedule Table -->
               <div class="space-y-2">
                 <div class="flex items-center justify-between px-1">
-                  <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">📅 Weekly Exercise Schedule</span>
+                  <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">Weekly Exercise Schedule</span>
                   <span class="text-[10.5px] font-mono text-slate-400">Total: 30 Exercises • 2 per week</span>
                 </div>
 
@@ -5270,7 +5269,7 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
         html += '<summary class="flex items-center justify-between font-bold text-purple-950 cursor-pointer select-none">';
         html += '<span class="flex items-center gap-2">';
         html += '<svg width="15" height="15" class="text-purple-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>';
-        html += '<span>👨‍🏫 Teacher Tips &amp; Speaking Prompts</span>';
+        html += '<span>Teacher Tips &amp; Speaking Prompts</span>';
         html += '</span>';
         html += '<span class="text-[11px] text-purple-700 font-semibold group-open:rotate-180 transition-transform duration-200">▾</span>';
         html += '</summary>';
@@ -5372,15 +5371,15 @@ function renderSessionBriefingBanner(sessionInput, theme) {
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3 text-[11px] text-slate-300 w-full md:w-auto">
               <div class="flex items-center gap-1.5">
-                <span class="text-blue-400 font-bold">💻 In-Class:</span>
+                <span class="text-blue-400 font-bold">In-Class:</span>
                 <span>Live digital worksheet &amp; pair speaking</span>
               </div>
               <div class="flex items-center gap-1.5">
-                <span class="text-indigo-400 font-bold">📄 Offline / Paper:</span>
+                <span class="text-indigo-400 font-bold">Offline / Paper:</span>
                 <span>Downloadable 7-page PDF (top right)</span>
               </div>
               <div class="flex items-center gap-1.5">
-                <span class="text-amber-400 font-bold">📚 Self-Study:</span>
+                <span class="text-amber-400 font-bold">Self-Study:</span>
                 <span>Vocabulary &amp; Additional Materials tabs</span>
               </div>
             </div>
@@ -5402,7 +5401,7 @@ function renderSessionBriefingBanner(sessionInput, theme) {
             ${objs.length > 0 ? `
               <div class="pt-2.5 border-t border-slate-100 space-y-1.5">
                 <div class="flex items-center gap-2">
-                  <span class="text-xs">🎯</span>
+                  <span class="text-xs"></span>
                   <span class="text-[10px] font-black uppercase tracking-wider text-slate-700">Core Spoken Objectives (B2 Standards)</span>
                 </div>
                 <ul class="space-y-1 text-xs text-slate-700">
@@ -5421,7 +5420,7 @@ function renderSessionBriefingBanner(sessionInput, theme) {
           <div class="lg:col-span-5 bg-slate-50 border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs flex flex-col justify-between space-y-3">
             <div class="space-y-2">
               <div class="flex items-center gap-2">
-                <span class="text-xs">🧭</span>
+                <span class="text-xs"></span>
                 <span class="text-[10.5px] font-black uppercase tracking-wider text-slate-500">How This Session Works</span>
               </div>
               <div class="p-2.5 bg-blue-50/70 border border-blue-200/70 rounded-lg text-xs text-blue-950 space-y-1">
@@ -5559,7 +5558,7 @@ function renderLessonContentTabSession1(sessionData, theme) {
                       </div>
                       ${answers.length > 0 ? `
                         <div class="pt-1">
-                          <button type="button" onclick="const box=document.getElementById('disc-ans-s1-${pId}'); box.classList.toggle('hidden'); this.querySelector('span').innerText = box.classList.contains('hidden') ? '💡 View Example Ideas &amp; Answers' : 'Hide Example Ideas';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-amber-700 hover:text-amber-900 cursor-pointer">
+                          <button type="button" onclick="const box=document.getElementById('disc-ans-s1-${pId}'); box.classList.toggle('hidden'); this.querySelector('span').innerText = box.classList.contains('hidden') ? 'View Example Ideas &amp; Answers' : 'Hide Example Ideas';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-amber-700 hover:text-amber-900 cursor-pointer">
                             <span>View Example Ideas &amp; Answers</span> &rarr;
                           </button>
                           <div id="disc-ans-s1-${pId}" class="hidden mt-2 p-2.5 bg-amber-50/90 border border-amber-200 rounded-md text-[11px] text-slate-700 space-y-1.5">
@@ -6234,7 +6233,7 @@ function renderLessonContentTabSession2(sessionData, theme) {
                       </div>
                       ${answers.length > 0 ? `
                         <div class="pt-1">
-                          <button type="button" onclick="const box=document.getElementById('disc-ans-s2-${pId}'); box.classList.toggle('hidden'); this.querySelector('span').innerText = box.classList.contains('hidden') ? '💡 View Example Ideas &amp; Answers' : 'Hide Example Ideas';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-amber-700 hover:text-amber-900 cursor-pointer">
+                          <button type="button" onclick="const box=document.getElementById('disc-ans-s2-${pId}'); box.classList.toggle('hidden'); this.querySelector('span').innerText = box.classList.contains('hidden') ? 'View Example Ideas &amp; Answers' : 'Hide Example Ideas';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-amber-700 hover:text-amber-900 cursor-pointer">
                             <span>View Example Ideas &amp; Answers</span> &rarr;
                           </button>
                           <div id="disc-ans-s2-${pId}" class="hidden mt-2 p-2.5 bg-amber-50/90 border border-amber-200 rounded-md text-[11px] text-slate-700 space-y-1.5">
@@ -6786,7 +6785,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                       </div>
                       ${answers.length > 0 ? `
                         <div class="pt-1">
-                          <button type="button" onclick="const box=document.getElementById('disc-ans-s3-${pId}'); box.classList.toggle('hidden'); this.querySelector('span').innerText = box.classList.contains('hidden') ? '💡 View Example Ideas &amp; Answers' : 'Hide Example Ideas';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-amber-700 hover:text-amber-900 cursor-pointer">
+                          <button type="button" onclick="const box=document.getElementById('disc-ans-s3-${pId}'); box.classList.toggle('hidden'); this.querySelector('span').innerText = box.classList.contains('hidden') ? 'View Example Ideas &amp; Answers' : 'Hide Example Ideas';" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-amber-700 hover:text-amber-900 cursor-pointer">
                             <span>View Example Ideas &amp; Answers</span> &rarr;
                           </button>
                           <div id="disc-ans-s3-${pId}" class="hidden mt-2 p-2.5 bg-amber-50/90 border border-amber-200 rounded-md text-[11px] text-slate-700 space-y-1.5">
@@ -7358,7 +7357,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                   <div class="relative rounded-lg overflow-hidden border border-slate-200 group cursor-pointer" onclick="window.openImageLightbox('images/s3_s4_ramp_fuel_spill.jpg', 'Exhibit 01 • Ramp Fuel Servicing & Spillage Incident')">
                     <img src="images/s3_s4_ramp_fuel_spill.jpg" alt="Ramp Fuel Servicing Spill" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300">
                     <div class="absolute bottom-1.5 right-1.5 bg-black/75 text-white text-[9px] font-bold px-1.5 py-0.5 rounded flex items-center gap-1 backdrop-blur-xs">
-                      <span>🔍 Enlarge</span>
+                      <span>Enlarge</span>
                     </div>
                   </div>
                   <h5 class="text-xs font-black text-slate-900">Exhibit 01: Fuel Hydrant Spill & Drain Hazard</h5>
@@ -7380,7 +7379,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                   <div class="relative rounded-lg overflow-hidden border border-slate-200 group cursor-pointer" onclick="window.openImageLightbox('images/s3_s4_ramp_gse_congestion.jpg', 'Exhibit 02 • Airside Traffic & GSE Congestion')">
                     <img src="images/s3_s4_ramp_gse_congestion.jpg" alt="Airside Traffic & GSE Congestion" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300">
                     <div class="absolute bottom-1.5 right-1.5 bg-black/75 text-white text-[9px] font-bold px-1.5 py-0.5 rounded flex items-center gap-1 backdrop-blur-xs">
-                      <span>🔍 Enlarge</span>
+                      <span>Enlarge</span>
                     </div>
                   </div>
                   <h5 class="text-xs font-black text-slate-900">Exhibit 02: High-Density GSE Turnaround Traffic</h5>
@@ -7402,7 +7401,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                   <div class="relative rounded-lg overflow-hidden border border-slate-200 group cursor-pointer" onclick="window.openImageLightbox('images/s3_s4_ramp_fod_inspection.jpg', 'Exhibit 03 • Ramp FOD Walkdown & Debris Scatter')">
                     <img src="images/s3_s4_ramp_fod_inspection.jpg" alt="Ramp FOD Walkdown" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300">
                     <div class="absolute bottom-1.5 right-1.5 bg-black/75 text-white text-[9px] font-bold px-1.5 py-0.5 rounded flex items-center gap-1 backdrop-blur-xs">
-                      <span>🔍 Enlarge</span>
+                      <span>Enlarge</span>
                     </div>
                   </div>
                   <h5 class="text-xs font-black text-slate-900">Exhibit 03: Ramp Walkdown & Lockwire Scatter</h5>
@@ -7709,7 +7708,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                     <div class="relative rounded-lg overflow-hidden border border-slate-200 group cursor-pointer bg-slate-900" onclick="window.openImageLightbox('${photo.image}', '${photo.title}')">
                       <img src="${photo.image}" alt="${photo.title}" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='images/s3_m1_session5_investigation.jpg'">
                       <div class="absolute bottom-1.5 right-1.5 bg-black/75 text-white text-[9px] font-bold px-1.5 py-0.5 rounded flex items-center gap-1 backdrop-blur-xs">
-                        <span>🔍 Enlarge</span>
+                        <span>Enlarge</span>
                       </div>
                     </div>
                     <h5 class="text-xs font-black text-slate-900">${photo.title}</h5>
@@ -7952,7 +7951,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
               <div id="model-s5-script" class="hidden mt-3 p-4 bg-slate-900 text-white rounded-xl space-y-2 border border-slate-800 text-xs sm:text-[12.5px] leading-relaxed shadow-lg">
                 <div class="flex items-center justify-between text-sky-400 border-b border-slate-800 pb-2">
                   <span class="font-bold uppercase tracking-wider text-[10px]">Model Spoken Briefing (Audio Transcript)</span>
-                  <button type="button" onclick="if(window.speakText) window.speakText(document.getElementById('s5-model-text').innerText)" class="px-2.5 py-1 bg-sky-600 hover:bg-sky-500 text-white rounded text-[10px] font-bold cursor-pointer">🔊 Read Aloud</button>
+                  <button type="button" onclick="if(window.speakText) window.speakText(document.getElementById('s5-model-text').innerText)" class="px-2.5 py-1 bg-sky-600 hover:bg-sky-500 text-white rounded text-[10px] font-bold cursor-pointer">Read Aloud</button>
                 </div>
                 <div id="s5-model-text" class="text-slate-200 whitespace-pre-line pt-1">
                   ${debrief.modelDebriefScript || ''}
@@ -8848,7 +8847,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
               ${(categories.length ? categories : [
                 {
                   category: "Introducing the Extract & Context",
-                  icon: "📄",
+                  icon: "",
                   phrases: [
                     "Good morning everyone. Today our team is looking at an extract from EASA Part-ADR regarding...",
                     "This regulation specifically applies to aerodrome operators and deals with...",
@@ -8868,7 +8867,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                 },
                 {
                   category: "Setting Up Classmate Exercises",
-                  icon: "✏️",
+                  icon: "",
                   phrases: [
                     "Now we would like you to look at the short reading exercise on the screen / handout.",
                     "Please work in pairs with the person next to you to answer questions 1 to 3.",
@@ -8878,7 +8877,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                 },
                 {
                   category: "Reviewing Answers & Class Debrief",
-                  icon: "🎯",
+                  icon: "",
                   phrases: [
                     "Let us check the answers together. Table 2, what did you find for Question 1?",
                     "Does anyone have a different answer or interpretation?",
@@ -9226,7 +9225,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
             ${renderActivityInstructions(opening, theme)}
 
             <!-- Aviation News Prompts -->
-            <div class="p-4 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl shadow-2xs space-y-2">
+            <div class="p-4 bg-white border border-slate-200/90 rounded-xl shadow-2xs space-y-2">
               <div class="flex items-center gap-2">
                 <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
                 <h5 class="text-xs sm:text-sm font-bold text-amber-900">Weekly Aviation Headlines &amp; Aerodynamic Innovations</h5>
@@ -9535,7 +9534,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
             ${renderActivityInstructions(opening, theme)}
 
             <!-- News Prompts -->
-            <div class="p-4 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl shadow-2xs space-y-2">
+            <div class="p-4 bg-white border border-slate-200/90 rounded-xl shadow-2xs space-y-2">
               <div class="flex items-center gap-2">
                 <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
                 <h5 class="text-xs sm:text-sm font-bold text-amber-900">Weekly Aircraft Maintenance &amp; Structural News</h5>
@@ -10095,7 +10094,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
             ${renderActivityInstructions(opening, theme)}
 
             <!-- News Prompts -->
-            <div class="p-4 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl shadow-2xs space-y-2">
+            <div class="p-4 bg-white border border-slate-200/90 rounded-xl shadow-2xs space-y-2">
               <div class="flex items-center gap-2">
                 <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
                 <h5 class="text-xs sm:text-sm font-bold text-amber-900">Weekly Airline Fleet &amp; Order News</h5>
@@ -10355,7 +10354,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
             ${renderActivityInstructions(opening, theme)}
 
             <!-- News Prompts -->
-            <div class="p-4 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl shadow-2xs space-y-2">
+            <div class="p-4 bg-white border border-slate-200/90 rounded-xl shadow-2xs space-y-2">
               <div class="flex items-center gap-2">
                 <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
                 <h5 class="text-xs sm:text-sm font-bold text-amber-900">Weekly Aviation Safety &amp; Investigation Briefs</h5>
@@ -10732,7 +10731,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
             ${renderActivityInstructions(opening, theme)}
 
             <!-- Aviation News Prompts -->
-            <div class="p-4 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl shadow-2xs space-y-2">
+            <div class="p-4 bg-white border border-slate-200/90 rounded-xl shadow-2xs space-y-2">
               <div class="flex items-center gap-2">
                 <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
                 <h5 class="text-xs sm:text-sm font-bold text-amber-900">Weekly Aeronautical Health &amp; Crew Fitness Briefing Prompts</h5>
@@ -11103,7 +11102,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
             ${renderActivityInstructions(opening, theme)}
 
             <!-- Weather News Prompts -->
-            <div class="p-4 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl shadow-2xs space-y-2">
+            <div class="p-4 bg-white border border-slate-200/90 rounded-xl shadow-2xs space-y-2">
               <div class="flex items-center gap-2">
                 <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
                 <h5 class="text-xs sm:text-sm font-bold text-amber-900">Operational Weather Briefing Discussion Prompts</h5>
@@ -11429,7 +11428,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
             ${renderActivityInstructions(opening, theme)}
 
             <!-- News Prompts -->
-            <div class="p-4 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl shadow-2xs space-y-2">
+            <div class="p-4 bg-white border border-slate-200/90 rounded-xl shadow-2xs space-y-2">
               <div class="flex items-center gap-2">
                 <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
                 <h5 class="text-xs sm:text-sm font-bold text-amber-900">Weekly Airport Protection &amp; Aircraft Safety Discussion Prompts</h5>
@@ -11506,7 +11505,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
             </div>
 
             <!-- French vs English False Friends Warning -->
-            <div class="p-3.5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl shadow-2xs text-xs space-y-1">
+            <div class="p-3.5 bg-white border border-slate-200/90 rounded-xl shadow-2xs text-xs space-y-1">
               <span class="font-bold text-amber-900 uppercase text-[10px]">Aviation English Linguistic Distinction Note (False Friends Alert):</span>
               <p class="text-amber-900/90 leading-relaxed">
                 In French, the single word <em class="font-bold">sécurité</em> is commonly used for both concepts. In international aviation English, conflating them is a critical error: <strong class="text-slate-900">Safety</strong> = protection against accidents, human error, component fatigue, and technical failures (unintended); <strong class="text-slate-900">Security</strong> = protection against unlawful interference, sabotage, terrorism, and unauthorized access (deliberate/malicious).
@@ -12363,7 +12362,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
 
               <!-- Crucial TOEIC Trap Alert -->
               ${grammar.trap ? `
-                <div class="p-3.5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl text-xs text-slate-700 leading-relaxed shadow-xs">
+                <div class="p-3.5 bg-white border border-slate-200/90 rounded-xl text-xs text-slate-700 leading-relaxed shadow-xs">
                   ${grammar.trap}
                 </div>
               ` : ''}
@@ -12541,7 +12540,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                 <strong>${(sessionData.materials && sessionData.materials.quizTitle) ? 'Operational Analysis & Safety Rule:' : 'Grammar Rationale:'}</strong> ${currentQ.analysis}
               </p>
               ${currentQ.strategy ? `
-                <div class="p-3 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-lg text-xs text-slate-700 leading-relaxed shadow-2xs">
+                <div class="p-3 bg-white border border-slate-200/90 rounded-lg text-xs text-slate-700 leading-relaxed shadow-2xs">
                   <strong>${(sessionData.materials && sessionData.materials.quizTitle) ? 'Operational Rule & Recommendation:' : 'TOEIC Strategy Rule:'}</strong> ${currentQ.strategy}
                 </div>
               ` : ''}
@@ -12615,7 +12614,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                 <div class="text-base font-black text-blue-950">45 Mins • 100 Questions</div>
                 <p class="text-[11px] text-blue-900 leading-snug">Parts 1 to 4 • <strong>495 points max</strong>. Fast paced audio recorded by native speakers (US, UK, Canadian, Australian).</p>
               </div>
-              <div class="p-3.5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-1 shadow-2xs">
+              <div class="p-3.5 bg-white border border-slate-200/90 rounded-xl space-y-1 shadow-2xs">
                 <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-amber-700">Reading Section</span>
                 <div class="text-base font-black text-amber-950">75 Mins • 100 Questions</div>
                 <p class="text-[11px] text-amber-900 leading-snug">Parts 5 to 7 • <strong>495 points max</strong>. Autonomous time management: speed through P5/P6 to preserve time for P7.</p>
@@ -12625,7 +12624,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
             <!-- Benchmark Callout -->
             <div class="p-3 bg-emerald-50 border border-emerald-200 rounded-xl flex items-center justify-between gap-3 text-xs text-emerald-950">
               <div class="flex items-center gap-2">
-                <span class="text-base">🎯</span>
+                <span class="text-base"></span>
                 <span><strong>ENAC Graduation Benchmark:</strong> Minimum <strong>785 points (CEFR B2)</strong> required for degree validation. Targeting <strong>850–945+ (B2/C1)</strong> for international career mobility.</span>
               </div>
             </div>
@@ -12871,7 +12870,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                 <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-1.5">
-                  <h5 class="font-bold text-slate-900">📖 Skimming (Reading for Gist &amp; Purpose)</h5>
+                  <h5 class="font-bold text-slate-900">Skimming (Reading for Gist &amp; Purpose)</h5>
                   <p class="text-slate-600 leading-relaxed text-[11.5px]">
                     Read quickly to grasp the main ideas. Check the title, first sentence of each paragraph, and the closing sentence.<br>
                     <strong>Ask yourself:</strong> What is the document? Who is it for? What is the main objective?<br>
@@ -12880,7 +12879,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                 </div>
 
                 <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-1.5">
-                  <h5 class="font-bold text-slate-900">🔍 Scanning (Searching for Specific Facts)</h5>
+                  <h5 class="font-bold text-slate-900">Scanning (Searching for Specific Facts)</h5>
                   <p class="text-slate-600 leading-relaxed text-[11.5px]">
                     Read carefully to pinpoint targeted facts: dates, times, prices, personal names, phone numbers, or flight/order codes.<br>
                     <strong>How to scan:</strong> Know exactly what keyword you are looking for before glancing at the text. Use headings and bullet points as visual anchors.<br>
@@ -12923,8 +12922,8 @@ function renderLessonContentTabSession3(sessionData, theme) {
                     <td class="py-2 px-3 font-mono font-bold text-blue-700">550 &ndash; 784</td>
                     <td class="py-2 px-3 text-slate-700">Intermediate: Understands the main points in clear standard speech and workplace texts on familiar matters.</td>
                   </tr>
-                  <tr class="bg-emerald-50/70 border-l-4 border-emerald-500 font-medium">
-                    <td class="py-2.5 px-3 font-black text-emerald-800">B2 🎯</td>
+                  <tr class="bg-emerald-50/70 font-medium">
+                    <td class="py-2.5 px-3 font-black text-emerald-800">B2 Benchmark</td>
                     <td class="py-2.5 px-3 font-mono font-black text-emerald-800">785 &ndash; 944</td>
                     <td class="py-2.5 px-3 text-emerald-950">
                       <strong>Independent User (ENAC Graduation Benchmark):</strong> Understands complex technical and business texts. Interacts with spontaneity and fluency in professional meetings and discussions.
@@ -13082,7 +13081,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
           const btnText = document.getElementById("copy-btn-text");
           if (btnText) {
             btnText.textContent = "✓ Copied!";
-            setTimeout(() => { btnText.textContent = "📋 Copy All"; }, 2000);
+            setTimeout(() => { btnText.textContent = "Copy All"; }, 2000);
           }
         }).catch(() => {
           ta.select();
@@ -13226,16 +13225,16 @@ function renderLessonContentTabSession3(sessionData, theme) {
               <div class="flex items-center flex-wrap gap-1 sm:gap-1.5 shrink-0">
                 <button type="button" onclick="window.copyNotepadNotes()" id="btn-copy-notepad" class="inline-flex items-center gap-1 sm:gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 bg-slate-100 hover:bg-slate-200 active:bg-slate-300 text-slate-700 text-[11px] sm:text-xs font-bold rounded-lg transition-all cursor-pointer shadow-2xs">
                   <svg class="w-3 sm:w-3.5 h-3 sm:h-3.5 text-slate-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                  <span id="copy-btn-text">📋 Copy</span>
+                  <span id="copy-btn-text">Copy</span>
                 </button>
                 <button type="button" onclick="window.downloadNotepadNotes()" class="inline-flex items-center gap-1 sm:gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 bg-blue-50 hover:bg-blue-100 active:bg-blue-200 text-blue-700 text-[11px] sm:text-xs font-bold rounded-lg transition-all cursor-pointer shadow-2xs">
                   <svg class="w-3 sm:w-3.5 h-3 sm:h-3.5 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-                  <span>💾 Download</span>
+                  <span>Download</span>
                 </button>
                 <button type="button" onclick="window.printNotepadNotes()" class="inline-flex items-center gap-1 sm:gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-[11px] sm:text-xs font-bold rounded-lg transition-all cursor-pointer shadow-2xs">
                   <svg class="w-3 sm:w-3.5 h-3 sm:h-3.5 text-slate-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
-                  <span class="hidden sm:inline">🖨️ Print / PDF</span>
-                  <span class="sm:hidden">🖨️ Print</span>
+                  <span class="hidden sm:inline">Print / PDF / PDF</span>
+                  <span class="sm:hidden">Print / PDF</span>
                 </button>
                 <button type="button" onclick="window.clearNotepadNotes()" class="inline-flex items-center gap-1 px-2 py-1 sm:px-2.5 sm:py-1.5 bg-rose-50 hover:bg-rose-100 text-rose-600 text-[11px] sm:text-xs font-bold rounded-lg transition-all cursor-pointer shadow-2xs" title="Clear notes for this session">
                   <svg class="w-3 sm:w-3.5 h-3 sm:h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
@@ -13245,7 +13244,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
             </div>
 
             <!-- Compact Storage Notice Callout (Mobile-optimized) -->
-            <div class="p-2.5 sm:p-3.5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl text-slate-800 text-[11px] sm:text-xs leading-relaxed flex items-start gap-2.5 shadow-2xs">
+            <div class="p-2.5 sm:p-3.5 bg-white border border-slate-200/90 rounded-xl text-slate-800 text-[11px] sm:text-xs leading-relaxed flex items-start gap-2.5 shadow-2xs">
               
               <div class="space-y-0.5 sm:space-y-1">
                 <div class="flex items-center justify-between gap-1">
@@ -13256,7 +13255,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                   Notes are stored <strong>locally in this browser</strong>. They are private to this device and never uploaded to the school network.
                 </p>
                 <p class="text-amber-900/80 text-[10.5px] sm:text-[11px]">
-                  <strong>Warning:</strong> Clearing cookies or using Private/Incognito mode erases notes. On shared computers, click <strong>"💾 Download"</strong> or <strong>"📋 Copy"</strong> before leaving class to save a copy!
+                  <strong>Warning:</strong> Clearing cookies or using Private/Incognito mode erases notes. On shared computers, click <strong>"Download"</strong> or <strong>"Copy"</strong> before leaving class to save a copy!
                 </p>
               </div>
             </div>
@@ -13270,7 +13269,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
               <button type="button" onclick="window.insertNotepadHeader('Questions for Teacher / FE Prep')" class="px-2 py-0.5 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-md text-[10.5px] sm:text-[11px] font-semibold transition-all cursor-pointer">+ FE Questions</button>
               ${hasWorksheetNotes ? `
                 <button type="button" onclick="window.importWorksheetNotesToNotepad()" class="px-2 py-0.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 rounded-md text-[10.5px] sm:text-[11px] font-bold transition-all cursor-pointer flex items-center gap-1">
-                  <span>📥 Import Worksheet Notes</span>
+                  <span>Import Worksheet Notes</span>
                 </button>
               ` : ""}
             </div>
@@ -13429,7 +13428,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
             <!-- Stepper Pills -->
             <div class="flex items-center gap-1 sm:gap-1.5">
               ${slides.map((s, idx) => `
-                <button type="button" onclick="window.jumpToPresentationSlide(${idx})" class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg text-xs font-bold transition-all cursor-pointer flex items-center justify-center ${idx === currentIdx ? "bg-sky-500 text-white shadow-md ring-2 ring-sky-300" : "bg-slate-800 text-slate-400 hover:bg-slate-700 hover:text-white"}">
+                <button type="button" onclick="window.jumpToPresentationSlide(${idx})" class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg text-xs font-bold transition-all cursor-pointer flex items-center justify-center ${idx === currentIdx ?"bg-sky-500 text-white shadow-md ring-2 ring-sky-300" : "bg-slate-800 text-slate-400 hover:bg-slate-700 hover:text-white"}">
                   ${idx + 1}
                 </button>
               `).join("")}
@@ -13464,7 +13463,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
             </div>
 
             <!-- Responsive Cards Grid -->
-            <div class="grid grid-cols-1 ${slide.cards.length === 4 ? "sm:grid-cols-2 lg:grid-cols-4" : "sm:grid-cols-3"} gap-4">
+            <div class="grid grid-cols-1 ${slide.cards.length === 4 ?"sm:grid-cols-2 lg:grid-cols-4" : "sm:grid-cols-3"} gap-4">
               ${slide.cards.map(c => `
                 <div class="p-4 sm:p-5 bg-slate-800/90 border border-slate-700/90 rounded-2xl flex flex-col justify-between shadow-md hover:border-sky-500/50 transition-all">
                   <div>
@@ -13499,7 +13498,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
           <!-- Bottom Teacher Prompts Bar -->
           <div class="mt-4 pt-3 border-t border-slate-800 shrink-0">
             <div class="flex items-center justify-between mb-2">
-              <button type="button" onclick="window.toggleTeacherPrompts()" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${showPrompts ? "bg-emerald-600 text-white" : "bg-slate-800 hover:bg-slate-700 text-slate-300"}">
+              <button type="button" onclick="window.toggleTeacherPrompts()" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${showPrompts ?"bg-emerald-600 text-white" : "bg-slate-800 hover:bg-slate-700 text-slate-300"}">
                 <span>🗣️ Teacher Speaking Prompts &amp; Facilitation Questions</span>
                 <span class="text-[10px]">${showPrompts ? "▲ Hide" : "▼ Reveal"}</span>
               </button>
@@ -13509,7 +13508,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
             ${showPrompts ? `
               <div class="p-4 bg-emerald-950/80 border border-emerald-700/80 rounded-2xl text-emerald-100 text-xs sm:text-sm leading-relaxed shadow-lg">
                 <div class="flex items-start gap-2.5">
-                  <span class="text-base shrink-0">🎯</span>
+                  <span class="text-base shrink-0"></span>
                   <div class="space-y-1">
                     <p class="font-bold text-emerald-300">Classroom Speaking Facilitation:</p>
                     <p>${slide.teacherPrompt}</p>
@@ -13594,7 +13593,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
               <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Slide Navigator:</span>
               <div class="flex items-center gap-1 sm:gap-1.5 overflow-x-auto pb-0.5">
                 ${slides.map((s, idx) => `
-                  <button type="button" onclick="window.jumpToPresentationSlide(${idx})" class="w-6.5 h-6.5 sm:w-7 sm:h-7 rounded-md text-[11px] font-bold transition-all cursor-pointer flex items-center justify-center ${idx === currentIdx ? "text-white shadow-xs" : "bg-slate-100 text-slate-600 hover:bg-slate-200"}" style="${idx === currentIdx ? "background-color: " + currentTheme.primary + ";" : ""}">
+                  <button type="button" onclick="window.jumpToPresentationSlide(${idx})" class="w-6.5 h-6.5 sm:w-7 sm:h-7 rounded-md text-[11px] font-bold transition-all cursor-pointer flex items-center justify-center ${idx === currentIdx ?"text-white shadow-xs" : "bg-slate-100 text-slate-600 hover:bg-slate-200"}" style="${idx === currentIdx ? "background-color: " + currentTheme.primary + ";" : ""}">
                     ${idx + 1}
                   </button>
                 `).join("")}
@@ -13617,13 +13616,13 @@ function renderLessonContentTabSession3(sessionData, theme) {
               <div class="rounded-xl overflow-hidden border border-slate-200 shadow-2xs mb-3 group relative cursor-pointer" onclick="window.openImageLightbox('${slide.image}', '${(slide.title || 'Slide Photo').replace(/'/g, "\\'")}')">
                 <img src="${slide.image}" alt="${slide.title || 'Exhibit'}" class="w-full h-44 sm:h-56 object-cover group-hover:scale-[1.01] transition-transform duration-200">
                 <div class="absolute bottom-2 right-2 bg-black/75 text-white text-[10px] font-bold px-2 py-1 rounded backdrop-blur-xs flex items-center gap-1 shadow-xs">
-                  <span>🔍 Click to inspect full resolution</span>
+                  <span>Click to inspect full resolution</span>
                 </div>
               </div>
             ` : ''}
 
             <!-- Structured Card Columns -->
-            <div class="grid grid-cols-1 ${slide.cards.length === 4 ? "sm:grid-cols-2" : "sm:grid-cols-3"} gap-3">
+            <div class="grid grid-cols-1 ${slide.cards.length === 4 ?"sm:grid-cols-2" : "sm:grid-cols-3"} gap-3">
               ${slide.cards.map(c => `
                 <div class="p-3.5 bg-slate-50 border border-slate-200/80 rounded-xl flex flex-col justify-between hover:border-slate-300 transition-all">
                   <div>
@@ -13660,7 +13659,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
             <button type="button" onclick="window.toggleTeacherPrompts()" class="w-full flex items-center justify-between p-3 text-left hover:bg-slate-50 transition-colors cursor-pointer select-none">
               <div class="flex items-center gap-2 text-xs font-bold text-slate-700">
                 <span>🗣️ Teacher Speaking Prompts &amp; Concept Checkers</span>
-                <span class="px-1.5 py-0.2 rounded text-[10px] font-semibold ${showPrompts ? "bg-emerald-100 text-emerald-800" : "bg-slate-100 text-slate-600"}">
+                <span class="px-1.5 py-0.2 rounded text-[10px] font-semibold ${showPrompts ?"bg-emerald-100 text-emerald-800" : "bg-slate-100 text-slate-600"}">
                   ${showPrompts ? "Active" : "Click to View"}
                 </span>
               </div>
@@ -13670,7 +13669,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
             ${showPrompts ? `
               <div class="p-3.5 bg-emerald-50/70 border-t border-emerald-100 text-emerald-950 text-xs leading-relaxed space-y-1.5">
                 <div class="flex items-start gap-2">
-                  <span class="text-sm shrink-0">🎯</span>
+                  <span class="text-sm shrink-0"></span>
                   <div class="space-y-1">
                     <p class="font-bold text-emerald-900">Spoken Facilitation Prompt:</p>
                     <p class="text-emerald-800">${slide.teacherPrompt}</p>
@@ -13691,7 +13690,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Executive Overview Card -->
-          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200/90 rounded-xl p-4 sm:p-5 shadow-xs">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide text-white" style="background-color: ${theme.primary};">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -13953,7 +13952,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
           <!-- Presenter Checklist & Golden Rules -->
           <div class="p-4 rounded-xl border space-y-2.5" style="background-color: ${theme.highlight || '#fef3c7'}; border-color: ${theme.accent}40;">
             <div class="flex items-center gap-1.5 font-bold text-xs" style="color: ${theme.accent};">
-              <span>💡</span>
+              
               <span class="uppercase tracking-wide">Session 7 Golden Rules (FE1)</span>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs text-slate-700">
@@ -13977,7 +13976,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Executive Overview Card -->
-          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200/90 rounded-xl p-4 sm:p-5 shadow-xs">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide text-white" style="background-color: ${theme.primary};">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -14200,7 +14199,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Executive Overview Card -->
-          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200/90 rounded-xl p-4 sm:p-5 shadow-xs">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide text-white" style="background-color: ${theme.primary};">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -14429,7 +14428,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Overview Card -->
-          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200/90 rounded-xl p-4 sm:p-5 shadow-xs">
             <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Target Competencies • B2 CEFR Level</span>
             <h3 class="text-base sm:text-lg font-bold text-slate-800 mt-1">Formative Evaluation 1 Objectives — EASA Regulatory Extract & Class Activity</h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
@@ -14507,7 +14506,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Overview Card -->
-          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200/90 rounded-xl p-4 sm:p-5 shadow-xs">
             <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Target Competencies • B2 CEFR Level</span>
             <h3 class="text-base sm:text-lg font-bold text-slate-800 mt-1">Formative Evaluation 2 Objectives (Aircraft / Airlines)</h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
@@ -14585,7 +14584,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Overview Card -->
-          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200/90 rounded-xl p-4 sm:p-5 shadow-xs">
             <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Target Competencies • B2/C1 CEFR Level</span>
             <h3 class="text-base sm:text-lg font-bold text-slate-800 mt-1">Formative Evaluation 3 Objectives (Aviation Current Events)</h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
@@ -14668,7 +14667,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Overview Card -->
-          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200/90 rounded-xl p-4 sm:p-5 shadow-xs">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Official Rubric • Technical English (AT • LV125E)</span>
               <span class="text-xs font-bold px-2.5 py-0.5 rounded-md text-white font-mono shadow-xs" style="background-color: ${theme.primary};">
@@ -14766,7 +14765,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Overview Card -->
-          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200/90 rounded-xl p-4 sm:p-5 shadow-xs">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Official Rubric • Technical English (AT)</span>
               <span class="text-xs font-bold px-2.5 py-0.5 rounded-md text-white font-mono shadow-xs" style="background-color: ${theme.primary};">
@@ -14859,7 +14858,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Overview Card -->
-          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200/90 rounded-xl p-4 sm:p-5 shadow-xs">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Official Rubric • Technical English (AT)</span>
               <span class="text-xs font-bold px-2.5 py-0.5 rounded-md text-white font-mono shadow-xs" style="background-color: ${theme.primary};">
@@ -15121,7 +15120,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
           },
           {
             "isHoliday": true,
-            "text": "🎄 Weeks 52 & 53 — Christmas & Winter Vacation (No Classes)"
+            "text": "Weeks 52 & 53 — Christmas & Winter Vacation (No Classes)"
           },
           {
             "courseWeek": "W06",
@@ -15208,7 +15207,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
           },
           {
             "isHoliday": true,
-            "text": "❄️ Week 06 — Mid-Semester Break (No Classes)"
+            "text": "Week 06 — Mid-Semester Break (No Classes)"
           },
           {
             "courseWeek": "W11",
@@ -15676,7 +15675,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
           </div>
 
           <!-- Dynamic Rotation Callout Banner -->
-          <div class="p-3.5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl flex items-start gap-3 text-xs text-slate-800 shadow-2xs">
+          <div class="p-3.5 bg-white border border-slate-200/90 rounded-xl flex items-start gap-3 text-xs text-slate-800 shadow-2xs">
             <svg class="w-4 h-4 text-amber-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
             <div class="space-y-1">
               <span class="font-bold block">Dynamic Formative Evaluation (FE) Rotations:</span>
@@ -15840,7 +15839,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                     const roomBadgesHtml = renderWeekRoomBadges(s.rooms, promo.groups);
                     if (s.isFe) {
                       return `
-                        <div class="p-3.5 flex flex-wrap items-center justify-between gap-2 bg-white border-b border-slate-200 border-l-4 border-l-amber-400">
+                        <div class="p-3.5 flex flex-wrap items-center justify-between gap-2 bg-white border-b border-slate-200">
                           <div class="flex items-center gap-3">
                             <span class="px-2 py-1 rounded font-mono text-[10px] font-black text-white bg-amber-600">${s.week}</span>
                             <div>
@@ -15867,7 +15866,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
                   }).join("")}
                 </div>
                 ${mod.num === 2 ? `
-                <div class="p-3.5 bg-white border-t border-slate-200 text-slate-800 border-l-4 border-l-amber-400 flex flex-wrap items-center justify-between gap-2 text-xs">
+                <div class="p-3.5 bg-white border-t border-slate-200 text-slate-800 flex flex-wrap items-center justify-between gap-2 text-xs">
                   <div class="flex items-center gap-2.5">
                     <span class="px-2 py-0.5 rounded font-mono text-[10px] font-black text-white bg-amber-600">Week 12</span>
                     <span><strong>MTF TEST:</strong> Friday PM (13h15 – 17h30) for full promo Week 12</span>
@@ -15990,10 +15989,10 @@ function renderLessonContentTabSession3(sessionData, theme) {
                               Slot ${idx + 1} (${slotObj.time.split(" – ")[0]})
                             </td>
                             <td class="py-2.5 px-3">
-                              <span class="font-semibold block ${slotObj.type === "feedback" ? "text-emerald-800 font-bold" : "text-amber-900 font-bold"}">
+                              <span class="font-semibold block ${slotObj.type ==="feedback" ? "text-emerald-800 font-bold" : "text-amber-900 font-bold"}">
                                 ${renderSlotStudents(slotObj.students)}
                               </span>
-                              <span class="text-[10px] font-mono px-1.5 py-0.5 rounded ${slotObj.type === "feedback" ? "bg-emerald-100 text-emerald-800 font-bold" : "bg-amber-100 text-amber-800 font-bold"}">
+                              <span class="text-[10px] font-mono px-1.5 py-0.5 rounded ${slotObj.type ==="feedback" ? "bg-emerald-100 text-emerald-800 font-bold" : "bg-amber-100 text-amber-800 font-bold"}">
                                 ${slotObj.type.toUpperCase()}
                               </span>
                               <span class="text-[10px] font-mono text-slate-400">(${slotObj.time})</span>
@@ -16240,7 +16239,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
           <div class="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div class="flex items-center gap-3.5">
               <div class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-white shadow-xs text-2xl" style="background-color: ${theme.primary};">
-                <span>📘</span>
+                <span></span>
               </div>
               <div>
                 <div class="flex items-center gap-2">
@@ -16259,8 +16258,8 @@ function renderLessonContentTabSession3(sessionData, theme) {
           </div>
 
           <!-- Key Mindset Alert Box -->
-          <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-amber-400 bg-white shadow-2xs flex items-start gap-3">
-            <span class="text-xl shrink-0 mt-0.5">🎯</span>
+          <div class="p-4 rounded-xl border border-slate-200/90 bg-white shadow-2xs flex items-start gap-3">
+            <span class="text-xl shrink-0 mt-0.5"></span>
             <div class="text-xs text-blue-900 space-y-1">
               <h4 class="font-extrabold text-blue-950 text-sm">${isFr ? 'Notre Priorité : Progression Continue &amp; Régulière' : 'Our Focus: Gradual &amp; Steady Improvement'}</h4>
               <p class="leading-relaxed">
@@ -16280,7 +16279,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
             <div class="grid grid-cols-1 md:grid-cols-3 gap-3 pt-1">
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70 space-y-1">
                 <div class="flex items-center gap-2 text-xs font-bold text-slate-800">
-                  <span>📈</span>
+                  <span></span>
                   <span>${isFr ? 'Progression Continue' : 'Continuous Progress'}</span>
                 </div>
                 <p class="text-[11.5px] text-slate-600 leading-relaxed">
@@ -16291,7 +16290,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
               </div>
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70 space-y-1">
                 <div class="flex items-center gap-2 text-xs font-bold text-slate-800">
-                  <span>🗣️</span>
+                  <span></span>
                   <span>${isFr ? 'Évaluation Formative 1' : 'Formative Evaluation 1'}</span>
                 </div>
                 <p class="text-[11.5px] text-slate-600 leading-relaxed">
@@ -16302,7 +16301,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
               </div>
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70 space-y-1">
                 <div class="flex items-center gap-2 text-xs font-bold text-slate-800">
-                  <span>📊</span>
+                  <span></span>
                   <span>${isFr ? 'Auto-évaluation Active' : 'Self-Monitoring'}</span>
                 </div>
                 <p class="text-[11.5px] text-slate-600 leading-relaxed">
@@ -16315,7 +16314,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
           </div>
 
           <!-- Section 2: CRITICAL PORTFOLIO ALERT -->
-          <div class="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200 border-l-4 border-l-amber-400 shadow-xs space-y-3">
+          <div class="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-3">
             <div class="flex items-center gap-2 text-amber-950">
               <span class="px-2 py-0.5 rounded font-mono text-[10px] font-bold uppercase tracking-wider bg-slate-900 text-amber-300 border border-slate-800">MANDATORY</span>
               <h4 class="font-black text-sm uppercase tracking-wide">${isFr ? 'Règle Obligatoire : Rédigez des remarques détaillées (Jamais de réponses en un seul mot !)' : 'Mandatory Rule: Detailed Portfolio Reflections (No One-Word Answers!)'}</h4>
@@ -16621,7 +16620,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
           <div class="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <div class="flex items-center gap-3">
               <div class="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 text-white shadow-xs" style="background-color: ${theme.primary};">
-                <span class="text-xl">🎯</span>
+                <span class="text-xl"></span>
               </div>
               <div>
                 <div class="flex items-center gap-2">
@@ -16641,7 +16640,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
           </div>
 
           <!-- Lead Statement Box -->
-          <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-amber-400 bg-white shadow-2xs flex items-start gap-3">
+          <div class="p-4 rounded-xl border border-slate-200/90 bg-white shadow-2xs flex items-start gap-3">
             
             <div>
               <h4 class="text-xs sm:text-sm font-extrabold text-blue-950">${leadSentence}</h4>
@@ -16793,7 +16792,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
           <!-- Bottom Direct Launcher Banner -->
           <div class="p-4 rounded-xl bg-gradient-to-r from-orange-50 to-amber-50 border-2 border-orange-200 flex flex-wrap items-center justify-between gap-3 text-xs sm:text-sm">
             <div class="flex items-center gap-2.5 text-slate-800 font-bold">
-              <span class="text-xl">📺</span>
+              <span class="text-xl"></span>
               <span>Ready to project the introduction slides in class?</span>
             </div>
             <a href="presentation.html" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 font-bold text-white bg-orange-600 hover:bg-orange-500 px-4 py-2 rounded-lg shadow-xs transition-all cursor-pointer shrink-0">
@@ -16951,7 +16950,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
               <div class="space-y-3 max-w-2xl">
                 <div class="flex flex-wrap items-center gap-2">
                   <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-black uppercase tracking-wider bg-amber-400 text-amber-950 shadow-xs">
-                    ★ Comprehensive Course Book
+                    Comprehensive Course Book
                   </span>
                   <span class="text-[11px] font-mono text-amber-200/80">
                     79 Pages • 8.3 MB PDF
@@ -17064,7 +17063,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
               <div class="space-y-2.5 max-w-2xl">
                 <div class="flex flex-wrap items-center gap-2">
                   <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-black uppercase tracking-wider bg-emerald-100 text-emerald-900 border border-emerald-300 shadow-2xs">
-                    📓 Student Course Notebook • Ink-Saving Edition
+                    Student Course Notebook • Ink-Saving Edition
                   </span>
                   <span class="text-[11px] font-mono text-slate-500 font-bold">
                     Exactly 10 Pages A4 • 710 KB PDF
@@ -17171,7 +17170,7 @@ function renderLessonContentTabSession3(sessionData, theme) {
           </div>
 
           <!-- Section 3: Formative Evaluation 1 (FE1) Guidelines & Flipped Lesson Pack -->
-          <div class="p-4 sm:p-5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-2xl shadow-xs space-y-3">
+          <div class="p-4 sm:p-5 bg-white border border-slate-200/90 rounded-2xl shadow-xs space-y-3">
             <div class="flex items-center justify-between gap-3">
               <div class="flex items-center gap-2">
                 <span class="text-[10px] font-mono font-black uppercase tracking-wider px-2.5 py-0.5 rounded bg-amber-200 text-amber-900">

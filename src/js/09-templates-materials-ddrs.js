@@ -385,7 +385,7 @@
 
               <!-- Crucial TOEIC Trap Alert -->
               ${grammar.trap ? `
-                <div class="p-3.5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl text-xs text-slate-700 leading-relaxed shadow-xs">
+                <div class="p-3.5 bg-white border border-slate-200/90 rounded-xl text-xs text-slate-700 leading-relaxed shadow-xs">
                   ${grammar.trap}
                 </div>
               ` : ''}
@@ -563,7 +563,7 @@
                 <strong>${(sessionData.materials && sessionData.materials.quizTitle) ? 'Operational Analysis & Safety Rule:' : 'Grammar Rationale:'}</strong> ${currentQ.analysis}
               </p>
               ${currentQ.strategy ? `
-                <div class="p-3 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-lg text-xs text-slate-700 leading-relaxed shadow-2xs">
+                <div class="p-3 bg-white border border-slate-200/90 rounded-lg text-xs text-slate-700 leading-relaxed shadow-2xs">
                   <strong>${(sessionData.materials && sessionData.materials.quizTitle) ? 'Operational Rule & Recommendation:' : 'TOEIC Strategy Rule:'}</strong> ${currentQ.strategy}
                 </div>
               ` : ''}
@@ -637,7 +637,7 @@
                 <div class="text-base font-black text-blue-950">45 Mins • 100 Questions</div>
                 <p class="text-[11px] text-blue-900 leading-snug">Parts 1 to 4 • <strong>495 points max</strong>. Fast paced audio recorded by native speakers (US, UK, Canadian, Australian).</p>
               </div>
-              <div class="p-3.5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-1 shadow-2xs">
+              <div class="p-3.5 bg-white border border-slate-200/90 rounded-xl space-y-1 shadow-2xs">
                 <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-amber-700">Reading Section</span>
                 <div class="text-base font-black text-amber-950">75 Mins • 100 Questions</div>
                 <p class="text-[11px] text-amber-900 leading-snug">Parts 5 to 7 • <strong>495 points max</strong>. Autonomous time management: speed through P5/P6 to preserve time for P7.</p>
@@ -647,7 +647,7 @@
             <!-- Benchmark Callout -->
             <div class="p-3 bg-emerald-50 border border-emerald-200 rounded-xl flex items-center justify-between gap-3 text-xs text-emerald-950">
               <div class="flex items-center gap-2">
-                <span class="text-base">🎯</span>
+                <span class="text-base"></span>
                 <span><strong>ENAC Graduation Benchmark:</strong> Minimum <strong>785 points (CEFR B2)</strong> required for degree validation. Targeting <strong>850–945+ (B2/C1)</strong> for international career mobility.</span>
               </div>
             </div>
@@ -893,7 +893,7 @@
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                 <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-1.5">
-                  <h5 class="font-bold text-slate-900">📖 Skimming (Reading for Gist &amp; Purpose)</h5>
+                  <h5 class="font-bold text-slate-900">Skimming (Reading for Gist &amp; Purpose)</h5>
                   <p class="text-slate-600 leading-relaxed text-[11.5px]">
                     Read quickly to grasp the main ideas. Check the title, first sentence of each paragraph, and the closing sentence.<br>
                     <strong>Ask yourself:</strong> What is the document? Who is it for? What is the main objective?<br>
@@ -902,7 +902,7 @@
                 </div>
 
                 <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-1.5">
-                  <h5 class="font-bold text-slate-900">🔍 Scanning (Searching for Specific Facts)</h5>
+                  <h5 class="font-bold text-slate-900">Scanning (Searching for Specific Facts)</h5>
                   <p class="text-slate-600 leading-relaxed text-[11.5px]">
                     Read carefully to pinpoint targeted facts: dates, times, prices, personal names, phone numbers, or flight/order codes.<br>
                     <strong>How to scan:</strong> Know exactly what keyword you are looking for before glancing at the text. Use headings and bullet points as visual anchors.<br>
@@ -945,8 +945,8 @@
                     <td class="py-2 px-3 font-mono font-bold text-blue-700">550 &ndash; 784</td>
                     <td class="py-2 px-3 text-slate-700">Intermediate: Understands the main points in clear standard speech and workplace texts on familiar matters.</td>
                   </tr>
-                  <tr class="bg-emerald-50/70 border-l-4 border-emerald-500 font-medium">
-                    <td class="py-2.5 px-3 font-black text-emerald-800">B2 🎯</td>
+                  <tr class="bg-emerald-50/70 font-medium">
+                    <td class="py-2.5 px-3 font-black text-emerald-800">B2 Benchmark</td>
                     <td class="py-2.5 px-3 font-mono font-black text-emerald-800">785 &ndash; 944</td>
                     <td class="py-2.5 px-3 text-emerald-950">
                       <strong>Independent User (ENAC Graduation Benchmark):</strong> Understands complex technical and business texts. Interacts with spontaneity and fluency in professional meetings and discussions.
@@ -1104,7 +1104,7 @@
           const btnText = document.getElementById("copy-btn-text");
           if (btnText) {
             btnText.textContent = "✓ Copied!";
-            setTimeout(() => { btnText.textContent = "📋 Copy All"; }, 2000);
+            setTimeout(() => { btnText.textContent = "Copy All"; }, 2000);
           }
         }).catch(() => {
           ta.select();
@@ -1248,16 +1248,16 @@
               <div class="flex items-center flex-wrap gap-1 sm:gap-1.5 shrink-0">
                 <button type="button" onclick="window.copyNotepadNotes()" id="btn-copy-notepad" class="inline-flex items-center gap-1 sm:gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 bg-slate-100 hover:bg-slate-200 active:bg-slate-300 text-slate-700 text-[11px] sm:text-xs font-bold rounded-lg transition-all cursor-pointer shadow-2xs">
                   <svg class="w-3 sm:w-3.5 h-3 sm:h-3.5 text-slate-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                  <span id="copy-btn-text">📋 Copy</span>
+                  <span id="copy-btn-text">Copy</span>
                 </button>
                 <button type="button" onclick="window.downloadNotepadNotes()" class="inline-flex items-center gap-1 sm:gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 bg-blue-50 hover:bg-blue-100 active:bg-blue-200 text-blue-700 text-[11px] sm:text-xs font-bold rounded-lg transition-all cursor-pointer shadow-2xs">
                   <svg class="w-3 sm:w-3.5 h-3 sm:h-3.5 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-                  <span>💾 Download</span>
+                  <span>Download</span>
                 </button>
                 <button type="button" onclick="window.printNotepadNotes()" class="inline-flex items-center gap-1 sm:gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-[11px] sm:text-xs font-bold rounded-lg transition-all cursor-pointer shadow-2xs">
                   <svg class="w-3 sm:w-3.5 h-3 sm:h-3.5 text-slate-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
-                  <span class="hidden sm:inline">🖨️ Print / PDF</span>
-                  <span class="sm:hidden">🖨️ Print</span>
+                  <span class="hidden sm:inline">Print / PDF / PDF</span>
+                  <span class="sm:hidden">Print / PDF</span>
                 </button>
                 <button type="button" onclick="window.clearNotepadNotes()" class="inline-flex items-center gap-1 px-2 py-1 sm:px-2.5 sm:py-1.5 bg-rose-50 hover:bg-rose-100 text-rose-600 text-[11px] sm:text-xs font-bold rounded-lg transition-all cursor-pointer shadow-2xs" title="Clear notes for this session">
                   <svg class="w-3 sm:w-3.5 h-3 sm:h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
@@ -1267,7 +1267,7 @@
             </div>
 
             <!-- Compact Storage Notice Callout (Mobile-optimized) -->
-            <div class="p-2.5 sm:p-3.5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl text-slate-800 text-[11px] sm:text-xs leading-relaxed flex items-start gap-2.5 shadow-2xs">
+            <div class="p-2.5 sm:p-3.5 bg-white border border-slate-200/90 rounded-xl text-slate-800 text-[11px] sm:text-xs leading-relaxed flex items-start gap-2.5 shadow-2xs">
               
               <div class="space-y-0.5 sm:space-y-1">
                 <div class="flex items-center justify-between gap-1">
@@ -1278,7 +1278,7 @@
                   Notes are stored <strong>locally in this browser</strong>. They are private to this device and never uploaded to the school network.
                 </p>
                 <p class="text-amber-900/80 text-[10.5px] sm:text-[11px]">
-                  <strong>Warning:</strong> Clearing cookies or using Private/Incognito mode erases notes. On shared computers, click <strong>"💾 Download"</strong> or <strong>"📋 Copy"</strong> before leaving class to save a copy!
+                  <strong>Warning:</strong> Clearing cookies or using Private/Incognito mode erases notes. On shared computers, click <strong>"Download"</strong> or <strong>"Copy"</strong> before leaving class to save a copy!
                 </p>
               </div>
             </div>
@@ -1292,7 +1292,7 @@
               <button type="button" onclick="window.insertNotepadHeader('Questions for Teacher / FE Prep')" class="px-2 py-0.5 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-md text-[10.5px] sm:text-[11px] font-semibold transition-all cursor-pointer">+ FE Questions</button>
               ${hasWorksheetNotes ? `
                 <button type="button" onclick="window.importWorksheetNotesToNotepad()" class="px-2 py-0.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 rounded-md text-[10.5px] sm:text-[11px] font-bold transition-all cursor-pointer flex items-center gap-1">
-                  <span>📥 Import Worksheet Notes</span>
+                  <span>Import Worksheet Notes</span>
                 </button>
               ` : ""}
             </div>
@@ -1451,7 +1451,7 @@
             <!-- Stepper Pills -->
             <div class="flex items-center gap-1 sm:gap-1.5">
               ${slides.map((s, idx) => `
-                <button type="button" onclick="window.jumpToPresentationSlide(${idx})" class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg text-xs font-bold transition-all cursor-pointer flex items-center justify-center ${idx === currentIdx ? "bg-sky-500 text-white shadow-md ring-2 ring-sky-300" : "bg-slate-800 text-slate-400 hover:bg-slate-700 hover:text-white"}">
+                <button type="button" onclick="window.jumpToPresentationSlide(${idx})" class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg text-xs font-bold transition-all cursor-pointer flex items-center justify-center ${idx === currentIdx ?"bg-sky-500 text-white shadow-md ring-2 ring-sky-300" : "bg-slate-800 text-slate-400 hover:bg-slate-700 hover:text-white"}">
                   ${idx + 1}
                 </button>
               `).join("")}
@@ -1486,7 +1486,7 @@
             </div>
 
             <!-- Responsive Cards Grid -->
-            <div class="grid grid-cols-1 ${slide.cards.length === 4 ? "sm:grid-cols-2 lg:grid-cols-4" : "sm:grid-cols-3"} gap-4">
+            <div class="grid grid-cols-1 ${slide.cards.length === 4 ?"sm:grid-cols-2 lg:grid-cols-4" : "sm:grid-cols-3"} gap-4">
               ${slide.cards.map(c => `
                 <div class="p-4 sm:p-5 bg-slate-800/90 border border-slate-700/90 rounded-2xl flex flex-col justify-between shadow-md hover:border-sky-500/50 transition-all">
                   <div>
@@ -1521,7 +1521,7 @@
           <!-- Bottom Teacher Prompts Bar -->
           <div class="mt-4 pt-3 border-t border-slate-800 shrink-0">
             <div class="flex items-center justify-between mb-2">
-              <button type="button" onclick="window.toggleTeacherPrompts()" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${showPrompts ? "bg-emerald-600 text-white" : "bg-slate-800 hover:bg-slate-700 text-slate-300"}">
+              <button type="button" onclick="window.toggleTeacherPrompts()" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${showPrompts ?"bg-emerald-600 text-white" : "bg-slate-800 hover:bg-slate-700 text-slate-300"}">
                 <span>🗣️ Teacher Speaking Prompts &amp; Facilitation Questions</span>
                 <span class="text-[10px]">${showPrompts ? "▲ Hide" : "▼ Reveal"}</span>
               </button>
@@ -1531,7 +1531,7 @@
             ${showPrompts ? `
               <div class="p-4 bg-emerald-950/80 border border-emerald-700/80 rounded-2xl text-emerald-100 text-xs sm:text-sm leading-relaxed shadow-lg">
                 <div class="flex items-start gap-2.5">
-                  <span class="text-base shrink-0">🎯</span>
+                  <span class="text-base shrink-0"></span>
                   <div class="space-y-1">
                     <p class="font-bold text-emerald-300">Classroom Speaking Facilitation:</p>
                     <p>${slide.teacherPrompt}</p>
@@ -1616,7 +1616,7 @@
               <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Slide Navigator:</span>
               <div class="flex items-center gap-1 sm:gap-1.5 overflow-x-auto pb-0.5">
                 ${slides.map((s, idx) => `
-                  <button type="button" onclick="window.jumpToPresentationSlide(${idx})" class="w-6.5 h-6.5 sm:w-7 sm:h-7 rounded-md text-[11px] font-bold transition-all cursor-pointer flex items-center justify-center ${idx === currentIdx ? "text-white shadow-xs" : "bg-slate-100 text-slate-600 hover:bg-slate-200"}" style="${idx === currentIdx ? "background-color: " + currentTheme.primary + ";" : ""}">
+                  <button type="button" onclick="window.jumpToPresentationSlide(${idx})" class="w-6.5 h-6.5 sm:w-7 sm:h-7 rounded-md text-[11px] font-bold transition-all cursor-pointer flex items-center justify-center ${idx === currentIdx ?"text-white shadow-xs" : "bg-slate-100 text-slate-600 hover:bg-slate-200"}" style="${idx === currentIdx ? "background-color: " + currentTheme.primary + ";" : ""}">
                     ${idx + 1}
                   </button>
                 `).join("")}
@@ -1639,13 +1639,13 @@
               <div class="rounded-xl overflow-hidden border border-slate-200 shadow-2xs mb-3 group relative cursor-pointer" onclick="window.openImageLightbox('${slide.image}', '${(slide.title || 'Slide Photo').replace(/'/g, "\\'")}')">
                 <img src="${slide.image}" alt="${slide.title || 'Exhibit'}" class="w-full h-44 sm:h-56 object-cover group-hover:scale-[1.01] transition-transform duration-200">
                 <div class="absolute bottom-2 right-2 bg-black/75 text-white text-[10px] font-bold px-2 py-1 rounded backdrop-blur-xs flex items-center gap-1 shadow-xs">
-                  <span>🔍 Click to inspect full resolution</span>
+                  <span>Click to inspect full resolution</span>
                 </div>
               </div>
             ` : ''}
 
             <!-- Structured Card Columns -->
-            <div class="grid grid-cols-1 ${slide.cards.length === 4 ? "sm:grid-cols-2" : "sm:grid-cols-3"} gap-3">
+            <div class="grid grid-cols-1 ${slide.cards.length === 4 ?"sm:grid-cols-2" : "sm:grid-cols-3"} gap-3">
               ${slide.cards.map(c => `
                 <div class="p-3.5 bg-slate-50 border border-slate-200/80 rounded-xl flex flex-col justify-between hover:border-slate-300 transition-all">
                   <div>
@@ -1682,7 +1682,7 @@
             <button type="button" onclick="window.toggleTeacherPrompts()" class="w-full flex items-center justify-between p-3 text-left hover:bg-slate-50 transition-colors cursor-pointer select-none">
               <div class="flex items-center gap-2 text-xs font-bold text-slate-700">
                 <span>🗣️ Teacher Speaking Prompts &amp; Concept Checkers</span>
-                <span class="px-1.5 py-0.2 rounded text-[10px] font-semibold ${showPrompts ? "bg-emerald-100 text-emerald-800" : "bg-slate-100 text-slate-600"}">
+                <span class="px-1.5 py-0.2 rounded text-[10px] font-semibold ${showPrompts ?"bg-emerald-100 text-emerald-800" : "bg-slate-100 text-slate-600"}">
                   ${showPrompts ? "Active" : "Click to View"}
                 </span>
               </div>
@@ -1692,7 +1692,7 @@
             ${showPrompts ? `
               <div class="p-3.5 bg-emerald-50/70 border-t border-emerald-100 text-emerald-950 text-xs leading-relaxed space-y-1.5">
                 <div class="flex items-start gap-2">
-                  <span class="text-sm shrink-0">🎯</span>
+                  <span class="text-sm shrink-0"></span>
                   <div class="space-y-1">
                     <p class="font-bold text-emerald-900">Spoken Facilitation Prompt:</p>
                     <p class="text-emerald-800">${slide.teacherPrompt}</p>
