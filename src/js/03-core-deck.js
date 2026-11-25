@@ -1878,9 +1878,14 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
       const titleEl = document.getElementById('modal-title');
       const ddrsTabBtn = document.getElementById('modal-tab-ddrs');
 
-      const theme = modulesData[modalState.modNum - 1];
+      const theme = (modulesData && modulesData[modalState.modNum - 1]) || (modulesData && modulesData[0]) || { primary: "#1e293b", primaryDark: "#0f172a", accent: "#d97706" };
       headerEl.style.backgroundColor = theme.primary;
       headerEl.style.borderColor = theme.primaryDark;
+      if (tagEl && theme.accent) {
+        tagEl.style.borderColor = theme.accent + "55";
+        tagEl.style.backgroundColor = theme.accent + "22";
+        tagEl.style.color = "#ffffff";
+      }
 
       const progConfig = PROGRAMS_CONFIG[modalState.program] || PROGRAMS_CONFIG.ag;
       const activeModForModal = modulesData[modalState.modNum - 1];
@@ -2276,19 +2281,23 @@ ${((overview && overview.hideSpeakingTask) || (sessionData && (sessionData.sessi
 
     function switchModalTab(tabKey) {
       modalState.tab = tabKey;
+      const theme = (modulesData && modulesData[modalState.modNum - 1]) || (modulesData && modulesData[0]) || {};
+      const activeColor = theme.accent || "#d97706";
       const tabBtns = document.querySelectorAll('.modal-tab-btn');
       tabBtns.forEach(btn => {
         if (btn.disabled) return;
         const isSelected = btn.getAttribute('data-tab') === tabKey;
         if (isSelected) {
-          btn.classList.add('text-white', 'bg-white/25', 'shadow-xs');
-          btn.classList.remove('text-white/80', 'hover:bg-white/10');
+          btn.style.backgroundColor = activeColor;
+          btn.classList.add('text-white', 'shadow-xs', 'font-bold');
+          btn.classList.remove('text-slate-200', 'text-white/80', 'hover:bg-white/10', 'bg-white/25');
           if (btn.scrollIntoView) {
             btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
           }
         } else {
-          btn.classList.remove('text-white', 'bg-white/25', 'shadow-xs');
-          btn.classList.add('text-white/80', 'hover:bg-white/10');
+          btn.style.backgroundColor = "transparent";
+          btn.classList.remove('text-white', 'shadow-xs', 'font-bold', 'bg-white/25');
+          btn.classList.add('text-slate-200', 'hover:bg-white/10');
         }
       });
 
